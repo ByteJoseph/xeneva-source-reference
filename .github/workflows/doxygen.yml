@@ -1,52 +1,53 @@
-name: Build Doxygen Docs
+name: Build XenevaOS Doxygen Docs
 
 on:
   push:
     branches:
-      - main              # run on every push to main
+      - main
+
   schedule:
-    - cron: '0 0 * * *'  # nightly at midnight UTC
-  workflow_dispatch:      # allows manual trigger
+    - cron: '0 0 * * *'   # every day at midnight UTC
+
+  workflow_dispatch:
 
 jobs:
   build-docs:
     runs-on: ubuntu-latest
 
     steps:
-      # 1. Checkout your repo
-      - name: Checkout repo
+      - name: Checkout docs repo
         uses: actions/checkout@v3
 
-      # 2. Clone XenevaOS source
       - name: Clone XenevaOS
-        run: git clone https://github.com/manaskamal/XenevaOS.git XenevaOS
+        run: |
+          git clone https://github.com/manaskamal/XenevaOS.git XenevaOS
 
-      # 3. Install Doxygen and Graphviz
       - name: Install dependencies
         run: |
-          sudo apt update
-          sudo apt install -y doxygen graphviz
+          sudo apt-get update
+          sudo apt-get install -y doxygen graphviz
 
-      # 4. Generate Doxygen config and tweak it
-      - name: Setup Doxygen
+      - name: Setup Doxygen configuration
         run: |
-          cd XenevaOS
-          doxygen -g ../Doxyfile
-          sed -i 's|OUTPUT_DIRECTORY .*|OUTPUT_DIRECTORY = ../docs|' ../Doxyfile
-          sed -i 's|RECURSIVE .*|RECURSIVE = YES|' ../Doxyfile
-          sed -i 's|GENERATE_LATEX .*|GENERATE_LATEX = NO|' ../Doxyfile
-          sed -i 's|EXTRACT_ALL .*|EXTRACT_ALL = YES|' ../Doxyfile
-          sed -i 's|GENERATE_HTML .*|GENERATE_HTML = YES|' ../Doxyfile
-          cd ..
+          doxygen -g Doxyfile
 
-      # 5. Build Doxygen docs
+          sed -i 's|^PROJECT_NAME.*|PROJECT_NAME = XenevaOS|' Doxyfile
+          sed -i 's|^OUTPUT_DIRECTORY.*|OUTPUT_DIRECTORY = docs|' Doxyfile
+
+          sed -i 's|^INPUT.*|INPUT = XenevaOS/Acpica XenevaOS/BaseHdr XenevaOS/Boot XenevaOS/BootAA64 XenevaOS/Build XenevaOS/Drivers XenevaOS/Kernel XenevaOS/KernelAA64 XenevaOS/Libs XenevaOS/LittleBoot XenevaOS/Process XenevaOS/Templates XenevaOS/XELoader XenevaOS/Ports|' Doxyfile
+
+          sed -i 's|^RECURSIVE.*|RECURSIVE = YES|' Doxyfile
+          sed -i 's|^EXTRACT_ALL.*|EXTRACT_ALL = YES|' Doxyfile
+          sed -i 's|^GENERATE_LATEX.*|GENERATE_LATEX = NO|' Doxyfile
+          sed -i 's|^FILE_PATTERNS.*|FILE_PATTERNS = *.c *.h *.cpp *.hpp|' Doxyfile
+
       - name: Build Doxygen docs
-        run: doxygen Doxyfile
+        run: |
+          doxygen Doxyfile
 
-      # 6. Deploy generated HTML to gh-pages branch
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs/html
           publish_branch: gh-pages
+          publish_dir: ./docs/html
