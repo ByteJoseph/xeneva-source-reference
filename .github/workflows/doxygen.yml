@@ -1,0 +1,55 @@
+name: Build Doxygen Docs
+
+on:
+  push:
+    branches:
+      - main                # run on every push to main
+  schedule:
+    - cron: '0 0 * * *'    # nightly at midnight UTC
+  workflow_dispatch:        # allows manual triggering
+
+jobs:
+  build-docs:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Checkout repo
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      # 2. Clone XenevaOS source
+      - name: Clone XenevaOS
+        run: git clone https://github.com/manaskamal/XenevaOS.git XenevaOS
+
+      # 3. Install Doxygen and Graphviz
+      - name: Install dependencies
+        run: |
+          sudo apt update
+          sudo apt install -y doxygen graphviz
+
+      # 4. Generate Doxygen config and tweak it
+      - name: Setup Doxygen
+        run: |
+          cd XenevaOS
+          doxygen -g ../Doxyfile
+          # update Doxyfile settings
+          sed -i 's|OUTPUT_DIRECTORY .*|OUTPUT_DIRECTORY = ../docs|' ../Doxyfile
+          sed -i 's|RECURSIVE .*|RECURSIVE = YES|' ../Doxyfile
+          sed -i 's|GENERATE_LATEX .*|GENERATE_LATEX = NO|' ../Doxyfile
+          sed -i 's|EXTRACT_ALL .*|EXTRACT_ALL = YES|' ../Doxyfile
+          sed -i 's|GENERATE_HTML .*|GENERATE_HTML = YES|' ../Doxyfile
+          cd ..
+
+      # 5. Build Doxygen docs
+      - name: Build Doxygen docs
+        run: doxygen Doxyfile
+
+      # 6. Deploy to gh-pages branch
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v6
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs/html
+          publish_branch: gh-pages
+          user_name: "github-actions"
+          user_email: "actions@github.com"
