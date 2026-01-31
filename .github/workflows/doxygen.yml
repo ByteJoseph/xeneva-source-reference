@@ -3,17 +3,17 @@ name: Build Doxygen Docs
 on:
   push:
     branches:
-      - main                # run on every push to main
+      - main              # run on every push to main
   schedule:
-    - cron: '0 0 * * *'    # nightly at midnight UTC
-  workflow_dispatch:        # allows manual triggering
+    - cron: '0 0 * * *'  # nightly at midnight UTC
+  workflow_dispatch:      # allows manual trigger
 
 jobs:
   build-docs:
     runs-on: ubuntu-latest
 
     steps:
-      # 1. Checkout repo
+      # 1. Checkout your repo
       - name: Checkout repo
         uses: actions/checkout@v3
 
@@ -32,7 +32,6 @@ jobs:
         run: |
           cd XenevaOS
           doxygen -g ../Doxyfile
-          # update Doxyfile settings
           sed -i 's|OUTPUT_DIRECTORY .*|OUTPUT_DIRECTORY = ../docs|' ../Doxyfile
           sed -i 's|RECURSIVE .*|RECURSIVE = YES|' ../Doxyfile
           sed -i 's|GENERATE_LATEX .*|GENERATE_LATEX = NO|' ../Doxyfile
@@ -44,12 +43,10 @@ jobs:
       - name: Build Doxygen docs
         run: doxygen Doxyfile
 
-      # 6. Deploy to gh-pages branch
+      # 6. Deploy generated HTML to gh-pages branch
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v6
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./docs/html
           publish_branch: gh-pages
-          user_name: "github-actions"
-          user_email: "actions@github.com"
