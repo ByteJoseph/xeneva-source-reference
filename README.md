@@ -1,4 +1,4 @@
-# XenevaOS Source Reference
+
 
 Automatically generated source-level reference and call/include graphs for the XenevaOS.
 
@@ -6,7 +6,7 @@ This is an automatically generated, source-level reference for the XenevaOS oper
 
 This reference is intended primarily for operating system and low-level systems developers. It assumes familiarity with kernel-level programming, system architecture, and C/C++ codebases, and is not intended as end-user documentation.
 
-**Explore NOW:** [https://bytejoseph.github.io/xeneva-docs/files.html](https://bytejoseph.github.io/xeneva-docs/files.html)
+**Explore NOW:** https://bytejoseph.github.io/xeneva-source-reference/files.html
 
 ## Key benefits
 
