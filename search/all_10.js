@@ -80,7 +80,7 @@ var searchData=
   ['oemtablepointer_77',['OemTablePointer',['../structEFI__LEGACY__MP__TABLE__HEADER.html#a3b2c2b3cd9b117f79628c8bf7d52c79a',1,'EFI_LEGACY_MP_TABLE_HEADER']]],
   ['oemtablesize_78',['OemTableSize',['../structEFI__LEGACY__MP__TABLE__HEADER.html#a805ee4b9c62f27e9c13ca9810be68dd2',1,'EFI_LEGACY_MP_TABLE_HEADER']]],
   ['oemtype_79',['OemType',['../unionIPMI__LAN__AUTH__TYPE.html#a866ec0099a5d6d9877f058c25273ed03',1,'IPMI_LAN_AUTH_TYPE']]],
-  ['of_20acpi_20table_80',['of acpi table',['..//home/runner/work/xeneva-docs/xeneva-docs/XenevaOS/Boot/xnldr.cpp#autotoc_md5',1,'Get the address of ACPI Table'],['..//home/runner/work/xeneva-docs/xeneva-docs/XenevaOS/BootAA64/xnldr.cpp#autotoc_md7',1,'Get the address of ACPI Table']]],
+  ['of_20acpi_20table_80',['of acpi table',['..//home/runner/work/xeneva-source-reference/xeneva-source-reference/XenevaOS/Boot/xnldr.cpp#autotoc_md5',1,'Get the address of ACPI Table'],['..//home/runner/work/xeneva-source-reference/xeneva-source-reference/XenevaOS/BootAA64/xnldr.cpp#autotoc_md7',1,'Get the address of ACPI Table']]],
   ['of_20dwords_81',['of dwords',['../UefiPxe_8h.html#autotoc_md2',1,'of dwords.'],['../UefiPxe_8h.html#autotoc_md3',1,'of dwords.']]],
   ['ofdel_82',['OFDEL',['../termios_8h.html#a671d46b6d4ea404575eb6316dcd48fd6',1,'termios.h']]],
   ['off_5fbits_83',['off_bits',['../struct__bmp__.html#a9330367eb3ab8530771344b080990bd3',1,'_bmp_']]],
