@@ -4,7 +4,7 @@ var searchData=
   ['i2cenumerate_2eh_1',['I2cEnumerate.h',['../I2cEnumerate_8h.html',1,'']]],
   ['i2chost_2eh_2',['I2cHost.h',['../I2cHost_8h.html',1,'']]],
   ['i2cio_2eh_3',['I2cIo.h',['../I2cIo_8h.html',1,'']]],
-  ['i2cmaster_2eh_4',['i2cmaster.h',['../Ppi_2I2cMaster_8h.html',1,'(Global Namespace)'],['../Protocol_2I2cMaster_8h.html',1,'(Global Namespace)']]],
+  ['i2cmaster_2eh_4',['i2cmaster.h',['../Protocol_2I2cMaster_8h.html',1,'(Global Namespace)'],['../Ppi_2I2cMaster_8h.html',1,'(Global Namespace)']]],
   ['icmp_2ecpp_5',['icmp.cpp',['../icmp_8cpp.html',1,'']]],
   ['icmp_2eh_6',['icmp.h',['../icmp_8h.html',1,'']]],
   ['icon_2ecpp_7',['icon.cpp',['../icon_8cpp.html',1,'']]],
@@ -52,7 +52,7 @@ var searchData=
   ['ipv4_2eh_49',['ipv4.h',['../ipv4_8h.html',1,'']]],
   ['ipv6_2ecpp_50',['ipv6.cpp',['../ipv6_8cpp.html',1,'']]],
   ['ipv6_2eh_51',['ipv6.h',['../ipv6_8h.html',1,'']]],
-  ['isahc_2eh_52',['isahc.h',['../Ppi_2IsaHc_8h.html',1,'(Global Namespace)'],['../Protocol_2IsaHc_8h.html',1,'(Global Namespace)']]],
+  ['isahc_2eh_52',['isahc.h',['../Protocol_2IsaHc_8h.html',1,'(Global Namespace)'],['../Ppi_2IsaHc_8h.html',1,'(Global Namespace)']]],
   ['iscsibootfirmwaretable_2eh_53',['IScsiBootFirmwareTable.h',['../IScsiBootFirmwareTable_8h.html',1,'']]],
   ['iscsiinitiatorname_2eh_54',['IScsiInitiatorName.h',['../IScsiInitiatorName_8h.html',1,'']]],
   ['istream_2ecpp_55',['istream.cpp',['../istream_8cpp.html',1,'']]]

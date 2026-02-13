@@ -124,7 +124,7 @@ var searchData=
   ['db_5fbyte_5fdisplay_121',['DB_BYTE_DISPLAY',['../acutils_8h.html#aff73a83ce62beadde0545e5d60029aec',1,'acutils.h']]],
   ['db_5fdword_5fdisplay_122',['DB_DWORD_DISPLAY',['../acutils_8h.html#af350eba2a44a0bf588bd8ba5269a1a04',1,'acutils.h']]],
   ['db_5fqword_5fdisplay_123',['DB_QWORD_DISPLAY',['../acutils_8h.html#a6b6afe9ce0960baf480a62414d057b7c',1,'acutils.h']]],
-  ['db_5fregs_124',['db_regs',['../struct__xhci__dev__.html#a2958858fbd752e696eca257ab691aedf',1,'_xhci_dev_::db_regs'],['../struct__usb__dev__.html#a6ff5188d3e56940216ef008b667557c8',1,'_usb_dev_::db_regs']]],
+  ['db_5fregs_124',['db_regs',['../struct__usb__dev__.html#a6ff5188d3e56940216ef008b667557c8',1,'_usb_dev_::db_regs'],['../struct__xhci__dev__.html#a2958858fbd752e696eca257ab691aedf',1,'_xhci_dev_::db_regs']]],
   ['db_5fword_5fdisplay_125',['DB_WORD_DISPLAY',['../acutils_8h.html#aa12d4c1982a3991f70d953f6d4487379',1,'acutils.h']]],
   ['dbaddr_126',['DBaddr',['../structs__pxe__cdb.html#adf301761617bacdb2c53ee1be106cf9e',1,'s_pxe_cdb']]],
   ['dbau_127',['dbau',['../struct__hba__cmd__prdt__.html#a22899ada92ab74692afc83e67d68f014',1,'_hba_cmd_prdt_']]],
