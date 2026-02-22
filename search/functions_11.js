@@ -24,7 +24,7 @@ var searchData=
   ['read_5fttbr1_5fel1_21',['read_ttbr1_el1',['../aa64lowlevel_8h.html#a305020723f2efc880316a6aa000ceb43',1,'read_ttbr1_el1():&#160;aa64lowlevel.h'],['../BootAA64_2lowlevel_8h.html#a1d348bbe6e9da3fba17c2c7836817100',1,'read_ttbr1_el1():&#160;lowlevel.h']]],
   ['read_5fttbr1_5fel2_22',['read_ttbr1_el2',['../BootAA64_2lowlevel_8h.html#ade81621739c7eb71b4cac9dc1bcdaa96',1,'lowlevel.h']]],
   ['read_5fx30_23',['read_x30',['../sched_8c.html#aa9f96a2a1491da9d829182a2e2976fbc',1,'sched.c']]],
-  ['readapicregister_24',['readapicregister',['../apic_8cpp.html#aa0ab49877f0be0f5de7e4723fa453b9a',1,'ReadAPICRegister(uint16_t reg):&#160;apic.cpp'],['../apic_8h.html#aa0ab49877f0be0f5de7e4723fa453b9a',1,'ReadAPICRegister(uint16_t reg):&#160;apic.cpp']]],
+  ['readapicregister_24',['readapicregister',['../apic_8h.html#aa0ab49877f0be0f5de7e4723fa453b9a',1,'ReadAPICRegister(uint16_t reg):&#160;apic.cpp'],['../apic_8cpp.html#aa0ab49877f0be0f5de7e4723fa453b9a',1,'ReadAPICRegister(uint16_t reg):&#160;apic.cpp']]],
   ['readcmos_25',['readCMOS',['../x86__64__cpu_8cpp.html#a7eb7cb6ab5dcbaf06b121d6a87b0569e',1,'x86_64_cpu.cpp']]],
   ['readdir_26',['readdir',['../sysserv_8h.html#aff99d119d5568e3b1e632dd30a8b829b',1,'ReadDir(int dirfd, void *dirent):&#160;fileserv.cpp'],['../fileserv_8cpp.html#aff99d119d5568e3b1e632dd30a8b829b',1,'ReadDir(int dirfd, void *dirent):&#160;fileserv.cpp']]],
   ['readfile_27',['readfile',['../sysserv_8h.html#ad558c2d7f1e36ad26447c172d10a3a45',1,'ReadFile(int fd, void *buffer, size_t length):&#160;fileserv.cpp'],['../fileserv_8cpp.html#ad558c2d7f1e36ad26447c172d10a3a45',1,'ReadFile(int fd, void *buffer, size_t length):&#160;fileserv.cpp'],['../fileserv_8c.html#ad558c2d7f1e36ad26447c172d10a3a45',1,'ReadFile(int fd, void *buffer, size_t length):&#160;fileserv.c']]],
@@ -34,7 +34,7 @@ var searchData=
   ['readunaligned24_31',['ReadUnaligned24',['../BaseLib_8h.html#ac683301d91cd0ff286776cfba2654004',1,'BaseLib.h']]],
   ['readunaligned32_32',['ReadUnaligned32',['../BaseLib_8h.html#afe87bd2a2a723f5d89c9b4174e7faa8c',1,'BaseLib.h']]],
   ['readunaligned64_33',['ReadUnaligned64',['../BaseLib_8h.html#a3eef2329755c697f80c4b93551ecee7a',1,'BaseLib.h']]],
-  ['realloc_34',['realloc',['../stdlib_8h.html#a85b14859723c6a3475048f36f46243bc',1,'realloc(void *address, unsigned int new_size):&#160;_heap.cpp'],['../__heap_8cpp.html#aae2448abd5b492ba119284ef05b928bd',1,'realloc(void *p, unsigned int size):&#160;_heap.cpp'],['../__heap_8h.html#a08a11d9287e1d753cbb270ddce0e76f7',1,'realloc(void *, unsigned int):&#160;_heap.cpp']]],
+  ['realloc_34',['realloc',['../__heap_8cpp.html#aae2448abd5b492ba119284ef05b928bd',1,'realloc(void *p, unsigned int size):&#160;_heap.cpp'],['../__heap_8h.html#a08a11d9287e1d753cbb270ddce0e76f7',1,'realloc(void *, unsigned int):&#160;_heap.cpp'],['../stdlib_8h.html#a85b14859723c6a3475048f36f46243bc',1,'realloc(void *address, unsigned int new_size):&#160;_heap.cpp']]],
   ['reallocatepool_35',['ReallocatePool',['../MemoryAllocationLib_8h.html#a6d0b2efea6b1aefd7860971c1486b621',1,'MemoryAllocationLib.h']]],
   ['reallocatereservedpool_36',['ReallocateReservedPool',['../MemoryAllocationLib_8h.html#a9a2e184c55ff2359afbd30a43f33116b',1,'MemoryAllocationLib.h']]],
   ['reallocateruntimepool_37',['ReallocateRuntimePool',['../MemoryAllocationLib_8h.html#a6ad6d0121a67219331c8d7be8a0a175b',1,'MemoryAllocationLib.h']]],
@@ -71,9 +71,10 @@ var searchData=
   ['rgb888_5fto_5frgb565_68',['rgb888_to_rgb565',['../vc4dsi_8c.html#a9adfa75df6966676c7d0c8193b2e8096',1,'vc4dsi.c']]],
   ['rgb_5fto_5frgb565_69',['rgb_to_rgb565',['../vc4dsi_8c.html#a0c1e5b23616fb2052cda5650eeccdbcf',1,'vc4dsi.c']]],
   ['rirbread_70',['rirbread',['../ihda_8cpp.html#a6e591e8692109420849abc77232a8d73',1,'RIRBRead(uint64_t *response):&#160;ihda.cpp'],['../ihda_8h.html#a6e591e8692109420849abc77232a8d73',1,'RIRBRead(uint64_t *response):&#160;ihda.cpp']]],
-  ['roundf_71',['roundf',['../math_8h.html#ad52f1453fd91980d0ca8614c6068b167',1,'roundf(float x):&#160;roundf.cpp'],['../roundf_8cpp.html#ade09185c0cf8101fa9e2f25c15041b81',1,'roundf(float x):&#160;roundf.cpp']]],
-  ['rpi3buartinit_72',['RPI3BUartInit',['../mbox_8h.html#a385855627571622da35bc7618daa6263',1,'mbox.h']]],
-  ['rrotu32_73',['RRotU32',['../BaseLib_8h.html#a0c7568c04463016f3413d2b1a0945dd3',1,'BaseLib.h']]],
-  ['rrotu64_74',['RRotU64',['../BaseLib_8h.html#ab36738699d72a082e7ab40bc9d3cf228',1,'BaseLib.h']]],
-  ['rshiftu64_75',['RShiftU64',['../BaseLib_8h.html#a828bad213358fde251a46509ddaa9672',1,'BaseLib.h']]]
+  ['roadmapbutton_71',['RoadMapButton',['../ctrl_8cpp.html#aefbc2a1b156aa46ebfa4fd16faa158d1',1,'ctrl.cpp']]],
+  ['roundf_72',['roundf',['../math_8h.html#ad52f1453fd91980d0ca8614c6068b167',1,'roundf(float x):&#160;roundf.cpp'],['../roundf_8cpp.html#ade09185c0cf8101fa9e2f25c15041b81',1,'roundf(float x):&#160;roundf.cpp']]],
+  ['rpi3buartinit_73',['RPI3BUartInit',['../mbox_8h.html#a385855627571622da35bc7618daa6263',1,'mbox.h']]],
+  ['rrotu32_74',['RRotU32',['../BaseLib_8h.html#a0c7568c04463016f3413d2b1a0945dd3',1,'BaseLib.h']]],
+  ['rrotu64_75',['RRotU64',['../BaseLib_8h.html#ab36738699d72a082e7ab40bc9d3cf228',1,'BaseLib.h']]],
+  ['rshiftu64_76',['RShiftU64',['../BaseLib_8h.html#a828bad213358fde251a46509ddaa9672',1,'BaseLib.h']]]
 ];

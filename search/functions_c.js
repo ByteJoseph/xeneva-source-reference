@@ -69,7 +69,7 @@ var searchData=
   ['mmioreadbuffer64_66',['MmioReadBuffer64',['../IoLib_8h.html#a20f887125be6f8d9fb7041e67c01685c',1,'IoLib.h']]],
   ['mmioreadbuffer8_67',['MmioReadBuffer8',['../IoLib_8h.html#ae09b73978d261088f32417da647f8576',1,'IoLib.h']]],
   ['mmiowrite16_68',['MmioWrite16',['../IoLib_8h.html#aeae7d8db58811cc1133285cf0696c85c',1,'IoLib.h']]],
-  ['mmiowrite32_69',['mmiowrite32',['../e1000_8cpp.html#a81461d5edd1c9ef8f805ae8158053a2f',1,'MMIOWrite32(uint64_t addr, uint32_t val):&#160;e1000.cpp'],['../IoLib_8h.html#afe4f2592341e33b506faeffe8b2cd42f',1,'MmioWrite32(IN UINTN Address, IN UINT32 Value):&#160;IoLib.h']]],
+  ['mmiowrite32_69',['mmiowrite32',['../IoLib_8h.html#afe4f2592341e33b506faeffe8b2cd42f',1,'MmioWrite32(IN UINTN Address, IN UINT32 Value):&#160;IoLib.h'],['../e1000_8cpp.html#a81461d5edd1c9ef8f805ae8158053a2f',1,'MMIOWrite32(uint64_t addr, uint32_t val):&#160;e1000.cpp']]],
   ['mmiowrite64_70',['MmioWrite64',['../IoLib_8h.html#a07ebea488db02bf1634e7f1b4eb52993',1,'IoLib.h']]],
   ['mmiowrite8_71',['MmioWrite8',['../IoLib_8h.html#aad1cba7e2adfd1cd1d172095eda92cf3',1,'IoLib.h']]],
   ['mmiowritebuffer16_72',['MmioWriteBuffer16',['../IoLib_8h.html#a392a2ad5751ae9d4627857d80ad8bff4',1,'IoLib.h']]],
