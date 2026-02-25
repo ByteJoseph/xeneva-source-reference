@@ -188,6 +188,7 @@ Typedefs</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:af71839d89545c33ffac2ca8525768d17" id="r_af71839d89545c33ffac2ca8525768d17"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mmap_8cpp.html#af71839d89545c33ffac2ca8525768d17">SharedMemMapListInitialise</a> ()</td></tr>
+<tr class="memdesc:af71839d89545c33ffac2ca8525768d17"><td class="mdescLeft">&#160;</td><td class="mdescRight">SharedMemMapListInitialise &ndash; initialise the shared memory map list.  <br /></td></tr>
 <tr class="separator:af71839d89545c33ffac2ca8525768d17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83d2dc8f853a2f757595085d4dab8a03" id="r_a83d2dc8f853a2f757595085d4dab8a03"><td class="memItemLeft" align="right" valign="top"><a class="el" href="mmap_8cpp.html#ac42473f5ad56497a58deec4beb907a70">AuSharedMmapObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mmap_8cpp.html#a83d2dc8f853a2f757595085d4dab8a03">AuCreateSharedMmapObject</a> (char *name)</td></tr>
 <tr class="separator:a83d2dc8f853a2f757595085d4dab8a03"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -198,10 +199,13 @@ Functions</h2></td></tr>
 <tr class="memitem:a2f97934b3799554c250a0018dfd971db" id="r_a2f97934b3799554c250a0018dfd971db"><td class="memItemLeft" align="right" valign="top"><a class="el" href="mmap_8cpp.html#ac42473f5ad56497a58deec4beb907a70">AuSharedMmapObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mmap_8cpp.html#a2f97934b3799554c250a0018dfd971db">AuSharedMmapObjectFindByName</a> (char *name)</td></tr>
 <tr class="separator:a2f97934b3799554c250a0018dfd971db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab4a73c0ccf2b85ea1187ee7a5311e1cb" id="r_ab4a73c0ccf2b85ea1187ee7a5311e1cb"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mmap_8cpp.html#ab4a73c0ccf2b85ea1187ee7a5311e1cb">CreateMemMapping</a> (void *address, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> len, int prot, int flags, int fd, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> offset)</td></tr>
+<tr class="memdesc:ab4a73c0ccf2b85ea1187ee7a5311e1cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">CreateMemMapping &ndash; Create a memory mapping of just memory, file or device.  <br /></td></tr>
 <tr class="separator:ab4a73c0ccf2b85ea1187ee7a5311e1cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae93b95930e3aeaf43d4fcb08bf17a12b" id="r_ae93b95930e3aeaf43d4fcb08bf17a12b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mmap_8cpp.html#ae93b95930e3aeaf43d4fcb08bf17a12b">MemMapDirty</a> (void *startingVaddr, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> len, int flags, int prot)</td></tr>
+<tr class="memdesc:ae93b95930e3aeaf43d4fcb08bf17a12b"><td class="mdescLeft">&#160;</td><td class="mdescRight">MemMapDirty &ndash; dirty update previously allocated memory map.  <br /></td></tr>
 <tr class="separator:ae93b95930e3aeaf43d4fcb08bf17a12b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb542e825d41ad23ee663803b30b769d" id="r_adb542e825d41ad23ee663803b30b769d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mmap_8cpp.html#adb542e825d41ad23ee663803b30b769d">UnmapMemMapping</a> (void *address, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> len)</td></tr>
+<tr class="memdesc:adb542e825d41ad23ee663803b30b769d"><td class="mdescLeft">&#160;</td><td class="mdescRight">UnmapMemMapping &ndash; unmaps a memory mapping.  <br /></td></tr>
 <tr class="separator:adb542e825d41ad23ee663803b30b769d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
@@ -468,6 +472,20 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>CreateMemMapping &ndash; Create a memory mapping of just memory, file or device. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">address</td><td>&ndash; address from where mapping start, if null, kernel will find by its own </td></tr>
+    <tr><td class="paramname">len</td><td>&ndash; length of the address </td></tr>
+    <tr><td class="paramname">prot</td><td>&ndash; protection flags </td></tr>
+    <tr><td class="paramname">flags</td><td>&ndash; flags </td></tr>
+    <tr><td class="paramname">fd</td><td>&ndash; file descriptor, -1 for no file descriptor </td></tr>
+    <tr><td class="paramname">offset</td><td>&ndash; byte offset for file and device </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to starting </dd></dl>
+
 </div>
 </div>
 <a id="ae93b95930e3aeaf43d4fcb08bf17a12b" name="ae93b95930e3aeaf43d4fcb08bf17a12b"></a>
@@ -508,6 +526,17 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>MemMapDirty &ndash; dirty update previously allocated memory map. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">startingVaddr</td><td>&ndash; starting address </td></tr>
+    <tr><td class="paramname">len</td><td>&ndash; length in bytes </td></tr>
+    <tr><td class="paramname">flags</td><td>&ndash; memory map flags </td></tr>
+    <tr><td class="paramname">prot</td><td>&ndash; protection flags </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="af71839d89545c33ffac2ca8525768d17" name="af71839d89545c33ffac2ca8525768d17"></a>
@@ -524,14 +553,8 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>BSD 2-Clause License</p>
-<p>Copyright (c) 2022-2023, Manas Kamal Choudhury All rights reserved.</p>
-<p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
-<ol type="1">
-<li>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</li>
-<li>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</li>
-</ol>
-<p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. </p>
+
+<p>SharedMemMapListInitialise &ndash; initialise the shared memory map list. </p>
 
 </div>
 </div>
@@ -560,6 +583,15 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>UnmapMemMapping &ndash; unmaps a memory mapping. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">address</td><td>&ndash; address from where mapping starts </td></tr>
+    <tr><td class="paramname">len</td><td>&ndash; length of the mapping </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

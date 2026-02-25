@@ -82,64 +82,64 @@ $(document).ready(function() { init_codefold(0); });
 </div><!--header-->
 <div class="contents">
 <a href="netdb_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#ifndef __NETDB_H__</span></div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#define __NETDB_H__</span></div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#include &lt;<a class="code" href="__xeneva_8h.html">_xeneva.h</a>&gt;</span></div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><a class="code hl_define" href="__xeneva_8h.html#ab246fc80dcb7c6e842a5c117d20a2719">XE_EXTERN</a>{</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">#pragma pack(push,1)</span></div>
-<div class="foldopen" id="foldopen00042" data-start="{" data-end="}">
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="netdb_8h.html#a16d7b31fe34bfc1b4177b6e4aee54ffa">   42</a></span><a class="code hl_function" href="netdb_8h.html#a16d7b31fe34bfc1b4177b6e4aee54ffa">__declspec</a>(align(2))</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>typedef struct _dns_ {</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <a class="code hl_typedef" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> qid;</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <a class="code hl_typedef" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> flags;</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <a class="code hl_typedef" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> questions;</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <a class="code hl_typedef" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> answers;</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <a class="code hl_typedef" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> authorities;</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <a class="code hl_typedef" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> additional;</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <a class="code hl_typedef" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> data[];</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="netdb_8h.html#a89935bad69c13420a9f67c834bd303d2">   51</a></span>}<a class="code hl_variable" href="netdb_8h.html#a89935bad69c13420a9f67c834bd303d2">DNSPacket</a>;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#ifndef __NETDB_H__</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#define __NETDB_H__</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#include &lt;<a class="code" href="__xeneva_8h.html">_xeneva.h</a>&gt;</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><a class="code hl_define" href="__xeneva_8h.html#ab246fc80dcb7c6e842a5c117d20a2719">XE_EXTERN</a>{</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="preprocessor">#pragma pack(push,1)</span></div>
+<div class="foldopen" id="foldopen00044" data-start="{" data-end="}">
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="netdb_8h.html#a16d7b31fe34bfc1b4177b6e4aee54ffa">   44</a></span><a class="code hl_function" href="netdb_8h.html#a16d7b31fe34bfc1b4177b6e4aee54ffa">__declspec</a>(align(2))</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>typedef struct _dns_ {</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <a class="code hl_typedef" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> qid;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <a class="code hl_typedef" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> flags;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <a class="code hl_typedef" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> questions;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <a class="code hl_typedef" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> answers;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <a class="code hl_typedef" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> authorities;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <a class="code hl_typedef" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> additional;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <a class="code hl_typedef" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> data[];</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="netdb_8h.html#a89935bad69c13420a9f67c834bd303d2">   53</a></span>}<a class="code hl_variable" href="netdb_8h.html#a89935bad69c13420a9f67c834bd303d2">DNSPacket</a>;</div>
 </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="preprocessor">#pragma pack(pop)</span></div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="foldopen" id="foldopen00054" data-start="{" data-end="};">
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="structhostent.html">   54</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structhostent.html">hostent</a> {</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="structhostent.html#a439d6e5efa18bc14aab63b14a12ae371">   55</a></span>    <span class="keywordtype">char</span>* <a class="code hl_variable" href="structhostent.html#a439d6e5efa18bc14aab63b14a12ae371">h_name</a>;</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="structhostent.html#ac266a0b528443e9479f2d8e1680b5e78">   56</a></span>    <span class="keywordtype">char</span>** <a class="code hl_variable" href="structhostent.html#ac266a0b528443e9479f2d8e1680b5e78">h_aliases</a>;</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="structhostent.html#a405ebb31a6922898809635b03f0faf06">   57</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="structhostent.html#a405ebb31a6922898809635b03f0faf06">h_addrtype</a>;</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="structhostent.html#ab9db18bfcc6adfc9c944b0c06ec2dccc">   58</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="structhostent.html#ab9db18bfcc6adfc9c944b0c06ec2dccc">h_length</a>;</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="structhostent.html#a4ff8499f29c5111435d6ed4adccfb621">   59</a></span>    <span class="keywordtype">char</span>** <a class="code hl_variable" href="structhostent.html#a4ff8499f29c5111435d6ed4adccfb621">h_addr_list</a>;</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>};</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="preprocessor">#pragma pack(pop)</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="foldopen" id="foldopen00056" data-start="{" data-end="};">
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="structhostent.html">   56</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structhostent.html">hostent</a> {</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="structhostent.html#a439d6e5efa18bc14aab63b14a12ae371">   57</a></span>    <span class="keywordtype">char</span>* <a class="code hl_variable" href="structhostent.html#a439d6e5efa18bc14aab63b14a12ae371">h_name</a>;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="structhostent.html#ac266a0b528443e9479f2d8e1680b5e78">   58</a></span>    <span class="keywordtype">char</span>** <a class="code hl_variable" href="structhostent.html#ac266a0b528443e9479f2d8e1680b5e78">h_aliases</a>;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="structhostent.html#a405ebb31a6922898809635b03f0faf06">   59</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="structhostent.html#a405ebb31a6922898809635b03f0faf06">h_addrtype</a>;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="structhostent.html#ab9db18bfcc6adfc9c944b0c06ec2dccc">   60</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="structhostent.html#ab9db18bfcc6adfc9c944b0c06ec2dccc">h_length</a>;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="structhostent.html#a4ff8499f29c5111435d6ed4adccfb621">   61</a></span>    <span class="keywordtype">char</span>** <a class="code hl_variable" href="structhostent.html#a4ff8499f29c5111435d6ed4adccfb621">h_addr_list</a>;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>};</div>
 </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><a class="code hl_define" href="__xeneva_8h.html#a3640283d666d4a8b25a736424ee25866">XE_LIB</a> <a class="code hl_struct" href="structhostent.html">hostent</a>* <a class="code hl_function" href="netdb_8h.html#a02d65b44a1cc581017034dfe8cf6900b">gethostbyname</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* name);</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>}</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><a class="code hl_define" href="__xeneva_8h.html#a3640283d666d4a8b25a736424ee25866">XE_LIB</a> <a class="code hl_struct" href="structhostent.html">hostent</a>* <a class="code hl_function" href="netdb_8h.html#a02d65b44a1cc581017034dfe8cf6900b">gethostbyname</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* name);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>}</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="a__xeneva_8h_html"><div class="ttname"><a href="__xeneva_8h.html">_xeneva.h</a></div></div>
-<div class="ttc" id="a__xeneva_8h_html_a3640283d666d4a8b25a736424ee25866"><div class="ttname"><a href="__xeneva_8h.html#a3640283d666d4a8b25a736424ee25866">XE_LIB</a></div><div class="ttdeci">#define XE_LIB</div><div class="ttdef"><b>Definition</b> _xeneva.h:53</div></div>
-<div class="ttc" id="a__xeneva_8h_html_ab246fc80dcb7c6e842a5c117d20a2719"><div class="ttname"><a href="__xeneva_8h.html#ab246fc80dcb7c6e842a5c117d20a2719">XE_EXTERN</a></div><div class="ttdeci">#define XE_EXTERN</div><div class="ttdef"><b>Definition</b> _xeneva.h:48</div></div>
+<div class="ttc" id="a__xeneva_8h_html_a3640283d666d4a8b25a736424ee25866"><div class="ttname"><a href="__xeneva_8h.html#a3640283d666d4a8b25a736424ee25866">XE_LIB</a></div><div class="ttdeci">#define XE_LIB</div><div class="ttdef"><b>Definition</b> _xeneva.h:55</div></div>
+<div class="ttc" id="a__xeneva_8h_html_ab246fc80dcb7c6e842a5c117d20a2719"><div class="ttname"><a href="__xeneva_8h.html#ab246fc80dcb7c6e842a5c117d20a2719">XE_EXTERN</a></div><div class="ttdeci">#define XE_EXTERN</div><div class="ttdef"><b>Definition</b> _xeneva.h:50</div></div>
 <div class="ttc" id="aacefiex_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition</b> acefiex.h:161</div></div>
 <div class="ttc" id="aacefiex_8h_html_adf4d876453337156dde61095e1f20223"><div class="ttname"><a href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a></div><div class="ttdeci">unsigned short int uint16_t</div><div class="ttdef"><b>Definition</b> acefiex.h:162</div></div>
 <div class="ttc" id="anetdb_8h_html_a02d65b44a1cc581017034dfe8cf6900b"><div class="ttname"><a href="netdb_8h.html#a02d65b44a1cc581017034dfe8cf6900b">gethostbyname</a></div><div class="ttdeci">XE_LIB hostent * gethostbyname(const char *name)</div><div class="ttdef"><b>Definition</b> xenet.cpp:99</div></div>
-<div class="ttc" id="anetdb_8h_html_a16d7b31fe34bfc1b4177b6e4aee54ffa"><div class="ttname"><a href="netdb_8h.html#a16d7b31fe34bfc1b4177b6e4aee54ffa">__declspec</a></div><div class="ttdeci">__declspec(align(2)) typedef struct _dns_</div><div class="ttdef"><b>Definition</b> netdb.h:42</div></div>
-<div class="ttc" id="anetdb_8h_html_a89935bad69c13420a9f67c834bd303d2"><div class="ttname"><a href="netdb_8h.html#a89935bad69c13420a9f67c834bd303d2">DNSPacket</a></div><div class="ttdeci">DNSPacket</div><div class="ttdef"><b>Definition</b> netdb.h:51</div></div>
-<div class="ttc" id="astructhostent_html"><div class="ttname"><a href="structhostent.html">hostent</a></div><div class="ttdef"><b>Definition</b> netdb.h:54</div></div>
-<div class="ttc" id="astructhostent_html_a405ebb31a6922898809635b03f0faf06"><div class="ttname"><a href="structhostent.html#a405ebb31a6922898809635b03f0faf06">hostent::h_addrtype</a></div><div class="ttdeci">int h_addrtype</div><div class="ttdef"><b>Definition</b> netdb.h:57</div></div>
-<div class="ttc" id="astructhostent_html_a439d6e5efa18bc14aab63b14a12ae371"><div class="ttname"><a href="structhostent.html#a439d6e5efa18bc14aab63b14a12ae371">hostent::h_name</a></div><div class="ttdeci">char * h_name</div><div class="ttdef"><b>Definition</b> netdb.h:55</div></div>
-<div class="ttc" id="astructhostent_html_a4ff8499f29c5111435d6ed4adccfb621"><div class="ttname"><a href="structhostent.html#a4ff8499f29c5111435d6ed4adccfb621">hostent::h_addr_list</a></div><div class="ttdeci">char ** h_addr_list</div><div class="ttdef"><b>Definition</b> netdb.h:59</div></div>
-<div class="ttc" id="astructhostent_html_ab9db18bfcc6adfc9c944b0c06ec2dccc"><div class="ttname"><a href="structhostent.html#ab9db18bfcc6adfc9c944b0c06ec2dccc">hostent::h_length</a></div><div class="ttdeci">int h_length</div><div class="ttdef"><b>Definition</b> netdb.h:58</div></div>
-<div class="ttc" id="astructhostent_html_ac266a0b528443e9479f2d8e1680b5e78"><div class="ttname"><a href="structhostent.html#ac266a0b528443e9479f2d8e1680b5e78">hostent::h_aliases</a></div><div class="ttdeci">char ** h_aliases</div><div class="ttdef"><b>Definition</b> netdb.h:56</div></div>
+<div class="ttc" id="anetdb_8h_html_a16d7b31fe34bfc1b4177b6e4aee54ffa"><div class="ttname"><a href="netdb_8h.html#a16d7b31fe34bfc1b4177b6e4aee54ffa">__declspec</a></div><div class="ttdeci">__declspec(align(2)) typedef struct _dns_</div><div class="ttdef"><b>Definition</b> netdb.h:44</div></div>
+<div class="ttc" id="anetdb_8h_html_a89935bad69c13420a9f67c834bd303d2"><div class="ttname"><a href="netdb_8h.html#a89935bad69c13420a9f67c834bd303d2">DNSPacket</a></div><div class="ttdeci">DNSPacket</div><div class="ttdef"><b>Definition</b> netdb.h:53</div></div>
+<div class="ttc" id="astructhostent_html"><div class="ttname"><a href="structhostent.html">hostent</a></div><div class="ttdef"><b>Definition</b> netdb.h:56</div></div>
+<div class="ttc" id="astructhostent_html_a405ebb31a6922898809635b03f0faf06"><div class="ttname"><a href="structhostent.html#a405ebb31a6922898809635b03f0faf06">hostent::h_addrtype</a></div><div class="ttdeci">int h_addrtype</div><div class="ttdef"><b>Definition</b> netdb.h:59</div></div>
+<div class="ttc" id="astructhostent_html_a439d6e5efa18bc14aab63b14a12ae371"><div class="ttname"><a href="structhostent.html#a439d6e5efa18bc14aab63b14a12ae371">hostent::h_name</a></div><div class="ttdeci">char * h_name</div><div class="ttdef"><b>Definition</b> netdb.h:57</div></div>
+<div class="ttc" id="astructhostent_html_a4ff8499f29c5111435d6ed4adccfb621"><div class="ttname"><a href="structhostent.html#a4ff8499f29c5111435d6ed4adccfb621">hostent::h_addr_list</a></div><div class="ttdeci">char ** h_addr_list</div><div class="ttdef"><b>Definition</b> netdb.h:61</div></div>
+<div class="ttc" id="astructhostent_html_ab9db18bfcc6adfc9c944b0c06ec2dccc"><div class="ttname"><a href="structhostent.html#ab9db18bfcc6adfc9c944b0c06ec2dccc">hostent::h_length</a></div><div class="ttdeci">int h_length</div><div class="ttdef"><b>Definition</b> netdb.h:60</div></div>
+<div class="ttc" id="astructhostent_html_ac266a0b528443e9479f2d8e1680b5e78"><div class="ttname"><a href="structhostent.html#ac266a0b528443e9479f2d8e1680b5e78">hostent::h_aliases</a></div><div class="ttdeci">char ** h_aliases</div><div class="ttdef"><b>Definition</b> netdb.h:58</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

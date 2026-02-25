@@ -109,12 +109,16 @@ This graph shows which files directly or indirectly include this file:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a8ee3a0e9b71499ef8c428592c1f9b5b9" id="r_a8ee3a0e9b71499ef8c428592c1f9b5b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rpi3bp__spi_8h.html#a8ee3a0e9b71499ef8c428592c1f9b5b9">AuRPI3SPI0Map</a> ()</td></tr>
+<tr class="memdesc:a8ee3a0e9b71499ef8c428592c1f9b5b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuRPI3SPI0Map &ndash; map the spi0 to kernel higher half address.  <br /></td></tr>
 <tr class="separator:a8ee3a0e9b71499ef8c428592c1f9b5b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98bc8ea6ba988071497dbd97676fb220" id="r_a98bc8ea6ba988071497dbd97676fb220"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rpi3bp__spi_8h.html#a98bc8ea6ba988071497dbd97676fb220">AuRPI3SPI0Init</a> ()</td></tr>
+<tr class="memdesc:a98bc8ea6ba988071497dbd97676fb220"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuRPI3SPI0Init &ndash; initialize SPI0 of RPI3bp.  <br /></td></tr>
 <tr class="separator:a98bc8ea6ba988071497dbd97676fb220"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a713125e17033a449e6facef4e5dba4c7" id="r_a713125e17033a449e6facef4e5dba4c7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rpi3bp__spi_8h.html#a713125e17033a449e6facef4e5dba4c7">AuRPISPITransfer</a> (<a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> data)</td></tr>
+<tr class="memdesc:a713125e17033a449e6facef4e5dba4c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuRPISPITransfer &ndash; transfer a single 1 byte data.  <br /></td></tr>
 <tr class="separator:a713125e17033a449e6facef4e5dba4c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd3a7754b4ae2dd6e3b3868c63935756" id="r_abd3a7754b4ae2dd6e3b3868c63935756"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rpi3bp__spi_8h.html#abd3a7754b4ae2dd6e3b3868c63935756">AuRPISPITransferBuffer</a> (const <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *data, <a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> len)</td></tr>
+<tr class="memdesc:abd3a7754b4ae2dd6e3b3868c63935756"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuRPISPITransferBuffer &ndash; transfer multiple 1 byte aligned buffer data.  <br /></td></tr>
 <tr class="separator:abd3a7754b4ae2dd6e3b3868c63935756"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a38bdfa31546b2f377aff62958c3611" id="r_a8a38bdfa31546b2f377aff62958c3611"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rpi3bp__spi_8h.html#a8a38bdfa31546b2f377aff62958c3611">AuRPISPITransferStart</a> ()</td></tr>
 <tr class="separator:a8a38bdfa31546b2f377aff62958c3611"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -149,6 +153,8 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>AuRPI3SPI0Init &ndash; initialize SPI0 of RPI3bp. </p>
+
 </div>
 </div>
 <a id="a8ee3a0e9b71499ef8c428592c1f9b5b9" name="a8ee3a0e9b71499ef8c428592c1f9b5b9"></a>
@@ -173,6 +179,8 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>AuRPI3SPI0Map &ndash; map the spi0 to kernel higher half address. </p>
 <p>BSD 2-Clause License</p>
 <p>Copyright (c) 2022-2025, Manas Kamal Choudhury All rights reserved.</p>
 <p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
@@ -234,6 +242,15 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>AuRPISPITransfer &ndash; transfer a single 1 byte data. </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo:</a></b></dt><dd>cs selection </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>&ndash; data to transfer </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="abd3a7754b4ae2dd6e3b3868c63935756" name="abd3a7754b4ae2dd6e3b3868c63935756"></a>
@@ -269,6 +286,15 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>AuRPISPITransferBuffer &ndash; transfer multiple 1 byte aligned buffer data. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>&ndash; pointer to buffer </td></tr>
+    <tr><td class="paramname">len</td><td>&ndash; Length of total datas </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

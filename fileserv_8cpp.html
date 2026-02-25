@@ -189,28 +189,40 @@ Include dependency graph for fileserv.cpp:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ad32833b7e68897eafa507c82d56bc21f" id="r_ad32833b7e68897eafa507c82d56bc21f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fileserv_8cpp.html#ad32833b7e68897eafa507c82d56bc21f">OpenFile</a> (char *filename, int mode)</td></tr>
+<tr class="memdesc:ad32833b7e68897eafa507c82d56bc21f"><td class="mdescLeft">&#160;</td><td class="mdescRight">OpenFile &ndash; opens a file for user process.  <br /></td></tr>
 <tr class="separator:ad32833b7e68897eafa507c82d56bc21f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae15b73e1e39c5f6cfa06dfb765d62412" id="r_ae15b73e1e39c5f6cfa06dfb765d62412"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fileserv_8cpp.html#ae15b73e1e39c5f6cfa06dfb765d62412">FileSetOffset</a> (int fd, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> offset)</td></tr>
+<tr class="memdesc:ae15b73e1e39c5f6cfa06dfb765d62412"><td class="mdescLeft">&#160;</td><td class="mdescRight">FileSetOffset &ndash; set a offset inorder to read the specific position of the file.  <br /></td></tr>
 <tr class="separator:ae15b73e1e39c5f6cfa06dfb765d62412"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad558c2d7f1e36ad26447c172d10a3a45" id="r_ad558c2d7f1e36ad26447c172d10a3a45"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fileserv_8cpp.html#ad558c2d7f1e36ad26447c172d10a3a45">ReadFile</a> (int fd, void *buffer, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> length)</td></tr>
+<tr class="memdesc:ad558c2d7f1e36ad26447c172d10a3a45"><td class="mdescLeft">&#160;</td><td class="mdescRight">ReadFile &ndash; reads a file into given buffer.  <br /></td></tr>
 <tr class="separator:ad558c2d7f1e36ad26447c172d10a3a45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac94998e2c23995de26f36eee4d74badd" id="r_ac94998e2c23995de26f36eee4d74badd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fileserv_8cpp.html#ac94998e2c23995de26f36eee4d74badd">WriteFile</a> (int fd, void *buffer, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> length)</td></tr>
+<tr class="memdesc:ac94998e2c23995de26f36eee4d74badd"><td class="mdescLeft">&#160;</td><td class="mdescRight">WriteFile &ndash; write system call.  <br /></td></tr>
 <tr class="separator:ac94998e2c23995de26f36eee4d74badd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9f6d9e3a923b58b108151db5475ea3b" id="r_ae9f6d9e3a923b58b108151db5475ea3b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fileserv_8cpp.html#ae9f6d9e3a923b58b108151db5475ea3b">CreateDir</a> (char *filename)</td></tr>
+<tr class="memdesc:ae9f6d9e3a923b58b108151db5475ea3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">CreateDir &ndash; creates a directory.  <br /></td></tr>
 <tr class="separator:ae9f6d9e3a923b58b108151db5475ea3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71d7c967bccbc20363097e47537aa0e2" id="r_a71d7c967bccbc20363097e47537aa0e2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fileserv_8cpp.html#a71d7c967bccbc20363097e47537aa0e2">RemoveFile</a> (char *pathname)</td></tr>
+<tr class="memdesc:a71d7c967bccbc20363097e47537aa0e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">RemoveFile &ndash; remove a directory or file.  <br /></td></tr>
 <tr class="separator:a71d7c967bccbc20363097e47537aa0e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad221811d07e099ca3d26a921d550d963" id="r_ad221811d07e099ca3d26a921d550d963"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fileserv_8cpp.html#ad221811d07e099ca3d26a921d550d963">CloseFile</a> (int fd)</td></tr>
+<tr class="memdesc:ad221811d07e099ca3d26a921d550d963"><td class="mdescLeft">&#160;</td><td class="mdescRight">CloseFile &ndash; closes a general file.  <br /></td></tr>
 <tr class="separator:ad221811d07e099ca3d26a921d550d963"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaca8d138320f915eca0844d398725983" id="r_aaca8d138320f915eca0844d398725983"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fileserv_8cpp.html#aaca8d138320f915eca0844d398725983">FileIoControl</a> (int fd, int code, void *arg)</td></tr>
+<tr class="memdesc:aaca8d138320f915eca0844d398725983"><td class="mdescLeft">&#160;</td><td class="mdescRight">FileIoControl &ndash; controls the file through I/O code.  <br /></td></tr>
 <tr class="separator:aaca8d138320f915eca0844d398725983"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27c86065135ac45fb97f589fea3edfd8" id="r_a27c86065135ac45fb97f589fea3edfd8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fileserv_8cpp.html#a27c86065135ac45fb97f589fea3edfd8">FileStat</a> (int fd, void *buf)</td></tr>
+<tr class="memdesc:a27c86065135ac45fb97f589fea3edfd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">FileStat &ndash; writes information related to file.  <br /></td></tr>
 <tr class="separator:a27c86065135ac45fb97f589fea3edfd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab4e8a6060b93eed4a875d83a692016ee" id="r_ab4e8a6060b93eed4a875d83a692016ee"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fileserv_8cpp.html#ab4e8a6060b93eed4a875d83a692016ee">OpenDir</a> (char *filename)</td></tr>
+<tr class="memdesc:ab4e8a6060b93eed4a875d83a692016ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">OpenDir &ndash; opens a directory.  <br /></td></tr>
 <tr class="separator:ab4e8a6060b93eed4a875d83a692016ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff99d119d5568e3b1e632dd30a8b829b" id="r_aff99d119d5568e3b1e632dd30a8b829b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fileserv_8cpp.html#aff99d119d5568e3b1e632dd30a8b829b">ReadDir</a> (int dirfd, void *dirent)</td></tr>
+<tr class="memdesc:aff99d119d5568e3b1e632dd30a8b829b"><td class="mdescLeft">&#160;</td><td class="mdescRight">ReadDir &ndash; reads a directory entry.  <br /></td></tr>
 <tr class="separator:aff99d119d5568e3b1e632dd30a8b829b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34fb7b630a1a53282ee435ce4e7e5afa" id="r_a34fb7b630a1a53282ee435ce4e7e5afa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fileserv_8cpp.html#a34fb7b630a1a53282ee435ce4e7e5afa">ProcessGetFileDesc</a> (const char *filename)</td></tr>
+<tr class="memdesc:a34fb7b630a1a53282ee435ce4e7e5afa"><td class="mdescLeft">&#160;</td><td class="mdescRight">ProcessGetFileDesc &ndash; Searches all process file descriptor entries for specific filename fd.  <br /></td></tr>
 <tr class="separator:a34fb7b630a1a53282ee435ce4e7e5afa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
@@ -230,6 +242,14 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>CloseFile &ndash; closes a general file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fd</td><td>&ndash; file descriptor to close </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="ae9f6d9e3a923b58b108151db5475ea3b" name="ae9f6d9e3a923b58b108151db5475ea3b"></a>
@@ -247,6 +267,14 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>CreateDir &ndash; creates a directory. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>&ndash; name of the directory </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -282,6 +310,16 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>FileIoControl &ndash; controls the file through I/O code. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fd</td><td>&ndash; file descriptor </td></tr>
+    <tr><td class="paramname">code</td><td>&ndash; code to pass </td></tr>
+    <tr><td class="paramname">arg</td><td>&ndash; argument to pass </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="ae15b73e1e39c5f6cfa06dfb765d62412" name="ae15b73e1e39c5f6cfa06dfb765d62412"></a>
@@ -309,6 +347,15 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>FileSetOffset &ndash; set a offset inorder to read the specific position of the file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fd</td><td>&ndash; File descriptor </td></tr>
+    <tr><td class="paramname">offset</td><td>&ndash; offset in bytes </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -338,6 +385,15 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>FileStat &ndash; writes information related to file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fd</td><td>&ndash; file descriptor </td></tr>
+    <tr><td class="paramname">buf</td><td>&ndash; Pointer to file structure </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="ab4e8a6060b93eed4a875d83a692016ee" name="ab4e8a6060b93eed4a875d83a692016ee"></a>
@@ -355,6 +411,14 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>OpenDir &ndash; opens a directory. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>&ndash; name of the directory </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -383,6 +447,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>OpenFile &ndash; opens a file for user process. </p>
 <p>BSD 2-Clause License</p>
 <p>Copyright (c) 2022-2023, Manas Kamal Choudhury All rights reserved.</p>
 <p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
@@ -409,6 +475,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>ProcessGetFileDesc &ndash; Searches all process file descriptor entries for specific filename fd. </p>
 
 </div>
 </div>
@@ -437,6 +505,15 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>ReadDir &ndash; reads a directory entry. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dirfd</td><td>&ndash; directory file descriptor </td></tr>
+    <tr><td class="paramname">dirent</td><td>&ndash; aurora directory entry struct </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -472,6 +549,16 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>ReadFile &ndash; reads a file into given buffer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fd</td><td>&ndash; file descriptor </td></tr>
+    <tr><td class="paramname">buffer</td><td>&ndash; buffer where to put the data </td></tr>
+    <tr><td class="paramname">length</td><td>&ndash; length in bytes </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a71d7c967bccbc20363097e47537aa0e2" name="a71d7c967bccbc20363097e47537aa0e2"></a>
@@ -489,6 +576,14 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>RemoveFile &ndash; remove a directory or file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dirname</td><td>&ndash; directory name </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -523,6 +618,16 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>WriteFile &ndash; write system call. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fd</td><td>&ndash; file descriptor </td></tr>
+    <tr><td class="paramname">buffer</td><td>&ndash; buffer to write </td></tr>
+    <tr><td class="paramname">length</td><td>&ndash; length in bytes </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

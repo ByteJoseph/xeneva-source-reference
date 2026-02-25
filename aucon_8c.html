@@ -188,20 +188,25 @@ Macros</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ad586c07fb226e5f128a93b19eb354dfa" id="r_ad586c07fb226e5f128a93b19eb354dfa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aucon_8c.html#ad586c07fb226e5f128a93b19eb354dfa">AuUartPutString</a> (const char *s)</td></tr>
+<tr class="memdesc:ad586c07fb226e5f128a93b19eb354dfa"><td class="mdescLeft">&#160;</td><td class="mdescRight">LBUartPutString &ndash; print a string to UART.  <br /></td></tr>
 <tr class="separator:ad586c07fb226e5f128a93b19eb354dfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3d1deb9062c1332de5c19914694d63e" id="r_aa3d1deb9062c1332de5c19914694d63e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aucon_8c.html#aa3d1deb9062c1332de5c19914694d63e">AuTestPrint</a> ()</td></tr>
 <tr class="separator:aa3d1deb9062c1332de5c19914694d63e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a962fd6f0eacb6e541632380e873a1fd9" id="r_a962fd6f0eacb6e541632380e873a1fd9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aucon_8c.html#a962fd6f0eacb6e541632380e873a1fd9">AuConsoleInitialize</a> (<a class="el" href="BaseHdr_2aurora_8h.html#a32e3a1cc3a4fdb59d8cdf38b301555a0">PKERNEL_BOOT_INFO</a> info, <a class="el" href="Libs_2XEClib_2includes_2stdint_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> early)</td></tr>
+<tr class="memdesc:a962fd6f0eacb6e541632380e873a1fd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuConsoleInitialize &ndash; initialize kernel direct screen console.  <br /></td></tr>
 <tr class="separator:a962fd6f0eacb6e541632380e873a1fd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1cfd24b4dc355a46d12265f186292dd2" id="r_a1cfd24b4dc355a46d12265f186292dd2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aucon_8c.html#a1cfd24b4dc355a46d12265f186292dd2">AuConsoleIoControl</a> (<a class="el" href="vfs_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *file, int code, void *arg)</td></tr>
+<tr class="memdesc:a1cfd24b4dc355a46d12265f186292dd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuConsoleIoControl &ndash; iocontrol implementation for au console, called from user space.  <br /></td></tr>
 <tr class="separator:a1cfd24b4dc355a46d12265f186292dd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5cb544299454c8c800694b1443c39d09" id="r_a5cb544299454c8c800694b1443c39d09"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aucon_8c.html#a5cb544299454c8c800694b1443c39d09">AuConsolePostInitialise</a> (<a class="el" href="BaseHdr_2aurora_8h.html#a32e3a1cc3a4fdb59d8cdf38b301555a0">PKERNEL_BOOT_INFO</a> info)</td></tr>
+<tr class="memdesc:a5cb544299454c8c800694b1443c39d09"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuConsolePostInitialise &ndash; initialise the post console process.  <br /></td></tr>
 <tr class="separator:a5cb544299454c8c800694b1443c39d09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74324a402c36b9505ec578c918b032df" id="r_a74324a402c36b9505ec578c918b032df"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2stdint_8h.html#aefaadc520bc58a35d14b556b4fd60c9e">int_fast8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aucon_8c.html#a74324a402c36b9505ec578c918b032df">high_set_bit</a> (<a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> sz)</td></tr>
 <tr class="separator:a74324a402c36b9505ec578c918b032df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63554fed8902e05df626767c912c23a9" id="r_a63554fed8902e05df626767c912c23a9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2stdint_8h.html#aefaadc520bc58a35d14b556b4fd60c9e">int_fast8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aucon_8c.html#a63554fed8902e05df626767c912c23a9">low_set_bit</a> (<a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> sz)</td></tr>
 <tr class="separator:a63554fed8902e05df626767c912c23a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69398dfc1e88210afa4c2c4c70b47268" id="r_a69398dfc1e88210afa4c2c4c70b47268"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aucon_8c.html#a69398dfc1e88210afa4c2c4c70b47268">AuPutPixel</a> (<a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> x, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> y, <a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> col)</td></tr>
+<tr class="memdesc:a69398dfc1e88210afa4c2c4c70b47268"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuPutPixel &ndash; puts a pixel on the screen.  <br /></td></tr>
 <tr class="separator:a69398dfc1e88210afa4c2c4c70b47268"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace873585c6f561663993d9a4ee35ebd8" id="r_ace873585c6f561663993d9a4ee35ebd8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aucon_8c.html#ace873585c6f561663993d9a4ee35ebd8">AuPutC</a> (char c)</td></tr>
 <tr class="memdesc:ace873585c6f561663993d9a4ee35ebd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Put a character to console output.  <br /></td></tr>
@@ -210,12 +215,16 @@ Functions</h2></td></tr>
 <tr class="memdesc:af02356a10c6f48f156c8b2d3fb0816fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints string to console output.  <br /></td></tr>
 <tr class="separator:af02356a10c6f48f156c8b2d3fb0816fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a36696dbcc5617eb4375fa4559de051f5" id="r_a36696dbcc5617eb4375fa4559de051f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aucon_8c.html#a36696dbcc5617eb4375fa4559de051f5">AuTextOut</a> (const char *format,...)</td></tr>
+<tr class="memdesc:a36696dbcc5617eb4375fa4559de051f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuTextOut &ndash; standard text printing function for entire kernel.  <br /></td></tr>
 <tr class="separator:a36696dbcc5617eb4375fa4559de051f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a281044ff3d31487f9f8f49db87a32413" id="r_a281044ff3d31487f9f8f49db87a32413"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aucon_8c.html#a281044ff3d31487f9f8f49db87a32413">AuConsoleEarlyEnable</a> (<a class="el" href="Libs_2XEClib_2includes_2stdint_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> value)</td></tr>
+<tr class="memdesc:a281044ff3d31487f9f8f49db87a32413"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuConsoleEarlyEnable &ndash; enables or disable early mode text output.  <br /></td></tr>
 <tr class="separator:a281044ff3d31487f9f8f49db87a32413"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f6d8705a1f72010834c0258b722c84d" id="r_a1f6d8705a1f72010834c0258b722c84d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aucon_8c.html#a1f6d8705a1f72010834c0258b722c84d">AuConsoleGetScreenWidth</a> ()</td></tr>
+<tr class="memdesc:a1f6d8705a1f72010834c0258b722c84d"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuConsoleGetScreenWidth &ndash; return the screen width.  <br /></td></tr>
 <tr class="separator:a1f6d8705a1f72010834c0258b722c84d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d69d72db5223a62059b5edabe679749" id="r_a3d69d72db5223a62059b5edabe679749"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aucon_8c.html#a3d69d72db5223a62059b5edabe679749">AuConsoleGetScreenHeight</a> ()</td></tr>
+<tr class="memdesc:a3d69d72db5223a62059b5edabe679749"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuConsoleGetScreenHeight &ndash; return the screen height.  <br /></td></tr>
 <tr class="separator:a3d69d72db5223a62059b5edabe679749"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1471c2d20cde33ae697e82d175888217" id="r_a1471c2d20cde33ae697e82d175888217"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aucon_8c.html#a1471c2d20cde33ae697e82d175888217">AuConsoleFlushFramebuffer</a> ()</td></tr>
 <tr class="separator:a1471c2d20cde33ae697e82d175888217"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -249,7 +258,16 @@ Variables</h2></td></tr>
 <tr class="memitem:a35ba4e01a1de34aacdfbdc9c49e4940a" id="r_a35ba4e01a1de34aacdfbdc9c49e4940a"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aucon_8c.html#a35ba4e01a1de34aacdfbdc9c49e4940a">_print_func</a> )(const char *text,...)</td></tr>
 <tr class="separator:a35ba4e01a1de34aacdfbdc9c49e4940a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>BSD 2-Clause License</p>
+<p>Copyright (c) 2022-2025, Manas Kamal Choudhury All rights reserved.</p>
+<p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
+<ol type="1">
+<li>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</li>
+<li>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</li>
+</ol>
+<p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. </p>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a83bb2d6f1bb04c16d413441f468d61cb" name="a83bb2d6f1bb04c16d413441f468d61cb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a83bb2d6f1bb04c16d413441f468d61cb">&#9670;&#160;</a></span>BLUE</h2>
 
@@ -383,6 +401,14 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>AuConsoleEarlyEnable &ndash; enables or disable early mode text output. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>&ndash; boolean value </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a1471c2d20cde33ae697e82d175888217" name="a1471c2d20cde33ae697e82d175888217"></a>
@@ -417,6 +443,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>AuConsoleGetScreenHeight &ndash; return the screen height. </p>
+<dl class="section return"><dt>Returns</dt><dd>return screen height </dd></dl>
+
 </div>
 </div>
 <a id="a1f6d8705a1f72010834c0258b722c84d" name="a1f6d8705a1f72010834c0258b722c84d"></a>
@@ -433,6 +462,9 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>AuConsoleGetScreenWidth &ndash; return the screen width. </p>
+<dl class="section return"><dt>Returns</dt><dd>return screen width </dd></dl>
 
 </div>
 </div>
@@ -461,6 +493,14 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>AuConsoleInitialize &ndash; initialize kernel direct screen console. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">info</td><td>&ndash; Pointer to kernel boot info structure </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -496,6 +536,16 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>AuConsoleIoControl &ndash; iocontrol implementation for au console, called from user space. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file</td><td>&ndash; Pointer to console file </td></tr>
+    <tr><td class="paramname">code</td><td>&ndash; control code number </td></tr>
+    <tr><td class="paramname">arg</td><td>&ndash; Pointer to any user data </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a5cb544299454c8c800694b1443c39d09" name="a5cb544299454c8c800694b1443c39d09"></a>
@@ -513,6 +563,14 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>AuConsolePostInitialise &ndash; initialise the post console process. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">info</td><td>&ndash; pointer to kernel boot info structure </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -533,6 +591,12 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Put a character to console output. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">c</td><td>&ndash; character to print </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -568,6 +632,16 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>AuPutPixel &ndash; puts a pixel on the screen. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>&ndash; x location of the screen </td></tr>
+    <tr><td class="paramname">y</td><td>&ndash; y location of the screen </td></tr>
+    <tr><td class="paramname">col</td><td>&ndash; color of the pixel </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="af02356a10c6f48f156c8b2d3fb0816fd" name="af02356a10c6f48f156c8b2d3fb0816fd"></a>
@@ -587,6 +661,12 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Prints string to console output. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>&ndash; string to print </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -633,6 +713,14 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>AuTextOut &ndash; standard text printing function for entire kernel. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td>&ndash; text to output </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="ad586c07fb226e5f128a93b19eb354dfa" name="ad586c07fb226e5f128a93b19eb354dfa"></a>
@@ -658,6 +746,14 @@ Variables</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>LBUartPutString &ndash; print a string to UART. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>&ndash; String to print </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -821,14 +917,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>BSD 2-Clause License</p>
-<p>Copyright (c) 2022-2025, Manas Kamal Choudhury All rights reserved.</p>
-<p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
-<ol type="1">
-<li>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</li>
-<li>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</li>
-</ol>
-<p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. </p>
 
 </div>
 </div>

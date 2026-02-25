@@ -154,6 +154,7 @@ Include dependency graph for postbox.c:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a45eaf28c14db7770d444121d4ad6326f" id="r_a45eaf28c14db7770d444121d4ad6326f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="postbox_8c.html#a45eaf28c14db7770d444121d4ad6326f">POSTEVENT_ALIGN</a>&#160;&#160;&#160;8</td></tr>
+<tr class="memdesc:a45eaf28c14db7770d444121d4ad6326f"><td class="mdescLeft">&#160;</td><td class="mdescRight">NOTE: PostBoxIPCManager is aurora's main communication manager between user space processes and kernel, in future drivers will also able to communicate with user processes and kernel through PostBoxIPCManager.  <br /></td></tr>
 <tr class="separator:a45eaf28c14db7770d444121d4ad6326f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45c53177ce28e4c0ad6db553a5570e7f" id="r_a45c53177ce28e4c0ad6db553a5570e7f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="postbox_8c.html#a45c53177ce28e4c0ad6db553a5570e7f">POSTEVENT_SIZE_ALIGNED</a>&#160;&#160;&#160;(((sizeof(<a class="el" href="postbox_8h.html#ac84a77c618106d5d8e95f2a83a55b2d9">PostEvent</a>) + (<a class="el" href="postbox_8cpp.html#a45eaf28c14db7770d444121d4ad6326f">POSTEVENT_ALIGN</a> - 1)) / <a class="el" href="postbox_8cpp.html#a45eaf28c14db7770d444121d4ad6326f">POSTEVENT_ALIGN</a>) * <a class="el" href="postbox_8cpp.html#a45eaf28c14db7770d444121d4ad6326f">POSTEVENT_ALIGN</a>)</td></tr>
 <tr class="separator:a45c53177ce28e4c0ad6db553a5570e7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -171,22 +172,29 @@ Functions</h2></td></tr>
 <tr class="memitem:aed75629c4a2d6293f29dbf7ee3ae29c1" id="r_aed75629c4a2d6293f29dbf7ee3ae29c1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="postbox_8c.html#aed75629c4a2d6293f29dbf7ee3ae29c1">read_sp</a> ()</td></tr>
 <tr class="separator:aed75629c4a2d6293f29dbf7ee3ae29c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a142d36188cbbae11ecb6c0da656bb2a3" id="r_a142d36188cbbae11ecb6c0da656bb2a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="postbox_8c.html#a142d36188cbbae11ecb6c0da656bb2a3">PostBoxCreate</a> (<a class="el" href="Libs_2XEClib_2includes_2stdint_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> <a class="el" href="tty_8cpp.html#aa3ddf14a1307cc0427854f3dee730073">root</a>, <a class="el" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> tid)</td></tr>
+<tr class="memdesc:a142d36188cbbae11ecb6c0da656bb2a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">PostBoxCreate &ndash; creates a postbox.  <br /></td></tr>
 <tr class="separator:a142d36188cbbae11ecb6c0da656bb2a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aacfcdde938bd8c0d9158d6e55afc1037" id="r_aacfcdde938bd8c0d9158d6e55afc1037"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="postbox_8c.html#aacfcdde938bd8c0d9158d6e55afc1037">PostBoxDestroy</a> (<a class="el" href="postbox_8h.html#a9a7b470f16dc31483c2317bf5263501c">PostBox</a> *box)</td></tr>
+<tr class="memdesc:aacfcdde938bd8c0d9158d6e55afc1037"><td class="mdescLeft">&#160;</td><td class="mdescRight">PostBoxDestroy &ndash; destroy given postbox.  <br /></td></tr>
 <tr class="separator:aacfcdde938bd8c0d9158d6e55afc1037"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a225984811baa705f2ba384ec57cfd03b" id="r_a225984811baa705f2ba384ec57cfd03b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="postbox_8c.html#a225984811baa705f2ba384ec57cfd03b">PostBoxDestroyByID</a> (<a class="el" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> id)</td></tr>
+<tr class="memdesc:a225984811baa705f2ba384ec57cfd03b"><td class="mdescLeft">&#160;</td><td class="mdescRight">PostBoxDestroyByID &ndash; destroys a post box identified by an id.  <br /></td></tr>
 <tr class="separator:a225984811baa705f2ba384ec57cfd03b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24e57606c05b6a98fc93310b187ff458" id="r_a24e57606c05b6a98fc93310b187ff458"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="postbox_8c.html#a24e57606c05b6a98fc93310b187ff458">enscheddebug</a> ()</td></tr>
 <tr class="separator:a24e57606c05b6a98fc93310b187ff458"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a96c77b2b5df235431472fd56b822ce20" id="r_a96c77b2b5df235431472fd56b822ce20"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="postbox_8c.html#a96c77b2b5df235431472fd56b822ce20">PostBoxPutEvent</a> (<a class="el" href="postbox_8h.html#ac84a77c618106d5d8e95f2a83a55b2d9">PostEvent</a> *event)</td></tr>
+<tr class="memdesc:a96c77b2b5df235431472fd56b822ce20"><td class="mdescLeft">&#160;</td><td class="mdescRight">PostBoxPutEvent &ndash; put an event to a specific post box.  <br /></td></tr>
 <tr class="separator:a96c77b2b5df235431472fd56b822ce20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1590812031b60654625d02d940296de6" id="r_a1590812031b60654625d02d940296de6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="postbox_8c.html#a1590812031b60654625d02d940296de6">PostBoxGetEvent</a> (<a class="el" href="postbox_8h.html#ac84a77c618106d5d8e95f2a83a55b2d9">PostEvent</a> *event, <a class="el" href="Libs_2XEClib_2includes_2stdint_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> <a class="el" href="tty_8cpp.html#aa3ddf14a1307cc0427854f3dee730073">root</a>, AA64Thread *curr_thread)</td></tr>
+<tr class="memdesc:a1590812031b60654625d02d940296de6"><td class="mdescLeft">&#160;</td><td class="mdescRight">PostBoxGetEvent &ndash; get an event from post box and copy it to a memory area.  <br /></td></tr>
 <tr class="separator:a1590812031b60654625d02d940296de6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a335239715ced641b831b264326fadac8" id="r_a335239715ced641b831b264326fadac8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="postbox_8c.html#a335239715ced641b831b264326fadac8">PostBoxIOControl</a> (<a class="el" href="vfs_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *file, int code, void *arg)</td></tr>
+<tr class="memdesc:a335239715ced641b831b264326fadac8"><td class="mdescLeft">&#160;</td><td class="mdescRight">PostBoxIOControl &ndash; I/O Control function for post box manager.  <br /></td></tr>
 <tr class="separator:a335239715ced641b831b264326fadac8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abbaafaf8b5c5a60fc0cb6beae02bd840" id="r_abbaafaf8b5c5a60fc0cb6beae02bd840"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vfs_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="postbox_8c.html#abbaafaf8b5c5a60fc0cb6beae02bd840">AuPostBOXGetNode</a> ()</td></tr>
 <tr class="separator:abbaafaf8b5c5a60fc0cb6beae02bd840"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45526fa1543c4b704cfa6d56e86dedb2" id="r_a45526fa1543c4b704cfa6d56e86dedb2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="postbox_8c.html#a45526fa1543c4b704cfa6d56e86dedb2">AuIPCPostBoxInitialise</a> ()</td></tr>
+<tr class="memdesc:a45526fa1543c4b704cfa6d56e86dedb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuIPCPostBoxInitialise &ndash; initialise the post box ipc manager.  <br /></td></tr>
 <tr class="separator:a45526fa1543c4b704cfa6d56e86dedb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
@@ -200,7 +208,16 @@ Variables</h2></td></tr>
 <tr class="memitem:aedb2fabf17b1ae5a95c6c244d13e4dc1" id="r_aedb2fabf17b1ae5a95c6c244d13e4dc1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vfs_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="postbox_8c.html#aedb2fabf17b1ae5a95c6c244d13e4dc1">pbox</a></td></tr>
 <tr class="separator:aedb2fabf17b1ae5a95c6c244d13e4dc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>BSD 2-Clause License</p>
+<p>Copyright (c) 2022-2025, Manas Kamal Choudhury All rights reserved.</p>
+<p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
+<ol type="1">
+<li>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</li>
+<li>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</li>
+</ol>
+<p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. </p>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a45eaf28c14db7770d444121d4ad6326f" name="a45eaf28c14db7770d444121d4ad6326f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a45eaf28c14db7770d444121d4ad6326f">&#9670;&#160;</a></span>POSTEVENT_ALIGN</h2>
 
@@ -212,14 +229,8 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>BSD 2-Clause License</p>
-<p>Copyright (c) 2022-2025, Manas Kamal Choudhury All rights reserved.</p>
-<p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
-<ol type="1">
-<li>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</li>
-<li>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</li>
-</ol>
-<p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. </p>
+
+<p>NOTE: PostBoxIPCManager is aurora's main communication manager between user space processes and kernel, in future drivers will also able to communicate with user processes and kernel through PostBoxIPCManager. </p>
 
 </div>
 </div>
@@ -252,6 +263,10 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>AuIPCPostBoxInitialise &ndash; initialise the post box ipc manager. </p>
+<p>create the postbox file</p>
+<p>I dont know, but the sixth item in the device fs list is the postbox file node, but miraculously 6th item disappers from the list when opened from user space that's why we are creating a dummy node in the dev list</p>
 
 </div>
 </div>
@@ -377,6 +392,15 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>PostBoxCreate &ndash; creates a postbox. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">root</td><td>&ndash; is this post box root ? </td></tr>
+    <tr><td class="paramname">tid</td><td>&ndash; thread id </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="aacfcdde938bd8c0d9158d6e55afc1037" name="aacfcdde938bd8c0d9158d6e55afc1037"></a>
@@ -395,6 +419,14 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>PostBoxDestroy &ndash; destroy given postbox. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">box</td><td>&ndash; Pointer to postbox need to destroy </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a225984811baa705f2ba384ec57cfd03b" name="a225984811baa705f2ba384ec57cfd03b"></a>
@@ -412,6 +444,14 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>PostBoxDestroyByID &ndash; destroys a post box identified by an id. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>&ndash; id of the postbox </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -447,6 +487,16 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>PostBoxGetEvent &ndash; get an event from post box and copy it to a memory area. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">event</td><td>&ndash; pointer to a memory area </td></tr>
+    <tr><td class="paramname">root</td><td>&ndash; is this post box is root </td></tr>
+    <tr><td class="paramname">curr_thread</td><td>&ndash; Pointer to current thread </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a335239715ced641b831b264326fadac8" name="a335239715ced641b831b264326fadac8"></a>
@@ -481,6 +531,16 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>PostBoxIOControl &ndash; I/O Control function for post box manager. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file</td><td>&ndash; Pointer to postbox file </td></tr>
+    <tr><td class="paramname">code</td><td>&ndash; Post Box command </td></tr>
+    <tr><td class="paramname">arg</td><td>&ndash; extra data </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a96c77b2b5df235431472fd56b822ce20" name="a96c77b2b5df235431472fd56b822ce20"></a>
@@ -498,6 +558,14 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>PostBoxPutEvent &ndash; put an event to a specific post box. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">event</td><td>&ndash; Event to put </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

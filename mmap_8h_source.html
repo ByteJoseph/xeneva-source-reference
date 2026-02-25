@@ -82,57 +82,31 @@ $(document).ready(function() { init_codefold(0); });
 </div><!--header-->
 <div class="contents">
 <a href="mmap_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#ifndef __MMAP_H__</span></div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#define __MMAP_H__</span></div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#include &lt;string.h&gt;</span></div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#include &lt;<a class="code" href="BaseHdr_2Mm_2vmmngr_8h.html">Mm/vmmngr.h</a>&gt;</span></div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#include &lt;<a class="code" href="pmmngr_8h.html">Mm/pmmngr.h</a>&gt;</span></div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#include &lt;<a class="code" href="kmalloc_8h.html">Mm/kmalloc.h</a>&gt;</span></div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">#include &lt;<a class="code" href="process_8h.html">process.h</a>&gt;</span></div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment">* SharedMemMapListInitialise -- initialise</span></div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment">* the shared memory map list</span></div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment">*/</span></div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code hl_function" href="mmap_8h.html#af71839d89545c33ffac2ca8525768d17">SharedMemMapListInitialise</a>();</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment">* CreateMemMapping -- Create a memory mapping of just memory, file or device</span></div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment">* @param address -- address from where mapping start, if null, kernel will</span></div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment">* find by its own</span></div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment">* @param len -- length of the address</span></div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment">* @param prot -- protection flags</span></div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment">* @param flags -- flags</span></div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment">* @param fd -- file descriptor</span></div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment">* @param offset -- byte offset for file and device</span></div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment">*/</span></div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="keyword">extern</span> <span class="keywordtype">void</span>* <a class="code hl_function" href="mmap_8h.html#ab4a73c0ccf2b85ea1187ee7a5311e1cb">CreateMemMapping</a>(<span class="keywordtype">void</span>* address, <span class="keywordtype">size_t</span> len, <span class="keywordtype">int</span> prot, <span class="keywordtype">int</span> flags, <span class="keywordtype">int</span> fd,</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <a class="code hl_typedef" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> offset);</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="comment">* MemMapDirty -- dirty update previously allocated memory map</span></div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment">* @param startingVaddr -- starting address</span></div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment">* @param len -- length in bytes</span></div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment">* @param flags -- memory map flags</span></div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment">* @param prot -- protection flags</span></div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment">*/</span></div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code hl_function" href="mmap_8h.html#ae93b95930e3aeaf43d4fcb08bf17a12b">MemMapDirty</a>(<span class="keywordtype">void</span>* startingVaddr, <span class="keywordtype">size_t</span> len, <span class="keywordtype">int</span> flags, <span class="keywordtype">int</span> prot);</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment">* UnmapMemMapping -- unmaps a memory mapping</span></div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment">* @param address -- address from where mapping starts</span></div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment">* @param len -- length of the mapping</span></div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="comment">*/</span></div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code hl_function" href="mmap_8h.html#adb542e825d41ad23ee663803b30b769d">UnmapMemMapping</a>(<span class="keywordtype">void</span>* address, <span class="keywordtype">size_t</span> len);</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#ifndef __MMAP_H__</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#define __MMAP_H__</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#include &lt;string.h&gt;</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#include &lt;<a class="code" href="BaseHdr_2Mm_2vmmngr_8h.html">Mm/vmmngr.h</a>&gt;</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">#include &lt;<a class="code" href="pmmngr_8h.html">Mm/pmmngr.h</a>&gt;</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#include &lt;<a class="code" href="kmalloc_8h.html">Mm/kmalloc.h</a>&gt;</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#include &lt;<a class="code" href="process_8h.html">process.h</a>&gt;</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code hl_function" href="mmap_8h.html#af71839d89545c33ffac2ca8525768d17">SharedMemMapListInitialise</a>();</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="keyword">extern</span> <span class="keywordtype">void</span>* <a class="code hl_function" href="mmap_8h.html#ab4a73c0ccf2b85ea1187ee7a5311e1cb">CreateMemMapping</a>(<span class="keywordtype">void</span>* address, <span class="keywordtype">size_t</span> len, <span class="keywordtype">int</span> prot, <span class="keywordtype">int</span> flags, <span class="keywordtype">int</span> fd,</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <a class="code hl_typedef" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> offset);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code hl_function" href="mmap_8h.html#ae93b95930e3aeaf43d4fcb08bf17a12b">MemMapDirty</a>(<span class="keywordtype">void</span>* startingVaddr, <span class="keywordtype">size_t</span> len, <span class="keywordtype">int</span> flags, <span class="keywordtype">int</span> prot);</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code hl_function" href="mmap_8h.html#adb542e825d41ad23ee663803b30b769d">UnmapMemMapping</a>(<span class="keywordtype">void</span>* address, <span class="keywordtype">size_t</span> len);</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aBaseHdr_2Mm_2vmmngr_8h_html"><div class="ttname"><a href="BaseHdr_2Mm_2vmmngr_8h.html">vmmngr.h</a></div></div>
 <div class="ttc" id="aacefiex_8h_html_ace97e810e06af5096bfe72ee3e7c5316"><div class="ttname"><a href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a></div><div class="ttdeci">COMPILER_DEPENDENT_UINT64 uint64_t</div><div class="ttdef"><b>Definition</b> acefiex.h:165</div></div>
 <div class="ttc" id="akmalloc_8h_html"><div class="ttname"><a href="kmalloc_8h.html">kmalloc.h</a></div></div>
-<div class="ttc" id="ammap_8h_html_ab4a73c0ccf2b85ea1187ee7a5311e1cb"><div class="ttname"><a href="mmap_8h.html#ab4a73c0ccf2b85ea1187ee7a5311e1cb">CreateMemMapping</a></div><div class="ttdeci">void * CreateMemMapping(void *address, size_t len, int prot, int flags, int fd, uint64_t offset)</div><div class="ttdef"><b>Definition</b> mmap.cpp:117</div></div>
-<div class="ttc" id="ammap_8h_html_adb542e825d41ad23ee663803b30b769d"><div class="ttname"><a href="mmap_8h.html#adb542e825d41ad23ee663803b30b769d">UnmapMemMapping</a></div><div class="ttdeci">void UnmapMemMapping(void *address, size_t len)</div><div class="ttdef"><b>Definition</b> mmap.cpp:293</div></div>
-<div class="ttc" id="ammap_8h_html_ae93b95930e3aeaf43d4fcb08bf17a12b"><div class="ttname"><a href="mmap_8h.html#ae93b95930e3aeaf43d4fcb08bf17a12b">MemMapDirty</a></div><div class="ttdeci">void MemMapDirty(void *startingVaddr, size_t len, int flags, int prot)</div><div class="ttdef"><b>Definition</b> mmap.cpp:249</div></div>
-<div class="ttc" id="ammap_8h_html_af71839d89545c33ffac2ca8525768d17"><div class="ttname"><a href="mmap_8h.html#af71839d89545c33ffac2ca8525768d17">SharedMemMapListInitialise</a></div><div class="ttdeci">void SharedMemMapListInitialise()</div><div class="ttdef"><b>Definition</b> mmap.cpp:68</div></div>
+<div class="ttc" id="ammap_8h_html_ab4a73c0ccf2b85ea1187ee7a5311e1cb"><div class="ttname"><a href="mmap_8h.html#ab4a73c0ccf2b85ea1187ee7a5311e1cb">CreateMemMapping</a></div><div class="ttdeci">void * CreateMemMapping(void *address, size_t len, int prot, int flags, int fd, uint64_t offset)</div><div class="ttdoc">CreateMemMapping – Create a memory mapping of just memory, file or device.</div><div class="ttdef"><b>Definition</b> mmap.cpp:117</div></div>
+<div class="ttc" id="ammap_8h_html_adb542e825d41ad23ee663803b30b769d"><div class="ttname"><a href="mmap_8h.html#adb542e825d41ad23ee663803b30b769d">UnmapMemMapping</a></div><div class="ttdeci">void UnmapMemMapping(void *address, size_t len)</div><div class="ttdoc">UnmapMemMapping – unmaps a memory mapping.</div><div class="ttdef"><b>Definition</b> mmap.cpp:293</div></div>
+<div class="ttc" id="ammap_8h_html_ae93b95930e3aeaf43d4fcb08bf17a12b"><div class="ttname"><a href="mmap_8h.html#ae93b95930e3aeaf43d4fcb08bf17a12b">MemMapDirty</a></div><div class="ttdeci">void MemMapDirty(void *startingVaddr, size_t len, int flags, int prot)</div><div class="ttdoc">MemMapDirty – dirty update previously allocated memory map.</div><div class="ttdef"><b>Definition</b> mmap.cpp:249</div></div>
+<div class="ttc" id="ammap_8h_html_af71839d89545c33ffac2ca8525768d17"><div class="ttname"><a href="mmap_8h.html#af71839d89545c33ffac2ca8525768d17">SharedMemMapListInitialise</a></div><div class="ttdeci">void SharedMemMapListInitialise()</div><div class="ttdoc">SharedMemMapListInitialise – initialise the shared memory map list.</div><div class="ttdef"><b>Definition</b> mmap.cpp:68</div></div>
 <div class="ttc" id="apmmngr_8h_html"><div class="ttname"><a href="pmmngr_8h.html">pmmngr.h</a></div></div>
 <div class="ttc" id="aprocess_8h_html"><div class="ttname"><a href="process_8h.html">process.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

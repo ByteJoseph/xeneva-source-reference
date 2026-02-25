@@ -146,76 +146,109 @@ Macros</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:aa9b4d23710eacd7b1e1706030c6538d7" id="r_aa9b4d23710eacd7b1e1706030c6538d7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sysserv_8h.html#aa9b4d23710eacd7b1e1706030c6538d7">PauseThread</a> ()</td></tr>
+<tr class="memdesc:aa9b4d23710eacd7b1e1706030c6538d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">PauseThread &ndash; pause the currently running thread.  <br /></td></tr>
 <tr class="separator:aa9b4d23710eacd7b1e1706030c6538d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90412b9f57be157a718b6b63b471cc0c" id="r_a90412b9f57be157a718b6b63b471cc0c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sysserv_8h.html#a90412b9f57be157a718b6b63b471cc0c">GetProcessID</a> ()</td></tr>
+<tr class="memdesc:a90412b9f57be157a718b6b63b471cc0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">GetProcessID &ndash; returns currently running process id.  <br /></td></tr>
 <tr class="separator:a90412b9f57be157a718b6b63b471cc0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a736d21453e127d5dd9e3284014a98f51" id="r_a736d21453e127d5dd9e3284014a98f51"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sysserv_8h.html#a736d21453e127d5dd9e3284014a98f51">ProcessExit</a> ()</td></tr>
+<tr class="memdesc:a736d21453e127d5dd9e3284014a98f51"><td class="mdescLeft">&#160;</td><td class="mdescRight">ProcessExit &ndash; marks a process as died.  <br /></td></tr>
 <tr class="separator:a736d21453e127d5dd9e3284014a98f51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a976710ecba417739e3ee35b2f8b61374" id="r_a976710ecba417739e3ee35b2f8b61374"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sysserv_8h.html#a976710ecba417739e3ee35b2f8b61374">ProcessWaitForTermination</a> (int pid)</td></tr>
+<tr class="memdesc:a976710ecba417739e3ee35b2f8b61374"><td class="mdescLeft">&#160;</td><td class="mdescRight">ProcessWaitForTermination &ndash; wait for termination of a child process.  <br /></td></tr>
 <tr class="separator:a976710ecba417739e3ee35b2f8b61374"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d77cc652159de7d4f2fc4201c06047c" id="r_a0d77cc652159de7d4f2fc4201c06047c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sysserv_8h.html#a0d77cc652159de7d4f2fc4201c06047c">CreateProcess</a> (int parent_id, char *name)</td></tr>
+<tr class="memdesc:a0d77cc652159de7d4f2fc4201c06047c"><td class="mdescLeft">&#160;</td><td class="mdescRight">CreateProcess &ndash; creates a new process slot.  <br /></td></tr>
 <tr class="separator:a0d77cc652159de7d4f2fc4201c06047c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6d8911e66db8ee4bab1756aeb2b37ca" id="r_ab6d8911e66db8ee4bab1756aeb2b37ca"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sysserv_8h.html#ab6d8911e66db8ee4bab1756aeb2b37ca">ProcessLoadExec</a> (int proc_id, char *filename, int argc, char **argv)</td></tr>
+<tr class="memdesc:ab6d8911e66db8ee4bab1756aeb2b37ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">ProcessLoadExec &ndash; loads an executable to a process slot.  <br /></td></tr>
 <tr class="separator:ab6d8911e66db8ee4bab1756aeb2b37ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b0718543f33bb4d19cdbeb24ba89e35" id="r_a3b0718543f33bb4d19cdbeb24ba89e35"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sysserv_8h.html#a3b0718543f33bb4d19cdbeb24ba89e35">ProcessSleep</a> (<a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> ms)</td></tr>
+<tr class="memdesc:a3b0718543f33bb4d19cdbeb24ba89e35"><td class="mdescLeft">&#160;</td><td class="mdescRight">ProcessSleep &ndash; put the current thread to sleep and process to busy wait state.  <br /></td></tr>
 <tr class="separator:a3b0718543f33bb4d19cdbeb24ba89e35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a3ced5d05a2cd3bfcf26947debb369d" id="r_a0a3ced5d05a2cd3bfcf26947debb369d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sysserv_8h.html#a0a3ced5d05a2cd3bfcf26947debb369d">SignalReturn</a> (int num)</td></tr>
+<tr class="memdesc:a0a3ced5d05a2cd3bfcf26947debb369d"><td class="mdescLeft">&#160;</td><td class="mdescRight">SignalReturn &ndash; returns from a signal handler.  <br /></td></tr>
 <tr class="separator:a0a3ced5d05a2cd3bfcf26947debb369d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5dd89974c1e60b79e96b21de3d93ff0b" id="r_a5dd89974c1e60b79e96b21de3d93ff0b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sysserv_8h.html#a5dd89974c1e60b79e96b21de3d93ff0b">CreateSharedMem</a> (<a class="el" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> key, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> sz, <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> flags)</td></tr>
+<tr class="memdesc:a5dd89974c1e60b79e96b21de3d93ff0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">CreateSharedMem &ndash; create a shared memory chunk.  <br /></td></tr>
 <tr class="separator:a5dd89974c1e60b79e96b21de3d93ff0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7f7689905ef3b5a73bf36ab7863d5d6" id="r_ae7f7689905ef3b5a73bf36ab7863d5d6"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sysserv_8h.html#ae7f7689905ef3b5a73bf36ab7863d5d6">ObtainSharedMem</a> (<a class="el" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> id, void *shmaddr, int shmflg)</td></tr>
+<tr class="memdesc:ae7f7689905ef3b5a73bf36ab7863d5d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">ObtainSharedMem &ndash; obtain a shared memory.  <br /></td></tr>
 <tr class="separator:ae7f7689905ef3b5a73bf36ab7863d5d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2db04c4bf4171fd5ec36fc25f067007" id="r_ae2db04c4bf4171fd5ec36fc25f067007"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sysserv_8h.html#ae2db04c4bf4171fd5ec36fc25f067007">UnmapSharedMem</a> (<a class="el" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> key)</td></tr>
+<tr class="memdesc:ae2db04c4bf4171fd5ec36fc25f067007"><td class="mdescLeft">&#160;</td><td class="mdescRight">UnmapSharedMem &ndash; unmap shared memory segment.  <br /></td></tr>
 <tr class="separator:ae2db04c4bf4171fd5ec36fc25f067007"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0515b4231cd217ea212fc8ea4ca29bb" id="r_ab0515b4231cd217ea212fc8ea4ca29bb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sysserv_8h.html#ab0515b4231cd217ea212fc8ea4ca29bb">GetProcessHeapMem</a> (<a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> sz)</td></tr>
+<tr class="memdesc:ab0515b4231cd217ea212fc8ea4ca29bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">GetProcessHeapMem &ndash; get a memory from process heap.  <br /></td></tr>
 <tr class="separator:ab0515b4231cd217ea212fc8ea4ca29bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad32833b7e68897eafa507c82d56bc21f" id="r_ad32833b7e68897eafa507c82d56bc21f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sysserv_8h.html#ad32833b7e68897eafa507c82d56bc21f">OpenFile</a> (char *filename, int mode)</td></tr>
+<tr class="memdesc:ad32833b7e68897eafa507c82d56bc21f"><td class="mdescLeft">&#160;</td><td class="mdescRight">OpenFile &ndash; opens a file for user process.  <br /></td></tr>
 <tr class="separator:ad32833b7e68897eafa507c82d56bc21f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad558c2d7f1e36ad26447c172d10a3a45" id="r_ad558c2d7f1e36ad26447c172d10a3a45"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sysserv_8h.html#ad558c2d7f1e36ad26447c172d10a3a45">ReadFile</a> (int fd, void *buffer, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> length)</td></tr>
+<tr class="memdesc:ad558c2d7f1e36ad26447c172d10a3a45"><td class="mdescLeft">&#160;</td><td class="mdescRight">ReadFile &ndash; reads a file into given buffer.  <br /></td></tr>
 <tr class="separator:ad558c2d7f1e36ad26447c172d10a3a45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac94998e2c23995de26f36eee4d74badd" id="r_ac94998e2c23995de26f36eee4d74badd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sysserv_8h.html#ac94998e2c23995de26f36eee4d74badd">WriteFile</a> (int fd, void *buffer, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> length)</td></tr>
+<tr class="memdesc:ac94998e2c23995de26f36eee4d74badd"><td class="mdescLeft">&#160;</td><td class="mdescRight">WriteFile &ndash; write system call.  <br /></td></tr>
 <tr class="separator:ac94998e2c23995de26f36eee4d74badd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9f6d9e3a923b58b108151db5475ea3b" id="r_ae9f6d9e3a923b58b108151db5475ea3b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sysserv_8h.html#ae9f6d9e3a923b58b108151db5475ea3b">CreateDir</a> (char *filename)</td></tr>
+<tr class="memdesc:ae9f6d9e3a923b58b108151db5475ea3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">CreateDir &ndash; creates a directory.  <br /></td></tr>
 <tr class="separator:ae9f6d9e3a923b58b108151db5475ea3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71d7c967bccbc20363097e47537aa0e2" id="r_a71d7c967bccbc20363097e47537aa0e2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sysserv_8h.html#a71d7c967bccbc20363097e47537aa0e2">RemoveFile</a> (char *pathname)</td></tr>
+<tr class="memdesc:a71d7c967bccbc20363097e47537aa0e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">RemoveFile &ndash; remove a directory or file.  <br /></td></tr>
 <tr class="separator:a71d7c967bccbc20363097e47537aa0e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad221811d07e099ca3d26a921d550d963" id="r_ad221811d07e099ca3d26a921d550d963"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sysserv_8h.html#ad221811d07e099ca3d26a921d550d963">CloseFile</a> (int fd)</td></tr>
+<tr class="memdesc:ad221811d07e099ca3d26a921d550d963"><td class="mdescLeft">&#160;</td><td class="mdescRight">CloseFile &ndash; closes a general file.  <br /></td></tr>
 <tr class="separator:ad221811d07e099ca3d26a921d550d963"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaca8d138320f915eca0844d398725983" id="r_aaca8d138320f915eca0844d398725983"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sysserv_8h.html#aaca8d138320f915eca0844d398725983">FileIoControl</a> (int fd, int code, void *arg)</td></tr>
+<tr class="memdesc:aaca8d138320f915eca0844d398725983"><td class="mdescLeft">&#160;</td><td class="mdescRight">FileIoControl &ndash; controls the file through I/O code.  <br /></td></tr>
 <tr class="separator:aaca8d138320f915eca0844d398725983"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27c86065135ac45fb97f589fea3edfd8" id="r_a27c86065135ac45fb97f589fea3edfd8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sysserv_8h.html#a27c86065135ac45fb97f589fea3edfd8">FileStat</a> (int fd, void *buf)</td></tr>
+<tr class="memdesc:a27c86065135ac45fb97f589fea3edfd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">FileStat &ndash; writes information related to file.  <br /></td></tr>
 <tr class="separator:a27c86065135ac45fb97f589fea3edfd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b48059fc970ac91488a6e20311b2a01" id="r_a9b48059fc970ac91488a6e20311b2a01"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sysserv_8h.html#a9b48059fc970ac91488a6e20311b2a01">GetSystemTimerTick</a> ()</td></tr>
 <tr class="separator:a9b48059fc970ac91488a6e20311b2a01"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af42448a442b713f85c37cad5667db37b" id="r_af42448a442b713f85c37cad5667db37b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sysserv_8h.html#af42448a442b713f85c37cad5667db37b">CreateUserThread</a> (void(*<a class="el" href="process_8h.html#a12532d9e7797b0d9089521c02528e113">entry</a>)(), char *name)</td></tr>
+<tr class="memdesc:af42448a442b713f85c37cad5667db37b"><td class="mdescLeft">&#160;</td><td class="mdescRight">CreateUserThread &ndash; creates an user mode thread.  <br /></td></tr>
 <tr class="separator:af42448a442b713f85c37cad5667db37b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afcd49b4ff0362232e09f618ad7f90a23" id="r_afcd49b4ff0362232e09f618ad7f90a23"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sysserv_8h.html#afcd49b4ff0362232e09f618ad7f90a23">SetFileToProcess</a> (int fileno, int dest_fdidx, int proc_id)</td></tr>
 <tr class="separator:afcd49b4ff0362232e09f618ad7f90a23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c64e96d1624a395f6894c9ca900874b" id="r_a4c64e96d1624a395f6894c9ca900874b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sysserv_8h.html#a4c64e96d1624a395f6894c9ca900874b">ProcessHeapUnmap</a> (void *ptr, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> sz)</td></tr>
+<tr class="memdesc:a4c64e96d1624a395f6894c9ca900874b"><td class="mdescLeft">&#160;</td><td class="mdescRight">ProcessHeapUnmap &ndash; unmaps previosly allocated heap memory.  <br /></td></tr>
 <tr class="separator:a4c64e96d1624a395f6894c9ca900874b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3581d934f1c83b19790155b5717eee7" id="r_ac3581d934f1c83b19790155b5717eee7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sysserv_8h.html#ac3581d934f1c83b19790155b5717eee7">SendSignal</a> (int pid, int signo)</td></tr>
+<tr class="memdesc:ac3581d934f1c83b19790155b5717eee7"><td class="mdescLeft">&#160;</td><td class="mdescRight">SendSignal &ndash; sends a signal to desired process note here pid means thread id.  <br /></td></tr>
 <tr class="separator:ac3581d934f1c83b19790155b5717eee7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa59df0e26f4611c55f507dddec0b1a9" id="r_afa59df0e26f4611c55f507dddec0b1a9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sysserv_8h.html#afa59df0e26f4611c55f507dddec0b1a9">GetCurrentTime</a> (void *ptr)</td></tr>
 <tr class="separator:afa59df0e26f4611c55f507dddec0b1a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab4c38057ff9aa6790a0f6400979ae45f" id="r_ab4c38057ff9aa6790a0f6400979ae45f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sysserv_8h.html#ab4c38057ff9aa6790a0f6400979ae45f">KillProcess</a> (int proc_id)</td></tr>
+<tr class="memdesc:ab4c38057ff9aa6790a0f6400979ae45f"><td class="mdescLeft">&#160;</td><td class="mdescRight">KillProcess &ndash; forcefully kills a process.  <br /></td></tr>
 <tr class="separator:ab4c38057ff9aa6790a0f6400979ae45f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab4e8a6060b93eed4a875d83a692016ee" id="r_ab4e8a6060b93eed4a875d83a692016ee"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sysserv_8h.html#ab4e8a6060b93eed4a875d83a692016ee">OpenDir</a> (char *filename)</td></tr>
+<tr class="memdesc:ab4e8a6060b93eed4a875d83a692016ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">OpenDir &ndash; opens a directory.  <br /></td></tr>
 <tr class="separator:ab4e8a6060b93eed4a875d83a692016ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff99d119d5568e3b1e632dd30a8b829b" id="r_aff99d119d5568e3b1e632dd30a8b829b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sysserv_8h.html#aff99d119d5568e3b1e632dd30a8b829b">ReadDir</a> (int dirfd, void *dirent)</td></tr>
+<tr class="memdesc:aff99d119d5568e3b1e632dd30a8b829b"><td class="mdescLeft">&#160;</td><td class="mdescRight">ReadDir &ndash; reads a directory entry.  <br /></td></tr>
 <tr class="separator:aff99d119d5568e3b1e632dd30a8b829b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30074ce26965de59a2c97494618feb48" id="r_a30074ce26965de59a2c97494618feb48"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sysserv_8h.html#a30074ce26965de59a2c97494618feb48">CreateTimer</a> (int <a class="el" href="Process_2systray_2main_8cpp.html#a88110d06c2b8b5584d31b5be3f13af46">threadID</a>, int maxTickLimit, <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> updatemode)</td></tr>
+<tr class="memdesc:a30074ce26965de59a2c97494618feb48"><td class="mdescLeft">&#160;</td><td class="mdescRight">CreateTimer &ndash; create timer service.  <br /></td></tr>
 <tr class="separator:a30074ce26965de59a2c97494618feb48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08288c8e6b7d4e48ca4d1541472d193f" id="r_a08288c8e6b7d4e48ca4d1541472d193f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sysserv_8h.html#a08288c8e6b7d4e48ca4d1541472d193f">StartTimer</a> (int <a class="el" href="Process_2systray_2main_8cpp.html#a88110d06c2b8b5584d31b5be3f13af46">threadID</a>)</td></tr>
+<tr class="memdesc:a08288c8e6b7d4e48ca4d1541472d193f"><td class="mdescLeft">&#160;</td><td class="mdescRight">StartTimer &ndash; starts the timer.  <br /></td></tr>
 <tr class="separator:a08288c8e6b7d4e48ca4d1541472d193f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeec5642a4b02365e6fcf05a1261ef741" id="r_aeec5642a4b02365e6fcf05a1261ef741"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sysserv_8h.html#aeec5642a4b02365e6fcf05a1261ef741">StopTimer</a> (int <a class="el" href="Process_2systray_2main_8cpp.html#a88110d06c2b8b5584d31b5be3f13af46">threadID</a>)</td></tr>
+<tr class="memdesc:aeec5642a4b02365e6fcf05a1261ef741"><td class="mdescLeft">&#160;</td><td class="mdescRight">StopTimer &ndash; stop the timer.  <br /></td></tr>
 <tr class="separator:aeec5642a4b02365e6fcf05a1261ef741"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd4be7b03279182f7cac9cdc9f0e70c8" id="r_acd4be7b03279182f7cac9cdc9f0e70c8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sysserv_8h.html#acd4be7b03279182f7cac9cdc9f0e70c8">DestroyTimer</a> (int <a class="el" href="Process_2systray_2main_8cpp.html#a88110d06c2b8b5584d31b5be3f13af46">threadID</a>)</td></tr>
+<tr class="memdesc:acd4be7b03279182f7cac9cdc9f0e70c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">DestroyTimer &ndash; remove the timer.  <br /></td></tr>
 <tr class="separator:acd4be7b03279182f7cac9cdc9f0e70c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34fb7b630a1a53282ee435ce4e7e5afa" id="r_a34fb7b630a1a53282ee435ce4e7e5afa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sysserv_8h.html#a34fb7b630a1a53282ee435ce4e7e5afa">ProcessGetFileDesc</a> (const char *filename)</td></tr>
+<tr class="memdesc:a34fb7b630a1a53282ee435ce4e7e5afa"><td class="mdescLeft">&#160;</td><td class="mdescRight">ProcessGetFileDesc &ndash; Searches all process file descriptor entries for specific filename fd.  <br /></td></tr>
 <tr class="separator:a34fb7b630a1a53282ee435ce4e7e5afa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae15b73e1e39c5f6cfa06dfb765d62412" id="r_ae15b73e1e39c5f6cfa06dfb765d62412"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sysserv_8h.html#ae15b73e1e39c5f6cfa06dfb765d62412">FileSetOffset</a> (int fd, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> offset)</td></tr>
+<tr class="memdesc:ae15b73e1e39c5f6cfa06dfb765d62412"><td class="mdescLeft">&#160;</td><td class="mdescRight">FileSetOffset &ndash; set a offset inorder to read the specific position of the file.  <br /></td></tr>
 <tr class="separator:ae15b73e1e39c5f6cfa06dfb765d62412"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad25791f74a1b8a7a9246517ae4dacaa7" id="r_ad25791f74a1b8a7a9246517ae4dacaa7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sysserv_8h.html#ad25791f74a1b8a7a9246517ae4dacaa7">GetTimeOfDay</a> (void *ptr)</td></tr>
+<tr class="memdesc:ad25791f74a1b8a7a9246517ae4dacaa7"><td class="mdescLeft">&#160;</td><td class="mdescRight">GetTimeOfDay &ndash; returns the time format in unix format.  <br /></td></tr>
 <tr class="separator:ad25791f74a1b8a7a9246517ae4dacaa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5e200618f75d080924d1a9d30f0bd5c" id="r_af5e200618f75d080924d1a9d30f0bd5c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sysserv_8h.html#af5e200618f75d080924d1a9d30f0bd5c">NetSend</a> (int sockfd, <a class="el" href="BaseHdr_2Net_2socket_8h.html#a9330982c7bab0a2048d0828aa091d903">msghdr</a> *msg, int flags)</td></tr>
 <tr class="separator:af5e200618f75d080924d1a9d30f0bd5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -230,6 +263,7 @@ Functions</h2></td></tr>
 <tr class="memitem:a916c3dd7cb8425111047b924b213d05e" id="r_a916c3dd7cb8425111047b924b213d05e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sysserv_8h.html#a916c3dd7cb8425111047b924b213d05e">NetListen</a> (int sockfd, int backlog)</td></tr>
 <tr class="separator:a916c3dd7cb8425111047b924b213d05e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7f73b8c855e49b3796a3dd6b5c83b71" id="r_ac7f73b8c855e49b3796a3dd6b5c83b71"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sysserv_8h.html#ac7f73b8c855e49b3796a3dd6b5c83b71">GetEnvironmenBlock</a> ()</td></tr>
+<tr class="memdesc:ac7f73b8c855e49b3796a3dd6b5c83b71"><td class="mdescLeft">&#160;</td><td class="mdescRight">GetEnvironmentBlock &ndash; returns environment block of this process.  <br /></td></tr>
 <tr class="separator:ac7f73b8c855e49b3796a3dd6b5c83b71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
@@ -294,6 +328,14 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>CloseFile &ndash; closes a general file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fd</td><td>&ndash; file descriptor to close </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="ae9f6d9e3a923b58b108151db5475ea3b" name="ae9f6d9e3a923b58b108151db5475ea3b"></a>
@@ -319,6 +361,14 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>CreateDir &ndash; creates a directory. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>&ndash; name of the directory </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -355,6 +405,15 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>CreateProcess &ndash; creates a new process slot. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent_id</td><td>&ndash; parent process id </td></tr>
+    <tr><td class="paramname">name</td><td>&ndash; name of the current process slot </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -397,6 +456,16 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>CreateSharedMem &ndash; create a shared memory chunk. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>&ndash; key to use </td></tr>
+    <tr><td class="paramname">sz</td><td>&ndash; memory size </td></tr>
+    <tr><td class="paramname">flags</td><td>&ndash; shared memory flags</td></tr>
+  </table>
+  </dd>
+</dl>
 <p>BSD 2-Clause License</p>
 <p>Copyright (c) 2022-2023, Manas Kamal Choudhury All rights reserved.</p>
 <p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
@@ -447,6 +516,15 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>CreateTimer &ndash; create timer service. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">maxTickLimit</td><td>&ndash; maximum tick limit </td></tr>
+    <tr><td class="paramname">updatemode</td><td>&ndash; Timer update mode</td></tr>
+  </table>
+  </dd>
+</dl>
 <p>BSD 2-Clause License</p>
 <p>Copyright (c) 2022-2023, Manas Kamal Choudhury All rights reserved.</p>
 <p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
@@ -492,6 +570,8 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>CreateUserThread &ndash; creates an user mode thread. </p>
+
 </div>
 </div>
 <a id="acd4be7b03279182f7cac9cdc9f0e70c8" name="acd4be7b03279182f7cac9cdc9f0e70c8"></a>
@@ -517,6 +597,8 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>DestroyTimer &ndash; remove the timer. </p>
 
 </div>
 </div>
@@ -560,6 +642,16 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>FileIoControl &ndash; controls the file through I/O code. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fd</td><td>&ndash; file descriptor </td></tr>
+    <tr><td class="paramname">code</td><td>&ndash; code to pass </td></tr>
+    <tr><td class="paramname">arg</td><td>&ndash; argument to pass </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="ae15b73e1e39c5f6cfa06dfb765d62412" name="ae15b73e1e39c5f6cfa06dfb765d62412"></a>
@@ -596,6 +688,15 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>FileSetOffset &ndash; set a offset inorder to read the specific position of the file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fd</td><td>&ndash; File descriptor </td></tr>
+    <tr><td class="paramname">offset</td><td>&ndash; offset in bytes </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a27c86065135ac45fb97f589fea3edfd8" name="a27c86065135ac45fb97f589fea3edfd8"></a>
@@ -631,6 +732,15 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>FileStat &ndash; writes information related to file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fd</td><td>&ndash; file descriptor </td></tr>
+    <tr><td class="paramname">buf</td><td>&ndash; Pointer to file structure </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -683,6 +793,8 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>GetEnvironmentBlock &ndash; returns environment block of this process. </p>
+
 </div>
 </div>
 <a id="ab0515b4231cd217ea212fc8ea4ca29bb" name="ab0515b4231cd217ea212fc8ea4ca29bb"></a>
@@ -709,6 +821,14 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>GetProcessHeapMem &ndash; get a memory from process heap. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sz</td><td>&ndash; size in bytes </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a90412b9f57be157a718b6b63b471cc0c" name="a90412b9f57be157a718b6b63b471cc0c"></a>
@@ -733,6 +853,9 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>GetProcessID &ndash; returns currently running process id. </p>
+<dl class="section return"><dt>Returns</dt><dd>current process's ID </dd></dl>
 
 </div>
 </div>
@@ -785,6 +908,14 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>GetTimeOfDay &ndash; returns the time format in unix format. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ptr</td><td>&ndash; Pointer to timeval structure </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="ab4c38057ff9aa6790a0f6400979ae45f" name="ab4c38057ff9aa6790a0f6400979ae45f"></a>
@@ -810,6 +941,14 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>KillProcess &ndash; forcefully kills a process. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">proc_id</td><td>&ndash; process id </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1107,6 +1246,16 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>ObtainSharedMem &ndash; obtain a shared memory. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>&ndash; segment id </td></tr>
+    <tr><td class="paramname">shmaddr</td><td>&ndash; user specified address </td></tr>
+    <tr><td class="paramname">shmflg</td><td>&ndash; flags to use for protection </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="ab4e8a6060b93eed4a875d83a692016ee" name="ab4e8a6060b93eed4a875d83a692016ee"></a>
@@ -1132,6 +1281,14 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>OpenDir &ndash; opens a directory. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>&ndash; name of the directory </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1168,6 +1325,15 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>OpenFile &ndash; opens a file for user process. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file</td><td>&ndash; file path </td></tr>
+    <tr><td class="paramname">mode</td><td>&ndash; mode of the file</td></tr>
+  </table>
+  </dd>
+</dl>
 <p>BSD 2-Clause License</p>
 <p>Copyright (c) 2022-2023, Manas Kamal Choudhury All rights reserved.</p>
 <p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
@@ -1201,6 +1367,8 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>PauseThread &ndash; pause the currently running thread. </p>
 <p>BSD 2-Clause License</p>
 <p>Copyright (c) 2022-2023, Manas Kamal Choudhury All rights reserved.</p>
 <p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
@@ -1235,6 +1403,9 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>ProcessExit &ndash; marks a process as died. </p>
+<p>ProcessExit &ndash; marks a process as died. </p>
+
 </div>
 </div>
 <a id="a34fb7b630a1a53282ee435ce4e7e5afa" name="a34fb7b630a1a53282ee435ce4e7e5afa"></a>
@@ -1260,6 +1431,8 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>ProcessGetFileDesc &ndash; Searches all process file descriptor entries for specific filename fd. </p>
 
 </div>
 </div>
@@ -1296,6 +1469,22 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>ProcessHeapUnmap &ndash; unmaps previosly allocated heap memory. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ptr</td><td>&ndash; Pointer to freeable address </td></tr>
+    <tr><td class="paramname">sz</td><td>&ndash; size in bytes to unallocate</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>@briefProcessHeapUnmap &ndash; unmaps previosly allocated heap memory </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ptr</td><td>&ndash; Pointer to freeable address </td></tr>
+    <tr><td class="paramname">sz</td><td>&ndash; size in bytes to unallocate </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1345,6 +1534,17 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>ProcessLoadExec &ndash; loads an executable to a process slot. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">proc_id</td><td>&ndash; newly created process slot </td></tr>
+    <tr><td class="paramname">filename</td><td>&ndash; path of the executable </td></tr>
+    <tr><td class="paramname">argc</td><td>&ndash; argument count </td></tr>
+    <tr><td class="paramname">argv</td><td>&ndash; pointer to argument list </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a3b0718543f33bb4d19cdbeb24ba89e35" name="a3b0718543f33bb4d19cdbeb24ba89e35"></a>
@@ -1371,6 +1571,14 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>ProcessSleep &ndash; put the current thread to sleep and process to busy wait state. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ms</td><td>&ndash; millisecond </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a976710ecba417739e3ee35b2f8b61374" name="a976710ecba417739e3ee35b2f8b61374"></a>
@@ -1396,6 +1604,14 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>ProcessWaitForTermination &ndash; wait for termination of a child process. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pid</td><td>&ndash; child process id, if -1 then any process </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1432,6 +1648,15 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>ReadDir &ndash; reads a directory entry. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dirfd</td><td>&ndash; directory file descriptor </td></tr>
+    <tr><td class="paramname">dirent</td><td>&ndash; aurora directory entry struct </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1475,6 +1700,16 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>ReadFile &ndash; reads a file into given buffer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fd</td><td>&ndash; file descriptor </td></tr>
+    <tr><td class="paramname">buffer</td><td>&ndash; buffer where to put the data </td></tr>
+    <tr><td class="paramname">length</td><td>&ndash; length in bytes </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a71d7c967bccbc20363097e47537aa0e2" name="a71d7c967bccbc20363097e47537aa0e2"></a>
@@ -1500,6 +1735,14 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>RemoveFile &ndash; remove a directory or file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dirname</td><td>&ndash; directory name </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1536,6 +1779,15 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>SendSignal &ndash; sends a signal to desired process note here pid means thread id. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pid</td><td>&ndash; thread id </td></tr>
+    <tr><td class="paramname">signo</td><td>&ndash; signal number </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1605,6 +1857,8 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>SignalReturn &ndash; returns from a signal handler. </p>
+
 </div>
 </div>
 <a id="a08288c8e6b7d4e48ca4d1541472d193f" name="a08288c8e6b7d4e48ca4d1541472d193f"></a>
@@ -1630,6 +1884,8 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>StartTimer &ndash; starts the timer. </p>
 
 </div>
 </div>
@@ -1657,6 +1913,8 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>StopTimer &ndash; stop the timer. </p>
+
 </div>
 </div>
 <a id="ae2db04c4bf4171fd5ec36fc25f067007" name="ae2db04c4bf4171fd5ec36fc25f067007"></a>
@@ -1682,6 +1940,14 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>UnmapSharedMem &ndash; unmap shared memory segment. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>&ndash; key to search </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1724,6 +1990,16 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>WriteFile &ndash; write system call. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fd</td><td>&ndash; file descriptor </td></tr>
+    <tr><td class="paramname">buffer</td><td>&ndash; buffer to write </td></tr>
+    <tr><td class="paramname">length</td><td>&ndash; length in bytes </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

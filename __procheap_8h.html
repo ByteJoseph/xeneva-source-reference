@@ -114,15 +114,27 @@ This graph shows which files directly or indirectly include this file:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:afb54e41c52235280b56267f6fb6166ae" id="r_afb54e41c52235280b56267f6fb6166ae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__procheap_8h.html#afb54e41c52235280b56267f6fb6166ae">ProcCreateHeapArea</a> (<a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> sz)</td></tr>
+<tr class="memdesc:afb54e41c52235280b56267f6fb6166ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">_ProcCreateHeap &ndash; create a new process heap area  <br /></td></tr>
 <tr class="separator:afb54e41c52235280b56267f6fb6166ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44cdbb09a8edf37aecb130d2f08a22b8" id="r_a44cdbb09a8edf37aecb130d2f08a22b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__procheap_8h.html#a44cdbb09a8edf37aecb130d2f08a22b8">_ProcHeapAreaDestroy</a> ()</td></tr>
+<tr class="memdesc:a44cdbb09a8edf37aecb130d2f08a22b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">_ProcHeapAreaDestroy &ndash; destroy entire heap area  <br /></td></tr>
 <tr class="separator:a44cdbb09a8edf37aecb130d2f08a22b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa2ae87542a2cad796caeeb730d6e7df7" id="r_aa2ae87542a2cad796caeeb730d6e7df7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__procheap_8h.html#aa2ae87542a2cad796caeeb730d6e7df7">_ProcGetHeapMem</a> (<a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> sz)</td></tr>
+<tr class="memdesc:aa2ae87542a2cad796caeeb730d6e7df7"><td class="mdescLeft">&#160;</td><td class="mdescRight">_ProcGetHeapMem &ndash; returns a heap memory from process heap area  <br /></td></tr>
 <tr class="separator:aa2ae87542a2cad796caeeb730d6e7df7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06e34b82c92883fad417e8f5c295fb4c" id="r_a06e34b82c92883fad417e8f5c295fb4c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__procheap_8h.html#a06e34b82c92883fad417e8f5c295fb4c">_ProcHeapMemUnmap</a> (void *ptr, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> sz)</td></tr>
 <tr class="separator:a06e34b82c92883fad417e8f5c295fb4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>BSD 2-Clause License</p>
+<p>Copyright (c) 2023-2024, Manas Kamal Choudhury All rights reserved.</p>
+<p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
+<ol type="1">
+<li>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</li>
+<li>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</li>
+</ol>
+<p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. </p>
+</div><h2 class="groupheader">Function Documentation</h2>
 <a id="aa2ae87542a2cad796caeeb730d6e7df7" name="aa2ae87542a2cad796caeeb730d6e7df7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa2ae87542a2cad796caeeb730d6e7df7">&#9670;&#160;</a></span>_ProcGetHeapMem()</h2>
 
@@ -146,6 +158,14 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>_ProcGetHeapMem &ndash; returns a heap memory from process heap area </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sz</td><td>&ndash; size in bytes </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -171,6 +191,8 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>_ProcHeapAreaDestroy &ndash; destroy entire heap area </p>
 
 </div>
 </div>
@@ -233,14 +255,14 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>BSD 2-Clause License</p>
-<p>Copyright (c) 2023-2024, Manas Kamal Choudhury All rights reserved.</p>
-<p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
-<ol type="1">
-<li>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</li>
-<li>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</li>
-</ol>
-<p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. </p>
+
+<p>_ProcCreateHeap &ndash; create a new process heap area </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sz</td><td>&ndash; size to create by default </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

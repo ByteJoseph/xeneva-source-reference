@@ -194,23 +194,40 @@ Macros</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a9bc162faf88585a49cd970ec541b1e4a" id="r_a9bc162faf88585a49cd970ec541b1e4a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="__xeneva_8h.html#a3640283d666d4a8b25a736424ee25866">XE_LIB</a> void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mman_8h.html#a9bc162faf88585a49cd970ec541b1e4a">_KeMemMap</a> (void *address, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> length, int protect, int flags, int filedesc, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> offset)</td></tr>
+<tr class="memdesc:a9bc162faf88585a49cd970ec541b1e4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">_KeMemMap &ndash; memory map  <br /></td></tr>
 <tr class="separator:a9bc162faf88585a49cd970ec541b1e4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69cd670f30193cabad3ec226bd770c17" id="r_a69cd670f30193cabad3ec226bd770c17"><td class="memItemLeft" align="right" valign="top"><a class="el" href="__xeneva_8h.html#a3640283d666d4a8b25a736424ee25866">XE_LIB</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mman_8h.html#a69cd670f30193cabad3ec226bd770c17">_KeMemUnmap</a> (void *address, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> len)</td></tr>
+<tr class="memdesc:a69cd670f30193cabad3ec226bd770c17"><td class="mdescLeft">&#160;</td><td class="mdescRight">_KeMemUnmap &ndash; unmaps a memory segment  <br /></td></tr>
 <tr class="separator:a69cd670f30193cabad3ec226bd770c17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab14f896e035a6a085ab240da93ccef1a" id="r_ab14f896e035a6a085ab240da93ccef1a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="__xeneva_8h.html#a3640283d666d4a8b25a736424ee25866">XE_LIB</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mman_8h.html#ab14f896e035a6a085ab240da93ccef1a">_KeCreateSharedMem</a> (<a class="el" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> key, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> sz, <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> flags)</td></tr>
+<tr class="memdesc:ab14f896e035a6a085ab240da93ccef1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">_KeCreateSharedMem &ndash; create a shared memory chunk  <br /></td></tr>
 <tr class="separator:ab14f896e035a6a085ab240da93ccef1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51f106ba85760112dcdc28bc60fae52c" id="r_a51f106ba85760112dcdc28bc60fae52c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="__xeneva_8h.html#a3640283d666d4a8b25a736424ee25866">XE_LIB</a> void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mman_8h.html#a51f106ba85760112dcdc28bc60fae52c">_KeObtainSharedMem</a> (<a class="el" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> id, void *shmaddr, int shmflg)</td></tr>
+<tr class="memdesc:a51f106ba85760112dcdc28bc60fae52c"><td class="mdescLeft">&#160;</td><td class="mdescRight">_KeObtainSharedMem &ndash; obtain a shared memory  <br /></td></tr>
 <tr class="separator:a51f106ba85760112dcdc28bc60fae52c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41b751448852cae374e9138778af60e8" id="r_a41b751448852cae374e9138778af60e8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="__xeneva_8h.html#a3640283d666d4a8b25a736424ee25866">XE_LIB</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mman_8h.html#a41b751448852cae374e9138778af60e8">_KeUnmapSharedMem</a> (<a class="el" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> key)</td></tr>
+<tr class="memdesc:a41b751448852cae374e9138778af60e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">_KeUnmapSharedMem &ndash; unmap shared memory segment  <br /></td></tr>
 <tr class="separator:a41b751448852cae374e9138778af60e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acdffb9f4356dc7e9f98be2140719b925" id="r_acdffb9f4356dc7e9f98be2140719b925"><td class="memItemLeft" align="right" valign="top"><a class="el" href="__xeneva_8h.html#a3640283d666d4a8b25a736424ee25866">XE_LIB</a> <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mman_8h.html#acdffb9f4356dc7e9f98be2140719b925">_KeGetProcessHeapMem</a> (<a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> sz)</td></tr>
+<tr class="memdesc:acdffb9f4356dc7e9f98be2140719b925"><td class="mdescLeft">&#160;</td><td class="mdescRight">_KeGetProcessHeapMem &ndash; request a new memory from process heap  <br /></td></tr>
 <tr class="separator:acdffb9f4356dc7e9f98be2140719b925"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2949199c5b4f7a2d33dc5edb84e27e44" id="r_a2949199c5b4f7a2d33dc5edb84e27e44"><td class="memItemLeft" align="right" valign="top"><a class="el" href="__xeneva_8h.html#a3640283d666d4a8b25a736424ee25866">XE_LIB</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mman_8h.html#a2949199c5b4f7a2d33dc5edb84e27e44">_KeMemMapDirty</a> (void *startAddr, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> len, int flags, int prot)</td></tr>
+<tr class="memdesc:a2949199c5b4f7a2d33dc5edb84e27e44"><td class="mdescLeft">&#160;</td><td class="mdescRight">_KeMemMapDirty &ndash; dirty update previously allocated memory map  <br /></td></tr>
 <tr class="separator:a2949199c5b4f7a2d33dc5edb84e27e44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4bdcec2ceac52006ffdffe50e5238a41" id="r_a4bdcec2ceac52006ffdffe50e5238a41"><td class="memItemLeft" align="right" valign="top"><a class="el" href="__xeneva_8h.html#a3640283d666d4a8b25a736424ee25866">XE_LIB</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mman_8h.html#a4bdcec2ceac52006ffdffe50e5238a41">_KeProcessHeapUnmap</a> (void *ptr, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> sz)</td></tr>
+<tr class="memdesc:a4bdcec2ceac52006ffdffe50e5238a41"><td class="mdescLeft">&#160;</td><td class="mdescRight">_KeProcessHeapUnmap &ndash; unmaps previosly allocated heap memory  <br /></td></tr>
 <tr class="separator:a4bdcec2ceac52006ffdffe50e5238a41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>BSD 2-Clause License</p>
+<p>Copyright (c) 2022-2023, Manas Kamal Choudhury All rights reserved.</p>
+<p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
+<ol type="1">
+<li>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</li>
+<li>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</li>
+</ol>
+<p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. </p>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="af06dbec96484a9d387fbd6c01ba95f3c" name="af06dbec96484a9d387fbd6c01ba95f3c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af06dbec96484a9d387fbd6c01ba95f3c">&#9670;&#160;</a></span>MEMMAP_FLAG_COW</h2>
 
@@ -292,14 +309,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>BSD 2-Clause License</p>
-<p>Copyright (c) 2022-2023, Manas Kamal Choudhury All rights reserved.</p>
-<p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
-<ol type="1">
-<li>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</li>
-<li>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</li>
-</ol>
-<p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. </p>
 
 </div>
 </div>
@@ -392,6 +401,16 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>_KeCreateSharedMem &ndash; create a shared memory chunk </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>&ndash; key to use </td></tr>
+    <tr><td class="paramname">sz</td><td>&ndash; memory size </td></tr>
+    <tr><td class="paramname">flags</td><td>&ndash; shared memory flags </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="acdffb9f4356dc7e9f98be2140719b925" name="acdffb9f4356dc7e9f98be2140719b925"></a>
@@ -409,6 +428,14 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>_KeGetProcessHeapMem &ndash; request a new memory from process heap </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sz</td><td>&ndash; size in bytes </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -461,7 +488,9 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>_KeMemMap &ndash; memory map </p><dl class="params"><dt>Parameters</dt><dd>
+
+<p>_KeMemMap &ndash; memory map </p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">address</td><td>&ndash; starting address </td></tr>
     <tr><td class="paramname">length</td><td>&ndash; length of the mappings </td></tr>
@@ -513,6 +542,17 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>_KeMemMapDirty &ndash; dirty update previously allocated memory map </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">startAddr</td><td>&ndash; starting address </td></tr>
+    <tr><td class="paramname">len</td><td>&ndash; length in bytes </td></tr>
+    <tr><td class="paramname">flags</td><td>&ndash; memory map flags </td></tr>
+    <tr><td class="paramname">prot</td><td>&ndash; protection flags </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a69cd670f30193cabad3ec226bd770c17" name="a69cd670f30193cabad3ec226bd770c17"></a>
@@ -540,6 +580,15 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>_KeMemUnmap &ndash; unmaps a memory segment </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">address</td><td>&ndash; starting address of mapped address range </td></tr>
+    <tr><td class="paramname">len</td><td>&ndash; length of the address mapped range </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -575,6 +624,16 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>_KeObtainSharedMem &ndash; obtain a shared memory </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>&ndash; segment id </td></tr>
+    <tr><td class="paramname">shmaddr</td><td>&ndash; user specified address </td></tr>
+    <tr><td class="paramname">shmflg</td><td>&ndash; flags to use for protection </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a4bdcec2ceac52006ffdffe50e5238a41" name="a4bdcec2ceac52006ffdffe50e5238a41"></a>
@@ -603,6 +662,15 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>_KeProcessHeapUnmap &ndash; unmaps previosly allocated heap memory </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ptr</td><td>&ndash; Pointer to freeable address </td></tr>
+    <tr><td class="paramname">sz</td><td>&ndash; size in bytes to unallocate </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a41b751448852cae374e9138778af60e8" name="a41b751448852cae374e9138778af60e8"></a>
@@ -620,6 +688,14 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>_KeUnmapSharedMem &ndash; unmap shared memory segment </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>&ndash; key to search </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

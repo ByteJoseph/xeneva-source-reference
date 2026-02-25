@@ -158,35 +158,54 @@ Macros</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a376137ed2daef150fde7ca6946007709" id="r_a376137ed2daef150fde7ca6946007709"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BaseHdr_2Mm_2vmmngr_8h.html#a376137ed2daef150fde7ca6946007709">AuVmmngrInitialize</a> ()</td></tr>
+<tr class="memdesc:a376137ed2daef150fde7ca6946007709"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuVmmngrInitialize &ndash; initialize the virtual memory manager.  <br /></td></tr>
 <tr class="separator:a376137ed2daef150fde7ca6946007709"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f3c561ec38bb8d9cabb6155e8a7d3e6" id="r_a0f3c561ec38bb8d9cabb6155e8a7d3e6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> AuVPage *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BaseHdr_2Mm_2vmmngr_8h.html#a0f3c561ec38bb8d9cabb6155e8a7d3e6">AuVmmngrGetPage</a> (<a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> virt_addr, <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> flags, <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> mode)</td></tr>
 <tr class="separator:a0f3c561ec38bb8d9cabb6155e8a7d3e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33760598636476e69330d16982acaa4e" id="r_a33760598636476e69330d16982acaa4e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> <a class="el" href="Libs_2XEClib_2includes_2stdint_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BaseHdr_2Mm_2vmmngr_8h.html#a33760598636476e69330d16982acaa4e">AuMapPage</a> (<a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> phys_addr, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> virt_addr, <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> attrib)</td></tr>
+<tr class="memdesc:a33760598636476e69330d16982acaa4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuMapPage &ndash; Maps a virtual page to physical frame.  <br /></td></tr>
 <tr class="separator:a33760598636476e69330d16982acaa4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3cda247205805f2306bd3b7896bfc229" id="r_a3cda247205805f2306bd3b7896bfc229"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> <a class="el" href="Libs_2XEClib_2includes_2stdint_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BaseHdr_2Mm_2vmmngr_8h.html#a3cda247205805f2306bd3b7896bfc229">AuMapPageEx</a> (<a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> *pml4i, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> phys_addr, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> virt_addr, <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> attrib)</td></tr>
+<tr class="memdesc:a3cda247205805f2306bd3b7896bfc229"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuMapPageEx &ndash; Maps a virtual page to physical frame in given page level.  <br /></td></tr>
 <tr class="separator:a3cda247205805f2306bd3b7896bfc229"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8274f1f82fe47bfaff91432966b368bb" id="r_a8274f1f82fe47bfaff91432966b368bb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BaseHdr_2Mm_2vmmngr_8h.html#a8274f1f82fe47bfaff91432966b368bb">AuMapMMIO</a> (<a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> phys_addr, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> page_count)</td></tr>
+<tr class="memdesc:a8274f1f82fe47bfaff91432966b368bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuMapMMIO &ndash; Maps Memory Mapped I/O addresses.  <br /></td></tr>
 <tr class="separator:a8274f1f82fe47bfaff91432966b368bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9201f0640eb0ab1c17f96c28f1595a94" id="r_a9201f0640eb0ab1c17f96c28f1595a94"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BaseHdr_2Mm_2vmmngr_8h.html#a9201f0640eb0ab1c17f96c28f1595a94">AuGetFreePage</a> (<a class="el" href="Libs_2XEClib_2includes_2stdint_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> user, void *ptr)</td></tr>
+<tr class="memdesc:a9201f0640eb0ab1c17f96c28f1595a94"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuGetFreePage &ndash; Checks for free page.  <br /></td></tr>
 <tr class="separator:a9201f0640eb0ab1c17f96c28f1595a94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a150a5d70992648269dfaeb91ade45a80" id="r_a150a5d70992648269dfaeb91ade45a80"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BaseHdr_2Mm_2vmmngr_8h.html#a150a5d70992648269dfaeb91ade45a80">AuFreePages</a> (<a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> virt_addr, <a class="el" href="Libs_2XEClib_2includes_2stdint_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> free_physical, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> s)</td></tr>
+<tr class="memdesc:a150a5d70992648269dfaeb91ade45a80"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuFreePages &ndash; frees up contiguous pages.  <br /></td></tr>
 <tr class="separator:a150a5d70992648269dfaeb91ade45a80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7563accf06a23f2598920f85a0a551ba" id="r_a7563accf06a23f2598920f85a0a551ba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BaseHdr_2Mm_2vmmngr_8h.html#a7563accf06a23f2598920f85a0a551ba">AuUpdatePageFlags</a> (<a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> virt_addr, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> flags)</td></tr>
+<tr class="memdesc:a7563accf06a23f2598920f85a0a551ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuFreePages &ndash; frees up contiguous pages.  <br /></td></tr>
 <tr class="separator:a7563accf06a23f2598920f85a0a551ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a12ede536c8c176395402413cfc031105" id="r_a12ede536c8c176395402413cfc031105"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BaseHdr_2Mm_2vmmngr_8h.html#a12ede536c8c176395402413cfc031105">AuGetPhysicalAddress</a> (<a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> virt_addr)</td></tr>
+<tr class="memdesc:a12ede536c8c176395402413cfc031105"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuGetPhysicalAddress &ndash; returns the physical address from a virtual address.  <br /></td></tr>
 <tr class="separator:a12ede536c8c176395402413cfc031105"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3742bf2f3f07ea8cbff4d98958f6150" id="r_ae3742bf2f3f07ea8cbff4d98958f6150"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BaseHdr_2Mm_2vmmngr_8h.html#ae3742bf2f3f07ea8cbff4d98958f6150">AuGetPhysicalAddressEx</a> (<a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> *cr3, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> virt_addr)</td></tr>
 <tr class="separator:ae3742bf2f3f07ea8cbff4d98958f6150"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4166634d1f9286138a76fc2b0c93278" id="r_ae4166634d1f9286138a76fc2b0c93278"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BaseHdr_2Mm_2vmmngr_8h.html#ae4166634d1f9286138a76fc2b0c93278">AuCreateVirtualAddressSpace</a> ()</td></tr>
+<tr class="memdesc:ae4166634d1f9286138a76fc2b0c93278"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuCreateVirtualAddressSpace &ndash; create a new virtual address space.  <br /></td></tr>
 <tr class="separator:ae4166634d1f9286138a76fc2b0c93278"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5db963ded3fa8d6ccef498aba21567e3" id="r_a5db963ded3fa8d6ccef498aba21567e3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BaseHdr_2Mm_2vmmngr_8h.html#a5db963ded3fa8d6ccef498aba21567e3">AuGetRootPageTable</a> ()</td></tr>
 <tr class="separator:a5db963ded3fa8d6ccef498aba21567e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d90d2a075e51c9ac94125be430514bd" id="r_a3d90d2a075e51c9ac94125be430514bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BaseHdr_2Mm_2vmmngr_8h.html#a3d90d2a075e51c9ac94125be430514bd">AuVmmngrBootFree</a> ()</td></tr>
 <tr class="separator:a3d90d2a075e51c9ac94125be430514bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef0ac93079066090068cdc18d04acf30" id="r_aef0ac93079066090068cdc18d04acf30"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BaseHdr_2Mm_2vmmngr_8h.html#aef0ac93079066090068cdc18d04acf30">AuVmmngrCloneAddressSpace</a> (<a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> *destcr3, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> *srccr3)</td></tr>
+<tr class="memdesc:aef0ac93079066090068cdc18d04acf30"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuVmmngrCloneAddressSpace &ndash; clones a given address space.  <br /></td></tr>
 <tr class="separator:aef0ac93079066090068cdc18d04acf30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>BSD 2-Clause License</p>
+<p>Copyright (c) 2022-2023, Manas Kamal Choudhury All rights reserved.</p>
+<p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
+<ol type="1">
+<li>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</li>
+<li>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</li>
+</ol>
+<p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. </p>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a7a6d199adf8d43afe502c430892cded3" name="a7a6d199adf8d43afe502c430892cded3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7a6d199adf8d43afe502c430892cded3">&#9670;&#160;</a></span>KERNEL_BASE_ADDRESS</h2>
 
@@ -510,14 +529,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>BSD 2-Clause License</p>
-<p>Copyright (c) 2022-2023, Manas Kamal Choudhury All rights reserved.</p>
-<p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
-<ol type="1">
-<li>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</li>
-<li>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</li>
-</ol>
-<p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. </p>
 
 </div>
 </div>
@@ -611,6 +622,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>AuCreateVirtualAddressSpace &ndash; create a new virtual address space. </p>
+<dl class="section return"><dt>Returns</dt><dd>pointer to newly created address space </dd></dl>
+
 </div>
 </div>
 <a id="a150a5d70992648269dfaeb91ade45a80" name="a150a5d70992648269dfaeb91ade45a80"></a>
@@ -645,6 +659,16 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>AuFreePages &ndash; frees up contiguous pages. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">virt_addr</td><td>&ndash; starting virtual address </td></tr>
+    <tr><td class="paramname">free_physical</td><td>&ndash; free up physical frame </td></tr>
+    <tr><td class="paramname">size_t</td><td>s &ndash; size of area to be freed </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a9201f0640eb0ab1c17f96c28f1595a94" name="a9201f0640eb0ab1c17f96c28f1595a94"></a>
@@ -673,6 +697,16 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>AuGetFreePage &ndash; Checks for free page. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">user</td><td>&ndash; specifies if it needs to look from user base address </td></tr>
+    <tr><td class="paramname">ptr</td><td>&ndash; if it is non-null, than lookup begins from given pointer </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>pointer to free virtual page </dd></dl>
+
 </div>
 </div>
 <a id="a12ede536c8c176395402413cfc031105" name="a12ede536c8c176395402413cfc031105"></a>
@@ -690,6 +724,15 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>AuGetPhysicalAddress &ndash; returns the physical address from a virtual address. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">virt_addr</td><td>&ndash; Virtual address </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the physical address of respected virtual address </dd></dl>
 
 </div>
 </div>
@@ -764,6 +807,16 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>AuMapMMIO &ndash; Maps Memory Mapped I/O addresses. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">phys_addr</td><td>&ndash; MMIO physical address </td></tr>
+    <tr><td class="paramname">page_count</td><td>&ndash; number of pages </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to newly mapped virtual mmio address </dd></dl>
+
 </div>
 </div>
 <a id="a33760598636476e69330d16982acaa4e" name="a33760598636476e69330d16982acaa4e"></a>
@@ -797,6 +850,17 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>AuMapPage &ndash; Maps a virtual page to physical frame. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">phys_addr</td><td>&ndash; physical address </td></tr>
+    <tr><td class="paramname">virt_addr</td><td>&ndash; virtual address </td></tr>
+    <tr><td class="paramname">attrib</td><td>&ndash; Page attributes </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>1 on success 0 on failure </dd></dl>
 
 </div>
 </div>
@@ -838,6 +902,18 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>AuMapPageEx &ndash; Maps a virtual page to physical frame in given page level. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pml4i</td><td>&ndash; root page level pointer </td></tr>
+    <tr><td class="paramname">phys_addr</td><td>&ndash; physical address </td></tr>
+    <tr><td class="paramname">virt_addr</td><td>&ndash; virtual address </td></tr>
+    <tr><td class="paramname">attrib</td><td>&ndash; Page attributes </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>1 on success, 0 on failure </dd></dl>
+
 </div>
 </div>
 <a id="a7563accf06a23f2598920f85a0a551ba" name="a7563accf06a23f2598920f85a0a551ba"></a>
@@ -866,6 +942,15 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>AuFreePages &ndash; frees up contiguous pages. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">virt_addr</td><td>&ndash; starting virtual address </td></tr>
+    <tr><td class="paramname">flags</td><td>&ndash; flags to update </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a3d90d2a075e51c9ac94125be430514bd" name="a3d90d2a075e51c9ac94125be430514bd"></a>
@@ -890,6 +975,7 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>@breif AuVmmngrBootFree &ndash; free up the lower half of kernel address space </p>
 
 </div>
 </div>
@@ -927,6 +1013,15 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>AuVmmngrCloneAddressSpace &ndash; clones a given address space. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">destcr3</td><td>&ndash; destination cr3 </td></tr>
+    <tr><td class="paramname">srccr3</td><td>&ndash; source cr3 </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a0f3c561ec38bb8d9cabb6155e8a7d3e6" name="a0f3c561ec38bb8d9cabb6155e8a7d3e6"></a>
@@ -945,7 +1040,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
-          <td class="paramname"><em>flags</em>, </td>
+          <td class="paramname"><em>_flags</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -960,6 +1055,15 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>@breif AuVmmngrGetPage &ndash; Returns virtual page from virtual address in AuVPage format </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">virt_addr</td><td>&ndash; Virtual address </td></tr>
+    <tr><td class="paramname">_flags</td><td>&ndash; extra virtual page flags, this is set only if mode is set to VMMNGR_GETPAGE_CREATE </td></tr>
+    <tr><td class="paramname">mode</td><td>&ndash; specifies whether to create a virtual page if its not present </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>virtual page from virtual address in AuVPage format </dd></dl>
 
 </div>
 </div>
@@ -985,6 +1089,8 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>AuVmmngrInitialize &ndash; initialize the virtual memory manager. </p>
 
 </div>
 </div>

@@ -174,6 +174,7 @@ Include dependency graph for shm.cpp:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a05d8fffd5ddadcdd899d7f4cb2feb7c4" id="r_a05d8fffd5ddadcdd899d7f4cb2feb7c4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shm_8cpp.html#a05d8fffd5ddadcdd899d7f4cb2feb7c4">AuInitialiseSHMMan</a> ()</td></tr>
+<tr class="memdesc:a05d8fffd5ddadcdd899d7f4cb2feb7c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuInitialiseSHMMan &ndash; initialise shm manager.  <br /></td></tr>
 <tr class="separator:a05d8fffd5ddadcdd899d7f4cb2feb7c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40a51a91a574117d29599d08fe29ee8d" id="r_a40a51a91a574117d29599d08fe29ee8d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shm_8cpp.html#a40a51a91a574117d29599d08fe29ee8d">AuSHMGetID</a> ()</td></tr>
 <tr class="separator:a40a51a91a574117d29599d08fe29ee8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -182,6 +183,7 @@ Functions</h2></td></tr>
 <tr class="memitem:ac31bbe8dcc4493950c63bc59495c88db" id="r_ac31bbe8dcc4493950c63bc59495c88db"><td class="memItemLeft" align="right" valign="top"><a class="el" href="shm_8h.html#a1b5edb3d3b9e20820c72a2a62e9533cb">AuSHM</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shm_8cpp.html#ac31bbe8dcc4493950c63bc59495c88db">AuGetSHMByID</a> (<a class="el" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> id)</td></tr>
 <tr class="separator:ac31bbe8dcc4493950c63bc59495c88db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf86dccc859b0fa0d1c40cb4b6290ee0" id="r_abf86dccc859b0fa0d1c40cb4b6290ee0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shm_8cpp.html#abf86dccc859b0fa0d1c40cb4b6290ee0">AuCreateSHM</a> (<a class="el" href="process_8h.html#af7383c550ee680158b77cf18ef1d275a">AuProcess</a> *proc, <a class="el" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> key, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> sz, <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> flags)</td></tr>
+<tr class="memdesc:abf86dccc859b0fa0d1c40cb4b6290ee0"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuCreateSHM &ndash; create a new shared memory segment or returns previously allocated one.  <br /></td></tr>
 <tr class="separator:abf86dccc859b0fa0d1c40cb4b6290ee0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afde758ef99de00966a501b30d03796e0" id="r_afde758ef99de00966a501b30d03796e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shm_8cpp.html#afde758ef99de00966a501b30d03796e0">AuSHMDelete</a> (<a class="el" href="shm_8h.html#a1b5edb3d3b9e20820c72a2a62e9533cb">AuSHM</a> *shm)</td></tr>
 <tr class="separator:afde758ef99de00966a501b30d03796e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -192,10 +194,13 @@ Functions</h2></td></tr>
 <tr class="memitem:a1ccb5d1ccadfcb56ff4375566e9ced0c" id="r_a1ccb5d1ccadfcb56ff4375566e9ced0c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shm_8cpp.html#a1ccb5d1ccadfcb56ff4375566e9ced0c">AuSHMProcOrderList</a> (<a class="el" href="process_8h.html#af7383c550ee680158b77cf18ef1d275a">AuProcess</a> *proc)</td></tr>
 <tr class="separator:a1ccb5d1ccadfcb56ff4375566e9ced0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5abab9473b8899c1b66a01f8292d396b" id="r_a5abab9473b8899c1b66a01f8292d396b"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shm_8cpp.html#a5abab9473b8899c1b66a01f8292d396b">AuSHMObtainMem</a> (<a class="el" href="process_8h.html#af7383c550ee680158b77cf18ef1d275a">AuProcess</a> *proc, <a class="el" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> id, void *shmaddr, int shmflg)</td></tr>
+<tr class="memdesc:a5abab9473b8899c1b66a01f8292d396b"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuSHMObtainMem &ndash; obtains a virtual memory from given shm segment.  <br /></td></tr>
 <tr class="separator:a5abab9473b8899c1b66a01f8292d396b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f6a46ca8f6c50a446593ea1dc95e994" id="r_a9f6a46ca8f6c50a446593ea1dc95e994"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shm_8cpp.html#a9f6a46ca8f6c50a446593ea1dc95e994">AuSHMUnmap</a> (<a class="el" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> key, <a class="el" href="process_8h.html#af7383c550ee680158b77cf18ef1d275a">AuProcess</a> *proc)</td></tr>
+<tr class="memdesc:a9f6a46ca8f6c50a446593ea1dc95e994"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuSHMUnmap &ndash; unmaps a shared memory segment.  <br /></td></tr>
 <tr class="separator:a9f6a46ca8f6c50a446593ea1dc95e994"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af96109906763276bed7a66df359b9882" id="r_af96109906763276bed7a66df359b9882"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shm_8cpp.html#af96109906763276bed7a66df359b9882">AuSHMUnmapAll</a> (<a class="el" href="process_8h.html#af7383c550ee680158b77cf18ef1d275a">AuProcess</a> *proc)</td></tr>
+<tr class="memdesc:af96109906763276bed7a66df359b9882"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuSHMUnmapAll &ndash; unmaps all mappings for this process.  <br /></td></tr>
 <tr class="separator:af96109906763276bed7a66df359b9882"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
@@ -245,6 +250,18 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>AuCreateSHM &ndash; create a new shared memory segment or returns previously allocated one. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">proc</td><td>&ndash; Creator process </td></tr>
+    <tr><td class="paramname">key</td><td>&ndash; unique key to use </td></tr>
+    <tr><td class="paramname">sz</td><td>&ndash; size in multiple of PAGE_SIZE </td></tr>
+    <tr><td class="paramname">flags</td><td>&ndash; security flags </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>id of newly created SHM, -1 on failure </dd></dl>
 
 </div>
 </div>
@@ -298,6 +315,8 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>AuInitialiseSHMMan &ndash; initialise shm manager. </p>
 
 </div>
 </div>
@@ -373,6 +392,17 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>AuSHMObtainMem &ndash; obtains a virtual memory from given shm segment. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">proc</td><td>&ndash; Calling process </td></tr>
+    <tr><td class="paramname">id</td><td>&ndash; shm segment id </td></tr>
+    <tr><td class="paramname">shmaddr</td><td>&ndash; starting shared memory address to map @parma shmflg &ndash; flags </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>starting address of this shm on success, NULL on failure </dd></dl>
 
 </div>
 </div>
@@ -476,6 +506,15 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>AuSHMUnmap &ndash; unmaps a shared memory segment. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>&ndash; key to search </td></tr>
+    <tr><td class="paramname">proc</td><td>&ndash; process to look </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="af96109906763276bed7a66df359b9882" name="af96109906763276bed7a66df359b9882"></a>
@@ -493,6 +532,14 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>AuSHMUnmapAll &ndash; unmaps all mappings for this process. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">proc</td><td>&ndash; Pointer to process that needs unmapping </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

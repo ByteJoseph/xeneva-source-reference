@@ -155,25 +155,42 @@ Include dependency graph for thrserv.c:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:aa8f34b026c7970989741b1cbc12e99cd" id="r_aa8f34b026c7970989741b1cbc12e99cd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thrserv_8c.html#aa8f34b026c7970989741b1cbc12e99cd">GetThreadID</a> ()</td></tr>
+<tr class="memdesc:aa8f34b026c7970989741b1cbc12e99cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">GetThreadID &ndash; returns current id of thread.  <br /></td></tr>
 <tr class="separator:aa8f34b026c7970989741b1cbc12e99cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90412b9f57be157a718b6b63b471cc0c" id="r_a90412b9f57be157a718b6b63b471cc0c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thrserv_8c.html#a90412b9f57be157a718b6b63b471cc0c">GetProcessID</a> ()</td></tr>
+<tr class="memdesc:a90412b9f57be157a718b6b63b471cc0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">GetProcessID &ndash; returns currently running process id.  <br /></td></tr>
 <tr class="separator:a90412b9f57be157a718b6b63b471cc0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a736d21453e127d5dd9e3284014a98f51" id="r_a736d21453e127d5dd9e3284014a98f51"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thrserv_8c.html#a736d21453e127d5dd9e3284014a98f51">ProcessExit</a> ()</td></tr>
+<tr class="memdesc:a736d21453e127d5dd9e3284014a98f51"><td class="mdescLeft">&#160;</td><td class="mdescRight">ProcessExit &ndash; marks a process as died, only available from the main thread of the process.  <br /></td></tr>
 <tr class="separator:a736d21453e127d5dd9e3284014a98f51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a976710ecba417739e3ee35b2f8b61374" id="r_a976710ecba417739e3ee35b2f8b61374"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thrserv_8c.html#a976710ecba417739e3ee35b2f8b61374">ProcessWaitForTermination</a> (int pid)</td></tr>
+<tr class="memdesc:a976710ecba417739e3ee35b2f8b61374"><td class="mdescLeft">&#160;</td><td class="mdescRight">ProcessWaitForTermination &ndash; wait for termination of a child process.  <br /></td></tr>
 <tr class="separator:a976710ecba417739e3ee35b2f8b61374"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d77cc652159de7d4f2fc4201c06047c" id="r_a0d77cc652159de7d4f2fc4201c06047c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thrserv_8c.html#a0d77cc652159de7d4f2fc4201c06047c">CreateProcess</a> (int parent_id, char *name)</td></tr>
+<tr class="memdesc:a0d77cc652159de7d4f2fc4201c06047c"><td class="mdescLeft">&#160;</td><td class="mdescRight">CreateProcess &ndash; creates a new process slot.  <br /></td></tr>
 <tr class="separator:a0d77cc652159de7d4f2fc4201c06047c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b0718543f33bb4d19cdbeb24ba89e35" id="r_a3b0718543f33bb4d19cdbeb24ba89e35"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thrserv_8c.html#a3b0718543f33bb4d19cdbeb24ba89e35">ProcessSleep</a> (<a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> ms)</td></tr>
+<tr class="memdesc:a3b0718543f33bb4d19cdbeb24ba89e35"><td class="mdescLeft">&#160;</td><td class="mdescRight">ProcessSleep &ndash; put the current thread to sleep and process to busy wait state.  <br /></td></tr>
 <tr class="separator:a3b0718543f33bb4d19cdbeb24ba89e35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a187ee6f81aca9e314d74d8ed6b148e4f" id="r_a187ee6f81aca9e314d74d8ed6b148e4f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thrserv_8c.html#a187ee6f81aca9e314d74d8ed6b148e4f">setuprint</a> ()</td></tr>
 <tr class="separator:a187ee6f81aca9e314d74d8ed6b148e4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9b4d23710eacd7b1e1706030c6538d7" id="r_aa9b4d23710eacd7b1e1706030c6538d7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thrserv_8c.html#aa9b4d23710eacd7b1e1706030c6538d7">PauseThread</a> ()</td></tr>
+<tr class="memdesc:aa9b4d23710eacd7b1e1706030c6538d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">PauseThread &ndash; pause the currently running thread.  <br /></td></tr>
 <tr class="separator:aa9b4d23710eacd7b1e1706030c6538d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6d8911e66db8ee4bab1756aeb2b37ca" id="r_ab6d8911e66db8ee4bab1756aeb2b37ca"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thrserv_8c.html#ab6d8911e66db8ee4bab1756aeb2b37ca">ProcessLoadExec</a> (int proc_id, char *filename, int argc, char **argv)</td></tr>
+<tr class="memdesc:ab6d8911e66db8ee4bab1756aeb2b37ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">ProcessLoadExec &ndash; loads an executable to a process slot.  <br /></td></tr>
 <tr class="separator:ab6d8911e66db8ee4bab1756aeb2b37ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>BSD 2-Clause License</p>
+<p>Copyright (c) 2022-2025, Manas Kamal Choudhury All rights reserved.</p>
+<p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
+<ol type="1">
+<li>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</li>
+<li>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</li>
+</ol>
+<p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. </p>
+</div><h2 class="groupheader">Function Documentation</h2>
 <a id="a0d77cc652159de7d4f2fc4201c06047c" name="a0d77cc652159de7d4f2fc4201c06047c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0d77cc652159de7d4f2fc4201c06047c">&#9670;&#160;</a></span>CreateProcess()</h2>
 
@@ -200,6 +217,15 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>CreateProcess &ndash; creates a new process slot. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent_id</td><td>&ndash; parent process id </td></tr>
+    <tr><td class="paramname">name</td><td>&ndash; name of the current process slot </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a90412b9f57be157a718b6b63b471cc0c" name="a90412b9f57be157a718b6b63b471cc0c"></a>
@@ -217,6 +243,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>GetProcessID &ndash; returns currently running process id. </p>
+<dl class="section return"><dt>Returns</dt><dd>current process's ID </dd></dl>
+
 </div>
 </div>
 <a id="aa8f34b026c7970989741b1cbc12e99cd" name="aa8f34b026c7970989741b1cbc12e99cd"></a>
@@ -233,14 +262,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>BSD 2-Clause License</p>
-<p>Copyright (c) 2022-2025, Manas Kamal Choudhury All rights reserved.</p>
-<p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
-<ol type="1">
-<li>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</li>
-<li>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</li>
-</ol>
-<p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. </p>
+
+<p>GetThreadID &ndash; returns current id of thread. </p>
 
 </div>
 </div>
@@ -258,6 +281,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>PauseThread &ndash; pause the currently running thread. </p>
 <p>BSD 2-Clause License</p>
 <p>Copyright (c) 2022-2023, Manas Kamal Choudhury All rights reserved.</p>
 <p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
@@ -283,6 +308,9 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>ProcessExit &ndash; marks a process as died, only available from the main thread of the process. </p>
+<p>ProcessExit &ndash; marks a process as died. </p>
 
 </div>
 </div>
@@ -324,6 +352,17 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>ProcessLoadExec &ndash; loads an executable to a process slot. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">proc_id</td><td>&ndash; newly created process slot </td></tr>
+    <tr><td class="paramname">filename</td><td>&ndash; path of the executable </td></tr>
+    <tr><td class="paramname">argc</td><td>&ndash; argument count </td></tr>
+    <tr><td class="paramname">argv</td><td>&ndash; pointer to argument list </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a3b0718543f33bb4d19cdbeb24ba89e35" name="a3b0718543f33bb4d19cdbeb24ba89e35"></a>
@@ -342,6 +381,14 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>ProcessSleep &ndash; put the current thread to sleep and process to busy wait state. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ms</td><td>&ndash; millisecond </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a976710ecba417739e3ee35b2f8b61374" name="a976710ecba417739e3ee35b2f8b61374"></a>
@@ -359,6 +406,14 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>ProcessWaitForTermination &ndash; wait for termination of a child process. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pid</td><td>&ndash; child process id, if -1 then any process </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

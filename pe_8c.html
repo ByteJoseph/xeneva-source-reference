@@ -153,19 +153,33 @@ Macros</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:adaa9d15f7a52c8c758d15c3fa873189a" id="r_adaa9d15f7a52c8c758d15c3fa873189a"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pe_8c.html#adaa9d15f7a52c8c758d15c3fa873189a">AuGetProcAddress</a> (void *image, const char *procname)</td></tr>
+<tr class="memdesc:adaa9d15f7a52c8c758d15c3fa873189a"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuGetProcAddress &ndash; get procedure address in a dll image.  <br /></td></tr>
 <tr class="separator:adaa9d15f7a52c8c758d15c3fa873189a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1aa7725c4990fb459c5f38ac2a12c87b" id="r_a1aa7725c4990fb459c5f38ac2a12c87b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pe_8c.html#a1aa7725c4990fb459c5f38ac2a12c87b">AuPEPrintExports</a> (void *image)</td></tr>
+<tr class="memdesc:a1aa7725c4990fb459c5f38ac2a12c87b"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuPEPrintExports &ndash; print all function exports for DEBUG purpose.  <br /></td></tr>
 <tr class="separator:a1aa7725c4990fb459c5f38ac2a12c87b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63151fb2cd726a857c413c0867c8f1c7" id="r_a63151fb2cd726a857c413c0867c8f1c7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pe_8c.html#a63151fb2cd726a857c413c0867c8f1c7">AuKernelLinkDLL</a> (void *image)</td></tr>
+<tr class="memdesc:a63151fb2cd726a857c413c0867c8f1c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuKernelLinkDLL &ndash; Links a dll library to kernel symbols.  <br /></td></tr>
 <tr class="separator:a63151fb2cd726a857c413c0867c8f1c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9fdbe45f3a5ccb6f3986140f26f4e0f9" id="r_a9fdbe45f3a5ccb6f3986140f26f4e0f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pe_8c.html#a9fdbe45f3a5ccb6f3986140f26f4e0f9">AuKernelLinkImports</a> (void *image)</td></tr>
 <tr class="separator:a9fdbe45f3a5ccb6f3986140f26f4e0f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa16b4459afd146802ac5408fcb5859c3" id="r_aa16b4459afd146802ac5408fcb5859c3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pe_8c.html#aa16b4459afd146802ac5408fcb5859c3">AuKernelRelocatePE</a> (void *image, <a class="el" href="BaseHdr_2pe_8h.html#a7d164fdaa649432afb8e0c370dd5685c">PIMAGE_NT_HEADERS</a> nt, int diff)</td></tr>
+<tr class="memdesc:aa16b4459afd146802ac5408fcb5859c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuKernelRelocatePE &ndash; relocates the image from its actual base address.  <br /></td></tr>
 <tr class="separator:aa16b4459afd146802ac5408fcb5859c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2025404d497229fad831115375357f1c" id="r_a2025404d497229fad831115375357f1c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Libs_2XEClib_2includes_2stdint_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pe_8c.html#a2025404d497229fad831115375357f1c">AuPEFileIsDynamicallyLinked</a> (void *image)</td></tr>
+<tr class="memdesc:a2025404d497229fad831115375357f1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuPEFileIsDynamicallyLinked &ndash; checks if the current binary image is dynamically linked.  <br /></td></tr>
 <tr class="separator:a2025404d497229fad831115375357f1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>BSD 2-Clause License</p>
+<p>Copyright (c) 2022-2023, Manas Kamal Choudhury All rights reserved.</p>
+<p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
+<ol type="1">
+<li>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</li>
+<li>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</li>
+</ol>
+<p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. </p>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="aff6165db3fa02d1c8646031870230232" name="aff6165db3fa02d1c8646031870230232"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aff6165db3fa02d1c8646031870230232">&#9670;&#160;</a></span>DIV_ROUND_UP</h2>
 
@@ -247,6 +261,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>dll characteristics </p>
 
 </div>
 </div>
@@ -359,6 +374,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>relocation types </p>
 
 </div>
 </div>
@@ -486,14 +502,16 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>BSD 2-Clause License</p>
-<p>Copyright (c) 2022-2023, Manas Kamal Choudhury All rights reserved.</p>
-<p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
-<ol type="1">
-<li>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</li>
-<li>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</li>
-</ol>
-<p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. </p>
+
+<p>AuGetProcAddress &ndash; get procedure address in a dll image. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">image</td><td>&ndash; dll image </td></tr>
+    <tr><td class="paramname">procname</td><td>&ndash; procedure name </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>return the procedure address in memory </dd></dl>
 
 </div>
 </div>
@@ -513,6 +531,14 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>AuKernelLinkDLL &ndash; Links a dll library to kernel symbols. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">image</td><td>&ndash; dll image </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a9fdbe45f3a5ccb6f3986140f26f4e0f9" name="a9fdbe45f3a5ccb6f3986140f26f4e0f9"></a>
@@ -530,6 +556,12 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>@briefAuKernelLinkImports &ndash; Links kernel imports to dll </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">image</td><td>&ndash; dll image </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -565,6 +597,16 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>AuKernelRelocatePE &ndash; relocates the image from its actual base address. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">image</td><td>&ndash; pointer to executable image </td></tr>
+    <tr><td class="paramname">nt</td><td>&ndash; nt headers </td></tr>
+    <tr><td class="paramname">diff</td><td>&ndash; difference from its original </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a2025404d497229fad831115375357f1c" name="a2025404d497229fad831115375357f1c"></a>
@@ -583,6 +625,14 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>AuPEFileIsDynamicallyLinked &ndash; checks if the current binary image is dynamically linked. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">image</td><td>&ndash; pointer to image address </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a1aa7725c4990fb459c5f38ac2a12c87b" name="a1aa7725c4990fb459c5f38ac2a12c87b"></a>
@@ -600,6 +650,14 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>AuPEPrintExports &ndash; print all function exports for DEBUG purpose. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">image</td><td>&ndash; dll image </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

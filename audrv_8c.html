@@ -148,6 +148,7 @@ Include dependency graph for audrv.c:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a0db31e1335ee2dfd9615145a1f14d9a4" id="r_a0db31e1335ee2dfd9615145a1f14d9a4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="audrv_8c.html#a0db31e1335ee2dfd9615145a1f14d9a4">AU_DRIVER_BASE_START</a>&#160;&#160;&#160;0xFFFFC00000A00000</td></tr>
+<tr class="memdesc:a0db31e1335ee2dfd9615145a1f14d9a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">0xFFFFC00000400000 - 0xFFFFC00000A00000 &ndash; Kernel Boot Drivers 0xFFFFC00000A00000 - Kernel Runtime Drivers  <br /></td></tr>
 <tr class="separator:a0db31e1335ee2dfd9615145a1f14d9a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3582e1a97656f02303256ebf2f7e282f" id="r_a3582e1a97656f02303256ebf2f7e282f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="audrv_8c.html#a3582e1a97656f02303256ebf2f7e282f">AU_MAX_SUPPORTED_DEVICE</a>&#160;&#160;&#160;256</td></tr>
 <tr class="separator:a3582e1a97656f02303256ebf2f7e282f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -160,34 +161,48 @@ Functions</h2></td></tr>
 <tr class="memitem:a1982e61dfea0e9ce7003f0da41385ce9" id="r_a1982e61dfea0e9ce7003f0da41385ce9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="audrv_8c.html#a1982e61dfea0e9ce7003f0da41385ce9">AuRequestBootDriverId</a> ()</td></tr>
 <tr class="separator:a1982e61dfea0e9ce7003f0da41385ce9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af77cc492afac4a0ba67bf60d19b11bf5" id="r_af77cc492afac4a0ba67bf60d19b11bf5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="audrv_8c.html#af77cc492afac4a0ba67bf60d19b11bf5">AuDecreaseDriverCount</a> ()</td></tr>
+<tr class="memdesc:af77cc492afac4a0ba67bf60d19b11bf5"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuDecreaseDriverCount &ndash; decrease the number of device count.  <br /></td></tr>
 <tr class="separator:af77cc492afac4a0ba67bf60d19b11bf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ef10d1f1c0599585d5163ddcce4d35b" id="r_a5ef10d1f1c0599585d5163ddcce4d35b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="audrv_8c.html#a5ef10d1f1c0599585d5163ddcce4d35b">AuIncreaseDriverCount</a> ()</td></tr>
+<tr class="memdesc:a5ef10d1f1c0599585d5163ddcce4d35b"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuIncreaseDriverCount &ndash; increase the number of device count.  <br /></td></tr>
 <tr class="separator:a5ef10d1f1c0599585d5163ddcce4d35b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3fec070ed29613dbc72f25de9f8381b9" id="r_a3fec070ed29613dbc72f25de9f8381b9"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="audrv_8c.html#a3fec070ed29613dbc72f25de9f8381b9">AuGetConfEntry</a> (<a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> vendor_id, <a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> device_id, <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buffer, int entryoff)</td></tr>
+<tr class="memdesc:a3fec070ed29613dbc72f25de9f8381b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuGetConfEntry &ndash; Get an entry offset in the file for required device.  <br /></td></tr>
 <tr class="separator:a3fec070ed29613dbc72f25de9f8381b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16a56cd1029a367ff18a15b17d8be9e0" id="r_a16a56cd1029a367ff18a15b17d8be9e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="audrv_8h.html#a9e3aee018af3077c7b4044bdd751930a">AuDriver</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="audrv_8c.html#a16a56cd1029a367ff18a15b17d8be9e0">AuCreateDriverInstance</a> (char *drivername)</td></tr>
+<tr class="memdesc:a16a56cd1029a367ff18a15b17d8be9e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuCreateDriverInstance &ndash; creates a new driver slot.  <br /></td></tr>
 <tr class="separator:a16a56cd1029a367ff18a15b17d8be9e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a12e8324002e5c894f2a99d0fe84412eb" id="r_a12e8324002e5c894f2a99d0fe84412eb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="audrv_8h.html#a9e3aee018af3077c7b4044bdd751930a">AuDriver</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="audrv_8c.html#a12e8324002e5c894f2a99d0fe84412eb">AuCreateBootDriverInstance</a> (char *drivername)</td></tr>
+<tr class="memdesc:a12e8324002e5c894f2a99d0fe84412eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuCreateDriverInstance &ndash; creates a new driver slot.  <br /></td></tr>
 <tr class="separator:a12e8324002e5c894f2a99d0fe84412eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e40301b0863c5c8f9aba5d8e5c09763" id="r_a1e40301b0863c5c8f9aba5d8e5c09763"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="audrv_8c.html#a1e40301b0863c5c8f9aba5d8e5c09763">AuGetDriverName</a> (<a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> vendor_id, <a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> device_id, <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buffer, int entryoff)</td></tr>
+<tr class="memdesc:a1e40301b0863c5c8f9aba5d8e5c09763"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuGetDriverName &ndash; Extract the driver path from its entry offset.  <br /></td></tr>
 <tr class="separator:a1e40301b0863c5c8f9aba5d8e5c09763"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4e1563f13a7cdb51a79eee36efcf8f5" id="r_ad4e1563f13a7cdb51a79eee36efcf8f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="audrv_8c.html#ad4e1563f13a7cdb51a79eee36efcf8f5">AuDriverLoad</a> (char *filename, <a class="el" href="audrv_8h.html#a9e3aee018af3077c7b4044bdd751930a">AuDriver</a> *driver)</td></tr>
+<tr class="memdesc:ad4e1563f13a7cdb51a79eee36efcf8f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuDriverLoad &ndash; Manage and loads dll drivers.  <br /></td></tr>
 <tr class="separator:ad4e1563f13a7cdb51a79eee36efcf8f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee436201f8cfc2f406ebfac11ab53d34" id="r_aee436201f8cfc2f406ebfac11ab53d34"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Libs_2XEClib_2includes_2stdint_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="audrv_8c.html#aee436201f8cfc2f406ebfac11ab53d34">AuIsPCIeInitialized</a> ()</td></tr>
 <tr class="separator:aee436201f8cfc2f406ebfac11ab53d34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b0952e36052e690c14a4dc5b3e02fc8" id="r_a6b0952e36052e690c14a4dc5b3e02fc8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="audrv_8c.html#a6b0952e36052e690c14a4dc5b3e02fc8">AuDrvMngrInitialize</a> (<a class="el" href="BaseHdr_2aurora_8h.html#a886498d078ece21b18b0bf2dad40fccd">KERNEL_BOOT_INFO</a> *info)</td></tr>
+<tr class="memdesc:a6b0952e36052e690c14a4dc5b3e02fc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuDrvMngrInitialize &ndash; Initialize the driver manager.  <br /></td></tr>
 <tr class="separator:a6b0952e36052e690c14a4dc5b3e02fc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaeb72f6f9cf9acb998e6fd82f2b58402" id="r_aaeb72f6f9cf9acb998e6fd82f2b58402"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="audrv_8c.html#aaeb72f6f9cf9acb998e6fd82f2b58402">AuRegisterDevice</a> (<a class="el" href="audrv_8h.html#a9c7fdc10eff7b5485b4ce0ed5cdf95f3">AuDevice</a> *dev)</td></tr>
+<tr class="memdesc:aaeb72f6f9cf9acb998e6fd82f2b58402"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuRegisterDevice &ndash; register a new device to aurora system.  <br /></td></tr>
 <tr class="separator:aaeb72f6f9cf9acb998e6fd82f2b58402"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c427de07b4ee8d3dd116035bed33f95" id="r_a7c427de07b4ee8d3dd116035bed33f95"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> <a class="el" href="Libs_2XEClib_2includes_2stdint_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="audrv_8c.html#a7c427de07b4ee8d3dd116035bed33f95">AuCheckDevice</a> (<a class="el" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> classC, <a class="el" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> subclassC, <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> progIF)</td></tr>
+<tr class="memdesc:a7c427de07b4ee8d3dd116035bed33f95"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuCheckDevice &ndash; checks an aurora device if it's already present.  <br /></td></tr>
 <tr class="separator:a7c427de07b4ee8d3dd116035bed33f95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e69476917e23418ed84ebdeef3fd026" id="r_a3e69476917e23418ed84ebdeef3fd026"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="audrv_8c.html#a3e69476917e23418ed84ebdeef3fd026">AuBootDriverLoad</a> (void *driverBuffer, <a class="el" href="audrv_8h.html#a9e3aee018af3077c7b4044bdd751930a">AuDriver</a> *driver)</td></tr>
+<tr class="memdesc:a3e69476917e23418ed84ebdeef3fd026"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuBootDriverLoad &ndash; loads all boot drivers.  <br /></td></tr>
 <tr class="separator:a3e69476917e23418ed84ebdeef3fd026"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a22ec7dddfb8f9b86ea813b0d89b961a6" id="r_a22ec7dddfb8f9b86ea813b0d89b961a6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="audrv_8c.html#a22ec7dddfb8f9b86ea813b0d89b961a6">AuBootDriverInitialise</a> (<a class="el" href="BaseHdr_2aurora_8h.html#a886498d078ece21b18b0bf2dad40fccd">KERNEL_BOOT_INFO</a> *info)</td></tr>
+<tr class="memdesc:a22ec7dddfb8f9b86ea813b0d89b961a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuBootDriverInitialise &ndash; Initialise and load all boot time drivers.  <br /></td></tr>
 <tr class="separator:a22ec7dddfb8f9b86ea813b0d89b961a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15aace447153bb91109fa783a2a7e0bc" id="r_a15aace447153bb91109fa783a2a7e0bc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="audrv_8c.html#a15aace447153bb91109fa783a2a7e0bc">AuDrvMgrGetBaseAddress</a> ()</td></tr>
+<tr class="memdesc:a15aace447153bb91109fa783a2a7e0bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuDrvMgrGetBaseAddress &ndash; returns the current driver load base address.  <br /></td></tr>
 <tr class="separator:a15aace447153bb91109fa783a2a7e0bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d3b53fd4b6083f67a936a46d9636782" id="r_a9d3b53fd4b6083f67a936a46d9636782"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="audrv_8c.html#a9d3b53fd4b6083f67a936a46d9636782">AuDrvMgrSetBaseAddress</a> (<a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> base_address)</td></tr>
+<tr class="memdesc:a9d3b53fd4b6083f67a936a46d9636782"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuDrvMgrSetBaseAddress &ndash; sets a new base address for driver to load it's highly risky because, if we set it to kernel stack location, kernel will crash.  <br /></td></tr>
 <tr class="separator:a9d3b53fd4b6083f67a936a46d9636782"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
@@ -201,7 +216,16 @@ Variables</h2></td></tr>
 <tr class="memitem:a4dd006bf59bbd514a2e5875470b729b9" id="r_a4dd006bf59bbd514a2e5875470b729b9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="audrv_8c.html#a4dd006bf59bbd514a2e5875470b729b9">scratchBuffer</a></td></tr>
 <tr class="separator:a4dd006bf59bbd514a2e5875470b729b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>BSD 2-Clause License</p>
+<p>Copyright (c) 2022-2023, Manas Kamal Choudhury All rights reserved.</p>
+<p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
+<ol type="1">
+<li>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</li>
+<li>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</li>
+</ol>
+<p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. </p>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a0db31e1335ee2dfd9615145a1f14d9a4" name="a0db31e1335ee2dfd9615145a1f14d9a4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0db31e1335ee2dfd9615145a1f14d9a4">&#9670;&#160;</a></span>AU_DRIVER_BASE_START</h2>
 
@@ -213,14 +237,9 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>BSD 2-Clause License</p>
-<p>Copyright (c) 2022-2023, Manas Kamal Choudhury All rights reserved.</p>
-<p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
-<ol type="1">
-<li>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</li>
-<li>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</li>
-</ol>
-<p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. </p>
+
+<p>0xFFFFC00000400000 - 0xFFFFC00000A00000 &ndash; Kernel Boot Drivers 0xFFFFC00000A00000 - Kernel Runtime Drivers </p>
+<p>@TODO: Implement UEFI based pcie discovery mechanism and fix AuBootDriverLoad </p>
 
 </div>
 </div>
@@ -255,6 +274,14 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>AuBootDriverInitialise &ndash; Initialise and load all boot time drivers. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">info</td><td>&ndash; Kernel boot information passed by XNLDR [TODO] : Everything is hard coded for now </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a3e69476917e23418ed84ebdeef3fd026" name="a3e69476917e23418ed84ebdeef3fd026"></a>
@@ -282,6 +309,15 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>AuBootDriverLoad &ndash; loads all boot drivers. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">driverBuffer</td><td>- Pointer to driver location in memory </td></tr>
+    <tr><td class="paramname">driver</td><td>&ndash; Pointer to aurora driver structure </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -317,6 +353,16 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>AuCheckDevice &ndash; checks an aurora device if it's already present. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">classC</td><td>&ndash; class code of the device to check </td></tr>
+    <tr><td class="paramname">subclassC</td><td>&ndash; sub class code of the device to check </td></tr>
+    <tr><td class="paramname">progIF</td><td>&ndash; programming interface of the device </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a12e8324002e5c894f2a99d0fe84412eb" name="a12e8324002e5c894f2a99d0fe84412eb"></a>
@@ -334,6 +380,14 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>AuCreateDriverInstance &ndash; creates a new driver slot. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">drivername</td><td>&ndash; name of the driver </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -353,6 +407,14 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>AuCreateDriverInstance &ndash; creates a new driver slot. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">drivername</td><td>&ndash; name of the driver </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="af77cc492afac4a0ba67bf60d19b11bf5" name="af77cc492afac4a0ba67bf60d19b11bf5"></a>
@@ -369,6 +431,8 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>AuDecreaseDriverCount &ndash; decrease the number of device count. </p>
 
 </div>
 </div>
@@ -398,6 +462,15 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>AuDriverLoad &ndash; Manage and loads dll drivers. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>&ndash; file path </td></tr>
+    <tr><td class="paramname">driver</td><td>&ndash; driver instance </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a15aace447153bb91109fa783a2a7e0bc" name="a15aace447153bb91109fa783a2a7e0bc"></a>
@@ -414,6 +487,8 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>AuDrvMgrGetBaseAddress &ndash; returns the current driver load base address. </p>
 
 </div>
 </div>
@@ -433,6 +508,8 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>AuDrvMgrSetBaseAddress &ndash; sets a new base address for driver to load it's highly risky because, if we set it to kernel stack location, kernel will crash. </p>
+
 </div>
 </div>
 <a id="a6b0952e36052e690c14a4dc5b3e02fc8" name="a6b0952e36052e690c14a4dc5b3e02fc8"></a>
@@ -450,6 +527,14 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>AuDrvMngrInitialize &ndash; Initialize the driver manager. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">info</td><td>&ndash; kernel boot info </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -491,6 +576,17 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>AuGetConfEntry &ndash; Get an entry offset in the file for required device. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vendor_id</td><td>&ndash; vendor id of the product </td></tr>
+    <tr><td class="paramname">device_id</td><td>&ndash; device id of the product </td></tr>
+    <tr><td class="paramname">buffer</td><td>&ndash; configuration file buffer </td></tr>
+    <tr><td class="paramname">entryoff</td><td>&ndash; entry offset from where search begins </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a1e40301b0863c5c8f9aba5d8e5c09763" name="a1e40301b0863c5c8f9aba5d8e5c09763"></a>
@@ -531,6 +627,17 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>AuGetDriverName &ndash; Extract the driver path from its entry offset. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vendor_id</td><td>&ndash; vendor id of the product </td></tr>
+    <tr><td class="paramname">device_id</td><td>&ndash; device id of the product </td></tr>
+    <tr><td class="paramname">buffer</td><td>&ndash; configuration file buffer </td></tr>
+    <tr><td class="paramname">entryoff</td><td>&ndash; entry offset from where search begins </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a5ef10d1f1c0599585d5163ddcce4d35b" name="a5ef10d1f1c0599585d5163ddcce4d35b"></a>
@@ -547,6 +654,8 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>AuIncreaseDriverCount &ndash; increase the number of device count. </p>
 
 </div>
 </div>
@@ -590,6 +699,14 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>AuRegisterDevice &ndash; register a new device to aurora system. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dev</td><td>&ndash; Pointer to device to add </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

@@ -499,11 +499,11 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>A callback function that is provided by the caller to intercept the EFI_MTFTP4_OPCODE_DATA or EFI_MTFTP4_OPCODE_DATA8 packets processed in the <a class="el" href="struct__EFI__MTFTP4__PROTOCOL.html#a8804eb363ae3a7bccbff85cc26e00aff">EFI_MTFTP4_PROTOCOL.ReadFile()</a> function, and alternatively to intercept EFI_MTFTP4_OPCODE_OACK or EFI_MTFTP4_OPCODE_ERROR packets during a call to <a class="el" href="struct__EFI__MTFTP4__PROTOCOL.html#a8804eb363ae3a7bccbff85cc26e00aff">EFI_MTFTP4_PROTOCOL.ReadFile()</a>, <a class="el" href="sysserv_8h.html#ac94998e2c23995de26f36eee4d74badd">WriteFile()</a> or ReadDirectory().</p>
+<p>A callback function that is provided by the caller to intercept the EFI_MTFTP4_OPCODE_DATA or EFI_MTFTP4_OPCODE_DATA8 packets processed in the <a class="el" href="struct__EFI__MTFTP4__PROTOCOL.html#a8804eb363ae3a7bccbff85cc26e00aff">EFI_MTFTP4_PROTOCOL.ReadFile()</a> function, and alternatively to intercept EFI_MTFTP4_OPCODE_OACK or EFI_MTFTP4_OPCODE_ERROR packets during a call to <a class="el" href="struct__EFI__MTFTP4__PROTOCOL.html#a8804eb363ae3a7bccbff85cc26e00aff">EFI_MTFTP4_PROTOCOL.ReadFile()</a>, <a class="el" href="sysserv_8h.html#ac94998e2c23995de26f36eee4d74badd" title="WriteFile – write system call.">WriteFile()</a> or ReadDirectory().</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">This</td><td>The pointer to the EFI_MTFTP4_PROTOCOL instance. </td></tr>
-    <tr><td class="paramname">Token</td><td>The token that the caller provided in the <a class="el" href="struct__EFI__MTFTP4__PROTOCOL.html#a8804eb363ae3a7bccbff85cc26e00aff">EFI_MTFTP4_PROTOCOL.ReadFile()</a>, <a class="el" href="sysserv_8h.html#ac94998e2c23995de26f36eee4d74badd">WriteFile()</a> or ReadDirectory() function. </td></tr>
+    <tr><td class="paramname">Token</td><td>The token that the caller provided in the <a class="el" href="struct__EFI__MTFTP4__PROTOCOL.html#a8804eb363ae3a7bccbff85cc26e00aff">EFI_MTFTP4_PROTOCOL.ReadFile()</a>, <a class="el" href="sysserv_8h.html#ac94998e2c23995de26f36eee4d74badd" title="WriteFile – write system call.">WriteFile()</a> or ReadDirectory() function. </td></tr>
     <tr><td class="paramname">PacketLen</td><td>Indicates the length of the packet. </td></tr>
     <tr><td class="paramname">Packet</td><td>The pointer to an MTFTPv4 packet.</td></tr>
   </table>

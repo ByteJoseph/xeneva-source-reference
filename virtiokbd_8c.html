@@ -156,8 +156,10 @@ Include dependency graph for virtiokbd.c:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ab3ea808009a9eea74ff49ec2a952fee1" id="r_ab3ea808009a9eea74ff49ec2a952fee1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="virtiokbd_8c.html#ab3ea808009a9eea74ff49ec2a952fee1">AuVirtioKbdHandler</a> (int spinum)</td></tr>
+<tr class="memdesc:ab3ea808009a9eea74ff49ec2a952fee1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtio-keyboard interrupt handler.  <br /></td></tr>
 <tr class="separator:ab3ea808009a9eea74ff49ec2a952fee1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3314240591d0829d0ee6868bec14eba" id="r_ac3314240591d0829d0ee6868bec14eba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="virtiokbd_8c.html#ac3314240591d0829d0ee6868bec14eba">AuVirtioKbdInitialize</a> (<a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> <a class="el" href="Drivers_2USB_2hid_2main_8cpp.html#aa01b53b251b673a86b7c563fde808273">device</a>)</td></tr>
+<tr class="memdesc:ac3314240591d0829d0ee6868bec14eba"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuVirtioKbdInitialize &ndash; initialize the virtio keyboard.  <br /></td></tr>
 <tr class="separator:ac3314240591d0829d0ee6868bec14eba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
@@ -167,7 +169,16 @@ Variables</h2></td></tr>
 <tr class="memitem:ac7ea4a68c5710086113a183d16feaf8d" id="r_ac7ea4a68c5710086113a183d16feaf8d"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structVirtioInputEvent.html">VirtioInputEvent</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="virtiokbd_8c.html#ac7ea4a68c5710086113a183d16feaf8d">input</a></td></tr>
 <tr class="separator:ac7ea4a68c5710086113a183d16feaf8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>BSD 2-Clause License</p>
+<p>Copyright (c) 2022-2025, Manas Kamal Choudhury All rights reserved.</p>
+<p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
+<ol type="1">
+<li>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</li>
+<li>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</li>
+</ol>
+<p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. </p>
+</div><h2 class="groupheader">Function Documentation</h2>
 <a id="ab3ea808009a9eea74ff49ec2a952fee1" name="ab3ea808009a9eea74ff49ec2a952fee1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab3ea808009a9eea74ff49ec2a952fee1">&#9670;&#160;</a></span>AuVirtioKbdHandler()</h2>
 
@@ -183,6 +194,8 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Virtio-keyboard interrupt handler. </p>
 
 </div>
 </div>
@@ -201,6 +214,8 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>AuVirtioKbdInitialize &ndash; initialize the virtio keyboard. </p>
 
 </div>
 </div>
@@ -230,14 +245,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>BSD 2-Clause License</p>
-<p>Copyright (c) 2022-2025, Manas Kamal Choudhury All rights reserved.</p>
-<p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
-<ol type="1">
-<li>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</li>
-<li>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</li>
-</ol>
-<p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. </p>
 
 </div>
 </div>

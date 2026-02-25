@@ -212,8 +212,10 @@ Functions</h2></td></tr>
 <tr class="memitem:aaf4bbd1946781de22ccd77345a00f5f5" id="r_aaf4bbd1946781de22ccd77345a00f5f5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vfs_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tty_8cpp.html#aaf4bbd1946781de22ccd77345a00f5f5">AuTTYCreateSlave</a> (<a class="el" href="tty_8h.html#a87e0bdceb4a92e45e4e2855a1cd77705">TTY</a> *tty)</td></tr>
 <tr class="separator:aaf4bbd1946781de22ccd77345a00f5f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abeabc91b02d784d77c0f0138081fea7e" id="r_abeabc91b02d784d77c0f0138081fea7e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tty_8cpp.html#abeabc91b02d784d77c0f0138081fea7e">AuTTYCreate</a> (int *<a class="el" href="term_8cpp.html#a18920b024fa1c723a7488dd675657766">master_fd</a>, int *<a class="el" href="term_8cpp.html#a206c41c20a55d5c3a624f945b9074bc6">slave_fd</a>)</td></tr>
+<tr class="memdesc:abeabc91b02d784d77c0f0138081fea7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuTTYCreate &ndash; create tty syscall for process.  <br /></td></tr>
 <tr class="separator:abeabc91b02d784d77c0f0138081fea7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a239734fde4e3e8b430baa6a131fe9c3d" id="r_a239734fde4e3e8b430baa6a131fe9c3d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tty_8cpp.html#a239734fde4e3e8b430baa6a131fe9c3d">AuTTYInitialise</a> ()</td></tr>
+<tr class="memdesc:a239734fde4e3e8b430baa6a131fe9c3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuTTYInitialise &ndash; initialize the TTY kernel resource.  <br /></td></tr>
 <tr class="separator:a239734fde4e3e8b430baa6a131fe9c3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
@@ -253,6 +255,15 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>AuTTYCreate &ndash; create tty syscall for process. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">master_fd</td><td>&ndash; Pointer to memory area where to store master file descriptor </td></tr>
+    <tr><td class="paramname">slave_fd</td><td>&ndash; Pointer to memory area where to store slave file descriptor </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -324,6 +335,8 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>AuTTYInitialise &ndash; initialize the TTY kernel resource. </p>
 
 </div>
 </div>

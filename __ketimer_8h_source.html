@@ -82,64 +82,48 @@ $(document).ready(function() { init_codefold(0); });
 </div><!--header-->
 <div class="contents">
 <a href="__ketimer_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#ifndef __KE_TIMER_H__</span></div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#define __KE_TIMER_H__</span></div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#include &lt;<a class="code" href="__xeneva_8h.html">_xeneva.h</a>&gt;</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#ifndef __KE_TIMER_H__</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#define __KE_TIMER_H__</span></div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><a class="code hl_define" href="__xeneva_8h.html#ab246fc80dcb7c6e842a5c117d20a2719">XE_EXTERN</a>{</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="__ketimer_8h.html#aa1586d0782a630a293f1b5e179d93110">   40</a></span><span class="preprocessor">#define _KE_TIMER_UNDIFINED_MAXCOUNT -1</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#include &lt;<a class="code" href="__xeneva_8h.html">_xeneva.h</a>&gt;</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><a class="code hl_define" href="__xeneva_8h.html#ab246fc80dcb7c6e842a5c117d20a2719">XE_EXTERN</a>{</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="__ketimer_8h.html#a09ae099cb4c66f3ab15e100925b07c33">   42</a></span><span class="preprocessor">#define _KE_TIMER_UPDATE_ORDER_SECOND 1</span></div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="__ketimer_8h.html#a8e6151c22e10fb9c471a71a36ceaa31e">   43</a></span><span class="preprocessor">#define _KE_TIMER_UPDATE_ORDER_MINUTE 2</span></div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="__ketimer_8h.html#a2d273b037d6fa1378496fbd61c5f8693">   44</a></span><span class="preprocessor">#define _KE_TIMER_UPDATE_ORDER_HOUR 3</span></div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="__ketimer_8h.html#a008fffd2887e0f24a0a60c076c934a83">   45</a></span><span class="preprocessor">#define _KE_TIMER_UPDATE_ORDER_INTERVAL 4</span></div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="__ketimer_8h.html#a300d5e46ef38df6a1da90fd2ae4917b9">   47</a></span><span class="preprocessor">#define TIMER_MESSAGE_CODE 8</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="__ketimer_8h.html#aa1586d0782a630a293f1b5e179d93110">   42</a></span><span class="preprocessor">#define _KE_TIMER_UNDIFINED_MAXCOUNT -1</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="__ketimer_8h.html#a09ae099cb4c66f3ab15e100925b07c33">   44</a></span><span class="preprocessor">#define _KE_TIMER_UPDATE_ORDER_SECOND 1</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="__ketimer_8h.html#a8e6151c22e10fb9c471a71a36ceaa31e">   45</a></span><span class="preprocessor">#define _KE_TIMER_UPDATE_ORDER_MINUTE 2</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="__ketimer_8h.html#a2d273b037d6fa1378496fbd61c5f8693">   46</a></span><span class="preprocessor">#define _KE_TIMER_UPDATE_ORDER_HOUR 3</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="__ketimer_8h.html#a008fffd2887e0f24a0a60c076c934a83">   47</a></span><span class="preprocessor">#define _KE_TIMER_UPDATE_ORDER_INTERVAL 4</span></div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="comment">/*</span></div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment">    * _KeCreateTimer -- create timer service</span></div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment">    * @param threadID -- current thread id</span></div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment">    * @param maxTickLimit -- maximum tick limit</span></div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment">    * @param updatemode -- Timer update mode</span></div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment">    */</span></div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="__ketimer_8h.html#ade9cf69abf36d0c5b15f1103088ae9e8">   56</a></span>    <a class="code hl_define" href="__xeneva_8h.html#a3640283d666d4a8b25a736424ee25866">XE_LIB</a> <span class="keywordtype">int</span> <a class="code hl_function" href="__ketimer_8h.html#ade9cf69abf36d0c5b15f1103088ae9e8">_KeCreateTimer</a>(<span class="keywordtype">int</span> <a class="code hl_variable" href="Process_2systray_2main_8cpp.html#a88110d06c2b8b5584d31b5be3f13af46">threadID</a>, <span class="keywordtype">int</span> maxLimit, <a class="code hl_typedef" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> updateMode);</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="comment">/*</span></div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment">    * _KeStartTimer -- starts the timer</span></div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="comment">    */</span></div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="__ketimer_8h.html#af44058b2f1d174e6d9655a3a780eba8f">   61</a></span>    <a class="code hl_define" href="__xeneva_8h.html#a3640283d666d4a8b25a736424ee25866">XE_LIB</a> <span class="keywordtype">int</span> <a class="code hl_function" href="__ketimer_8h.html#af44058b2f1d174e6d9655a3a780eba8f">_KeStartTimer</a>(<span class="keywordtype">int</span> <a class="code hl_variable" href="Process_2systray_2main_8cpp.html#a88110d06c2b8b5584d31b5be3f13af46">threadID</a>);</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="comment">/*</span></div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment">    * _KeStopTimer-- stop the timer</span></div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment">    */</span></div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="__ketimer_8h.html#a05e27cb1e4a6f96c53e08c15d07a1539">   66</a></span>    <a class="code hl_define" href="__xeneva_8h.html#a3640283d666d4a8b25a736424ee25866">XE_LIB</a> <span class="keywordtype">int</span> <a class="code hl_function" href="__ketimer_8h.html#a05e27cb1e4a6f96c53e08c15d07a1539">_KeStopTimer</a>(<span class="keywordtype">int</span> <a class="code hl_variable" href="Process_2systray_2main_8cpp.html#a88110d06c2b8b5584d31b5be3f13af46">threadID</a>);</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="comment">/*</span></div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment">    * _KeDestroyTimer -- remove the timer</span></div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment">    * @param threadID -- current thread id</span></div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="comment">    */</span></div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="__ketimer_8h.html#a4dc24f32c0727ef313a9dba9830f38b0">   72</a></span>    <a class="code hl_define" href="__xeneva_8h.html#a3640283d666d4a8b25a736424ee25866">XE_LIB</a> <span class="keywordtype">int</span> <a class="code hl_function" href="__ketimer_8h.html#a4dc24f32c0727ef313a9dba9830f38b0">_KeDestroyTimer</a>(<span class="keywordtype">int</span> <a class="code hl_variable" href="Process_2systray_2main_8cpp.html#a88110d06c2b8b5584d31b5be3f13af46">threadID</a>);</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>}</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="__ketimer_8h.html#a300d5e46ef38df6a1da90fd2ae4917b9">   49</a></span><span class="preprocessor">#define TIMER_MESSAGE_CODE 8</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="__ketimer_8h.html#ade9cf69abf36d0c5b15f1103088ae9e8">   58</a></span>    <a class="code hl_define" href="__xeneva_8h.html#a3640283d666d4a8b25a736424ee25866">XE_LIB</a> <span class="keywordtype">int</span> <a class="code hl_function" href="__ketimer_8h.html#ade9cf69abf36d0c5b15f1103088ae9e8">_KeCreateTimer</a>(<span class="keywordtype">int</span> <a class="code hl_variable" href="Process_2systray_2main_8cpp.html#a88110d06c2b8b5584d31b5be3f13af46">threadID</a>, <span class="keywordtype">int</span> maxLimit, <a class="code hl_typedef" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> updateMode);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="__ketimer_8h.html#af44058b2f1d174e6d9655a3a780eba8f">   63</a></span>    <a class="code hl_define" href="__xeneva_8h.html#a3640283d666d4a8b25a736424ee25866">XE_LIB</a> <span class="keywordtype">int</span> <a class="code hl_function" href="__ketimer_8h.html#af44058b2f1d174e6d9655a3a780eba8f">_KeStartTimer</a>(<span class="keywordtype">int</span> <a class="code hl_variable" href="Process_2systray_2main_8cpp.html#a88110d06c2b8b5584d31b5be3f13af46">threadID</a>);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="__ketimer_8h.html#a05e27cb1e4a6f96c53e08c15d07a1539">   68</a></span>    <a class="code hl_define" href="__xeneva_8h.html#a3640283d666d4a8b25a736424ee25866">XE_LIB</a> <span class="keywordtype">int</span> <a class="code hl_function" href="__ketimer_8h.html#a05e27cb1e4a6f96c53e08c15d07a1539">_KeStopTimer</a>(<span class="keywordtype">int</span> <a class="code hl_variable" href="Process_2systray_2main_8cpp.html#a88110d06c2b8b5584d31b5be3f13af46">threadID</a>);</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="__ketimer_8h.html#a4dc24f32c0727ef313a9dba9830f38b0">   74</a></span>    <a class="code hl_define" href="__xeneva_8h.html#a3640283d666d4a8b25a736424ee25866">XE_LIB</a> <span class="keywordtype">int</span> <a class="code hl_function" href="__ketimer_8h.html#a4dc24f32c0727ef313a9dba9830f38b0">_KeDestroyTimer</a>(<span class="keywordtype">int</span> <a class="code hl_variable" href="Process_2systray_2main_8cpp.html#a88110d06c2b8b5584d31b5be3f13af46">threadID</a>);</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>}</div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aProcess_2systray_2main_8cpp_html_a88110d06c2b8b5584d31b5be3f13af46"><div class="ttname"><a href="Process_2systray_2main_8cpp.html#a88110d06c2b8b5584d31b5be3f13af46">threadID</a></div><div class="ttdeci">int threadID</div><div class="ttdef"><b>Definition</b> main.cpp:58</div></div>
-<div class="ttc" id="a__ketimer_8h_html_a05e27cb1e4a6f96c53e08c15d07a1539"><div class="ttname"><a href="__ketimer_8h.html#a05e27cb1e4a6f96c53e08c15d07a1539">_KeStopTimer</a></div><div class="ttdeci">XE_LIB int _KeStopTimer(int threadID)</div></div>
-<div class="ttc" id="a__ketimer_8h_html_a4dc24f32c0727ef313a9dba9830f38b0"><div class="ttname"><a href="__ketimer_8h.html#a4dc24f32c0727ef313a9dba9830f38b0">_KeDestroyTimer</a></div><div class="ttdeci">XE_LIB int _KeDestroyTimer(int threadID)</div></div>
-<div class="ttc" id="a__ketimer_8h_html_ade9cf69abf36d0c5b15f1103088ae9e8"><div class="ttname"><a href="__ketimer_8h.html#ade9cf69abf36d0c5b15f1103088ae9e8">_KeCreateTimer</a></div><div class="ttdeci">XE_LIB int _KeCreateTimer(int threadID, int maxLimit, uint8_t updateMode)</div></div>
-<div class="ttc" id="a__ketimer_8h_html_af44058b2f1d174e6d9655a3a780eba8f"><div class="ttname"><a href="__ketimer_8h.html#af44058b2f1d174e6d9655a3a780eba8f">_KeStartTimer</a></div><div class="ttdeci">XE_LIB int _KeStartTimer(int threadID)</div></div>
+<div class="ttc" id="a__ketimer_8h_html_a05e27cb1e4a6f96c53e08c15d07a1539"><div class="ttname"><a href="__ketimer_8h.html#a05e27cb1e4a6f96c53e08c15d07a1539">_KeStopTimer</a></div><div class="ttdeci">XE_LIB int _KeStopTimer(int threadID)</div><div class="ttdoc">_KeStopTimer– stop the timer</div></div>
+<div class="ttc" id="a__ketimer_8h_html_a4dc24f32c0727ef313a9dba9830f38b0"><div class="ttname"><a href="__ketimer_8h.html#a4dc24f32c0727ef313a9dba9830f38b0">_KeDestroyTimer</a></div><div class="ttdeci">XE_LIB int _KeDestroyTimer(int threadID)</div><div class="ttdoc">_KeDestroyTimer – remove the timer</div></div>
+<div class="ttc" id="a__ketimer_8h_html_ade9cf69abf36d0c5b15f1103088ae9e8"><div class="ttname"><a href="__ketimer_8h.html#ade9cf69abf36d0c5b15f1103088ae9e8">_KeCreateTimer</a></div><div class="ttdeci">XE_LIB int _KeCreateTimer(int threadID, int maxLimit, uint8_t updateMode)</div><div class="ttdoc">_KeCreateTimer – create timer service</div></div>
+<div class="ttc" id="a__ketimer_8h_html_af44058b2f1d174e6d9655a3a780eba8f"><div class="ttname"><a href="__ketimer_8h.html#af44058b2f1d174e6d9655a3a780eba8f">_KeStartTimer</a></div><div class="ttdeci">XE_LIB int _KeStartTimer(int threadID)</div><div class="ttdoc">_KeStartTimer – starts the timer</div></div>
 <div class="ttc" id="a__xeneva_8h_html"><div class="ttname"><a href="__xeneva_8h.html">_xeneva.h</a></div></div>
-<div class="ttc" id="a__xeneva_8h_html_a3640283d666d4a8b25a736424ee25866"><div class="ttname"><a href="__xeneva_8h.html#a3640283d666d4a8b25a736424ee25866">XE_LIB</a></div><div class="ttdeci">#define XE_LIB</div><div class="ttdef"><b>Definition</b> _xeneva.h:53</div></div>
-<div class="ttc" id="a__xeneva_8h_html_ab246fc80dcb7c6e842a5c117d20a2719"><div class="ttname"><a href="__xeneva_8h.html#ab246fc80dcb7c6e842a5c117d20a2719">XE_EXTERN</a></div><div class="ttdeci">#define XE_EXTERN</div><div class="ttdef"><b>Definition</b> _xeneva.h:48</div></div>
+<div class="ttc" id="a__xeneva_8h_html_a3640283d666d4a8b25a736424ee25866"><div class="ttname"><a href="__xeneva_8h.html#a3640283d666d4a8b25a736424ee25866">XE_LIB</a></div><div class="ttdeci">#define XE_LIB</div><div class="ttdef"><b>Definition</b> _xeneva.h:55</div></div>
+<div class="ttc" id="a__xeneva_8h_html_ab246fc80dcb7c6e842a5c117d20a2719"><div class="ttname"><a href="__xeneva_8h.html#ab246fc80dcb7c6e842a5c117d20a2719">XE_EXTERN</a></div><div class="ttdeci">#define XE_EXTERN</div><div class="ttdef"><b>Definition</b> _xeneva.h:50</div></div>
 <div class="ttc" id="aacefiex_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition</b> acefiex.h:161</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

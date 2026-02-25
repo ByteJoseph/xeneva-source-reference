@@ -186,12 +186,15 @@ Functions</h2></td></tr>
 <tr class="memitem:ab420dbb2861b552d9f48ee72837d8c0a" id="r_ab420dbb2861b552d9f48ee72837d8c0a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="loader_8c.html#ab420dbb2861b552d9f48ee72837d8c0a">testFunc</a> ()</td></tr>
 <tr class="separator:ab420dbb2861b552d9f48ee72837d8c0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7897d2c42d7adc72398b56a0448a5d18" id="r_a7897d2c42d7adc72398b56a0448a5d18"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="loader_8c.html#a7897d2c42d7adc72398b56a0448a5d18">AuProcessEntUser</a> (<a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> rcx)</td></tr>
+<tr class="memdesc:a7897d2c42d7adc72398b56a0448a5d18"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuProcessEntUser &ndash; main kernel thread call in order to enter user for processes.  <br /></td></tr>
 <tr class="separator:a7897d2c42d7adc72398b56a0448a5d18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a707a18c70b37a74283add70ddf5e8609" id="r_a707a18c70b37a74283add70ddf5e8609"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Libs_2XEClib_2includes_2stdint_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="loader_8c.html#a707a18c70b37a74283add70ddf5e8609">setStk</a> ()</td></tr>
 <tr class="separator:a707a18c70b37a74283add70ddf5e8609"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca80cf203cb78721b7659f449478784c" id="r_aca80cf203cb78721b7659f449478784c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="loader_8c.html#aca80cf203cb78721b7659f449478784c">AuLoadExecToProcess</a> (<a class="el" href="process_8h.html#af7383c550ee680158b77cf18ef1d275a">AuProcess</a> *proc, char *filename, int argc, char **argv)</td></tr>
+<tr class="memdesc:aca80cf203cb78721b7659f449478784c"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuLoadExecToProcess &ndash; loads an executable to the process.  <br /></td></tr>
 <tr class="separator:aca80cf203cb78721b7659f449478784c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb6f4cfec25828c3c2877987f1bc6fbd" id="r_abb6f4cfec25828c3c2877987f1bc6fbd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="loader_8c.html#abb6f4cfec25828c3c2877987f1bc6fbd">AuInitialiseLoader</a> ()</td></tr>
+<tr class="memdesc:abb6f4cfec25828c3c2877987f1bc6fbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuInitialiseLoader &ndash; initialize the loader and allocate atleast 1 MiB for scratch use.  <br /></td></tr>
 <tr class="separator:abb6f4cfec25828c3c2877987f1bc6fbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
@@ -201,7 +204,16 @@ Variables</h2></td></tr>
 <tr class="memitem:afdba8ab584df6a88df859cc83a656e9c" id="r_afdba8ab584df6a88df859cc83a656e9c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="loader_8c.html#afdba8ab584df6a88df859cc83a656e9c">physFrames</a> [64]</td></tr>
 <tr class="separator:afdba8ab584df6a88df859cc83a656e9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>BSD 2-Clause License</p>
+<p>Copyright (c) 2022-2023, Manas Kamal Choudhury All rights reserved.</p>
+<p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
+<ol type="1">
+<li>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</li>
+<li>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</li>
+</ol>
+<p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. </p>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a280a14a22fa5f526af1eba6208d9ead4" name="a280a14a22fa5f526af1eba6208d9ead4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a280a14a22fa5f526af1eba6208d9ead4">&#9670;&#160;</a></span>LOADER_SCRATCH_VIRT</h2>
 
@@ -213,14 +225,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>BSD 2-Clause License</p>
-<p>Copyright (c) 2022-2023, Manas Kamal Choudhury All rights reserved.</p>
-<p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
-<ol type="1">
-<li>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</li>
-<li>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</li>
-</ol>
-<p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. </p>
 
 </div>
 </div>
@@ -346,6 +350,8 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>AuInitialiseLoader &ndash; initialize the loader and allocate atleast 1 MiB for scratch use. </p>
+
 </div>
 </div>
 <a id="aca80cf203cb78721b7659f449478784c" name="aca80cf203cb78721b7659f449478784c"></a>
@@ -386,6 +392,18 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>AuLoadExecToProcess &ndash; loads an executable to the process. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">proc</td><td>&ndash; pointer to process data structure </td></tr>
+    <tr><td class="paramname">filename</td><td>&ndash; executable file name </td></tr>
+    <tr><td class="paramname">argc</td><td>&ndash; number of arguments </td></tr>
+    <tr><td class="paramname">argv</td><td>&ndash; array of argument in strings </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success -1 on failure </dd></dl>
+
 </div>
 </div>
 <a id="a7897d2c42d7adc72398b56a0448a5d18" name="a7897d2c42d7adc72398b56a0448a5d18"></a>
@@ -403,6 +421,14 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>AuProcessEntUser &ndash; main kernel thread call in order to enter user for processes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rcx</td><td>&ndash; user entry structure </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

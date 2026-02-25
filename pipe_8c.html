@@ -119,32 +119,45 @@ Include dependency graph for pipe.c:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a61a494ce31f54f0a15791dffa6ff1fec" id="r_a61a494ce31f54f0a15791dffa6ff1fec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pipe_8c.html#a61a494ce31f54f0a15791dffa6ff1fec">AuPipeUnread</a> (<a class="el" href="pipe_8h.html#adeff9c024c6eeb2707d133050a4536f6">AuPipe</a> *pipe)</td></tr>
+<tr class="memdesc:a61a494ce31f54f0a15791dffa6ff1fec"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuPipeUnread &ndash; get the available read space from the pipe.  <br /></td></tr>
 <tr class="separator:a61a494ce31f54f0a15791dffa6ff1fec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6fa5196a4094bf7a2019f1815c96218a" id="r_a6fa5196a4094bf7a2019f1815c96218a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pipe_8c.html#a6fa5196a4094bf7a2019f1815c96218a">AuPipeGetAvailableBytes</a> (<a class="el" href="pipe_8h.html#adeff9c024c6eeb2707d133050a4536f6">AuPipe</a> *pipe)</td></tr>
+<tr class="memdesc:a6fa5196a4094bf7a2019f1815c96218a"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuPipeGetAvailableBytes &ndash; returns total available bytes of the pipe.  <br /></td></tr>
 <tr class="separator:a6fa5196a4094bf7a2019f1815c96218a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b0b8816c771d7ebccd9deb9a576b7bd" id="r_a2b0b8816c771d7ebccd9deb9a576b7bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pipe_8c.html#a2b0b8816c771d7ebccd9deb9a576b7bd">AuPipeIncrementRead</a> (<a class="el" href="pipe_8h.html#adeff9c024c6eeb2707d133050a4536f6">AuPipe</a> *pipe)</td></tr>
+<tr class="memdesc:a2b0b8816c771d7ebccd9deb9a576b7bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuPipeIncrementRead &ndash; increment the read pointer of the pipe.  <br /></td></tr>
 <tr class="separator:a2b0b8816c771d7ebccd9deb9a576b7bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e711529f17af738778a8913702e6a3f" id="r_a2e711529f17af738778a8913702e6a3f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pipe_8c.html#a2e711529f17af738778a8913702e6a3f">AuPipeIncrementWrite</a> (<a class="el" href="pipe_8h.html#adeff9c024c6eeb2707d133050a4536f6">AuPipe</a> *pipe)</td></tr>
+<tr class="memdesc:a2e711529f17af738778a8913702e6a3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuPipeIncrementWrite &ndash; increment the write pointer of the given pipe.  <br /></td></tr>
 <tr class="separator:a2e711529f17af738778a8913702e6a3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e94f29b6a9b70d500e168ae7f712f46" id="r_a1e94f29b6a9b70d500e168ae7f712f46"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pipe_8c.html#a1e94f29b6a9b70d500e168ae7f712f46">AuPipeIncrementWriteAmount</a> (<a class="el" href="pipe_8h.html#adeff9c024c6eeb2707d133050a4536f6">AuPipe</a> *pipe, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> amount)</td></tr>
+<tr class="memdesc:a1e94f29b6a9b70d500e168ae7f712f46"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuPipeIncrementWriteAmount &ndash; increments the write ptr by amount in bytes.  <br /></td></tr>
 <tr class="separator:a1e94f29b6a9b70d500e168ae7f712f46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79a372f292e9866b4cd9f96ff5e66977" id="r_a79a372f292e9866b4cd9f96ff5e66977"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pipe_8c.html#a79a372f292e9866b4cd9f96ff5e66977">AuPipeRead</a> (<a class="el" href="vfs_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *fs, <a class="el" href="vfs_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *file, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> *buffer, <a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> length)</td></tr>
+<tr class="memdesc:a79a372f292e9866b4cd9f96ff5e66977"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuPipeRead &ndash; reads from pipe.  <br /></td></tr>
 <tr class="separator:a79a372f292e9866b4cd9f96ff5e66977"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b4b56d9cdcc7381830452b7249b90b2" id="r_a1b4b56d9cdcc7381830452b7249b90b2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pipe_8c.html#a1b4b56d9cdcc7381830452b7249b90b2">AuPipeWrite</a> (<a class="el" href="vfs_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *fs, <a class="el" href="vfs_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *file, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> *buffer, <a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> length)</td></tr>
+<tr class="memdesc:a1b4b56d9cdcc7381830452b7249b90b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuPipeWrite &ndash; write to pipe.  <br /></td></tr>
 <tr class="separator:a1b4b56d9cdcc7381830452b7249b90b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a678a701979c0e3e49ad25e1b023b6e58" id="r_a678a701979c0e3e49ad25e1b023b6e58"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vfs_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pipe_8c.html#a678a701979c0e3e49ad25e1b023b6e58">AuPipeOpen</a> (<a class="el" href="vfs_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *node, char *<a class="el" href="Process_2Files_2main_8cpp.html#a44196e6a5696d10442c29e639437196e">path</a>)</td></tr>
 <tr class="separator:a678a701979c0e3e49ad25e1b023b6e58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc7bc46ada4a9700f6fb5e80c15b3ec2" id="r_adc7bc46ada4a9700f6fb5e80c15b3ec2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pipe_8c.html#adc7bc46ada4a9700f6fb5e80c15b3ec2">AuPipeFSAddFile</a> (<a class="el" href="vfs_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *fs, char *<a class="el" href="Process_2Files_2main_8cpp.html#a44196e6a5696d10442c29e639437196e">path</a>, <a class="el" href="vfs_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *file)</td></tr>
+<tr class="memdesc:adc7bc46ada4a9700f6fb5e80c15b3ec2"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuPipeFSAddFile &ndash; adds a file/directory.  <br /></td></tr>
 <tr class="separator:adc7bc46ada4a9700f6fb5e80c15b3ec2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a719e1d5b903691062c7088a79b083063" id="r_a719e1d5b903691062c7088a79b083063"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pipe_8c.html#a719e1d5b903691062c7088a79b083063">AuPipeFSRemoveFile</a> (<a class="el" href="vfs_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *fs, char *<a class="el" href="Process_2Files_2main_8cpp.html#a44196e6a5696d10442c29e639437196e">path</a>)</td></tr>
+<tr class="memdesc:a719e1d5b903691062c7088a79b083063"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuDevFSRemoveFile &ndash; remove a file from device file system.  <br /></td></tr>
 <tr class="separator:a719e1d5b903691062c7088a79b083063"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76b88cbd63e3ebefa8bfa42c0a38c222" id="r_a76b88cbd63e3ebefa8bfa42c0a38c222"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pipe_8c.html#a76b88cbd63e3ebefa8bfa42c0a38c222">AuPipeClose</a> (<a class="el" href="vfs_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *fs, <a class="el" href="vfs_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *file)</td></tr>
+<tr class="memdesc:a76b88cbd63e3ebefa8bfa42c0a38c222"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuPipeClose &ndash; closes the pipe.  <br /></td></tr>
 <tr class="separator:a76b88cbd63e3ebefa8bfa42c0a38c222"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6bea25cf2b352aca3ce767d15ac04ff5" id="r_a6bea25cf2b352aca3ce767d15ac04ff5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pipe_8c.html#a6bea25cf2b352aca3ce767d15ac04ff5">AuCreatePipe</a> (char *name, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> sz)</td></tr>
+<tr class="memdesc:a6bea25cf2b352aca3ce767d15ac04ff5"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuCreatePipe &ndash; creates a new pipe.  <br /></td></tr>
 <tr class="separator:a6bea25cf2b352aca3ce767d15ac04ff5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0951ee2405175bb19f7ae8e771a47fde" id="r_a0951ee2405175bb19f7ae8e771a47fde"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vfs_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pipe_8c.html#a0951ee2405175bb19f7ae8e771a47fde">AuPipeFSOpen</a> (<a class="el" href="vfs_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *fs, char *<a class="el" href="Process_2Files_2main_8cpp.html#a44196e6a5696d10442c29e639437196e">path</a>)</td></tr>
+<tr class="memdesc:a0951ee2405175bb19f7ae8e771a47fde"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuPipeFSOpen &ndash; open a pipe file and return to the caller.  <br /></td></tr>
 <tr class="separator:a0951ee2405175bb19f7ae8e771a47fde"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab145c97a5952a2c56cfc64b3af72dc86" id="r_ab145c97a5952a2c56cfc64b3af72dc86"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pipe_8c.html#ab145c97a5952a2c56cfc64b3af72dc86">AuPipeFSInitialise</a> ()</td></tr>
+<tr class="memdesc:ab145c97a5952a2c56cfc64b3af72dc86"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuPipeFSInitialise &ndash; initialise the pipe filesystem.  <br /></td></tr>
 <tr class="separator:ab145c97a5952a2c56cfc64b3af72dc86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
@@ -152,7 +165,16 @@ Variables</h2></td></tr>
 <tr class="memitem:a1bb3848c9ff331d16fde5bbda0b4dad6" id="r_a1bb3848c9ff331d16fde5bbda0b4dad6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vfs_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pipe_8c.html#a1bb3848c9ff331d16fde5bbda0b4dad6">pipeFS</a></td></tr>
 <tr class="separator:a1bb3848c9ff331d16fde5bbda0b4dad6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>BSD 2-Clause License</p>
+<p>Copyright (c) 2022-2023, Manas Kamal Choudhury All rights reserved.</p>
+<p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
+<ol type="1">
+<li>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</li>
+<li>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</li>
+</ol>
+<p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. </p>
+</div><h2 class="groupheader">Function Documentation</h2>
 <a id="a6bea25cf2b352aca3ce767d15ac04ff5" name="a6bea25cf2b352aca3ce767d15ac04ff5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6bea25cf2b352aca3ce767d15ac04ff5">&#9670;&#160;</a></span>AuCreatePipe()</h2>
 
@@ -178,6 +200,15 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>AuCreatePipe &ndash; creates a new pipe. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>&ndash; name of the pipe </td></tr>
+    <tr><td class="paramname">sz</td><td>&ndash; Size of the pipe </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -206,6 +237,15 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>AuPipeClose &ndash; closes the pipe. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fs</td><td>&ndash; Pointer to the pipe </td></tr>
+    <tr><td class="paramname">file</td><td>&ndash; Pointer to file, not needed </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -241,6 +281,16 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>AuPipeFSAddFile &ndash; adds a file/directory. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fs</td><td>&ndash; pointer to device file system </td></tr>
+    <tr><td class="paramname">path</td><td>&ndash; path of the file </td></tr>
+    <tr><td class="paramname">file</td><td>&ndash; file to add to dev fs </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="ab145c97a5952a2c56cfc64b3af72dc86" name="ab145c97a5952a2c56cfc64b3af72dc86"></a>
@@ -257,6 +307,8 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>AuPipeFSInitialise &ndash; initialise the pipe filesystem. </p>
 
 </div>
 </div>
@@ -286,6 +338,15 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>AuPipeFSOpen &ndash; open a pipe file and return to the caller. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fs</td><td>&ndash; file system node </td></tr>
+    <tr><td class="paramname">path</td><td>&ndash; path of the pipe file </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a719e1d5b903691062c7088a79b083063" name="a719e1d5b903691062c7088a79b083063"></a>
@@ -314,6 +375,15 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>AuDevFSRemoveFile &ndash; remove a file from device file system. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fs</td><td>&ndash; pointer to the file system </td></tr>
+    <tr><td class="paramname">path</td><td>&ndash; path of the file </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a6fa5196a4094bf7a2019f1815c96218a" name="a6fa5196a4094bf7a2019f1815c96218a"></a>
@@ -331,6 +401,15 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>AuPipeGetAvailableBytes &ndash; returns total available bytes of the pipe. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pipe</td><td>&ndash; Pointer to pipe to get total available bytes </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>number of bytes available in the pipe </dd></dl>
 
 </div>
 </div>
@@ -350,6 +429,14 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>AuPipeIncrementRead &ndash; increment the read pointer of the pipe. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pipe</td><td>&ndash; Pointer to pipe to increment its read pointer </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a2e711529f17af738778a8913702e6a3f" name="a2e711529f17af738778a8913702e6a3f"></a>
@@ -367,6 +454,14 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>AuPipeIncrementWrite &ndash; increment the write pointer of the given pipe. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pipe</td><td>&ndash; Pointer to pipe to increment its write pointer </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -395,6 +490,15 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>AuPipeIncrementWriteAmount &ndash; increments the write ptr by amount in bytes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pipe</td><td>&ndash; Pointer to the pipe device </td></tr>
+    <tr><td class="paramname">amount</td><td>&ndash; amount of bytes </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -464,6 +568,17 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>AuPipeRead &ndash; reads from pipe. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fs</td><td>&ndash; Pointer to the file system node </td></tr>
+    <tr><td class="paramname">file</td><td>&ndash; Pointer to the file, here we don't need it </td></tr>
+    <tr><td class="paramname">buffer</td><td>&ndash; Pointer to buffer where to put the data </td></tr>
+    <tr><td class="paramname">length</td><td>&ndash; length to read </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a61a494ce31f54f0a15791dffa6ff1fec" name="a61a494ce31f54f0a15791dffa6ff1fec"></a>
@@ -481,6 +596,14 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>AuPipeUnread &ndash; get the available read space from the pipe. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pipe</td><td>&ndash; Pointer to the pipe </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -522,6 +645,17 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>AuPipeWrite &ndash; write to pipe. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fs</td><td>&ndash; Pointer to the file system node </td></tr>
+    <tr><td class="paramname">file</td><td>&ndash; Pointer to the file, here we don't need it </td></tr>
+    <tr><td class="paramname">buffer</td><td>&ndash; Pointer to buffer where to put the data </td></tr>
+    <tr><td class="paramname">length</td><td>&ndash; length to read </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
@@ -536,14 +670,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>BSD 2-Clause License</p>
-<p>Copyright (c) 2022-2023, Manas Kamal Choudhury All rights reserved.</p>
-<p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
-<ol type="1">
-<li>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</li>
-<li>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</li>
-</ol>
-<p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. </p>
 
 </div>
 </div>

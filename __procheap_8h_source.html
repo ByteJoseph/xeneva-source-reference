@@ -82,37 +82,25 @@ $(document).ready(function() { init_codefold(0); });
 </div><!--header-->
 <div class="contents">
 <a href="__procheap_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#ifndef __PROC_HEAP_H__</span></div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#define __PROC_HEAP_H__</span></div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#include &lt;<a class="code" href="__xeneva_8h.html">_xeneva.h</a>&gt;</span></div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment"> * _ProcCreateHeap -- create a new process heap area</span></div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment"> *  @param sz -- size to create by default</span></div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code hl_function" href="__procheap_8h.html#afb54e41c52235280b56267f6fb6166ae">ProcCreateHeapArea</a>(<span class="keywordtype">size_t</span> sz);</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment"> * _ProcHeapAreaDestroy -- destroy entire heap area</span></div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code hl_function" href="__procheap_8h.html#a44cdbb09a8edf37aecb130d2f08a22b8">_ProcHeapAreaDestroy</a>();</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment"> * _ProcGetHeapMem -- returns a heap memory from process</span></div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment"> * heap area</span></div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment"> * @param sz -- size in bytes</span></div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="keyword">extern</span> <a class="code hl_typedef" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>  <a class="code hl_function" href="__procheap_8h.html#aa2ae87542a2cad796caeeb730d6e7df7">_ProcGetHeapMem</a>(<span class="keywordtype">size_t</span> sz);</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code hl_function" href="__procheap_8h.html#a06e34b82c92883fad417e8f5c295fb4c">_ProcHeapMemUnmap</a>(<span class="keywordtype">void</span>* ptr, <span class="keywordtype">size_t</span> sz);</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#ifndef __PROC_HEAP_H__</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#define __PROC_HEAP_H__</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#include &lt;<a class="code" href="__xeneva_8h.html">_xeneva.h</a>&gt;</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code hl_function" href="__procheap_8h.html#afb54e41c52235280b56267f6fb6166ae">ProcCreateHeapArea</a>(<span class="keywordtype">size_t</span> sz);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code hl_function" href="__procheap_8h.html#a44cdbb09a8edf37aecb130d2f08a22b8">_ProcHeapAreaDestroy</a>();</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="keyword">extern</span> <a class="code hl_typedef" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>  <a class="code hl_function" href="__procheap_8h.html#aa2ae87542a2cad796caeeb730d6e7df7">_ProcGetHeapMem</a>(<span class="keywordtype">size_t</span> sz);</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code hl_function" href="__procheap_8h.html#a06e34b82c92883fad417e8f5c295fb4c">_ProcHeapMemUnmap</a>(<span class="keywordtype">void</span>* ptr, <span class="keywordtype">size_t</span> sz);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="a__procheap_8h_html_a06e34b82c92883fad417e8f5c295fb4c"><div class="ttname"><a href="__procheap_8h.html#a06e34b82c92883fad417e8f5c295fb4c">_ProcHeapMemUnmap</a></div><div class="ttdeci">void _ProcHeapMemUnmap(void *ptr, size_t sz)</div><div class="ttdef"><b>Definition</b> _procheap.cpp:114</div></div>
-<div class="ttc" id="a__procheap_8h_html_a44cdbb09a8edf37aecb130d2f08a22b8"><div class="ttname"><a href="__procheap_8h.html#a44cdbb09a8edf37aecb130d2f08a22b8">_ProcHeapAreaDestroy</a></div><div class="ttdeci">void _ProcHeapAreaDestroy()</div><div class="ttdef"><b>Definition</b> _procheap.cpp:65</div></div>
-<div class="ttc" id="a__procheap_8h_html_aa2ae87542a2cad796caeeb730d6e7df7"><div class="ttname"><a href="__procheap_8h.html#aa2ae87542a2cad796caeeb730d6e7df7">_ProcGetHeapMem</a></div><div class="ttdeci">uint64_t _ProcGetHeapMem(size_t sz)</div><div class="ttdef"><b>Definition</b> _procheap.cpp:86</div></div>
-<div class="ttc" id="a__procheap_8h_html_afb54e41c52235280b56267f6fb6166ae"><div class="ttname"><a href="__procheap_8h.html#afb54e41c52235280b56267f6fb6166ae">ProcCreateHeapArea</a></div><div class="ttdeci">void ProcCreateHeapArea(size_t sz)</div><div class="ttdef"><b>Definition</b> _procheap.cpp:50</div></div>
+<div class="ttc" id="a__procheap_8h_html_a44cdbb09a8edf37aecb130d2f08a22b8"><div class="ttname"><a href="__procheap_8h.html#a44cdbb09a8edf37aecb130d2f08a22b8">_ProcHeapAreaDestroy</a></div><div class="ttdeci">void _ProcHeapAreaDestroy()</div><div class="ttdoc">_ProcHeapAreaDestroy – destroy entire heap area</div><div class="ttdef"><b>Definition</b> _procheap.cpp:65</div></div>
+<div class="ttc" id="a__procheap_8h_html_aa2ae87542a2cad796caeeb730d6e7df7"><div class="ttname"><a href="__procheap_8h.html#aa2ae87542a2cad796caeeb730d6e7df7">_ProcGetHeapMem</a></div><div class="ttdeci">uint64_t _ProcGetHeapMem(size_t sz)</div><div class="ttdoc">_ProcGetHeapMem – returns a heap memory from process heap area</div><div class="ttdef"><b>Definition</b> _procheap.cpp:86</div></div>
+<div class="ttc" id="a__procheap_8h_html_afb54e41c52235280b56267f6fb6166ae"><div class="ttname"><a href="__procheap_8h.html#afb54e41c52235280b56267f6fb6166ae">ProcCreateHeapArea</a></div><div class="ttdeci">void ProcCreateHeapArea(size_t sz)</div><div class="ttdoc">_ProcCreateHeap – create a new process heap area</div><div class="ttdef"><b>Definition</b> _procheap.cpp:50</div></div>
 <div class="ttc" id="a__xeneva_8h_html"><div class="ttname"><a href="__xeneva_8h.html">_xeneva.h</a></div></div>
 <div class="ttc" id="aacefiex_8h_html_ace97e810e06af5096bfe72ee3e7c5316"><div class="ttname"><a href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a></div><div class="ttdeci">COMPILER_DEPENDENT_UINT64 uint64_t</div><div class="ttdef"><b>Definition</b> acefiex.h:165</div></div>
 </div><!-- fragment --></div><!-- contents -->

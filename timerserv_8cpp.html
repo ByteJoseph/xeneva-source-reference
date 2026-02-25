@@ -152,14 +152,19 @@ Include dependency graph for timerserv.cpp:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a30074ce26965de59a2c97494618feb48" id="r_a30074ce26965de59a2c97494618feb48"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="timerserv_8cpp.html#a30074ce26965de59a2c97494618feb48">CreateTimer</a> (int <a class="el" href="Process_2systray_2main_8cpp.html#a88110d06c2b8b5584d31b5be3f13af46">threadID</a>, int maxTickLimit, <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> updatemode)</td></tr>
+<tr class="memdesc:a30074ce26965de59a2c97494618feb48"><td class="mdescLeft">&#160;</td><td class="mdescRight">CreateTimer &ndash; create timer service.  <br /></td></tr>
 <tr class="separator:a30074ce26965de59a2c97494618feb48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08288c8e6b7d4e48ca4d1541472d193f" id="r_a08288c8e6b7d4e48ca4d1541472d193f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="timerserv_8cpp.html#a08288c8e6b7d4e48ca4d1541472d193f">StartTimer</a> (int <a class="el" href="Process_2systray_2main_8cpp.html#a88110d06c2b8b5584d31b5be3f13af46">threadID</a>)</td></tr>
+<tr class="memdesc:a08288c8e6b7d4e48ca4d1541472d193f"><td class="mdescLeft">&#160;</td><td class="mdescRight">StartTimer &ndash; starts the timer.  <br /></td></tr>
 <tr class="separator:a08288c8e6b7d4e48ca4d1541472d193f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeec5642a4b02365e6fcf05a1261ef741" id="r_aeec5642a4b02365e6fcf05a1261ef741"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="timerserv_8cpp.html#aeec5642a4b02365e6fcf05a1261ef741">StopTimer</a> (int <a class="el" href="Process_2systray_2main_8cpp.html#a88110d06c2b8b5584d31b5be3f13af46">threadID</a>)</td></tr>
+<tr class="memdesc:aeec5642a4b02365e6fcf05a1261ef741"><td class="mdescLeft">&#160;</td><td class="mdescRight">StopTimer &ndash; stop the timer.  <br /></td></tr>
 <tr class="separator:aeec5642a4b02365e6fcf05a1261ef741"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd4be7b03279182f7cac9cdc9f0e70c8" id="r_acd4be7b03279182f7cac9cdc9f0e70c8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="timerserv_8cpp.html#acd4be7b03279182f7cac9cdc9f0e70c8">DestroyTimer</a> (int <a class="el" href="Process_2systray_2main_8cpp.html#a88110d06c2b8b5584d31b5be3f13af46">threadID</a>)</td></tr>
+<tr class="memdesc:acd4be7b03279182f7cac9cdc9f0e70c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">DestroyTimer &ndash; remove the timer.  <br /></td></tr>
 <tr class="separator:acd4be7b03279182f7cac9cdc9f0e70c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad25791f74a1b8a7a9246517ae4dacaa7" id="r_ad25791f74a1b8a7a9246517ae4dacaa7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="timerserv_8cpp.html#ad25791f74a1b8a7a9246517ae4dacaa7">GetTimeOfDay</a> (void *ptr)</td></tr>
+<tr class="memdesc:ad25791f74a1b8a7a9246517ae4dacaa7"><td class="mdescLeft">&#160;</td><td class="mdescRight">GetTimeOfDay &ndash; returns the time format in unix format.  <br /></td></tr>
 <tr class="separator:ad25791f74a1b8a7a9246517ae4dacaa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
@@ -194,6 +199,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>CreateTimer &ndash; create timer service. </p>
 <p>BSD 2-Clause License</p>
 <p>Copyright (c) 2022-2023, Manas Kamal Choudhury All rights reserved.</p>
 <p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
@@ -221,6 +228,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>DestroyTimer &ndash; remove the timer. </p>
+
 </div>
 </div>
 <a id="ad25791f74a1b8a7a9246517ae4dacaa7" name="ad25791f74a1b8a7a9246517ae4dacaa7"></a>
@@ -238,6 +247,14 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>GetTimeOfDay &ndash; returns the time format in unix format. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ptr</td><td>&ndash; Pointer to timeval structure </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -257,6 +274,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>StartTimer &ndash; starts the timer. </p>
+
 </div>
 </div>
 <a id="aeec5642a4b02365e6fcf05a1261ef741" name="aeec5642a4b02365e6fcf05a1261ef741"></a>
@@ -274,6 +293,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>StopTimer &ndash; stop the timer. </p>
 
 </div>
 </div>

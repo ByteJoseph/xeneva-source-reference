@@ -155,12 +155,16 @@ Typedefs</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a5cbea0ee398434077698b650384a75b5" id="r_a5cbea0ee398434077698b650384a75b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ftmngr_8h.html#a5cbea0ee398434077698b650384a75b5">FontManagerInitialise</a> ()</td></tr>
+<tr class="memdesc:a5cbea0ee398434077698b650384a75b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">FontManagerInitialise &ndash; initialise font manager.  <br /></td></tr>
 <tr class="separator:a5cbea0ee398434077698b650384a75b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2ee4a2889830839d109dd630ec3e6ab" id="r_af2ee4a2889830839d109dd630ec3e6ab"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ftmngr_8h.html#af2ee4a2889830839d109dd630ec3e6ab">AuFTMngrGetFontID</a> (char *fontname)</td></tr>
+<tr class="memdesc:af2ee4a2889830839d109dd630ec3e6ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuFTMngrGetFontID &ndash; returns the font id of given font name.  <br /></td></tr>
 <tr class="separator:af2ee4a2889830839d109dd630ec3e6ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00968f643946ccbaa93ae17188c28d93" id="r_a00968f643946ccbaa93ae17188c28d93"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ftmngr_8h.html#a00968f643946ccbaa93ae17188c28d93">AuFTMngrGetNumFonts</a> ()</td></tr>
+<tr class="memdesc:a00968f643946ccbaa93ae17188c28d93"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuFTMngrGetNumFonts &ndash; return number system fonts installed.  <br /></td></tr>
 <tr class="separator:a00968f643946ccbaa93ae17188c28d93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08d9aab612b2057102bc4c62f6986d40" id="r_a08d9aab612b2057102bc4c62f6986d40"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ftmngr_8h.html#a08d9aab612b2057102bc4c62f6986d40">AuFTMngrGetFontSize</a> (char *fontname)</td></tr>
+<tr class="memdesc:a08d9aab612b2057102bc4c62f6986d40"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuFTMngrGetFontSize &ndash; returns font size.  <br /></td></tr>
 <tr class="separator:a08d9aab612b2057102bc4c62f6986d40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
@@ -211,6 +215,15 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>AuFTMngrGetFontID &ndash; returns the font id of given font name. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fontname</td><td>&ndash; name of the desired font </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>id of the desired font </dd></dl>
+
 </div>
 </div>
 <a id="a08d9aab612b2057102bc4c62f6986d40" name="a08d9aab612b2057102bc4c62f6986d40"></a>
@@ -237,6 +250,15 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>AuFTMngrGetFontSize &ndash; returns font size. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fontname</td><td>&ndash; name of the font </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the size of the font in bytes </dd></dl>
+
 </div>
 </div>
 <a id="a00968f643946ccbaa93ae17188c28d93" name="a00968f643946ccbaa93ae17188c28d93"></a>
@@ -262,6 +284,9 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>AuFTMngrGetNumFonts &ndash; return number system fonts installed. </p>
+<dl class="section return"><dt>Returns</dt><dd>total count of system font FontManagerGetFontCount does the same thing except it uses the font config file to get the number of total font count </dd></dl>
+
 </div>
 </div>
 <a id="a5cbea0ee398434077698b650384a75b5" name="a5cbea0ee398434077698b650384a75b5"></a>
@@ -286,6 +311,8 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>FontManagerInitialise &ndash; initialise font manager. </p>
 
 </div>
 </div>

@@ -167,28 +167,37 @@ Functions</h2></td></tr>
 <tr class="memitem:afd05def69f22635b85928f448e56a836" id="r_afd05def69f22635b85928f448e56a836"><td class="memItemLeft" align="right" valign="top">AuVPage *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vmmngr_8cpp.html#afd05def69f22635b85928f448e56a836">AuVmmngrGetPage</a> (<a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> virt_addr, <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> _flags, <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> mode)</td></tr>
 <tr class="separator:afd05def69f22635b85928f448e56a836"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8587f5ce9e59246ed26090b7c25162de" id="r_a8587f5ce9e59246ed26090b7c25162de"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Libs_2XEClib_2includes_2stdint_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vmmngr_8cpp.html#a8587f5ce9e59246ed26090b7c25162de">AuMapPage</a> (<a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> phys_addr, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> virt_addr, <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> attrib)</td></tr>
+<tr class="memdesc:a8587f5ce9e59246ed26090b7c25162de"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuMapPage &ndash; Maps a virtual page to physical frame.  <br /></td></tr>
 <tr class="separator:a8587f5ce9e59246ed26090b7c25162de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeacdfb6679ae320c790482c0f80a2ec0" id="r_aeacdfb6679ae320c790482c0f80a2ec0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Libs_2XEClib_2includes_2stdint_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vmmngr_8cpp.html#aeacdfb6679ae320c790482c0f80a2ec0">AuMapPageEx</a> (<a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> *pml4i, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> phys_addr, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> virt_addr, <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> attrib)</td></tr>
+<tr class="memdesc:aeacdfb6679ae320c790482c0f80a2ec0"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuMapPageEx &ndash; Maps a virtual page to physical frame in given page level.  <br /></td></tr>
 <tr class="separator:aeacdfb6679ae320c790482c0f80a2ec0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e5999f7a870828e0943cfb4d22fc7c3" id="r_a0e5999f7a870828e0943cfb4d22fc7c3"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vmmngr_8cpp.html#a0e5999f7a870828e0943cfb4d22fc7c3">AuMapMMIO</a> (<a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> phys_addr, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> page_count)</td></tr>
+<tr class="memdesc:a0e5999f7a870828e0943cfb4d22fc7c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuMapMMIO &ndash; Maps Memory Mapped I/O addresses.  <br /></td></tr>
 <tr class="separator:a0e5999f7a870828e0943cfb4d22fc7c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add65d569cfe06950c6cc359749e5a95d" id="r_add65d569cfe06950c6cc359749e5a95d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vmmngr_8cpp.html#add65d569cfe06950c6cc359749e5a95d">AuGetFreePage</a> (<a class="el" href="Libs_2XEClib_2includes_2stdint_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> user, void *ptr)</td></tr>
+<tr class="memdesc:add65d569cfe06950c6cc359749e5a95d"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuGetFreePage &ndash; Checks for free page.  <br /></td></tr>
 <tr class="separator:add65d569cfe06950c6cc359749e5a95d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afee913df92f37b35f3bf5131c6c0ee97" id="r_afee913df92f37b35f3bf5131c6c0ee97"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vmmngr_8cpp.html#afee913df92f37b35f3bf5131c6c0ee97">AuFreePages</a> (<a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> virt_addr, <a class="el" href="Libs_2XEClib_2includes_2stdint_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> free_physical, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> s)</td></tr>
+<tr class="memdesc:afee913df92f37b35f3bf5131c6c0ee97"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuFreePages &ndash; frees up contiguous pages.  <br /></td></tr>
 <tr class="separator:afee913df92f37b35f3bf5131c6c0ee97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa13da200183a56024cf490f946efaa60" id="r_aa13da200183a56024cf490f946efaa60"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vmmngr_8cpp.html#aa13da200183a56024cf490f946efaa60">AuGetPhysicalAddress</a> (<a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> virt_addr)</td></tr>
+<tr class="memdesc:aa13da200183a56024cf490f946efaa60"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuGetPhysicalAddress &ndash; returns the physical address from a virtual address.  <br /></td></tr>
 <tr class="separator:aa13da200183a56024cf490f946efaa60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2257bee1340ff8e232cc58391b90addf" id="r_a2257bee1340ff8e232cc58391b90addf"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vmmngr_8cpp.html#a2257bee1340ff8e232cc58391b90addf">AuGetPhysicalAddressEx</a> (<a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> *cr3, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> virt_addr)</td></tr>
 <tr class="separator:a2257bee1340ff8e232cc58391b90addf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ed630229c2dfb530c98560516c948fe" id="r_a5ed630229c2dfb530c98560516c948fe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vmmngr_8cpp.html#a5ed630229c2dfb530c98560516c948fe">AuCreateVirtualAddressSpace</a> ()</td></tr>
+<tr class="memdesc:a5ed630229c2dfb530c98560516c948fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuCreateVirtualAddressSpace &ndash; create a new virtual address space.  <br /></td></tr>
 <tr class="separator:a5ed630229c2dfb530c98560516c948fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6810967631742244b813c3acf52b94e7" id="r_a6810967631742244b813c3acf52b94e7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vmmngr_8cpp.html#a6810967631742244b813c3acf52b94e7">AuGetRootPageTable</a> ()</td></tr>
 <tr class="separator:a6810967631742244b813c3acf52b94e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a376137ed2daef150fde7ca6946007709" id="r_a376137ed2daef150fde7ca6946007709"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vmmngr_8cpp.html#a376137ed2daef150fde7ca6946007709">AuVmmngrInitialize</a> ()</td></tr>
+<tr class="memdesc:a376137ed2daef150fde7ca6946007709"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuVmmngrInitialize &ndash; initialize the virtual memory manager.  <br /></td></tr>
 <tr class="separator:a376137ed2daef150fde7ca6946007709"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d90d2a075e51c9ac94125be430514bd" id="r_a3d90d2a075e51c9ac94125be430514bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vmmngr_8cpp.html#a3d90d2a075e51c9ac94125be430514bd">AuVmmngrBootFree</a> ()</td></tr>
 <tr class="separator:a3d90d2a075e51c9ac94125be430514bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef0ac93079066090068cdc18d04acf30" id="r_aef0ac93079066090068cdc18d04acf30"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vmmngr_8cpp.html#aef0ac93079066090068cdc18d04acf30">AuVmmngrCloneAddressSpace</a> (<a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> *destcr3, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> *srccr3)</td></tr>
+<tr class="memdesc:aef0ac93079066090068cdc18d04acf30"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuVmmngrCloneAddressSpace &ndash; clones a given address space.  <br /></td></tr>
 <tr class="separator:aef0ac93079066090068cdc18d04acf30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
@@ -246,6 +255,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>AuCreateVirtualAddressSpace &ndash; create a new virtual address space. </p>
+<dl class="section return"><dt>Returns</dt><dd>pointer to newly created address space </dd></dl>
+
 </div>
 </div>
 <a id="afee913df92f37b35f3bf5131c6c0ee97" name="afee913df92f37b35f3bf5131c6c0ee97"></a>
@@ -280,6 +292,16 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>AuFreePages &ndash; frees up contiguous pages. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">virt_addr</td><td>&ndash; starting virtual address </td></tr>
+    <tr><td class="paramname">free_physical</td><td>&ndash; free up physical frame </td></tr>
+    <tr><td class="paramname">size_t</td><td>s &ndash; size of area to be freed </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="add65d569cfe06950c6cc359749e5a95d" name="add65d569cfe06950c6cc359749e5a95d"></a>
@@ -308,6 +330,16 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>AuGetFreePage &ndash; Checks for free page. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">user</td><td>&ndash; specifies if it needs to look from user base address </td></tr>
+    <tr><td class="paramname">ptr</td><td>&ndash; if it is non-null, than lookup begins from given pointer </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>pointer to free virtual page </dd></dl>
+
 </div>
 </div>
 <a id="aa13da200183a56024cf490f946efaa60" name="aa13da200183a56024cf490f946efaa60"></a>
@@ -325,6 +357,15 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>AuGetPhysicalAddress &ndash; returns the physical address from a virtual address. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">virt_addr</td><td>&ndash; Virtual address </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the physical address of respected virtual address </dd></dl>
 
 </div>
 </div>
@@ -399,6 +440,16 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>AuMapMMIO &ndash; Maps Memory Mapped I/O addresses. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">phys_addr</td><td>&ndash; MMIO physical address </td></tr>
+    <tr><td class="paramname">page_count</td><td>&ndash; number of pages </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to newly mapped virtual mmio address </dd></dl>
+
 </div>
 </div>
 <a id="a8587f5ce9e59246ed26090b7c25162de" name="a8587f5ce9e59246ed26090b7c25162de"></a>
@@ -432,6 +483,17 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>AuMapPage &ndash; Maps a virtual page to physical frame. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">phys_addr</td><td>&ndash; physical address </td></tr>
+    <tr><td class="paramname">virt_addr</td><td>&ndash; virtual address </td></tr>
+    <tr><td class="paramname">attrib</td><td>&ndash; Page attributes </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>1 on success 0 on failure </dd></dl>
 
 </div>
 </div>
@@ -473,6 +535,18 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>AuMapPageEx &ndash; Maps a virtual page to physical frame in given page level. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pml4i</td><td>&ndash; root page level pointer </td></tr>
+    <tr><td class="paramname">phys_addr</td><td>&ndash; physical address </td></tr>
+    <tr><td class="paramname">virt_addr</td><td>&ndash; virtual address </td></tr>
+    <tr><td class="paramname">attrib</td><td>&ndash; Page attributes </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>1 on success, 0 on failure </dd></dl>
+
 </div>
 </div>
 <a id="a3d90d2a075e51c9ac94125be430514bd" name="a3d90d2a075e51c9ac94125be430514bd"></a>
@@ -489,6 +563,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>@breif AuVmmngrBootFree &ndash; free up the lower half of kernel address space </p>
 
 </div>
 </div>
@@ -518,6 +593,15 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>AuVmmngrCloneAddressSpace &ndash; clones a given address space. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">destcr3</td><td>&ndash; destination cr3 </td></tr>
+    <tr><td class="paramname">srccr3</td><td>&ndash; source cr3 </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="afd05def69f22635b85928f448e56a836" name="afd05def69f22635b85928f448e56a836"></a>
@@ -536,7 +620,7 @@ Variables</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
-          <td class="paramname"><em>_flags</em>, </td>
+          <td class="paramname"><em>flags</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -551,6 +635,15 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>@breif AuVmmngrGetPage &ndash; Returns virtual page from virtual address in AuVPage format </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">virt_addr</td><td>&ndash; Virtual address </td></tr>
+    <tr><td class="paramname">_flags</td><td>&ndash; extra virtual page flags, this is set only if mode is set to VMMNGR_GETPAGE_CREATE </td></tr>
+    <tr><td class="paramname">mode</td><td>&ndash; specifies whether to create a virtual page if its not present </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>virtual page from virtual address in AuVPage format </dd></dl>
 
 </div>
 </div>
@@ -568,6 +661,8 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>AuVmmngrInitialize &ndash; initialize the virtual memory manager. </p>
 
 </div>
 </div>

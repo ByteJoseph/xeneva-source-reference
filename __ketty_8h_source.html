@@ -82,56 +82,49 @@ $(document).ready(function() { init_codefold(0); });
 </div><!--header-->
 <div class="contents">
 <a href="__ketty_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#ifndef __KE_TTY_H__</span></div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#define __KE_TTY_H__</span></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#include &lt;<a class="code" href="__xeneva_8h.html">_xeneva.h</a>&gt;</span></div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><a class="code hl_define" href="__xeneva_8h.html#ab246fc80dcb7c6e842a5c117d20a2719">XE_EXTERN</a>{</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="comment">/* iocontrol codes */</span></div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="__ketty_8h.html#a36ef545c47ae4202e81e14efafdd64db">   42</a></span><span class="preprocessor">#define TIOCGWINSZ   0x5401</span></div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="__ketty_8h.html#aa4778247aa238f3d02d97ce6e8baaaec">   43</a></span><span class="preprocessor">#define TIOCSWINSZ   0x5402</span></div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="__ketty_8h.html#a71ec142c4e06cf3b61970b8a0587c2ff">   44</a></span><span class="preprocessor">#define TIOCFLUSH    0x5403</span></div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="__ketty_8h.html#ab5ccc1f3f43e39bf4e801eea37759251">   45</a></span><span class="preprocessor">#define TIOCGATTR    0x5404</span></div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="__ketty_8h.html#a827d71b8d5ba66063b91923790a042fa">   46</a></span><span class="preprocessor">#define TIOSPGRP     0x5405</span></div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="struct__win__size__.html">_win_size_</a> {</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        <a class="code hl_typedef" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> <a class="code hl_variable" href="struct__win__size__.html#a6ee76024edb4a53b1e13d06f23d6349f">ws_row</a>;</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        <a class="code hl_typedef" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> <a class="code hl_variable" href="struct__win__size__.html#acb63690b9db36054007903f12c440d74">ws_col</a>;</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <a class="code hl_typedef" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> <a class="code hl_variable" href="struct__win__size__.html#a2a8950d2f7e63d4cef7389ca71ff7338">ws_xpixel</a>;</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        <a class="code hl_typedef" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> <a class="code hl_variable" href="struct__win__size__.html#aff1d24791010b4cc6b66df7f17fce63c">ws_ypixel</a>;</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="__ketty_8h.html#a0dd034de36fe76fed7b2f793fe783588">   53</a></span>    }<a class="code hl_typedef" href="__ketty_8h.html#a0dd034de36fe76fed7b2f793fe783588">WinSize</a>;</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="comment">/*</span></div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment">     * _KeCreateTTY -- create a new terminal</span></div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment">     * @param master_fd -- Pointer to a memory area where to</span></div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment">     * store master file descriptor</span></div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="comment">     * @param slave_fd -- Pointer to a memory area where to</span></div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment">     * store slave file descriptor</span></div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment">     */</span></div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="__ketty_8h.html#aad304af7c6a6d4ed5ee40a896b059bcd">   63</a></span>    <a class="code hl_define" href="__xeneva_8h.html#a3640283d666d4a8b25a736424ee25866">XE_LIB</a> <span class="keywordtype">int</span> <a class="code hl_function" href="__ketty_8h.html#aad304af7c6a6d4ed5ee40a896b059bcd">_KeCreateTTY</a>(<span class="keywordtype">int</span> *<a class="code hl_variable" href="term_8cpp.html#a18920b024fa1c723a7488dd675657766">master_fd</a>, <span class="keywordtype">int</span>* <a class="code hl_variable" href="term_8cpp.html#a206c41c20a55d5c3a624f945b9074bc6">slave_fd</a>);</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>}</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#ifndef __KE_TTY_H__</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#define __KE_TTY_H__</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#include &lt;<a class="code" href="__xeneva_8h.html">_xeneva.h</a>&gt;</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><a class="code hl_define" href="__xeneva_8h.html#ab246fc80dcb7c6e842a5c117d20a2719">XE_EXTERN</a>{</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="comment">/* iocontrol codes */</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="__ketty_8h.html#a36ef545c47ae4202e81e14efafdd64db">   44</a></span><span class="preprocessor">#define TIOCGWINSZ   0x5401</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="__ketty_8h.html#aa4778247aa238f3d02d97ce6e8baaaec">   45</a></span><span class="preprocessor">#define TIOCSWINSZ   0x5402</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="__ketty_8h.html#a71ec142c4e06cf3b61970b8a0587c2ff">   46</a></span><span class="preprocessor">#define TIOCFLUSH    0x5403</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="__ketty_8h.html#ab5ccc1f3f43e39bf4e801eea37759251">   47</a></span><span class="preprocessor">#define TIOCGATTR    0x5404</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="__ketty_8h.html#a827d71b8d5ba66063b91923790a042fa">   48</a></span><span class="preprocessor">#define TIOSPGRP     0x5405</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="struct__win__size__.html">_win_size_</a> {</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <a class="code hl_typedef" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> <a class="code hl_variable" href="struct__win__size__.html#a6ee76024edb4a53b1e13d06f23d6349f">ws_row</a>;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        <a class="code hl_typedef" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> <a class="code hl_variable" href="struct__win__size__.html#acb63690b9db36054007903f12c440d74">ws_col</a>;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        <a class="code hl_typedef" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> <a class="code hl_variable" href="struct__win__size__.html#a2a8950d2f7e63d4cef7389ca71ff7338">ws_xpixel</a>;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        <a class="code hl_typedef" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> <a class="code hl_variable" href="struct__win__size__.html#aff1d24791010b4cc6b66df7f17fce63c">ws_ypixel</a>;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="__ketty_8h.html#a0dd034de36fe76fed7b2f793fe783588">   55</a></span>    }<a class="code hl_typedef" href="__ketty_8h.html#a0dd034de36fe76fed7b2f793fe783588">WinSize</a>;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="__ketty_8h.html#aad304af7c6a6d4ed5ee40a896b059bcd">   65</a></span>    <a class="code hl_define" href="__xeneva_8h.html#a3640283d666d4a8b25a736424ee25866">XE_LIB</a> <span class="keywordtype">int</span> <a class="code hl_function" href="__ketty_8h.html#aad304af7c6a6d4ed5ee40a896b059bcd">_KeCreateTTY</a>(<span class="keywordtype">int</span> *<a class="code hl_variable" href="term_8cpp.html#a18920b024fa1c723a7488dd675657766">master_fd</a>, <span class="keywordtype">int</span>* <a class="code hl_variable" href="term_8cpp.html#a206c41c20a55d5c3a624f945b9074bc6">slave_fd</a>);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>}</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="a__ketty_8h_html_a0dd034de36fe76fed7b2f793fe783588"><div class="ttname"><a href="__ketty_8h.html#a0dd034de36fe76fed7b2f793fe783588">WinSize</a></div><div class="ttdeci">struct _win_size_ WinSize</div></div>
-<div class="ttc" id="a__ketty_8h_html_aad304af7c6a6d4ed5ee40a896b059bcd"><div class="ttname"><a href="__ketty_8h.html#aad304af7c6a6d4ed5ee40a896b059bcd">_KeCreateTTY</a></div><div class="ttdeci">XE_LIB int _KeCreateTTY(int *master_fd, int *slave_fd)</div></div>
+<div class="ttc" id="a__ketty_8h_html_aad304af7c6a6d4ed5ee40a896b059bcd"><div class="ttname"><a href="__ketty_8h.html#aad304af7c6a6d4ed5ee40a896b059bcd">_KeCreateTTY</a></div><div class="ttdeci">XE_LIB int _KeCreateTTY(int *master_fd, int *slave_fd)</div><div class="ttdoc">_KeCreateTTY – create a new terminal</div></div>
 <div class="ttc" id="a__xeneva_8h_html"><div class="ttname"><a href="__xeneva_8h.html">_xeneva.h</a></div></div>
-<div class="ttc" id="a__xeneva_8h_html_a3640283d666d4a8b25a736424ee25866"><div class="ttname"><a href="__xeneva_8h.html#a3640283d666d4a8b25a736424ee25866">XE_LIB</a></div><div class="ttdeci">#define XE_LIB</div><div class="ttdef"><b>Definition</b> _xeneva.h:53</div></div>
-<div class="ttc" id="a__xeneva_8h_html_ab246fc80dcb7c6e842a5c117d20a2719"><div class="ttname"><a href="__xeneva_8h.html#ab246fc80dcb7c6e842a5c117d20a2719">XE_EXTERN</a></div><div class="ttdeci">#define XE_EXTERN</div><div class="ttdef"><b>Definition</b> _xeneva.h:48</div></div>
+<div class="ttc" id="a__xeneva_8h_html_a3640283d666d4a8b25a736424ee25866"><div class="ttname"><a href="__xeneva_8h.html#a3640283d666d4a8b25a736424ee25866">XE_LIB</a></div><div class="ttdeci">#define XE_LIB</div><div class="ttdef"><b>Definition</b> _xeneva.h:55</div></div>
+<div class="ttc" id="a__xeneva_8h_html_ab246fc80dcb7c6e842a5c117d20a2719"><div class="ttname"><a href="__xeneva_8h.html#ab246fc80dcb7c6e842a5c117d20a2719">XE_EXTERN</a></div><div class="ttdeci">#define XE_EXTERN</div><div class="ttdef"><b>Definition</b> _xeneva.h:50</div></div>
 <div class="ttc" id="aacefiex_8h_html_adf4d876453337156dde61095e1f20223"><div class="ttname"><a href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a></div><div class="ttdeci">unsigned short int uint16_t</div><div class="ttdef"><b>Definition</b> acefiex.h:162</div></div>
-<div class="ttc" id="astruct__win__size___html"><div class="ttname"><a href="struct__win__size__.html">_win_size_</a></div><div class="ttdef"><b>Definition</b> tty.h:46</div></div>
-<div class="ttc" id="astruct__win__size___html_a2a8950d2f7e63d4cef7389ca71ff7338"><div class="ttname"><a href="struct__win__size__.html#a2a8950d2f7e63d4cef7389ca71ff7338">_win_size_::ws_xpixel</a></div><div class="ttdeci">uint16_t ws_xpixel</div><div class="ttdef"><b>Definition</b> tty.h:49</div></div>
-<div class="ttc" id="astruct__win__size___html_a6ee76024edb4a53b1e13d06f23d6349f"><div class="ttname"><a href="struct__win__size__.html#a6ee76024edb4a53b1e13d06f23d6349f">_win_size_::ws_row</a></div><div class="ttdeci">uint16_t ws_row</div><div class="ttdef"><b>Definition</b> tty.h:47</div></div>
-<div class="ttc" id="astruct__win__size___html_acb63690b9db36054007903f12c440d74"><div class="ttname"><a href="struct__win__size__.html#acb63690b9db36054007903f12c440d74">_win_size_::ws_col</a></div><div class="ttdeci">uint16_t ws_col</div><div class="ttdef"><b>Definition</b> tty.h:48</div></div>
-<div class="ttc" id="astruct__win__size___html_aff1d24791010b4cc6b66df7f17fce63c"><div class="ttname"><a href="struct__win__size__.html#aff1d24791010b4cc6b66df7f17fce63c">_win_size_::ws_ypixel</a></div><div class="ttdeci">uint16_t ws_ypixel</div><div class="ttdef"><b>Definition</b> tty.h:50</div></div>
+<div class="ttc" id="astruct__win__size___html"><div class="ttname"><a href="struct__win__size__.html">_win_size_</a></div><div class="ttdef"><b>Definition</b> tty.h:48</div></div>
+<div class="ttc" id="astruct__win__size___html_a2a8950d2f7e63d4cef7389ca71ff7338"><div class="ttname"><a href="struct__win__size__.html#a2a8950d2f7e63d4cef7389ca71ff7338">_win_size_::ws_xpixel</a></div><div class="ttdeci">uint16_t ws_xpixel</div><div class="ttdef"><b>Definition</b> tty.h:51</div></div>
+<div class="ttc" id="astruct__win__size___html_a6ee76024edb4a53b1e13d06f23d6349f"><div class="ttname"><a href="struct__win__size__.html#a6ee76024edb4a53b1e13d06f23d6349f">_win_size_::ws_row</a></div><div class="ttdeci">uint16_t ws_row</div><div class="ttdef"><b>Definition</b> tty.h:49</div></div>
+<div class="ttc" id="astruct__win__size___html_acb63690b9db36054007903f12c440d74"><div class="ttname"><a href="struct__win__size__.html#acb63690b9db36054007903f12c440d74">_win_size_::ws_col</a></div><div class="ttdeci">uint16_t ws_col</div><div class="ttdef"><b>Definition</b> tty.h:50</div></div>
+<div class="ttc" id="astruct__win__size___html_aff1d24791010b4cc6b66df7f17fce63c"><div class="ttname"><a href="struct__win__size__.html#aff1d24791010b4cc6b66df7f17fce63c">_win_size_::ws_ypixel</a></div><div class="ttdeci">uint16_t ws_ypixel</div><div class="ttdef"><b>Definition</b> tty.h:52</div></div>
 <div class="ttc" id="aterm_8cpp_html_a18920b024fa1c723a7488dd675657766"><div class="ttname"><a href="term_8cpp.html#a18920b024fa1c723a7488dd675657766">master_fd</a></div><div class="ttdeci">int master_fd</div><div class="ttdef"><b>Definition</b> term.cpp:47</div></div>
 <div class="ttc" id="aterm_8cpp_html_a206c41c20a55d5c3a624f945b9074bc6"><div class="ttname"><a href="term_8cpp.html#a206c41c20a55d5c3a624f945b9074bc6">slave_fd</a></div><div class="ttdeci">int slave_fd</div><div class="ttdef"><b>Definition</b> term.cpp:48</div></div>
 </div><!-- fragment --></div><!-- contents -->

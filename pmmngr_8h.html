@@ -95,27 +95,46 @@ Include dependency graph for pmmngr.h:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a13457b62e4feacef08d19976d455a649" id="r_a13457b62e4feacef08d19976d455a649"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pmmngr_8h.html#a13457b62e4feacef08d19976d455a649">AuPmmngrInitialize</a> (<a class="el" href="BaseHdr_2aurora_8h.html#a886498d078ece21b18b0bf2dad40fccd">KERNEL_BOOT_INFO</a> *info)</td></tr>
+<tr class="memdesc:a13457b62e4feacef08d19976d455a649"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuPmmngrInitialise &ndash; initialise the physical memory manager.  <br /></td></tr>
 <tr class="separator:a13457b62e4feacef08d19976d455a649"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3eae16cdcca7744bcb2bb5d0fa7394e5" id="r_a3eae16cdcca7744bcb2bb5d0fa7394e5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pmmngr_8h.html#a3eae16cdcca7744bcb2bb5d0fa7394e5">AuPmmngrAlloc</a> ()</td></tr>
+<tr class="memdesc:a3eae16cdcca7744bcb2bb5d0fa7394e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuPmmngrAlloc &ndash; Allocate a single physical page frame and return it to the caller.  <br /></td></tr>
 <tr class="separator:a3eae16cdcca7744bcb2bb5d0fa7394e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b29063db2638269913d8971e75f363c" id="r_a9b29063db2638269913d8971e75f363c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pmmngr_8h.html#a9b29063db2638269913d8971e75f363c">AuPmmngrAllocBlocks</a> (int num)</td></tr>
+<tr class="memdesc:a9b29063db2638269913d8971e75f363c"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuPmmngrAllocBlocks &ndash; Allocate multiple physical page frames and return the first page pointer to the caller.  <br /></td></tr>
 <tr class="separator:a9b29063db2638269913d8971e75f363c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adcf1f4482d1ccadc7d733675ffd9cc8b" id="r_adcf1f4482d1ccadc7d733675ffd9cc8b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pmmngr_8h.html#adcf1f4482d1ccadc7d733675ffd9cc8b">AuPmmngrFree</a> (void *<a class="el" href="acpixf_8h.html#a5c9068e87bdb7dd28aaf9b2565a0cc3c">Address</a>)</td></tr>
+<tr class="memdesc:adcf1f4482d1ccadc7d733675ffd9cc8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuPmmngrFree &ndash; Free a physical page frame.  <br /></td></tr>
 <tr class="separator:adcf1f4482d1ccadc7d733675ffd9cc8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a529543bcbd97dbb87c835a034b37edb5" id="r_a529543bcbd97dbb87c835a034b37edb5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pmmngr_8h.html#a529543bcbd97dbb87c835a034b37edb5">AuPmmngrFreeBlocks</a> (void *Addr, int Count)</td></tr>
+<tr class="memdesc:a529543bcbd97dbb87c835a034b37edb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuPmmngrFreeBlocks &ndash; Free multiple page frames.  <br /></td></tr>
 <tr class="separator:a529543bcbd97dbb87c835a034b37edb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56df5d1e62fea734058d9e60eff6f27b" id="r_a56df5d1e62fea734058d9e60eff6f27b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pmmngr_8h.html#a56df5d1e62fea734058d9e60eff6f27b">P2V</a> (<a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> addr)</td></tr>
+<tr class="memdesc:a56df5d1e62fea734058d9e60eff6f27b"><td class="mdescLeft">&#160;</td><td class="mdescRight">P2V &ndash; Physical to Virtual conversion.  <br /></td></tr>
 <tr class="separator:a56df5d1e62fea734058d9e60eff6f27b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad25d06b9535768e242173a0b180dbfaf" id="r_ad25d06b9535768e242173a0b180dbfaf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pmmngr_8h.html#ad25d06b9535768e242173a0b180dbfaf">V2P</a> (<a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> vaddr)</td></tr>
+<tr class="memdesc:ad25d06b9535768e242173a0b180dbfaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">V2P &ndash; Virtual to Physical conversion.  <br /></td></tr>
 <tr class="separator:ad25d06b9535768e242173a0b180dbfaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa030fe4cee47aa3549b3216f0de6e871" id="r_aa030fe4cee47aa3549b3216f0de6e871"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pmmngr_8h.html#aa030fe4cee47aa3549b3216f0de6e871">AuPmmngrMoveHigher</a> ()</td></tr>
+<tr class="memdesc:aa030fe4cee47aa3549b3216f0de6e871"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuPmmngrMoveHigher &ndash; moves the kernel to higher half of memory.  <br /></td></tr>
 <tr class="separator:aa030fe4cee47aa3549b3216f0de6e871"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a659b30be5999f25bfe84242b289f533c" id="r_a659b30be5999f25bfe84242b289f533c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pmmngr_8h.html#a659b30be5999f25bfe84242b289f533c">AuPmmngrGetFreeMem</a> ()</td></tr>
+<tr class="memdesc:a659b30be5999f25bfe84242b289f533c"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuPmmngrGetFreeMem &ndash; returns the total free amount of RAM.  <br /></td></tr>
 <tr class="separator:a659b30be5999f25bfe84242b289f533c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5547d8c7217ab9e57de4197e7364e85" id="r_aa5547d8c7217ab9e57de4197e7364e85"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pmmngr_8h.html#aa5547d8c7217ab9e57de4197e7364e85">AuPmmngrGetTotalMem</a> ()</td></tr>
+<tr class="memdesc:aa5547d8c7217ab9e57de4197e7364e85"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuPmmngrGetTotalMem &ndash; returns the total amount of RAM.  <br /></td></tr>
 <tr class="separator:aa5547d8c7217ab9e57de4197e7364e85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>BSD 2-Clause License</p>
+<p>Copyright (c) 2022, Manas Kamal Choudhury All rights reserved.</p>
+<p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
+<ol type="1">
+<li>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</li>
+<li>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</li>
+</ol>
+<p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. </p>
+</div><h2 class="groupheader">Function Documentation</h2>
 <a id="a3eae16cdcca7744bcb2bb5d0fa7394e5" name="a3eae16cdcca7744bcb2bb5d0fa7394e5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3eae16cdcca7744bcb2bb5d0fa7394e5">&#9670;&#160;</a></span>AuPmmngrAlloc()</h2>
 
@@ -130,6 +149,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>AuPmmngrAlloc &ndash; Allocate a single physical page frame and return it to the caller. </p>
 
 </div>
 </div>
@@ -149,6 +170,14 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>AuPmmngrAllocBlocks &ndash; Allocate multiple physical page frames and return the first page pointer to the caller. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">size</td><td>&ndash; Number of blocks to allocate </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="adcf1f4482d1ccadc7d733675ffd9cc8b" name="adcf1f4482d1ccadc7d733675ffd9cc8b"></a>
@@ -166,6 +195,14 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>AuPmmngrFree &ndash; Free a physical page frame. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Address</td><td>&ndash; Pointer to physical page </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -195,6 +232,15 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>AuPmmngrFreeBlocks &ndash; Free multiple page frames. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Addr</td><td>&ndash; Address of the first page frame </td></tr>
+    <tr><td class="paramname">Count</td><td>&ndash; Number of blocks to be freed </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a659b30be5999f25bfe84242b289f533c" name="a659b30be5999f25bfe84242b289f533c"></a>
@@ -219,6 +265,8 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>AuPmmngrGetFreeMem &ndash; returns the total free amount of RAM. </p>
 
 </div>
 </div>
@@ -245,6 +293,8 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>AuPmmngrGetTotalMem &ndash; returns the total amount of RAM. </p>
+
 </div>
 </div>
 <a id="a13457b62e4feacef08d19976d455a649" name="a13457b62e4feacef08d19976d455a649"></a>
@@ -270,14 +320,14 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>BSD 2-Clause License</p>
-<p>Copyright (c) 2022, Manas Kamal Choudhury All rights reserved.</p>
-<p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
-<ol type="1">
-<li>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</li>
-<li>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</li>
-</ol>
-<p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. </p>
+
+<p>AuPmmngrInitialise &ndash; initialise the physical memory manager. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">info</td><td>&ndash; Pointer to kernel boot info structure </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -304,6 +354,8 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>AuPmmngrMoveHigher &ndash; moves the kernel to higher half of memory. </p>
+
 </div>
 </div>
 <a id="a56df5d1e62fea734058d9e60eff6f27b" name="a56df5d1e62fea734058d9e60eff6f27b"></a>
@@ -322,6 +374,14 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>P2V &ndash; Physical to Virtual conversion. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">addr</td><td>&ndash; Address to convert </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="ad25d06b9535768e242173a0b180dbfaf" name="ad25d06b9535768e242173a0b180dbfaf"></a>
@@ -339,6 +399,14 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>V2P &ndash; Virtual to Physical conversion. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vaddr</td><td>&ndash; Address to convert </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

@@ -171,28 +171,37 @@ Enumerations</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a739e3381a22b87a2a811d1388925c3ef" id="r_a739e3381a22b87a2a811d1388925c3ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pcie_8c.html#a739e3381a22b87a2a811d1388925c3ef">AA64PCIeInitialize</a> ()</td></tr>
+<tr class="memdesc:a739e3381a22b87a2a811d1388925c3ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">AA64PCIeInitialize &ndash; intialize pcie subsystem.  <br /></td></tr>
 <tr class="separator:a739e3381a22b87a2a811d1388925c3ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee436201f8cfc2f406ebfac11ab53d34" id="r_aee436201f8cfc2f406ebfac11ab53d34"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Libs_2XEClib_2includes_2stdint_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pcie_8c.html#aee436201f8cfc2f406ebfac11ab53d34">AuIsPCIeInitialized</a> ()</td></tr>
 <tr class="separator:aee436201f8cfc2f406ebfac11ab53d34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e063456980cc163bc9f4cdae9f9fd81" id="r_a6e063456980cc163bc9f4cdae9f9fd81"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pcie_8c.html#a6e063456980cc163bc9f4cdae9f9fd81">AuPCIEGetDevice</a> (<a class="el" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> seg, int bus, int dev, int func)</td></tr>
+<tr class="memdesc:a6e063456980cc163bc9f4cdae9f9fd81"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuPCIEGetDevice &ndash; gets a device address from its bus dev and func.  <br /></td></tr>
 <tr class="separator:a6e063456980cc163bc9f4cdae9f9fd81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef6f78df79d24a9e44d9a51dc9a7851a" id="r_aef6f78df79d24a9e44d9a51dc9a7851a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pcie_8c.html#aef6f78df79d24a9e44d9a51dc9a7851a">AuPCIERead</a> (<a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> <a class="el" href="Drivers_2USB_2hid_2main_8cpp.html#aa01b53b251b673a86b7c563fde808273">device</a>, int reg, int bus, int dev, int func)</td></tr>
+<tr class="memdesc:aef6f78df79d24a9e44d9a51dc9a7851a"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuPCIERead &ndash; reads a register from pci express.  <br /></td></tr>
 <tr class="separator:aef6f78df79d24a9e44d9a51dc9a7851a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb77dd6b0d98a21ed7a5270dddb7bbf3" id="r_acb77dd6b0d98a21ed7a5270dddb7bbf3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pcie_8c.html#acb77dd6b0d98a21ed7a5270dddb7bbf3">AuPCIERead64</a> (<a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> <a class="el" href="Drivers_2USB_2hid_2main_8cpp.html#aa01b53b251b673a86b7c563fde808273">device</a>, int reg, int size, int bus, int dev, int func)</td></tr>
+<tr class="memdesc:acb77dd6b0d98a21ed7a5270dddb7bbf3"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuPCIERead64 &ndash; reads in 64.  <br /></td></tr>
 <tr class="separator:acb77dd6b0d98a21ed7a5270dddb7bbf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2efb1fc8641a94a113c8270d02cedb6" id="r_ab2efb1fc8641a94a113c8270d02cedb6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pcie_8c.html#ab2efb1fc8641a94a113c8270d02cedb6">AuPCIEWrite</a> (<a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> <a class="el" href="Drivers_2USB_2hid_2main_8cpp.html#aa01b53b251b673a86b7c563fde808273">device</a>, int reg, <a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> val, int bus, int dev, int func)</td></tr>
+<tr class="memdesc:ab2efb1fc8641a94a113c8270d02cedb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuPCIEWrite &ndash; writes to a register.  <br /></td></tr>
 <tr class="separator:ab2efb1fc8641a94a113c8270d02cedb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39686dac2854b5250889823ae30ad161" id="r_a39686dac2854b5250889823ae30ad161"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pcie_8c.html#a39686dac2854b5250889823ae30ad161">AuPCIEWrite64</a> (<a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> <a class="el" href="Drivers_2USB_2hid_2main_8cpp.html#aa01b53b251b673a86b7c563fde808273">device</a>, int reg, int size, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> val, int bus, int dev, int func)</td></tr>
 <tr class="separator:a39686dac2854b5250889823ae30ad161"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57e6618e900262e22042cb1c0e70ab0d" id="r_a57e6618e900262e22042cb1c0e70ab0d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pcie_8c.html#a57e6618e900262e22042cb1c0e70ab0d">AuPCIEScanClass</a> (<a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> classCode, <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> subClassCode, int *bus_, int *dev_, int *func_)</td></tr>
+<tr class="memdesc:a57e6618e900262e22042cb1c0e70ab0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuPCIEScanClass &ndash; scans and return pcie device with given class code and sub class code.  <br /></td></tr>
 <tr class="separator:a57e6618e900262e22042cb1c0e70ab0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0f71057b3a4a2f47324b366d1f3ea2e" id="r_ad0f71057b3a4a2f47324b366d1f3ea2e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pcie_8c.html#ad0f71057b3a4a2f47324b366d1f3ea2e">AuPCIEScanVendorDevice</a> (<a class="el" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> vendor, <a class="el" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> <a class="el" href="Drivers_2USB_2hid_2main_8cpp.html#aa01b53b251b673a86b7c563fde808273">device</a>, int *bus_, int *dev_, int *func_)</td></tr>
+<tr class="memdesc:ad0f71057b3a4a2f47324b366d1f3ea2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuPCIEScanVendorDevice &ndash; scans and return pcie device with given vendor id and device id.  <br /></td></tr>
 <tr class="separator:ad0f71057b3a4a2f47324b366d1f3ea2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4071b1c04ffbbc9910dc698b78c297fd" id="r_a4071b1c04ffbbc9910dc698b78c297fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pcie_8c.html#a4071b1c04ffbbc9910dc698b78c297fd">AuPCIEScanClassIF</a> (<a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> classCode, <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> subClassCode, <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> progIf, int *bus_, int *dev_, int *func_)</td></tr>
+<tr class="memdesc:a4071b1c04ffbbc9910dc698b78c297fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuPCIEScanClassIF &ndash; scans and return pcie device with given class code and sub class code.  <br /></td></tr>
 <tr class="separator:a4071b1c04ffbbc9910dc698b78c297fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad92784a856282df83b34ad8dd7a97c1" id="r_aad92784a856282df83b34ad8dd7a97c1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pcie_8c.html#aad92784a856282df83b34ad8dd7a97c1">AuPCIEReadBAR</a> (<a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> <a class="el" href="Drivers_2USB_2hid_2main_8cpp.html#aa01b53b251b673a86b7c563fde808273">device</a>, <a class="el" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> bus, <a class="el" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> dev, <a class="el" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> func, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> BAR, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> *barsz)</td></tr>
 <tr class="separator:aad92784a856282df83b34ad8dd7a97c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55c8b5d6af4ffd1f54d64a48adb7e104" id="r_a55c8b5d6af4ffd1f54d64a48adb7e104"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Libs_2XEClib_2includes_2stdint_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pcie_8c.html#a55c8b5d6af4ffd1f54d64a48adb7e104">AuPCIEAllocMSI</a> (<a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> <a class="el" href="Drivers_2USB_2hid_2main_8cpp.html#aa01b53b251b673a86b7c563fde808273">device</a>, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> vector, int bus, int dev, int func)</td></tr>
+<tr class="memdesc:a55c8b5d6af4ffd1f54d64a48adb7e104"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuPCIEAllocMSI &ndash; Allocate MSI/MSI-X for interrupt.  <br /></td></tr>
 <tr class="separator:a55c8b5d6af4ffd1f54d64a48adb7e104"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
@@ -202,7 +211,16 @@ Variables</h2></td></tr>
 <tr class="memitem:ac31dd902aad5c586e727cb6a24b748eb" id="r_ac31dd902aad5c586e727cb6a24b748eb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Libs_2XEClib_2includes_2stdint_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pcie_8c.html#ac31dd902aad5c586e727cb6a24b748eb">_pcieInitialized</a></td></tr>
 <tr class="separator:ac31dd902aad5c586e727cb6a24b748eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>BSD 2-Clause License</p>
+<p>Copyright (c) 2022-2025, Manas Kamal Choudhury All rights reserved.</p>
+<p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
+<ol type="1">
+<li>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</li>
+<li>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</li>
+</ol>
+<p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. </p>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a8a374f391ca44d695e4e56cd17bfcf63" name="a8a374f391ca44d695e4e56cd17bfcf63"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8a374f391ca44d695e4e56cd17bfcf63">&#9670;&#160;</a></span>INTERNAL_PCI_REG_BAR0</h2>
 
@@ -289,6 +307,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>AA64PCIeInitialize &ndash; intialize pcie subsystem. </p>
+<p>AA64PCIeInitialize &ndash; intialize pcie controller. </p>
+
 </div>
 </div>
 <a id="aee436201f8cfc2f406ebfac11ab53d34" name="aee436201f8cfc2f406ebfac11ab53d34"></a>
@@ -352,6 +373,19 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>AuPCIEAllocMSI &ndash; Allocate MSI/MSI-X for interrupt. </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000002">Todo:</a></b></dt><dd>&ndash; MSIX not implemented yet </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">device</td><td>&ndash; PCIe device address </td></tr>
+    <tr><td class="paramname">vector</td><td>&ndash; interrupt vector </td></tr>
+    <tr><td class="paramname">bus</td><td>&ndash; PCIe device bus number </td></tr>
+    <tr><td class="paramname">dev</td><td>&ndash; PCIe device dev number </td></tr>
+    <tr><td class="paramname">func</td><td>&ndash; PCIe device function number </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a6e063456980cc163bc9f4cdae9f9fd81" name="a6e063456980cc163bc9f4cdae9f9fd81"></a>
@@ -391,14 +425,18 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>BSD 2-Clause License</p>
-<p>Copyright (c) 2022-2023, Manas Kamal Choudhury All rights reserved.</p>
-<p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
-<ol type="1">
-<li>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</li>
-<li>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</li>
-</ol>
-<p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. </p>
+
+<p>AuPCIEGetDevice &ndash; gets a device address from its bus dev and func. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">seg</td><td>&ndash; device segment </td></tr>
+    <tr><td class="paramname">bus</td><td>&ndash; bus of the device </td></tr>
+    <tr><td class="paramname">dev</td><td>&ndash; device number </td></tr>
+    <tr><td class="paramname">func</td><td>&ndash; function number </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>return the composited device address </dd></dl>
 
 </div>
 </div>
@@ -445,6 +483,19 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>AuPCIERead &ndash; reads a register from pci express. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">device</td><td>&ndash; device address </td></tr>
+    <tr><td class="paramname">reg</td><td>&ndash; register to read </td></tr>
+    <tr><td class="paramname">bus</td><td>&ndash; bus number </td></tr>
+    <tr><td class="paramname">dev</td><td>&ndash; device number </td></tr>
+    <tr><td class="paramname">func</td><td>&ndash; function number </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>return the result in DWORD </dd></dl>
 
 </div>
 </div>
@@ -497,6 +548,20 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>AuPCIERead64 &ndash; reads in 64. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">device</td><td>&ndash; device address </td></tr>
+    <tr><td class="paramname">reg</td><td>&ndash; register </td></tr>
+    <tr><td class="paramname">size</td><td>&ndash; size to read </td></tr>
+    <tr><td class="paramname">bus</td><td>&ndash; bus num </td></tr>
+    <tr><td class="paramname">dev</td><td>&ndash; device number </td></tr>
+    <tr><td class="paramname">func</td><td>&ndash; func number </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>return the read result in QWORD </dd></dl>
 
 </div>
 </div>
@@ -596,6 +661,18 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>AuPCIEScanClass &ndash; scans and return pcie device with given class code and sub class code. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">classCode</td><td>&ndash; class code </td></tr>
+    <tr><td class="paramname">subClassCode</td><td>&ndash; sub class code </td></tr>
+    <tr><td class="paramname">bus</td><td>&ndash; address, where bus number will be stored </td></tr>
+    <tr><td class="paramname">dev</td><td>&ndash; address, where device number will be stored </td></tr>
+    <tr><td class="paramname">func</td><td>&ndash; address, where function number will be stored </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a4071b1c04ffbbc9910dc698b78c297fd" name="a4071b1c04ffbbc9910dc698b78c297fd"></a>
@@ -648,6 +725,20 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>AuPCIEScanClassIF &ndash; scans and return pcie device with given class code and sub class code. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">classCode</td><td>&ndash; class code </td></tr>
+    <tr><td class="paramname">subClassCode</td><td>&ndash; sub class code </td></tr>
+    <tr><td class="paramname">bus</td><td>&ndash; address, where bus number will be stored </td></tr>
+    <tr><td class="paramname">dev</td><td>&ndash; address, where device number will be stored </td></tr>
+    <tr><td class="paramname">func</td><td>&ndash; address, where function number will be stored </td></tr>
+    <tr><td class="paramname">progIf</td><td>&ndash; Programming interface </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>pcie device address </dd></dl>
+
 </div>
 </div>
 <a id="ad0f71057b3a4a2f47324b366d1f3ea2e" name="ad0f71057b3a4a2f47324b366d1f3ea2e"></a>
@@ -693,6 +784,18 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>AuPCIEScanVendorDevice &ndash; scans and return pcie device with given vendor id and device id. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vendor</td><td>&ndash; vendor id </td></tr>
+    <tr><td class="paramname">device</td><td>&ndash; device id </td></tr>
+    <tr><td class="paramname">bus</td><td>&ndash; address, where bus number will be stored </td></tr>
+    <tr><td class="paramname">dev</td><td>&ndash; address, where device number will be stored </td></tr>
+    <tr><td class="paramname">func</td><td>&ndash; address, where function number will be stored </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -745,6 +848,19 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>AuPCIEWrite &ndash; writes to a register. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">device</td><td>&ndash; device address </td></tr>
+    <tr><td class="paramname">reg</td><td>&ndash; register </td></tr>
+    <tr><td class="paramname">size</td><td>&ndash; size to read </td></tr>
+    <tr><td class="paramname">bus</td><td>&ndash; bus num </td></tr>
+    <tr><td class="paramname">dev</td><td>&ndash; device number </td></tr>
+    <tr><td class="paramname">func</td><td>&ndash; func number </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -818,14 +934,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>BSD 2-Clause License</p>
-<p>Copyright (c) 2022-2025, Manas Kamal Choudhury All rights reserved.</p>
-<p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
-<ol type="1">
-<li>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</li>
-<li>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</li>
-</ol>
-<p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. </p>
 
 </div>
 </div>

@@ -469,7 +469,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Downloads a file from an FTPv4 server.</p>
-<p>The <a class="el" href="sysserv_8h.html#ad558c2d7f1e36ad26447c172d10a3a45">ReadFile()</a> function is used to initialize and start an FTPv4 download process and optionally wait for completion. When the download operation completes, whether successfully or not, the Token.Status field is updated by the EFI FTPv4 Protocol driver and then Token.Event is signaled (if it is not NULL).</p>
+<p>The <a class="el" href="sysserv_8h.html#ad558c2d7f1e36ad26447c172d10a3a45" title="ReadFile – reads a file into given buffer.">ReadFile()</a> function is used to initialize and start an FTPv4 download process and optionally wait for completion. When the download operation completes, whether successfully or not, the Token.Status field is updated by the EFI FTPv4 Protocol driver and then Token.Event is signaled (if it is not NULL).</p>
 <p>Data will be downloaded from the FTPv4 server into Token.DataBuffer. If the file size is larger than Token.DataBufferSize, Token.DataCallback will be called to allow for processing data and then new data will be placed at the beginning of Token.DataBuffer.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -511,7 +511,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Uploads a file from an FTPv4 server.</p>
-<p>The <a class="el" href="sysserv_8h.html#ac94998e2c23995de26f36eee4d74badd">WriteFile()</a> function is used to initialize and start an FTPv4 upload process and optionally wait for completion. When the upload operation completes, whether successfully or not, the Token.Status field is updated by the EFI FTPv4 Protocol driver and then Token.Event is signaled (if it is not NULL). Data to be uploaded to server is stored into Token.DataBuffer. Token.DataBufferSize is the number bytes to be transferred. If the file size is larger than Token.DataBufferSize, Token.DataCallback will be called to allow for processing data and then new data will be placed at the beginning of Token.DataBuffer. Token.DataBufferSize is updated to reflect the actual number of bytes to be transferred. Token.DataBufferSize is set to 0 by the call back to indicate the completion of data transfer.</p>
+<p>The <a class="el" href="sysserv_8h.html#ac94998e2c23995de26f36eee4d74badd" title="WriteFile – write system call.">WriteFile()</a> function is used to initialize and start an FTPv4 upload process and optionally wait for completion. When the upload operation completes, whether successfully or not, the Token.Status field is updated by the EFI FTPv4 Protocol driver and then Token.Event is signaled (if it is not NULL). Data to be uploaded to server is stored into Token.DataBuffer. Token.DataBufferSize is the number bytes to be transferred. If the file size is larger than Token.DataBufferSize, Token.DataCallback will be called to allow for processing data and then new data will be placed at the beginning of Token.DataBuffer. Token.DataBufferSize is updated to reflect the actual number of bytes to be transferred. Token.DataBufferSize is set to 0 by the call back to indicate the completion of data transfer.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">This</td><td>Pointer to the EFI_FTP4_PROTOCOL instance. </td></tr>

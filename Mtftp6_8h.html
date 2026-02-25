@@ -546,7 +546,7 @@ Variables</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">This</td><td>Pointer to the EFI_MTFTP6_PROTOCOL instance. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">Token</td><td>The token that the caller provided in the EFI_MTFTP6_PROTOCOl.ReadFile(), <a class="el" href="sysserv_8h.html#ac94998e2c23995de26f36eee4d74badd">WriteFile()</a> or ReadDirectory() function. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">Token</td><td>The token that the caller provided in the EFI_MTFTP6_PROTOCOl.ReadFile(), <a class="el" href="sysserv_8h.html#ac94998e2c23995de26f36eee4d74badd" title="WriteFile – write system call.">WriteFile()</a> or ReadDirectory() function. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">PacketLen</td><td>Indicates the length of the packet. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">Packet</td><td>Pointer to an MTFTPv6 packet.</td></tr>
   </table>
@@ -879,7 +879,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Download a file from an MTFTPv6 server.</p>
-<p>The <a class="el" href="sysserv_8h.html#ad558c2d7f1e36ad26447c172d10a3a45">ReadFile()</a> function is used to initialize and start an MTFTPv6 download process and optionally wait for completion. When the download operation completes, whether successfully or not, the Token.Status field is updated by the EFI MTFTPv6 Protocol driver and then Token.Event is signaled if it is not NULL.</p>
+<p>The <a class="el" href="sysserv_8h.html#ad558c2d7f1e36ad26447c172d10a3a45" title="ReadFile – reads a file into given buffer.">ReadFile()</a> function is used to initialize and start an MTFTPv6 download process and optionally wait for completion. When the download operation completes, whether successfully or not, the Token.Status field is updated by the EFI MTFTPv6 Protocol driver and then Token.Event is signaled if it is not NULL.</p>
 <p>Data can be downloaded from the MTFTPv6 server into either of the following locations:</p><ul>
 <li>A fixed buffer that is pointed to by Token.Buffer</li>
 <li>A download service function that is pointed to by Token.CheckPacket</li>
@@ -969,7 +969,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Send a file to an MTFTPv6 server. May be unsupported in some implementations.</p>
-<p>The <a class="el" href="sysserv_8h.html#ac94998e2c23995de26f36eee4d74badd">WriteFile()</a> function is used to initialize an uploading operation with the given option list and optionally wait for completion. If one or more of the options is not supported by the server, the unsupported options are ignored and a standard TFTP process starts instead. When the upload process completes, whether successfully or not, Token.Event is signaled, and the EFI MTFTPv6 Protocol driver updates Token.Status.</p>
+<p>The <a class="el" href="sysserv_8h.html#ac94998e2c23995de26f36eee4d74badd" title="WriteFile – write system call.">WriteFile()</a> function is used to initialize an uploading operation with the given option list and optionally wait for completion. If one or more of the options is not supported by the server, the unsupported options are ignored and a standard TFTP process starts instead. When the upload process completes, whether successfully or not, Token.Event is signaled, and the EFI MTFTPv6 Protocol driver updates Token.Status.</p>
 <p>The caller can supply the data to be uploaded in the following two modes:</p><ul>
 <li>Through the user-provided buffer</li>
 <li>Through a callback function</li>

@@ -153,10 +153,13 @@ Macros</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:abb6f4cfec25828c3c2877987f1bc6fbd" id="r_abb6f4cfec25828c3c2877987f1bc6fbd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="loader_8h.html#abb6f4cfec25828c3c2877987f1bc6fbd">AuInitialiseLoader</a> ()</td></tr>
+<tr class="memdesc:abb6f4cfec25828c3c2877987f1bc6fbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuInitialiseLoader &ndash; initialize the loader and allocate atleast 1 MiB for scratch use.  <br /></td></tr>
 <tr class="separator:abb6f4cfec25828c3c2877987f1bc6fbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca80cf203cb78721b7659f449478784c" id="r_aca80cf203cb78721b7659f449478784c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="loader_8h.html#aca80cf203cb78721b7659f449478784c">AuLoadExecToProcess</a> (<a class="el" href="process_8h.html#af7383c550ee680158b77cf18ef1d275a">AuProcess</a> *proc, char *filename, int argc, char **argv)</td></tr>
+<tr class="memdesc:aca80cf203cb78721b7659f449478784c"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuLoadExecToProcess &ndash; loads an executable to the process.  <br /></td></tr>
 <tr class="separator:aca80cf203cb78721b7659f449478784c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7897d2c42d7adc72398b56a0448a5d18" id="r_a7897d2c42d7adc72398b56a0448a5d18"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="loader_8h.html#a7897d2c42d7adc72398b56a0448a5d18">AuProcessEntUser</a> (<a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> rcx)</td></tr>
+<tr class="memdesc:a7897d2c42d7adc72398b56a0448a5d18"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuProcessEntUser &ndash; main kernel thread call in order to enter user for processes.  <br /></td></tr>
 <tr class="separator:a7897d2c42d7adc72398b56a0448a5d18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a232e15eb06c628225895885385bb7c63" id="r_a232e15eb06c628225895885385bb7c63"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Libs_2XEClib_2includes_2stdint_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="loader_8h.html#a232e15eb06c628225895885385bb7c63">AuIsLoaderBusy</a> ()</td></tr>
 <tr class="separator:a232e15eb06c628225895885385bb7c63"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -207,6 +210,8 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>AuInitialiseLoader &ndash; initialize the loader and allocate atleast 1 MiB for scratch use. </p>
 
 </div>
 </div>
@@ -281,6 +286,18 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>AuLoadExecToProcess &ndash; loads an executable to the process. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">proc</td><td>&ndash; pointer to process data structure </td></tr>
+    <tr><td class="paramname">filename</td><td>&ndash; executable file name </td></tr>
+    <tr><td class="paramname">argc</td><td>&ndash; number of arguments </td></tr>
+    <tr><td class="paramname">argv</td><td>&ndash; array of argument in strings </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success -1 on failure </dd></dl>
+
 </div>
 </div>
 <a id="a7897d2c42d7adc72398b56a0448a5d18" name="a7897d2c42d7adc72398b56a0448a5d18"></a>
@@ -306,6 +323,14 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>AuProcessEntUser &ndash; main kernel thread call in order to enter user for processes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rcx</td><td>&ndash; user entry structure </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

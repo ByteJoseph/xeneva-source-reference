@@ -82,66 +82,61 @@ $(document).ready(function() { init_codefold(0); });
 </div><!--header-->
 <div class="contents">
 <a href="__xeneva_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#ifndef __XENEVA_H__</span></div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#define __XENEVA_H__</span></div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#include &lt;<a class="code" href="Libs_2XEClib_2includes_2stdint_8h.html">stdint.h</a>&gt;</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#ifndef __XENEVA_H__</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#define __XENEVA_H__</span></div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment">/* if, YES_DYNAMIC is set to 1, everything will</span></div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment">* be exported as dynamic library</span></div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">*/</span></div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#ifdef YES_DYNAMIC</span></div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#define XE_EXPORT __declspec(dllexport)</span></div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">#define XE_IMPORT __declspec(dllimport)</span></div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment">/* nothing to define here*/</span></div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="__xeneva_8h.html#a351f3aee2463196be931eb52fc54cd8d">   44</a></span><span class="preprocessor">#define XE_EXPORT </span></div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="__xeneva_8h.html#a8bea06eabdf781a93b44adb6a06bc12d">   45</a></span><span class="preprocessor">#define XE_IMPORT</span></div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="__xeneva_8h.html#ab246fc80dcb7c6e842a5c117d20a2719">   48</a></span><span class="preprocessor">#define XE_EXTERN extern &quot;C&quot;</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#include &lt;<a class="code" href="Libs_2XEClib_2includes_2stdint_8h.html">stdint.h</a>&gt;</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">#ifdef YES_DYNAMIC</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="preprocessor">#define XE_EXPORT __declspec(dllexport)</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="preprocessor">#define XE_IMPORT __declspec(dllimport)</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">/* nothing to define here*/</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="__xeneva_8h.html#a351f3aee2463196be931eb52fc54cd8d">   46</a></span><span class="preprocessor">#define XE_EXPORT </span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="__xeneva_8h.html#a8bea06eabdf781a93b44adb6a06bc12d">   47</a></span><span class="preprocessor">#define XE_IMPORT</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="__xeneva_8h.html#abf4fc5af96b28fb46563d9d764e5baa4">   50</a></span><span class="preprocessor">#define XE_API  XE_EXTERN</span></div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="__xeneva_8h.html#a2fd2fe81a620d77fff48f3c42d646cf0">   51</a></span><span class="preprocessor">#define XE_MAIN XE_EXPORT</span></div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="__xeneva_8h.html#a3640283d666d4a8b25a736424ee25866">   53</a></span><span class="preprocessor">#define XE_LIB XE_EXPORT</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="__xeneva_8h.html#ab246fc80dcb7c6e842a5c117d20a2719">   50</a></span><span class="preprocessor">#define XE_EXTERN extern &quot;C&quot;</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="__xeneva_8h.html#abf4fc5af96b28fb46563d9d764e5baa4">   52</a></span><span class="preprocessor">#define XE_API  XE_EXTERN</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="__xeneva_8h.html#a2fd2fe81a620d77fff48f3c42d646cf0">   53</a></span><span class="preprocessor">#define XE_MAIN XE_EXPORT</span></div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="__xeneva_8h.html#a35b08bc113bf5a6b7de654feaa6a6bf9">   56</a></span><span class="preprocessor">#define AURORA_SYSCALL_MAGIC  0x15062023</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="__xeneva_8h.html#a3640283d666d4a8b25a736424ee25866">   55</a></span><span class="preprocessor">#define XE_LIB XE_EXPORT</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="preprocessor">#ifdef _MSC_VER</span></div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="preprocessor">#define INLINE __inline</span></div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="__xeneva_8h.html#a2eb6f9e0395b47b8d5e3eeae4fe0c116">   61</a></span><span class="preprocessor">#define INLINE inline</span></div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><a class="code hl_define" href="__xeneva_8h.html#ab246fc80dcb7c6e842a5c117d20a2719">XE_EXTERN</a>{</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="comment">/* _KePrint -- kernel printing function */</span></div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="__xeneva_8h.html#af1ce6ef7733b7db493aa1589aee4770d">   69</a></span>    <a class="code hl_define" href="__xeneva_8h.html#a3640283d666d4a8b25a736424ee25866">XE_LIB</a> <span class="keywordtype">void</span> <a class="code hl_function" href="__xeneva_8h.html#af1ce6ef7733b7db493aa1589aee4770d">_KePrint</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* text,...);</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <a class="code hl_define" href="__xeneva_8h.html#a3640283d666d4a8b25a736424ee25866">XE_LIB</a> <span class="keywordtype">void</span> <a class="code hl_function" href="__xeneva_8h.html#ad6196eeae9345050b23d1d6af429e99c">_XESetEnvironmentVariable</a>(<span class="keywordtype">char</span>* key, <span class="keywordtype">char</span>* value, <span class="keywordtype">bool</span> overwrite);</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <a class="code hl_define" href="__xeneva_8h.html#a3640283d666d4a8b25a736424ee25866">XE_LIB</a> <span class="keywordtype">int</span> <a class="code hl_function" href="__xeneva_8h.html#a36e33b7d22d11e5987a95560b6c378b2">_XEPutEnvironmentVariable</a>(<span class="keywordtype">char</span>* keyval);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="__xeneva_8h.html#a35b08bc113bf5a6b7de654feaa6a6bf9">   58</a></span><span class="preprocessor">#define AURORA_SYSCALL_MAGIC  0x15062023</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="preprocessor">#ifdef _MSC_VER</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="preprocessor">#define INLINE __inline</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="__xeneva_8h.html#a2eb6f9e0395b47b8d5e3eeae4fe0c116">   63</a></span><span class="preprocessor">#define INLINE inline</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><a class="code hl_define" href="__xeneva_8h.html#ab246fc80dcb7c6e842a5c117d20a2719">XE_EXTERN</a>{</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="__xeneva_8h.html#af1ce6ef7733b7db493aa1589aee4770d">   73</a></span>    <a class="code hl_define" href="__xeneva_8h.html#a3640283d666d4a8b25a736424ee25866">XE_LIB</a> <span class="keywordtype">void</span> <a class="code hl_function" href="__xeneva_8h.html#af1ce6ef7733b7db493aa1589aee4770d">_KePrint</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* text,...);</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <a class="code hl_define" href="__xeneva_8h.html#a3640283d666d4a8b25a736424ee25866">XE_LIB</a> <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code hl_function" href="__xeneva_8h.html#abebd692450747ae4222d249ce9abbbdb">_XEGetEnvironmentVariable</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* key);</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <a class="code hl_define" href="__xeneva_8h.html#a3640283d666d4a8b25a736424ee25866">XE_LIB</a> <span class="keywordtype">void</span> <a class="code hl_function" href="__xeneva_8h.html#ad6196eeae9345050b23d1d6af429e99c">_XESetEnvironmentVariable</a>(<span class="keywordtype">char</span>* key, <span class="keywordtype">char</span>* value, <span class="keywordtype">bool</span> overwrite);</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>}</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <a class="code hl_define" href="__xeneva_8h.html#a3640283d666d4a8b25a736424ee25866">XE_LIB</a> <span class="keywordtype">int</span> <a class="code hl_function" href="__xeneva_8h.html#a36e33b7d22d11e5987a95560b6c378b2">_XEPutEnvironmentVariable</a>(<span class="keywordtype">char</span>* keyval);</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <a class="code hl_define" href="__xeneva_8h.html#a3640283d666d4a8b25a736424ee25866">XE_LIB</a> <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code hl_function" href="__xeneva_8h.html#abebd692450747ae4222d249ce9abbbdb">_XEGetEnvironmentVariable</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* key);</div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>}</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aLibs_2XEClib_2includes_2stdint_8h_html"><div class="ttname"><a href="Libs_2XEClib_2includes_2stdint_8h.html">stdint.h</a></div></div>
-<div class="ttc" id="a__xeneva_8h_html_a3640283d666d4a8b25a736424ee25866"><div class="ttname"><a href="__xeneva_8h.html#a3640283d666d4a8b25a736424ee25866">XE_LIB</a></div><div class="ttdeci">#define XE_LIB</div><div class="ttdef"><b>Definition</b> _xeneva.h:53</div></div>
+<div class="ttc" id="a__xeneva_8h_html_a3640283d666d4a8b25a736424ee25866"><div class="ttname"><a href="__xeneva_8h.html#a3640283d666d4a8b25a736424ee25866">XE_LIB</a></div><div class="ttdeci">#define XE_LIB</div><div class="ttdef"><b>Definition</b> _xeneva.h:55</div></div>
 <div class="ttc" id="a__xeneva_8h_html_a36e33b7d22d11e5987a95560b6c378b2"><div class="ttname"><a href="__xeneva_8h.html#a36e33b7d22d11e5987a95560b6c378b2">_XEPutEnvironmentVariable</a></div><div class="ttdeci">XE_LIB int _XEPutEnvironmentVariable(char *keyval)</div><div class="ttdef"><b>Definition</b> _xeneva.cpp:105</div></div>
-<div class="ttc" id="a__xeneva_8h_html_ab246fc80dcb7c6e842a5c117d20a2719"><div class="ttname"><a href="__xeneva_8h.html#ab246fc80dcb7c6e842a5c117d20a2719">XE_EXTERN</a></div><div class="ttdeci">#define XE_EXTERN</div><div class="ttdef"><b>Definition</b> _xeneva.h:48</div></div>
+<div class="ttc" id="a__xeneva_8h_html_ab246fc80dcb7c6e842a5c117d20a2719"><div class="ttname"><a href="__xeneva_8h.html#ab246fc80dcb7c6e842a5c117d20a2719">XE_EXTERN</a></div><div class="ttdeci">#define XE_EXTERN</div><div class="ttdef"><b>Definition</b> _xeneva.h:50</div></div>
 <div class="ttc" id="a__xeneva_8h_html_abebd692450747ae4222d249ce9abbbdb"><div class="ttname"><a href="__xeneva_8h.html#abebd692450747ae4222d249ce9abbbdb">_XEGetEnvironmentVariable</a></div><div class="ttdeci">XE_LIB const char * _XEGetEnvironmentVariable(const char *key)</div><div class="ttdef"><b>Definition</b> _xeneva.cpp:140</div></div>
 <div class="ttc" id="a__xeneva_8h_html_ad6196eeae9345050b23d1d6af429e99c"><div class="ttname"><a href="__xeneva_8h.html#ad6196eeae9345050b23d1d6af429e99c">_XESetEnvironmentVariable</a></div><div class="ttdeci">XE_LIB void _XESetEnvironmentVariable(char *key, char *value, bool overwrite)</div><div class="ttdef"><b>Definition</b> _xeneva.cpp:57</div></div>
-<div class="ttc" id="a__xeneva_8h_html_af1ce6ef7733b7db493aa1589aee4770d"><div class="ttname"><a href="__xeneva_8h.html#af1ce6ef7733b7db493aa1589aee4770d">_KePrint</a></div><div class="ttdeci">XE_LIB void _KePrint(const char *text,...)</div></div>
+<div class="ttc" id="a__xeneva_8h_html_af1ce6ef7733b7db493aa1589aee4770d"><div class="ttname"><a href="__xeneva_8h.html#af1ce6ef7733b7db493aa1589aee4770d">_KePrint</a></div><div class="ttdeci">XE_LIB void _KePrint(const char *text,...)</div><div class="ttdoc">_KePrint – kernel printing function, uses kernel serial console to print strings</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

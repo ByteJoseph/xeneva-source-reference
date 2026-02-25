@@ -170,19 +170,34 @@ Functions</h2></td></tr>
 <tr class="memitem:a2c2c6eb53e9604daae60ca55e8ecca51" id="r_a2c2c6eb53e9604daae60ca55e8ecca51"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fileserv_8c.html#a2c2c6eb53e9604daae60ca55e8ecca51">read_sp_el1</a> ()</td></tr>
 <tr class="separator:a2c2c6eb53e9604daae60ca55e8ecca51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad32833b7e68897eafa507c82d56bc21f" id="r_ad32833b7e68897eafa507c82d56bc21f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fileserv_8c.html#ad32833b7e68897eafa507c82d56bc21f">OpenFile</a> (char *filename, int mode)</td></tr>
+<tr class="memdesc:ad32833b7e68897eafa507c82d56bc21f"><td class="mdescLeft">&#160;</td><td class="mdescRight">OpenFile &ndash; opens a file for user process.  <br /></td></tr>
 <tr class="separator:ad32833b7e68897eafa507c82d56bc21f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae15b73e1e39c5f6cfa06dfb765d62412" id="r_ae15b73e1e39c5f6cfa06dfb765d62412"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fileserv_8c.html#ae15b73e1e39c5f6cfa06dfb765d62412">FileSetOffset</a> (int fd, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> offset)</td></tr>
+<tr class="memdesc:ae15b73e1e39c5f6cfa06dfb765d62412"><td class="mdescLeft">&#160;</td><td class="mdescRight">FileSetOffset &ndash; set a offset inorder to read the specific position of the file.  <br /></td></tr>
 <tr class="separator:ae15b73e1e39c5f6cfa06dfb765d62412"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad558c2d7f1e36ad26447c172d10a3a45" id="r_ad558c2d7f1e36ad26447c172d10a3a45"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fileserv_8c.html#ad558c2d7f1e36ad26447c172d10a3a45">ReadFile</a> (int fd, void *buffer, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> length)</td></tr>
+<tr class="memdesc:ad558c2d7f1e36ad26447c172d10a3a45"><td class="mdescLeft">&#160;</td><td class="mdescRight">ReadFile &ndash; reads a file into given buffer.  <br /></td></tr>
 <tr class="separator:ad558c2d7f1e36ad26447c172d10a3a45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad221811d07e099ca3d26a921d550d963" id="r_ad221811d07e099ca3d26a921d550d963"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fileserv_8c.html#ad221811d07e099ca3d26a921d550d963">CloseFile</a> (int fd)</td></tr>
+<tr class="memdesc:ad221811d07e099ca3d26a921d550d963"><td class="mdescLeft">&#160;</td><td class="mdescRight">CloseFile &ndash; closes a general file.  <br /></td></tr>
 <tr class="separator:ad221811d07e099ca3d26a921d550d963"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaca8d138320f915eca0844d398725983" id="r_aaca8d138320f915eca0844d398725983"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fileserv_8c.html#aaca8d138320f915eca0844d398725983">FileIoControl</a> (int fd, int code, void *arg)</td></tr>
+<tr class="memdesc:aaca8d138320f915eca0844d398725983"><td class="mdescLeft">&#160;</td><td class="mdescRight">FileIoControl &ndash; controls the file through I/O code.  <br /></td></tr>
 <tr class="separator:aaca8d138320f915eca0844d398725983"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27c86065135ac45fb97f589fea3edfd8" id="r_a27c86065135ac45fb97f589fea3edfd8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fileserv_8c.html#a27c86065135ac45fb97f589fea3edfd8">FileStat</a> (int fd, void *buf)</td></tr>
+<tr class="memdesc:a27c86065135ac45fb97f589fea3edfd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">FileStat &ndash; writes information related to file.  <br /></td></tr>
 <tr class="separator:a27c86065135ac45fb97f589fea3edfd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>BSD 2-Clause License</p>
+<p>Copyright (c) 2022-2025, Manas Kamal Choudhury All rights reserved.</p>
+<p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
+<ol type="1">
+<li>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</li>
+<li>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</li>
+</ol>
+<p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. </p>
+</div><h2 class="groupheader">Function Documentation</h2>
 <a id="ad221811d07e099ca3d26a921d550d963" name="ad221811d07e099ca3d26a921d550d963"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad221811d07e099ca3d26a921d550d963">&#9670;&#160;</a></span>CloseFile()</h2>
 
@@ -198,6 +213,14 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>CloseFile &ndash; closes a general file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fd</td><td>&ndash; file descriptor to close </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -233,6 +256,16 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>FileIoControl &ndash; controls the file through I/O code. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fd</td><td>&ndash; file descriptor </td></tr>
+    <tr><td class="paramname">code</td><td>&ndash; code to pass </td></tr>
+    <tr><td class="paramname">arg</td><td>&ndash; argument to pass </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="ae15b73e1e39c5f6cfa06dfb765d62412" name="ae15b73e1e39c5f6cfa06dfb765d62412"></a>
@@ -260,6 +293,15 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>FileSetOffset &ndash; set a offset inorder to read the specific position of the file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fd</td><td>&ndash; File descriptor </td></tr>
+    <tr><td class="paramname">offset</td><td>&ndash; offset in bytes </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -289,6 +331,15 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>FileStat &ndash; writes information related to file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fd</td><td>&ndash; file descriptor </td></tr>
+    <tr><td class="paramname">buf</td><td>&ndash; Pointer to file structure </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="ad32833b7e68897eafa507c82d56bc21f" name="ad32833b7e68897eafa507c82d56bc21f"></a>
@@ -316,14 +367,15 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>BSD 2-Clause License</p>
-<p>Copyright (c) 2022-2023, Manas Kamal Choudhury All rights reserved.</p>
-<p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
-<ol type="1">
-<li>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</li>
-<li>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</li>
-</ol>
-<p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. </p>
+
+<p>OpenFile &ndash; opens a file for user process. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file</td><td>&ndash; file path </td></tr>
+    <tr><td class="paramname">mode</td><td>&ndash; mode of the file </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -349,14 +401,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>BSD 2-Clause License</p>
-<p>Copyright (c) 2022-2025, Manas Kamal Choudhury All rights reserved.</p>
-<p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
-<ol type="1">
-<li>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</li>
-<li>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</li>
-</ol>
-<p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. </p>
 
 </div>
 </div>
@@ -416,6 +460,16 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>ReadFile &ndash; reads a file into given buffer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fd</td><td>&ndash; file descriptor </td></tr>
+    <tr><td class="paramname">buffer</td><td>&ndash; buffer where to put the data </td></tr>
+    <tr><td class="paramname">length</td><td>&ndash; length in bytes </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

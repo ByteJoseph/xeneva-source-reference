@@ -212,6 +212,7 @@ Functions</h2></td></tr>
 <tr class="memitem:ad8d6df9f7559d256db433988fc0962ae" id="r_ad8d6df9f7559d256db433988fc0962ae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="systable_8c.html#ad8d6df9f7559d256db433988fc0962ae">modifyx17</a> ()</td></tr>
 <tr class="separator:ad8d6df9f7559d256db433988fc0962ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f25cfb6a62b35b6bb5995b269cba9f7" id="r_a3f25cfb6a62b35b6bb5995b269cba9f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="systable_8c.html#a3f25cfb6a62b35b6bb5995b269cba9f7">AuAA64SyscallHandler</a> (<a class="el" href="aa64cpu_8h.html#ab59286a81f0d9f9a7ceda49d421e0e90">AA64Registers</a> *regs)</td></tr>
+<tr class="memdesc:a3f25cfb6a62b35b6bb5995b269cba9f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuAA64SyscalHandler &ndash; common system call handler for aarch64.  <br /></td></tr>
 <tr class="separator:a3f25cfb6a62b35b6bb5995b269cba9f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
@@ -219,7 +220,16 @@ Variables</h2></td></tr>
 <tr class="memitem:af8d409ba14c447a8657e5d084059282c" id="r_af8d409ba14c447a8657e5d084059282c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="aa64cpu_8h.html#ab59286a81f0d9f9a7ceda49d421e0e90">AA64Registers</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="systable_8c.html#af8d409ba14c447a8657e5d084059282c">svcCurrentRegs</a></td></tr>
 <tr class="separator:af8d409ba14c447a8657e5d084059282c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>BSD 2-Clause License</p>
+<p>Copyright (c) 2023-2025, Manas Kamal Choudhury All rights reserved.</p>
+<p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
+<ol type="1">
+<li>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</li>
+<li>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</li>
+</ol>
+<p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. </p>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a21142a073ef796166646d29d7e0fcb26" name="a21142a073ef796166646d29d7e0fcb26"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a21142a073ef796166646d29d7e0fcb26">&#9670;&#160;</a></span>AURORA_MAX_SYSCALL</h2>
 
@@ -231,14 +241,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>BSD 2-Clause License</p>
-<p>Copyright (c) 2023-2025, Manas Kamal Choudhury All rights reserved.</p>
-<p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
-<ol type="1">
-<li>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</li>
-<li>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</li>
-</ol>
-<p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. </p>
 
 </div>
 </div>
@@ -290,6 +292,14 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>AuAA64SyscalHandler &ndash; common system call handler for aarch64. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">regs</td><td>&ndash; Register information passed by sync_exception </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

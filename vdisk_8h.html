@@ -223,29 +223,49 @@ Typedefs</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a74df0bcd64b859744b6b10fb6bcc459e" id="r_a74df0bcd64b859744b6b10fb6bcc459e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vdisk_8h.html#a74df0bcd64b859744b6b10fb6bcc459e">AuVDiskInitialise</a> ()</td></tr>
+<tr class="memdesc:a74df0bcd64b859744b6b10fb6bcc459e"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuVDiskInitialise &ndash; initialise the vdisk.  <br /></td></tr>
 <tr class="separator:a74df0bcd64b859744b6b10fb6bcc459e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac30bd403eb56836d58917957de86f359" id="r_ac30bd403eb56836d58917957de86f359"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vdisk_8h.html#ac30bd403eb56836d58917957de86f359">AuVDiskGetIndex</a> ()</td></tr>
+<tr class="memdesc:ac30bd403eb56836d58917957de86f359"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuVDiskGetIndex &ndash; returns a vdisk index.  <br /></td></tr>
 <tr class="separator:ac30bd403eb56836d58917957de86f359"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13ac7ec6aa71deeac88756197a4eddca" id="r_a13ac7ec6aa71deeac88756197a4eddca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vdisk_8h.html#a13ac7ec6aa71deeac88756197a4eddca">AuVDiskRegister</a> (<a class="el" href="vdisk_8h.html#a1e346824b0cac8290e37754e1c580e50">AuVDisk</a> *disk)</td></tr>
+<tr class="memdesc:a13ac7ec6aa71deeac88756197a4eddca"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuVDiskRegister &ndash; adds a vdisk service to the list.  <br /></td></tr>
 <tr class="separator:a13ac7ec6aa71deeac88756197a4eddca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2fa35580e09139795e85148afdf72980" id="r_a2fa35580e09139795e85148afdf72980"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> <a class="el" href="vdisk_8h.html#a1e346824b0cac8290e37754e1c580e50">AuVDisk</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vdisk_8h.html#a2fa35580e09139795e85148afdf72980">AuCreateVDisk</a> ()</td></tr>
+<tr class="memdesc:a2fa35580e09139795e85148afdf72980"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuCreateVDisk &ndash; creates a vdisk and return to the caller.  <br /></td></tr>
 <tr class="separator:a2fa35580e09139795e85148afdf72980"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a111b279bad2e4c2446da73bff718ec28" id="r_a111b279bad2e4c2446da73bff718ec28"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vdisk_8h.html#a111b279bad2e4c2446da73bff718ec28">AuVDiskRead</a> (<a class="el" href="vdisk_8h.html#a1e346824b0cac8290e37754e1c580e50">AuVDisk</a> *disk, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> lba, <a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> count, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> *buffer)</td></tr>
+<tr class="memdesc:a111b279bad2e4c2446da73bff718ec28"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuVDiskRead &ndash; reads a disk block from registered disk.  <br /></td></tr>
 <tr class="separator:a111b279bad2e4c2446da73bff718ec28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf5c42c78d46c4661c210d7918bef5c7" id="r_adf5c42c78d46c4661c210d7918bef5c7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vdisk_8h.html#adf5c42c78d46c4661c210d7918bef5c7">AuVDiskWrite</a> (<a class="el" href="vdisk_8h.html#a1e346824b0cac8290e37754e1c580e50">AuVDisk</a> *disk, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> lba, <a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> count, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> *buffer)</td></tr>
+<tr class="memdesc:adf5c42c78d46c4661c210d7918bef5c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuVDiskWrite &ndash; reads a disk block from registered disk.  <br /></td></tr>
 <tr class="separator:adf5c42c78d46c4661c210d7918bef5c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77db7c0c5c4f5ad1eb345507036492c6" id="r_a77db7c0c5c4f5ad1eb345507036492c6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vdisk_8h.html#a77db7c0c5c4f5ad1eb345507036492c6">AuVDiskDestroy</a> (<a class="el" href="vdisk_8h.html#a1e346824b0cac8290e37754e1c580e50">AuVDisk</a> *vdisk)</td></tr>
+<tr class="memdesc:a77db7c0c5c4f5ad1eb345507036492c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuVDiskDestroy &ndash; destroy's a vdisk.  <br /></td></tr>
 <tr class="separator:a77db7c0c5c4f5ad1eb345507036492c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3bf6ac5e7ef644c19ed18eb4a2c80169" id="r_a3bf6ac5e7ef644c19ed18eb4a2c80169"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vdisk_8h.html#a3bf6ac5e7ef644c19ed18eb4a2c80169">AuGetVDiskInfo</a> (<a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> vdiskID, void *buffer)</td></tr>
+<tr class="memdesc:a3bf6ac5e7ef644c19ed18eb4a2c80169"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuGetVDiskInfo &ndash; returns virtual disk information to application.  <br /></td></tr>
 <tr class="separator:a3bf6ac5e7ef644c19ed18eb4a2c80169"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2337cd721edd74f1d5307497f255f568" id="r_a2337cd721edd74f1d5307497f255f568"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vdisk_8h.html#a2337cd721edd74f1d5307497f255f568">AuGetVDiskPartitionInfo</a> (<a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> vdiskID, <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> partition_ID, void *buffer)</td></tr>
+<tr class="memdesc:a2337cd721edd74f1d5307497f255f568"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuGetVDiskPartitionInfo &ndash; get partition information from desired virtual disk.  <br /></td></tr>
 <tr class="separator:a2337cd721edd74f1d5307497f255f568"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a134f9e3c8a027d7532865cb6e8d631c6" id="r_a134f9e3c8a027d7532865cb6e8d631c6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vdisk_8h.html#a134f9e3c8a027d7532865cb6e8d631c6">AuVDiskCreateStorageFile</a> (char *output)</td></tr>
+<tr class="memdesc:a134f9e3c8a027d7532865cb6e8d631c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuVDiskCreateStorageFile &ndash; creates a storage directory in device file system.  <br /></td></tr>
 <tr class="separator:a134f9e3c8a027d7532865cb6e8d631c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e698a21932d198b7172f56aa5e9e690" id="r_a1e698a21932d198b7172f56aa5e9e690"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> <a class="el" href="vdisk_8h.html#a1e346824b0cac8290e37754e1c580e50">AuVDisk</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vdisk_8h.html#a1e698a21932d198b7172f56aa5e9e690">AuGetVDisk</a> (int vdisk_idx)</td></tr>
+<tr class="memdesc:a1e698a21932d198b7172f56aa5e9e690"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuGetVDisk &ndash; get a vdisk from the vdisk array.  <br /></td></tr>
 <tr class="separator:a1e698a21932d198b7172f56aa5e9e690"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>BSD 2-Clause License</p>
+<p>Copyright (c) 2022-2023, Manas Kamal Choudhury All rights reserved.</p>
+<p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
+<ol type="1">
+<li>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</li>
+<li>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</li>
+</ol>
+<p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. </p>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="aa8de0109fe5f0798d128191fcbfd8d63" name="aa8de0109fe5f0798d128191fcbfd8d63"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa8de0109fe5f0798d128191fcbfd8d63">&#9670;&#160;</a></span>MAX_PARTITION_PER_DISK</h2>
 
@@ -271,14 +291,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>BSD 2-Clause License</p>
-<p>Copyright (c) 2022-2023, Manas Kamal Choudhury All rights reserved.</p>
-<p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
-<ol type="1">
-<li>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</li>
-<li>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</li>
-</ol>
-<p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. </p>
 
 </div>
 </div>
@@ -383,6 +395,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>AuCreateVDisk &ndash; creates a vdisk and return to the caller. </p>
+<dl class="section return"><dt>Returns</dt><dd>return the newly created empty vdisk structure </dd></dl>
+
 </div>
 </div>
 <a id="a1e698a21932d198b7172f56aa5e9e690" name="a1e698a21932d198b7172f56aa5e9e690"></a>
@@ -400,6 +415,15 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>AuGetVDisk &ndash; get a vdisk from the vdisk array. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vdisk_idx</td><td>&ndash; virtual disk index </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the vidisk structure respected to the index </dd></dl>
 
 </div>
 </div>
@@ -436,6 +460,16 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>AuGetVDiskInfo &ndash; returns virtual disk information to application. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vdiskID</td><td>&ndash; id of vdisk </td></tr>
+    <tr><td class="paramname">buffer</td><td>&ndash; Pointer to memory where to store the information </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success,-1 on failure </dd></dl>
 
 </div>
 </div>
@@ -479,6 +513,17 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>AuGetVDiskPartitionInfo &ndash; get partition information from desired virtual disk. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vdiskID</td><td>&ndash; virtual disk identifier </td></tr>
+    <tr><td class="paramname">partitionID</td><td>&ndash; partition number </td></tr>
+    <tr><td class="paramname">buffer</td><td>&ndash; memory pointer where to store the information </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, -1 on failure </dd></dl>
+
 </div>
 </div>
 <a id="a134f9e3c8a027d7532865cb6e8d631c6" name="a134f9e3c8a027d7532865cb6e8d631c6"></a>
@@ -496,6 +541,14 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>AuVDiskCreateStorageFile &ndash; creates a storage directory in device file system. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">output</td><td>&ndash; Pointer to memory where to store composite string value </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -515,6 +568,14 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>AuVDiskDestroy &ndash; destroy's a vdisk. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vdisk</td><td>&ndash; pointer to vdisk </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="ac30bd403eb56836d58917957de86f359" name="ac30bd403eb56836d58917957de86f359"></a>
@@ -531,6 +592,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>AuVDiskGetIndex &ndash; returns a vdisk index. </p>
 
 </div>
 </div>
@@ -556,6 +619,8 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>AuVDiskInitialise &ndash; initialise the vdisk. </p>
 
 </div>
 </div>
@@ -597,6 +662,18 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>AuVDiskRead &ndash; reads a disk block from registered disk. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">disk</td><td>&ndash; Pointer to vdsik structure </td></tr>
+    <tr><td class="paramname">lba</td><td>&ndash; Linear block address to read </td></tr>
+    <tr><td class="paramname">count</td><td>&ndash; number of blocks to read </td></tr>
+    <tr><td class="paramname">buffer</td><td>&ndash; Buffer, where to store the data </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>return the amount of data being read in bytes </dd></dl>
+
 </div>
 </div>
 <a id="a13ac7ec6aa71deeac88756197a4eddca" name="a13ac7ec6aa71deeac88756197a4eddca"></a>
@@ -614,6 +691,14 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>AuVDiskRegister &ndash; adds a vdisk service to the list. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">disk</td><td>&ndash; disk to add </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -654,6 +739,18 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>AuVDiskWrite &ndash; reads a disk block from registered disk. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">disk</td><td>&ndash; Pointer to vdsik structure </td></tr>
+    <tr><td class="paramname">lba</td><td>&ndash; Linear block address to read </td></tr>
+    <tr><td class="paramname">count</td><td>&ndash; number of blocks to read </td></tr>
+    <tr><td class="paramname">buffer</td><td>&ndash; Buffer, where to store the data </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the amount of data being written in bytes </dd></dl>
 
 </div>
 </div>
