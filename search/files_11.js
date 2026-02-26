@@ -10,7 +10,7 @@ var searchData=
   ['regularexpressionprotocol_2eh_7',['RegularExpressionProtocol.h',['../RegularExpressionProtocol_8h.html',1,'']]],
   ['reportstatuscodehandler_2eh_8',['reportstatuscodehandler.h',['../Protocol_2ReportStatusCodeHandler_8h.html',1,'(Global Namespace)'],['../Ppi_2ReportStatusCodeHandler_8h.html',1,'(Global Namespace)']]],
   ['reportstatuscodelib_2eh_9',['ReportStatusCodeLib.h',['../ReportStatusCodeLib_8h.html',1,'']]],
-  ['reset_2eh_10',['reset.h',['../Protocol_2Reset_8h.html',1,'(Global Namespace)'],['../Ppi_2Reset_8h.html',1,'(Global Namespace)']]],
+  ['reset_2eh_10',['reset.h',['../Ppi_2Reset_8h.html',1,'(Global Namespace)'],['../Protocol_2Reset_8h.html',1,'(Global Namespace)']]],
   ['reset2_2eh_11',['Reset2.h',['../Reset2_8h.html',1,'']]],
   ['resetnotification_2eh_12',['ResetNotification.h',['../ResetNotification_8h.html',1,'']]],
   ['resourcepublicationlib_2eh_13',['ResourcePublicationLib.h',['../ResourcePublicationLib_8h.html',1,'']]],
