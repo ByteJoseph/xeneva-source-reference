@@ -10538,7 +10538,7 @@ var searchData=
   ['exfield_2ec_10535',['exfield.c',['../exfield_8c.html',1,'']]],
   ['exfldio_2ec_10536',['exfldio.c',['../exfldio_8c.html',1,'']]],
   ['exfull_10537',['EXFULL',['../errno_8h.html#a69aa360ec60f24c128556361f7729e48',1,'errno.h']]],
-  ['exit_10538',['exit',['../struct__ACPI__EFI__BOOT__SERVICES.html#a7c9cd15aefc7a8905c620ae60f9d91fb',1,'_ACPI_EFI_BOOT_SERVICES::Exit'],['../structEFI__BOOT__SERVICES.html#ac30733460ca67d3cfea0f43b6ea90624',1,'EFI_BOOT_SERVICES::Exit'],['../stdlib_8cpp.html#a49ce74072dcbd258879bc051916333b8',1,'exit(int errno):&#160;stdlib.cpp'],['../stdlib_8h.html#a18278d8624d6aef8c92577d8f15a47e7',1,'exit(int errno):&#160;stdlib.cpp'],['../UefiApplicationEntryPoint_8h.html#ab46cf12426652c38141c12d282c2c9a8',1,'Exit(IN EFI_STATUS Status):&#160;UefiApplicationEntryPoint.h']]],
+  ['exit_10538',['exit',['../struct__ACPI__EFI__BOOT__SERVICES.html#a7c9cd15aefc7a8905c620ae60f9d91fb',1,'_ACPI_EFI_BOOT_SERVICES::Exit'],['../structEFI__BOOT__SERVICES.html#ac30733460ca67d3cfea0f43b6ea90624',1,'EFI_BOOT_SERVICES::Exit'],['../UefiApplicationEntryPoint_8h.html#ab46cf12426652c38141c12d282c2c9a8',1,'Exit(IN EFI_STATUS Status):&#160;UefiApplicationEntryPoint.h'],['../stdlib_8cpp.html#a49ce74072dcbd258879bc051916333b8',1,'exit(int errno):&#160;stdlib.cpp'],['../stdlib_8h.html#a18278d8624d6aef8c92577d8f15a47e7',1,'exit(int errno):&#160;stdlib.cpp']]],
   ['exit_5ffailure_10539',['EXIT_FAILURE',['../stdlib_8h.html#a73efe787c131b385070f25d18b7c9aa4',1,'stdlib.h']]],
   ['exit_5fsuccess_10540',['EXIT_SUCCESS',['../stdlib_8h.html#a687984f47d8cce148d1b914d2b79612a',1,'stdlib.h']]],
   ['exitaddress_10541',['ExitAddress',['../structacpi__table__drtm.html#a1ba0740d7bdbe674d8ce27e39b02da33',1,'acpi_table_drtm']]],

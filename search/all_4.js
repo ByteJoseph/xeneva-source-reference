@@ -1275,7 +1275,7 @@ var searchData=
   ['corbsize_1272',['CORBSIZE',['../ihda_8h.html#a67f292b8d689003a72d858b1d7bb770a',1,'ihda.h']]],
   ['corbsts_1273',['CORBSTS',['../ihda_8h.html#aaa36e62be186cbec3a281cf77451c8b0',1,'ihda.h']]],
   ['corbubase_1274',['CORBUBASE',['../ihda_8h.html#a90981d5846bd17a9dff72237978dd7fe',1,'ihda.h']]],
-  ['corbwp_1275',['corbwp',['../ihda_8h.html#ae2136403f0c1c456f5b53178c6cf77b2',1,'CORBWP:&#160;ihda.h'],['../ihda_8cpp.html#a296a4ee5019784427db9663246ed0ec0',1,'corbwp:&#160;ihda.cpp']]],
+  ['corbwp_1275',['corbwp',['../ihda_8cpp.html#a296a4ee5019784427db9663246ed0ec0',1,'corbwp:&#160;ihda.cpp'],['../ihda_8h.html#ae2136403f0c1c456f5b53178c6cf77b2',1,'CORBWP:&#160;ihda.h']]],
   ['corbwrite_1276',['corbwrite',['../ihda_8cpp.html#acf19776c0f1c1180fbcc4ee3d33b3367',1,'CORBWrite(uint32_t verb):&#160;ihda.cpp'],['../ihda_8h.html#acf19776c0f1c1180fbcc4ee3d33b3367',1,'CORBWrite(uint32_t verb):&#160;ihda.cpp']]],
   ['core_1277',['Core',['../structEFI__CPU__PHYSICAL__LOCATION.html#a96033da37a9b244026a3728096b35a4e',1,'EFI_CPU_PHYSICAL_LOCATION']]],
   ['corecount_1278',['CoreCount',['../structSMBIOS__TABLE__TYPE4.html#a3ac5fb676217d447b11def7d91d201d9',1,'SMBIOS_TABLE_TYPE4']]],

@@ -61,7 +61,7 @@ var searchData=
   ['getsystemtimertick_58',['getsystemtimertick',['../thrserv_8cpp.html#a9b48059fc970ac91488a6e20311b2a01',1,'GetSystemTimerTick():&#160;thrserv.cpp'],['../sysserv_8h.html#a9b48059fc970ac91488a6e20311b2a01',1,'GetSystemTimerTick():&#160;thrserv.cpp']]],
   ['getthreadid_59',['getthreadid',['../thrserv_8cpp.html#adbdbed36069b77ff6a171b212ae5ba6b',1,'GetThreadID():&#160;thrserv.cpp'],['../thrserv_8c.html#aa8f34b026c7970989741b1cbc12e99cd',1,'GetThreadID():&#160;thrserv.c']]],
   ['gettimeinnanosecond_60',['GetTimeInNanoSecond',['../TimerLib_8h.html#a40f60e16b69af604f873f64ed3fa1758',1,'TimerLib.h']]],
-  ['gettimeofday_61',['gettimeofday',['../Libs_2XEClib_2includes_2time_8h.html#ab5175b9762f5afab449060d072ab154e',1,'gettimeofday(timeval *val):&#160;time.h'],['../sysserv_8h.html#ad25791f74a1b8a7a9246517ae4dacaa7',1,'GetTimeOfDay(void *ptr):&#160;timerserv.cpp'],['../timerserv_8cpp.html#ad25791f74a1b8a7a9246517ae4dacaa7',1,'GetTimeOfDay(void *ptr):&#160;timerserv.cpp']]],
+  ['gettimeofday_61',['gettimeofday',['../sysserv_8h.html#ad25791f74a1b8a7a9246517ae4dacaa7',1,'GetTimeOfDay(void *ptr):&#160;timerserv.cpp'],['../timerserv_8cpp.html#ad25791f74a1b8a7a9246517ae4dacaa7',1,'GetTimeOfDay(void *ptr):&#160;timerserv.cpp'],['../Libs_2XEClib_2includes_2time_8h.html#ab5175b9762f5afab449060d072ab154e',1,'gettimeofday(timeval *val):&#160;time.h']]],
   ['getvariable_62',['GetVariable',['../UefiLib_8h.html#a436f22f1b5fcc30b11cf96188be0e978',1,'UefiLib.h']]],
   ['getvariable2_63',['GetVariable2',['../UefiLib_8h.html#a76801ad4f0e483c8102ab16749aca3e7',1,'UefiLib.h']]],
   ['getwidth_64',['GetWidth',['../classJpeg_1_1Decoder.html#a47a49591a8e6a983761e9bc3ed5f8c73',1,'Jpeg::Decoder']]],
