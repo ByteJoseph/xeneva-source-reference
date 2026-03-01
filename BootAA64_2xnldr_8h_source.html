@@ -101,7 +101,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="preprocessor">#define MMIO_BASE 0x3F000000</span></div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="preprocessor">#pragma pack(push,1)</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment">//#pragma pack(push,1)</span></div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment">/*</span></div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment"> *FRAMEBUFFER_INFORMATION :</span></div>
@@ -160,7 +160,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    <a class="code hl_typedef" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> <a class="code hl_variable" href="struct__XE__BOOT__INFO__.html#a61569db6dfc08f4027af42a86d14d3f0">cid</a>;</div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno"><a class="line" href="BootAA64_2xnldr_8h.html#a110c0d863952ca0b47156b0e8521de9b">  106</a></span>}<a class="code hl_typedef" href="Boot_2xnldr_8h.html#a110c0d863952ca0b47156b0e8521de9b">XEBootInfo</a>, * <a class="code hl_typedef" href="Boot_2xnldr_8h.html#a0549e5d3de10d5dc33ea6f6e4f8041b3">XEPBootInfo</a>;</div>
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="preprocessor">#pragma pack(pop)</span></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="comment">//#pragma pack(pop)</span></div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno"><a class="line" href="BootAA64_2xnldr_8h.html#ac185d020a518df3f14065ba696c72fe0">  110</a></span><span class="keyword">typedef</span> void(*<a class="code hl_typedef" href="Boot_2xnldr_8h.html#ac185d020a518df3f14065ba696c72fe0">XEImageEntry</a>)(<a class="code hl_struct" href="struct__XE__BOOT__INFO__.html">XEBootInfo</a>*);</div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
