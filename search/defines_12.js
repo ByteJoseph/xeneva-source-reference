@@ -41,9 +41,9 @@ var searchData=
   ['rctl_5fsecrc_38',['RCTL_SECRC',['../e1000_8h.html#a774aaa5b0d525f2d1fbbabba236c75d9',1,'e1000.h']]],
   ['rctl_5fupe_39',['RCTL_UPE',['../e1000_8h.html#ad414207a146a41017deb85d38a83030e',1,'e1000.h']]],
   ['rctl_5fvfe_40',['RCTL_VFE',['../e1000_8h.html#af023e9afe987d8608eb0eec3c53a7ca5',1,'e1000.h']]],
-  ['read_41',['read',['../acwin64_8h.html#a68dc4fd7189d34e2052e25ada13f89e0',1,'read:&#160;acwin64.h'],['../acwin_8h.html#a68dc4fd7189d34e2052e25ada13f89e0',1,'read:&#160;acwin.h']]],
+  ['read_41',['read',['../acwin_8h.html#a68dc4fd7189d34e2052e25ada13f89e0',1,'read:&#160;acwin.h'],['../acwin64_8h.html#a68dc4fd7189d34e2052e25ada13f89e0',1,'read:&#160;acwin64.h']]],
   ['recovery_5fcheck_5fcall_42',['RECOVERY_CHECK_CALL',['../SecPlatformInformation_8h.html#a249321f693c6058fd6da5ba069ba5df7',1,'SecPlatformInformation.h']]],
-  ['red_43',['red',['../Boot_2video_8h.html#a72a10836d865ae348c00a803081486f4',1,'RED:&#160;video.h'],['../BootAA64_2video_8h.html#a72a10836d865ae348c00a803081486f4',1,'RED:&#160;video.h'],['../aucon_8c.html#a72a10836d865ae348c00a803081486f4',1,'RED:&#160;aucon.c'],['../color_8h.html#a8d23feea868a983c8c2b661e1e16972f',1,'RED:&#160;color.h']]],
+  ['red_43',['red',['../BootAA64_2video_8h.html#a72a10836d865ae348c00a803081486f4',1,'RED:&#160;video.h'],['../aucon_8c.html#a72a10836d865ae348c00a803081486f4',1,'RED:&#160;aucon.c'],['../color_8h.html#a8d23feea868a983c8c2b661e1e16972f',1,'RED:&#160;color.h'],['../Boot_2video_8h.html#a72a10836d865ae348c00a803081486f4',1,'RED:&#160;video.h']]],
   ['ref_5fdecrement_44',['REF_DECREMENT',['../acutils_8h.html#ad0ea116af7b9ecd12e947f6bbbeb3ba6',1,'acutils.h']]],
   ['ref_5fincrement_45',['REF_INCREMENT',['../acutils_8h.html#ae6486d00ca390d770bb46e18a6c85842',1,'acutils.h']]],
   ['reg_5fi0_5fbdpl_46',['REG_I0_BDPL',['../ihda_8h.html#a3ff1a0d5ad49c5eca38eb736c6dbc5aa',1,'ihda.h']]],
@@ -128,7 +128,7 @@ var searchData=
   ['return_5fwarn_5fwrite_5ffailure_125',['RETURN_WARN_WRITE_FAILURE',['../Base_8h.html#a62cc479511466c5a41b2ec4a170f27f4',1,'Base.h']]],
   ['return_5fwrite_5fprotected_126',['RETURN_WRITE_PROTECTED',['../Base_8h.html#a1488a50c1a087b9f04e94d637842311f',1,'Base.h']]],
   ['returns_5ftwice_127',['RETURNS_TWICE',['../Base_8h.html#a0dc688f272cbb9d1207777e94919f431',1,'Base.h']]],
-  ['rgb_128',['rgb',['../Boot_2video_8h.html#a4a118ad3ee36468a3fa616977a64864e',1,'RGB:&#160;video.h'],['../BootAA64_2video_8h.html#a4a118ad3ee36468a3fa616977a64864e',1,'RGB:&#160;video.h'],['../aucon_8c.html#a4a118ad3ee36468a3fa616977a64864e',1,'RGB:&#160;aucon.c']]],
+  ['rgb_128',['rgb',['../BootAA64_2video_8h.html#a4a118ad3ee36468a3fa616977a64864e',1,'RGB:&#160;video.h'],['../aucon_8c.html#a4a118ad3ee36468a3fa616977a64864e',1,'RGB:&#160;aucon.c'],['../Boot_2video_8h.html#a4a118ad3ee36468a3fa616977a64864e',1,'RGB:&#160;video.h']]],
   ['right_5fclick_129',['RIGHT_CLICK',['../devinput_8h.html#a9f0a372d451b2307b1f1a872400878ae',1,'devinput.h']]],
   ['rindex_130',['rindex',['../Libs_2XEClib_2includes_2string_8h.html#a5fd96feaad1347ac430b88d98fa3165b',1,'string.h']]],
   ['rintcnt_131',['RINTCNT',['../ihda_8h.html#ac7218408301eb8039407e9a8c0137d31',1,'ihda.h']]],
@@ -161,5 +161,7 @@ var searchData=
   ['rtcmis_158',['RTCMIS',['../rtcmmio_8h.html#a1a619e524228d57826d99fa2e46704b1',1,'rtcmmio.h']]],
   ['rtcmr_159',['RTCMR',['../rtcmmio_8h.html#a12f1782b54e022abf4d61cb86f493dee',1,'rtcmmio.h']]],
   ['rtcris_160',['RTCRIS',['../rtcmmio_8h.html#ac71dd8e1178a1ce4b46475647be1f997',1,'rtcmmio.h']]],
-  ['runtime_5fpage_5fallocation_5fgranularity_161',['runtime_page_allocation_granularity',['../AArch64_2ProcessorBind_8h.html#a752118fe3b2a1286a105caeed29fb632',1,'RUNTIME_PAGE_ALLOCATION_GRANULARITY:&#160;ProcessorBind.h'],['../Arm_2ProcessorBind_8h.html#a752118fe3b2a1286a105caeed29fb632',1,'RUNTIME_PAGE_ALLOCATION_GRANULARITY:&#160;ProcessorBind.h'],['../Ebc_2ProcessorBind_8h.html#a752118fe3b2a1286a105caeed29fb632',1,'RUNTIME_PAGE_ALLOCATION_GRANULARITY:&#160;ProcessorBind.h'],['../Ia32_2ProcessorBind_8h.html#a752118fe3b2a1286a105caeed29fb632',1,'RUNTIME_PAGE_ALLOCATION_GRANULARITY:&#160;ProcessorBind.h'],['../x64_2ProcessorBind_8h.html#a752118fe3b2a1286a105caeed29fb632',1,'RUNTIME_PAGE_ALLOCATION_GRANULARITY:&#160;ProcessorBind.h']]]
+  ['runtime_5fpage_5fallocation_5fgranularity_161',['runtime_page_allocation_granularity',['../AArch64_2ProcessorBind_8h.html#a752118fe3b2a1286a105caeed29fb632',1,'RUNTIME_PAGE_ALLOCATION_GRANULARITY:&#160;ProcessorBind.h'],['../Arm_2ProcessorBind_8h.html#a752118fe3b2a1286a105caeed29fb632',1,'RUNTIME_PAGE_ALLOCATION_GRANULARITY:&#160;ProcessorBind.h'],['../Ebc_2ProcessorBind_8h.html#a752118fe3b2a1286a105caeed29fb632',1,'RUNTIME_PAGE_ALLOCATION_GRANULARITY:&#160;ProcessorBind.h'],['../Ia32_2ProcessorBind_8h.html#a752118fe3b2a1286a105caeed29fb632',1,'RUNTIME_PAGE_ALLOCATION_GRANULARITY:&#160;ProcessorBind.h'],['../x64_2ProcessorBind_8h.html#a752118fe3b2a1286a105caeed29fb632',1,'RUNTIME_PAGE_ALLOCATION_GRANULARITY:&#160;ProcessorBind.h']]],
+  ['rx_5fbuffer_5fcount_162',['rx_buffer_count',['../virtionet_8cpp.html#a675be2c830d3dfd56f061a97e01da209',1,'RX_BUFFER_COUNT:&#160;virtionet.cpp'],['../virtionet_8c.html#a675be2c830d3dfd56f061a97e01da209',1,'RX_BUFFER_COUNT:&#160;virtionet.c']]],
+  ['rx_5fbuffer_5fsize_163',['rx_buffer_size',['../virtionet_8cpp.html#a739a2a1a0047c98ac1b18ecd25dac092',1,'RX_BUFFER_SIZE:&#160;virtionet.cpp'],['../virtionet_8c.html#a739a2a1a0047c98ac1b18ecd25dac092',1,'RX_BUFFER_SIZE:&#160;virtionet.c']]]
 ];

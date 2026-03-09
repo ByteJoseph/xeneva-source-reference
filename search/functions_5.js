@@ -66,7 +66,7 @@ var searchData=
   ['efitestmanageddevice_63',['EfiTestManagedDevice',['../UefiLib_8h.html#ac291677079261b2c921cec184ecf2460',1,'UefiLib.h']]],
   ['efiupdatecapsule_64',['EfiUpdateCapsule',['../UefiRuntimeLib_8h.html#aa26cc1c9132343c2bdea140d5df733e8',1,'UefiRuntimeLib.h']]],
   ['eightaction_65',['eightaction',['../actions_8cpp.html#a3bae13d0ecf3167c3db3066544406643',1,'EightAction(ChWidget *wid, ChWindow *win):&#160;actions.cpp'],['../calculator_8h.html#a3bae13d0ecf3167c3db3066544406643',1,'EightAction(ChWidget *wid, ChWindow *win):&#160;actions.cpp']]],
-  ['enable_5firqs_66',['enable_irqs',['../aa64lowlevel_8h.html#a9fd90edca91a39e1e57750921ba09040',1,'aa64lowlevel.h']]],
+  ['enable_5firqs_66',['enable_irqs',['../aa64lowlevel_8h.html#a8479e2d3bc949bc1b75b730caaf1a589',1,'aa64lowlevel.h']]],
   ['enable_5fsre_67',['enable_sre',['../aa64lowlevel_8h.html#afa2651ce876714c0f8a3dd36173fb452',1,'aa64lowlevel.h']]],
   ['enablealigncheck_68',['enableAlignCheck',['../aa64cpu_8c.html#a5c198b181218f762dd9b838c653ef49f',1,'aa64cpu.c']]],
   ['enabledisableinterrupts_69',['EnableDisableInterrupts',['../BaseLib_8h.html#af57180e830a8cefa92299d4a203883a1',1,'BaseLib.h']]],

@@ -18,8 +18,9 @@ var searchData=
   ['virtiocommoncfg_15',['VirtioCommonCfg',['../structVirtioCommonCfg.html',1,'']]],
   ['virtiodeviceconfig_16',['VirtioDeviceConfig',['../structVirtioDeviceConfig.html',1,'']]],
   ['virtioinputevent_17',['VirtioInputEvent',['../structVirtioInputEvent.html',1,'']]],
-  ['virtioqueue_18',['VirtioQueue',['../structVirtioQueue.html',1,'']]],
-  ['virtioring_19',['VirtioRing',['../structVirtioRing.html',1,'']]],
-  ['virtioused_20',['VirtioUsed',['../structVirtioUsed.html',1,'']]],
-  ['vlan_5fdevice_5fpath_21',['VLAN_DEVICE_PATH',['../structVLAN__DEVICE__PATH.html',1,'']]]
+  ['virtionetcfg_18',['VirtioNetCfg',['../structVirtioNetCfg.html',1,'']]],
+  ['virtioqueue_19',['VirtioQueue',['../structVirtioQueue.html',1,'']]],
+  ['virtioring_20',['VirtioRing',['../structVirtioRing.html',1,'']]],
+  ['virtioused_21',['VirtioUsed',['../structVirtioUsed.html',1,'']]],
+  ['vlan_5fdevice_5fpath_22',['VLAN_DEVICE_PATH',['../structVLAN__DEVICE__PATH.html',1,'']]]
 ];
