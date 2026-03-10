@@ -4,9 +4,7 @@ var searchData=
   ['vdisk_5fread_1',['vdisk_read',['../vdisk_8h.html#a06c6c22d1db960d7b71d378c1ba0f103',1,'vdisk.h']]],
   ['vdisk_5fwrite_2',['vdisk_write',['../vdisk_8h.html#a7b62534bf1c4e8e523691cd1f619dd0e',1,'vdisk.h']]],
   ['vendor_5fdefined_5fdevice_5fpath_3',['VENDOR_DEFINED_DEVICE_PATH',['../DevicePath_8h.html#a2cb0a0ea94a4309359735ee0223302d1',1,'DevicePath.h']]],
-  ['virtio_5fcommon_5fconfig_4',['virtio_common_config',['../Drivers_2Virtio_2virtio_8h.html#a042a4c80b30126467680c8e437c8e516',1,'virtio.h']]],
-  ['virtio_5fnet_5fhdr_5ft_5',['virtio_net_hdr_t',['../BaseHdr_2Drivers_2virtio_8h.html#a634fc3946f674214e4bcdd8b70bf5a7f',1,'virtio.h']]],
-  ['virtiommioheader_6',['VirtioMMIOHeader',['../Drivers_2Virtio_2virtio_8h.html#a9f8b23d33a7be3fff0725ef2b542af9e',1,'virtio.h']]],
-  ['vlc_5ft_7',['vlc_t',['../minimp3_8cpp.html#ae7187d8026b2b6e191d6a48fb8a69455',1,'minimp3.cpp']]],
-  ['vpage_8',['VPage',['../LittleBoot_2vmmngr_8c.html#a4a01ed878c0fae30aadd8f4c1441993c',1,'vmmngr.c']]]
+  ['virtio_5fnet_5fhdr_5ft_4',['virtio_net_hdr_t',['../virtio_8h.html#a634fc3946f674214e4bcdd8b70bf5a7f',1,'virtio.h']]],
+  ['vlc_5ft_5',['vlc_t',['../minimp3_8cpp.html#ae7187d8026b2b6e191d6a48fb8a69455',1,'minimp3.cpp']]],
+  ['vpage_6',['VPage',['../LittleBoot_2vmmngr_8c.html#a4a01ed878c0fae30aadd8f4c1441993c',1,'vmmngr.c']]]
 ];

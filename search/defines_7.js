@@ -127,7 +127,7 @@ var searchData=
   ['gppudclk0_124',['gppudclk0',['../BootAA64_2gpio_8h.html#a913f6e2a86a5b609f972d4d8cead44ef',1,'GPPUDCLK0:&#160;gpio.h'],['../LittleBoot_2gpio_8h.html#a913f6e2a86a5b609f972d4d8cead44ef',1,'GPPUDCLK0:&#160;gpio.h']]],
   ['gppudclk1_125',['gppudclk1',['../BootAA64_2gpio_8h.html#af615d57697d1b19dca100eb4cc6101fd',1,'GPPUDCLK1:&#160;gpio.h'],['../LittleBoot_2gpio_8h.html#af615d57697d1b19dca100eb4cc6101fd',1,'GPPUDCLK1:&#160;gpio.h']]],
   ['gpset0_126',['GPSET0',['../vc4dsi_8c.html#a099076bf1364aa3ead421c67ec60714c',1,'vc4dsi.c']]],
-  ['gpu_5ffb_5fbuffer_127',['GPU_FB_BUFFER',['../Drivers_2Virtio_2main_8cpp.html#a2be39741422c3cb9df862b3b6ce6673a',1,'main.cpp']]],
+  ['gpu_5ffb_5fbuffer_127',['GPU_FB_BUFFER',['../virtscreen_8cpp.html#a2be39741422c3cb9df862b3b6ce6673a',1,'virtscreen.cpp']]],
   ['gray_128',['GRAY',['../color_8h.html#ae5f70677050eecd8909e0248e07b9e73',1,'color.h']]],
   ['green_129',['green',['../Boot_2video_8h.html#a4347da4a277cdccf4596e11fe17743fb',1,'GREEN:&#160;video.h'],['../BootAA64_2video_8h.html#a4347da4a277cdccf4596e11fe17743fb',1,'GREEN:&#160;video.h'],['../aucon_8c.html#a4347da4a277cdccf4596e11fe17743fb',1,'GREEN:&#160;aucon.c'],['../color_8h.html#acfbc006ea433ad708fdee3e82996e721',1,'GREEN:&#160;color.h']]],
   ['gsts_130',['GSTS',['../ihda_8h.html#a875b89334251d16e7665d4dd0fa07732',1,'ihda.h']]],
