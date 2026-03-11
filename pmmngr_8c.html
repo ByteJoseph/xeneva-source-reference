@@ -183,29 +183,23 @@ Functions</h2></td></tr>
 <tr class="memitem:aa5547d8c7217ab9e57de4197e7364e85" id="r_aa5547d8c7217ab9e57de4197e7364e85"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pmmngr_8c.html#aa5547d8c7217ab9e57de4197e7364e85">AuPmmngrGetTotalMem</a> ()</td></tr>
 <tr class="memdesc:aa5547d8c7217ab9e57de4197e7364e85"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuPmmngrGetTotalMem &ndash; returns the total amount of RAM.  <br /></td></tr>
 <tr class="separator:aa5547d8c7217ab9e57de4197e7364e85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a812001a3a55a3e202fe548925ea4a6f3" id="r_a812001a3a55a3e202fe548925ea4a6f3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pmmngr_8c.html#a812001a3a55a3e202fe548925ea4a6f3">AuPmmngrAddRefcount</a> (<a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> physaddr, <a class="el" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> count)</td></tr>
+<tr class="memdesc:a812001a3a55a3e202fe548925ea4a6f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuPmmngrAddRefcount &ndash; increment reference count of given page.  <br /></td></tr>
+<tr class="separator:a812001a3a55a3e202fe548925ea4a6f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93a20be254d7e723aef1a4080610ba50" id="r_a93a20be254d7e723aef1a4080610ba50"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pmmngr_8c.html#a93a20be254d7e723aef1a4080610ba50">AuPmmngrGetRefcount</a> (<a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> physaddr)</td></tr>
+<tr class="memdesc:a93a20be254d7e723aef1a4080610ba50"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuPmmngrGetRefcount &ndash; returns the number of reference count for given physical address.  <br /></td></tr>
+<tr class="separator:a93a20be254d7e723aef1a4080610ba50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3840c77463b447fb6925c62a3ab50247" id="r_a3840c77463b447fb6925c62a3ab50247"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pmmngr_8h.html#a3237e325b936017f4067c5bf16f2a514">AuPageDesc</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pmmngr_8c.html#a3840c77463b447fb6925c62a3ab50247">AuPmmngrGetPageDesc</a> (<a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> physaddr)</td></tr>
+<tr class="memdesc:a3840c77463b447fb6925c62a3ab50247"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuPmmngrGetPageDesc &ndash; return the correct page descriptor of given physical address.  <br /></td></tr>
+<tr class="separator:a3840c77463b447fb6925c62a3ab50247"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6930ea2bbe9af8b219ec4ee9e843166c" id="r_a6930ea2bbe9af8b219ec4ee9e843166c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pmmngr_8c.html#a6930ea2bbe9af8b219ec4ee9e843166c">AuPmmngrSetPageType</a> (<a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> physaddr, <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> flags)</td></tr>
+<tr class="memdesc:a6930ea2bbe9af8b219ec4ee9e843166c"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuPmmngrSetPageType &ndash; set page type.  <br /></td></tr>
+<tr class="separator:a6930ea2bbe9af8b219ec4ee9e843166c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a8dd319ddffc38f44f734be3bcfa7691a" id="r_a8dd319ddffc38f44f734be3bcfa7691a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pmmngr_8c.html#a8dd319ddffc38f44f734be3bcfa7691a">_FreeMemory</a></td></tr>
-<tr class="separator:a8dd319ddffc38f44f734be3bcfa7691a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9eff46ba61d59289e080e5422a2cdeb8" id="r_a9eff46ba61d59289e080e5422a2cdeb8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pmmngr_8c.html#a9eff46ba61d59289e080e5422a2cdeb8">_ReservedMemory</a></td></tr>
-<tr class="separator:a9eff46ba61d59289e080e5422a2cdeb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a002424419e85b310ae7abd728c0c6241" id="r_a002424419e85b310ae7abd728c0c6241"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pmmngr_8c.html#a002424419e85b310ae7abd728c0c6241">_UsedMemory</a></td></tr>
-<tr class="separator:a002424419e85b310ae7abd728c0c6241"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5673c03ca5c7b92232bce5ad4985a86b" id="r_a5673c03ca5c7b92232bce5ad4985a86b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pmmngr_8c.html#a5673c03ca5c7b92232bce5ad4985a86b">_RamBitmapIndex</a></td></tr>
-<tr class="separator:a5673c03ca5c7b92232bce5ad4985a86b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29b07c7b41e5819dd5fed5ffb4d00c1d" id="r_a29b07c7b41e5819dd5fed5ffb4d00c1d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pmmngr_8c.html#a29b07c7b41e5819dd5fed5ffb4d00c1d">_TotalRam</a></td></tr>
-<tr class="separator:a29b07c7b41e5819dd5fed5ffb4d00c1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06ad595c5b4aa6b42b38e4518eeefa15" id="r_a06ad595c5b4aa6b42b38e4518eeefa15"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pmmngr_8c.html#a06ad595c5b4aa6b42b38e4518eeefa15">UsablePhysicalMemory</a></td></tr>
-<tr class="separator:a06ad595c5b4aa6b42b38e4518eeefa15"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3de383ee1d77554904deab88e844a083" id="r_a3de383ee1d77554904deab88e844a083"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pmmngr_8c.html#a3de383ee1d77554904deab88e844a083">_BitmapSize</a></td></tr>
-<tr class="separator:a3de383ee1d77554904deab88e844a083"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a623dc674f8b97dbce74a41cc4b803e05" id="r_a623dc674f8b97dbce74a41cc4b803e05"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Libs_2XEClib_2includes_2stdint_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pmmngr_8c.html#a623dc674f8b97dbce74a41cc4b803e05">_HigherHalf</a></td></tr>
-<tr class="separator:a623dc674f8b97dbce74a41cc4b803e05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac884e2f002c2994bc00aeb5870eb61be" id="r_ac884e2f002c2994bc00aeb5870eb61be"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Libs_2XEClib_2includes_2stdint_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pmmngr_8c.html#ac884e2f002c2994bc00aeb5870eb61be">debugon</a></td></tr>
 <tr class="separator:ac884e2f002c2994bc00aeb5870eb61be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2e6cb1ee63c0c9539e6c97827cf5755" id="r_ae2e6cb1ee63c0c9539e6c97827cf5755"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pmmngr_8c.html#ae2e6cb1ee63c0c9539e6c97827cf5755">BitmapBuffer</a></td></tr>
-<tr class="separator:ae2e6cb1ee63c0c9539e6c97827cf5755"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>BSD 2-Clause License</p>
@@ -247,6 +241,43 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a812001a3a55a3e202fe548925ea4a6f3" name="a812001a3a55a3e202fe548925ea4a6f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a812001a3a55a3e202fe548925ea4a6f3">&#9670;&#160;</a></span>AuPmmngrAddRefcount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AuPmmngrAddRefcount </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>&#160;</td>
+          <td class="paramname"><em>physaddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a>&#160;</td>
+          <td class="paramname"><em>count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>AuPmmngrAddRefcount &ndash; increment reference count of given page. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">physaddr</td><td>&ndash; Physical address to increase reference count of </td></tr>
+    <tr><td class="paramname">count</td><td>&ndash; number of count to increase </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a2192681a5a5c133f4dd36c7fa028adb8" name="a2192681a5a5c133f4dd36c7fa028adb8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2192681a5a5c133f4dd36c7fa028adb8">&#9670;&#160;</a></span>AuPmmngrAlloc()</h2>
 
@@ -438,6 +469,59 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a3840c77463b447fb6925c62a3ab50247" name="a3840c77463b447fb6925c62a3ab50247"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3840c77463b447fb6925c62a3ab50247">&#9670;&#160;</a></span>AuPmmngrGetPageDesc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pmmngr_8h.html#a3237e325b936017f4067c5bf16f2a514">AuPageDesc</a> * AuPmmngrGetPageDesc </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>&#160;</td>
+          <td class="paramname"><em>physaddr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>AuPmmngrGetPageDesc &ndash; return the correct page descriptor of given physical address. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">physaddr</td><td>&ndash; physical address number </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a93a20be254d7e723aef1a4080610ba50" name="a93a20be254d7e723aef1a4080610ba50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93a20be254d7e723aef1a4080610ba50">&#9670;&#160;</a></span>AuPmmngrGetRefcount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> AuPmmngrGetRefcount </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>&#160;</td>
+          <td class="paramname"><em>physaddr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>AuPmmngrGetRefcount &ndash; returns the number of reference count for given physical address. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">physaddr</td><td>&ndash; physical address to check for reference count </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>number of reference count </dd></dl>
+
+</div>
+</div>
 <a id="aa5547d8c7217ab9e57de4197e7364e85" name="aa5547d8c7217ab9e57de4197e7364e85"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa5547d8c7217ab9e57de4197e7364e85">&#9670;&#160;</a></span>AuPmmngrGetTotalMem()</h2>
 
@@ -602,6 +686,44 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a6930ea2bbe9af8b219ec4ee9e843166c" name="a6930ea2bbe9af8b219ec4ee9e843166c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6930ea2bbe9af8b219ec4ee9e843166c">&#9670;&#160;</a></span>AuPmmngrSetPageType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AuPmmngrSetPageType </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>&#160;</td>
+          <td class="paramname"><em>physaddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramname"><em>flags</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>AuPmmngrSetPageType &ndash; set page type. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">physaddr</td><td>&ndash; Physical address to treat </td></tr>
+    <tr><td class="paramname">flags</td><td>&ndash; type flags </td></tr>
+  </table>
+  </dd>
+</dl>
+<p>check if page is kernel or dma, if yes then normal bit should be removed, because kernel will treat kernel or dma pages differently</p>
+
+</div>
+</div>
 <a id="a60c5223873e89cc796dec99754efd980" name="a60c5223873e89cc796dec99754efd980"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a60c5223873e89cc796dec99754efd980">&#9670;&#160;</a></span>AuPmmngrUnreservePage()</h2>
 
@@ -681,118 +803,6 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a id="a3de383ee1d77554904deab88e844a083" name="a3de383ee1d77554904deab88e844a083"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3de383ee1d77554904deab88e844a083">&#9670;&#160;</a></span>_BitmapSize</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> _BitmapSize</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a8dd319ddffc38f44f734be3bcfa7691a" name="a8dd319ddffc38f44f734be3bcfa7691a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8dd319ddffc38f44f734be3bcfa7691a">&#9670;&#160;</a></span>_FreeMemory</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> _FreeMemory</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a623dc674f8b97dbce74a41cc4b803e05" name="a623dc674f8b97dbce74a41cc4b803e05"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a623dc674f8b97dbce74a41cc4b803e05">&#9670;&#160;</a></span>_HigherHalf</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="Libs_2XEClib_2includes_2stdint_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> _HigherHalf</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a5673c03ca5c7b92232bce5ad4985a86b" name="a5673c03ca5c7b92232bce5ad4985a86b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5673c03ca5c7b92232bce5ad4985a86b">&#9670;&#160;</a></span>_RamBitmapIndex</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> _RamBitmapIndex</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a9eff46ba61d59289e080e5422a2cdeb8" name="a9eff46ba61d59289e080e5422a2cdeb8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9eff46ba61d59289e080e5422a2cdeb8">&#9670;&#160;</a></span>_ReservedMemory</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> _ReservedMemory</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a29b07c7b41e5819dd5fed5ffb4d00c1d" name="a29b07c7b41e5819dd5fed5ffb4d00c1d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a29b07c7b41e5819dd5fed5ffb4d00c1d">&#9670;&#160;</a></span>_TotalRam</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> _TotalRam</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a002424419e85b310ae7abd728c0c6241" name="a002424419e85b310ae7abd728c0c6241"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a002424419e85b310ae7abd728c0c6241">&#9670;&#160;</a></span>_UsedMemory</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> _UsedMemory</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ae2e6cb1ee63c0c9539e6c97827cf5755" name="ae2e6cb1ee63c0c9539e6c97827cf5755"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae2e6cb1ee63c0c9539e6c97827cf5755">&#9670;&#160;</a></span>BitmapBuffer</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>* BitmapBuffer</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ac884e2f002c2994bc00aeb5870eb61be" name="ac884e2f002c2994bc00aeb5870eb61be"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac884e2f002c2994bc00aeb5870eb61be">&#9670;&#160;</a></span>debugon</h2>
 
@@ -801,20 +811,6 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="Libs_2XEClib_2includes_2stdint_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> debugon</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a06ad595c5b4aa6b42b38e4518eeefa15" name="a06ad595c5b4aa6b42b38e4518eeefa15"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a06ad595c5b4aa6b42b38e4518eeefa15">&#9670;&#160;</a></span>UsablePhysicalMemory</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> UsablePhysicalMemory</td>
         </tr>
       </table>
 </div><div class="memdoc">

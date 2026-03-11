@@ -1564,7 +1564,7 @@ var searchData=
   ['tree_5fevent_5fheader_5fversion_1561',['TREE_EVENT_HEADER_VERSION',['../TrEEProtocol_8h.html#ad7dc78a05ada03c77c48dd57bcd77da7',1,'TrEEProtocol.h']]],
   ['tree_5fevent_5flog_5fformat_5ftcg_5f1_5f2_1562',['TREE_EVENT_LOG_FORMAT_TCG_1_2',['../TrEEProtocol_8h.html#a9c71737ee31ced5464ea9da87f711749',1,'TrEEProtocol.h']]],
   ['tree_5fextend_5fonly_1563',['TREE_EXTEND_ONLY',['../TrEEProtocol_8h.html#aa32f390003bc76badaf6e2448b369f71',1,'TrEEProtocol.h']]],
-  ['true_1564',['true',['../actypes_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d',1,'TRUE:&#160;actypes.h'],['../Base_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d',1,'TRUE:&#160;Base.h'],['../ftobjs_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d',1,'TRUE:&#160;ftobjs.h'],['../littleboot_8h.html#a41f9c5fb8b08eb5dc3edce4dcb37fee7',1,'true:&#160;littleboot.h']]],
+  ['true_1564',['true',['../littleboot_8h.html#a41f9c5fb8b08eb5dc3edce4dcb37fee7',1,'true:&#160;littleboot.h'],['../actypes_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d',1,'TRUE:&#160;actypes.h'],['../Base_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d',1,'TRUE:&#160;Base.h'],['../ftobjs_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d',1,'TRUE:&#160;ftobjs.h']]],
   ['tsc_5ford_5fphysicalpresence_1565',['TSC_ORD_PhysicalPresence',['../Tpm12_8h.html#a8c8bdbbe5ab2d7a30338ae56b5a3bc0a',1,'Tpm12.h']]],
   ['tsc_5ford_5fresetestablishmentbit_1566',['TSC_ORD_ResetEstablishmentBit',['../Tpm12_8h.html#a15bf267a83faecda07d4a5784b7eacff',1,'Tpm12.h']]],
   ['tss_5fevent_5fdata_5fmax_5fsize_1567',['TSS_EVENT_DATA_MAX_SIZE',['../UefiTcgPlatform_8h.html#a88a9c250e4fca341f5203f548f6a4b0d',1,'UefiTcgPlatform.h']]],
