@@ -188,6 +188,15 @@ Functions</h2></td></tr>
 <tr class="memitem:a27c86065135ac45fb97f589fea3edfd8" id="r_a27c86065135ac45fb97f589fea3edfd8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fileserv_8c.html#a27c86065135ac45fb97f589fea3edfd8">FileStat</a> (int fd, void *buf)</td></tr>
 <tr class="memdesc:a27c86065135ac45fb97f589fea3edfd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">FileStat &ndash; writes information related to file.  <br /></td></tr>
 <tr class="separator:a27c86065135ac45fb97f589fea3edfd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4e8a6060b93eed4a875d83a692016ee" id="r_ab4e8a6060b93eed4a875d83a692016ee"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fileserv_8c.html#ab4e8a6060b93eed4a875d83a692016ee">OpenDir</a> (char *filename)</td></tr>
+<tr class="memdesc:ab4e8a6060b93eed4a875d83a692016ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">OpenDir &ndash; opens a directory.  <br /></td></tr>
+<tr class="separator:ab4e8a6060b93eed4a875d83a692016ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff99d119d5568e3b1e632dd30a8b829b" id="r_aff99d119d5568e3b1e632dd30a8b829b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fileserv_8c.html#aff99d119d5568e3b1e632dd30a8b829b">ReadDir</a> (int dirfd, void *dirent)</td></tr>
+<tr class="memdesc:aff99d119d5568e3b1e632dd30a8b829b"><td class="mdescLeft">&#160;</td><td class="mdescRight">ReadDir &ndash; reads a directory entry.  <br /></td></tr>
+<tr class="separator:aff99d119d5568e3b1e632dd30a8b829b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34fb7b630a1a53282ee435ce4e7e5afa" id="r_a34fb7b630a1a53282ee435ce4e7e5afa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fileserv_8c.html#a34fb7b630a1a53282ee435ce4e7e5afa">ProcessGetFileDesc</a> (const char *filename)</td></tr>
+<tr class="memdesc:a34fb7b630a1a53282ee435ce4e7e5afa"><td class="mdescLeft">&#160;</td><td class="mdescRight">ProcessGetFileDesc &ndash; Searches all process file descriptor entries for specific filename fd.  <br /></td></tr>
+<tr class="separator:a34fb7b630a1a53282ee435ce4e7e5afa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>BSD 2-Clause License</p>
@@ -343,6 +352,32 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ab4e8a6060b93eed4a875d83a692016ee" name="ab4e8a6060b93eed4a875d83a692016ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4e8a6060b93eed4a875d83a692016ee">&#9670;&#160;</a></span>OpenDir()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int OpenDir </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>OpenDir &ndash; opens a directory. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>&ndash; name of the directory </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ad32833b7e68897eafa507c82d56bc21f" name="ad32833b7e68897eafa507c82d56bc21f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad32833b7e68897eafa507c82d56bc21f">&#9670;&#160;</a></span>OpenFile()</h2>
 
@@ -377,6 +412,26 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a34fb7b630a1a53282ee435ce4e7e5afa" name="a34fb7b630a1a53282ee435ce4e7e5afa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34fb7b630a1a53282ee435ce4e7e5afa">&#9670;&#160;</a></span>ProcessGetFileDesc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ProcessGetFileDesc </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ProcessGetFileDesc &ndash; Searches all process file descriptor entries for specific filename fd. </p>
 
 </div>
 </div>
@@ -427,6 +482,43 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="aff99d119d5568e3b1e632dd30a8b829b" name="aff99d119d5568e3b1e632dd30a8b829b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff99d119d5568e3b1e632dd30a8b829b">&#9670;&#160;</a></span>ReadDir()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ReadDir </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>dirfd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>dirent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ReadDir &ndash; reads a directory entry. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dirfd</td><td>&ndash; directory file descriptor </td></tr>
+    <tr><td class="paramname">dirent</td><td>&ndash; aurora directory entry struct </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
