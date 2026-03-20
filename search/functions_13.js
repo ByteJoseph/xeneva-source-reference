@@ -18,7 +18,7 @@ var searchData=
   ['terminalsetcelldata_15',['TerminalSetCellData',['../term_8cpp.html#aa14212a77d654ec465d9d9fd3071a6c1',1,'term.cpp']]],
   ['terminalthread_16',['TerminalThread',['../term_8cpp.html#a936a2a7eaaf7305d7e78858707598203',1,'term.cpp']]],
   ['test_5fcall_17',['test_call',['../systable_8c.html#a5437f0eb80409cdf647d75545ce6ab1a',1,'systable.c']]],
-  ['testfunc_18',['testFunc',['../loader_8c.html#ab420dbb2861b552d9f48ee72837d8c0a',1,'loader.c']]],
+  ['testfunc_18',['testFunc',['../loader_8c.html#aee6ede9f5323e3d7d98955240ce7a7a5',1,'loader.c']]],
   ['threeaction_19',['threeaction',['../actions_8cpp.html#a34b83f0db2d5d78c217ae771813f7c20',1,'ThreeAction(ChWidget *wid, ChWindow *win):&#160;actions.cpp'],['../calculator_8h.html#a34b83f0db2d5d78c217ae771813f7c20',1,'ThreeAction(ChWidget *wid, ChWindow *win):&#160;actions.cpp']]],
   ['time_20',['time',['../Libs_2XEClib_2includes_2time_8h.html#aba788d7b1e295a3b2d8b39f57b59d7d3',1,'time(time_t *t):&#160;time.cpp'],['../Libs_2XEClib_2time_8cpp.html#ae7841e681c8c9d59818568d39553642c',1,'time(time_t *t):&#160;time.cpp']]],
   ['time_5fdiff_21',['time_diff',['../nvme_8cpp.html#a0b1adbf1c7e60ae92aec3238eee2114e',1,'nvme.cpp']]],

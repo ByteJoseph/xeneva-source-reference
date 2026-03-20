@@ -116,21 +116,23 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="sysserv_8h__dep__incl.png" border="0" usemap="#aXenevaOS_2BaseHdr_2Serv_2sysserv_8hdep" alt=""/></div>
 <map name="aXenevaOS_2BaseHdr_2Serv_2sysserv_8hdep" id="aXenevaOS_2BaseHdr_2Serv_2sysserv_8hdep">
-<area shape="rect" title=" " alt="" coords="577,5,758,45"/>
+<area shape="rect" title=" " alt="" coords="682,5,863,45"/>
 <area shape="rect" href="devinput_8cpp.html" title=" " alt="" coords="5,93,159,133"/>
-<area shape="poly" title=" " alt="" coords="563,41,380,64,172,96,159,98,158,93,171,91,379,59,562,36"/>
+<area shape="poly" title=" " alt="" coords="668,38,440,60,172,96,159,98,158,93,171,91,439,55,668,33"/>
 <area shape="rect" href="x86__64__exception_8cpp.html" title=" " alt="" coords="183,93,354,133"/>
-<area shape="poly" title=" " alt="" coords="567,51,355,96,354,91,566,46"/>
+<area shape="poly" title=" " alt="" coords="669,46,366,96,355,98,354,93,366,91,668,40"/>
 <area shape="rect" href="x86__64__systable_8cpp.html" title=" " alt="" coords="378,93,541,133"/>
-<area shape="poly" title=" " alt="" coords="610,53,506,96,504,91,608,48"/>
+<area shape="poly" title=" " alt="" coords="691,52,529,96,527,91,690,46"/>
 <area shape="rect" href="aucon_8cpp.html" title=" " alt="" coords="565,101,769,126"/>
-<area shape="poly" title=" " alt="" coords="670,59,670,100,665,100,665,59"/>
-<area shape="rect" href="systable_8c.html" title=" " alt="" coords="794,93,962,133"/>
-<area shape="poly" title=" " alt="" coords="727,48,833,91,831,96,725,53"/>
-<area shape="rect" href="fileserv_8c.html" title=" " alt="" coords="986,93,1154,133"/>
-<area shape="poly" title=" " alt="" coords="769,46,987,92,985,97,768,51"/>
-<area shape="rect" href="thrserv_8c.html" title=" " alt="" coords="1178,93,1346,133"/>
-<area shape="poly" title=" " alt="" coords="772,36,956,60,1166,91,1178,93,1177,98,1166,96,955,65,771,41"/>
+<area shape="poly" title=" " alt="" coords="740,56,684,102,680,98,737,52"/>
+<area shape="rect" href="tty_8c.html" title=" " alt="" coords="794,93,962,133"/>
+<area shape="poly" title=" " alt="" coords="808,52,856,91,853,95,805,56"/>
+<area shape="rect" href="systable_8c.html" title=" " alt="" coords="986,93,1154,133"/>
+<area shape="poly" title=" " alt="" coords="852,47,1006,91,1004,96,850,52"/>
+<area shape="rect" href="fileserv_8c.html" title=" " alt="" coords="1178,93,1346,133"/>
+<area shape="poly" title=" " alt="" coords="877,41,1166,91,1178,93,1177,98,1166,96,876,46"/>
+<area shape="rect" href="thrserv_8c.html" title=" " alt="" coords="1370,93,1538,133"/>
+<area shape="poly" title=" " alt="" coords="878,33,1099,57,1358,91,1370,93,1369,98,1358,96,1099,62,877,39"/>
 </map>
 </div>
 </div>
@@ -211,6 +213,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:af42448a442b713f85c37cad5667db37b"><td class="mdescLeft">&#160;</td><td class="mdescRight">CreateUserThread &ndash; creates an user mode thread.  <br /></td></tr>
 <tr class="separator:af42448a442b713f85c37cad5667db37b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afcd49b4ff0362232e09f618ad7f90a23" id="r_afcd49b4ff0362232e09f618ad7f90a23"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sysserv_8h.html#afcd49b4ff0362232e09f618ad7f90a23">SetFileToProcess</a> (int fileno, int dest_fdidx, int proc_id)</td></tr>
+<tr class="memdesc:afcd49b4ff0362232e09f618ad7f90a23"><td class="mdescLeft">&#160;</td><td class="mdescRight">SetFileToProcess &ndash; copies a file from one process to other.  <br /></td></tr>
 <tr class="separator:afcd49b4ff0362232e09f618ad7f90a23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c64e96d1624a395f6894c9ca900874b" id="r_a4c64e96d1624a395f6894c9ca900874b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sysserv_8h.html#a4c64e96d1624a395f6894c9ca900874b">ProcessHeapUnmap</a> (void *ptr, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> sz)</td></tr>
 <tr class="memdesc:a4c64e96d1624a395f6894c9ca900874b"><td class="mdescLeft">&#160;</td><td class="mdescRight">ProcessHeapUnmap &ndash; unmaps previosly allocated heap memory.  <br /></td></tr>
@@ -571,6 +574,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>CreateUserThread &ndash; creates an user mode thread. </p>
+<dl class="section return"><dt>Returns</dt><dd>the thread index within the process </dd></dl>
 
 </div>
 </div>
@@ -1830,6 +1834,16 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>SetFileToProcess &ndash; copies a file from one process to other. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fileno</td><td>&ndash; file number of the current process </td></tr>
+    <tr><td class="paramname">dest_fdidx</td><td>&ndash; destination process file index </td></tr>
+    <tr><td class="paramname">proc_id</td><td>&ndash; destination process id </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

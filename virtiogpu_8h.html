@@ -101,11 +101,16 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="virtiogpu_8h__dep__incl.png" border="0" usemap="#aXenevaOS_2Drivers_2GPU_2virtiogpu_2virtiogpu_8hdep" alt=""/></div>
 <map name="aXenevaOS_2Drivers_2GPU_2virtiogpu_2virtiogpu_8hdep" id="aXenevaOS_2Drivers_2GPU_2virtiogpu_2virtiogpu_8hdep">
-<area shape="rect" title=" " alt="" coords="105,5,277,45"/>
-<area shape="rect" href="virtgpu_8cpp.html" title=" " alt="" coords="5,93,177,133"/>
-<area shape="poly" title=" " alt="" coords="161,56,115,95,112,91,157,52"/>
-<area shape="rect" href="virtscreen_8cpp.html" title=" " alt="" coords="201,93,381,133"/>
-<area shape="poly" title=" " alt="" coords="226,52,271,91,267,95,222,56"/>
+<area shape="rect" title=" " alt="" coords="263,5,435,45"/>
+<area shape="rect" href="cmd2d_8cpp.html" title=" " alt="" coords="5,93,177,133"/>
+<area shape="poly" title=" " alt="" coords="280,52,149,96,147,91,278,47"/>
+<area shape="rect" href="cmd2d_8h.html" title=" " alt="" coords="201,93,373,133"/>
+<area shape="poly" title=" " alt="" coords="329,58,303,95,299,92,325,55"/>
+<area shape="rect" href="virtgpu_8cpp.html" title=" " alt="" coords="263,181,435,221"/>
+<area shape="poly" title=" " alt="" coords="372,56,389,93,392,113,389,134,378,160,365,183,360,180,373,158,383,133,387,113,383,94,367,58"/>
+<area shape="rect" href="virtscreen_8cpp.html" title=" " alt="" coords="449,93,629,133"/>
+<area shape="poly" title=" " alt="" coords="404,49,499,91,496,96,402,53"/>
+<area shape="poly" title=" " alt="" coords="311,143,337,180,333,183,307,146"/>
 </map>
 </div>
 </div>
@@ -138,6 +143,14 @@ Macros</h2></td></tr>
 <tr class="separator:a44b83614db39c7021524825e33879fb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc675bcbcd4c90d07f17c81a9cb9966d" id="r_abc675bcbcd4c90d07f17c81a9cb9966d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="virtiogpu_8h.html#abc675bcbcd4c90d07f17c81a9cb9966d">VIRTIO_GPU_FLAG_INFO_RING_IDX</a>&#160;&#160;&#160;(1&lt;&lt;1)</td></tr>
 <tr class="separator:abc675bcbcd4c90d07f17c81a9cb9966d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdbb1be9b4574475e8fbdac2b96c11c4" id="r_abdbb1be9b4574475e8fbdac2b96c11c4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="virtiogpu_8h.html#abdbb1be9b4574475e8fbdac2b96c11c4">VIRTIO_GPU_CREATE_RESOURCE_2D</a>&#160;&#160;&#160;0x200</td></tr>
+<tr class="separator:abdbb1be9b4574475e8fbdac2b96c11c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ac569ea4b4cce5ad25aacee46042f00" id="r_a8ac569ea4b4cce5ad25aacee46042f00"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="virtiogpu_8h.html#a8ac569ea4b4cce5ad25aacee46042f00">VIRTIO_GPU_ATTACH_BACKING</a>&#160;&#160;&#160;0x201</td></tr>
+<tr class="separator:a8ac569ea4b4cce5ad25aacee46042f00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bdd3d641fdd3b9bfe471ad5170ea35c" id="r_a9bdd3d641fdd3b9bfe471ad5170ea35c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="virtiogpu_8h.html#a9bdd3d641fdd3b9bfe471ad5170ea35c">VIRTIO_GPU_TRANSFER_TO_HOST2D</a>&#160;&#160;&#160;0x202</td></tr>
+<tr class="separator:a9bdd3d641fdd3b9bfe471ad5170ea35c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a7a20d9884b8f8e996968b7cf46b6bb" id="r_a9a7a20d9884b8f8e996968b7cf46b6bb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="virtiogpu_8h.html#a9a7a20d9884b8f8e996968b7cf46b6bb">VIRTIO_GPU_FLUSH</a>&#160;&#160;&#160;0x203</td></tr>
+<tr class="separator:a9a7a20d9884b8f8e996968b7cf46b6bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -224,8 +237,39 @@ Functions</h2></td></tr>
 <tr class="memitem:a88fa8be545f16009fe4caa52b7e83d32" id="r_a88fa8be545f16009fe4caa52b7e83d32"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="virtiogpu_8h.html#a88fa8be545f16009fe4caa52b7e83d32">gpu_attach_back_cmd</a> (<a class="el" href="structVirtioCommonCfg.html">VirtioCommonCfg</a> *cfg, void *req, <a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> len1, void *req2, <a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> len2)</td></tr>
 <tr class="memdesc:a88fa8be545f16009fe4caa52b7e83d32"><td class="mdescLeft">&#160;</td><td class="mdescRight">gpu_attach_back_cmd &ndash; attach backing stroe command needs two descriptor previous gpu_execute_command won't satisfy this  <br /></td></tr>
 <tr class="separator:a88fa8be545f16009fe4caa52b7e83d32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac98e46097ada599e8d49b07e3b3c9284" id="r_ac98e46097ada599e8d49b07e3b3c9284"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structVirtioCommonCfg.html">VirtioCommonCfg</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="virtiogpu_8h.html#ac98e46097ada599e8d49b07e3b3c9284">gpu_get_config_pointer</a> ()</td></tr>
+<tr class="memdesc:ac98e46097ada599e8d49b07e3b3c9284"><td class="mdescLeft">&#160;</td><td class="mdescRight">gpu_get_config_pointer &ndash; return the pointer virtio common config descriptor from pcie  <br /></td></tr>
+<tr class="separator:ac98e46097ada599e8d49b07e3b3c9284"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a8ac569ea4b4cce5ad25aacee46042f00" name="a8ac569ea4b4cce5ad25aacee46042f00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ac569ea4b4cce5ad25aacee46042f00">&#9670;&#160;</a></span>VIRTIO_GPU_ATTACH_BACKING</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define VIRTIO_GPU_ATTACH_BACKING&#160;&#160;&#160;0x201</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abdbb1be9b4574475e8fbdac2b96c11c4" name="abdbb1be9b4574475e8fbdac2b96c11c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abdbb1be9b4574475e8fbdac2b96c11c4">&#9670;&#160;</a></span>VIRTIO_GPU_CREATE_RESOURCE_2D</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define VIRTIO_GPU_CREATE_RESOURCE_2D&#160;&#160;&#160;0x200</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a44b83614db39c7021524825e33879fb0" name="a44b83614db39c7021524825e33879fb0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a44b83614db39c7021524825e33879fb0">&#9670;&#160;</a></span>VIRTIO_GPU_FLAG_FENCE</h2>
 
@@ -248,6 +292,34 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define VIRTIO_GPU_FLAG_INFO_RING_IDX&#160;&#160;&#160;(1&lt;&lt;1)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9a7a20d9884b8f8e996968b7cf46b6bb" name="a9a7a20d9884b8f8e996968b7cf46b6bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a7a20d9884b8f8e996968b7cf46b6bb">&#9670;&#160;</a></span>VIRTIO_GPU_FLUSH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define VIRTIO_GPU_FLUSH&#160;&#160;&#160;0x203</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9bdd3d641fdd3b9bfe471ad5170ea35c" name="a9bdd3d641fdd3b9bfe471ad5170ea35c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9bdd3d641fdd3b9bfe471ad5170ea35c">&#9670;&#160;</a></span>VIRTIO_GPU_TRANSFER_TO_HOST2D</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define VIRTIO_GPU_TRANSFER_TO_HOST2D&#160;&#160;&#160;0x202</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -478,6 +550,34 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="ac98e46097ada599e8d49b07e3b3c9284" name="ac98e46097ada599e8d49b07e3b3c9284"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac98e46097ada599e8d49b07e3b3c9284">&#9670;&#160;</a></span>gpu_get_config_pointer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structVirtioCommonCfg.html">VirtioCommonCfg</a> * gpu_get_config_pointer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>gpu_get_config_pointer &ndash; return the pointer virtio common config descriptor from pcie </p>
+<dl class="section return"><dt>Returns</dt><dd>system config descriptor from pcie config space </dd></dl>
 
 </div>
 </div>
