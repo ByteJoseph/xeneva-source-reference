@@ -116,9 +116,12 @@ Functions</h2></td></tr>
 <tr class="memitem:abb632b5613ef9d9fce13a1da52fadee7" id="r_abb632b5613ef9d9fce13a1da52fadee7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cmd2d_8h.html#abb632b5613ef9d9fce13a1da52fadee7">virtio_cmd2d_create</a> (int resource_id, int width, int height)</td></tr>
 <tr class="memdesc:abb632b5613ef9d9fce13a1da52fadee7"><td class="mdescLeft">&#160;</td><td class="mdescRight">virtio_cmd2d_create2d &ndash; create a 2d resource  <br /></td></tr>
 <tr class="separator:abb632b5613ef9d9fce13a1da52fadee7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe49d13ac8f61e39551337720a7a0e09" id="r_afe49d13ac8f61e39551337720a7a0e09"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cmd2d_8h.html#afe49d13ac8f61e39551337720a7a0e09">virt_gpu_transfer_to_host2d</a> (<a class="el" href="structVirtioCommonCfg.html">VirtioCommonCfg</a> *cfg, int resource_id)</td></tr>
-<tr class="memdesc:afe49d13ac8f61e39551337720a7a0e09"><td class="mdescLeft">&#160;</td><td class="mdescRight">virt_gpu_transfer_to_host2d &ndash; transfer buffers from guest to host  <br /></td></tr>
-<tr class="separator:afe49d13ac8f61e39551337720a7a0e09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe411ef99e2ebbee06ff3653daac55c1" id="r_abe411ef99e2ebbee06ff3653daac55c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cmd2d_8h.html#abe411ef99e2ebbee06ff3653daac55c1">virt_gpu_transfer_to_host2d</a> (<a class="el" href="structVirtioCommonCfg.html">VirtioCommonCfg</a> *cfg, int resource_id, int x, int y, int w, int h)</td></tr>
+<tr class="memdesc:abe411ef99e2ebbee06ff3653daac55c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">virt_gpu_transfer_to_host2d &ndash; transfer buffers from guest to host  <br /></td></tr>
+<tr class="separator:abe411ef99e2ebbee06ff3653daac55c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae455a1c8b6b27911ef6c0eaae1a39ac0" id="r_ae455a1c8b6b27911ef6c0eaae1a39ac0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cmd2d_8h.html#ae455a1c8b6b27911ef6c0eaae1a39ac0">virt_gpu_flush_rect</a> (<a class="el" href="structVirtioCommonCfg.html">VirtioCommonCfg</a> *cfg, int resource_id, int x, int y, int w, int h)</td></tr>
+<tr class="memdesc:ae455a1c8b6b27911ef6c0eaae1a39ac0"><td class="mdescLeft">&#160;</td><td class="mdescRight">virt_gpu_flush_rect &ndash; flush graphics from guest to host only with given rect area  <br /></td></tr>
+<tr class="separator:ae455a1c8b6b27911ef6c0eaae1a39ac0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>BSD 2-Clause License</p>
@@ -130,8 +133,77 @@ Functions</h2></td></tr>
 </ol>
 <p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="afe49d13ac8f61e39551337720a7a0e09" name="afe49d13ac8f61e39551337720a7a0e09"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afe49d13ac8f61e39551337720a7a0e09">&#9670;&#160;</a></span>virt_gpu_transfer_to_host2d()</h2>
+<a id="ae455a1c8b6b27911ef6c0eaae1a39ac0" name="ae455a1c8b6b27911ef6c0eaae1a39ac0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae455a1c8b6b27911ef6c0eaae1a39ac0">&#9670;&#160;</a></span>virt_gpu_flush_rect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void virt_gpu_flush_rect </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structVirtioCommonCfg.html">VirtioCommonCfg</a> *&#160;</td>
+          <td class="paramname"><em>cfg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>resource_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>h</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>virt_gpu_flush_rect &ndash; flush graphics from guest to host only with given rect area </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cfg</td><td>&ndash; pointer to virtio common config </td></tr>
+    <tr><td class="paramname">resource_id</td><td>&ndash; screen resource id </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="abe411ef99e2ebbee06ff3653daac55c1" name="abe411ef99e2ebbee06ff3653daac55c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe411ef99e2ebbee06ff3653daac55c1">&#9670;&#160;</a></span>virt_gpu_transfer_to_host2d()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -149,7 +221,31 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>resource_id</em>&#160;</td>
+          <td class="paramname"><em>resource_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>h</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -169,6 +265,10 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">cfg</td><td>&ndash; Pointer to virtio common config </td></tr>
     <tr><td class="paramname">resource_id</td><td>&ndash; screen resource id </td></tr>
+    <tr><td class="paramname">x</td><td>&ndash; X coord of the rect </td></tr>
+    <tr><td class="paramname">y</td><td>&ndash; Y coord of the rect </td></tr>
+    <tr><td class="paramname">w</td><td>&ndash; Width of the rect </td></tr>
+    <tr><td class="paramname">h</td><td>&ndash; Height of the rect </td></tr>
   </table>
   </dd>
 </dl>

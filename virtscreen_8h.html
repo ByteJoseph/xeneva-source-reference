@@ -119,9 +119,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a8b50d920072608489ec9adab0bd83418" id="r_a8b50d920072608489ec9adab0bd83418"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="virtscreen_8h.html#a8b50d920072608489ec9adab0bd83418">virt_gpu_set_scanout</a> (<a class="el" href="structVirtioCommonCfg.html">VirtioCommonCfg</a> *cfg, int resource_id, int scanout_id)</td></tr>
 <tr class="memdesc:a8b50d920072608489ec9adab0bd83418"><td class="mdescLeft">&#160;</td><td class="mdescRight">virt_gpu_set_scanout &ndash; initialize the scanout to the given screen  <br /></td></tr>
 <tr class="separator:a8b50d920072608489ec9adab0bd83418"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe49d13ac8f61e39551337720a7a0e09" id="r_afe49d13ac8f61e39551337720a7a0e09"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="virtscreen_8h.html#afe49d13ac8f61e39551337720a7a0e09">virt_gpu_transfer_to_host2d</a> (<a class="el" href="structVirtioCommonCfg.html">VirtioCommonCfg</a> *cfg, int resource_id)</td></tr>
-<tr class="memdesc:afe49d13ac8f61e39551337720a7a0e09"><td class="mdescLeft">&#160;</td><td class="mdescRight">virt_gpu_transfer_to_host2d &ndash; transfer buffers from guest to host  <br /></td></tr>
-<tr class="separator:afe49d13ac8f61e39551337720a7a0e09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe411ef99e2ebbee06ff3653daac55c1" id="r_abe411ef99e2ebbee06ff3653daac55c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="virtscreen_8h.html#abe411ef99e2ebbee06ff3653daac55c1">virt_gpu_transfer_to_host2d</a> (<a class="el" href="structVirtioCommonCfg.html">VirtioCommonCfg</a> *cfg, int resource_id, int x, int y, int w, int h)</td></tr>
+<tr class="memdesc:abe411ef99e2ebbee06ff3653daac55c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">virt_gpu_transfer_to_host2d &ndash; transfer buffers from guest to host  <br /></td></tr>
+<tr class="separator:abe411ef99e2ebbee06ff3653daac55c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87df489a24527f92d2371b1262ffb005" id="r_a87df489a24527f92d2371b1262ffb005"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="virtscreen_8h.html#a87df489a24527f92d2371b1262ffb005">virt_gpu_flush</a> (<a class="el" href="structVirtioCommonCfg.html">VirtioCommonCfg</a> *cfg, int resource_id)</td></tr>
 <tr class="memdesc:a87df489a24527f92d2371b1262ffb005"><td class="mdescLeft">&#160;</td><td class="mdescRight">virt_gpu_flush &ndash; flush graphics from guest to host  <br /></td></tr>
 <tr class="separator:a87df489a24527f92d2371b1262ffb005"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -376,8 +376,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="afe49d13ac8f61e39551337720a7a0e09" name="afe49d13ac8f61e39551337720a7a0e09"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afe49d13ac8f61e39551337720a7a0e09">&#9670;&#160;</a></span>virt_gpu_transfer_to_host2d()</h2>
+<a id="abe411ef99e2ebbee06ff3653daac55c1" name="abe411ef99e2ebbee06ff3653daac55c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe411ef99e2ebbee06ff3653daac55c1">&#9670;&#160;</a></span>virt_gpu_transfer_to_host2d()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -395,7 +395,31 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>resource_id</em>&#160;</td>
+          <td class="paramname"><em>resource_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>h</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -415,6 +439,10 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">cfg</td><td>&ndash; Pointer to virtio common config </td></tr>
     <tr><td class="paramname">resource_id</td><td>&ndash; screen resource id </td></tr>
+    <tr><td class="paramname">x</td><td>&ndash; X coord of the rect </td></tr>
+    <tr><td class="paramname">y</td><td>&ndash; Y coord of the rect </td></tr>
+    <tr><td class="paramname">w</td><td>&ndash; Width of the rect </td></tr>
+    <tr><td class="paramname">h</td><td>&ndash; Height of the rect </td></tr>
   </table>
   </dd>
 </dl>

@@ -216,6 +216,8 @@ Macros</h2></td></tr>
 <tr class="separator:a465ff2f3f01b387b65fb046cb298dbac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa875742ef8f9160fd0ce0cccbcc5905a" id="r_aa875742ef8f9160fd0ce0cccbcc5905a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="virtionet_8cpp.html#aa875742ef8f9160fd0ce0cccbcc5905a">ETHERNET_TYPE_IPV6</a>&#160;&#160;&#160;0x86DD</td></tr>
 <tr class="separator:aa875742ef8f9160fd0ce0cccbcc5905a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14be8229b3ace4f2fe7b0a2027bc2eb6" id="r_a14be8229b3ace4f2fe7b0a2027bc2eb6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="virtionet_8cpp.html#a14be8229b3ace4f2fe7b0a2027bc2eb6">VIRTIO_NET_HDR_GSO_NODE</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:a14be8229b3ace4f2fe7b0a2027bc2eb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -236,6 +238,13 @@ Functions</h2></td></tr>
 <tr class="memitem:a933fee085a227ea41c3d020b73785872" id="r_a933fee085a227ea41c3d020b73785872"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="virtionet_8cpp.html#a933fee085a227ea41c3d020b73785872">AuVirtioNetTxinitialize</a> (struct <a class="el" href="structVirtioCommonCfg.html">VirtioCommonCfg</a> *common)</td></tr>
 <tr class="memdesc:a933fee085a227ea41c3d020b73785872"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuVirtioNetTxInitialize &ndash; initialize tx queue.  <br /></td></tr>
 <tr class="separator:a933fee085a227ea41c3d020b73785872"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac8b68ec19d7fcc368583016fe8125f4" id="r_aac8b68ec19d7fcc368583016fe8125f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="virtionet_8cpp.html#aac8b68ec19d7fcc368583016fe8125f4">AuVirtioTransmit</a> (void *packet, <a class="el" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> len)</td></tr>
+<tr class="separator:aac8b68ec19d7fcc368583016fe8125f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaeb5af5556e7d0ee1450bbc1c76031a3" id="r_aaeb5af5556e7d0ee1450bbc1c76031a3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="virtionet_8cpp.html#aaeb5af5556e7d0ee1450bbc1c76031a3">AuVirtioWrite</a> (<a class="el" href="vfs_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *node, <a class="el" href="vfs_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *file, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> *buffer, <a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> len)</td></tr>
+<tr class="separator:aaeb5af5556e7d0ee1450bbc1c76031a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35b3fe09f768e9f56b828d9683959fe5" id="r_a35b3fe09f768e9f56b828d9683959fe5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="virtionet_8cpp.html#a35b3fe09f768e9f56b828d9683959fe5">VirtioNetIOCtl</a> (<a class="el" href="vfs_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *file, int code, void *arg)</td></tr>
+<tr class="memdesc:a35b3fe09f768e9f56b828d9683959fe5"><td class="mdescLeft">&#160;</td><td class="mdescRight">VirtioNetIOCtl &ndash; io control codes.  <br /></td></tr>
+<tr class="separator:a35b3fe09f768e9f56b828d9683959fe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88fca7cc37f20872a9c662edaa3c62fe" id="r_a88fca7cc37f20872a9c662edaa3c62fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="virtionet_8cpp.html#a88fca7cc37f20872a9c662edaa3c62fe">AuVirtioNetInitialize</a> (<a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> <a class="el" href="Drivers_2USB_2hid_2main_8cpp.html#aa01b53b251b673a86b7c563fde808273">device</a>)</td></tr>
 <tr class="memdesc:a88fca7cc37f20872a9c662edaa3c62fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuVirtioNetInitialize &ndash; initialize the virtio network device.  <br /></td></tr>
 <tr class="separator:a88fca7cc37f20872a9c662edaa3c62fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -256,8 +265,12 @@ Variables</h2></td></tr>
 <tr class="separator:aae39e623d16790872b8030893b9880e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a191378939ad4914345550d8f8c13a92d" id="r_a191378939ad4914345550d8f8c13a92d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="virtionet_8cpp.html#a191378939ad4914345550d8f8c13a92d">notifyOffMultiplier</a></td></tr>
 <tr class="separator:a191378939ad4914345550d8f8c13a92d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36756eb097cc0a8437ea19c524cb6904" id="r_a36756eb097cc0a8437ea19c524cb6904"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structVirtioCommonCfg.html">VirtioCommonCfg</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="virtionet_8cpp.html#a36756eb097cc0a8437ea19c524cb6904">_cfg</a></td></tr>
+<tr class="separator:a36756eb097cc0a8437ea19c524cb6904"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a520bf6a1c47a61d938646ef39fc45d76" id="r_a520bf6a1c47a61d938646ef39fc45d76"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vfs_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="virtionet_8cpp.html#a520bf6a1c47a61d938646ef39fc45d76">nic</a></td></tr>
 <tr class="separator:a520bf6a1c47a61d938646ef39fc45d76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1efc918e12947e8212c7d4dff2fd0a91" id="r_a1efc918e12947e8212c7d4dff2fd0a91"><td class="memItemLeft" align="right" valign="top"><a class="el" href="aunet_8h.html#aa88e3af66112f0dccc059e64ee35cb4c">AuNetworkDevice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="virtionet_8cpp.html#a1efc918e12947e8212c7d4dff2fd0a91">ndev</a></td></tr>
+<tr class="separator:a1efc918e12947e8212c7d4dff2fd0a91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a4c4f153799e067ed950a33e35590cf48" name="a4c4f153799e067ed950a33e35590cf48"></a>
@@ -422,6 +435,20 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define VIRTIO_F_VERSION_1&#160;&#160;&#160;(1ull &lt;&lt; 32)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a14be8229b3ace4f2fe7b0a2027bc2eb6" name="a14be8229b3ace4f2fe7b0a2027bc2eb6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14be8229b3ace4f2fe7b0a2027bc2eb6">&#9670;&#160;</a></span>VIRTIO_NET_HDR_GSO_NODE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define VIRTIO_NET_HDR_GSO_NODE&#160;&#160;&#160;0</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -664,7 +691,139 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="aac8b68ec19d7fcc368583016fe8125f4" name="aac8b68ec19d7fcc368583016fe8125f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac8b68ec19d7fcc368583016fe8125f4">&#9670;&#160;</a></span>AuVirtioTransmit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AuVirtioTransmit </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>packet</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a>&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaeb5af5556e7d0ee1450bbc1c76031a3" name="aaeb5af5556e7d0ee1450bbc1c76031a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaeb5af5556e7d0ee1450bbc1c76031a3">&#9670;&#160;</a></span>AuVirtioWrite()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> AuVirtioWrite </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="vfs_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *&#160;</td>
+          <td class="paramname"><em>node</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="vfs_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a35b3fe09f768e9f56b828d9683959fe5" name="a35b3fe09f768e9f56b828d9683959fe5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35b3fe09f768e9f56b828d9683959fe5">&#9670;&#160;</a></span>VirtioNetIOCtl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> int VirtioNetIOCtl </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="vfs_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>code</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>VirtioNetIOCtl &ndash; io control codes. </p>
+
+</div>
+</div>
 <h2 class="groupheader">Variable Documentation</h2>
+<a id="a36756eb097cc0a8437ea19c524cb6904" name="a36756eb097cc0a8437ea19c524cb6904"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36756eb097cc0a8437ea19c524cb6904">&#9670;&#160;</a></span>_cfg</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structVirtioCommonCfg.html">VirtioCommonCfg</a>* _cfg</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1efc918e12947e8212c7d4dff2fd0a91" name="a1efc918e12947e8212c7d4dff2fd0a91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1efc918e12947e8212c7d4dff2fd0a91">&#9670;&#160;</a></span>ndev</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="aunet_8h.html#aa88e3af66112f0dccc059e64ee35cb4c">AuNetworkDevice</a>* ndev</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a520bf6a1c47a61d938646ef39fc45d76" name="a520bf6a1c47a61d938646ef39fc45d76"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a520bf6a1c47a61d938646ef39fc45d76">&#9670;&#160;</a></span>nic</h2>
 
