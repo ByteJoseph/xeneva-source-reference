@@ -218,6 +218,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a36696dbcc5617eb4375fa4559de051f5" id="r_a36696dbcc5617eb4375fa4559de051f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aucon_8c.html#a36696dbcc5617eb4375fa4559de051f5">AuTextOut</a> (const char *format,...)</td></tr>
 <tr class="memdesc:a36696dbcc5617eb4375fa4559de051f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuTextOut &ndash; standard text printing function for entire kernel.  <br /></td></tr>
 <tr class="separator:a36696dbcc5617eb4375fa4559de051f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30ad85cf97976af49d10d4a7abc21db8" id="r_a30ad85cf97976af49d10d4a7abc21db8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aucon_8c.html#a30ad85cf97976af49d10d4a7abc21db8">AuTextOutpro_Call</a> (const char *format, void *reg_save_area, void *entry_sp)</td></tr>
+<tr class="memdesc:a30ad85cf97976af49d10d4a7abc21db8"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuTextOut &ndash; standard text printing function for entire kernel.  <br /></td></tr>
+<tr class="separator:a30ad85cf97976af49d10d4a7abc21db8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a281044ff3d31487f9f8f49db87a32413" id="r_a281044ff3d31487f9f8f49db87a32413"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aucon_8c.html#a281044ff3d31487f9f8f49db87a32413">AuConsoleEarlyEnable</a> (<a class="el" href="Libs_2XEClib_2includes_2stdint_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> value)</td></tr>
 <tr class="memdesc:a281044ff3d31487f9f8f49db87a32413"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuConsoleEarlyEnable &ndash; enables or disable early mode text output.  <br /></td></tr>
 <tr class="separator:a281044ff3d31487f9f8f49db87a32413"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -747,6 +750,48 @@ Variables</h2></td></tr>
           <td></td>
           <td class="paramtype">&#160;</td>
           <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>AuTextOut &ndash; standard text printing function for entire kernel. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td>&ndash; text to output </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a30ad85cf97976af49d10d4a7abc21db8" name="a30ad85cf97976af49d10d4a7abc21db8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30ad85cf97976af49d10d4a7abc21db8">&#9670;&#160;</a></span>AuTextOutpro_Call()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AuTextOutpro_Call </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>format</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>reg_save_area</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>entry_sp</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

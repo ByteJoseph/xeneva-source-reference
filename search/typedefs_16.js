@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['va_5flist_0',['va_list',['../acmsvcex_8h.html#abaefbc6cabb217bf0138d4f9c94d4775',1,'va_list:&#160;acmsvcex.h'],['../va__list_8h.html#a90f5a53cfeaf133c17cd213633060737',1,'va_list:&#160;va_list.h'],['../Boot_2xnout_8cpp.html#a90f5a53cfeaf133c17cd213633060737',1,'va_list:&#160;xnout.cpp'],['../BootAA64_2clib_8h.html#a90f5a53cfeaf133c17cd213633060737',1,'va_list:&#160;clib.h'],['../Libs_2XEClib_2includes_2stdarg_8h.html#a90f5a53cfeaf133c17cd213633060737',1,'va_list:&#160;stdarg.h'],['../Base_8h.html#ac09cee2816d13585d84bec462d282e41',1,'VA_LIST:&#160;Base.h']]],
+  ['va_5flist_0',['va_list',['../Base_8h.html#ac09cee2816d13585d84bec462d282e41',1,'VA_LIST:&#160;Base.h'],['../acmsvcex_8h.html#abaefbc6cabb217bf0138d4f9c94d4775',1,'va_list:&#160;acmsvcex.h'],['../va__list_8h.html#a90f5a53cfeaf133c17cd213633060737',1,'va_list:&#160;va_list.h'],['../Boot_2xnout_8cpp.html#a90f5a53cfeaf133c17cd213633060737',1,'va_list:&#160;xnout.cpp'],['../BootAA64_2clib_8h.html#a90f5a53cfeaf133c17cd213633060737',1,'va_list:&#160;clib.h'],['../Libs_2XEClib_2includes_2stdarg_8h.html#a90f5a53cfeaf133c17cd213633060737',1,'va_list:&#160;stdarg.h']]],
   ['vdisk_5fread_1',['vdisk_read',['../vdisk_8h.html#a06c6c22d1db960d7b71d378c1ba0f103',1,'vdisk.h']]],
   ['vdisk_5fwrite_2',['vdisk_write',['../vdisk_8h.html#a7b62534bf1c4e8e523691cd1f619dd0e',1,'vdisk.h']]],
   ['vendor_5fdefined_5fdevice_5fpath_3',['VENDOR_DEFINED_DEVICE_PATH',['../DevicePath_8h.html#a2cb0a0ea94a4309359735ee0223302d1',1,'DevicePath.h']]],
