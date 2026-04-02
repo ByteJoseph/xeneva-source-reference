@@ -461,6 +461,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+<p>route it to cpu0</p>
 
 </div>
 </div>
@@ -488,6 +489,8 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>GICInitialize &ndash; initialize the gic controller, it can be parsed through ACPI MADT or hard-coding. </p>
+<p>@TODO : we need to rely on DTB, here we're doing it manually according to SOC_TARGET build</p>
+<p>map Redist to MMIO, for one redistributor 128 KiB, for 4 cores, it consumes 512 KiB 128 pages, for now not supporting multi cores, only one core is needed</p>
 
 </div>
 </div>

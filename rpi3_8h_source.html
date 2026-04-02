@@ -85,63 +85,67 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#ifndef __RPI_3_H__</span></div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#define __RPI_3_H__</span></div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="rpi3_8h.html#a8dd5293c3eae2e17ff3f3d5a35b13e2c">   32</a></span><span class="preprocessor">#define RPI_MMIO_BASE 0x3F000000</span></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">/* GIC related informations*/</span></div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="rpi3_8h.html#adc2e6293177f5fc6d2140e4bff286134">   34</a></span><span class="preprocessor">#define GIC_DIST 0x40041000</span></div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="rpi3_8h.html#a68e4ba8e92730174fdf2b59218516384">   35</a></span><span class="preprocessor">#define GIC_CPU  0x40042000</span></div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="rpi3_8h.html#a7e144133a356626158e03639d49ae3cc">   36</a></span><span class="preprocessor">#define GIC_V2M  0x40046000</span></div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="rpi3_8h.html#a20758b76bb98171023912d3638eb883b">   37</a></span><span class="preprocessor">#define GIC_HYP  0x40044000</span></div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="rpi3_8h.html#ac6dee97b4d70c77b61022f6f5fbc489b">   38</a></span><span class="preprocessor">#define GIC_VCPU 0x08040000</span></div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="rpi3_8h.html#ae6ff4e6f981a08684ac7677c337b7534">   39</a></span><span class="preprocessor">#define GIC_ITS  0x08080000</span></div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="rpi3_8h.html#aaae9695351195cb73a0a0727b992569b">   40</a></span><span class="preprocessor">#define GIC_REDIST 0x080A0000</span></div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="rpi3_8h.html#a1037b18e2d226fe7d327d4a6f17a21c1">   42</a></span><span class="preprocessor">#define GPIO  (RPI_MMIO_BASE + 0x200000)</span></div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="rpi3_8h.html#af26e39c91b262cc480085abcc450d3d5">   43</a></span><span class="preprocessor">#define SPI0  (RPI_MMIO_BASE + 0x204000)</span></div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="rpi3_8h.html#a0508661f121639ffdee7de2353a0def2">   44</a></span><span class="preprocessor">#define UART0 (RPI_MMIO_BASE + 0x201000)</span></div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="rpi3_8h.html#a8d69bf04d07af4fbbab5a8bd291f65ff">   45</a></span><span class="preprocessor">#define UART1 0x09040000</span></div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="rpi3_8h.html#a5359a088f5d8b20ce74d920e46059304">   46</a></span><span class="preprocessor">#define RTC   0x09010000</span></div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="rpi3_8h.html#ad53e740650c785a0f96af4adba9c7de3">   47</a></span><span class="preprocessor">#define SMMU  0x09050000</span></div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="rpi3_8h.html#af2a9b6c78a37621b62381ae42d8fa1c4">   48</a></span><span class="preprocessor">#define VIRT_MMIO 0x0a000000</span></div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="rpi3_8h.html#aa2274455f3ca6a21299d9cf5f7dc6433">   49</a></span><span class="preprocessor">#define FW_CFG 0x09020000</span></div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="rpi3_8h.html#a3ade3c74504cfd069143cdfe2bcd50b9">   50</a></span><span class="preprocessor">#define PCIE_MMIO  0x10000000</span></div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="rpi3_8h.html#a07045523d51d5aa14fadc20497d1d05f">   51</a></span><span class="preprocessor">#define PCIE_PIP   0x3eff0000</span></div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="rpi3_8h.html#a407c11ff2ea7adf089f821f82ba6b470">   52</a></span><span class="preprocessor">#define PCIE_ECAM  0x3f000000</span></div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment">/* IRQ Mappings to GIC*/</span></div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="rpi3_8h.html#a39c7eb3e92303a1e978bb00487650808">   55</a></span><span class="preprocessor">#define UART0_IRQ  1</span></div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="rpi3_8h.html#a4e22feb6ffbc1cda32fadff5c740dc51">   56</a></span><span class="preprocessor">#define RTC_IRQ 2</span></div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="rpi3_8h.html#ac3fb884083d04b3d5af0ac35be440dba">   57</a></span><span class="preprocessor">#define PCIE_IRQ 3</span></div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="rpi3_8h.html#aa08ab47a69b3515b40c5aa8a9029555c">   58</a></span><span class="preprocessor">#define GPIO_IRQ 7</span></div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="rpi3_8h.html#aa4f6dde1bf4883afaee26ecbe10b026e">   59</a></span><span class="preprocessor">#define UART1_IRQ 8</span></div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="rpi3_8h.html#a9755414586a70e90c618d4ff7a7d85fb">   60</a></span><span class="preprocessor">#define ACPI_GED 9</span></div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="rpi3_8h.html#aef072d78ad402062d2963764502b99f9">   62</a></span><span class="preprocessor">#define VIDEOCORE_MBOX (RPI_MMIO_BASE + 0x00b880)</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#ifdef __TARGET_BOARD_RPI3__</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#define RPI_MMIO_BASE 0x3F000000</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment">/* GIC related informations*/</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#define GIC_DIST 0x40041000</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#define GIC_CPU  0x40042000</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">#define GIC_V2M  0x40046000</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#define GIC_HYP  0x40044000</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#define GIC_VCPU 0x08040000</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">#define GIC_ITS  0x08080000</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="preprocessor">#define GIC_REDIST 0x080A0000</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">#define GPIO  (RPI_MMIO_BASE + 0x200000)</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="preprocessor">#define SPI0  (RPI_MMIO_BASE + 0x204000)</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="preprocessor">#define UART0 (RPI_MMIO_BASE + 0x201000)</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="preprocessor">#define UART1 0x09040000</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="preprocessor">#define RTC   0x09010000</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="preprocessor">#define SMMU  0x09050000</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="preprocessor">#define VIRT_MMIO 0x0a000000</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="preprocessor">#define FW_CFG 0x09020000</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="preprocessor">#define PCIE_MMIO  0x10000000</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="preprocessor">#define PCIE_PIP   0x3eff0000</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="preprocessor">#define PCIE_ECAM  0x3f000000</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment">/* IRQ Mappings to GIC*/</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="preprocessor">#define UART0_IRQ  1</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="preprocessor">#define RTC_IRQ 2</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="preprocessor">#define PCIE_IRQ 3</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="preprocessor">#define GPIO_IRQ 7</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="preprocessor">#define UART1_IRQ 8</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="preprocessor">#define ACPI_GED 9</span></div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="rpi3_8h.html#abf36e35b80c1d7394ced46aad2bc269e">   64</a></span><span class="preprocessor">#define MBOX_RESPONSE 0x80000000</span></div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="rpi3_8h.html#a4053086ab1d7d2d0be58688faf32ddc7">   65</a></span><span class="preprocessor">#define MBOX_FULL     0x80000000</span></div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="rpi3_8h.html#a7c265d9e6b4686f85fcc73aa40394d03">   66</a></span><span class="preprocessor">#define MBOX_EMPTY    0x40000000</span></div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="rpi3_8h.html#ac41f041a8512e2429fbf7a4954c36e89">   68</a></span><span class="preprocessor">#define MBOX_REQUEST 0</span></div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="rpi3_8h.html#a1627b8a4edb1b2c6adcd9f228ca21db2">   69</a></span><span class="preprocessor">#define MBOX_CH_POWER 0</span></div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="rpi3_8h.html#afd9e93df6e4bdc795fb73743777c152c">   70</a></span><span class="preprocessor">#define MBOX_CH_FB 1</span></div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="rpi3_8h.html#ac1afe242c3c493997dbd41d1574e3dbb">   71</a></span><span class="preprocessor">#define MBOX_CH_VUART 2</span></div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="rpi3_8h.html#a9272465711140aee549b81b7777cfb1f">   72</a></span><span class="preprocessor">#define MBOX_CH_VCHIQ 3</span></div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="rpi3_8h.html#a9acc731226eb955d620f652c5c03a125">   73</a></span><span class="preprocessor">#define MBOX_CH_LEDS 4</span></div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="rpi3_8h.html#a46807c257cfc53bc7ccf0d501159bde4">   74</a></span><span class="preprocessor">#define MBOX_CH_BTNS 5</span></div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="rpi3_8h.html#ace03d4f1971c81848ba85b3814173cb8">   75</a></span><span class="preprocessor">#define MBOX_CH_TOUCH 6</span></div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="rpi3_8h.html#a3dc57dc35e0173f7377c21a4c140d969">   76</a></span><span class="preprocessor">#define MBOX_CH_COUNT 7</span></div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="rpi3_8h.html#a3bfe23d043ce528b55111a2a6b3f4005">   77</a></span><span class="preprocessor">#define MBOX_CH_PROP 8</span></div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="rpi3_8h.html#a0b965669e32598f562bdbd53b66bc7d0">   79</a></span><span class="preprocessor">#define MBOX_TAG_GETSERIAL 0x1004</span></div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="rpi3_8h.html#a690dee3b50b9b223a8b4d6246e572ad1">   80</a></span><span class="preprocessor">#define MBOX_TAG_SETCLKRATE 0x38002</span></div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="rpi3_8h.html#a1b25a47e90c10169ee9f5782c5d8eafe">   81</a></span><span class="preprocessor">#define MBOX_TAG_LAST 0</span></div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="preprocessor">#define PCIE_ECAM 0x10000000ULL</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="preprocessor">#define VIDEOCORE_MBOX (RPI_MMIO_BASE + 0x00b880)</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="preprocessor">#define MBOX_RESPONSE 0x80000000</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="preprocessor">#define MBOX_FULL     0x80000000</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="preprocessor">#define MBOX_EMPTY    0x40000000</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="preprocessor">#define MBOX_REQUEST 0</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="preprocessor">#define MBOX_CH_POWER 0</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="preprocessor">#define MBOX_CH_FB 1</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="preprocessor">#define MBOX_CH_VUART 2</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="preprocessor">#define MBOX_CH_VCHIQ 3</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="preprocessor">#define MBOX_CH_LEDS 4</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="preprocessor">#define MBOX_CH_BTNS 5</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="preprocessor">#define MBOX_CH_TOUCH 6</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="preprocessor">#define MBOX_CH_COUNT 7</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="preprocessor">#define MBOX_CH_PROP 8</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="preprocessor">#define MBOX_TAG_GETSERIAL 0x1004</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="preprocessor">#define MBOX_TAG_SETCLKRATE 0x38002</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="preprocessor">#define MBOX_TAG_LAST 0</span></div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="rpi3_8h.html#a4bd8785a1ac7d8be53153ec3e2f5afa4">   85</a></span><span class="preprocessor">#define UART0_DR ((volatile uint32_t*)(UART0 + 0x00))</span></div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="rpi3_8h.html#a8838537812346e09a66edf94c0c9ffe9">   86</a></span><span class="preprocessor">#define UART0_FR ((volatile uint32_t*)(UART0 + 0x18))</span></div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="preprocessor">#define PCIE_ECAM 0x10000000ULL</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="preprocessor">#define UART0_DR ((volatile uint32_t*)(UART0 + 0x00))</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="preprocessor">#define UART0_FR ((volatile uint32_t*)(UART0 + 0x18))</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

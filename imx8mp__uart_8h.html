@@ -74,123 +74,379 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#define-members">Macros</a>  </div>
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">imx8mp_uart.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
+<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Include dependency graph for imx8mp_uart.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="imx8mp__uart_8h__incl.png" border="0" usemap="#aXenevaOS_2BaseHdr_2Board_2imx8mp_2imx8mp__uart_8h" alt=""/></div>
+<map name="aXenevaOS_2BaseHdr_2Board_2imx8mp_2imx8mp__uart_8h" id="aXenevaOS_2BaseHdr_2Board_2imx8mp_2imx8mp__uart_8h">
+<area shape="rect" title=" " alt="" coords="5,5,196,45"/>
+<area shape="rect" title=" " alt="" coords="65,93,136,119"/>
+<area shape="poly" title=" " alt="" coords="103,46,103,79,98,79,98,46"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+This graph shows which files directly or indirectly include this file:</div>
+<div class="dyncontent">
+<div class="center"><img src="imx8mp__uart_8h__dep__incl.png" border="0" usemap="#aXenevaOS_2BaseHdr_2Board_2imx8mp_2imx8mp__uart_8hdep" alt=""/></div>
+<map name="aXenevaOS_2BaseHdr_2Board_2imx8mp_2imx8mp__uart_8hdep" id="aXenevaOS_2BaseHdr_2Board_2imx8mp_2imx8mp__uart_8hdep">
+<area shape="rect" title=" " alt="" coords="2086,5,2277,45"/>
+<area shape="rect" href="imx8mp_8h.html" title=" " alt="" coords="1850,93,2041,133"/>
+<area shape="poly" title=" " alt="" coords="2118,53,1998,96,1996,91,2116,48"/>
+<area shape="rect" href="KernelAA64_2Drivers_2uart_8c.html" title=" " alt="" coords="33,269,201,309"/>
+<area shape="poly" title=" " alt="" coords="2073,40,1756,74,1297,126,762,194,216,272,202,274,201,269,216,267,761,188,1297,121,1756,69,2072,35"/>
+<area shape="rect" href="BootAA64_2paging_8cpp.html" title=" " alt="" coords="2065,101,2297,126"/>
+<area shape="poly" title=" " alt="" coords="2184,59,2184,100,2179,100,2179,59"/>
+<area shape="rect" href="uart0_8cpp.html" title=" " alt="" coords="2322,101,2545,126"/>
+<area shape="poly" title=" " alt="" coords="2250,47,2401,98,2399,103,2248,52"/>
+<area shape="rect" href="BootAA64_2xnldr_8cpp.html" title=" " alt="" coords="2569,101,2789,126"/>
+<area shape="poly" title=" " alt="" coords="2291,43,2613,98,2612,103,2290,48"/>
+<area shape="rect" href="uart_8h.html" title=" " alt="" coords="3541,181,3739,221"/>
+<area shape="poly" title=" " alt="" coords="2055,131,2272,151,2492,166,2918,187,3283,195,3540,198,3540,203,3283,201,2918,192,2492,172,2271,156,2054,136"/>
+<area shape="rect" href="profile_8h.html" title=" " alt="" coords="378,269,553,309"/>
+<area shape="poly" title=" " alt="" coords="3527,207,1967,231,1087,250,763,261,572,272,553,274,553,269,572,267,763,256,1086,245,1967,226,3527,201"/>
+<area shape="rect" href="systable_8c.html" title=" " alt="" coords="3904,357,4072,397"/>
+<area shape="poly" title=" " alt="" coords="3753,200,4573,201,5776,208,6370,216,6876,228,7235,245,7340,255,7370,261,7386,267,7393,278,7396,289,7393,301,7385,312,7348,318,7255,323,6927,334,5913,354,4072,378,4072,372,5912,349,6927,329,7254,318,7347,312,7383,307,7389,298,7391,289,7389,280,7382,271,7369,266,7339,260,7234,250,6876,233,6370,222,5776,213,4573,206,3753,205"/>
+<area shape="rect" href="KernelAA64_2Hal_2vector_8c.html" title=" " alt="" coords="5661,357,5829,397"/>
+<area shape="poly" title=" " alt="" coords="3753,200,4577,201,5788,208,6386,216,6895,228,7256,245,7362,255,7393,261,7408,267,7416,278,7419,289,7416,301,7408,312,7389,317,7345,323,7196,333,6733,352,5830,377,5830,372,6733,347,7195,328,7344,317,7388,312,7405,307,7411,298,7413,289,7411,280,7405,271,7391,266,7361,260,7256,250,6895,233,6385,221,5788,213,4577,206,3753,205"/>
+<area shape="rect" href="liballoc_8c.html" title=" " alt="" coords="6636,357,6804,397"/>
+<area shape="poly" title=" " alt="" coords="3753,200,4581,201,5800,208,6401,216,6915,228,7278,244,7384,255,7416,261,7431,267,7439,278,7441,289,7439,300,7431,311,7419,320,7399,328,7340,341,7168,360,6971,371,6804,377,6804,372,6971,366,7168,355,7339,335,7397,322,7416,315,7427,307,7434,298,7436,289,7434,280,7428,271,7414,266,7384,260,7278,250,6914,233,6401,221,5800,213,4581,206,3753,205"/>
+<area shape="rect" href="pmmngr_8c.html" title=" " alt="" coords="5,357,173,397"/>
+<area shape="poly" title=" " alt="" coords="3527,206,2808,213,1765,226,799,246,469,258,364,265,309,272,272,285,222,308,125,360,122,355,220,304,270,280,307,267,364,260,469,253,799,241,1765,221,2808,208,3527,201"/>
+<area shape="rect" href="KernelAA64_2Mm_2vmmngr_8c.html" title=" " alt="" coords="197,357,365,397"/>
+<area shape="poly" title=" " alt="" coords="3527,206,2800,213,1752,226,798,246,486,258,393,265,353,272,331,289,313,312,290,358,285,356,308,310,327,286,351,267,393,260,485,253,798,241,1752,221,2800,208,3527,201"/>
+<area shape="rect" href="init_8c.html" title=" " alt="" coords="389,357,557,397"/>
+<area shape="poly" title=" " alt="" coords="3527,207,1741,231,791,251,486,261,399,267,367,272,360,282,359,293,364,304,373,315,400,337,433,355,430,360,397,341,369,319,359,307,354,294,355,280,364,267,399,261,486,256,790,245,1741,226,3527,201"/>
+<area shape="rect" href="loader_8c.html" title=" " alt="" coords="581,357,749,397"/>
+<area shape="poly" title=" " alt="" coords="3527,207,1876,232,1005,252,726,262,647,267,617,272,612,280,610,290,615,313,630,336,647,355,643,359,625,339,610,315,604,290,607,278,615,267,647,262,726,257,1005,246,1876,227,3527,201"/>
+<area shape="rect" href="virtgpu_8cpp.html" title=" " alt="" coords="629,269,801,309"/>
+<area shape="poly" title=" " alt="" coords="3527,205,2986,208,2200,217,1788,226,1400,237,1065,253,812,272,801,273,801,268,812,267,1065,247,1400,232,1788,221,2200,212,2986,203,3527,200"/>
+<area shape="rect" href="virtscreen_8cpp.html" title=" " alt="" coords="825,269,1005,309"/>
+<area shape="poly" title=" " alt="" coords="3527,206,3020,210,2294,220,1557,240,1249,254,1016,272,1005,273,1005,268,1016,267,1249,249,1557,235,2294,215,3020,205,3527,201"/>
+<area shape="rect" href="virtionet_8cpp.html" title=" " alt="" coords="1029,269,1195,309"/>
+<area shape="poly" title=" " alt="" coords="3527,206,3053,210,2383,221,1704,240,1421,255,1207,272,1196,273,1195,268,1206,267,1421,249,1704,235,2383,215,3053,205,3527,201"/>
+<area shape="rect" href="Drivers_2fbset_2lcdif_2main_8cpp.html" title=" " alt="" coords="1219,269,1397,309"/>
+<area shape="poly" title=" " alt="" coords="3526,206,3088,212,2476,224,1860,243,1603,256,1408,272,1397,273,1396,268,1408,267,1602,251,1859,238,2476,219,3088,207,3526,201"/>
+<area shape="rect" href="rpi3bp_8c.html" title=" " alt="" coords="1421,269,1590,309"/>
+<area shape="poly" title=" " alt="" coords="3527,207,3123,213,2567,225,2011,245,1779,257,1603,272,1590,274,1590,268,1602,267,1778,252,2010,239,2567,220,3123,208,3527,201"/>
+<area shape="rect" href="rpi3bpSPI_8c.html" title=" " alt="" coords="1615,269,1804,309"/>
+<area shape="poly" title=" " alt="" coords="3527,207,2668,229,2176,248,1971,259,1816,272,1804,273,1804,268,1816,267,1971,254,2176,243,2667,224,3527,202"/>
+<area shape="rect" href="virt_8c.html" title=" " alt="" coords="1828,269,1996,309"/>
+<area shape="poly" title=" " alt="" coords="3527,208,2759,230,2325,248,2145,260,2008,272,1997,274,1996,268,2008,267,2145,254,2325,243,2758,224,3527,202"/>
+<area shape="rect" href="board_8c.html" title=" " alt="" coords="2020,269,2188,309"/>
+<area shape="poly" title=" " alt="" coords="3527,205,3286,207,2957,217,2581,237,2388,252,2200,272,2189,274,2188,268,2200,267,2388,247,2580,231,2957,211,3286,202,3527,200"/>
+<area shape="poly" title=" " alt="" coords="3527,206,1791,229,800,248,436,260,220,272,202,274,201,269,220,267,435,254,800,243,1791,223,3527,201"/>
+<area shape="rect" href="virtiokbd_8c.html" title=" " alt="" coords="2212,269,2380,309"/>
+<area shape="poly" title=" " alt="" coords="3527,206,3316,210,3033,221,2714,240,2392,272,2381,274,2380,268,2392,267,2714,235,3033,215,3316,205,3527,201"/>
+<area shape="rect" href="virtionet_8c.html" title=" " alt="" coords="2404,269,2572,309"/>
+<area shape="poly" title=" " alt="" coords="3527,208,3346,214,3111,225,2848,244,2584,272,2573,274,2572,268,2584,267,2848,239,3111,220,3346,208,3527,202"/>
+<area shape="rect" href="virtiotablet_8c.html" title=" " alt="" coords="2596,269,2764,309"/>
+<area shape="poly" title=" " alt="" coords="3527,210,3190,230,2983,248,2776,272,2765,274,2764,268,2776,267,2983,243,3190,225,3527,205"/>
+<area shape="rect" href="devfs_8c.html" title=" " alt="" coords="2788,269,2956,309"/>
+<area shape="poly" title=" " alt="" coords="3527,213,3271,236,2968,272,2957,274,2956,269,2968,267,3270,230,3527,208"/>
+<area shape="rect" href="Fat_8c.html" title=" " alt="" coords="2980,269,3148,309"/>
+<area shape="poly" title=" " alt="" coords="3527,219,3354,242,3160,272,3149,274,3148,269,3160,267,3354,237,3527,214"/>
+<area shape="rect" href="FatDir_8c.html" title=" " alt="" coords="3172,269,3340,309"/>
+<area shape="poly" title=" " alt="" coords="3543,227,3341,272,3339,267,3542,222"/>
+<area shape="rect" href="initrd_8c.html" title=" " alt="" coords="3364,269,3532,309"/>
+<area shape="poly" title=" " alt="" coords="3586,229,3491,272,3489,267,3584,225"/>
+<area shape="rect" href="tty_8c.html" title=" " alt="" coords="3556,269,3724,309"/>
+<area shape="poly" title=" " alt="" coords="3643,235,3643,269,3637,269,3637,235"/>
+<area shape="rect" href="vfs_8c.html" title=" " alt="" coords="3748,269,3916,309"/>
+<area shape="poly" title=" " alt="" coords="3696,225,3791,267,3789,272,3694,229"/>
+<area shape="rect" href="aa64cpu_8c.html" title=" " alt="" coords="3940,269,4108,309"/>
+<area shape="poly" title=" " alt="" coords="3738,222,3941,267,3939,272,3737,227"/>
+<area shape="rect" href="gic_8c.html" title=" " alt="" coords="4132,269,4300,309"/>
+<area shape="poly" title=" " alt="" coords="3753,214,3926,237,4120,267,4132,269,4131,274,4120,272,3926,242,3753,219"/>
+<area shape="rect" href="sched_8c.html" title=" " alt="" coords="4324,269,4492,309"/>
+<area shape="poly" title=" " alt="" coords="3753,208,4010,230,4312,267,4324,269,4323,274,4312,272,4009,236,3753,213"/>
+<area shape="rect" href="postbox_8c.html" title=" " alt="" coords="4516,269,4684,309"/>
+<area shape="poly" title=" " alt="" coords="3753,205,4090,225,4297,243,4504,267,4516,268,4515,274,4504,272,4297,248,4090,230,3753,210"/>
+<area shape="rect" href="mmap_8c.html" title=" " alt="" coords="4708,269,4876,309"/>
+<area shape="poly" title=" " alt="" coords="3753,202,3934,208,4169,220,4432,239,4696,267,4708,268,4707,274,4696,272,4432,244,4169,225,3934,214,3753,208"/>
+<area shape="rect" href="mmfile_8c.html" title=" " alt="" coords="4900,269,5068,309"/>
+<area shape="poly" title=" " alt="" coords="3753,201,3964,205,4247,215,4566,235,4888,267,4900,268,4899,274,4888,272,4566,240,4247,221,3964,210,3753,206"/>
+<area shape="rect" href="arp_8c.html" title=" " alt="" coords="5092,269,5260,309"/>
+<area shape="poly" title=" " alt="" coords="3753,200,3994,202,4323,211,4700,231,4892,247,5080,267,5092,268,5091,274,5080,272,4892,252,4699,237,4323,217,3994,207,3753,205"/>
+<area shape="rect" href="ethernet_8c.html" title=" " alt="" coords="5284,269,5452,309"/>
+<area shape="poly" title=" " alt="" coords="3753,202,4522,224,4955,243,5135,254,5272,267,5284,268,5283,274,5272,272,5135,260,4955,248,4521,230,3753,208"/>
+<area shape="rect" href="icmp_8c.html" title=" " alt="" coords="5476,269,5644,309"/>
+<area shape="poly" title=" " alt="" coords="3753,202,4613,222,5104,241,5309,253,5464,267,5476,268,5475,274,5464,272,5309,258,5104,247,4613,227,3753,207"/>
+<area shape="rect" href="ipv4_8c.html" title=" " alt="" coords="5668,269,5836,309"/>
+<area shape="poly" title=" " alt="" coords="3754,201,4154,208,4703,220,5253,239,5483,252,5656,267,5668,268,5667,273,5656,272,5482,257,5253,245,4703,225,4154,213,3754,207"/>
+<area shape="rect" href="netserv_8c.html" title=" " alt="" coords="5860,269,6028,309"/>
+<area shape="poly" title=" " alt="" coords="3753,201,4187,206,4793,218,5402,238,5656,251,5848,267,5860,268,5859,273,5848,272,5655,256,5402,243,4792,223,4187,212,3753,206"/>
+<area shape="rect" href="socket_8c.html" title=" " alt="" coords="6052,269,6220,309"/>
+<area shape="poly" title=" " alt="" coords="3753,201,4221,205,4882,216,5550,236,5829,250,6040,267,6052,268,6051,273,6040,272,5829,255,5550,241,4882,221,4221,211,3753,206"/>
+<area shape="rect" href="udp_8c.html" title=" " alt="" coords="6244,269,6412,309"/>
+<area shape="poly" title=" " alt="" coords="3753,200,4254,204,4971,214,5699,234,6002,248,6232,267,6244,268,6244,273,6232,272,6002,254,5698,239,4971,219,4254,209,3753,206"/>
+<area shape="rect" href="fileserv_8c.html" title=" " alt="" coords="6436,269,6604,309"/>
+<area shape="poly" title=" " alt="" coords="3753,200,4287,203,5059,212,5465,221,5846,232,6176,247,6424,267,6436,268,6436,273,6424,272,6175,253,5846,237,5465,226,5059,218,4287,208,3753,206"/>
+<area shape="rect" href="thrserv_8c.html" title=" " alt="" coords="6628,269,6796,309"/>
+<area shape="poly" title=" " alt="" coords="3753,200,4319,202,5148,210,5584,219,5995,230,6349,246,6616,267,6628,268,6628,273,6616,272,6348,252,5994,236,5584,224,5148,216,4319,207,3753,205"/>
+<area shape="rect" href="aucon_8c.html" title=" " alt="" coords="6820,269,6988,309"/>
+<area shape="poly" title=" " alt="" coords="3753,200,4352,201,5236,209,5703,217,6142,229,6522,245,6808,267,6820,268,6820,273,6808,272,6521,250,6142,234,5703,222,5236,214,4352,206,3753,205"/>
+<area shape="rect" href="ftmngr_8c.html" title=" " alt="" coords="7012,269,7180,309"/>
+<area shape="poly" title=" " alt="" coords="3753,200,4384,200,5324,207,5821,215,6290,227,6695,244,7000,267,7012,268,7012,273,7000,272,6695,249,6290,232,5821,220,5324,212,4384,205,3753,205"/>
+<area shape="rect" href="hashmap_8c.html" title=" " alt="" coords="7204,269,7372,309"/>
+<area shape="poly" title=" " alt="" coords="3753,199,4416,199,5412,205,5940,213,6438,225,6868,243,7046,254,7192,267,7204,268,7204,273,7192,272,7045,259,6868,248,6438,230,5940,218,5412,210,4416,204,3753,205"/>
+<area shape="poly" title=" " alt="" coords="567,302,616,307,930,323,1348,337,2340,357,3292,368,3904,373,3904,378,3292,373,2340,362,1347,342,930,328,616,312,566,307"/>
+<area shape="poly" title=" " alt="" coords="567,302,616,307,1368,320,2943,340,5661,372,5661,378,2942,345,1368,325,616,312,566,307"/>
+<area shape="poly" title=" " alt="" coords="567,302,616,307,853,320,1126,330,1758,344,2472,351,3228,353,4698,351,5331,351,5841,355,6636,371,6636,377,5841,360,5331,356,4698,356,3228,358,2472,356,1758,349,1125,335,853,325,616,312,566,307"/>
+<area shape="poly" title=" " alt="" coords="370,315,172,360,171,355,369,310"/>
+<area shape="poly" title=" " alt="" coords="414,318,323,360,320,355,411,313"/>
+<area shape="poly" title=" " alt="" coords="471,323,474,357,469,357,466,323"/>
+<area shape="poly" title=" " alt="" coords="523,312,623,355,620,360,521,317"/>
+</map>
+</div>
+</div>
 <p><a href="imx8mp__uart_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a34f1aedcb669d310b865dc8018cbd62a" id="r_a34f1aedcb669d310b865dc8018cbd62a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a34f1aedcb669d310b865dc8018cbd62a">IMX8MP_UART1_BASE_ADDRESS</a>&#160;&#160;&#160;0x30860000</td></tr>
 <tr class="separator:a34f1aedcb669d310b865dc8018cbd62a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3407904c21b3f6a9ba71e57a19be98e" id="r_ad3407904c21b3f6a9ba71e57a19be98e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#ad3407904c21b3f6a9ba71e57a19be98e">IMX8MP_UART1_URXD</a>(base)&#160;&#160;&#160;base  /* UART Receiver Register (URDX) -- 32 bit width*/</td></tr>
-<tr class="separator:ad3407904c21b3f6a9ba71e57a19be98e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a98c38ac4058e72dcb6da91d6aa8e15c8" id="r_a98c38ac4058e72dcb6da91d6aa8e15c8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a98c38ac4058e72dcb6da91d6aa8e15c8">IMX8MP_UART1_UTXD</a>(base)&#160;&#160;&#160;(base + 0x40) /** UART Transmitter Register (UTXD) -- 32 bit width */</td></tr>
-<tr class="separator:a98c38ac4058e72dcb6da91d6aa8e15c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae7e2f9a3f71f75ef57d33d9a351848d7" id="r_ae7e2f9a3f71f75ef57d33d9a351848d7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#ae7e2f9a3f71f75ef57d33d9a351848d7">IMX8MP_UART1_UCR1</a>(base)&#160;&#160;&#160;(base + 0x80) /** <a class="el" href="rpi3_8h.html#a8d69bf04d07af4fbbab5a8bd291f65ff">UART1</a> Control register */</td></tr>
-<tr class="separator:ae7e2f9a3f71f75ef57d33d9a351848d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa10d66ada25b811bcebcf57bfcbb8ad3" id="r_aa10d66ada25b811bcebcf57bfcbb8ad3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#aa10d66ada25b811bcebcf57bfcbb8ad3">IMX8MP_UART1_UCR2</a>(base)&#160;&#160;&#160;(base + 0x84)</td></tr>
-<tr class="separator:aa10d66ada25b811bcebcf57bfcbb8ad3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4293366ddd429643ad542e6b5ca1313b" id="r_a4293366ddd429643ad542e6b5ca1313b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a4293366ddd429643ad542e6b5ca1313b">IMX8MP_UART1_UCR3</a>(base)&#160;&#160;&#160;(base + 0x88)</td></tr>
-<tr class="separator:a4293366ddd429643ad542e6b5ca1313b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a988624f3c5ac7265f33f7febadf0d070" id="r_a988624f3c5ac7265f33f7febadf0d070"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a988624f3c5ac7265f33f7febadf0d070">IMX8MP_UART1_UCR4</a>(base)&#160;&#160;&#160;(base + 0x8C)</td></tr>
-<tr class="separator:a988624f3c5ac7265f33f7febadf0d070"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9520e903753a7d6dc63798198d95bb30" id="r_a9520e903753a7d6dc63798198d95bb30"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a9520e903753a7d6dc63798198d95bb30">IMX8MP_UART1_UFCR</a>(base)&#160;&#160;&#160;(base + 0x90) /** <a class="el" href="rpi3_8h.html#a8d69bf04d07af4fbbab5a8bd291f65ff">UART1</a> FIFO Control Register **/</td></tr>
-<tr class="separator:a9520e903753a7d6dc63798198d95bb30"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6598d4d0b8af12ff72e7ee0de217450" id="r_ab6598d4d0b8af12ff72e7ee0de217450"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#ab6598d4d0b8af12ff72e7ee0de217450">IMX8MP_UART1_USR1</a>(base)&#160;&#160;&#160;(base + 0x94) /** <a class="el" href="rpi3_8h.html#a8d69bf04d07af4fbbab5a8bd291f65ff">UART1</a> <a class="el" href="acpixf_8h.html#adba1986479531d5d136a3277bcf7278e">Status</a> Regster 1 **/</td></tr>
-<tr class="separator:ab6598d4d0b8af12ff72e7ee0de217450"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e1b4d57f3c0086f1c176344bad28f8a" id="r_a8e1b4d57f3c0086f1c176344bad28f8a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a8e1b4d57f3c0086f1c176344bad28f8a">IMX8MP_UART1_USR2</a>(base)&#160;&#160;&#160;(base + 0x98) /** <a class="el" href="rpi3_8h.html#a8d69bf04d07af4fbbab5a8bd291f65ff">UART1</a>  <a class="el" href="acpixf_8h.html#adba1986479531d5d136a3277bcf7278e">Status</a> Register 2 **/</td></tr>
-<tr class="separator:a8e1b4d57f3c0086f1c176344bad28f8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc4ecda2300e584ee7af63500aa1167b" id="r_afc4ecda2300e584ee7af63500aa1167b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#afc4ecda2300e584ee7af63500aa1167b">IMX8MP_UART1_UESC</a>(base)&#160;&#160;&#160;(base + 0x9C) /** <a class="el" href="rpi3_8h.html#a8d69bf04d07af4fbbab5a8bd291f65ff">UART1</a> Escape Character Register **/</td></tr>
-<tr class="separator:afc4ecda2300e584ee7af63500aa1167b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e21f77e53ed91e8483caa3c0b1d72f0" id="r_a1e21f77e53ed91e8483caa3c0b1d72f0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a1e21f77e53ed91e8483caa3c0b1d72f0">IMX8MP_UART1_UTIM</a>(base)&#160;&#160;&#160;(base + 0xA0) /** <a class="el" href="rpi3_8h.html#a8d69bf04d07af4fbbab5a8bd291f65ff">UART1</a> Escape Timer Register **/</td></tr>
-<tr class="separator:a1e21f77e53ed91e8483caa3c0b1d72f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a165045a145388cda3e9eb3c5a8bc837e" id="r_a165045a145388cda3e9eb3c5a8bc837e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a165045a145388cda3e9eb3c5a8bc837e">IMX8MP_UART1_UBIR</a>(base)&#160;&#160;&#160;(base + 0xA4) /** <a class="el" href="rpi3_8h.html#a8d69bf04d07af4fbbab5a8bd291f65ff">UART1</a> BRM Incremental Register **/</td></tr>
-<tr class="separator:a165045a145388cda3e9eb3c5a8bc837e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a81fe193ae837edce1095d6c380a67b8d" id="r_a81fe193ae837edce1095d6c380a67b8d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a81fe193ae837edce1095d6c380a67b8d">IMX8MP_UART1_UBMR</a>(base)&#160;&#160;&#160;(base + 0xA8) /** <a class="el" href="rpi3_8h.html#a8d69bf04d07af4fbbab5a8bd291f65ff">UART1</a> BRM Modulator Register **/</td></tr>
-<tr class="separator:a81fe193ae837edce1095d6c380a67b8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a929a67794e3cc47a1998360792ea2faf" id="r_a929a67794e3cc47a1998360792ea2faf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a929a67794e3cc47a1998360792ea2faf">IMX8MP_UART1_UBRC</a>(base)&#160;&#160;&#160;(base + 0xAC) /** <a class="el" href="rpi3_8h.html#a8d69bf04d07af4fbbab5a8bd291f65ff">UART1</a> Baude Rate Count Register **/</td></tr>
-<tr class="separator:a929a67794e3cc47a1998360792ea2faf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae218848e53863d53987c64a802f5ea23" id="r_ae218848e53863d53987c64a802f5ea23"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#ae218848e53863d53987c64a802f5ea23">IMX8MP_UART1_ONEMS</a>(base)&#160;&#160;&#160;(base + 0xB0) /** <a class="el" href="rpi3_8h.html#a8d69bf04d07af4fbbab5a8bd291f65ff">UART1</a> One Millisecond Register **/</td></tr>
-<tr class="separator:ae218848e53863d53987c64a802f5ea23"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d63e0b436c904c3550189429e65d56a" id="r_a0d63e0b436c904c3550189429e65d56a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a0d63e0b436c904c3550189429e65d56a">IMX8MP_UART1_UTS</a>(base)&#160;&#160;&#160;(base + 0xB4) /** <a class="el" href="rpi3_8h.html#a8d69bf04d07af4fbbab5a8bd291f65ff">UART1</a> Test Register **/</td></tr>
-<tr class="separator:a0d63e0b436c904c3550189429e65d56a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac18c103e638e8b53e96bd91607ac488" id="r_aac18c103e638e8b53e96bd91607ac488"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#aac18c103e638e8b53e96bd91607ac488">IMX8MP_UART1_UMCR</a>(base)&#160;&#160;&#160;(base + 0xB8) /** <a class="el" href="rpi3_8h.html#a8d69bf04d07af4fbbab5a8bd291f65ff">UART1</a> RS-485 Mode Control Register **/</td></tr>
-<tr class="separator:aac18c103e638e8b53e96bd91607ac488"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad166dadbd1c25fa109091137ba646365" id="r_ad166dadbd1c25fa109091137ba646365"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#ad166dadbd1c25fa109091137ba646365">IMX8MP_UART3_BASE_ADDRESS</a>&#160;&#160;&#160;0x30880000</td></tr>
 <tr class="separator:ad166dadbd1c25fa109091137ba646365"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7362ee4ccc7229e781115b827c00ef9f" id="r_a7362ee4ccc7229e781115b827c00ef9f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a7362ee4ccc7229e781115b827c00ef9f">IMX8MP_UART3_URXD</a>(base)&#160;&#160;&#160;(base) /** UART3 Receiver Register (URDX) -- 32 bit width **/</td></tr>
-<tr class="separator:a7362ee4ccc7229e781115b827c00ef9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85bc0161ccb8c6573fea6e0a0bbec31f" id="r_a85bc0161ccb8c6573fea6e0a0bbec31f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a85bc0161ccb8c6573fea6e0a0bbec31f">IMX8MP_UART3_UTXD</a>(base)&#160;&#160;&#160;(base + 0x40) /** UART3 Transmitter Register (UTXD) -- 32 bit width **/</td></tr>
-<tr class="separator:a85bc0161ccb8c6573fea6e0a0bbec31f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36dffbe26266c00195eedbfaa64980f3" id="r_a36dffbe26266c00195eedbfaa64980f3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a36dffbe26266c00195eedbfaa64980f3">IMX8MP_UART3_UCR1</a>(base)&#160;&#160;&#160;(base + 0x80) /** UART3 Control Register **/</td></tr>
-<tr class="separator:a36dffbe26266c00195eedbfaa64980f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac721a0ad0225392d9438beca379a8b81" id="r_ac721a0ad0225392d9438beca379a8b81"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#ac721a0ad0225392d9438beca379a8b81">IMX8MP_UART3_UCR2</a>(base)&#160;&#160;&#160;(base + 0x84)</td></tr>
-<tr class="separator:ac721a0ad0225392d9438beca379a8b81"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab19263f687333606f2b7d1430e9ce0de" id="r_ab19263f687333606f2b7d1430e9ce0de"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#ab19263f687333606f2b7d1430e9ce0de">IMX8MP_UART3_UCR3</a>(base)&#160;&#160;&#160;(base + 0x88)</td></tr>
-<tr class="separator:ab19263f687333606f2b7d1430e9ce0de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a433112c992f2bb4dcb9e0566fd233ebc" id="r_a433112c992f2bb4dcb9e0566fd233ebc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a433112c992f2bb4dcb9e0566fd233ebc">IMX8MP_UART3_UCR4</a>(base)&#160;&#160;&#160;(base + 0x8C)</td></tr>
-<tr class="separator:a433112c992f2bb4dcb9e0566fd233ebc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ee572a9f26080387381b2f46ba21022" id="r_a2ee572a9f26080387381b2f46ba21022"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a2ee572a9f26080387381b2f46ba21022">IMX8MP_UART3_UFCR</a>(base)&#160;&#160;&#160;(base + 0x90) /** UART3 FIFO Control Register **/</td></tr>
-<tr class="separator:a2ee572a9f26080387381b2f46ba21022"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace79e8a3343bf50111e502279c3eee10" id="r_ace79e8a3343bf50111e502279c3eee10"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#ace79e8a3343bf50111e502279c3eee10">IMX8MP_UART3_USR1</a>(base)&#160;&#160;&#160;(base + 0x94) /** UART3 <a class="el" href="acpixf_8h.html#adba1986479531d5d136a3277bcf7278e">Status</a> Regster 1 **/</td></tr>
-<tr class="separator:ace79e8a3343bf50111e502279c3eee10"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0cd0ebdaa42df3f4524a37cb9d910b4" id="r_ae0cd0ebdaa42df3f4524a37cb9d910b4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#ae0cd0ebdaa42df3f4524a37cb9d910b4">IMX8MP_UART3_USR2</a>(base)&#160;&#160;&#160;(base + 0x98) /** UART3  <a class="el" href="acpixf_8h.html#adba1986479531d5d136a3277bcf7278e">Status</a> Register 2 **/</td></tr>
-<tr class="separator:ae0cd0ebdaa42df3f4524a37cb9d910b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2fb8e29eeb36d522d1e09963c5e89399" id="r_a2fb8e29eeb36d522d1e09963c5e89399"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a2fb8e29eeb36d522d1e09963c5e89399">IMX8MP_UART3_UESC</a>(base)&#160;&#160;&#160;(base + 0x9C) /** UART3 Escape Character Register **/</td></tr>
-<tr class="separator:a2fb8e29eeb36d522d1e09963c5e89399"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa5719f7c250ea5ae215342f4df5cee5a" id="r_aa5719f7c250ea5ae215342f4df5cee5a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#aa5719f7c250ea5ae215342f4df5cee5a">IMX8MP_UART3_UTIM</a>(base)&#160;&#160;&#160;(base + 0xA0) /** UART3 Escape Timer Register **/</td></tr>
-<tr class="separator:aa5719f7c250ea5ae215342f4df5cee5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a805ed398da34be9b3c3f347ecf7072b5" id="r_a805ed398da34be9b3c3f347ecf7072b5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a805ed398da34be9b3c3f347ecf7072b5">IMX8MP_UART3_UBIR</a>(base)&#160;&#160;&#160;(base + 0xA4) /** UART3 BRM Incremental Register **/</td></tr>
-<tr class="separator:a805ed398da34be9b3c3f347ecf7072b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d95b6ec15a5a06f04d801b50878ab48" id="r_a0d95b6ec15a5a06f04d801b50878ab48"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a0d95b6ec15a5a06f04d801b50878ab48">IMX8MP_UART3_UBMR</a>(base)&#160;&#160;&#160;(base + 0xA8) /** UART3 BRM Modulator Register **/</td></tr>
-<tr class="separator:a0d95b6ec15a5a06f04d801b50878ab48"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f71b3be5d7f5d20ea2f344d2b3bc81d" id="r_a0f71b3be5d7f5d20ea2f344d2b3bc81d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a0f71b3be5d7f5d20ea2f344d2b3bc81d">IMX8MP_UART3_UBRC</a>(base)&#160;&#160;&#160;(base + 0xAC) /** UART3 Baude Rate Count Register **/</td></tr>
-<tr class="separator:a0f71b3be5d7f5d20ea2f344d2b3bc81d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ce2186df96e005d843e91dff7061c48" id="r_a0ce2186df96e005d843e91dff7061c48"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a0ce2186df96e005d843e91dff7061c48">IMX8MP_UART3_ONEMS</a>(base)&#160;&#160;&#160;(base + 0xB0) /** UART3 One Millisecond Register **/</td></tr>
-<tr class="separator:a0ce2186df96e005d843e91dff7061c48"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa42325878a374512453caa37502116da" id="r_aa42325878a374512453caa37502116da"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#aa42325878a374512453caa37502116da">IMX8MP_UART3_UTS</a>(base)&#160;&#160;&#160;(base + 0xB4) /** UART3 Test Register **/</td></tr>
-<tr class="separator:aa42325878a374512453caa37502116da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adcc39c9e0b018556e75f439823ef8f4b" id="r_adcc39c9e0b018556e75f439823ef8f4b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#adcc39c9e0b018556e75f439823ef8f4b">IMX8MP_UART3_UMCR</a>(base)&#160;&#160;&#160;(base + 0xB8) /** UART3 RS-485 Mode Control Register **/</td></tr>
-<tr class="separator:adcc39c9e0b018556e75f439823ef8f4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae83fa8aaca1f41dad1f125813724b392" id="r_ae83fa8aaca1f41dad1f125813724b392"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#ae83fa8aaca1f41dad1f125813724b392">IMX8MP_UART2_BASE_ADDRESS</a>&#160;&#160;&#160;0x30890000</td></tr>
 <tr class="separator:ae83fa8aaca1f41dad1f125813724b392"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ae4db9e294a09408473ac2b3b055163" id="r_a2ae4db9e294a09408473ac2b3b055163"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a2ae4db9e294a09408473ac2b3b055163">IMX8MP_UART2_URXD</a>(base)&#160;&#160;&#160;(base) /** UART2 Receiver Register (URDX) -- 32 bit width **/</td></tr>
-<tr class="separator:a2ae4db9e294a09408473ac2b3b055163"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd017f5f6ad5e97aaf2b5303d033f932" id="r_acd017f5f6ad5e97aaf2b5303d033f932"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#acd017f5f6ad5e97aaf2b5303d033f932">IMX8MP_UART2_UTXD</a>(base)&#160;&#160;&#160;(base + 0x40) /** UART2 Transmitter Register (UTXD) -- 32 bit width **/</td></tr>
-<tr class="separator:acd017f5f6ad5e97aaf2b5303d033f932"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5721f23b0f8ee6a1c8c9c7328aab2b2" id="r_ad5721f23b0f8ee6a1c8c9c7328aab2b2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#ad5721f23b0f8ee6a1c8c9c7328aab2b2">IMX8MP_UART2_UCR1</a>(base)&#160;&#160;&#160;(base + 0x80) /** UART2 Control Register **/</td></tr>
-<tr class="separator:ad5721f23b0f8ee6a1c8c9c7328aab2b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b15f9677837de8ce7842dc6c7cf9e1a" id="r_a9b15f9677837de8ce7842dc6c7cf9e1a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a9b15f9677837de8ce7842dc6c7cf9e1a">IMX8MP_UART2_UCR2</a>(base)&#160;&#160;&#160;(base + 0x84)</td></tr>
-<tr class="separator:a9b15f9677837de8ce7842dc6c7cf9e1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58e149bd839891080a9125a475f91d60" id="r_a58e149bd839891080a9125a475f91d60"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a58e149bd839891080a9125a475f91d60">IMX8MP_UART2_UCR3</a>(base)&#160;&#160;&#160;(base + 0x88)</td></tr>
-<tr class="separator:a58e149bd839891080a9125a475f91d60"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adfea220224f58ef1711d9fa0475774e2" id="r_adfea220224f58ef1711d9fa0475774e2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#adfea220224f58ef1711d9fa0475774e2">IMX8MP_UART2_UCR4</a>(base)&#160;&#160;&#160;(base + 0x8C)</td></tr>
-<tr class="separator:adfea220224f58ef1711d9fa0475774e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75b3c5678fa0d875e4a0c19382b33184" id="r_a75b3c5678fa0d875e4a0c19382b33184"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a75b3c5678fa0d875e4a0c19382b33184">IMX8MP_UART2_UFCR</a>(base)&#160;&#160;&#160;(base + 0x90) /** UART2 FIFO Control Register **/</td></tr>
-<tr class="separator:a75b3c5678fa0d875e4a0c19382b33184"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d22d92686f9823c652aac036599ae7c" id="r_a3d22d92686f9823c652aac036599ae7c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a3d22d92686f9823c652aac036599ae7c">IMX8MP_UART2_USR1</a>(base)&#160;&#160;&#160;(base + 0x94) /** UART2 <a class="el" href="acpixf_8h.html#adba1986479531d5d136a3277bcf7278e">Status</a> Regster 1 **/</td></tr>
-<tr class="separator:a3d22d92686f9823c652aac036599ae7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac87d8fdfa18ed4fd03dc7e58415914ce" id="r_ac87d8fdfa18ed4fd03dc7e58415914ce"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#ac87d8fdfa18ed4fd03dc7e58415914ce">IMX8MP_UART2_USR2</a>(base)&#160;&#160;&#160;(base + 0x98) /** UART2  <a class="el" href="acpixf_8h.html#adba1986479531d5d136a3277bcf7278e">Status</a> Register 2 **/</td></tr>
-<tr class="separator:ac87d8fdfa18ed4fd03dc7e58415914ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb6c297c82f04798ea72294604c5d322" id="r_acb6c297c82f04798ea72294604c5d322"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#acb6c297c82f04798ea72294604c5d322">IMX8MP_UART2_UESC</a>(base)&#160;&#160;&#160;(base + 0x9C) /** UART2 Escape Character Register **/</td></tr>
-<tr class="separator:acb6c297c82f04798ea72294604c5d322"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64e21d52293313a5c39b6d5c2129d733" id="r_a64e21d52293313a5c39b6d5c2129d733"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a64e21d52293313a5c39b6d5c2129d733">IMX8MP_UART2_UTIM</a>(base)&#160;&#160;&#160;(base + 0xA0) /** UART2 Escape Timer Register **/</td></tr>
-<tr class="separator:a64e21d52293313a5c39b6d5c2129d733"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad24109f5217ab149da8653ed1300deb" id="r_aad24109f5217ab149da8653ed1300deb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#aad24109f5217ab149da8653ed1300deb">IMX8MP_UART2_UBIR</a>(base)&#160;&#160;&#160;(base + 0xA4) /** UART2 BRM Incremental Register **/</td></tr>
-<tr class="separator:aad24109f5217ab149da8653ed1300deb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a133a0cbde7befcb6473517259fc1324c" id="r_a133a0cbde7befcb6473517259fc1324c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a133a0cbde7befcb6473517259fc1324c">IMX8MP_UART2_UBMR</a>(base)&#160;&#160;&#160;(base + 0xA8) /** UART2 BRM Modulator Register **/</td></tr>
-<tr class="separator:a133a0cbde7befcb6473517259fc1324c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac31228a9275c3f63092c9ff064f9730a" id="r_ac31228a9275c3f63092c9ff064f9730a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#ac31228a9275c3f63092c9ff064f9730a">IMX8MP_UART2_UBRC</a>(base)&#160;&#160;&#160;(base + 0xAC) /** UART2 Baude Rate Count Register **/</td></tr>
-<tr class="separator:ac31228a9275c3f63092c9ff064f9730a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d5d2eff52aebeb78e916c0be61bc61b" id="r_a2d5d2eff52aebeb78e916c0be61bc61b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a2d5d2eff52aebeb78e916c0be61bc61b">IMX8MP_UART2_ONEMS</a>(base)&#160;&#160;&#160;(base + 0xB0) /** UART2 One Millisecond Register **/</td></tr>
-<tr class="separator:a2d5d2eff52aebeb78e916c0be61bc61b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1251393c49a923d9c43003af84a06e95" id="r_a1251393c49a923d9c43003af84a06e95"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a1251393c49a923d9c43003af84a06e95">IMX8MP_UART2_UTS</a>(base)&#160;&#160;&#160;(base + 0xB4) /** UART2 Test Register **/</td></tr>
-<tr class="separator:a1251393c49a923d9c43003af84a06e95"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a67c3baac425c3a49fadbabf55d8d8b" id="r_a0a67c3baac425c3a49fadbabf55d8d8b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a0a67c3baac425c3a49fadbabf55d8d8b">IMX8MP_UART2_UMCR</a>(base)&#160;&#160;&#160;(base + 0xB8) /** UART2 RS-485 Mode Control Register **/</td></tr>
-<tr class="separator:a0a67c3baac425c3a49fadbabf55d8d8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a059c451a1e501af054a382bc89ed9660" id="r_a059c451a1e501af054a382bc89ed9660"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a059c451a1e501af054a382bc89ed9660">IMX8MP_UART_URXD</a>(base)&#160;&#160;&#160;base  /* UART Receiver Register (URDX) -- 32 bit width*/</td></tr>
+<tr class="separator:a059c451a1e501af054a382bc89ed9660"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41d9d6cb44503604a9531cbb8d32c268" id="r_a41d9d6cb44503604a9531cbb8d32c268"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a41d9d6cb44503604a9531cbb8d32c268">IMX8MP_UART_UTXD</a>(base)&#160;&#160;&#160;(base + 0x40) /** UART Transmitter Register (UTXD) -- 32 bit width */</td></tr>
+<tr class="separator:a41d9d6cb44503604a9531cbb8d32c268"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16201cd5486b518b805a016eb9bf4eff" id="r_a16201cd5486b518b805a016eb9bf4eff"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a16201cd5486b518b805a016eb9bf4eff">IMX8MP_UART_UCR1</a>(base)&#160;&#160;&#160;(base + 0x80) /** UART1 Control register */</td></tr>
+<tr class="separator:a16201cd5486b518b805a016eb9bf4eff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72c925e3c8c94922474cd7ad524f84ce" id="r_a72c925e3c8c94922474cd7ad524f84ce"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a72c925e3c8c94922474cd7ad524f84ce">IMX8MP_UART_UCR2</a>(base)&#160;&#160;&#160;(base + 0x84)</td></tr>
+<tr class="separator:a72c925e3c8c94922474cd7ad524f84ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a076577b7bc64f1bf277f01125a09562c" id="r_a076577b7bc64f1bf277f01125a09562c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a076577b7bc64f1bf277f01125a09562c">IMX8MP_UART_UCR3</a>(base)&#160;&#160;&#160;(base + 0x88)</td></tr>
+<tr class="separator:a076577b7bc64f1bf277f01125a09562c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2351cb1f865dd1507861868bc79123b2" id="r_a2351cb1f865dd1507861868bc79123b2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a2351cb1f865dd1507861868bc79123b2">IMX8MP_UART_UCR4</a>(base)&#160;&#160;&#160;(base + 0x8C)</td></tr>
+<tr class="separator:a2351cb1f865dd1507861868bc79123b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d9bfc26b2ef249310a8cb2916c5ec66" id="r_a0d9bfc26b2ef249310a8cb2916c5ec66"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a0d9bfc26b2ef249310a8cb2916c5ec66">IMX8MP_UART_UFCR</a>(base)&#160;&#160;&#160;(base + 0x90) /** UART1 FIFO Control Register **/</td></tr>
+<tr class="separator:a0d9bfc26b2ef249310a8cb2916c5ec66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c8db705e8d8b05eda19d62111ef6f28" id="r_a2c8db705e8d8b05eda19d62111ef6f28"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a2c8db705e8d8b05eda19d62111ef6f28">IMX8MP_UART_USR1</a>(base)&#160;&#160;&#160;(base + 0x94) /** UART1 <a class="el" href="acpixf_8h.html#adba1986479531d5d136a3277bcf7278e">Status</a> Regster 1 **/</td></tr>
+<tr class="separator:a2c8db705e8d8b05eda19d62111ef6f28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec89d92cf1815a3265909281eb3b78d6" id="r_aec89d92cf1815a3265909281eb3b78d6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#aec89d92cf1815a3265909281eb3b78d6">IMX8MP_UART_USR2</a>(base)&#160;&#160;&#160;(base + 0x98) /** UART1  <a class="el" href="acpixf_8h.html#adba1986479531d5d136a3277bcf7278e">Status</a> Register 2 **/</td></tr>
+<tr class="separator:aec89d92cf1815a3265909281eb3b78d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3c9e3aca6453744dc0444699a723fde" id="r_aa3c9e3aca6453744dc0444699a723fde"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#aa3c9e3aca6453744dc0444699a723fde">IMX8MP_UART_UESC</a>(base)&#160;&#160;&#160;(base + 0x9C) /** UART1 Escape Character Register **/</td></tr>
+<tr class="separator:aa3c9e3aca6453744dc0444699a723fde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abeb259132b1b97410b53cb4e6c3edd41" id="r_abeb259132b1b97410b53cb4e6c3edd41"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#abeb259132b1b97410b53cb4e6c3edd41">IMX8MP_UART_UTIM</a>(base)&#160;&#160;&#160;(base + 0xA0) /** UART1 Escape Timer Register **/</td></tr>
+<tr class="separator:abeb259132b1b97410b53cb4e6c3edd41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92d88cca685e56270000e85411c08e50" id="r_a92d88cca685e56270000e85411c08e50"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a92d88cca685e56270000e85411c08e50">IMX8MP_UART_UBIR</a>(base)&#160;&#160;&#160;(base + 0xA4) /** UART1 BRM Incremental Register **/</td></tr>
+<tr class="separator:a92d88cca685e56270000e85411c08e50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac659e946fafde6d92d0a8a880c83e7b6" id="r_ac659e946fafde6d92d0a8a880c83e7b6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#ac659e946fafde6d92d0a8a880c83e7b6">IMX8MP_UART_UBMR</a>(base)&#160;&#160;&#160;(base + 0xA8) /** UART1 BRM Modulator Register **/</td></tr>
+<tr class="separator:ac659e946fafde6d92d0a8a880c83e7b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af70ba518a65e82bb5e444c32c95b30e7" id="r_af70ba518a65e82bb5e444c32c95b30e7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#af70ba518a65e82bb5e444c32c95b30e7">IMX8MP_UART_UBRC</a>(base)&#160;&#160;&#160;(base + 0xAC) /** UART1 Baude Rate Count Register **/</td></tr>
+<tr class="separator:af70ba518a65e82bb5e444c32c95b30e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a672014a5ddb818526e3ce8c46918de45" id="r_a672014a5ddb818526e3ce8c46918de45"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a672014a5ddb818526e3ce8c46918de45">IMX8MP_UART_ONEMS</a>(base)&#160;&#160;&#160;(base + 0xB0) /** UART1 One Millisecond Register **/</td></tr>
+<tr class="separator:a672014a5ddb818526e3ce8c46918de45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc5aa71b534ea7721aace4776dec8ed0" id="r_adc5aa71b534ea7721aace4776dec8ed0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#adc5aa71b534ea7721aace4776dec8ed0">IMX8MP_UART_UTS</a>(base)&#160;&#160;&#160;(base + 0xB4) /** UART1 Test Register **/</td></tr>
+<tr class="separator:adc5aa71b534ea7721aace4776dec8ed0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f3ad98369f754c6e3f5fa17ce5660cd" id="r_a0f3ad98369f754c6e3f5fa17ce5660cd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a0f3ad98369f754c6e3f5fa17ce5660cd">IMX8MP_UART_UMCR</a>(base)&#160;&#160;&#160;(base + 0xB8) /** UART1 RS-485 Mode Control Register **/</td></tr>
+<tr class="separator:a0f3ad98369f754c6e3f5fa17ce5660cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a825f40636c84f23feecbc0daedebeae7" id="r_a825f40636c84f23feecbc0daedebeae7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a825f40636c84f23feecbc0daedebeae7">UCR1_UARTEN</a>&#160;&#160;&#160;(1u &lt;&lt; 0)   /* UART enable                        */</td></tr>
+<tr class="separator:a825f40636c84f23feecbc0daedebeae7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10399cc1809f419d2f1a23d7c1a5442b" id="r_a10399cc1809f419d2f1a23d7c1a5442b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a10399cc1809f419d2f1a23d7c1a5442b">UCR1_DOZE</a>&#160;&#160;&#160;(1u &lt;&lt; 1)   /* Doze mode enable                   */</td></tr>
+<tr class="separator:a10399cc1809f419d2f1a23d7c1a5442b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8805a3b2a74de3136cc2343c97bb5f38" id="r_a8805a3b2a74de3136cc2343c97bb5f38"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a8805a3b2a74de3136cc2343c97bb5f38">UCR1_ATDMAEN</a>&#160;&#160;&#160;(1u &lt;&lt; 2)   /* Aging DMA timer enable             */</td></tr>
+<tr class="separator:a8805a3b2a74de3136cc2343c97bb5f38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac38ffbdd09464e2da6795592f5729de8" id="r_ac38ffbdd09464e2da6795592f5729de8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#ac38ffbdd09464e2da6795592f5729de8">UCR1_TXDMAEN</a>&#160;&#160;&#160;(1u &lt;&lt; 3)   /* Transmitter DMA enable             */</td></tr>
+<tr class="separator:ac38ffbdd09464e2da6795592f5729de8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af243cd64b5577eaba81bf70455f94838" id="r_af243cd64b5577eaba81bf70455f94838"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#af243cd64b5577eaba81bf70455f94838">UCR1_SNDBRK</a>&#160;&#160;&#160;(1u &lt;&lt; 4)   /* Send BREAK                         */</td></tr>
+<tr class="separator:af243cd64b5577eaba81bf70455f94838"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bd4b6ec4da7f27fb92f9a46653e6d81" id="r_a7bd4b6ec4da7f27fb92f9a46653e6d81"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a7bd4b6ec4da7f27fb92f9a46653e6d81">UCR1_RTSDEN</a>&#160;&#160;&#160;(1u &lt;&lt; 5)   /* RTS delta interrupt enable         */</td></tr>
+<tr class="separator:a7bd4b6ec4da7f27fb92f9a46653e6d81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2275a399f697ef04dd507be999cfcf51" id="r_a2275a399f697ef04dd507be999cfcf51"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a2275a399f697ef04dd507be999cfcf51">UCR1_TXMPTYEN</a>&#160;&#160;&#160;(1u &lt;&lt; 6)   /* Tx FIFO empty interrupt enable     */</td></tr>
+<tr class="separator:a2275a399f697ef04dd507be999cfcf51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9211cd3f3531b8a992f4a47011f3ccb3" id="r_a9211cd3f3531b8a992f4a47011f3ccb3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a9211cd3f3531b8a992f4a47011f3ccb3">UCR1_IREN</a>&#160;&#160;&#160;(1u &lt;&lt; 7)   /* IrDA enable                        */</td></tr>
+<tr class="separator:a9211cd3f3531b8a992f4a47011f3ccb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c5a5cb689f0182d3acd3778ed1cd58e" id="r_a9c5a5cb689f0182d3acd3778ed1cd58e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a9c5a5cb689f0182d3acd3778ed1cd58e">UCR1_RXDMAEN</a>&#160;&#160;&#160;(1u &lt;&lt; 8)   /* Receiver DMA enable                */</td></tr>
+<tr class="separator:a9c5a5cb689f0182d3acd3778ed1cd58e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a050e123caf399caad48166f0acc6fc2a" id="r_a050e123caf399caad48166f0acc6fc2a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a050e123caf399caad48166f0acc6fc2a">UCR1_RRDYEN</a>&#160;&#160;&#160;(1u &lt;&lt; 9)   /* Receiver ready interrupt enable    */</td></tr>
+<tr class="separator:a050e123caf399caad48166f0acc6fc2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a509190d121daeeac41a1b5679ebac73c" id="r_a509190d121daeeac41a1b5679ebac73c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a509190d121daeeac41a1b5679ebac73c">UCR1_ICD_MASK</a>&#160;&#160;&#160;(3u &lt;&lt; 10)  /* Idle condition detect mask         */</td></tr>
+<tr class="separator:a509190d121daeeac41a1b5679ebac73c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56e92216147e34592be39de56aa45928" id="r_a56e92216147e34592be39de56aa45928"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a56e92216147e34592be39de56aa45928">UCR1_IDEN</a>&#160;&#160;&#160;(1u &lt;&lt; 12)  /* Idle condition detected IRQ enable */</td></tr>
+<tr class="separator:a56e92216147e34592be39de56aa45928"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8723b50c45682535d8b9ec4a3ed07002" id="r_a8723b50c45682535d8b9ec4a3ed07002"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a8723b50c45682535d8b9ec4a3ed07002">UCR1_TRDYEN</a>&#160;&#160;&#160;(1u &lt;&lt; 13)  /* Transmitter ready interrupt enable */</td></tr>
+<tr class="separator:a8723b50c45682535d8b9ec4a3ed07002"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94431db835ce0e1558887792c0c87c53" id="r_a94431db835ce0e1558887792c0c87c53"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a94431db835ce0e1558887792c0c87c53">UCR1_ADBR</a>&#160;&#160;&#160;(1u &lt;&lt; 14)  /* Automatic detection of baud rate   */</td></tr>
+<tr class="separator:a94431db835ce0e1558887792c0c87c53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb4273ba5a79934ed6f07570a178aeb0" id="r_acb4273ba5a79934ed6f07570a178aeb0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#acb4273ba5a79934ed6f07570a178aeb0">UCR1_ADEN</a>&#160;&#160;&#160;(1u &lt;&lt; 15)  /* Auto baud rate detection IRQ en    */</td></tr>
+<tr class="separator:acb4273ba5a79934ed6f07570a178aeb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acde3717a137aa1df0f97ed3685b65865" id="r_acde3717a137aa1df0f97ed3685b65865"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#acde3717a137aa1df0f97ed3685b65865">UCR2_SRST</a>&#160;&#160;&#160;(1u &lt;&lt; 0)   /* SW reset (active low, <a class="el" href="acwin_8h.html#ac40a1eaac5f8dbc1eef9b944d494770c">write</a> 1 to clear) */</td></tr>
+<tr class="separator:acde3717a137aa1df0f97ed3685b65865"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbe26f409b994767aea3bb21cfe70603" id="r_adbe26f409b994767aea3bb21cfe70603"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#adbe26f409b994767aea3bb21cfe70603">UCR2_RXEN</a>&#160;&#160;&#160;(1u &lt;&lt; 1)   /* Receiver enable                    */</td></tr>
+<tr class="separator:adbe26f409b994767aea3bb21cfe70603"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a869fadfa164a06cb3fec356af8e0c093" id="r_a869fadfa164a06cb3fec356af8e0c093"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a869fadfa164a06cb3fec356af8e0c093">UCR2_TXEN</a>&#160;&#160;&#160;(1u &lt;&lt; 2)   /* Transmitter enable                 */</td></tr>
+<tr class="separator:a869fadfa164a06cb3fec356af8e0c093"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9018f65fec22cd13cbe9c67fc3a75c0" id="r_ab9018f65fec22cd13cbe9c67fc3a75c0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#ab9018f65fec22cd13cbe9c67fc3a75c0">UCR2_ATEN</a>&#160;&#160;&#160;(1u &lt;&lt; 3)   /* Aging timer enable                 */</td></tr>
+<tr class="separator:ab9018f65fec22cd13cbe9c67fc3a75c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4b85ca488e9f1f875ee36024094c937" id="r_ae4b85ca488e9f1f875ee36024094c937"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#ae4b85ca488e9f1f875ee36024094c937">UCR2_RTSEN</a>&#160;&#160;&#160;(1u &lt;&lt; 4)   /* RTS interrupt enable               */</td></tr>
+<tr class="separator:ae4b85ca488e9f1f875ee36024094c937"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b8f25c33a64aaa5004c188b9148a0b0" id="r_a3b8f25c33a64aaa5004c188b9148a0b0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a3b8f25c33a64aaa5004c188b9148a0b0">UCR2_WS</a>&#160;&#160;&#160;(1u &lt;&lt; 5)   /* Word size: 0=7-bit, 1=8-bit        */</td></tr>
+<tr class="separator:a3b8f25c33a64aaa5004c188b9148a0b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6481baa98495ed154b352528448f0f05" id="r_a6481baa98495ed154b352528448f0f05"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a6481baa98495ed154b352528448f0f05">UCR2_STPB</a>&#160;&#160;&#160;(1u &lt;&lt; 6)   /* Stop bits: 0=1 stop, 1=2 stop      */</td></tr>
+<tr class="separator:a6481baa98495ed154b352528448f0f05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94d30fb5c24d34c0f03ac0c486359b67" id="r_a94d30fb5c24d34c0f03ac0c486359b67"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a94d30fb5c24d34c0f03ac0c486359b67">UCR2_PROE</a>&#160;&#160;&#160;(1u &lt;&lt; 7)   /* <a class="el" href="Acpi50_8h.html#a3f2de0f0c49ed06338d4aa9e41f94f49">Parity</a> odd enable                  */</td></tr>
+<tr class="separator:a94d30fb5c24d34c0f03ac0c486359b67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55fbd0e53d8d6adb32adff49160f1c7c" id="r_a55fbd0e53d8d6adb32adff49160f1c7c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a55fbd0e53d8d6adb32adff49160f1c7c">UCR2_PREN</a>&#160;&#160;&#160;(1u &lt;&lt; 8)   /* <a class="el" href="Acpi50_8h.html#a3f2de0f0c49ed06338d4aa9e41f94f49">Parity</a> enable                      */</td></tr>
+<tr class="separator:a55fbd0e53d8d6adb32adff49160f1c7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63d077988c270df423b424b5ed253e34" id="r_a63d077988c270df423b424b5ed253e34"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a63d077988c270df423b424b5ed253e34">UCR2_RTEC_MASK</a>&#160;&#160;&#160;(3u &lt;&lt; 9)   /* Request-to-<a class="el" href="Libs_2XEClib_2includes_2sys_2socket_8h.html#add84581d2a314aedfa11f7103a91fa93">send</a> edge control mask  */</td></tr>
+<tr class="separator:a63d077988c270df423b424b5ed253e34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6758b9c5458d1ffbb9fd6e50d5b57e7b" id="r_a6758b9c5458d1ffbb9fd6e50d5b57e7b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a6758b9c5458d1ffbb9fd6e50d5b57e7b">UCR2_ESCEN</a>&#160;&#160;&#160;(1u &lt;&lt; 11)  /* Escape sequence interrupt enable   */</td></tr>
+<tr class="separator:a6758b9c5458d1ffbb9fd6e50d5b57e7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e3bf13d138ed5d3081785e2d902aec3" id="r_a7e3bf13d138ed5d3081785e2d902aec3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a7e3bf13d138ed5d3081785e2d902aec3">UCR2_CTS</a>&#160;&#160;&#160;(1u &lt;&lt; 12)  /* CTS status                         */</td></tr>
+<tr class="separator:a7e3bf13d138ed5d3081785e2d902aec3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39867163fe08c80127f378bae7213018" id="r_a39867163fe08c80127f378bae7213018"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a39867163fe08c80127f378bae7213018">UCR2_CTSC</a>&#160;&#160;&#160;(1u &lt;&lt; 13)  /* CTS pin controlled by receiver     */</td></tr>
+<tr class="separator:a39867163fe08c80127f378bae7213018"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0835feed20853e3e3a498cf00da9d544" id="r_a0835feed20853e3e3a498cf00da9d544"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a0835feed20853e3e3a498cf00da9d544">UCR2_IRTS</a>&#160;&#160;&#160;(1u &lt;&lt; 14)  /* Ignore RTS pin                     */</td></tr>
+<tr class="separator:a0835feed20853e3e3a498cf00da9d544"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bd1306fe962476ea9419bc572ab1e14" id="r_a8bd1306fe962476ea9419bc572ab1e14"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a8bd1306fe962476ea9419bc572ab1e14">UCR2_ESCI</a>&#160;&#160;&#160;(1u &lt;&lt; 15)  /* Escape sequence interrupt enable   */</td></tr>
+<tr class="separator:a8bd1306fe962476ea9419bc572ab1e14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cffc242eae9549679050a8ce7ac1113" id="r_a9cffc242eae9549679050a8ce7ac1113"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a9cffc242eae9549679050a8ce7ac1113">UCR3_RXDMUXSEL</a>&#160;&#160;&#160;(1u &lt;&lt; 2)   /* Mux RXD: must be set on i.MX8M    */</td></tr>
+<tr class="separator:a9cffc242eae9549679050a8ce7ac1113"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b664ae6070a47fc949ce823ec7f3fcf" id="r_a7b664ae6070a47fc949ce823ec7f3fcf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a7b664ae6070a47fc949ce823ec7f3fcf">UCR4_DREN</a>&#160;&#160;&#160;(1u &lt;&lt; 0)   /* <a class="el" href="Supplicant_8h.html#ad64984a28acf10f8bb9dd4ef2843635ca5a54306f6db7e247a7746d8d5ff701e9">Receive</a> data ready interrupt enable */</td></tr>
+<tr class="separator:a7b664ae6070a47fc949ce823ec7f3fcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb765047ad99572a301602719c5bc7b8" id="r_abb765047ad99572a301602719c5bc7b8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#abb765047ad99572a301602719c5bc7b8">UCR4_OREN</a>&#160;&#160;&#160;(1u &lt;&lt; 1)   /* Receiver overrun interrupt enable  */</td></tr>
+<tr class="separator:abb765047ad99572a301602719c5bc7b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8916444f552229c1817b3be242e88176" id="r_a8916444f552229c1817b3be242e88176"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a8916444f552229c1817b3be242e88176">UCR4_BKEN</a>&#160;&#160;&#160;(1u &lt;&lt; 2)   /* BREAK condition interrupt enable   */</td></tr>
+<tr class="separator:a8916444f552229c1817b3be242e88176"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cfe4dc31464e21b668ee55dbe2253ef" id="r_a3cfe4dc31464e21b668ee55dbe2253ef"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a3cfe4dc31464e21b668ee55dbe2253ef">UCR4_TCEN</a>&#160;&#160;&#160;(1u &lt;&lt; 3)   /* <a class="el" href="Supplicant_8h.html#ad64984a28acf10f8bb9dd4ef2843635cabfe0b4da68061025c67c7a77b8b6abd2">Transmit</a> complete interrupt enable */</td></tr>
+<tr class="separator:a3cfe4dc31464e21b668ee55dbe2253ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a046b08845a649278cb30d3cd95c1693a" id="r_a046b08845a649278cb30d3cd95c1693a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a046b08845a649278cb30d3cd95c1693a">UCR4_INVR</a>&#160;&#160;&#160;(1u &lt;&lt; 9)   /* Inverted infrared reception        */</td></tr>
+<tr class="separator:a046b08845a649278cb30d3cd95c1693a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae45ea7647c2e20b97e6d6deff5434036" id="r_ae45ea7647c2e20b97e6d6deff5434036"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#ae45ea7647c2e20b97e6d6deff5434036">UFCR_RXTL_SHIFT</a>&#160;&#160;&#160;0           /* RX trigger level [5:0]             */</td></tr>
+<tr class="separator:ae45ea7647c2e20b97e6d6deff5434036"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a446495aecf5d0bf59924f49cf0b7b327" id="r_a446495aecf5d0bf59924f49cf0b7b327"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a446495aecf5d0bf59924f49cf0b7b327">UFCR_RXTL_MASK</a>&#160;&#160;&#160;(0x3Fu)</td></tr>
+<tr class="separator:a446495aecf5d0bf59924f49cf0b7b327"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30b2f7f852cbe6ca35477ae984937cb9" id="r_a30b2f7f852cbe6ca35477ae984937cb9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a30b2f7f852cbe6ca35477ae984937cb9">UFCR_DCEDTE</a>&#160;&#160;&#160;(1u &lt;&lt; 6)   /* DCE/DTE mode select                */</td></tr>
+<tr class="separator:a30b2f7f852cbe6ca35477ae984937cb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6fb3cfd5385f18e1dbdc1083f4c6eee" id="r_ac6fb3cfd5385f18e1dbdc1083f4c6eee"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#ac6fb3cfd5385f18e1dbdc1083f4c6eee">UFCR_RFDIV_SHIFT</a>&#160;&#160;&#160;7          /* Reference frequency divider [9:7]  */</td></tr>
+<tr class="separator:ac6fb3cfd5385f18e1dbdc1083f4c6eee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1dbafe279a587660a349915ba95615a" id="r_aa1dbafe279a587660a349915ba95615a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#aa1dbafe279a587660a349915ba95615a">UFCR_RFDIV_MASK</a>&#160;&#160;&#160;(7u &lt;&lt; 7)</td></tr>
+<tr class="separator:aa1dbafe279a587660a349915ba95615a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa43c194e00304cf83a0ae0b9d201bd7" id="r_aaa43c194e00304cf83a0ae0b9d201bd7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#aaa43c194e00304cf83a0ae0b9d201bd7">UFCR_TXTL_SHIFT</a>&#160;&#160;&#160;10          /* TX trigger level [15:10]           */</td></tr>
+<tr class="separator:aaa43c194e00304cf83a0ae0b9d201bd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac08608109fa2eab8c561180d7a9a59fa" id="r_ac08608109fa2eab8c561180d7a9a59fa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#ac08608109fa2eab8c561180d7a9a59fa">UFCR_TXTL_MASK</a>&#160;&#160;&#160;(0x3Fu &lt;&lt; 10)</td></tr>
+<tr class="separator:ac08608109fa2eab8c561180d7a9a59fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd83afd4d539a661de741e3b9651f944" id="r_acd83afd4d539a661de741e3b9651f944"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#acd83afd4d539a661de741e3b9651f944">UFCR_RFDIV</a>(n)&#160;&#160;&#160;(((n) &amp; 7u) &lt;&lt; <a class="el" href="imx8mp__uart_8h.html#ac6fb3cfd5385f18e1dbdc1083f4c6eee">UFCR_RFDIV_SHIFT</a>)</td></tr>
+<tr class="separator:acd83afd4d539a661de741e3b9651f944"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acaa21d70277a92b93c8f5309774d49cd" id="r_acaa21d70277a92b93c8f5309774d49cd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#acaa21d70277a92b93c8f5309774d49cd">USR1_AWAKE</a>&#160;&#160;&#160;(1u &lt;&lt; 4)   /* Awake interrupt flag               */</td></tr>
+<tr class="separator:acaa21d70277a92b93c8f5309774d49cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad489001149a1f993436d431d48462d4f" id="r_ad489001149a1f993436d431d48462d4f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#ad489001149a1f993436d431d48462d4f">USR1_AIRINT</a>&#160;&#160;&#160;(1u &lt;&lt; 5)   /* Async IR interrupt flag            */</td></tr>
+<tr class="separator:ad489001149a1f993436d431d48462d4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa8e4305b7bf1da6cd87734508671176" id="r_afa8e4305b7bf1da6cd87734508671176"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#afa8e4305b7bf1da6cd87734508671176">USR1_RXDS</a>&#160;&#160;&#160;(1u &lt;&lt; 6)   /* Receiver idle condition            */</td></tr>
+<tr class="separator:afa8e4305b7bf1da6cd87734508671176"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56d95e91a23b82dfd5f4cafb4c6db08f" id="r_a56d95e91a23b82dfd5f4cafb4c6db08f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a56d95e91a23b82dfd5f4cafb4c6db08f">USR1_DTRD</a>&#160;&#160;&#160;(1u &lt;&lt; 7)   /* DTR delta                          */</td></tr>
+<tr class="separator:a56d95e91a23b82dfd5f4cafb4c6db08f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abca7b48965c97d8d845aca17f47245eb" id="r_abca7b48965c97d8d845aca17f47245eb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#abca7b48965c97d8d845aca17f47245eb">USR1_AGTIM</a>&#160;&#160;&#160;(1u &lt;&lt; 8)   /* Aging timer interrupt flag         */</td></tr>
+<tr class="separator:abca7b48965c97d8d845aca17f47245eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afab52de6fcd91447647f55b6ce5a3f86" id="r_afab52de6fcd91447647f55b6ce5a3f86"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#afab52de6fcd91447647f55b6ce5a3f86">USR1_RRDY</a>&#160;&#160;&#160;(1u &lt;&lt; 9)   /* Receiver ready                     */</td></tr>
+<tr class="separator:afab52de6fcd91447647f55b6ce5a3f86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71560c877a64a62b88e953486b628649" id="r_a71560c877a64a62b88e953486b628649"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a71560c877a64a62b88e953486b628649">USR1_FRAMERR</a>&#160;&#160;&#160;(1u &lt;&lt; 10)  /* Frame error in RX FIFO             */</td></tr>
+<tr class="separator:a71560c877a64a62b88e953486b628649"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67e23e497a65aa4717a9caee16ed0328" id="r_a67e23e497a65aa4717a9caee16ed0328"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a67e23e497a65aa4717a9caee16ed0328">USR1_ESCF</a>&#160;&#160;&#160;(1u &lt;&lt; 11)  /* Escape sequence flag               */</td></tr>
+<tr class="separator:a67e23e497a65aa4717a9caee16ed0328"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb5411308a3e7aec2bf21880e0048445" id="r_abb5411308a3e7aec2bf21880e0048445"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#abb5411308a3e7aec2bf21880e0048445">USR1_RTSD</a>&#160;&#160;&#160;(1u &lt;&lt; 12)  /* RTS delta                          */</td></tr>
+<tr class="separator:abb5411308a3e7aec2bf21880e0048445"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e985df82890e6474dc21bcc6bf94629" id="r_a9e985df82890e6474dc21bcc6bf94629"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a9e985df82890e6474dc21bcc6bf94629">USR1_TRDY</a>&#160;&#160;&#160;(1u &lt;&lt; 13)  /* Transmitter ready                  */</td></tr>
+<tr class="separator:a9e985df82890e6474dc21bcc6bf94629"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6ba75623a55dbd7517871629e6e87fa" id="r_ac6ba75623a55dbd7517871629e6e87fa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#ac6ba75623a55dbd7517871629e6e87fa">USR1_RTSS</a>&#160;&#160;&#160;(1u &lt;&lt; 14)  /* RTS pin status                     */</td></tr>
+<tr class="separator:ac6ba75623a55dbd7517871629e6e87fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9dad26cdf17a9445f974d5bb95f51dbb" id="r_a9dad26cdf17a9445f974d5bb95f51dbb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a9dad26cdf17a9445f974d5bb95f51dbb">USR1_PARITYERR</a>&#160;&#160;&#160;(1u &lt;&lt; 15)  /* <a class="el" href="Acpi50_8h.html#a3f2de0f0c49ed06338d4aa9e41f94f49">Parity</a> error                       */</td></tr>
+<tr class="separator:a9dad26cdf17a9445f974d5bb95f51dbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a283f0c0cb9b6c00ac757ed574666cc8f" id="r_a283f0c0cb9b6c00ac757ed574666cc8f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a283f0c0cb9b6c00ac757ed574666cc8f">USR2_RDR</a>&#160;&#160;&#160;(1u &lt;&lt; 0)   /* <a class="el" href="Supplicant_8h.html#ad64984a28acf10f8bb9dd4ef2843635ca5a54306f6db7e247a7746d8d5ff701e9">Receive</a> data ready                 */</td></tr>
+<tr class="separator:a283f0c0cb9b6c00ac757ed574666cc8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c6aeed9552c928819141a881f548715" id="r_a2c6aeed9552c928819141a881f548715"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a2c6aeed9552c928819141a881f548715">USR2_ORE</a>&#160;&#160;&#160;(1u &lt;&lt; 1)   /* Overrun error                      */</td></tr>
+<tr class="separator:a2c6aeed9552c928819141a881f548715"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0ac978640f0d50bb601a4ff514d7fc4" id="r_ab0ac978640f0d50bb601a4ff514d7fc4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#ab0ac978640f0d50bb601a4ff514d7fc4">USR2_BRCD</a>&#160;&#160;&#160;(1u &lt;&lt; 2)   /* BREAK condition detected           */</td></tr>
+<tr class="separator:ab0ac978640f0d50bb601a4ff514d7fc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e60511deae8f5c1b07207ac8965efc5" id="r_a1e60511deae8f5c1b07207ac8965efc5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a1e60511deae8f5c1b07207ac8965efc5">USR2_TXDC</a>&#160;&#160;&#160;(1u &lt;&lt; 3)   /* Transmitter complete (FIFO + SR empty) */</td></tr>
+<tr class="separator:a1e60511deae8f5c1b07207ac8965efc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a829dd08b951165a6f6f802d6ef0f6c61" id="r_a829dd08b951165a6f6f802d6ef0f6c61"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a829dd08b951165a6f6f802d6ef0f6c61">USR2_RTSF</a>&#160;&#160;&#160;(1u &lt;&lt; 4)   /* RTS edge triggered interrupt flag  */</td></tr>
+<tr class="separator:a829dd08b951165a6f6f802d6ef0f6c61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af35c39ac62b34f1a31464d3199c0cf17" id="r_af35c39ac62b34f1a31464d3199c0cf17"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#af35c39ac62b34f1a31464d3199c0cf17">USR2_DCDIN</a>&#160;&#160;&#160;(1u &lt;&lt; 5)   /* Data carrier detect               */</td></tr>
+<tr class="separator:af35c39ac62b34f1a31464d3199c0cf17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf01e69f3fde26a86b1c4347f31927ef" id="r_aaf01e69f3fde26a86b1c4347f31927ef"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#aaf01e69f3fde26a86b1c4347f31927ef">USR2_DCDDELT</a>&#160;&#160;&#160;(1u &lt;&lt; 6)   /* Data carrier detect delta         */</td></tr>
+<tr class="separator:aaf01e69f3fde26a86b1c4347f31927ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76f200bf5ba8ca99da6b2102a3a84b6e" id="r_a76f200bf5ba8ca99da6b2102a3a84b6e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a76f200bf5ba8ca99da6b2102a3a84b6e">USR2_WAKE</a>&#160;&#160;&#160;(1u &lt;&lt; 7)   /* Wake                               */</td></tr>
+<tr class="separator:a76f200bf5ba8ca99da6b2102a3a84b6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa59868569c6e66140f71d9a3296dd0c" id="r_aaa59868569c6e66140f71d9a3296dd0c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#aaa59868569c6e66140f71d9a3296dd0c">USR2_IRINT</a>&#160;&#160;&#160;(1u &lt;&lt; 8)   /* Serial infrared interrupt flag     */</td></tr>
+<tr class="separator:aaa59868569c6e66140f71d9a3296dd0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a242fe4ec166e6f1073321e71c709406b" id="r_a242fe4ec166e6f1073321e71c709406b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a242fe4ec166e6f1073321e71c709406b">USR2_RIIN</a>&#160;&#160;&#160;(1u &lt;&lt; 9)   /* Ring indicator <a class="el" href="virtiokbd_8c.html#ac7ea4a68c5710086113a183d16feaf8d">input</a>               */</td></tr>
+<tr class="separator:a242fe4ec166e6f1073321e71c709406b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14cc8efe8ab31b0f8634c1318677dafc" id="r_a14cc8efe8ab31b0f8634c1318677dafc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a14cc8efe8ab31b0f8634c1318677dafc">USR2_RIDELT</a>&#160;&#160;&#160;(1u &lt;&lt; 10)  /* Ring indicator delta               */</td></tr>
+<tr class="separator:a14cc8efe8ab31b0f8634c1318677dafc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fbcfe3a40d3106d017c747e137634b6" id="r_a0fbcfe3a40d3106d017c747e137634b6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a0fbcfe3a40d3106d017c747e137634b6">USR2_ACST</a>&#160;&#160;&#160;(1u &lt;&lt; 11)  /* Auto-baud counter stopped          */</td></tr>
+<tr class="separator:a0fbcfe3a40d3106d017c747e137634b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fc28b74c3ad35638e29c987485b53be" id="r_a7fc28b74c3ad35638e29c987485b53be"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a7fc28b74c3ad35638e29c987485b53be">USR2_IDLE</a>&#160;&#160;&#160;(1u &lt;&lt; 12)  /* Idle condition                     */</td></tr>
+<tr class="separator:a7fc28b74c3ad35638e29c987485b53be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacbb7a53d8bef80915e8e647efb5d74e" id="r_aacbb7a53d8bef80915e8e647efb5d74e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#aacbb7a53d8bef80915e8e647efb5d74e">USR2_DTRF</a>&#160;&#160;&#160;(1u &lt;&lt; 13)  /* DTR edge triggered interrupt flag  */</td></tr>
+<tr class="separator:aacbb7a53d8bef80915e8e647efb5d74e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c11f7c115a0db0830b28da348d40539" id="r_a7c11f7c115a0db0830b28da348d40539"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a7c11f7c115a0db0830b28da348d40539">USR2_TXFE</a>&#160;&#160;&#160;(1u &lt;&lt; 14)  /* <a class="el" href="Supplicant_8h.html#ad64984a28acf10f8bb9dd4ef2843635cabfe0b4da68061025c67c7a77b8b6abd2">Transmit</a> FIFO empty                */</td></tr>
+<tr class="separator:a7c11f7c115a0db0830b28da348d40539"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9d9130a405a76e98919d267e588ee34" id="r_ab9d9130a405a76e98919d267e588ee34"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#ab9d9130a405a76e98919d267e588ee34">USR2_ADET</a>&#160;&#160;&#160;(1u &lt;&lt; 15)  /* Automatic baud-rate detect complete */</td></tr>
+<tr class="separator:ab9d9130a405a76e98919d267e588ee34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3f2682db0a1fcc0f2be33143dfb0f61" id="r_ac3f2682db0a1fcc0f2be33143dfb0f61"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#ac3f2682db0a1fcc0f2be33143dfb0f61">UTS_SOFTRST</a>&#160;&#160;&#160;(1u &lt;&lt; 0)   /* Software reset                     */</td></tr>
+<tr class="separator:ac3f2682db0a1fcc0f2be33143dfb0f61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a992c4679d04f7ec346b15c011d097d57" id="r_a992c4679d04f7ec346b15c011d097d57"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a992c4679d04f7ec346b15c011d097d57">UTS_RXFULL</a>&#160;&#160;&#160;(1u &lt;&lt; 3)   /* RX FIFO full                       */</td></tr>
+<tr class="separator:a992c4679d04f7ec346b15c011d097d57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b8fef7ddb806061f3d0278d6c51f656" id="r_a3b8fef7ddb806061f3d0278d6c51f656"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a3b8fef7ddb806061f3d0278d6c51f656">UTS_TXFULL</a>&#160;&#160;&#160;(1u &lt;&lt; 4)   /* TX FIFO full                       */</td></tr>
+<tr class="separator:a3b8fef7ddb806061f3d0278d6c51f656"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fdfdc9eb1631410864340c9a2705877" id="r_a7fdfdc9eb1631410864340c9a2705877"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a7fdfdc9eb1631410864340c9a2705877">UTS_RXEMPTY</a>&#160;&#160;&#160;(1u &lt;&lt; 5)   /* RX FIFO empty                      */</td></tr>
+<tr class="separator:a7fdfdc9eb1631410864340c9a2705877"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac233e457e01a726f177b86113ba9482c" id="r_ac233e457e01a726f177b86113ba9482c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#ac233e457e01a726f177b86113ba9482c">UTS_TXEMPTY</a>&#160;&#160;&#160;(1u &lt;&lt; 6)   /* TX FIFO empty                      */</td></tr>
+<tr class="separator:ac233e457e01a726f177b86113ba9482c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8374a0da78aeedf59c75dfdded4e5c4c" id="r_a8374a0da78aeedf59c75dfdded4e5c4c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a8374a0da78aeedf59c75dfdded4e5c4c">UTS_RXDBG</a>&#160;&#160;&#160;(1u &lt;&lt; 9)   /* RX FIFO <a class="el" href="sched_8c.html#a398527b3e9e358c345c5047b16871957">debug</a> mode                 */</td></tr>
+<tr class="separator:a8374a0da78aeedf59c75dfdded4e5c4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af69c2882e4f886bbdddd266483521315" id="r_af69c2882e4f886bbdddd266483521315"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#af69c2882e4f886bbdddd266483521315">UTS_LOOPIR</a>&#160;&#160;&#160;(1u &lt;&lt; 10)  /* Loop IR test                       */</td></tr>
+<tr class="separator:af69c2882e4f886bbdddd266483521315"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1958d019cbd7491a9405ba283a3d2ca" id="r_ad1958d019cbd7491a9405ba283a3d2ca"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#ad1958d019cbd7491a9405ba283a3d2ca">UTS_DBGEN</a>&#160;&#160;&#160;(1u &lt;&lt; 11)  /* Debug enable                       */</td></tr>
+<tr class="separator:ad1958d019cbd7491a9405ba283a3d2ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbfa244be0ebdfce0cc191ac7e7de17c" id="r_adbfa244be0ebdfce0cc191ac7e7de17c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#adbfa244be0ebdfce0cc191ac7e7de17c">UTS_LOOP</a>&#160;&#160;&#160;(1u &lt;&lt; 12)  /* Loop TX-&gt;RX (loopback test)        */</td></tr>
+<tr class="separator:adbfa244be0ebdfce0cc191ac7e7de17c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe4d8a42a4d5111f35b8b8d0713ec3b0" id="r_afe4d8a42a4d5111f35b8b8d0713ec3b0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#afe4d8a42a4d5111f35b8b8d0713ec3b0">UTS_FRCPERR</a>&#160;&#160;&#160;(1u &lt;&lt; 13)  /* Force parity error                 */</td></tr>
+<tr class="separator:afe4d8a42a4d5111f35b8b8d0713ec3b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81562443bb35c8061b2d103b9012e0e5" id="r_a81562443bb35c8061b2d103b9012e0e5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a81562443bb35c8061b2d103b9012e0e5">URXD_RX_DATA</a>&#160;&#160;&#160;0x00FFu     /* Received character [7:0]           */</td></tr>
+<tr class="separator:a81562443bb35c8061b2d103b9012e0e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a2184ee57243dc5c9a83636fda92ac2" id="r_a7a2184ee57243dc5c9a83636fda92ac2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a7a2184ee57243dc5c9a83636fda92ac2">URXD_PRERR</a>&#160;&#160;&#160;(1u &lt;&lt; 10)  /* <a class="el" href="Acpi50_8h.html#a3f2de0f0c49ed06338d4aa9e41f94f49">Parity</a> error                       */</td></tr>
+<tr class="separator:a7a2184ee57243dc5c9a83636fda92ac2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a61385bb8e2e6f613f6f7aa99ea2dc4" id="r_a2a61385bb8e2e6f613f6f7aa99ea2dc4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a2a61385bb8e2e6f613f6f7aa99ea2dc4">URXD_BRK</a>&#160;&#160;&#160;(1u &lt;&lt; 11)  /* BREAK detected                     */</td></tr>
+<tr class="separator:a2a61385bb8e2e6f613f6f7aa99ea2dc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca563fdaf2b963137646b362db22cc49" id="r_aca563fdaf2b963137646b362db22cc49"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#aca563fdaf2b963137646b362db22cc49">URXD_FRMERR</a>&#160;&#160;&#160;(1u &lt;&lt; 12)  /* Frame error                        */</td></tr>
+<tr class="separator:aca563fdaf2b963137646b362db22cc49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab340f1216bb2d69a747239c90af7fbc3" id="r_ab340f1216bb2d69a747239c90af7fbc3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#ab340f1216bb2d69a747239c90af7fbc3">URXD_OVRRUN</a>&#160;&#160;&#160;(1u &lt;&lt; 13)  /* Overrun error                      */</td></tr>
+<tr class="separator:ab340f1216bb2d69a747239c90af7fbc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a957a0e758176edc9b02f83b3a1555609" id="r_a957a0e758176edc9b02f83b3a1555609"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a957a0e758176edc9b02f83b3a1555609">URXD_ERR</a>&#160;&#160;&#160;(1u &lt;&lt; 14)  /* Any error bit set                  */</td></tr>
+<tr class="separator:a957a0e758176edc9b02f83b3a1555609"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5480636ea1e122e1b8b2d981abdb9f5" id="r_ac5480636ea1e122e1b8b2d981abdb9f5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#ac5480636ea1e122e1b8b2d981abdb9f5">URXD_CHARRDY</a>&#160;&#160;&#160;(1u &lt;&lt; 15)  /* Character ready in FIFO            */</td></tr>
+<tr class="separator:ac5480636ea1e122e1b8b2d981abdb9f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a911b5d11394f51c83c6d40c3fa5db196" id="r_a911b5d11394f51c83c6d40c3fa5db196"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a911b5d11394f51c83c6d40c3fa5db196">IMX_PARITY_NONE</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:a911b5d11394f51c83c6d40c3fa5db196"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18fcc1050de8082c1fb42729cb4d39b3" id="r_a18fcc1050de8082c1fb42729cb4d39b3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a18fcc1050de8082c1fb42729cb4d39b3">IMX_PARITY_EVEN</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:a18fcc1050de8082c1fb42729cb4d39b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad41b9f066962bdcce300a5a4a0647b4d" id="r_ad41b9f066962bdcce300a5a4a0647b4d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#ad41b9f066962bdcce300a5a4a0647b4d">IMX_PARITY_ODD</a>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:ad41b9f066962bdcce300a5a4a0647b4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a55ee841f1705913f27daf43e548dd83b" id="r_a55ee841f1705913f27daf43e548dd83b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#a55ee841f1705913f27daf43e548dd83b">au_imx8mp_uart_putc</a> (char c)</td></tr>
+<tr class="memdesc:a55ee841f1705913f27daf43e548dd83b"><td class="mdescLeft">&#160;</td><td class="mdescRight">imx8mp_uart_putc &ndash; put a single character on the UART  <br /></td></tr>
+<tr class="separator:a55ee841f1705913f27daf43e548dd83b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae00c9d9055880e0b7c5b293b0e07340d" id="r_ae00c9d9055880e0b7c5b293b0e07340d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#ae00c9d9055880e0b7c5b293b0e07340d">au_imx8mp_uart_puts</a> (const char *s)</td></tr>
+<tr class="memdesc:ae00c9d9055880e0b7c5b293b0e07340d"><td class="mdescLeft">&#160;</td><td class="mdescRight">imx8mp_uart_puts &ndash; put a collection of character on the UART  <br /></td></tr>
+<tr class="separator:ae00c9d9055880e0b7c5b293b0e07340d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade442f5afc7ecfdccb6a807fee5231f7" id="r_ade442f5afc7ecfdccb6a807fee5231f7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#ade442f5afc7ecfdccb6a807fee5231f7">au_imx8mp_uart_getc</a> ()</td></tr>
+<tr class="memdesc:ade442f5afc7ecfdccb6a807fee5231f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">imx8mp_uart_getc &ndash; receive a single character from the UART  <br /></td></tr>
+<tr class="separator:ade442f5afc7ecfdccb6a807fee5231f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa3fe0bd218fd541c2a358819d1ed63a" id="r_afa3fe0bd218fd541c2a358819d1ed63a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__uart_8h.html#afa3fe0bd218fd541c2a358819d1ed63a">au_imx8np_uart_initialize</a> (<a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> base)</td></tr>
+<tr class="separator:afa3fe0bd218fd541c2a358819d1ed63a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>BSD 2-Clause License</p>
@@ -217,312 +473,6 @@ Macros</h2></td></tr>
 
 </div>
 </div>
-<a id="ae218848e53863d53987c64a802f5ea23" name="ae218848e53863d53987c64a802f5ea23"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae218848e53863d53987c64a802f5ea23">&#9670;&#160;</a></span>IMX8MP_UART1_ONEMS</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IMX8MP_UART1_ONEMS</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">base</td><td>)</td>
-          <td>&#160;&#160;&#160;(base + 0xB0) /** <a class="el" href="rpi3_8h.html#a8d69bf04d07af4fbbab5a8bd291f65ff">UART1</a> One Millisecond Register **/</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a165045a145388cda3e9eb3c5a8bc837e" name="a165045a145388cda3e9eb3c5a8bc837e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a165045a145388cda3e9eb3c5a8bc837e">&#9670;&#160;</a></span>IMX8MP_UART1_UBIR</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IMX8MP_UART1_UBIR</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">base</td><td>)</td>
-          <td>&#160;&#160;&#160;(base + 0xA4) /** <a class="el" href="rpi3_8h.html#a8d69bf04d07af4fbbab5a8bd291f65ff">UART1</a> BRM Incremental Register **/</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a81fe193ae837edce1095d6c380a67b8d" name="a81fe193ae837edce1095d6c380a67b8d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a81fe193ae837edce1095d6c380a67b8d">&#9670;&#160;</a></span>IMX8MP_UART1_UBMR</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IMX8MP_UART1_UBMR</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">base</td><td>)</td>
-          <td>&#160;&#160;&#160;(base + 0xA8) /** <a class="el" href="rpi3_8h.html#a8d69bf04d07af4fbbab5a8bd291f65ff">UART1</a> BRM Modulator Register **/</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a929a67794e3cc47a1998360792ea2faf" name="a929a67794e3cc47a1998360792ea2faf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a929a67794e3cc47a1998360792ea2faf">&#9670;&#160;</a></span>IMX8MP_UART1_UBRC</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IMX8MP_UART1_UBRC</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">base</td><td>)</td>
-          <td>&#160;&#160;&#160;(base + 0xAC) /** <a class="el" href="rpi3_8h.html#a8d69bf04d07af4fbbab5a8bd291f65ff">UART1</a> Baude Rate Count Register **/</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ae7e2f9a3f71f75ef57d33d9a351848d7" name="ae7e2f9a3f71f75ef57d33d9a351848d7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae7e2f9a3f71f75ef57d33d9a351848d7">&#9670;&#160;</a></span>IMX8MP_UART1_UCR1</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IMX8MP_UART1_UCR1</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">base</td><td>)</td>
-          <td>&#160;&#160;&#160;(base + 0x80) /** <a class="el" href="rpi3_8h.html#a8d69bf04d07af4fbbab5a8bd291f65ff">UART1</a> Control register */</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aa10d66ada25b811bcebcf57bfcbb8ad3" name="aa10d66ada25b811bcebcf57bfcbb8ad3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa10d66ada25b811bcebcf57bfcbb8ad3">&#9670;&#160;</a></span>IMX8MP_UART1_UCR2</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IMX8MP_UART1_UCR2</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">base</td><td>)</td>
-          <td>&#160;&#160;&#160;(base + 0x84)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a4293366ddd429643ad542e6b5ca1313b" name="a4293366ddd429643ad542e6b5ca1313b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4293366ddd429643ad542e6b5ca1313b">&#9670;&#160;</a></span>IMX8MP_UART1_UCR3</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IMX8MP_UART1_UCR3</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">base</td><td>)</td>
-          <td>&#160;&#160;&#160;(base + 0x88)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a988624f3c5ac7265f33f7febadf0d070" name="a988624f3c5ac7265f33f7febadf0d070"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a988624f3c5ac7265f33f7febadf0d070">&#9670;&#160;</a></span>IMX8MP_UART1_UCR4</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IMX8MP_UART1_UCR4</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">base</td><td>)</td>
-          <td>&#160;&#160;&#160;(base + 0x8C)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="afc4ecda2300e584ee7af63500aa1167b" name="afc4ecda2300e584ee7af63500aa1167b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afc4ecda2300e584ee7af63500aa1167b">&#9670;&#160;</a></span>IMX8MP_UART1_UESC</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IMX8MP_UART1_UESC</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">base</td><td>)</td>
-          <td>&#160;&#160;&#160;(base + 0x9C) /** <a class="el" href="rpi3_8h.html#a8d69bf04d07af4fbbab5a8bd291f65ff">UART1</a> Escape Character Register **/</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a9520e903753a7d6dc63798198d95bb30" name="a9520e903753a7d6dc63798198d95bb30"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9520e903753a7d6dc63798198d95bb30">&#9670;&#160;</a></span>IMX8MP_UART1_UFCR</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IMX8MP_UART1_UFCR</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">base</td><td>)</td>
-          <td>&#160;&#160;&#160;(base + 0x90) /** <a class="el" href="rpi3_8h.html#a8d69bf04d07af4fbbab5a8bd291f65ff">UART1</a> FIFO Control Register **/</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aac18c103e638e8b53e96bd91607ac488" name="aac18c103e638e8b53e96bd91607ac488"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aac18c103e638e8b53e96bd91607ac488">&#9670;&#160;</a></span>IMX8MP_UART1_UMCR</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IMX8MP_UART1_UMCR</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">base</td><td>)</td>
-          <td>&#160;&#160;&#160;(base + 0xB8) /** <a class="el" href="rpi3_8h.html#a8d69bf04d07af4fbbab5a8bd291f65ff">UART1</a> RS-485 Mode Control Register **/</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad3407904c21b3f6a9ba71e57a19be98e" name="ad3407904c21b3f6a9ba71e57a19be98e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad3407904c21b3f6a9ba71e57a19be98e">&#9670;&#160;</a></span>IMX8MP_UART1_URXD</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IMX8MP_UART1_URXD</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">base</td><td>)</td>
-          <td>&#160;&#160;&#160;base  /* UART Receiver Register (URDX) -- 32 bit width*/</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ab6598d4d0b8af12ff72e7ee0de217450" name="ab6598d4d0b8af12ff72e7ee0de217450"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab6598d4d0b8af12ff72e7ee0de217450">&#9670;&#160;</a></span>IMX8MP_UART1_USR1</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IMX8MP_UART1_USR1</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">base</td><td>)</td>
-          <td>&#160;&#160;&#160;(base + 0x94) /** <a class="el" href="rpi3_8h.html#a8d69bf04d07af4fbbab5a8bd291f65ff">UART1</a> <a class="el" href="acpixf_8h.html#adba1986479531d5d136a3277bcf7278e">Status</a> Regster 1 **/</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a8e1b4d57f3c0086f1c176344bad28f8a" name="a8e1b4d57f3c0086f1c176344bad28f8a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8e1b4d57f3c0086f1c176344bad28f8a">&#9670;&#160;</a></span>IMX8MP_UART1_USR2</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IMX8MP_UART1_USR2</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">base</td><td>)</td>
-          <td>&#160;&#160;&#160;(base + 0x98) /** <a class="el" href="rpi3_8h.html#a8d69bf04d07af4fbbab5a8bd291f65ff">UART1</a>  <a class="el" href="acpixf_8h.html#adba1986479531d5d136a3277bcf7278e">Status</a> Register 2 **/</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a1e21f77e53ed91e8483caa3c0b1d72f0" name="a1e21f77e53ed91e8483caa3c0b1d72f0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1e21f77e53ed91e8483caa3c0b1d72f0">&#9670;&#160;</a></span>IMX8MP_UART1_UTIM</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IMX8MP_UART1_UTIM</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">base</td><td>)</td>
-          <td>&#160;&#160;&#160;(base + 0xA0) /** <a class="el" href="rpi3_8h.html#a8d69bf04d07af4fbbab5a8bd291f65ff">UART1</a> Escape Timer Register **/</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a0d63e0b436c904c3550189429e65d56a" name="a0d63e0b436c904c3550189429e65d56a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0d63e0b436c904c3550189429e65d56a">&#9670;&#160;</a></span>IMX8MP_UART1_UTS</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IMX8MP_UART1_UTS</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">base</td><td>)</td>
-          <td>&#160;&#160;&#160;(base + 0xB4) /** <a class="el" href="rpi3_8h.html#a8d69bf04d07af4fbbab5a8bd291f65ff">UART1</a> Test Register **/</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a98c38ac4058e72dcb6da91d6aa8e15c8" name="a98c38ac4058e72dcb6da91d6aa8e15c8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a98c38ac4058e72dcb6da91d6aa8e15c8">&#9670;&#160;</a></span>IMX8MP_UART1_UTXD</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IMX8MP_UART1_UTXD</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">base</td><td>)</td>
-          <td>&#160;&#160;&#160;(base + 0x40) /** UART Transmitter Register (UTXD) -- 32 bit width */</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ae83fa8aaca1f41dad1f125813724b392" name="ae83fa8aaca1f41dad1f125813724b392"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae83fa8aaca1f41dad1f125813724b392">&#9670;&#160;</a></span>IMX8MP_UART2_BASE_ADDRESS</h2>
 
@@ -531,312 +481,6 @@ Macros</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define IMX8MP_UART2_BASE_ADDRESS&#160;&#160;&#160;0x30890000</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a2d5d2eff52aebeb78e916c0be61bc61b" name="a2d5d2eff52aebeb78e916c0be61bc61b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2d5d2eff52aebeb78e916c0be61bc61b">&#9670;&#160;</a></span>IMX8MP_UART2_ONEMS</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IMX8MP_UART2_ONEMS</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">base</td><td>)</td>
-          <td>&#160;&#160;&#160;(base + 0xB0) /** UART2 One Millisecond Register **/</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aad24109f5217ab149da8653ed1300deb" name="aad24109f5217ab149da8653ed1300deb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aad24109f5217ab149da8653ed1300deb">&#9670;&#160;</a></span>IMX8MP_UART2_UBIR</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IMX8MP_UART2_UBIR</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">base</td><td>)</td>
-          <td>&#160;&#160;&#160;(base + 0xA4) /** UART2 BRM Incremental Register **/</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a133a0cbde7befcb6473517259fc1324c" name="a133a0cbde7befcb6473517259fc1324c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a133a0cbde7befcb6473517259fc1324c">&#9670;&#160;</a></span>IMX8MP_UART2_UBMR</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IMX8MP_UART2_UBMR</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">base</td><td>)</td>
-          <td>&#160;&#160;&#160;(base + 0xA8) /** UART2 BRM Modulator Register **/</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ac31228a9275c3f63092c9ff064f9730a" name="ac31228a9275c3f63092c9ff064f9730a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac31228a9275c3f63092c9ff064f9730a">&#9670;&#160;</a></span>IMX8MP_UART2_UBRC</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IMX8MP_UART2_UBRC</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">base</td><td>)</td>
-          <td>&#160;&#160;&#160;(base + 0xAC) /** UART2 Baude Rate Count Register **/</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad5721f23b0f8ee6a1c8c9c7328aab2b2" name="ad5721f23b0f8ee6a1c8c9c7328aab2b2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad5721f23b0f8ee6a1c8c9c7328aab2b2">&#9670;&#160;</a></span>IMX8MP_UART2_UCR1</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IMX8MP_UART2_UCR1</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">base</td><td>)</td>
-          <td>&#160;&#160;&#160;(base + 0x80) /** UART2 Control Register **/</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a9b15f9677837de8ce7842dc6c7cf9e1a" name="a9b15f9677837de8ce7842dc6c7cf9e1a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9b15f9677837de8ce7842dc6c7cf9e1a">&#9670;&#160;</a></span>IMX8MP_UART2_UCR2</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IMX8MP_UART2_UCR2</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">base</td><td>)</td>
-          <td>&#160;&#160;&#160;(base + 0x84)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a58e149bd839891080a9125a475f91d60" name="a58e149bd839891080a9125a475f91d60"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a58e149bd839891080a9125a475f91d60">&#9670;&#160;</a></span>IMX8MP_UART2_UCR3</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IMX8MP_UART2_UCR3</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">base</td><td>)</td>
-          <td>&#160;&#160;&#160;(base + 0x88)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="adfea220224f58ef1711d9fa0475774e2" name="adfea220224f58ef1711d9fa0475774e2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adfea220224f58ef1711d9fa0475774e2">&#9670;&#160;</a></span>IMX8MP_UART2_UCR4</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IMX8MP_UART2_UCR4</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">base</td><td>)</td>
-          <td>&#160;&#160;&#160;(base + 0x8C)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="acb6c297c82f04798ea72294604c5d322" name="acb6c297c82f04798ea72294604c5d322"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acb6c297c82f04798ea72294604c5d322">&#9670;&#160;</a></span>IMX8MP_UART2_UESC</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IMX8MP_UART2_UESC</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">base</td><td>)</td>
-          <td>&#160;&#160;&#160;(base + 0x9C) /** UART2 Escape Character Register **/</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a75b3c5678fa0d875e4a0c19382b33184" name="a75b3c5678fa0d875e4a0c19382b33184"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a75b3c5678fa0d875e4a0c19382b33184">&#9670;&#160;</a></span>IMX8MP_UART2_UFCR</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IMX8MP_UART2_UFCR</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">base</td><td>)</td>
-          <td>&#160;&#160;&#160;(base + 0x90) /** UART2 FIFO Control Register **/</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a0a67c3baac425c3a49fadbabf55d8d8b" name="a0a67c3baac425c3a49fadbabf55d8d8b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0a67c3baac425c3a49fadbabf55d8d8b">&#9670;&#160;</a></span>IMX8MP_UART2_UMCR</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IMX8MP_UART2_UMCR</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">base</td><td>)</td>
-          <td>&#160;&#160;&#160;(base + 0xB8) /** UART2 RS-485 Mode Control Register **/</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a2ae4db9e294a09408473ac2b3b055163" name="a2ae4db9e294a09408473ac2b3b055163"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2ae4db9e294a09408473ac2b3b055163">&#9670;&#160;</a></span>IMX8MP_UART2_URXD</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IMX8MP_UART2_URXD</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">base</td><td>)</td>
-          <td>&#160;&#160;&#160;(base) /** UART2 Receiver Register (URDX) -- 32 bit width **/</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a3d22d92686f9823c652aac036599ae7c" name="a3d22d92686f9823c652aac036599ae7c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3d22d92686f9823c652aac036599ae7c">&#9670;&#160;</a></span>IMX8MP_UART2_USR1</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IMX8MP_UART2_USR1</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">base</td><td>)</td>
-          <td>&#160;&#160;&#160;(base + 0x94) /** UART2 <a class="el" href="acpixf_8h.html#adba1986479531d5d136a3277bcf7278e">Status</a> Regster 1 **/</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ac87d8fdfa18ed4fd03dc7e58415914ce" name="ac87d8fdfa18ed4fd03dc7e58415914ce"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac87d8fdfa18ed4fd03dc7e58415914ce">&#9670;&#160;</a></span>IMX8MP_UART2_USR2</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IMX8MP_UART2_USR2</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">base</td><td>)</td>
-          <td>&#160;&#160;&#160;(base + 0x98) /** UART2  <a class="el" href="acpixf_8h.html#adba1986479531d5d136a3277bcf7278e">Status</a> Register 2 **/</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a64e21d52293313a5c39b6d5c2129d733" name="a64e21d52293313a5c39b6d5c2129d733"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a64e21d52293313a5c39b6d5c2129d733">&#9670;&#160;</a></span>IMX8MP_UART2_UTIM</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IMX8MP_UART2_UTIM</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">base</td><td>)</td>
-          <td>&#160;&#160;&#160;(base + 0xA0) /** UART2 Escape Timer Register **/</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a1251393c49a923d9c43003af84a06e95" name="a1251393c49a923d9c43003af84a06e95"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1251393c49a923d9c43003af84a06e95">&#9670;&#160;</a></span>IMX8MP_UART2_UTS</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IMX8MP_UART2_UTS</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">base</td><td>)</td>
-          <td>&#160;&#160;&#160;(base + 0xB4) /** UART2 Test Register **/</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="acd017f5f6ad5e97aaf2b5303d033f932" name="acd017f5f6ad5e97aaf2b5303d033f932"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acd017f5f6ad5e97aaf2b5303d033f932">&#9670;&#160;</a></span>IMX8MP_UART2_UTXD</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IMX8MP_UART2_UTXD</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">base</td><td>)</td>
-          <td>&#160;&#160;&#160;(base + 0x40) /** UART2 Transmitter Register (UTXD) -- 32 bit width **/</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -857,104 +501,104 @@ Macros</h2></td></tr>
 
 </div>
 </div>
-<a id="a0ce2186df96e005d843e91dff7061c48" name="a0ce2186df96e005d843e91dff7061c48"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0ce2186df96e005d843e91dff7061c48">&#9670;&#160;</a></span>IMX8MP_UART3_ONEMS</h2>
+<a id="a672014a5ddb818526e3ce8c46918de45" name="a672014a5ddb818526e3ce8c46918de45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a672014a5ddb818526e3ce8c46918de45">&#9670;&#160;</a></span>IMX8MP_UART_ONEMS</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define IMX8MP_UART3_ONEMS</td>
+          <td class="memname">#define IMX8MP_UART_ONEMS</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">base</td><td>)</td>
-          <td>&#160;&#160;&#160;(base + 0xB0) /** UART3 One Millisecond Register **/</td>
+          <td>&#160;&#160;&#160;(base + 0xB0) /** UART1 One Millisecond Register **/</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a805ed398da34be9b3c3f347ecf7072b5" name="a805ed398da34be9b3c3f347ecf7072b5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a805ed398da34be9b3c3f347ecf7072b5">&#9670;&#160;</a></span>IMX8MP_UART3_UBIR</h2>
+<a id="a92d88cca685e56270000e85411c08e50" name="a92d88cca685e56270000e85411c08e50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92d88cca685e56270000e85411c08e50">&#9670;&#160;</a></span>IMX8MP_UART_UBIR</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define IMX8MP_UART3_UBIR</td>
+          <td class="memname">#define IMX8MP_UART_UBIR</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">base</td><td>)</td>
-          <td>&#160;&#160;&#160;(base + 0xA4) /** UART3 BRM Incremental Register **/</td>
+          <td>&#160;&#160;&#160;(base + 0xA4) /** UART1 BRM Incremental Register **/</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a0d95b6ec15a5a06f04d801b50878ab48" name="a0d95b6ec15a5a06f04d801b50878ab48"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0d95b6ec15a5a06f04d801b50878ab48">&#9670;&#160;</a></span>IMX8MP_UART3_UBMR</h2>
+<a id="ac659e946fafde6d92d0a8a880c83e7b6" name="ac659e946fafde6d92d0a8a880c83e7b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac659e946fafde6d92d0a8a880c83e7b6">&#9670;&#160;</a></span>IMX8MP_UART_UBMR</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define IMX8MP_UART3_UBMR</td>
+          <td class="memname">#define IMX8MP_UART_UBMR</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">base</td><td>)</td>
-          <td>&#160;&#160;&#160;(base + 0xA8) /** UART3 BRM Modulator Register **/</td>
+          <td>&#160;&#160;&#160;(base + 0xA8) /** UART1 BRM Modulator Register **/</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a0f71b3be5d7f5d20ea2f344d2b3bc81d" name="a0f71b3be5d7f5d20ea2f344d2b3bc81d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0f71b3be5d7f5d20ea2f344d2b3bc81d">&#9670;&#160;</a></span>IMX8MP_UART3_UBRC</h2>
+<a id="af70ba518a65e82bb5e444c32c95b30e7" name="af70ba518a65e82bb5e444c32c95b30e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af70ba518a65e82bb5e444c32c95b30e7">&#9670;&#160;</a></span>IMX8MP_UART_UBRC</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define IMX8MP_UART3_UBRC</td>
+          <td class="memname">#define IMX8MP_UART_UBRC</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">base</td><td>)</td>
-          <td>&#160;&#160;&#160;(base + 0xAC) /** UART3 Baude Rate Count Register **/</td>
+          <td>&#160;&#160;&#160;(base + 0xAC) /** UART1 Baude Rate Count Register **/</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a36dffbe26266c00195eedbfaa64980f3" name="a36dffbe26266c00195eedbfaa64980f3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a36dffbe26266c00195eedbfaa64980f3">&#9670;&#160;</a></span>IMX8MP_UART3_UCR1</h2>
+<a id="a16201cd5486b518b805a016eb9bf4eff" name="a16201cd5486b518b805a016eb9bf4eff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16201cd5486b518b805a016eb9bf4eff">&#9670;&#160;</a></span>IMX8MP_UART_UCR1</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define IMX8MP_UART3_UCR1</td>
+          <td class="memname">#define IMX8MP_UART_UCR1</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">base</td><td>)</td>
-          <td>&#160;&#160;&#160;(base + 0x80) /** UART3 Control Register **/</td>
+          <td>&#160;&#160;&#160;(base + 0x80) /** UART1 Control register */</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="ac721a0ad0225392d9438beca379a8b81" name="ac721a0ad0225392d9438beca379a8b81"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac721a0ad0225392d9438beca379a8b81">&#9670;&#160;</a></span>IMX8MP_UART3_UCR2</h2>
+<a id="a72c925e3c8c94922474cd7ad524f84ce" name="a72c925e3c8c94922474cd7ad524f84ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72c925e3c8c94922474cd7ad524f84ce">&#9670;&#160;</a></span>IMX8MP_UART_UCR2</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define IMX8MP_UART3_UCR2</td>
+          <td class="memname">#define IMX8MP_UART_UCR2</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">base</td><td>)</td>
@@ -965,14 +609,14 @@ Macros</h2></td></tr>
 
 </div>
 </div>
-<a id="ab19263f687333606f2b7d1430e9ce0de" name="ab19263f687333606f2b7d1430e9ce0de"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab19263f687333606f2b7d1430e9ce0de">&#9670;&#160;</a></span>IMX8MP_UART3_UCR3</h2>
+<a id="a076577b7bc64f1bf277f01125a09562c" name="a076577b7bc64f1bf277f01125a09562c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a076577b7bc64f1bf277f01125a09562c">&#9670;&#160;</a></span>IMX8MP_UART_UCR3</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define IMX8MP_UART3_UCR3</td>
+          <td class="memname">#define IMX8MP_UART_UCR3</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">base</td><td>)</td>
@@ -983,14 +627,14 @@ Macros</h2></td></tr>
 
 </div>
 </div>
-<a id="a433112c992f2bb4dcb9e0566fd233ebc" name="a433112c992f2bb4dcb9e0566fd233ebc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a433112c992f2bb4dcb9e0566fd233ebc">&#9670;&#160;</a></span>IMX8MP_UART3_UCR4</h2>
+<a id="a2351cb1f865dd1507861868bc79123b2" name="a2351cb1f865dd1507861868bc79123b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2351cb1f865dd1507861868bc79123b2">&#9670;&#160;</a></span>IMX8MP_UART_UCR4</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define IMX8MP_UART3_UCR4</td>
+          <td class="memname">#define IMX8MP_UART_UCR4</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">base</td><td>)</td>
@@ -1001,164 +645,1578 @@ Macros</h2></td></tr>
 
 </div>
 </div>
-<a id="a2fb8e29eeb36d522d1e09963c5e89399" name="a2fb8e29eeb36d522d1e09963c5e89399"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2fb8e29eeb36d522d1e09963c5e89399">&#9670;&#160;</a></span>IMX8MP_UART3_UESC</h2>
+<a id="aa3c9e3aca6453744dc0444699a723fde" name="aa3c9e3aca6453744dc0444699a723fde"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3c9e3aca6453744dc0444699a723fde">&#9670;&#160;</a></span>IMX8MP_UART_UESC</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define IMX8MP_UART3_UESC</td>
+          <td class="memname">#define IMX8MP_UART_UESC</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">base</td><td>)</td>
-          <td>&#160;&#160;&#160;(base + 0x9C) /** UART3 Escape Character Register **/</td>
+          <td>&#160;&#160;&#160;(base + 0x9C) /** UART1 Escape Character Register **/</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a2ee572a9f26080387381b2f46ba21022" name="a2ee572a9f26080387381b2f46ba21022"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2ee572a9f26080387381b2f46ba21022">&#9670;&#160;</a></span>IMX8MP_UART3_UFCR</h2>
+<a id="a0d9bfc26b2ef249310a8cb2916c5ec66" name="a0d9bfc26b2ef249310a8cb2916c5ec66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d9bfc26b2ef249310a8cb2916c5ec66">&#9670;&#160;</a></span>IMX8MP_UART_UFCR</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define IMX8MP_UART3_UFCR</td>
+          <td class="memname">#define IMX8MP_UART_UFCR</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">base</td><td>)</td>
-          <td>&#160;&#160;&#160;(base + 0x90) /** UART3 FIFO Control Register **/</td>
+          <td>&#160;&#160;&#160;(base + 0x90) /** UART1 FIFO Control Register **/</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="adcc39c9e0b018556e75f439823ef8f4b" name="adcc39c9e0b018556e75f439823ef8f4b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adcc39c9e0b018556e75f439823ef8f4b">&#9670;&#160;</a></span>IMX8MP_UART3_UMCR</h2>
+<a id="a0f3ad98369f754c6e3f5fa17ce5660cd" name="a0f3ad98369f754c6e3f5fa17ce5660cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f3ad98369f754c6e3f5fa17ce5660cd">&#9670;&#160;</a></span>IMX8MP_UART_UMCR</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define IMX8MP_UART3_UMCR</td>
+          <td class="memname">#define IMX8MP_UART_UMCR</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">base</td><td>)</td>
-          <td>&#160;&#160;&#160;(base + 0xB8) /** UART3 RS-485 Mode Control Register **/</td>
+          <td>&#160;&#160;&#160;(base + 0xB8) /** UART1 RS-485 Mode Control Register **/</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a7362ee4ccc7229e781115b827c00ef9f" name="a7362ee4ccc7229e781115b827c00ef9f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7362ee4ccc7229e781115b827c00ef9f">&#9670;&#160;</a></span>IMX8MP_UART3_URXD</h2>
+<a id="a059c451a1e501af054a382bc89ed9660" name="a059c451a1e501af054a382bc89ed9660"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a059c451a1e501af054a382bc89ed9660">&#9670;&#160;</a></span>IMX8MP_UART_URXD</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define IMX8MP_UART3_URXD</td>
+          <td class="memname">#define IMX8MP_UART_URXD</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">base</td><td>)</td>
-          <td>&#160;&#160;&#160;(base) /** UART3 Receiver Register (URDX) -- 32 bit width **/</td>
+          <td>&#160;&#160;&#160;base  /* UART Receiver Register (URDX) -- 32 bit width*/</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="ace79e8a3343bf50111e502279c3eee10" name="ace79e8a3343bf50111e502279c3eee10"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ace79e8a3343bf50111e502279c3eee10">&#9670;&#160;</a></span>IMX8MP_UART3_USR1</h2>
+<a id="a2c8db705e8d8b05eda19d62111ef6f28" name="a2c8db705e8d8b05eda19d62111ef6f28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c8db705e8d8b05eda19d62111ef6f28">&#9670;&#160;</a></span>IMX8MP_UART_USR1</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define IMX8MP_UART3_USR1</td>
+          <td class="memname">#define IMX8MP_UART_USR1</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">base</td><td>)</td>
-          <td>&#160;&#160;&#160;(base + 0x94) /** UART3 <a class="el" href="acpixf_8h.html#adba1986479531d5d136a3277bcf7278e">Status</a> Regster 1 **/</td>
+          <td>&#160;&#160;&#160;(base + 0x94) /** UART1 <a class="el" href="acpixf_8h.html#adba1986479531d5d136a3277bcf7278e">Status</a> Regster 1 **/</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="ae0cd0ebdaa42df3f4524a37cb9d910b4" name="ae0cd0ebdaa42df3f4524a37cb9d910b4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae0cd0ebdaa42df3f4524a37cb9d910b4">&#9670;&#160;</a></span>IMX8MP_UART3_USR2</h2>
+<a id="aec89d92cf1815a3265909281eb3b78d6" name="aec89d92cf1815a3265909281eb3b78d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec89d92cf1815a3265909281eb3b78d6">&#9670;&#160;</a></span>IMX8MP_UART_USR2</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define IMX8MP_UART3_USR2</td>
+          <td class="memname">#define IMX8MP_UART_USR2</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">base</td><td>)</td>
-          <td>&#160;&#160;&#160;(base + 0x98) /** UART3  <a class="el" href="acpixf_8h.html#adba1986479531d5d136a3277bcf7278e">Status</a> Register 2 **/</td>
+          <td>&#160;&#160;&#160;(base + 0x98) /** UART1  <a class="el" href="acpixf_8h.html#adba1986479531d5d136a3277bcf7278e">Status</a> Register 2 **/</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="aa5719f7c250ea5ae215342f4df5cee5a" name="aa5719f7c250ea5ae215342f4df5cee5a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa5719f7c250ea5ae215342f4df5cee5a">&#9670;&#160;</a></span>IMX8MP_UART3_UTIM</h2>
+<a id="abeb259132b1b97410b53cb4e6c3edd41" name="abeb259132b1b97410b53cb4e6c3edd41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abeb259132b1b97410b53cb4e6c3edd41">&#9670;&#160;</a></span>IMX8MP_UART_UTIM</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define IMX8MP_UART3_UTIM</td>
+          <td class="memname">#define IMX8MP_UART_UTIM</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">base</td><td>)</td>
-          <td>&#160;&#160;&#160;(base + 0xA0) /** UART3 Escape Timer Register **/</td>
+          <td>&#160;&#160;&#160;(base + 0xA0) /** UART1 Escape Timer Register **/</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="aa42325878a374512453caa37502116da" name="aa42325878a374512453caa37502116da"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa42325878a374512453caa37502116da">&#9670;&#160;</a></span>IMX8MP_UART3_UTS</h2>
+<a id="adc5aa71b534ea7721aace4776dec8ed0" name="adc5aa71b534ea7721aace4776dec8ed0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc5aa71b534ea7721aace4776dec8ed0">&#9670;&#160;</a></span>IMX8MP_UART_UTS</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define IMX8MP_UART3_UTS</td>
+          <td class="memname">#define IMX8MP_UART_UTS</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">base</td><td>)</td>
-          <td>&#160;&#160;&#160;(base + 0xB4) /** UART3 Test Register **/</td>
+          <td>&#160;&#160;&#160;(base + 0xB4) /** UART1 Test Register **/</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a85bc0161ccb8c6573fea6e0a0bbec31f" name="a85bc0161ccb8c6573fea6e0a0bbec31f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a85bc0161ccb8c6573fea6e0a0bbec31f">&#9670;&#160;</a></span>IMX8MP_UART3_UTXD</h2>
+<a id="a41d9d6cb44503604a9531cbb8d32c268" name="a41d9d6cb44503604a9531cbb8d32c268"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41d9d6cb44503604a9531cbb8d32c268">&#9670;&#160;</a></span>IMX8MP_UART_UTXD</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define IMX8MP_UART3_UTXD</td>
+          <td class="memname">#define IMX8MP_UART_UTXD</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">base</td><td>)</td>
-          <td>&#160;&#160;&#160;(base + 0x40) /** UART3 Transmitter Register (UTXD) -- 32 bit width **/</td>
+          <td>&#160;&#160;&#160;(base + 0x40) /** UART Transmitter Register (UTXD) -- 32 bit width */</td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a18fcc1050de8082c1fb42729cb4d39b3" name="a18fcc1050de8082c1fb42729cb4d39b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18fcc1050de8082c1fb42729cb4d39b3">&#9670;&#160;</a></span>IMX_PARITY_EVEN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IMX_PARITY_EVEN&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a911b5d11394f51c83c6d40c3fa5db196" name="a911b5d11394f51c83c6d40c3fa5db196"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a911b5d11394f51c83c6d40c3fa5db196">&#9670;&#160;</a></span>IMX_PARITY_NONE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IMX_PARITY_NONE&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad41b9f066962bdcce300a5a4a0647b4d" name="ad41b9f066962bdcce300a5a4a0647b4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad41b9f066962bdcce300a5a4a0647b4d">&#9670;&#160;</a></span>IMX_PARITY_ODD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IMX_PARITY_ODD&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a94431db835ce0e1558887792c0c87c53" name="a94431db835ce0e1558887792c0c87c53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94431db835ce0e1558887792c0c87c53">&#9670;&#160;</a></span>UCR1_ADBR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UCR1_ADBR&#160;&#160;&#160;(1u &lt;&lt; 14)  /* Automatic detection of baud rate   */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acb4273ba5a79934ed6f07570a178aeb0" name="acb4273ba5a79934ed6f07570a178aeb0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb4273ba5a79934ed6f07570a178aeb0">&#9670;&#160;</a></span>UCR1_ADEN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UCR1_ADEN&#160;&#160;&#160;(1u &lt;&lt; 15)  /* Auto baud rate detection IRQ en    */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8805a3b2a74de3136cc2343c97bb5f38" name="a8805a3b2a74de3136cc2343c97bb5f38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8805a3b2a74de3136cc2343c97bb5f38">&#9670;&#160;</a></span>UCR1_ATDMAEN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UCR1_ATDMAEN&#160;&#160;&#160;(1u &lt;&lt; 2)   /* Aging DMA timer enable             */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a10399cc1809f419d2f1a23d7c1a5442b" name="a10399cc1809f419d2f1a23d7c1a5442b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10399cc1809f419d2f1a23d7c1a5442b">&#9670;&#160;</a></span>UCR1_DOZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UCR1_DOZE&#160;&#160;&#160;(1u &lt;&lt; 1)   /* Doze mode enable                   */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a509190d121daeeac41a1b5679ebac73c" name="a509190d121daeeac41a1b5679ebac73c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a509190d121daeeac41a1b5679ebac73c">&#9670;&#160;</a></span>UCR1_ICD_MASK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UCR1_ICD_MASK&#160;&#160;&#160;(3u &lt;&lt; 10)  /* Idle condition detect mask         */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a56e92216147e34592be39de56aa45928" name="a56e92216147e34592be39de56aa45928"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56e92216147e34592be39de56aa45928">&#9670;&#160;</a></span>UCR1_IDEN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UCR1_IDEN&#160;&#160;&#160;(1u &lt;&lt; 12)  /* Idle condition detected IRQ enable */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9211cd3f3531b8a992f4a47011f3ccb3" name="a9211cd3f3531b8a992f4a47011f3ccb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9211cd3f3531b8a992f4a47011f3ccb3">&#9670;&#160;</a></span>UCR1_IREN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UCR1_IREN&#160;&#160;&#160;(1u &lt;&lt; 7)   /* IrDA enable                        */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a050e123caf399caad48166f0acc6fc2a" name="a050e123caf399caad48166f0acc6fc2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a050e123caf399caad48166f0acc6fc2a">&#9670;&#160;</a></span>UCR1_RRDYEN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UCR1_RRDYEN&#160;&#160;&#160;(1u &lt;&lt; 9)   /* Receiver ready interrupt enable    */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7bd4b6ec4da7f27fb92f9a46653e6d81" name="a7bd4b6ec4da7f27fb92f9a46653e6d81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7bd4b6ec4da7f27fb92f9a46653e6d81">&#9670;&#160;</a></span>UCR1_RTSDEN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UCR1_RTSDEN&#160;&#160;&#160;(1u &lt;&lt; 5)   /* RTS delta interrupt enable         */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9c5a5cb689f0182d3acd3778ed1cd58e" name="a9c5a5cb689f0182d3acd3778ed1cd58e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c5a5cb689f0182d3acd3778ed1cd58e">&#9670;&#160;</a></span>UCR1_RXDMAEN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UCR1_RXDMAEN&#160;&#160;&#160;(1u &lt;&lt; 8)   /* Receiver DMA enable                */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af243cd64b5577eaba81bf70455f94838" name="af243cd64b5577eaba81bf70455f94838"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af243cd64b5577eaba81bf70455f94838">&#9670;&#160;</a></span>UCR1_SNDBRK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UCR1_SNDBRK&#160;&#160;&#160;(1u &lt;&lt; 4)   /* Send BREAK                         */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8723b50c45682535d8b9ec4a3ed07002" name="a8723b50c45682535d8b9ec4a3ed07002"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8723b50c45682535d8b9ec4a3ed07002">&#9670;&#160;</a></span>UCR1_TRDYEN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UCR1_TRDYEN&#160;&#160;&#160;(1u &lt;&lt; 13)  /* Transmitter ready interrupt enable */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac38ffbdd09464e2da6795592f5729de8" name="ac38ffbdd09464e2da6795592f5729de8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac38ffbdd09464e2da6795592f5729de8">&#9670;&#160;</a></span>UCR1_TXDMAEN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UCR1_TXDMAEN&#160;&#160;&#160;(1u &lt;&lt; 3)   /* Transmitter DMA enable             */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2275a399f697ef04dd507be999cfcf51" name="a2275a399f697ef04dd507be999cfcf51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2275a399f697ef04dd507be999cfcf51">&#9670;&#160;</a></span>UCR1_TXMPTYEN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UCR1_TXMPTYEN&#160;&#160;&#160;(1u &lt;&lt; 6)   /* Tx FIFO empty interrupt enable     */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a825f40636c84f23feecbc0daedebeae7" name="a825f40636c84f23feecbc0daedebeae7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a825f40636c84f23feecbc0daedebeae7">&#9670;&#160;</a></span>UCR1_UARTEN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UCR1_UARTEN&#160;&#160;&#160;(1u &lt;&lt; 0)   /* UART enable                        */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab9018f65fec22cd13cbe9c67fc3a75c0" name="ab9018f65fec22cd13cbe9c67fc3a75c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9018f65fec22cd13cbe9c67fc3a75c0">&#9670;&#160;</a></span>UCR2_ATEN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UCR2_ATEN&#160;&#160;&#160;(1u &lt;&lt; 3)   /* Aging timer enable                 */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7e3bf13d138ed5d3081785e2d902aec3" name="a7e3bf13d138ed5d3081785e2d902aec3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e3bf13d138ed5d3081785e2d902aec3">&#9670;&#160;</a></span>UCR2_CTS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UCR2_CTS&#160;&#160;&#160;(1u &lt;&lt; 12)  /* CTS status                         */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a39867163fe08c80127f378bae7213018" name="a39867163fe08c80127f378bae7213018"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39867163fe08c80127f378bae7213018">&#9670;&#160;</a></span>UCR2_CTSC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UCR2_CTSC&#160;&#160;&#160;(1u &lt;&lt; 13)  /* CTS pin controlled by receiver     */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6758b9c5458d1ffbb9fd6e50d5b57e7b" name="a6758b9c5458d1ffbb9fd6e50d5b57e7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6758b9c5458d1ffbb9fd6e50d5b57e7b">&#9670;&#160;</a></span>UCR2_ESCEN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UCR2_ESCEN&#160;&#160;&#160;(1u &lt;&lt; 11)  /* Escape sequence interrupt enable   */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8bd1306fe962476ea9419bc572ab1e14" name="a8bd1306fe962476ea9419bc572ab1e14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8bd1306fe962476ea9419bc572ab1e14">&#9670;&#160;</a></span>UCR2_ESCI</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UCR2_ESCI&#160;&#160;&#160;(1u &lt;&lt; 15)  /* Escape sequence interrupt enable   */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0835feed20853e3e3a498cf00da9d544" name="a0835feed20853e3e3a498cf00da9d544"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0835feed20853e3e3a498cf00da9d544">&#9670;&#160;</a></span>UCR2_IRTS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UCR2_IRTS&#160;&#160;&#160;(1u &lt;&lt; 14)  /* Ignore RTS pin                     */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a55fbd0e53d8d6adb32adff49160f1c7c" name="a55fbd0e53d8d6adb32adff49160f1c7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55fbd0e53d8d6adb32adff49160f1c7c">&#9670;&#160;</a></span>UCR2_PREN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UCR2_PREN&#160;&#160;&#160;(1u &lt;&lt; 8)   /* <a class="el" href="Acpi50_8h.html#a3f2de0f0c49ed06338d4aa9e41f94f49">Parity</a> enable                      */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a94d30fb5c24d34c0f03ac0c486359b67" name="a94d30fb5c24d34c0f03ac0c486359b67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94d30fb5c24d34c0f03ac0c486359b67">&#9670;&#160;</a></span>UCR2_PROE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UCR2_PROE&#160;&#160;&#160;(1u &lt;&lt; 7)   /* <a class="el" href="Acpi50_8h.html#a3f2de0f0c49ed06338d4aa9e41f94f49">Parity</a> odd enable                  */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a63d077988c270df423b424b5ed253e34" name="a63d077988c270df423b424b5ed253e34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63d077988c270df423b424b5ed253e34">&#9670;&#160;</a></span>UCR2_RTEC_MASK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UCR2_RTEC_MASK&#160;&#160;&#160;(3u &lt;&lt; 9)   /* Request-to-<a class="el" href="Libs_2XEClib_2includes_2sys_2socket_8h.html#add84581d2a314aedfa11f7103a91fa93">send</a> edge control mask  */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae4b85ca488e9f1f875ee36024094c937" name="ae4b85ca488e9f1f875ee36024094c937"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4b85ca488e9f1f875ee36024094c937">&#9670;&#160;</a></span>UCR2_RTSEN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UCR2_RTSEN&#160;&#160;&#160;(1u &lt;&lt; 4)   /* RTS interrupt enable               */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adbe26f409b994767aea3bb21cfe70603" name="adbe26f409b994767aea3bb21cfe70603"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbe26f409b994767aea3bb21cfe70603">&#9670;&#160;</a></span>UCR2_RXEN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UCR2_RXEN&#160;&#160;&#160;(1u &lt;&lt; 1)   /* Receiver enable                    */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acde3717a137aa1df0f97ed3685b65865" name="acde3717a137aa1df0f97ed3685b65865"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acde3717a137aa1df0f97ed3685b65865">&#9670;&#160;</a></span>UCR2_SRST</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UCR2_SRST&#160;&#160;&#160;(1u &lt;&lt; 0)   /* SW reset (active low, <a class="el" href="acwin_8h.html#ac40a1eaac5f8dbc1eef9b944d494770c">write</a> 1 to clear) */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6481baa98495ed154b352528448f0f05" name="a6481baa98495ed154b352528448f0f05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6481baa98495ed154b352528448f0f05">&#9670;&#160;</a></span>UCR2_STPB</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UCR2_STPB&#160;&#160;&#160;(1u &lt;&lt; 6)   /* Stop bits: 0=1 stop, 1=2 stop      */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a869fadfa164a06cb3fec356af8e0c093" name="a869fadfa164a06cb3fec356af8e0c093"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a869fadfa164a06cb3fec356af8e0c093">&#9670;&#160;</a></span>UCR2_TXEN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UCR2_TXEN&#160;&#160;&#160;(1u &lt;&lt; 2)   /* Transmitter enable                 */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3b8f25c33a64aaa5004c188b9148a0b0" name="a3b8f25c33a64aaa5004c188b9148a0b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b8f25c33a64aaa5004c188b9148a0b0">&#9670;&#160;</a></span>UCR2_WS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UCR2_WS&#160;&#160;&#160;(1u &lt;&lt; 5)   /* Word size: 0=7-bit, 1=8-bit        */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9cffc242eae9549679050a8ce7ac1113" name="a9cffc242eae9549679050a8ce7ac1113"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9cffc242eae9549679050a8ce7ac1113">&#9670;&#160;</a></span>UCR3_RXDMUXSEL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UCR3_RXDMUXSEL&#160;&#160;&#160;(1u &lt;&lt; 2)   /* Mux RXD: must be set on i.MX8M    */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8916444f552229c1817b3be242e88176" name="a8916444f552229c1817b3be242e88176"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8916444f552229c1817b3be242e88176">&#9670;&#160;</a></span>UCR4_BKEN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UCR4_BKEN&#160;&#160;&#160;(1u &lt;&lt; 2)   /* BREAK condition interrupt enable   */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7b664ae6070a47fc949ce823ec7f3fcf" name="a7b664ae6070a47fc949ce823ec7f3fcf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b664ae6070a47fc949ce823ec7f3fcf">&#9670;&#160;</a></span>UCR4_DREN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UCR4_DREN&#160;&#160;&#160;(1u &lt;&lt; 0)   /* <a class="el" href="Supplicant_8h.html#ad64984a28acf10f8bb9dd4ef2843635ca5a54306f6db7e247a7746d8d5ff701e9">Receive</a> data ready interrupt enable */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a046b08845a649278cb30d3cd95c1693a" name="a046b08845a649278cb30d3cd95c1693a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a046b08845a649278cb30d3cd95c1693a">&#9670;&#160;</a></span>UCR4_INVR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UCR4_INVR&#160;&#160;&#160;(1u &lt;&lt; 9)   /* Inverted infrared reception        */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abb765047ad99572a301602719c5bc7b8" name="abb765047ad99572a301602719c5bc7b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb765047ad99572a301602719c5bc7b8">&#9670;&#160;</a></span>UCR4_OREN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UCR4_OREN&#160;&#160;&#160;(1u &lt;&lt; 1)   /* Receiver overrun interrupt enable  */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3cfe4dc31464e21b668ee55dbe2253ef" name="a3cfe4dc31464e21b668ee55dbe2253ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3cfe4dc31464e21b668ee55dbe2253ef">&#9670;&#160;</a></span>UCR4_TCEN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UCR4_TCEN&#160;&#160;&#160;(1u &lt;&lt; 3)   /* <a class="el" href="Supplicant_8h.html#ad64984a28acf10f8bb9dd4ef2843635cabfe0b4da68061025c67c7a77b8b6abd2">Transmit</a> complete interrupt enable */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a30b2f7f852cbe6ca35477ae984937cb9" name="a30b2f7f852cbe6ca35477ae984937cb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30b2f7f852cbe6ca35477ae984937cb9">&#9670;&#160;</a></span>UFCR_DCEDTE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UFCR_DCEDTE&#160;&#160;&#160;(1u &lt;&lt; 6)   /* DCE/DTE mode select                */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acd83afd4d539a661de741e3b9651f944" name="acd83afd4d539a661de741e3b9651f944"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd83afd4d539a661de741e3b9651f944">&#9670;&#160;</a></span>UFCR_RFDIV</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UFCR_RFDIV</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">n</td><td>)</td>
+          <td>&#160;&#160;&#160;(((n) &amp; 7u) &lt;&lt; <a class="el" href="imx8mp__uart_8h.html#ac6fb3cfd5385f18e1dbdc1083f4c6eee">UFCR_RFDIV_SHIFT</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa1dbafe279a587660a349915ba95615a" name="aa1dbafe279a587660a349915ba95615a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1dbafe279a587660a349915ba95615a">&#9670;&#160;</a></span>UFCR_RFDIV_MASK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UFCR_RFDIV_MASK&#160;&#160;&#160;(7u &lt;&lt; 7)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac6fb3cfd5385f18e1dbdc1083f4c6eee" name="ac6fb3cfd5385f18e1dbdc1083f4c6eee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6fb3cfd5385f18e1dbdc1083f4c6eee">&#9670;&#160;</a></span>UFCR_RFDIV_SHIFT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UFCR_RFDIV_SHIFT&#160;&#160;&#160;7          /* Reference frequency divider [9:7]  */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a446495aecf5d0bf59924f49cf0b7b327" name="a446495aecf5d0bf59924f49cf0b7b327"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a446495aecf5d0bf59924f49cf0b7b327">&#9670;&#160;</a></span>UFCR_RXTL_MASK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UFCR_RXTL_MASK&#160;&#160;&#160;(0x3Fu)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae45ea7647c2e20b97e6d6deff5434036" name="ae45ea7647c2e20b97e6d6deff5434036"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae45ea7647c2e20b97e6d6deff5434036">&#9670;&#160;</a></span>UFCR_RXTL_SHIFT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UFCR_RXTL_SHIFT&#160;&#160;&#160;0           /* RX trigger level [5:0]             */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac08608109fa2eab8c561180d7a9a59fa" name="ac08608109fa2eab8c561180d7a9a59fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac08608109fa2eab8c561180d7a9a59fa">&#9670;&#160;</a></span>UFCR_TXTL_MASK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UFCR_TXTL_MASK&#160;&#160;&#160;(0x3Fu &lt;&lt; 10)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaa43c194e00304cf83a0ae0b9d201bd7" name="aaa43c194e00304cf83a0ae0b9d201bd7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa43c194e00304cf83a0ae0b9d201bd7">&#9670;&#160;</a></span>UFCR_TXTL_SHIFT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UFCR_TXTL_SHIFT&#160;&#160;&#160;10          /* TX trigger level [15:10]           */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2a61385bb8e2e6f613f6f7aa99ea2dc4" name="a2a61385bb8e2e6f613f6f7aa99ea2dc4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a61385bb8e2e6f613f6f7aa99ea2dc4">&#9670;&#160;</a></span>URXD_BRK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define URXD_BRK&#160;&#160;&#160;(1u &lt;&lt; 11)  /* BREAK detected                     */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac5480636ea1e122e1b8b2d981abdb9f5" name="ac5480636ea1e122e1b8b2d981abdb9f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5480636ea1e122e1b8b2d981abdb9f5">&#9670;&#160;</a></span>URXD_CHARRDY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define URXD_CHARRDY&#160;&#160;&#160;(1u &lt;&lt; 15)  /* Character ready in FIFO            */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a957a0e758176edc9b02f83b3a1555609" name="a957a0e758176edc9b02f83b3a1555609"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a957a0e758176edc9b02f83b3a1555609">&#9670;&#160;</a></span>URXD_ERR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define URXD_ERR&#160;&#160;&#160;(1u &lt;&lt; 14)  /* Any error bit set                  */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aca563fdaf2b963137646b362db22cc49" name="aca563fdaf2b963137646b362db22cc49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca563fdaf2b963137646b362db22cc49">&#9670;&#160;</a></span>URXD_FRMERR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define URXD_FRMERR&#160;&#160;&#160;(1u &lt;&lt; 12)  /* Frame error                        */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab340f1216bb2d69a747239c90af7fbc3" name="ab340f1216bb2d69a747239c90af7fbc3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab340f1216bb2d69a747239c90af7fbc3">&#9670;&#160;</a></span>URXD_OVRRUN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define URXD_OVRRUN&#160;&#160;&#160;(1u &lt;&lt; 13)  /* Overrun error                      */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7a2184ee57243dc5c9a83636fda92ac2" name="a7a2184ee57243dc5c9a83636fda92ac2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a2184ee57243dc5c9a83636fda92ac2">&#9670;&#160;</a></span>URXD_PRERR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define URXD_PRERR&#160;&#160;&#160;(1u &lt;&lt; 10)  /* <a class="el" href="Acpi50_8h.html#a3f2de0f0c49ed06338d4aa9e41f94f49">Parity</a> error                       */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a81562443bb35c8061b2d103b9012e0e5" name="a81562443bb35c8061b2d103b9012e0e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81562443bb35c8061b2d103b9012e0e5">&#9670;&#160;</a></span>URXD_RX_DATA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define URXD_RX_DATA&#160;&#160;&#160;0x00FFu     /* Received character [7:0]           */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abca7b48965c97d8d845aca17f47245eb" name="abca7b48965c97d8d845aca17f47245eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abca7b48965c97d8d845aca17f47245eb">&#9670;&#160;</a></span>USR1_AGTIM</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define USR1_AGTIM&#160;&#160;&#160;(1u &lt;&lt; 8)   /* Aging timer interrupt flag         */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad489001149a1f993436d431d48462d4f" name="ad489001149a1f993436d431d48462d4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad489001149a1f993436d431d48462d4f">&#9670;&#160;</a></span>USR1_AIRINT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define USR1_AIRINT&#160;&#160;&#160;(1u &lt;&lt; 5)   /* Async IR interrupt flag            */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acaa21d70277a92b93c8f5309774d49cd" name="acaa21d70277a92b93c8f5309774d49cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acaa21d70277a92b93c8f5309774d49cd">&#9670;&#160;</a></span>USR1_AWAKE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define USR1_AWAKE&#160;&#160;&#160;(1u &lt;&lt; 4)   /* Awake interrupt flag               */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a56d95e91a23b82dfd5f4cafb4c6db08f" name="a56d95e91a23b82dfd5f4cafb4c6db08f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56d95e91a23b82dfd5f4cafb4c6db08f">&#9670;&#160;</a></span>USR1_DTRD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define USR1_DTRD&#160;&#160;&#160;(1u &lt;&lt; 7)   /* DTR delta                          */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a67e23e497a65aa4717a9caee16ed0328" name="a67e23e497a65aa4717a9caee16ed0328"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67e23e497a65aa4717a9caee16ed0328">&#9670;&#160;</a></span>USR1_ESCF</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define USR1_ESCF&#160;&#160;&#160;(1u &lt;&lt; 11)  /* Escape sequence flag               */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a71560c877a64a62b88e953486b628649" name="a71560c877a64a62b88e953486b628649"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71560c877a64a62b88e953486b628649">&#9670;&#160;</a></span>USR1_FRAMERR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define USR1_FRAMERR&#160;&#160;&#160;(1u &lt;&lt; 10)  /* Frame error in RX FIFO             */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9dad26cdf17a9445f974d5bb95f51dbb" name="a9dad26cdf17a9445f974d5bb95f51dbb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9dad26cdf17a9445f974d5bb95f51dbb">&#9670;&#160;</a></span>USR1_PARITYERR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define USR1_PARITYERR&#160;&#160;&#160;(1u &lt;&lt; 15)  /* <a class="el" href="Acpi50_8h.html#a3f2de0f0c49ed06338d4aa9e41f94f49">Parity</a> error                       */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afab52de6fcd91447647f55b6ce5a3f86" name="afab52de6fcd91447647f55b6ce5a3f86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afab52de6fcd91447647f55b6ce5a3f86">&#9670;&#160;</a></span>USR1_RRDY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define USR1_RRDY&#160;&#160;&#160;(1u &lt;&lt; 9)   /* Receiver ready                     */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abb5411308a3e7aec2bf21880e0048445" name="abb5411308a3e7aec2bf21880e0048445"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb5411308a3e7aec2bf21880e0048445">&#9670;&#160;</a></span>USR1_RTSD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define USR1_RTSD&#160;&#160;&#160;(1u &lt;&lt; 12)  /* RTS delta                          */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac6ba75623a55dbd7517871629e6e87fa" name="ac6ba75623a55dbd7517871629e6e87fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6ba75623a55dbd7517871629e6e87fa">&#9670;&#160;</a></span>USR1_RTSS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define USR1_RTSS&#160;&#160;&#160;(1u &lt;&lt; 14)  /* RTS pin status                     */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afa8e4305b7bf1da6cd87734508671176" name="afa8e4305b7bf1da6cd87734508671176"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa8e4305b7bf1da6cd87734508671176">&#9670;&#160;</a></span>USR1_RXDS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define USR1_RXDS&#160;&#160;&#160;(1u &lt;&lt; 6)   /* Receiver idle condition            */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9e985df82890e6474dc21bcc6bf94629" name="a9e985df82890e6474dc21bcc6bf94629"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e985df82890e6474dc21bcc6bf94629">&#9670;&#160;</a></span>USR1_TRDY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define USR1_TRDY&#160;&#160;&#160;(1u &lt;&lt; 13)  /* Transmitter ready                  */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0fbcfe3a40d3106d017c747e137634b6" name="a0fbcfe3a40d3106d017c747e137634b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0fbcfe3a40d3106d017c747e137634b6">&#9670;&#160;</a></span>USR2_ACST</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define USR2_ACST&#160;&#160;&#160;(1u &lt;&lt; 11)  /* Auto-baud counter stopped          */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab9d9130a405a76e98919d267e588ee34" name="ab9d9130a405a76e98919d267e588ee34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9d9130a405a76e98919d267e588ee34">&#9670;&#160;</a></span>USR2_ADET</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define USR2_ADET&#160;&#160;&#160;(1u &lt;&lt; 15)  /* Automatic baud-rate detect complete */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab0ac978640f0d50bb601a4ff514d7fc4" name="ab0ac978640f0d50bb601a4ff514d7fc4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0ac978640f0d50bb601a4ff514d7fc4">&#9670;&#160;</a></span>USR2_BRCD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define USR2_BRCD&#160;&#160;&#160;(1u &lt;&lt; 2)   /* BREAK condition detected           */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaf01e69f3fde26a86b1c4347f31927ef" name="aaf01e69f3fde26a86b1c4347f31927ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf01e69f3fde26a86b1c4347f31927ef">&#9670;&#160;</a></span>USR2_DCDDELT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define USR2_DCDDELT&#160;&#160;&#160;(1u &lt;&lt; 6)   /* Data carrier detect delta         */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af35c39ac62b34f1a31464d3199c0cf17" name="af35c39ac62b34f1a31464d3199c0cf17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af35c39ac62b34f1a31464d3199c0cf17">&#9670;&#160;</a></span>USR2_DCDIN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define USR2_DCDIN&#160;&#160;&#160;(1u &lt;&lt; 5)   /* Data carrier detect               */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aacbb7a53d8bef80915e8e647efb5d74e" name="aacbb7a53d8bef80915e8e647efb5d74e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacbb7a53d8bef80915e8e647efb5d74e">&#9670;&#160;</a></span>USR2_DTRF</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define USR2_DTRF&#160;&#160;&#160;(1u &lt;&lt; 13)  /* DTR edge triggered interrupt flag  */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7fc28b74c3ad35638e29c987485b53be" name="a7fc28b74c3ad35638e29c987485b53be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fc28b74c3ad35638e29c987485b53be">&#9670;&#160;</a></span>USR2_IDLE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define USR2_IDLE&#160;&#160;&#160;(1u &lt;&lt; 12)  /* Idle condition                     */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaa59868569c6e66140f71d9a3296dd0c" name="aaa59868569c6e66140f71d9a3296dd0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa59868569c6e66140f71d9a3296dd0c">&#9670;&#160;</a></span>USR2_IRINT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define USR2_IRINT&#160;&#160;&#160;(1u &lt;&lt; 8)   /* Serial infrared interrupt flag     */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2c6aeed9552c928819141a881f548715" name="a2c6aeed9552c928819141a881f548715"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c6aeed9552c928819141a881f548715">&#9670;&#160;</a></span>USR2_ORE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define USR2_ORE&#160;&#160;&#160;(1u &lt;&lt; 1)   /* Overrun error                      */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a283f0c0cb9b6c00ac757ed574666cc8f" name="a283f0c0cb9b6c00ac757ed574666cc8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a283f0c0cb9b6c00ac757ed574666cc8f">&#9670;&#160;</a></span>USR2_RDR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define USR2_RDR&#160;&#160;&#160;(1u &lt;&lt; 0)   /* <a class="el" href="Supplicant_8h.html#ad64984a28acf10f8bb9dd4ef2843635ca5a54306f6db7e247a7746d8d5ff701e9">Receive</a> data ready                 */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a14cc8efe8ab31b0f8634c1318677dafc" name="a14cc8efe8ab31b0f8634c1318677dafc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14cc8efe8ab31b0f8634c1318677dafc">&#9670;&#160;</a></span>USR2_RIDELT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define USR2_RIDELT&#160;&#160;&#160;(1u &lt;&lt; 10)  /* Ring indicator delta               */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a242fe4ec166e6f1073321e71c709406b" name="a242fe4ec166e6f1073321e71c709406b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a242fe4ec166e6f1073321e71c709406b">&#9670;&#160;</a></span>USR2_RIIN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define USR2_RIIN&#160;&#160;&#160;(1u &lt;&lt; 9)   /* Ring indicator <a class="el" href="virtiokbd_8c.html#ac7ea4a68c5710086113a183d16feaf8d">input</a>               */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a829dd08b951165a6f6f802d6ef0f6c61" name="a829dd08b951165a6f6f802d6ef0f6c61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a829dd08b951165a6f6f802d6ef0f6c61">&#9670;&#160;</a></span>USR2_RTSF</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define USR2_RTSF&#160;&#160;&#160;(1u &lt;&lt; 4)   /* RTS edge triggered interrupt flag  */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1e60511deae8f5c1b07207ac8965efc5" name="a1e60511deae8f5c1b07207ac8965efc5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e60511deae8f5c1b07207ac8965efc5">&#9670;&#160;</a></span>USR2_TXDC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define USR2_TXDC&#160;&#160;&#160;(1u &lt;&lt; 3)   /* Transmitter complete (FIFO + SR empty) */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7c11f7c115a0db0830b28da348d40539" name="a7c11f7c115a0db0830b28da348d40539"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c11f7c115a0db0830b28da348d40539">&#9670;&#160;</a></span>USR2_TXFE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define USR2_TXFE&#160;&#160;&#160;(1u &lt;&lt; 14)  /* <a class="el" href="Supplicant_8h.html#ad64984a28acf10f8bb9dd4ef2843635cabfe0b4da68061025c67c7a77b8b6abd2">Transmit</a> FIFO empty                */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a76f200bf5ba8ca99da6b2102a3a84b6e" name="a76f200bf5ba8ca99da6b2102a3a84b6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76f200bf5ba8ca99da6b2102a3a84b6e">&#9670;&#160;</a></span>USR2_WAKE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define USR2_WAKE&#160;&#160;&#160;(1u &lt;&lt; 7)   /* Wake                               */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad1958d019cbd7491a9405ba283a3d2ca" name="ad1958d019cbd7491a9405ba283a3d2ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1958d019cbd7491a9405ba283a3d2ca">&#9670;&#160;</a></span>UTS_DBGEN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UTS_DBGEN&#160;&#160;&#160;(1u &lt;&lt; 11)  /* Debug enable                       */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afe4d8a42a4d5111f35b8b8d0713ec3b0" name="afe4d8a42a4d5111f35b8b8d0713ec3b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe4d8a42a4d5111f35b8b8d0713ec3b0">&#9670;&#160;</a></span>UTS_FRCPERR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UTS_FRCPERR&#160;&#160;&#160;(1u &lt;&lt; 13)  /* Force parity error                 */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adbfa244be0ebdfce0cc191ac7e7de17c" name="adbfa244be0ebdfce0cc191ac7e7de17c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbfa244be0ebdfce0cc191ac7e7de17c">&#9670;&#160;</a></span>UTS_LOOP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UTS_LOOP&#160;&#160;&#160;(1u &lt;&lt; 12)  /* Loop TX-&gt;RX (loopback test)        */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af69c2882e4f886bbdddd266483521315" name="af69c2882e4f886bbdddd266483521315"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af69c2882e4f886bbdddd266483521315">&#9670;&#160;</a></span>UTS_LOOPIR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UTS_LOOPIR&#160;&#160;&#160;(1u &lt;&lt; 10)  /* Loop IR test                       */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8374a0da78aeedf59c75dfdded4e5c4c" name="a8374a0da78aeedf59c75dfdded4e5c4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8374a0da78aeedf59c75dfdded4e5c4c">&#9670;&#160;</a></span>UTS_RXDBG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UTS_RXDBG&#160;&#160;&#160;(1u &lt;&lt; 9)   /* RX FIFO <a class="el" href="sched_8c.html#a398527b3e9e358c345c5047b16871957">debug</a> mode                 */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7fdfdc9eb1631410864340c9a2705877" name="a7fdfdc9eb1631410864340c9a2705877"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fdfdc9eb1631410864340c9a2705877">&#9670;&#160;</a></span>UTS_RXEMPTY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UTS_RXEMPTY&#160;&#160;&#160;(1u &lt;&lt; 5)   /* RX FIFO empty                      */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a992c4679d04f7ec346b15c011d097d57" name="a992c4679d04f7ec346b15c011d097d57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a992c4679d04f7ec346b15c011d097d57">&#9670;&#160;</a></span>UTS_RXFULL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UTS_RXFULL&#160;&#160;&#160;(1u &lt;&lt; 3)   /* RX FIFO full                       */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac3f2682db0a1fcc0f2be33143dfb0f61" name="ac3f2682db0a1fcc0f2be33143dfb0f61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3f2682db0a1fcc0f2be33143dfb0f61">&#9670;&#160;</a></span>UTS_SOFTRST</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UTS_SOFTRST&#160;&#160;&#160;(1u &lt;&lt; 0)   /* Software reset                     */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac233e457e01a726f177b86113ba9482c" name="ac233e457e01a726f177b86113ba9482c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac233e457e01a726f177b86113ba9482c">&#9670;&#160;</a></span>UTS_TXEMPTY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UTS_TXEMPTY&#160;&#160;&#160;(1u &lt;&lt; 6)   /* TX FIFO empty                      */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3b8fef7ddb806061f3d0278d6c51f656" name="a3b8fef7ddb806061f3d0278d6c51f656"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b8fef7ddb806061f3d0278d6c51f656">&#9670;&#160;</a></span>UTS_TXFULL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UTS_TXFULL&#160;&#160;&#160;(1u &lt;&lt; 4)   /* TX FIFO full                       */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="ade442f5afc7ecfdccb6a807fee5231f7" name="ade442f5afc7ecfdccb6a807fee5231f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade442f5afc7ecfdccb6a807fee5231f7">&#9670;&#160;</a></span>au_imx8mp_uart_getc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int au_imx8mp_uart_getc </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>imx8mp_uart_getc &ndash; receive a single character from the UART </p>
+
+</div>
+</div>
+<a id="a55ee841f1705913f27daf43e548dd83b" name="a55ee841f1705913f27daf43e548dd83b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55ee841f1705913f27daf43e548dd83b">&#9670;&#160;</a></span>au_imx8mp_uart_putc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void au_imx8mp_uart_putc </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>imx8mp_uart_putc &ndash; put a single character on the UART </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">c</td><td>&ndash; character to put </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae00c9d9055880e0b7c5b293b0e07340d" name="ae00c9d9055880e0b7c5b293b0e07340d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae00c9d9055880e0b7c5b293b0e07340d">&#9670;&#160;</a></span>au_imx8mp_uart_puts()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void au_imx8mp_uart_puts </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>imx8mp_uart_puts &ndash; put a collection of character on the UART </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>&ndash; String to send </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="afa3fe0bd218fd541c2a358819d1ed63a" name="afa3fe0bd218fd541c2a358819d1ed63a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa3fe0bd218fd541c2a358819d1ed63a">&#9670;&#160;</a></span>au_imx8np_uart_initialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void au_imx8np_uart_initialize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>&#160;</td>
+          <td class="paramname"><em>base</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>

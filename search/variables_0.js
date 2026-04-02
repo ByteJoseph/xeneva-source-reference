@@ -80,7 +80,7 @@ var searchData=
   ['_5fkstack_5findex_5f_77',['_kstack_index_',['../struct__au__proc__.html#a6df9c8737371a58e651116f52558a6d6',1,'_au_proc_']]],
   ['_5fldr_5fscratchbuffer_78',['_ldr_scratchBuffer',['../loader_8c.html#aa8cbae36b82b6fb29f5dd3eeb4ae179b',1,'loader.c']]],
   ['_5fmain_5fstack_5f_79',['_main_stack_',['../struct__au__proc__.html#ad0eb84181e9f91af183652d28b319543',1,'_au_proc_']]],
-  ['_5fmmiobase_80',['_mmiobase',['../vmmngr_8cpp.html#a9ff05b7a827c8008c9ef4c9137bca477',1,'_MmioBase:&#160;vmmngr.cpp'],['../KernelAA64_2Mm_2vmmngr_8c.html#a5e4fb6199fc5f91ffbf2f63542f54bf4',1,'_MMIOBase:&#160;vmmngr.c']]],
+  ['_5fmmiobase_80',['_mmiobase',['../KernelAA64_2Mm_2vmmngr_8c.html#a5e4fb6199fc5f91ffbf2f63542f54bf4',1,'_MMIOBase:&#160;vmmngr.c'],['../vmmngr_8cpp.html#a9ff05b7a827c8008c9ef4c9137bca477',1,'_MmioBase:&#160;vmmngr.cpp']]],
   ['_5fmusic_5flibrary_5fdrawn_81',['_music_library_drawn',['../Process_2AudioPlayer_2main_8cpp.html#a6d6948bcbedd59acad209f8f9b720ef6',1,'main.cpp']]],
   ['_5fnumlock_82',['_numlock',['../struct__chitralekha__key__.html#aca63d9b861aadac360b6920f0314a6e1',1,'_chitralekha_key_']]],
   ['_5fpcieinitialized_83',['_pcieInitialized',['../pcie_8c.html#ac31dd902aad5c586e727cb6a24b748eb',1,'pcie.c']]],

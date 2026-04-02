@@ -86,16 +86,21 @@ Include dependency graph for profile.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="profile_8h__incl.png" border="0" usemap="#aXenevaOS_2BaseHdr_2Hal_2AA64_2profile_8h" alt=""/></div>
 <map name="aXenevaOS_2BaseHdr_2Hal_2AA64_2profile_8h" id="aXenevaOS_2BaseHdr_2Hal_2AA64_2profile_8h">
-<area shape="rect" title=" " alt="" coords="9,5,184,45"/>
-<area shape="rect" title=" " alt="" coords="5,167,76,192"/>
-<area shape="poly" title=" " alt="" coords="92,47,52,155,47,153,87,45"/>
-<area shape="rect" href="uart_8h.html" title=" " alt="" coords="92,93,203,119"/>
-<area shape="poly" title=" " alt="" coords="111,44,135,80,130,83,107,47"/>
-<area shape="poly" title=" " alt="" coords="132,121,71,161,68,157,129,116"/>
-<area shape="rect" href="aa64hcode_8h.html" title=" " alt="" coords="100,167,205,192"/>
-<area shape="poly" title=" " alt="" coords="151,119,153,153,148,153,146,119"/>
-<area shape="rect" title=" " alt="" coords="229,167,305,192"/>
-<area shape="poly" title=" " alt="" coords="168,116,237,157,234,162,165,121"/>
+<area shape="rect" title=" " alt="" coords="5,5,180,45"/>
+<area shape="rect" title=" " alt="" coords="37,328,108,353"/>
+<area shape="poly" title=" " alt="" coords="92,46,76,146,71,212,70,280,73,314,67,315,65,280,65,212,71,145,86,45"/>
+<area shape="rect" href="uart_8h.html" title=" " alt="" coords="108,93,219,119"/>
+<area shape="poly" title=" " alt="" coords="112,44,146,81,142,85,108,47"/>
+<area shape="poly" title=" " alt="" coords="146,121,122,141,100,168,86,206,77,245,74,314,69,314,72,245,80,204,96,165,118,137,143,117"/>
+<area shape="rect" href="aa64hcode_8h.html" title=" " alt="" coords="111,167,216,192"/>
+<area shape="poly" title=" " alt="" coords="166,119,166,153,161,153,161,119"/>
+<area shape="rect" title=" " alt="" coords="240,167,316,192"/>
+<area shape="poly" title=" " alt="" coords="183,116,249,157,246,162,180,121"/>
+<area shape="rect" href="imx8mp_8h.html" title=" " alt="" coords="340,167,528,192"/>
+<area shape="poly" title=" " alt="" coords="207,116,378,161,376,166,206,121"/>
+<area shape="rect" href="imx8mp__uart_8h.html" title=" " alt="" coords="227,240,403,280"/>
+<area shape="poly" title=" " alt="" coords="418,194,357,234,354,230,415,190"/>
+<area shape="poly" title=" " alt="" coords="258,283,122,326,120,321,256,277"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -173,7 +178,7 @@ Functions</h2></td></tr>
 <div class="line">    <a class="code hl_typedef" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> freq = <a class="code hl_function" href="aa64lowlevel_8h.html#ab5910fed70441916f9607fc6bdcfc15a">get_cntfrq_el0</a>(); \</div>
 <div class="line">    <span class="keywordtype">double</span> sec = (double)diff / freq; \</div>
 <div class="line">    <span class="keywordtype">double</span> ms = (double)diff * 1000.0 / freq; \</div>
-<div class="line">    AuTextOut(<span class="stringliteral">&quot;[AURORA-PROFILE]: %s : time: %f sec, time: %f ms, cpu cycles : %d\r\n&quot;</span>, name, sec, ms, (__end_profile - __start_profile));</div>
+<div class="line">    UARTDebugOut(<span class="stringliteral">&quot;[AURORA-PROFILE]: %s : time: %f sec, time: %f ms, cpu cycles : %d\r\n&quot;</span>, name, sec, ms, (__end_profile - __start_profile));</div>
 <div class="ttc" id="aaa64lowlevel_8h_html_ab5910fed70441916f9607fc6bdcfc15a"><div class="ttname"><a href="aa64lowlevel_8h.html#ab5910fed70441916f9607fc6bdcfc15a">get_cntfrq_el0</a></div><div class="ttdeci">AU_EXTERN AU_EXPORT uint64_t get_cntfrq_el0()</div></div>
 <div class="ttc" id="aacefiex_8h_html_ace97e810e06af5096bfe72ee3e7c5316"><div class="ttname"><a href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a></div><div class="ttdeci">COMPILER_DEPENDENT_UINT64 uint64_t</div><div class="ttdef"><b>Definition</b> acefiex.h:165</div></div>
 <div class="ttc" id="aprofile_8h_html_a59b8e46f33267416b68d6001ae0469be"><div class="ttname"><a href="profile_8h.html#a59b8e46f33267416b68d6001ae0469be">AuProfileReadCycles</a></div><div class="ttdeci">uint64_t AuProfileReadCycles()</div><div class="ttdef"><b>Definition</b> profile.c:35</div></div>

@@ -178,11 +178,17 @@ Functions</h2></td></tr>
 <tr class="memitem:a1e40301b0863c5c8f9aba5d8e5c09763" id="r_a1e40301b0863c5c8f9aba5d8e5c09763"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="audrv_8c.html#a1e40301b0863c5c8f9aba5d8e5c09763">AuGetDriverName</a> (<a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> vendor_id, <a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> device_id, <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buffer, int entryoff)</td></tr>
 <tr class="memdesc:a1e40301b0863c5c8f9aba5d8e5c09763"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuGetDriverName &ndash; Extract the driver path from its entry offset.  <br /></td></tr>
 <tr class="separator:a1e40301b0863c5c8f9aba5d8e5c09763"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af97080b8ff8193123d5fd3a224fa80d5" id="r_af97080b8ff8193123d5fd3a224fa80d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="audrv_8c.html#af97080b8ff8193123d5fd3a224fa80d5">AuBoardIterateModule</a> (<a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *board, int moduleCount)</td></tr>
+<tr class="memdesc:af97080b8ff8193123d5fd3a224fa80d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuBoardIterateModule &ndash; iterate all modules present in board config file.  <br /></td></tr>
+<tr class="separator:af97080b8ff8193123d5fd3a224fa80d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4e1563f13a7cdb51a79eee36efcf8f5" id="r_ad4e1563f13a7cdb51a79eee36efcf8f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="audrv_8c.html#ad4e1563f13a7cdb51a79eee36efcf8f5">AuDriverLoad</a> (char *filename, <a class="el" href="audrv_8h.html#a9e3aee018af3077c7b4044bdd751930a">AuDriver</a> *driver)</td></tr>
 <tr class="memdesc:ad4e1563f13a7cdb51a79eee36efcf8f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuDriverLoad &ndash; Manage and loads dll drivers.  <br /></td></tr>
 <tr class="separator:ad4e1563f13a7cdb51a79eee36efcf8f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee436201f8cfc2f406ebfac11ab53d34" id="r_aee436201f8cfc2f406ebfac11ab53d34"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Libs_2XEClib_2includes_2stdint_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="audrv_8c.html#aee436201f8cfc2f406ebfac11ab53d34">AuIsPCIeInitialized</a> ()</td></tr>
 <tr class="separator:aee436201f8cfc2f406ebfac11ab53d34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec05331cee708e7b481b3dacb19e209a" id="r_aec05331cee708e7b481b3dacb19e209a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="audrv_8c.html#aec05331cee708e7b481b3dacb19e209a">FontManagerGetFontCount</a> (<a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buffer)</td></tr>
+<tr class="memdesc:aec05331cee708e7b481b3dacb19e209a"><td class="mdescLeft">&#160;</td><td class="mdescRight">FontManagerGetFontCount &ndash; returns number of font counts.  <br /></td></tr>
+<tr class="separator:aec05331cee708e7b481b3dacb19e209a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b0952e36052e690c14a4dc5b3e02fc8" id="r_a6b0952e36052e690c14a4dc5b3e02fc8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="audrv_8c.html#a6b0952e36052e690c14a4dc5b3e02fc8">AuDrvMngrInitialize</a> (<a class="el" href="BaseHdr_2aurora_8h.html#a886498d078ece21b18b0bf2dad40fccd">KERNEL_BOOT_INFO</a> *info)</td></tr>
 <tr class="memdesc:a6b0952e36052e690c14a4dc5b3e02fc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuDrvMngrInitialize &ndash; Initialize the driver manager.  <br /></td></tr>
 <tr class="separator:a6b0952e36052e690c14a4dc5b3e02fc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -258,6 +264,43 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="af97080b8ff8193123d5fd3a224fa80d5" name="af97080b8ff8193123d5fd3a224fa80d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af97080b8ff8193123d5fd3a224fa80d5">&#9670;&#160;</a></span>AuBoardIterateModule()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AuBoardIterateModule </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
+          <td class="paramname"><em>board</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>moduleCount</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>AuBoardIterateModule &ndash; iterate all modules present in board config file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">board</td><td>&ndash; pointer to board config buffer </td></tr>
+    <tr><td class="paramname">moduleCount</td><td>&ndash; total number of module described </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a22ec7dddfb8f9b86ea813b0d89b961a6" name="a22ec7dddfb8f9b86ea813b0d89b961a6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a22ec7dddfb8f9b86ea813b0d89b961a6">&#9670;&#160;</a></span>AuBootDriverInitialise()</h2>
 
@@ -535,6 +578,8 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
+<p>now initialize board specific driver list</p>
+<p>using font manager's function because both board config data and font manager config data shares same style</p>
 
 </div>
 </div>
@@ -743,6 +788,42 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>request an unique id for driver class </p>
+
+</div>
+</div>
+<a id="aec05331cee708e7b481b3dacb19e209a" name="aec05331cee708e7b481b3dacb19e209a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec05331cee708e7b481b3dacb19e209a">&#9670;&#160;</a></span>FontManagerGetFontCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int FontManagerGetFontCount </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
+          <td class="paramname"><em>fontlst</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>FontManagerGetFontCount &ndash; returns number of font counts. </p>
+<p>we're using FontManagerGetFontCount because both board config descriptor file and font config file share same writing style</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fontlst</td><td>&ndash; font list buffer </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the number of total font available in the system </dd></dl>
 
 </div>
 </div>

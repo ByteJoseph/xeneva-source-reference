@@ -103,7 +103,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="preprocessor">    uint64_t freq = get_cntfrq_el0(); \</span></div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="preprocessor">    double sec = (double)diff / freq; \</span></div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="preprocessor">    double ms = (double)diff * 1000.0 / freq; \</span></div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="preprocessor">    AuTextOut(&quot;[AURORA-PROFILE]: %s : time: %f sec, time: %f ms, cpu cycles : %d\r\n&quot;, name, sec, ms, (__end_profile - __start_profile));</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="preprocessor">    UARTDebugOut(&quot;[AURORA-PROFILE]: %s : time: %f sec, time: %f ms, cpu cycles : %d\r\n&quot;, name, sec, ms, (__end_profile - __start_profile));</span></div>
 </div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
