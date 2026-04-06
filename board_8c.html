@@ -79,6 +79,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="rpi3bp_8h_source.html">Board/RPI3bp/rpi3bp.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="imx8mp__clk_8h_source.html">Board/imx8mp/imx8mp_clk.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="uart_8h_source.html">Drivers/uart.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="aucon_8h_source.html">aucon.h</a>&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
@@ -86,33 +87,38 @@ Include dependency graph for board.c:</div>
 <div class="dyncontent">
 <div class="center"><img src="board_8c__incl.png" border="0" usemap="#aXenevaOS_2KernelAA64_2Board_2board_8c" alt=""/></div>
 <map name="aXenevaOS_2KernelAA64_2Board_2board_8c" id="aXenevaOS_2KernelAA64_2Board_2board_8c">
-<area shape="rect" title=" " alt="" coords="167,5,335,45"/>
-<area shape="rect" href="rpi3bp_8h.html" title=" " alt="" coords="5,93,172,119"/>
-<area shape="poly" title=" " alt="" coords="214,48,126,90,124,85,211,43"/>
-<area shape="rect" href="uart_8h.html" title=" " alt="" coords="196,93,307,119"/>
-<area shape="poly" title=" " alt="" coords="254,46,254,79,249,79,249,46"/>
-<area shape="rect" href="aucon_8h.html" title=" " alt="" coords="428,93,501,119"/>
-<area shape="poly" title=" " alt="" coords="303,43,421,86,419,91,302,48"/>
-<area shape="rect" href="aa64hcode_8h.html" title=" " alt="" coords="32,167,137,192"/>
-<area shape="poly" title=" " alt="" coords="226,121,125,164,123,159,224,116"/>
-<area shape="rect" title=" " alt="" coords="256,328,327,353"/>
-<area shape="poly" title=" " alt="" coords="239,121,219,141,203,168,201,179,203,191,217,228,236,262,275,316,270,319,231,265,212,230,198,193,195,179,198,166,215,138,235,117"/>
-<area shape="rect" title=" " alt="" coords="213,167,289,192"/>
-<area shape="poly" title=" " alt="" coords="254,119,254,153,249,153,249,119"/>
-<area shape="rect" href="imx8mp_8h.html" title=" " alt="" coords="313,167,501,192"/>
-<area shape="poly" title=" " alt="" coords="277,116,370,158,368,163,275,121"/>
-<area shape="rect" href="imx8mp__uart_8h.html" title=" " alt="" coords="266,240,442,280"/>
-<area shape="poly" title=" " alt="" coords="402,194,377,230,372,227,397,191"/>
-<area shape="poly" title=" " alt="" coords="341,282,311,319,307,315,337,279"/>
-<area shape="rect" href="BaseHdr_2aurora_8h.html" title=" " alt="" coords="525,167,601,192"/>
-<area shape="poly" title=" " alt="" coords="482,117,538,156,535,161,479,121"/>
-<area shape="rect" href="BaseHdr_2stdint_8h.html" title=" " alt="" coords="528,247,599,273"/>
-<area shape="poly" title=" " alt="" coords="566,192,566,233,561,233,561,192"/>
+<area shape="rect" title=" " alt="" coords="285,5,453,45"/>
+<area shape="rect" href="rpi3bp_8h.html" title=" " alt="" coords="5,101,172,126"/>
+<area shape="poly" title=" " alt="" coords="308,48,140,99,138,94,306,43"/>
+<area shape="rect" href="imx8mp__clk_8h.html" title=" " alt="" coords="197,93,373,133"/>
+<area shape="poly" title=" " alt="" coords="352,47,315,85,311,82,348,44"/>
+<area shape="rect" href="uart_8h.html" title=" " alt="" coords="397,101,508,126"/>
+<area shape="poly" title=" " alt="" coords="389,44,433,89,430,92,385,47"/>
+<area shape="rect" href="aucon_8h.html" title=" " alt="" coords="636,101,709,126"/>
+<area shape="poly" title=" " alt="" coords="436,43,623,95,622,101,435,48"/>
+<area shape="rect" title=" " alt="" coords="228,181,304,207"/>
+<area shape="poly" title=" " alt="" coords="283,134,275,168,269,167,278,133"/>
+<area shape="poly" title=" " alt="" coords="427,128,307,179,305,174,424,124"/>
+<area shape="rect" href="aa64hcode_8h.html" title=" " alt="" coords="328,181,433,207"/>
+<area shape="poly" title=" " alt="" coords="444,128,403,173,399,169,440,124"/>
+<area shape="rect" title=" " alt="" coords="501,343,572,368"/>
+<area shape="poly" title=" " alt="" coords="457,126,472,198,486,246,503,294,523,330,518,332,498,296,481,248,467,199,452,127"/>
+<area shape="rect" href="imx8mp_8h.html" title=" " alt="" coords="509,181,697,207"/>
+<area shape="poly" title=" " alt="" coords="476,124,570,173,568,177,474,129"/>
+<area shape="rect" href="imx8mp__uart_8h.html" title=" " alt="" coords="513,255,689,295"/>
+<area shape="poly" title=" " alt="" coords="606,207,604,241,599,241,600,207"/>
+<area shape="poly" title=" " alt="" coords="587,297,557,333,553,330,583,293"/>
+<area shape="rect" href="BaseHdr_2aurora_8h.html" title=" " alt="" coords="721,181,797,207"/>
+<area shape="poly" title=" " alt="" coords="687,124,738,170,734,174,684,128"/>
+<area shape="rect" href="BaseHdr_2stdint_8h.html" title=" " alt="" coords="724,262,795,287"/>
+<area shape="poly" title=" " alt="" coords="762,207,762,248,757,248,757,207"/>
 </map>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ac9a30dab281a59eb81220fda00b29205" id="r_ac9a30dab281a59eb81220fda00b29205"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="board_8c.html#ac9a30dab281a59eb81220fda00b29205">imx8mp_gpc_init</a> ()</td></tr>
+<tr class="separator:ac9a30dab281a59eb81220fda00b29205"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf600e090b2577e959ecffd5142faa85" id="r_adf600e090b2577e959ecffd5142faa85"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="board_8c.html#adf600e090b2577e959ecffd5142faa85">AuAA64BoardInitialize</a> ()</td></tr>
 <tr class="memdesc:adf600e090b2577e959ecffd5142faa85"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuAA64BoardInitialize &ndash; initialize board specific data.  <br /></td></tr>
 <tr class="separator:adf600e090b2577e959ecffd5142faa85"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -197,6 +203,31 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>AuAA64BoardSleepUS &ndash; calls board specific sleep function. </p>
+
+</div>
+</div>
+<a id="ac9a30dab281a59eb81220fda00b29205" name="ac9a30dab281a59eb81220fda00b29205"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9a30dab281a59eb81220fda00b29205">&#9670;&#160;</a></span>imx8mp_gpc_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void imx8mp_gpc_init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>

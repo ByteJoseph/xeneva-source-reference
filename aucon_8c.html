@@ -239,6 +239,8 @@ Functions</h2></td></tr>
 <tr class="separator:a1471c2d20cde33ae697e82d175888217"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d8dd22dadfb076a89989504a162442b" id="r_a0d8dd22dadfb076a89989504a162442b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aucon_8c.html#a0d8dd22dadfb076a89989504a162442b">AuConsoleSetConInfo</a> (<a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> <a class="el" href="littleboot_8c.html#a433fff092567e18c6f92251f275a5bec">phys</a>, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> virtual, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> xres, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> yres)</td></tr>
 <tr class="separator:a0d8dd22dadfb076a89989504a162442b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73fa95c08799d38db36cf992951ef108" id="r_a73fa95c08799d38db36cf992951ef108"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aucon_8c.html#a73fa95c08799d38db36cf992951ef108">AuConsoleBypassAuTextOut</a> ()</td></tr>
+<tr class="separator:a73fa95c08799d38db36cf992951ef108"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -266,6 +268,8 @@ Variables</h2></td></tr>
 <tr class="separator:abf4cbdf4fc0ebaa0527feca088062baf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5bead83bac5cd2176de7a0b4bf9ed85f" id="r_a5bead83bac5cd2176de7a0b4bf9ed85f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2stdint_8h.html#a67bb6a3d7ee6a2a5950ce437abbe31c8">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aucon_8c.html#a5bead83bac5cd2176de7a0b4bf9ed85f">early_</a></td></tr>
 <tr class="separator:a5bead83bac5cd2176de7a0b4bf9ed85f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8272db8f3599fff36f93856f0ff6c5b9" id="r_a8272db8f3599fff36f93856f0ff6c5b9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Libs_2XEClib_2includes_2stdint_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aucon_8c.html#a8272db8f3599fff36f93856f0ff6c5b9">bypass_autextout</a></td></tr>
+<tr class="separator:a8272db8f3599fff36f93856f0ff6c5b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35ba4e01a1de34aacdfbdc9c49e4940a" id="r_a35ba4e01a1de34aacdfbdc9c49e4940a"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aucon_8c.html#a35ba4e01a1de34aacdfbdc9c49e4940a">_print_func</a> )(const char *text,...)</td></tr>
 <tr class="separator:a35ba4e01a1de34aacdfbdc9c49e4940a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -396,6 +400,23 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a73fa95c08799d38db36cf992951ef108" name="a73fa95c08799d38db36cf992951ef108"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73fa95c08799d38db36cf992951ef108">&#9670;&#160;</a></span>AuConsoleBypassAuTextOut()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AuConsoleBypassAuTextOut </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a281044ff3d31487f9f8f49db87a32413" name="a281044ff3d31487f9f8f49db87a32413"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a281044ff3d31487f9f8f49db87a32413">&#9670;&#160;</a></span>AuConsoleEarlyEnable()</h2>
 
@@ -951,6 +972,20 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> bluemask</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8272db8f3599fff36f93856f0ff6c5b9" name="a8272db8f3599fff36f93856f0ff6c5b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8272db8f3599fff36f93856f0ff6c5b9">&#9670;&#160;</a></span>bypass_autextout</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="Libs_2XEClib_2includes_2stdint_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> bypass_autextout</td>
         </tr>
       </table>
 </div><div class="memdoc">

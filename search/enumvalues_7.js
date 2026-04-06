@@ -15,5 +15,10 @@ var searchData=
   ['gettimefunctionid_12',['GetTimeFunctionId',['../ExtendedSalServiceClasses_8h.html#a8a8bfbbaac171a9516c2fece2bf9d5c5a7886634d8aeea99377a48e34dd102c85',1,'ExtendedSalServiceClasses.h']]],
   ['getvolumeattributesfunctionid_13',['GetVolumeAttributesFunctionId',['../ExtendedSalServiceClasses_8h.html#ad2852d58a1ace8600ed7e55fcfa3d32aa02a96bb5e4a87d0eaf196358c18ddadd',1,'ExtendedSalServiceClasses.h']]],
   ['getwakeuptimefunctionid_14',['GetWakeupTimeFunctionId',['../ExtendedSalServiceClasses_8h.html#a8a8bfbbaac171a9516c2fece2bf9d5c5a12603a5eff57b429b84924cdc103138b',1,'ExtendedSalServiceClasses.h']]],
-  ['group_15',['Group',['../Supplicant_8h.html#ab821427bf44557d486f42fc6c5a6b7cca8a5bff7337e458d5f8d13aa5cac3ff07',1,'Supplicant.h']]]
+  ['gpu2d_5fclk_5froot_15',['GPU2D_CLK_ROOT',['../imx8mp__clk_8h.html#a3e63855b2f0d43453e8495a789f6214da97429b485ed42e603278e4a2a3bae07d',1,'imx8mp_clk.h']]],
+  ['gpu3d_5fcore_5fclk_5froot_16',['GPU3D_CORE_CLK_ROOT',['../imx8mp__clk_8h.html#a3e63855b2f0d43453e8495a789f6214da5597176e9aab779f8972e1338c782216',1,'imx8mp_clk.h']]],
+  ['gpu3d_5fshader_5fclk_5froot_17',['GPU3D_SHADER_CLK_ROOT',['../imx8mp__clk_8h.html#a3e63855b2f0d43453e8495a789f6214dad118491ff9803b44988d8b236513e356',1,'imx8mp_clk.h']]],
+  ['gpu_5fahb_5fclk_5froot_18',['GPU_AHB_CLK_ROOT',['../imx8mp__clk_8h.html#a3e63855b2f0d43453e8495a789f6214dabaaebb4c07182a3366f8a34fae9221b0',1,'imx8mp_clk.h']]],
+  ['gpu_5faxi_5fclk_5froot_19',['GPU_AXI_CLK_ROOT',['../imx8mp__clk_8h.html#a3e63855b2f0d43453e8495a789f6214da3e7a6fb5956fc081a6c4bd4427deb571',1,'imx8mp_clk.h']]],
+  ['group_20',['Group',['../Supplicant_8h.html#ab821427bf44557d486f42fc6c5a6b7cca8a5bff7337e458d5f8d13aa5cac3ff07',1,'Supplicant.h']]]
 ];

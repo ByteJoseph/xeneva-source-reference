@@ -15,5 +15,9 @@ var searchData=
   ['dns_5fhost_5fto_5faddr_5fdata_12',['DNS_HOST_TO_ADDR_DATA',['../structDNS__HOST__TO__ADDR__DATA.html',1,'']]],
   ['dns_5fresource_5frecord_13',['DNS_RESOURCE_RECORD',['../structDNS__RESOURCE__RECORD.html',1,'']]],
   ['double_5fbits_5ft_14',['double_bits_t',['../uniondouble__bits__t.html',1,'']]],
-  ['dxe_5fservices_15',['DXE_SERVICES',['../structDXE__SERVICES.html',1,'']]]
+  ['dwc2_5fcore_5fregs_15',['dwc2_core_regs',['../structdwc2__core__regs.html',1,'']]],
+  ['dwc2_5fhc_5fregs_16',['dwc2_hc_regs',['../structdwc2__hc__regs.html',1,'']]],
+  ['dwc2_5fhost_5fregs_17',['dwc2_host_regs',['../structdwc2__host__regs.html',1,'']]],
+  ['dwc2_5fusb_5fendpoint_5ft_18',['dwc2_usb_endpoint_t',['../structdwc2__usb__endpoint__t.html',1,'']]],
+  ['dxe_5fservices_19',['DXE_SERVICES',['../structDXE__SERVICES.html',1,'']]]
 ];

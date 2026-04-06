@@ -69,5 +69,8 @@ var searchData=
   ['virtio_5fgpu_5fresp_5fok_5fedid_66',['VIRTIO_GPU_RESP_OK_EDID',['../virtiogpu_8h.html#a24bba807de244c8f3c7669cceaee9d95a0ee651d4ca353c6daa1195c7b198dc3e',1,'virtiogpu.h']]],
   ['virtio_5fgpu_5fresp_5fok_5fmap_5finfo_67',['VIRTIO_GPU_RESP_OK_MAP_INFO',['../virtiogpu_8h.html#a24bba807de244c8f3c7669cceaee9d95a67505a051eecef8369fe67405f8a00a5',1,'virtiogpu.h']]],
   ['virtio_5fgpu_5fresp_5fok_5fnodata_68',['VIRTIO_GPU_RESP_OK_NODATA',['../virtiogpu_8h.html#a24bba807de244c8f3c7669cceaee9d95ab3d6603c9a35fe29902e843a2461e980',1,'virtiogpu.h']]],
-  ['virtio_5fgpu_5fresp_5fok_5fresource_5fuuid_69',['VIRTIO_GPU_RESP_OK_RESOURCE_UUID',['../virtiogpu_8h.html#a24bba807de244c8f3c7669cceaee9d95ae6b5b82452ba9e39e63c0dac477d6af4',1,'virtiogpu.h']]]
+  ['virtio_5fgpu_5fresp_5fok_5fresource_5fuuid_69',['VIRTIO_GPU_RESP_OK_RESOURCE_UUID',['../virtiogpu_8h.html#a24bba807de244c8f3c7669cceaee9d95ae6b5b82452ba9e39e63c0dac477d6af4',1,'virtiogpu.h']]],
+  ['vpu_5fbus_5fclk_5froot_70',['VPU_BUS_CLK_ROOT',['../imx8mp__clk_8h.html#a3e63855b2f0d43453e8495a789f6214daa449d3651ad93dd4f0c0baa31acf532b',1,'imx8mp_clk.h']]],
+  ['vpu_5fg1_5fclk_5froot_71',['VPU_G1_CLK_ROOT',['../imx8mp__clk_8h.html#a3e63855b2f0d43453e8495a789f6214da6caaa032d75b3a5693d64370af44136d',1,'imx8mp_clk.h']]],
+  ['vpu_5fg2_5fclk_5froot_72',['VPU_G2_CLK_ROOT',['../imx8mp__clk_8h.html#a3e63855b2f0d43453e8495a789f6214da4819e8b940b282885b34a266c7291b7d',1,'imx8mp_clk.h']]]
 ];
