@@ -74,8 +74,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">kmalloc.c File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -178,15 +177,6 @@ Functions</h2></td></tr>
 <tr class="separator:ac79686a89889f8049ad1fec78bac891a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4247beac40cdd65c3bd2d5d24b38f6e6" id="r_a4247beac40cdd65c3bd2d5d24b38f6e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kmalloc_8c.html#a4247beac40cdd65c3bd2d5d24b38f6e6">kmalloc_debug_on</a> (<a class="el" href="Libs_2XEClib_2includes_2stdint_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> bit)</td></tr>
 <tr class="separator:a4247beac40cdd65c3bd2d5d24b38f6e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:a9f1ef330e53ecb38ec59ff97a9448590" id="r_a9f1ef330e53ecb38ec59ff97a9448590"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kmalloc_8c.html#a9f1ef330e53ecb38ec59ff97a9448590">last_mark</a></td></tr>
-<tr class="separator:a9f1ef330e53ecb38ec59ff97a9448590"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb20e80ff9d7f570f455df8f840dcf83" id="r_aeb20e80ff9d7f570f455df8f840dcf83"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Libs_2XEClib_2includes_2stdint_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kmalloc_8c.html#aeb20e80ff9d7f570f455df8f840dcf83">_debug_on</a></td></tr>
-<tr class="separator:aeb20e80ff9d7f570f455df8f840dcf83"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a97250f1b49c6ad0635d9fbfb7b19a637" id="r_a97250f1b49c6ad0635d9fbfb7b19a637"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Libs_2XEClib_2includes_2stdint_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kmalloc_8c.html#a97250f1b49c6ad0635d9fbfb7b19a637">_vfs_debug_on</a></td></tr>
-<tr class="separator:a97250f1b49c6ad0635d9fbfb7b19a637"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a479a201c013df35d6aec8feff8b8d105" name="a479a201c013df35d6aec8feff8b8d105"></a>
@@ -250,6 +240,14 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>BSD 2-Clause License</p>
+<p>Copyright (c) 2022 - 2023, Manas Kamal Choudhury All rights reserved.</p>
+<p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
+<ol type="1">
+<li>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</li>
+<li>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</li>
+</ol>
+<p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. </p>
 
 </div>
 </div>
@@ -516,65 +514,6 @@ Variables</h2></td></tr>
           <td class="paramtype">unsigned int&#160;</td>
           <td class="paramname"><em>val</em></td><td>)</td>
           <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a id="aeb20e80ff9d7f570f455df8f840dcf83" name="aeb20e80ff9d7f570f455df8f840dcf83"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeb20e80ff9d7f570f455df8f840dcf83">&#9670;&#160;</a></span>_debug_on</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="Libs_2XEClib_2includes_2stdint_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> _debug_on</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a97250f1b49c6ad0635d9fbfb7b19a637" name="a97250f1b49c6ad0635d9fbfb7b19a637"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a97250f1b49c6ad0635d9fbfb7b19a637">&#9670;&#160;</a></span>_vfs_debug_on</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="Libs_2XEClib_2includes_2stdint_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> _vfs_debug_on</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>BSD 2-Clause License</p>
-<p>Copyright (c) 2023-2024, Manas Kamal Choudhury All rights reserved.</p>
-<p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
-<ol type="1">
-<li>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</li>
-<li>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</li>
-</ol>
-<p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. </p>
-
-</div>
-</div>
-<a id="a9f1ef330e53ecb38ec59ff97a9448590" name="a9f1ef330e53ecb38ec59ff97a9448590"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9f1ef330e53ecb38ec59ff97a9448590">&#9670;&#160;</a></span>last_mark</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> last_mark</td>
         </tr>
       </table>
 </div><div class="memdoc">

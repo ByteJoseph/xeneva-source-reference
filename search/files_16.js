@@ -8,8 +8,8 @@ var searchData=
   ['wifi_2eh_5',['WiFi.h',['../WiFi_8h.html',1,'']]],
   ['wifi2_2eh_6',['WiFi2.h',['../WiFi2_8h.html',1,'']]],
   ['wincertificate_2eh_7',['WinCertificate.h',['../WinCertificate_8h.html',1,'']]],
-  ['window_2ecpp_8',['window.cpp',['../Libs_2Chitralekha_2widgets_2window_8cpp.html',1,'(Global Namespace)'],['../Process_2Deodhai_2window_8cpp.html',1,'(Global Namespace)']]],
-  ['window_2eh_9',['window.h',['../Libs_2Chitralekha_2widgets_2window_8h.html',1,'(Global Namespace)'],['../Process_2Deodhai_2window_8h.html',1,'(Global Namespace)']]],
+  ['window_2ecpp_8',['window.cpp',['../Libs_2Chitralekha_2widgets_2window_8cpp.html',1,'(Global Namespace)'],['../Process_2Deodhai_2window_8cpp.html',1,'(Global Namespace)'],['../Process_2DeodhaiXR_2window_8cpp.html',1,'(Global Namespace)']]],
+  ['window_2eh_9',['window.h',['../Libs_2Chitralekha_2widgets_2window_8h.html',1,'(Global Namespace)'],['../Process_2Deodhai_2window_8h.html',1,'(Global Namespace)'],['../Process_2DeodhaiXR_2window_8h.html',1,'(Global Namespace)']]],
   ['windowssmmsecuritymitigationtable_2eh_10',['WindowsSmmSecurityMitigationTable.h',['../WindowsSmmSecurityMitigationTable_8h.html',1,'']]],
   ['windowsuxcapsule_2eh_11',['WindowsUxCapsule.h',['../WindowsUxCapsule_8h.html',1,'']]]
 ];

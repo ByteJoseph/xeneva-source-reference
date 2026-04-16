@@ -227,5 +227,5 @@ var searchData=
   ['kms_2eh_224',['Kms.h',['../Kms_8h.html',1,'']]],
   ['krealloc_225',['krealloc',['../kmalloc_8h.html#aa1d47a5435a6dfe3090c27e7fdae9aa3',1,'krealloc(void *, unsigned int):&#160;kmalloc.cpp'],['../kmalloc_8cpp.html#a23a83530fdf5c9599a5b22ac5838738c',1,'krealloc(void *ptr, unsigned int new_size):&#160;kmalloc.cpp'],['../kmalloc_8c.html#a23a83530fdf5c9599a5b22ac5838738c',1,'krealloc(void *ptr, unsigned int new_size):&#160;kmalloc.c']]],
   ['kybrd_5f_226',['kybrd_',['../devinput_8cpp.html#a05a6eb26b7a1fe152180cc9bd3524dc5',1,'kybrd_:&#160;devinput.cpp'],['../devinput_8c.html#a05a6eb26b7a1fe152180cc9bd3524dc5',1,'kybrd_:&#160;devinput.c']]],
-  ['kybrd_5ffd_227',['kybrd_fd',['../deomain_8cpp.html#adaadf2c9bd99fe6bfd61e086d8e6f884',1,'kybrd_fd:&#160;deomain.cpp'],['../Process_2DeodhaiXR_2main_8cpp.html#adaadf2c9bd99fe6bfd61e086d8e6f884',1,'kybrd_fd:&#160;main.cpp']]]
+  ['kybrd_5ffd_227',['kybrd_fd',['../deomain_8cpp.html#adaadf2c9bd99fe6bfd61e086d8e6f884',1,'deomain.cpp']]]
 ];

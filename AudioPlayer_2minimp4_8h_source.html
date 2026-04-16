@@ -764,8 +764,8 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00784" name="l00784"></a><span class="lineno">  784</span>        <span class="keywordflow">return</span> <a class="code hl_define" href="actypes_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a id="l00785" name="l00785"></a><span class="lineno">  785</span>    <span class="keywordflow">if</span> ((h-&gt;capacity - h-&gt;bytes) &lt; bytes &amp;&amp; !minimp4_vector_grow(h, bytes))</div>
 <div class="line"><a id="l00786" name="l00786"></a><span class="lineno">  786</span>        <span class="keywordflow">return</span> <a class="code hl_define" href="actypes_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
-<div class="line"><a id="l00787" name="l00787"></a><span class="lineno">  787</span>    <a class="code hl_define" href="assert_8h.html#a0041af519e0e7d47c9bcc83760c4669e">assert</a>(h-&gt;data);</div>
-<div class="line"><a id="l00788" name="l00788"></a><span class="lineno">  788</span>    <a class="code hl_define" href="assert_8h.html#a0041af519e0e7d47c9bcc83760c4669e">assert</a>((h-&gt;capacity - h-&gt;bytes) &gt;= bytes);</div>
+<div class="line"><a id="l00787" name="l00787"></a><span class="lineno">  787</span>    <a class="code hl_define" href="dlmalloc_8c.html#af576bf8ffa22a44e53018c67095ffbf0">assert</a>(h-&gt;data);</div>
+<div class="line"><a id="l00788" name="l00788"></a><span class="lineno">  788</span>    <a class="code hl_define" href="dlmalloc_8c.html#af576bf8ffa22a44e53018c67095ffbf0">assert</a>((h-&gt;capacity - h-&gt;bytes) &gt;= bytes);</div>
 <div class="line"><a id="l00789" name="l00789"></a><span class="lineno">  789</span>    p = h-&gt;data + h-&gt;bytes;</div>
 <div class="line"><a id="l00790" name="l00790"></a><span class="lineno">  790</span>    h-&gt;bytes += bytes;</div>
 <div class="line"><a id="l00791" name="l00791"></a><span class="lineno">  791</span>    <span class="keywordflow">return</span> p;</div>
@@ -873,7 +873,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00903" name="l00903"></a><span class="lineno">  903</span><span class="keywordtype">int</span> <a class="code hl_function" href="AudioPlayer_2minimp4_8h.html#a79787a5a175200559f4b7425c7705fd1">MP4E_set_dsi</a>(<a class="code hl_typedef" href="AudioPlayer_2minimp4_8h.html#a0e9cd378fc0c3c490bde60d4fda125e3">MP4E_mux_t</a>* mux, <span class="keywordtype">int</span> track_id, <span class="keyword">const</span> <span class="keywordtype">void</span>* dsi, <span class="keywordtype">int</span> bytes)</div>
 <div class="line"><a id="l00904" name="l00904"></a><span class="lineno">  904</span>{</div>
 <div class="line"><a id="l00905" name="l00905"></a><span class="lineno">  905</span>    track_t* tr = ((track_t*)mux-&gt;tracks.data) + track_id;</div>
-<div class="line"><a id="l00906" name="l00906"></a><span class="lineno">  906</span>    <a class="code hl_define" href="assert_8h.html#a0041af519e0e7d47c9bcc83760c4669e">assert</a>(tr-&gt;info.track_media_kind == <a class="code hl_enumvalue" href="AudioPlayer_2minimp4_8h.html#aa4431118cd1e894610bb12f06e32d871abef95159877f212909060a58cae02d5b">e_audio</a> ||</div>
+<div class="line"><a id="l00906" name="l00906"></a><span class="lineno">  906</span>    <a class="code hl_define" href="dlmalloc_8c.html#af576bf8ffa22a44e53018c67095ffbf0">assert</a>(tr-&gt;info.track_media_kind == <a class="code hl_enumvalue" href="AudioPlayer_2minimp4_8h.html#aa4431118cd1e894610bb12f06e32d871abef95159877f212909060a58cae02d5b">e_audio</a> ||</div>
 <div class="line"><a id="l00907" name="l00907"></a><span class="lineno">  907</span>        tr-&gt;info.track_media_kind == <a class="code hl_enumvalue" href="AudioPlayer_2minimp4_8h.html#aa4431118cd1e894610bb12f06e32d871a3b96e77d89190ad4d7848d45f5e1320d">e_private</a>);</div>
 <div class="line"><a id="l00908" name="l00908"></a><span class="lineno">  908</span>    <span class="keywordflow">if</span> (tr-&gt;vsps.bytes)</div>
 <div class="line"><a id="l00909" name="l00909"></a><span class="lineno">  909</span>        <span class="keywordflow">return</span> <a class="code hl_define" href="AudioPlayer_2minimp4_8h.html#ace4e6299d998f7a5a6bc641850004ee1">MP4E_STATUS_ONLY_ONE_DSI_ALLOWED</a>;   <span class="comment">// only one DSI allowed</span></div>
@@ -883,21 +883,21 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00913" name="l00913"></a><span class="lineno">  913</span><span class="keywordtype">int</span> <a class="code hl_function" href="AudioPlayer_2minimp4_8h.html#abb4f33dc18034ed78933436cf721d19c">MP4E_set_vps</a>(<a class="code hl_typedef" href="AudioPlayer_2minimp4_8h.html#a0e9cd378fc0c3c490bde60d4fda125e3">MP4E_mux_t</a>* mux, <span class="keywordtype">int</span> track_id, <span class="keyword">const</span> <span class="keywordtype">void</span>* vps, <span class="keywordtype">int</span> bytes)</div>
 <div class="line"><a id="l00914" name="l00914"></a><span class="lineno">  914</span>{</div>
 <div class="line"><a id="l00915" name="l00915"></a><span class="lineno">  915</span>    track_t* tr = ((track_t*)mux-&gt;tracks.data) + track_id;</div>
-<div class="line"><a id="l00916" name="l00916"></a><span class="lineno">  916</span>    <a class="code hl_define" href="assert_8h.html#a0041af519e0e7d47c9bcc83760c4669e">assert</a>(tr-&gt;info.track_media_kind == <a class="code hl_enumvalue" href="AudioPlayer_2minimp4_8h.html#aa4431118cd1e894610bb12f06e32d871ab12e8a0b73266942058ebc18fdad0a9e">e_video</a>);</div>
+<div class="line"><a id="l00916" name="l00916"></a><span class="lineno">  916</span>    <a class="code hl_define" href="dlmalloc_8c.html#af576bf8ffa22a44e53018c67095ffbf0">assert</a>(tr-&gt;info.track_media_kind == <a class="code hl_enumvalue" href="AudioPlayer_2minimp4_8h.html#aa4431118cd1e894610bb12f06e32d871ab12e8a0b73266942058ebc18fdad0a9e">e_video</a>);</div>
 <div class="line"><a id="l00917" name="l00917"></a><span class="lineno">  917</span>    <span class="keywordflow">return</span> append_mem(&amp;tr-&gt;vvps, vps, bytes) ? <a class="code hl_define" href="AudioPlayer_2minimp4_8h.html#a89842f6922ced4b848f57a07f1d97a40">MP4E_STATUS_OK</a> : <a class="code hl_define" href="AudioPlayer_2minimp4_8h.html#a1ebf5fc59ecffd897718438276d593f9">MP4E_STATUS_NO_MEMORY</a>;</div>
 <div class="line"><a id="l00918" name="l00918"></a><span class="lineno">  918</span>}</div>
 <div class="line"><a id="l00919" name="l00919"></a><span class="lineno">  919</span> </div>
 <div class="line"><a id="l00920" name="l00920"></a><span class="lineno">  920</span><span class="keywordtype">int</span> <a class="code hl_function" href="AudioPlayer_2minimp4_8h.html#a7bb26767b25ffe2353512735a6d83e26">MP4E_set_sps</a>(<a class="code hl_typedef" href="AudioPlayer_2minimp4_8h.html#a0e9cd378fc0c3c490bde60d4fda125e3">MP4E_mux_t</a>* mux, <span class="keywordtype">int</span> track_id, <span class="keyword">const</span> <span class="keywordtype">void</span>* sps, <span class="keywordtype">int</span> bytes)</div>
 <div class="line"><a id="l00921" name="l00921"></a><span class="lineno">  921</span>{</div>
 <div class="line"><a id="l00922" name="l00922"></a><span class="lineno">  922</span>    track_t* tr = ((track_t*)mux-&gt;tracks.data) + track_id;</div>
-<div class="line"><a id="l00923" name="l00923"></a><span class="lineno">  923</span>    <a class="code hl_define" href="assert_8h.html#a0041af519e0e7d47c9bcc83760c4669e">assert</a>(tr-&gt;info.track_media_kind == <a class="code hl_enumvalue" href="AudioPlayer_2minimp4_8h.html#aa4431118cd1e894610bb12f06e32d871ab12e8a0b73266942058ebc18fdad0a9e">e_video</a>);</div>
+<div class="line"><a id="l00923" name="l00923"></a><span class="lineno">  923</span>    <a class="code hl_define" href="dlmalloc_8c.html#af576bf8ffa22a44e53018c67095ffbf0">assert</a>(tr-&gt;info.track_media_kind == <a class="code hl_enumvalue" href="AudioPlayer_2minimp4_8h.html#aa4431118cd1e894610bb12f06e32d871ab12e8a0b73266942058ebc18fdad0a9e">e_video</a>);</div>
 <div class="line"><a id="l00924" name="l00924"></a><span class="lineno">  924</span>    <span class="keywordflow">return</span> append_mem(&amp;tr-&gt;vsps, sps, bytes) ? <a class="code hl_define" href="AudioPlayer_2minimp4_8h.html#a89842f6922ced4b848f57a07f1d97a40">MP4E_STATUS_OK</a> : <a class="code hl_define" href="AudioPlayer_2minimp4_8h.html#a1ebf5fc59ecffd897718438276d593f9">MP4E_STATUS_NO_MEMORY</a>;</div>
 <div class="line"><a id="l00925" name="l00925"></a><span class="lineno">  925</span>}</div>
 <div class="line"><a id="l00926" name="l00926"></a><span class="lineno">  926</span> </div>
 <div class="line"><a id="l00927" name="l00927"></a><span class="lineno">  927</span><span class="keywordtype">int</span> <a class="code hl_function" href="AudioPlayer_2minimp4_8h.html#ae19681e6c6571a6f6dd2696057505b77">MP4E_set_pps</a>(<a class="code hl_typedef" href="AudioPlayer_2minimp4_8h.html#a0e9cd378fc0c3c490bde60d4fda125e3">MP4E_mux_t</a>* mux, <span class="keywordtype">int</span> track_id, <span class="keyword">const</span> <span class="keywordtype">void</span>* pps, <span class="keywordtype">int</span> bytes)</div>
 <div class="line"><a id="l00928" name="l00928"></a><span class="lineno">  928</span>{</div>
 <div class="line"><a id="l00929" name="l00929"></a><span class="lineno">  929</span>    track_t* tr = ((track_t*)mux-&gt;tracks.data) + track_id;</div>
-<div class="line"><a id="l00930" name="l00930"></a><span class="lineno">  930</span>    <a class="code hl_define" href="assert_8h.html#a0041af519e0e7d47c9bcc83760c4669e">assert</a>(tr-&gt;info.track_media_kind == <a class="code hl_enumvalue" href="AudioPlayer_2minimp4_8h.html#aa4431118cd1e894610bb12f06e32d871ab12e8a0b73266942058ebc18fdad0a9e">e_video</a>);</div>
+<div class="line"><a id="l00930" name="l00930"></a><span class="lineno">  930</span>    <a class="code hl_define" href="dlmalloc_8c.html#af576bf8ffa22a44e53018c67095ffbf0">assert</a>(tr-&gt;info.track_media_kind == <a class="code hl_enumvalue" href="AudioPlayer_2minimp4_8h.html#aa4431118cd1e894610bb12f06e32d871ab12e8a0b73266942058ebc18fdad0a9e">e_video</a>);</div>
 <div class="line"><a id="l00931" name="l00931"></a><span class="lineno">  931</span>    <span class="keywordflow">return</span> append_mem(&amp;tr-&gt;vpps, pps, bytes) ? <a class="code hl_define" href="AudioPlayer_2minimp4_8h.html#a89842f6922ced4b848f57a07f1d97a40">MP4E_STATUS_OK</a> : <a class="code hl_define" href="AudioPlayer_2minimp4_8h.html#a1ebf5fc59ecffd897718438276d593f9">MP4E_STATUS_NO_MEMORY</a>;</div>
 <div class="line"><a id="l00932" name="l00932"></a><span class="lineno">  932</span>}</div>
 <div class="line"><a id="l00933" name="l00933"></a><span class="lineno">  933</span> </div>
@@ -921,10 +921,10 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00951" name="l00951"></a><span class="lineno">  951</span>        sample_t* smpl_desc;</div>
 <div class="line"><a id="l00952" name="l00952"></a><span class="lineno">  952</span>        <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> base[8], * p = base;</div>
 <div class="line"><a id="l00953" name="l00953"></a><span class="lineno">  953</span> </div>
-<div class="line"><a id="l00954" name="l00954"></a><span class="lineno">  954</span>        <a class="code hl_define" href="assert_8h.html#a0041af519e0e7d47c9bcc83760c4669e">assert</a>(mux-&gt;sequential_mode_flag);</div>
+<div class="line"><a id="l00954" name="l00954"></a><span class="lineno">  954</span>        <a class="code hl_define" href="dlmalloc_8c.html#af576bf8ffa22a44e53018c67095ffbf0">assert</a>(mux-&gt;sequential_mode_flag);</div>
 <div class="line"><a id="l00955" name="l00955"></a><span class="lineno">  955</span> </div>
 <div class="line"><a id="l00956" name="l00956"></a><span class="lineno">  956</span>        <span class="comment">// Write each sample to a separate atom</span></div>
-<div class="line"><a id="l00957" name="l00957"></a><span class="lineno">  957</span>        <a class="code hl_define" href="assert_8h.html#a0041af519e0e7d47c9bcc83760c4669e">assert</a>(mux-&gt;sequential_mode_flag);      <span class="comment">// Separate atom needed for sequential_mode only</span></div>
+<div class="line"><a id="l00957" name="l00957"></a><span class="lineno">  957</span>        <a class="code hl_define" href="dlmalloc_8c.html#af576bf8ffa22a44e53018c67095ffbf0">assert</a>(mux-&gt;sequential_mode_flag);      <span class="comment">// Separate atom needed for sequential_mode only</span></div>
 <div class="line"><a id="l00958" name="l00958"></a><span class="lineno">  958</span>        WRITE_4(tr-&gt;pending_sample.bytes + 8);</div>
 <div class="line"><a id="l00959" name="l00959"></a><span class="lineno">  959</span>        WRITE_4(BOX_mdat);</div>
 <div class="line"><a id="l00960" name="l00960"></a><span class="lineno">  960</span>        ERR(mux-&gt;write_callback(mux-&gt;write_pos, base, p - base, mux-&gt;token));</div>
@@ -1698,7 +1698,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l01746" name="l01746"></a><span class="lineno"> 1746</span>    }</div>
 <div class="line"><a id="l01747" name="l01747"></a><span class="lineno"> 1747</span>    END_ATOM;   <span class="comment">// moov atom</span></div>
 <div class="line"><a id="l01748" name="l01748"></a><span class="lineno"> 1748</span> </div>
-<div class="line"><a id="l01749" name="l01749"></a><span class="lineno"> 1749</span>    <a class="code hl_define" href="assert_8h.html#a0041af519e0e7d47c9bcc83760c4669e">assert</a>((<span class="keywordtype">unsigned</span>)(p - base) &lt;= index_bytes);</div>
+<div class="line"><a id="l01749" name="l01749"></a><span class="lineno"> 1749</span>    <a class="code hl_define" href="dlmalloc_8c.html#af576bf8ffa22a44e53018c67095ffbf0">assert</a>((<span class="keywordtype">unsigned</span>)(p - base) &lt;= index_bytes);</div>
 <div class="line"><a id="l01750" name="l01750"></a><span class="lineno"> 1750</span> </div>
 <div class="line"><a id="l01751" name="l01751"></a><span class="lineno"> 1751</span>    err = mux-&gt;write_callback(mux-&gt;write_pos, base, p - base, mux-&gt;token);</div>
 <div class="line"><a id="l01752" name="l01752"></a><span class="lineno"> 1752</span>    mux-&gt;write_pos += p - base;</div>
@@ -1758,14 +1758,14 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l01806" name="l01806"></a><span class="lineno"> 1806</span><span class="keyword">static</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> show_bits(bit_reader_t* bs, <span class="keywordtype">int</span> n)</div>
 <div class="line"><a id="l01807" name="l01807"></a><span class="lineno"> 1807</span>{</div>
 <div class="line"><a id="l01808" name="l01808"></a><span class="lineno"> 1808</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> retval;</div>
-<div class="line"><a id="l01809" name="l01809"></a><span class="lineno"> 1809</span>    <a class="code hl_define" href="assert_8h.html#a0041af519e0e7d47c9bcc83760c4669e">assert</a>(n &gt; 0 &amp;&amp; n &lt;= 16);</div>
+<div class="line"><a id="l01809" name="l01809"></a><span class="lineno"> 1809</span>    <a class="code hl_define" href="dlmalloc_8c.html#af576bf8ffa22a44e53018c67095ffbf0">assert</a>(n &gt; 0 &amp;&amp; n &lt;= 16);</div>
 <div class="line"><a id="l01810" name="l01810"></a><span class="lineno"> 1810</span>    retval = (<span class="keywordtype">unsigned</span> int)(bs-&gt;cache &gt;&gt; (32 - n));</div>
 <div class="line"><a id="l01811" name="l01811"></a><span class="lineno"> 1811</span>    <span class="keywordflow">return</span> retval;</div>
 <div class="line"><a id="l01812" name="l01812"></a><span class="lineno"> 1812</span>}</div>
 <div class="line"><a id="l01813" name="l01813"></a><span class="lineno"> 1813</span> </div>
 <div class="line"><a id="l01814" name="l01814"></a><span class="lineno"> 1814</span><span class="keyword">static</span> <span class="keywordtype">void</span> flush_bits(bit_reader_t* bs, <span class="keywordtype">int</span> n)</div>
 <div class="line"><a id="l01815" name="l01815"></a><span class="lineno"> 1815</span>{</div>
-<div class="line"><a id="l01816" name="l01816"></a><span class="lineno"> 1816</span>    <a class="code hl_define" href="assert_8h.html#a0041af519e0e7d47c9bcc83760c4669e">assert</a>(n &gt;= 0 &amp;&amp; n &lt;= 16);</div>
+<div class="line"><a id="l01816" name="l01816"></a><span class="lineno"> 1816</span>    <a class="code hl_define" href="dlmalloc_8c.html#af576bf8ffa22a44e53018c67095ffbf0">assert</a>(n &gt;= 0 &amp;&amp; n &lt;= 16);</div>
 <div class="line"><a id="l01817" name="l01817"></a><span class="lineno"> 1817</span>    bs-&gt;cache &lt;&lt;= n;</div>
 <div class="line"><a id="l01818" name="l01818"></a><span class="lineno"> 1818</span>    bs-&gt;cache_free_bits += n;</div>
 <div class="line"><a id="l01819" name="l01819"></a><span class="lineno"> 1819</span>    <span class="keywordflow">if</span> (bs-&gt;cache_free_bits &gt;= 0)</div>
@@ -1785,7 +1785,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l01833" name="l01833"></a><span class="lineno"> 1833</span> </div>
 <div class="line"><a id="l01834" name="l01834"></a><span class="lineno"> 1834</span><span class="keyword">static</span> <span class="keywordtype">void</span> set_pos_bits(bit_reader_t* bs, <span class="keywordtype">unsigned</span> pos_bits)</div>
 <div class="line"><a id="l01835" name="l01835"></a><span class="lineno"> 1835</span>{</div>
-<div class="line"><a id="l01836" name="l01836"></a><span class="lineno"> 1836</span>    <a class="code hl_define" href="assert_8h.html#a0041af519e0e7d47c9bcc83760c4669e">assert</a>((<span class="keywordtype">int</span>)pos_bits &gt;= 0);</div>
+<div class="line"><a id="l01836" name="l01836"></a><span class="lineno"> 1836</span>    <a class="code hl_define" href="dlmalloc_8c.html#af576bf8ffa22a44e53018c67095ffbf0">assert</a>((<span class="keywordtype">int</span>)pos_bits &gt;= 0);</div>
 <div class="line"><a id="l01837" name="l01837"></a><span class="lineno"> 1837</span> </div>
 <div class="line"><a id="l01838" name="l01838"></a><span class="lineno"> 1838</span>    bs-&gt;buf = bs-&gt;origin + pos_bits / 16;</div>
 <div class="line"><a id="l01839" name="l01839"></a><span class="lineno"> 1839</span>    bs-&gt;cache = 0;</div>
@@ -1801,7 +1801,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l01849" name="l01849"></a><span class="lineno"> 1849</span>    <span class="comment">// minus bs, available in bit cache wobits</span></div>
 <div class="line"><a id="l01850" name="l01850"></a><span class="lineno"> 1850</span>    <span class="keywordtype">unsigned</span> pos_bits = (unsigned)(bs-&gt;buf - bs-&gt;origin) * 16;</div>
 <div class="line"><a id="l01851" name="l01851"></a><span class="lineno"> 1851</span>    pos_bits -= 16 - bs-&gt;cache_free_bits;</div>
-<div class="line"><a id="l01852" name="l01852"></a><span class="lineno"> 1852</span>    <a class="code hl_define" href="assert_8h.html#a0041af519e0e7d47c9bcc83760c4669e">assert</a>((<span class="keywordtype">int</span>)pos_bits &gt;= 0);</div>
+<div class="line"><a id="l01852" name="l01852"></a><span class="lineno"> 1852</span>    <a class="code hl_define" href="dlmalloc_8c.html#af576bf8ffa22a44e53018c67095ffbf0">assert</a>((<span class="keywordtype">int</span>)pos_bits &gt;= 0);</div>
 <div class="line"><a id="l01853" name="l01853"></a><span class="lineno"> 1853</span>    <span class="keywordflow">return</span> pos_bits;</div>
 <div class="line"><a id="l01854" name="l01854"></a><span class="lineno"> 1854</span>}</div>
 <div class="line"><a id="l01855" name="l01855"></a><span class="lineno"> 1855</span> </div>
@@ -1843,12 +1843,12 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l01897" name="l01897"></a><span class="lineno"> 1897</span> </div>
 <div class="line"><a id="l01898" name="l01898"></a><span class="lineno"> 1898</span><span class="keyword">static</span> <span class="keywordtype">void</span> h264e_bs_put_bits(bs_t* bs, <span class="keywordtype">unsigned</span> n, <span class="keywordtype">unsigned</span> val)</div>
 <div class="line"><a id="l01899" name="l01899"></a><span class="lineno"> 1899</span>{</div>
-<div class="line"><a id="l01900" name="l01900"></a><span class="lineno"> 1900</span>    <a class="code hl_define" href="assert_8h.html#a0041af519e0e7d47c9bcc83760c4669e">assert</a>(!(val &gt;&gt; n));</div>
+<div class="line"><a id="l01900" name="l01900"></a><span class="lineno"> 1900</span>    <a class="code hl_define" href="dlmalloc_8c.html#af576bf8ffa22a44e53018c67095ffbf0">assert</a>(!(val &gt;&gt; n));</div>
 <div class="line"><a id="l01901" name="l01901"></a><span class="lineno"> 1901</span>    bs-&gt;shift -= n;</div>
-<div class="line"><a id="l01902" name="l01902"></a><span class="lineno"> 1902</span>    <a class="code hl_define" href="assert_8h.html#a0041af519e0e7d47c9bcc83760c4669e">assert</a>((<span class="keywordtype">unsigned</span>)n &lt;= 32);</div>
+<div class="line"><a id="l01902" name="l01902"></a><span class="lineno"> 1902</span>    <a class="code hl_define" href="dlmalloc_8c.html#af576bf8ffa22a44e53018c67095ffbf0">assert</a>((<span class="keywordtype">unsigned</span>)n &lt;= 32);</div>
 <div class="line"><a id="l01903" name="l01903"></a><span class="lineno"> 1903</span>    <span class="keywordflow">if</span> (bs-&gt;shift &lt; 0)</div>
 <div class="line"><a id="l01904" name="l01904"></a><span class="lineno"> 1904</span>    {</div>
-<div class="line"><a id="l01905" name="l01905"></a><span class="lineno"> 1905</span>        <a class="code hl_define" href="assert_8h.html#a0041af519e0e7d47c9bcc83760c4669e">assert</a>(-bs-&gt;shift &lt; 32);</div>
+<div class="line"><a id="l01905" name="l01905"></a><span class="lineno"> 1905</span>        <a class="code hl_define" href="dlmalloc_8c.html#af576bf8ffa22a44e53018c67095ffbf0">assert</a>(-bs-&gt;shift &lt; 32);</div>
 <div class="line"><a id="l01906" name="l01906"></a><span class="lineno"> 1906</span>        bs-&gt;cache |= val &gt;&gt; -bs-&gt;shift;</div>
 <div class="line"><a id="l01907" name="l01907"></a><span class="lineno"> 1907</span>        *bs-&gt;buf++ = SWAP32(bs-&gt;cache);</div>
 <div class="line"><a id="l01908" name="l01908"></a><span class="lineno"> 1908</span>        bs-&gt;shift = 32 + bs-&gt;shift;</div>
@@ -1866,7 +1866,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l01920" name="l01920"></a><span class="lineno"> 1920</span>{</div>
 <div class="line"><a id="l01921" name="l01921"></a><span class="lineno"> 1921</span>    <span class="keywordtype">unsigned</span> pos_bits = (unsigned)((bs-&gt;buf - bs-&gt;origin) * BS_BITS);</div>
 <div class="line"><a id="l01922" name="l01922"></a><span class="lineno"> 1922</span>    pos_bits += BS_BITS - bs-&gt;shift;</div>
-<div class="line"><a id="l01923" name="l01923"></a><span class="lineno"> 1923</span>    <a class="code hl_define" href="assert_8h.html#a0041af519e0e7d47c9bcc83760c4669e">assert</a>((<span class="keywordtype">int</span>)pos_bits &gt;= 0);</div>
+<div class="line"><a id="l01923" name="l01923"></a><span class="lineno"> 1923</span>    <a class="code hl_define" href="dlmalloc_8c.html#af576bf8ffa22a44e53018c67095ffbf0">assert</a>((<span class="keywordtype">int</span>)pos_bits &gt;= 0);</div>
 <div class="line"><a id="l01924" name="l01924"></a><span class="lineno"> 1924</span>    <span class="keywordflow">return</span> pos_bits;</div>
 <div class="line"><a id="l01925" name="l01925"></a><span class="lineno"> 1925</span>}</div>
 <div class="line"><a id="l01926" name="l01926"></a><span class="lineno"> 1926</span> </div>
@@ -2017,7 +2017,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l02091" name="l02091"></a><span class="lineno"> 2091</span> </div>
 <div class="line"><a id="l02092" name="l02092"></a><span class="lineno"> 2092</span>    *old_id = sps_id;</div>
 <div class="line"><a id="l02093" name="l02093"></a><span class="lineno"> 2093</span>    sps_id = new_id;</div>
-<div class="line"><a id="l02094" name="l02094"></a><span class="lineno"> 2094</span>    <a class="code hl_define" href="assert_8h.html#a0041af519e0e7d47c9bcc83760c4669e">assert</a>(sps_id &lt;= 31);</div>
+<div class="line"><a id="l02094" name="l02094"></a><span class="lineno"> 2094</span>    <a class="code hl_define" href="dlmalloc_8c.html#af576bf8ffa22a44e53018c67095ffbf0">assert</a>(sps_id &lt;= 31);</div>
 <div class="line"><a id="l02095" name="l02095"></a><span class="lineno"> 2095</span> </div>
 <div class="line"><a id="l02096" name="l02096"></a><span class="lineno"> 2096</span>    h264e_bs_put_golomb(bd, sps_id);</div>
 <div class="line"><a id="l02097" name="l02097"></a><span class="lineno"> 2097</span>    copy_bits(bs, bd);</div>
@@ -2037,8 +2037,8 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l02111" name="l02111"></a><span class="lineno"> 2111</span>    sps_id = h-&gt;<a class="code hl_variable" href="structh264__sps__id__patcher__t.html#ae5aea19cd6a46cde777043acab27c1c1">map_sps</a>[sps_id];</div>
 <div class="line"><a id="l02112" name="l02112"></a><span class="lineno"> 2112</span>    pps_id = new_pps_id;</div>
 <div class="line"><a id="l02113" name="l02113"></a><span class="lineno"> 2113</span> </div>
-<div class="line"><a id="l02114" name="l02114"></a><span class="lineno"> 2114</span>    <a class="code hl_define" href="assert_8h.html#a0041af519e0e7d47c9bcc83760c4669e">assert</a>(sps_id &lt;= 31);</div>
-<div class="line"><a id="l02115" name="l02115"></a><span class="lineno"> 2115</span>    <a class="code hl_define" href="assert_8h.html#a0041af519e0e7d47c9bcc83760c4669e">assert</a>(pps_id &lt;= 255);</div>
+<div class="line"><a id="l02114" name="l02114"></a><span class="lineno"> 2114</span>    <a class="code hl_define" href="dlmalloc_8c.html#af576bf8ffa22a44e53018c67095ffbf0">assert</a>(sps_id &lt;= 31);</div>
+<div class="line"><a id="l02115" name="l02115"></a><span class="lineno"> 2115</span>    <a class="code hl_define" href="dlmalloc_8c.html#af576bf8ffa22a44e53018c67095ffbf0">assert</a>(pps_id &lt;= 255);</div>
 <div class="line"><a id="l02116" name="l02116"></a><span class="lineno"> 2116</span> </div>
 <div class="line"><a id="l02117" name="l02117"></a><span class="lineno"> 2117</span>    h264e_bs_put_golomb(bd, pps_id);</div>
 <div class="line"><a id="l02118" name="l02118"></a><span class="lineno"> 2118</span>    h264e_bs_put_golomb(bd, sps_id);</div>
@@ -2057,7 +2057,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l02131" name="l02131"></a><span class="lineno"> 2131</span> </div>
 <div class="line"><a id="l02132" name="l02132"></a><span class="lineno"> 2132</span>    pps_id = h-&gt;<a class="code hl_variable" href="structh264__sps__id__patcher__t.html#a1426739621e9945e4950fb6f0ab83421">map_pps</a>[pps_id];</div>
 <div class="line"><a id="l02133" name="l02133"></a><span class="lineno"> 2133</span> </div>
-<div class="line"><a id="l02134" name="l02134"></a><span class="lineno"> 2134</span>    <a class="code hl_define" href="assert_8h.html#a0041af519e0e7d47c9bcc83760c4669e">assert</a>(pps_id &lt;= 255);</div>
+<div class="line"><a id="l02134" name="l02134"></a><span class="lineno"> 2134</span>    <a class="code hl_define" href="dlmalloc_8c.html#af576bf8ffa22a44e53018c67095ffbf0">assert</a>(pps_id &lt;= 255);</div>
 <div class="line"><a id="l02135" name="l02135"></a><span class="lineno"> 2135</span> </div>
 <div class="line"><a id="l02136" name="l02136"></a><span class="lineno"> 2136</span>    h264e_bs_put_golomb(bd, first_mb_in_slice);</div>
 <div class="line"><a id="l02137" name="l02137"></a><span class="lineno"> 2137</span>    h264e_bs_put_golomb(bd, slice_type);</div>
@@ -2709,7 +2709,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l02806" name="l02806"></a><span class="lineno"> 2806</span>        <span class="keywordflow">if</span> (depth)</div>
 <div class="line"><a id="l02807" name="l02807"></a><span class="lineno"> 2807</span>        {</div>
 <div class="line"><a id="l02808" name="l02808"></a><span class="lineno"> 2808</span>            <span class="comment">// Skip box with bad size</span></div>
-<div class="line"><a id="l02809" name="l02809"></a><span class="lineno"> 2809</span>            <a class="code hl_define" href="assert_8h.html#a0041af519e0e7d47c9bcc83760c4669e">assert</a>(box_bytes &gt; 0);</div>
+<div class="line"><a id="l02809" name="l02809"></a><span class="lineno"> 2809</span>            <a class="code hl_define" href="dlmalloc_8c.html#af576bf8ffa22a44e53018c67095ffbf0">assert</a>(box_bytes &gt; 0);</div>
 <div class="line"><a id="l02810" name="l02810"></a><span class="lineno"> 2810</span>            <span class="keywordflow">if</span> (box_bytes &gt; stack[depth].bytes)</div>
 <div class="line"><a id="l02811" name="l02811"></a><span class="lineno"> 2811</span>            {</div>
 <div class="line"><a id="l02812" name="l02812"></a><span class="lineno"> 2812</span>                TRACE((<span class="stringliteral">&quot;Wrong %c%c%c%c box size: broken file?\n&quot;</span>, (box_name &gt;&gt; 24) &amp; 255, (box_name &gt;&gt; 16) &amp; 255, (box_name &gt;&gt; 8) &amp; 255, box_name &amp; 255));</div>
@@ -3015,7 +3015,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l03112" name="l03112"></a><span class="lineno"> 3112</span>        }</div>
 <div class="line"><a id="l03113" name="l03113"></a><span class="lineno"> 3113</span> </div>
 <div class="line"><a id="l03114" name="l03114"></a><span class="lineno"> 3114</span>        <span class="keywordflow">case</span> OD_DCD:        <span class="comment">//ISO/IEC 14496-1 Page 28. Section 8.6.5 - DecoderConfigDescriptor.</span></div>
-<div class="line"><a id="l03115" name="l03115"></a><span class="lineno"> 3115</span>            <a class="code hl_define" href="assert_8h.html#a0041af519e0e7d47c9bcc83760c4669e">assert</a>(tr);     <span class="comment">// ensured by g_fullbox[] check</span></div>
+<div class="line"><a id="l03115" name="l03115"></a><span class="lineno"> 3115</span>            <a class="code hl_define" href="dlmalloc_8c.html#af576bf8ffa22a44e53018c67095ffbf0">assert</a>(tr);     <span class="comment">// ensured by g_fullbox[] check</span></div>
 <div class="line"><a id="l03116" name="l03116"></a><span class="lineno"> 3116</span>            tr-&gt;<a class="code hl_variable" href="structMP4D__track__t.html#a60453ee5b12f0d625154d196563d23d7">object_type_indication</a> = READ(1);</div>
 <div class="line"><a id="l03117" name="l03117"></a><span class="lineno"> 3117</span><span class="preprocessor">#if MP4D_INFO_SUPPORTED</span></div>
 <div class="line"><a id="l03118" name="l03118"></a><span class="lineno"> 3118</span>            tr-&gt;<a class="code hl_variable" href="structMP4D__track__t.html#abe0cb19330033b8e0f45a4c4f032e584">stream_type</a> = READ(1) &gt;&gt; 2;</div>
@@ -3027,7 +3027,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l03124" name="l03124"></a><span class="lineno"> 3124</span>            <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l03125" name="l03125"></a><span class="lineno"> 3125</span> </div>
 <div class="line"><a id="l03126" name="l03126"></a><span class="lineno"> 3126</span>        <span class="keywordflow">case</span> OD_DSI:        <span class="comment">//ISO/IEC 14496-1 Page 28. Section 8.6.5 - DecoderConfigDescriptor.</span></div>
-<div class="line"><a id="l03127" name="l03127"></a><span class="lineno"> 3127</span>            <a class="code hl_define" href="assert_8h.html#a0041af519e0e7d47c9bcc83760c4669e">assert</a>(tr);     <span class="comment">// ensured by g_fullbox[] check</span></div>
+<div class="line"><a id="l03127" name="l03127"></a><span class="lineno"> 3127</span>            <a class="code hl_define" href="dlmalloc_8c.html#af576bf8ffa22a44e53018c67095ffbf0">assert</a>(tr);     <span class="comment">// ensured by g_fullbox[] check</span></div>
 <div class="line"><a id="l03128" name="l03128"></a><span class="lineno"> 3128</span>            <span class="keywordflow">if</span> (!tr-&gt;<a class="code hl_variable" href="structMP4D__track__t.html#a8124d595f8a4e10c95432d61fa4c9a19">dsi</a> &amp;&amp; payload_bytes)</div>
 <div class="line"><a id="l03129" name="l03129"></a><span class="lineno"> 3129</span>            {</div>
 <div class="line"><a id="l03130" name="l03130"></a><span class="lineno"> 3130</span>                MALLOC(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>*, tr-&gt;<a class="code hl_variable" href="structMP4D__track__t.html#a8124d595f8a4e10c95432d61fa4c9a19">dsi</a>, (<span class="keywordtype">int</span>)payload_bytes);</div>
@@ -3460,7 +3460,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="ttc" id="aacefiex_8h_html_adf4d876453337156dde61095e1f20223"><div class="ttname"><a href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a></div><div class="ttdeci">unsigned short int uint16_t</div><div class="ttdef"><b>Definition</b> acefiex.h:162</div></div>
 <div class="ttc" id="aactypes_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="actypes_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition</b> actypes.h:561</div></div>
 <div class="ttc" id="aassert_8h_html"><div class="ttname"><a href="assert_8h.html">assert.h</a></div></div>
-<div class="ttc" id="aassert_8h_html_a0041af519e0e7d47c9bcc83760c4669e"><div class="ttname"><a href="assert_8h.html#a0041af519e0e7d47c9bcc83760c4669e">assert</a></div><div class="ttdeci">#define assert(expression)</div><div class="ttdef"><b>Definition</b> assert.h:40</div></div>
+<div class="ttc" id="adlmalloc_8c_html_af576bf8ffa22a44e53018c67095ffbf0"><div class="ttname"><a href="dlmalloc_8c.html#af576bf8ffa22a44e53018c67095ffbf0">assert</a></div><div class="ttdeci">#define assert(x)</div><div class="ttdef"><b>Definition</b> dlmalloc.c:1534</div></div>
 <div class="ttc" id="alittleboot_8c_html_af4f810c521bcfd87215d3007005a8325"><div class="ttname"><a href="littleboot_8c.html#af4f810c521bcfd87215d3007005a8325">end</a></div><div class="ttdeci">char end[]</div></div>
 <div class="ttc" id="amp4plr_2minimp4_8h_html_a07de8a23df72b8d0ccb76bebf8537498"><div class="ttname"><a href="mp4plr_2minimp4_8h.html#a07de8a23df72b8d0ccb76bebf8537498">MP4D_file_offset_t</a></div><div class="ttdeci">boxsize_t MP4D_file_offset_t</div><div class="ttdef"><b>Definition</b> minimp4.h:102</div></div>
 <div class="ttc" id="amp4plr_2minimp4_8h_html_a0e9cd378fc0c3c490bde60d4fda125e3"><div class="ttname"><a href="mp4plr_2minimp4_8h.html#a0e9cd378fc0c3c490bde60d4fda125e3">MP4E_mux_t</a></div><div class="ttdeci">struct MP4E_mux_tag MP4E_mux_t</div><div class="ttdef"><b>Definition</b> minimp4.h:126</div></div>

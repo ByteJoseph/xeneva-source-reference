@@ -82,9 +82,9 @@ Collaboration diagram for _app_grid_:</div>
 <div class="dyncontent">
 <div class="center"><img src="struct__app__grid____coll__graph.png" border="0" usemap="#a__app__grid___coll__map" alt="Collaboration graph"/></div>
 <map name="a__app__grid___coll__map" id="a__app__grid___coll__map">
-<area shape="rect" title=" " alt="" coords="5,185,97,211"/>
+<area shape="rect" title=" " alt="" coords="5,200,97,225"/>
 <area shape="rect" href="struct__list__.html" title=" " alt="" coords="23,97,79,123"/>
-<area shape="poly" title=" " alt="" coords="54,137,54,185,49,185,49,137"/>
+<area shape="poly" title=" " alt="" coords="54,137,54,200,49,200,49,137"/>
 <area shape="rect" href="struct__data__.html" title=" " alt="" coords="19,7,84,33"/>
 <area shape="poly" title=" " alt="" coords="54,46,54,97,49,97,49,46"/>
 <area shape="poly" title=" " alt="" coords="99,10,107,13,111,20,102,29,85,31,84,26,100,24,105,20,104,17,97,15"/>
@@ -113,6 +113,16 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a0c34a2e9a1a4518609428d904c599489"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e82902a63b1aabd73318c613942a063" id="r_a7e82902a63b1aabd73318c613942a063"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__app__grid__.html#a7e82902a63b1aabd73318c613942a063">numRowsInOnePage</a></td></tr>
 <tr class="separator:a7e82902a63b1aabd73318c613942a063"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad165953ed74dfa9e706fe39416ca2276" id="r_ad165953ed74dfa9e706fe39416ca2276"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Libs_2XEClib_2includes_2stdint_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__app__grid__.html#ad165953ed74dfa9e706fe39416ca2276">show_search_result</a></td></tr>
+<tr class="separator:ad165953ed74dfa9e706fe39416ca2276"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f013e5269c1c4ad47f002120a74b666" id="r_a4f013e5269c1c4ad47f002120a74b666"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__app__grid__.html#a4f013e5269c1c4ad47f002120a74b666">search_pos_x</a></td></tr>
+<tr class="separator:a4f013e5269c1c4ad47f002120a74b666"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf15aea9a367ff9e93b24f0cba2aa871" id="r_aaf15aea9a367ff9e93b24f0cba2aa871"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__app__grid__.html#aaf15aea9a367ff9e93b24f0cba2aa871">search_pos_y</a></td></tr>
+<tr class="separator:aaf15aea9a367ff9e93b24f0cba2aa871"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16fe7f45ceea12360465f62357809f1f" id="r_a16fe7f45ceea12360465f62357809f1f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2list_8h.html#a16f120636a2232190d06eda34a04cf16">list_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__app__grid__.html#a16fe7f45ceea12360465f62357809f1f">searchResultList</a></td></tr>
+<tr class="separator:a16fe7f45ceea12360465f62357809f1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a591a2370db4c534188c3827402099ef9" id="r_a591a2370db4c534188c3827402099ef9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Libs_2XEClib_2includes_2stdint_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__app__grid__.html#a591a2370db4c534188c3827402099ef9">show_search</a></td></tr>
+<tr class="separator:a591a2370db4c534188c3827402099ef9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e06d1de535abe4edc9878e8fbc34210" id="r_a9e06d1de535abe4edc9878e8fbc34210"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__app__grid__.html#a9e06d1de535abe4edc9878e8fbc34210">PaintAppGrid</a> )(<a class="el" href="struct__app__grid__.html">_app_grid_</a> *grid, <a class="el" href="Libs_2Chitralekha_2widgets_2window_8h.html#a2f9fc029ae6c22f6c7976c00f97be497">ChWindow</a> *<a class="el" href="namdapha_8cpp.html#a60284ea0d2e293995badb97f5cf80c2d">win</a>)</td></tr>
 <tr class="separator:a9e06d1de535abe4edc9878e8fbc34210"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -195,6 +205,76 @@ Public Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">void(* _app_grid_::PaintAppGrid) (<a class="el" href="struct__app__grid__.html">_app_grid_</a> *grid, <a class="el" href="Libs_2Chitralekha_2widgets_2window_8h.html#a2f9fc029ae6c22f6c7976c00f97be497">ChWindow</a> *<a class="el" href="namdapha_8cpp.html#a60284ea0d2e293995badb97f5cf80c2d">win</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4f013e5269c1c4ad47f002120a74b666" name="a4f013e5269c1c4ad47f002120a74b666"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f013e5269c1c4ad47f002120a74b666">&#9670;&#160;</a></span>search_pos_x</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int _app_grid_::search_pos_x</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaf15aea9a367ff9e93b24f0cba2aa871" name="aaf15aea9a367ff9e93b24f0cba2aa871"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf15aea9a367ff9e93b24f0cba2aa871">&#9670;&#160;</a></span>search_pos_y</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int _app_grid_::search_pos_y</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a16fe7f45ceea12360465f62357809f1f" name="a16fe7f45ceea12360465f62357809f1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16fe7f45ceea12360465f62357809f1f">&#9670;&#160;</a></span>searchResultList</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="BaseHdr_2list_8h.html#a16f120636a2232190d06eda34a04cf16">list_t</a>* _app_grid_::searchResultList</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a591a2370db4c534188c3827402099ef9" name="a591a2370db4c534188c3827402099ef9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a591a2370db4c534188c3827402099ef9">&#9670;&#160;</a></span>show_search</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="Libs_2XEClib_2includes_2stdint_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> _app_grid_::show_search</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad165953ed74dfa9e706fe39416ca2276" name="ad165953ed74dfa9e706fe39416ca2276"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad165953ed74dfa9e706fe39416ca2276">&#9670;&#160;</a></span>show_search_result</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="Libs_2XEClib_2includes_2stdint_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> _app_grid_::show_search_result</td>
         </tr>
       </table>
 </div><div class="memdoc">

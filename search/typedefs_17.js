@@ -1,8 +1,8 @@
 var searchData=
 [
   ['wchar_5ft_0',['wchar_t',['../stddef_8h.html#a2e9a8173645cde5c5e7ae1eaa41d27ce',1,'stddef.h']]],
-  ['window_1',['Window',['../Process_2Deodhai_2window_8h.html#a8992679d9f1b8c5d1cd6a3f8979e0573',1,'window.h']]],
-  ['winsharedinfo_2',['WinSharedInfo',['../Process_2Deodhai_2window_8h.html#a53bc978102cea75fdf6b7b9adbf36d2c',1,'window.h']]],
+  ['window_1',['window',['../Process_2Deodhai_2window_8h.html#a8992679d9f1b8c5d1cd6a3f8979e0573',1,'Window:&#160;window.h'],['../Process_2DeodhaiXR_2window_8h.html#a8992679d9f1b8c5d1cd6a3f8979e0573',1,'Window:&#160;window.h']]],
+  ['winsharedinfo_2',['winsharedinfo',['../Process_2Deodhai_2window_8h.html#a53bc978102cea75fdf6b7b9adbf36d2c',1,'WinSharedInfo:&#160;window.h'],['../Process_2DeodhaiXR_2window_8h.html#a53bc978102cea75fdf6b7b9adbf36d2c',1,'WinSharedInfo:&#160;window.h']]],
   ['winsize_3',['winsize',['../tty_8h.html#a0dd034de36fe76fed7b2f793fe783588',1,'WinSize:&#160;tty.h'],['../__ketty_8h.html#a0dd034de36fe76fed7b2f793fe783588',1,'WinSize:&#160;_ketty.h']]],
   ['wint_5ft_4',['wint_t',['../stddef_8h.html#ae66a5a4c3f483e5c7705ba6ca94a4455',1,'stddef.h']]],
   ['woff_5fheader_5',['WOFF_Header',['../tttypes_8h.html#aed034e10679ba37540650cbc310fb932',1,'tttypes.h']]],
