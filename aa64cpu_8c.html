@@ -164,6 +164,12 @@ Functions</h2></td></tr>
 <tr class="separator:a1af48be1e292b972d4c776a2b59b031a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63f360449b03599d5f865ad6bc63cb5e" id="r_a63f360449b03599d5f865ad6bc63cb5e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aa64cpu_8c.html#a63f360449b03599d5f865ad6bc63cb5e">aa64_data_cache_clean_range</a> (void *addr, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> size)</td></tr>
 <tr class="separator:a63f360449b03599d5f865ad6bc63cb5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61e8582b93672c41a30bc9573ccd2b2d" id="r_a61e8582b93672c41a30bc9573ccd2b2d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aa64cpu_8c.html#a61e8582b93672c41a30bc9573ccd2b2d">get_cache_line_sz</a> ()</td></tr>
+<tr class="separator:a61e8582b93672c41a30bc9573ccd2b2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a030197f92dfe084e0d0d9022ee863fa1" id="r_a030197f92dfe084e0d0d9022ee863fa1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aa64cpu_8c.html#a030197f92dfe084e0d0d9022ee863fa1">aa64_dc_cvac_range</a> (void *addr, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> sz)</td></tr>
+<tr class="separator:a030197f92dfe084e0d0d9022ee863fa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0f3fd1fb4a6dad989c9af7c3079af10" id="r_ad0f3fd1fb4a6dad989c9af7c3079af10"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aa64cpu_8c.html#ad0f3fd1fb4a6dad989c9af7c3079af10">aa64_dc_ivac_range</a> (void *addr, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> sz)</td></tr>
+<tr class="separator:ad0f3fd1fb4a6dad989c9af7c3079af10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0d7b25abecdf969f5bcf60a036ce19c" id="r_aa0d7b25abecdf969f5bcf60a036ce19c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aa64cpu_8c.html#aa0d7b25abecdf969f5bcf60a036ce19c">AA64CPUImplementer</a> (<a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> midr)</td></tr>
 <tr class="separator:aa0d7b25abecdf969f5bcf60a036ce19c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29514d1bbb75eecac798e82205707f14" id="r_a29514d1bbb75eecac798e82205707f14"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aa64cpu_8c.html#a29514d1bbb75eecac798e82205707f14">AA64SleepUS</a> (<a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> us)</td></tr>
@@ -232,6 +238,62 @@ Variables</h2></td></tr>
           <td></td>
           <td class="paramtype"><a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>&#160;</td>
           <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a030197f92dfe084e0d0d9022ee863fa1" name="a030197f92dfe084e0d0d9022ee863fa1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a030197f92dfe084e0d0d9022ee863fa1">&#9670;&#160;</a></span>aa64_dc_cvac_range()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void aa64_dc_cvac_range </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>&#160;</td>
+          <td class="paramname"><em>sz</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad0f3fd1fb4a6dad989c9af7c3079af10" name="ad0f3fd1fb4a6dad989c9af7c3079af10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0f3fd1fb4a6dad989c9af7c3079af10">&#9670;&#160;</a></span>aa64_dc_ivac_range()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void aa64_dc_ivac_range </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>&#160;</td>
+          <td class="paramname"><em>sz</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -451,6 +513,23 @@ Variables</h2></td></tr>
 <span class="mlabels"><span class="mlabel">extern</span></span>  </td>
   </tr>
 </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a61e8582b93672c41a30bc9573ccd2b2d" name="a61e8582b93672c41a30bc9573ccd2b2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61e8582b93672c41a30bc9573ccd2b2d">&#9670;&#160;</a></span>get_cache_line_sz()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> get_cache_line_sz </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
 </div><div class="memdoc">
 
 </div>

@@ -150,6 +150,24 @@ Functions</h2></td></tr>
 <tr class="separator:a6f5456beacc8dc9c101df732c17e1927"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5672e3b12f51d2649ffeb94bb2a6b6f5" id="r_a5672e3b12f51d2649ffeb94bb2a6b6f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dwc2_8h.html#a5672e3b12f51d2649ffeb94bb2a6b6f5">dwc2_enumerate_root_device</a> (struct <a class="el" href="structdwc2__core__regs.html">dwc2_core_regs</a> *regs)</td></tr>
 <tr class="separator:a5672e3b12f51d2649ffeb94bb2a6b6f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada083eef26e6ee68f9eede2383e4ed14" id="r_ada083eef26e6ee68f9eede2383e4ed14"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dwc2_8h.html#ada083eef26e6ee68f9eede2383e4ed14">dwc2_handle_channel_interrupt</a> (<a class="el" href="structdwc2__core__regs.html">dwc2_core_regs</a> *regs, int ch)</td></tr>
+<tr class="memdesc:ada083eef26e6ee68f9eede2383e4ed14"><td class="mdescLeft">&#160;</td><td class="mdescRight">dwc2_handle_channel_interrupt &ndash; handle channel interrupts here  <br /></td></tr>
+<tr class="separator:ada083eef26e6ee68f9eede2383e4ed14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97408b792b0311843ec60d25c8fe312c" id="r_a97408b792b0311843ec60d25c8fe312c"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dwc2_8h.html#a97408b792b0311843ec60d25c8fe312c">dwc2_get_dma_address</a> ()</td></tr>
+<tr class="memdesc:a97408b792b0311843ec60d25c8fe312c"><td class="mdescLeft">&#160;</td><td class="mdescRight">dwc2_get_dma_address &ndash; return pre allocated dma address  <br /></td></tr>
+<tr class="separator:a97408b792b0311843ec60d25c8fe312c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b5eff6e116e51d14b8398ab01e9c19b" id="r_a6b5eff6e116e51d14b8398ab01e9c19b"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dwc2_8h.html#a6b5eff6e116e51d14b8398ab01e9c19b">dwc2_get_dma_address_phys</a> ()</td></tr>
+<tr class="separator:a6b5eff6e116e51d14b8398ab01e9c19b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6a8f2dcf3467092b9108a2b6db22821" id="r_af6a8f2dcf3467092b9108a2b6db22821"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dwc2_8h.html#af6a8f2dcf3467092b9108a2b6db22821">dwc2_flush_tx_fifo</a> (struct <a class="el" href="structdwc2__core__regs.html">dwc2_core_regs</a> *regs, <a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> nfifo)</td></tr>
+<tr class="separator:af6a8f2dcf3467092b9108a2b6db22821"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f385a06b3408218f969ace49e200da8" id="r_a0f385a06b3408218f969ace49e200da8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dwc2_8h.html#a0f385a06b3408218f969ace49e200da8">dwc2_flush_rx_fifo</a> (struct <a class="el" href="structdwc2__core__regs.html">dwc2_core_regs</a> *regs)</td></tr>
+<tr class="separator:a0f385a06b3408218f969ace49e200da8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7adffb72082eacacb65a7273ae9c12e6" id="r_a7adffb72082eacacb65a7273ae9c12e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dwc2_8h.html#a7adffb72082eacacb65a7273ae9c12e6">dwc2_add_to_used_dma_list</a> (void *<a class="el" href="littleboot_8c.html#a433fff092567e18c6f92251f275a5bec">phys</a>)</td></tr>
+<tr class="memdesc:a7adffb72082eacacb65a7273ae9c12e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">dwc2_add_to_used_dma_list &ndash; there is a bug i guess within the dwc2 ip where same buffer can't be used for setup packet  <br /></td></tr>
+<tr class="separator:a7adffb72082eacacb65a7273ae9c12e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e8ed06828bb3ab7b24f3e9f2a4154cd" id="r_a0e8ed06828bb3ab7b24f3e9f2a4154cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dwc2_8h.html#a0e8ed06828bb3ab7b24f3e9f2a4154cd">dwc2_free_used_dma_list</a> ()</td></tr>
+<tr class="memdesc:a0e8ed06828bb3ab7b24f3e9f2a4154cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">dwc2_free_used_dma_list &ndash; free up all used physical memories, this function must be called at the end of the class driver initialization  <br /></td></tr>
+<tr class="separator:a0e8ed06828bb3ab7b24f3e9f2a4154cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>BSD 2-Clause License</p>
@@ -306,6 +324,34 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a7adffb72082eacacb65a7273ae9c12e6" name="a7adffb72082eacacb65a7273ae9c12e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7adffb72082eacacb65a7273ae9c12e6">&#9670;&#160;</a></span>dwc2_add_to_used_dma_list()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dwc2_add_to_used_dma_list </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>phys</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>dwc2_add_to_used_dma_list &ndash; there is a bug i guess within the dwc2 ip where same buffer can't be used for setup packet </p>
+
+</div>
+</div>
 <a id="a6f5456beacc8dc9c101df732c17e1927" name="a6f5456beacc8dc9c101df732c17e1927"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6f5456beacc8dc9c101df732c17e1927">&#9670;&#160;</a></span>dwc2_control_transfer()</h2>
 
@@ -409,6 +455,195 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+<p>no strings for root hub, iss iss bom laaj pali no ??</p>
+<p>next set address, and configure the hub, because devices are waiting to get powered in</p>
+
+</div>
+</div>
+<a id="a0f385a06b3408218f969ace49e200da8" name="a0f385a06b3408218f969ace49e200da8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f385a06b3408218f969ace49e200da8">&#9670;&#160;</a></span>dwc2_flush_rx_fifo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dwc2_flush_rx_fifo </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structdwc2__core__regs.html">dwc2_core_regs</a> *&#160;</td>
+          <td class="paramname"><em>regs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af6a8f2dcf3467092b9108a2b6db22821" name="af6a8f2dcf3467092b9108a2b6db22821"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6a8f2dcf3467092b9108a2b6db22821">&#9670;&#160;</a></span>dwc2_flush_tx_fifo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dwc2_flush_tx_fifo </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structdwc2__core__regs.html">dwc2_core_regs</a> *&#160;</td>
+          <td class="paramname"><em>regs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td>
+          <td class="paramname"><em>nfifo</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0e8ed06828bb3ab7b24f3e9f2a4154cd" name="a0e8ed06828bb3ab7b24f3e9f2a4154cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e8ed06828bb3ab7b24f3e9f2a4154cd">&#9670;&#160;</a></span>dwc2_free_used_dma_list()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dwc2_free_used_dma_list </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>dwc2_free_used_dma_list &ndash; free up all used physical memories, this function must be called at the end of the class driver initialization </p>
+
+</div>
+</div>
+<a id="a97408b792b0311843ec60d25c8fe312c" name="a97408b792b0311843ec60d25c8fe312c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97408b792b0311843ec60d25c8fe312c">&#9670;&#160;</a></span>dwc2_get_dma_address()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void * dwc2_get_dma_address </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>dwc2_get_dma_address &ndash; return pre allocated dma address </p>
+
+</div>
+</div>
+<a id="a6b5eff6e116e51d14b8398ab01e9c19b" name="a6b5eff6e116e51d14b8398ab01e9c19b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b5eff6e116e51d14b8398ab01e9c19b">&#9670;&#160;</a></span>dwc2_get_dma_address_phys()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void * dwc2_get_dma_address_phys </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ada083eef26e6ee68f9eede2383e4ed14" name="ada083eef26e6ee68f9eede2383e4ed14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada083eef26e6ee68f9eede2383e4ed14">&#9670;&#160;</a></span>dwc2_handle_channel_interrupt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dwc2_handle_channel_interrupt </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structdwc2__core__regs.html">dwc2_core_regs</a> *&#160;</td>
+          <td class="paramname"><em>regs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ch</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>dwc2_handle_channel_interrupt &ndash; handle channel interrupts here </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">regs</td><td>&ndash; Pointer to dwc2 core registers </td></tr>
+    <tr><td class="paramname">ch</td><td>&ndash; channel numbers </td></tr>
+  </table>
+  </dd>
+</dl>
+<p>W1C</p>
 
 </div>
 </div>
