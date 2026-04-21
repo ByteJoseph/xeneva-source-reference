@@ -77,7 +77,8 @@ $(function() {
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">dwc2_root.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -147,6 +148,10 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__usb__hub__.html">_usb_hub_</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__usb__ep__desc__.html">_usb_ep_desc_</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structusb__port__status__t.html">usb_port_status_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
@@ -156,6 +161,26 @@ Macros</h2></td></tr>
 <tr class="separator:a427b229a1546e0ed033c1c0efc7c625e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d8010489de389615318e2734be1a5e2" id="r_a8d8010489de389615318e2734be1a5e2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dwc2__root_8cpp.html#a8d8010489de389615318e2734be1a5e2">DESCRIPTOR_TYPE_ENDPOINT</a>&#160;&#160;&#160;5</td></tr>
 <tr class="separator:a8d8010489de389615318e2734be1a5e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cecaf205acbc73308396af4f540c012" id="r_a1cecaf205acbc73308396af4f540c012"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dwc2__root_8cpp.html#a1cecaf205acbc73308396af4f540c012">USB_EP_TYPE_CONTROL</a>&#160;&#160;&#160;0x00</td></tr>
+<tr class="separator:a1cecaf205acbc73308396af4f540c012"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38fe8ff7d058d11ff7d22436089f869e" id="r_a38fe8ff7d058d11ff7d22436089f869e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dwc2__root_8cpp.html#a38fe8ff7d058d11ff7d22436089f869e">USB_EP_TYPE_ISOC</a>&#160;&#160;&#160;0x01</td></tr>
+<tr class="separator:a38fe8ff7d058d11ff7d22436089f869e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89eb27133e7e106c3637039f6f49d187" id="r_a89eb27133e7e106c3637039f6f49d187"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dwc2__root_8cpp.html#a89eb27133e7e106c3637039f6f49d187">USB_EP_TYPE_BULK</a>&#160;&#160;&#160;0x02</td></tr>
+<tr class="separator:a89eb27133e7e106c3637039f6f49d187"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a904b4eef8e7bcab363757e19832617ee" id="r_a904b4eef8e7bcab363757e19832617ee"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dwc2__root_8cpp.html#a904b4eef8e7bcab363757e19832617ee">USB_EP_TYPE_INTERRUPT</a>&#160;&#160;&#160;0x03</td></tr>
+<tr class="separator:a904b4eef8e7bcab363757e19832617ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47e30209a739c66d9b7bddd104fd9aee" id="r_a47e30209a739c66d9b7bddd104fd9aee"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dwc2__root_8cpp.html#a47e30209a739c66d9b7bddd104fd9aee">PORT_STATUS_CONNECTION</a>&#160;&#160;&#160;(1&lt;&lt;0)</td></tr>
+<tr class="separator:a47e30209a739c66d9b7bddd104fd9aee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09adc93f2c370b02a538c6ff5691a3ac" id="r_a09adc93f2c370b02a538c6ff5691a3ac"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dwc2__root_8cpp.html#a09adc93f2c370b02a538c6ff5691a3ac">PORT_CHANGE_CONNECTION</a>&#160;&#160;&#160;(1&lt;&lt;0)</td></tr>
+<tr class="separator:a09adc93f2c370b02a538c6ff5691a3ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef9f3af2c0eb8d030fe9ef5ed8302ce2" id="r_aef9f3af2c0eb8d030fe9ef5ed8302ce2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dwc2__root_8cpp.html#aef9f3af2c0eb8d030fe9ef5ed8302ce2">PORT_CHANGE_ENABLE</a>&#160;&#160;&#160;(1&lt;&lt;1)</td></tr>
+<tr class="separator:aef9f3af2c0eb8d030fe9ef5ed8302ce2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84c41c40670c2f199df1fab1024f5abd" id="r_a84c41c40670c2f199df1fab1024f5abd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dwc2__root_8cpp.html#a84c41c40670c2f199df1fab1024f5abd">PORT_CHANGE_SUSPEND</a>&#160;&#160;&#160;(1&lt;&lt;2)</td></tr>
+<tr class="separator:a84c41c40670c2f199df1fab1024f5abd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99d03f4c739a5157dcb3a7459add8b7a" id="r_a99d03f4c739a5157dcb3a7459add8b7a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dwc2__root_8cpp.html#a99d03f4c739a5157dcb3a7459add8b7a">PORT_CHANGE_OVERCURRENT</a>&#160;&#160;&#160;(1&lt;&lt;3)</td></tr>
+<tr class="separator:a99d03f4c739a5157dcb3a7459add8b7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cecc6b29a206e801944fe7fa02424fd" id="r_a0cecc6b29a206e801944fe7fa02424fd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dwc2__root_8cpp.html#a0cecc6b29a206e801944fe7fa02424fd">PORT_CHANGE_RESET</a>&#160;&#160;&#160;(1&lt;&lt;4)</td></tr>
+<tr class="separator:a0cecc6b29a206e801944fe7fa02424fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -173,13 +198,30 @@ Typedefs</h2></td></tr>
 <tr class="separator:abe31671913697c0e3184bbd550dc8bd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a715bc78718fc2e8d15aca43eecd83c19" id="r_a715bc78718fc2e8d15aca43eecd83c19"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct__usb__hub__.html">_usb_hub_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dwc2__root_8cpp.html#a715bc78718fc2e8d15aca43eecd83c19">usb_hub_desc_t</a></td></tr>
 <tr class="separator:a715bc78718fc2e8d15aca43eecd83c19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2452bd0ade594a88c37a626ea9c9080b" id="r_a2452bd0ade594a88c37a626ea9c9080b"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct__usb__ep__desc__.html">_usb_ep_desc_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dwc2__root_8cpp.html#a2452bd0ade594a88c37a626ea9c9080b">usb_ep_desc_t</a></td></tr>
+<tr class="separator:a2452bd0ade594a88c37a626ea9c9080b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ad0cc3e7c24c902029852adf6996e5f38" id="r_ad0cc3e7c24c902029852adf6996e5f38"><td class="memItemLeft" align="right" valign="top"><a class="el" href="dwc2__root_8cpp.html#abe31671913697c0e3184bbd550dc8bd6">usb_descriptor_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dwc2__root_8cpp.html#ad0cc3e7c24c902029852adf6996e5f38">dwc2_get_descriptor</a> (void *desc, <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> type)</td></tr>
 <tr class="separator:ad0cc3e7c24c902029852adf6996e5f38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafdc157b2f6ddea86162f79a8009b34b" id="r_aafdc157b2f6ddea86162f79a8009b34b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dwc2__root_8cpp.html#aafdc157b2f6ddea86162f79a8009b34b">usb_hub_get_port_status</a> (struct <a class="el" href="structdwc2__core__regs.html">dwc2_core_regs</a> *regs, <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> port, void *dma, <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> address, <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> speed)</td></tr>
+<tr class="separator:aafdc157b2f6ddea86162f79a8009b34b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5672e3b12f51d2649ffeb94bb2a6b6f5" id="r_a5672e3b12f51d2649ffeb94bb2a6b6f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dwc2__root_8cpp.html#a5672e3b12f51d2649ffeb94bb2a6b6f5">dwc2_enumerate_root_device</a> (struct <a class="el" href="structdwc2__core__regs.html">dwc2_core_regs</a> *regs)</td></tr>
 <tr class="separator:a5672e3b12f51d2649ffeb94bb2a6b6f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa335d07df1555b7377978c758aea008" id="r_aaa335d07df1555b7377978c758aea008"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dwc2__root_8cpp.html#aaa335d07df1555b7377978c758aea008">root_hub_transfer_int</a> (<a class="el" href="structdwc2__core__regs.html">dwc2_core_regs</a> *regs, <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> pid)</td></tr>
+<tr class="separator:aaa335d07df1555b7377978c758aea008"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3738a9676498ab4c1c768d2cc404b31e" id="r_a3738a9676498ab4c1c768d2cc404b31e"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dwc2__root_8cpp.html#a3738a9676498ab4c1c768d2cc404b31e">root_hub_get_interrupt_buffer</a> ()</td></tr>
+<tr class="separator:a3738a9676498ab4c1c768d2cc404b31e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea3beb1c1cb5d7d090b3cd5312d6885e" id="r_aea3beb1c1cb5d7d090b3cd5312d6885e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dwc2__root_8cpp.html#aea3beb1c1cb5d7d090b3cd5312d6885e">root_hub_handle_port_change</a> (<a class="el" href="structdwc2__core__regs.html">dwc2_core_regs</a> *regs, <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> port)</td></tr>
+<tr class="separator:aea3beb1c1cb5d7d090b3cd5312d6885e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a82b8176be9da8722eed02c12b5187c3c" id="r_a82b8176be9da8722eed02c12b5187c3c"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dwc2__root_8cpp.html#a82b8176be9da8722eed02c12b5187c3c">intb</a></td></tr>
+<tr class="separator:a82b8176be9da8722eed02c12b5187c3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76c0ec69bcd858c7b34c5d2da1d1efcd" id="r_a76c0ec69bcd858c7b34c5d2da1d1efcd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dwc2__root_8cpp.html#a76c0ec69bcd858c7b34c5d2da1d1efcd">port_changed</a></td></tr>
+<tr class="separator:a76c0ec69bcd858c7b34c5d2da1d1efcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>BSD 2-Clause License</p>
@@ -233,6 +275,146 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a09adc93f2c370b02a538c6ff5691a3ac" name="a09adc93f2c370b02a538c6ff5691a3ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09adc93f2c370b02a538c6ff5691a3ac">&#9670;&#160;</a></span>PORT_CHANGE_CONNECTION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PORT_CHANGE_CONNECTION&#160;&#160;&#160;(1&lt;&lt;0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aef9f3af2c0eb8d030fe9ef5ed8302ce2" name="aef9f3af2c0eb8d030fe9ef5ed8302ce2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef9f3af2c0eb8d030fe9ef5ed8302ce2">&#9670;&#160;</a></span>PORT_CHANGE_ENABLE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PORT_CHANGE_ENABLE&#160;&#160;&#160;(1&lt;&lt;1)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a99d03f4c739a5157dcb3a7459add8b7a" name="a99d03f4c739a5157dcb3a7459add8b7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99d03f4c739a5157dcb3a7459add8b7a">&#9670;&#160;</a></span>PORT_CHANGE_OVERCURRENT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PORT_CHANGE_OVERCURRENT&#160;&#160;&#160;(1&lt;&lt;3)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0cecc6b29a206e801944fe7fa02424fd" name="a0cecc6b29a206e801944fe7fa02424fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0cecc6b29a206e801944fe7fa02424fd">&#9670;&#160;</a></span>PORT_CHANGE_RESET</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PORT_CHANGE_RESET&#160;&#160;&#160;(1&lt;&lt;4)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a84c41c40670c2f199df1fab1024f5abd" name="a84c41c40670c2f199df1fab1024f5abd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84c41c40670c2f199df1fab1024f5abd">&#9670;&#160;</a></span>PORT_CHANGE_SUSPEND</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PORT_CHANGE_SUSPEND&#160;&#160;&#160;(1&lt;&lt;2)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a47e30209a739c66d9b7bddd104fd9aee" name="a47e30209a739c66d9b7bddd104fd9aee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47e30209a739c66d9b7bddd104fd9aee">&#9670;&#160;</a></span>PORT_STATUS_CONNECTION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PORT_STATUS_CONNECTION&#160;&#160;&#160;(1&lt;&lt;0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a89eb27133e7e106c3637039f6f49d187" name="a89eb27133e7e106c3637039f6f49d187"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89eb27133e7e106c3637039f6f49d187">&#9670;&#160;</a></span>USB_EP_TYPE_BULK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define USB_EP_TYPE_BULK&#160;&#160;&#160;0x02</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1cecaf205acbc73308396af4f540c012" name="a1cecaf205acbc73308396af4f540c012"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1cecaf205acbc73308396af4f540c012">&#9670;&#160;</a></span>USB_EP_TYPE_CONTROL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define USB_EP_TYPE_CONTROL&#160;&#160;&#160;0x00</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a904b4eef8e7bcab363757e19832617ee" name="a904b4eef8e7bcab363757e19832617ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a904b4eef8e7bcab363757e19832617ee">&#9670;&#160;</a></span>USB_EP_TYPE_INTERRUPT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define USB_EP_TYPE_INTERRUPT&#160;&#160;&#160;0x03</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a38fe8ff7d058d11ff7d22436089f869e" name="a38fe8ff7d058d11ff7d22436089f869e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38fe8ff7d058d11ff7d22436089f869e">&#9670;&#160;</a></span>USB_EP_TYPE_ISOC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define USB_EP_TYPE_ISOC&#160;&#160;&#160;0x01</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="a6ca148defc41a5576c9e013421a4a741" name="a6ca148defc41a5576c9e013421a4a741"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6ca148defc41a5576c9e013421a4a741">&#9670;&#160;</a></span>usb_config_desc_t</h2>
@@ -270,6 +452,20 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">typedef struct <a class="el" href="struct__dev__desc__.html">_dev_desc_</a> <a class="el" href="dwc2__root_8cpp.html#adec7771f06fad0702608068ff28d4fd5">usb_dev_desc_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2452bd0ade594a88c37a626ea9c9080b" name="a2452bd0ade594a88c37a626ea9c9080b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2452bd0ade594a88c37a626ea9c9080b">&#9670;&#160;</a></span>usb_ep_desc_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct__usb__ep__desc__.html">_usb_ep_desc_</a> <a class="el" href="dwc2__root_8cpp.html#a2452bd0ade594a88c37a626ea9c9080b">usb_ep_desc_t</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -356,6 +552,7 @@ Functions</h2></td></tr>
 </dl>
 <p>no strings for root hub, iss iss bom laaj pali no ??</p>
 <p>next set address, and configure the hub, because devices are waiting to get powered in</p>
+<p>PORT power up</p>
 
 </div>
 </div>
@@ -381,6 +578,154 @@ Functions</h2></td></tr>
           <td></td>
           <td>)</td>
           <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3738a9676498ab4c1c768d2cc404b31e" name="a3738a9676498ab4c1c768d2cc404b31e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3738a9676498ab4c1c768d2cc404b31e">&#9670;&#160;</a></span>root_hub_get_interrupt_buffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void * root_hub_get_interrupt_buffer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aea3beb1c1cb5d7d090b3cd5312d6885e" name="aea3beb1c1cb5d7d090b3cd5312d6885e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea3beb1c1cb5d7d090b3cd5312d6885e">&#9670;&#160;</a></span>root_hub_handle_port_change()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void root_hub_handle_port_change </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structdwc2__core__regs.html">dwc2_core_regs</a> *&#160;</td>
+          <td class="paramname"><em>regs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramname"><em>port</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaa335d07df1555b7377978c758aea008" name="aaa335d07df1555b7377978c758aea008"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa335d07df1555b7377978c758aea008">&#9670;&#160;</a></span>root_hub_transfer_int()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void root_hub_transfer_int </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structdwc2__core__regs.html">dwc2_core_regs</a> *&#160;</td>
+          <td class="paramname"><em>regs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramname"><em>pid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aafdc157b2f6ddea86162f79a8009b34b" name="aafdc157b2f6ddea86162f79a8009b34b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafdc157b2f6ddea86162f79a8009b34b">&#9670;&#160;</a></span>usb_hub_get_port_status()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void usb_hub_get_port_status </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structdwc2__core__regs.html">dwc2_core_regs</a> *&#160;</td>
+          <td class="paramname"><em>regs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramname"><em>port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>dma</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramname"><em>address</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramname"><em>speed</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a82b8176be9da8722eed02c12b5187c3c" name="a82b8176be9da8722eed02c12b5187c3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82b8176be9da8722eed02c12b5187c3c">&#9670;&#160;</a></span>intb</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* intb</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a76c0ec69bcd858c7b34c5d2da1d1efcd" name="a76c0ec69bcd858c7b34c5d2da1d1efcd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76c0ec69bcd858c7b34c5d2da1d1efcd">&#9670;&#160;</a></span>port_changed</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> port_changed</td>
         </tr>
       </table>
 </div><div class="memdoc">
