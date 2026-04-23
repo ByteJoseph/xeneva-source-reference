@@ -19,7 +19,7 @@ var searchData=
   ['l2capsend_16',['L2CapSend',['../struct__EFI__BLUETOOTH__IO__PROTOCOL.html#a7f707263906116085dc714475dc2105b',1,'_EFI_BLUETOOTH_IO_PROTOCOL']]],
   ['l3cachehandle_17',['L3CacheHandle',['../structSMBIOS__TABLE__TYPE4.html#ac68dacc8df0e14869e3b34e0e4d48ef9',1,'SMBIOS_TABLE_TYPE4']]],
   ['l_5fcompletepages_18',['l_completepages',['../liballoc_8cpp.html#a213db3baf1d4b13d604015489247980d',1,'l_completePages:&#160;liballoc.cpp'],['../liballoc_8c.html#a213db3baf1d4b13d604015489247980d',1,'l_completePages:&#160;liballoc.c'],['../__heap_8cpp.html#a213db3baf1d4b13d604015489247980d',1,'l_completePages:&#160;_heap.cpp']]],
-  ['l_5ffreepages_19',['l_freepages',['../__heap_8cpp.html#a78b8b6e448179d3cd64915f99fee60e0',1,'l_freePages:&#160;_heap.cpp'],['../liballoc_8c.html#a78b8b6e448179d3cd64915f99fee60e0',1,'l_freePages:&#160;liballoc.c'],['../liballoc_8cpp.html#a78b8b6e448179d3cd64915f99fee60e0',1,'l_freePages:&#160;liballoc.cpp']]],
+  ['l_5ffreepages_19',['l_freepages',['../__heap_8cpp.html#a78b8b6e448179d3cd64915f99fee60e0',1,'l_freePages:&#160;_heap.cpp'],['../liballoc_8cpp.html#a78b8b6e448179d3cd64915f99fee60e0',1,'l_freePages:&#160;liballoc.cpp'],['../liballoc_8c.html#a78b8b6e448179d3cd64915f99fee60e0',1,'l_freePages:&#160;liballoc.c']]],
   ['l_5flen_20',['l_len',['../structflock.html#af5dc2da04cf2af6e5b77018f9cdce489',1,'flock']]],
   ['l_5fpid_21',['l_pid',['../structflock.html#a5e84556aa660bd41cc8b8d862a547887',1,'flock']]],
   ['l_5fstart_22',['l_start',['../structflock.html#a692ebc7782fe6a11c9de67d7fd20cc8f',1,'flock']]],
