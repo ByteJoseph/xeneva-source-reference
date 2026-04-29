@@ -2,7 +2,7 @@ var searchData=
 [
   ['cachemaintenancelib_2eh_0',['CacheMaintenanceLib.h',['../CacheMaintenanceLib_8h.html',1,'']]],
   ['calculator_2eh_1',['calculator.h',['../calculator_8h.html',1,'']]],
-  ['capsule_2eh_2',['capsule.h',['../Ppi_2Capsule_8h.html',1,'(Global Namespace)'],['../Protocol_2Capsule_8h.html',1,'(Global Namespace)']]],
+  ['capsule_2eh_2',['capsule.h',['../Protocol_2Capsule_8h.html',1,'(Global Namespace)'],['../Ppi_2Capsule_8h.html',1,'(Global Namespace)']]],
   ['capsulereport_2eh_3',['CapsuleReport.h',['../CapsuleReport_8h.html',1,'']]],
   ['ceilf_2ecpp_4',['ceilf.cpp',['../ceilf_8cpp.html',1,'']]],
   ['cffotypes_2eh_5',['cffotypes.h',['../cffotypes_8h.html',1,'']]],
@@ -36,7 +36,7 @@ var searchData=
   ['cpulib_2eh_33',['CpuLib.h',['../CpuLib_8h.html',1,'']]],
   ['crt_2ecpp_34',['crt.cpp',['../crt_8cpp.html',1,'']]],
   ['ctrl_2ecpp_35',['ctrl.cpp',['../ctrl_8cpp.html',1,'']]],
-  ['ctype_2ec_36',['ctype.c',['../LittleBoot_2ctype_8c.html',1,'(Global Namespace)'],['../KernelAA64_2ctype_8c.html',1,'(Global Namespace)']]],
+  ['ctype_2ec_36',['ctype.c',['../KernelAA64_2ctype_8c.html',1,'(Global Namespace)'],['../LittleBoot_2ctype_8c.html',1,'(Global Namespace)']]],
   ['ctype_2ecpp_37',['ctype.cpp',['../Kernel_2ctype_8cpp.html',1,'(Global Namespace)'],['../Libs_2XEClib_2ctype_8cpp.html',1,'(Global Namespace)']]],
   ['ctype_2eh_38',['ctype.h',['../BaseHdr_2ctype_8h.html',1,'(Global Namespace)'],['../Libs_2XEClib_2includes_2ctype_8h.html',1,'(Global Namespace)'],['../LittleBoot_2ctype_8h.html',1,'(Global Namespace)']]],
   ['cursor_2ecpp_39',['cursor.cpp',['../Deodhai_2cursor_8cpp.html',1,'(Global Namespace)'],['../DeodhaiXR_2cursor_8cpp.html',1,'(Global Namespace)']]],
