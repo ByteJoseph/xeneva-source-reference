@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['zero_0',['zero',['../struct__EFI__BTT__MAP__ENTRY.html#adde5f4dc54bf7918c28158ea4950042a',1,'_EFI_BTT_MAP_ENTRY::Zero'],['../struct__idt.html#a11c97f8effe2280fcd0279c958c042ed',1,'_idt::zero']]],
+  ['zero_0',['zero',['../struct__idt.html#a11c97f8effe2280fcd0279c958c042ed',1,'_idt::zero'],['../struct__EFI__BTT__MAP__ENTRY.html#adde5f4dc54bf7918c28158ea4950042a',1,'_EFI_BTT_MAP_ENTRY::Zero']]],
   ['zeroaction_1',['zeroaction',['../actions_8cpp.html#a478c51deb77b97423c12d422207a73bd',1,'ZeroAction(ChWidget *wid, ChWindow *win):&#160;actions.cpp'],['../calculator_8h.html#a478c51deb77b97423c12d422207a73bd',1,'ZeroAction(ChWidget *wid, ChWindow *win):&#160;actions.cpp']]],
   ['zeromem_2',['ZeroMem',['../BaseMemoryLib_8h.html#a9fd4b31ee70d7924b0909970450bae59',1,'BaseMemoryLib.h']]],
   ['zeros_3',['zeros',['../struct__tcpcheckheader__.html#a9032bee8fce7e0e9b72f01e8812a3d8a',1,'_tcpcheckheader_']]],

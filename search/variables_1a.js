@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['zero_0',['zero',['../struct__EFI__BTT__MAP__ENTRY.html#adde5f4dc54bf7918c28158ea4950042a',1,'_EFI_BTT_MAP_ENTRY::Zero'],['../struct__idt.html#a11c97f8effe2280fcd0279c958c042ed',1,'_idt::zero']]],
+  ['zero_0',['zero',['../struct__idt.html#a11c97f8effe2280fcd0279c958c042ed',1,'_idt::zero'],['../struct__EFI__BTT__MAP__ENTRY.html#adde5f4dc54bf7918c28158ea4950042a',1,'_EFI_BTT_MAP_ENTRY::Zero']]],
   ['zeros_1',['zeros',['../struct__tcpcheckheader__.html#a9032bee8fce7e0e9b72f01e8812a3d8a',1,'_tcpcheckheader_']]],
   ['zerovector_2',['ZeroVector',['../structEFI__FIRMWARE__VOLUME__HEADER.html#a9a841bbde5fd5a6ded8a5075c9c3612e',1,'EFI_FIRMWARE_VOLUME_HEADER']]],
   ['zone_3',['zone',['../structPS__Decoder__.html#a34149be296c63eee525aae334a4d5bce',1,'PS_Decoder_::zone'],['../structT1__DecoderRec__.html#add29399f0c811404b9d6ca373793103e',1,'T1_DecoderRec_::zone'],['../structCFF__Decoder__.html#a8b7e65540295938e9c3f466f8279849c',1,'CFF_Decoder_::zone'],['../structTT__LoaderRec__.html#aaa594deb371418c6cb932f318a8631ce',1,'TT_LoaderRec_::zone']]],

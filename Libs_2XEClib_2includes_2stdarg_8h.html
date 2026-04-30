@@ -203,12 +203,6 @@ Macros</h2></td></tr>
 <tr class="separator:aa5584e136b7f577610769e411b101a75"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4327ea38f09755c5ad2ebe74a1948a19" id="r_a4327ea38f09755c5ad2ebe74a1948a19"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Libs_2XEClib_2includes_2stdarg_8h.html#a4327ea38f09755c5ad2ebe74a1948a19">VA_SIZE</a>(TYPE)</td></tr>
 <tr class="separator:a4327ea38f09755c5ad2ebe74a1948a19"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a41ae753ad859126fe15c0e4655f400" id="r_a4a41ae753ad859126fe15c0e4655f400"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Libs_2XEClib_2includes_2stdarg_8h.html#a4a41ae753ad859126fe15c0e4655f400">va_start</a>(AP,  LASTARG)&#160;&#160;&#160;	(AP = ((<a class="el" href="acmsvcex_8h.html#abaefbc6cabb217bf0138d4f9c94d4775">va_list</a>)&amp;(LASTARG)+<a class="el" href="BaseHdr_2stdarg_8h.html#a4327ea38f09755c5ad2ebe74a1948a19">VA_SIZE</a>(LASTARG)))</td></tr>
-<tr class="separator:a4a41ae753ad859126fe15c0e4655f400"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89e547abd2927b21e5398404e68e7f94" id="r_a89e547abd2927b21e5398404e68e7f94"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Libs_2XEClib_2includes_2stdarg_8h.html#a89e547abd2927b21e5398404e68e7f94">va_end</a>(AP)</td></tr>
-<tr class="separator:a89e547abd2927b21e5398404e68e7f94"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73bff2bd79d774417fcd63f973202dd3" id="r_a73bff2bd79d774417fcd63f973202dd3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Libs_2XEClib_2includes_2stdarg_8h.html#a73bff2bd79d774417fcd63f973202dd3">va_arg</a>(AP,  TYPE)&#160;&#160;&#160;	(AP += <a class="el" href="BaseHdr_2stdarg_8h.html#a4327ea38f09755c5ad2ebe74a1948a19">VA_SIZE</a>(TYPE), *((TYPE *)(AP - <a class="el" href="BaseHdr_2stdarg_8h.html#a4327ea38f09755c5ad2ebe74a1948a19">VA_SIZE</a>(TYPE))))</td></tr>
-<tr class="separator:a73bff2bd79d774417fcd63f973202dd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -224,52 +218,6 @@ Typedefs</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define STACKITEM&#160;&#160;&#160;<a class="el" href="acefiex_8h.html#a5364f98f8223d7185accc99cf9c8f712">int64_t</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a73bff2bd79d774417fcd63f973202dd3" name="a73bff2bd79d774417fcd63f973202dd3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a73bff2bd79d774417fcd63f973202dd3">&#9670;&#160;</a></span>va_arg</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define va_arg</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">AP, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">TYPE&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;	(AP += <a class="el" href="BaseHdr_2stdarg_8h.html#a4327ea38f09755c5ad2ebe74a1948a19">VA_SIZE</a>(TYPE), *((TYPE *)(AP - <a class="el" href="BaseHdr_2stdarg_8h.html#a4327ea38f09755c5ad2ebe74a1948a19">VA_SIZE</a>(TYPE))))</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a89e547abd2927b21e5398404e68e7f94" name="a89e547abd2927b21e5398404e68e7f94"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a89e547abd2927b21e5398404e68e7f94">&#9670;&#160;</a></span>va_end</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define va_end</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">AP</td><td>)</td>
-          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -295,34 +243,6 @@ Typedefs</h2></td></tr>
 <div class="line">    &amp; ~(<span class="keyword">sizeof</span>(<a class="code hl_define" href="BaseHdr_2stdarg_8h.html#aa5584e136b7f577610769e411b101a75">STACKITEM</a>)-1))</div>
 <div class="ttc" id="aBaseHdr_2stdarg_8h_html_aa5584e136b7f577610769e411b101a75"><div class="ttname"><a href="BaseHdr_2stdarg_8h.html#aa5584e136b7f577610769e411b101a75">STACKITEM</a></div><div class="ttdeci">#define STACKITEM</div><div class="ttdef"><b>Definition</b> stdarg.h:43</div></div>
 </div><!-- fragment -->
-</div>
-</div>
-<a id="a4a41ae753ad859126fe15c0e4655f400" name="a4a41ae753ad859126fe15c0e4655f400"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4a41ae753ad859126fe15c0e4655f400">&#9670;&#160;</a></span>va_start</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define va_start</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">AP, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">LASTARG&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;	(AP = ((<a class="el" href="acmsvcex_8h.html#abaefbc6cabb217bf0138d4f9c94d4775">va_list</a>)&amp;(LASTARG)+<a class="el" href="BaseHdr_2stdarg_8h.html#a4327ea38f09755c5ad2ebe74a1948a19">VA_SIZE</a>(LASTARG)))</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
 </div>
 </div>
 <h2 class="groupheader">Typedef Documentation</h2>
