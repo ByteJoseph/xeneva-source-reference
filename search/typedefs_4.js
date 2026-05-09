@@ -6,6 +6,7 @@ var searchData=
   ['deodhaiaudiobox_3',['deodhaiaudiobox',['../audio_8h.html#a784bfdd9ad6315f4eba888903e24ae05',1,'DeodhaiAudioBox:&#160;audio.h'],['../audmain_8cpp.html#afe31b2d4df0bc7d038d41e206c82a87a',1,'DeodhaiAudioBox:&#160;audmain.cpp']]],
   ['deodhaiaudiocontrolpanel_4',['DeodhaiAudioControlPanel',['../audio_8h.html#a3cfd4ee9c0ee40b23248712e9c011dac',1,'audio.h']]],
   ['deodhaiaudiomessage_5',['deodhaiaudiomessage',['../audio_8h.html#a631b9705d2929dbd96f6b41378784872',1,'DeodhaiAudioMessage:&#160;audio.h'],['../audmain_8cpp.html#a631b9705d2929dbd96f6b41378784872',1,'DeodhaiAudioMessage:&#160;audmain.cpp']]],
-  ['dev_5ft_6',['dev_t',['../types_8h.html#a0f89a9a6420c24efc5254e10170009e9',1,'types.h']]],
-  ['dword_7',['DWORD',['../dlmalloc_8c.html#ad342ac907eb044443153a22f964bf0af',1,'dlmalloc.c']]]
+  ['dev_5ft_6',['dev_t',['../kernel_8h.html#a451f1b5788fa7cc5d33db47a5992e7a6',1,'dev_t:&#160;kernel.h'],['../Libs_2XEClib_2includes_2sys_2types_8h.html#a0f89a9a6420c24efc5254e10170009e9',1,'dev_t:&#160;types.h']]],
+  ['dma_5faddr_5ft_7',['dma_addr_t',['../kernel_8h.html#a70f67be534a960099aea38c37c7331df',1,'kernel.h']]],
+  ['dword_8',['DWORD',['../dlmalloc_8c.html#ad342ac907eb044443153a22f964bf0af',1,'dlmalloc.c']]]
 ];

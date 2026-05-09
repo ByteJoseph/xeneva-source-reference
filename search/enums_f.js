@@ -7,8 +7,17 @@ var searchData=
   ['t1_5fparsestate_5f_4',['T1_ParseState_',['../psaux_8h.html#a7c39b57b37de0f35b9ae6a564fd6c76b',1,'psaux.h']]],
   ['t1_5ftokentype_5f_5',['T1_TokenType_',['../psaux_8h.html#a27dd410c40d3600b4dd2a17049511304',1,'psaux.h']]],
   ['tcg_5ftoken_5ftype_6',['TCG_TOKEN_TYPE',['../TcgStorageCore_8h.html#abbd9d0c4a01f6011f10360b3840f80b3',1,'TcgStorageCore.h']]],
-  ['tdtpm_5fkey_5fflags_7',['tdTPM_KEY_FLAGS',['../Tpm12_8h.html#afe9ef49c8023622354cf047b515d42c2',1,'Tpm12.h']]],
-  ['tls_5fcontent_5ftype_8',['TLS_CONTENT_TYPE',['../Tls1_8h.html#a44141a89ee0d4656448c1af2370e49b5',1,'Tls1.h']]],
-  ['track_5fmedia_5fkind_5ft_9',['track_media_kind_t',['../AudioPlayer_2minimp4_8h.html#aa4431118cd1e894610bb12f06e32d871',1,'track_media_kind_t:&#160;minimp4.h'],['../mp4plr_2minimp4_8h.html#aa4431118cd1e894610bb12f06e32d871',1,'track_media_kind_t:&#160;minimp4.h']]],
-  ['tt_5fsbittabletype_5f_10',['TT_SbitTableType_',['../tttypes_8h.html#adf43324037de43a8ca1e7c0c6d7070b2',1,'tttypes.h']]]
+  ['tdevicenameselector_7',['TDeviceNameSelector',['../usbdevice_8h.html#ab54e3b1b05ff111c4b1fb9eca17c99da',1,'usbdevice.h']]],
+  ['tdtpm_5fkey_5fflags_8',['tdTPM_KEY_FLAGS',['../Tpm12_8h.html#afe9ef49c8023622354cf047b515d42c2',1,'Tpm12.h']]],
+  ['tendpointtype_9',['TEndpointType',['../usbendpoint_8h.html#a96e32c9fbc4d62d2395b6996283296c6',1,'usbendpoint.h']]],
+  ['tframeschedulerstate_10',['tframeschedulerstate',['../dwhciframeschedper_8c.html#acb56243730d787efd04f22614125c867',1,'TFrameSchedulerState:&#160;dwhciframeschedper.c'],['../dwhciframeschednper_8c.html#acb56243730d787efd04f22614125c867',1,'TFrameSchedulerState:&#160;dwhciframeschednper.c']]],
+  ['tls_5fcontent_5ftype_11',['TLS_CONTENT_TYPE',['../Tls1_8h.html#a44141a89ee0d4656448c1af2370e49b5',1,'Tls1.h']]],
+  ['track_5fmedia_5fkind_5ft_12',['track_media_kind_t',['../AudioPlayer_2minimp4_8h.html#aa4431118cd1e894610bb12f06e32d871',1,'track_media_kind_t:&#160;minimp4.h'],['../mp4plr_2minimp4_8h.html#aa4431118cd1e894610bb12f06e32d871',1,'track_media_kind_t:&#160;minimp4.h']]],
+  ['tspecialaction_13',['TSpecialAction',['../keymap_8h.html#aa921729f7553c33644dd691820ff8fef',1,'keymap.h']]],
+  ['tspecialkey_14',['TSpecialKey',['../keymap_8h.html#a62a1ef4272cdd2b3efaddecb5f9eb173',1,'keymap.h']]],
+  ['tstagestate_15',['TStageState',['../dwhcidevice_8c.html#abd5c1177e0c939b2222ed477bd99ac60',1,'dwhcidevice.c']]],
+  ['tstagesubstate_16',['TStageSubState',['../dwhcidevice_8c.html#ab30e2fa098c2a0ef9e724af20154274c',1,'dwhcidevice.c']]],
+  ['tt_5fsbittabletype_5f_17',['TT_SbitTableType_',['../tttypes_8h.html#adf43324037de43a8ca1e7c0c6d7070b2',1,'tttypes.h']]],
+  ['tusbpid_18',['TUSBPID',['../Drivers_2USB_2dwc2-uspi_2uspi_2usb_8h.html#a17f2dd5807a174e73486194cfec7fcf4',1,'usb.h']]],
+  ['tusbspeed_19',['TUSBSpeed',['../Drivers_2USB_2dwc2-uspi_2uspi_2usb_8h.html#ac80314746c434cb4cd85a09e687d2350',1,'usb.h']]]
 ];

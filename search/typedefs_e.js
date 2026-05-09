@@ -5,7 +5,7 @@ var searchData=
   ['namespaceidentity_2',['NamespaceIdentity',['../nvme_8h.html#afc790c5cdeddec337aced50706e0c229',1,'nvme.h']]],
   ['netarp_3',['NetARP',['../arp_8h.html#aa937cbe27b0551e78335cf7517d252b5',1,'arp.h']]],
   ['nfit_5fdevice_5fhandle_4',['NFIT_DEVICE_HANDLE',['../actbl2_8h.html#a05bc874eb98eefd582ef8e33dc4bef57',1,'actbl2.h']]],
-  ['nlink_5ft_5',['nlink_t',['../types_8h.html#a5355456638c426a7bec395dfc9e876b3',1,'types.h']]],
+  ['nlink_5ft_5',['nlink_t',['../kernel_8h.html#a9e3c03dae15b90102eb1770dd95adadc',1,'nlink_t:&#160;kernel.h'],['../Libs_2XEClib_2includes_2sys_2types_8h.html#a5355456638c426a7bec395dfc9e876b3',1,'nlink_t:&#160;types.h']]],
   ['note_6',['Note',['../piano_8cpp.html#a0eb98bdb4a5ca63e7fb055fa1afb470d',1,'piano.cpp']]],
   ['nvmecommand_7',['NVMeCommand',['../nvme_8h.html#a30c7d70de93346fb89cc8a9838a92119',1,'nvme.h']]],
   ['nvmecompletion_8',['NVMeCompletion',['../nvme_8h.html#a9ddc420306da1b72ea6805a703f944c2',1,'nvme.h']]],

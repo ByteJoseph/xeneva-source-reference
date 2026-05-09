@@ -88,7 +88,7 @@ var searchData=
   ['cid_5fsubrsrec_85',['CID_SubrsRec',['../t1types_8h.html#ad2b012a32b481f8215a0ccba39a79fb4',1,'t1types.h']]],
   ['circbuffer_86',['CircBuffer',['../circbuf_8h.html#a762c58b651c016716f49a038e3b94aca',1,'circbuf.h']]],
   ['ckern_5fvalidate_5ffunc_87',['ckern_validate_func',['../svgxval_8h.html#a8aeb11ab6b5d6d8196b74003c67dcab0',1,'svgxval.h']]],
-  ['clock_5ft_88',['clock_t',['../types_8h.html#a3b55f88f25d2c571de53a365ad658426',1,'types.h']]],
+  ['clock_5ft_88',['clock_t',['../Libs_2XEClib_2includes_2sys_2types_8h.html#a3b55f88f25d2c571de53a365ad658426',1,'types.h']]],
   ['close_5fcallback_89',['close_callback',['../vfs_8h.html#a74d929b51e6316ca49295da9c375a457',1,'vfs.h']]],
   ['context_5fcounter_90',['CONTEXT_COUNTER',['../Tpm20_8h.html#a3575b299a3e123be5ec3670cb486b780',1,'Tpm20.h']]],
   ['context_5fslot_91',['CONTEXT_SLOT',['../Tpm20_8h.html#adcba16bf9607366a18738ed18c1f9dd4',1,'Tpm20.h']]],

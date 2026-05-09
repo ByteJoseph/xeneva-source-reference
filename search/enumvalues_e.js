@@ -33,6 +33,20 @@ var searchData=
   ['osl_5fglobal_5flock_5fhandler_30',['OSL_GLOBAL_LOCK_HANDLER',['../acpiosxf_8h.html#aafd612ee401ad4d2eff4b296ef4a99a6a525b24cca74ccade21245735b63d9022',1,'acpiosxf.h']]],
   ['osl_5fgpe_5fhandler_31',['OSL_GPE_HANDLER',['../acpiosxf_8h.html#aafd612ee401ad4d2eff4b296ef4a99a6a60ea0e9423db9894d1b26f2d087fe049',1,'acpiosxf.h']]],
   ['osl_5fnotify_5fhandler_32',['OSL_NOTIFY_HANDLER',['../acpiosxf_8h.html#aafd612ee401ad4d2eff4b296ef4a99a6a02b8baf119a11db1eb8c6bdc561e947b',1,'acpiosxf.h']]],
-  ['outofmemory_33',['OutOfMemory',['../classJpeg_1_1Decoder.html#ad2f6d6fcbcb733c5163a3d123ac02cb8aaf56dd60484e12eb9635be969d3a3d82',1,'Jpeg::Decoder']]],
-  ['overwritedataerase_34',['OverwriteDataErase',['../TcgStorageOpal_8h.html#a8eb8f235ad5881c7488a338759c55d52ade38451877d48a44e75b3ca03131f287',1,'TcgStorageOpal.h']]]
+  ['otg_5fstate_5fa_5fhost_33',['OTG_STATE_A_HOST',['../otg_8h.html#a121b44d3b1a97756c0a981a00d518b14a897c2e67594d7bccfe31da7fcabf82a7',1,'otg.h']]],
+  ['otg_5fstate_5fa_5fidle_34',['OTG_STATE_A_IDLE',['../otg_8h.html#a121b44d3b1a97756c0a981a00d518b14ada5fb6282d02b35df56b943deeab95ca',1,'otg.h']]],
+  ['otg_5fstate_5fa_5fperipheral_35',['OTG_STATE_A_PERIPHERAL',['../otg_8h.html#a121b44d3b1a97756c0a981a00d518b14a69994f681f986e0a90cedd6b6017fb1b',1,'otg.h']]],
+  ['otg_5fstate_5fa_5fsuspend_36',['OTG_STATE_A_SUSPEND',['../otg_8h.html#a121b44d3b1a97756c0a981a00d518b14afdabf61d2d7fe0552a635a8009c8fd21',1,'otg.h']]],
+  ['otg_5fstate_5fa_5fvbus_5ferr_37',['OTG_STATE_A_VBUS_ERR',['../otg_8h.html#a121b44d3b1a97756c0a981a00d518b14aa245001fa597936e2eab200cb7193f5a',1,'otg.h']]],
+  ['otg_5fstate_5fa_5fwait_5fbcon_38',['OTG_STATE_A_WAIT_BCON',['../otg_8h.html#a121b44d3b1a97756c0a981a00d518b14a3ec8bd32035030d50e14472ca8da54a7',1,'otg.h']]],
+  ['otg_5fstate_5fa_5fwait_5fvfail_39',['OTG_STATE_A_WAIT_VFAIL',['../otg_8h.html#a121b44d3b1a97756c0a981a00d518b14a594470f3e30a61534027a71b07172764',1,'otg.h']]],
+  ['otg_5fstate_5fa_5fwait_5fvrise_40',['OTG_STATE_A_WAIT_VRISE',['../otg_8h.html#a121b44d3b1a97756c0a981a00d518b14aaa888f32cddc4732573f48b2a65e434e',1,'otg.h']]],
+  ['otg_5fstate_5fb_5fhost_41',['OTG_STATE_B_HOST',['../otg_8h.html#a121b44d3b1a97756c0a981a00d518b14ac6609485e7b1b3407e97e90ae953f3a5',1,'otg.h']]],
+  ['otg_5fstate_5fb_5fidle_42',['OTG_STATE_B_IDLE',['../otg_8h.html#a121b44d3b1a97756c0a981a00d518b14a62e8a883b1310c135dfaaa8efe893f78',1,'otg.h']]],
+  ['otg_5fstate_5fb_5fperipheral_43',['OTG_STATE_B_PERIPHERAL',['../otg_8h.html#a121b44d3b1a97756c0a981a00d518b14a676217449f15a082ea62361a478726f5',1,'otg.h']]],
+  ['otg_5fstate_5fb_5fsrp_5finit_44',['OTG_STATE_B_SRP_INIT',['../otg_8h.html#a121b44d3b1a97756c0a981a00d518b14a2ce64f462433f87ef9850b1eb1c4d066',1,'otg.h']]],
+  ['otg_5fstate_5fb_5fwait_5facon_45',['OTG_STATE_B_WAIT_ACON',['../otg_8h.html#a121b44d3b1a97756c0a981a00d518b14a2b189ab9c43d15435395c0c6d34cf98f',1,'otg.h']]],
+  ['otg_5fstate_5fundefined_46',['OTG_STATE_UNDEFINED',['../otg_8h.html#a121b44d3b1a97756c0a981a00d518b14a3cd3c45032d75aa1b82e895f0da91a14',1,'otg.h']]],
+  ['outofmemory_47',['OutOfMemory',['../classJpeg_1_1Decoder.html#ad2f6d6fcbcb733c5163a3d123ac02cb8aaf56dd60484e12eb9635be969d3a3d82',1,'Jpeg::Decoder']]],
+  ['overwritedataerase_48',['OverwriteDataErase',['../TcgStorageOpal_8h.html#a8eb8f235ad5881c7488a338759c55d52ade38451877d48a44e75b3ca03131f287',1,'TcgStorageOpal.h']]]
 ];

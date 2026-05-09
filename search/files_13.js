@@ -34,8 +34,8 @@ var searchData=
   ['thrserv_2ecpp_31',['thrserv.cpp',['../thrserv_8cpp.html',1,'']]],
   ['thumbnail_2ecpp_32',['thumbnail.cpp',['../thumbnail_8cpp.html',1,'']]],
   ['time_2ecpp_33',['time.cpp',['../Libs_2XEClib_2time_8cpp.html',1,'(Global Namespace)'],['../Kernel_2time_8cpp.html',1,'(Global Namespace)']]],
-  ['time_2eh_34',['time.h',['../Libs_2XEClib_2includes_2time_8h.html',1,'(Global Namespace)'],['../BaseHdr_2time_8h.html',1,'(Global Namespace)']]],
-  ['timer_2eh_35',['Timer.h',['../Timer_8h.html',1,'']]],
+  ['time_2eh_34',['time.h',['../BaseHdr_2time_8h.html',1,'(Global Namespace)'],['../Libs_2XEClib_2includes_2time_8h.html',1,'(Global Namespace)']]],
+  ['timer_2eh_35',['timer.h',['../Timer_8h.html',1,'(Global Namespace)'],['../timer_8h.html',1,'(Global Namespace)']]],
   ['timerlib_2eh_36',['TimerLib.h',['../TimerLib_8h.html',1,'']]],
   ['timerserv_2ecpp_37',['timerserv.cpp',['../timerserv_8cpp.html',1,'']]],
   ['timestamp_2eh_38',['Timestamp.h',['../Timestamp_8h.html',1,'']]],
@@ -61,5 +61,5 @@ var searchData=
   ['tty_2ec_58',['tty.c',['../tty_8c.html',1,'']]],
   ['tty_2ecpp_59',['tty.cpp',['../tty_8cpp.html',1,'']]],
   ['tty_2eh_60',['tty.h',['../tty_8h.html',1,'']]],
-  ['types_2eh_61',['types.h',['../types_8h.html',1,'']]]
+  ['types_2eh_61',['types.h',['../Drivers_2USB_2dwc2-uspi_2uspi_2types_8h.html',1,'(Global Namespace)'],['../Libs_2XEClib_2includes_2sys_2types_8h.html',1,'(Global Namespace)']]]
 ];

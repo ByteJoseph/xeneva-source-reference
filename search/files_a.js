@@ -1,10 +1,19 @@
 var searchData=
 [
-  ['kernelaa64_2eh_0',['kernelAA64.h',['../kernelAA64_8h.html',1,'']]],
-  ['keycode_2ecpp_1',['keycode.cpp',['../keycode_8cpp.html',1,'']]],
-  ['keycode_2eh_2',['keycode.h',['../keycode_8h.html',1,'']]],
-  ['kmalloc_2ec_3',['kmalloc.c',['../kmalloc_8c.html',1,'']]],
-  ['kmalloc_2ecpp_4',['kmalloc.cpp',['../kmalloc_8cpp.html',1,'']]],
-  ['kmalloc_2eh_5',['kmalloc.h',['../kmalloc_8h.html',1,'']]],
-  ['kms_2eh_6',['Kms.h',['../Kms_8h.html',1,'']]]
+  ['kernel_2eh_0',['kernel.h',['../kernel_8h.html',1,'']]],
+  ['kernelaa64_2eh_1',['kernelAA64.h',['../kernelAA64_8h.html',1,'']]],
+  ['keycode_2ecpp_2',['keycode.cpp',['../keycode_8cpp.html',1,'']]],
+  ['keycode_2eh_3',['keycode.h',['../keycode_8h.html',1,'']]],
+  ['keymap_2ec_4',['keymap.c',['../keymap_8c.html',1,'']]],
+  ['keymap_2eh_5',['keymap.h',['../keymap_8h.html',1,'']]],
+  ['keymap_5fde_2eh_6',['keymap_de.h',['../keymap__de_8h.html',1,'']]],
+  ['keymap_5fes_2eh_7',['keymap_es.h',['../keymap__es_8h.html',1,'']]],
+  ['keymap_5ffr_2eh_8',['keymap_fr.h',['../keymap__fr_8h.html',1,'']]],
+  ['keymap_5fit_2eh_9',['keymap_it.h',['../keymap__it_8h.html',1,'']]],
+  ['keymap_5fuk_2eh_10',['keymap_uk.h',['../keymap__uk_8h.html',1,'']]],
+  ['keymap_5fus_2eh_11',['keymap_us.h',['../keymap__us_8h.html',1,'']]],
+  ['kmalloc_2ec_12',['kmalloc.c',['../kmalloc_8c.html',1,'']]],
+  ['kmalloc_2ecpp_13',['kmalloc.cpp',['../kmalloc_8cpp.html',1,'']]],
+  ['kmalloc_2eh_14',['kmalloc.h',['../kmalloc_8h.html',1,'']]],
+  ['kms_2eh_15',['Kms.h',['../Kms_8h.html',1,'']]]
 ];

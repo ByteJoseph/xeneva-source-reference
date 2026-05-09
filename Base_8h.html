@@ -787,9 +787,9 @@ Macros</h2></td></tr>
 <tr class="separator:a36fa5929061747e3fea70147e34a06a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af960ab2e7ed6a2d7af4697d059623733" id="r_af960ab2e7ed6a2d7af4697d059623733"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Base_8h.html#af960ab2e7ed6a2d7af4697d059623733">SIGNATURE_16</a>(A,  B)&#160;&#160;&#160;((A) | (B &lt;&lt; 8))</td></tr>
 <tr class="separator:af960ab2e7ed6a2d7af4697d059623733"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad27a94f4c5ee5fb3cb570593f595d889" id="r_ad27a94f4c5ee5fb3cb570593f595d889"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Base_8h.html#ad27a94f4c5ee5fb3cb570593f595d889">SIGNATURE_32</a>(A,  B,  C,  D)&#160;&#160;&#160;(<a class="el" href="Base_8h.html#af960ab2e7ed6a2d7af4697d059623733">SIGNATURE_16</a> (A, B) | (<a class="el" href="Base_8h.html#af960ab2e7ed6a2d7af4697d059623733">SIGNATURE_16</a> (C, D) &lt;&lt; 16))</td></tr>
+<tr class="memitem:ad27a94f4c5ee5fb3cb570593f595d889" id="r_ad27a94f4c5ee5fb3cb570593f595d889"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Base_8h.html#ad27a94f4c5ee5fb3cb570593f595d889">SIGNATURE_32</a>(A,  B,  <a class="el" href="keymap_8c.html#a2f6e00995598c27240a258da3476f324">C</a>,  D)&#160;&#160;&#160;(<a class="el" href="Base_8h.html#af960ab2e7ed6a2d7af4697d059623733">SIGNATURE_16</a> (A, B) | (<a class="el" href="Base_8h.html#af960ab2e7ed6a2d7af4697d059623733">SIGNATURE_16</a> (<a class="el" href="keymap_8c.html#a2f6e00995598c27240a258da3476f324">C</a>, D) &lt;&lt; 16))</td></tr>
 <tr class="separator:ad27a94f4c5ee5fb3cb570593f595d889"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d9b94d5fd98904e7ea66dc92778fcc4" id="r_a9d9b94d5fd98904e7ea66dc92778fcc4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Base_8h.html#a9d9b94d5fd98904e7ea66dc92778fcc4">SIGNATURE_64</a>(A,  B,  C,  D,  E,  F,  G,  H)&#160;&#160;&#160;    (<a class="el" href="Base_8h.html#ad27a94f4c5ee5fb3cb570593f595d889">SIGNATURE_32</a> (A, B, C, D) | ((<a class="el" href="actypes_8h.html#ab712fece103eee54554694bbc2c1a64e">UINT64</a>) (<a class="el" href="Base_8h.html#ad27a94f4c5ee5fb3cb570593f595d889">SIGNATURE_32</a> (E, F, G, H)) &lt;&lt; 32))</td></tr>
+<tr class="memitem:a9d9b94d5fd98904e7ea66dc92778fcc4" id="r_a9d9b94d5fd98904e7ea66dc92778fcc4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Base_8h.html#a9d9b94d5fd98904e7ea66dc92778fcc4">SIGNATURE_64</a>(A,  B,  <a class="el" href="keymap_8c.html#a2f6e00995598c27240a258da3476f324">C</a>,  D,  E,  F,  G,  H)&#160;&#160;&#160;    (<a class="el" href="Base_8h.html#ad27a94f4c5ee5fb3cb570593f595d889">SIGNATURE_32</a> (A, B, <a class="el" href="keymap_8c.html#a2f6e00995598c27240a258da3476f324">C</a>, D) | ((<a class="el" href="actypes_8h.html#ab712fece103eee54554694bbc2c1a64e">UINT64</a>) (<a class="el" href="Base_8h.html#ad27a94f4c5ee5fb3cb570593f595d889">SIGNATURE_32</a> (E, F, G, H)) &lt;&lt; 32))</td></tr>
 <tr class="separator:a9d9b94d5fd98904e7ea66dc92778fcc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a629bd4f39087b11157279317b6f7623b" id="r_a629bd4f39087b11157279317b6f7623b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Base_8h.html#a629bd4f39087b11157279317b6f7623b">RETURN_ADDRESS</a>(L)&#160;&#160;&#160;((<a class="el" href="acefi_8h.html#a7f319bfc2492a2136964194204e7a8cf">VOID</a> *) 0)</td></tr>
 <tr class="separator:a629bd4f39087b11157279317b6f7623b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -4125,7 +4125,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">C, </td>
+          <td class="paramname"><a class="el" href="keymap_8c.html#a2f6e00995598c27240a258da3476f324">C</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -4136,7 +4136,7 @@ Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;(<a class="el" href="Base_8h.html#af960ab2e7ed6a2d7af4697d059623733">SIGNATURE_16</a> (A, B) | (<a class="el" href="Base_8h.html#af960ab2e7ed6a2d7af4697d059623733">SIGNATURE_16</a> (C, D) &lt;&lt; 16))</td>
+          <td></td><td>&#160;&#160;&#160;(<a class="el" href="Base_8h.html#af960ab2e7ed6a2d7af4697d059623733">SIGNATURE_16</a> (A, B) | (<a class="el" href="Base_8h.html#af960ab2e7ed6a2d7af4697d059623733">SIGNATURE_16</a> (<a class="el" href="keymap_8c.html#a2f6e00995598c27240a258da3476f324">C</a>, D) &lt;&lt; 16))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -4177,7 +4177,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">C, </td>
+          <td class="paramname"><a class="el" href="keymap_8c.html#a2f6e00995598c27240a258da3476f324">C</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -4212,7 +4212,7 @@ Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;    (<a class="el" href="Base_8h.html#ad27a94f4c5ee5fb3cb570593f595d889">SIGNATURE_32</a> (A, B, C, D) | ((<a class="el" href="actypes_8h.html#ab712fece103eee54554694bbc2c1a64e">UINT64</a>) (<a class="el" href="Base_8h.html#ad27a94f4c5ee5fb3cb570593f595d889">SIGNATURE_32</a> (E, F, G, H)) &lt;&lt; 32))</td>
+          <td></td><td>&#160;&#160;&#160;    (<a class="el" href="Base_8h.html#ad27a94f4c5ee5fb3cb570593f595d889">SIGNATURE_32</a> (A, B, <a class="el" href="keymap_8c.html#a2f6e00995598c27240a258da3476f324">C</a>, D) | ((<a class="el" href="actypes_8h.html#ab712fece103eee54554694bbc2c1a64e">UINT64</a>) (<a class="el" href="Base_8h.html#ad27a94f4c5ee5fb3cb570593f595d889">SIGNATURE_32</a> (E, F, G, H)) &lt;&lt; 32))</td>
         </tr>
       </table>
 </div><div class="memdoc">

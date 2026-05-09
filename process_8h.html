@@ -345,6 +345,7 @@ Functions</h2></td></tr>
 <tr class="memitem:a89700f4a4bf68668b8d6d32ac1abbb02" id="r_a89700f4a4bf68668b8d6d32ac1abbb02"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="process_8h.html#a89700f4a4bf68668b8d6d32ac1abbb02">AuProcessGetFileDesc</a> (<a class="el" href="process_8h.html#af7383c550ee680158b77cf18ef1d275a">AuProcess</a> *proc)</td></tr>
 <tr class="separator:a89700f4a4bf68668b8d6d32ac1abbb02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:affe9525870b0de39154e59b833ef9a34" id="r_affe9525870b0de39154e59b833ef9a34"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="process_8h.html#affe9525870b0de39154e59b833ef9a34">AuProcessWaitForTermination</a> (<a class="el" href="process_8h.html#af7383c550ee680158b77cf18ef1d275a">AuProcess</a> *proc, int pid)</td></tr>
+<tr class="memdesc:affe9525870b0de39154e59b833ef9a34"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuProcessWaitForTermination &ndash; waits for termination of child processes.  <br /></td></tr>
 <tr class="separator:affe9525870b0de39154e59b833ef9a34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4458a9be26700f110302d05a5ab1dfd4" id="r_a4458a9be26700f110302d05a5ab1dfd4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="process_8h.html#a4458a9be26700f110302d05a5ab1dfd4">AuCreateUserthread</a> (<a class="el" href="process_8h.html#af7383c550ee680158b77cf18ef1d275a">AuProcess</a> *proc, void(*<a class="el" href="process_8h.html#a12532d9e7797b0d9089521c02528e113">entry</a>)(), char *name)</td></tr>
 <tr class="memdesc:a4458a9be26700f110302d05a5ab1dfd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a user mode thread.  <br /></td></tr>
@@ -826,6 +827,9 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+<ul>
+<li>mark all the threads as blocked *&zwj;/</li>
+</ul>
 
 </div>
 </div>
@@ -940,6 +944,15 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>AuProcessWaitForTermination &ndash; waits for termination of child processes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">proc</td><td>&ndash; pointer to process who needs to wait for termination </td></tr>
+    <tr><td class="paramname">pid</td><td>&ndash; pid of the process, if -1 then any child process </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

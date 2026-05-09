@@ -1,9 +1,26 @@
 var searchData=
 [
-  ['wifi_5fdevice_5fpath_0',['WIFI_DEVICE_PATH',['../structWIFI__DEVICE__PATH.html',1,'']]],
-  ['win_5fcertificate_1',['WIN_CERTIFICATE',['../structWIN__CERTIFICATE.html',1,'']]],
-  ['win_5fcertificate_5fefi_5fpkcs1_5f15_2',['WIN_CERTIFICATE_EFI_PKCS1_15',['../structWIN__CERTIFICATE__EFI__PKCS1__15.html',1,'']]],
-  ['win_5fcertificate_5fuefi_5fguid_3',['WIN_CERTIFICATE_UEFI_GUID',['../structWIN__CERTIFICATE__UEFI__GUID.html',1,'']]],
-  ['woff_5fheaderrec_5f_4',['WOFF_HeaderRec_',['../structWOFF__HeaderRec__.html',1,'']]],
-  ['woff_5ftablerec_5f_5',['WOFF_TableRec_',['../structWOFF__TableRec__.html',1,'']]]
+  ['vc4_5ffb_5ft_0',['vc4_fb_t',['../structvc4__fb__t.html',1,'']]],
+  ['vendor_5fdevice_5fpath_1',['VENDOR_DEVICE_PATH',['../structVENDOR__DEVICE__PATH.html',1,'']]],
+  ['virtio_5fgpu_5fconfig_2',['virtio_gpu_config',['../structvirtio__gpu__config.html',1,'']]],
+  ['virtio_5fgpu_5fctrl_5fhdr_3',['virtio_gpu_ctrl_hdr',['../structvirtio__gpu__ctrl__hdr.html',1,'']]],
+  ['virtio_5fgpu_5fmem_5fentry_4',['virtio_gpu_mem_entry',['../structvirtio__gpu__mem__entry.html',1,'']]],
+  ['virtio_5fgpu_5frect_5',['virtio_gpu_rect',['../structvirtio__gpu__rect.html',1,'']]],
+  ['virtio_5fgpu_5fresource_5fattach_5fbacking_6',['virtio_gpu_resource_attach_backing',['../structvirtio__gpu__resource__attach__backing.html',1,'']]],
+  ['virtio_5fgpu_5fresource_5fcreate_5f2d_7',['virtio_gpu_resource_create_2d',['../structvirtio__gpu__resource__create__2d.html',1,'']]],
+  ['virtio_5fgpu_5fresource_5fflush_8',['virtio_gpu_resource_flush',['../structvirtio__gpu__resource__flush.html',1,'']]],
+  ['virtio_5fgpu_5fset_5fscanout_9',['virtio_gpu_set_scanout',['../structvirtio__gpu__set__scanout.html',1,'']]],
+  ['virtio_5fgpu_5ftransfer_5fto_5fhost_5f2d_10',['virtio_gpu_transfer_to_host_2d',['../structvirtio__gpu__transfer__to__host__2d.html',1,'']]],
+  ['virtio_5fnotifier_5fcap_11',['virtio_notifier_cap',['../structvirtio__notifier__cap.html',1,'']]],
+  ['virtio_5fpci_5fcap_12',['virtio_pci_cap',['../structvirtio__pci__cap.html',1,'']]],
+  ['virtioavail_13',['VirtioAvail',['../structVirtioAvail.html',1,'']]],
+  ['virtiobuffer_14',['VirtioBuffer',['../structVirtioBuffer.html',1,'']]],
+  ['virtiocommoncfg_15',['VirtioCommonCfg',['../structVirtioCommonCfg.html',1,'']]],
+  ['virtiodeviceconfig_16',['VirtioDeviceConfig',['../structVirtioDeviceConfig.html',1,'']]],
+  ['virtioinputevent_17',['VirtioInputEvent',['../structVirtioInputEvent.html',1,'']]],
+  ['virtionetcfg_18',['VirtioNetCfg',['../structVirtioNetCfg.html',1,'']]],
+  ['virtioqueue_19',['VirtioQueue',['../structVirtioQueue.html',1,'']]],
+  ['virtioring_20',['VirtioRing',['../structVirtioRing.html',1,'']]],
+  ['virtioused_21',['VirtioUsed',['../structVirtioUsed.html',1,'']]],
+  ['vlan_5fdevice_5fpath_22',['VLAN_DEVICE_PATH',['../structVLAN__DEVICE__PATH.html',1,'']]]
 ];

@@ -217,6 +217,11 @@ Functions</h2></td></tr>
 <tr class="memitem:afc6f957fba059e2696c2873462a6b551" id="r_afc6f957fba059e2696c2873462a6b551"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="process_8c.html#afc6f957fba059e2696c2873462a6b551">AuProcessExit</a> (<a class="el" href="process_8h.html#af7383c550ee680158b77cf18ef1d275a">AuProcess</a> *proc, <a class="el" href="Libs_2XEClib_2includes_2stdint_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> schedulable)</td></tr>
 <tr class="memdesc:afc6f957fba059e2696c2873462a6b551"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuProcessExit &ndash; exits a process.  <br /></td></tr>
 <tr class="separator:afc6f957fba059e2696c2873462a6b551"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7184915cdff7d730b7ca5bb6b68c7a54" id="r_a7184915cdff7d730b7ca5bb6b68c7a54"><td class="memItemLeft" align="right" valign="top"><a class="el" href="process_8h.html#af7383c550ee680158b77cf18ef1d275a">AuProcess</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="process_8c.html#a7184915cdff7d730b7ca5bb6b68c7a54">AuGetKillableProcess</a> ()</td></tr>
+<tr class="separator:a7184915cdff7d730b7ca5bb6b68c7a54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affe9525870b0de39154e59b833ef9a34" id="r_affe9525870b0de39154e59b833ef9a34"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="process_8c.html#affe9525870b0de39154e59b833ef9a34">AuProcessWaitForTermination</a> (<a class="el" href="process_8h.html#af7383c550ee680158b77cf18ef1d275a">AuProcess</a> *proc, int pid)</td></tr>
+<tr class="memdesc:affe9525870b0de39154e59b833ef9a34"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuProcessWaitForTermination &ndash; waits for termination of child processes.  <br /></td></tr>
+<tr class="separator:affe9525870b0de39154e59b833ef9a34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -400,6 +405,23 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a7184915cdff7d730b7ca5bb6b68c7a54" name="a7184915cdff7d730b7ca5bb6b68c7a54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7184915cdff7d730b7ca5bb6b68c7a54">&#9670;&#160;</a></span>AuGetKillableProcess()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="process_8h.html#af7383c550ee680158b77cf18ef1d275a">AuProcess</a> * AuGetKillableProcess </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="afc6f957fba059e2696c2873462a6b551" name="afc6f957fba059e2696c2873462a6b551"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afc6f957fba059e2696c2873462a6b551">&#9670;&#160;</a></span>AuProcessExit()</h2>
 
@@ -434,6 +456,9 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
+<ul>
+<li>mark all the threads as blocked *&zwj;/</li>
+</ul>
 
 </div>
 </div>
@@ -611,6 +636,43 @@ Variables</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">proc</td><td>&ndash; Pointer to process </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="affe9525870b0de39154e59b833ef9a34" name="affe9525870b0de39154e59b833ef9a34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affe9525870b0de39154e59b833ef9a34">&#9670;&#160;</a></span>AuProcessWaitForTermination()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AuProcessWaitForTermination </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="process_8h.html#af7383c550ee680158b77cf18ef1d275a">AuProcess</a> *&#160;</td>
+          <td class="paramname"><em>proc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>AuProcessWaitForTermination &ndash; waits for termination of child processes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">proc</td><td>&ndash; pointer to process who needs to wait for termination </td></tr>
+    <tr><td class="paramname">pid</td><td>&ndash; pid of the process, if -1 then any child process </td></tr>
   </table>
   </dd>
 </dl>

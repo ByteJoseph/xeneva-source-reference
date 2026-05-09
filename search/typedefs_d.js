@@ -3,18 +3,19 @@ var searchData=
   ['mchunk_0',['mchunk',['../dlmalloc_8c.html#a6412caf3aa493b17e390b53cef6fcca7',1,'dlmalloc.c']]],
   ['mchunkptr_1',['mchunkptr',['../dlmalloc_8c.html#aab2c188a259d6c4bd443ed712a92714c',1,'dlmalloc.c']]],
   ['meta_5fdata_5ft_2',['meta_data_t',['../kmalloc_8h.html#ad122a77d2fdf71e74c70721e9d06efb7',1,'kmalloc.h']]],
-  ['mode_5ft_3',['mode_t',['../types_8h.html#a8a35dd1207a16dfa8b1d4163176d828c',1,'types.h']]],
+  ['mode_5ft_3',['mode_t',['../Libs_2XEClib_2includes_2sys_2types_8h.html#a8a35dd1207a16dfa8b1d4163176d828c',1,'types.h']]],
   ['mp3_5fcontext_5ft_4',['mp3_context_t',['../minimp3_8cpp.html#a1d72cc4f455b20f442f048e52dcbdbeb',1,'minimp3.cpp']]],
   ['mp3_5fdecoder_5ft_5',['mp3_decoder_t',['../minimp3_8h.html#a17b8b0c7aeecfe872aa435a077f472ce',1,'minimp3.h']]],
   ['mp3_5finfo_5ft_6',['mp3_info_t',['../minimp3_8h.html#aeceeda34e2d22c791818ff0bbcbe913b',1,'minimp3.h']]],
   ['mp4_5fh26x_5fwriter_5ft_7',['mp4_h26x_writer_t',['../AudioPlayer_2minimp4_8h.html#ab313996440e645e816c78cb67c322f2a',1,'mp4_h26x_writer_t:&#160;minimp4.h'],['../mp4plr_2minimp4_8h.html#ab313996440e645e816c78cb67c322f2a',1,'mp4_h26x_writer_t:&#160;minimp4.h']]],
   ['mp4d_5fdemux_5ft_8',['mp4d_demux_t',['../AudioPlayer_2minimp4_8h.html#a3f41928ffdb9fd5f1fa0b2d803a6c200',1,'MP4D_demux_t:&#160;minimp4.h'],['../mp4plr_2minimp4_8h.html#a3f41928ffdb9fd5f1fa0b2d803a6c200',1,'MP4D_demux_t:&#160;minimp4.h']]],
-  ['mp4d_5ffile_5foffset_5ft_9',['mp4d_file_offset_t',['../AudioPlayer_2minimp4_8h.html#a07de8a23df72b8d0ccb76bebf8537498',1,'MP4D_file_offset_t:&#160;minimp4.h'],['../mp4plr_2minimp4_8h.html#a07de8a23df72b8d0ccb76bebf8537498',1,'MP4D_file_offset_t:&#160;minimp4.h']]],
+  ['mp4d_5ffile_5foffset_5ft_9',['mp4d_file_offset_t',['../mp4plr_2minimp4_8h.html#a07de8a23df72b8d0ccb76bebf8537498',1,'MP4D_file_offset_t:&#160;minimp4.h'],['../AudioPlayer_2minimp4_8h.html#a07de8a23df72b8d0ccb76bebf8537498',1,'MP4D_file_offset_t:&#160;minimp4.h']]],
   ['mp4d_5fsample_5fto_5fchunk_5ft_10',['mp4d_sample_to_chunk_t',['../AudioPlayer_2minimp4_8h.html#a91799e2f2a74bfacef8a5c9de66ad323',1,'MP4D_sample_to_chunk_t:&#160;minimp4.h'],['../mp4plr_2minimp4_8h.html#a91799e2f2a74bfacef8a5c9de66ad323',1,'MP4D_sample_to_chunk_t:&#160;minimp4.h']]],
   ['mp4e_5fmux_5ft_11',['mp4e_mux_t',['../AudioPlayer_2minimp4_8h.html#a0e9cd378fc0c3c490bde60d4fda125e3',1,'MP4E_mux_t:&#160;minimp4.h'],['../mp4plr_2minimp4_8h.html#a0e9cd378fc0c3c490bde60d4fda125e3',1,'MP4E_mux_t:&#160;minimp4.h']]],
   ['msegment_12',['msegment',['../dlmalloc_8c.html#aefb4243356502f3504318b435638ba57',1,'dlmalloc.c']]],
   ['msegmentptr_13',['msegmentptr',['../dlmalloc_8c.html#ac0c775e46c84cccbf60059dedd717fa5',1,'dlmalloc.c']]],
   ['msghdr_14',['msghdr',['../BaseHdr_2Net_2socket_8h.html#a9330982c7bab0a2048d0828aa091d903',1,'msghdr:&#160;socket.h'],['../Libs_2XEClib_2includes_2sys_2socket_8h.html#a9330982c7bab0a2048d0828aa091d903',1,'msghdr:&#160;socket.h']]],
   ['mstate_15',['mstate',['../dlmalloc_8c.html#a77915996ce21724eda56ab99e2ce75e6',1,'dlmalloc.c']]],
-  ['mutex_5ft_16',['mutex_t',['../acpiosl_8cpp.html#a8a19d51328dc4133d117c510ed5e1395',1,'acpiosl.cpp']]]
+  ['mutex_16',['mutex',['../kernel_8h.html#af032b75de11187259c0463e6bf0f11d9',1,'kernel.h']]],
+  ['mutex_5ft_17',['mutex_t',['../acpiosl_8cpp.html#a8a19d51328dc4133d117c510ed5e1395',1,'acpiosl.cpp']]]
 ];
