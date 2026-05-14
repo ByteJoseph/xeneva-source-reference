@@ -36,7 +36,7 @@ var searchData=
   ['readunaligned24_33',['ReadUnaligned24',['../BaseLib_8h.html#ac683301d91cd0ff286776cfba2654004',1,'BaseLib.h']]],
   ['readunaligned32_34',['ReadUnaligned32',['../BaseLib_8h.html#afe87bd2a2a723f5d89c9b4174e7faa8c',1,'BaseLib.h']]],
   ['readunaligned64_35',['ReadUnaligned64',['../BaseLib_8h.html#a3eef2329755c697f80c4b93551ecee7a',1,'BaseLib.h']]],
-  ['realloc_36',['realloc',['../stdlib_8h.html#a85b14859723c6a3475048f36f46243bc',1,'realloc(void *address, unsigned int new_size):&#160;_heap.cpp'],['../__heap_8h.html#a08a11d9287e1d753cbb270ddce0e76f7',1,'realloc(void *, unsigned int):&#160;_heap.cpp'],['../__heap_8cpp.html#aae2448abd5b492ba119284ef05b928bd',1,'realloc(void *p, unsigned int size):&#160;_heap.cpp']]],
+  ['realloc_36',['realloc',['../stdlib_8h.html#a85b14859723c6a3475048f36f46243bc',1,'realloc(void *address, unsigned int new_size):&#160;_heap.cpp'],['../__heap_8h.html#a08a11d9287e1d753cbb270ddce0e76f7',1,'realloc(void *, unsigned int):&#160;_heap.cpp'],['../__heap_8cpp.html#a2687b573e99c7a20888c35f0b669284a',1,'realloc(void *ptr, unsigned int new_size):&#160;_heap.cpp']]],
   ['reallocatepool_37',['ReallocatePool',['../MemoryAllocationLib_8h.html#a6d0b2efea6b1aefd7860971c1486b621',1,'MemoryAllocationLib.h']]],
   ['reallocatereservedpool_38',['ReallocateReservedPool',['../MemoryAllocationLib_8h.html#a9a2e184c55ff2359afbd30a43f33116b',1,'MemoryAllocationLib.h']]],
   ['reallocateruntimepool_39',['ReallocateRuntimePool',['../MemoryAllocationLib_8h.html#a6ad6d0121a67219331c8d7be8a0a175b',1,'MemoryAllocationLib.h']]],

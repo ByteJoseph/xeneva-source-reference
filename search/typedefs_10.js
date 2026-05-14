@@ -175,7 +175,7 @@ var searchData=
   ['puga_5ffw_5fservice_5fdispatch_172',['PUGA_FW_SERVICE_DISPATCH',['../UgaIo_8h.html#adbe4c94b59418c6cb8c662e0c58dffed',1,'UgaIo.h']]],
   ['puga_5fio_5frequest_173',['PUGA_IO_REQUEST',['../UgaIo_8h.html#a6e7a9116f84cccd75d0abd94df77a903',1,'UgaIo.h']]],
   ['puga_5fio_5frequest_5fcode_174',['PUGA_IO_REQUEST_CODE',['../UgaIo_8h.html#a48c84c1e14e8ef56396e3a75b5593b72',1,'UgaIo.h']]],
-  ['pvoid_175',['PVOID',['../dlmalloc_8c.html#a2b5e00c0c5a5aa5199ba9f28ec3e8caa',1,'dlmalloc.c']]],
+  ['pvoid_175',['pvoid',['../dlmalloc_8c.html#a2b5e00c0c5a5aa5199ba9f28ec3e8caa',1,'PVOID:&#160;dlmalloc.c'],['../__heap_8cpp.html#a2b5e00c0c5a5aa5199ba9f28ec3e8caa',1,'PVOID:&#160;_heap.cpp']]],
   ['pxe_5fbool_176',['PXE_BOOL',['../UefiPxe_8h.html#a43663542ad3732b8a0848c1dea83a385',1,'UefiPxe.h']]],
   ['pxe_5fcdb_177',['PXE_CDB',['../UefiPxe_8h.html#a4a1c07c13cc41df61637480fe0f58f1d',1,'UefiPxe.h']]],
   ['pxe_5fcontrol_178',['PXE_CONTROL',['../UefiPxe_8h.html#a2a296504a139fa8a8d7af7c142bbd89e',1,'UefiPxe.h']]],

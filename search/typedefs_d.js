@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['mchunk_0',['mchunk',['../dlmalloc_8c.html#a6412caf3aa493b17e390b53cef6fcca7',1,'dlmalloc.c']]],
-  ['mchunkptr_1',['mchunkptr',['../dlmalloc_8c.html#aab2c188a259d6c4bd443ed712a92714c',1,'dlmalloc.c']]],
+  ['mchunk_0',['mchunk',['../__heap_8cpp.html#a6412caf3aa493b17e390b53cef6fcca7',1,'mchunk:&#160;_heap.cpp'],['../dlmalloc_8c.html#a6412caf3aa493b17e390b53cef6fcca7',1,'mchunk:&#160;dlmalloc.c']]],
+  ['mchunkptr_1',['mchunkptr',['../dlmalloc_8c.html#aab2c188a259d6c4bd443ed712a92714c',1,'mchunkptr:&#160;dlmalloc.c'],['../__heap_8cpp.html#aab2c188a259d6c4bd443ed712a92714c',1,'mchunkptr:&#160;_heap.cpp']]],
   ['meta_5fdata_5ft_2',['meta_data_t',['../kmalloc_8h.html#ad122a77d2fdf71e74c70721e9d06efb7',1,'kmalloc.h']]],
   ['mode_5ft_3',['mode_t',['../Libs_2XEClib_2includes_2sys_2types_8h.html#a8a35dd1207a16dfa8b1d4163176d828c',1,'types.h']]],
   ['mp3_5fcontext_5ft_4',['mp3_context_t',['../minimp3_8cpp.html#a1d72cc4f455b20f442f048e52dcbdbeb',1,'minimp3.cpp']]],
@@ -12,10 +12,10 @@ var searchData=
   ['mp4d_5ffile_5foffset_5ft_9',['mp4d_file_offset_t',['../mp4plr_2minimp4_8h.html#a07de8a23df72b8d0ccb76bebf8537498',1,'MP4D_file_offset_t:&#160;minimp4.h'],['../AudioPlayer_2minimp4_8h.html#a07de8a23df72b8d0ccb76bebf8537498',1,'MP4D_file_offset_t:&#160;minimp4.h']]],
   ['mp4d_5fsample_5fto_5fchunk_5ft_10',['mp4d_sample_to_chunk_t',['../AudioPlayer_2minimp4_8h.html#a91799e2f2a74bfacef8a5c9de66ad323',1,'MP4D_sample_to_chunk_t:&#160;minimp4.h'],['../mp4plr_2minimp4_8h.html#a91799e2f2a74bfacef8a5c9de66ad323',1,'MP4D_sample_to_chunk_t:&#160;minimp4.h']]],
   ['mp4e_5fmux_5ft_11',['mp4e_mux_t',['../AudioPlayer_2minimp4_8h.html#a0e9cd378fc0c3c490bde60d4fda125e3',1,'MP4E_mux_t:&#160;minimp4.h'],['../mp4plr_2minimp4_8h.html#a0e9cd378fc0c3c490bde60d4fda125e3',1,'MP4E_mux_t:&#160;minimp4.h']]],
-  ['msegment_12',['msegment',['../dlmalloc_8c.html#aefb4243356502f3504318b435638ba57',1,'dlmalloc.c']]],
-  ['msegmentptr_13',['msegmentptr',['../dlmalloc_8c.html#ac0c775e46c84cccbf60059dedd717fa5',1,'dlmalloc.c']]],
+  ['msegment_12',['msegment',['../dlmalloc_8c.html#aefb4243356502f3504318b435638ba57',1,'msegment:&#160;dlmalloc.c'],['../__heap_8cpp.html#aefb4243356502f3504318b435638ba57',1,'msegment:&#160;_heap.cpp']]],
+  ['msegmentptr_13',['msegmentptr',['../dlmalloc_8c.html#ac0c775e46c84cccbf60059dedd717fa5',1,'msegmentptr:&#160;dlmalloc.c'],['../__heap_8cpp.html#ac0c775e46c84cccbf60059dedd717fa5',1,'msegmentptr:&#160;_heap.cpp']]],
   ['msghdr_14',['msghdr',['../BaseHdr_2Net_2socket_8h.html#a9330982c7bab0a2048d0828aa091d903',1,'msghdr:&#160;socket.h'],['../Libs_2XEClib_2includes_2sys_2socket_8h.html#a9330982c7bab0a2048d0828aa091d903',1,'msghdr:&#160;socket.h']]],
-  ['mstate_15',['mstate',['../dlmalloc_8c.html#a77915996ce21724eda56ab99e2ce75e6',1,'dlmalloc.c']]],
+  ['mstate_15',['mstate',['../dlmalloc_8c.html#a77915996ce21724eda56ab99e2ce75e6',1,'mstate:&#160;dlmalloc.c'],['../__heap_8cpp.html#a77915996ce21724eda56ab99e2ce75e6',1,'mstate:&#160;_heap.cpp']]],
   ['mutex_16',['mutex',['../kernel_8h.html#af032b75de11187259c0463e6bf0f11d9',1,'kernel.h']]],
   ['mutex_5ft_17',['mutex_t',['../acpiosl_8cpp.html#a8a19d51328dc4133d117c510ed5e1395',1,'acpiosl.cpp']]]
 ];

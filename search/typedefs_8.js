@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['handle_0',['HANDLE',['../dlmalloc_8c.html#aa8c0374618b33785ccb02f74bcfebc46',1,'dlmalloc.c']]],
+  ['handle_0',['handle',['../__heap_8cpp.html#aa8c0374618b33785ccb02f74bcfebc46',1,'HANDLE:&#160;_heap.cpp'],['../dlmalloc_8c.html#aa8c0374618b33785ccb02f74bcfebc46',1,'HANDLE:&#160;dlmalloc.c']]],
   ['hashmap_5fcomp_5ft_1',['hashmap_comp_t',['../hashmap_8h.html#a09384af6ba743b95bedae4f6e882fb88',1,'hashmap.h']]],
   ['hashmap_5fdupe_5ft_2',['hashmap_dupe_t',['../hashmap_8h.html#a22134facb97069bfbdd64f4be0de5d7c',1,'hashmap.h']]],
   ['hashmap_5fentry_5ft_3',['hashmap_entry_t',['../hashmap_8h.html#aa32b00902224806a8dbd47dde9ff8f8a',1,'hashmap.h']]],

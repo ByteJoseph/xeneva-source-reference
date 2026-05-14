@@ -184,6 +184,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:a12ede536c8c176395402413cfc031105"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuGetPhysicalAddress &ndash; returns the physical address from a virtual address.  <br /></td></tr>
 <tr class="separator:a12ede536c8c176395402413cfc031105"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3742bf2f3f07ea8cbff4d98958f6150" id="r_ae3742bf2f3f07ea8cbff4d98958f6150"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BaseHdr_2Mm_2vmmngr_8h.html#ae3742bf2f3f07ea8cbff4d98958f6150">AuGetPhysicalAddressEx</a> (<a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> *cr3, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> virt_addr)</td></tr>
+<tr class="memdesc:ae3742bf2f3f07ea8cbff4d98958f6150"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuGetPhysicalAddressEx &ndash; returns the physical address from a virtual address.  <br /></td></tr>
 <tr class="separator:ae3742bf2f3f07ea8cbff4d98958f6150"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4166634d1f9286138a76fc2b0c93278" id="r_ae4166634d1f9286138a76fc2b0c93278"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BaseHdr_2Mm_2vmmngr_8h.html#ae4166634d1f9286138a76fc2b0c93278">AuCreateVirtualAddressSpace</a> ()</td></tr>
 <tr class="memdesc:ae4166634d1f9286138a76fc2b0c93278"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuCreateVirtualAddressSpace &ndash; create a new virtual address space.  <br /></td></tr>
@@ -746,7 +747,7 @@ Functions</h2></td></tr>
           <td class="memname"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> void * AuGetPhysicalAddressEx </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> *&#160;</td>
-          <td class="paramname"><em>cr3</em>, </td>
+          <td class="paramname"><em>pml4_</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -761,6 +762,15 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>AuGetPhysicalAddressEx &ndash; returns the physical address from a virtual address. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">virt_addr</td><td>&ndash; Virtual address </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the physical address of respected virtual address </dd></dl>
 
 </div>
 </div>

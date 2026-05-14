@@ -7,7 +7,7 @@ var searchData=
   ['sal_5finternal_5fextended_5fsal_5fproc_4',['SAL_INTERNAL_EXTENDED_SAL_PROC',['../ExtendedSalBootService_8h.html#aee28d66fb6921d94737ef1346f69efee',1,'ExtendedSalBootService.h']]],
   ['sal_5fproc_5',['SAL_PROC',['../Sal_8h.html#a459d9fbd018279134287eae53574b9db',1,'Sal.h']]],
   ['sal_5fupdate_5fpal_5finfo_5fblock_6',['SAL_UPDATE_PAL_INFO_BLOCK',['../Sal_8h.html#a8aa9f2de493602346f39ed8c50296c5a',1,'Sal.h']]],
-  ['sbinptr_7',['sbinptr',['../dlmalloc_8c.html#ac42f888c90017483ad23708b9a346798',1,'dlmalloc.c']]],
+  ['sbinptr_7',['sbinptr',['../dlmalloc_8c.html#ac42f888c90017483ad23708b9a346798',1,'sbinptr:&#160;dlmalloc.c'],['../__heap_8cpp.html#ac42f888c90017483ad23708b9a346798',1,'sbinptr:&#160;_heap.cpp']]],
   ['schedule_5finterrupt_5fcallback_8',['schedule_interrupt_callback',['../BaseHdr_2Drivers_2usb_8h.html#ad7016a8ea59ca97a2da1ef848aff592e',1,'usb.h']]],
   ['scsicapacityresponse_9',['SCSICapacityResponse',['../Drivers_2USB_2msc_2main_8cpp.html#a9d4f6d27318b9f3169a5d567cee42572',1,'main.cpp']]],
   ['scsicommand_10',['SCSICommand',['../Drivers_2USB_2msc_2main_8cpp.html#a80a9077534e13ad0fcf450e3f2600b94',1,'main.cpp']]],

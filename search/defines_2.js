@@ -167,7 +167,7 @@ var searchData=
   ['bit7_164',['BIT7',['../Base_8h.html#aa6b8f3261ae9e2e1043380c192f7b5f0',1,'Base.h']]],
   ['bit8_165',['BIT8',['../Base_8h.html#a0e80e65237843fa1ff15c68cd78066f8',1,'Base.h']]],
   ['bit9_166',['BIT9',['../Base_8h.html#a3aa20ab5eb33383fa31b0e94f4401cdf',1,'Base.h']]],
-  ['bit_5ffor_5ftree_5findex_167',['bit_for_tree_index',['../dlmalloc_8c.html#add9cdad127078283b5143927a1610427',1,'dlmalloc.c']]],
+  ['bit_5ffor_5ftree_5findex_167',['bit_for_tree_index',['../dlmalloc_8c.html#add9cdad127078283b5143927a1610427',1,'bit_for_tree_index:&#160;dlmalloc.c'],['../__heap_8cpp.html#add9cdad127078283b5143927a1610427',1,'bit_for_tree_index:&#160;_heap.cpp']]],
   ['bit_5full_168',['BIT_ULL',['../kernel_8h.html#afc8298aab0db338e218618ca8ba798d1',1,'kernel.h']]],
   ['bitmap_5fcopy_169',['bitmap_copy',['../bitmap_8h.html#a39bc465062cd405cfdc24ee6d5778912',1,'bitmap.h']]],
   ['bitmap_5fzero_170',['bitmap_zero',['../bitmap_8h.html#abd288844dc4668cba01f90a927f48390',1,'bitmap.h']]],

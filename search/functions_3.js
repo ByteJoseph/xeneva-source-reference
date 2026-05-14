@@ -31,7 +31,7 @@ var searchData=
   ['calenderrepaint_28',['CalenderRepaint',['../Process_2Calender_2main_8cpp.html#a578c7c045e73f011de4a69f7cd551e55',1,'main.cpp']]],
   ['call_5fkernel_29',['call_kernel',['../Boot_2lowlevel_8h.html#aa92d51b47bdad4c1113ce10231a52d95',1,'lowlevel.h']]],
   ['callkernel_30',['callKernel',['../BootAA64_2lowlevel_8h.html#a10545f3b19d413c5bc62db3b8ed3ff97',1,'lowlevel.h']]],
-  ['calloc_31',['calloc',['../stdlib_8h.html#a9b24d5b3c4fe645dbf55be0a8b928c1a',1,'calloc(unsigned long long num, unsigned long long size):&#160;_heap.cpp'],['../__heap_8h.html#a9a7bb15b103a18449880048194b8a6d7',1,'calloc(unsigned long long, unsigned long long):&#160;_heap.cpp'],['../__heap_8cpp.html#a4212c118b540e02d05aa7e3992f743c1',1,'calloc(unsigned long long nobj, unsigned long long size):&#160;_heap.cpp']]],
+  ['calloc_31',['calloc',['../stdlib_8h.html#a9b24d5b3c4fe645dbf55be0a8b928c1a',1,'calloc(unsigned long long num, unsigned long long size):&#160;stdlib.h'],['../__heap_8h.html#a9a7bb15b103a18449880048194b8a6d7',1,'calloc(unsigned long long, unsigned long long):&#160;_heap.h'],['../__heap_8cpp.html#a5dc07d7c6a5a8f88b24824428288c1b1',1,'calloc(size_t n_item, size_t size):&#160;_heap.cpp']]],
   ['cancelkerneltimer_32',['cancelkerneltimer',['../uspios_8c.html#a760dc4c43dbcca8a45345304dc7fc949',1,'CancelKernelTimer(unsigned hTimer):&#160;uspios.c'],['../uspios_8h.html#a760dc4c43dbcca8a45345304dc7fc949',1,'CancelKernelTimer(unsigned hTimer):&#160;uspios.c']]],
   ['catsprint_33',['CatSPrint',['../UefiLib_8h.html#a9ff51bdd1e3a65ec7296f8cd86eb5be9',1,'UefiLib.h']]],
   ['catvsprint_34',['CatVSPrint',['../UefiLib_8h.html#ac6d25fcc6478b4c1f6c463746f80461d',1,'UefiLib.h']]],

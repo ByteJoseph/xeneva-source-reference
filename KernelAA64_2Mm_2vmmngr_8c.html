@@ -167,6 +167,9 @@ Functions</h2></td></tr>
 <tr class="memitem:aa13da200183a56024cf490f946efaa60" id="r_aa13da200183a56024cf490f946efaa60"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="KernelAA64_2Mm_2vmmngr_8c.html#aa13da200183a56024cf490f946efaa60">AuGetPhysicalAddress</a> (<a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> virt_addr)</td></tr>
 <tr class="memdesc:aa13da200183a56024cf490f946efaa60"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuGetPhysicalAddress &ndash; returns the physical address from a virtual address.  <br /></td></tr>
 <tr class="separator:aa13da200183a56024cf490f946efaa60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a08c447af7d95734b9bd95db6f1b0b4" id="r_a3a08c447af7d95734b9bd95db6f1b0b4"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="KernelAA64_2Mm_2vmmngr_8c.html#a3a08c447af7d95734b9bd95db6f1b0b4">AuGetPhysicalAddressEx</a> (<a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> *pml4_, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> virt_addr)</td></tr>
+<tr class="memdesc:a3a08c447af7d95734b9bd95db6f1b0b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuGetPhysicalAddressEx &ndash; returns the physical address from a virtual address.  <br /></td></tr>
+<tr class="separator:a3a08c447af7d95734b9bd95db6f1b0b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ed630229c2dfb530c98560516c948fe" id="r_a5ed630229c2dfb530c98560516c948fe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="KernelAA64_2Mm_2vmmngr_8c.html#a5ed630229c2dfb530c98560516c948fe">AuCreateVirtualAddressSpace</a> ()</td></tr>
 <tr class="memdesc:a5ed630229c2dfb530c98560516c948fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuCreateVirtualAddressSpace &ndash; create a new virtual address space.  <br /></td></tr>
 <tr class="separator:a5ed630229c2dfb530c98560516c948fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -342,6 +345,43 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>AuGetPhysicalAddress &ndash; returns the physical address from a virtual address. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">virt_addr</td><td>&ndash; Virtual address </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the physical address of respected virtual address </dd></dl>
+
+</div>
+</div>
+<a id="a3a08c447af7d95734b9bd95db6f1b0b4" name="a3a08c447af7d95734b9bd95db6f1b0b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a08c447af7d95734b9bd95db6f1b0b4">&#9670;&#160;</a></span>AuGetPhysicalAddressEx()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void * AuGetPhysicalAddressEx </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> *&#160;</td>
+          <td class="paramname"><em>pml4_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>&#160;</td>
+          <td class="paramname"><em>virt_addr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>AuGetPhysicalAddressEx &ndash; returns the physical address from a virtual address. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">virt_addr</td><td>&ndash; Virtual address </td></tr>
