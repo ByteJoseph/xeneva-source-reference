@@ -24,7 +24,7 @@ var searchData=
   ['loader_2ec_21',['loader.c',['../loader_8c.html',1,'']]],
   ['loader_2ecpp_22',['loader.cpp',['../loader_8cpp.html',1,'']]],
   ['loader_2eh_23',['loader.h',['../loader_8h.html',1,'']]],
-  ['loadfile_2eh_24',['loadfile.h',['../Protocol_2LoadFile_8h.html',1,'(Global Namespace)'],['../Ppi_2LoadFile_8h.html',1,'(Global Namespace)']]],
+  ['loadfile_2eh_24',['loadfile.h',['../Ppi_2LoadFile_8h.html',1,'(Global Namespace)'],['../Protocol_2LoadFile_8h.html',1,'(Global Namespace)']]],
   ['loadfile2_2eh_25',['LoadFile2.h',['../LoadFile2_8h.html',1,'']]],
   ['loadimage_2eh_26',['LoadImage.h',['../LoadImage_8h.html',1,'']]],
   ['lowlevel_2eh_27',['lowlevel.h',['../BootAA64_2lowlevel_8h.html',1,'(Global Namespace)'],['../Boot_2lowlevel_8h.html',1,'(Global Namespace)']]],
