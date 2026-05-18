@@ -84,18 +84,25 @@ $(function() {
 <div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
 <code>#include &lt;list.h&gt;</code><br />
 <code>#include &lt;aurora.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="group_8h_source.html">Cred/group.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="user_8h_source.html">Cred/user.h</a>&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for vfs.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="vfs_8h__incl.png" border="0" usemap="#aXenevaOS_2BaseHdr_2Fs_2vfs_8h" alt=""/></div>
 <map name="aXenevaOS_2BaseHdr_2Fs_2vfs_8h" id="aXenevaOS_2BaseHdr_2Fs_2vfs_8h">
-<area shape="rect" title=" " alt="" coords="44,5,211,45"/>
-<area shape="rect" title=" " alt="" coords="5,93,76,119"/>
-<area shape="poly" title=" " alt="" coords="108,48,66,86,62,82,105,44"/>
-<area shape="rect" title=" " alt="" coords="100,93,155,119"/>
-<area shape="poly" title=" " alt="" coords="130,46,130,79,125,79,125,46"/>
-<area shape="rect" title=" " alt="" coords="179,93,255,119"/>
-<area shape="poly" title=" " alt="" coords="151,44,195,82,191,86,147,48"/>
+<area shape="rect" title=" " alt="" coords="56,5,223,45"/>
+<area shape="rect" title=" " alt="" coords="84,167,155,192"/>
+<area shape="poly" title=" " alt="" coords="73,48,39,67,24,80,13,95,9,105,9,115,21,133,44,148,72,161,70,165,42,153,18,136,4,116,3,104,8,92,20,76,36,63,71,43"/>
+<area shape="rect" title=" " alt="" coords="23,93,78,119"/>
+<area shape="poly" title=" " alt="" coords="120,48,76,86,72,82,116,44"/>
+<area shape="rect" title=" " alt="" coords="102,93,178,119"/>
+<area shape="poly" title=" " alt="" coords="142,46,142,79,137,79,137,46"/>
+<area shape="rect" href="group_8h.html" title=" " alt="" coords="202,93,307,119"/>
+<area shape="poly" title=" " alt="" coords="169,43,228,83,225,88,166,48"/>
+<area shape="rect" href="user_8h.html" title=" " alt="" coords="331,93,426,119"/>
+<area shape="poly" title=" " alt="" coords="198,43,331,87,330,92,196,48"/>
+<area shape="poly" title=" " alt="" coords="234,121,155,162,153,158,231,116"/>
 </map>
 </div>
 </div>
@@ -245,6 +252,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a9d32e8f4e6304f96666b397e2dff4918" id="r_a9d32e8f4e6304f96666b397e2dff4918"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8h.html#a9d32e8f4e6304f96666b397e2dff4918">AuVFSGetBlockFor</a> (<a class="el" href="vfs_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *node, <a class="el" href="vfs_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *file, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> offset)</td></tr>
 <tr class="memdesc:a9d32e8f4e6304f96666b397e2dff4918"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuVFSGetBlockFor &ndash; returns a block number for certain byte offset of file.  <br /></td></tr>
 <tr class="separator:a9d32e8f4e6304f96666b397e2dff4918"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b8d31dc85b7e08f351e2f72d84cedee" id="r_a5b8d31dc85b7e08f351e2f72d84cedee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8h.html#a5b8d31dc85b7e08f351e2f72d84cedee">AuVFSSetCred</a> (<a class="el" href="vfs_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *node, <a class="el" href="user_8h.html#a158f59266d68ec49f2d89bac773e70ee">UID_NUM</a> uid, <a class="el" href="group_8h.html#a487dd0aecde7b311f15a556b1c2a3733">GID_NUM</a> gid)</td></tr>
+<tr class="memdesc:a5b8d31dc85b7e08f351e2f72d84cedee"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuVFSSetCred &ndash; set gid/uid value for a file.  <br /></td></tr>
+<tr class="separator:a5b8d31dc85b7e08f351e2f72d84cedee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>BSD 2-Clause License</p>
@@ -1376,6 +1386,51 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, -1 on failure </dd></dl>
+
+</div>
+</div>
+<a id="a5b8d31dc85b7e08f351e2f72d84cedee" name="a5b8d31dc85b7e08f351e2f72d84cedee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b8d31dc85b7e08f351e2f72d84cedee">&#9670;&#160;</a></span>AuVFSSetCred()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> int AuVFSSetCred </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="vfs_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *&#160;</td>
+          <td class="paramname"><em>node</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="user_8h.html#a158f59266d68ec49f2d89bac773e70ee">UID_NUM</a>&#160;</td>
+          <td class="paramname"><em>uid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group_8h.html#a487dd0aecde7b311f15a556b1c2a3733">GID_NUM</a>&#160;</td>
+          <td class="paramname"><em>gid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>AuVFSSetCred &ndash; set gid/uid value for a file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">node</td><td>&ndash; file node </td></tr>
+    <tr><td class="paramname">uid</td><td>&ndash; user id </td></tr>
+    <tr><td class="paramname">gid</td><td>&ndash; group id </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>zero on success, one on failure </dd></dl>
 
 </div>
 </div>

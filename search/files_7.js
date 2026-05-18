@@ -11,5 +11,6 @@ var searchData=
   ['graphics_2eh_8',['Graphics.h',['../Graphics_8h.html',1,'']]],
   ['graphicsinfohob_2eh_9',['GraphicsInfoHob.h',['../GraphicsInfoHob_8h.html',1,'']]],
   ['graphicsoutput_2eh_10',['GraphicsOutput.h',['../GraphicsOutput_8h.html',1,'']]],
-  ['guidedsectionextraction_2eh_11',['guidedsectionextraction.h',['../Ppi_2GuidedSectionExtraction_8h.html',1,'(Global Namespace)'],['../Protocol_2GuidedSectionExtraction_8h.html',1,'(Global Namespace)']]]
+  ['group_2eh_11',['group.h',['../group_8h.html',1,'']]],
+  ['guidedsectionextraction_2eh_12',['guidedsectionextraction.h',['../Ppi_2GuidedSectionExtraction_8h.html',1,'(Global Namespace)'],['../Protocol_2GuidedSectionExtraction_8h.html',1,'(Global Namespace)']]]
 ];
