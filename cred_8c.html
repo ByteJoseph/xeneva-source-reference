@@ -75,8 +75,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#define-members">Macros</a> &#124;
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">cred.c File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -198,11 +197,6 @@ Functions</h2></td></tr>
 <tr class="memitem:a93e6746790c7890eaf5fe959ee02e980" id="r_a93e6746790c7890eaf5fe959ee02e980"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cred_8c.html#a93e6746790c7890eaf5fe959ee02e980">AuSetGID</a> (int proc_id, <a class="el" href="group_8h.html#a487dd0aecde7b311f15a556b1c2a3733">GID_NUM</a> gid)</td></tr>
 <tr class="memdesc:a93e6746790c7890eaf5fe959ee02e980"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuSetGID &ndash; change user id of a process.  <br /></td></tr>
 <tr class="separator:a93e6746790c7890eaf5fe959ee02e980"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:af92df505fcf1cff9a153639c84db72e8" id="r_af92df505fcf1cff9a153639c84db72e8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group_8h.html#a487dd0aecde7b311f15a556b1c2a3733">GID_NUM</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cred_8c.html#af92df505fcf1cff9a153639c84db72e8">_groups</a> [<a class="el" href="group_8h.html#ace262483fc649d0ade2cf25728bc6a85">AURORA_MAX_GROUPS</a>]</td></tr>
-<tr class="separator:af92df505fcf1cff9a153639c84db72e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>BSD 2-Clause License</p>
@@ -668,22 +662,6 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 <p>don't allow root process to change it's uid/gid, in Xeneva the root process get process id of one</p>
-
-</div>
-</div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a id="af92df505fcf1cff9a153639c84db72e8" name="af92df505fcf1cff9a153639c84db72e8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af92df505fcf1cff9a153639c84db72e8">&#9670;&#160;</a></span>_groups</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group_8h.html#a487dd0aecde7b311f15a556b1c2a3733">GID_NUM</a> _groups[<a class="el" href="group_8h.html#ace262483fc649d0ade2cf25728bc6a85">AURORA_MAX_GROUPS</a>]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>global group ID's for kernel use </p>
 
 </div>
 </div>

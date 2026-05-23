@@ -212,148 +212,150 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00155" name="l00155"></a><span class="lineno"><a class="line" href="struct__au__proc__.html#abfa1a37fd59fbf25d3269320f793ffb0">  155</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="struct__au__proc__.html">_au_proc_</a> *<a class="code hl_variable" href="struct__au__proc__.html#abfa1a37fd59fbf25d3269320f793ffb0">prev</a>;</div>
 <div class="line"><a id="l00156" name="l00156"></a><span class="lineno"><a class="line" href="process_8h.html#af7383c550ee680158b77cf18ef1d275a">  156</a></span>}<a class="code hl_typedef" href="process_8h.html#af7383c550ee680158b77cf18ef1d275a">AuProcess</a>;</div>
 </div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span><span class="comment">//#pragma pack(pop)</span></div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span><span class="comment">* AuAddProcess -- adds process to kernel data structure</span></div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span><span class="comment">* @param root -- pointer to the root process</span></div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span><span class="comment">* @param proc -- process to add</span></div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span><span class="comment">*/</span></div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span><span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code hl_function" href="process_8h.html#a259a15b1064ce5a466532823818037da">AuAddProcess</a>(<a class="code hl_struct" href="struct__au__proc__.html">AuProcess</a>* parent, <a class="code hl_struct" href="struct__au__proc__.html">AuProcess</a> *proc);</div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span> </div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span><span class="comment">* AuRemoveProcess -- removes a process from the process</span></div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span><span class="comment">* data structure</span></div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span><span class="comment">* @param parent -- pointer to the parent process</span></div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span><span class="comment">* @param proc -- process to remove</span></div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span><span class="comment">*/</span></div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span><span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code hl_function" href="process_8h.html#a583d0c4953b7e2852be121d9826e7884">AuRemoveProcess</a>(<a class="code hl_struct" href="struct__au__proc__.html">AuProcess</a>* parent, <a class="code hl_struct" href="struct__au__proc__.html">AuProcess</a>* proc);</div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span> </div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span> </div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span><span class="comment">* Allocate kernel stack</span></div>
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span><span class="comment">* @param cr3 -- root page map level, it should be</span></div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span><span class="comment">* converted to linear virtual address</span></div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span><span class="comment">*/</span></div>
-<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span><span class="keyword">extern</span> <a class="code hl_typedef" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> <a class="code hl_function" href="process_8h.html#a06a5fff511a9f8ef919f1ce7168f76f2">CreateKernelStack</a>(<a class="code hl_struct" href="struct__au__proc__.html">AuProcess</a>* proc, <a class="code hl_typedef" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> *<a class="code hl_variable" href="struct__au__proc__.html#a995f8e009ff344512e7b010edf1ad325">cr3</a>);</div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span><span class="comment">* KernelStackFree -- frees up an allocated stack</span></div>
-<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span><span class="comment">* @param proc -- Pointer to process</span></div>
-<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span><span class="comment">* @param ptr -- Starting address of the stack</span></div>
-<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span><span class="comment">* @param cr3 -- page root level mapping</span></div>
-<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span><span class="comment">*/</span></div>
-<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span><span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code hl_function" href="process_8h.html#a805d3034dd156a9acd448e93f4757c93">KernelStackFree</a>(<a class="code hl_struct" href="struct__au__proc__.html">AuProcess</a>* proc, <span class="keywordtype">void</span>* ptr, <a class="code hl_typedef" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> *<a class="code hl_variable" href="struct__au__proc__.html#a995f8e009ff344512e7b010edf1ad325">cr3</a>);</div>
-<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span> </div>
-<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span><span class="comment">* AuProcessFindPID -- finds a process by its pid</span></div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span><span class="comment">* @param pid -- process id to find</span></div>
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span><span class="comment">*/</span></div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span><span class="keyword">extern</span> <a class="code hl_struct" href="struct__au__proc__.html">AuProcess</a>* <a class="code hl_function" href="process_8h.html#aa2bfb49f2fc116df0d3033f859826a5e">AuProcessFindPID</a>(<span class="keywordtype">int</span> pid);</div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span> </div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span><span class="preprocessor">#ifdef ARCH_X64</span></div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span><span class="comment">* AuProcessFindThread -- finds a process by its</span></div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span><span class="comment">* main thread</span></div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span><span class="comment">* @param thread -- pointer to  main thread</span></div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span><span class="comment">*/</span></div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span><span class="keyword">extern</span> <a class="code hl_struct" href="struct__au__proc__.html">AuProcess</a> *<a class="code hl_function" href="process_8cpp.html#ac7ef89494ba2fb23726c6ba9dd842e31">AuProcessFindThread</a>(<a class="code hl_struct" href="struct__au__thread__.html">AuThread</a>* thread);</div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span> </div>
-<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span><span class="comment">* AuProcessFindSubThread -- find a process from its</span></div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span><span class="comment">* sub threads which contain a pointer to its process</span></div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span><span class="comment">* slot</span></div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span><span class="comment">* @param thread -- Pointer to sub thread</span></div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span><span class="comment">*/</span></div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span><span class="keyword">extern</span> <a class="code hl_struct" href="struct__au__proc__.html">AuProcess</a>* <a class="code hl_function" href="process_8cpp.html#afc7fd26f354de9dda55ffb59257be528">AuProcessFindSubThread</a>(<a class="code hl_struct" href="struct__au__thread__.html">AuThread</a>* thread);</div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span><span class="preprocessor">#elif ARCH_ARM64</span></div>
-<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span><span class="comment">* AuProcessFindThread -- finds a process by its</span></div>
-<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span><span class="comment">* main thread</span></div>
-<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span><span class="comment">* @param thread -- pointer to  main thread</span></div>
-<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span><span class="comment">*/</span></div>
-<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span><span class="keyword">extern</span> <a class="code hl_struct" href="struct__au__proc__.html">AuProcess</a>* <a class="code hl_function" href="process_8cpp.html#ac7ef89494ba2fb23726c6ba9dd842e31">AuProcessFindThread</a>(AA64Thread* thread);</div>
-<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span> </div>
-<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span><span class="comment">* AuProcessFindSubThread -- find a process from its</span></div>
-<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span><span class="comment">* sub threads which contain a pointer to its process</span></div>
-<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span><span class="comment">* slot</span></div>
-<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span><span class="comment">* @param thread -- Pointer to sub thread</span></div>
-<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span><span class="comment">*/</span></div>
-<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span><span class="keyword">extern</span> <a class="code hl_struct" href="struct__au__proc__.html">AuProcess</a>* <a class="code hl_function" href="process_8cpp.html#afc7fd26f354de9dda55ffb59257be528">AuProcessFindSubThread</a>(AA64Thread* thread);</div>
-<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span> </div>
-<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span> </div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span> </div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span><span class="comment">//#pragma pack(pop)</span></div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span><span class="comment">* AuAddProcess -- adds process to kernel data structure</span></div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span><span class="comment">* @param root -- pointer to the root process</span></div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span><span class="comment">* @param proc -- process to add</span></div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span><span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code hl_function" href="process_8h.html#a259a15b1064ce5a466532823818037da">AuAddProcess</a>(<a class="code hl_struct" href="struct__au__proc__.html">AuProcess</a>* parent, <a class="code hl_struct" href="struct__au__proc__.html">AuProcess</a> *proc);</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span> </div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span><span class="comment">* AuRemoveProcess -- removes a process from the process</span></div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span><span class="comment">* data structure</span></div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span><span class="comment">* @param parent -- pointer to the parent process</span></div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span><span class="comment">* @param proc -- process to remove</span></div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span><span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code hl_function" href="process_8h.html#a583d0c4953b7e2852be121d9826e7884">AuRemoveProcess</a>(<a class="code hl_struct" href="struct__au__proc__.html">AuProcess</a>* parent, <a class="code hl_struct" href="struct__au__proc__.html">AuProcess</a>* proc);</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span> </div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span> </div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span><span class="comment">* Allocate kernel stack</span></div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span><span class="comment">* @param cr3 -- root page map level, it should be</span></div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span><span class="comment">* converted to linear virtual address</span></div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span><span class="keyword">extern</span> <a class="code hl_typedef" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> <a class="code hl_function" href="process_8h.html#a06a5fff511a9f8ef919f1ce7168f76f2">CreateKernelStack</a>(<a class="code hl_struct" href="struct__au__proc__.html">AuProcess</a>* proc, <a class="code hl_typedef" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> *<a class="code hl_variable" href="struct__au__proc__.html#a995f8e009ff344512e7b010edf1ad325">cr3</a>);</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span><span class="comment">* KernelStackFree -- frees up an allocated stack</span></div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span><span class="comment">* @param proc -- Pointer to process</span></div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span><span class="comment">* @param ptr -- Starting address of the stack</span></div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span><span class="comment">* @param cr3 -- page root level mapping</span></div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span><span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code hl_function" href="process_8h.html#a805d3034dd156a9acd448e93f4757c93">KernelStackFree</a>(<a class="code hl_struct" href="struct__au__proc__.html">AuProcess</a>* proc, <span class="keywordtype">void</span>* ptr, <a class="code hl_typedef" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> *<a class="code hl_variable" href="struct__au__proc__.html#a995f8e009ff344512e7b010edf1ad325">cr3</a>);</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span> </div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span><span class="comment">* AuProcessFindPID -- finds a process by its pid</span></div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span><span class="comment">* @param pid -- process id to find</span></div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span><span class="keyword">extern</span> <a class="code hl_struct" href="struct__au__proc__.html">AuProcess</a>* <a class="code hl_function" href="process_8h.html#aa2bfb49f2fc116df0d3033f859826a5e">AuProcessFindPID</a>(<span class="keywordtype">int</span> pid);</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span> </div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span><span class="preprocessor">#ifdef ARCH_X64</span></div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span><span class="comment">* AuProcessFindThread -- finds a process by its</span></div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span><span class="comment">* main thread</span></div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span><span class="comment">* @param thread -- pointer to  main thread</span></div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span><span class="keyword">extern</span> <a class="code hl_struct" href="struct__au__proc__.html">AuProcess</a> *<a class="code hl_function" href="process_8cpp.html#ac7ef89494ba2fb23726c6ba9dd842e31">AuProcessFindThread</a>(<a class="code hl_struct" href="struct__au__thread__.html">AuThread</a>* thread);</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span> </div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span><span class="comment">* AuProcessFindSubThread -- find a process from its</span></div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span><span class="comment">* sub threads which contain a pointer to its process</span></div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span><span class="comment">* slot</span></div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span><span class="comment">* @param thread -- Pointer to sub thread</span></div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span><span class="keyword">extern</span> <a class="code hl_struct" href="struct__au__proc__.html">AuProcess</a>* <a class="code hl_function" href="process_8cpp.html#afc7fd26f354de9dda55ffb59257be528">AuProcessFindSubThread</a>(<a class="code hl_struct" href="struct__au__thread__.html">AuThread</a>* thread);</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span><span class="preprocessor">#elif ARCH_ARM64</span></div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span><span class="comment">* AuProcessFindThread -- finds a process by its</span></div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span><span class="comment">* main thread</span></div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span><span class="comment">* @param thread -- pointer to  main thread</span></div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span><span class="keyword">extern</span> <a class="code hl_struct" href="struct__au__proc__.html">AuProcess</a>* <a class="code hl_function" href="process_8cpp.html#ac7ef89494ba2fb23726c6ba9dd842e31">AuProcessFindThread</a>(AA64Thread* thread);</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span> </div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span><span class="comment">* AuProcessFindSubThread -- find a process from its</span></div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span><span class="comment">* sub threads which contain a pointer to its process</span></div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span><span class="comment">* slot</span></div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span><span class="comment">* @param thread -- Pointer to sub thread</span></div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span><span class="keyword">extern</span> <a class="code hl_struct" href="struct__au__proc__.html">AuProcess</a>* <a class="code hl_function" href="process_8cpp.html#afc7fd26f354de9dda55ffb59257be528">AuProcessFindSubThread</a>(AA64Thread* thread);</div>
 <div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span> </div>
-<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span><span class="comment">* CreateUserStack -- creates new user stack</span></div>
-<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span><span class="comment">* @param proc -- Pointer to process</span></div>
-<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span><span class="comment">* @param cr3 -- pointer to the address space where to</span></div>
-<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span><span class="comment">* map</span></div>
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span><span class="comment">*/</span></div>
-<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span><span class="keyword">extern</span> <a class="code hl_typedef" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>* <a class="code hl_function" href="process_8h.html#ab549bb8621b409bbb03fd96bac6cdfd0">CreateUserStack</a>(<a class="code hl_struct" href="struct__au__proc__.html">AuProcess</a>* proc,<a class="code hl_typedef" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>* <a class="code hl_variable" href="struct__au__proc__.html#a995f8e009ff344512e7b010edf1ad325">cr3</a>);</div>
-<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span> </div>
-<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span><span class="comment">* AuStartRootProc -- starts the very first process</span></div>
-<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span><span class="comment">* of aurora system</span></div>
-<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span><span class="comment">*/</span></div>
-<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span><span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code hl_function" href="process_8h.html#a68e774374656e9101fe592350858774f">AuStartRootProc</a>();</div>
-<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span> </div>
-<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span><span class="comment">* AuGetRootProcess -- returns the root process</span></div>
-<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span><span class="comment">*/</span></div>
-<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span><span class="keyword">extern</span> <a class="code hl_struct" href="struct__au__proc__.html">AuProcess</a>* <a class="code hl_function" href="process_8h.html#a24e22447f7e5a100a1ce6c33d00169da">AuGetRootProcess</a>();</div>
-<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span> </div>
-<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span><span class="comment">* AuCreateProcessSlot -- creates a blank process slot</span></div>
-<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span><span class="comment">* @param parent -- pointer to the parent process</span></div>
-<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span><span class="comment">*/</span></div>
-<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span><span class="keyword">extern</span> <a class="code hl_struct" href="struct__au__proc__.html">AuProcess</a>* <a class="code hl_function" href="process_8h.html#a2ba30bbe6abb3b19d3625a2046a17304">AuCreateProcessSlot</a>(<a class="code hl_struct" href="struct__au__proc__.html">AuProcess</a>* parent, <span class="keywordtype">char</span>* <a class="code hl_variable" href="struct__au__proc__.html#a0936c5289386fff4f9545e29902b957b">name</a>);</div>
-<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span> </div>
-<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span><span class="comment">* AuProcessFork -- fork a parent process</span></div>
-<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span><span class="comment">* @param parent -- pointer to parent process</span></div>
-<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span><span class="comment">*/</span></div>
-<div class="line"><a id="l00256" name="l00256"></a><span class="lineno"><a class="line" href="process_8h.html#af114c154fef57cb77ab4736648c6c57f">  256</a></span><span class="keyword">extern</span> <a class="code hl_struct" href="struct__au__proc__.html">AuProcess</a>* <a class="code hl_function" href="process_8h.html#af114c154fef57cb77ab4736648c6c57f">AuProcessFork</a>(<a class="code hl_struct" href="struct__au__proc__.html">AuProcess</a>* parent);</div>
-<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span> </div>
-<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span> </div>
-<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span><span class="comment">/* AuProcessExit -- marks a process</span></div>
-<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span><span class="comment">* as killable</span></div>
-<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span><span class="comment">* @param proc -- process to exit</span></div>
-<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span><span class="comment">*/</span></div>
-<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span><span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code hl_function" href="process_8h.html#afc6f957fba059e2696c2873462a6b551">AuProcessExit</a>(<a class="code hl_struct" href="struct__au__proc__.html">AuProcess</a>* proc, <span class="keywordtype">bool</span> schedulable);</div>
-<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span> </div>
-<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span><span class="comment">* AuProcessGetFileDesc -- returns a empty file descriptor</span></div>
-<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span><span class="comment">* from process slot</span></div>
-<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span><span class="comment">* @param proc -- pointer to process slot</span></div>
-<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span><span class="comment">*/</span></div>
-<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span><span class="keyword">extern</span> <span class="keywordtype">int</span> <a class="code hl_function" href="process_8h.html#a89700f4a4bf68668b8d6d32ac1abbb02">AuProcessGetFileDesc</a>(<a class="code hl_struct" href="struct__au__proc__.html">AuProcess</a>* proc);</div>
-<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span> </div>
-<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span><span class="comment">* AuProcessWaitForTermination -- waits for termination</span></div>
-<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span><span class="comment">* of child processes</span></div>
-<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span><span class="comment">* @param proc -- pointer to process who needs to</span></div>
-<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span><span class="comment">* wait for termination</span></div>
-<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span><span class="comment">* @param pid -- pid of the process, if -1 then any child</span></div>
-<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span><span class="comment">* process</span></div>
-<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span><span class="comment">*/</span></div>
-<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span><span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code hl_function" href="process_8h.html#affe9525870b0de39154e59b833ef9a34">AuProcessWaitForTermination</a>(<a class="code hl_struct" href="struct__au__proc__.html">AuProcess</a> *proc, <span class="keywordtype">int</span> pid);</div>
-<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span> </div>
-<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span><span class="preprocessor">#ifdef ARCH_X64</span></div>
-<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span><span class="keyword">extern</span> <a class="code hl_struct" href="struct__mutex__.html">AuMutex</a>* <a class="code hl_function" href="process_8cpp.html#ab30f148cb7ed4fcec4e414b4492fd0e8">AuProcessGetMutex</a>();</div>
-<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span> </div>
-<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span><span class="preprocessor">#ifdef ARCH_ARM64</span></div>
-<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span><span class="keyword">extern</span> <a class="code hl_typedef" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> <a class="code hl_function" href="sched_8c.html#a61495d8cac47c28bac8c63291c29926b">AuCreateSubKernelStack</a>(<a class="code hl_struct" href="struct__au__proc__.html">AuProcess</a>* proc, <a class="code hl_typedef" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>* pml);</div>
-<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span><span class="comment"> * @brief CreateSubUserStack -- creates new user stack</span></div>
-<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span><span class="comment"> * @param proc -- Pointer to process slot</span></div>
-<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span><span class="comment"> * @param cr3 -- pointer to the address space where to</span></div>
-<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span><span class="comment"> * map</span></div>
-<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span><span class="keyword">extern</span> <a class="code hl_typedef" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>* <a class="code hl_function" href="process_8c.html#aa528b3759a0386621e736a48dcfca0dc">CreateSubUserStack</a>(<a class="code hl_struct" href="struct__au__proc__.html">AuProcess</a>* proc, <a class="code hl_typedef" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>* <a class="code hl_variable" href="struct__au__proc__.html#a995f8e009ff344512e7b010edf1ad325">cr3</a>);</div>
-<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span><span class="keyword">extern</span> <span class="keywordtype">int</span> <a class="code hl_function" href="process_8h.html#a4458a9be26700f110302d05a5ab1dfd4">AuCreateUserthread</a>(<a class="code hl_struct" href="struct__au__proc__.html">AuProcess</a>* proc, <span class="keywordtype">void</span>(*<a class="code hl_typedef" href="process_8h.html#a12532d9e7797b0d9089521c02528e113">entry</a>) (), <span class="keywordtype">char</span> *<a class="code hl_variable" href="struct__au__proc__.html#a0936c5289386fff4f9545e29902b957b">name</a>);</div>
-<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span> </div>
-<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span> </div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span><span class="comment">* CreateUserStack -- creates new user stack</span></div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span><span class="comment">* @param proc -- Pointer to process</span></div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span><span class="comment">* @param cr3 -- pointer to the address space where to</span></div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span><span class="comment">* map</span></div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span><span class="keyword">extern</span> <a class="code hl_typedef" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>* <a class="code hl_function" href="process_8h.html#ab549bb8621b409bbb03fd96bac6cdfd0">CreateUserStack</a>(<a class="code hl_struct" href="struct__au__proc__.html">AuProcess</a>* proc,<a class="code hl_typedef" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>* <a class="code hl_variable" href="struct__au__proc__.html#a995f8e009ff344512e7b010edf1ad325">cr3</a>);</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span> </div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span><span class="comment">* AuStartRootProc -- starts the very first process</span></div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span><span class="comment">* of aurora system</span></div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span><span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code hl_function" href="process_8h.html#a68e774374656e9101fe592350858774f">AuStartRootProc</a>();</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span> </div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span><span class="comment">* AuGetRootProcess -- returns the root process</span></div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span><span class="keyword">extern</span> <a class="code hl_struct" href="struct__au__proc__.html">AuProcess</a>* <a class="code hl_function" href="process_8h.html#a24e22447f7e5a100a1ce6c33d00169da">AuGetRootProcess</a>();</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span> </div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span><span class="comment">* AuCreateProcessSlot -- creates a blank process slot</span></div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span><span class="comment">* @param parent -- pointer to the parent process</span></div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span><span class="keyword">extern</span> <a class="code hl_struct" href="struct__au__proc__.html">AuProcess</a>* <a class="code hl_function" href="process_8h.html#a2ba30bbe6abb3b19d3625a2046a17304">AuCreateProcessSlot</a>(<a class="code hl_struct" href="struct__au__proc__.html">AuProcess</a>* parent, <span class="keywordtype">char</span>* <a class="code hl_variable" href="struct__au__proc__.html#a0936c5289386fff4f9545e29902b957b">name</a>);</div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span> </div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span><span class="comment">* AuProcessFork -- fork a parent process</span></div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span><span class="comment">* @param parent -- pointer to parent process</span></div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno"><a class="line" href="process_8h.html#af114c154fef57cb77ab4736648c6c57f">  258</a></span><span class="keyword">extern</span> <a class="code hl_struct" href="struct__au__proc__.html">AuProcess</a>* <a class="code hl_function" href="process_8h.html#af114c154fef57cb77ab4736648c6c57f">AuProcessFork</a>(<a class="code hl_struct" href="struct__au__proc__.html">AuProcess</a>* parent);</div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span> </div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span> </div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span><span class="comment">/* AuProcessExit -- marks a process</span></div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span><span class="comment">* as killable</span></div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span><span class="comment">* @param proc -- process to exit</span></div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span><span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code hl_function" href="process_8h.html#afc6f957fba059e2696c2873462a6b551">AuProcessExit</a>(<a class="code hl_struct" href="struct__au__proc__.html">AuProcess</a>* proc, <span class="keywordtype">bool</span> schedulable);</div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span> </div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span><span class="comment">* AuProcessGetFileDesc -- returns a empty file descriptor</span></div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span><span class="comment">* from process slot</span></div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span><span class="comment">* @param proc -- pointer to process slot</span></div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span><span class="keyword">extern</span> <span class="keywordtype">int</span> <a class="code hl_function" href="process_8h.html#a89700f4a4bf68668b8d6d32ac1abbb02">AuProcessGetFileDesc</a>(<a class="code hl_struct" href="struct__au__proc__.html">AuProcess</a>* proc);</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span> </div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span><span class="comment">* AuProcessWaitForTermination -- waits for termination</span></div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span><span class="comment">* of child processes</span></div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span><span class="comment">* @param proc -- pointer to process who needs to</span></div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span><span class="comment">* wait for termination</span></div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span><span class="comment">* @param pid -- pid of the process, if -1 then any child</span></div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span><span class="comment">* process</span></div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span><span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code hl_function" href="process_8h.html#affe9525870b0de39154e59b833ef9a34">AuProcessWaitForTermination</a>(<a class="code hl_struct" href="struct__au__proc__.html">AuProcess</a> *proc, <span class="keywordtype">int</span> pid);</div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span> </div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span><span class="preprocessor">#ifdef ARCH_X64</span></div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span><span class="keyword">extern</span> <a class="code hl_struct" href="struct__mutex__.html">AuMutex</a>* <a class="code hl_function" href="process_8cpp.html#ab30f148cb7ed4fcec4e414b4492fd0e8">AuProcessGetMutex</a>();</div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span> </div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span><span class="preprocessor">#ifdef ARCH_ARM64</span></div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span><span class="keyword">extern</span> <a class="code hl_typedef" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> <a class="code hl_function" href="sched_8c.html#a61495d8cac47c28bac8c63291c29926b">AuCreateSubKernelStack</a>(<a class="code hl_struct" href="struct__au__proc__.html">AuProcess</a>* proc, <a class="code hl_typedef" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>* pml);</div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span><span class="comment"> * @brief CreateSubUserStack -- creates new user stack</span></div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span><span class="comment"> * @param proc -- Pointer to process slot</span></div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span><span class="comment"> * @param cr3 -- pointer to the address space where to</span></div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span><span class="comment"> * map</span></div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span><span class="keyword">extern</span> <a class="code hl_typedef" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>* <a class="code hl_function" href="process_8c.html#aa528b3759a0386621e736a48dcfca0dc">CreateSubUserStack</a>(<a class="code hl_struct" href="struct__au__proc__.html">AuProcess</a>* proc, <a class="code hl_typedef" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>* <a class="code hl_variable" href="struct__au__proc__.html#a995f8e009ff344512e7b010edf1ad325">cr3</a>);</div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span><span class="keyword">extern</span> <span class="keywordtype">int</span> <a class="code hl_function" href="process_8h.html#a4458a9be26700f110302d05a5ab1dfd4">AuCreateUserthread</a>(<a class="code hl_struct" href="struct__au__proc__.html">AuProcess</a>* proc, <span class="keywordtype">void</span>(*<a class="code hl_typedef" href="process_8h.html#a12532d9e7797b0d9089521c02528e113">entry</a>) (), <span class="keywordtype">char</span> *<a class="code hl_variable" href="struct__au__proc__.html#a0936c5289386fff4f9545e29902b957b">name</a>);</div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span> </div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aLibs_2Chitralekha_2widgets_2list_8h_html"><div class="ttname"><a href="Libs_2Chitralekha_2widgets_2list_8h.html">list.h</a></div></div>
 <div class="ttc" id="aLibs_2XEClib_2includes_2stdint_8h_html"><div class="ttname"><a href="Libs_2XEClib_2includes_2stdint_8h.html">stdint.h</a></div></div>
 <div class="ttc" id="aSync_2mutex_8h_html"><div class="ttname"><a href="Sync_2mutex_8h.html">mutex.h</a></div></div>

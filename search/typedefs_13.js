@@ -63,7 +63,8 @@ var searchData=
   ['stbtt_5ffontinfo_60',['stbtt_fontinfo',['../stb__truetype_8h.html#a82ca6622f6983cc08eca850280126daf',1,'stb_truetype.h']]],
   ['stbtt_5fkerningentry_61',['stbtt_kerningentry',['../stb__truetype_8h.html#a988d6ec9ddb583b248cc96f17449dd6b',1,'stb_truetype.h']]],
   ['stbtt_5fpack_5fcontext_62',['stbtt_pack_context',['../stb__truetype_8h.html#a37d613643adacbed24c22718faf6afc7',1,'stb_truetype.h']]],
-  ['suseconds_5ft_63',['suseconds_t',['../Libs_2XEClib_2includes_2sys_2types_8h.html#ae32f449456d5f1877a9e630e92422c01',1,'types.h']]],
-  ['switch_5fstack_5fentry_5fpoint_64',['SWITCH_STACK_ENTRY_POINT',['../BaseLib_8h.html#a77dd1f3ac0aac970ceef2eefebd726a3',1,'BaseLib.h']]],
-  ['syscall_5ffunc_65',['syscall_func',['../x86__64__systable_8cpp.html#ae66b634c54e9e211be9a4dc5ccd4bdc4',1,'syscall_func:&#160;x86_64_systable.cpp'],['../systable_8c.html#ae66b634c54e9e211be9a4dc5ccd4bdc4',1,'syscall_func:&#160;systable.c']]]
+  ['stream_5ft_63',['stream_t',['../virtiosnd_2stream_8h.html#a3ec30be6002470c0cfc432abe072da15',1,'stream.h']]],
+  ['suseconds_5ft_64',['suseconds_t',['../Libs_2XEClib_2includes_2sys_2types_8h.html#ae32f449456d5f1877a9e630e92422c01',1,'types.h']]],
+  ['switch_5fstack_5fentry_5fpoint_65',['SWITCH_STACK_ENTRY_POINT',['../BaseLib_8h.html#a77dd1f3ac0aac970ceef2eefebd726a3',1,'BaseLib.h']]],
+  ['syscall_5ffunc_66',['syscall_func',['../x86__64__systable_8cpp.html#ae66b634c54e9e211be9a4dc5ccd4bdc4',1,'syscall_func:&#160;x86_64_systable.cpp'],['../systable_8c.html#ae66b634c54e9e211be9a4dc5ccd4bdc4',1,'syscall_func:&#160;systable.c']]]
 ];
