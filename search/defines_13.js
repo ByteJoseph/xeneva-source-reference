@@ -434,7 +434,7 @@ var searchData=
   ['size_5ft_5fsize_431',['size_t_size',['../dlmalloc_8c.html#a2e3db94c3bfc87e3c7bcbee4973bab02',1,'SIZE_T_SIZE:&#160;dlmalloc.c'],['../__heap_8cpp.html#a2e3db94c3bfc87e3c7bcbee4973bab02',1,'SIZE_T_SIZE:&#160;_heap.cpp']]],
   ['size_5ft_5ftwo_432',['size_t_two',['../dlmalloc_8c.html#a7e1ed65ca3ce9fcc21e329a7cea204d1',1,'SIZE_T_TWO:&#160;dlmalloc.c'],['../__heap_8cpp.html#a7e1ed65ca3ce9fcc21e329a7cea204d1',1,'SIZE_T_TWO:&#160;_heap.cpp']]],
   ['size_5ft_5fzero_433',['size_t_zero',['../dlmalloc_8c.html#acd3fa67eabd0de0d56e206fa3a416de9',1,'SIZE_T_ZERO:&#160;dlmalloc.c'],['../__heap_8cpp.html#acd3fa67eabd0de0d56e206fa3a416de9',1,'SIZE_T_ZERO:&#160;_heap.cpp']]],
-  ['skip_5fbits_434',['skip_bits',['../minimp3_8cpp.html#ac266989e93beaad352082b15d6d88fe7',1,'skip_bits:&#160;minimp3.cpp'],['../minimp3_8cpp.html#a7418c19702b25b0e27522746e22e7b8d',1,'SKIP_BITS:&#160;minimp3.cpp']]],
+  ['skip_5fbits_434',['skip_bits',['../minimp3_8cpp.html#a7418c19702b25b0e27522746e22e7b8d',1,'SKIP_BITS:&#160;minimp3.cpp'],['../minimp3_8cpp.html#ac266989e93beaad352082b15d6d88fe7',1,'skip_bits:&#160;minimp3.cpp']]],
   ['skip_5fbytes_435',['SKIP_BYTES',['../usbconfigparser_8c.html#a7faadbf7e3c68a87280f596060ade93c',1,'usbconfigparser.c']]],
   ['skip_5fcache_436',['SKIP_CACHE',['../minimp3_8cpp.html#a3383e4ed8ec358f65176c49e53488922',1,'minimp3.cpp']]],
   ['skip_5fcounter_437',['SKIP_COUNTER',['../minimp3_8cpp.html#ac5635d3f42aa9eb98ccdae1d2fd13000',1,'minimp3.cpp']]],

@@ -94,11 +94,15 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="board_8h__dep__incl.png" border="0" usemap="#aXenevaOS_2BaseHdr_2Board_2board_8hdep" alt=""/></div>
 <map name="aXenevaOS_2BaseHdr_2Board_2board_8hdep" id="aXenevaOS_2BaseHdr_2Board_2board_8hdep">
-<area shape="rect" title=" " alt="" coords="90,5,281,45"/>
-<area shape="rect" href="aa64cpu_8c.html" title=" " alt="" coords="5,93,173,133"/>
-<area shape="poly" title=" " alt="" coords="155,57,112,95,109,91,152,53"/>
-<area shape="rect" href="init_8c.html" title=" " alt="" coords="197,93,365,133"/>
-<area shape="poly" title=" " alt="" coords="219,53,262,91,258,95,215,57"/>
+<area shape="rect" title=" " alt="" coords="282,5,473,45"/>
+<area shape="rect" href="board_8c.html" title=" " alt="" coords="5,93,173,133"/>
+<area shape="poly" title=" " alt="" coords="302,52,153,96,152,91,300,47"/>
+<area shape="rect" href="aa64cpu_8c.html" title=" " alt="" coords="197,93,365,133"/>
+<area shape="poly" title=" " alt="" coords="347,57,304,95,301,91,344,53"/>
+<area shape="rect" href="init_8c.html" title=" " alt="" coords="389,93,557,133"/>
+<area shape="poly" title=" " alt="" coords="411,53,454,91,450,95,407,57"/>
+<area shape="rect" href="power_8c.html" title=" " alt="" coords="581,93,749,133"/>
+<area shape="poly" title=" " alt="" coords="455,47,603,91,602,96,453,52"/>
 </map>
 </div>
 </div>
@@ -115,6 +119,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ac62319fdd75ba94979f8bcefc1db5275" id="r_ac62319fdd75ba94979f8bcefc1db5275"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="board_8h.html#ac62319fdd75ba94979f8bcefc1db5275">AuAA64BoardSleepMS</a> (<a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> ms)</td></tr>
 <tr class="memdesc:ac62319fdd75ba94979f8bcefc1db5275"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuAA64BoardSleepMS &ndash; calls board specific sleep function in ms.  <br /></td></tr>
 <tr class="separator:ac62319fdd75ba94979f8bcefc1db5275"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd5eac446ef753989b248de67e98f565" id="r_acd5eac446ef753989b248de67e98f565"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="board_8h.html#acd5eac446ef753989b248de67e98f565">AuAA64BoardPowerDown</a> ()</td></tr>
+<tr class="memdesc:acd5eac446ef753989b248de67e98f565"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuAA64BoardPowerDown &ndash; power down the board.  <br /></td></tr>
+<tr class="separator:acd5eac446ef753989b248de67e98f565"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab914b7285ffb60c5ee8aae797c971db1" id="r_ab914b7285ffb60c5ee8aae797c971db1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="board_8h.html#ab914b7285ffb60c5ee8aae797c971db1">AuAA64BoardReboot</a> ()</td></tr>
+<tr class="memdesc:ab914b7285ffb60c5ee8aae797c971db1"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuAA64BoardReboot &ndash; reboot the board.  <br /></td></tr>
+<tr class="separator:ab914b7285ffb60c5ee8aae797c971db1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="adf600e090b2577e959ecffd5142faa85" name="adf600e090b2577e959ecffd5142faa85"></a>
@@ -149,6 +159,60 @@ Functions</h2></td></tr>
 <li>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</li>
 </ol>
 <p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. </p>
+
+</div>
+</div>
+<a id="acd5eac446ef753989b248de67e98f565" name="acd5eac446ef753989b248de67e98f565"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd5eac446ef753989b248de67e98f565">&#9670;&#160;</a></span>AuAA64BoardPowerDown()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AuAA64BoardPowerDown </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>AuAA64BoardPowerDown &ndash; power down the board. </p>
+
+</div>
+</div>
+<a id="ab914b7285ffb60c5ee8aae797c971db1" name="ab914b7285ffb60c5ee8aae797c971db1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab914b7285ffb60c5ee8aae797c971db1">&#9670;&#160;</a></span>AuAA64BoardReboot()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AuAA64BoardReboot </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>AuAA64BoardReboot &ndash; reboot the board. </p>
 
 </div>
 </div>
