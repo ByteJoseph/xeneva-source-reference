@@ -1,7 +1,7 @@
 var searchData=
 [
   ['zero_0',['zero',['../struct__idt.html#a11c97f8effe2280fcd0279c958c042ed',1,'_idt::zero'],['../structusb__request.html#a613436e607db78f1bdf5bf0e708a2916',1,'usb_request::zero'],['../struct__EFI__BTT__MAP__ENTRY.html#adde5f4dc54bf7918c28158ea4950042a',1,'_EFI_BTT_MAP_ENTRY::Zero']]],
-  ['zeros_1',['zeros',['../struct__tcpcheckheader__.html#a9032bee8fce7e0e9b72f01e8812a3d8a',1,'_tcpcheckheader_']]],
+  ['zeros_1',['zeros',['../structIMAGE__COFF__SYMBOL.html#a7f2443498b53bf2855a6d2d386f80c64',1,'IMAGE_COFF_SYMBOL::zeros'],['../struct__tcpcheckheader__.html#a9032bee8fce7e0e9b72f01e8812a3d8a',1,'_tcpcheckheader_::zeros']]],
   ['zerovector_2',['ZeroVector',['../structEFI__FIRMWARE__VOLUME__HEADER.html#a9a841bbde5fd5a6ded8a5075c9c3612e',1,'EFI_FIRMWARE_VOLUME_HEADER']]],
   ['zone_3',['zone',['../structPS__Decoder__.html#a34149be296c63eee525aae334a4d5bce',1,'PS_Decoder_::zone'],['../structT1__DecoderRec__.html#add29399f0c811404b9d6ca373793103e',1,'T1_DecoderRec_::zone'],['../structCFF__Decoder__.html#a8b7e65540295938e9c3f466f8279849c',1,'CFF_Decoder_::zone'],['../structTT__LoaderRec__.html#aaa594deb371418c6cb932f318a8631ce',1,'TT_LoaderRec_::zone']]],
   ['zones_4',['zones',['../structPS__Decoder__.html#a889e05955bed465d0f5ce5fb9460e88b',1,'PS_Decoder_::zones'],['../structT1__DecoderRec__.html#a4e33201df5beec8a3d81eca726b09ea5',1,'T1_DecoderRec_::zones'],['../structCFF__Decoder__.html#a91ff8b4f9cb5d2275cc468972632aaac',1,'CFF_Decoder_::zones']]],

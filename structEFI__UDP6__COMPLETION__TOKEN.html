@@ -106,14 +106,14 @@ Public Attributes</h2></td></tr>
 <tr class="separator:ae7eda53cc6ba6d22200e2fc0e9ac71cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a286b4b04452845bafe2d5aa39b3d1f0b" id="r_a286b4b04452845bafe2d5aa39b3d1f0b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="UefiBaseType_8h.html#a5f446f35c9f907a4f1cf22e794ba338d">EFI_STATUS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structEFI__UDP6__COMPLETION__TOKEN.html#a286b4b04452845bafe2d5aa39b3d1f0b">Status</a></td></tr>
 <tr class="separator:a286b4b04452845bafe2d5aa39b3d1f0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaecf02a88f4d705c335459effa19060c" id="r_aaecf02a88f4d705c335459effa19060c"><td class="memItemLeft" >union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="memitem:a7c050e8fcb6f6e1269ac8a8721a0a6f2" id="r_a7c050e8fcb6f6e1269ac8a8721a0a6f2"><td class="memItemLeft" >union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84007dd4779407c1ea944441a1206486" id="r_a84007dd4779407c1ea944441a1206486"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="structEFI__UDP6__RECEIVE__DATA.html">EFI_UDP6_RECEIVE_DATA</a> *&#160;&#160;&#160;<a class="el" href="structEFI__UDP6__COMPLETION__TOKEN.html#a11022cf2424e5c7d4299962322c85564">RxData</a>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:a84007dd4779407c1ea944441a1206486"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac14b0cce063b100af43f453987978875" id="r_ac14b0cce063b100af43f453987978875"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="structEFI__UDP6__TRANSMIT__DATA.html">EFI_UDP6_TRANSMIT_DATA</a> *&#160;&#160;&#160;<a class="el" href="structEFI__UDP6__COMPLETION__TOKEN.html#a98b4ce2141752c0f9e5b041d56bfbf07">TxData</a>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:ac14b0cce063b100af43f453987978875"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaecf02a88f4d705c335459effa19060c" id="r_aaecf02a88f4d705c335459effa19060c"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structEFI__UDP6__COMPLETION__TOKEN.html#aaecf02a88f4d705c335459effa19060c">Packet</a>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:aaecf02a88f4d705c335459effa19060c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98dc90229369ccd9f75d81e3ab6a96e1" id="r_a98dc90229369ccd9f75d81e3ab6a96e1"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="structEFI__UDP6__RECEIVE__DATA.html">EFI_UDP6_RECEIVE_DATA</a> *&#160;&#160;&#160;<a class="el" href="structEFI__UDP6__COMPLETION__TOKEN.html#a11022cf2424e5c7d4299962322c85564">RxData</a>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a98dc90229369ccd9f75d81e3ab6a96e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62ac6d49bce258cc5e30a050b8291548" id="r_a62ac6d49bce258cc5e30a050b8291548"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="structEFI__UDP6__TRANSMIT__DATA.html">EFI_UDP6_TRANSMIT_DATA</a> *&#160;&#160;&#160;<a class="el" href="structEFI__UDP6__COMPLETION__TOKEN.html#a98b4ce2141752c0f9e5b041d56bfbf07">TxData</a>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a62ac6d49bce258cc5e30a050b8291548"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c050e8fcb6f6e1269ac8a8721a0a6f2" id="r_a7c050e8fcb6f6e1269ac8a8721a0a6f2"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structEFI__UDP6__COMPLETION__TOKEN.html#a7c050e8fcb6f6e1269ac8a8721a0a6f2">Packet</a>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a7c050e8fcb6f6e1269ac8a8721a0a6f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="structEFI__UDP6__COMPLETION__TOKEN.html">EFI_UDP6_COMPLETION_TOKEN</a> structures are used for both transmit and receive operations. When used for transmitting, the Event and TxData fields must be filled in by the EFI UDPv6 Protocol client. After the transmit operation completes, the Status field is updated by the EFI UDPv6 Protocol and the Event is signaled. When used for receiving, only the Event field must be filled in by the EFI UDPv6 Protocol client. After a packet is received, RxData and Status are filled in by the EFI UDPv6 Protocol and the Event is signaled. </p>
@@ -133,8 +133,8 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="aaecf02a88f4d705c335459effa19060c" name="aaecf02a88f4d705c335459effa19060c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaecf02a88f4d705c335459effa19060c">&#9670;&#160;</a></span>[union]</h2>
+<a id="a7c050e8fcb6f6e1269ac8a8721a0a6f2" name="a7c050e8fcb6f6e1269ac8a8721a0a6f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c050e8fcb6f6e1269ac8a8721a0a6f2">&#9670;&#160;</a></span>[union]</h2>
 
 <div class="memitem">
 <div class="memproto">

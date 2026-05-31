@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['gamepad_0',['GamePad',['../usbgamepad_8c.html#aa18a0d2748deff8a632c7197cf186391a82ca9afdb948fd5ffb1b9a66708e32aa',1,'usbgamepad.c']]],
-  ['gamepadaxis_1',['GamePadAxis',['../usbgamepad_8c.html#aa18a0d2748deff8a632c7197cf186391ad2a531a8e6d1810144efb2fb5df6d064',1,'usbgamepad.c']]],
-  ['gamepadbutton_2',['GamePadButton',['../usbgamepad_8c.html#aa18a0d2748deff8a632c7197cf186391a8fe356027922e3873e79cf5d353e3be8',1,'usbgamepad.c']]],
-  ['gamepadhat_3',['GamePadHat',['../usbgamepad_8c.html#aa18a0d2748deff8a632c7197cf186391a646f6e938ec867bfc00dc49584049e18',1,'usbgamepad.c']]],
+  ['gamepad_0',['GamePad',['../usbgamepad_8c.html#a44c2251b57dd3c8b4061268ec80fe106a82ca9afdb948fd5ffb1b9a66708e32aa',1,'usbgamepad.c']]],
+  ['gamepadaxis_1',['GamePadAxis',['../usbgamepad_8c.html#a44c2251b57dd3c8b4061268ec80fe106ad2a531a8e6d1810144efb2fb5df6d064',1,'usbgamepad.c']]],
+  ['gamepadbutton_2',['GamePadButton',['../usbgamepad_8c.html#a44c2251b57dd3c8b4061268ec80fe106a8fe356027922e3873e79cf5d353e3be8',1,'usbgamepad.c']]],
+  ['gamepadhat_3',['GamePadHat',['../usbgamepad_8c.html#a44c2251b57dd3c8b4061268ec80fe106a646f6e938ec867bfc00dc49584049e18',1,'usbgamepad.c']]],
   ['gctl_5freset_4',['GCTL_RESET',['../ihda_8h.html#af718856fbfbc52a1b16dff0da8d423a4abd4b8784245e26ee4323bb2575d4abd8',1,'ihda.h']]],
   ['getblocksizefunctionid_5',['GetBlockSizeFunctionId',['../ExtendedSalServiceClasses_8h.html#ad2852d58a1ace8600ed7e55fcfa3d32aac824ef7227b6266e3a5f745d920878fd',1,'ExtendedSalServiceClasses.h']]],
   ['getcpudatabyidfunctionid_6',['GetCpuDataByIDFunctionId',['../ExtendedSalServiceClasses_8h.html#ac7a043ae2236c3ac45ce9bc0f18bbe6aa318cb443d3cdd6f63b33935a00d44764',1,'ExtendedSalServiceClasses.h']]],

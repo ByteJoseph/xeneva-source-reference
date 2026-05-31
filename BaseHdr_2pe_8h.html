@@ -158,6 +158,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__IMAGE__IMPORT__HINT__TABLE.html">_IMAGE_IMPORT_HINT_TABLE</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIMAGE__COFF__SYMBOL.html">IMAGE_COFF_SYMBOL</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
@@ -305,6 +307,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a2025404d497229fad831115375357f1c" id="r_a2025404d497229fad831115375357f1c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Libs_2XEClib_2includes_2stdint_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BaseHdr_2pe_8h.html#a2025404d497229fad831115375357f1c">AuPEFileIsDynamicallyLinked</a> (void *image)</td></tr>
 <tr class="memdesc:a2025404d497229fad831115375357f1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuPEFileIsDynamicallyLinked &ndash; checks if the current binary image is dynamically linked.  <br /></td></tr>
 <tr class="separator:a2025404d497229fad831115375357f1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12853d7dadfc67dab792bd5a9001e24f" id="r_a12853d7dadfc67dab792bd5a9001e24f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Libs_2XEClib_2includes_2stdint_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BaseHdr_2pe_8h.html#a12853d7dadfc67dab792bd5a9001e24f">AuCoffResolveAddress</a> (<a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *imageBase, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> paddr)</td></tr>
+<tr class="memdesc:a12853d7dadfc67dab792bd5a9001e24f"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuCoffResolveAddress &ndash; print the symbol function name for specific pointing address.  <br /></td></tr>
+<tr class="separator:a12853d7dadfc67dab792bd5a9001e24f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a3fbbae8c38d8146379f71048cc4dc680" name="a3fbbae8c38d8146379f71048cc4dc680"></a>
@@ -1073,6 +1078,51 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a12853d7dadfc67dab792bd5a9001e24f" name="a12853d7dadfc67dab792bd5a9001e24f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12853d7dadfc67dab792bd5a9001e24f">&#9670;&#160;</a></span>AuCoffResolveAddress()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="Libs_2XEClib_2includes_2stdint_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> AuCoffResolveAddress </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
+          <td class="paramname"><em>imageBase</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>&#160;</td>
+          <td class="paramname"><em>paddr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>AuCoffResolveAddress &ndash; print the symbol function name for specific pointing address. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">imageBase</td><td>- base address of the image </td></tr>
+    <tr><td class="paramname">paddr</td><td>&ndash; Pointing address, or instruction/function address </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="adaa9d15f7a52c8c758d15c3fa873189a" name="adaa9d15f7a52c8c758d15c3fa873189a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adaa9d15f7a52c8c758d15c3fa873189a">&#9670;&#160;</a></span>AuGetProcAddress()</h2>
 

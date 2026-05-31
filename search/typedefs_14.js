@@ -105,7 +105,7 @@ var searchData=
   ['tkeymap_102',['TKeyMap',['../keymap_8h.html#af38c8a86d6e7da459e5cbcf7aa3e9d4e',1,'keymap.h']]],
   ['tkeypressedhandler_103',['TKeyPressedHandler',['../usbkeyboard_8h.html#a85be2da28501d5e50195cbc61f40755e',1,'usbkeyboard.h']]],
   ['tkeystatushandlerraw_104',['TKeyStatusHandlerRaw',['../usbkeyboard_8h.html#a9c5298f939fd3661c91aa3f342224579',1,'usbkeyboard.h']]],
-  ['tlan7800device_105',['TLAN7800Device',['../lan7800_8h.html#a53b9b6eb23b0494ac33ea282b3b9b311',1,'lan7800.h']]],
+  ['tlan7800device_105',['TLAN7800Device',['../dwc2-uspi_2uspi_2lan7800_8h.html#a53b9b6eb23b0494ac33ea282b3b9b311',1,'lan7800.h']]],
   ['tmacaddress_106',['TMACAddress',['../macaddress_8h.html#ab035ad9254614a56a095e577c1edfbe3',1,'macaddress.h']]],
   ['tmidipackethandler_107',['TMIDIPacketHandler',['../usbmidi_8h.html#a8d46660aefe270d37dfe686631eb795a',1,'usbmidi.h']]],
   ['tmousestatushandler_108',['TMouseStatusHandler',['../usbmouse_8h.html#a670343833ea8903fd49f123aba2ce52d',1,'usbmouse.h']]],

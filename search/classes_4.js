@@ -19,7 +19,8 @@ var searchData=
   ['dwc2_5fcore_5fregs_16',['dwc2_core_regs',['../structdwc2__core__regs.html',1,'']]],
   ['dwc2_5fdma_5fslot_17',['dwc2_dma_slot',['../structdwc2__dma__slot.html',1,'']]],
   ['dwc2_5fhc_5fregs_18',['dwc2_hc_regs',['../structdwc2__hc__regs.html',1,'']]],
-  ['dwc2_5fhost_5fregs_19',['dwc2_host_regs',['../structdwc2__host__regs.html',1,'']]],
-  ['dwc2_5fusb_5fendpoint_5ft_20',['dwc2_usb_endpoint_t',['../structdwc2__usb__endpoint__t.html',1,'']]],
-  ['dxe_5fservices_21',['DXE_SERVICES',['../structDXE__SERVICES.html',1,'']]]
+  ['dwc2_5fhcsplit_5ft_19',['dwc2_hcsplit_t',['../uniondwc2__hcsplit__t.html',1,'']]],
+  ['dwc2_5fhost_5fregs_20',['dwc2_host_regs',['../structdwc2__host__regs.html',1,'']]],
+  ['dwc2_5fusb_5fendpoint_5ft_21',['dwc2_usb_endpoint_t',['../structdwc2__usb__endpoint__t.html',1,'']]],
+  ['dxe_5fservices_22',['DXE_SERVICES',['../structDXE__SERVICES.html',1,'']]]
 ];

@@ -162,6 +162,10 @@ Macros</h2></td></tr>
 <tr class="separator:ae8afb2fc3ffda3388f1bd99967eda0d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adbd516baadd39bcc30bc969c218d41bd" id="r_adbd516baadd39bcc30bc969c218d41bd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pe_8c.html#adbd516baadd39bcc30bc969c218d41bd">IMAGE_DATA_DIRECTORY_RELOC</a>&#160;&#160;&#160;5</td></tr>
 <tr class="separator:adbd516baadd39bcc30bc969c218d41bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06fd590700d3bb729116e93acb353ce3" id="r_a06fd590700d3bb729116e93acb353ce3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pe_8c.html#a06fd590700d3bb729116e93acb353ce3">OFFSETOF</a>(s,  m)&#160;&#160;&#160;((<a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>)&amp;(((s*)0)-&gt;m))</td></tr>
+<tr class="separator:a06fd590700d3bb729116e93acb353ce3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82e387d923cab6a5e27e492e8f9ba8ab" id="r_a82e387d923cab6a5e27e492e8f9ba8ab"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pe_8c.html#a82e387d923cab6a5e27e492e8f9ba8ab">IMAGE_FIRST_SECTION</a>(nt)</td></tr>
+<tr class="separator:a82e387d923cab6a5e27e492e8f9ba8ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -182,6 +186,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a2025404d497229fad831115375357f1c" id="r_a2025404d497229fad831115375357f1c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Libs_2XEClib_2includes_2stdint_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pe_8c.html#a2025404d497229fad831115375357f1c">AuPEFileIsDynamicallyLinked</a> (void *image)</td></tr>
 <tr class="memdesc:a2025404d497229fad831115375357f1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuPEFileIsDynamicallyLinked &ndash; checks if the current binary image is dynamically linked.  <br /></td></tr>
 <tr class="separator:a2025404d497229fad831115375357f1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12853d7dadfc67dab792bd5a9001e24f" id="r_a12853d7dadfc67dab792bd5a9001e24f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Libs_2XEClib_2includes_2stdint_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pe_8c.html#a12853d7dadfc67dab792bd5a9001e24f">AuCoffResolveAddress</a> (<a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *imageBase, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> paddr)</td></tr>
+<tr class="memdesc:a12853d7dadfc67dab792bd5a9001e24f"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuCoffResolveAddress &ndash; print the symbol function name for specific pointing address.  <br /></td></tr>
+<tr class="separator:a12853d7dadfc67dab792bd5a9001e24f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>BSD 2-Clause License</p>
@@ -376,6 +383,36 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a82e387d923cab6a5e27e492e8f9ba8ab" name="a82e387d923cab6a5e27e492e8f9ba8ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82e387d923cab6a5e27e492e8f9ba8ab">&#9670;&#160;</a></span>IMAGE_FIRST_SECTION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IMAGE_FIRST_SECTION</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">nt</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">    ((<a class="code hl_struct" href="struct__IMAGE__SECTION__HEADER.html">SECTION_HEADER</a>*)( \</div>
+<div class="line">     (<a class="code hl_typedef" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>*)(nt) + \</div>
+<div class="line">     <a class="code hl_define" href="pe_8c.html#a06fd590700d3bb729116e93acb353ce3">OFFSETOF</a>(<a class="code hl_struct" href="struct__IMAGE__NT__HEADERS__PE32PLUS.html">IMAGE_NT_HEADERS</a>, <a class="code hl_variable" href="LittleBoot_2pe_8h.html#ad6272a2366c4d11b39c31e9a0f0f6be8">OptionalHeader</a>) + \</div>
+<div class="line">     ((<a class="code hl_struct" href="struct__IMAGE__NT__HEADERS__PE32PLUS.html">IMAGE_NT_HEADERS</a>*)(nt))-&gt;<a class="code hl_variable" href="LittleBoot_2pe_8h.html#a25612f60df7b78e988643b03669d9815">FileHeader</a>.<a class="code hl_variable" href="struct__IMAGE__FILE__HEADER__.html#ac1bf7f9c4b91c3bf65a6008270e5a640">SizeOfOptionaHeader</a> \</div>
+<div class="line">))</div>
+<div class="ttc" id="aLittleBoot_2pe_8h_html_a25612f60df7b78e988643b03669d9815"><div class="ttname"><a href="LittleBoot_2pe_8h.html#a25612f60df7b78e988643b03669d9815">FileHeader</a></div><div class="ttdeci">IMAGE_FILE_HEADER FileHeader</div><div class="ttdef"><b>Definition</b> pe.h:1</div></div>
+<div class="ttc" id="aLittleBoot_2pe_8h_html_ad6272a2366c4d11b39c31e9a0f0f6be8"><div class="ttname"><a href="LittleBoot_2pe_8h.html#ad6272a2366c4d11b39c31e9a0f0f6be8">OptionalHeader</a></div><div class="ttdeci">IMAGE_OPTIONAL_HEADER_PE32PLUS OptionalHeader</div><div class="ttdef"><b>Definition</b> pe.h:2</div></div>
+<div class="ttc" id="aacefiex_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition</b> acefiex.h:161</div></div>
+<div class="ttc" id="ape_8c_html_a06fd590700d3bb729116e93acb353ce3"><div class="ttname"><a href="pe_8c.html#a06fd590700d3bb729116e93acb353ce3">OFFSETOF</a></div><div class="ttdeci">#define OFFSETOF(s, m)</div><div class="ttdef"><b>Definition</b> pe.c:269</div></div>
+<div class="ttc" id="astruct__IMAGE__FILE__HEADER___html_ac1bf7f9c4b91c3bf65a6008270e5a640"><div class="ttname"><a href="struct__IMAGE__FILE__HEADER__.html#ac1bf7f9c4b91c3bf65a6008270e5a640">_IMAGE_FILE_HEADER_::SizeOfOptionaHeader</a></div><div class="ttdeci">uint16_t SizeOfOptionaHeader</div><div class="ttdef"><b>Definition</b> pe.h:79</div></div>
+<div class="ttc" id="astruct__IMAGE__NT__HEADERS__PE32PLUS_html"><div class="ttname"><a href="struct__IMAGE__NT__HEADERS__PE32PLUS.html">_IMAGE_NT_HEADERS_PE32PLUS</a></div><div class="ttdef"><b>Definition</b> pe.h:169</div></div>
+<div class="ttc" id="astruct__IMAGE__SECTION__HEADER_html"><div class="ttname"><a href="struct__IMAGE__SECTION__HEADER.html">_IMAGE_SECTION_HEADER</a></div><div class="ttdef"><b>Definition</b> pe.h:190</div></div>
+</div><!-- fragment -->
+</div>
+</div>
 <a id="ab23caa74062a13a4b37cb2b851d59f98" name="ab23caa74062a13a4b37cb2b851d59f98"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab23caa74062a13a4b37cb2b851d59f98">&#9670;&#160;</a></span>IMAGE_REL_BASED_ABSOLUTE</h2>
 
@@ -489,7 +526,72 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a06fd590700d3bb729116e93acb353ce3" name="a06fd590700d3bb729116e93acb353ce3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06fd590700d3bb729116e93acb353ce3">&#9670;&#160;</a></span>OFFSETOF</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OFFSETOF</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">s, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">m&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;((<a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>)&amp;(((s*)0)-&gt;m))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a12853d7dadfc67dab792bd5a9001e24f" name="a12853d7dadfc67dab792bd5a9001e24f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12853d7dadfc67dab792bd5a9001e24f">&#9670;&#160;</a></span>AuCoffResolveAddress()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="Libs_2XEClib_2includes_2stdint_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> AuCoffResolveAddress </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
+          <td class="paramname"><em>imageBase</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>&#160;</td>
+          <td class="paramname"><em>paddr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>AuCoffResolveAddress &ndash; print the symbol function name for specific pointing address. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">imageBase</td><td>- base address of the image </td></tr>
+    <tr><td class="paramname">paddr</td><td>&ndash; Pointing address, or instruction/function address </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="adaa9d15f7a52c8c758d15c3fa873189a" name="adaa9d15f7a52c8c758d15c3fa873189a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adaa9d15f7a52c8c758d15c3fa873189a">&#9670;&#160;</a></span>AuGetProcAddress()</h2>
 
