@@ -76,8 +76,7 @@ $(function() {
   <div class="summary">
 <a href="#define-members">Macros</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">pcie.c File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -159,6 +158,8 @@ Include dependency graph for pcie.c:</div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
+<tr class="memitem:ae0aefadaeef481211794cabd9d053756" id="r_ae0aefadaeef481211794cabd9d053756"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pcie_8c.html#ae0aefadaeef481211794cabd9d053756">QEMU_VIRT_ECAM_BASE</a>&#160;&#160;&#160;0x4010000000ULL</td></tr>
+<tr class="separator:ae0aefadaeef481211794cabd9d053756"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15ab30c2e12ca2e2d39699ee729c3e58" id="r_a15ab30c2e12ca2e2d39699ee729c3e58"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pcie_8c.html#a15ab30c2e12ca2e2d39699ee729c3e58">PCI_MEM_BAR_TYPE</a>(x)&#160;&#160;&#160;((x &gt;&gt;1) &amp; 0x3)</td></tr>
 <tr class="separator:a15ab30c2e12ca2e2d39699ee729c3e58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a103f0e2bad64761544dcd5899e6155fd" id="r_a103f0e2bad64761544dcd5899e6155fd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pcie_8c.html#a103f0e2bad64761544dcd5899e6155fd">PCI_IS_IO_BAR</a>(x)&#160;&#160;&#160;((x &amp; 1) != 0)</td></tr>
@@ -209,13 +210,6 @@ Functions</h2></td></tr>
 <tr class="memitem:a55c8b5d6af4ffd1f54d64a48adb7e104" id="r_a55c8b5d6af4ffd1f54d64a48adb7e104"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Libs_2XEClib_2includes_2stdint_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pcie_8c.html#a55c8b5d6af4ffd1f54d64a48adb7e104">AuPCIEAllocMSI</a> (<a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> <a class="el" href="Drivers_2USB_2hid_2main_8cpp.html#aa01b53b251b673a86b7c563fde808273">device</a>, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> vector, int bus, int dev, int func)</td></tr>
 <tr class="memdesc:a55c8b5d6af4ffd1f54d64a48adb7e104"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuPCIEAllocMSI &ndash; Allocate MSI/MSI-X for interrupt.  <br /></td></tr>
 <tr class="separator:a55c8b5d6af4ffd1f54d64a48adb7e104"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:a2d847f4d9aaac2d32302c31cb6c667fb" id="r_a2d847f4d9aaac2d32302c31cb6c667fb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pcie_8c.html#a2d847f4d9aaac2d32302c31cb6c667fb">_ecamAddress</a></td></tr>
-<tr class="separator:a2d847f4d9aaac2d32302c31cb6c667fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac31dd902aad5c586e727cb6a24b748eb" id="r_ac31dd902aad5c586e727cb6a24b748eb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Libs_2XEClib_2includes_2stdint_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pcie_8c.html#ac31dd902aad5c586e727cb6a24b748eb">_pcieInitialized</a></td></tr>
-<tr class="separator:ac31dd902aad5c586e727cb6a24b748eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>BSD 2-Clause License</p>
@@ -271,6 +265,20 @@ Variables</h2></td></tr>
           <td class="paramtype">&#160;</td>
           <td class="paramname">x</td><td>)</td>
           <td>&#160;&#160;&#160;((x &gt;&gt;1) &amp; 0x3)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae0aefadaeef481211794cabd9d053756" name="ae0aefadaeef481211794cabd9d053756"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0aefadaeef481211794cabd9d053756">&#9670;&#160;</a></span>QEMU_VIRT_ECAM_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define QEMU_VIRT_ECAM_BASE&#160;&#160;&#160;0x4010000000ULL</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -922,35 +930,6 @@ Variables</h2></td></tr>
           <td></td>
           <td>)</td>
           <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a id="a2d847f4d9aaac2d32302c31cb6c667fb" name="a2d847f4d9aaac2d32302c31cb6c667fb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2d847f4d9aaac2d32302c31cb6c667fb">&#9670;&#160;</a></span>_ecamAddress</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> _ecamAddress</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ac31dd902aad5c586e727cb6a24b748eb" name="ac31dd902aad5c586e727cb6a24b748eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac31dd902aad5c586e727cb6a24b748eb">&#9670;&#160;</a></span>_pcieInitialized</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="Libs_2XEClib_2includes_2stdint_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> _pcieInitialized</td>
         </tr>
       </table>
 </div><div class="memdoc">
