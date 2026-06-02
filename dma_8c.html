@@ -74,6 +74,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">dma.c File Reference</div></div>
 </div><!--header-->
@@ -123,6 +124,11 @@ Include dependency graph for dma.c:</div>
 </map>
 </div>
 </div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:aceb522713fd1a43e79fda26097d36704" id="r_aceb522713fd1a43e79fda26097d36704"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8c.html#aceb522713fd1a43e79fda26097d36704">DMA_DEFAULT_PAGE_BOUNDARY</a>&#160;&#160;&#160;<a class="el" href="BaseHdr_2Mm_2vmmngr_8h.html#a7d467c1d283fdfa1f2081ba1e0d01b6e">PAGE_SIZE</a></td></tr>
+<tr class="separator:aceb522713fd1a43e79fda26097d36704"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a62ea5edfa1fdf691876e3e7fccaa0263" id="r_a62ea5edfa1fdf691876e3e7fccaa0263"><td class="memItemLeft" align="right" valign="top"><a class="el" href="dma_8h.html#aad8e2e9248d7a5f2f03a7c1cb2ee6953">AuDMAPool</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8c.html#a62ea5edfa1fdf691876e3e7fccaa0263">AuDMAPoolCreate</a> (const char *name, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> alloc_sz, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> align, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> boundary)</td></tr>
@@ -137,6 +143,18 @@ Functions</h2></td></tr>
 <tr class="memitem:a5b6fb24d6312abae5535dcd647fb9c6a" id="r_a5b6fb24d6312abae5535dcd647fb9c6a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8c.html#a5b6fb24d6312abae5535dcd647fb9c6a">AuDMAPoolDestroy</a> (<a class="el" href="dma_8h.html#aad8e2e9248d7a5f2f03a7c1cb2ee6953">AuDMAPool</a> *pool)</td></tr>
 <tr class="memdesc:a5b6fb24d6312abae5535dcd647fb9c6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuDMAPoolDestroy &ndash; completely destroy a pool.  <br /></td></tr>
 <tr class="separator:a5b6fb24d6312abae5535dcd647fb9c6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a857189f34db87354aac09e885e9a23c8" id="r_a857189f34db87354aac09e885e9a23c8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8c.html#a857189f34db87354aac09e885e9a23c8">AuDMAGlobalClassInitialize</a> (<a class="el" href="dma_8h.html#ab1f19a0892e4bc9a6913de7052794e01">AuDMAGlobalClass</a> *gclass, char *name)</td></tr>
+<tr class="memdesc:a857189f34db87354aac09e885e9a23c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuDMAGlobalClassInitialize &ndash; initialize and populate global class structure.  <br /></td></tr>
+<tr class="separator:a857189f34db87354aac09e885e9a23c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9e169c201d7406a8d33c186eb17bdea" id="r_ad9e169c201d7406a8d33c186eb17bdea"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8c.html#ad9e169c201d7406a8d33c186eb17bdea">AuDMAGClassAlloc</a> (<a class="el" href="dma_8h.html#ab1f19a0892e4bc9a6913de7052794e01">AuDMAGlobalClass</a> *gClass, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> sz, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> *physOut)</td></tr>
+<tr class="memdesc:ad9e169c201d7406a8d33c186eb17bdea"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuDMAGClassAlloc &ndash; allocate memory from DMA Global Class.  <br /></td></tr>
+<tr class="separator:ad9e169c201d7406a8d33c186eb17bdea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affd0657d198d81e1ec10f27bc2244ffe" id="r_affd0657d198d81e1ec10f27bc2244ffe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8c.html#affd0657d198d81e1ec10f27bc2244ffe">AuDMAGClassFree</a> (<a class="el" href="dma_8h.html#ab1f19a0892e4bc9a6913de7052794e01">AuDMAGlobalClass</a> *gClass, void *virt, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> physOut, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> sz)</td></tr>
+<tr class="memdesc:affd0657d198d81e1ec10f27bc2244ffe"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuDMAGClassFree &ndash; free a memory and put it to gclass pool.  <br /></td></tr>
+<tr class="separator:affd0657d198d81e1ec10f27bc2244ffe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1dba5572395e6574f397dd96a93bfb22" id="r_a1dba5572395e6574f397dd96a93bfb22"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8c.html#a1dba5572395e6574f397dd96a93bfb22">AuDMAGClassDestroy</a> (<a class="el" href="dma_8h.html#ab1f19a0892e4bc9a6913de7052794e01">AuDMAGlobalClass</a> *gClass)</td></tr>
+<tr class="memdesc:a1dba5572395e6574f397dd96a93bfb22"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuDMAGClassDestroy &ndash; destroy entire dma global class.  <br /></td></tr>
+<tr class="separator:a1dba5572395e6574f397dd96a93bfb22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>BSD 2-Clause License</p>
@@ -147,7 +165,182 @@ Functions</h2></td></tr>
 <li>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</li>
 </ol>
 <p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. </p>
-</div><h2 class="groupheader">Function Documentation</h2>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="aceb522713fd1a43e79fda26097d36704" name="aceb522713fd1a43e79fda26097d36704"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aceb522713fd1a43e79fda26097d36704">&#9670;&#160;</a></span>DMA_DEFAULT_PAGE_BOUNDARY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DMA_DEFAULT_PAGE_BOUNDARY&#160;&#160;&#160;<a class="el" href="BaseHdr_2Mm_2vmmngr_8h.html#a7d467c1d283fdfa1f2081ba1e0d01b6e">PAGE_SIZE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="ad9e169c201d7406a8d33c186eb17bdea" name="ad9e169c201d7406a8d33c186eb17bdea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9e169c201d7406a8d33c186eb17bdea">&#9670;&#160;</a></span>AuDMAGClassAlloc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void * AuDMAGClassAlloc </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="dma_8h.html#ab1f19a0892e4bc9a6913de7052794e01">AuDMAGlobalClass</a> *&#160;</td>
+          <td class="paramname"><em>gClass</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>&#160;</td>
+          <td class="paramname"><em>sz</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> *&#160;</td>
+          <td class="paramname"><em>physOut</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>AuDMAGClassAlloc &ndash; allocate memory from DMA Global Class. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">gClass</td><td>&ndash; pointer to gClass </td></tr>
+    <tr><td class="paramname">sz</td><td>&ndash; size to allocate </td></tr>
+    <tr><td class="paramname">physOut</td><td>&ndash; where to put the physical output </td></tr>
+  </table>
+  </dd>
+</dl>
+<p>return a full 4KiB page for larger than MAX_POOL_SZ</p>
+<p>or allocate it using pool allocator</p>
+
+</div>
+</div>
+<a id="a1dba5572395e6574f397dd96a93bfb22" name="a1dba5572395e6574f397dd96a93bfb22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1dba5572395e6574f397dd96a93bfb22">&#9670;&#160;</a></span>AuDMAGClassDestroy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AuDMAGClassDestroy </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="dma_8h.html#ab1f19a0892e4bc9a6913de7052794e01">AuDMAGlobalClass</a> *&#160;</td>
+          <td class="paramname"><em>gClass</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>AuDMAGClassDestroy &ndash; destroy entire dma global class. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">gClass</td><td>&ndash; pointer to gClass </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="affd0657d198d81e1ec10f27bc2244ffe" name="affd0657d198d81e1ec10f27bc2244ffe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affd0657d198d81e1ec10f27bc2244ffe">&#9670;&#160;</a></span>AuDMAGClassFree()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AuDMAGClassFree </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="dma_8h.html#ab1f19a0892e4bc9a6913de7052794e01">AuDMAGlobalClass</a> *&#160;</td>
+          <td class="paramname"><em>gClass</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>virt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>&#160;</td>
+          <td class="paramname"><em>physOut</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>&#160;</td>
+          <td class="paramname"><em>sz</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>AuDMAGClassFree &ndash; free a memory and put it to gclass pool. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">gClass</td><td>&ndash; pointer to global class </td></tr>
+    <tr><td class="paramname">virt</td><td>&ndash; virtual address </td></tr>
+    <tr><td class="paramname">physOut</td><td>&ndash; physical address to put </td></tr>
+    <tr><td class="paramname">sz</td><td>&ndash; size of the allocated memory </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a857189f34db87354aac09e885e9a23c8" name="a857189f34db87354aac09e885e9a23c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a857189f34db87354aac09e885e9a23c8">&#9670;&#160;</a></span>AuDMAGlobalClassInitialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AuDMAGlobalClassInitialize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="dma_8h.html#ab1f19a0892e4bc9a6913de7052794e01">AuDMAGlobalClass</a> *&#160;</td>
+          <td class="paramname"><em>gclass</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>AuDMAGlobalClassInitialize &ndash; initialize and populate global class structure. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">gclass</td><td>&ndash; Pointer to allocated gclass </td></tr>
+    <tr><td class="paramname">name</td><td>&ndash; suitable gclass name </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ab71297c0f4539df3882b7c31c4a6bbf2" name="ab71297c0f4539df3882b7c31c4a6bbf2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab71297c0f4539df3882b7c31c4a6bbf2">&#9670;&#160;</a></span>AuDMAPoolAlloc()</h2>
 

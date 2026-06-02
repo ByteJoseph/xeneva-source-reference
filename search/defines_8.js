@@ -320,5 +320,5 @@ var searchData=
   ['hw_5fpccard_5fdp_317',['HW_PCCARD_DP',['../DevicePath_8h.html#a4471125161067b50d0ce79afa356c334',1,'DevicePath.h']]],
   ['hw_5fpci_5fdp_318',['HW_PCI_DP',['../DevicePath_8h.html#ad1c904324cb6c08fa4864392e66738f8',1,'DevicePath.h']]],
   ['hw_5fvendor_5fdp_319',['HW_VENDOR_DP',['../DevicePath_8h.html#a23c0021121250be0b069cad1ecf11d36',1,'DevicePath.h']]],
-  ['hz_320',['hz',['../SpiConfiguration_8h.html#ae0bc4d13a19d453a21ebcce1380dbd03',1,'Hz:&#160;SpiConfiguration.h'],['../timer_8h.html#a8489802eaedf42fdb5f2ce1708eaffa2',1,'HZ:&#160;timer.h'],['../uspios_8h.html#a8489802eaedf42fdb5f2ce1708eaffa2',1,'HZ:&#160;uspios.h']]]
+  ['hz_320',['hz',['../timer_8h.html#a8489802eaedf42fdb5f2ce1708eaffa2',1,'HZ:&#160;timer.h'],['../uspios_8h.html#a8489802eaedf42fdb5f2ce1708eaffa2',1,'HZ:&#160;uspios.h'],['../SpiConfiguration_8h.html#ae0bc4d13a19d453a21ebcce1380dbd03',1,'Hz:&#160;SpiConfiguration.h']]]
 ];
