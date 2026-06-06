@@ -97,11 +97,13 @@ var searchData=
   ['tlscontenttypeapplicationdata_94',['TlsContentTypeApplicationData',['../Tls1_8h.html#a44141a89ee0d4656448c1af2370e49b5a55f47da91914c883a173fb3b1f04d53a',1,'Tls1.h']]],
   ['tlscontenttypechangecipherspec_95',['TlsContentTypeChangeCipherSpec',['../Tls1_8h.html#a44141a89ee0d4656448c1af2370e49b5a4f94452a82cfa38a43e994386614048c',1,'Tls1.h']]],
   ['tlscontenttypehandshake_96',['TlsContentTypeHandshake',['../Tls1_8h.html#a44141a89ee0d4656448c1af2370e49b5ad4539395ad9f08edf3d95c1ed43af9ec',1,'Tls1.h']]],
-  ['transmit_97',['Transmit',['../Supplicant_8h.html#ad64984a28acf10f8bb9dd4ef2843635cabfe0b4da68061025c67c7a77b8b6abd2',1,'Supplicant.h']]],
-  ['tt_5fsbit_5ftable_5ftype_5fcblc_98',['TT_SBIT_TABLE_TYPE_CBLC',['../tttypes_8h.html#adf43324037de43a8ca1e7c0c6d7070b2a5cc07236beb4f1548c1d51f3a7056daf',1,'tttypes.h']]],
-  ['tt_5fsbit_5ftable_5ftype_5feblc_99',['TT_SBIT_TABLE_TYPE_EBLC',['../tttypes_8h.html#adf43324037de43a8ca1e7c0c6d7070b2a84bdab628464b7a9993b8057b58fc7f0',1,'tttypes.h']]],
-  ['tt_5fsbit_5ftable_5ftype_5fmax_100',['TT_SBIT_TABLE_TYPE_MAX',['../tttypes_8h.html#adf43324037de43a8ca1e7c0c6d7070b2a27737d62f9bf7ed4a42748b59799bc32',1,'tttypes.h']]],
-  ['tt_5fsbit_5ftable_5ftype_5fnone_101',['TT_SBIT_TABLE_TYPE_NONE',['../tttypes_8h.html#adf43324037de43a8ca1e7c0c6d7070b2a6d54772ce5f632eec62629231ee6aad2',1,'tttypes.h']]],
-  ['tt_5fsbit_5ftable_5ftype_5fsbix_102',['TT_SBIT_TABLE_TYPE_SBIX',['../tttypes_8h.html#adf43324037de43a8ca1e7c0c6d7070b2a7324f1b2f57dbf2b1d18b188a18efd61',1,'tttypes.h']]],
-  ['twostopbits_103',['TwoStopBits',['../SerialIo_8h.html#a4b7106867604ffb58415ca60a71e5ca9a5e4b4df1a3b6ae92b8471772a78c4706',1,'SerialIo.h']]]
+  ['transfer_5fcsplt_97',['TRANSFER_CSPLT',['../dwc2__usbdev_8h.html#a44aed7f64d31994a4cf3d416471ca447a270c9aa2e536f9bcdb164f16c24c386e',1,'dwc2_usbdev.h']]],
+  ['transfer_5fssplt_98',['TRANSFER_SSPLT',['../dwc2__usbdev_8h.html#a44aed7f64d31994a4cf3d416471ca447a6a2f4f64ddc57f0c5ceeed25a34a6550',1,'dwc2_usbdev.h']]],
+  ['transmit_99',['Transmit',['../Supplicant_8h.html#ad64984a28acf10f8bb9dd4ef2843635cabfe0b4da68061025c67c7a77b8b6abd2',1,'Supplicant.h']]],
+  ['tt_5fsbit_5ftable_5ftype_5fcblc_100',['TT_SBIT_TABLE_TYPE_CBLC',['../tttypes_8h.html#adf43324037de43a8ca1e7c0c6d7070b2a5cc07236beb4f1548c1d51f3a7056daf',1,'tttypes.h']]],
+  ['tt_5fsbit_5ftable_5ftype_5feblc_101',['TT_SBIT_TABLE_TYPE_EBLC',['../tttypes_8h.html#adf43324037de43a8ca1e7c0c6d7070b2a84bdab628464b7a9993b8057b58fc7f0',1,'tttypes.h']]],
+  ['tt_5fsbit_5ftable_5ftype_5fmax_102',['TT_SBIT_TABLE_TYPE_MAX',['../tttypes_8h.html#adf43324037de43a8ca1e7c0c6d7070b2a27737d62f9bf7ed4a42748b59799bc32',1,'tttypes.h']]],
+  ['tt_5fsbit_5ftable_5ftype_5fnone_103',['TT_SBIT_TABLE_TYPE_NONE',['../tttypes_8h.html#adf43324037de43a8ca1e7c0c6d7070b2a6d54772ce5f632eec62629231ee6aad2',1,'tttypes.h']]],
+  ['tt_5fsbit_5ftable_5ftype_5fsbix_104',['TT_SBIT_TABLE_TYPE_SBIX',['../tttypes_8h.html#adf43324037de43a8ca1e7c0c6d7070b2a7324f1b2f57dbf2b1d18b188a18efd61',1,'tttypes.h']]],
+  ['twostopbits_105',['TwoStopBits',['../SerialIo_8h.html#a4b7106867604ffb58415ca60a71e5ca9a5e4b4df1a3b6ae92b8471772a78c4706',1,'SerialIo.h']]]
 ];

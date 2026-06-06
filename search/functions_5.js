@@ -102,7 +102,7 @@ var searchData=
   ['esalstall_99',['EsalStall',['../ExtendedSalLib_8h.html#a2cf6be2618e48f05dbbea949fa0fcc5a',1,'ExtendedSalLib.h']]],
   ['esalwhoami_100',['EsalWhoAmI',['../ExtendedSalLib_8h.html#a3fb4917014bd3991bfd684e4d1fb3b56',1,'ExtendedSalLib.h']]],
   ['execute_5fidle_101',['execute_idle',['../x86__64__sched_8cpp.html#ae68a8c5a2bd8fbf45ba57bb1c4aa6739',1,'x86_64_sched.cpp']]],
-  ['exit_102',['exit',['../stdlib_8h.html#a18278d8624d6aef8c92577d8f15a47e7',1,'exit(int errno):&#160;stdlib.cpp'],['../stdlib_8cpp.html#a49ce74072dcbd258879bc051916333b8',1,'exit(int errno):&#160;stdlib.cpp'],['../UefiApplicationEntryPoint_8h.html#ab46cf12426652c38141c12d282c2c9a8',1,'Exit(IN EFI_STATUS Status):&#160;UefiApplicationEntryPoint.h']]],
+  ['exit_102',['exit',['../UefiApplicationEntryPoint_8h.html#ab46cf12426652c38141c12d282c2c9a8',1,'Exit(IN EFI_STATUS Status):&#160;UefiApplicationEntryPoint.h'],['../stdlib_8h.html#a18278d8624d6aef8c92577d8f15a47e7',1,'exit(int errno):&#160;stdlib.cpp'],['../stdlib_8cpp.html#a49ce74072dcbd258879bc051916333b8',1,'exit(int errno):&#160;stdlib.cpp']]],
   ['exitdriver_103',['ExitDriver',['../UefiDriverEntryPoint_8h.html#a3fd25a50460989303a76b68c7ae34802',1,'UefiDriverEntryPoint.h']]],
   ['exititemclicked_104',['exititemclicked',['../Process_2AudioPlayer_2main_8cpp.html#ae603cd509dd70d24027375931a2657ad',1,'ExitItemClicked(ChWidget *wid, ChWindow *win):&#160;main.cpp'],['../Process_2Files_2main_8cpp.html#ae603cd509dd70d24027375931a2657ad',1,'ExitItemClicked(ChWidget *wid, ChWindow *win):&#160;main.cpp']]],
   ['exp_105',['exp',['../audioCtrl_8cpp.html#a9b5b75b78eff58c7f376e3ce51e9fdfd',1,'audioCtrl.cpp']]],

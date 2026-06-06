@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>XenevaOS: XenevaOS/BaseHdr/linux/timer.h File Reference</title>
+<title>XenevaOS: XenevaOS/BaseHdr/timer.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -69,37 +69,29 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_6f7cbf0a11b44b0a43b1ec16e930d793.html">XenevaOS</a></li><li class="navelem"><a class="el" href="dir_fdf7f69f1dcc4789c690091ccc56e325.html">BaseHdr</a></li><li class="navelem"><a class="el" href="dir_702ddd411089be423e2a5bdc4d9206f8.html">linux</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_6f7cbf0a11b44b0a43b1ec16e930d793.html">XenevaOS</a></li><li class="navelem"><a class="el" href="dir_fdf7f69f1dcc4789c690091ccc56e325.html">BaseHdr</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#define-members">Macros</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">timer.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><div class="dynheader">
-This graph shows which files directly or indirectly include this file:</div>
+<div class="textblock"><code>#include &lt;<a class="el" href="BaseHdr_2aurora_8h_source.html">aurora.h</a>&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Include dependency graph for timer.h:</div>
 <div class="dyncontent">
-<div class="center"><img src="timer_8h__dep__incl.png" border="0" usemap="#aXenevaOS_2BaseHdr_2linux_2timer_8hdep" alt=""/></div>
-<map name="aXenevaOS_2BaseHdr_2linux_2timer_8hdep" id="aXenevaOS_2BaseHdr_2linux_2timer_8hdep">
-<area shape="rect" title=" " alt="" coords="213,5,397,45"/>
-<area shape="rect" href="kernel_8h.html" title=" " alt="" coords="213,181,397,221"/>
-<area shape="poly" title=" " alt="" coords="286,58,269,94,266,113,269,133,279,158,293,179,288,182,275,160,264,134,261,113,264,93,281,56"/>
-<area shape="rect" href="workqueue_8h.html" title=" " alt="" coords="279,93,463,133"/>
-<area shape="poly" title=" " alt="" coords="330,55,358,91,354,95,326,58"/>
-<area shape="rect" href="bitmap_8h.html" title=" " alt="" coords="5,269,189,309"/>
-<area shape="poly" title=" " alt="" coords="240,229,136,272,134,267,238,224"/>
-<area shape="rect" href="ch9_8h.html" title=" " alt="" coords="213,269,397,309"/>
-<area shape="poly" title=" " alt="" coords="299,235,300,269,295,269,294,235"/>
-<area shape="rect" href="otg_8h.html" title=" " alt="" coords="421,269,605,309"/>
-<area shape="poly" title=" " alt="" coords="357,224,461,267,459,272,355,229"/>
-<area shape="poly" title=" " alt="" coords="162,262,266,219,268,224,164,267"/>
-<area shape="poly" title=" " alt="" coords="311,256,310,222,316,222,317,256"/>
-<area shape="poly" title=" " alt="" coords="462,266,358,224,360,219,464,261"/>
-<area shape="poly" title=" " alt="" coords="350,146,322,183,318,179,346,143"/>
+<div class="center"><img src="timer_8h__incl.png" border="0" usemap="#aXenevaOS_2BaseHdr_2timer_8h" alt=""/></div>
+<map name="aXenevaOS_2BaseHdr_2timer_8h" id="aXenevaOS_2BaseHdr_2timer_8h">
+<area shape="rect" title=" " alt="" coords="5,5,204,31"/>
+<area shape="rect" href="BaseHdr_2aurora_8h.html" title=" " alt="" coords="67,79,143,104"/>
+<area shape="poly" title=" " alt="" coords="107,31,107,65,102,65,102,31"/>
+<area shape="rect" href="BaseHdr_2stdint_8h.html" title=" " alt="" coords="69,152,140,177"/>
+<area shape="poly" title=" " alt="" coords="107,104,107,138,102,138,102,104"/>
 </map>
 </div>
 </div>
@@ -107,291 +99,162 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtimer__list.html">timer_list</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__kernel__timer__.html">_kernel_timer_</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a8489802eaedf42fdb5f2ce1708eaffa2" id="r_a8489802eaedf42fdb5f2ce1708eaffa2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="timer_8h.html#a8489802eaedf42fdb5f2ce1708eaffa2">HZ</a>&#160;&#160;&#160;250              /* ticks per second — tune to your timer IRQ */</td></tr>
-<tr class="separator:a8489802eaedf42fdb5f2ce1708eaffa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d38e345950d29be80f028a5b06af13b" id="r_a6d38e345950d29be80f028a5b06af13b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="timer_8h.html#a6d38e345950d29be80f028a5b06af13b">msecs_to_jiffies</a>(ms)&#160;&#160;&#160;((ms) * <a class="el" href="timer_8h.html#a8489802eaedf42fdb5f2ce1708eaffa2">HZ</a> / 1000)</td></tr>
-<tr class="separator:a6d38e345950d29be80f028a5b06af13b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa6a770edfc024546d4ec31b7721dbc4" id="r_aaa6a770edfc024546d4ec31b7721dbc4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="timer_8h.html#aaa6a770edfc024546d4ec31b7721dbc4">jiffies_to_msecs</a>(j)&#160;&#160;&#160;((j)  * 1000 / <a class="el" href="timer_8h.html#a8489802eaedf42fdb5f2ce1708eaffa2">HZ</a>)</td></tr>
-<tr class="separator:aaa6a770edfc024546d4ec31b7721dbc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8bd5db6be926c295db072f48fa3d02f9" id="r_a8bd5db6be926c295db072f48fa3d02f9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="timer_8h.html#a8bd5db6be926c295db072f48fa3d02f9">time_after</a>(a,  b)&#160;&#160;&#160;((long)((b) - (a)) &lt; 0)</td></tr>
-<tr class="separator:a8bd5db6be926c295db072f48fa3d02f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16870f08add529f9c5af2645a5487916" id="r_a16870f08add529f9c5af2645a5487916"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="timer_8h.html#a16870f08add529f9c5af2645a5487916">time_before</a>(a,  b)&#160;&#160;&#160;<a class="el" href="timer_8h.html#a8bd5db6be926c295db072f48fa3d02f9">time_after</a>(b, a)</td></tr>
-<tr class="separator:a16870f08add529f9c5af2645a5487916"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64995b9410ad33a2cb3882358ebf41a6" id="r_a64995b9410ad33a2cb3882358ebf41a6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="timer_8h.html#a64995b9410ad33a2cb3882358ebf41a6">time_after_eq</a>(a,  b)&#160;&#160;&#160;((long)((a) - (b)) &gt;= 0)</td></tr>
-<tr class="separator:a64995b9410ad33a2cb3882358ebf41a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad24b69f219bd4aab5c0e991f2b3af27c" id="r_ad24b69f219bd4aab5c0e991f2b3af27c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="timer_8h.html#ad24b69f219bd4aab5c0e991f2b3af27c">timer_setup</a>(<a class="el" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a>,  fn,  flags)</td></tr>
-<tr class="separator:ad24b69f219bd4aab5c0e991f2b3af27c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa73025531c066ae7d216bcd034789b23" id="r_aa73025531c066ae7d216bcd034789b23"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="timer_8h.html#aa73025531c066ae7d216bcd034789b23">setup_timer</a>(<a class="el" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a>,  fn,  data)</td></tr>
-<tr class="separator:aa73025531c066ae7d216bcd034789b23"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae99cc5c434e34e6e0f3db3eb7f68a79f" id="r_ae99cc5c434e34e6e0f3db3eb7f68a79f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="timer_8h.html#ae99cc5c434e34e6e0f3db3eb7f68a79f">from_timer</a>(var,  callback_timer,  timer_fieldname)&#160;&#160;&#160;    <a class="el" href="kernel_8h.html#af8c317a42292b61c93aae91e59118a46">container_of</a>(callback_timer, typeof(*var), timer_fieldname)</td></tr>
-<tr class="separator:ae99cc5c434e34e6e0f3db3eb7f68a79f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a888031716a41912b5fcbf495ea45d768" id="r_a888031716a41912b5fcbf495ea45d768"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="timer_8h.html#a888031716a41912b5fcbf495ea45d768">AURORA_MAX_TIMER</a>&#160;&#160;&#160;32</td></tr>
+<tr class="separator:a888031716a41912b5fcbf495ea45d768"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:a023d8b2505ba4156d0ddf7bcbbe7944d" id="r_a023d8b2505ba4156d0ddf7bcbbe7944d"><td class="memItemLeft" align="right" valign="top">volatile unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="timer_8h.html#a023d8b2505ba4156d0ddf7bcbbe7944d">jiffies</a></td></tr>
-<tr class="separator:a023d8b2505ba4156d0ddf7bcbbe7944d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a6a13d244b0a4ed9275b912292dbad522" id="r_a6a13d244b0a4ed9275b912292dbad522"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="timer_8h.html#a6a13d244b0a4ed9275b912292dbad522">AuroraTimerCallback</a>) (void *param)</td></tr>
+<tr class="separator:a6a13d244b0a4ed9275b912292dbad522"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba25900e88141babc7b947b755c3c8cd" id="r_aba25900e88141babc7b947b755c3c8cd"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct__kernel__timer__.html">_kernel_timer_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="timer_8h.html#aba25900e88141babc7b947b755c3c8cd">AuKernelTimer</a></td></tr>
+<tr class="separator:aba25900e88141babc7b947b755c3c8cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a301796ffe1bb2bafdf21ddb177898455" id="r_a301796ffe1bb2bafdf21ddb177898455"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="timer_8h.html#a301796ffe1bb2bafdf21ddb177898455">AuroraTimerInitialize</a> ()</td></tr>
+<tr class="memdesc:a301796ffe1bb2bafdf21ddb177898455"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuroraTimerInitialize &ndash; initialize aurora timer.  <br /></td></tr>
+<tr class="separator:a301796ffe1bb2bafdf21ddb177898455"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a202fa1db1ae981dfff73d05d4b34cc78" id="r_a202fa1db1ae981dfff73d05d4b34cc78"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="timer_8h.html#a202fa1db1ae981dfff73d05d4b34cc78">AuroraTimerStart</a> (<a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> delay_ms, <a class="el" href="timer_8h.html#a6a13d244b0a4ed9275b912292dbad522">AuroraTimerCallback</a> handler, void *param, int idx)</td></tr>
+<tr class="memdesc:a202fa1db1ae981dfff73d05d4b34cc78"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuroraTimerStart &ndash; start kernel timer in one shot mode.  <br /></td></tr>
+<tr class="separator:a202fa1db1ae981dfff73d05d4b34cc78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fb1658887e8bbcdca2ca536899b9351" id="r_a6fb1658887e8bbcdca2ca536899b9351"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="timer_8h.html#a6fb1658887e8bbcdca2ca536899b9351">AuroraTimerStartPeriodic</a> (<a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> interval_ms, <a class="el" href="timer_8h.html#a6a13d244b0a4ed9275b912292dbad522">AuroraTimerCallback</a> handler, void *param)</td></tr>
+<tr class="memdesc:a6fb1658887e8bbcdca2ca536899b9351"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuroraTimerStartPeriodic &ndash; start a periodic timer.  <br /></td></tr>
+<tr class="separator:a6fb1658887e8bbcdca2ca536899b9351"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad52650c6ed3ba21521160eced510c8bf" id="r_ad52650c6ed3ba21521160eced510c8bf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> <a class="el" href="Libs_2XEClib_2includes_2stdint_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="timer_8h.html#ad52650c6ed3ba21521160eced510c8bf">AuroraTimerIsActive</a> (int tNum)</td></tr>
+<tr class="memdesc:ad52650c6ed3ba21521160eced510c8bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuroraTimerIsActive &ndash; check if timer is active.  <br /></td></tr>
+<tr class="separator:ad52650c6ed3ba21521160eced510c8bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafffeec7e611ad13f79b77809dfe235b" id="r_aafffeec7e611ad13f79b77809dfe235b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="timer_8h.html#aafffeec7e611ad13f79b77809dfe235b">AuroraTimerCancel</a> (int tNum)</td></tr>
+<tr class="memdesc:aafffeec7e611ad13f79b77809dfe235b"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuroraTimerCancel &ndash; cancel a timer.  <br /></td></tr>
+<tr class="separator:aafffeec7e611ad13f79b77809dfe235b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ec22b0cfccdfc5017c9f23c84c64fb5" id="r_a1ec22b0cfccdfc5017c9f23c84c64fb5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="timer_8h.html#a1ec22b0cfccdfc5017c9f23c84c64fb5">AuroraTimerTick</a> ()</td></tr>
+<tr class="memdesc:a1ec22b0cfccdfc5017c9f23c84c64fb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuroraTimerTick &ndash; called by kernel to handle all expired timers.  <br /></td></tr>
+<tr class="separator:a1ec22b0cfccdfc5017c9f23c84c64fb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94c5521d3aa5ea3e90efced526f201f9" id="r_a94c5521d3aa5ea3e90efced526f201f9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="timer_8h.html#a94c5521d3aa5ea3e90efced526f201f9">AuGetCurrentMS</a> ()</td></tr>
+<tr class="separator:a94c5521d3aa5ea3e90efced526f201f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a770b9ddb80ccd941e7989033f68a5099" id="r_a770b9ddb80ccd941e7989033f68a5099"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="timer_8h.html#a770b9ddb80ccd941e7989033f68a5099">AuGetCurrentUS</a> ()</td></tr>
+<tr class="separator:a770b9ddb80ccd941e7989033f68a5099"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="ae99cc5c434e34e6e0f3db3eb7f68a79f" name="ae99cc5c434e34e6e0f3db3eb7f68a79f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae99cc5c434e34e6e0f3db3eb7f68a79f">&#9670;&#160;</a></span>from_timer</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>BSD 2-Clause License</p>
+<p>Copyright (c) 2022-2023, Manas Kamal Choudhury All rights reserved.</p>
+<p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
+<ol type="1">
+<li>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</li>
+<li>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</li>
+</ol>
+<p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. </p>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a888031716a41912b5fcbf495ea45d768" name="a888031716a41912b5fcbf495ea45d768"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a888031716a41912b5fcbf495ea45d768">&#9670;&#160;</a></span>AURORA_MAX_TIMER</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define from_timer</td>
+          <td class="memname">#define AURORA_MAX_TIMER&#160;&#160;&#160;32</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="aba25900e88141babc7b947b755c3c8cd" name="aba25900e88141babc7b947b755c3c8cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba25900e88141babc7b947b755c3c8cd">&#9670;&#160;</a></span>AuKernelTimer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct__kernel__timer__.html">_kernel_timer_</a> <a class="el" href="timer_8h.html#aba25900e88141babc7b947b755c3c8cd">AuKernelTimer</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6a13d244b0a4ed9275b912292dbad522" name="a6a13d244b0a4ed9275b912292dbad522"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a13d244b0a4ed9275b912292dbad522">&#9670;&#160;</a></span>AuroraTimerCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* AuroraTimerCallback) (void *param)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a94c5521d3aa5ea3e90efced526f201f9" name="a94c5521d3aa5ea3e90efced526f201f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94c5521d3aa5ea3e90efced526f201f9">&#9670;&#160;</a></span>AuGetCurrentMS()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> AuGetCurrentMS </td>
           <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">var, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">callback_timer, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">timer_fieldname&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;    <a class="el" href="kernel_8h.html#af8c317a42292b61c93aae91e59118a46">container_of</a>(callback_timer, typeof(*var), timer_fieldname)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a8489802eaedf42fdb5f2ce1708eaffa2" name="a8489802eaedf42fdb5f2ce1708eaffa2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8489802eaedf42fdb5f2ce1708eaffa2">&#9670;&#160;</a></span>HZ</h2>
+<a id="a770b9ddb80ccd941e7989033f68a5099" name="a770b9ddb80ccd941e7989033f68a5099"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a770b9ddb80ccd941e7989033f68a5099">&#9670;&#160;</a></span>AuGetCurrentUS()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define HZ&#160;&#160;&#160;250              /* ticks per second — tune to your timer IRQ */</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aaa6a770edfc024546d4ec31b7721dbc4" name="aaa6a770edfc024546d4ec31b7721dbc4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaa6a770edfc024546d4ec31b7721dbc4">&#9670;&#160;</a></span>jiffies_to_msecs</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define jiffies_to_msecs</td>
+          <td class="memname"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> AuGetCurrentUS </td>
           <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">j</td><td>)</td>
-          <td>&#160;&#160;&#160;((j)  * 1000 / <a class="el" href="timer_8h.html#a8489802eaedf42fdb5f2ce1708eaffa2">HZ</a>)</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a6d38e345950d29be80f028a5b06af13b" name="a6d38e345950d29be80f028a5b06af13b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6d38e345950d29be80f028a5b06af13b">&#9670;&#160;</a></span>msecs_to_jiffies</h2>
+<a id="aafffeec7e611ad13f79b77809dfe235b" name="aafffeec7e611ad13f79b77809dfe235b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafffeec7e611ad13f79b77809dfe235b">&#9670;&#160;</a></span>AuroraTimerCancel()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define msecs_to_jiffies</td>
+          <td class="memname"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> void AuroraTimerCancel </td>
           <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">ms</td><td>)</td>
-          <td>&#160;&#160;&#160;((ms) * <a class="el" href="timer_8h.html#a8489802eaedf42fdb5f2ce1708eaffa2">HZ</a> / 1000)</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tNum</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a id="aa73025531c066ae7d216bcd034789b23" name="aa73025531c066ae7d216bcd034789b23"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa73025531c066ae7d216bcd034789b23">&#9670;&#160;</a></span>setup_timer</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define setup_timer</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">fn, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">data&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">    <span class="keywordflow">do</span> { \</div>
-<div class="line">    (<a class="code hl_variable" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a>)-&gt;function = (<span class="keywordtype">void</span>(*)(<span class="keyword">struct </span><a class="code hl_struct" href="structtimer__list.html">timer_list</a>*))(fn); \</div>
-<div class="line">    (<a class="code hl_variable" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a>)-&gt;<a class="code hl_variable" href="structtimer__list.html#a129f9895a9e03552f5347cf6e71950fd">data</a>     = (<span class="keywordtype">void</span>*)(<a class="code hl_variable" href="structtimer__list.html#a129f9895a9e03552f5347cf6e71950fd">data</a>);     \</div>
-<div class="line">    (<a class="code hl_variable" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a>)-&gt;<a class="code hl_variable" href="structtimer__list.html#a234918227150aa0f7dcdd45a408ce1ea">pending</a>  = 0;                 \</div>
-<div class="line">} <span class="keywordflow">while</span> (0)</div>
-<div class="ttc" id="aProcess_2Calender_2main_8cpp_html_a5b9f2c8eed2b49ee91dd608d9a0ec4bd"><div class="ttname"><a href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a></div><div class="ttdeci">XETime t</div><div class="ttdef"><b>Definition</b> main.cpp:53</div></div>
-<div class="ttc" id="astructtimer__list_html"><div class="ttname"><a href="structtimer__list.html">timer_list</a></div><div class="ttdef"><b>Definition</b> timer.h:1</div></div>
-<div class="ttc" id="astructtimer__list_html_a129f9895a9e03552f5347cf6e71950fd"><div class="ttname"><a href="structtimer__list.html#a129f9895a9e03552f5347cf6e71950fd">timer_list::data</a></div><div class="ttdeci">void * data</div><div class="ttdef"><b>Definition</b> timer.h:4</div></div>
-<div class="ttc" id="astructtimer__list_html_a234918227150aa0f7dcdd45a408ce1ea"><div class="ttname"><a href="structtimer__list.html#a234918227150aa0f7dcdd45a408ce1ea">timer_list::pending</a></div><div class="ttdeci">int pending</div><div class="ttdef"><b>Definition</b> timer.h:5</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a8bd5db6be926c295db072f48fa3d02f9" name="a8bd5db6be926c295db072f48fa3d02f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8bd5db6be926c295db072f48fa3d02f9">&#9670;&#160;</a></span>time_after</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define time_after</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">a, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">b&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;((long)((b) - (a)) &lt; 0)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<p>AuroraTimerCancel &ndash; cancel a timer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tNum</td><td>&ndash; timer number </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a id="a64995b9410ad33a2cb3882358ebf41a6" name="a64995b9410ad33a2cb3882358ebf41a6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a64995b9410ad33a2cb3882358ebf41a6">&#9670;&#160;</a></span>time_after_eq</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define time_after_eq</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">a, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">b&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;((long)((a) - (b)) &gt;= 0)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a16870f08add529f9c5af2645a5487916" name="a16870f08add529f9c5af2645a5487916"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a16870f08add529f9c5af2645a5487916">&#9670;&#160;</a></span>time_before</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define time_before</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">a, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">b&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="timer_8h.html#a8bd5db6be926c295db072f48fa3d02f9">time_after</a>(b, a)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad24b69f219bd4aab5c0e991f2b3af27c" name="ad24b69f219bd4aab5c0e991f2b3af27c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad24b69f219bd4aab5c0e991f2b3af27c">&#9670;&#160;</a></span>timer_setup</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define timer_setup</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">fn, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">flags&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">    <span class="keywordflow">do</span> { \</div>
-<div class="line">    (<a class="code hl_variable" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a>)-&gt;function = (fn);              \</div>
-<div class="line">    (<a class="code hl_variable" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a>)-&gt;pending  = 0;                 \</div>
-<div class="line">    (<a class="code hl_variable" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a>)-&gt;data     = <a class="code hl_define" href="actypes_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;              \</div>
-<div class="line">    (<a class="code hl_variable" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a>)-&gt;expires  = 0;                 \</div>
-<div class="line">} <span class="keywordflow">while</span> (0)</div>
-<div class="ttc" id="aactypes_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="actypes_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition</b> actypes.h:561</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a id="a023d8b2505ba4156d0ddf7bcbbe7944d" name="a023d8b2505ba4156d0ddf7bcbbe7944d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a023d8b2505ba4156d0ddf7bcbbe7944d">&#9670;&#160;</a></span>jiffies</h2>
+<a id="a301796ffe1bb2bafdf21ddb177898455" name="a301796ffe1bb2bafdf21ddb177898455"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a301796ffe1bb2bafdf21ddb177898455">&#9670;&#160;</a></span>AuroraTimerInitialize()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -400,7 +263,10 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">volatile unsigned long jiffies</td>
+          <td class="memname">void AuroraTimerInitialize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
         </tr>
       </table>
   </td>
@@ -409,6 +275,147 @@ Variables</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>AuroraTimerInitialize &ndash; initialize aurora timer. </p>
+
+</div>
+</div>
+<a id="ad52650c6ed3ba21521160eced510c8bf" name="ad52650c6ed3ba21521160eced510c8bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad52650c6ed3ba21521160eced510c8bf">&#9670;&#160;</a></span>AuroraTimerIsActive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> <a class="el" href="Libs_2XEClib_2includes_2stdint_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> AuroraTimerIsActive </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tNum</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>AuroraTimerIsActive &ndash; check if timer is active. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tNum</td><td>&ndash; timer index </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a202fa1db1ae981dfff73d05d4b34cc78" name="a202fa1db1ae981dfff73d05d4b34cc78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a202fa1db1ae981dfff73d05d4b34cc78">&#9670;&#160;</a></span>AuroraTimerStart()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> int AuroraTimerStart </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td>
+          <td class="paramname"><em>delay_ms</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="timer_8h.html#a6a13d244b0a4ed9275b912292dbad522">AuroraTimerCallback</a>&#160;</td>
+          <td class="paramname"><em>handler</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>param</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>idx</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>AuroraTimerStart &ndash; start kernel timer in one shot mode. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">delay_ms</td><td>&ndash; at what millisecond it should fire from now </td></tr>
+    <tr><td class="paramname">handler</td><td>&ndash; handler function </td></tr>
+    <tr><td class="paramname">param</td><td>&ndash; extra param data to pass to handler </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6fb1658887e8bbcdca2ca536899b9351" name="a6fb1658887e8bbcdca2ca536899b9351"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fb1658887e8bbcdca2ca536899b9351">&#9670;&#160;</a></span>AuroraTimerStartPeriodic()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> int AuroraTimerStartPeriodic </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td>
+          <td class="paramname"><em>interval_ms</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="timer_8h.html#a6a13d244b0a4ed9275b912292dbad522">AuroraTimerCallback</a>&#160;</td>
+          <td class="paramname"><em>handler</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>param</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>AuroraTimerStartPeriodic &ndash; start a periodic timer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">interval_ms</td><td>&ndash; interval between one shot to another shot </td></tr>
+    <tr><td class="paramname">handler</td><td>&ndash; handler function </td></tr>
+    <tr><td class="paramname">param</td><td>&ndash; extra data to pass to handler </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1ec22b0cfccdfc5017c9f23c84c64fb5" name="a1ec22b0cfccdfc5017c9f23c84c64fb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ec22b0cfccdfc5017c9f23c84c64fb5">&#9670;&#160;</a></span>AuroraTimerTick()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AuroraTimerTick </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>AuroraTimerTick &ndash; called by kernel to handle all expired timers. </p>
 
 </div>
 </div>

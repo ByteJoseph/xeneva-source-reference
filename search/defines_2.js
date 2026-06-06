@@ -201,8 +201,8 @@ var searchData=
   ['boot_5foption_5fhandled_5fby_5fbios_198',['BOOT_OPTION_HANDLED_BY_BIOS',['../IpmiNetFnChassis_8h.html#a9a519acd706a8db2f71511988959ef8e',1,'IpmiNetFnChassis.h']]],
   ['boot_5fprotocol_199',['BOOT_PROTOCOL',['../usbhid_8h.html#aafb69d9c2505f6e8910585e284a8d561',1,'usbhid.h']]],
   ['boot_5freport_5fsize_200',['BOOT_REPORT_SIZE',['../usbkeyboard_8h.html#ace3436a3c5daa2053c7bc5f695058357',1,'usbkeyboard.h']]],
-  ['boot_5fuefi_5farm64_201',['boot_uefi_arm64',['../BaseHdr_2aurora_8h.html#ab1fa98a96006a80a0709d5148c96c103',1,'BOOT_UEFI_ARM64:&#160;aurora.h'],['../LittleBoot_2aurora_8h.html#ab1fa98a96006a80a0709d5148c96c103',1,'BOOT_UEFI_ARM64:&#160;aurora.h'],['../BootAA64_2xnldr_8h.html#ab1fa98a96006a80a0709d5148c96c103',1,'BOOT_UEFI_ARM64:&#160;xnldr.h']]],
-  ['boot_5fuefi_5fx64_202',['boot_uefi_x64',['../BaseHdr_2aurora_8h.html#a1d3af5c396abb99ca853c1611ce77348',1,'BOOT_UEFI_x64:&#160;aurora.h'],['../LittleBoot_2aurora_8h.html#a42dca28bfd63ee3b96bbcdc8d5eb37fe',1,'BOOT_UEFI_X64:&#160;aurora.h'],['../BootAA64_2xnldr_8h.html#a42dca28bfd63ee3b96bbcdc8d5eb37fe',1,'BOOT_UEFI_X64:&#160;xnldr.h']]],
+  ['boot_5fuefi_5farm64_201',['boot_uefi_arm64',['../LittleBoot_2aurora_8h.html#ab1fa98a96006a80a0709d5148c96c103',1,'BOOT_UEFI_ARM64:&#160;aurora.h'],['../BootAA64_2xnldr_8h.html#ab1fa98a96006a80a0709d5148c96c103',1,'BOOT_UEFI_ARM64:&#160;xnldr.h'],['../BaseHdr_2aurora_8h.html#ab1fa98a96006a80a0709d5148c96c103',1,'BOOT_UEFI_ARM64:&#160;aurora.h']]],
+  ['boot_5fuefi_5fx64_202',['boot_uefi_x64',['../BootAA64_2xnldr_8h.html#a42dca28bfd63ee3b96bbcdc8d5eb37fe',1,'BOOT_UEFI_X64:&#160;xnldr.h'],['../BaseHdr_2aurora_8h.html#a1d3af5c396abb99ca853c1611ce77348',1,'BOOT_UEFI_x64:&#160;aurora.h'],['../LittleBoot_2aurora_8h.html#a42dca28bfd63ee3b96bbcdc8d5eb37fe',1,'BOOT_UEFI_X64:&#160;aurora.h']]],
   ['boot_5fwith_5fdefault_5fsettings_203',['BOOT_WITH_DEFAULT_SETTINGS',['../PiBootMode_8h.html#ac5ccb41013983f7c7ed407ba4e061f78',1,'PiBootMode.h']]],
   ['boot_5fwith_5ffull_5fconfiguration_204',['BOOT_WITH_FULL_CONFIGURATION',['../PiBootMode_8h.html#afdb0035a3b4ff3ca39d060f74c86dfd6',1,'PiBootMode.h']]],
   ['boot_5fwith_5ffull_5fconfiguration_5fplus_5fdiagnostics_205',['BOOT_WITH_FULL_CONFIGURATION_PLUS_DIAGNOSTICS',['../PiBootMode_8h.html#a4481e4ddf179f0732c5805ec4f80d2dd',1,'PiBootMode.h']]],
@@ -263,5 +263,6 @@ var searchData=
   ['burst_5fcap_5fsize_5fmask_5f_260',['BURST_CAP_SIZE_MASK_',['../lan7800_8c.html#adb625ac2df62ea5ec5981fd09792aa59',1,'lan7800.c']]],
   ['bus_5faddress_261',['BUS_ADDRESS',['../bcm2835_8h.html#ae0f450efb08014026c3a58ae9c8ac2be',1,'bcm2835.h']]],
   ['buttons_5fpad_5fx_262',['BUTTONS_PAD_X',['../appgrid_8h.html#a3aa8004d09c183bfdcbbd5c03232d58e',1,'appgrid.h']]],
-  ['bytes_5fto_5fsend_263',['BYTES_TO_SEND',['../Process_2ping_2main_8cpp.html#aca96e9bdff5c3111bef52bab0998784f',1,'main.cpp']]]
+  ['bytes_5fper_5fsample_263',['BYTES_PER_SAMPLE',['../audmain_8cpp.html#a25065cd833bcfecfb404093aed3edaca',1,'audmain.cpp']]],
+  ['bytes_5fto_5fsend_264',['BYTES_TO_SEND',['../Process_2ping_2main_8cpp.html#aca96e9bdff5c3111bef52bab0998784f',1,'main.cpp']]]
 ];

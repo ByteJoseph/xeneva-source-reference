@@ -30,7 +30,7 @@ var searchData=
   ['queuerequest_27',['queuerequest',['../struct__EFI__I2C__IO__PROTOCOL.html#a5bcc8c5ef3f68d41e922e16b2857dce8',1,'_EFI_I2C_IO_PROTOCOL::QueueRequest'],['../struct__EFI__I2C__HOST__PROTOCOL.html#a584711b7f61973fcf2a9e0ea6cb9aa71',1,'_EFI_I2C_HOST_PROTOCOL::QueueRequest']]],
   ['queues_28',['Queues',['../structVirtioCommonCfg.html#a2229de6b3f7ec01ab8bf144be86544d9',1,'VirtioCommonCfg']]],
   ['queueselect_29',['QueueSelect',['../structVirtioCommonCfg.html#abb841fe5640529c226e0c6b54b931f76',1,'VirtioCommonCfg']]],
-  ['queuesize_30',['queuesize',['../struct__nvme__create__io__sub__queue__.html#a5551b4a4f9e46eaf1c79298952a3c72b',1,'_nvme_create_io_sub_queue_::queueSize'],['../structVirtioCommonCfg.html#ad10e105b1627d89be9fd051472d539a9',1,'VirtioCommonCfg::QueueSize'],['../struct__nvme__create__io__comp__queue__cmd__.html#aa74b54dcef6d0b913e589607995a9266',1,'_nvme_create_io_comp_queue_cmd_::queueSize']]],
+  ['queuesize_30',['queuesize',['../struct__nvme__create__io__comp__queue__cmd__.html#aa74b54dcef6d0b913e589607995a9266',1,'_nvme_create_io_comp_queue_cmd_::queueSize'],['../struct__nvme__create__io__sub__queue__.html#a5551b4a4f9e46eaf1c79298952a3c72b',1,'_nvme_create_io_sub_queue_::queueSize'],['../structVirtioCommonCfg.html#ad10e105b1627d89be9fd051472d539a9',1,'VirtioCommonCfg::QueueSize']]],
   ['queuetype_31',['QueueType',['../structEFI__NVM__EXPRESS__PASS__THRU__COMMAND__PACKET.html#abec4c002ce5623b6b03bb4f8cc862388',1,'EFI_NVM_EXPRESS_PASS_THRU_COMMAND_PACKET']]],
   ['queueused_32',['QueueUsed',['../structVirtioCommonCfg.html#a56e6a856f88d7220ee89367ff7244eb0',1,'VirtioCommonCfg']]],
   ['quirks_33',['quirks',['../structusb__device.html#a85bfc1960ce9ca880c9383750d503668',1,'usb_device']]],

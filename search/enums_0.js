@@ -16,5 +16,6 @@ var searchData=
   ['_5fefi_5fusbfn_5ftransfer_5fstatus_13',['_EFI_USBFN_TRANSFER_STATUS',['../UsbFunctionIo_8h.html#aa0f9cbf733d2ccba201cc44d12940455',1,'UsbFunctionIo.h']]],
   ['_5fgid_5fentries_5f_14',['_gid_entries_',['../group_8h.html#a7faf502306dbe3d6052eba1a43cb57fa',1,'_gid_entries_:&#160;group.h'],['../__kecred_8h.html#a7faf502306dbe3d6052eba1a43cb57fa',1,'_gid_entries_:&#160;_kecred.h']]],
   ['_5fpower_5fbutton_5ftype_5f_15',['_power_button_type_',['../pwbutton_8h.html#a9e0a5e50db9a3175859e7cb1a35e2207',1,'pwbutton.h']]],
-  ['_5fproc_5ftokens_5f_16',['_proc_tokens_',['../proctoken_8h.html#af1093d9200e682a14610af620b1c704b',1,'_proc_tokens_:&#160;proctoken.h'],['../__keproc_8h.html#af1093d9200e682a14610af620b1c704b',1,'_proc_tokens_:&#160;_keproc.h']]]
+  ['_5fproc_5ftokens_5f_16',['_proc_tokens_',['../proctoken_8h.html#af1093d9200e682a14610af620b1c704b',1,'_proc_tokens_:&#160;proctoken.h'],['../__keproc_8h.html#af1093d9200e682a14610af620b1c704b',1,'_proc_tokens_:&#160;_keproc.h']]],
+  ['_5ftransfer_5fstage_5f_17',['_transfer_stage_',['../dwc2__usbdev_8h.html#a44aed7f64d31994a4cf3d416471ca447',1,'dwc2_usbdev.h']]]
 ];
