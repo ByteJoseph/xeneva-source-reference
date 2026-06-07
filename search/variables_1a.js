@@ -4,6 +4,8 @@ var searchData=
   ['zeros_1',['zeros',['../structIMAGE__COFF__SYMBOL.html#a7f2443498b53bf2855a6d2d386f80c64',1,'IMAGE_COFF_SYMBOL::zeros'],['../struct__tcpcheckheader__.html#a9032bee8fce7e0e9b72f01e8812a3d8a',1,'_tcpcheckheader_::zeros']]],
   ['zerovector_2',['ZeroVector',['../structEFI__FIRMWARE__VOLUME__HEADER.html#a9a841bbde5fd5a6ded8a5075c9c3612e',1,'EFI_FIRMWARE_VOLUME_HEADER']]],
   ['zone_3',['zone',['../structPS__Decoder__.html#a34149be296c63eee525aae334a4d5bce',1,'PS_Decoder_::zone'],['../structT1__DecoderRec__.html#add29399f0c811404b9d6ca373793103e',1,'T1_DecoderRec_::zone'],['../structCFF__Decoder__.html#a8b7e65540295938e9c3f466f8279849c',1,'CFF_Decoder_::zone'],['../structTT__LoaderRec__.html#aaa594deb371418c6cb932f318a8631ce',1,'TT_LoaderRec_::zone']]],
-  ['zones_4',['zones',['../structPS__Decoder__.html#a889e05955bed465d0f5ce5fb9460e88b',1,'PS_Decoder_::zones'],['../structT1__DecoderRec__.html#a4e33201df5beec8a3d81eca726b09ea5',1,'T1_DecoderRec_::zones'],['../structCFF__Decoder__.html#a91ff8b4f9cb5d2275cc468972632aaac',1,'CFF_Decoder_::zones']]],
-  ['zoomvideosupported_5',['ZoomVideoSupported',['../structMISC__SLOT__CHARACTERISTICS1.html#ae634d41114ae72eb56eb7668acc333d7',1,'MISC_SLOT_CHARACTERISTICS1']]]
+  ['zone_5fsectors_4',['zone_sectors',['../structvirtioblk__dev__config_1_1virtio__blk__zoned__characteristics.html#a3b719c8f9a27a7ef2d8b861518d649a3',1,'virtioblk_dev_config::virtio_blk_zoned_characteristics']]],
+  ['zoned_5',['zoned',['../structvirtioblk__dev__config.html#a88da21241d1755171e95620cb3457a4f',1,'virtioblk_dev_config']]],
+  ['zones_6',['zones',['../structPS__Decoder__.html#a889e05955bed465d0f5ce5fb9460e88b',1,'PS_Decoder_::zones'],['../structT1__DecoderRec__.html#a4e33201df5beec8a3d81eca726b09ea5',1,'T1_DecoderRec_::zones'],['../structCFF__Decoder__.html#a91ff8b4f9cb5d2275cc468972632aaac',1,'CFF_Decoder_::zones']]],
+  ['zoomvideosupported_7',['ZoomVideoSupported',['../structMISC__SLOT__CHARACTERISTICS1.html#ae634d41114ae72eb56eb7668acc333d7',1,'MISC_SLOT_CHARACTERISTICS1']]]
 ];
