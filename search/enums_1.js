@@ -57,5 +57,6 @@ var searchData=
   ['aml_5flock_5frule_54',['AML_LOCK_RULE',['../amlcode_8h.html#a3d3326c7d307462a19c826b50fa3a2d9',1,'amlcode.h']]],
   ['aml_5fmatch_5foperator_55',['AML_MATCH_OPERATOR',['../amlcode_8h.html#a65698e5364409b23be229806786eed60',1,'amlcode.h']]],
   ['aml_5fupdate_5frule_56',['AML_UPDATE_RULE',['../amlcode_8h.html#a641af172e58bf6cf24c84154edc17ce0',1,'amlcode.h']]],
-  ['asl_5fcomment_5ftypes_57',['ASL_COMMENT_TYPES',['../aclocal_8h.html#a4c880fafc693d499bbfa31ea45237bfc',1,'aclocal.h']]]
+  ['asl_5fcomment_5ftypes_57',['ASL_COMMENT_TYPES',['../aclocal_8h.html#a4c880fafc693d499bbfa31ea45237bfc',1,'aclocal.h']]],
+  ['aurora_5ffs_5ftype_58',['aurora_fs_type',['../fsprobe_8h.html#af8e66c5edf0cfbfb5566ae8eca01bca3',1,'aurora_fs_type:&#160;fsprobe.h'],['../fsprobe_8c.html#af8e66c5edf0cfbfb5566ae8eca01bca3',1,'aurora_fs_type:&#160;fsprobe.c']]]
 ];

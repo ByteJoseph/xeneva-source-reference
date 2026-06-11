@@ -74,6 +74,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">virtioblk.cpp File Reference</div></div>
@@ -188,6 +189,19 @@ Include dependency graph for virtioblk.cpp:</div>
 </map>
 </div>
 </div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVirtioBLKBuffer.html">VirtioBLKBuffer</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVirtioBLKAvail.html">VirtioBLKAvail</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVirtioBLKRing.html">VirtioBLKRing</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVirtioBLKUsed.html">VirtioBLKUsed</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVirtioBLKQueue.html">VirtioBLKQueue</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a9bab69cfd62dbdf60331af1562a35adf" id="r_a9bab69cfd62dbdf60331af1562a35adf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="virtioblk_8cpp.html#a9bab69cfd62dbdf60331af1562a35adf">VIRTIO_PCI_CAP_ID</a>&#160;&#160;&#160;0x09</td></tr>
@@ -210,6 +224,20 @@ Macros</h2></td></tr>
 <tr class="separator:a20e010fee3553a39ff6af7a5cc2837c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a208ab0e95f24325454621095b80fcf27" id="r_a208ab0e95f24325454621095b80fcf27"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="virtioblk_8cpp.html#a208ab0e95f24325454621095b80fcf27">VIRTQ_DESC_F_WRITE</a>&#160;&#160;&#160;2</td></tr>
 <tr class="separator:a208ab0e95f24325454621095b80fcf27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1be28503905758f3cf7e62fc4b1d156c" id="r_a1be28503905758f3cf7e62fc4b1d156c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="virtioblk_8cpp.html#a1be28503905758f3cf7e62fc4b1d156c">VIRTIO_STATUS_ACK</a>&#160;&#160;&#160;0x01</td></tr>
+<tr class="separator:a1be28503905758f3cf7e62fc4b1d156c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c3f5e16ae3e2e7389fd772eb909cad5" id="r_a6c3f5e16ae3e2e7389fd772eb909cad5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="virtioblk_8cpp.html#a6c3f5e16ae3e2e7389fd772eb909cad5">VIRTIO_STATUS_DRIVER</a>&#160;&#160;&#160;0x02</td></tr>
+<tr class="separator:a6c3f5e16ae3e2e7389fd772eb909cad5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a046788d73fd31ecc5c35c50a962e5ee3" id="r_a046788d73fd31ecc5c35c50a962e5ee3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="virtioblk_8cpp.html#a046788d73fd31ecc5c35c50a962e5ee3">VIRTIO_STATUS_DRIVER_OK</a>&#160;&#160;&#160;0x04</td></tr>
+<tr class="separator:a046788d73fd31ecc5c35c50a962e5ee3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2f09a041edbeda92bf158fe90bb9c34" id="r_af2f09a041edbeda92bf158fe90bb9c34"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="virtioblk_8cpp.html#af2f09a041edbeda92bf158fe90bb9c34">VIRTIO_STATUS_FEATURES_OK</a>&#160;&#160;&#160;0x08</td></tr>
+<tr class="separator:af2f09a041edbeda92bf158fe90bb9c34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ce271f204ca41729ba78667e4f67585" id="r_a2ce271f204ca41729ba78667e4f67585"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="virtioblk_8cpp.html#a2ce271f204ca41729ba78667e4f67585">VIRTIO_STATUS_DEVICE_NEEDS_RESET</a>&#160;&#160;&#160;0x40</td></tr>
+<tr class="separator:a2ce271f204ca41729ba78667e4f67585"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bd67e5c516094850cc2654fc0041c88" id="r_a4bd67e5c516094850cc2654fc0041c88"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="virtioblk_8cpp.html#a4bd67e5c516094850cc2654fc0041c88">VIRTIO_STATUS_FAILED</a>&#160;&#160;&#160;0x80</td></tr>
+<tr class="separator:a4bd67e5c516094850cc2654fc0041c88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af06387ab36943265cd0e8fe3e5e615e1" id="r_af06387ab36943265cd0e8fe3e5e615e1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="virtioblk_8cpp.html#af06387ab36943265cd0e8fe3e5e615e1">VIRTIO_DEFAULT_SECT_COUNT</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:af06387ab36943265cd0e8fe3e5e615e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -252,6 +280,20 @@ Functions</h2></td></tr>
 </ol>
 <p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="af06387ab36943265cd0e8fe3e5e615e1" name="af06387ab36943265cd0e8fe3e5e615e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af06387ab36943265cd0e8fe3e5e615e1">&#9670;&#160;</a></span>VIRTIO_DEFAULT_SECT_COUNT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define VIRTIO_DEFAULT_SECT_COUNT&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="adf75d3249c315cd2eb62c5d5dcf8b6f5" name="adf75d3249c315cd2eb62c5d5dcf8b6f5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adf75d3249c315cd2eb62c5d5dcf8b6f5">&#9670;&#160;</a></span>VIRTIO_F_VERSION_1</h2>
 
@@ -308,6 +350,20 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a1be28503905758f3cf7e62fc4b1d156c" name="a1be28503905758f3cf7e62fc4b1d156c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1be28503905758f3cf7e62fc4b1d156c">&#9670;&#160;</a></span>VIRTIO_STATUS_ACK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define VIRTIO_STATUS_ACK&#160;&#160;&#160;0x01</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a72eed47d6f482df3984b7dcfdb0fdb3f" name="a72eed47d6f482df3984b7dcfdb0fdb3f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a72eed47d6f482df3984b7dcfdb0fdb3f">&#9670;&#160;</a></span>VIRTIO_STATUS_ACKNOWLEDGE</h2>
 
@@ -322,8 +378,22 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a2ce271f204ca41729ba78667e4f67585" name="a2ce271f204ca41729ba78667e4f67585"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ce271f204ca41729ba78667e4f67585">&#9670;&#160;</a></span>VIRTIO_STATUS_DEVICE_NEEDS_RESET</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define VIRTIO_STATUS_DEVICE_NEEDS_RESET&#160;&#160;&#160;0x40</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a6c3f5e16ae3e2e7389fd772eb909cad5" name="a6c3f5e16ae3e2e7389fd772eb909cad5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6c3f5e16ae3e2e7389fd772eb909cad5">&#9670;&#160;</a></span>VIRTIO_STATUS_DRIVER</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c3f5e16ae3e2e7389fd772eb909cad5">&#9670;&#160;</a></span>VIRTIO_STATUS_DRIVER <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -336,8 +406,22 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a6c3f5e16ae3e2e7389fd772eb909cad5" name="a6c3f5e16ae3e2e7389fd772eb909cad5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c3f5e16ae3e2e7389fd772eb909cad5">&#9670;&#160;</a></span>VIRTIO_STATUS_DRIVER <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define VIRTIO_STATUS_DRIVER&#160;&#160;&#160;0x02</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a046788d73fd31ecc5c35c50a962e5ee3" name="a046788d73fd31ecc5c35c50a962e5ee3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a046788d73fd31ecc5c35c50a962e5ee3">&#9670;&#160;</a></span>VIRTIO_STATUS_DRIVER_OK</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a046788d73fd31ecc5c35c50a962e5ee3">&#9670;&#160;</a></span>VIRTIO_STATUS_DRIVER_OK <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -350,14 +434,56 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a046788d73fd31ecc5c35c50a962e5ee3" name="a046788d73fd31ecc5c35c50a962e5ee3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a046788d73fd31ecc5c35c50a962e5ee3">&#9670;&#160;</a></span>VIRTIO_STATUS_DRIVER_OK <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define VIRTIO_STATUS_DRIVER_OK&#160;&#160;&#160;0x04</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4bd67e5c516094850cc2654fc0041c88" name="a4bd67e5c516094850cc2654fc0041c88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bd67e5c516094850cc2654fc0041c88">&#9670;&#160;</a></span>VIRTIO_STATUS_FAILED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define VIRTIO_STATUS_FAILED&#160;&#160;&#160;0x80</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="af2f09a041edbeda92bf158fe90bb9c34" name="af2f09a041edbeda92bf158fe90bb9c34"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af2f09a041edbeda92bf158fe90bb9c34">&#9670;&#160;</a></span>VIRTIO_STATUS_FEATURES_OK</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af2f09a041edbeda92bf158fe90bb9c34">&#9670;&#160;</a></span>VIRTIO_STATUS_FEATURES_OK <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">#define VIRTIO_STATUS_FEATURES_OK&#160;&#160;&#160;8</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af2f09a041edbeda92bf158fe90bb9c34" name="af2f09a041edbeda92bf158fe90bb9c34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2f09a041edbeda92bf158fe90bb9c34">&#9670;&#160;</a></span>VIRTIO_STATUS_FEATURES_OK <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define VIRTIO_STATUS_FEATURES_OK&#160;&#160;&#160;0x08</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -409,6 +535,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>reset the virtio block device</p>
+<p>whenever new storage device detected, three kernel objects are needed to create : (1) &mdash; VDisk info for read write access (2) &mdash; Device file at /dev for ioctl and raw read write without partition overhead, write it to anywhere (3) &mdash; File System node after registering partitions</p>
 
 </div>
 </div>

@@ -86,7 +86,7 @@ var searchData=
   ['mark_5ftreemap_83',['mark_treemap',['../dlmalloc_8c.html#aa4cee82f9e5d26a5118b2e743c7fd1a2',1,'mark_treemap:&#160;dlmalloc.c'],['../__heap_8cpp.html#aa4cee82f9e5d26a5118b2e743c7fd1a2',1,'mark_treemap:&#160;_heap.cpp']]],
   ['maroon_84',['MAROON',['../color_8h.html#acb94f6551a49a0687321b68cc5ff5ae7',1,'color.h']]],
   ['master_5fsubspace_5fcommand_85',['MASTER_SUBSPACE_COMMAND',['../exfield_8c.html#a166e2f4ad8ac26f5970b009185d45aeb',1,'exfield.c']]],
-  ['max_86',['max',['../stdlib_8h.html#affe776513b24d84b39af8ab0930fef7f',1,'max:&#160;stdlib.h'],['../Base_8h.html#afa99ec4acc4ecb2dc3c2d05da15d0e3f',1,'MAX:&#160;Base.h']]],
+  ['max_86',['max',['../Base_8h.html#afa99ec4acc4ecb2dc3c2d05da15d0e3f',1,'MAX:&#160;Base.h'],['../stdlib_8h.html#affe776513b24d84b39af8ab0930fef7f',1,'max:&#160;stdlib.h']]],
   ['max_5f2_5fbits_87',['max_2_bits',['../AArch64_2ProcessorBind_8h.html#a60bb431495193072cc1abf0c2452e18a',1,'MAX_2_BITS:&#160;ProcessorBind.h'],['../Arm_2ProcessorBind_8h.html#a60bb431495193072cc1abf0c2452e18a',1,'MAX_2_BITS:&#160;ProcessorBind.h'],['../Ebc_2ProcessorBind_8h.html#a60bb431495193072cc1abf0c2452e18a',1,'MAX_2_BITS:&#160;ProcessorBind.h'],['../Ia32_2ProcessorBind_8h.html#a60bb431495193072cc1abf0c2452e18a',1,'MAX_2_BITS:&#160;ProcessorBind.h'],['../x64_2ProcessorBind_8h.html#a60bb431495193072cc1abf0c2452e18a',1,'MAX_2_BITS:&#160;ProcessorBind.h']]],
   ['max_5faarch64_5fexception_88',['MAX_AARCH64_EXCEPTION',['../DebugSupport_8h.html#a155ac2dacb0a63317267a15205c95c0e',1,'DebugSupport.h']]],
   ['max_5factive_5fsessions_89',['MAX_ACTIVE_SESSIONS',['../Tpm20_8h.html#a2c5028f87815ff14684a463ab6a3bf3b',1,'Tpm20.h']]],

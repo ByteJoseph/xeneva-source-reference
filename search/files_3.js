@@ -40,7 +40,7 @@ var searchData=
   ['cred_2eh_37',['cred.h',['../cred_8h.html',1,'']]],
   ['crt_2ecpp_38',['crt.cpp',['../crt_8cpp.html',1,'']]],
   ['ctrl_2ecpp_39',['ctrl.cpp',['../ctrl_8cpp.html',1,'']]],
-  ['ctype_2ec_40',['ctype.c',['../LittleBoot_2ctype_8c.html',1,'(Global Namespace)'],['../KernelAA64_2ctype_8c.html',1,'(Global Namespace)']]],
+  ['ctype_2ec_40',['ctype.c',['../KernelAA64_2ctype_8c.html',1,'(Global Namespace)'],['../LittleBoot_2ctype_8c.html',1,'(Global Namespace)']]],
   ['ctype_2ecpp_41',['ctype.cpp',['../Kernel_2ctype_8cpp.html',1,'(Global Namespace)'],['../Libs_2XEClib_2ctype_8cpp.html',1,'(Global Namespace)']]],
   ['ctype_2eh_42',['ctype.h',['../BaseHdr_2ctype_8h.html',1,'(Global Namespace)'],['../Libs_2XEClib_2includes_2ctype_8h.html',1,'(Global Namespace)'],['../LittleBoot_2ctype_8h.html',1,'(Global Namespace)']]],
   ['cursor_2ecpp_43',['cursor.cpp',['../Deodhai_2cursor_8cpp.html',1,'(Global Namespace)'],['../DeodhaiXR_2cursor_8cpp.html',1,'(Global Namespace)']]],
