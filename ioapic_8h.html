@@ -124,9 +124,9 @@ Macros</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a6fdd9a88fa1494bd5e7f0676f4e145c3" id="r_a6fdd9a88fa1494bd5e7f0676f4e145c3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ioapic_8h.html#a6fdd9a88fa1494bd5e7f0676f4e145c3">IOAPICInitialise</a> (void *address)</td></tr>
 <tr class="separator:a6fdd9a88fa1494bd5e7f0676f4e145c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acff30930503d386befae47b6e4d1e3b5" id="r_acff30930503d386befae47b6e4d1e3b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ioapic_8h.html#acff30930503d386befae47b6e4d1e3b5">IOAPICMaskIRQ</a> (<a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> irq, <a class="el" href="Libs_2XEClib_2includes_2stdint_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> value)</td></tr>
+<tr class="memitem:acff30930503d386befae47b6e4d1e3b5" id="r_acff30930503d386befae47b6e4d1e3b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ioapic_8h.html#acff30930503d386befae47b6e4d1e3b5">IOAPICMaskIRQ</a> (<a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> irq, <a class="el" href="stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> value)</td></tr>
 <tr class="separator:acff30930503d386befae47b6e4d1e3b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6386b72e27e7c43a00e0dde0a996e404" id="r_a6386b72e27e7c43a00e0dde0a996e404"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ioapic_8h.html#a6386b72e27e7c43a00e0dde0a996e404">IOAPICRegisterIRQ</a> (<a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> vector, void(*fn)(<a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>, void *), <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> irq, <a class="el" href="Libs_2XEClib_2includes_2stdint_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> level)</td></tr>
+<tr class="memitem:a6386b72e27e7c43a00e0dde0a996e404" id="r_a6386b72e27e7c43a00e0dde0a996e404"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ioapic_8h.html#a6386b72e27e7c43a00e0dde0a996e404">IOAPICRegisterIRQ</a> (<a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> vector, void(*fn)(<a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>, void *), <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> irq, <a class="el" href="stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> level)</td></tr>
 <tr class="separator:a6386b72e27e7c43a00e0dde0a996e404"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d21457d18791e8a71e7bec26b32e3da" id="r_a8d21457d18791e8a71e7bec26b32e3da"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ioapic_8h.html#a8d21457d18791e8a71e7bec26b32e3da">IOAPICRedirect</a> (<a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> irq, <a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> gsi, <a class="el" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> flags, <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> apic)</td></tr>
 <tr class="separator:a8d21457d18791e8a71e7bec26b32e3da"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -241,7 +241,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="Libs_2XEClib_2includes_2stdint_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td>
           <td class="paramname"><em>value</em>&#160;</td>
         </tr>
         <tr>
@@ -337,7 +337,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="Libs_2XEClib_2includes_2stdint_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td>
           <td class="paramname"><em>level</em>&#160;</td>
         </tr>
         <tr>
