@@ -24,5 +24,7 @@ var searchData=
   ['gpu3d_5fshader_5fclk_5froot_21',['GPU3D_SHADER_CLK_ROOT',['../imx8mp__clk_8h.html#a3e63855b2f0d43453e8495a789f6214dad118491ff9803b44988d8b236513e356',1,'imx8mp_clk.h']]],
   ['gpu_5fahb_5fclk_5froot_22',['GPU_AHB_CLK_ROOT',['../imx8mp__clk_8h.html#a3e63855b2f0d43453e8495a789f6214dabaaebb4c07182a3366f8a34fae9221b0',1,'imx8mp_clk.h']]],
   ['gpu_5faxi_5fclk_5froot_23',['GPU_AXI_CLK_ROOT',['../imx8mp__clk_8h.html#a3e63855b2f0d43453e8495a789f6214da3e7a6fb5956fc081a6c4bd4427deb571',1,'imx8mp_clk.h']]],
-  ['group_24',['Group',['../Supplicant_8h.html#ab821427bf44557d486f42fc6c5a6b7cca8a5bff7337e458d5f8d13aa5cac3ff07',1,'Supplicant.h']]]
+  ['gridcell_5fthumbnail_24',['GRIDCELL_THUMBNAIL',['../gridview_8h.html#af315f347a882812dc4308bf1913e4c3faa40ff79685be7663d6dc6b3a40f77ac2',1,'gridview.h']]],
+  ['gridcell_5fwidget_25',['GRIDCELL_WIDGET',['../gridview_8h.html#af315f347a882812dc4308bf1913e4c3faf9530211289464e0e98fffff6ef3c184',1,'gridview.h']]],
+  ['group_26',['Group',['../Supplicant_8h.html#ab821427bf44557d486f42fc6c5a6b7cca8a5bff7337e458d5f8d13aa5cac3ff07',1,'Supplicant.h']]]
 ];
