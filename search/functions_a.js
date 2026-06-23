@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['kcalloc_0',['kcalloc',['../kmalloc_8cpp.html#ac79686a89889f8049ad1fec78bac891a',1,'kcalloc(size_t n_item, size_t size):&#160;kmalloc.cpp'],['../kmalloc_8h.html#a17882ab530f45651e2e7d83eae348047',1,'kcalloc(unsigned long long, unsigned long long):&#160;kmalloc.h'],['../kmalloc_8c.html#ac79686a89889f8049ad1fec78bac891a',1,'kcalloc(size_t n_item, size_t size):&#160;kmalloc.c']]],
+  ['kcalloc_0',['kcalloc',['../kmalloc_8cpp.html#ac79686a89889f8049ad1fec78bac891a',1,'kcalloc(size_t n_item, size_t size):&#160;kmalloc.cpp'],['../kmalloc_8h.html#aaea3057b46b2881a10c65db828ffa5e1',1,'kcalloc(size_t, size_t):&#160;kmalloc.cpp'],['../kmalloc_8c.html#ac79686a89889f8049ad1fec78bac891a',1,'kcalloc(size_t n_item, size_t size):&#160;kmalloc.c']]],
   ['keprintmsg_1',['KePrintMsg',['../x86__64__systable_8cpp.html#ac4106a69dffbf4c4c478cad8106f8d9c',1,'x86_64_systable.cpp']]],
   ['kernelstackfree_2',['kernelstackfree',['../process_8h.html#a805d3034dd156a9acd448e93f4757c93',1,'KernelStackFree(AuProcess *proc, void *ptr, uint64_t *cr3):&#160;process.cpp'],['../process_8cpp.html#a805d3034dd156a9acd448e93f4757c93',1,'KernelStackFree(AuProcess *proc, void *ptr, uint64_t *cr3):&#160;process.cpp']]],
   ['keymap_3',['keymap',['../keymap_8c.html#aec05b0eec9574be7609da6a01d3feb35',1,'KeyMap(TKeyMap *pThis):&#160;keymap.c'],['../keymap_8h.html#aec05b0eec9574be7609da6a01d3feb35',1,'KeyMap(TKeyMap *pThis):&#160;keymap.c']]],

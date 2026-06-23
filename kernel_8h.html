@@ -79,7 +79,7 @@ $(function() {
   <div class="headertitle"><div class="title">kernel.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="stdint_8h_source.html">stdint.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="aa64cpu_8h_source.html">Hal/AA64/aa64cpu.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="kmalloc_8h_source.html">Mm/kmalloc.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="__null_8h_source.html">_null.h</a>&gt;</code><br />
@@ -96,7 +96,7 @@ Include dependency graph for kernel.h:</div>
 <div class="center"><img src="kernel_8h__incl.png" border="0" usemap="#aXenevaOS_2BaseHdr_2linux_2kernel_8h" alt=""/></div>
 <map name="aXenevaOS_2BaseHdr_2linux_2kernel_8h" id="aXenevaOS_2BaseHdr_2linux_2kernel_8h">
 <area shape="rect" title=" " alt="" coords="641,5,825,45"/>
-<area shape="rect" title=" " alt="" coords="46,167,117,192"/>
+<area shape="rect" href="stdint_8h.html" title=" " alt="" coords="46,167,117,192"/>
 <area shape="poly" title=" " alt="" coords="641,31,471,37,273,48,102,67,44,80,25,87,14,95,9,103,8,110,15,127,31,143,50,157,47,161,27,147,11,129,3,111,4,101,10,91,23,83,43,75,101,62,273,43,471,31,641,26"/>
 <area shape="rect" href="aa64cpu_8h.html" title=" " alt="" coords="163,93,317,119"/>
 <area shape="poly" title=" " alt="" coords="642,44,326,94,325,89,641,39"/>
@@ -118,6 +118,8 @@ Include dependency graph for kernel.h:</div>
 <area shape="poly" title=" " alt="" coords="800,43,955,87,954,92,798,48"/>
 <area shape="rect" href="otg_8h.html" title=" " alt="" coords="1155,93,1274,119"/>
 <area shape="poly" title=" " alt="" coords="826,40,1142,91,1141,96,825,45"/>
+<area shape="rect" href="size__t_8h.html" title=" " alt="" coords="45,240,117,265"/>
+<area shape="poly" title=" " alt="" coords="84,192,84,226,79,226,79,192"/>
 <area shape="poly" title=" " alt="" coords="216,121,121,163,118,159,213,116"/>
 <area shape="rect" title=" " alt="" coords="202,167,278,192"/>
 <area shape="poly" title=" " alt="" coords="243,119,243,153,237,153,237,119"/>
@@ -170,11 +172,11 @@ Macros</h2></td></tr>
 <tr class="separator:ab03c75c7039b9635c3b9afcceb8a4759"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a454f45c6964953eececcaea3d800617f" id="r_a454f45c6964953eececcaea3d800617f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel_8h.html#a454f45c6964953eececcaea3d800617f">kmalloc</a>(size,  flags)&#160;&#160;&#160;kmalloc(size)</td></tr>
 <tr class="separator:a454f45c6964953eececcaea3d800617f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86d666177e8f7ca864af308aa067cd5c" id="r_a86d666177e8f7ca864af308aa067cd5c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel_8h.html#a86d666177e8f7ca864af308aa067cd5c">kzalloc</a>(size,  flags)&#160;&#160;&#160;<a class="el" href="kmalloc_8h.html#a17882ab530f45651e2e7d83eae348047">kcalloc</a>(size)</td></tr>
+<tr class="memitem:a86d666177e8f7ca864af308aa067cd5c" id="r_a86d666177e8f7ca864af308aa067cd5c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel_8h.html#a86d666177e8f7ca864af308aa067cd5c">kzalloc</a>(size,  flags)&#160;&#160;&#160;<a class="el" href="kmalloc_8h.html#aaea3057b46b2881a10c65db828ffa5e1">kcalloc</a>(size)</td></tr>
 <tr class="separator:a86d666177e8f7ca864af308aa067cd5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8c317a42292b61c93aae91e59118a46" id="r_af8c317a42292b61c93aae91e59118a46"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel_8h.html#af8c317a42292b61c93aae91e59118a46">container_of</a>(ptr,  type,  member)&#160;&#160;&#160;     ((type*)((char*)(ptr)- <a class="el" href="kernel_8h.html#afd049f7ad59dbe455f460807475c2841">offsetof</a>(type,member)))</td></tr>
 <tr class="separator:af8c317a42292b61c93aae91e59118a46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd049f7ad59dbe455f460807475c2841" id="r_afd049f7ad59dbe455f460807475c2841"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel_8h.html#afd049f7ad59dbe455f460807475c2841">offsetof</a>(type,  member)&#160;&#160;&#160;     ((<a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>)&amp;((type*)0)-&gt;member)</td></tr>
+<tr class="memitem:afd049f7ad59dbe455f460807475c2841" id="r_afd049f7ad59dbe455f460807475c2841"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel_8h.html#afd049f7ad59dbe455f460807475c2841">offsetof</a>(type,  member)&#160;&#160;&#160;     ((<a class="el" href="size__t_8h.html#a1e1f4fe6f57edbe9d428d8fd39beb87a">size_t</a>)&amp;((type*)0)-&gt;member)</td></tr>
 <tr class="separator:afd049f7ad59dbe455f460807475c2841"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a531c4f08aa1262295102e1987746e8f7" id="r_a531c4f08aa1262295102e1987746e8f7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel_8h.html#a531c4f08aa1262295102e1987746e8f7">IS_ENABLED</a>(opt)&#160;&#160;&#160;(!!(opt))</td></tr>
 <tr class="separator:a531c4f08aa1262295102e1987746e8f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -234,7 +236,7 @@ Macros</h2></td></tr>
 <tr class="separator:a49e63edae9eb9230bccdd60c692e52e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9998f145d5911cecdac6aa347ad08559" id="r_a9998f145d5911cecdac6aa347ad08559"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel_8h.html#a9998f145d5911cecdac6aa347ad08559">MAX_ERRNO</a>&#160;&#160;&#160;4095</td></tr>
 <tr class="separator:a9998f145d5911cecdac6aa347ad08559"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab4defec03f8dc965be27f19aba24d265" id="r_ab4defec03f8dc965be27f19aba24d265"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel_8h.html#ab4defec03f8dc965be27f19aba24d265">IS_ERR_VALUE</a>(x)&#160;&#160;&#160;((x) &gt;= (<a class="el" href="BaseHdr_2stdint_8h.html#a19e3e47d795881e91fde03c3f592bef4">uintptr_t</a>)-<a class="el" href="kernel_8h.html#a9998f145d5911cecdac6aa347ad08559">MAX_ERRNO</a>)</td></tr>
+<tr class="memitem:ab4defec03f8dc965be27f19aba24d265" id="r_ab4defec03f8dc965be27f19aba24d265"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel_8h.html#ab4defec03f8dc965be27f19aba24d265">IS_ERR_VALUE</a>(x)&#160;&#160;&#160;((x) &gt;= (<a class="el" href="stdint_8h.html#a19e3e47d795881e91fde03c3f592bef4">uintptr_t</a>)-<a class="el" href="kernel_8h.html#a9998f145d5911cecdac6aa347ad08559">MAX_ERRNO</a>)</td></tr>
 <tr class="separator:ab4defec03f8dc965be27f19aba24d265"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55cc70ce0ba661298f3c412095dfeeb6" id="r_a55cc70ce0ba661298f3c412095dfeeb6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel_8h.html#a55cc70ce0ba661298f3c412095dfeeb6">EDEADLK</a>&#160;&#160;&#160;35</td></tr>
 <tr class="separator:a55cc70ce0ba661298f3c412095dfeeb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -417,13 +419,13 @@ Typedefs</h2></td></tr>
 <tr class="separator:a1fcbe0fe57dc78d034b654a327a171df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a575a6be7a3f079739f00e4ac7d75c785" id="r_a575a6be7a3f079739f00e4ac7d75c785"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel_8h.html#a575a6be7a3f079739f00e4ac7d75c785">__be64</a></td></tr>
 <tr class="separator:a575a6be7a3f079739f00e4ac7d75c785"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0713bd68bf871fc2133cbd3802f2468a" id="r_a0713bd68bf871fc2133cbd3802f2468a"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="BaseHdr_2stdint_8h.html#a19e3e47d795881e91fde03c3f592bef4">uintptr_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel_8h.html#a0713bd68bf871fc2133cbd3802f2468a">phys_addr_t</a></td></tr>
+<tr class="memitem:a0713bd68bf871fc2133cbd3802f2468a" id="r_a0713bd68bf871fc2133cbd3802f2468a"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="stdint_8h.html#a19e3e47d795881e91fde03c3f592bef4">uintptr_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel_8h.html#a0713bd68bf871fc2133cbd3802f2468a">phys_addr_t</a></td></tr>
 <tr class="separator:a0713bd68bf871fc2133cbd3802f2468a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ec757cd816c30cf4deea3d7f9653078" id="r_a7ec757cd816c30cf4deea3d7f9653078"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="BaseHdr_2stdint_8h.html#a19e3e47d795881e91fde03c3f592bef4">uintptr_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel_8h.html#a7ec757cd816c30cf4deea3d7f9653078">resource_size_t</a></td></tr>
+<tr class="memitem:a7ec757cd816c30cf4deea3d7f9653078" id="r_a7ec757cd816c30cf4deea3d7f9653078"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="stdint_8h.html#a19e3e47d795881e91fde03c3f592bef4">uintptr_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel_8h.html#a7ec757cd816c30cf4deea3d7f9653078">resource_size_t</a></td></tr>
 <tr class="separator:a7ec757cd816c30cf4deea3d7f9653078"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70f67be534a960099aea38c37c7331df" id="r_a70f67be534a960099aea38c37c7331df"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="BaseHdr_2stdint_8h.html#a19e3e47d795881e91fde03c3f592bef4">uintptr_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel_8h.html#a70f67be534a960099aea38c37c7331df">dma_addr_t</a></td></tr>
+<tr class="memitem:a70f67be534a960099aea38c37c7331df" id="r_a70f67be534a960099aea38c37c7331df"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="stdint_8h.html#a19e3e47d795881e91fde03c3f592bef4">uintptr_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel_8h.html#a70f67be534a960099aea38c37c7331df">dma_addr_t</a></td></tr>
 <tr class="separator:a70f67be534a960099aea38c37c7331df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd2372d9611d59052a8e2cfbe7834d8f" id="r_afd2372d9611d59052a8e2cfbe7834d8f"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="BaseHdr_2stdint_8h.html#a19e3e47d795881e91fde03c3f592bef4">uintptr_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel_8h.html#afd2372d9611d59052a8e2cfbe7834d8f">io_addr_t</a></td></tr>
+<tr class="memitem:afd2372d9611d59052a8e2cfbe7834d8f" id="r_afd2372d9611d59052a8e2cfbe7834d8f"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="stdint_8h.html#a19e3e47d795881e91fde03c3f592bef4">uintptr_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel_8h.html#afd2372d9611d59052a8e2cfbe7834d8f">io_addr_t</a></td></tr>
 <tr class="separator:afd2372d9611d59052a8e2cfbe7834d8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8229571968ef273d771ad747e87450b" id="r_ae8229571968ef273d771ad747e87450b"><td class="memItemLeft" align="right" valign="top">typedef int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel_8h.html#ae8229571968ef273d771ad747e87450b">spinlock_t</a></td></tr>
 <tr class="separator:ae8229571968ef273d771ad747e87450b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1620,7 +1622,7 @@ Typedefs</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">x</td><td>)</td>
-          <td>&#160;&#160;&#160;((x) &gt;= (<a class="el" href="BaseHdr_2stdint_8h.html#a19e3e47d795881e91fde03c3f592bef4">uintptr_t</a>)-<a class="el" href="kernel_8h.html#a9998f145d5911cecdac6aa347ad08559">MAX_ERRNO</a>)</td>
+          <td>&#160;&#160;&#160;((x) &gt;= (<a class="el" href="stdint_8h.html#a19e3e47d795881e91fde03c3f592bef4">uintptr_t</a>)-<a class="el" href="kernel_8h.html#a9998f145d5911cecdac6aa347ad08559">MAX_ERRNO</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1718,7 +1720,7 @@ Typedefs</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="kmalloc_8h.html#a17882ab530f45651e2e7d83eae348047">kcalloc</a>(size)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="kmalloc_8h.html#aaea3057b46b2881a10c65db828ffa5e1">kcalloc</a>(size)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1906,7 +1908,7 @@ Typedefs</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;     ((<a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>)&amp;((type*)0)-&gt;member)</td>
+          <td></td><td>&#160;&#160;&#160;     ((<a class="el" href="size__t_8h.html#a1e1f4fe6f57edbe9d428d8fd39beb87a">size_t</a>)&amp;((type*)0)-&gt;member)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2436,7 +2438,7 @@ Typedefs</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="BaseHdr_2stdint_8h.html#a19e3e47d795881e91fde03c3f592bef4">uintptr_t</a> <a class="el" href="kernel_8h.html#a70f67be534a960099aea38c37c7331df">dma_addr_t</a></td>
+          <td class="memname">typedef <a class="el" href="stdint_8h.html#a19e3e47d795881e91fde03c3f592bef4">uintptr_t</a> <a class="el" href="kernel_8h.html#a70f67be534a960099aea38c37c7331df">dma_addr_t</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2506,7 +2508,7 @@ Typedefs</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="BaseHdr_2stdint_8h.html#a19e3e47d795881e91fde03c3f592bef4">uintptr_t</a> <a class="el" href="kernel_8h.html#afd2372d9611d59052a8e2cfbe7834d8f">io_addr_t</a></td>
+          <td class="memname">typedef <a class="el" href="stdint_8h.html#a19e3e47d795881e91fde03c3f592bef4">uintptr_t</a> <a class="el" href="kernel_8h.html#afd2372d9611d59052a8e2cfbe7834d8f">io_addr_t</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2632,7 +2634,7 @@ Typedefs</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="BaseHdr_2stdint_8h.html#a19e3e47d795881e91fde03c3f592bef4">uintptr_t</a> <a class="el" href="kernel_8h.html#a0713bd68bf871fc2133cbd3802f2468a">phys_addr_t</a></td>
+          <td class="memname">typedef <a class="el" href="stdint_8h.html#a19e3e47d795881e91fde03c3f592bef4">uintptr_t</a> <a class="el" href="kernel_8h.html#a0713bd68bf871fc2133cbd3802f2468a">phys_addr_t</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2646,7 +2648,7 @@ Typedefs</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="BaseHdr_2stdint_8h.html#a19e3e47d795881e91fde03c3f592bef4">uintptr_t</a> <a class="el" href="kernel_8h.html#a7ec757cd816c30cf4deea3d7f9653078">resource_size_t</a></td>
+          <td class="memname">typedef <a class="el" href="stdint_8h.html#a19e3e47d795881e91fde03c3f592bef4">uintptr_t</a> <a class="el" href="kernel_8h.html#a7ec757cd816c30cf4deea3d7f9653078">resource_size_t</a></td>
         </tr>
       </table>
 </div><div class="memdoc">

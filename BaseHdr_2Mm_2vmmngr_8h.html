@@ -79,7 +79,7 @@ $(function() {
   <div class="headertitle"><div class="title">vmmngr.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="stdint_8h_source.html">stdint.h</a>&gt;</code><br />
 <code>#include &lt;aurora.h&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for vmmngr.h:</div>
@@ -87,10 +87,12 @@ Include dependency graph for vmmngr.h:</div>
 <div class="center"><img src="BaseHdr_2Mm_2vmmngr_8h__incl.png" border="0" usemap="#aXenevaOS_2BaseHdr_2Mm_2vmmngr_8h" alt=""/></div>
 <map name="aXenevaOS_2BaseHdr_2Mm_2vmmngr_8h" id="aXenevaOS_2BaseHdr_2Mm_2vmmngr_8h">
 <area shape="rect" title=" " alt="" coords="5,5,183,45"/>
-<area shape="rect" title=" " alt="" coords="11,93,81,119"/>
+<area shape="rect" href="stdint_8h.html" title=" " alt="" coords="11,93,81,119"/>
 <area shape="poly" title=" " alt="" coords="85,47,63,83,58,80,80,44"/>
 <area shape="rect" title=" " alt="" coords="105,93,181,119"/>
 <area shape="poly" title=" " alt="" coords="108,44,131,80,127,83,104,47"/>
+<area shape="rect" href="size__t_8h.html" title=" " alt="" coords="10,167,82,192"/>
+<area shape="poly" title=" " alt="" coords="49,119,49,153,43,153,43,119"/>
 </map>
 </div>
 </div>
@@ -168,13 +170,13 @@ Functions</h2></td></tr>
 <tr class="memitem:a3cda247205805f2306bd3b7896bfc229" id="r_a3cda247205805f2306bd3b7896bfc229"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> <a class="el" href="stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BaseHdr_2Mm_2vmmngr_8h.html#a3cda247205805f2306bd3b7896bfc229">AuMapPageEx</a> (<a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> *pml4i, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> phys_addr, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> virt_addr, <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> attrib)</td></tr>
 <tr class="memdesc:a3cda247205805f2306bd3b7896bfc229"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuMapPageEx &ndash; Maps a virtual page to physical frame in given page level.  <br /></td></tr>
 <tr class="separator:a3cda247205805f2306bd3b7896bfc229"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8274f1f82fe47bfaff91432966b368bb" id="r_a8274f1f82fe47bfaff91432966b368bb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BaseHdr_2Mm_2vmmngr_8h.html#a8274f1f82fe47bfaff91432966b368bb">AuMapMMIO</a> (<a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> phys_addr, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> page_count)</td></tr>
+<tr class="memitem:a8274f1f82fe47bfaff91432966b368bb" id="r_a8274f1f82fe47bfaff91432966b368bb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BaseHdr_2Mm_2vmmngr_8h.html#a8274f1f82fe47bfaff91432966b368bb">AuMapMMIO</a> (<a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> phys_addr, <a class="el" href="size__t_8h.html#a1e1f4fe6f57edbe9d428d8fd39beb87a">size_t</a> page_count)</td></tr>
 <tr class="memdesc:a8274f1f82fe47bfaff91432966b368bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuMapMMIO &ndash; Maps Memory Mapped I/O addresses.  <br /></td></tr>
 <tr class="separator:a8274f1f82fe47bfaff91432966b368bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9201f0640eb0ab1c17f96c28f1595a94" id="r_a9201f0640eb0ab1c17f96c28f1595a94"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BaseHdr_2Mm_2vmmngr_8h.html#a9201f0640eb0ab1c17f96c28f1595a94">AuGetFreePage</a> (<a class="el" href="stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> user, void *ptr)</td></tr>
 <tr class="memdesc:a9201f0640eb0ab1c17f96c28f1595a94"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuGetFreePage &ndash; Checks for free page.  <br /></td></tr>
 <tr class="separator:a9201f0640eb0ab1c17f96c28f1595a94"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a150a5d70992648269dfaeb91ade45a80" id="r_a150a5d70992648269dfaeb91ade45a80"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BaseHdr_2Mm_2vmmngr_8h.html#a150a5d70992648269dfaeb91ade45a80">AuFreePages</a> (<a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> virt_addr, <a class="el" href="stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> free_physical, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> s)</td></tr>
+<tr class="memitem:a150a5d70992648269dfaeb91ade45a80" id="r_a150a5d70992648269dfaeb91ade45a80"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BaseHdr_2Mm_2vmmngr_8h.html#a150a5d70992648269dfaeb91ade45a80">AuFreePages</a> (<a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> virt_addr, <a class="el" href="stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> free_physical, <a class="el" href="size__t_8h.html#a1e1f4fe6f57edbe9d428d8fd39beb87a">size_t</a> s)</td></tr>
 <tr class="memdesc:a150a5d70992648269dfaeb91ade45a80"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuFreePages &ndash; frees up contiguous pages.  <br /></td></tr>
 <tr class="separator:a150a5d70992648269dfaeb91ade45a80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7563accf06a23f2598920f85a0a551ba" id="r_a7563accf06a23f2598920f85a0a551ba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BaseHdr_2Mm_2vmmngr_8h.html#a7563accf06a23f2598920f85a0a551ba">AuUpdatePageFlags</a> (<a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> virt_addr, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> flags)</td></tr>
@@ -649,7 +651,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="size__t_8h.html#a1e1f4fe6f57edbe9d428d8fd39beb87a">size_t</a>&#160;</td>
           <td class="paramname"><em>s</em>&#160;</td>
         </tr>
         <tr>
@@ -806,7 +808,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="size__t_8h.html#a1e1f4fe6f57edbe9d428d8fd39beb87a">size_t</a>&#160;</td>
           <td class="paramname"><em>page_count</em>&#160;</td>
         </tr>
         <tr>

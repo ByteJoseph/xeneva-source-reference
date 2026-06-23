@@ -6,7 +6,7 @@ var searchData=
   ['get_5fconfig_5fdesc_5fcallback_3',['get_config_desc_callback',['../BaseHdr_2Drivers_2usb_8h.html#a13af653f3e49b9fb2f7d993673d33714',1,'usb.h']]],
   ['get_5fdescriptor_5fcallback_4',['get_descriptor_callback',['../BaseHdr_2Drivers_2usb_8h.html#ac084763dc4f97e4440e5eb1c89a13bee',1,'usb.h']]],
   ['get_5fdevice_5fdesc_5fcallback_5',['get_device_desc_callback',['../BaseHdr_2Drivers_2usb_8h.html#a507131fd49b3997948ec957a734be0a8',1,'usb.h']]],
-  ['get_5fdisk_5fblock_6',['get_disk_block',['../vfs_8h.html#a654a21c8a981858551b281b8f500eafb',1,'vfs.h']]],
+  ['get_5fdisk_5fblock_5fcb_6',['get_disk_block_cb',['../vfs_8h.html#a4ef4d7a76e66864ec976dd7dce1a4ff8',1,'vfs.h']]],
   ['get_5fendpoint_7',['get_endpoint',['../BaseHdr_2Drivers_2usb_8h.html#af2bbed2c2adc0da4e429081b4f746442',1,'usb.h']]],
   ['get_5fendpoint_5faddress_8',['get_endpoint_address',['../BaseHdr_2Drivers_2usb_8h.html#a3ed93010eaa6f8b05397ba621dd38fa9',1,'usb.h']]],
   ['get_5fendpoint_5fattrib_9',['get_endpoint_attrib',['../BaseHdr_2Drivers_2usb_8h.html#a4dc085e12484318110de932a2067fc13',1,'usb.h']]],

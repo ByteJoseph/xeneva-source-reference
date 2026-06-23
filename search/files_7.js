@@ -14,5 +14,6 @@ var searchData=
   ['gridview_2ecpp_11',['gridview.cpp',['../gridview_8cpp.html',1,'']]],
   ['gridview_2eh_12',['gridview.h',['../gridview_8h.html',1,'']]],
   ['group_2eh_13',['group.h',['../group_8h.html',1,'']]],
-  ['guidedsectionextraction_2eh_14',['guidedsectionextraction.h',['../Ppi_2GuidedSectionExtraction_8h.html',1,'(Global Namespace)'],['../Protocol_2GuidedSectionExtraction_8h.html',1,'(Global Namespace)']]]
+  ['guid_2ecpp_14',['guid.cpp',['../guid_8cpp.html',1,'']]],
+  ['guidedsectionextraction_2eh_15',['guidedsectionextraction.h',['../Ppi_2GuidedSectionExtraction_8h.html',1,'(Global Namespace)'],['../Protocol_2GuidedSectionExtraction_8h.html',1,'(Global Namespace)']]]
 ];

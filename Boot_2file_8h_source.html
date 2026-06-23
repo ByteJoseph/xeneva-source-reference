@@ -88,45 +88,60 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#include &quot;<a class="code" href="BootAA64_2xnldr_8h.html">xnldr.h</a>&quot;</span></div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#include &quot;<a class="code" href="BootAA64_2clib_8h.html">clib.h</a>&quot;</span></div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#include &quot;<a class="code" href="BootAA64_2xnout_8h.html">xnout.h</a>&quot;</span></div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#include &lt;<a class="code" href="Uefi_8h.html">Uefi.h</a>&gt;</span></div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="foldopen" id="foldopen00039" data-start="{" data-end="};">
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="struct__XEFILE__.html">   39</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="struct__XEFILE__.html">_XEFILE_</a> {</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="struct__XEFILE__.html#a8b631d4c40dd9bd34b5032fbcb1ec2b3">   40</a></span>    <a class="code hl_define" href="acefi_8h.html#a7f319bfc2492a2136964194204e7a8cf">VOID</a>* <a class="code hl_variable" href="struct__XEFILE__.html#a8b631d4c40dd9bd34b5032fbcb1ec2b3">kBuffer</a>;</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="struct__XEFILE__.html#a993a6fba1bb8c66b05774fb669ef2b49">   41</a></span>    <a class="code hl_typedef" href="AArch64_2ProcessorBind_8h.html#a4a2fc3b6f740e9cca9f895579c167560">UINTN</a> <a class="code hl_variable" href="struct__XEFILE__.html#a993a6fba1bb8c66b05774fb669ef2b49">FileSize</a>;</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="Boot_2file_8h.html#a5a2318fbe7916980221130264b2db16a">   42</a></span>}<a class="code hl_typedef" href="Boot_2file_8h.html#a5a2318fbe7916980221130264b2db16a">XEFile</a>;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#ifdef _MSC_VER</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">    #include &lt;<a class="code" href="Uefi_8h.html">Uefi.h</a>&gt;</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">    #include &lt;<a class="code" href="SimpleFileSystem_8h.html">Protocol/SimpleFileSystem.h</a>&gt;</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">    #include &lt;<a class="code" href="Protocol_2LoadFile_8h.html">Protocol/LoadFile.h</a>&gt;</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">    #include &lt;<a class="code" href="LoadedImage_8h.html">Protocol/LoadedImage.h</a>&gt;</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">    #include &lt;<a class="code" href="FileInfo_8h.html">Guid/FileInfo.h</a>&gt;</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="preprocessor">    #include &lt;<a class="code" href="FileSystemInfo_8h.html">Guid/FileSystemInfo.h</a>&gt;</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="preprocessor">#elif __GNUC__</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">    #include &lt;efi/efi.h&gt;</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="preprocessor">    #include &lt;efi/efilib.h&gt;</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="foldopen" id="foldopen00049" data-start="{" data-end="};">
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="struct__XEFILE__.html">   49</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="struct__XEFILE__.html">_XEFILE_</a> {</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="struct__XEFILE__.html#a8b631d4c40dd9bd34b5032fbcb1ec2b3">   50</a></span>    <a class="code hl_define" href="acefi_8h.html#a7f319bfc2492a2136964194204e7a8cf">VOID</a>* <a class="code hl_variable" href="struct__XEFILE__.html#a8b631d4c40dd9bd34b5032fbcb1ec2b3">kBuffer</a>;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="struct__XEFILE__.html#a993a6fba1bb8c66b05774fb669ef2b49">   51</a></span>    <a class="code hl_typedef" href="AArch64_2ProcessorBind_8h.html#a4a2fc3b6f740e9cca9f895579c167560">UINTN</a> <a class="code hl_variable" href="struct__XEFILE__.html#a993a6fba1bb8c66b05774fb669ef2b49">FileSize</a>;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="Boot_2file_8h.html#a5a2318fbe7916980221130264b2db16a">   52</a></span>}<a class="code hl_typedef" href="Boot_2file_8h.html#a5a2318fbe7916980221130264b2db16a">XEFile</a>;</div>
 </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment"> * XEOpenAndReadFile -- open and reads a file</span></div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment"> * @param ImageHandle -- Image handle passed by EFI firmware</span></div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment"> * @param Filename -- name and path of the file</span></div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="keyword">extern</span> <a class="code hl_struct" href="struct__XEFILE__.html">XEFile</a>* <a class="code hl_function" href="Boot_2file_8h.html#ac8fdc583bf9ca1c2c19e3070d3d710cd">XEOpenAndReadFile</a>(<a class="code hl_typedef" href="UefiBaseType_8h.html#af943d518ce8a229e7e51ce3fed0e3122">EFI_HANDLE</a> ImageHandle, <a class="code hl_typedef" href="AArch64_2ProcessorBind_8h.html#a7ae886893bd2a2ae253eb2b021a48724">CHAR16</a>* Filename);</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment"> * XECloseFile -- Close an opened file</span></div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment"> * it just free up the buffer allocated</span></div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment"> * @param file -- Pointer to the file buffer</span></div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="keyword">extern</span> <a class="code hl_define" href="acefi_8h.html#a7f319bfc2492a2136964194204e7a8cf">VOID</a> <a class="code hl_function" href="Boot_2file_8h.html#aa2eee8ebfac754020bca0ba4838f297e">XECloseFile</a>(<a class="code hl_struct" href="struct__XEFILE__.html">XEFile</a>* file);</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment"> * XEOpenAndReadFile -- open and reads a file</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment"> * @param ImageHandle -- Image handle passed by EFI firmware</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment"> * @param Filename -- name and path of the file</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="keyword">extern</span> <a class="code hl_struct" href="struct__XEFILE__.html">XEFile</a>* <a class="code hl_function" href="Boot_2file_8h.html#ac8fdc583bf9ca1c2c19e3070d3d710cd">XEOpenAndReadFile</a>(<a class="code hl_typedef" href="UefiBaseType_8h.html#af943d518ce8a229e7e51ce3fed0e3122">EFI_HANDLE</a> ImageHandle, <a class="code hl_typedef" href="AArch64_2ProcessorBind_8h.html#a7ae886893bd2a2ae253eb2b021a48724">CHAR16</a>* Filename);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment"> * XECloseFile -- Close an opened file</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment"> * it just free up the buffer allocated</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment"> * @param file -- Pointer to the file buffer</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="keyword">extern</span> <a class="code hl_define" href="acefi_8h.html#a7f319bfc2492a2136964194204e7a8cf">VOID</a> <a class="code hl_function" href="Boot_2file_8h.html#aa2eee8ebfac754020bca0ba4838f297e">XECloseFile</a>(<a class="code hl_struct" href="struct__XEFILE__.html">XEFile</a>* file);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aAArch64_2ProcessorBind_8h_html_a4a2fc3b6f740e9cca9f895579c167560"><div class="ttname"><a href="AArch64_2ProcessorBind_8h.html#a4a2fc3b6f740e9cca9f895579c167560">UINTN</a></div><div class="ttdeci">UINT64 UINTN</div><div class="ttdef"><b>Definition</b> ProcessorBind.h:118</div></div>
 <div class="ttc" id="aAArch64_2ProcessorBind_8h_html_a7ae886893bd2a2ae253eb2b021a48724"><div class="ttname"><a href="AArch64_2ProcessorBind_8h.html#a7ae886893bd2a2ae253eb2b021a48724">CHAR16</a></div><div class="ttdeci">unsigned short CHAR16</div><div class="ttdef"><b>Definition</b> ProcessorBind.h:105</div></div>
 <div class="ttc" id="aBootAA64_2clib_8h_html"><div class="ttname"><a href="BootAA64_2clib_8h.html">clib.h</a></div></div>
 <div class="ttc" id="aBootAA64_2xnldr_8h_html"><div class="ttname"><a href="BootAA64_2xnldr_8h.html">xnldr.h</a></div></div>
 <div class="ttc" id="aBootAA64_2xnout_8h_html"><div class="ttname"><a href="BootAA64_2xnout_8h.html">xnout.h</a></div></div>
 <div class="ttc" id="aBoot_2file_8h_html_a5a2318fbe7916980221130264b2db16a"><div class="ttname"><a href="Boot_2file_8h.html#a5a2318fbe7916980221130264b2db16a">XEFile</a></div><div class="ttdeci">struct _XEFILE_ XEFile</div></div>
-<div class="ttc" id="aBoot_2file_8h_html_aa2eee8ebfac754020bca0ba4838f297e"><div class="ttname"><a href="Boot_2file_8h.html#aa2eee8ebfac754020bca0ba4838f297e">XECloseFile</a></div><div class="ttdeci">VOID XECloseFile(XEFile *file)</div><div class="ttdef"><b>Definition</b> file.cpp:170</div></div>
-<div class="ttc" id="aBoot_2file_8h_html_ac8fdc583bf9ca1c2c19e3070d3d710cd"><div class="ttname"><a href="Boot_2file_8h.html#ac8fdc583bf9ca1c2c19e3070d3d710cd">XEOpenAndReadFile</a></div><div class="ttdeci">XEFile * XEOpenAndReadFile(EFI_HANDLE ImageHandle, CHAR16 *Filename)</div><div class="ttdef"><b>Definition</b> file.cpp:73</div></div>
+<div class="ttc" id="aBoot_2file_8h_html_aa2eee8ebfac754020bca0ba4838f297e"><div class="ttname"><a href="Boot_2file_8h.html#aa2eee8ebfac754020bca0ba4838f297e">XECloseFile</a></div><div class="ttdeci">VOID XECloseFile(XEFile *file)</div><div class="ttdef"><b>Definition</b> file.cpp:134</div></div>
+<div class="ttc" id="aBoot_2file_8h_html_ac8fdc583bf9ca1c2c19e3070d3d710cd"><div class="ttname"><a href="Boot_2file_8h.html#ac8fdc583bf9ca1c2c19e3070d3d710cd">XEOpenAndReadFile</a></div><div class="ttdeci">XEFile * XEOpenAndReadFile(EFI_HANDLE ImageHandle, CHAR16 *Filename)</div><div class="ttdef"><b>Definition</b> file.cpp:37</div></div>
+<div class="ttc" id="aFileInfo_8h_html"><div class="ttname"><a href="FileInfo_8h.html">FileInfo.h</a></div></div>
+<div class="ttc" id="aFileSystemInfo_8h_html"><div class="ttname"><a href="FileSystemInfo_8h.html">FileSystemInfo.h</a></div></div>
+<div class="ttc" id="aLoadedImage_8h_html"><div class="ttname"><a href="LoadedImage_8h.html">LoadedImage.h</a></div></div>
+<div class="ttc" id="aProtocol_2LoadFile_8h_html"><div class="ttname"><a href="Protocol_2LoadFile_8h.html">LoadFile.h</a></div></div>
+<div class="ttc" id="aSimpleFileSystem_8h_html"><div class="ttname"><a href="SimpleFileSystem_8h.html">SimpleFileSystem.h</a></div></div>
 <div class="ttc" id="aUefiBaseType_8h_html_af943d518ce8a229e7e51ce3fed0e3122"><div class="ttname"><a href="UefiBaseType_8h.html#af943d518ce8a229e7e51ce3fed0e3122">EFI_HANDLE</a></div><div class="ttdeci">VOID * EFI_HANDLE</div><div class="ttdef"><b>Definition</b> UefiBaseType.h:37</div></div>
 <div class="ttc" id="aUefi_8h_html"><div class="ttname"><a href="Uefi_8h.html">Uefi.h</a></div></div>
 <div class="ttc" id="aacefi_8h_html_a7f319bfc2492a2136964194204e7a8cf"><div class="ttname"><a href="acefi_8h.html#a7f319bfc2492a2136964194204e7a8cf">VOID</a></div><div class="ttdeci">#define VOID</div><div class="ttdef"><b>Definition</b> acefi.h:190</div></div>
-<div class="ttc" id="astruct__XEFILE___html"><div class="ttname"><a href="struct__XEFILE__.html">_XEFILE_</a></div><div class="ttdef"><b>Definition</b> file.h:39</div></div>
-<div class="ttc" id="astruct__XEFILE___html_a8b631d4c40dd9bd34b5032fbcb1ec2b3"><div class="ttname"><a href="struct__XEFILE__.html#a8b631d4c40dd9bd34b5032fbcb1ec2b3">_XEFILE_::kBuffer</a></div><div class="ttdeci">VOID * kBuffer</div><div class="ttdef"><b>Definition</b> file.h:40</div></div>
-<div class="ttc" id="astruct__XEFILE___html_a993a6fba1bb8c66b05774fb669ef2b49"><div class="ttname"><a href="struct__XEFILE__.html#a993a6fba1bb8c66b05774fb669ef2b49">_XEFILE_::FileSize</a></div><div class="ttdeci">UINTN FileSize</div><div class="ttdef"><b>Definition</b> file.h:41</div></div>
+<div class="ttc" id="astruct__XEFILE___html"><div class="ttname"><a href="struct__XEFILE__.html">_XEFILE_</a></div><div class="ttdef"><b>Definition</b> file.h:49</div></div>
+<div class="ttc" id="astruct__XEFILE___html_a8b631d4c40dd9bd34b5032fbcb1ec2b3"><div class="ttname"><a href="struct__XEFILE__.html#a8b631d4c40dd9bd34b5032fbcb1ec2b3">_XEFILE_::kBuffer</a></div><div class="ttdeci">VOID * kBuffer</div><div class="ttdef"><b>Definition</b> file.h:50</div></div>
+<div class="ttc" id="astruct__XEFILE___html_a993a6fba1bb8c66b05774fb669ef2b49"><div class="ttname"><a href="struct__XEFILE__.html#a993a6fba1bb8c66b05774fb669ef2b49">_XEFILE_::FileSize</a></div><div class="ttdeci">UINTN FileSize</div><div class="ttdef"><b>Definition</b> file.h:51</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

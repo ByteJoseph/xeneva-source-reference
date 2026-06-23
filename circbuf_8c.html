@@ -79,23 +79,29 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="circbuf_8h_source.html">circbuf.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="kmalloc_8h_source.html">Mm\kmalloc.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="kmalloc_8h_source.html">Mm/kmalloc.h</a>&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for circbuf.c:</div>
 <div class="dyncontent">
 <div class="center"><img src="circbuf_8c__incl.png" border="0" usemap="#aXenevaOS_2KernelAA64_2circbuf_8c" alt=""/></div>
 <map name="aXenevaOS_2KernelAA64_2circbuf_8c" id="aXenevaOS_2KernelAA64_2circbuf_8c">
-<area shape="rect" title=" " alt="" coords="20,5,188,45"/>
-<area shape="rect" href="circbuf_8h.html" title=" " alt="" coords="5,93,83,119"/>
-<area shape="poly" title=" " alt="" coords="92,47,63,84,59,81,87,44"/>
-<area shape="rect" href="kmalloc_8h.html" title=" " alt="" coords="107,93,221,119"/>
-<area shape="poly" title=" " alt="" coords="121,44,149,81,145,84,116,47"/>
-<area shape="rect" href="BaseHdr_2stdint_8h.html" title=" " alt="" coords="9,167,79,192"/>
-<area shape="poly" title=" " alt="" coords="47,119,47,153,41,153,41,119"/>
-<area shape="rect" title=" " alt="" coords="115,167,186,192"/>
-<area shape="poly" title=" " alt="" coords="164,119,158,154,153,153,159,119"/>
-<area shape="rect" title=" " alt="" coords="210,167,286,192"/>
-<area shape="poly" title=" " alt="" coords="179,117,225,155,222,160,176,121"/>
+<area shape="rect" title=" " alt="" coords="65,5,233,45"/>
+<area shape="rect" href="circbuf_8h.html" title=" " alt="" coords="50,93,128,119"/>
+<area shape="poly" title=" " alt="" coords="137,47,108,84,104,81,132,44"/>
+<area shape="rect" href="kmalloc_8h.html" title=" " alt="" coords="182,93,297,119"/>
+<area shape="poly" title=" " alt="" coords="173,44,218,82,214,86,169,48"/>
+<area shape="rect" href="stdint_8h.html" title=" " alt="" coords="23,240,94,265"/>
+<area shape="poly" title=" " alt="" coords="64,121,35,140,22,153,12,168,8,184,13,199,35,229,31,232,8,202,3,184,7,166,18,149,32,136,62,116"/>
+<area shape="rect" href="stddef_8h.html" title=" " alt="" coords="21,167,96,192"/>
+<area shape="poly" title=" " alt="" coords="87,120,71,155,66,153,82,118"/>
+<area shape="rect" href="stdbool_8h.html" title=" " alt="" coords="120,167,202,192"/>
+<area shape="poly" title=" " alt="" coords="103,117,142,155,138,159,99,121"/>
+<area shape="rect" href="size__t_8h.html" title=" " alt="" coords="22,313,94,339"/>
+<area shape="poly" title=" " alt="" coords="61,266,61,300,56,300,56,266"/>
+<area shape="poly" title=" " alt="" coords="61,192,61,226,56,226,56,192"/>
+<area shape="poly" title=" " alt="" coords="242,119,236,155,229,176,216,194,192,214,164,229,108,247,106,242,162,224,189,210,212,190,224,173,231,154,237,118"/>
+<area shape="rect" title=" " alt="" coords="278,167,354,192"/>
+<area shape="poly" title=" " alt="" coords="254,117,295,155,292,159,250,121"/>
 </map>
 </div>
 </div><table class="memberdecls">
@@ -110,16 +116,16 @@ Functions</h2></td></tr>
 <tr class="memitem:a9301db287ced78512059228ba365c726" id="r_a9301db287ced78512059228ba365c726"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circbuf_8c.html#a9301db287ced78512059228ba365c726">AuCircBufReset</a> (<a class="el" href="circbuf_8h.html#a762c58b651c016716f49a038e3b94aca">CircBuffer</a> *cbuf)</td></tr>
 <tr class="memdesc:a9301db287ced78512059228ba365c726"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuCircBufReset &ndash; reset the entire buffer.  <br /></td></tr>
 <tr class="separator:a9301db287ced78512059228ba365c726"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f3b828f65993db999b4d0768efe6ac1" id="r_a0f3b828f65993db999b4d0768efe6ac1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="circbuf_8h.html#a762c58b651c016716f49a038e3b94aca">CircBuffer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circbuf_8c.html#a0f3b828f65993db999b4d0768efe6ac1">AuCircBufInitialise</a> (<a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buffer, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> sz)</td></tr>
+<tr class="memitem:a0f3b828f65993db999b4d0768efe6ac1" id="r_a0f3b828f65993db999b4d0768efe6ac1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="circbuf_8h.html#a762c58b651c016716f49a038e3b94aca">CircBuffer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circbuf_8c.html#a0f3b828f65993db999b4d0768efe6ac1">AuCircBufInitialise</a> (<a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buffer, <a class="el" href="size__t_8h.html#a1e1f4fe6f57edbe9d428d8fd39beb87a">size_t</a> sz)</td></tr>
 <tr class="memdesc:a0f3b828f65993db999b4d0768efe6ac1"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuCircBufInitialise &ndash; initialise a new circular buffer.  <br /></td></tr>
 <tr class="separator:a0f3b828f65993db999b4d0768efe6ac1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e9f576a820d67a155d744e7b8cccb19" id="r_a2e9f576a820d67a155d744e7b8cccb19"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circbuf_8c.html#a2e9f576a820d67a155d744e7b8cccb19">AuCircBufFree</a> (<a class="el" href="circbuf_8h.html#a762c58b651c016716f49a038e3b94aca">CircBuffer</a> *cbuf)</td></tr>
 <tr class="memdesc:a2e9f576a820d67a155d744e7b8cccb19"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuCircBufFree &ndash; free a circular buffer.  <br /></td></tr>
 <tr class="separator:a2e9f576a820d67a155d744e7b8cccb19"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab764165a3a817ac0b277ec4330c22e53" id="r_ab764165a3a817ac0b277ec4330c22e53"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circbuf_8c.html#ab764165a3a817ac0b277ec4330c22e53">AuCircBufSize</a> (<a class="el" href="circbuf_8h.html#a762c58b651c016716f49a038e3b94aca">CircBuffer</a> *cbuf)</td></tr>
+<tr class="memitem:ab764165a3a817ac0b277ec4330c22e53" id="r_ab764165a3a817ac0b277ec4330c22e53"><td class="memItemLeft" align="right" valign="top"><a class="el" href="size__t_8h.html#a1e1f4fe6f57edbe9d428d8fd39beb87a">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circbuf_8c.html#ab764165a3a817ac0b277ec4330c22e53">AuCircBufSize</a> (<a class="el" href="circbuf_8h.html#a762c58b651c016716f49a038e3b94aca">CircBuffer</a> *cbuf)</td></tr>
 <tr class="memdesc:ab764165a3a817ac0b277ec4330c22e53"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuCircBufSize &ndash; returns the circular buffer size.  <br /></td></tr>
 <tr class="separator:ab764165a3a817ac0b277ec4330c22e53"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d64bd359f9f512e17eb2c771b5bb200" id="r_a0d64bd359f9f512e17eb2c771b5bb200"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circbuf_8c.html#a0d64bd359f9f512e17eb2c771b5bb200">AuCircBufCapacity</a> (<a class="el" href="circbuf_8h.html#a762c58b651c016716f49a038e3b94aca">CircBuffer</a> *cbuf)</td></tr>
+<tr class="memitem:a0d64bd359f9f512e17eb2c771b5bb200" id="r_a0d64bd359f9f512e17eb2c771b5bb200"><td class="memItemLeft" align="right" valign="top"><a class="el" href="size__t_8h.html#a1e1f4fe6f57edbe9d428d8fd39beb87a">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circbuf_8c.html#a0d64bd359f9f512e17eb2c771b5bb200">AuCircBufCapacity</a> (<a class="el" href="circbuf_8h.html#a762c58b651c016716f49a038e3b94aca">CircBuffer</a> *cbuf)</td></tr>
 <tr class="memdesc:a0d64bd359f9f512e17eb2c771b5bb200"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuCircBufCapacity &ndash; returns the circular buffer capacity.  <br /></td></tr>
 <tr class="separator:a0d64bd359f9f512e17eb2c771b5bb200"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8620dc5fc05db4463407f4c5d0b0992" id="r_ab8620dc5fc05db4463407f4c5d0b0992"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circbuf_8c.html#ab8620dc5fc05db4463407f4c5d0b0992">AuCircBufPutData</a> (<a class="el" href="circbuf_8h.html#a762c58b651c016716f49a038e3b94aca">CircBuffer</a> *cbuf, <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> data)</td></tr>
@@ -181,7 +187,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> AuCircBufCapacity </td>
+          <td class="memname"><a class="el" href="size__t_8h.html#a1e1f4fe6f57edbe9d428d8fd39beb87a">size_t</a> AuCircBufCapacity </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="circbuf_8h.html#a762c58b651c016716f49a038e3b94aca">CircBuffer</a> *&#160;</td>
           <td class="paramname"><em>cbuf</em></td><td>)</td>
@@ -272,7 +278,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="size__t_8h.html#a1e1f4fe6f57edbe9d428d8fd39beb87a">size_t</a>&#160;</td>
           <td class="paramname"><em>sz</em>&#160;</td>
         </tr>
         <tr>
@@ -401,7 +407,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> AuCircBufSize </td>
+          <td class="memname"><a class="el" href="size__t_8h.html#a1e1f4fe6f57edbe9d428d8fd39beb87a">size_t</a> AuCircBufSize </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="circbuf_8h.html#a762c58b651c016716f49a038e3b94aca">CircBuffer</a> *&#160;</td>
           <td class="paramname"><em>cbuf</em></td><td>)</td>

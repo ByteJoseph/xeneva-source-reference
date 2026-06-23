@@ -222,6 +222,7 @@ var searchData=
   ['ipv4_5fdevice_5fpath_219',['IPv4_DEVICE_PATH',['../structIPv4__DEVICE__PATH.html',1,'']]],
   ['ipv6_5faddress_220',['IPv6_ADDRESS',['../structIPv6__ADDRESS.html',1,'']]],
   ['ipv6_5fdevice_5fpath_221',['IPv6_DEVICE_PATH',['../structIPv6__DEVICE__PATH.html',1,'']]],
-  ['iscsi_5fdevice_5fpath_222',['ISCSI_DEVICE_PATH',['../structISCSI__DEVICE__PATH.html',1,'']]],
-  ['itanium_5fhandoff_5fstatus_223',['ITANIUM_HANDOFF_STATUS',['../structITANIUM__HANDOFF__STATUS.html',1,'']]]
+  ['is_5fptr_5for_5fuint64_222',['is_ptr_or_uint64',['../structis__ptr__or__uint64.html',1,'']]],
+  ['iscsi_5fdevice_5fpath_223',['ISCSI_DEVICE_PATH',['../structISCSI__DEVICE__PATH.html',1,'']]],
+  ['itanium_5fhandoff_5fstatus_224',['ITANIUM_HANDOFF_STATUS',['../structITANIUM__HANDOFF__STATUS.html',1,'']]]
 ];

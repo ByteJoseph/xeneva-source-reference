@@ -82,15 +82,21 @@ $(function() {
   <div class="headertitle"><div class="title">x86_64_gdt.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="stdint_8h_source.html">stdint.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="stddef_8h_source.html">stddef.h</a>&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for x86_64_gdt.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="x86__64__gdt_8h__incl.png" border="0" usemap="#aXenevaOS_2BaseHdr_2Hal_2x86__64__gdt_8h" alt=""/></div>
 <map name="aXenevaOS_2BaseHdr_2Hal_2x86__64__gdt_8h" id="aXenevaOS_2BaseHdr_2Hal_2x86__64__gdt_8h">
 <area shape="rect" title=" " alt="" coords="5,5,180,45"/>
-<area shape="rect" title=" " alt="" coords="57,93,128,119"/>
-<area shape="poly" title=" " alt="" coords="95,46,95,79,90,79,90,46"/>
+<area shape="rect" href="stdint_8h.html" title=" " alt="" coords="57,167,128,192"/>
+<area shape="poly" title=" " alt="" coords="90,46,84,80,83,118,89,153,84,153,78,119,79,79,85,45"/>
+<area shape="rect" href="stddef_8h.html" title=" " alt="" coords="93,93,167,119"/>
+<area shape="poly" title=" " alt="" coords="104,44,121,80,116,82,99,47"/>
+<area shape="rect" href="size__t_8h.html" title=" " alt="" coords="57,240,129,265"/>
+<area shape="poly" title=" " alt="" coords="95,192,95,226,90,226,90,192"/>
+<area shape="poly" title=" " alt="" coords="126,120,107,156,103,153,121,118"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -254,7 +260,7 @@ Functions</h2></td></tr>
 <tr class="separator:abe0019f5b9732e13e7122e152e4b1aea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85dce6a9f5c3953e8a413aa67f35fe0f" id="r_a85dce6a9f5c3953e8a413aa67f35fe0f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="x86__64__gdt_8h.html#a85dce6a9f5c3953e8a413aa67f35fe0f">x86_64_hal_init_gdt_ap</a> ()</td></tr>
 <tr class="separator:a85dce6a9f5c3953e8a413aa67f35fe0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76ce8bd9ea6ebc67ec3bc9e83e70a879" id="r_a76ce8bd9ea6ebc67ec3bc9e83e70a879"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="x86__64__gdt_8h.html#a76ce8bd9ea6ebc67ec3bc9e83e70a879">set_gdt_entry</a> (<a class="el" href="x86__64__gdt_8h.html#a673d5c4bad883e9755028e57f8251d21">gdt_entry</a> &amp;<a class="el" href="process_8h.html#a12532d9e7797b0d9089521c02528e113">entry</a>, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> base, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> limit, <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> access, <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> flags)</td></tr>
+<tr class="memitem:a76ce8bd9ea6ebc67ec3bc9e83e70a879" id="r_a76ce8bd9ea6ebc67ec3bc9e83e70a879"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="x86__64__gdt_8h.html#a76ce8bd9ea6ebc67ec3bc9e83e70a879">set_gdt_entry</a> (<a class="el" href="x86__64__gdt_8h.html#a673d5c4bad883e9755028e57f8251d21">gdt_entry</a> &amp;<a class="el" href="process_8h.html#a12532d9e7797b0d9089521c02528e113">entry</a>, <a class="el" href="size__t_8h.html#a1e1f4fe6f57edbe9d428d8fd39beb87a">size_t</a> base, <a class="el" href="size__t_8h.html#a1e1f4fe6f57edbe9d428d8fd39beb87a">size_t</a> limit, <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> access, <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> flags)</td></tr>
 <tr class="separator:a76ce8bd9ea6ebc67ec3bc9e83e70a879"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
@@ -691,13 +697,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="size__t_8h.html#a1e1f4fe6f57edbe9d428d8fd39beb87a">size_t</a>&#160;</td>
           <td class="paramname"><em>base</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="size__t_8h.html#a1e1f4fe6f57edbe9d428d8fd39beb87a">size_t</a>&#160;</td>
           <td class="paramname"><em>limit</em>, </td>
         </tr>
         <tr>

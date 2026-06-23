@@ -87,93 +87,97 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#include &quot;<a class="code" href="BootAA64_2xnldr_8h.html">xnldr.h</a>&quot;</span></div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#include &quot;<a class="code" href="Libs_2Chitralekha_2font_8h.html">font.h</a>&quot;</span></div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#include &lt;<a class="code" href="UefiBootServicesTableLib_8h.html">Library/UefiBootServicesTableLib.h</a>&gt;</span></div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#include &lt;<a class="code" href="UefiLib_8h.html">Library/UefiLib.h</a>&gt;</span></div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#include &quot;<a class="code" href="BootAA64_2clib_8h.html">clib.h</a>&quot;</span></div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="foldopen" id="foldopen00040" data-start="" data-end="">
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="Boot_2video_8h.html#a4a118ad3ee36468a3fa616977a64864e">   40</a></span><span class="preprocessor">#define RGB(r, g, b) \</span></div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">             ((r &amp; 0xFF) | ((g &lt;&lt; 8)&amp;0xFF00) | ((b &lt;&lt; 16)&amp;0xFF0000))</span></div>
-</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#include &quot;<a class="code" href="BootAA64_2clib_8h.html">clib.h</a>&quot;</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#ifdef _MSC_VER</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">    #include &lt;<a class="code" href="UefiBootServicesTableLib_8h.html">Library/UefiBootServicesTableLib.h</a>&gt;</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">    #include &lt;<a class="code" href="UefiLib_8h.html">Library/UefiLib.h</a>&gt;</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#elif __GNUC__</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">    #include &lt;efi/efi.h&gt;</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="foldopen" id="foldopen00043" data-start="" data-end="">
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="Boot_2video_8h.html#a72a10836d865ae348c00a803081486f4">   43</a></span><span class="preprocessor">#define RED(col)\</span></div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">             (col &amp; 0xFF)</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="foldopen" id="foldopen00044" data-start="" data-end="">
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="Boot_2video_8h.html#a4a118ad3ee36468a3fa616977a64864e">   44</a></span><span class="preprocessor">#define RGB(r, g, b) \</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="preprocessor">             ((r &amp; 0xFF) | ((g &lt;&lt; 8)&amp;0xFF00) | ((b &lt;&lt; 16)&amp;0xFF0000))</span></div>
 </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="foldopen" id="foldopen00046" data-start="" data-end="">
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="Boot_2video_8h.html#a4347da4a277cdccf4596e11fe17743fb">   46</a></span><span class="preprocessor">#define GREEN(col)\</span></div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="preprocessor">    ((col&gt;&gt;8) &amp; 0xFF)</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="foldopen" id="foldopen00047" data-start="" data-end="">
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="Boot_2video_8h.html#a72a10836d865ae348c00a803081486f4">   47</a></span><span class="preprocessor">#define RED(col)\</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="preprocessor">             (col &amp; 0xFF)</span></div>
 </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
-<div class="foldopen" id="foldopen00049" data-start="" data-end="">
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="Boot_2video_8h.html#a83bb2d6f1bb04c16d413441f468d61cb">   49</a></span><span class="preprocessor">#define BLUE(col) \</span></div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="preprocessor">    ((col&gt;&gt;16) &amp; 0xFF)</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="foldopen" id="foldopen00050" data-start="" data-end="">
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="Boot_2video_8h.html#a4347da4a277cdccf4596e11fe17743fb">   50</a></span><span class="preprocessor">#define GREEN(col)\</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="preprocessor">    ((col&gt;&gt;8) &amp; 0xFF)</span></div>
 </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment"> * XEInitialiseGraphics -- Initialise the screen and store graphics</span></div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment"> * information in fbinfo structure</span></div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment"> * @GraphicsOutput -- Pointer to Graphics Output protocol</span></div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="keyword">extern</span> <a class="code hl_typedef" href="UefiBaseType_8h.html#a5f446f35c9f907a4f1cf22e794ba338d">EFI_STATUS</a> <a class="code hl_function" href="Boot_2video_8h.html#a0d1c2385f3e4014127e00656c892e7e0">XEInitialiseGraphics</a>(<a class="code hl_struct" href="struct__EFI__GRAPHICS__OUTPUT__PROTOCOL.html">EFI_GRAPHICS_OUTPUT_PROTOCOL</a>* GraphicsOutput);</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment"> * XEPutPixel -- puts a pixel on the screen</span></div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="comment"> * @param x -- x location of the screen</span></div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment"> * @param y -- y location of the screen</span></div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment"> * @param col -- color of the pixel</span></div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code hl_function" href="Boot_2video_8h.html#a581d587816fcbdb695f30a1f88bf32a1">XEPutPixel</a>(<span class="keywordtype">size_t</span> x, <span class="keywordtype">size_t</span> y, <a class="code hl_typedef" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> col);</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment"> * XEGraphicsPutC -- put a character to the screen</span></div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment"> * @param str -- character to print</span></div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code hl_function" href="Boot_2video_8h.html#ab1532ab735018dd232bac4cb4377c8da">XEGraphicsPutC</a>(<span class="keywordtype">char</span> str);</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="comment"> * XEGraphicsPuts -- put string on the screen</span></div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="comment"> * @param str -- string to put</span></div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code hl_function" href="Boot_2video_8h.html#a1696dcec9ac909eb2c26c80c03860ff3">XEGraphicsPuts</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* str);</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="comment"> * XEGraphicsClearScreen -- clear the entire screen</span></div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="comment"> * @param gop -- Pointer to Graphics Output Protocol</span></div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code hl_function" href="Boot_2video_8h.html#a5d54b44100b841e63e48a30c25763506">XEGraphicsClearScreen</a>(<a class="code hl_struct" href="struct__EFI__GRAPHICS__OUTPUT__PROTOCOL.html">EFI_GRAPHICS_OUTPUT_PROTOCOL</a>* <a class="code hl_variable" href="Boot_2xnldr_8cpp.html#acc98a69626ae0d3a9711137605bb777d">gop</a>);</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="keyword">extern</span> <a class="code hl_typedef" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>* <a class="code hl_function" href="Boot_2video_8h.html#af6c4f11364de3e7b8e5f1356cfb44038">XEGetFramebuffer</a>();</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="keyword">extern</span> <a class="code hl_typedef" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> <a class="code hl_function" href="Boot_2video_8h.html#a23f1f88762de0213a361abcb681f99af">XEGetScreenWidth</a>();</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="keyword">extern</span> <a class="code hl_typedef" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> <a class="code hl_function" href="Boot_2video_8h.html#a10cb2de500f4f6b1761da44a2bdd14ac">XEGetScreenHeight</a>();</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="keyword">extern</span> <span class="keywordtype">size_t</span> <a class="code hl_function" href="Boot_2video_8h.html#a44fcc283d9c8e3f945e1ac9ef46caee7">XEGetFramebufferSz</a>();</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="keyword">extern</span> <span class="keywordtype">size_t</span> <a class="code hl_function" href="Boot_2video_8h.html#ae2e0a37100ddbc17c193f419a1b55543">XEGetPixelsPerLine</a>();</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="keyword">extern</span> <a class="code hl_typedef" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> <a class="code hl_function" href="Boot_2video_8h.html#a37e80e13ab46e3885b068caf0fb34c51">XEGetRedMask</a>();</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="keyword">extern</span> <a class="code hl_typedef" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> <a class="code hl_function" href="Boot_2video_8h.html#a5b2fdf23648203ab9c58057714244db8">XEGetBlueMask</a>();</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="keyword">extern</span> <a class="code hl_typedef" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> <a class="code hl_function" href="Boot_2video_8h.html#a0502d5437f7579258cfd68fb27a88d18">XEGetGreenMask</a>();</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="keyword">extern</span> <a class="code hl_typedef" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> <a class="code hl_function" href="Boot_2video_8h.html#a73188163c5263af5e855818e196c6252">XEGetResvMask</a>();</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="foldopen" id="foldopen00053" data-start="" data-end="">
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="Boot_2video_8h.html#a83bb2d6f1bb04c16d413441f468d61cb">   53</a></span><span class="preprocessor">#define BLUE(col) \</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="preprocessor">    ((col&gt;&gt;16) &amp; 0xFF)</span></div>
+</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment"> * XEInitialiseGraphics -- Initialise the screen and store graphics</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment"> * information in fbinfo structure</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment"> * @GraphicsOutput -- Pointer to Graphics Output protocol</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="keyword">extern</span> <a class="code hl_typedef" href="UefiBaseType_8h.html#a5f446f35c9f907a4f1cf22e794ba338d">EFI_STATUS</a> <a class="code hl_function" href="Boot_2video_8h.html#a0d1c2385f3e4014127e00656c892e7e0">XEInitialiseGraphics</a>(<a class="code hl_struct" href="struct__EFI__GRAPHICS__OUTPUT__PROTOCOL.html">EFI_GRAPHICS_OUTPUT_PROTOCOL</a>* GraphicsOutput);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment"> * XEPutPixel -- puts a pixel on the screen</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment"> * @param x -- x location of the screen</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment"> * @param y -- y location of the screen</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment"> * @param col -- color of the pixel</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code hl_function" href="Boot_2video_8h.html#a581d587816fcbdb695f30a1f88bf32a1">XEPutPixel</a>(<span class="keywordtype">size_t</span> x, <span class="keywordtype">size_t</span> y, <a class="code hl_typedef" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> col);</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="comment"> * XEGraphicsPutC -- put a character to the screen</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="comment"> * @param str -- character to print</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code hl_function" href="Boot_2video_8h.html#ab1532ab735018dd232bac4cb4377c8da">XEGraphicsPutC</a>(<span class="keywordtype">char</span> str);</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="comment"> * XEGraphicsPuts -- put string on the screen</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="comment"> * @param str -- string to put</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code hl_function" href="Boot_2video_8h.html#a1696dcec9ac909eb2c26c80c03860ff3">XEGraphicsPuts</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* str);</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="comment"> * XEGraphicsClearScreen -- clear the entire screen</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="comment"> * @param gop -- Pointer to Graphics Output Protocol</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code hl_function" href="Boot_2video_8h.html#a5d54b44100b841e63e48a30c25763506">XEGraphicsClearScreen</a>(<a class="code hl_struct" href="struct__EFI__GRAPHICS__OUTPUT__PROTOCOL.html">EFI_GRAPHICS_OUTPUT_PROTOCOL</a>* <a class="code hl_variable" href="Boot_2xnldr_8cpp.html#acc98a69626ae0d3a9711137605bb777d">gop</a>);</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="keyword">extern</span> <a class="code hl_typedef" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>* <a class="code hl_function" href="Boot_2video_8h.html#af6c4f11364de3e7b8e5f1356cfb44038">XEGetFramebuffer</a>();</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="keyword">extern</span> <a class="code hl_typedef" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> <a class="code hl_function" href="Boot_2video_8h.html#a23f1f88762de0213a361abcb681f99af">XEGetScreenWidth</a>();</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="keyword">extern</span> <a class="code hl_typedef" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> <a class="code hl_function" href="Boot_2video_8h.html#a10cb2de500f4f6b1761da44a2bdd14ac">XEGetScreenHeight</a>();</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="keyword">extern</span> <span class="keywordtype">size_t</span> <a class="code hl_function" href="Boot_2video_8h.html#a44fcc283d9c8e3f945e1ac9ef46caee7">XEGetFramebufferSz</a>();</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="keyword">extern</span> <span class="keywordtype">size_t</span> <a class="code hl_function" href="Boot_2video_8h.html#ae2e0a37100ddbc17c193f419a1b55543">XEGetPixelsPerLine</a>();</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="keyword">extern</span> <a class="code hl_typedef" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> <a class="code hl_function" href="Boot_2video_8h.html#a37e80e13ab46e3885b068caf0fb34c51">XEGetRedMask</a>();</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="keyword">extern</span> <a class="code hl_typedef" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> <a class="code hl_function" href="Boot_2video_8h.html#a5b2fdf23648203ab9c58057714244db8">XEGetBlueMask</a>();</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="keyword">extern</span> <a class="code hl_typedef" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> <a class="code hl_function" href="Boot_2video_8h.html#a0502d5437f7579258cfd68fb27a88d18">XEGetGreenMask</a>();</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="keyword">extern</span> <a class="code hl_typedef" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> <a class="code hl_function" href="Boot_2video_8h.html#a73188163c5263af5e855818e196c6252">XEGetResvMask</a>();</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aBootAA64_2clib_8h_html"><div class="ttname"><a href="BootAA64_2clib_8h.html">clib.h</a></div></div>
 <div class="ttc" id="aBootAA64_2xnldr_8h_html"><div class="ttname"><a href="BootAA64_2xnldr_8h.html">xnldr.h</a></div></div>
-<div class="ttc" id="aBoot_2video_8h_html_a0502d5437f7579258cfd68fb27a88d18"><div class="ttname"><a href="Boot_2video_8h.html#a0502d5437f7579258cfd68fb27a88d18">XEGetGreenMask</a></div><div class="ttdeci">uint32_t XEGetGreenMask()</div><div class="ttdef"><b>Definition</b> video.cpp:280</div></div>
-<div class="ttc" id="aBoot_2video_8h_html_a0d1c2385f3e4014127e00656c892e7e0"><div class="ttname"><a href="Boot_2video_8h.html#a0d1c2385f3e4014127e00656c892e7e0">XEInitialiseGraphics</a></div><div class="ttdeci">EFI_STATUS XEInitialiseGraphics(EFI_GRAPHICS_OUTPUT_PROTOCOL *GraphicsOutput)</div><div class="ttdef"><b>Definition</b> video.cpp:68</div></div>
-<div class="ttc" id="aBoot_2video_8h_html_a10cb2de500f4f6b1761da44a2bdd14ac"><div class="ttname"><a href="Boot_2video_8h.html#a10cb2de500f4f6b1761da44a2bdd14ac">XEGetScreenHeight</a></div><div class="ttdeci">uint16_t XEGetScreenHeight()</div><div class="ttdef"><b>Definition</b> video.cpp:260</div></div>
-<div class="ttc" id="aBoot_2video_8h_html_a1696dcec9ac909eb2c26c80c03860ff3"><div class="ttname"><a href="Boot_2video_8h.html#a1696dcec9ac909eb2c26c80c03860ff3">XEGraphicsPuts</a></div><div class="ttdeci">void XEGraphicsPuts(const char *str)</div><div class="ttdef"><b>Definition</b> video.cpp:184</div></div>
-<div class="ttc" id="aBoot_2video_8h_html_a23f1f88762de0213a361abcb681f99af"><div class="ttname"><a href="Boot_2video_8h.html#a23f1f88762de0213a361abcb681f99af">XEGetScreenWidth</a></div><div class="ttdeci">uint16_t XEGetScreenWidth()</div><div class="ttdef"><b>Definition</b> video.cpp:256</div></div>
-<div class="ttc" id="aBoot_2video_8h_html_a37e80e13ab46e3885b068caf0fb34c51"><div class="ttname"><a href="Boot_2video_8h.html#a37e80e13ab46e3885b068caf0fb34c51">XEGetRedMask</a></div><div class="ttdeci">uint32_t XEGetRedMask()</div><div class="ttdef"><b>Definition</b> video.cpp:272</div></div>
-<div class="ttc" id="aBoot_2video_8h_html_a44fcc283d9c8e3f945e1ac9ef46caee7"><div class="ttname"><a href="Boot_2video_8h.html#a44fcc283d9c8e3f945e1ac9ef46caee7">XEGetFramebufferSz</a></div><div class="ttdeci">size_t XEGetFramebufferSz()</div><div class="ttdef"><b>Definition</b> video.cpp:264</div></div>
-<div class="ttc" id="aBoot_2video_8h_html_a581d587816fcbdb695f30a1f88bf32a1"><div class="ttname"><a href="Boot_2video_8h.html#a581d587816fcbdb695f30a1f88bf32a1">XEPutPixel</a></div><div class="ttdeci">void XEPutPixel(size_t x, size_t y, uint32_t col)</div><div class="ttdef"><b>Definition</b> video.cpp:132</div></div>
-<div class="ttc" id="aBoot_2video_8h_html_a5b2fdf23648203ab9c58057714244db8"><div class="ttname"><a href="Boot_2video_8h.html#a5b2fdf23648203ab9c58057714244db8">XEGetBlueMask</a></div><div class="ttdeci">uint32_t XEGetBlueMask()</div><div class="ttdef"><b>Definition</b> video.cpp:276</div></div>
-<div class="ttc" id="aBoot_2video_8h_html_a5d54b44100b841e63e48a30c25763506"><div class="ttname"><a href="Boot_2video_8h.html#a5d54b44100b841e63e48a30c25763506">XEGraphicsClearScreen</a></div><div class="ttdeci">void XEGraphicsClearScreen(EFI_GRAPHICS_OUTPUT_PROTOCOL *gop)</div><div class="ttdef"><b>Definition</b> video.cpp:241</div></div>
-<div class="ttc" id="aBoot_2video_8h_html_a73188163c5263af5e855818e196c6252"><div class="ttname"><a href="Boot_2video_8h.html#a73188163c5263af5e855818e196c6252">XEGetResvMask</a></div><div class="ttdeci">uint32_t XEGetResvMask()</div><div class="ttdef"><b>Definition</b> video.cpp:285</div></div>
-<div class="ttc" id="aBoot_2video_8h_html_ab1532ab735018dd232bac4cb4377c8da"><div class="ttname"><a href="Boot_2video_8h.html#ab1532ab735018dd232bac4cb4377c8da">XEGraphicsPutC</a></div><div class="ttdeci">void XEGraphicsPutC(char str)</div><div class="ttdef"><b>Definition</b> video.cpp:148</div></div>
-<div class="ttc" id="aBoot_2video_8h_html_ae2e0a37100ddbc17c193f419a1b55543"><div class="ttname"><a href="Boot_2video_8h.html#ae2e0a37100ddbc17c193f419a1b55543">XEGetPixelsPerLine</a></div><div class="ttdeci">size_t XEGetPixelsPerLine()</div><div class="ttdef"><b>Definition</b> video.cpp:268</div></div>
-<div class="ttc" id="aBoot_2video_8h_html_af6c4f11364de3e7b8e5f1356cfb44038"><div class="ttname"><a href="Boot_2video_8h.html#af6c4f11364de3e7b8e5f1356cfb44038">XEGetFramebuffer</a></div><div class="ttdeci">uint32_t * XEGetFramebuffer()</div><div class="ttdef"><b>Definition</b> video.cpp:252</div></div>
-<div class="ttc" id="aBoot_2xnldr_8cpp_html_acc98a69626ae0d3a9711137605bb777d"><div class="ttname"><a href="Boot_2xnldr_8cpp.html#acc98a69626ae0d3a9711137605bb777d">gop</a></div><div class="ttdeci">EFI_GRAPHICS_OUTPUT_PROTOCOL * gop</div><div class="ttdef"><b>Definition</b> xnldr.cpp:49</div></div>
+<div class="ttc" id="aBoot_2video_8h_html_a0502d5437f7579258cfd68fb27a88d18"><div class="ttname"><a href="Boot_2video_8h.html#a0502d5437f7579258cfd68fb27a88d18">XEGetGreenMask</a></div><div class="ttdeci">uint32_t XEGetGreenMask()</div><div class="ttdef"><b>Definition</b> video.cpp:279</div></div>
+<div class="ttc" id="aBoot_2video_8h_html_a0d1c2385f3e4014127e00656c892e7e0"><div class="ttname"><a href="Boot_2video_8h.html#a0d1c2385f3e4014127e00656c892e7e0">XEInitialiseGraphics</a></div><div class="ttdeci">EFI_STATUS XEInitialiseGraphics(EFI_GRAPHICS_OUTPUT_PROTOCOL *GraphicsOutput)</div><div class="ttdef"><b>Definition</b> video.cpp:69</div></div>
+<div class="ttc" id="aBoot_2video_8h_html_a10cb2de500f4f6b1761da44a2bdd14ac"><div class="ttname"><a href="Boot_2video_8h.html#a10cb2de500f4f6b1761da44a2bdd14ac">XEGetScreenHeight</a></div><div class="ttdeci">uint16_t XEGetScreenHeight()</div><div class="ttdef"><b>Definition</b> video.cpp:259</div></div>
+<div class="ttc" id="aBoot_2video_8h_html_a1696dcec9ac909eb2c26c80c03860ff3"><div class="ttname"><a href="Boot_2video_8h.html#a1696dcec9ac909eb2c26c80c03860ff3">XEGraphicsPuts</a></div><div class="ttdeci">void XEGraphicsPuts(const char *str)</div><div class="ttdef"><b>Definition</b> video.cpp:188</div></div>
+<div class="ttc" id="aBoot_2video_8h_html_a23f1f88762de0213a361abcb681f99af"><div class="ttname"><a href="Boot_2video_8h.html#a23f1f88762de0213a361abcb681f99af">XEGetScreenWidth</a></div><div class="ttdeci">uint16_t XEGetScreenWidth()</div><div class="ttdef"><b>Definition</b> video.cpp:255</div></div>
+<div class="ttc" id="aBoot_2video_8h_html_a37e80e13ab46e3885b068caf0fb34c51"><div class="ttname"><a href="Boot_2video_8h.html#a37e80e13ab46e3885b068caf0fb34c51">XEGetRedMask</a></div><div class="ttdeci">uint32_t XEGetRedMask()</div><div class="ttdef"><b>Definition</b> video.cpp:271</div></div>
+<div class="ttc" id="aBoot_2video_8h_html_a44fcc283d9c8e3f945e1ac9ef46caee7"><div class="ttname"><a href="Boot_2video_8h.html#a44fcc283d9c8e3f945e1ac9ef46caee7">XEGetFramebufferSz</a></div><div class="ttdeci">size_t XEGetFramebufferSz()</div><div class="ttdef"><b>Definition</b> video.cpp:263</div></div>
+<div class="ttc" id="aBoot_2video_8h_html_a581d587816fcbdb695f30a1f88bf32a1"><div class="ttname"><a href="Boot_2video_8h.html#a581d587816fcbdb695f30a1f88bf32a1">XEPutPixel</a></div><div class="ttdeci">void XEPutPixel(size_t x, size_t y, uint32_t col)</div><div class="ttdef"><b>Definition</b> video.cpp:136</div></div>
+<div class="ttc" id="aBoot_2video_8h_html_a5b2fdf23648203ab9c58057714244db8"><div class="ttname"><a href="Boot_2video_8h.html#a5b2fdf23648203ab9c58057714244db8">XEGetBlueMask</a></div><div class="ttdeci">uint32_t XEGetBlueMask()</div><div class="ttdef"><b>Definition</b> video.cpp:275</div></div>
+<div class="ttc" id="aBoot_2video_8h_html_a5d54b44100b841e63e48a30c25763506"><div class="ttname"><a href="Boot_2video_8h.html#a5d54b44100b841e63e48a30c25763506">XEGraphicsClearScreen</a></div><div class="ttdeci">void XEGraphicsClearScreen(EFI_GRAPHICS_OUTPUT_PROTOCOL *gop)</div><div class="ttdef"><b>Definition</b> video.cpp:240</div></div>
+<div class="ttc" id="aBoot_2video_8h_html_a73188163c5263af5e855818e196c6252"><div class="ttname"><a href="Boot_2video_8h.html#a73188163c5263af5e855818e196c6252">XEGetResvMask</a></div><div class="ttdeci">uint32_t XEGetResvMask()</div><div class="ttdef"><b>Definition</b> video.cpp:284</div></div>
+<div class="ttc" id="aBoot_2video_8h_html_ab1532ab735018dd232bac4cb4377c8da"><div class="ttname"><a href="Boot_2video_8h.html#ab1532ab735018dd232bac4cb4377c8da">XEGraphicsPutC</a></div><div class="ttdeci">void XEGraphicsPutC(char str)</div><div class="ttdef"><b>Definition</b> video.cpp:152</div></div>
+<div class="ttc" id="aBoot_2video_8h_html_ae2e0a37100ddbc17c193f419a1b55543"><div class="ttname"><a href="Boot_2video_8h.html#ae2e0a37100ddbc17c193f419a1b55543">XEGetPixelsPerLine</a></div><div class="ttdeci">size_t XEGetPixelsPerLine()</div><div class="ttdef"><b>Definition</b> video.cpp:267</div></div>
+<div class="ttc" id="aBoot_2video_8h_html_af6c4f11364de3e7b8e5f1356cfb44038"><div class="ttname"><a href="Boot_2video_8h.html#af6c4f11364de3e7b8e5f1356cfb44038">XEGetFramebuffer</a></div><div class="ttdeci">uint32_t * XEGetFramebuffer()</div><div class="ttdef"><b>Definition</b> video.cpp:251</div></div>
+<div class="ttc" id="aBoot_2xnldr_8cpp_html_acc98a69626ae0d3a9711137605bb777d"><div class="ttname"><a href="Boot_2xnldr_8cpp.html#acc98a69626ae0d3a9711137605bb777d">gop</a></div><div class="ttdeci">EFI_GRAPHICS_OUTPUT_PROTOCOL * gop</div><div class="ttdef"><b>Definition</b> xnldr.cpp:51</div></div>
 <div class="ttc" id="aLibs_2Chitralekha_2font_8h_html"><div class="ttname"><a href="Libs_2Chitralekha_2font_8h.html">font.h</a></div></div>
 <div class="ttc" id="aUefiBaseType_8h_html_a5f446f35c9f907a4f1cf22e794ba338d"><div class="ttname"><a href="UefiBaseType_8h.html#a5f446f35c9f907a4f1cf22e794ba338d">EFI_STATUS</a></div><div class="ttdeci">RETURN_STATUS EFI_STATUS</div><div class="ttdef"><b>Definition</b> UefiBaseType.h:33</div></div>
 <div class="ttc" id="aUefiBootServicesTableLib_8h_html"><div class="ttname"><a href="UefiBootServicesTableLib_8h.html">UefiBootServicesTableLib.h</a></div></div>

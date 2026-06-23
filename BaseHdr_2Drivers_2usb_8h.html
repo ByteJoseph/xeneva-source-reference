@@ -81,7 +81,7 @@ $(function() {
   <div class="headertitle"><div class="title">usb.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="stdint_8h_source.html">stdint.h</a>&gt;</code><br />
 <code>#include &lt;string.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="__null_8h_source.html">_null.h</a>&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
@@ -89,13 +89,15 @@ Include dependency graph for usb.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="BaseHdr_2Drivers_2usb_8h__incl.png" border="0" usemap="#aXenevaOS_2BaseHdr_2Drivers_2usb_8h" alt=""/></div>
 <map name="aXenevaOS_2BaseHdr_2Drivers_2usb_8h" id="aXenevaOS_2BaseHdr_2Drivers_2usb_8h">
-<area shape="rect" title=" " alt="" coords="36,5,235,45"/>
-<area shape="rect" title=" " alt="" coords="5,93,76,119"/>
-<area shape="poly" title=" " alt="" coords="114,48,67,86,64,82,111,43"/>
-<area shape="rect" title=" " alt="" coords="100,93,171,119"/>
-<area shape="poly" title=" " alt="" coords="138,46,138,79,133,79,133,46"/>
-<area shape="rect" href="__null_8h.html" title=" " alt="" coords="195,93,260,119"/>
-<area shape="poly" title=" " alt="" coords="159,44,205,82,201,86,156,48"/>
+<area shape="rect" title=" " alt="" coords="37,5,235,45"/>
+<area shape="rect" href="stdint_8h.html" title=" " alt="" coords="6,93,77,119"/>
+<area shape="poly" title=" " alt="" coords="115,48,68,86,65,82,111,43"/>
+<area shape="rect" title=" " alt="" coords="101,93,171,119"/>
+<area shape="poly" title=" " alt="" coords="139,46,139,79,133,79,133,46"/>
+<area shape="rect" href="__null_8h.html" title=" " alt="" coords="195,93,261,119"/>
+<area shape="poly" title=" " alt="" coords="160,44,206,82,202,86,157,48"/>
+<area shape="rect" href="size__t_8h.html" title=" " alt="" coords="5,167,77,192"/>
+<area shape="poly" title=" " alt="" coords="44,119,44,153,39,153,39,119"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -247,7 +249,7 @@ Typedefs</h2></td></tr>
 <tr class="separator:a5277f225318ddb909a1de72a3172e424"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7016a8ea59ca97a2da1ef848aff592e" id="r_ad7016a8ea59ca97a2da1ef848aff592e"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BaseHdr_2Drivers_2usb_8h.html#ad7016a8ea59ca97a2da1ef848aff592e">schedule_interrupt_callback</a>) (<a class="el" href="struct__au__usb__dev__.html">_au_usb_dev_</a> *<a class="el" href="ahci_8cpp.html#aaeb451b3072c96aaed88a9aecf3e75fa">controller</a>, void *ep, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> buffer, void(*callback) (void *dev, void *slot, void *Endp))</td></tr>
 <tr class="separator:ad7016a8ea59ca97a2da1ef848aff592e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a48277ff41edec9abb6dc843ec86fd708" id="r_a48277ff41edec9abb6dc843ec86fd708"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BaseHdr_2Drivers_2usb_8h.html#a48277ff41edec9abb6dc843ec86fd708">control_transfer</a>) (<a class="el" href="struct__au__usb__dev__.html">_au_usb_dev_</a> *usbdev, const <a class="el" href="BaseHdr_2Drivers_2usb_8h.html#a445f063bcfe60335416df0cf9e534497">AuUSBRequestPacket</a> *request, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> buffer_addr, const <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> len)</td></tr>
+<tr class="memitem:a48277ff41edec9abb6dc843ec86fd708" id="r_a48277ff41edec9abb6dc843ec86fd708"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BaseHdr_2Drivers_2usb_8h.html#a48277ff41edec9abb6dc843ec86fd708">control_transfer</a>) (<a class="el" href="struct__au__usb__dev__.html">_au_usb_dev_</a> *usbdev, const <a class="el" href="BaseHdr_2Drivers_2usb_8h.html#a445f063bcfe60335416df0cf9e534497">AuUSBRequestPacket</a> *request, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> buffer_addr, const <a class="el" href="size__t_8h.html#a1e1f4fe6f57edbe9d428d8fd39beb87a">size_t</a> len)</td></tr>
 <tr class="separator:a48277ff41edec9abb6dc843ec86fd708"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ed8e44f32de58c306010d81db798515" id="r_a1ed8e44f32de58c306010d81db798515"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BaseHdr_2Drivers_2usb_8h.html#a1ed8e44f32de58c306010d81db798515">bulk_transfer</a>) (<a class="el" href="struct__au__usb__dev__.html">_au_usb_dev_</a> *usbdev, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> buffer_addr, <a class="el" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> len, void *ep)</td></tr>
 <tr class="separator:a1ed8e44f32de58c306010d81db798515"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1018,7 +1020,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void(* control_transfer) (<a class="el" href="struct__au__usb__dev__.html">_au_usb_dev_</a> *usbdev, const <a class="el" href="BaseHdr_2Drivers_2usb_8h.html#a445f063bcfe60335416df0cf9e534497">AuUSBRequestPacket</a> *request, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> buffer_addr, const <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> len)</td>
+          <td class="memname">typedef void(* control_transfer) (<a class="el" href="struct__au__usb__dev__.html">_au_usb_dev_</a> *usbdev, const <a class="el" href="BaseHdr_2Drivers_2usb_8h.html#a445f063bcfe60335416df0cf9e534497">AuUSBRequestPacket</a> *request, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> buffer_addr, const <a class="el" href="size__t_8h.html#a1e1f4fe6f57edbe9d428d8fd39beb87a">size_t</a> len)</td>
         </tr>
       </table>
 </div><div class="memdoc">

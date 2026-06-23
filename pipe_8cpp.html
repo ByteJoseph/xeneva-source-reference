@@ -79,104 +79,111 @@ $(function() {
   <div class="headertitle"><div class="title">pipe.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="pipe_8h_source.html">Fs\pipe.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="kmalloc_8h_source.html">Mm\kmalloc.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="vfs_8h_source.html">Fs\vfs.h</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="pipe_8h_source.html">Fs/pipe.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="kmalloc_8h_source.html">Mm/kmalloc.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="vfs_8h_source.html">Fs/vfs.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="__null_8h_source.html">_null.h</a>&gt;</code><br />
 <code>#include &lt;string.h&gt;</code><br />
-<code>#include &lt;<a class="el" href="serial_8h_source.html">Hal\serial.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="serial_8h_source.html">Hal/serial.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="x86__64__hal_8h_source.html">Hal/x86_64_hal.h</a>&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for pipe.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="pipe_8cpp__incl.png" border="0" usemap="#aXenevaOS_2Kernel_2Fs_2pipe_8cpp" alt=""/></div>
 <map name="aXenevaOS_2Kernel_2Fs_2pipe_8cpp" id="aXenevaOS_2Kernel_2Fs_2pipe_8cpp">
-<area shape="rect" title=" " alt="" coords="360,5,513,45"/>
-<area shape="rect" href="pipe_8h.html" title=" " alt="" coords="1225,240,1307,265"/>
-<area shape="poly" title=" " alt="" coords="514,27,646,34,803,47,952,65,1013,77,1059,91,1117,121,1171,158,1215,196,1248,228,1244,232,1212,200,1167,162,1115,125,1057,96,1012,82,952,71,803,52,645,40,513,32"/>
-<area shape="rect" href="vfs_8h.html" title=" " alt="" coords="1043,313,1116,339"/>
-<area shape="poly" title=" " alt="" coords="514,27,613,38,733,61,796,79,858,102,918,130,974,165,1008,195,1036,232,1072,299,1067,302,1031,235,1004,199,971,169,916,135,856,107,794,84,731,66,612,43,513,32"/>
-<area shape="rect" href="kmalloc_8h.html" title=" " alt="" coords="250,313,365,339"/>
-<area shape="poly" title=" " alt="" coords="424,47,394,95,368,151,346,208,317,301,312,299,341,207,363,149,389,92,420,44"/>
-<area shape="rect" href="__null_8h.html" title=" " alt="" coords="404,93,469,119"/>
-<area shape="poly" title=" " alt="" coords="439,46,439,79,434,79,434,46"/>
-<area shape="rect" title=" " alt="" coords="5,167,76,192"/>
-<area shape="poly" title=" " alt="" coords="360,39,260,59,206,75,154,96,104,126,64,159,61,155,101,122,151,91,204,70,258,54,359,33"/>
-<area shape="rect" href="serial_8h.html" title=" " alt="" coords="165,93,261,119"/>
-<area shape="poly" title=" " alt="" coords="384,48,259,91,257,86,382,43"/>
-<area shape="rect" href="x86__64__hal_8h.html" title=" " alt="" coords="552,93,687,119"/>
-<area shape="poly" title=" " alt="" coords="481,43,581,85,579,90,479,48"/>
-<area shape="rect" title=" " alt="" coords="776,460,847,485"/>
-<area shape="poly" title=" " alt="" coords="1269,266,1267,296,1259,336,1244,378,1231,398,1216,414,1189,430,1151,442,1054,459,949,469,861,473,861,468,949,464,1053,454,1149,437,1187,425,1212,410,1227,394,1239,376,1254,335,1261,295,1263,265"/>
-<area shape="rect" title=" " alt="" coords="1328,387,1383,412"/>
-<area shape="poly" title=" " alt="" coords="1277,264,1311,312,1345,373,1341,375,1306,315,1273,267"/>
-<area shape="poly" title=" " alt="" coords="1237,268,1123,311,1122,306,1235,263"/>
-<area shape="poly" title=" " alt="" coords="1080,340,1069,376,1059,397,1044,414,1000,442,952,459,904,469,861,473,860,468,903,464,950,454,998,437,1040,410,1054,394,1064,374,1075,338"/>
-<area shape="poly" title=" " alt="" coords="1117,334,1316,385,1314,390,1116,339"/>
-<area shape="rect" title=" " alt="" coords="529,387,605,412"/>
-<area shape="poly" title=" " alt="" coords="1043,335,620,393,619,388,1042,330"/>
-<area shape="rect" href="group_8h.html" title=" " alt="" coords="925,387,1031,412"/>
-<area shape="poly" title=" " alt="" coords="1065,341,1007,381,1004,376,1062,336"/>
-<area shape="rect" href="user_8h.html" title=" " alt="" coords="1107,387,1201,412"/>
-<area shape="poly" title=" " alt="" coords="1093,337,1134,375,1130,379,1089,341"/>
-<area shape="poly" title=" " alt="" coords="952,414,852,457,850,452,950,410"/>
-<area shape="poly" title=" " alt="" coords="322,337,370,374,401,393,435,410,523,437,613,454,696,463,762,468,762,473,695,469,612,459,522,442,433,414,399,398,367,378,319,341"/>
-<area shape="poly" title=" " alt="" coords="350,336,517,381,515,387,348,341"/>
-<area shape="poly" title=" " alt="" coords="215,119,215,251,215,327,220,346,232,364,253,380,279,394,350,418,434,436,526,450,616,459,762,467,762,473,616,464,525,455,433,442,348,423,277,399,250,384,228,367,215,349,210,328,210,251,210,119"/>
-<area shape="poly" title=" " alt="" coords="226,117,292,181,385,263,469,327,540,377,537,381,465,331,382,267,289,185,222,121"/>
-<area shape="poly" title=" " alt="" coords="186,121,82,164,80,159,184,116"/>
-<area shape="rect" title=" " alt="" coords="101,167,175,192"/>
-<area shape="poly" title=" " alt="" coords="203,121,162,159,158,155,199,117"/>
-<area shape="poly" title=" " alt="" coords="687,108,753,115,823,125,884,141,907,152,923,165,944,197,954,228,954,258,946,287,933,317,915,348,871,414,837,452,833,449,867,410,910,345,928,315,941,286,949,257,948,229,939,199,919,168,904,157,882,146,822,130,753,120,687,114"/>
-<area shape="poly" title=" " alt="" coords="615,120,572,199,549,255,531,314,529,326,531,338,539,357,551,374,546,377,535,360,526,339,524,326,526,313,544,253,567,197,610,118"/>
-<area shape="rect" href="x86__64__gdt_8h.html" title=" " alt="" coords="396,240,531,265"/>
-<area shape="poly" title=" " alt="" coords="607,121,552,169,486,232,483,228,548,165,604,117"/>
-<area shape="rect" href="x86__64__idt_8h.html" title=" " alt="" coords="541,313,671,339"/>
-<area shape="poly" title=" " alt="" coords="621,119,610,299,605,299,616,119"/>
-<area shape="rect" href="x86__64__cpu_8h.html" title=" " alt="" coords="772,167,909,192"/>
-<area shape="poly" title=" " alt="" coords="656,116,793,160,791,165,654,121"/>
-<area shape="rect" href="x86__64__lowlevel_8h.html" title=" " alt="" coords="696,313,865,339"/>
-<area shape="poly" title=" " alt="" coords="630,117,766,300,762,304,626,121"/>
-<area shape="poly" title=" " alt="" coords="466,265,468,295,475,335,491,376,503,394,518,410,536,420,561,430,626,445,763,464,762,470,625,451,560,435,534,425,515,414,499,398,486,379,470,337,463,296,461,266"/>
-<area shape="poly" title=" " alt="" coords="624,337,785,450,782,454,621,341"/>
-<area shape="poly" title=" " alt="" coords="602,340,582,376,578,373,597,338"/>
-<area shape="poly" title=" " alt="" coords="853,191,868,212,881,239,885,279,884,308,879,339,856,401,829,450,824,447,851,398,874,338,879,308,880,279,875,241,864,215,849,194"/>
-<area shape="rect" href="process_8h.html" title=" " alt="" coords="1095,240,1179,265"/>
-<area shape="poly" title=" " alt="" coords="889,189,1082,236,1081,241,888,195"/>
-<area shape="rect" title=" " alt="" coords="802,240,866,265"/>
-<area shape="poly" title=" " alt="" coords="842,193,839,227,834,226,837,192"/>
-<area shape="poly" title=" " alt="" coords="1129,267,1099,304,1095,301,1125,264"/>
-<area shape="poly" title=" " alt="" coords="1109,268,1070,287,1032,315,1008,345,991,375,986,373,1004,342,1028,311,1067,283,1106,263"/>
-<area shape="poly" title=" " alt="" coords="1141,265,1154,373,1148,373,1135,266"/>
-<area shape="rect" href="BaseHdr_2stdint_8h.html" title=" " alt="" coords="1409,460,1480,485"/>
-<area shape="poly" title=" " alt="" coords="1149,264,1217,330,1266,372,1318,410,1361,434,1402,452,1400,457,1358,438,1315,414,1262,376,1214,334,1146,267"/>
-<area shape="rect" href="BaseHdr_2list_8h.html" title=" " alt="" coords="1417,313,1472,339"/>
-<area shape="poly" title=" " alt="" coords="1179,261,1405,313,1403,318,1178,266"/>
-<area shape="poly" title=" " alt="" coords="1461,337,1476,351,1491,369,1499,390,1498,413,1486,434,1471,452,1467,449,1482,431,1493,411,1494,391,1486,372,1472,355,1458,341"/>
-<area shape="rect" href="BaseHdr_2aurora_8h.html" title=" " alt="" coords="1407,387,1483,412"/>
-<area shape="poly" title=" " alt="" coords="1447,339,1447,373,1442,373,1442,339"/>
-<area shape="poly" title=" " alt="" coords="1447,412,1447,446,1442,446,1442,412"/>
-<area shape="poly" title=" " alt="" coords="786,339,809,446,803,447,781,340"/>
-<area shape="poly" title=" " alt="" coords="747,341,616,385,614,380,746,336"/>
+<area shape="rect" title=" " alt="" coords="210,5,363,45"/>
+<area shape="rect" href="pipe_8h.html" title=" " alt="" coords="306,240,387,265"/>
+<area shape="poly" title=" " alt="" coords="305,44,320,66,333,92,343,128,348,164,350,226,345,226,343,165,338,129,328,94,316,69,301,47"/>
+<area shape="rect" href="vfs_8h.html" title=" " alt="" coords="357,313,430,339"/>
+<area shape="poly" title=" " alt="" coords="312,44,334,65,354,92,380,137,396,174,403,214,403,265,399,300,394,300,397,265,398,215,391,176,375,139,350,95,330,69,308,47"/>
+<area shape="rect" href="kmalloc_8h.html" title=" " alt="" coords="5,313,120,339"/>
+<area shape="poly" title=" " alt="" coords="211,44,161,61,110,86,87,103,67,121,51,143,39,168,32,203,35,239,43,272,54,300,49,302,38,274,30,240,27,202,33,166,46,140,63,118,84,98,108,82,158,56,209,39"/>
+<area shape="rect" href="__null_8h.html" title=" " alt="" coords="254,93,319,119"/>
+<area shape="poly" title=" " alt="" coords="289,46,289,79,284,79,284,46"/>
+<area shape="rect" title=" " alt="" coords="49,167,119,192"/>
+<area shape="poly" title=" " alt="" coords="211,47,164,66,123,95,103,124,92,154,87,152,99,121,119,91,162,61,209,42"/>
+<area shape="rect" href="serial_8h.html" title=" " alt="" coords="133,93,229,119"/>
+<area shape="poly" title=" " alt="" coords="263,48,210,87,206,83,260,43"/>
+<area shape="rect" href="x86__64__hal_8h.html" title=" " alt="" coords="678,93,813,119"/>
+<area shape="poly" title=" " alt="" coords="364,37,666,88,665,94,363,42"/>
+<area shape="rect" href="stdint_8h.html" title=" " alt="" coords="737,533,807,559"/>
+<area shape="poly" title=" " alt="" coords="337,267,313,295,288,332,280,352,275,372,277,392,285,410,313,436,358,458,415,478,480,495,614,521,723,537,723,542,613,527,479,501,413,483,356,463,310,440,281,414,271,393,270,372,275,350,284,329,309,291,333,264"/>
+<area shape="rect" title=" " alt="" coords="295,387,350,412"/>
+<area shape="poly" title=" " alt="" coords="347,266,329,373,324,373,342,265"/>
+<area shape="poly" title=" " alt="" coords="357,264,380,300,376,303,352,267"/>
+<area shape="rect" href="size__t_8h.html" title=" " alt="" coords="736,607,808,632"/>
+<area shape="poly" title=" " alt="" coords="775,559,775,593,769,593,769,559"/>
+<area shape="poly" title=" " alt="" coords="396,338,402,374,409,393,421,410,454,440,491,465,532,486,574,503,655,525,723,537,722,543,654,531,572,508,530,491,489,470,451,444,417,414,404,396,397,375,391,339"/>
+<area shape="poly" title=" " alt="" coords="384,341,346,379,342,375,380,337"/>
+<area shape="rect" title=" " alt="" coords="430,387,506,412"/>
+<area shape="poly" title=" " alt="" coords="407,337,448,375,444,379,403,341"/>
+<area shape="rect" href="group_8h.html" title=" " alt="" coords="594,387,699,412"/>
+<area shape="poly" title=" " alt="" coords="431,335,594,380,592,386,429,340"/>
+<area shape="rect" href="user_8h.html" title=" " alt="" coords="775,387,870,412"/>
+<area shape="poly" title=" " alt="" coords="431,331,762,385,762,391,430,336"/>
+<area shape="poly" title=" " alt="" coords="658,411,721,484,754,521,750,525,717,487,654,414"/>
+<area shape="poly" title=" " alt="" coords="67,338,73,369,87,409,108,450,123,468,140,483,172,495,231,505,396,522,723,540,723,545,396,527,230,510,171,500,137,488,119,472,104,453,82,411,68,370,62,340"/>
+<area shape="poly" title=" " alt="" coords="121,335,417,386,416,392,120,340"/>
+<area shape="poly" title=" " alt="" coords="181,119,168,176,160,251,160,400,165,420,178,438,198,454,226,469,298,493,386,511,480,524,573,533,723,541,723,546,573,538,479,530,385,517,297,498,224,474,196,459,174,442,160,422,155,401,155,251,163,175,175,118"/>
+<area shape="poly" title=" " alt="" coords="218,117,253,135,270,149,284,165,294,191,293,215,291,238,296,264,315,305,347,337,383,361,422,379,419,384,381,366,344,341,311,308,291,266,285,238,288,214,289,192,279,168,266,153,250,140,215,121"/>
+<area shape="poly" title=" " alt="" coords="167,121,113,160,110,156,164,117"/>
+<area shape="rect" title=" " alt="" coords="195,167,269,192"/>
+<area shape="poly" title=" " alt="" coords="192,117,218,154,214,157,188,121"/>
+<area shape="poly" title=" " alt="" coords="813,107,957,118,1041,128,1125,142,1201,161,1264,184,1289,198,1308,214,1320,232,1324,251,1324,401,1322,422,1314,438,1303,450,1289,460,1254,473,1213,488,1136,508,1028,524,821,544,821,539,1027,519,1135,503,1211,483,1252,468,1287,455,1300,446,1310,435,1316,420,1319,401,1319,252,1315,234,1304,218,1286,203,1262,189,1200,166,1124,147,1040,134,956,124,813,113"/>
+<area shape="poly" title=" " alt="" coords="726,121,678,149,616,193,551,249,521,281,496,315,482,344,474,374,469,372,477,342,491,312,517,277,547,245,613,189,675,145,723,116"/>
+<area shape="rect" href="x86__64__gdt_8h.html" title=" " alt="" coords="1149,387,1283,412"/>
+<area shape="poly" title=" " alt="" coords="813,107,866,113,927,123,990,140,1051,164,1082,184,1110,209,1156,266,1189,325,1210,372,1205,375,1184,327,1151,269,1106,212,1079,188,1048,169,989,145,926,129,866,118,812,113"/>
+<area shape="rect" href="x86__64__idt_8h.html" title=" " alt="" coords="505,313,636,339"/>
+<area shape="poly" title=" " alt="" coords="738,121,591,304,587,300,734,117"/>
+<area shape="rect" href="x86__64__cpu_8h.html" title=" " alt="" coords="899,167,1037,192"/>
+<area shape="poly" title=" " alt="" coords="782,116,920,160,918,165,780,121"/>
+<area shape="rect" href="x86__64__lowlevel_8h.html" title=" " alt="" coords="661,313,830,339"/>
+<area shape="poly" title=" " alt="" coords="748,119,748,299,743,299,743,119"/>
+<area shape="poly" title=" " alt="" coords="1218,413,1210,450,1200,470,1186,487,1158,503,1118,515,1019,533,911,542,821,546,821,541,911,537,1018,527,1117,510,1156,498,1182,483,1196,467,1205,448,1213,412"/>
+<area shape="rect" href="stddef_8h.html" title=" " alt="" coords="1053,460,1128,485"/>
+<area shape="poly" title=" " alt="" coords="1197,414,1124,455,1122,451,1195,410"/>
+<area shape="poly" title=" " alt="" coords="1054,485,1042,488,822,537,820,531,1041,483,1052,480"/>
+<area shape="poly" title=" " alt="" coords="572,339,573,373,577,392,585,411,616,449,655,481,695,507,732,525,729,530,692,511,651,486,612,453,580,413,572,394,568,373,567,339"/>
+<area shape="poly" title=" " alt="" coords="556,341,498,381,495,376,553,336"/>
+<area shape="poly" title=" " alt="" coords="997,190,1031,209,1063,238,1086,284,1117,362,1141,440,1145,469,1142,487,1120,504,1087,517,1000,534,904,544,822,547,822,542,904,538,999,529,1085,512,1117,499,1138,484,1140,469,1135,442,1112,364,1081,286,1059,242,1028,214,994,195"/>
+<area shape="rect" href="process_8h.html" title=" " alt="" coords="877,240,961,265"/>
+<area shape="poly" title=" " alt="" coords="962,194,937,230,932,227,958,191"/>
+<area shape="rect" title=" " alt="" coords="985,240,1049,265"/>
+<area shape="poly" title=" " alt="" coords="978,191,1004,227,999,230,974,194"/>
+<area shape="poly" title=" " alt="" coords="921,266,919,299,913,339,903,378,885,413,793,524,788,521,880,411,898,376,908,338,914,298,916,266"/>
+<area shape="poly" title=" " alt="" coords="877,262,444,320,444,315,876,257"/>
+<area shape="poly" title=" " alt="" coords="913,267,886,303,866,324,844,341,812,358,779,372,713,390,712,385,777,367,810,353,841,336,863,320,882,300,909,264"/>
+<area shape="poly" title=" " alt="" coords="919,267,908,301,889,340,871,362,851,380,848,376,867,358,884,337,903,299,914,265"/>
+<area shape="rect" href="BaseHdr_2list_8h.html" title=" " alt="" coords="1007,313,1062,339"/>
+<area shape="poly" title=" " alt="" coords="939,263,1005,304,1003,308,936,268"/>
+<area shape="poly" title=" " alt="" coords="1023,341,798,526,795,522,1019,337"/>
+<area shape="rect" href="BaseHdr_2aurora_8h.html" title=" " alt="" coords="997,387,1073,412"/>
+<area shape="poly" title=" " alt="" coords="1037,339,1037,373,1032,373,1032,339"/>
+<area shape="poly" title=" " alt="" coords="1015,415,806,529,803,525,1012,410"/>
+<area shape="poly" title=" " alt="" coords="1046,411,1075,448,1071,451,1042,414"/>
+<area shape="rect" href="stdbool_8h.html" title=" " alt="" coords="947,460,1029,485"/>
+<area shape="poly" title=" " alt="" coords="1029,414,1005,450,1001,447,1025,411"/>
+<area shape="poly" title=" " alt="" coords="749,339,772,519,766,519,744,339"/>
+<area shape="poly" title=" " alt="" coords="701,341,520,387,519,382,700,336"/>
 </map>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a61a494ce31f54f0a15791dffa6ff1fec" id="r_a61a494ce31f54f0a15791dffa6ff1fec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pipe_8cpp.html#a61a494ce31f54f0a15791dffa6ff1fec">AuPipeUnread</a> (<a class="el" href="pipe_8h.html#adeff9c024c6eeb2707d133050a4536f6">AuPipe</a> *pipe)</td></tr>
+<tr class="memitem:a61a494ce31f54f0a15791dffa6ff1fec" id="r_a61a494ce31f54f0a15791dffa6ff1fec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="size__t_8h.html#a1e1f4fe6f57edbe9d428d8fd39beb87a">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pipe_8cpp.html#a61a494ce31f54f0a15791dffa6ff1fec">AuPipeUnread</a> (<a class="el" href="pipe_8h.html#adeff9c024c6eeb2707d133050a4536f6">AuPipe</a> *pipe)</td></tr>
 <tr class="memdesc:a61a494ce31f54f0a15791dffa6ff1fec"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuPipeUnread &ndash; get the available read space from the pipe.  <br /></td></tr>
 <tr class="separator:a61a494ce31f54f0a15791dffa6ff1fec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6fa5196a4094bf7a2019f1815c96218a" id="r_a6fa5196a4094bf7a2019f1815c96218a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pipe_8cpp.html#a6fa5196a4094bf7a2019f1815c96218a">AuPipeGetAvailableBytes</a> (<a class="el" href="pipe_8h.html#adeff9c024c6eeb2707d133050a4536f6">AuPipe</a> *pipe)</td></tr>
+<tr class="memitem:a6fa5196a4094bf7a2019f1815c96218a" id="r_a6fa5196a4094bf7a2019f1815c96218a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="size__t_8h.html#a1e1f4fe6f57edbe9d428d8fd39beb87a">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pipe_8cpp.html#a6fa5196a4094bf7a2019f1815c96218a">AuPipeGetAvailableBytes</a> (<a class="el" href="pipe_8h.html#adeff9c024c6eeb2707d133050a4536f6">AuPipe</a> *pipe)</td></tr>
 <tr class="separator:a6fa5196a4094bf7a2019f1815c96218a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b0b8816c771d7ebccd9deb9a576b7bd" id="r_a2b0b8816c771d7ebccd9deb9a576b7bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pipe_8cpp.html#a2b0b8816c771d7ebccd9deb9a576b7bd">AuPipeIncrementRead</a> (<a class="el" href="pipe_8h.html#adeff9c024c6eeb2707d133050a4536f6">AuPipe</a> *pipe)</td></tr>
 <tr class="separator:a2b0b8816c771d7ebccd9deb9a576b7bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e711529f17af738778a8913702e6a3f" id="r_a2e711529f17af738778a8913702e6a3f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pipe_8cpp.html#a2e711529f17af738778a8913702e6a3f">AuPipeIncrementWrite</a> (<a class="el" href="pipe_8h.html#adeff9c024c6eeb2707d133050a4536f6">AuPipe</a> *pipe)</td></tr>
 <tr class="separator:a2e711529f17af738778a8913702e6a3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e94f29b6a9b70d500e168ae7f712f46" id="r_a1e94f29b6a9b70d500e168ae7f712f46"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pipe_8cpp.html#a1e94f29b6a9b70d500e168ae7f712f46">AuPipeIncrementWriteAmount</a> (<a class="el" href="pipe_8h.html#adeff9c024c6eeb2707d133050a4536f6">AuPipe</a> *pipe, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> amount)</td></tr>
+<tr class="memitem:a1e94f29b6a9b70d500e168ae7f712f46" id="r_a1e94f29b6a9b70d500e168ae7f712f46"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pipe_8cpp.html#a1e94f29b6a9b70d500e168ae7f712f46">AuPipeIncrementWriteAmount</a> (<a class="el" href="pipe_8h.html#adeff9c024c6eeb2707d133050a4536f6">AuPipe</a> *pipe, <a class="el" href="size__t_8h.html#a1e1f4fe6f57edbe9d428d8fd39beb87a">size_t</a> amount)</td></tr>
 <tr class="separator:a1e94f29b6a9b70d500e168ae7f712f46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79a372f292e9866b4cd9f96ff5e66977" id="r_a79a372f292e9866b4cd9f96ff5e66977"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pipe_8cpp.html#a79a372f292e9866b4cd9f96ff5e66977">AuPipeRead</a> (<a class="el" href="vfs_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *fs, <a class="el" href="vfs_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *file, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> *buffer, <a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> length)</td></tr>
+<tr class="memitem:a79a372f292e9866b4cd9f96ff5e66977" id="r_a79a372f292e9866b4cd9f96ff5e66977"><td class="memItemLeft" align="right" valign="top"><a class="el" href="size__t_8h.html#a1e1f4fe6f57edbe9d428d8fd39beb87a">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pipe_8cpp.html#a79a372f292e9866b4cd9f96ff5e66977">AuPipeRead</a> (<a class="el" href="vfs_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *fs, <a class="el" href="vfs_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *file, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> *buffer, <a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> length)</td></tr>
 <tr class="separator:a79a372f292e9866b4cd9f96ff5e66977"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b4b56d9cdcc7381830452b7249b90b2" id="r_a1b4b56d9cdcc7381830452b7249b90b2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pipe_8cpp.html#a1b4b56d9cdcc7381830452b7249b90b2">AuPipeWrite</a> (<a class="el" href="vfs_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *fs, <a class="el" href="vfs_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *file, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> *buffer, <a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> length)</td></tr>
+<tr class="memitem:a1b4b56d9cdcc7381830452b7249b90b2" id="r_a1b4b56d9cdcc7381830452b7249b90b2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="size__t_8h.html#a1e1f4fe6f57edbe9d428d8fd39beb87a">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pipe_8cpp.html#a1b4b56d9cdcc7381830452b7249b90b2">AuPipeWrite</a> (<a class="el" href="vfs_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *fs, <a class="el" href="vfs_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *file, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> *buffer, <a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> length)</td></tr>
 <tr class="separator:a1b4b56d9cdcc7381830452b7249b90b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a678a701979c0e3e49ad25e1b023b6e58" id="r_a678a701979c0e3e49ad25e1b023b6e58"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vfs_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pipe_8cpp.html#a678a701979c0e3e49ad25e1b023b6e58">AuPipeOpen</a> (<a class="el" href="vfs_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *node, char *<a class="el" href="Process_2Files_2main_8cpp.html#a44196e6a5696d10442c29e639437196e">path</a>)</td></tr>
 <tr class="separator:a678a701979c0e3e49ad25e1b023b6e58"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -187,7 +194,7 @@ Functions</h2></td></tr>
 <tr class="separator:a719e1d5b903691062c7088a79b083063"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76b88cbd63e3ebefa8bfa42c0a38c222" id="r_a76b88cbd63e3ebefa8bfa42c0a38c222"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pipe_8cpp.html#a76b88cbd63e3ebefa8bfa42c0a38c222">AuPipeClose</a> (<a class="el" href="vfs_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *fs, <a class="el" href="vfs_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *file)</td></tr>
 <tr class="separator:a76b88cbd63e3ebefa8bfa42c0a38c222"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6bea25cf2b352aca3ce767d15ac04ff5" id="r_a6bea25cf2b352aca3ce767d15ac04ff5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pipe_8cpp.html#a6bea25cf2b352aca3ce767d15ac04ff5">AuCreatePipe</a> (char *name, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> sz)</td></tr>
+<tr class="memitem:a6bea25cf2b352aca3ce767d15ac04ff5" id="r_a6bea25cf2b352aca3ce767d15ac04ff5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pipe_8cpp.html#a6bea25cf2b352aca3ce767d15ac04ff5">AuCreatePipe</a> (char *name, <a class="el" href="size__t_8h.html#a1e1f4fe6f57edbe9d428d8fd39beb87a">size_t</a> sz)</td></tr>
 <tr class="memdesc:a6bea25cf2b352aca3ce767d15ac04ff5"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuCreatePipe &ndash; creates a new pipe.  <br /></td></tr>
 <tr class="separator:a6bea25cf2b352aca3ce767d15ac04ff5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0951ee2405175bb19f7ae8e771a47fde" id="r_a0951ee2405175bb19f7ae8e771a47fde"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vfs_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pipe_8cpp.html#a0951ee2405175bb19f7ae8e771a47fde">AuPipeFSOpen</a> (<a class="el" href="vfs_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *fs, char *<a class="el" href="Process_2Files_2main_8cpp.html#a44196e6a5696d10442c29e639437196e">path</a>)</td></tr>
@@ -217,7 +224,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="size__t_8h.html#a1e1f4fe6f57edbe9d428d8fd39beb87a">size_t</a>&#160;</td>
           <td class="paramname"><em>sz</em>&#160;</td>
         </tr>
         <tr>
@@ -394,7 +401,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> AuPipeGetAvailableBytes </td>
+          <td class="memname"><a class="el" href="size__t_8h.html#a1e1f4fe6f57edbe9d428d8fd39beb87a">size_t</a> AuPipeGetAvailableBytes </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="pipe_8h.html#adeff9c024c6eeb2707d133050a4536f6">AuPipe</a> *&#160;</td>
           <td class="paramname"><em>pipe</em></td><td>)</td>
@@ -456,7 +463,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="size__t_8h.html#a1e1f4fe6f57edbe9d428d8fd39beb87a">size_t</a>&#160;</td>
           <td class="paramname"><em>amount</em>&#160;</td>
         </tr>
         <tr>
@@ -504,7 +511,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> AuPipeRead </td>
+          <td class="memname"><a class="el" href="size__t_8h.html#a1e1f4fe6f57edbe9d428d8fd39beb87a">size_t</a> AuPipeRead </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="vfs_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *&#160;</td>
           <td class="paramname"><em>fs</em>, </td>
@@ -544,7 +551,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> AuPipeUnread </td>
+          <td class="memname"><a class="el" href="size__t_8h.html#a1e1f4fe6f57edbe9d428d8fd39beb87a">size_t</a> AuPipeUnread </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="pipe_8h.html#adeff9c024c6eeb2707d133050a4536f6">AuPipe</a> *&#160;</td>
           <td class="paramname"><em>pipe</em></td><td>)</td>
@@ -570,7 +577,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> AuPipeWrite </td>
+          <td class="memname"><a class="el" href="size__t_8h.html#a1e1f4fe6f57edbe9d428d8fd39beb87a">size_t</a> AuPipeWrite </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="vfs_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *&#160;</td>
           <td class="paramname"><em>fs</em>, </td>

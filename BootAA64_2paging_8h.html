@@ -79,15 +79,17 @@ $(function() {
   <div class="headertitle"><div class="title">paging.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="stdint_8h_source.html">stdint.h</a>&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for paging.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="BootAA64_2paging_8h__incl.png" border="0" usemap="#aXenevaOS_2BootAA64_2paging_8h" alt=""/></div>
 <map name="aXenevaOS_2BootAA64_2paging_8h" id="aXenevaOS_2BootAA64_2paging_8h">
 <area shape="rect" title=" " alt="" coords="5,5,223,31"/>
-<area shape="rect" title=" " alt="" coords="79,79,149,104"/>
+<area shape="rect" href="stdint_8h.html" title=" " alt="" coords="79,79,149,104"/>
 <area shape="poly" title=" " alt="" coords="117,31,117,65,111,65,111,31"/>
+<area shape="rect" href="size__t_8h.html" title=" " alt="" coords="78,152,150,177"/>
+<area shape="poly" title=" " alt="" coords="117,104,117,138,111,138,111,104"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -140,6 +142,8 @@ Functions</h2></td></tr>
 <tr class="separator:a00271891cece14cf06df57f9cf4b933d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8e028dc5157f0566f449fff2289e7eb" id="r_aa8e028dc5157f0566f449fff2289e7eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BootAA64_2paging_8h.html#aa8e028dc5157f0566f449fff2289e7eb">XEPagingMap</a> (<a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> virtualAddr, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> physAddr)</td></tr>
 <tr class="separator:aa8e028dc5157f0566f449fff2289e7eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a812748eea056f9c56a16e58eecb9cf55" id="r_a812748eea056f9c56a16e58eecb9cf55"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BootAA64_2paging_8h.html#a812748eea056f9c56a16e58eecb9cf55">XEPagingIsMapped</a> (<a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> virtualAddr)</td></tr>
+<tr class="separator:a812748eea056f9c56a16e58eecb9cf55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0abfdac011b0b6f38a022f42df8d3118" id="r_a0abfdac011b0b6f38a022f42df8d3118"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BootAA64_2paging_8h.html#a0abfdac011b0b6f38a022f42df8d3118">XEMapMMIO</a> (<a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> *l1_table, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> va, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> pa)</td></tr>
 <tr class="separator:a0abfdac011b0b6f38a022f42df8d3118"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ef81e13c74eb5d0380ef40ff9618fd7" id="r_a0ef81e13c74eb5d0380ef40ff9618fd7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BootAA64_2paging_8h.html#a0ef81e13c74eb5d0380ef40ff9618fd7">XEPagingCopy</a> ()</td></tr>
@@ -411,6 +415,32 @@ Functions</h2></td></tr>
           <td class="memname">void XEPagingInitialize </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a812748eea056f9c56a16e58eecb9cf55" name="a812748eea056f9c56a16e58eecb9cf55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a812748eea056f9c56a16e58eecb9cf55">&#9670;&#160;</a></span>XEPagingIsMapped()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> XEPagingIsMapped </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>&#160;</td>
+          <td class="paramname"><em>virtualAddr</em></td><td>)</td>
           <td></td>
         </tr>
       </table>

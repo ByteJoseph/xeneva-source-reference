@@ -78,14 +78,14 @@ $(function() {
   <div class="headertitle"><div class="title">lowlevel.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
+<div class="textblock"><code>#include &lt;cstdint&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for lowlevel.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="Boot_2lowlevel_8h__incl.png" border="0" usemap="#aXenevaOS_2Boot_2lowlevel_8h" alt=""/></div>
 <map name="aXenevaOS_2Boot_2lowlevel_8h" id="aXenevaOS_2Boot_2lowlevel_8h">
 <area shape="rect" title=" " alt="" coords="5,5,200,31"/>
-<area shape="rect" title=" " alt="" coords="67,79,138,104"/>
+<area shape="rect" title=" " alt="" coords="69,79,136,104"/>
 <area shape="poly" title=" " alt="" coords="105,31,105,65,100,65,100,31"/>
 </map>
 </div>
@@ -118,7 +118,7 @@ Functions</h2></td></tr>
 <tr class="separator:a29c84b1123fed4f280e24cb1b67a6d3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af57b17720a6a397c9087c795896f3391" id="r_af57b17720a6a397c9087c795896f3391"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Boot_2lowlevel_8h.html#af57b17720a6a397c9087c795896f3391">outportd</a> (<a class="el" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> port, <a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> val)</td></tr>
 <tr class="separator:af57b17720a6a397c9087c795896f3391"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44e6f6450d27719fb09c8ce373a6a822" id="r_a44e6f6450d27719fb09c8ce373a6a822"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Boot_2lowlevel_8h.html#a44e6f6450d27719fb09c8ce373a6a822">cpuid</a> (<a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> page, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> *a, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> *b, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> *c, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> *d, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> subpage=0)</td></tr>
+<tr class="memitem:a44e6f6450d27719fb09c8ce373a6a822" id="r_a44e6f6450d27719fb09c8ce373a6a822"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Boot_2lowlevel_8h.html#a44e6f6450d27719fb09c8ce373a6a822">cpuid</a> (<a class="el" href="size__t_8h.html#a1e1f4fe6f57edbe9d428d8fd39beb87a">size_t</a> page, <a class="el" href="size__t_8h.html#a1e1f4fe6f57edbe9d428d8fd39beb87a">size_t</a> *a, <a class="el" href="size__t_8h.html#a1e1f4fe6f57edbe9d428d8fd39beb87a">size_t</a> *b, <a class="el" href="size__t_8h.html#a1e1f4fe6f57edbe9d428d8fd39beb87a">size_t</a> *c, <a class="el" href="size__t_8h.html#a1e1f4fe6f57edbe9d428d8fd39beb87a">size_t</a> *d, <a class="el" href="size__t_8h.html#a1e1f4fe6f57edbe9d428d8fd39beb87a">size_t</a> subpage=0)</td></tr>
 <tr class="separator:a44e6f6450d27719fb09c8ce373a6a822"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a38424a561ab21feec0a6701823baa4" id="r_a2a38424a561ab21feec0a6701823baa4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Boot_2lowlevel_8h.html#a2a38424a561ab21feec0a6701823baa4">cacheflush</a> ()</td></tr>
 <tr class="separator:a2a38424a561ab21feec0a6701823baa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -132,15 +132,15 @@ Functions</h2></td></tr>
 <tr class="separator:a5ff1544ae30d9612ff3f07171e4249c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c9ef458f88073bc9f9246409d5ae60b" id="r_a3c9ef458f88073bc9f9246409d5ae60b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Boot_2lowlevel_8h.html#a3c9ef458f88073bc9f9246409d5ae60b">cpu_startup</a> ()</td></tr>
 <tr class="separator:a3c9ef458f88073bc9f9246409d5ae60b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94b59ecf6079c0c3107542c9d92a09be" id="r_a94b59ecf6079c0c3107542c9d92a09be"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Boot_2lowlevel_8h.html#a94b59ecf6079c0c3107542c9d92a09be">rdmsr</a> (<a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> reg)</td></tr>
+<tr class="memitem:a94b59ecf6079c0c3107542c9d92a09be" id="r_a94b59ecf6079c0c3107542c9d92a09be"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Boot_2lowlevel_8h.html#a94b59ecf6079c0c3107542c9d92a09be">rdmsr</a> (<a class="el" href="size__t_8h.html#a1e1f4fe6f57edbe9d428d8fd39beb87a">size_t</a> reg)</td></tr>
 <tr class="separator:a94b59ecf6079c0c3107542c9d92a09be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ac9d4ceef881169cba4ef054ebcc590" id="r_a0ac9d4ceef881169cba4ef054ebcc590"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Boot_2lowlevel_8h.html#a0ac9d4ceef881169cba4ef054ebcc590">wrmsr</a> (<a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> reg, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> val)</td></tr>
+<tr class="memitem:a0ac9d4ceef881169cba4ef054ebcc590" id="r_a0ac9d4ceef881169cba4ef054ebcc590"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Boot_2lowlevel_8h.html#a0ac9d4ceef881169cba4ef054ebcc590">wrmsr</a> (<a class="el" href="size__t_8h.html#a1e1f4fe6f57edbe9d428d8fd39beb87a">size_t</a> reg, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> val)</td></tr>
 <tr class="separator:a0ac9d4ceef881169cba4ef054ebcc590"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7039b534bb05f13fc75befe5364e0fa0" id="r_a7039b534bb05f13fc75befe5364e0fa0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Boot_2lowlevel_8h.html#a7039b534bb05f13fc75befe5364e0fa0">read_cr0</a> ()</td></tr>
+<tr class="memitem:a7039b534bb05f13fc75befe5364e0fa0" id="r_a7039b534bb05f13fc75befe5364e0fa0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="size__t_8h.html#a1e1f4fe6f57edbe9d428d8fd39beb87a">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Boot_2lowlevel_8h.html#a7039b534bb05f13fc75befe5364e0fa0">read_cr0</a> ()</td></tr>
 <tr class="separator:a7039b534bb05f13fc75befe5364e0fa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ed995aa44e6b99cd3f7b837ff0ba589" id="r_a3ed995aa44e6b99cd3f7b837ff0ba589"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Boot_2lowlevel_8h.html#a3ed995aa44e6b99cd3f7b837ff0ba589">write_cr0</a> (<a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>)</td></tr>
+<tr class="memitem:a3ed995aa44e6b99cd3f7b837ff0ba589" id="r_a3ed995aa44e6b99cd3f7b837ff0ba589"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Boot_2lowlevel_8h.html#a3ed995aa44e6b99cd3f7b837ff0ba589">write_cr0</a> (<a class="el" href="size__t_8h.html#a1e1f4fe6f57edbe9d428d8fd39beb87a">size_t</a>)</td></tr>
 <tr class="separator:a3ed995aa44e6b99cd3f7b837ff0ba589"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa92d51b47bdad4c1113ce10231a52d95" id="r_aa92d51b47bdad4c1113ce10231a52d95"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Boot_2lowlevel_8h.html#aa92d51b47bdad4c1113ce10231a52d95">call_kernel</a> (void *param, void *<a class="el" href="process_8h.html#a12532d9e7797b0d9089521c02528e113">entry</a>, void *stack, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> stacksz)</td></tr>
+<tr class="memitem:aa92d51b47bdad4c1113ce10231a52d95" id="r_aa92d51b47bdad4c1113ce10231a52d95"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Boot_2lowlevel_8h.html#aa92d51b47bdad4c1113ce10231a52d95">call_kernel</a> (void *param, void *<a class="el" href="process_8h.html#a12532d9e7797b0d9089521c02528e113">entry</a>, void *stack, <a class="el" href="size__t_8h.html#a1e1f4fe6f57edbe9d428d8fd39beb87a">size_t</a> stacksz)</td></tr>
 <tr class="separator:aa92d51b47bdad4c1113ce10231a52d95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
@@ -188,7 +188,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="size__t_8h.html#a1e1f4fe6f57edbe9d428d8fd39beb87a">size_t</a>&#160;</td>
           <td class="paramname"><em>stacksz</em>&#160;</td>
         </tr>
         <tr>
@@ -227,37 +227,37 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void cpuid </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="size__t_8h.html#a1e1f4fe6f57edbe9d428d8fd39beb87a">size_t</a>&#160;</td>
           <td class="paramname"><em>page</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="size__t_8h.html#a1e1f4fe6f57edbe9d428d8fd39beb87a">size_t</a> *&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="size__t_8h.html#a1e1f4fe6f57edbe9d428d8fd39beb87a">size_t</a> *&#160;</td>
           <td class="paramname"><em>b</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="size__t_8h.html#a1e1f4fe6f57edbe9d428d8fd39beb87a">size_t</a> *&#160;</td>
           <td class="paramname"><em>c</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="size__t_8h.html#a1e1f4fe6f57edbe9d428d8fd39beb87a">size_t</a> *&#160;</td>
           <td class="paramname"><em>d</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="size__t_8h.html#a1e1f4fe6f57edbe9d428d8fd39beb87a">size_t</a>&#160;</td>
           <td class="paramname"><em>subpage</em> = <code>0</code>&#160;</td>
         </tr>
         <tr>
@@ -459,7 +459,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> rdmsr </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="size__t_8h.html#a1e1f4fe6f57edbe9d428d8fd39beb87a">size_t</a>&#160;</td>
           <td class="paramname"><em>reg</em></td><td>)</td>
           <td></td>
         </tr>
@@ -475,7 +475,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> read_cr0 </td>
+          <td class="memname"><a class="el" href="size__t_8h.html#a1e1f4fe6f57edbe9d428d8fd39beb87a">size_t</a> read_cr0 </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -530,7 +530,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void write_cr0 </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="size__t_8h.html#a1e1f4fe6f57edbe9d428d8fd39beb87a">size_t</a>&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -548,7 +548,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void wrmsr </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="size__t_8h.html#a1e1f4fe6f57edbe9d428d8fd39beb87a">size_t</a>&#160;</td>
           <td class="paramname"><em>reg</em>, </td>
         </tr>
         <tr>
