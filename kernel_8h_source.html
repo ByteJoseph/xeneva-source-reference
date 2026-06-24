@@ -85,7 +85,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#ifndef __LINUX_KERNEL_H__</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#define __LINUX_KERNEL_H__</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;<a class="code" href="stdint_8h.html">stdint.h</a>&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;<a class="code" href="aa64cpu_8h.html">Hal/AA64/aa64cpu.h</a>&gt;</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;<a class="code" href="kmalloc_8h.html">Mm/kmalloc.h</a>&gt;</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;<a class="code" href="__null_8h.html">_null.h</a>&gt;</span></div>
@@ -149,10 +149,10 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="kernel_8h.html#a531c4f08aa1262295102e1987746e8f7">   65</a></span><span class="preprocessor">#define IS_ENABLED(opt) (!!(opt))</span></div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="kernel_8h.html#a0713bd68bf871fc2133cbd3802f2468a">   67</a></span><span class="keyword">typedef</span> <a class="code hl_typedef" href="stdint_8h.html#a19e3e47d795881e91fde03c3f592bef4">uintptr_t</a> <a class="code hl_typedef" href="kernel_8h.html#a0713bd68bf871fc2133cbd3802f2468a">phys_addr_t</a>;</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="kernel_8h.html#a7ec757cd816c30cf4deea3d7f9653078">   68</a></span><span class="keyword">typedef</span> <a class="code hl_typedef" href="stdint_8h.html#a19e3e47d795881e91fde03c3f592bef4">uintptr_t</a> <a class="code hl_typedef" href="kernel_8h.html#a7ec757cd816c30cf4deea3d7f9653078">resource_size_t</a>;</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="kernel_8h.html#a70f67be534a960099aea38c37c7331df">   69</a></span><span class="keyword">typedef</span> <a class="code hl_typedef" href="stdint_8h.html#a19e3e47d795881e91fde03c3f592bef4">uintptr_t</a> <a class="code hl_typedef" href="kernel_8h.html#a70f67be534a960099aea38c37c7331df">dma_addr_t</a>;</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="kernel_8h.html#afd2372d9611d59052a8e2cfbe7834d8f">   70</a></span><span class="keyword">typedef</span> <a class="code hl_typedef" href="stdint_8h.html#a19e3e47d795881e91fde03c3f592bef4">uintptr_t</a> <a class="code hl_typedef" href="kernel_8h.html#afd2372d9611d59052a8e2cfbe7834d8f">io_addr_t</a>;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="kernel_8h.html#a0713bd68bf871fc2133cbd3802f2468a">   67</a></span><span class="keyword">typedef</span> <a class="code hl_typedef" href="BaseHdr_2stdint_8h.html#a728e973c799f206f0151c8a3bd1e5699">uintptr_t</a> <a class="code hl_typedef" href="kernel_8h.html#a0713bd68bf871fc2133cbd3802f2468a">phys_addr_t</a>;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="kernel_8h.html#a7ec757cd816c30cf4deea3d7f9653078">   68</a></span><span class="keyword">typedef</span> <a class="code hl_typedef" href="BaseHdr_2stdint_8h.html#a728e973c799f206f0151c8a3bd1e5699">uintptr_t</a> <a class="code hl_typedef" href="kernel_8h.html#a7ec757cd816c30cf4deea3d7f9653078">resource_size_t</a>;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="kernel_8h.html#a70f67be534a960099aea38c37c7331df">   69</a></span><span class="keyword">typedef</span> <a class="code hl_typedef" href="BaseHdr_2stdint_8h.html#a728e973c799f206f0151c8a3bd1e5699">uintptr_t</a> <a class="code hl_typedef" href="kernel_8h.html#a70f67be534a960099aea38c37c7331df">dma_addr_t</a>;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="kernel_8h.html#afd2372d9611d59052a8e2cfbe7834d8f">   70</a></span><span class="keyword">typedef</span> <a class="code hl_typedef" href="BaseHdr_2stdint_8h.html#a728e973c799f206f0151c8a3bd1e5699">uintptr_t</a> <a class="code hl_typedef" href="kernel_8h.html#afd2372d9611d59052a8e2cfbe7834d8f">io_addr_t</a>;</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="kernel_8h.html#ae8229571968ef273d771ad747e87450b">   71</a></span><span class="keyword">typedef</span> <span class="keywordtype">int</span> <a class="code hl_typedef" href="kernel_8h.html#ae8229571968ef273d771ad747e87450b">spinlock_t</a>;</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="kernel_8h.html#af032b75de11187259c0463e6bf0f11d9">   72</a></span><span class="keyword">typedef</span> <span class="keywordtype">int</span> <a class="code hl_typedef" href="kernel_8h.html#af032b75de11187259c0463e6bf0f11d9">mutex</a>;</div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
@@ -394,6 +394,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span> </div>
 <div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span> </div>
 <div class="ttc" id="aBaseHdr_2linux_2list_8h_html"><div class="ttname"><a href="BaseHdr_2linux_2list_8h.html">list.h</a></div></div>
+<div class="ttc" id="aBaseHdr_2stdint_8h_html_a728e973c799f206f0151c8a3bd1e5699"><div class="ttname"><a href="BaseHdr_2stdint_8h.html#a728e973c799f206f0151c8a3bd1e5699">uintptr_t</a></div><div class="ttdeci">unsigned int uintptr_t</div><div class="ttdef"><b>Definition</b> stdint.h:97</div></div>
 <div class="ttc" id="a__null_8h_html"><div class="ttname"><a href="__null_8h.html">_null.h</a></div></div>
 <div class="ttc" id="aaa64cpu_8h_html"><div class="ttname"><a href="aa64cpu_8h.html">aa64cpu.h</a></div></div>
 <div class="ttc" id="aaa64lowlevel_8h_html"><div class="ttname"><a href="aa64lowlevel_8h.html">aa64lowlevel.h</a></div></div>
@@ -461,8 +462,6 @@ $(document).ready(function() { init_codefold(0); });
 <div class="ttc" id="akmalloc_8h_html"><div class="ttname"><a href="kmalloc_8h.html">kmalloc.h</a></div></div>
 <div class="ttc" id="alinux_2timer_8h_html"><div class="ttname"><a href="linux_2timer_8h.html">timer.h</a></div></div>
 <div class="ttc" id="aotg_8h_html"><div class="ttname"><a href="otg_8h.html">otg.h</a></div></div>
-<div class="ttc" id="astdint_8h_html"><div class="ttname"><a href="stdint_8h.html">stdint.h</a></div></div>
-<div class="ttc" id="astdint_8h_html_a19e3e47d795881e91fde03c3f592bef4"><div class="ttname"><a href="stdint_8h.html#a19e3e47d795881e91fde03c3f592bef4">uintptr_t</a></div><div class="ttdeci">unsigned uintptr_t</div><div class="ttdef"><b>Definition</b> stdint.h:84</div></div>
 <div class="ttc" id="aworkqueue_8h_html"><div class="ttname"><a href="workqueue_8h.html">workqueue.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

@@ -81,7 +81,7 @@ $(function() {
   <div class="headertitle"><div class="title">xhci.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="stdint_8h_source.html">stdint.h</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
 <code>#include &lt;list.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="spinlock_8h_source.html">Sync/spinlock.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="x86__64__sched_8h_source.html">Hal/x86_64_sched.h</a>&gt;</code><br />
@@ -91,7 +91,7 @@ Include dependency graph for xhci.h:</div>
 <div class="center"><img src="Drivers_2xHCI_2xhci_8h__incl.png" border="0" usemap="#aXenevaOS_2Drivers_2xHCI_2xhci_8h" alt=""/></div>
 <map name="aXenevaOS_2Drivers_2xHCI_2xhci_8h" id="aXenevaOS_2Drivers_2xHCI_2xhci_8h">
 <area shape="rect" title=" " alt="" coords="76,5,251,45"/>
-<area shape="rect" href="stdint_8h.html" title=" " alt="" coords="24,167,95,192"/>
+<area shape="rect" title=" " alt="" coords="24,167,95,192"/>
 <area shape="poly" title=" " alt="" coords="77,48,41,67,25,79,13,95,8,110,12,126,23,141,36,156,32,159,18,145,7,128,3,110,8,92,21,76,38,62,75,43"/>
 <area shape="rect" title=" " alt="" coords="346,93,400,119"/>
 <area shape="poly" title=" " alt="" coords="215,43,333,87,331,92,213,48"/>
@@ -99,8 +99,6 @@ Include dependency graph for xhci.h:</div>
 <area shape="poly" title=" " alt="" coords="146,47,107,85,103,82,142,44"/>
 <area shape="rect" href="x86__64__sched_8h.html" title=" " alt="" coords="169,93,321,119"/>
 <area shape="poly" title=" " alt="" coords="185,44,225,82,221,85,181,47"/>
-<area shape="rect" href="size__t_8h.html" title=" " alt="" coords="24,240,96,265"/>
-<area shape="poly" title=" " alt="" coords="62,192,62,226,57,226,57,192"/>
 <area shape="poly" title=" " alt="" coords="82,120,70,154,65,153,77,118"/>
 <area shape="rect" title=" " alt="" coords="119,167,195,192"/>
 <area shape="poly" title=" " alt="" coords="98,117,137,155,133,159,94,121"/>
@@ -478,13 +476,13 @@ Functions</h2></td></tr>
 <tr class="separator:ab3cb64713220ca23af80243de380beb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf5a07e2203232b55a12f9568ea396be" id="r_adf5a07e2203232b55a12f9568ea396be"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Drivers_2xHCI_2xhci_8h.html#adf5a07e2203232b55a12f9568ea396be">XHCISendNoopCmd</a> (<a class="el" href="Drivers_2xHCI_2xhci_8h.html#a6d98141bce869f1f9af38cee786df109">XHCIDevice</a> *dev)</td></tr>
 <tr class="separator:adf5a07e2203232b55a12f9568ea396be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5fbf9d7982190875877c7b4d3d328052" id="r_a5fbf9d7982190875877c7b4d3d328052"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Drivers_2xHCI_2xhci_8h.html#a5fbf9d7982190875877c7b4d3d328052">XHCISendControlCmd</a> (<a class="el" href="Drivers_2xHCI_2xhci_8h.html#a6d98141bce869f1f9af38cee786df109">XHCIDevice</a> *dev, <a class="el" href="Drivers_2Usb3_2xhci_8h.html#a047345a80173c842dc7944c298d6974a">XHCISlot</a> *slot, <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> slot_id, const <a class="el" href="structUSB__REQUEST__PACKET.html">USB_REQUEST_PACKET</a> *request, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> buffer_addr, const <a class="el" href="size__t_8h.html#a1e1f4fe6f57edbe9d428d8fd39beb87a">size_t</a> len, <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> trt=<a class="el" href="xhci__cmd_8h.html#af42a2e080df4cb1d57ccff55a88c7fa1">CTL_TRANSFER_TRT_IN_DATA</a>)</td></tr>
+<tr class="memitem:a5fbf9d7982190875877c7b4d3d328052" id="r_a5fbf9d7982190875877c7b4d3d328052"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Drivers_2xHCI_2xhci_8h.html#a5fbf9d7982190875877c7b4d3d328052">XHCISendControlCmd</a> (<a class="el" href="Drivers_2xHCI_2xhci_8h.html#a6d98141bce869f1f9af38cee786df109">XHCIDevice</a> *dev, <a class="el" href="Drivers_2Usb3_2xhci_8h.html#a047345a80173c842dc7944c298d6974a">XHCISlot</a> *slot, <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> slot_id, const <a class="el" href="structUSB__REQUEST__PACKET.html">USB_REQUEST_PACKET</a> *request, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> buffer_addr, const <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> len, <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> trt=<a class="el" href="xhci__cmd_8h.html#af42a2e080df4cb1d57ccff55a88c7fa1">CTL_TRANSFER_TRT_IN_DATA</a>)</td></tr>
 <tr class="separator:a5fbf9d7982190875877c7b4d3d328052"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad874d3b384770b5bcaae7041b5215827" id="r_ad874d3b384770b5bcaae7041b5215827"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Drivers_2xHCI_2xhci_8h.html#ad874d3b384770b5bcaae7041b5215827">XHCISendNormalTRB</a> (<a class="el" href="Drivers_2xHCI_2xhci_8h.html#a6d98141bce869f1f9af38cee786df109">XHCIDevice</a> *dev, <a class="el" href="Drivers_2Usb3_2xhci_8h.html#a047345a80173c842dc7944c298d6974a">XHCISlot</a> *slot, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> data_buffer, <a class="el" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> data_len, <a class="el" href="Drivers_2Usb3_2xhci_8h.html#a06054530bfdc3693d215e4d50120ab1f">XHCIEndpoint</a> *ep)</td></tr>
 <tr class="separator:ad874d3b384770b5bcaae7041b5215827"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c5b36d6b8bdd0d3b8d5fe44c4303949" id="r_a8c5b36d6b8bdd0d3b8d5fe44c4303949"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Drivers_2xHCI_2xhci_8h.html#a8c5b36d6b8bdd0d3b8d5fe44c4303949">XHCIBulkTransfer</a> (<a class="el" href="Drivers_2xHCI_2xhci_8h.html#a6d98141bce869f1f9af38cee786df109">XHCIDevice</a> *dev, <a class="el" href="Drivers_2Usb3_2xhci_8h.html#a047345a80173c842dc7944c298d6974a">XHCISlot</a> *slot, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> buffer, <a class="el" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> data_len, <a class="el" href="Drivers_2Usb3_2xhci_8h.html#a06054530bfdc3693d215e4d50120ab1f">XHCIEndpoint</a> *ep_)</td></tr>
 <tr class="separator:a8c5b36d6b8bdd0d3b8d5fe44c4303949"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67f1d0366d7e18488e34e62fbad1e9c3" id="r_a67f1d0366d7e18488e34e62fbad1e9c3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="size__t_8h.html#a1e1f4fe6f57edbe9d428d8fd39beb87a">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Drivers_2xHCI_2xhci_8h.html#a67f1d0366d7e18488e34e62fbad1e9c3">XHCIGetMaxPacketSize</a> (<a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> speed)</td></tr>
+<tr class="memitem:a67f1d0366d7e18488e34e62fbad1e9c3" id="r_a67f1d0366d7e18488e34e62fbad1e9c3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Drivers_2xHCI_2xhci_8h.html#a67f1d0366d7e18488e34e62fbad1e9c3">XHCIGetMaxPacketSize</a> (<a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> speed)</td></tr>
 <tr class="separator:a67f1d0366d7e18488e34e62fbad1e9c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
@@ -2789,7 +2787,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="size__t_8h.html#a1e1f4fe6f57edbe9d428d8fd39beb87a">size_t</a> XHCIGetMaxPacketSize </td>
+          <td class="memname"><a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> XHCIGetMaxPacketSize </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
           <td class="paramname"><em>speed</em></td><td>)</td>
@@ -3212,7 +3210,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="size__t_8h.html#a1e1f4fe6f57edbe9d428d8fd39beb87a">size_t</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>&#160;</td>
           <td class="paramname"><em>len</em>, </td>
         </tr>
         <tr>

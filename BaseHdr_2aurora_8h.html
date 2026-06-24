@@ -81,24 +81,15 @@ $(function() {
   <div class="headertitle"><div class="title">aurora.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="stdint_8h_source.html">stdint.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="stdbool_8h_source.html">stdbool.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="stddef_8h_source.html">stddef.h</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="BaseHdr_2stdint_8h_source.html">stdint.h</a>&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for aurora.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="BaseHdr_2aurora_8h__incl.png" border="0" usemap="#aXenevaOS_2BaseHdr_2aurora_8h" alt=""/></div>
 <map name="aXenevaOS_2BaseHdr_2aurora_8h" id="aXenevaOS_2BaseHdr_2aurora_8h">
 <area shape="rect" title=" " alt="" coords="5,5,212,31"/>
-<area shape="rect" href="stdint_8h.html" title=" " alt="" coords="85,152,156,177"/>
-<area shape="poly" title=" " alt="" coords="94,33,79,47,64,64,56,83,58,103,72,124,91,142,88,146,68,128,53,105,51,83,60,61,75,43,91,29"/>
-<area shape="rect" href="stdbool_8h.html" title=" " alt="" coords="67,79,150,104"/>
+<area shape="rect" href="BaseHdr_2stdint_8h.html" title=" " alt="" coords="73,79,144,104"/>
 <area shape="poly" title=" " alt="" coords="111,31,111,65,106,65,106,31"/>
-<area shape="rect" href="stddef_8h.html" title=" " alt="" coords="174,79,249,104"/>
-<area shape="poly" title=" " alt="" coords="127,28,185,68,182,73,124,33"/>
-<area shape="rect" href="size__t_8h.html" title=" " alt="" coords="85,225,157,251"/>
-<area shape="poly" title=" " alt="" coords="123,178,123,212,118,212,118,178"/>
-<area shape="poly" title=" " alt="" coords="198,106,148,145,145,141,195,102"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -220,16 +211,6 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a2cb84a209e2d8810399a21ccb3ca5fd1" id="r_a2cb84a209e2d8810399a21ccb3ca5fd1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BaseHdr_2aurora_8h.html#a2cb84a209e2d8810399a21ccb3ca5fd1">RAW_OFFSET</a>(type,  x,  offset)&#160;&#160;&#160;(type)((<a class="el" href="size__t_8h.html#a1e1f4fe6f57edbe9d428d8fd39beb87a">size_t</a>)(x) + (<a class="el" href="size__t_8h.html#a1e1f4fe6f57edbe9d428d8fd39beb87a">size_t</a>)(offset))</td></tr>
-<tr class="separator:a2cb84a209e2d8810399a21ccb3ca5fd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acbfacce094bfd83a4aa6b5c186634935" id="r_acbfacce094bfd83a4aa6b5c186634935"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BaseHdr_2aurora_8h.html#acbfacce094bfd83a4aa6b5c186634935">RAW_DIFF</a>(a,  b)&#160;&#160;&#160;((<a class="el" href="size__t_8h.html#a1e1f4fe6f57edbe9d428d8fd39beb87a">size_t</a>)(a) - (<a class="el" href="size__t_8h.html#a1e1f4fe6f57edbe9d428d8fd39beb87a">size_t</a>)(b))</td></tr>
-<tr class="separator:acbfacce094bfd83a4aa6b5c186634935"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3dbd1e7f901a8a899195a882f951c36" id="r_ac3dbd1e7f901a8a899195a882f951c36"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BaseHdr_2aurora_8h.html#ac3dbd1e7f901a8a899195a882f951c36">MEM_AFTER</a>(type,  ptr)&#160;&#160;&#160;((type)(&amp;(ptr)[1]))</td></tr>
-<tr class="separator:ac3dbd1e7f901a8a899195a882f951c36"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff6165db3fa02d1c8646031870230232" id="r_aff6165db3fa02d1c8646031870230232"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BaseHdr_2aurora_8h.html#aff6165db3fa02d1c8646031870230232">DIV_ROUND_UP</a>(x,  y)&#160;&#160;&#160;	((x + y - 1) / y)</td></tr>
-<tr class="separator:aff6165db3fa02d1c8646031870230232"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f62b3cca99dd27d1e326a2cf084beee" id="r_a2f62b3cca99dd27d1e326a2cf084beee"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BaseHdr_2aurora_8h.html#a2f62b3cca99dd27d1e326a2cf084beee">ALIGN_UP</a>(x,  y)&#160;&#160;&#160;(<a class="el" href="BaseHdr_2aurora_8h.html#aff6165db3fa02d1c8646031870230232">DIV_ROUND_UP</a>(x,y)*y)</td></tr>
-<tr class="separator:a2f62b3cca99dd27d1e326a2cf084beee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acfdff3168eaddc756d25f28912d94e28" id="r_acfdff3168eaddc756d25f28912d94e28"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a>&#160;&#160;&#160;<a class="el" href="x86__64__gdt_8cpp.html#ae966f18db19d89de8876a6b5d5b56143">__declspec</a>(dllexport)</td></tr>
 <tr class="separator:acfdff3168eaddc756d25f28912d94e28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0c122148e7313c84bacbeaf049abe9e" id="r_af0c122148e7313c84bacbeaf049abe9e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BaseHdr_2aurora_8h.html#af0c122148e7313c84bacbeaf049abe9e">AU_IMPORT</a>&#160;&#160;&#160;<a class="el" href="x86__64__gdt_8cpp.html#ae966f18db19d89de8876a6b5d5b56143">__declspec</a>(dllimport)</td></tr>
@@ -251,8 +232,6 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ab40a1f154aa44511af7f97b88296f7d3" id="r_ab40a1f154aa44511af7f97b88296f7d3"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BaseHdr_2aurora_8h.html#ab40a1f154aa44511af7f97b88296f7d3">BOOL</a></td></tr>
-<tr class="separator:ab40a1f154aa44511af7f97b88296f7d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f6b8563a974774699338eb2caba4bf8" id="r_a7f6b8563a974774699338eb2caba4bf8"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct__lbprotocol__.html">_lbprotocol_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BaseHdr_2aurora_8h.html#a7f6b8563a974774699338eb2caba4bf8">AuLittleBootProtocol</a></td></tr>
 <tr class="separator:a7f6b8563a974774699338eb2caba4bf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a886498d078ece21b18b0bf2dad40fccd" id="r_a886498d078ece21b18b0bf2dad40fccd"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct__KERNEL__BOOT__INFO__.html">_KERNEL_BOOT_INFO_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BaseHdr_2aurora_8h.html#a886498d078ece21b18b0bf2dad40fccd">KERNEL_BOOT_INFO</a></td></tr>
@@ -267,34 +246,6 @@ Functions</h2></td></tr>
 <tr class="separator:ab676945e1697fb717af289a3cc86d817"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a2f62b3cca99dd27d1e326a2cf084beee" name="a2f62b3cca99dd27d1e326a2cf084beee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2f62b3cca99dd27d1e326a2cf084beee">&#9670;&#160;</a></span>ALIGN_UP</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ALIGN_UP</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">x, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">y&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;(<a class="el" href="BaseHdr_2aurora_8h.html#aff6165db3fa02d1c8646031870230232">DIV_ROUND_UP</a>(x,y)*y)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a0fe486a3ff3c57b134906cb852a447ba" name="a0fe486a3ff3c57b134906cb852a447ba"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0fe486a3ff3c57b134906cb852a447ba">&#9670;&#160;</a></span>AU_ALIGN</h2>
 
@@ -324,6 +275,14 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>BSD 2-Clause License</p>
+<p>Copyright (c) 2022-2023, Manas Kamal Choudhury All rights reserved.</p>
+<p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
+<ol type="1">
+<li>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</li>
+<li>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</li>
+</ol>
+<p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. </p>
 
 </div>
 </div>
@@ -411,34 +370,6 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aff6165db3fa02d1c8646031870230232" name="aff6165db3fa02d1c8646031870230232"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aff6165db3fa02d1c8646031870230232">&#9670;&#160;</a></span>DIV_ROUND_UP</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define DIV_ROUND_UP</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">x, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">y&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;	((x + y - 1) / y)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a77383d4c5311d4c7fe49364766887650" name="a77383d4c5311d4c7fe49364766887650"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a77383d4c5311d4c7fe49364766887650">&#9670;&#160;</a></span>KERNEL_STACK_SIZE</h2>
 
@@ -447,96 +378,6 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define KERNEL_STACK_SIZE&#160;&#160;&#160;40960</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ac3dbd1e7f901a8a899195a882f951c36" name="ac3dbd1e7f901a8a899195a882f951c36"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac3dbd1e7f901a8a899195a882f951c36">&#9670;&#160;</a></span>MEM_AFTER</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MEM_AFTER</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">type, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">ptr&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;((type)(&amp;(ptr)[1]))</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="acbfacce094bfd83a4aa6b5c186634935" name="acbfacce094bfd83a4aa6b5c186634935"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acbfacce094bfd83a4aa6b5c186634935">&#9670;&#160;</a></span>RAW_DIFF</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define RAW_DIFF</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">a, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">b&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;((<a class="el" href="size__t_8h.html#a1e1f4fe6f57edbe9d428d8fd39beb87a">size_t</a>)(a) - (<a class="el" href="size__t_8h.html#a1e1f4fe6f57edbe9d428d8fd39beb87a">size_t</a>)(b))</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a2cb84a209e2d8810399a21ccb3ca5fd1" name="a2cb84a209e2d8810399a21ccb3ca5fd1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2cb84a209e2d8810399a21ccb3ca5fd1">&#9670;&#160;</a></span>RAW_OFFSET</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define RAW_OFFSET</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">type, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">x, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">offset&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;(type)((<a class="el" href="size__t_8h.html#a1e1f4fe6f57edbe9d428d8fd39beb87a">size_t</a>)(x) + (<a class="el" href="size__t_8h.html#a1e1f4fe6f57edbe9d428d8fd39beb87a">size_t</a>)(offset))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -555,28 +396,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-</div>
-</div>
-<a id="ab40a1f154aa44511af7f97b88296f7d3" name="ab40a1f154aa44511af7f97b88296f7d3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab40a1f154aa44511af7f97b88296f7d3">&#9670;&#160;</a></span>BOOL</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> <a class="el" href="BaseHdr_2aurora_8h.html#ab40a1f154aa44511af7f97b88296f7d3">BOOL</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>BSD 2-Clause License</p>
-<p>Copyright (c) 2022-2023, Manas Kamal Choudhury All rights reserved.</p>
-<p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
-<ol type="1">
-<li>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</li>
-<li>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</li>
-</ol>
-<p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. </p>
 
 </div>
 </div>

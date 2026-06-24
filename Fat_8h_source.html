@@ -85,7 +85,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#ifndef __FAT_H__</span></div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#define __FAT_H__</span></div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#include &lt;<a class="code" href="stdint_8h.html">stdint.h</a>&gt;</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#include &lt;<a class="code" href="vdisk_8h.html">Fs/vdisk.h</a>&gt;</span></div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#ifdef ARCH_X64</span></div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#include &lt;<a class="code" href="Sync_2mutex_8h.html">Sync/mutex.h</a>&gt;</span></div>
@@ -218,96 +218,97 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00157" name="l00157"></a><span class="lineno"><a class="line" href="struct__FatFS__.html#aa3f18a23d8401c6b35ce8dc0a7e3ba7e">  157</a></span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="struct__FatFS__.html#aa3f18a23d8401c6b35ce8dc0a7e3ba7e">__LastIndexInFat</a>;</div>
 <div class="line"><a id="l00158" name="l00158"></a><span class="lineno"><a class="line" href="struct__FatFS__.html#a904d6029b75963774c09d38d8bda5c2b">  158</a></span>    <a class="code hl_typedef" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> <a class="code hl_variable" href="struct__FatFS__.html#a904d6029b75963774c09d38d8bda5c2b">__BytesPerSector</a>;</div>
 <div class="line"><a id="l00159" name="l00159"></a><span class="lineno"><a class="line" href="struct__FatFS__.html#a84cf6c6596aec9377794c0e701af89f8">  159</a></span>    <span class="keywordtype">size_t</span> <a class="code hl_variable" href="struct__FatFS__.html#a84cf6c6596aec9377794c0e701af89f8">cluster_sz_in_bytes</a>;</div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span><span class="preprocessor">#ifdef ARCH_X64</span></div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    <a class="code hl_struct" href="struct__mutex__.html">AuMutex</a> *fat_mutex;</div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>    <a class="code hl_struct" href="struct__mutex__.html">AuMutex</a> *fat_write_mutex;</div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>    <a class="code hl_struct" href="struct__mutex__.html">AuMutex</a> *fat_read_mutex;</div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno"><a class="line" href="Fat_8h.html#aed054756c84304852dd8cfe0247864a9">  165</a></span>}<a class="code hl_typedef" href="Fat_8h.html#aed054756c84304852dd8cfe0247864a9">FatFS</a>;</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno"><a class="line" href="struct__FatFS__.html#adb0e531f7664341aa4da8e902d9e9b0d">  160</a></span>    <span class="keywordtype">void</span>* <a class="code hl_variable" href="struct__FatFS__.html#adb0e531f7664341aa4da8e902d9e9b0d">_scratchBuffer</a>;</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span><span class="preprocessor">#ifdef ARCH_X64</span></div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>    <a class="code hl_struct" href="struct__mutex__.html">AuMutex</a> *fat_mutex;</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>    <a class="code hl_struct" href="struct__mutex__.html">AuMutex</a> *fat_write_mutex;</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>    <a class="code hl_struct" href="struct__mutex__.html">AuMutex</a> *fat_read_mutex;</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno"><a class="line" href="Fat_8h.html#aed054756c84304852dd8cfe0247864a9">  166</a></span>}<a class="code hl_typedef" href="Fat_8h.html#aed054756c84304852dd8cfe0247864a9">FatFS</a>;</div>
 </div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span> </div>
 <div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span> </div>
 <div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span> </div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span><span class="comment">* FatInitialise -- initialise the fat file system</span></div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span><span class="comment">* @param vdisk -- Pointer to vdisk structure</span></div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span><span class="comment">* @param mountpoint -- mount point name</span></div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span><span class="comment">*/</span></div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span><span class="keyword">extern</span> <a class="code hl_struct" href="struct____VFS__NODE____.html">AuVFSNode</a>* <a class="code hl_function" href="Fat_8h.html#a6fc717c5a83f9e5287b0e6bac82504d2">FatInitialise</a>(<a class="code hl_struct" href="struct__VDISK__.html">AuVDisk</a> *vdisk, <span class="keywordtype">char</span>* mountpoint);</div>
-<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span> </div>
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span><span class="comment">* FatClusterToSector32 -- Converts a cluster to sector</span></div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span><span class="comment">* @param cluster -- cluster number</span></div>
-<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span><span class="comment">*/</span></div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span><span class="keyword">extern</span> <a class="code hl_typedef" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> <a class="code hl_function" href="Fat_8h.html#a147d9b775b20a4a9290ab6cb110dd9a8">FatClusterToSector32</a>(<a class="code hl_struct" href="struct__FatFS__.html">FatFS</a> *fs, <a class="code hl_typedef" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> cluster);</div>
-<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span> </div>
-<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span><span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code hl_function" href="Fat_8h.html#a222492af09fafad5816cd51519d5ade8">FatToDOSFilename</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* filename, <span class="keywordtype">char</span>* fname, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> fname_length);</div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span> </div>
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span><span class="comment"> * FatCalculateCheckSum -- returns an unsigned byte checksum computed on an</span></div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span><span class="comment"> * unsigned byte array. The array must be 11 bytes long and is assumed to</span></div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span><span class="comment"> * contain a name stored in the format of a MS-DOS directory entry</span></div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span><span class="comment"> * @param filename -- Pointer to an unsigned byte array assumed to be</span></div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span><span class="comment"> *                    11 bytes long</span></div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span><span class="keyword">extern</span> <a class="code hl_typedef" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code hl_function" href="Fat_8h.html#ac64ac3489de53e743e459cdf1324705c">FatCalculateCheckSum</a>(<a class="code hl_typedef" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>* filename);</div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span> </div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span><span class="comment"> * FatCheckDotCount -- checks the number of &#39;.&#39; dot</span></div>
-<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span><span class="comment"> * count in a given filename</span></div>
-<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span><span class="comment"> * @param filename -- name of the file to check</span></div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span><span class="keyword">extern</span> <a class="code hl_typedef" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code hl_function" href="Fat_8h.html#a355901a242b0ceffef77470f8cf5aa0c">FatCheckDotCount</a>(<span class="keywordtype">char</span>* filename);</div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span> </div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span><span class="comment">* FatFindFreeCluster -- finds a free cluster from FAT</span></div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span><span class="comment">* data structure</span></div>
-<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span><span class="comment">* @param node -- fs node</span></div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span><span class="comment">*/</span></div>
-<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span><span class="keyword">extern</span> <a class="code hl_typedef" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> <a class="code hl_function" href="Fat_8h.html#ac42f2912e7daa6884b9b2c8df16f35e8">FatFindFreeCluster</a>(<a class="code hl_struct" href="struct____VFS__NODE____.html">AuVFSNode</a>* node);</div>
-<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span> </div>
-<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span><span class="comment">* FatAllocCluster -- allocates a cluster by writing</span></div>
-<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span><span class="comment">* n_value</span></div>
-<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span><span class="comment">* @param fsys -- Pointer to file system node</span></div>
-<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span><span class="comment">* @param position -- position of the cluster</span></div>
-<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span><span class="comment">* @param n_value -- value to write</span></div>
-<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span><span class="comment">*/</span></div>
-<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span><span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code hl_function" href="Fat_8h.html#a97824d2060194b7954215e11a1b438f8">FatAllocCluster</a>(<a class="code hl_struct" href="struct____VFS__NODE____.html">AuVFSNode</a>* fsys, <span class="keywordtype">int</span> position, <a class="code hl_typedef" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> n_value);</div>
-<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span> </div>
-<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span><span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code hl_function" href="Fat_8h.html#a94996b6c3438242b8c8f89802fa5c6ed">FatClearCluster</a>(<a class="code hl_struct" href="struct____VFS__NODE____.html">AuVFSNode</a>* node, <a class="code hl_typedef" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> cluster);</div>
-<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span> </div>
-<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span><span class="comment">* FatReadFAT -- read the file allocation table</span></div>
-<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span><span class="comment">* @param vdisk -- pointer to vdisk</span></div>
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span><span class="comment">* @param cluster_index -- index of the cluster</span></div>
-<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span><span class="comment">*/</span></div>
-<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span><span class="keyword">extern</span> <a class="code hl_typedef" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> <a class="code hl_function" href="Fat_8h.html#aab10b3f0bb1da95907679017cf664a2a">FatReadFAT</a>(<a class="code hl_struct" href="struct____VFS__NODE____.html">AuVFSNode</a> *node, <a class="code hl_typedef" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> cluster_index);</div>
-<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span> </div>
-<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span><span class="keyword">extern</span> <a class="code hl_struct" href="struct____VFS__NODE____.html">AuVFSNode</a> * <a class="code hl_function" href="Fat_8h.html#a4e90aea62f346053f9e721052000890e">FatOpen</a>(<a class="code hl_struct" href="struct____VFS__NODE____.html">AuVFSNode</a> * fsys, <span class="keywordtype">char</span>* filename);</div>
-<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span> </div>
-<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span><span class="comment">* FatFormatDate -- returns fat formated date stamp</span></div>
-<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span><span class="comment">*/</span></div>
-<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span><span class="keyword">extern</span> <a class="code hl_typedef" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> <a class="code hl_function" href="Fat_8h.html#aee4f5533dbd4eee1962c7a99b6f66342">FatFormatDate</a>();</div>
-<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span> </div>
-<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span><span class="comment">* FatFormatTime -- returns fat formated time stamp</span></div>
-<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span><span class="comment">*/</span></div>
-<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span><span class="keyword">extern</span> <a class="code hl_typedef" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> <a class="code hl_function" href="Fat_8h.html#a0ba8c5fb4c0cafed083221f17d6fef28">FatFormatTime</a>();</div>
-<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span> </div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span> </div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span><span class="comment">* FatInitialise -- initialise the fat file system</span></div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span><span class="comment">* @param vdisk -- Pointer to vdisk structure</span></div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span><span class="comment">* @param mountpoint -- mount point name</span></div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span><span class="keyword">extern</span> <a class="code hl_struct" href="struct____VFS__NODE____.html">AuVFSNode</a>* <a class="code hl_function" href="Fat_8h.html#a6fc717c5a83f9e5287b0e6bac82504d2">FatInitialise</a>(<a class="code hl_struct" href="struct__VDISK__.html">AuVDisk</a> *vdisk, <span class="keywordtype">char</span>* mountpoint);</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span> </div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span><span class="comment">* FatClusterToSector32 -- Converts a cluster to sector</span></div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span><span class="comment">* @param cluster -- cluster number</span></div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span><span class="keyword">extern</span> <a class="code hl_typedef" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> <a class="code hl_function" href="Fat_8h.html#a147d9b775b20a4a9290ab6cb110dd9a8">FatClusterToSector32</a>(<a class="code hl_struct" href="struct__FatFS__.html">FatFS</a> *fs, <a class="code hl_typedef" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> cluster);</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span> </div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span><span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code hl_function" href="Fat_8h.html#a222492af09fafad5816cd51519d5ade8">FatToDOSFilename</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* filename, <span class="keywordtype">char</span>* fname, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> fname_length);</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span> </div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span><span class="comment"> * FatCalculateCheckSum -- returns an unsigned byte checksum computed on an</span></div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span><span class="comment"> * unsigned byte array. The array must be 11 bytes long and is assumed to</span></div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span><span class="comment"> * contain a name stored in the format of a MS-DOS directory entry</span></div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span><span class="comment"> * @param filename -- Pointer to an unsigned byte array assumed to be</span></div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span><span class="comment"> *                    11 bytes long</span></div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span><span class="keyword">extern</span> <a class="code hl_typedef" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code hl_function" href="Fat_8h.html#ac64ac3489de53e743e459cdf1324705c">FatCalculateCheckSum</a>(<a class="code hl_typedef" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>* filename);</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span> </div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span><span class="comment"> * FatCheckDotCount -- checks the number of &#39;.&#39; dot</span></div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span><span class="comment"> * count in a given filename</span></div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span><span class="comment"> * @param filename -- name of the file to check</span></div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span><span class="keyword">extern</span> <a class="code hl_typedef" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code hl_function" href="Fat_8h.html#a355901a242b0ceffef77470f8cf5aa0c">FatCheckDotCount</a>(<span class="keywordtype">char</span>* filename);</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span> </div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span><span class="comment">* FatFindFreeCluster -- finds a free cluster from FAT</span></div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span><span class="comment">* data structure</span></div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span><span class="comment">* @param node -- fs node</span></div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span><span class="keyword">extern</span> <a class="code hl_typedef" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> <a class="code hl_function" href="Fat_8h.html#ac42f2912e7daa6884b9b2c8df16f35e8">FatFindFreeCluster</a>(<a class="code hl_struct" href="struct____VFS__NODE____.html">AuVFSNode</a>* node);</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span> </div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span><span class="comment">* FatAllocCluster -- allocates a cluster by writing</span></div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span><span class="comment">* n_value</span></div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span><span class="comment">* @param fsys -- Pointer to file system node</span></div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span><span class="comment">* @param position -- position of the cluster</span></div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span><span class="comment">* @param n_value -- value to write</span></div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span><span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code hl_function" href="Fat_8h.html#a97824d2060194b7954215e11a1b438f8">FatAllocCluster</a>(<a class="code hl_struct" href="struct____VFS__NODE____.html">AuVFSNode</a>* fsys, <span class="keywordtype">int</span> position, <a class="code hl_typedef" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> n_value);</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span> </div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span><span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code hl_function" href="Fat_8h.html#a94996b6c3438242b8c8f89802fa5c6ed">FatClearCluster</a>(<a class="code hl_struct" href="struct____VFS__NODE____.html">AuVFSNode</a>* node, <a class="code hl_typedef" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> cluster);</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span> </div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span><span class="comment">* FatReadFAT -- read the file allocation table</span></div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span><span class="comment">* @param vdisk -- pointer to vdisk</span></div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span><span class="comment">* @param cluster_index -- index of the cluster</span></div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span><span class="keyword">extern</span> <a class="code hl_typedef" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> <a class="code hl_function" href="Fat_8h.html#aab10b3f0bb1da95907679017cf664a2a">FatReadFAT</a>(<a class="code hl_struct" href="struct____VFS__NODE____.html">AuVFSNode</a> *node, <a class="code hl_typedef" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> cluster_index);</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span> </div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span><span class="keyword">extern</span> <a class="code hl_struct" href="struct____VFS__NODE____.html">AuVFSNode</a> * <a class="code hl_function" href="Fat_8h.html#a4e90aea62f346053f9e721052000890e">FatOpen</a>(<a class="code hl_struct" href="struct____VFS__NODE____.html">AuVFSNode</a> * fsys, <span class="keywordtype">char</span>* filename);</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span> </div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span><span class="comment">* FatFormatDate -- returns fat formated date stamp</span></div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span><span class="keyword">extern</span> <a class="code hl_typedef" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> <a class="code hl_function" href="Fat_8h.html#aee4f5533dbd4eee1962c7a99b6f66342">FatFormatDate</a>();</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span> </div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span><span class="comment">* FatFormatTime -- returns fat formated time stamp</span></div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span><span class="keyword">extern</span> <a class="code hl_typedef" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> <a class="code hl_function" href="Fat_8h.html#a0ba8c5fb4c0cafed083221f17d6fef28">FatFormatTime</a>();</div>
 <div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span> </div>
-<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span><a class="code hl_struct" href="struct____VFS__NODE____.html">AuVFSNode</a>* <a class="code hl_function" href="Fat_8h.html#a2540260a140e8fa63d022c295dc07fa9">FatLocateDir</a>(<a class="code hl_struct" href="struct____VFS__NODE____.html">AuVFSNode</a>* fsys, <span class="keyword">const</span> <span class="keywordtype">char</span>* dir);</div>
-<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span> </div>
-<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span><a class="code hl_struct" href="struct____VFS__NODE____.html">AuVFSNode</a>* <a class="code hl_function" href="Fat_8h.html#aa88e6109c4e826ba1c29a9da2233b994">FatLocateSubDir</a>(<a class="code hl_struct" href="struct____VFS__NODE____.html">AuVFSNode</a>* fsys, <a class="code hl_struct" href="struct____VFS__NODE____.html">AuVFSNode</a>* kfile, <span class="keyword">const</span> <span class="keywordtype">char</span>* filename);</div>
-<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span> </div>
-<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span><span class="comment">* FatFromDosToFilename -- converts fat directoy entry filename</span></div>
-<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span><span class="comment">* to human readable filename</span></div>
-<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span><span class="comment">*/</span></div>
-<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span><span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code hl_function" href="Fat_8h.html#a8884106282af22d8237b4364d29628eb">FatFromDosToFilename</a>(<span class="keywordtype">char</span>* filename, <span class="keywordtype">char</span>* dirfname);</div>
-<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span> </div>
-<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span> </div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span><a class="code hl_struct" href="struct____VFS__NODE____.html">AuVFSNode</a>* <a class="code hl_function" href="Fat_8h.html#a2540260a140e8fa63d022c295dc07fa9">FatLocateDir</a>(<a class="code hl_struct" href="struct____VFS__NODE____.html">AuVFSNode</a>* fsys, <span class="keyword">const</span> <span class="keywordtype">char</span>* dir);</div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span> </div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span><a class="code hl_struct" href="struct____VFS__NODE____.html">AuVFSNode</a>* <a class="code hl_function" href="Fat_8h.html#aa88e6109c4e826ba1c29a9da2233b994">FatLocateSubDir</a>(<a class="code hl_struct" href="struct____VFS__NODE____.html">AuVFSNode</a>* fsys, <a class="code hl_struct" href="struct____VFS__NODE____.html">AuVFSNode</a>* kfile, <span class="keyword">const</span> <span class="keywordtype">char</span>* filename);</div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span> </div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span><span class="comment">* FatFromDosToFilename -- converts fat directoy entry filename</span></div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span><span class="comment">* to human readable filename</span></div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span><span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code hl_function" href="Fat_8h.html#a8884106282af22d8237b4364d29628eb">FatFromDosToFilename</a>(<span class="keywordtype">char</span>* filename, <span class="keywordtype">char</span>* dirfname);</div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span> </div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aFat_8h_html_a06e973ee71ee3e97e5514d1d6439795c"><div class="ttname"><a href="Fat_8h.html#a06e973ee71ee3e97e5514d1d6439795c">FatBPB</a></div><div class="ttdeci">struct _FAT_BPB_ FatBPB</div></div>
 <div class="ttc" id="aFat_8h_html_a0ba8c5fb4c0cafed083221f17d6fef28"><div class="ttname"><a href="Fat_8h.html#a0ba8c5fb4c0cafed083221f17d6fef28">FatFormatTime</a></div><div class="ttdeci">uint16_t FatFormatTime()</div><div class="ttdef"><b>Definition</b> Fat.cpp:675</div></div>
 <div class="ttc" id="aFat_8h_html_a147d9b775b20a4a9290ab6cb110dd9a8"><div class="ttname"><a href="Fat_8h.html#a147d9b775b20a4a9290ab6cb110dd9a8">FatClusterToSector32</a></div><div class="ttdeci">uint64_t FatClusterToSector32(FatFS *fs, uint64_t cluster)</div><div class="ttdef"><b>Definition</b> Fat.cpp:62</div></div>
@@ -332,7 +333,6 @@ $(document).ready(function() { init_codefold(0); });
 <div class="ttc" id="aacefiex_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition</b> acefiex.h:161</div></div>
 <div class="ttc" id="aacefiex_8h_html_ace97e810e06af5096bfe72ee3e7c5316"><div class="ttname"><a href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a></div><div class="ttdeci">COMPILER_DEPENDENT_UINT64 uint64_t</div><div class="ttdef"><b>Definition</b> acefiex.h:165</div></div>
 <div class="ttc" id="aacefiex_8h_html_adf4d876453337156dde61095e1f20223"><div class="ttname"><a href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a></div><div class="ttdeci">unsigned short int uint16_t</div><div class="ttdef"><b>Definition</b> acefiex.h:162</div></div>
-<div class="ttc" id="astdint_8h_html"><div class="ttname"><a href="stdint_8h.html">stdint.h</a></div></div>
 <div class="ttc" id="astruct__FAT__BPB___html"><div class="ttname"><a href="struct__FAT__BPB__.html">_FAT_BPB_</a></div><div class="ttdef"><b>Definition</b> Fat.h:57</div></div>
 <div class="ttc" id="astruct__FAT__BPB___html_a011a0c9563c2b85a8bfa1886f873b78a"><div class="ttname"><a href="struct__FAT__BPB__.html#a011a0c9563c2b85a8bfa1886f873b78a">_FAT_BPB_::num_fats</a></div><div class="ttdeci">uint8_t num_fats</div><div class="ttdef"><b>Definition</b> Fat.h:63</div></div>
 <div class="ttc" id="astruct__FAT__BPB___html_a039ebb629ba11a0543a60d948d0e9195"><div class="ttname"><a href="struct__FAT__BPB__.html#a039ebb629ba11a0543a60d948d0e9195">_FAT_BPB_::media_type</a></div><div class="ttdeci">uint8_t media_type</div><div class="ttdef"><b>Definition</b> Fat.h:66</div></div>
@@ -383,6 +383,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="ttc" id="astruct__FatFS___html_acf7a36268d443746fc41885cfe411edb"><div class="ttname"><a href="struct__FatFS__.html#acf7a36268d443746fc41885cfe411edb">_FatFS_::__TotalClusters</a></div><div class="ttdeci">unsigned int __TotalClusters</div><div class="ttdef"><b>Definition</b> Fat.h:154</div></div>
 <div class="ttc" id="astruct__FatFS___html_ad749302f3a95d7bb4b0216291cc3c3c6"><div class="ttname"><a href="struct__FatFS__.html#ad749302f3a95d7bb4b0216291cc3c3c6">_FatFS_::__RootDirFirstCluster</a></div><div class="ttdeci">unsigned int __RootDirFirstCluster</div><div class="ttdef"><b>Definition</b> Fat.h:151</div></div>
 <div class="ttc" id="astruct__FatFS___html_ad8fe379eedd6f18bb8fa44add0231e5b"><div class="ttname"><a href="struct__FatFS__.html#ad8fe379eedd6f18bb8fa44add0231e5b">_FatFS_::oemid</a></div><div class="ttdeci">char oemid[8]</div><div class="ttdef"><b>Definition</b> Fat.h:146</div></div>
+<div class="ttc" id="astruct__FatFS___html_adb0e531f7664341aa4da8e902d9e9b0d"><div class="ttname"><a href="struct__FatFS__.html#adb0e531f7664341aa4da8e902d9e9b0d">_FatFS_::_scratchBuffer</a></div><div class="ttdeci">void * _scratchBuffer</div><div class="ttdef"><b>Definition</b> Fat.h:160</div></div>
 <div class="ttc" id="astruct__VDISK___html"><div class="ttname"><a href="struct__VDISK__.html">_VDISK_</a></div><div class="ttdef"><b>Definition</b> vdisk.h:72</div></div>
 <div class="ttc" id="astruct____VFS__NODE_____html"><div class="ttname"><a href="struct____VFS__NODE____.html">__VFS_NODE__</a></div><div class="ttdef"><b>Definition</b> vfs.h:98</div></div>
 <div class="ttc" id="astruct__fat__dir___html"><div class="ttname"><a href="struct__fat__dir__.html">_fat_dir_</a></div><div class="ttdef"><b>Definition</b> Fat.h:106</div></div>

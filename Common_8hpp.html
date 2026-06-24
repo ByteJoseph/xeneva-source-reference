@@ -123,15 +123,15 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a2cb84a209e2d8810399a21ccb3ca5fd1" id="r_a2cb84a209e2d8810399a21ccb3ca5fd1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Common_8hpp.html#a2cb84a209e2d8810399a21ccb3ca5fd1">RAW_OFFSET</a>(type,  x,  offset)&#160;&#160;&#160;(type)((<a class="el" href="size__t_8h.html#a1e1f4fe6f57edbe9d428d8fd39beb87a">size_t</a>)x + offset)</td></tr>
+<tr class="memitem:a2cb84a209e2d8810399a21ccb3ca5fd1" id="r_a2cb84a209e2d8810399a21ccb3ca5fd1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Common_8hpp.html#a2cb84a209e2d8810399a21ccb3ca5fd1">RAW_OFFSET</a>(type,  x,  offset)&#160;&#160;&#160;(type)((<a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>)x + offset)</td></tr>
 <tr class="separator:a2cb84a209e2d8810399a21ccb3ca5fd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af67f286327c180a552853335544c2dc7" id="r_af67f286327c180a552853335544c2dc7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Common_8hpp.html#af67f286327c180a552853335544c2dc7">RAW_DIFF</a>(p1,  p2)&#160;&#160;&#160;((<a class="el" href="stdint_8h.html#a0fbe4a4f8dd857ee04923a901f27465f">intptr_t</a>)p1 - (<a class="el" href="stdint_8h.html#a0fbe4a4f8dd857ee04923a901f27465f">intptr_t</a>)p2)</td></tr>
+<tr class="memitem:af67f286327c180a552853335544c2dc7" id="r_af67f286327c180a552853335544c2dc7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Common_8hpp.html#af67f286327c180a552853335544c2dc7">RAW_DIFF</a>(p1,  p2)&#160;&#160;&#160;((<a class="el" href="BaseHdr_2stdint_8h.html#a0fbe4a4f8dd857ee04923a901f27465f">intptr_t</a>)p1 - (<a class="el" href="BaseHdr_2stdint_8h.html#a0fbe4a4f8dd857ee04923a901f27465f">intptr_t</a>)p2)</td></tr>
 <tr class="separator:af67f286327c180a552853335544c2dc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abeabeb9b7b657cffae07737d12442b2f" id="r_abeabeb9b7b657cffae07737d12442b2f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Common_8hpp.html#abeabeb9b7b657cffae07737d12442b2f">MEM_AFTER</a>(type,  p)&#160;&#160;&#160;((type)(&amp;(p)[1]))</td></tr>
 <tr class="separator:abeabeb9b7b657cffae07737d12442b2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff6165db3fa02d1c8646031870230232" id="r_aff6165db3fa02d1c8646031870230232"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Common_8hpp.html#aff6165db3fa02d1c8646031870230232">DIV_ROUND_UP</a>(x,  y)&#160;&#160;&#160;	((x + y - 1) / y)</td></tr>
 <tr class="separator:aff6165db3fa02d1c8646031870230232"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f62b3cca99dd27d1e326a2cf084beee" id="r_a2f62b3cca99dd27d1e326a2cf084beee"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Common_8hpp.html#a2f62b3cca99dd27d1e326a2cf084beee">ALIGN_UP</a>(x,  y)&#160;&#160;&#160;(<a class="el" href="BaseHdr_2aurora_8h.html#aff6165db3fa02d1c8646031870230232">DIV_ROUND_UP</a>(x,y)*y)</td></tr>
+<tr class="memitem:a2f62b3cca99dd27d1e326a2cf084beee" id="r_a2f62b3cca99dd27d1e326a2cf084beee"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Common_8hpp.html#a2f62b3cca99dd27d1e326a2cf084beee">ALIGN_UP</a>(x,  y)&#160;&#160;&#160;(<a class="el" href="BaseHdr_2stdint_8h.html#aff6165db3fa02d1c8646031870230232">DIV_ROUND_UP</a>(x,y)*y)</td></tr>
 <tr class="separator:a2f62b3cca99dd27d1e326a2cf084beee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
@@ -168,7 +168,7 @@ Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;(<a class="el" href="BaseHdr_2aurora_8h.html#aff6165db3fa02d1c8646031870230232">DIV_ROUND_UP</a>(x,y)*y)</td>
+          <td></td><td>&#160;&#160;&#160;(<a class="el" href="BaseHdr_2stdint_8h.html#aff6165db3fa02d1c8646031870230232">DIV_ROUND_UP</a>(x,y)*y)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -252,7 +252,7 @@ Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;((<a class="el" href="stdint_8h.html#a0fbe4a4f8dd857ee04923a901f27465f">intptr_t</a>)p1 - (<a class="el" href="stdint_8h.html#a0fbe4a4f8dd857ee04923a901f27465f">intptr_t</a>)p2)</td>
+          <td></td><td>&#160;&#160;&#160;((<a class="el" href="BaseHdr_2stdint_8h.html#a0fbe4a4f8dd857ee04923a901f27465f">intptr_t</a>)p1 - (<a class="el" href="BaseHdr_2stdint_8h.html#a0fbe4a4f8dd857ee04923a901f27465f">intptr_t</a>)p2)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -286,7 +286,7 @@ Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;(type)((<a class="el" href="size__t_8h.html#a1e1f4fe6f57edbe9d428d8fd39beb87a">size_t</a>)x + offset)</td>
+          <td></td><td>&#160;&#160;&#160;(type)((<a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>)x + offset)</td>
         </tr>
       </table>
 </div><div class="memdoc">

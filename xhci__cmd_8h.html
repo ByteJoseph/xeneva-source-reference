@@ -79,7 +79,7 @@ $(function() {
   <div class="headertitle"><div class="title">xhci_cmd.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="stdint_8h_source.html">stdint.h</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="usb3_8h_source.html">usb3.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for xhci_cmd.h:</div>
@@ -87,12 +87,10 @@ Include dependency graph for xhci_cmd.h:</div>
 <div class="center"><img src="xhci__cmd_8h__incl.png" border="0" usemap="#aXenevaOS_2Drivers_2Usb3_2xhci__cmd_8h" alt=""/></div>
 <map name="aXenevaOS_2Drivers_2Usb3_2xhci__cmd_8h" id="aXenevaOS_2Drivers_2Usb3_2xhci__cmd_8h">
 <area shape="rect" title=" " alt="" coords="5,5,183,45"/>
-<area shape="rect" href="stdint_8h.html" title=" " alt="" coords="160,240,231,265"/>
+<area shape="rect" title=" " alt="" coords="160,240,231,265"/>
 <area shape="poly" title=" " alt="" coords="89,46,80,76,74,114,74,154,79,173,87,191,99,206,113,218,148,236,145,240,110,222,95,209,82,193,74,175,69,154,68,113,75,75,84,45"/>
 <area shape="rect" href="usb3_8h.html" title=" " alt="" coords="129,93,195,119"/>
 <area shape="poly" title=" " alt="" coords="112,44,145,81,141,84,108,47"/>
-<area shape="rect" href="size__t_8h.html" title=" " alt="" coords="159,313,231,339"/>
-<area shape="poly" title=" " alt="" coords="198,266,198,300,193,300,193,266"/>
 <area shape="poly" title=" " alt="" coords="167,119,192,226,187,227,162,120"/>
 <area shape="rect" href="Drivers_2Usb3_2xhci_8h.html" title=" " alt="" coords="97,167,158,192"/>
 <area shape="poly" title=" " alt="" coords="159,120,141,155,137,153,154,118"/>
@@ -235,9 +233,9 @@ Functions</h2></td></tr>
 <tr class="separator:a16d63081b95a2478d6c9aa11fd8c06b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa26020c5ba972602ffa26124cb9d4cbe" id="r_aa26020c5ba972602ffa26124cb9d4cbe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xhci__cmd_8h.html#aa26020c5ba972602ffa26124cb9d4cbe">XHCISendAddressDevice</a> (<a class="el" href="usb3_8h.html#ae21da2041155ec9c161f8b8434536546">USBDevice</a> *dev, <a class="el" href="Drivers_2Usb3_2xhci_8h.html#a047345a80173c842dc7944c298d6974a">XHCISlot</a> *slot, <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> bsr, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> input_ctx_ptr, <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> slot_id)</td></tr>
 <tr class="separator:aa26020c5ba972602ffa26124cb9d4cbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec0a759bfa8628dc18013b2045088af2" id="r_aec0a759bfa8628dc18013b2045088af2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xhci__cmd_8h.html#aec0a759bfa8628dc18013b2045088af2">XHCISendControlCmd</a> (<a class="el" href="usb3_8h.html#ae21da2041155ec9c161f8b8434536546">USBDevice</a> *dev, <a class="el" href="Drivers_2Usb3_2xhci_8h.html#a047345a80173c842dc7944c298d6974a">XHCISlot</a> *slot, <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> slot_id, const <a class="el" href="structUSB__REQUEST__PACKET.html">USB_REQUEST_PACKET</a> *request, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> buffer_addr, const <a class="el" href="size__t_8h.html#a1e1f4fe6f57edbe9d428d8fd39beb87a">size_t</a> len, <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> trt=<a class="el" href="xhci__cmd_8h.html#af42a2e080df4cb1d57ccff55a88c7fa1">CTL_TRANSFER_TRT_IN_DATA</a>)</td></tr>
+<tr class="memitem:aec0a759bfa8628dc18013b2045088af2" id="r_aec0a759bfa8628dc18013b2045088af2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xhci__cmd_8h.html#aec0a759bfa8628dc18013b2045088af2">XHCISendControlCmd</a> (<a class="el" href="usb3_8h.html#ae21da2041155ec9c161f8b8434536546">USBDevice</a> *dev, <a class="el" href="Drivers_2Usb3_2xhci_8h.html#a047345a80173c842dc7944c298d6974a">XHCISlot</a> *slot, <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> slot_id, const <a class="el" href="structUSB__REQUEST__PACKET.html">USB_REQUEST_PACKET</a> *request, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> buffer_addr, const <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> len, <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> trt=<a class="el" href="xhci__cmd_8h.html#af42a2e080df4cb1d57ccff55a88c7fa1">CTL_TRANSFER_TRT_IN_DATA</a>)</td></tr>
 <tr class="separator:aec0a759bfa8628dc18013b2045088af2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4183da3c953308f1425e779071404438" id="r_a4183da3c953308f1425e779071404438"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xhci__cmd_8h.html#a4183da3c953308f1425e779071404438">XHCISendControlCmdEndp</a> (<a class="el" href="usb3_8h.html#ae21da2041155ec9c161f8b8434536546">USBDevice</a> *dev, <a class="el" href="Drivers_2Usb3_2xhci_8h.html#a047345a80173c842dc7944c298d6974a">XHCISlot</a> *slot, <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> slot_id, const <a class="el" href="structUSB__REQUEST__PACKET.html">USB_REQUEST_PACKET</a> *request, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> buffer_addr, const <a class="el" href="size__t_8h.html#a1e1f4fe6f57edbe9d428d8fd39beb87a">size_t</a> len, <a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> endpnum)</td></tr>
+<tr class="memitem:a4183da3c953308f1425e779071404438" id="r_a4183da3c953308f1425e779071404438"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xhci__cmd_8h.html#a4183da3c953308f1425e779071404438">XHCISendControlCmdEndp</a> (<a class="el" href="usb3_8h.html#ae21da2041155ec9c161f8b8434536546">USBDevice</a> *dev, <a class="el" href="Drivers_2Usb3_2xhci_8h.html#a047345a80173c842dc7944c298d6974a">XHCISlot</a> *slot, <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> slot_id, const <a class="el" href="structUSB__REQUEST__PACKET.html">USB_REQUEST_PACKET</a> *request, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> buffer_addr, const <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> len, <a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> endpnum)</td></tr>
 <tr class="separator:a4183da3c953308f1425e779071404438"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a207bf9c151a6b763f1f1cac95ed8fa30" id="r_a207bf9c151a6b763f1f1cac95ed8fa30"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xhci__cmd_8h.html#a207bf9c151a6b763f1f1cac95ed8fa30">XHCISendNormalTRB</a> (<a class="el" href="usb3_8h.html#ae21da2041155ec9c161f8b8434536546">USBDevice</a> *dev, <a class="el" href="Drivers_2Usb3_2xhci_8h.html#a047345a80173c842dc7944c298d6974a">XHCISlot</a> *slot, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> data_buffer, <a class="el" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> data_len, <a class="el" href="Drivers_2Usb3_2xhci_8h.html#a06054530bfdc3693d215e4d50120ab1f">XHCIEndpoint</a> *ep)</td></tr>
 <tr class="separator:a207bf9c151a6b763f1f1cac95ed8fa30"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1133,7 +1131,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="size__t_8h.html#a1e1f4fe6f57edbe9d428d8fd39beb87a">size_t</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>&#160;</td>
           <td class="paramname"><em>len</em>, </td>
         </tr>
         <tr>
@@ -1191,7 +1189,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="size__t_8h.html#a1e1f4fe6f57edbe9d428d8fd39beb87a">size_t</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>&#160;</td>
           <td class="paramname"><em>len</em>, </td>
         </tr>
         <tr>

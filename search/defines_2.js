@@ -189,7 +189,7 @@ var searchData=
   ['bluetooth_5fhci_5fcommand_5flocal_5freadable_5fname_5fmax_5fsize_186',['BLUETOOTH_HCI_COMMAND_LOCAL_READABLE_NAME_MAX_SIZE',['../Bluetooth_8h.html#a12d60b8d1ab7c7d303b86bed175bd46c',1,'Bluetooth.h']]],
   ['bluetooth_5fhci_5flink_5fkey_5fsize_187',['BLUETOOTH_HCI_LINK_KEY_SIZE',['../Bluetooth_8h.html#af46461c8f9aa95ae9e4bdf5e4c1a0b8a',1,'Bluetooth.h']]],
   ['bluetooth_5fis_5fattribute_5fof_5ftype_188',['BLUETOOTH_IS_ATTRIBUTE_OF_TYPE',['../BluetoothAttribute_8h.html#ae32370ebe27088319f231f2e8abdb3b6',1,'BluetoothAttribute.h']]],
-  ['bool_189',['bool',['../stdbool_8h.html#abb452686968e48b67397da5f97445f5b',1,'bool:&#160;stdbool.h'],['../littleboot_8h.html#abb452686968e48b67397da5f97445f5b',1,'bool:&#160;littleboot.h'],['../stdint_8h.html#abb452686968e48b67397da5f97445f5b',1,'bool:&#160;stdint.h']]],
+  ['bool_189',['bool',['../stdbool_8h.html#abb452686968e48b67397da5f97445f5b',1,'bool:&#160;stdbool.h'],['../littleboot_8h.html#abb452686968e48b67397da5f97445f5b',1,'bool:&#160;littleboot.h'],['../Libs_2XEClib_2includes_2stdint_8h.html#abb452686968e48b67397da5f97445f5b',1,'bool:&#160;stdint.h']]],
   ['boot_5fassuming_5fno_5fconfiguration_5fchanges_190',['BOOT_ASSUMING_NO_CONFIGURATION_CHANGES',['../PiBootMode_8h.html#a9b5c0be77df31f539df8ce941c44c468',1,'PiBootMode.h']]],
   ['boot_5fin_5frecovery_5fmode_191',['BOOT_IN_RECOVERY_MODE',['../PiBootMode_8h.html#a4518a202624c87fd9f87d451664d4716',1,'PiBootMode.h']]],
   ['boot_5flittleboot_5farm64_192',['boot_littleboot_arm64',['../BaseHdr_2aurora_8h.html#aa44e24dfc106b48077543e77c269b8cb',1,'BOOT_LITTLEBOOT_ARM64:&#160;aurora.h'],['../LittleBoot_2aurora_8h.html#aa44e24dfc106b48077543e77c269b8cb',1,'BOOT_LITTLEBOOT_ARM64:&#160;aurora.h']]],

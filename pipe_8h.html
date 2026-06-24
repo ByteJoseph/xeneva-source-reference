@@ -80,7 +80,7 @@ $(function() {
   <div class="headertitle"><div class="title">pipe.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="stdint_8h_source.html">stdint.h</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
 <code>#include &lt;list.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="vfs_8h_source.html">Fs/vfs.h</a>&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
@@ -89,14 +89,12 @@ Include dependency graph for pipe.h:</div>
 <div class="center"><img src="pipe_8h__incl.png" border="0" usemap="#aXenevaOS_2BaseHdr_2Fs_2pipe_8h" alt=""/></div>
 <map name="aXenevaOS_2BaseHdr_2Fs_2pipe_8h" id="aXenevaOS_2BaseHdr_2Fs_2pipe_8h">
 <area shape="rect" title=" " alt="" coords="5,5,172,45"/>
-<area shape="rect" href="stdint_8h.html" title=" " alt="" coords="119,240,189,265"/>
+<area shape="rect" title=" " alt="" coords="119,240,189,265"/>
 <area shape="poly" title=" " alt="" coords="78,47,61,77,47,114,41,154,44,173,51,191,62,205,75,217,107,234,104,239,72,221,58,208,46,193,38,174,36,154,41,112,56,74,73,45"/>
 <area shape="rect" title=" " alt="" coords="61,167,116,192"/>
 <area shape="poly" title=" " alt="" coords="91,46,91,153,86,153,86,46"/>
 <area shape="rect" href="vfs_8h.html" title=" " alt="" coords="160,93,233,119"/>
 <area shape="poly" title=" " alt="" coords="116,43,171,83,168,87,113,48"/>
-<area shape="rect" href="size__t_8h.html" title=" " alt="" coords="118,313,190,339"/>
-<area shape="poly" title=" " alt="" coords="157,266,157,300,151,300,151,266"/>
 <area shape="poly" title=" " alt="" coords="196,120,164,227,159,226,191,118"/>
 <area shape="poly" title=" " alt="" coords="181,121,119,161,116,157,178,116"/>
 <area shape="rect" title=" " alt="" coords="192,167,268,192"/>
@@ -151,10 +149,10 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a61a494ce31f54f0a15791dffa6ff1fec" id="r_a61a494ce31f54f0a15791dffa6ff1fec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="size__t_8h.html#a1e1f4fe6f57edbe9d428d8fd39beb87a">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pipe_8h.html#a61a494ce31f54f0a15791dffa6ff1fec">AuPipeUnread</a> (<a class="el" href="pipe_8h.html#adeff9c024c6eeb2707d133050a4536f6">AuPipe</a> *pipe)</td></tr>
+<tr class="memitem:a61a494ce31f54f0a15791dffa6ff1fec" id="r_a61a494ce31f54f0a15791dffa6ff1fec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pipe_8h.html#a61a494ce31f54f0a15791dffa6ff1fec">AuPipeUnread</a> (<a class="el" href="pipe_8h.html#adeff9c024c6eeb2707d133050a4536f6">AuPipe</a> *pipe)</td></tr>
 <tr class="memdesc:a61a494ce31f54f0a15791dffa6ff1fec"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuPipeUnread &ndash; get the available read space from the pipe.  <br /></td></tr>
 <tr class="separator:a61a494ce31f54f0a15791dffa6ff1fec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6bea25cf2b352aca3ce767d15ac04ff5" id="r_a6bea25cf2b352aca3ce767d15ac04ff5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pipe_8h.html#a6bea25cf2b352aca3ce767d15ac04ff5">AuCreatePipe</a> (char *name, <a class="el" href="size__t_8h.html#a1e1f4fe6f57edbe9d428d8fd39beb87a">size_t</a> sz)</td></tr>
+<tr class="memitem:a6bea25cf2b352aca3ce767d15ac04ff5" id="r_a6bea25cf2b352aca3ce767d15ac04ff5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pipe_8h.html#a6bea25cf2b352aca3ce767d15ac04ff5">AuCreatePipe</a> (char *name, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> sz)</td></tr>
 <tr class="memdesc:a6bea25cf2b352aca3ce767d15ac04ff5"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuCreatePipe &ndash; creates a new pipe.  <br /></td></tr>
 <tr class="separator:a6bea25cf2b352aca3ce767d15ac04ff5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc7bc46ada4a9700f6fb5e80c15b3ec2" id="r_adc7bc46ada4a9700f6fb5e80c15b3ec2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pipe_8h.html#adc7bc46ada4a9700f6fb5e80c15b3ec2">AuPipeFSAddFile</a> (<a class="el" href="vfs_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *fs, char *<a class="el" href="Process_2Files_2main_8cpp.html#a44196e6a5696d10442c29e639437196e">path</a>, <a class="el" href="vfs_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *file)</td></tr>
@@ -206,7 +204,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="size__t_8h.html#a1e1f4fe6f57edbe9d428d8fd39beb87a">size_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>&#160;</td>
           <td class="paramname"><em>sz</em>&#160;</td>
         </tr>
         <tr>
@@ -331,7 +329,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="size__t_8h.html#a1e1f4fe6f57edbe9d428d8fd39beb87a">size_t</a> AuPipeUnread </td>
+          <td class="memname"><a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> AuPipeUnread </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="pipe_8h.html#adeff9c024c6eeb2707d133050a4536f6">AuPipe</a> *&#160;</td>
           <td class="paramname"><em>pipe</em></td><td>)</td>

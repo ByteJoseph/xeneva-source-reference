@@ -85,7 +85,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#ifndef __AU_SOUND_H__</span></div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#define __AU_SOUND_H__</span></div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#include &lt;<a class="code" href="stdint_8h.html">stdint.h</a>&gt;</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#include &lt;<a class="code" href="circbuf_8h.html">circbuf.h</a>&gt;</span></div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#ifdef ARCH_X64</span></div>
@@ -155,8 +155,8 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="comment">*/</span></div>
 <div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span><span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code hl_function" href="sound_8h.html#a402be7da1e422dd2fc8a7b78ef65a2bf">AuSoundStop</a>();</div>
 <div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aBaseHdr_2aurora_8h_html_a3607dee4064d4867f4eb5504d6eca568"><div class="ttname"><a href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a></div><div class="ttdeci">#define AU_EXTERN</div><div class="ttdef"><b>Definition</b> aurora.h:103</div></div>
-<div class="ttc" id="aBaseHdr_2aurora_8h_html_acfdff3168eaddc756d25f28912d94e28"><div class="ttname"><a href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a></div><div class="ttdeci">#define AU_EXPORT</div><div class="ttdef"><b>Definition</b> aurora.h:89</div></div>
+<div class="ttc" id="aBaseHdr_2aurora_8h_html_a3607dee4064d4867f4eb5504d6eca568"><div class="ttname"><a href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a></div><div class="ttdeci">#define AU_EXTERN</div><div class="ttdef"><b>Definition</b> aurora.h:56</div></div>
+<div class="ttc" id="aBaseHdr_2aurora_8h_html_acfdff3168eaddc756d25f28912d94e28"><div class="ttname"><a href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a></div><div class="ttdeci">#define AU_EXPORT</div><div class="ttdef"><b>Definition</b> aurora.h:42</div></div>
 <div class="ttc" id="aProcess_2AudioPlayer_2main_8cpp_html_aef0d6d38bdf3573b22379ed273f6dbef"><div class="ttname"><a href="Process_2AudioPlayer_2main_8cpp.html#aef0d6d38bdf3573b22379ed273f6dbef">snd</a></div><div class="ttdeci">int snd</div><div class="ttdef"><b>Definition</b> main.cpp:64</div></div>
 <div class="ttc" id="aacefiex_8h_html_a66634143db08bebe9b46ab4cb1fc6fd3"><div class="ttname"><a href="acefiex_8h.html#a66634143db08bebe9b46ab4cb1fc6fd3">int16_t</a></div><div class="ttdeci">short int int16_t</div><div class="ttdef"><b>Definition</b> acefiex.h:159</div></div>
 <div class="ttc" id="aacefiex_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition</b> acefiex.h:161</div></div>
@@ -173,7 +173,6 @@ $(document).ready(function() { init_codefold(0); });
 <div class="ttc" id="asound_8h_html_a7fa525fa89c47ceac75333ab6aaee6f2"><div class="ttname"><a href="sound_8h.html#a7fa525fa89c47ceac75333ab6aaee6f2">AuSoundRegisterCard</a></div><div class="ttdeci">AU_EXTERN AU_EXPORT int AuSoundRegisterCard(AuSound *snd)</div><div class="ttdoc">AuSoundRegisterCard – register a new sound card to sound layer.</div><div class="ttdef"><b>Definition</b> sndcore.c:299</div></div>
 <div class="ttc" id="asound_8h_html_ad390bbb8eb87504477c108c52f4f795e"><div class="ttname"><a href="sound_8h.html#ad390bbb8eb87504477c108c52f4f795e">AuSoundStart</a></div><div class="ttdeci">void AuSoundStart()</div><div class="ttdef"><b>Definition</b> sound.cpp:207</div></div>
 <div class="ttc" id="asound_8h_html_ad760020d32ca56623804a8d633d7d59e"><div class="ttname"><a href="sound_8h.html#ad760020d32ca56623804a8d633d7d59e">AuSound</a></div><div class="ttdeci">struct _SoundDev_ AuSound</div></div>
-<div class="ttc" id="astdint_8h_html"><div class="ttname"><a href="stdint_8h.html">stdint.h</a></div></div>
 <div class="ttc" id="astruct__SoundDev___html"><div class="ttname"><a href="struct__SoundDev__.html">_SoundDev_</a></div><div class="ttdef"><b>Definition</b> sound.h:70</div></div>
 <div class="ttc" id="astruct__SoundDev___html_a005f26527cc29aeabf4e875c7bcc0d9f"><div class="ttname"><a href="struct__SoundDev__.html#a005f26527cc29aeabf4e875c7bcc0d9f">_SoundDev_::read</a></div><div class="ttdeci">int(* read)(uint8_t *buffer, size_t length)</div><div class="ttdef"><b>Definition</b> sound.h:73</div></div>
 <div class="ttc" id="astruct__SoundDev___html_a06cc63a748286b3c457bc18e3b2b4ffb"><div class="ttname"><a href="struct__SoundDev__.html#a06cc63a748286b3c457bc18e3b2b4ffb">_SoundDev_::_force_write</a></div><div class="ttdeci">bool _force_write</div><div class="ttdef"><b>Definition</b> sound.h:78</div></div>
@@ -192,7 +191,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="ttc" id="astruct____au__dsp_____html_aefda42b6cab50800c11dcc06aa913765"><div class="ttname"><a href="struct____au__dsp____.html#aefda42b6cab50800c11dcc06aa913765">__au_dsp__::sleep_time</a></div><div class="ttdeci">uint64_t sleep_time</div><div class="ttdef"><b>Definition</b> sound.h:59</div></div>
 <div class="ttc" id="astruct____au__dsp_____html_af29d7d0aa711bd49915467f4c27d3b4c"><div class="ttname"><a href="struct____au__dsp____.html#af29d7d0aa711bd49915467f4c27d3b4c">__au_dsp__::_cardID</a></div><div class="ttdeci">int16_t _cardID</div><div class="ttdef"><b>Definition</b> sound.h:53</div></div>
 <div class="ttc" id="astruct__au__thread___html"><div class="ttname"><a href="struct__au__thread__.html">_au_thread_</a></div><div class="ttdef"><b>Definition</b> x86_64_sched.h:118</div></div>
-<div class="ttc" id="astruct__circ__buf___html"><div class="ttname"><a href="struct__circ__buf__.html">_circ_buf_</a></div><div class="ttdef"><b>Definition</b> circbuf.h:40</div></div>
+<div class="ttc" id="astruct__circ__buf___html"><div class="ttname"><a href="struct__circ__buf__.html">_circ_buf_</a></div><div class="ttdef"><b>Definition</b> circbuf.h:43</div></div>
 <div class="ttc" id="ax86__64__sched_8h_html"><div class="ttname"><a href="x86__64__sched_8h.html">x86_64_sched.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

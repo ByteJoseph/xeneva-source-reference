@@ -79,7 +79,7 @@ $(function() {
   <div class="headertitle"><div class="title">ethernet.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="stdint_8h_source.html">stdint.h</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
 <code>#include &lt;aurora.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="vfs_8h_source.html">Fs/vfs.h</a>&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
@@ -88,14 +88,12 @@ Include dependency graph for ethernet.h:</div>
 <div class="center"><img src="ethernet_8h__incl.png" border="0" usemap="#aXenevaOS_2BaseHdr_2Net_2ethernet_8h" alt=""/></div>
 <map name="aXenevaOS_2BaseHdr_2Net_2ethernet_8h" id="aXenevaOS_2BaseHdr_2Net_2ethernet_8h">
 <area shape="rect" title=" " alt="" coords="5,5,180,45"/>
-<area shape="rect" href="stdint_8h.html" title=" " alt="" coords="133,240,204,265"/>
+<area shape="rect" title=" " alt="" coords="133,240,204,265"/>
 <area shape="poly" title=" " alt="" coords="80,47,60,76,42,114,34,154,36,173,44,191,59,208,78,222,121,239,118,244,75,226,56,212,40,193,31,174,29,153,37,112,55,74,75,44"/>
 <area shape="rect" title=" " alt="" coords="55,167,131,192"/>
 <area shape="poly" title=" " alt="" coords="95,46,95,153,90,153,90,46"/>
 <area shape="rect" href="vfs_8h.html" title=" " alt="" coords="164,93,237,119"/>
 <area shape="poly" title=" " alt="" coords="120,43,175,83,172,87,117,48"/>
-<area shape="rect" href="size__t_8h.html" title=" " alt="" coords="133,313,205,339"/>
-<area shape="poly" title=" " alt="" coords="171,266,171,300,166,300,166,266"/>
 <area shape="poly" title=" " alt="" coords="201,120,177,227,172,226,195,119"/>
 <area shape="poly" title=" " alt="" coords="185,121,123,161,120,157,182,116"/>
 <area shape="rect" title=" " alt="" coords="207,167,261,192"/>
@@ -157,7 +155,7 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a0526e1cf8a2337b08aa97ddc21bc7206" id="r_a0526e1cf8a2337b08aa97ddc21bc7206"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ethernet_8h.html#a0526e1cf8a2337b08aa97ddc21bc7206">AuEthernetSend</a> (<a class="el" href="vfs_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *<a class="el" href="e1000_8cpp.html#a520bf6a1c47a61d938646ef39fc45d76">nic</a>, void *data, <a class="el" href="size__t_8h.html#a1e1f4fe6f57edbe9d428d8fd39beb87a">size_t</a> len, <a class="el" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> type, <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *dest)</td></tr>
+<tr class="memitem:a0526e1cf8a2337b08aa97ddc21bc7206" id="r_a0526e1cf8a2337b08aa97ddc21bc7206"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ethernet_8h.html#a0526e1cf8a2337b08aa97ddc21bc7206">AuEthernetSend</a> (<a class="el" href="vfs_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *<a class="el" href="e1000_8cpp.html#a520bf6a1c47a61d938646ef39fc45d76">nic</a>, void *data, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> len, <a class="el" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> type, <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *dest)</td></tr>
 <tr class="memdesc:a0526e1cf8a2337b08aa97ddc21bc7206"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuEthernetSend &ndash; sends a packet to ethernet layer.  <br /></td></tr>
 <tr class="separator:a0526e1cf8a2337b08aa97ddc21bc7206"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae0fd04d15e3901bbe1f1b4c33833b709" id="r_ae0fd04d15e3901bbe1f1b4c33833b709"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ethernet_8h.html#ae0fd04d15e3901bbe1f1b4c33833b709">AuEthernetHandle</a> (void *frame, int size, <a class="el" href="vfs_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *<a class="el" href="e1000_8cpp.html#a520bf6a1c47a61d938646ef39fc45d76">nic</a>)</td></tr>
@@ -329,7 +327,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="size__t_8h.html#a1e1f4fe6f57edbe9d428d8fd39beb87a">size_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>&#160;</td>
           <td class="paramname"><em>len</em>, </td>
         </tr>
         <tr>

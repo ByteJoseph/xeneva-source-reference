@@ -80,7 +80,7 @@ $(function() {
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="Drivers_2xHCI_2usb_8h_source.html">usb.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Drivers_2xHCI_2xhci_8h_source.html">xhci.h</a>&quot;</code><br />
-<code>#include &lt;<a class="el" href="stdint_8h_source.html">stdint.h</a>&gt;</code><br />
+<code>#include &lt;stdint.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="__null_8h_source.html">_null.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="aucon_8h_source.html">aucon.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="kmalloc_8h_source.html">Mm/kmalloc.h</a>&gt;</code><br />
@@ -90,49 +90,43 @@ Include dependency graph for usb.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="Drivers_2xHCI_2usb_8cpp__incl.png" border="0" usemap="#aXenevaOS_2Drivers_2xHCI_2usb_8cpp" alt=""/></div>
 <map name="aXenevaOS_2Drivers_2xHCI_2usb_8cpp" id="aXenevaOS_2Drivers_2xHCI_2usb_8cpp">
-<area shape="rect" title=" " alt="" coords="574,5,749,45"/>
-<area shape="rect" href="Drivers_2xHCI_2usb_8h.html" title=" " alt="" coords="566,93,623,119"/>
-<area shape="poly" title=" " alt="" coords="647,47,615,84,611,81,643,44"/>
-<area shape="rect" href="stdint_8h.html" title=" " alt="" coords="550,313,621,339"/>
-<area shape="poly" title=" " alt="" coords="661,46,642,141,611,266,598,301,593,300,605,265,637,140,655,45"/>
-<area shape="rect" href="Drivers_2xHCI_2xhci_8h.html" title=" " alt="" coords="473,167,535,192"/>
-<area shape="poly" title=" " alt="" coords="622,48,588,68,555,95,533,125,516,155,512,153,528,122,551,91,585,64,620,43"/>
-<area shape="rect" href="__null_8h.html" title=" " alt="" coords="797,93,862,119"/>
-<area shape="poly" title=" " alt="" coords="703,43,793,85,791,90,700,48"/>
-<area shape="rect" href="aucon_8h.html" title=" " alt="" coords="699,93,773,119"/>
-<area shape="poly" title=" " alt="" coords="681,44,717,81,713,85,677,47"/>
-<area shape="rect" href="kmalloc_8h.html" title=" " alt="" coords="181,240,296,265"/>
-<area shape="poly" title=" " alt="" coords="624,48,531,96,272,236,270,231,528,91,622,43"/>
-<area shape="rect" title=" " alt="" coords="886,93,957,119"/>
-<area shape="poly" title=" " alt="" coords="724,43,874,88,872,93,723,48"/>
-<area shape="poly" title=" " alt="" coords="597,119,589,299,584,299,592,119"/>
-<area shape="poly" title=" " alt="" coords="582,121,531,160,528,156,578,117"/>
-<area shape="rect" href="size__t_8h.html" title=" " alt="" coords="549,387,621,412"/>
-<area shape="poly" title=" " alt="" coords="588,339,588,373,583,373,583,339"/>
-<area shape="poly" title=" " alt="" coords="513,191,574,300,570,303,508,194"/>
-<area shape="rect" title=" " alt="" coords="467,240,522,265"/>
-<area shape="poly" title=" " alt="" coords="505,193,501,227,495,226,500,192"/>
-<area shape="rect" href="spinlock_8h.html" title=" " alt="" coords="320,240,443,265"/>
-<area shape="poly" title=" " alt="" coords="486,194,414,235,412,231,483,190"/>
-<area shape="rect" href="x86__64__sched_8h.html" title=" " alt="" coords="5,240,157,265"/>
-<area shape="poly" title=" " alt="" coords="474,188,163,240,163,235,473,183"/>
-<area shape="poly" title=" " alt="" coords="415,263,540,306,539,311,413,268"/>
-<area shape="rect" title=" " alt="" coords="201,313,277,339"/>
-<area shape="poly" title=" " alt="" coords="360,268,275,309,273,305,357,263"/>
-<area shape="poly" title=" " alt="" coords="158,262,537,315,536,320,158,267"/>
-<area shape="poly" title=" " alt="" coords="108,263,202,305,200,310,106,268"/>
-<area shape="rect" href="signal_8h.html" title=" " alt="" coords="33,313,129,339"/>
-<area shape="poly" title=" " alt="" coords="84,266,84,300,79,300,79,266"/>
-<area shape="rect" href="BaseHdr_2aurora_8h.html" title=" " alt="" coords="726,167,802,192"/>
-<area shape="poly" title=" " alt="" coords="743,118,757,153,752,155,738,120"/>
-<area shape="poly" title=" " alt="" coords="756,194,724,229,682,267,620,309,617,304,678,263,720,225,752,191"/>
-<area shape="rect" href="stdbool_8h.html" title=" " alt="" coords="749,240,832,265"/>
-<area shape="poly" title=" " alt="" coords="771,191,784,226,779,228,766,193"/>
-<area shape="rect" href="stddef_8h.html" title=" " alt="" coords="856,240,931,265"/>
-<area shape="poly" title=" " alt="" coords="786,190,861,231,859,235,784,194"/>
-<area shape="poly" title=" " alt="" coords="856,265,845,268,635,316,633,311,843,263,855,260"/>
-<area shape="poly" title=" " alt="" coords="295,263,537,312,536,317,294,268"/>
-<area shape="poly" title=" " alt="" coords="241,266,241,300,236,300,236,266"/>
+<area shape="rect" title=" " alt="" coords="132,5,307,45"/>
+<area shape="rect" href="Drivers_2xHCI_2usb_8h.html" title=" " alt="" coords="73,93,131,119"/>
+<area shape="poly" title=" " alt="" coords="192,48,132,88,129,84,189,43"/>
+<area shape="rect" title=" " alt="" coords="161,313,232,339"/>
+<area shape="poly" title=" " alt="" coords="133,46,94,65,77,78,63,95,51,105,36,111,22,117,12,126,8,141,13,167,32,207,67,264,83,282,104,296,149,314,147,319,101,301,80,286,63,267,27,209,8,168,3,141,8,123,20,113,34,106,48,100,59,91,73,75,91,61,131,41"/>
+<area shape="rect" href="Drivers_2xHCI_2xhci_8h.html" title=" " alt="" coords="226,167,287,192"/>
+<area shape="poly" title=" " alt="" coords="227,45,253,152,248,154,221,46"/>
+<area shape="rect" href="__null_8h.html" title=" " alt="" coords="257,93,323,119"/>
+<area shape="poly" title=" " alt="" coords="238,44,272,81,268,85,234,47"/>
+<area shape="rect" href="aucon_8h.html" title=" " alt="" coords="347,93,420,119"/>
+<area shape="poly" title=" " alt="" coords="260,43,348,85,346,90,257,48"/>
+<area shape="rect" href="kmalloc_8h.html" title=" " alt="" coords="91,240,206,265"/>
+<area shape="poly" title=" " alt="" coords="216,46,159,228,154,226,211,45"/>
+<area shape="rect" title=" " alt="" coords="444,93,515,119"/>
+<area shape="poly" title=" " alt="" coords="282,43,432,88,430,93,281,48"/>
+<area shape="poly" title=" " alt="" coords="98,120,85,147,74,185,70,226,74,246,82,264,95,280,111,293,149,311,147,316,109,298,91,284,77,267,68,247,65,226,68,184,80,145,93,118"/>
+<area shape="poly" title=" " alt="" coords="128,116,220,158,218,163,126,121"/>
+<area shape="poly" title=" " alt="" coords="254,193,209,302,204,299,249,191"/>
+<area shape="rect" title=" " alt="" coords="281,240,336,265"/>
+<area shape="poly" title=" " alt="" coords="267,191,294,227,290,230,263,194"/>
+<area shape="rect" href="spinlock_8h.html" title=" " alt="" coords="361,240,483,265"/>
+<area shape="poly" title=" " alt="" coords="284,190,384,232,382,237,282,194"/>
+<area shape="rect" href="x86__64__sched_8h.html" title=" " alt="" coords="507,240,659,265"/>
+<area shape="poly" title=" " alt="" coords="288,185,518,234,517,240,287,190"/>
+<area shape="poly" title=" " alt="" coords="387,268,246,312,244,307,385,263"/>
+<area shape="rect" title=" " alt="" coords="384,313,460,339"/>
+<area shape="poly" title=" " alt="" coords="425,266,425,300,419,300,419,266"/>
+<area shape="poly" title=" " alt="" coords="522,268,246,318,245,313,521,263"/>
+<area shape="poly" title=" " alt="" coords="558,268,462,310,460,305,556,263"/>
+<area shape="rect" href="signal_8h.html" title=" " alt="" coords="535,313,631,339"/>
+<area shape="poly" title=" " alt="" coords="586,266,586,300,581,300,581,266"/>
+<area shape="rect" href="BaseHdr_2aurora_8h.html" title=" " alt="" coords="513,167,589,192"/>
+<area shape="poly" title=" " alt="" coords="411,116,512,159,510,164,409,121"/>
+<area shape="rect" href="BaseHdr_2stdint_8h.html" title=" " alt="" coords="684,240,755,265"/>
+<area shape="poly" title=" " alt="" coords="579,190,680,232,678,237,577,194"/>
+<area shape="poly" title=" " alt="" coords="159,264,184,301,179,304,154,267"/>
+<area shape="poly" title=" " alt="" coords="193,263,372,309,370,314,192,268"/>
 </map>
 </div>
 </div><table class="memberdecls">
@@ -156,7 +150,7 @@ Functions</h2></td></tr>
 <tr class="separator:aa04aa966d244b9aecb4d3149a0623fd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a778b9d7a133dfc0b2511743e731c01ad" id="r_a778b9d7a133dfc0b2511743e731c01ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Drivers_2xHCI_2usb_8cpp.html#a778b9d7a133dfc0b2511743e731c01ad">USBScheduleInterrupt</a> (<a class="el" href="Drivers_2xHCI_2usb_8h.html#ac89131078d78b95a17d967e984bdb2fb">AuUSBDevice</a> *usbdev, void *ep, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> physdata, void(*callback)(void *dev, void *slot, void *Endp))</td></tr>
 <tr class="separator:a778b9d7a133dfc0b2511743e731c01ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4bc7d7670229a938374e9341fc96ed9" id="r_ad4bc7d7670229a938374e9341fc96ed9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Drivers_2xHCI_2usb_8cpp.html#ad4bc7d7670229a938374e9341fc96ed9">USBControlTransfer</a> (<a class="el" href="Drivers_2xHCI_2usb_8h.html#ac89131078d78b95a17d967e984bdb2fb">AuUSBDevice</a> *usbdev, const <a class="el" href="structUSB__REQUEST__PACKET.html">USB_REQUEST_PACKET</a> *request, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> buffer_addr, const <a class="el" href="size__t_8h.html#a1e1f4fe6f57edbe9d428d8fd39beb87a">size_t</a> len)</td></tr>
+<tr class="memitem:ad4bc7d7670229a938374e9341fc96ed9" id="r_ad4bc7d7670229a938374e9341fc96ed9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Drivers_2xHCI_2usb_8cpp.html#ad4bc7d7670229a938374e9341fc96ed9">USBControlTransfer</a> (<a class="el" href="Drivers_2xHCI_2usb_8h.html#ac89131078d78b95a17d967e984bdb2fb">AuUSBDevice</a> *usbdev, const <a class="el" href="structUSB__REQUEST__PACKET.html">USB_REQUEST_PACKET</a> *request, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> buffer_addr, const <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> len)</td></tr>
 <tr class="separator:ad4bc7d7670229a938374e9341fc96ed9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afdd6e86278fd1293a4d0a34eca9c7425" id="r_afdd6e86278fd1293a4d0a34eca9c7425"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Drivers_2xHCI_2usb_8cpp.html#afdd6e86278fd1293a4d0a34eca9c7425">USBBulkTransfer</a> (<a class="el" href="Drivers_2xHCI_2usb_8h.html#ac89131078d78b95a17d967e984bdb2fb">AuUSBDevice</a> *usbdev, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> buffer, <a class="el" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> data_len, void *ep)</td></tr>
 <tr class="separator:afdd6e86278fd1293a4d0a34eca9c7425"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -239,7 +233,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="size__t_8h.html#a1e1f4fe6f57edbe9d428d8fd39beb87a">size_t</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>&#160;</td>
           <td class="paramname"><em>len</em>&#160;</td>
         </tr>
         <tr>

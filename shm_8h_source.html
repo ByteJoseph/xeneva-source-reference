@@ -85,7 +85,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#ifndef __SHM_H__</span></div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#define __SHM_H__</span></div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#include &lt;<a class="code" href="stdint_8h.html">stdint.h</a>&gt;</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#include &lt;<a class="code" href="process_8h.html">process.h</a>&gt;</span></div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="shm_8h.html#acb1c6a3f1a190984efcb4ddcfe732c38">   36</a></span><span class="preprocessor">#define USER_SHARED_MEM_START 0x0000000080000000</span></div>
@@ -145,7 +145,6 @@ $(document).ready(function() { init_codefold(0); });
 <div class="ttc" id="ashm_8h_html_abf86dccc859b0fa0d1c40cb4b6290ee0"><div class="ttname"><a href="shm_8h.html#abf86dccc859b0fa0d1c40cb4b6290ee0">AuCreateSHM</a></div><div class="ttdeci">int AuCreateSHM(AuProcess *proc, uint16_t key, size_t sz, uint8_t flags)</div><div class="ttdoc">AuCreateSHM – create a new shared memory segment or returns previously allocated one.</div><div class="ttdef"><b>Definition</b> shm.cpp:102</div></div>
 <div class="ttc" id="ashm_8h_html_ac31bbe8dcc4493950c63bc59495c88db"><div class="ttname"><a href="shm_8h.html#ac31bbe8dcc4493950c63bc59495c88db">AuGetSHMByID</a></div><div class="ttdeci">AuSHM * AuGetSHMByID(uint16_t id)</div><div class="ttdoc">AuGetSHMSeg – searches and return a shm segment by its key.</div><div class="ttdef"><b>Definition</b> shm.cpp:85</div></div>
 <div class="ttc" id="ashm_8h_html_af96109906763276bed7a66df359b9882"><div class="ttname"><a href="shm_8h.html#af96109906763276bed7a66df359b9882">AuSHMUnmapAll</a></div><div class="ttdeci">void AuSHMUnmapAll(AuProcess *proc)</div><div class="ttdoc">AuSHMUnmapAll – unmaps all mappings for this process.</div><div class="ttdef"><b>Definition</b> shm.cpp:374</div></div>
-<div class="ttc" id="astdint_8h_html"><div class="ttname"><a href="stdint_8h.html">stdint.h</a></div></div>
 <div class="ttc" id="astruct__au__proc___html"><div class="ttname"><a href="struct__au__proc__.html">_au_proc_</a></div><div class="ttdef"><b>Definition</b> process.h:104</div></div>
 <div class="ttc" id="astruct__shm___html"><div class="ttname"><a href="struct__shm__.html">_shm_</a></div><div class="ttdef"><b>Definition</b> shm.h:42</div></div>
 <div class="ttc" id="astruct__shm___html_a01cf700f872f06e9e61be90ae91ee9ad"><div class="ttname"><a href="struct__shm__.html#a01cf700f872f06e9e61be90ae91ee9ad">_shm_::link_count</a></div><div class="ttdeci">uint16_t link_count</div><div class="ttdef"><b>Definition</b> shm.h:47</div></div>

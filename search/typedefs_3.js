@@ -70,7 +70,7 @@ var searchData=
   ['chpopupwindow_67',['ChPopupWindow',['../Libs_2Chitralekha_2widgets_2window_8h.html#a03906b6980e76a176d77b79222b92e3c',1,'window.h']]],
   ['chprogressbar_68',['ChProgressBar',['../progress_8h.html#ab68737aed1ccdf4eefeed4c3107f0251',1,'progress.h']]],
   ['chrect_69',['ChRect',['../draw_8h.html#a410ad4eb835578a93dcc4a2c1f9911d1',1,'draw.h']]],
-  ['chscrollbar_70',['chscrollbar',['../scrollbar_8h.html#a98e76fc84801c1600d2547d297002dd6',1,'ChScrollBar:&#160;scrollbar.h'],['../scrollpane_8h.html#acd84d4558d3d4c3c17a68f151adec15c',1,'ChScrollbar:&#160;scrollpane.h']]],
+  ['chscrollbar_70',['chscrollbar',['../scrollpane_8h.html#acd84d4558d3d4c3c17a68f151adec15c',1,'ChScrollbar:&#160;scrollpane.h'],['../scrollbar_8h.html#a98e76fc84801c1600d2547d297002dd6',1,'ChScrollBar:&#160;scrollbar.h']]],
   ['chscrollpane_71',['ChScrollPane',['../scrollpane_8h.html#a9f476dcf3ee165966f749af3496ea10b',1,'scrollpane.h']]],
   ['chsharedwininfo_72',['ChSharedWinInfo',['../Libs_2Chitralekha_2widgets_2window_8h.html#a23fa5825da45e6ea519e713d33d807bd',1,'window.h']]],
   ['chsidebar_73',['ChSidebar',['../sidebar_8h.html#ad264ca0d8605f317f7f00035640bb35b',1,'sidebar.h']]],

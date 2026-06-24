@@ -83,7 +83,7 @@ $(function() {
 <code>#include &lt;<a class="el" href="__null_8h_source.html">_null.h</a>&gt;</code><br />
 <code>#include &lt;string.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="aucon_8h_source.html">aucon.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="stdint_8h_source.html">stdint.h</a>&gt;</code><br />
+<code>#include &lt;stdint.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="uart_8h_source.html">Drivers/uart.h</a>&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for pe.c:</div>
@@ -99,21 +99,15 @@ Include dependency graph for pe.c:</div>
 <area shape="poly" title=" " alt="" coords="248,33,223,69,218,66,243,30"/>
 <area shape="rect" href="aucon_8h.html" title=" " alt="" coords="265,79,338,104"/>
 <area shape="poly" title=" " alt="" coords="263,30,288,66,284,69,259,33"/>
-<area shape="rect" href="stdint_8h.html" title=" " alt="" coords="341,313,411,339"/>
-<area shape="poly" title=" " alt="" coords="287,28,322,47,338,61,352,77,366,105,376,135,386,197,387,255,383,300,377,299,381,255,381,198,371,137,361,107,347,80,334,65,319,52,285,33"/>
+<area shape="rect" title=" " alt="" coords="391,313,462,339"/>
+<area shape="poly" title=" " alt="" coords="284,28,319,48,351,77,370,104,385,134,407,196,421,254,427,299,422,300,415,255,402,198,380,136,365,107,347,80,316,52,281,33"/>
 <area shape="rect" href="uart_8h.html" title=" " alt="" coords="462,79,573,104"/>
 <area shape="poly" title=" " alt="" coords="296,28,462,72,461,78,295,33"/>
-<area shape="rect" href="BaseHdr_2aurora_8h.html" title=" " alt="" coords="211,152,287,177"/>
-<area shape="poly" title=" " alt="" coords="295,106,268,142,264,139,291,103"/>
-<area shape="poly" title=" " alt="" coords="212,179,176,198,160,211,148,227,141,246,148,264,158,273,175,282,222,297,327,316,326,322,221,302,173,287,155,278,143,267,135,246,143,224,156,207,173,193,210,175"/>
-<area shape="rect" href="stdbool_8h.html" title=" " alt="" coords="157,233,240,258"/>
-<area shape="poly" title=" " alt="" coords="244,179,216,222,211,220,240,176"/>
-<area shape="rect" href="stddef_8h.html" title=" " alt="" coords="264,233,339,258"/>
-<area shape="poly" title=" " alt="" coords="259,176,288,220,284,222,255,179"/>
-<area shape="rect" href="size__t_8h.html" title=" " alt="" coords="340,387,412,412"/>
-<area shape="poly" title=" " alt="" coords="379,339,379,373,373,373,373,339"/>
-<area shape="poly" title=" " alt="" coords="314,256,358,302,354,305,310,260"/>
-<area shape="poly" title=" " alt="" coords="503,106,478,127,454,154,431,192,411,232,386,301,381,299,406,230,426,189,450,150,474,123,499,102"/>
+<area shape="rect" href="BaseHdr_2aurora_8h.html" title=" " alt="" coords="262,152,338,177"/>
+<area shape="poly" title=" " alt="" coords="304,104,303,139,298,138,298,104"/>
+<area shape="rect" href="BaseHdr_2stdint_8h.html" title=" " alt="" coords="265,233,335,258"/>
+<area shape="poly" title=" " alt="" coords="303,178,303,219,297,219,297,178"/>
+<area shape="poly" title=" " alt="" coords="500,106,476,126,454,153,440,191,431,231,428,300,423,299,426,230,434,189,450,151,472,123,497,102"/>
 <area shape="rect" href="aa64hcode_8h.html" title=" " alt="" coords="465,152,570,177"/>
 <area shape="poly" title=" " alt="" coords="520,104,520,138,515,138,515,104"/>
 <area shape="rect" title=" " alt="" coords="594,152,670,177"/>
@@ -122,7 +116,7 @@ Include dependency graph for pe.c:</div>
 <area shape="poly" title=" " alt="" coords="561,101,732,146,730,151,560,107"/>
 <area shape="rect" href="imx8mp__uart_8h.html" title=" " alt="" coords="581,225,757,265"/>
 <area shape="poly" title=" " alt="" coords="772,180,711,220,708,215,769,175"/>
-<area shape="poly" title=" " alt="" coords="600,268,425,314,424,309,598,263"/>
+<area shape="poly" title=" " alt="" coords="612,268,476,312,474,306,610,263"/>
 </map>
 </div>
 </div><table class="memberdecls">
@@ -168,7 +162,7 @@ Macros</h2></td></tr>
 <tr class="separator:ae8afb2fc3ffda3388f1bd99967eda0d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adbd516baadd39bcc30bc969c218d41bd" id="r_adbd516baadd39bcc30bc969c218d41bd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pe_8c.html#adbd516baadd39bcc30bc969c218d41bd">IMAGE_DATA_DIRECTORY_RELOC</a>&#160;&#160;&#160;5</td></tr>
 <tr class="separator:adbd516baadd39bcc30bc969c218d41bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06fd590700d3bb729116e93acb353ce3" id="r_a06fd590700d3bb729116e93acb353ce3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pe_8c.html#a06fd590700d3bb729116e93acb353ce3">OFFSETOF</a>(s,  m)&#160;&#160;&#160;((<a class="el" href="size__t_8h.html#a1e1f4fe6f57edbe9d428d8fd39beb87a">size_t</a>)&amp;(((s*)0)-&gt;m))</td></tr>
+<tr class="memitem:a06fd590700d3bb729116e93acb353ce3" id="r_a06fd590700d3bb729116e93acb353ce3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pe_8c.html#a06fd590700d3bb729116e93acb353ce3">OFFSETOF</a>(s,  m)&#160;&#160;&#160;((<a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>)&amp;(((s*)0)-&gt;m))</td></tr>
 <tr class="separator:a06fd590700d3bb729116e93acb353ce3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82e387d923cab6a5e27e492e8f9ba8ab" id="r_a82e387d923cab6a5e27e492e8f9ba8ab"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pe_8c.html#a82e387d923cab6a5e27e492e8f9ba8ab">IMAGE_FIRST_SECTION</a>(nt)</td></tr>
 <tr class="separator:a82e387d923cab6a5e27e492e8f9ba8ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -413,9 +407,9 @@ Functions</h2></td></tr>
 <div class="ttc" id="aLittleBoot_2pe_8h_html_ad6272a2366c4d11b39c31e9a0f0f6be8"><div class="ttname"><a href="LittleBoot_2pe_8h.html#ad6272a2366c4d11b39c31e9a0f0f6be8">OptionalHeader</a></div><div class="ttdeci">IMAGE_OPTIONAL_HEADER_PE32PLUS OptionalHeader</div><div class="ttdef"><b>Definition</b> pe.h:2</div></div>
 <div class="ttc" id="aacefiex_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition</b> acefiex.h:161</div></div>
 <div class="ttc" id="ape_8c_html_a06fd590700d3bb729116e93acb353ce3"><div class="ttname"><a href="pe_8c.html#a06fd590700d3bb729116e93acb353ce3">OFFSETOF</a></div><div class="ttdeci">#define OFFSETOF(s, m)</div><div class="ttdef"><b>Definition</b> pe.c:269</div></div>
-<div class="ttc" id="astruct__IMAGE__FILE__HEADER___html_ac1bf7f9c4b91c3bf65a6008270e5a640"><div class="ttname"><a href="struct__IMAGE__FILE__HEADER__.html#ac1bf7f9c4b91c3bf65a6008270e5a640">_IMAGE_FILE_HEADER_::SizeOfOptionaHeader</a></div><div class="ttdeci">uint16_t SizeOfOptionaHeader</div><div class="ttdef"><b>Definition</b> pe.h:82</div></div>
-<div class="ttc" id="astruct__IMAGE__NT__HEADERS__PE32PLUS_html"><div class="ttname"><a href="struct__IMAGE__NT__HEADERS__PE32PLUS.html">_IMAGE_NT_HEADERS_PE32PLUS</a></div><div class="ttdef"><b>Definition</b> pe.h:172</div></div>
-<div class="ttc" id="astruct__IMAGE__SECTION__HEADER_html"><div class="ttname"><a href="struct__IMAGE__SECTION__HEADER.html">_IMAGE_SECTION_HEADER</a></div><div class="ttdef"><b>Definition</b> pe.h:193</div></div>
+<div class="ttc" id="astruct__IMAGE__FILE__HEADER___html_ac1bf7f9c4b91c3bf65a6008270e5a640"><div class="ttname"><a href="struct__IMAGE__FILE__HEADER__.html#ac1bf7f9c4b91c3bf65a6008270e5a640">_IMAGE_FILE_HEADER_::SizeOfOptionaHeader</a></div><div class="ttdeci">uint16_t SizeOfOptionaHeader</div><div class="ttdef"><b>Definition</b> pe.h:85</div></div>
+<div class="ttc" id="astruct__IMAGE__NT__HEADERS__PE32PLUS_html"><div class="ttname"><a href="struct__IMAGE__NT__HEADERS__PE32PLUS.html">_IMAGE_NT_HEADERS_PE32PLUS</a></div><div class="ttdef"><b>Definition</b> pe.h:175</div></div>
+<div class="ttc" id="astruct__IMAGE__SECTION__HEADER_html"><div class="ttname"><a href="struct__IMAGE__SECTION__HEADER.html">_IMAGE_SECTION_HEADER</a></div><div class="ttdef"><b>Definition</b> pe.h:196</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -553,7 +547,7 @@ Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;((<a class="el" href="size__t_8h.html#a1e1f4fe6f57edbe9d428d8fd39beb87a">size_t</a>)&amp;(((s*)0)-&gt;m))</td>
+          <td></td><td>&#160;&#160;&#160;((<a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>)&amp;(((s*)0)-&gt;m))</td>
         </tr>
       </table>
 </div><div class="memdoc">
