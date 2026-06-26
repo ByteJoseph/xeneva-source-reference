@@ -233,6 +233,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a91727fb993fc19618301763ca7be3020" id="r_a91727fb993fc19618301763ca7be3020"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="audrv_8c.html#a91727fb993fc19618301763ca7be3020">AuDrvCatchFault</a> (<a class="el" href="audrv_8h.html#a9e3aee018af3077c7b4044bdd751930a">AuDriver</a> *drv, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> fault_addr)</td></tr>
 <tr class="memdesc:a91727fb993fc19618301763ca7be3020"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuDrvCatchFault &ndash; resolves original virtual address of the driver and relocate its symbol name.  <br /></td></tr>
 <tr class="separator:a91727fb993fc19618301763ca7be3020"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafd3e8b301febc1c3fee54fe3bcc9fa3" id="r_aafd3e8b301febc1c3fee54fe3bcc9fa3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="audrv_8c.html#aafd3e8b301febc1c3fee54fe3bcc9fa3">AuDrvUnloadAll</a> ()</td></tr>
+<tr class="memdesc:aafd3e8b301febc1c3fee54fe3bcc9fa3"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuDrvUnloadAll &ndash; call unload handler of all registered drivers.  <br /></td></tr>
+<tr class="separator:aafd3e8b301febc1c3fee54fe3bcc9fa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -666,6 +669,25 @@ Variables</h2></td></tr>
 </dl>
 <p>now initialize board specific driver list</p>
 <p>using font manager's function because both board config data and font manager config data shares same style</p>
+
+</div>
+</div>
+<a id="aafd3e8b301febc1c3fee54fe3bcc9fa3" name="aafd3e8b301febc1c3fee54fe3bcc9fa3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafd3e8b301febc1c3fee54fe3bcc9fa3">&#9670;&#160;</a></span>AuDrvUnloadAll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AuDrvUnloadAll </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>AuDrvUnloadAll &ndash; call unload handler of all registered drivers. </p>
 
 </div>
 </div>

@@ -122,6 +122,10 @@ Include dependency graph for pe.c:</div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
+<tr class="memitem:acde26d24b0ff46215cbd029d8ae87e4d" id="r_acde26d24b0ff46215cbd029d8ae87e4d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pe_8c.html#acde26d24b0ff46215cbd029d8ae87e4d">IMAGE_DOS_SIGNATURE</a>&#160;&#160;&#160;0x5A4D</td></tr>
+<tr class="separator:acde26d24b0ff46215cbd029d8ae87e4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83570e3e2fba8cb7c2abc8b3eee47d48" id="r_a83570e3e2fba8cb7c2abc8b3eee47d48"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pe_8c.html#a83570e3e2fba8cb7c2abc8b3eee47d48">IMAGE_NT_SIGNATURE</a>&#160;&#160;&#160;0x00004550</td></tr>
+<tr class="separator:a83570e3e2fba8cb7c2abc8b3eee47d48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab23caa74062a13a4b37cb2b851d59f98" id="r_ab23caa74062a13a4b37cb2b851d59f98"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pe_8c.html#ab23caa74062a13a4b37cb2b851d59f98">IMAGE_REL_BASED_ABSOLUTE</a>&#160;&#160;&#160;0</td></tr>
 <tr class="separator:ab23caa74062a13a4b37cb2b851d59f98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a68d8b5b7fdff6d8e85282f8b5e213d79" id="r_a68d8b5b7fdff6d8e85282f8b5e213d79"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pe_8c.html#a68d8b5b7fdff6d8e85282f8b5e213d79">IMAGE_REL_BASED_HIGH</a>&#160;&#160;&#160;1</td></tr>
@@ -383,6 +387,20 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="acde26d24b0ff46215cbd029d8ae87e4d" name="acde26d24b0ff46215cbd029d8ae87e4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acde26d24b0ff46215cbd029d8ae87e4d">&#9670;&#160;</a></span>IMAGE_DOS_SIGNATURE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IMAGE_DOS_SIGNATURE&#160;&#160;&#160;0x5A4D</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a82e387d923cab6a5e27e492e8f9ba8ab" name="a82e387d923cab6a5e27e492e8f9ba8ab"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a82e387d923cab6a5e27e492e8f9ba8ab">&#9670;&#160;</a></span>IMAGE_FIRST_SECTION</h2>
 
@@ -406,11 +424,25 @@ Functions</h2></td></tr>
 <div class="ttc" id="aLittleBoot_2pe_8h_html_a25612f60df7b78e988643b03669d9815"><div class="ttname"><a href="LittleBoot_2pe_8h.html#a25612f60df7b78e988643b03669d9815">FileHeader</a></div><div class="ttdeci">IMAGE_FILE_HEADER FileHeader</div><div class="ttdef"><b>Definition</b> pe.h:1</div></div>
 <div class="ttc" id="aLittleBoot_2pe_8h_html_ad6272a2366c4d11b39c31e9a0f0f6be8"><div class="ttname"><a href="LittleBoot_2pe_8h.html#ad6272a2366c4d11b39c31e9a0f0f6be8">OptionalHeader</a></div><div class="ttdeci">IMAGE_OPTIONAL_HEADER_PE32PLUS OptionalHeader</div><div class="ttdef"><b>Definition</b> pe.h:2</div></div>
 <div class="ttc" id="aacefiex_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition</b> acefiex.h:161</div></div>
-<div class="ttc" id="ape_8c_html_a06fd590700d3bb729116e93acb353ce3"><div class="ttname"><a href="pe_8c.html#a06fd590700d3bb729116e93acb353ce3">OFFSETOF</a></div><div class="ttdeci">#define OFFSETOF(s, m)</div><div class="ttdef"><b>Definition</b> pe.c:269</div></div>
+<div class="ttc" id="ape_8c_html_a06fd590700d3bb729116e93acb353ce3"><div class="ttname"><a href="pe_8c.html#a06fd590700d3bb729116e93acb353ce3">OFFSETOF</a></div><div class="ttdeci">#define OFFSETOF(s, m)</div><div class="ttdef"><b>Definition</b> pe.c:302</div></div>
 <div class="ttc" id="astruct__IMAGE__FILE__HEADER___html_ac1bf7f9c4b91c3bf65a6008270e5a640"><div class="ttname"><a href="struct__IMAGE__FILE__HEADER__.html#ac1bf7f9c4b91c3bf65a6008270e5a640">_IMAGE_FILE_HEADER_::SizeOfOptionaHeader</a></div><div class="ttdeci">uint16_t SizeOfOptionaHeader</div><div class="ttdef"><b>Definition</b> pe.h:85</div></div>
 <div class="ttc" id="astruct__IMAGE__NT__HEADERS__PE32PLUS_html"><div class="ttname"><a href="struct__IMAGE__NT__HEADERS__PE32PLUS.html">_IMAGE_NT_HEADERS_PE32PLUS</a></div><div class="ttdef"><b>Definition</b> pe.h:175</div></div>
 <div class="ttc" id="astruct__IMAGE__SECTION__HEADER_html"><div class="ttname"><a href="struct__IMAGE__SECTION__HEADER.html">_IMAGE_SECTION_HEADER</a></div><div class="ttdef"><b>Definition</b> pe.h:196</div></div>
 </div><!-- fragment -->
+</div>
+</div>
+<a id="a83570e3e2fba8cb7c2abc8b3eee47d48" name="a83570e3e2fba8cb7c2abc8b3eee47d48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83570e3e2fba8cb7c2abc8b3eee47d48">&#9670;&#160;</a></span>IMAGE_NT_SIGNATURE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IMAGE_NT_SIGNATURE&#160;&#160;&#160;0x00004550</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
 </div>
 </div>
 <a id="ab23caa74062a13a4b37cb2b851d59f98" name="ab23caa74062a13a4b37cb2b851d59f98"></a>
