@@ -908,7 +908,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="foldopen" id="foldopen00836" data-start="{" data-end="};">
 <div class="line"><a id="l00836" name="l00836"></a><span class="lineno"><a class="line" href="structstbtt__vertex.html">  836</a></span>    <span class="keyword">typedef</span> <span class="keyword">struct</span></div>
 <div class="line"><a id="l00837" name="l00837"></a><span class="lineno">  837</span>    {</div>
-<div class="line"><a id="l00838" name="l00838"></a><span class="lineno"><a class="line" href="structstbtt__vertex.html#a43835489e2a151b31cb100d20f8adeae">  838</a></span>        <a class="code hl_define" href="stb__truetype_8h.html#ab8fd8e5e0b82b0f7da54532035e47b22">stbtt_vertex_type</a> <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>, y, <a class="code hl_variable" href="structstbtt__vertex.html#a43835489e2a151b31cb100d20f8adeae">cx</a>, cy, cx1, cy1;</div>
+<div class="line"><a id="l00838" name="l00838"></a><span class="lineno"><a class="line" href="structstbtt__vertex.html#a43835489e2a151b31cb100d20f8adeae">  838</a></span>        <a class="code hl_define" href="stb__truetype_8h.html#ab8fd8e5e0b82b0f7da54532035e47b22">stbtt_vertex_type</a> x, y, <a class="code hl_variable" href="structstbtt__vertex.html#a43835489e2a151b31cb100d20f8adeae">cx</a>, cy, cx1, cy1;</div>
 <div class="line"><a id="l00839" name="l00839"></a><span class="lineno"><a class="line" href="structstbtt__vertex.html#a8bd328747e8ea018612960a52e3e3ede">  839</a></span>        <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> type, <a class="code hl_variable" href="structstbtt__vertex.html#a8bd328747e8ea018612960a52e3e3ede">padding</a>;</div>
 <div class="line"><a id="l00840" name="l00840"></a><span class="lineno">  840</span>    } <a class="code hl_struct" href="structstbtt__vertex.html">stbtt_vertex</a>;</div>
 </div>
@@ -1765,7 +1765,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l01700" name="l01700"></a><span class="lineno"> 1700</span>    <span class="keywordflow">if</span> (numberOfContours &gt; 0) {</div>
 <div class="line"><a id="l01701" name="l01701"></a><span class="lineno"> 1701</span>        stbtt_uint8 flags = 0, flagcount;</div>
 <div class="line"><a id="l01702" name="l01702"></a><span class="lineno"> 1702</span>        stbtt_int32 ins, i, j = 0, m, n, next_move, was_off = 0, off, start_off = 0;</div>
-<div class="line"><a id="l01703" name="l01703"></a><span class="lineno"> 1703</span>        stbtt_int32 <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>, y, cx, cy, sx, sy, scx, scy;</div>
+<div class="line"><a id="l01703" name="l01703"></a><span class="lineno"> 1703</span>        stbtt_int32 x, y, cx, cy, sx, sy, scx, scy;</div>
 <div class="line"><a id="l01704" name="l01704"></a><span class="lineno"> 1704</span>        stbtt_uint8* points;</div>
 <div class="line"><a id="l01705" name="l01705"></a><span class="lineno"> 1705</span>        endPtsOfContours = (data + g + 10);</div>
 <div class="line"><a id="l01706" name="l01706"></a><span class="lineno"> 1706</span>        ins = ttUSHORT(data + g + 10 + numberOfContours * 2);</div>
@@ -1801,16 +1801,16 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l01736" name="l01736"></a><span class="lineno"> 1736</span>        }</div>
 <div class="line"><a id="l01737" name="l01737"></a><span class="lineno"> 1737</span> </div>
 <div class="line"><a id="l01738" name="l01738"></a><span class="lineno"> 1738</span>        <span class="comment">// now load x coordinates</span></div>
-<div class="line"><a id="l01739" name="l01739"></a><span class="lineno"> 1739</span>        <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> = 0;</div>
+<div class="line"><a id="l01739" name="l01739"></a><span class="lineno"> 1739</span>        x = 0;</div>
 <div class="line"><a id="l01740" name="l01740"></a><span class="lineno"> 1740</span>        <span class="keywordflow">for</span> (i = 0; i &lt; n; ++i) {</div>
 <div class="line"><a id="l01741" name="l01741"></a><span class="lineno"> 1741</span>            flags = vertices[off + i].<a class="code hl_variable" href="structstbtt__vertex.html#aa325b3707b88e7e104c0de46bb2bf395">type</a>;</div>
 <div class="line"><a id="l01742" name="l01742"></a><span class="lineno"> 1742</span>            <span class="keywordflow">if</span> (flags &amp; 2) {</div>
 <div class="line"><a id="l01743" name="l01743"></a><span class="lineno"> 1743</span>                stbtt_int16 dx = *points++;</div>
-<div class="line"><a id="l01744" name="l01744"></a><span class="lineno"> 1744</span>                <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> += (flags &amp; 16) ? dx : -dx; <span class="comment">// ???</span></div>
+<div class="line"><a id="l01744" name="l01744"></a><span class="lineno"> 1744</span>                x += (flags &amp; 16) ? dx : -dx; <span class="comment">// ???</span></div>
 <div class="line"><a id="l01745" name="l01745"></a><span class="lineno"> 1745</span>            }</div>
 <div class="line"><a id="l01746" name="l01746"></a><span class="lineno"> 1746</span>            <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l01747" name="l01747"></a><span class="lineno"> 1747</span>                <span class="keywordflow">if</span> (!(flags &amp; 16)) {</div>
-<div class="line"><a id="l01748" name="l01748"></a><span class="lineno"> 1748</span>                    <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> = <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> + (stbtt_int16)(points[0] * 256 + points[1]);</div>
+<div class="line"><a id="l01748" name="l01748"></a><span class="lineno"> 1748</span>                    x = x + (stbtt_int16)(points[0] * 256 + points[1]);</div>
 <div class="line"><a id="l01749" name="l01749"></a><span class="lineno"> 1749</span>                    points += 2;</div>
 <div class="line"><a id="l01750" name="l01750"></a><span class="lineno"> 1750</span>                }</div>
 <div class="line"><a id="l01751" name="l01751"></a><span class="lineno"> 1751</span>            }</div>
@@ -1839,7 +1839,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l01774" name="l01774"></a><span class="lineno"> 1774</span>        sx = sy = cx = cy = scx = scy = 0;</div>
 <div class="line"><a id="l01775" name="l01775"></a><span class="lineno"> 1775</span>        <span class="keywordflow">for</span> (i = 0; i &lt; n; ++i) {</div>
 <div class="line"><a id="l01776" name="l01776"></a><span class="lineno"> 1776</span>            flags = vertices[off + i].<a class="code hl_variable" href="structstbtt__vertex.html#aa325b3707b88e7e104c0de46bb2bf395">type</a>;</div>
-<div class="line"><a id="l01777" name="l01777"></a><span class="lineno"> 1777</span>            <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> = (stbtt_int16)vertices[off + i].x;</div>
+<div class="line"><a id="l01777" name="l01777"></a><span class="lineno"> 1777</span>            x = (stbtt_int16)vertices[off + i].x;</div>
 <div class="line"><a id="l01778" name="l01778"></a><span class="lineno"> 1778</span>            y = (stbtt_int16)vertices[off + i].y;</div>
 <div class="line"><a id="l01779" name="l01779"></a><span class="lineno"> 1779</span> </div>
 <div class="line"><a id="l01780" name="l01780"></a><span class="lineno"> 1780</span>            <span class="keywordflow">if</span> (next_move == i) {</div>
@@ -1851,11 +1851,11 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l01786" name="l01786"></a><span class="lineno"> 1786</span>                <span class="keywordflow">if</span> (start_off) {</div>
 <div class="line"><a id="l01787" name="l01787"></a><span class="lineno"> 1787</span>                    <span class="comment">// if we start off with an off-curve point, then when we need to find a point on the curve</span></div>
 <div class="line"><a id="l01788" name="l01788"></a><span class="lineno"> 1788</span>                    <span class="comment">// where we can start, and we need to save some state for when we wraparound.</span></div>
-<div class="line"><a id="l01789" name="l01789"></a><span class="lineno"> 1789</span>                    scx = <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>;</div>
+<div class="line"><a id="l01789" name="l01789"></a><span class="lineno"> 1789</span>                    scx = x;</div>
 <div class="line"><a id="l01790" name="l01790"></a><span class="lineno"> 1790</span>                    scy = y;</div>
 <div class="line"><a id="l01791" name="l01791"></a><span class="lineno"> 1791</span>                    <span class="keywordflow">if</span> (!(vertices[off + i + 1].type &amp; 1)) {</div>
 <div class="line"><a id="l01792" name="l01792"></a><span class="lineno"> 1792</span>                        <span class="comment">// next point is also a curve point, so interpolate an on-point curve</span></div>
-<div class="line"><a id="l01793" name="l01793"></a><span class="lineno"> 1793</span>                        sx = (<a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> + (stbtt_int32)vertices[off + i + 1].x) &gt;&gt; 1;</div>
+<div class="line"><a id="l01793" name="l01793"></a><span class="lineno"> 1793</span>                        sx = (x + (stbtt_int32)vertices[off + i + 1].x) &gt;&gt; 1;</div>
 <div class="line"><a id="l01794" name="l01794"></a><span class="lineno"> 1794</span>                        sy = (y + (stbtt_int32)vertices[off + i + 1].y) &gt;&gt; 1;</div>
 <div class="line"><a id="l01795" name="l01795"></a><span class="lineno"> 1795</span>                    }</div>
 <div class="line"><a id="l01796" name="l01796"></a><span class="lineno"> 1796</span>                    <span class="keywordflow">else</span> {</div>
@@ -1866,7 +1866,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l01801" name="l01801"></a><span class="lineno"> 1801</span>                    }</div>
 <div class="line"><a id="l01802" name="l01802"></a><span class="lineno"> 1802</span>                }</div>
 <div class="line"><a id="l01803" name="l01803"></a><span class="lineno"> 1803</span>                <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l01804" name="l01804"></a><span class="lineno"> 1804</span>                    sx = <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>;</div>
+<div class="line"><a id="l01804" name="l01804"></a><span class="lineno"> 1804</span>                    sx = x;</div>
 <div class="line"><a id="l01805" name="l01805"></a><span class="lineno"> 1805</span>                    sy = y;</div>
 <div class="line"><a id="l01806" name="l01806"></a><span class="lineno"> 1806</span>                }</div>
 <div class="line"><a id="l01807" name="l01807"></a><span class="lineno"> 1807</span>                stbtt_setvertex(&amp;vertices[num_vertices++], <a class="code hl_enumvalue" href="stb__truetype_8h.html#a464ceffb3905a556933d0ea8d4c64d22ab335ba97e1798b621313de85a9a6e69d">STBTT_vmove</a>, sx, sy, 0, 0);</div>
@@ -1878,7 +1878,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l01813" name="l01813"></a><span class="lineno"> 1813</span>                <span class="keywordflow">if</span> (!(flags &amp; 1)) { <span class="comment">// if it&#39;s a curve</span></div>
 <div class="line"><a id="l01814" name="l01814"></a><span class="lineno"> 1814</span>                    <span class="keywordflow">if</span> (was_off) <span class="comment">// two off-curve control points in a row means interpolate an on-curve midpoint</span></div>
 <div class="line"><a id="l01815" name="l01815"></a><span class="lineno"> 1815</span>                        stbtt_setvertex(&amp;vertices[num_vertices++], <a class="code hl_enumvalue" href="stb__truetype_8h.html#a464ceffb3905a556933d0ea8d4c64d22ab9ac3e527ce18873abeab556f6768ce4">STBTT_vcurve</a>, (cx + x) &gt;&gt; 1, (cy + y) &gt;&gt; 1, cx, cy);</div>
-<div class="line"><a id="l01816" name="l01816"></a><span class="lineno"> 1816</span>                    cx = <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>;</div>
+<div class="line"><a id="l01816" name="l01816"></a><span class="lineno"> 1816</span>                    cx = x;</div>
 <div class="line"><a id="l01817" name="l01817"></a><span class="lineno"> 1817</span>                    cy = y;</div>
 <div class="line"><a id="l01818" name="l01818"></a><span class="lineno"> 1818</span>                    was_off = 1;</div>
 <div class="line"><a id="l01819" name="l01819"></a><span class="lineno"> 1819</span>                }</div>
@@ -1948,11 +1948,11 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l01883" name="l01883"></a><span class="lineno"> 1883</span>                <span class="comment">// Transform vertices.</span></div>
 <div class="line"><a id="l01884" name="l01884"></a><span class="lineno"> 1884</span>                <span class="keywordflow">for</span> (i = 0; i &lt; comp_num_verts; ++i) {</div>
 <div class="line"><a id="l01885" name="l01885"></a><span class="lineno"> 1885</span>                    <a class="code hl_struct" href="structstbtt__vertex.html">stbtt_vertex</a>* v = &amp;comp_verts[i];</div>
-<div class="line"><a id="l01886" name="l01886"></a><span class="lineno"> 1886</span>                    <a class="code hl_define" href="stb__truetype_8h.html#ab8fd8e5e0b82b0f7da54532035e47b22">stbtt_vertex_type</a> <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>, y;</div>
-<div class="line"><a id="l01887" name="l01887"></a><span class="lineno"> 1887</span>                    <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> = v-&gt;<a class="code hl_variable" href="structstbtt__vertex.html#a81773edbe760d0e090561a3c1e86c919">x</a>; y = v-&gt;<a class="code hl_variable" href="structstbtt__vertex.html#a9052065ca544b63d537325b246928cfc">y</a>;</div>
+<div class="line"><a id="l01886" name="l01886"></a><span class="lineno"> 1886</span>                    <a class="code hl_define" href="stb__truetype_8h.html#ab8fd8e5e0b82b0f7da54532035e47b22">stbtt_vertex_type</a> x, y;</div>
+<div class="line"><a id="l01887" name="l01887"></a><span class="lineno"> 1887</span>                    x = v-&gt;<a class="code hl_variable" href="structstbtt__vertex.html#a81773edbe760d0e090561a3c1e86c919">x</a>; y = v-&gt;<a class="code hl_variable" href="structstbtt__vertex.html#a9052065ca544b63d537325b246928cfc">y</a>;</div>
 <div class="line"><a id="l01888" name="l01888"></a><span class="lineno"> 1888</span>                    v-&gt;<a class="code hl_variable" href="structstbtt__vertex.html#a81773edbe760d0e090561a3c1e86c919">x</a> = (<a class="code hl_define" href="stb__truetype_8h.html#ab8fd8e5e0b82b0f7da54532035e47b22">stbtt_vertex_type</a>)(m * (mtx[0] * x + mtx[2] * y + mtx[4]));</div>
 <div class="line"><a id="l01889" name="l01889"></a><span class="lineno"> 1889</span>                    v-&gt;<a class="code hl_variable" href="structstbtt__vertex.html#a9052065ca544b63d537325b246928cfc">y</a> = (<a class="code hl_define" href="stb__truetype_8h.html#ab8fd8e5e0b82b0f7da54532035e47b22">stbtt_vertex_type</a>)(n * (mtx[1] * x + mtx[3] * y + mtx[5]));</div>
-<div class="line"><a id="l01890" name="l01890"></a><span class="lineno"> 1890</span>                    <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> = v-&gt;<a class="code hl_variable" href="structstbtt__vertex.html#a43835489e2a151b31cb100d20f8adeae">cx</a>; y = v-&gt;<a class="code hl_variable" href="structstbtt__vertex.html#a5610d6335aa6962d970fc7fd2225545e">cy</a>;</div>
+<div class="line"><a id="l01890" name="l01890"></a><span class="lineno"> 1890</span>                    x = v-&gt;<a class="code hl_variable" href="structstbtt__vertex.html#a43835489e2a151b31cb100d20f8adeae">cx</a>; y = v-&gt;<a class="code hl_variable" href="structstbtt__vertex.html#a5610d6335aa6962d970fc7fd2225545e">cy</a>;</div>
 <div class="line"><a id="l01891" name="l01891"></a><span class="lineno"> 1891</span>                    v-&gt;<a class="code hl_variable" href="structstbtt__vertex.html#a43835489e2a151b31cb100d20f8adeae">cx</a> = (<a class="code hl_define" href="stb__truetype_8h.html#ab8fd8e5e0b82b0f7da54532035e47b22">stbtt_vertex_type</a>)(m * (mtx[0] * x + mtx[2] * y + mtx[4]));</div>
 <div class="line"><a id="l01892" name="l01892"></a><span class="lineno"> 1892</span>                    v-&gt;<a class="code hl_variable" href="structstbtt__vertex.html#a5610d6335aa6962d970fc7fd2225545e">cy</a> = (<a class="code hl_define" href="stb__truetype_8h.html#ab8fd8e5e0b82b0f7da54532035e47b22">stbtt_vertex_type</a>)(n * (mtx[1] * x + mtx[3] * y + mtx[5]));</div>
 <div class="line"><a id="l01893" name="l01893"></a><span class="lineno"> 1893</span>                }</div>
@@ -1987,7 +1987,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l01922" name="l01922"></a><span class="lineno"> 1922</span>    <span class="keywordtype">int</span> bounds;</div>
 <div class="line"><a id="l01923" name="l01923"></a><span class="lineno"> 1923</span>    <span class="keywordtype">int</span> started;</div>
 <div class="line"><a id="l01924" name="l01924"></a><span class="lineno"> 1924</span>    <span class="keywordtype">float</span> first_x, first_y;</div>
-<div class="line"><a id="l01925" name="l01925"></a><span class="lineno"> 1925</span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>, y;</div>
+<div class="line"><a id="l01925" name="l01925"></a><span class="lineno"> 1925</span>    <span class="keywordtype">float</span> x, y;</div>
 <div class="line"><a id="l01926" name="l01926"></a><span class="lineno"> 1926</span>    stbtt_int32 min_x, max_x, min_y, max_y;</div>
 <div class="line"><a id="l01927" name="l01927"></a><span class="lineno"> 1927</span> </div>
 <div class="line"><a id="l01928" name="l01928"></a><span class="lineno"> 1928</span>    <a class="code hl_struct" href="structstbtt__vertex.html">stbtt_vertex</a>* pvertices;</div>
@@ -1998,9 +1998,9 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l01933" name="l01933"></a><span class="lineno"> 1933</span> </div>
 <div class="line"><a id="l01934" name="l01934"></a><span class="lineno"> 1934</span><span class="keyword">static</span> <span class="keywordtype">void</span> stbtt__track_vertex(stbtt__csctx* c, stbtt_int32 x, stbtt_int32 y)</div>
 <div class="line"><a id="l01935" name="l01935"></a><span class="lineno"> 1935</span>{</div>
-<div class="line"><a id="l01936" name="l01936"></a><span class="lineno"> 1936</span>    <span class="keywordflow">if</span> (x &gt; c-&gt;max_x || !c-&gt;started) c-&gt;max_x = <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>;</div>
+<div class="line"><a id="l01936" name="l01936"></a><span class="lineno"> 1936</span>    <span class="keywordflow">if</span> (x &gt; c-&gt;max_x || !c-&gt;started) c-&gt;max_x = x;</div>
 <div class="line"><a id="l01937" name="l01937"></a><span class="lineno"> 1937</span>    <span class="keywordflow">if</span> (y &gt; c-&gt;max_y || !c-&gt;started) c-&gt;max_y = y;</div>
-<div class="line"><a id="l01938" name="l01938"></a><span class="lineno"> 1938</span>    <span class="keywordflow">if</span> (x &lt; c-&gt;min_x || !c-&gt;started) c-&gt;min_x = <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>;</div>
+<div class="line"><a id="l01938" name="l01938"></a><span class="lineno"> 1938</span>    <span class="keywordflow">if</span> (x &lt; c-&gt;min_x || !c-&gt;started) c-&gt;min_x = x;</div>
 <div class="line"><a id="l01939" name="l01939"></a><span class="lineno"> 1939</span>    <span class="keywordflow">if</span> (y &lt; c-&gt;min_y || !c-&gt;started) c-&gt;min_y = y;</div>
 <div class="line"><a id="l01940" name="l01940"></a><span class="lineno"> 1940</span>    c-&gt;started = 1;</div>
 <div class="line"><a id="l01941" name="l01941"></a><span class="lineno"> 1941</span>}</div>
@@ -2909,7 +2909,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l02846" name="l02846"></a><span class="lineno"> 2846</span>{</div>
 <div class="line"><a id="l02847" name="l02847"></a><span class="lineno"> 2847</span>    <span class="keyword">struct </span>stbtt__active_edge* next;</div>
 <div class="line"><a id="l02848" name="l02848"></a><span class="lineno"> 2848</span><span class="preprocessor">#if STBTT_RASTERIZER_VERSION==1</span></div>
-<div class="line"><a id="l02849" name="l02849"></a><span class="lineno"> 2849</span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>, dx;</div>
+<div class="line"><a id="l02849" name="l02849"></a><span class="lineno"> 2849</span>    <span class="keywordtype">int</span> x, dx;</div>
 <div class="line"><a id="l02850" name="l02850"></a><span class="lineno"> 2850</span>    <span class="keywordtype">float</span> ey;</div>
 <div class="line"><a id="l02851" name="l02851"></a><span class="lineno"> 2851</span>    <span class="keywordtype">int</span> direction;</div>
 <div class="line"><a id="l02852" name="l02852"></a><span class="lineno"> 2852</span><span class="preprocessor">#elif STBTT_RASTERIZER_VERSION==2</span></div>
@@ -3152,12 +3152,12 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l03089" name="l03089"></a><span class="lineno"> 3089</span>        STBTT_assert(x1 &gt;= x &amp;&amp; x1 &lt;= x + 1);</div>
 <div class="line"><a id="l03090" name="l03090"></a><span class="lineno"> 3090</span> </div>
 <div class="line"><a id="l03091" name="l03091"></a><span class="lineno"> 3091</span>    <span class="keywordflow">if</span> (x0 &lt;= x &amp;&amp; x1 &lt;= x)</div>
-<div class="line"><a id="l03092" name="l03092"></a><span class="lineno"> 3092</span>        scanline[<a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>] += e-&gt;direction * (y1 - y0);</div>
+<div class="line"><a id="l03092" name="l03092"></a><span class="lineno"> 3092</span>        scanline[x] += e-&gt;direction * (y1 - y0);</div>
 <div class="line"><a id="l03093" name="l03093"></a><span class="lineno"> 3093</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (x0 &gt;= x + 1 &amp;&amp; x1 &gt;= x + 1)</div>
 <div class="line"><a id="l03094" name="l03094"></a><span class="lineno"> 3094</span>        ;</div>
 <div class="line"><a id="l03095" name="l03095"></a><span class="lineno"> 3095</span>    <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l03096" name="l03096"></a><span class="lineno"> 3096</span>        STBTT_assert(x0 &gt;= x &amp;&amp; x0 &lt;= x + 1 &amp;&amp; x1 &gt;= x &amp;&amp; x1 &lt;= x + 1);</div>
-<div class="line"><a id="l03097" name="l03097"></a><span class="lineno"> 3097</span>        scanline[<a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>] += e-&gt;direction * (y1 - y0) * (1 - ((x0 - x) + (x1 - x)) / 2); <span class="comment">// coverage = 1 - average x position</span></div>
+<div class="line"><a id="l03097" name="l03097"></a><span class="lineno"> 3097</span>        scanline[x] += e-&gt;direction * (y1 - y0) * (1 - ((x0 - x) + (x1 - x)) / 2); <span class="comment">// coverage = 1 - average x position</span></div>
 <div class="line"><a id="l03098" name="l03098"></a><span class="lineno"> 3098</span>    }</div>
 <div class="line"><a id="l03099" name="l03099"></a><span class="lineno"> 3099</span>}</div>
 <div class="line"><a id="l03100" name="l03100"></a><span class="lineno"> 3100</span> </div>
@@ -3235,14 +3235,14 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l03172" name="l03172"></a><span class="lineno"> 3172</span>                <span class="keywordflow">if</span> ((<span class="keywordtype">int</span>)x_top == (int)x_bottom) {</div>
 <div class="line"><a id="l03173" name="l03173"></a><span class="lineno"> 3173</span>                    <span class="keywordtype">float</span> height;</div>
 <div class="line"><a id="l03174" name="l03174"></a><span class="lineno"> 3174</span>                    <span class="comment">// simple case, only spans one pixel</span></div>
-<div class="line"><a id="l03175" name="l03175"></a><span class="lineno"> 3175</span>                    <span class="keywordtype">int</span> <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> = (int)x_top;</div>
+<div class="line"><a id="l03175" name="l03175"></a><span class="lineno"> 3175</span>                    <span class="keywordtype">int</span> x = (int)x_top;</div>
 <div class="line"><a id="l03176" name="l03176"></a><span class="lineno"> 3176</span>                    height = (sy1 - sy0) * e-&gt;direction;</div>
 <div class="line"><a id="l03177" name="l03177"></a><span class="lineno"> 3177</span>                    STBTT_assert(x &gt;= 0 &amp;&amp; x &lt; len);</div>
-<div class="line"><a id="l03178" name="l03178"></a><span class="lineno"> 3178</span>                    scanline[<a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>] += stbtt__position_trapezoid_area(height, x_top, x + 1.0f, x_bottom, x + 1.0f);</div>
-<div class="line"><a id="l03179" name="l03179"></a><span class="lineno"> 3179</span>                    scanline_fill[<a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>] += height; <span class="comment">// everything right of this pixel is filled</span></div>
+<div class="line"><a id="l03178" name="l03178"></a><span class="lineno"> 3178</span>                    scanline[x] += stbtt__position_trapezoid_area(height, x_top, x + 1.0f, x_bottom, x + 1.0f);</div>
+<div class="line"><a id="l03179" name="l03179"></a><span class="lineno"> 3179</span>                    scanline_fill[x] += height; <span class="comment">// everything right of this pixel is filled</span></div>
 <div class="line"><a id="l03180" name="l03180"></a><span class="lineno"> 3180</span>                }</div>
 <div class="line"><a id="l03181" name="l03181"></a><span class="lineno"> 3181</span>                <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l03182" name="l03182"></a><span class="lineno"> 3182</span>                    <span class="keywordtype">int</span> <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>, x1, x2;</div>
+<div class="line"><a id="l03182" name="l03182"></a><span class="lineno"> 3182</span>                    <span class="keywordtype">int</span> x, x1, x2;</div>
 <div class="line"><a id="l03183" name="l03183"></a><span class="lineno"> 3183</span>                    <span class="keywordtype">float</span> y_crossing, y_final, step, <a class="code hl_define" href="draw_8cpp.html#ac740756f75e53153605d2702b30d2a9d">sign</a>, area;</div>
 <div class="line"><a id="l03184" name="l03184"></a><span class="lineno"> 3184</span>                    <span class="comment">// covers 2+ pixels</span></div>
 <div class="line"><a id="l03185" name="l03185"></a><span class="lineno"> 3185</span>                    <span class="keywordflow">if</span> (x_top &gt; x_bottom) {</div>
@@ -3317,8 +3317,8 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l03254" name="l03254"></a><span class="lineno"> 3254</span>                    <span class="comment">// which multiplied by 1-pixel-width is how much pixel area changes for each step in x</span></div>
 <div class="line"><a id="l03255" name="l03255"></a><span class="lineno"> 3255</span>                    <span class="comment">// so the area advances by &#39;step&#39; every time</span></div>
 <div class="line"><a id="l03256" name="l03256"></a><span class="lineno"> 3256</span> </div>
-<div class="line"><a id="l03257" name="l03257"></a><span class="lineno"> 3257</span>                    <span class="keywordflow">for</span> (x = x1 + 1; <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> &lt; x2; ++<a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>) {</div>
-<div class="line"><a id="l03258" name="l03258"></a><span class="lineno"> 3258</span>                        scanline[<a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>] += area + step / 2; <span class="comment">// area of trapezoid is 1*step/2</span></div>
+<div class="line"><a id="l03257" name="l03257"></a><span class="lineno"> 3257</span>                    <span class="keywordflow">for</span> (x = x1 + 1; x &lt; x2; ++x) {</div>
+<div class="line"><a id="l03258" name="l03258"></a><span class="lineno"> 3258</span>                        scanline[x] += area + step / 2; <span class="comment">// area of trapezoid is 1*step/2</span></div>
 <div class="line"><a id="l03259" name="l03259"></a><span class="lineno"> 3259</span>                        area += step;</div>
 <div class="line"><a id="l03260" name="l03260"></a><span class="lineno"> 3260</span>                    }</div>
 <div class="line"><a id="l03261" name="l03261"></a><span class="lineno"> 3261</span>                    STBTT_assert(STBTT_fabs(area) &lt;= 1.01f); <span class="comment">// accumulated error from area += step unless we round step down</span></div>
@@ -3340,8 +3340,8 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l03277" name="l03277"></a><span class="lineno"> 3277</span>                <span class="comment">// note though that this does happen some of the time because</span></div>
 <div class="line"><a id="l03278" name="l03278"></a><span class="lineno"> 3278</span>                <span class="comment">// x_top and x_bottom can be extrapolated at the top &amp; bottom of</span></div>
 <div class="line"><a id="l03279" name="l03279"></a><span class="lineno"> 3279</span>                <span class="comment">// the shape and actually lie outside the bounding box</span></div>
-<div class="line"><a id="l03280" name="l03280"></a><span class="lineno"> 3280</span>                <span class="keywordtype">int</span> <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>;</div>
-<div class="line"><a id="l03281" name="l03281"></a><span class="lineno"> 3281</span>                <span class="keywordflow">for</span> (x = 0; <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> &lt; len; ++<a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>) {</div>
+<div class="line"><a id="l03280" name="l03280"></a><span class="lineno"> 3280</span>                <span class="keywordtype">int</span> x;</div>
+<div class="line"><a id="l03281" name="l03281"></a><span class="lineno"> 3281</span>                <span class="keywordflow">for</span> (x = 0; x &lt; len; ++x) {</div>
 <div class="line"><a id="l03282" name="l03282"></a><span class="lineno"> 3282</span>                    <span class="comment">// cases:</span></div>
 <div class="line"><a id="l03283" name="l03283"></a><span class="lineno"> 3283</span>                    <span class="comment">//</span></div>
 <div class="line"><a id="l03284" name="l03284"></a><span class="lineno"> 3284</span>                    <span class="comment">// there can be up to two intersections with the pixel. any intersection</span></div>
@@ -3365,8 +3365,8 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l03302" name="l03302"></a><span class="lineno"> 3302</span>                    <span class="comment">// x = e-&gt;x + e-&gt;dx * (y-y_top)</span></div>
 <div class="line"><a id="l03303" name="l03303"></a><span class="lineno"> 3303</span>                    <span class="comment">// (y-y_top) = (x - e-&gt;x) / e-&gt;dx</span></div>
 <div class="line"><a id="l03304" name="l03304"></a><span class="lineno"> 3304</span>                    <span class="comment">// y = (x - e-&gt;x) / e-&gt;dx + y_top</span></div>
-<div class="line"><a id="l03305" name="l03305"></a><span class="lineno"> 3305</span>                    <span class="keywordtype">float</span> y1 = (<a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> - x0) / dx + y_top;</div>
-<div class="line"><a id="l03306" name="l03306"></a><span class="lineno"> 3306</span>                    <span class="keywordtype">float</span> y2 = (<a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> + 1 - x0) / dx + y_top;</div>
+<div class="line"><a id="l03305" name="l03305"></a><span class="lineno"> 3305</span>                    <span class="keywordtype">float</span> y1 = (x - x0) / dx + y_top;</div>
+<div class="line"><a id="l03306" name="l03306"></a><span class="lineno"> 3306</span>                    <span class="keywordtype">float</span> y2 = (x + 1 - x0) / dx + y_top;</div>
 <div class="line"><a id="l03307" name="l03307"></a><span class="lineno"> 3307</span> </div>
 <div class="line"><a id="l03308" name="l03308"></a><span class="lineno"> 3308</span>                    <span class="keywordflow">if</span> (x0 &lt; x1 &amp;&amp; x3 &gt; x2) {         <span class="comment">// three segments descending down-right</span></div>
 <div class="line"><a id="l03309" name="l03309"></a><span class="lineno"> 3309</span>                        stbtt__handle_clipped_edge(scanline, x, e, x0, y0, x1, y1);</div>
@@ -3597,7 +3597,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l03534" name="l03534"></a><span class="lineno"> 3534</span> </div>
 <div class="line"><a id="l03535" name="l03535"></a><span class="lineno"> 3535</span><span class="keyword">typedef</span> <span class="keyword">struct</span></div>
 <div class="line"><a id="l03536" name="l03536"></a><span class="lineno"> 3536</span>{</div>
-<div class="line"><a id="l03537" name="l03537"></a><span class="lineno"> 3537</span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>, y;</div>
+<div class="line"><a id="l03537" name="l03537"></a><span class="lineno"> 3537</span>    <span class="keywordtype">float</span> x, y;</div>
 <div class="line"><a id="l03538" name="l03538"></a><span class="lineno"> 3538</span>} stbtt__point;</div>
 <div class="line"><a id="l03539" name="l03539"></a><span class="lineno"> 3539</span> </div>
 <div class="line"><a id="l03540" name="l03540"></a><span class="lineno"> 3540</span><span class="keyword">static</span> <span class="keywordtype">void</span> stbtt__rasterize(<a class="code hl_struct" href="structstbtt____bitmap.html">stbtt__bitmap</a>* result, stbtt__point* pts, <span class="keywordtype">int</span>* wcount, <span class="keywordtype">int</span> windings, <span class="keywordtype">float</span> scale_x, <span class="keywordtype">float</span> scale_y, <span class="keywordtype">float</span> shift_x, <span class="keywordtype">float</span> shift_y, <span class="keywordtype">int</span> off_x, <span class="keywordtype">int</span> off_y, <span class="keywordtype">int</span> invert, <span class="keywordtype">void</span>* userdata)</div>
@@ -3660,7 +3660,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l03597" name="l03597"></a><span class="lineno"> 3597</span><span class="keyword">static</span> <span class="keywordtype">void</span> stbtt__add_point(stbtt__point* points, <span class="keywordtype">int</span> n, <span class="keywordtype">float</span> x, <span class="keywordtype">float</span> y)</div>
 <div class="line"><a id="l03598" name="l03598"></a><span class="lineno"> 3598</span>{</div>
 <div class="line"><a id="l03599" name="l03599"></a><span class="lineno"> 3599</span>    <span class="keywordflow">if</span> (!points) <span class="keywordflow">return</span>; <span class="comment">// during first pass, it&#39;s unallocated</span></div>
-<div class="line"><a id="l03600" name="l03600"></a><span class="lineno"> 3600</span>    points[n].x = <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>;</div>
+<div class="line"><a id="l03600" name="l03600"></a><span class="lineno"> 3600</span>    points[n].x = x;</div>
 <div class="line"><a id="l03601" name="l03601"></a><span class="lineno"> 3601</span>    points[n].y = y;</div>
 <div class="line"><a id="l03602" name="l03602"></a><span class="lineno"> 3602</span>}</div>
 <div class="line"><a id="l03603" name="l03603"></a><span class="lineno"> 3603</span> </div>
@@ -3755,7 +3755,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l03692" name="l03692"></a><span class="lineno"> 3692</span> </div>
 <div class="line"><a id="l03693" name="l03693"></a><span class="lineno"> 3693</span>    <span class="comment">// make two passes through the points so we don&#39;t need to realloc</span></div>
 <div class="line"><a id="l03694" name="l03694"></a><span class="lineno"> 3694</span>    <span class="keywordflow">for</span> (pass = 0; pass &lt; 2; ++pass) {</div>
-<div class="line"><a id="l03695" name="l03695"></a><span class="lineno"> 3695</span>        <span class="keywordtype">float</span> <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> = 0, y = 0;</div>
+<div class="line"><a id="l03695" name="l03695"></a><span class="lineno"> 3695</span>        <span class="keywordtype">float</span> x = 0, y = 0;</div>
 <div class="line"><a id="l03696" name="l03696"></a><span class="lineno"> 3696</span>        <span class="keywordflow">if</span> (pass == 1) {</div>
 <div class="line"><a id="l03697" name="l03697"></a><span class="lineno"> 3697</span>            points = (stbtt__point*)STBTT_malloc(num_points * <span class="keyword">sizeof</span>(points[0]), userdata);</div>
 <div class="line"><a id="l03698" name="l03698"></a><span class="lineno"> 3698</span>            <span class="keywordflow">if</span> (points == <a class="code hl_define" href="actypes_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>) <span class="keywordflow">goto</span> error;</div>
@@ -3771,11 +3771,11 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l03708" name="l03708"></a><span class="lineno"> 3708</span>                ++n;</div>
 <div class="line"><a id="l03709" name="l03709"></a><span class="lineno"> 3709</span>                start = num_points;</div>
 <div class="line"><a id="l03710" name="l03710"></a><span class="lineno"> 3710</span> </div>
-<div class="line"><a id="l03711" name="l03711"></a><span class="lineno"> 3711</span>                <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> = vertices[i].<a class="code hl_variable" href="structstbtt__vertex.html#a81773edbe760d0e090561a3c1e86c919">x</a>, y = vertices[i].<a class="code hl_variable" href="structstbtt__vertex.html#a9052065ca544b63d537325b246928cfc">y</a>;</div>
+<div class="line"><a id="l03711" name="l03711"></a><span class="lineno"> 3711</span>                x = vertices[i].<a class="code hl_variable" href="structstbtt__vertex.html#a81773edbe760d0e090561a3c1e86c919">x</a>, y = vertices[i].<a class="code hl_variable" href="structstbtt__vertex.html#a9052065ca544b63d537325b246928cfc">y</a>;</div>
 <div class="line"><a id="l03712" name="l03712"></a><span class="lineno"> 3712</span>                stbtt__add_point(points, num_points++, x, y);</div>
 <div class="line"><a id="l03713" name="l03713"></a><span class="lineno"> 3713</span>                <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l03714" name="l03714"></a><span class="lineno"> 3714</span>            <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="stb__truetype_8h.html#a464ceffb3905a556933d0ea8d4c64d22ade4bb6465c32e56588f35e5120769e2e">STBTT_vline</a>:</div>
-<div class="line"><a id="l03715" name="l03715"></a><span class="lineno"> 3715</span>                <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> = vertices[i].<a class="code hl_variable" href="structstbtt__vertex.html#a81773edbe760d0e090561a3c1e86c919">x</a>, y = vertices[i].<a class="code hl_variable" href="structstbtt__vertex.html#a9052065ca544b63d537325b246928cfc">y</a>;</div>
+<div class="line"><a id="l03715" name="l03715"></a><span class="lineno"> 3715</span>                x = vertices[i].<a class="code hl_variable" href="structstbtt__vertex.html#a81773edbe760d0e090561a3c1e86c919">x</a>, y = vertices[i].<a class="code hl_variable" href="structstbtt__vertex.html#a9052065ca544b63d537325b246928cfc">y</a>;</div>
 <div class="line"><a id="l03716" name="l03716"></a><span class="lineno"> 3716</span>                stbtt__add_point(points, num_points++, x, y);</div>
 <div class="line"><a id="l03717" name="l03717"></a><span class="lineno"> 3717</span>                <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l03718" name="l03718"></a><span class="lineno"> 3718</span>            <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="stb__truetype_8h.html#a464ceffb3905a556933d0ea8d4c64d22ab9ac3e527ce18873abeab556f6768ce4">STBTT_vcurve</a>:</div>
@@ -3783,7 +3783,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l03720" name="l03720"></a><span class="lineno"> 3720</span>                    vertices[i].cx, vertices[i].cy,</div>
 <div class="line"><a id="l03721" name="l03721"></a><span class="lineno"> 3721</span>                    vertices[i].x, vertices[i].y,</div>
 <div class="line"><a id="l03722" name="l03722"></a><span class="lineno"> 3722</span>                    objspace_flatness_squared, 0);</div>
-<div class="line"><a id="l03723" name="l03723"></a><span class="lineno"> 3723</span>                <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> = vertices[i].<a class="code hl_variable" href="structstbtt__vertex.html#a81773edbe760d0e090561a3c1e86c919">x</a>, y = vertices[i].<a class="code hl_variable" href="structstbtt__vertex.html#a9052065ca544b63d537325b246928cfc">y</a>;</div>
+<div class="line"><a id="l03723" name="l03723"></a><span class="lineno"> 3723</span>                x = vertices[i].<a class="code hl_variable" href="structstbtt__vertex.html#a81773edbe760d0e090561a3c1e86c919">x</a>, y = vertices[i].<a class="code hl_variable" href="structstbtt__vertex.html#a9052065ca544b63d537325b246928cfc">y</a>;</div>
 <div class="line"><a id="l03724" name="l03724"></a><span class="lineno"> 3724</span>                <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l03725" name="l03725"></a><span class="lineno"> 3725</span>            <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="stb__truetype_8h.html#a464ceffb3905a556933d0ea8d4c64d22ab6cd2670234c731eafba404d3a2470fd">STBTT_vcubic</a>:</div>
 <div class="line"><a id="l03726" name="l03726"></a><span class="lineno"> 3726</span>                stbtt__tesselate_cubic(points, &amp;num_points, x, y,</div>
@@ -3791,7 +3791,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l03728" name="l03728"></a><span class="lineno"> 3728</span>                    vertices[i].cx1, vertices[i].cy1,</div>
 <div class="line"><a id="l03729" name="l03729"></a><span class="lineno"> 3729</span>                    vertices[i].x, vertices[i].y,</div>
 <div class="line"><a id="l03730" name="l03730"></a><span class="lineno"> 3730</span>                    objspace_flatness_squared, 0);</div>
-<div class="line"><a id="l03731" name="l03731"></a><span class="lineno"> 3731</span>                <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> = vertices[i].<a class="code hl_variable" href="structstbtt__vertex.html#a81773edbe760d0e090561a3c1e86c919">x</a>, y = vertices[i].<a class="code hl_variable" href="structstbtt__vertex.html#a9052065ca544b63d537325b246928cfc">y</a>;</div>
+<div class="line"><a id="l03731" name="l03731"></a><span class="lineno"> 3731</span>                x = vertices[i].<a class="code hl_variable" href="structstbtt__vertex.html#a81773edbe760d0e090561a3c1e86c919">x</a>, y = vertices[i].<a class="code hl_variable" href="structstbtt__vertex.html#a9052065ca544b63d537325b246928cfc">y</a>;</div>
 <div class="line"><a id="l03732" name="l03732"></a><span class="lineno"> 3732</span>                <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l03733" name="l03733"></a><span class="lineno"> 3733</span>            }</div>
 <div class="line"><a id="l03734" name="l03734"></a><span class="lineno"> 3734</span>        }</div>
@@ -3931,13 +3931,13 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l03869" name="l03869"></a><span class="lineno"> 3869</span>    <a class="code hl_struct" href="structstbtt__bakedchar.html">stbtt_bakedchar</a>* chardata)</div>
 <div class="line"><a id="l03870" name="l03870"></a><span class="lineno"> 3870</span>{</div>
 <div class="line"><a id="l03871" name="l03871"></a><span class="lineno"> 3871</span>    <span class="keywordtype">float</span> scale;</div>
-<div class="line"><a id="l03872" name="l03872"></a><span class="lineno"> 3872</span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>, y, bottom_y, i;</div>
+<div class="line"><a id="l03872" name="l03872"></a><span class="lineno"> 3872</span>    <span class="keywordtype">int</span> x, y, bottom_y, i;</div>
 <div class="line"><a id="l03873" name="l03873"></a><span class="lineno"> 3873</span>    <a class="code hl_struct" href="structstbtt__fontinfo.html">stbtt_fontinfo</a> f;</div>
 <div class="line"><a id="l03874" name="l03874"></a><span class="lineno"> 3874</span>    f.<a class="code hl_variable" href="structstbtt__fontinfo.html#a9c81078df96a7a3f730137151efab285">userdata</a> = <a class="code hl_define" href="actypes_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a id="l03875" name="l03875"></a><span class="lineno"> 3875</span>    <span class="keywordflow">if</span> (!<a class="code hl_function" href="stb__truetype_8h.html#ac3b6bda1851d0b1a4fd53f5f353668e5">stbtt_InitFont</a>(&amp;f, data, offset))</div>
 <div class="line"><a id="l03876" name="l03876"></a><span class="lineno"> 3876</span>        <span class="keywordflow">return</span> -1;</div>
 <div class="line"><a id="l03877" name="l03877"></a><span class="lineno"> 3877</span>    STBTT_memset(pixels, 0, pw * ph); <span class="comment">// background of 0 around pixels</span></div>
-<div class="line"><a id="l03878" name="l03878"></a><span class="lineno"> 3878</span>    <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> = y = 1;</div>
+<div class="line"><a id="l03878" name="l03878"></a><span class="lineno"> 3878</span>    x = y = 1;</div>
 <div class="line"><a id="l03879" name="l03879"></a><span class="lineno"> 3879</span>    bottom_y = 1;</div>
 <div class="line"><a id="l03880" name="l03880"></a><span class="lineno"> 3880</span> </div>
 <div class="line"><a id="l03881" name="l03881"></a><span class="lineno"> 3881</span>    scale = <a class="code hl_function" href="stb__truetype_8h.html#aad275d7211530a3d817fcd8647690b7b">stbtt_ScaleForPixelHeight</a>(&amp;f, pixel_height);</div>
@@ -3950,7 +3950,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l03888" name="l03888"></a><span class="lineno"> 3888</span>        gw = x1 - x0;</div>
 <div class="line"><a id="l03889" name="l03889"></a><span class="lineno"> 3889</span>        gh = y1 - y0;</div>
 <div class="line"><a id="l03890" name="l03890"></a><span class="lineno"> 3890</span>        <span class="keywordflow">if</span> (x + gw + 1 &gt;= pw)</div>
-<div class="line"><a id="l03891" name="l03891"></a><span class="lineno"> 3891</span>            y = bottom_y, <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> = 1; <span class="comment">// advance to next row</span></div>
+<div class="line"><a id="l03891" name="l03891"></a><span class="lineno"> 3891</span>            y = bottom_y, x = 1; <span class="comment">// advance to next row</span></div>
 <div class="line"><a id="l03892" name="l03892"></a><span class="lineno"> 3892</span>        <span class="keywordflow">if</span> (y + gh + 1 &gt;= ph) <span class="comment">// check if it fits vertically AFTER potentially moving to next row</span></div>
 <div class="line"><a id="l03893" name="l03893"></a><span class="lineno"> 3893</span>            <span class="keywordflow">return</span> -i;</div>
 <div class="line"><a id="l03894" name="l03894"></a><span class="lineno"> 3894</span>        STBTT_assert(x + gw &lt; pw);</div>
@@ -3963,7 +3963,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l03901" name="l03901"></a><span class="lineno"> 3901</span>        chardata[i].<a class="code hl_variable" href="structstbtt__bakedchar.html#ad77b35d1a849d9eb7edb91df05b10536">xadvance</a> = scale * advance;</div>
 <div class="line"><a id="l03902" name="l03902"></a><span class="lineno"> 3902</span>        chardata[i].<a class="code hl_variable" href="structstbtt__bakedchar.html#a0708a6588a2768b68a3ae59002944b7c">xoff</a> = (float)x0;</div>
 <div class="line"><a id="l03903" name="l03903"></a><span class="lineno"> 3903</span>        chardata[i].<a class="code hl_variable" href="structstbtt__bakedchar.html#aba01393e52d1c6f4ce86a8b51e498bb4">yoff</a> = (float)y0;</div>
-<div class="line"><a id="l03904" name="l03904"></a><span class="lineno"> 3904</span>        <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> = <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> + gw + 1;</div>
+<div class="line"><a id="l03904" name="l03904"></a><span class="lineno"> 3904</span>        x = x + gw + 1;</div>
 <div class="line"><a id="l03905" name="l03905"></a><span class="lineno"> 3905</span>        <span class="keywordflow">if</span> (y + gh + 1 &gt; bottom_y)</div>
 <div class="line"><a id="l03906" name="l03906"></a><span class="lineno"> 3906</span>            bottom_y = y + gh + 1;</div>
 <div class="line"><a id="l03907" name="l03907"></a><span class="lineno"> 3907</span>    }</div>
@@ -4011,17 +4011,17 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l03952" name="l03952"></a><span class="lineno"> 3952</span><span class="keyword">typedef</span> <span class="keyword">struct</span></div>
 <div class="line"><a id="l03953" name="l03953"></a><span class="lineno"> 3953</span>{</div>
 <div class="line"><a id="l03954" name="l03954"></a><span class="lineno"> 3954</span>    <span class="keywordtype">int</span> width, height;</div>
-<div class="line"><a id="l03955" name="l03955"></a><span class="lineno"> 3955</span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>, y, bottom_y;</div>
+<div class="line"><a id="l03955" name="l03955"></a><span class="lineno"> 3955</span>    <span class="keywordtype">int</span> x, y, bottom_y;</div>
 <div class="line"><a id="l03956" name="l03956"></a><span class="lineno"> 3956</span>} stbrp_context;</div>
 <div class="line"><a id="l03957" name="l03957"></a><span class="lineno"> 3957</span> </div>
 <div class="line"><a id="l03958" name="l03958"></a><span class="lineno"> 3958</span><span class="keyword">typedef</span> <span class="keyword">struct</span></div>
 <div class="line"><a id="l03959" name="l03959"></a><span class="lineno"> 3959</span>{</div>
-<div class="line"><a id="l03960" name="l03960"></a><span class="lineno"> 3960</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>;</div>
+<div class="line"><a id="l03960" name="l03960"></a><span class="lineno"> 3960</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> x;</div>
 <div class="line"><a id="l03961" name="l03961"></a><span class="lineno"> 3961</span>} stbrp_node;</div>
 <div class="line"><a id="l03962" name="l03962"></a><span class="lineno"> 3962</span> </div>
 <div class="line"><a id="l03963" name="l03963"></a><span class="lineno"> 3963</span><span class="keyword">struct </span><a class="code hl_typedef" href="stb__truetype_8h.html#a7c4a99b31ea2207a0b2bbcbdab8f3840">stbrp_rect</a></div>
 <div class="line"><a id="l03964" name="l03964"></a><span class="lineno"> 3964</span>{</div>
-<div class="line"><a id="l03965" name="l03965"></a><span class="lineno"> 3965</span>    stbrp_coord <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>, y;</div>
+<div class="line"><a id="l03965" name="l03965"></a><span class="lineno"> 3965</span>    stbrp_coord x, y;</div>
 <div class="line"><a id="l03966" name="l03966"></a><span class="lineno"> 3966</span>    <span class="keywordtype">int</span> id, w, h, was_packed;</div>
 <div class="line"><a id="l03967" name="l03967"></a><span class="lineno"> 3967</span>};</div>
 <div class="line"><a id="l03968" name="l03968"></a><span class="lineno"> 3968</span> </div>
@@ -4480,11 +4480,11 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l04422" name="l04422"></a><span class="lineno"> 4422</span>    <span class="keyword">const</span> <a class="code hl_struct" href="structstbtt__packedchar.html">stbtt_packedchar</a>* b = chardata + char_index;</div>
 <div class="line"><a id="l04423" name="l04423"></a><span class="lineno"> 4423</span> </div>
 <div class="line"><a id="l04424" name="l04424"></a><span class="lineno"> 4424</span>    <span class="keywordflow">if</span> (align_to_integer) {</div>
-<div class="line"><a id="l04425" name="l04425"></a><span class="lineno"> 4425</span>        <span class="keywordtype">float</span> <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> = (float)STBTT_ifloor((*<a class="code hl_variable" href="Boot_2video_8cpp.html#a621342e0ba9c6a93588b7c4d883bf8d2">xpos</a> + b-&gt;<a class="code hl_variable" href="structstbtt__packedchar.html#adb30c50674c79d32116ae6f94bd5893f">xoff</a>) + 0.5f);</div>
+<div class="line"><a id="l04425" name="l04425"></a><span class="lineno"> 4425</span>        <span class="keywordtype">float</span> x = (float)STBTT_ifloor((*<a class="code hl_variable" href="Boot_2video_8cpp.html#a621342e0ba9c6a93588b7c4d883bf8d2">xpos</a> + b-&gt;<a class="code hl_variable" href="structstbtt__packedchar.html#adb30c50674c79d32116ae6f94bd5893f">xoff</a>) + 0.5f);</div>
 <div class="line"><a id="l04426" name="l04426"></a><span class="lineno"> 4426</span>        <span class="keywordtype">float</span> y = (float)STBTT_ifloor((*<a class="code hl_variable" href="Boot_2video_8cpp.html#af4c6d87baab5b8aaf21862743ec93491">ypos</a> + b-&gt;<a class="code hl_variable" href="structstbtt__packedchar.html#a6f342ae10df5319f4999ffd256567142">yoff</a>) + 0.5f);</div>
-<div class="line"><a id="l04427" name="l04427"></a><span class="lineno"> 4427</span>        q-&gt;<a class="code hl_variable" href="structstbtt__aligned__quad.html#ad74fd8fd69f8a8e1bd20cb0ab7df6e2e">x0</a> = <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>;</div>
+<div class="line"><a id="l04427" name="l04427"></a><span class="lineno"> 4427</span>        q-&gt;<a class="code hl_variable" href="structstbtt__aligned__quad.html#ad74fd8fd69f8a8e1bd20cb0ab7df6e2e">x0</a> = x;</div>
 <div class="line"><a id="l04428" name="l04428"></a><span class="lineno"> 4428</span>        q-&gt;<a class="code hl_variable" href="structstbtt__aligned__quad.html#a6178a6b380cf6889893afaeb5019ecd6">y0</a> = y;</div>
-<div class="line"><a id="l04429" name="l04429"></a><span class="lineno"> 4429</span>        q-&gt;<a class="code hl_variable" href="structstbtt__aligned__quad.html#a43a7eeac24238e289f825e644331dee6">x1</a> = <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> + b-&gt;<a class="code hl_variable" href="structstbtt__packedchar.html#a3a33880f925ca826c908cbf9f0673c9f">xoff2</a> - b-&gt;<a class="code hl_variable" href="structstbtt__packedchar.html#adb30c50674c79d32116ae6f94bd5893f">xoff</a>;</div>
+<div class="line"><a id="l04429" name="l04429"></a><span class="lineno"> 4429</span>        q-&gt;<a class="code hl_variable" href="structstbtt__aligned__quad.html#a43a7eeac24238e289f825e644331dee6">x1</a> = x + b-&gt;<a class="code hl_variable" href="structstbtt__packedchar.html#a3a33880f925ca826c908cbf9f0673c9f">xoff2</a> - b-&gt;<a class="code hl_variable" href="structstbtt__packedchar.html#adb30c50674c79d32116ae6f94bd5893f">xoff</a>;</div>
 <div class="line"><a id="l04430" name="l04430"></a><span class="lineno"> 4430</span>        q-&gt;<a class="code hl_variable" href="structstbtt__aligned__quad.html#a66ee8061da982804073a3d2a9114e53c">y1</a> = y + b-&gt;<a class="code hl_variable" href="structstbtt__packedchar.html#a2ec5bbd1010c9a9b7cbdeb7503dcaffa">yoff2</a> - b-&gt;<a class="code hl_variable" href="structstbtt__packedchar.html#a6f342ae10df5319f4999ffd256567142">yoff</a>;</div>
 <div class="line"><a id="l04431" name="l04431"></a><span class="lineno"> 4431</span>    }</div>
 <div class="line"><a id="l04432" name="l04432"></a><span class="lineno"> 4432</span>    <span class="keywordflow">else</span> {</div>
@@ -4594,7 +4594,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l04537" name="l04537"></a><span class="lineno"> 4537</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (y_frac &gt; 0.99f)</div>
 <div class="line"><a id="l04538" name="l04538"></a><span class="lineno"> 4538</span>        y -= 0.01f;</div>
 <div class="line"><a id="l04539" name="l04539"></a><span class="lineno"> 4539</span> </div>
-<div class="line"><a id="l04540" name="l04540"></a><span class="lineno"> 4540</span>    orig[0] = <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>;</div>
+<div class="line"><a id="l04540" name="l04540"></a><span class="lineno"> 4540</span>    orig[0] = x;</div>
 <div class="line"><a id="l04541" name="l04541"></a><span class="lineno"> 4541</span>    orig[1] = y;</div>
 <div class="line"><a id="l04542" name="l04542"></a><span class="lineno"> 4542</span> </div>
 <div class="line"><a id="l04543" name="l04543"></a><span class="lineno"> 4543</span>    <span class="comment">// test a ray from (-infinity,y) to (x,y)</span></div>
@@ -4602,7 +4602,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l04545" name="l04545"></a><span class="lineno"> 4545</span>        <span class="keywordflow">if</span> (verts[i].type == <a class="code hl_enumvalue" href="stb__truetype_8h.html#a464ceffb3905a556933d0ea8d4c64d22ade4bb6465c32e56588f35e5120769e2e">STBTT_vline</a>) {</div>
 <div class="line"><a id="l04546" name="l04546"></a><span class="lineno"> 4546</span>            <span class="keywordtype">int</span> x0 = (int)verts[i - 1].x, y0 = (<span class="keywordtype">int</span>)verts[i - 1].<a class="code hl_variable" href="structstbtt__vertex.html#a9052065ca544b63d537325b246928cfc">y</a>;</div>
 <div class="line"><a id="l04547" name="l04547"></a><span class="lineno"> 4547</span>            <span class="keywordtype">int</span> x1 = (int)verts[i].x, y1 = (<span class="keywordtype">int</span>)verts[i].<a class="code hl_variable" href="structstbtt__vertex.html#a9052065ca544b63d537325b246928cfc">y</a>;</div>
-<div class="line"><a id="l04548" name="l04548"></a><span class="lineno"> 4548</span>            <span class="keywordflow">if</span> (y &gt; STBTT_min(y0, y1) &amp;&amp; y &lt; STBTT_max(y0, y1) &amp;&amp; <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> &gt; STBTT_min(x0, x1)) {</div>
+<div class="line"><a id="l04548" name="l04548"></a><span class="lineno"> 4548</span>            <span class="keywordflow">if</span> (y &gt; STBTT_min(y0, y1) &amp;&amp; y &lt; STBTT_max(y0, y1) &amp;&amp; x &gt; STBTT_min(x0, x1)) {</div>
 <div class="line"><a id="l04549" name="l04549"></a><span class="lineno"> 4549</span>                <span class="keywordtype">float</span> x_inter = (y - y0) / (y1 - y0) * (x1 - x0) + x0;</div>
 <div class="line"><a id="l04550" name="l04550"></a><span class="lineno"> 4550</span>                <span class="keywordflow">if</span> (x_inter &lt; x)</div>
 <div class="line"><a id="l04551" name="l04551"></a><span class="lineno"> 4551</span>                    winding += (y0 &lt; y1) ? 1 : -1;</div>
@@ -4628,7 +4628,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l04571" name="l04571"></a><span class="lineno"> 4571</span>                    y0 = (int)verts[i - 1].y;</div>
 <div class="line"><a id="l04572" name="l04572"></a><span class="lineno"> 4572</span>                    x1 = (int)verts[i].x;</div>
 <div class="line"><a id="l04573" name="l04573"></a><span class="lineno"> 4573</span>                    y1 = (int)verts[i].y;</div>
-<div class="line"><a id="l04574" name="l04574"></a><span class="lineno"> 4574</span>                    <span class="keywordflow">if</span> (y &gt; STBTT_min(y0, y1) &amp;&amp; y &lt; STBTT_max(y0, y1) &amp;&amp; <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> &gt; STBTT_min(x0, x1)) {</div>
+<div class="line"><a id="l04574" name="l04574"></a><span class="lineno"> 4574</span>                    <span class="keywordflow">if</span> (y &gt; STBTT_min(y0, y1) &amp;&amp; y &lt; STBTT_max(y0, y1) &amp;&amp; x &gt; STBTT_min(x0, x1)) {</div>
 <div class="line"><a id="l04575" name="l04575"></a><span class="lineno"> 4575</span>                        <span class="keywordtype">float</span> x_inter = (y - y0) / (y1 - y0) * (x1 - x0) + x0;</div>
 <div class="line"><a id="l04576" name="l04576"></a><span class="lineno"> 4576</span>                        <span class="keywordflow">if</span> (x_inter &lt; x)</div>
 <div class="line"><a id="l04577" name="l04577"></a><span class="lineno"> 4577</span>                            winding += (y0 &lt; y1) ? 1 : -1;</div>
@@ -4724,7 +4724,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l04667" name="l04667"></a><span class="lineno"> 4667</span>    {</div>
 <div class="line"><a id="l04668" name="l04668"></a><span class="lineno"> 4668</span>        <span class="comment">// distance from singular values (in the same units as the pixel grid)</span></div>
 <div class="line"><a id="l04669" name="l04669"></a><span class="lineno"> 4669</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> eps = 1. / 1024, eps2 = eps * eps;</div>
-<div class="line"><a id="l04670" name="l04670"></a><span class="lineno"> 4670</span>        <span class="keywordtype">int</span> <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>, y, i, j;</div>
+<div class="line"><a id="l04670" name="l04670"></a><span class="lineno"> 4670</span>        <span class="keywordtype">int</span> x, y, i, j;</div>
 <div class="line"><a id="l04671" name="l04671"></a><span class="lineno"> 4671</span>        <span class="keywordtype">float</span>* precompute;</div>
 <div class="line"><a id="l04672" name="l04672"></a><span class="lineno"> 4672</span>        <a class="code hl_struct" href="structstbtt__vertex.html">stbtt_vertex</a>* verts;</div>
 <div class="line"><a id="l04673" name="l04673"></a><span class="lineno"> 4673</span>        <span class="keywordtype">int</span> num_verts = <a class="code hl_function" href="stb__truetype_8h.html#a695c82840a7d4eaa1d5be00131c9718b">stbtt_GetGlyphShape</a>(info, glyph, &amp;verts);</div>
@@ -4754,7 +4754,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l04697" name="l04697"></a><span class="lineno"> 4697</span>        }</div>
 <div class="line"><a id="l04698" name="l04698"></a><span class="lineno"> 4698</span> </div>
 <div class="line"><a id="l04699" name="l04699"></a><span class="lineno"> 4699</span>        <span class="keywordflow">for</span> (y = iy0; y &lt; iy1; ++y) {</div>
-<div class="line"><a id="l04700" name="l04700"></a><span class="lineno"> 4700</span>            <span class="keywordflow">for</span> (x = ix0; <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> &lt; ix1; ++<a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>) {</div>
+<div class="line"><a id="l04700" name="l04700"></a><span class="lineno"> 4700</span>            <span class="keywordflow">for</span> (x = ix0; x &lt; ix1; ++x) {</div>
 <div class="line"><a id="l04701" name="l04701"></a><span class="lineno"> 4701</span>                <span class="keywordtype">float</span> val;</div>
 <div class="line"><a id="l04702" name="l04702"></a><span class="lineno"> 4702</span>                <span class="keywordtype">float</span> min_dist = 999999.0f;</div>
 <div class="line"><a id="l04703" name="l04703"></a><span class="lineno"> 4703</span>                <span class="keywordtype">float</span> sx = (float)x + 0.5f;</div>
@@ -5423,7 +5423,6 @@ $(document).ready(function() { init_codefold(0); });
 <div class="ttc" id="astructstbtt__vertex_html_a8bd328747e8ea018612960a52e3e3ede"><div class="ttname"><a href="structstbtt__vertex.html#a8bd328747e8ea018612960a52e3e3ede">stbtt_vertex::padding</a></div><div class="ttdeci">unsigned char padding</div><div class="ttdef"><b>Definition</b> stb_truetype.h:839</div></div>
 <div class="ttc" id="astructstbtt__vertex_html_a9052065ca544b63d537325b246928cfc"><div class="ttname"><a href="structstbtt__vertex.html#a9052065ca544b63d537325b246928cfc">stbtt_vertex::y</a></div><div class="ttdeci">stbtt_vertex_type y</div><div class="ttdef"><b>Definition</b> stb_truetype.h:838</div></div>
 <div class="ttc" id="astructstbtt__vertex_html_aa325b3707b88e7e104c0de46bb2bf395"><div class="ttname"><a href="structstbtt__vertex.html#aa325b3707b88e7e104c0de46bb2bf395">stbtt_vertex::type</a></div><div class="ttdeci">unsigned char type</div><div class="ttdef"><b>Definition</b> stb_truetype.h:839</div></div>
-<div class="ttc" id="aterm_8cpp_html_a6150e0515f7202e2fb518f7206ed97dc"><div class="ttname"><a href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a></div><div class="ttdeci">int x</div><div class="ttdef"><b>Definition</b> term.cpp:49</div></div>
 <div class="ttc" id="atty_8cpp_html_a1b03470c8a075b07d2b608209a3b9bf9"><div class="ttname"><a href="tty_8cpp.html#a1b03470c8a075b07d2b608209a3b9bf9">last</a></div><div class="ttdeci">TTY * last</div><div class="ttdef"><b>Definition</b> tty.cpp:48</div></div>
 <div class="ttc" id="atty_8cpp_html_aa3ddf14a1307cc0427854f3dee730073"><div class="ttname"><a href="tty_8cpp.html#aa3ddf14a1307cc0427854f3dee730073">root</a></div><div class="ttdeci">TTY * root</div><div class="ttdef"><b>Definition</b> tty.cpp:47</div></div>
 </div><!-- fragment --></div><!-- contents -->

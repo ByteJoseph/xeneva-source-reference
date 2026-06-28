@@ -217,17 +217,17 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span> </div>
 <div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span><span class="keyword">static</span> <a class="code hl_define" href="__xeneva_8h.html#a2eb6f9e0395b47b8d5e3eeae4fe0c116">INLINE</a> <span class="keywordtype">void</span> fp_force_evalf(<span class="keywordtype">float</span> x) {</div>
 <div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>    <span class="keyword">volatile</span> <span class="keywordtype">float</span> y;</div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>    y = <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>;</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>    y = x;</div>
 <div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>}</div>
 <div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span> </div>
 <div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span><span class="keyword">static</span> <a class="code hl_define" href="__xeneva_8h.html#a2eb6f9e0395b47b8d5e3eeae4fe0c116">INLINE</a> <span class="keywordtype">void</span> fp_force_eval(<span class="keywordtype">double</span> x) {</div>
 <div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>    <span class="keyword">volatile</span> <span class="keywordtype">double</span> y;</div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>    y = <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>;</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>    y = x;</div>
 <div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>}</div>
 <div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span> </div>
 <div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span><span class="keyword">static</span> <a class="code hl_define" href="__xeneva_8h.html#a2eb6f9e0395b47b8d5e3eeae4fe0c116">INLINE</a> <span class="keywordtype">void</span> fp_force_evall(<span class="keywordtype">long</span> <span class="keywordtype">double</span> x) {</div>
 <div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>    <span class="keyword">volatile</span> <span class="keywordtype">long</span> <span class="keywordtype">double</span> y;</div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>    y = <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>;</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>    y = x;</div>
 <div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>}</div>
 <div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span><a class="code hl_define" href="__xeneva_8h.html#a3640283d666d4a8b25a736424ee25866">XE_LIB</a> <span class="keywordtype">int</span> <a class="code hl_function" href="math_8h.html#a669684921ba4f288ac22009237aa5de1">fpclassify</a>(<span class="keywordtype">double</span> x);</div>
 <div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span> </div>
@@ -323,7 +323,6 @@ $(document).ready(function() { init_codefold(0); });
 <div class="ttc" id="amath_8h_html_aee894d266f673ead2fbca22148fdde61"><div class="ttname"><a href="math_8h.html#aee894d266f673ead2fbca22148fdde61">ceilf</a></div><div class="ttdeci">XE_LIB float ceilf(float x)</div><div class="ttdef"><b>Definition</b> ceilf.cpp:3</div></div>
 <div class="ttc" id="amath_8h_html_aeee6d36cbb33974bfce12a5a2181e889"><div class="ttname"><a href="math_8h.html#aeee6d36cbb33974bfce12a5a2181e889">cosf</a></div><div class="ttdeci">XE_LIB float cosf(float)</div><div class="ttdef"><b>Definition</b> math.cpp:85</div></div>
 <div class="ttc" id="amath_8h_html_aef24f069cd47cda9904093e9c3a8d666"><div class="ttname"><a href="math_8h.html#aef24f069cd47cda9904093e9c3a8d666">acosf</a></div><div class="ttdeci">XE_LIB float acosf(float x)</div><div class="ttdef"><b>Definition</b> acosf.cpp:50</div></div>
-<div class="ttc" id="aterm_8cpp_html_a6150e0515f7202e2fb518f7206ed97dc"><div class="ttname"><a href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a></div><div class="ttdeci">int x</div><div class="ttdef"><b>Definition</b> term.cpp:49</div></div>
 <div class="ttc" id="auniondouble__bits__t_html"><div class="ttname"><a href="uniondouble__bits__t.html">double_bits_t</a></div><div class="ttdef"><b>Definition</b> math.h:61</div></div>
 <div class="ttc" id="auniondouble__bits__t_html_a49f1bc24a3850a84fd9a7343dcac8000"><div class="ttname"><a href="uniondouble__bits__t.html#a49f1bc24a3850a84fd9a7343dcac8000">double_bits_t::d</a></div><div class="ttdeci">double d</div><div class="ttdef"><b>Definition</b> math.h:62</div></div>
 <div class="ttc" id="auniondouble__bits__t_html_a9edfa652f9bee9a2e88e5d518154bfbc"><div class="ttname"><a href="uniondouble__bits__t.html#a9edfa652f9bee9a2e88e5d518154bfbc">double_bits_t::i</a></div><div class="ttdeci">uint64_t i</div><div class="ttdef"><b>Definition</b> math.h:63</div></div>

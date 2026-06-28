@@ -212,7 +212,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    <span class="keywordtype">unsigned</span> __int64 i = *(<span class="keywordtype">unsigned</span> __int64*)(&amp;x);</div>
 <div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    <span class="keywordflow">if</span> (!(i &amp; 0x7F00000000000000UL)) {</div>
 <div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>        *e = 0;</div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>;</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>        <span class="keywordflow">return</span> x;</div>
 <div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    }</div>
 <div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    *e = ((i &lt;&lt; 1) &gt;&gt; 53) - 1022;</div>
 <div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    i &amp;= 0x800FFFFFFFFFFFFFUL;</div>
@@ -297,7 +297,6 @@ $(document).ready(function() { init_codefold(0); });
 <div class="ttc" id="alibc_8h_html_afc808eee3e9c87717dc4c20c06bf4907"><div class="ttname"><a href="libc_8h.html#afc808eee3e9c87717dc4c20c06bf4907">libc_memcpy</a></div><div class="ttdeci">#define libc_memcpy</div><div class="ttdef"><b>Definition</b> libc.h:187</div></div>
 <div class="ttc" id="amath_8h_html"><div class="ttname"><a href="math_8h.html">math.h</a></div></div>
 <div class="ttc" id="astdlib_8h_html"><div class="ttname"><a href="stdlib_8h.html">stdlib.h</a></div></div>
-<div class="ttc" id="aterm_8cpp_html_a6150e0515f7202e2fb518f7206ed97dc"><div class="ttname"><a href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a></div><div class="ttdeci">int x</div><div class="ttdef"><b>Definition</b> term.cpp:49</div></div>
 <div class="ttc" id="ax86__64__gdt_8cpp_html_ae966f18db19d89de8876a6b5d5b56143"><div class="ttname"><a href="x86__64__gdt_8cpp.html#ae966f18db19d89de8876a6b5d5b56143">__declspec</a></div><div class="ttdeci">__declspec(align(4)) static gdt_entry gdt[GDT_ENTRIES]</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

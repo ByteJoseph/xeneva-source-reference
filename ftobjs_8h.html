@@ -1489,12 +1489,11 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">          ( <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> = <a class="code hl_define" href="ftobjs_8h.html#a2e917e84ed753da51ddd54c784b5991d">FT_ABS</a>( x ),             \</div>
+<b>Value:</b><div class="fragment"><div class="line">          ( x = <a class="code hl_define" href="ftobjs_8h.html#a2e917e84ed753da51ddd54c784b5991d">FT_ABS</a>( x ),             \</div>
 <div class="line">            y = <a class="code hl_define" href="ftobjs_8h.html#a2e917e84ed753da51ddd54c784b5991d">FT_ABS</a>( y ),             \</div>
-<div class="line">            <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> &gt; y ? <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> + ( 3 * y &gt;&gt; 3 )   \</div>
-<div class="line">                  : y + ( 3 * <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> &gt;&gt; 3 ) )</div>
+<div class="line">            x &gt; y ? x + ( 3 * y &gt;&gt; 3 )   \</div>
+<div class="line">                  : y + ( 3 * x &gt;&gt; 3 ) )</div>
 <div class="ttc" id="aftobjs_8h_html_a2e917e84ed753da51ddd54c784b5991d"><div class="ttname"><a href="ftobjs_8h.html#a2e917e84ed753da51ddd54c784b5991d">FT_ABS</a></div><div class="ttdeci">#define FT_ABS(a)</div><div class="ttdef"><b>Definition</b> ftobjs.h:73</div></div>
-<div class="ttc" id="aterm_8cpp_html_a6150e0515f7202e2fb518f7206ed97dc"><div class="ttname"><a href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a></div><div class="ttdeci">int x</div><div class="ttdef"><b>Definition</b> term.cpp:49</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1604,7 +1603,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">                             ( ( (unsigned)(x) - <span class="charliteral">&#39;0&#39;</span> ) &lt; 10U || \</div>
-<div class="line">                             ( (<span class="keywordtype">unsigned</span>)(<a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>) - <span class="charliteral">&#39;a&#39;</span> ) &lt; 6U  || \</div>
+<div class="line">                             ( (<span class="keywordtype">unsigned</span>)(x) - <span class="charliteral">&#39;a&#39;</span> ) &lt; 6U  || \</div>
 <div class="line">                             ( (unsigned)(x) - <span class="charliteral">&#39;A&#39;</span> ) &lt; 6U  )</div>
 </div><!-- fragment -->
 </div>

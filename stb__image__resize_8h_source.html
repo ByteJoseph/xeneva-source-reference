@@ -558,7 +558,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00471" name="l00471"></a><span class="lineno">  471</span>};</div>
 <div class="line"><a id="l00472" name="l00472"></a><span class="lineno">  472</span> </div>
 <div class="line"><a id="l00473" name="l00473"></a><span class="lineno">  473</span><span class="comment">// Kernel function centered at 0</span></div>
-<div class="line"><a id="l00474" name="l00474"></a><span class="lineno">  474</span><span class="keyword">typedef</span> float (stbir__kernel_fn)(<span class="keywordtype">float</span> <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>, <span class="keywordtype">float</span> scale);</div>
+<div class="line"><a id="l00474" name="l00474"></a><span class="lineno">  474</span><span class="keyword">typedef</span> float (stbir__kernel_fn)(<span class="keywordtype">float</span> x, <span class="keywordtype">float</span> scale);</div>
 <div class="line"><a id="l00475" name="l00475"></a><span class="lineno">  475</span><span class="keyword">typedef</span> float (stbir__support_fn)(<span class="keywordtype">float</span> scale);</div>
 <div class="line"><a id="l00476" name="l00476"></a><span class="lineno">  476</span> </div>
 <div class="line"><a id="l00477" name="l00477"></a><span class="lineno">  477</span><span class="keyword">typedef</span> <span class="keyword">struct</span></div>
@@ -661,14 +661,14 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00574" name="l00574"></a><span class="lineno">  574</span>    <span class="keywordflow">if</span> (x &gt; 1)</div>
 <div class="line"><a id="l00575" name="l00575"></a><span class="lineno">  575</span>        <span class="keywordflow">return</span> 1;</div>
 <div class="line"><a id="l00576" name="l00576"></a><span class="lineno">  576</span> </div>
-<div class="line"><a id="l00577" name="l00577"></a><span class="lineno">  577</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>;</div>
+<div class="line"><a id="l00577" name="l00577"></a><span class="lineno">  577</span>    <span class="keywordflow">return</span> x;</div>
 <div class="line"><a id="l00578" name="l00578"></a><span class="lineno">  578</span>}</div>
 <div class="line"><a id="l00579" name="l00579"></a><span class="lineno">  579</span> </div>
 <div class="line"><a id="l00580" name="l00580"></a><span class="lineno">  580</span><span class="preprocessor">#ifdef STBIR_SATURATE_INT</span></div>
 <div class="line"><a id="l00581" name="l00581"></a><span class="lineno">  581</span><span class="keyword">static</span> stbir__inline <a class="code hl_typedef" href="stb__image__resize_8h.html#a5f0301f0ca83988d42c35685bc8594eb">stbir_uint8</a> stbir__saturate8(<span class="keywordtype">int</span> x)</div>
 <div class="line"><a id="l00582" name="l00582"></a><span class="lineno">  582</span>{</div>
 <div class="line"><a id="l00583" name="l00583"></a><span class="lineno">  583</span>    <span class="keywordflow">if</span> ((<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>)x &lt;= 255)</div>
-<div class="line"><a id="l00584" name="l00584"></a><span class="lineno">  584</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>;</div>
+<div class="line"><a id="l00584" name="l00584"></a><span class="lineno">  584</span>        <span class="keywordflow">return</span> x;</div>
 <div class="line"><a id="l00585" name="l00585"></a><span class="lineno">  585</span> </div>
 <div class="line"><a id="l00586" name="l00586"></a><span class="lineno">  586</span>    <span class="keywordflow">if</span> (x &lt; 0)</div>
 <div class="line"><a id="l00587" name="l00587"></a><span class="lineno">  587</span>        <span class="keywordflow">return</span> 0;</div>
@@ -679,7 +679,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00592" name="l00592"></a><span class="lineno">  592</span><span class="keyword">static</span> stbir__inline <a class="code hl_typedef" href="stb__image__resize_8h.html#a71121f166a710e8a8da418ae3c86f1b9">stbir_uint16</a> stbir__saturate16(<span class="keywordtype">int</span> x)</div>
 <div class="line"><a id="l00593" name="l00593"></a><span class="lineno">  593</span>{</div>
 <div class="line"><a id="l00594" name="l00594"></a><span class="lineno">  594</span>    <span class="keywordflow">if</span> ((<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>)x &lt;= 65535)</div>
-<div class="line"><a id="l00595" name="l00595"></a><span class="lineno">  595</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>;</div>
+<div class="line"><a id="l00595" name="l00595"></a><span class="lineno">  595</span>        <span class="keywordflow">return</span> x;</div>
 <div class="line"><a id="l00596" name="l00596"></a><span class="lineno">  596</span> </div>
 <div class="line"><a id="l00597" name="l00597"></a><span class="lineno">  597</span>    <span class="keywordflow">if</span> (x &lt; 0)</div>
 <div class="line"><a id="l00598" name="l00598"></a><span class="lineno">  598</span>        <span class="keywordflow">return</span> 0;</div>
@@ -822,7 +822,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00735" name="l00735"></a><span class="lineno">  735</span> </div>
 <div class="line"><a id="l00736" name="l00736"></a><span class="lineno">  736</span><span class="keyword">static</span> <a class="code hl_typedef" href="stb__image__resize_8h.html#a5f0301f0ca83988d42c35685bc8594eb">stbir_uint8</a> stbir__linear_to_srgb_uchar(<span class="keywordtype">float</span> f)</div>
 <div class="line"><a id="l00737" name="l00737"></a><span class="lineno">  737</span>{</div>
-<div class="line"><a id="l00738" name="l00738"></a><span class="lineno">  738</span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> = (int)(f * (1 &lt;&lt; 28)); <span class="comment">// has headroom so you don&#39;t need to clamp</span></div>
+<div class="line"><a id="l00738" name="l00738"></a><span class="lineno">  738</span>    <span class="keywordtype">int</span> x = (int)(f * (1 &lt;&lt; 28)); <span class="comment">// has headroom so you don&#39;t need to clamp</span></div>
 <div class="line"><a id="l00739" name="l00739"></a><span class="lineno">  739</span>    <span class="keywordtype">int</span> v = 0;</div>
 <div class="line"><a id="l00740" name="l00740"></a><span class="lineno">  740</span>    <span class="keywordtype">int</span> i;</div>
 <div class="line"><a id="l00741" name="l00741"></a><span class="lineno">  741</span> </div>
@@ -846,7 +846,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00759" name="l00759"></a><span class="lineno">  759</span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a> = 0.5f + halfscale;</div>
 <div class="line"><a id="l00760" name="l00760"></a><span class="lineno">  760</span>    STBIR__DEBUG_ASSERT(scale &lt;= 1);</div>
 <div class="line"><a id="l00761" name="l00761"></a><span class="lineno">  761</span> </div>
-<div class="line"><a id="l00762" name="l00762"></a><span class="lineno">  762</span>    <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> = (float)<a class="code hl_function" href="math_8h.html#a61268f4fe1b9893f08a93c0ade5d2853">fabs</a>(x);</div>
+<div class="line"><a id="l00762" name="l00762"></a><span class="lineno">  762</span>    x = (float)<a class="code hl_function" href="math_8h.html#a61268f4fe1b9893f08a93c0ade5d2853">fabs</a>(x);</div>
 <div class="line"><a id="l00763" name="l00763"></a><span class="lineno">  763</span> </div>
 <div class="line"><a id="l00764" name="l00764"></a><span class="lineno">  764</span>    <span class="keywordflow">if</span> (x &gt;= <a class="code hl_variable" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a>)</div>
 <div class="line"><a id="l00765" name="l00765"></a><span class="lineno">  765</span>        <span class="keywordflow">return</span> 0;</div>
@@ -870,10 +870,10 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00783" name="l00783"></a><span class="lineno">  783</span>{</div>
 <div class="line"><a id="l00784" name="l00784"></a><span class="lineno">  784</span>    STBIR__UNUSED_PARAM(s);</div>
 <div class="line"><a id="l00785" name="l00785"></a><span class="lineno">  785</span> </div>
-<div class="line"><a id="l00786" name="l00786"></a><span class="lineno">  786</span>    <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> = (float)<a class="code hl_function" href="math_8h.html#a61268f4fe1b9893f08a93c0ade5d2853">fabs</a>(x);</div>
+<div class="line"><a id="l00786" name="l00786"></a><span class="lineno">  786</span>    x = (float)<a class="code hl_function" href="math_8h.html#a61268f4fe1b9893f08a93c0ade5d2853">fabs</a>(x);</div>
 <div class="line"><a id="l00787" name="l00787"></a><span class="lineno">  787</span> </div>
 <div class="line"><a id="l00788" name="l00788"></a><span class="lineno">  788</span>    <span class="keywordflow">if</span> (x &lt;= 1.0f)</div>
-<div class="line"><a id="l00789" name="l00789"></a><span class="lineno">  789</span>        <span class="keywordflow">return</span> 1 - <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>;</div>
+<div class="line"><a id="l00789" name="l00789"></a><span class="lineno">  789</span>        <span class="keywordflow">return</span> 1 - x;</div>
 <div class="line"><a id="l00790" name="l00790"></a><span class="lineno">  790</span>    <span class="keywordflow">else</span></div>
 <div class="line"><a id="l00791" name="l00791"></a><span class="lineno">  791</span>        <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a id="l00792" name="l00792"></a><span class="lineno">  792</span>}</div>
@@ -882,7 +882,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00795" name="l00795"></a><span class="lineno">  795</span>{</div>
 <div class="line"><a id="l00796" name="l00796"></a><span class="lineno">  796</span>    STBIR__UNUSED_PARAM(s);</div>
 <div class="line"><a id="l00797" name="l00797"></a><span class="lineno">  797</span> </div>
-<div class="line"><a id="l00798" name="l00798"></a><span class="lineno">  798</span>    <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> = (float)<a class="code hl_function" href="math_8h.html#a61268f4fe1b9893f08a93c0ade5d2853">fabs</a>(x);</div>
+<div class="line"><a id="l00798" name="l00798"></a><span class="lineno">  798</span>    x = (float)<a class="code hl_function" href="math_8h.html#a61268f4fe1b9893f08a93c0ade5d2853">fabs</a>(x);</div>
 <div class="line"><a id="l00799" name="l00799"></a><span class="lineno">  799</span> </div>
 <div class="line"><a id="l00800" name="l00800"></a><span class="lineno">  800</span>    <span class="keywordflow">if</span> (x &lt; 1.0f)</div>
 <div class="line"><a id="l00801" name="l00801"></a><span class="lineno">  801</span>        <span class="keywordflow">return</span> (4 + x * x * (3 * x - 6)) / 6;</div>
@@ -896,12 +896,12 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00809" name="l00809"></a><span class="lineno">  809</span>{</div>
 <div class="line"><a id="l00810" name="l00810"></a><span class="lineno">  810</span>    STBIR__UNUSED_PARAM(s);</div>
 <div class="line"><a id="l00811" name="l00811"></a><span class="lineno">  811</span> </div>
-<div class="line"><a id="l00812" name="l00812"></a><span class="lineno">  812</span>    <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> = (float)<a class="code hl_function" href="math_8h.html#a61268f4fe1b9893f08a93c0ade5d2853">fabs</a>(x);</div>
+<div class="line"><a id="l00812" name="l00812"></a><span class="lineno">  812</span>    x = (float)<a class="code hl_function" href="math_8h.html#a61268f4fe1b9893f08a93c0ade5d2853">fabs</a>(x);</div>
 <div class="line"><a id="l00813" name="l00813"></a><span class="lineno">  813</span> </div>
 <div class="line"><a id="l00814" name="l00814"></a><span class="lineno">  814</span>    <span class="keywordflow">if</span> (x &lt; 1.0f)</div>
-<div class="line"><a id="l00815" name="l00815"></a><span class="lineno">  815</span>        <span class="keywordflow">return</span> 1 - <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> * <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> * (2.5f - 1.5f * <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>);</div>
+<div class="line"><a id="l00815" name="l00815"></a><span class="lineno">  815</span>        <span class="keywordflow">return</span> 1 - x * x * (2.5f - 1.5f * x);</div>
 <div class="line"><a id="l00816" name="l00816"></a><span class="lineno">  816</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (x &lt; 2.0f)</div>
-<div class="line"><a id="l00817" name="l00817"></a><span class="lineno">  817</span>        <span class="keywordflow">return</span> 2 - <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> * (4 + <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> * (0.5f * <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> - 2.5f));</div>
+<div class="line"><a id="l00817" name="l00817"></a><span class="lineno">  817</span>        <span class="keywordflow">return</span> 2 - x * (4 + x * (0.5f * x - 2.5f));</div>
 <div class="line"><a id="l00818" name="l00818"></a><span class="lineno">  818</span> </div>
 <div class="line"><a id="l00819" name="l00819"></a><span class="lineno">  819</span>    <span class="keywordflow">return</span> (0.0f);</div>
 <div class="line"><a id="l00820" name="l00820"></a><span class="lineno">  820</span>}</div>
@@ -910,7 +910,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00823" name="l00823"></a><span class="lineno">  823</span>{</div>
 <div class="line"><a id="l00824" name="l00824"></a><span class="lineno">  824</span>    STBIR__UNUSED_PARAM(s);</div>
 <div class="line"><a id="l00825" name="l00825"></a><span class="lineno">  825</span> </div>
-<div class="line"><a id="l00826" name="l00826"></a><span class="lineno">  826</span>    <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> = (float)<a class="code hl_function" href="math_8h.html#a61268f4fe1b9893f08a93c0ade5d2853">fabs</a>(x);</div>
+<div class="line"><a id="l00826" name="l00826"></a><span class="lineno">  826</span>    x = (float)<a class="code hl_function" href="math_8h.html#a61268f4fe1b9893f08a93c0ade5d2853">fabs</a>(x);</div>
 <div class="line"><a id="l00827" name="l00827"></a><span class="lineno">  827</span> </div>
 <div class="line"><a id="l00828" name="l00828"></a><span class="lineno">  828</span>    <span class="keywordflow">if</span> (x &lt; 1.0f)</div>
 <div class="line"><a id="l00829" name="l00829"></a><span class="lineno">  829</span>        <span class="keywordflow">return</span> (16 + x * x * (21 * x - 36)) / 18;</div>
@@ -1183,7 +1183,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l01096" name="l01096"></a><span class="lineno"> 1096</span>    <span class="keywordflow">for</span> (i = 0; i &lt;= out_last_pixel - out_first_pixel; i++)</div>
 <div class="line"><a id="l01097" name="l01097"></a><span class="lineno"> 1097</span>    {</div>
 <div class="line"><a id="l01098" name="l01098"></a><span class="lineno"> 1098</span>        <span class="keywordtype">float</span> out_pixel_center = (float)(i + out_first_pixel) + 0.5f;</div>
-<div class="line"><a id="l01099" name="l01099"></a><span class="lineno"> 1099</span>        <span class="keywordtype">float</span> <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> = out_pixel_center - out_center_of_in;</div>
+<div class="line"><a id="l01099" name="l01099"></a><span class="lineno"> 1099</span>        <span class="keywordtype">float</span> x = out_pixel_center - out_center_of_in;</div>
 <div class="line"><a id="l01100" name="l01100"></a><span class="lineno"> 1100</span>        coefficient_group[i] = stbir__filter_info_table[filter].kernel(x, scale_ratio) * scale_ratio;</div>
 <div class="line"><a id="l01101" name="l01101"></a><span class="lineno"> 1101</span>    }</div>
 <div class="line"><a id="l01102" name="l01102"></a><span class="lineno"> 1102</span> </div>
@@ -1342,13 +1342,13 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l01255" name="l01255"></a><span class="lineno"> 1255</span>    <span class="keywordtype">int</span> max_x = input_w + stbir_info-&gt;horizontal_filter_pixel_margin;</div>
 <div class="line"><a id="l01256" name="l01256"></a><span class="lineno"> 1256</span>    <span class="keywordtype">int</span> decode = STBIR__DECODE(type, colorspace);</div>
 <div class="line"><a id="l01257" name="l01257"></a><span class="lineno"> 1257</span> </div>
-<div class="line"><a id="l01258" name="l01258"></a><span class="lineno"> 1258</span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> = -stbir_info-&gt;horizontal_filter_pixel_margin;</div>
+<div class="line"><a id="l01258" name="l01258"></a><span class="lineno"> 1258</span>    <span class="keywordtype">int</span> x = -stbir_info-&gt;horizontal_filter_pixel_margin;</div>
 <div class="line"><a id="l01259" name="l01259"></a><span class="lineno"> 1259</span> </div>
 <div class="line"><a id="l01260" name="l01260"></a><span class="lineno"> 1260</span>    <span class="comment">// special handling for STBIR_EDGE_ZERO because it needs to return an item that doesn&#39;t appear in the input,</span></div>
 <div class="line"><a id="l01261" name="l01261"></a><span class="lineno"> 1261</span>    <span class="comment">// and we want to avoid paying overhead on every pixel if not STBIR_EDGE_ZERO</span></div>
 <div class="line"><a id="l01262" name="l01262"></a><span class="lineno"> 1262</span>    <span class="keywordflow">if</span> (edge_vertical == <a class="code hl_enumvalue" href="stb__image__resize_8h.html#a66999cce1ebadfca11aa694b3d377b9ea279078b3b5a12337c8905de9bff55769">STBIR_EDGE_ZERO</a> &amp;&amp; (n &lt; 0 || n &gt;= stbir_info-&gt;input_h))</div>
 <div class="line"><a id="l01263" name="l01263"></a><span class="lineno"> 1263</span>    {</div>
-<div class="line"><a id="l01264" name="l01264"></a><span class="lineno"> 1264</span>        <span class="keywordflow">for</span> (; <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> &lt; max_x; <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>++)</div>
+<div class="line"><a id="l01264" name="l01264"></a><span class="lineno"> 1264</span>        <span class="keywordflow">for</span> (; x &lt; max_x; x++)</div>
 <div class="line"><a id="l01265" name="l01265"></a><span class="lineno"> 1265</span>            <span class="keywordflow">for</span> (c = 0; c &lt; channels; c++)</div>
 <div class="line"><a id="l01266" name="l01266"></a><span class="lineno"> 1266</span>                decode_buffer[x * channels + c] = 0;</div>
 <div class="line"><a id="l01267" name="l01267"></a><span class="lineno"> 1267</span>        <span class="keywordflow">return</span>;</div>
@@ -1357,9 +1357,9 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l01270" name="l01270"></a><span class="lineno"> 1270</span>    <span class="keywordflow">switch</span> (decode)</div>
 <div class="line"><a id="l01271" name="l01271"></a><span class="lineno"> 1271</span>    {</div>
 <div class="line"><a id="l01272" name="l01272"></a><span class="lineno"> 1272</span>    <span class="keywordflow">case</span> STBIR__DECODE(<a class="code hl_enumvalue" href="stb__image__resize_8h.html#ae66e0b8b43547463a26c4c9856e7feb7a7eca722966f28fcc1f8a2c0ff57a214b">STBIR_TYPE_UINT8</a>, <a class="code hl_enumvalue" href="stb__image__resize_8h.html#afe1a8f53b27eff69118730bc14fd10edac9daf637ea73007832927d3fd707dd37">STBIR_COLORSPACE_LINEAR</a>):</div>
-<div class="line"><a id="l01273" name="l01273"></a><span class="lineno"> 1273</span>        for (; <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> &lt; max_x; <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>++)</div>
+<div class="line"><a id="l01273" name="l01273"></a><span class="lineno"> 1273</span>        for (; x &lt; max_x; x++)</div>
 <div class="line"><a id="l01274" name="l01274"></a><span class="lineno"> 1274</span>        {</div>
-<div class="line"><a id="l01275" name="l01275"></a><span class="lineno"> 1275</span>            <span class="keywordtype">int</span> decode_pixel_index = <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> * channels;</div>
+<div class="line"><a id="l01275" name="l01275"></a><span class="lineno"> 1275</span>            <span class="keywordtype">int</span> decode_pixel_index = x * channels;</div>
 <div class="line"><a id="l01276" name="l01276"></a><span class="lineno"> 1276</span>            <span class="keywordtype">int</span> input_pixel_index = stbir__edge_wrap(edge_horizontal, x, input_w) * channels;</div>
 <div class="line"><a id="l01277" name="l01277"></a><span class="lineno"> 1277</span>            <span class="keywordflow">for</span> (c = 0; c &lt; channels; c++)</div>
 <div class="line"><a id="l01278" name="l01278"></a><span class="lineno"> 1278</span>                decode_buffer[decode_pixel_index + c] = ((<span class="keywordtype">float</span>)((<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>*)input_data)[input_pixel_index + c]) / 255;</div>
@@ -1367,9 +1367,9 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l01280" name="l01280"></a><span class="lineno"> 1280</span>        <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l01281" name="l01281"></a><span class="lineno"> 1281</span> </div>
 <div class="line"><a id="l01282" name="l01282"></a><span class="lineno"> 1282</span>    <span class="keywordflow">case</span> STBIR__DECODE(<a class="code hl_enumvalue" href="stb__image__resize_8h.html#ae66e0b8b43547463a26c4c9856e7feb7a7eca722966f28fcc1f8a2c0ff57a214b">STBIR_TYPE_UINT8</a>, <a class="code hl_enumvalue" href="stb__image__resize_8h.html#afe1a8f53b27eff69118730bc14fd10eda3bfa984cc5ebc6eb49f9d82c4a5c34c9">STBIR_COLORSPACE_SRGB</a>):</div>
-<div class="line"><a id="l01283" name="l01283"></a><span class="lineno"> 1283</span>        for (; <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> &lt; max_x; <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>++)</div>
+<div class="line"><a id="l01283" name="l01283"></a><span class="lineno"> 1283</span>        for (; x &lt; max_x; x++)</div>
 <div class="line"><a id="l01284" name="l01284"></a><span class="lineno"> 1284</span>        {</div>
-<div class="line"><a id="l01285" name="l01285"></a><span class="lineno"> 1285</span>            <span class="keywordtype">int</span> decode_pixel_index = <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> * channels;</div>
+<div class="line"><a id="l01285" name="l01285"></a><span class="lineno"> 1285</span>            <span class="keywordtype">int</span> decode_pixel_index = x * channels;</div>
 <div class="line"><a id="l01286" name="l01286"></a><span class="lineno"> 1286</span>            <span class="keywordtype">int</span> input_pixel_index = stbir__edge_wrap(edge_horizontal, x, input_w) * channels;</div>
 <div class="line"><a id="l01287" name="l01287"></a><span class="lineno"> 1287</span>            <span class="keywordflow">for</span> (c = 0; c &lt; channels; c++)</div>
 <div class="line"><a id="l01288" name="l01288"></a><span class="lineno"> 1288</span>                decode_buffer[decode_pixel_index + c] = stbir__srgb_uchar_to_linear_float[((<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>*)input_data)[input_pixel_index + c]];</div>
@@ -1380,9 +1380,9 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l01293" name="l01293"></a><span class="lineno"> 1293</span>        <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l01294" name="l01294"></a><span class="lineno"> 1294</span> </div>
 <div class="line"><a id="l01295" name="l01295"></a><span class="lineno"> 1295</span>    <span class="keywordflow">case</span> STBIR__DECODE(<a class="code hl_enumvalue" href="stb__image__resize_8h.html#ae66e0b8b43547463a26c4c9856e7feb7a1f4a3c0f3cb88d33c9d0922767c381b2">STBIR_TYPE_UINT16</a>, <a class="code hl_enumvalue" href="stb__image__resize_8h.html#afe1a8f53b27eff69118730bc14fd10edac9daf637ea73007832927d3fd707dd37">STBIR_COLORSPACE_LINEAR</a>):</div>
-<div class="line"><a id="l01296" name="l01296"></a><span class="lineno"> 1296</span>        for (; <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> &lt; max_x; <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>++)</div>
+<div class="line"><a id="l01296" name="l01296"></a><span class="lineno"> 1296</span>        for (; x &lt; max_x; x++)</div>
 <div class="line"><a id="l01297" name="l01297"></a><span class="lineno"> 1297</span>        {</div>
-<div class="line"><a id="l01298" name="l01298"></a><span class="lineno"> 1298</span>            <span class="keywordtype">int</span> decode_pixel_index = <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> * channels;</div>
+<div class="line"><a id="l01298" name="l01298"></a><span class="lineno"> 1298</span>            <span class="keywordtype">int</span> decode_pixel_index = x * channels;</div>
 <div class="line"><a id="l01299" name="l01299"></a><span class="lineno"> 1299</span>            <span class="keywordtype">int</span> input_pixel_index = stbir__edge_wrap(edge_horizontal, x, input_w) * channels;</div>
 <div class="line"><a id="l01300" name="l01300"></a><span class="lineno"> 1300</span>            <span class="keywordflow">for</span> (c = 0; c &lt; channels; c++)</div>
 <div class="line"><a id="l01301" name="l01301"></a><span class="lineno"> 1301</span>                decode_buffer[decode_pixel_index + c] = ((<span class="keywordtype">float</span>)((<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span>*)input_data)[input_pixel_index + c]) / 65535;</div>
@@ -1390,9 +1390,9 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l01303" name="l01303"></a><span class="lineno"> 1303</span>        <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l01304" name="l01304"></a><span class="lineno"> 1304</span> </div>
 <div class="line"><a id="l01305" name="l01305"></a><span class="lineno"> 1305</span>    <span class="keywordflow">case</span> STBIR__DECODE(<a class="code hl_enumvalue" href="stb__image__resize_8h.html#ae66e0b8b43547463a26c4c9856e7feb7a1f4a3c0f3cb88d33c9d0922767c381b2">STBIR_TYPE_UINT16</a>, <a class="code hl_enumvalue" href="stb__image__resize_8h.html#afe1a8f53b27eff69118730bc14fd10eda3bfa984cc5ebc6eb49f9d82c4a5c34c9">STBIR_COLORSPACE_SRGB</a>):</div>
-<div class="line"><a id="l01306" name="l01306"></a><span class="lineno"> 1306</span>        for (; <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> &lt; max_x; <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>++)</div>
+<div class="line"><a id="l01306" name="l01306"></a><span class="lineno"> 1306</span>        for (; x &lt; max_x; x++)</div>
 <div class="line"><a id="l01307" name="l01307"></a><span class="lineno"> 1307</span>        {</div>
-<div class="line"><a id="l01308" name="l01308"></a><span class="lineno"> 1308</span>            <span class="keywordtype">int</span> decode_pixel_index = <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> * channels;</div>
+<div class="line"><a id="l01308" name="l01308"></a><span class="lineno"> 1308</span>            <span class="keywordtype">int</span> decode_pixel_index = x * channels;</div>
 <div class="line"><a id="l01309" name="l01309"></a><span class="lineno"> 1309</span>            <span class="keywordtype">int</span> input_pixel_index = stbir__edge_wrap(edge_horizontal, x, input_w) * channels;</div>
 <div class="line"><a id="l01310" name="l01310"></a><span class="lineno"> 1310</span>            <span class="keywordflow">for</span> (c = 0; c &lt; channels; c++)</div>
 <div class="line"><a id="l01311" name="l01311"></a><span class="lineno"> 1311</span>                decode_buffer[decode_pixel_index + c] = stbir__srgb_to_linear(((<span class="keywordtype">float</span>)((<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span>*)input_data)[input_pixel_index + c]) / 65535);</div>
@@ -1403,9 +1403,9 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l01316" name="l01316"></a><span class="lineno"> 1316</span>        <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l01317" name="l01317"></a><span class="lineno"> 1317</span> </div>
 <div class="line"><a id="l01318" name="l01318"></a><span class="lineno"> 1318</span>    <span class="keywordflow">case</span> STBIR__DECODE(<a class="code hl_enumvalue" href="stb__image__resize_8h.html#ae66e0b8b43547463a26c4c9856e7feb7a1c8361627ec8ef323de0124334a2717d">STBIR_TYPE_UINT32</a>, <a class="code hl_enumvalue" href="stb__image__resize_8h.html#afe1a8f53b27eff69118730bc14fd10edac9daf637ea73007832927d3fd707dd37">STBIR_COLORSPACE_LINEAR</a>):</div>
-<div class="line"><a id="l01319" name="l01319"></a><span class="lineno"> 1319</span>        for (; <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> &lt; max_x; <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>++)</div>
+<div class="line"><a id="l01319" name="l01319"></a><span class="lineno"> 1319</span>        for (; x &lt; max_x; x++)</div>
 <div class="line"><a id="l01320" name="l01320"></a><span class="lineno"> 1320</span>        {</div>
-<div class="line"><a id="l01321" name="l01321"></a><span class="lineno"> 1321</span>            <span class="keywordtype">int</span> decode_pixel_index = <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> * channels;</div>
+<div class="line"><a id="l01321" name="l01321"></a><span class="lineno"> 1321</span>            <span class="keywordtype">int</span> decode_pixel_index = x * channels;</div>
 <div class="line"><a id="l01322" name="l01322"></a><span class="lineno"> 1322</span>            <span class="keywordtype">int</span> input_pixel_index = stbir__edge_wrap(edge_horizontal, x, input_w) * channels;</div>
 <div class="line"><a id="l01323" name="l01323"></a><span class="lineno"> 1323</span>            <span class="keywordflow">for</span> (c = 0; c &lt; channels; c++)</div>
 <div class="line"><a id="l01324" name="l01324"></a><span class="lineno"> 1324</span>                decode_buffer[decode_pixel_index + c] = (<span class="keywordtype">float</span>)(((double)((<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>*)input_data)[input_pixel_index + c]) / 4294967295);</div>
@@ -1413,9 +1413,9 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l01326" name="l01326"></a><span class="lineno"> 1326</span>        <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l01327" name="l01327"></a><span class="lineno"> 1327</span> </div>
 <div class="line"><a id="l01328" name="l01328"></a><span class="lineno"> 1328</span>    <span class="keywordflow">case</span> STBIR__DECODE(<a class="code hl_enumvalue" href="stb__image__resize_8h.html#ae66e0b8b43547463a26c4c9856e7feb7a1c8361627ec8ef323de0124334a2717d">STBIR_TYPE_UINT32</a>, <a class="code hl_enumvalue" href="stb__image__resize_8h.html#afe1a8f53b27eff69118730bc14fd10eda3bfa984cc5ebc6eb49f9d82c4a5c34c9">STBIR_COLORSPACE_SRGB</a>):</div>
-<div class="line"><a id="l01329" name="l01329"></a><span class="lineno"> 1329</span>        for (; <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> &lt; max_x; <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>++)</div>
+<div class="line"><a id="l01329" name="l01329"></a><span class="lineno"> 1329</span>        for (; x &lt; max_x; x++)</div>
 <div class="line"><a id="l01330" name="l01330"></a><span class="lineno"> 1330</span>        {</div>
-<div class="line"><a id="l01331" name="l01331"></a><span class="lineno"> 1331</span>            <span class="keywordtype">int</span> decode_pixel_index = <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> * channels;</div>
+<div class="line"><a id="l01331" name="l01331"></a><span class="lineno"> 1331</span>            <span class="keywordtype">int</span> decode_pixel_index = x * channels;</div>
 <div class="line"><a id="l01332" name="l01332"></a><span class="lineno"> 1332</span>            <span class="keywordtype">int</span> input_pixel_index = stbir__edge_wrap(edge_horizontal, x, input_w) * channels;</div>
 <div class="line"><a id="l01333" name="l01333"></a><span class="lineno"> 1333</span>            <span class="keywordflow">for</span> (c = 0; c &lt; channels; c++)</div>
 <div class="line"><a id="l01334" name="l01334"></a><span class="lineno"> 1334</span>                decode_buffer[decode_pixel_index + c] = stbir__srgb_to_linear((<span class="keywordtype">float</span>)(((<span class="keywordtype">double</span>)((<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>*)input_data)[input_pixel_index + c]) / 4294967295));</div>
@@ -1426,9 +1426,9 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l01339" name="l01339"></a><span class="lineno"> 1339</span>        <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l01340" name="l01340"></a><span class="lineno"> 1340</span> </div>
 <div class="line"><a id="l01341" name="l01341"></a><span class="lineno"> 1341</span>    <span class="keywordflow">case</span> STBIR__DECODE(<a class="code hl_enumvalue" href="stb__image__resize_8h.html#ae66e0b8b43547463a26c4c9856e7feb7af306ec3d4f43129b1c434eeb5a67c9d3">STBIR_TYPE_FLOAT</a>, <a class="code hl_enumvalue" href="stb__image__resize_8h.html#afe1a8f53b27eff69118730bc14fd10edac9daf637ea73007832927d3fd707dd37">STBIR_COLORSPACE_LINEAR</a>):</div>
-<div class="line"><a id="l01342" name="l01342"></a><span class="lineno"> 1342</span>        for (; <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> &lt; max_x; <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>++)</div>
+<div class="line"><a id="l01342" name="l01342"></a><span class="lineno"> 1342</span>        for (; x &lt; max_x; x++)</div>
 <div class="line"><a id="l01343" name="l01343"></a><span class="lineno"> 1343</span>        {</div>
-<div class="line"><a id="l01344" name="l01344"></a><span class="lineno"> 1344</span>            <span class="keywordtype">int</span> decode_pixel_index = <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> * channels;</div>
+<div class="line"><a id="l01344" name="l01344"></a><span class="lineno"> 1344</span>            <span class="keywordtype">int</span> decode_pixel_index = x * channels;</div>
 <div class="line"><a id="l01345" name="l01345"></a><span class="lineno"> 1345</span>            <span class="keywordtype">int</span> input_pixel_index = stbir__edge_wrap(edge_horizontal, x, input_w) * channels;</div>
 <div class="line"><a id="l01346" name="l01346"></a><span class="lineno"> 1346</span>            <span class="keywordflow">for</span> (c = 0; c &lt; channels; c++)</div>
 <div class="line"><a id="l01347" name="l01347"></a><span class="lineno"> 1347</span>                decode_buffer[decode_pixel_index + c] = ((<span class="keyword">const</span> <span class="keywordtype">float</span>*)input_data)[input_pixel_index + c];</div>
@@ -1436,9 +1436,9 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l01349" name="l01349"></a><span class="lineno"> 1349</span>        <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l01350" name="l01350"></a><span class="lineno"> 1350</span> </div>
 <div class="line"><a id="l01351" name="l01351"></a><span class="lineno"> 1351</span>    <span class="keywordflow">case</span> STBIR__DECODE(<a class="code hl_enumvalue" href="stb__image__resize_8h.html#ae66e0b8b43547463a26c4c9856e7feb7af306ec3d4f43129b1c434eeb5a67c9d3">STBIR_TYPE_FLOAT</a>, <a class="code hl_enumvalue" href="stb__image__resize_8h.html#afe1a8f53b27eff69118730bc14fd10eda3bfa984cc5ebc6eb49f9d82c4a5c34c9">STBIR_COLORSPACE_SRGB</a>):</div>
-<div class="line"><a id="l01352" name="l01352"></a><span class="lineno"> 1352</span>        for (; <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> &lt; max_x; <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>++)</div>
+<div class="line"><a id="l01352" name="l01352"></a><span class="lineno"> 1352</span>        for (; x &lt; max_x; x++)</div>
 <div class="line"><a id="l01353" name="l01353"></a><span class="lineno"> 1353</span>        {</div>
-<div class="line"><a id="l01354" name="l01354"></a><span class="lineno"> 1354</span>            <span class="keywordtype">int</span> decode_pixel_index = <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> * channels;</div>
+<div class="line"><a id="l01354" name="l01354"></a><span class="lineno"> 1354</span>            <span class="keywordtype">int</span> decode_pixel_index = x * channels;</div>
 <div class="line"><a id="l01355" name="l01355"></a><span class="lineno"> 1355</span>            <span class="keywordtype">int</span> input_pixel_index = stbir__edge_wrap(edge_horizontal, x, input_w) * channels;</div>
 <div class="line"><a id="l01356" name="l01356"></a><span class="lineno"> 1356</span>            <span class="keywordflow">for</span> (c = 0; c &lt; channels; c++)</div>
 <div class="line"><a id="l01357" name="l01357"></a><span class="lineno"> 1357</span>                decode_buffer[decode_pixel_index + c] = stbir__srgb_to_linear(((<span class="keyword">const</span> <span class="keywordtype">float</span>*)input_data)[input_pixel_index + c]);</div>
@@ -1456,9 +1456,9 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l01369" name="l01369"></a><span class="lineno"> 1369</span> </div>
 <div class="line"><a id="l01370" name="l01370"></a><span class="lineno"> 1370</span>    <span class="keywordflow">if</span> (!(stbir_info-&gt;flags &amp; <a class="code hl_define" href="stb__image__resize_8h.html#af1dbff54b404455740b7f9d04b5a0177">STBIR_FLAG_ALPHA_PREMULTIPLIED</a>))</div>
 <div class="line"><a id="l01371" name="l01371"></a><span class="lineno"> 1371</span>    {</div>
-<div class="line"><a id="l01372" name="l01372"></a><span class="lineno"> 1372</span>        <span class="keywordflow">for</span> (x = -stbir_info-&gt;horizontal_filter_pixel_margin; <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> &lt; max_x; <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>++)</div>
+<div class="line"><a id="l01372" name="l01372"></a><span class="lineno"> 1372</span>        <span class="keywordflow">for</span> (x = -stbir_info-&gt;horizontal_filter_pixel_margin; x &lt; max_x; x++)</div>
 <div class="line"><a id="l01373" name="l01373"></a><span class="lineno"> 1373</span>        {</div>
-<div class="line"><a id="l01374" name="l01374"></a><span class="lineno"> 1374</span>            <span class="keywordtype">int</span> decode_pixel_index = <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> * channels;</div>
+<div class="line"><a id="l01374" name="l01374"></a><span class="lineno"> 1374</span>            <span class="keywordtype">int</span> decode_pixel_index = x * channels;</div>
 <div class="line"><a id="l01375" name="l01375"></a><span class="lineno"> 1375</span> </div>
 <div class="line"><a id="l01376" name="l01376"></a><span class="lineno"> 1376</span>            <span class="comment">// If the alpha value is 0 it will clobber the color values. Make sure it&#39;s not.</span></div>
 <div class="line"><a id="l01377" name="l01377"></a><span class="lineno"> 1377</span>            <span class="keywordtype">float</span> alpha = decode_buffer[decode_pixel_index + alpha_channel];</div>
@@ -1480,12 +1480,12 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l01393" name="l01393"></a><span class="lineno"> 1393</span> </div>
 <div class="line"><a id="l01394" name="l01394"></a><span class="lineno"> 1394</span>    <span class="keywordflow">if</span> (edge_horizontal == <a class="code hl_enumvalue" href="stb__image__resize_8h.html#a66999cce1ebadfca11aa694b3d377b9ea279078b3b5a12337c8905de9bff55769">STBIR_EDGE_ZERO</a>)</div>
 <div class="line"><a id="l01395" name="l01395"></a><span class="lineno"> 1395</span>    {</div>
-<div class="line"><a id="l01396" name="l01396"></a><span class="lineno"> 1396</span>        <span class="keywordflow">for</span> (x = -stbir_info-&gt;horizontal_filter_pixel_margin; <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> &lt; 0; <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>++)</div>
+<div class="line"><a id="l01396" name="l01396"></a><span class="lineno"> 1396</span>        <span class="keywordflow">for</span> (x = -stbir_info-&gt;horizontal_filter_pixel_margin; x &lt; 0; x++)</div>
 <div class="line"><a id="l01397" name="l01397"></a><span class="lineno"> 1397</span>        {</div>
 <div class="line"><a id="l01398" name="l01398"></a><span class="lineno"> 1398</span>            <span class="keywordflow">for</span> (c = 0; c &lt; channels; c++)</div>
 <div class="line"><a id="l01399" name="l01399"></a><span class="lineno"> 1399</span>                decode_buffer[x * channels + c] = 0;</div>
 <div class="line"><a id="l01400" name="l01400"></a><span class="lineno"> 1400</span>        }</div>
-<div class="line"><a id="l01401" name="l01401"></a><span class="lineno"> 1401</span>        <span class="keywordflow">for</span> (x = input_w; <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> &lt; max_x; <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>++)</div>
+<div class="line"><a id="l01401" name="l01401"></a><span class="lineno"> 1401</span>        <span class="keywordflow">for</span> (x = input_w; x &lt; max_x; x++)</div>
 <div class="line"><a id="l01402" name="l01402"></a><span class="lineno"> 1402</span>        {</div>
 <div class="line"><a id="l01403" name="l01403"></a><span class="lineno"> 1403</span>            <span class="keywordflow">for</span> (c = 0; c &lt; channels; c++)</div>
 <div class="line"><a id="l01404" name="l01404"></a><span class="lineno"> 1404</span>                decode_buffer[x * channels + c] = 0;</div>
@@ -1525,7 +1525,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l01438" name="l01438"></a><span class="lineno"> 1438</span> </div>
 <div class="line"><a id="l01439" name="l01439"></a><span class="lineno"> 1439</span><span class="keyword">static</span> <span class="keywordtype">void</span> stbir__resample_horizontal_upsample(stbir__info* stbir_info, <span class="keywordtype">int</span> n, <span class="keywordtype">float</span>* output_buffer)</div>
 <div class="line"><a id="l01440" name="l01440"></a><span class="lineno"> 1440</span>{</div>
-<div class="line"><a id="l01441" name="l01441"></a><span class="lineno"> 1441</span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>, k;</div>
+<div class="line"><a id="l01441" name="l01441"></a><span class="lineno"> 1441</span>    <span class="keywordtype">int</span> x, k;</div>
 <div class="line"><a id="l01442" name="l01442"></a><span class="lineno"> 1442</span>    <span class="keywordtype">int</span> output_w = stbir_info-&gt;output_w;</div>
 <div class="line"><a id="l01443" name="l01443"></a><span class="lineno"> 1443</span>    <span class="keywordtype">int</span> kernel_pixel_width = stbir_info-&gt;horizontal_filter_pixel_width;</div>
 <div class="line"><a id="l01444" name="l01444"></a><span class="lineno"> 1444</span>    <span class="keywordtype">int</span> channels = stbir_info-&gt;channels;</div>
@@ -1534,13 +1534,13 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l01447" name="l01447"></a><span class="lineno"> 1447</span>    <span class="keywordtype">float</span>* horizontal_coefficients = stbir_info-&gt;horizontal_coefficients;</div>
 <div class="line"><a id="l01448" name="l01448"></a><span class="lineno"> 1448</span>    <span class="keywordtype">int</span> coefficient_width = stbir_info-&gt;horizontal_coefficient_width;</div>
 <div class="line"><a id="l01449" name="l01449"></a><span class="lineno"> 1449</span> </div>
-<div class="line"><a id="l01450" name="l01450"></a><span class="lineno"> 1450</span>    <span class="keywordflow">for</span> (x = 0; <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> &lt; output_w; <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>++)</div>
+<div class="line"><a id="l01450" name="l01450"></a><span class="lineno"> 1450</span>    <span class="keywordflow">for</span> (x = 0; x &lt; output_w; x++)</div>
 <div class="line"><a id="l01451" name="l01451"></a><span class="lineno"> 1451</span>    {</div>
-<div class="line"><a id="l01452" name="l01452"></a><span class="lineno"> 1452</span>        <span class="keywordtype">int</span> n0 = horizontal_contributors[<a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>].n0;</div>
-<div class="line"><a id="l01453" name="l01453"></a><span class="lineno"> 1453</span>        <span class="keywordtype">int</span> n1 = horizontal_contributors[<a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>].n1;</div>
+<div class="line"><a id="l01452" name="l01452"></a><span class="lineno"> 1452</span>        <span class="keywordtype">int</span> n0 = horizontal_contributors[x].n0;</div>
+<div class="line"><a id="l01453" name="l01453"></a><span class="lineno"> 1453</span>        <span class="keywordtype">int</span> n1 = horizontal_contributors[x].n1;</div>
 <div class="line"><a id="l01454" name="l01454"></a><span class="lineno"> 1454</span> </div>
-<div class="line"><a id="l01455" name="l01455"></a><span class="lineno"> 1455</span>        <span class="keywordtype">int</span> out_pixel_index = <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> * channels;</div>
-<div class="line"><a id="l01456" name="l01456"></a><span class="lineno"> 1456</span>        <span class="keywordtype">int</span> coefficient_group = coefficient_width * <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>;</div>
+<div class="line"><a id="l01455" name="l01455"></a><span class="lineno"> 1455</span>        <span class="keywordtype">int</span> out_pixel_index = x * channels;</div>
+<div class="line"><a id="l01456" name="l01456"></a><span class="lineno"> 1456</span>        <span class="keywordtype">int</span> coefficient_group = coefficient_width * x;</div>
 <div class="line"><a id="l01457" name="l01457"></a><span class="lineno"> 1457</span>        <span class="keywordtype">int</span> coefficient_counter = 0;</div>
 <div class="line"><a id="l01458" name="l01458"></a><span class="lineno"> 1458</span> </div>
 <div class="line"><a id="l01459" name="l01459"></a><span class="lineno"> 1459</span>        STBIR__DEBUG_ASSERT(n1 &gt;= n0);</div>
@@ -1609,7 +1609,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l01522" name="l01522"></a><span class="lineno"> 1522</span> </div>
 <div class="line"><a id="l01523" name="l01523"></a><span class="lineno"> 1523</span><span class="keyword">static</span> <span class="keywordtype">void</span> stbir__resample_horizontal_downsample(stbir__info* stbir_info, <span class="keywordtype">int</span> n, <span class="keywordtype">float</span>* output_buffer)</div>
 <div class="line"><a id="l01524" name="l01524"></a><span class="lineno"> 1524</span>{</div>
-<div class="line"><a id="l01525" name="l01525"></a><span class="lineno"> 1525</span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>, k;</div>
+<div class="line"><a id="l01525" name="l01525"></a><span class="lineno"> 1525</span>    <span class="keywordtype">int</span> x, k;</div>
 <div class="line"><a id="l01526" name="l01526"></a><span class="lineno"> 1526</span>    <span class="keywordtype">int</span> input_w = stbir_info-&gt;input_w;</div>
 <div class="line"><a id="l01527" name="l01527"></a><span class="lineno"> 1527</span>    <span class="keywordtype">int</span> output_w = stbir_info-&gt;output_w;</div>
 <div class="line"><a id="l01528" name="l01528"></a><span class="lineno"> 1528</span>    <span class="keywordtype">int</span> kernel_pixel_width = stbir_info-&gt;horizontal_filter_pixel_width;</div>
@@ -1625,15 +1625,15 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l01538" name="l01538"></a><span class="lineno"> 1538</span> </div>
 <div class="line"><a id="l01539" name="l01539"></a><span class="lineno"> 1539</span>    <span class="keywordflow">switch</span> (channels) {</div>
 <div class="line"><a id="l01540" name="l01540"></a><span class="lineno"> 1540</span>    <span class="keywordflow">case</span> 1:</div>
-<div class="line"><a id="l01541" name="l01541"></a><span class="lineno"> 1541</span>        <span class="keywordflow">for</span> (x = 0; <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> &lt; max_x; <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>++)</div>
+<div class="line"><a id="l01541" name="l01541"></a><span class="lineno"> 1541</span>        <span class="keywordflow">for</span> (x = 0; x &lt; max_x; x++)</div>
 <div class="line"><a id="l01542" name="l01542"></a><span class="lineno"> 1542</span>        {</div>
-<div class="line"><a id="l01543" name="l01543"></a><span class="lineno"> 1543</span>            <span class="keywordtype">int</span> n0 = horizontal_contributors[<a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>].n0;</div>
-<div class="line"><a id="l01544" name="l01544"></a><span class="lineno"> 1544</span>            <span class="keywordtype">int</span> n1 = horizontal_contributors[<a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>].n1;</div>
+<div class="line"><a id="l01543" name="l01543"></a><span class="lineno"> 1543</span>            <span class="keywordtype">int</span> n0 = horizontal_contributors[x].n0;</div>
+<div class="line"><a id="l01544" name="l01544"></a><span class="lineno"> 1544</span>            <span class="keywordtype">int</span> n1 = horizontal_contributors[x].n1;</div>
 <div class="line"><a id="l01545" name="l01545"></a><span class="lineno"> 1545</span> </div>
-<div class="line"><a id="l01546" name="l01546"></a><span class="lineno"> 1546</span>            <span class="keywordtype">int</span> in_x = <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> - filter_pixel_margin;</div>
+<div class="line"><a id="l01546" name="l01546"></a><span class="lineno"> 1546</span>            <span class="keywordtype">int</span> in_x = x - filter_pixel_margin;</div>
 <div class="line"><a id="l01547" name="l01547"></a><span class="lineno"> 1547</span>            <span class="keywordtype">int</span> in_pixel_index = in_x * 1;</div>
 <div class="line"><a id="l01548" name="l01548"></a><span class="lineno"> 1548</span>            <span class="keywordtype">int</span> max_n = n1;</div>
-<div class="line"><a id="l01549" name="l01549"></a><span class="lineno"> 1549</span>            <span class="keywordtype">int</span> coefficient_group = coefficient_width * <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>;</div>
+<div class="line"><a id="l01549" name="l01549"></a><span class="lineno"> 1549</span>            <span class="keywordtype">int</span> coefficient_group = coefficient_width * x;</div>
 <div class="line"><a id="l01550" name="l01550"></a><span class="lineno"> 1550</span> </div>
 <div class="line"><a id="l01551" name="l01551"></a><span class="lineno"> 1551</span>            <span class="keywordflow">for</span> (k = n0; k &lt;= max_n; k++)</div>
 <div class="line"><a id="l01552" name="l01552"></a><span class="lineno"> 1552</span>            {</div>
@@ -1646,15 +1646,15 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l01559" name="l01559"></a><span class="lineno"> 1559</span>        <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l01560" name="l01560"></a><span class="lineno"> 1560</span> </div>
 <div class="line"><a id="l01561" name="l01561"></a><span class="lineno"> 1561</span>    <span class="keywordflow">case</span> 2:</div>
-<div class="line"><a id="l01562" name="l01562"></a><span class="lineno"> 1562</span>        <span class="keywordflow">for</span> (x = 0; <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> &lt; max_x; <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>++)</div>
+<div class="line"><a id="l01562" name="l01562"></a><span class="lineno"> 1562</span>        <span class="keywordflow">for</span> (x = 0; x &lt; max_x; x++)</div>
 <div class="line"><a id="l01563" name="l01563"></a><span class="lineno"> 1563</span>        {</div>
-<div class="line"><a id="l01564" name="l01564"></a><span class="lineno"> 1564</span>            <span class="keywordtype">int</span> n0 = horizontal_contributors[<a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>].n0;</div>
-<div class="line"><a id="l01565" name="l01565"></a><span class="lineno"> 1565</span>            <span class="keywordtype">int</span> n1 = horizontal_contributors[<a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>].n1;</div>
+<div class="line"><a id="l01564" name="l01564"></a><span class="lineno"> 1564</span>            <span class="keywordtype">int</span> n0 = horizontal_contributors[x].n0;</div>
+<div class="line"><a id="l01565" name="l01565"></a><span class="lineno"> 1565</span>            <span class="keywordtype">int</span> n1 = horizontal_contributors[x].n1;</div>
 <div class="line"><a id="l01566" name="l01566"></a><span class="lineno"> 1566</span> </div>
-<div class="line"><a id="l01567" name="l01567"></a><span class="lineno"> 1567</span>            <span class="keywordtype">int</span> in_x = <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> - filter_pixel_margin;</div>
+<div class="line"><a id="l01567" name="l01567"></a><span class="lineno"> 1567</span>            <span class="keywordtype">int</span> in_x = x - filter_pixel_margin;</div>
 <div class="line"><a id="l01568" name="l01568"></a><span class="lineno"> 1568</span>            <span class="keywordtype">int</span> in_pixel_index = in_x * 2;</div>
 <div class="line"><a id="l01569" name="l01569"></a><span class="lineno"> 1569</span>            <span class="keywordtype">int</span> max_n = n1;</div>
-<div class="line"><a id="l01570" name="l01570"></a><span class="lineno"> 1570</span>            <span class="keywordtype">int</span> coefficient_group = coefficient_width * <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>;</div>
+<div class="line"><a id="l01570" name="l01570"></a><span class="lineno"> 1570</span>            <span class="keywordtype">int</span> coefficient_group = coefficient_width * x;</div>
 <div class="line"><a id="l01571" name="l01571"></a><span class="lineno"> 1571</span> </div>
 <div class="line"><a id="l01572" name="l01572"></a><span class="lineno"> 1572</span>            <span class="keywordflow">for</span> (k = n0; k &lt;= max_n; k++)</div>
 <div class="line"><a id="l01573" name="l01573"></a><span class="lineno"> 1573</span>            {</div>
@@ -1668,15 +1668,15 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l01581" name="l01581"></a><span class="lineno"> 1581</span>        <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l01582" name="l01582"></a><span class="lineno"> 1582</span> </div>
 <div class="line"><a id="l01583" name="l01583"></a><span class="lineno"> 1583</span>    <span class="keywordflow">case</span> 3:</div>
-<div class="line"><a id="l01584" name="l01584"></a><span class="lineno"> 1584</span>        <span class="keywordflow">for</span> (x = 0; <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> &lt; max_x; <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>++)</div>
+<div class="line"><a id="l01584" name="l01584"></a><span class="lineno"> 1584</span>        <span class="keywordflow">for</span> (x = 0; x &lt; max_x; x++)</div>
 <div class="line"><a id="l01585" name="l01585"></a><span class="lineno"> 1585</span>        {</div>
-<div class="line"><a id="l01586" name="l01586"></a><span class="lineno"> 1586</span>            <span class="keywordtype">int</span> n0 = horizontal_contributors[<a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>].n0;</div>
-<div class="line"><a id="l01587" name="l01587"></a><span class="lineno"> 1587</span>            <span class="keywordtype">int</span> n1 = horizontal_contributors[<a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>].n1;</div>
+<div class="line"><a id="l01586" name="l01586"></a><span class="lineno"> 1586</span>            <span class="keywordtype">int</span> n0 = horizontal_contributors[x].n0;</div>
+<div class="line"><a id="l01587" name="l01587"></a><span class="lineno"> 1587</span>            <span class="keywordtype">int</span> n1 = horizontal_contributors[x].n1;</div>
 <div class="line"><a id="l01588" name="l01588"></a><span class="lineno"> 1588</span> </div>
-<div class="line"><a id="l01589" name="l01589"></a><span class="lineno"> 1589</span>            <span class="keywordtype">int</span> in_x = <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> - filter_pixel_margin;</div>
+<div class="line"><a id="l01589" name="l01589"></a><span class="lineno"> 1589</span>            <span class="keywordtype">int</span> in_x = x - filter_pixel_margin;</div>
 <div class="line"><a id="l01590" name="l01590"></a><span class="lineno"> 1590</span>            <span class="keywordtype">int</span> in_pixel_index = in_x * 3;</div>
 <div class="line"><a id="l01591" name="l01591"></a><span class="lineno"> 1591</span>            <span class="keywordtype">int</span> max_n = n1;</div>
-<div class="line"><a id="l01592" name="l01592"></a><span class="lineno"> 1592</span>            <span class="keywordtype">int</span> coefficient_group = coefficient_width * <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>;</div>
+<div class="line"><a id="l01592" name="l01592"></a><span class="lineno"> 1592</span>            <span class="keywordtype">int</span> coefficient_group = coefficient_width * x;</div>
 <div class="line"><a id="l01593" name="l01593"></a><span class="lineno"> 1593</span> </div>
 <div class="line"><a id="l01594" name="l01594"></a><span class="lineno"> 1594</span>            <span class="keywordflow">for</span> (k = n0; k &lt;= max_n; k++)</div>
 <div class="line"><a id="l01595" name="l01595"></a><span class="lineno"> 1595</span>            {</div>
@@ -1691,15 +1691,15 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l01604" name="l01604"></a><span class="lineno"> 1604</span>        <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l01605" name="l01605"></a><span class="lineno"> 1605</span> </div>
 <div class="line"><a id="l01606" name="l01606"></a><span class="lineno"> 1606</span>    <span class="keywordflow">case</span> 4:</div>
-<div class="line"><a id="l01607" name="l01607"></a><span class="lineno"> 1607</span>        <span class="keywordflow">for</span> (x = 0; <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> &lt; max_x; <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>++)</div>
+<div class="line"><a id="l01607" name="l01607"></a><span class="lineno"> 1607</span>        <span class="keywordflow">for</span> (x = 0; x &lt; max_x; x++)</div>
 <div class="line"><a id="l01608" name="l01608"></a><span class="lineno"> 1608</span>        {</div>
-<div class="line"><a id="l01609" name="l01609"></a><span class="lineno"> 1609</span>            <span class="keywordtype">int</span> n0 = horizontal_contributors[<a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>].n0;</div>
-<div class="line"><a id="l01610" name="l01610"></a><span class="lineno"> 1610</span>            <span class="keywordtype">int</span> n1 = horizontal_contributors[<a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>].n1;</div>
+<div class="line"><a id="l01609" name="l01609"></a><span class="lineno"> 1609</span>            <span class="keywordtype">int</span> n0 = horizontal_contributors[x].n0;</div>
+<div class="line"><a id="l01610" name="l01610"></a><span class="lineno"> 1610</span>            <span class="keywordtype">int</span> n1 = horizontal_contributors[x].n1;</div>
 <div class="line"><a id="l01611" name="l01611"></a><span class="lineno"> 1611</span> </div>
-<div class="line"><a id="l01612" name="l01612"></a><span class="lineno"> 1612</span>            <span class="keywordtype">int</span> in_x = <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> - filter_pixel_margin;</div>
+<div class="line"><a id="l01612" name="l01612"></a><span class="lineno"> 1612</span>            <span class="keywordtype">int</span> in_x = x - filter_pixel_margin;</div>
 <div class="line"><a id="l01613" name="l01613"></a><span class="lineno"> 1613</span>            <span class="keywordtype">int</span> in_pixel_index = in_x * 4;</div>
 <div class="line"><a id="l01614" name="l01614"></a><span class="lineno"> 1614</span>            <span class="keywordtype">int</span> max_n = n1;</div>
-<div class="line"><a id="l01615" name="l01615"></a><span class="lineno"> 1615</span>            <span class="keywordtype">int</span> coefficient_group = coefficient_width * <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>;</div>
+<div class="line"><a id="l01615" name="l01615"></a><span class="lineno"> 1615</span>            <span class="keywordtype">int</span> coefficient_group = coefficient_width * x;</div>
 <div class="line"><a id="l01616" name="l01616"></a><span class="lineno"> 1616</span> </div>
 <div class="line"><a id="l01617" name="l01617"></a><span class="lineno"> 1617</span>            <span class="keywordflow">for</span> (k = n0; k &lt;= max_n; k++)</div>
 <div class="line"><a id="l01618" name="l01618"></a><span class="lineno"> 1618</span>            {</div>
@@ -1715,15 +1715,15 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l01628" name="l01628"></a><span class="lineno"> 1628</span>        <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l01629" name="l01629"></a><span class="lineno"> 1629</span> </div>
 <div class="line"><a id="l01630" name="l01630"></a><span class="lineno"> 1630</span>    <span class="keywordflow">default</span>:</div>
-<div class="line"><a id="l01631" name="l01631"></a><span class="lineno"> 1631</span>        <span class="keywordflow">for</span> (x = 0; <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> &lt; max_x; <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>++)</div>
+<div class="line"><a id="l01631" name="l01631"></a><span class="lineno"> 1631</span>        <span class="keywordflow">for</span> (x = 0; x &lt; max_x; x++)</div>
 <div class="line"><a id="l01632" name="l01632"></a><span class="lineno"> 1632</span>        {</div>
-<div class="line"><a id="l01633" name="l01633"></a><span class="lineno"> 1633</span>            <span class="keywordtype">int</span> n0 = horizontal_contributors[<a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>].n0;</div>
-<div class="line"><a id="l01634" name="l01634"></a><span class="lineno"> 1634</span>            <span class="keywordtype">int</span> n1 = horizontal_contributors[<a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>].n1;</div>
+<div class="line"><a id="l01633" name="l01633"></a><span class="lineno"> 1633</span>            <span class="keywordtype">int</span> n0 = horizontal_contributors[x].n0;</div>
+<div class="line"><a id="l01634" name="l01634"></a><span class="lineno"> 1634</span>            <span class="keywordtype">int</span> n1 = horizontal_contributors[x].n1;</div>
 <div class="line"><a id="l01635" name="l01635"></a><span class="lineno"> 1635</span> </div>
-<div class="line"><a id="l01636" name="l01636"></a><span class="lineno"> 1636</span>            <span class="keywordtype">int</span> in_x = <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> - filter_pixel_margin;</div>
+<div class="line"><a id="l01636" name="l01636"></a><span class="lineno"> 1636</span>            <span class="keywordtype">int</span> in_x = x - filter_pixel_margin;</div>
 <div class="line"><a id="l01637" name="l01637"></a><span class="lineno"> 1637</span>            <span class="keywordtype">int</span> in_pixel_index = in_x * channels;</div>
 <div class="line"><a id="l01638" name="l01638"></a><span class="lineno"> 1638</span>            <span class="keywordtype">int</span> max_n = n1;</div>
-<div class="line"><a id="l01639" name="l01639"></a><span class="lineno"> 1639</span>            <span class="keywordtype">int</span> coefficient_group = coefficient_width * <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>;</div>
+<div class="line"><a id="l01639" name="l01639"></a><span class="lineno"> 1639</span>            <span class="keywordtype">int</span> coefficient_group = coefficient_width * x;</div>
 <div class="line"><a id="l01640" name="l01640"></a><span class="lineno"> 1640</span> </div>
 <div class="line"><a id="l01641" name="l01641"></a><span class="lineno"> 1641</span>            <span class="keywordflow">for</span> (k = n0; k &lt;= max_n; k++)</div>
 <div class="line"><a id="l01642" name="l01642"></a><span class="lineno"> 1642</span>            {</div>
@@ -1779,16 +1779,16 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l01692" name="l01692"></a><span class="lineno"> 1692</span> </div>
 <div class="line"><a id="l01693" name="l01693"></a><span class="lineno"> 1693</span><span class="keyword">static</span> <span class="keywordtype">void</span> stbir__encode_scanline(stbir__info* stbir_info, <span class="keywordtype">int</span> num_pixels, <span class="keywordtype">void</span>* output_buffer, <span class="keywordtype">float</span>* encode_buffer, <span class="keywordtype">int</span> channels, <span class="keywordtype">int</span> alpha_channel, <span class="keywordtype">int</span> decode)</div>
 <div class="line"><a id="l01694" name="l01694"></a><span class="lineno"> 1694</span>{</div>
-<div class="line"><a id="l01695" name="l01695"></a><span class="lineno"> 1695</span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>;</div>
+<div class="line"><a id="l01695" name="l01695"></a><span class="lineno"> 1695</span>    <span class="keywordtype">int</span> x;</div>
 <div class="line"><a id="l01696" name="l01696"></a><span class="lineno"> 1696</span>    <span class="keywordtype">int</span> n;</div>
 <div class="line"><a id="l01697" name="l01697"></a><span class="lineno"> 1697</span>    <span class="keywordtype">int</span> num_nonalpha;</div>
 <div class="line"><a id="l01698" name="l01698"></a><span class="lineno"> 1698</span>    <a class="code hl_typedef" href="stb__image__resize_8h.html#a71121f166a710e8a8da418ae3c86f1b9">stbir_uint16</a> nonalpha[STBIR_MAX_CHANNELS];</div>
 <div class="line"><a id="l01699" name="l01699"></a><span class="lineno"> 1699</span> </div>
 <div class="line"><a id="l01700" name="l01700"></a><span class="lineno"> 1700</span>    <span class="keywordflow">if</span> (!(stbir_info-&gt;flags &amp; <a class="code hl_define" href="stb__image__resize_8h.html#af1dbff54b404455740b7f9d04b5a0177">STBIR_FLAG_ALPHA_PREMULTIPLIED</a>))</div>
 <div class="line"><a id="l01701" name="l01701"></a><span class="lineno"> 1701</span>    {</div>
-<div class="line"><a id="l01702" name="l01702"></a><span class="lineno"> 1702</span>        <span class="keywordflow">for</span> (x = 0; <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> &lt; num_pixels; ++<a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>)</div>
+<div class="line"><a id="l01702" name="l01702"></a><span class="lineno"> 1702</span>        <span class="keywordflow">for</span> (x = 0; x &lt; num_pixels; ++x)</div>
 <div class="line"><a id="l01703" name="l01703"></a><span class="lineno"> 1703</span>        {</div>
-<div class="line"><a id="l01704" name="l01704"></a><span class="lineno"> 1704</span>            <span class="keywordtype">int</span> pixel_index = <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> * channels;</div>
+<div class="line"><a id="l01704" name="l01704"></a><span class="lineno"> 1704</span>            <span class="keywordtype">int</span> pixel_index = x * channels;</div>
 <div class="line"><a id="l01705" name="l01705"></a><span class="lineno"> 1705</span> </div>
 <div class="line"><a id="l01706" name="l01706"></a><span class="lineno"> 1706</span>            <span class="keywordtype">float</span> alpha = encode_buffer[pixel_index + alpha_channel];</div>
 <div class="line"><a id="l01707" name="l01707"></a><span class="lineno"> 1707</span>            <span class="keywordtype">float</span> reciprocal_alpha = alpha ? 1.0f / alpha : 0;</div>
@@ -1807,9 +1807,9 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l01720" name="l01720"></a><span class="lineno"> 1720</span> </div>
 <div class="line"><a id="l01721" name="l01721"></a><span class="lineno"> 1721</span>    <span class="comment">// build a table of all channels that need colorspace correction, so</span></div>
 <div class="line"><a id="l01722" name="l01722"></a><span class="lineno"> 1722</span>    <span class="comment">// we don&#39;t perform colorspace correction on channels that don&#39;t need it.</span></div>
-<div class="line"><a id="l01723" name="l01723"></a><span class="lineno"> 1723</span>    <span class="keywordflow">for</span> (x = 0, num_nonalpha = 0; <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> &lt; channels; ++<a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>)</div>
+<div class="line"><a id="l01723" name="l01723"></a><span class="lineno"> 1723</span>    <span class="keywordflow">for</span> (x = 0, num_nonalpha = 0; x &lt; channels; ++x)</div>
 <div class="line"><a id="l01724" name="l01724"></a><span class="lineno"> 1724</span>        <span class="keywordflow">if</span> (x != alpha_channel || (stbir_info-&gt;flags &amp; <a class="code hl_define" href="stb__image__resize_8h.html#a9d16fb3c3edd34d11e8e76b046208296">STBIR_FLAG_ALPHA_USES_COLORSPACE</a>))</div>
-<div class="line"><a id="l01725" name="l01725"></a><span class="lineno"> 1725</span>            nonalpha[num_nonalpha++] = <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>;</div>
+<div class="line"><a id="l01725" name="l01725"></a><span class="lineno"> 1725</span>            nonalpha[num_nonalpha++] = x;</div>
 <div class="line"><a id="l01726" name="l01726"></a><span class="lineno"> 1726</span> </div>
 <div class="line"><a id="l01727" name="l01727"></a><span class="lineno"> 1727</span><span class="preprocessor">#define STBIR__ROUND_INT(f)    ((int)          ((f)+0.5))</span></div>
 <div class="line"><a id="l01728" name="l01728"></a><span class="lineno"> 1728</span><span class="preprocessor">#define STBIR__ROUND_UINT(f)   ((stbir_uint32) ((f)+0.5))</span></div>
@@ -1825,9 +1825,9 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l01738" name="l01738"></a><span class="lineno"> 1738</span>    <span class="keywordflow">switch</span> (decode)</div>
 <div class="line"><a id="l01739" name="l01739"></a><span class="lineno"> 1739</span>    {</div>
 <div class="line"><a id="l01740" name="l01740"></a><span class="lineno"> 1740</span>    <span class="keywordflow">case</span> STBIR__DECODE(<a class="code hl_enumvalue" href="stb__image__resize_8h.html#ae66e0b8b43547463a26c4c9856e7feb7a7eca722966f28fcc1f8a2c0ff57a214b">STBIR_TYPE_UINT8</a>, <a class="code hl_enumvalue" href="stb__image__resize_8h.html#afe1a8f53b27eff69118730bc14fd10edac9daf637ea73007832927d3fd707dd37">STBIR_COLORSPACE_LINEAR</a>):</div>
-<div class="line"><a id="l01741" name="l01741"></a><span class="lineno"> 1741</span>        for (<a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> = 0; <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> &lt; num_pixels; ++<a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>)</div>
+<div class="line"><a id="l01741" name="l01741"></a><span class="lineno"> 1741</span>        for (x = 0; x &lt; num_pixels; ++x)</div>
 <div class="line"><a id="l01742" name="l01742"></a><span class="lineno"> 1742</span>        {</div>
-<div class="line"><a id="l01743" name="l01743"></a><span class="lineno"> 1743</span>            <span class="keywordtype">int</span> pixel_index = <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> * channels;</div>
+<div class="line"><a id="l01743" name="l01743"></a><span class="lineno"> 1743</span>            <span class="keywordtype">int</span> pixel_index = x * channels;</div>
 <div class="line"><a id="l01744" name="l01744"></a><span class="lineno"> 1744</span> </div>
 <div class="line"><a id="l01745" name="l01745"></a><span class="lineno"> 1745</span>            <span class="keywordflow">for</span> (n = 0; n &lt; channels; n++)</div>
 <div class="line"><a id="l01746" name="l01746"></a><span class="lineno"> 1746</span>            {</div>
@@ -1838,9 +1838,9 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l01751" name="l01751"></a><span class="lineno"> 1751</span>        <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l01752" name="l01752"></a><span class="lineno"> 1752</span> </div>
 <div class="line"><a id="l01753" name="l01753"></a><span class="lineno"> 1753</span>    <span class="keywordflow">case</span> STBIR__DECODE(<a class="code hl_enumvalue" href="stb__image__resize_8h.html#ae66e0b8b43547463a26c4c9856e7feb7a7eca722966f28fcc1f8a2c0ff57a214b">STBIR_TYPE_UINT8</a>, <a class="code hl_enumvalue" href="stb__image__resize_8h.html#afe1a8f53b27eff69118730bc14fd10eda3bfa984cc5ebc6eb49f9d82c4a5c34c9">STBIR_COLORSPACE_SRGB</a>):</div>
-<div class="line"><a id="l01754" name="l01754"></a><span class="lineno"> 1754</span>        for (<a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> = 0; <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> &lt; num_pixels; ++<a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>)</div>
+<div class="line"><a id="l01754" name="l01754"></a><span class="lineno"> 1754</span>        for (x = 0; x &lt; num_pixels; ++x)</div>
 <div class="line"><a id="l01755" name="l01755"></a><span class="lineno"> 1755</span>        {</div>
-<div class="line"><a id="l01756" name="l01756"></a><span class="lineno"> 1756</span>            <span class="keywordtype">int</span> pixel_index = <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> * channels;</div>
+<div class="line"><a id="l01756" name="l01756"></a><span class="lineno"> 1756</span>            <span class="keywordtype">int</span> pixel_index = x * channels;</div>
 <div class="line"><a id="l01757" name="l01757"></a><span class="lineno"> 1757</span> </div>
 <div class="line"><a id="l01758" name="l01758"></a><span class="lineno"> 1758</span>            <span class="keywordflow">for</span> (n = 0; n &lt; num_nonalpha; n++)</div>
 <div class="line"><a id="l01759" name="l01759"></a><span class="lineno"> 1759</span>            {</div>
@@ -1854,9 +1854,9 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l01767" name="l01767"></a><span class="lineno"> 1767</span>        <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l01768" name="l01768"></a><span class="lineno"> 1768</span> </div>
 <div class="line"><a id="l01769" name="l01769"></a><span class="lineno"> 1769</span>    <span class="keywordflow">case</span> STBIR__DECODE(<a class="code hl_enumvalue" href="stb__image__resize_8h.html#ae66e0b8b43547463a26c4c9856e7feb7a1f4a3c0f3cb88d33c9d0922767c381b2">STBIR_TYPE_UINT16</a>, <a class="code hl_enumvalue" href="stb__image__resize_8h.html#afe1a8f53b27eff69118730bc14fd10edac9daf637ea73007832927d3fd707dd37">STBIR_COLORSPACE_LINEAR</a>):</div>
-<div class="line"><a id="l01770" name="l01770"></a><span class="lineno"> 1770</span>        for (<a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> = 0; <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> &lt; num_pixels; ++<a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>)</div>
+<div class="line"><a id="l01770" name="l01770"></a><span class="lineno"> 1770</span>        for (x = 0; x &lt; num_pixels; ++x)</div>
 <div class="line"><a id="l01771" name="l01771"></a><span class="lineno"> 1771</span>        {</div>
-<div class="line"><a id="l01772" name="l01772"></a><span class="lineno"> 1772</span>            <span class="keywordtype">int</span> pixel_index = <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> * channels;</div>
+<div class="line"><a id="l01772" name="l01772"></a><span class="lineno"> 1772</span>            <span class="keywordtype">int</span> pixel_index = x * channels;</div>
 <div class="line"><a id="l01773" name="l01773"></a><span class="lineno"> 1773</span> </div>
 <div class="line"><a id="l01774" name="l01774"></a><span class="lineno"> 1774</span>            <span class="keywordflow">for</span> (n = 0; n &lt; channels; n++)</div>
 <div class="line"><a id="l01775" name="l01775"></a><span class="lineno"> 1775</span>            {</div>
@@ -1867,9 +1867,9 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l01780" name="l01780"></a><span class="lineno"> 1780</span>        <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l01781" name="l01781"></a><span class="lineno"> 1781</span> </div>
 <div class="line"><a id="l01782" name="l01782"></a><span class="lineno"> 1782</span>    <span class="keywordflow">case</span> STBIR__DECODE(<a class="code hl_enumvalue" href="stb__image__resize_8h.html#ae66e0b8b43547463a26c4c9856e7feb7a1f4a3c0f3cb88d33c9d0922767c381b2">STBIR_TYPE_UINT16</a>, <a class="code hl_enumvalue" href="stb__image__resize_8h.html#afe1a8f53b27eff69118730bc14fd10eda3bfa984cc5ebc6eb49f9d82c4a5c34c9">STBIR_COLORSPACE_SRGB</a>):</div>
-<div class="line"><a id="l01783" name="l01783"></a><span class="lineno"> 1783</span>        for (<a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> = 0; <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> &lt; num_pixels; ++<a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>)</div>
+<div class="line"><a id="l01783" name="l01783"></a><span class="lineno"> 1783</span>        for (x = 0; x &lt; num_pixels; ++x)</div>
 <div class="line"><a id="l01784" name="l01784"></a><span class="lineno"> 1784</span>        {</div>
-<div class="line"><a id="l01785" name="l01785"></a><span class="lineno"> 1785</span>            <span class="keywordtype">int</span> pixel_index = <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> * channels;</div>
+<div class="line"><a id="l01785" name="l01785"></a><span class="lineno"> 1785</span>            <span class="keywordtype">int</span> pixel_index = x * channels;</div>
 <div class="line"><a id="l01786" name="l01786"></a><span class="lineno"> 1786</span> </div>
 <div class="line"><a id="l01787" name="l01787"></a><span class="lineno"> 1787</span>            <span class="keywordflow">for</span> (n = 0; n &lt; num_nonalpha; n++)</div>
 <div class="line"><a id="l01788" name="l01788"></a><span class="lineno"> 1788</span>            {</div>
@@ -1884,9 +1884,9 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l01797" name="l01797"></a><span class="lineno"> 1797</span>        <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l01798" name="l01798"></a><span class="lineno"> 1798</span> </div>
 <div class="line"><a id="l01799" name="l01799"></a><span class="lineno"> 1799</span>    <span class="keywordflow">case</span> STBIR__DECODE(<a class="code hl_enumvalue" href="stb__image__resize_8h.html#ae66e0b8b43547463a26c4c9856e7feb7a1c8361627ec8ef323de0124334a2717d">STBIR_TYPE_UINT32</a>, <a class="code hl_enumvalue" href="stb__image__resize_8h.html#afe1a8f53b27eff69118730bc14fd10edac9daf637ea73007832927d3fd707dd37">STBIR_COLORSPACE_LINEAR</a>):</div>
-<div class="line"><a id="l01800" name="l01800"></a><span class="lineno"> 1800</span>        for (<a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> = 0; <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> &lt; num_pixels; ++<a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>)</div>
+<div class="line"><a id="l01800" name="l01800"></a><span class="lineno"> 1800</span>        for (x = 0; x &lt; num_pixels; ++x)</div>
 <div class="line"><a id="l01801" name="l01801"></a><span class="lineno"> 1801</span>        {</div>
-<div class="line"><a id="l01802" name="l01802"></a><span class="lineno"> 1802</span>            <span class="keywordtype">int</span> pixel_index = <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> * channels;</div>
+<div class="line"><a id="l01802" name="l01802"></a><span class="lineno"> 1802</span>            <span class="keywordtype">int</span> pixel_index = x * channels;</div>
 <div class="line"><a id="l01803" name="l01803"></a><span class="lineno"> 1803</span> </div>
 <div class="line"><a id="l01804" name="l01804"></a><span class="lineno"> 1804</span>            <span class="keywordflow">for</span> (n = 0; n &lt; channels; n++)</div>
 <div class="line"><a id="l01805" name="l01805"></a><span class="lineno"> 1805</span>            {</div>
@@ -1897,9 +1897,9 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l01810" name="l01810"></a><span class="lineno"> 1810</span>        <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l01811" name="l01811"></a><span class="lineno"> 1811</span> </div>
 <div class="line"><a id="l01812" name="l01812"></a><span class="lineno"> 1812</span>    <span class="keywordflow">case</span> STBIR__DECODE(<a class="code hl_enumvalue" href="stb__image__resize_8h.html#ae66e0b8b43547463a26c4c9856e7feb7a1c8361627ec8ef323de0124334a2717d">STBIR_TYPE_UINT32</a>, <a class="code hl_enumvalue" href="stb__image__resize_8h.html#afe1a8f53b27eff69118730bc14fd10eda3bfa984cc5ebc6eb49f9d82c4a5c34c9">STBIR_COLORSPACE_SRGB</a>):</div>
-<div class="line"><a id="l01813" name="l01813"></a><span class="lineno"> 1813</span>        for (<a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> = 0; <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> &lt; num_pixels; ++<a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>)</div>
+<div class="line"><a id="l01813" name="l01813"></a><span class="lineno"> 1813</span>        for (x = 0; x &lt; num_pixels; ++x)</div>
 <div class="line"><a id="l01814" name="l01814"></a><span class="lineno"> 1814</span>        {</div>
-<div class="line"><a id="l01815" name="l01815"></a><span class="lineno"> 1815</span>            <span class="keywordtype">int</span> pixel_index = <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> * channels;</div>
+<div class="line"><a id="l01815" name="l01815"></a><span class="lineno"> 1815</span>            <span class="keywordtype">int</span> pixel_index = x * channels;</div>
 <div class="line"><a id="l01816" name="l01816"></a><span class="lineno"> 1816</span> </div>
 <div class="line"><a id="l01817" name="l01817"></a><span class="lineno"> 1817</span>            <span class="keywordflow">for</span> (n = 0; n &lt; num_nonalpha; n++)</div>
 <div class="line"><a id="l01818" name="l01818"></a><span class="lineno"> 1818</span>            {</div>
@@ -1913,9 +1913,9 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l01826" name="l01826"></a><span class="lineno"> 1826</span>        <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l01827" name="l01827"></a><span class="lineno"> 1827</span> </div>
 <div class="line"><a id="l01828" name="l01828"></a><span class="lineno"> 1828</span>    <span class="keywordflow">case</span> STBIR__DECODE(<a class="code hl_enumvalue" href="stb__image__resize_8h.html#ae66e0b8b43547463a26c4c9856e7feb7af306ec3d4f43129b1c434eeb5a67c9d3">STBIR_TYPE_FLOAT</a>, <a class="code hl_enumvalue" href="stb__image__resize_8h.html#afe1a8f53b27eff69118730bc14fd10edac9daf637ea73007832927d3fd707dd37">STBIR_COLORSPACE_LINEAR</a>):</div>
-<div class="line"><a id="l01829" name="l01829"></a><span class="lineno"> 1829</span>        for (<a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> = 0; <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> &lt; num_pixels; ++<a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>)</div>
+<div class="line"><a id="l01829" name="l01829"></a><span class="lineno"> 1829</span>        for (x = 0; x &lt; num_pixels; ++x)</div>
 <div class="line"><a id="l01830" name="l01830"></a><span class="lineno"> 1830</span>        {</div>
-<div class="line"><a id="l01831" name="l01831"></a><span class="lineno"> 1831</span>            <span class="keywordtype">int</span> pixel_index = <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> * channels;</div>
+<div class="line"><a id="l01831" name="l01831"></a><span class="lineno"> 1831</span>            <span class="keywordtype">int</span> pixel_index = x * channels;</div>
 <div class="line"><a id="l01832" name="l01832"></a><span class="lineno"> 1832</span> </div>
 <div class="line"><a id="l01833" name="l01833"></a><span class="lineno"> 1833</span>            <span class="keywordflow">for</span> (n = 0; n &lt; channels; n++)</div>
 <div class="line"><a id="l01834" name="l01834"></a><span class="lineno"> 1834</span>            {</div>
@@ -1926,9 +1926,9 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l01839" name="l01839"></a><span class="lineno"> 1839</span>        <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l01840" name="l01840"></a><span class="lineno"> 1840</span> </div>
 <div class="line"><a id="l01841" name="l01841"></a><span class="lineno"> 1841</span>    <span class="keywordflow">case</span> STBIR__DECODE(<a class="code hl_enumvalue" href="stb__image__resize_8h.html#ae66e0b8b43547463a26c4c9856e7feb7af306ec3d4f43129b1c434eeb5a67c9d3">STBIR_TYPE_FLOAT</a>, <a class="code hl_enumvalue" href="stb__image__resize_8h.html#afe1a8f53b27eff69118730bc14fd10eda3bfa984cc5ebc6eb49f9d82c4a5c34c9">STBIR_COLORSPACE_SRGB</a>):</div>
-<div class="line"><a id="l01842" name="l01842"></a><span class="lineno"> 1842</span>        for (<a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> = 0; <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> &lt; num_pixels; ++<a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>)</div>
+<div class="line"><a id="l01842" name="l01842"></a><span class="lineno"> 1842</span>        for (x = 0; x &lt; num_pixels; ++x)</div>
 <div class="line"><a id="l01843" name="l01843"></a><span class="lineno"> 1843</span>        {</div>
-<div class="line"><a id="l01844" name="l01844"></a><span class="lineno"> 1844</span>            <span class="keywordtype">int</span> pixel_index = <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> * channels;</div>
+<div class="line"><a id="l01844" name="l01844"></a><span class="lineno"> 1844</span>            <span class="keywordtype">int</span> pixel_index = x * channels;</div>
 <div class="line"><a id="l01845" name="l01845"></a><span class="lineno"> 1845</span> </div>
 <div class="line"><a id="l01846" name="l01846"></a><span class="lineno"> 1846</span>            <span class="keywordflow">for</span> (n = 0; n &lt; num_nonalpha; n++)</div>
 <div class="line"><a id="l01847" name="l01847"></a><span class="lineno"> 1847</span>            {</div>
@@ -1949,7 +1949,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l01862" name="l01862"></a><span class="lineno"> 1862</span> </div>
 <div class="line"><a id="l01863" name="l01863"></a><span class="lineno"> 1863</span><span class="keyword">static</span> <span class="keywordtype">void</span> stbir__resample_vertical_upsample(stbir__info* stbir_info, <span class="keywordtype">int</span> n, <span class="keywordtype">int</span> in_first_scanline, <span class="keywordtype">int</span> in_last_scanline, <span class="keywordtype">float</span> in_center_of_out)</div>
 <div class="line"><a id="l01864" name="l01864"></a><span class="lineno"> 1864</span>{</div>
-<div class="line"><a id="l01865" name="l01865"></a><span class="lineno"> 1865</span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>, k;</div>
+<div class="line"><a id="l01865" name="l01865"></a><span class="lineno"> 1865</span>    <span class="keywordtype">int</span> x, k;</div>
 <div class="line"><a id="l01866" name="l01866"></a><span class="lineno"> 1866</span>    <span class="keywordtype">int</span> output_w = stbir_info-&gt;output_w;</div>
 <div class="line"><a id="l01867" name="l01867"></a><span class="lineno"> 1867</span>    stbir__contributors* vertical_contributors = stbir_info-&gt;vertical_contributors;</div>
 <div class="line"><a id="l01868" name="l01868"></a><span class="lineno"> 1868</span>    <span class="keywordtype">float</span>* vertical_coefficients = stbir_info-&gt;vertical_coefficients;</div>
@@ -1994,9 +1994,9 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l01907" name="l01907"></a><span class="lineno"> 1907</span>            <span class="keywordtype">int</span> coefficient_index = coefficient_counter++;</div>
 <div class="line"><a id="l01908" name="l01908"></a><span class="lineno"> 1908</span>            <span class="keywordtype">float</span>* ring_buffer_entry = stbir__get_ring_buffer_scanline(k, ring_buffer, ring_buffer_begin_index, ring_buffer_first_scanline, kernel_pixel_width, ring_buffer_length);</div>
 <div class="line"><a id="l01909" name="l01909"></a><span class="lineno"> 1909</span>            <span class="keywordtype">float</span> coefficient = vertical_coefficients[coefficient_group + coefficient_index];</div>
-<div class="line"><a id="l01910" name="l01910"></a><span class="lineno"> 1910</span>            <span class="keywordflow">for</span> (x = 0; <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> &lt; output_w; ++<a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>)</div>
+<div class="line"><a id="l01910" name="l01910"></a><span class="lineno"> 1910</span>            <span class="keywordflow">for</span> (x = 0; x &lt; output_w; ++x)</div>
 <div class="line"><a id="l01911" name="l01911"></a><span class="lineno"> 1911</span>            {</div>
-<div class="line"><a id="l01912" name="l01912"></a><span class="lineno"> 1912</span>                <span class="keywordtype">int</span> in_pixel_index = <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> * 1;</div>
+<div class="line"><a id="l01912" name="l01912"></a><span class="lineno"> 1912</span>                <span class="keywordtype">int</span> in_pixel_index = x * 1;</div>
 <div class="line"><a id="l01913" name="l01913"></a><span class="lineno"> 1913</span>                encode_buffer[in_pixel_index + 0] += ring_buffer_entry[in_pixel_index + 0] * coefficient;</div>
 <div class="line"><a id="l01914" name="l01914"></a><span class="lineno"> 1914</span>            }</div>
 <div class="line"><a id="l01915" name="l01915"></a><span class="lineno"> 1915</span>        }</div>
@@ -2007,9 +2007,9 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l01920" name="l01920"></a><span class="lineno"> 1920</span>            <span class="keywordtype">int</span> coefficient_index = coefficient_counter++;</div>
 <div class="line"><a id="l01921" name="l01921"></a><span class="lineno"> 1921</span>            <span class="keywordtype">float</span>* ring_buffer_entry = stbir__get_ring_buffer_scanline(k, ring_buffer, ring_buffer_begin_index, ring_buffer_first_scanline, kernel_pixel_width, ring_buffer_length);</div>
 <div class="line"><a id="l01922" name="l01922"></a><span class="lineno"> 1922</span>            <span class="keywordtype">float</span> coefficient = vertical_coefficients[coefficient_group + coefficient_index];</div>
-<div class="line"><a id="l01923" name="l01923"></a><span class="lineno"> 1923</span>            <span class="keywordflow">for</span> (x = 0; <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> &lt; output_w; ++<a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>)</div>
+<div class="line"><a id="l01923" name="l01923"></a><span class="lineno"> 1923</span>            <span class="keywordflow">for</span> (x = 0; x &lt; output_w; ++x)</div>
 <div class="line"><a id="l01924" name="l01924"></a><span class="lineno"> 1924</span>            {</div>
-<div class="line"><a id="l01925" name="l01925"></a><span class="lineno"> 1925</span>                <span class="keywordtype">int</span> in_pixel_index = <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> * 2;</div>
+<div class="line"><a id="l01925" name="l01925"></a><span class="lineno"> 1925</span>                <span class="keywordtype">int</span> in_pixel_index = x * 2;</div>
 <div class="line"><a id="l01926" name="l01926"></a><span class="lineno"> 1926</span>                encode_buffer[in_pixel_index + 0] += ring_buffer_entry[in_pixel_index + 0] * coefficient;</div>
 <div class="line"><a id="l01927" name="l01927"></a><span class="lineno"> 1927</span>                encode_buffer[in_pixel_index + 1] += ring_buffer_entry[in_pixel_index + 1] * coefficient;</div>
 <div class="line"><a id="l01928" name="l01928"></a><span class="lineno"> 1928</span>            }</div>
@@ -2021,9 +2021,9 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l01934" name="l01934"></a><span class="lineno"> 1934</span>            <span class="keywordtype">int</span> coefficient_index = coefficient_counter++;</div>
 <div class="line"><a id="l01935" name="l01935"></a><span class="lineno"> 1935</span>            <span class="keywordtype">float</span>* ring_buffer_entry = stbir__get_ring_buffer_scanline(k, ring_buffer, ring_buffer_begin_index, ring_buffer_first_scanline, kernel_pixel_width, ring_buffer_length);</div>
 <div class="line"><a id="l01936" name="l01936"></a><span class="lineno"> 1936</span>            <span class="keywordtype">float</span> coefficient = vertical_coefficients[coefficient_group + coefficient_index];</div>
-<div class="line"><a id="l01937" name="l01937"></a><span class="lineno"> 1937</span>            <span class="keywordflow">for</span> (x = 0; <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> &lt; output_w; ++<a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>)</div>
+<div class="line"><a id="l01937" name="l01937"></a><span class="lineno"> 1937</span>            <span class="keywordflow">for</span> (x = 0; x &lt; output_w; ++x)</div>
 <div class="line"><a id="l01938" name="l01938"></a><span class="lineno"> 1938</span>            {</div>
-<div class="line"><a id="l01939" name="l01939"></a><span class="lineno"> 1939</span>                <span class="keywordtype">int</span> in_pixel_index = <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> * 3;</div>
+<div class="line"><a id="l01939" name="l01939"></a><span class="lineno"> 1939</span>                <span class="keywordtype">int</span> in_pixel_index = x * 3;</div>
 <div class="line"><a id="l01940" name="l01940"></a><span class="lineno"> 1940</span>                encode_buffer[in_pixel_index + 0] += ring_buffer_entry[in_pixel_index + 0] * coefficient;</div>
 <div class="line"><a id="l01941" name="l01941"></a><span class="lineno"> 1941</span>                encode_buffer[in_pixel_index + 1] += ring_buffer_entry[in_pixel_index + 1] * coefficient;</div>
 <div class="line"><a id="l01942" name="l01942"></a><span class="lineno"> 1942</span>                encode_buffer[in_pixel_index + 2] += ring_buffer_entry[in_pixel_index + 2] * coefficient;</div>
@@ -2036,9 +2036,9 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l01949" name="l01949"></a><span class="lineno"> 1949</span>            <span class="keywordtype">int</span> coefficient_index = coefficient_counter++;</div>
 <div class="line"><a id="l01950" name="l01950"></a><span class="lineno"> 1950</span>            <span class="keywordtype">float</span>* ring_buffer_entry = stbir__get_ring_buffer_scanline(k, ring_buffer, ring_buffer_begin_index, ring_buffer_first_scanline, kernel_pixel_width, ring_buffer_length);</div>
 <div class="line"><a id="l01951" name="l01951"></a><span class="lineno"> 1951</span>            <span class="keywordtype">float</span> coefficient = vertical_coefficients[coefficient_group + coefficient_index];</div>
-<div class="line"><a id="l01952" name="l01952"></a><span class="lineno"> 1952</span>            <span class="keywordflow">for</span> (x = 0; <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> &lt; output_w; ++<a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>)</div>
+<div class="line"><a id="l01952" name="l01952"></a><span class="lineno"> 1952</span>            <span class="keywordflow">for</span> (x = 0; x &lt; output_w; ++x)</div>
 <div class="line"><a id="l01953" name="l01953"></a><span class="lineno"> 1953</span>            {</div>
-<div class="line"><a id="l01954" name="l01954"></a><span class="lineno"> 1954</span>                <span class="keywordtype">int</span> in_pixel_index = <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> * 4;</div>
+<div class="line"><a id="l01954" name="l01954"></a><span class="lineno"> 1954</span>                <span class="keywordtype">int</span> in_pixel_index = x * 4;</div>
 <div class="line"><a id="l01955" name="l01955"></a><span class="lineno"> 1955</span>                encode_buffer[in_pixel_index + 0] += ring_buffer_entry[in_pixel_index + 0] * coefficient;</div>
 <div class="line"><a id="l01956" name="l01956"></a><span class="lineno"> 1956</span>                encode_buffer[in_pixel_index + 1] += ring_buffer_entry[in_pixel_index + 1] * coefficient;</div>
 <div class="line"><a id="l01957" name="l01957"></a><span class="lineno"> 1957</span>                encode_buffer[in_pixel_index + 2] += ring_buffer_entry[in_pixel_index + 2] * coefficient;</div>
@@ -2052,9 +2052,9 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l01965" name="l01965"></a><span class="lineno"> 1965</span>            <span class="keywordtype">int</span> coefficient_index = coefficient_counter++;</div>
 <div class="line"><a id="l01966" name="l01966"></a><span class="lineno"> 1966</span>            <span class="keywordtype">float</span>* ring_buffer_entry = stbir__get_ring_buffer_scanline(k, ring_buffer, ring_buffer_begin_index, ring_buffer_first_scanline, kernel_pixel_width, ring_buffer_length);</div>
 <div class="line"><a id="l01967" name="l01967"></a><span class="lineno"> 1967</span>            <span class="keywordtype">float</span> coefficient = vertical_coefficients[coefficient_group + coefficient_index];</div>
-<div class="line"><a id="l01968" name="l01968"></a><span class="lineno"> 1968</span>            <span class="keywordflow">for</span> (x = 0; <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> &lt; output_w; ++<a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>)</div>
+<div class="line"><a id="l01968" name="l01968"></a><span class="lineno"> 1968</span>            <span class="keywordflow">for</span> (x = 0; x &lt; output_w; ++x)</div>
 <div class="line"><a id="l01969" name="l01969"></a><span class="lineno"> 1969</span>            {</div>
-<div class="line"><a id="l01970" name="l01970"></a><span class="lineno"> 1970</span>                <span class="keywordtype">int</span> in_pixel_index = <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> * channels;</div>
+<div class="line"><a id="l01970" name="l01970"></a><span class="lineno"> 1970</span>                <span class="keywordtype">int</span> in_pixel_index = x * channels;</div>
 <div class="line"><a id="l01971" name="l01971"></a><span class="lineno"> 1971</span>                <span class="keywordtype">int</span> c;</div>
 <div class="line"><a id="l01972" name="l01972"></a><span class="lineno"> 1972</span>                <span class="keywordflow">for</span> (c = 0; c &lt; channels; c++)</div>
 <div class="line"><a id="l01973" name="l01973"></a><span class="lineno"> 1973</span>                    encode_buffer[in_pixel_index + c] += ring_buffer_entry[in_pixel_index + c] * coefficient;</div>
@@ -2067,7 +2067,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l01980" name="l01980"></a><span class="lineno"> 1980</span> </div>
 <div class="line"><a id="l01981" name="l01981"></a><span class="lineno"> 1981</span><span class="keyword">static</span> <span class="keywordtype">void</span> stbir__resample_vertical_downsample(stbir__info* stbir_info, <span class="keywordtype">int</span> n, <span class="keywordtype">int</span> in_first_scanline, <span class="keywordtype">int</span> in_last_scanline, <span class="keywordtype">float</span> in_center_of_out)</div>
 <div class="line"><a id="l01982" name="l01982"></a><span class="lineno"> 1982</span>{</div>
-<div class="line"><a id="l01983" name="l01983"></a><span class="lineno"> 1983</span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>, k;</div>
+<div class="line"><a id="l01983" name="l01983"></a><span class="lineno"> 1983</span>    <span class="keywordtype">int</span> x, k;</div>
 <div class="line"><a id="l01984" name="l01984"></a><span class="lineno"> 1984</span>    <span class="keywordtype">int</span> output_w = stbir_info-&gt;output_w;</div>
 <div class="line"><a id="l01985" name="l01985"></a><span class="lineno"> 1985</span>    <span class="keywordtype">int</span> output_h = stbir_info-&gt;output_h;</div>
 <div class="line"><a id="l01986" name="l01986"></a><span class="lineno"> 1986</span>    stbir__contributors* vertical_contributors = stbir_info-&gt;vertical_contributors;</div>
@@ -2101,33 +2101,33 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l02014" name="l02014"></a><span class="lineno"> 2014</span> </div>
 <div class="line"><a id="l02015" name="l02015"></a><span class="lineno"> 2015</span>        <span class="keywordflow">switch</span> (channels) {</div>
 <div class="line"><a id="l02016" name="l02016"></a><span class="lineno"> 2016</span>        <span class="keywordflow">case</span> 1:</div>
-<div class="line"><a id="l02017" name="l02017"></a><span class="lineno"> 2017</span>            <span class="keywordflow">for</span> (x = 0; <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> &lt; output_w; <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>++)</div>
+<div class="line"><a id="l02017" name="l02017"></a><span class="lineno"> 2017</span>            <span class="keywordflow">for</span> (x = 0; x &lt; output_w; x++)</div>
 <div class="line"><a id="l02018" name="l02018"></a><span class="lineno"> 2018</span>            {</div>
-<div class="line"><a id="l02019" name="l02019"></a><span class="lineno"> 2019</span>                <span class="keywordtype">int</span> in_pixel_index = <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> * 1;</div>
+<div class="line"><a id="l02019" name="l02019"></a><span class="lineno"> 2019</span>                <span class="keywordtype">int</span> in_pixel_index = x * 1;</div>
 <div class="line"><a id="l02020" name="l02020"></a><span class="lineno"> 2020</span>                ring_buffer_entry[in_pixel_index + 0] += horizontal_buffer[in_pixel_index + 0] * coefficient;</div>
 <div class="line"><a id="l02021" name="l02021"></a><span class="lineno"> 2021</span>            }</div>
 <div class="line"><a id="l02022" name="l02022"></a><span class="lineno"> 2022</span>            <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l02023" name="l02023"></a><span class="lineno"> 2023</span>        <span class="keywordflow">case</span> 2:</div>
-<div class="line"><a id="l02024" name="l02024"></a><span class="lineno"> 2024</span>            <span class="keywordflow">for</span> (x = 0; <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> &lt; output_w; <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>++)</div>
+<div class="line"><a id="l02024" name="l02024"></a><span class="lineno"> 2024</span>            <span class="keywordflow">for</span> (x = 0; x &lt; output_w; x++)</div>
 <div class="line"><a id="l02025" name="l02025"></a><span class="lineno"> 2025</span>            {</div>
-<div class="line"><a id="l02026" name="l02026"></a><span class="lineno"> 2026</span>                <span class="keywordtype">int</span> in_pixel_index = <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> * 2;</div>
+<div class="line"><a id="l02026" name="l02026"></a><span class="lineno"> 2026</span>                <span class="keywordtype">int</span> in_pixel_index = x * 2;</div>
 <div class="line"><a id="l02027" name="l02027"></a><span class="lineno"> 2027</span>                ring_buffer_entry[in_pixel_index + 0] += horizontal_buffer[in_pixel_index + 0] * coefficient;</div>
 <div class="line"><a id="l02028" name="l02028"></a><span class="lineno"> 2028</span>                ring_buffer_entry[in_pixel_index + 1] += horizontal_buffer[in_pixel_index + 1] * coefficient;</div>
 <div class="line"><a id="l02029" name="l02029"></a><span class="lineno"> 2029</span>            }</div>
 <div class="line"><a id="l02030" name="l02030"></a><span class="lineno"> 2030</span>            <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l02031" name="l02031"></a><span class="lineno"> 2031</span>        <span class="keywordflow">case</span> 3:</div>
-<div class="line"><a id="l02032" name="l02032"></a><span class="lineno"> 2032</span>            <span class="keywordflow">for</span> (x = 0; <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> &lt; output_w; <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>++)</div>
+<div class="line"><a id="l02032" name="l02032"></a><span class="lineno"> 2032</span>            <span class="keywordflow">for</span> (x = 0; x &lt; output_w; x++)</div>
 <div class="line"><a id="l02033" name="l02033"></a><span class="lineno"> 2033</span>            {</div>
-<div class="line"><a id="l02034" name="l02034"></a><span class="lineno"> 2034</span>                <span class="keywordtype">int</span> in_pixel_index = <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> * 3;</div>
+<div class="line"><a id="l02034" name="l02034"></a><span class="lineno"> 2034</span>                <span class="keywordtype">int</span> in_pixel_index = x * 3;</div>
 <div class="line"><a id="l02035" name="l02035"></a><span class="lineno"> 2035</span>                ring_buffer_entry[in_pixel_index + 0] += horizontal_buffer[in_pixel_index + 0] * coefficient;</div>
 <div class="line"><a id="l02036" name="l02036"></a><span class="lineno"> 2036</span>                ring_buffer_entry[in_pixel_index + 1] += horizontal_buffer[in_pixel_index + 1] * coefficient;</div>
 <div class="line"><a id="l02037" name="l02037"></a><span class="lineno"> 2037</span>                ring_buffer_entry[in_pixel_index + 2] += horizontal_buffer[in_pixel_index + 2] * coefficient;</div>
 <div class="line"><a id="l02038" name="l02038"></a><span class="lineno"> 2038</span>            }</div>
 <div class="line"><a id="l02039" name="l02039"></a><span class="lineno"> 2039</span>            <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l02040" name="l02040"></a><span class="lineno"> 2040</span>        <span class="keywordflow">case</span> 4:</div>
-<div class="line"><a id="l02041" name="l02041"></a><span class="lineno"> 2041</span>            <span class="keywordflow">for</span> (x = 0; <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> &lt; output_w; <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>++)</div>
+<div class="line"><a id="l02041" name="l02041"></a><span class="lineno"> 2041</span>            <span class="keywordflow">for</span> (x = 0; x &lt; output_w; x++)</div>
 <div class="line"><a id="l02042" name="l02042"></a><span class="lineno"> 2042</span>            {</div>
-<div class="line"><a id="l02043" name="l02043"></a><span class="lineno"> 2043</span>                <span class="keywordtype">int</span> in_pixel_index = <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> * 4;</div>
+<div class="line"><a id="l02043" name="l02043"></a><span class="lineno"> 2043</span>                <span class="keywordtype">int</span> in_pixel_index = x * 4;</div>
 <div class="line"><a id="l02044" name="l02044"></a><span class="lineno"> 2044</span>                ring_buffer_entry[in_pixel_index + 0] += horizontal_buffer[in_pixel_index + 0] * coefficient;</div>
 <div class="line"><a id="l02045" name="l02045"></a><span class="lineno"> 2045</span>                ring_buffer_entry[in_pixel_index + 1] += horizontal_buffer[in_pixel_index + 1] * coefficient;</div>
 <div class="line"><a id="l02046" name="l02046"></a><span class="lineno"> 2046</span>                ring_buffer_entry[in_pixel_index + 2] += horizontal_buffer[in_pixel_index + 2] * coefficient;</div>
@@ -2135,9 +2135,9 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l02048" name="l02048"></a><span class="lineno"> 2048</span>            }</div>
 <div class="line"><a id="l02049" name="l02049"></a><span class="lineno"> 2049</span>            <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l02050" name="l02050"></a><span class="lineno"> 2050</span>        <span class="keywordflow">default</span>:</div>
-<div class="line"><a id="l02051" name="l02051"></a><span class="lineno"> 2051</span>            <span class="keywordflow">for</span> (x = 0; <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> &lt; output_w; <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>++)</div>
+<div class="line"><a id="l02051" name="l02051"></a><span class="lineno"> 2051</span>            <span class="keywordflow">for</span> (x = 0; x &lt; output_w; x++)</div>
 <div class="line"><a id="l02052" name="l02052"></a><span class="lineno"> 2052</span>            {</div>
-<div class="line"><a id="l02053" name="l02053"></a><span class="lineno"> 2053</span>                <span class="keywordtype">int</span> in_pixel_index = <a class="code hl_variable" href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> * channels;</div>
+<div class="line"><a id="l02053" name="l02053"></a><span class="lineno"> 2053</span>                <span class="keywordtype">int</span> in_pixel_index = x * channels;</div>
 <div class="line"><a id="l02054" name="l02054"></a><span class="lineno"> 2054</span> </div>
 <div class="line"><a id="l02055" name="l02055"></a><span class="lineno"> 2055</span>                <span class="keywordtype">int</span> c;</div>
 <div class="line"><a id="l02056" name="l02056"></a><span class="lineno"> 2056</span>                <span class="keywordflow">for</span> (c = 0; c &lt; channels; c++)</div>
@@ -2725,7 +2725,6 @@ $(document).ready(function() { init_codefold(0); });
 <div class="ttc" id="astb__image__resize_8h_html_afe1a8f53b27eff69118730bc14fd10edac9daf637ea73007832927d3fd707dd37"><div class="ttname"><a href="stb__image__resize_8h.html#afe1a8f53b27eff69118730bc14fd10edac9daf637ea73007832927d3fd707dd37">STBIR_COLORSPACE_LINEAR</a></div><div class="ttdeci">@ STBIR_COLORSPACE_LINEAR</div><div class="ttdef"><b>Definition</b> stb_image_resize.h:290</div></div>
 <div class="ttc" id="astdlib_8h_html"><div class="ttname"><a href="stdlib_8h.html">stdlib.h</a></div></div>
 <div class="ttc" id="astdlib_8h_html_affe776513b24d84b39af8ab0930fef7f"><div class="ttname"><a href="stdlib_8h.html#affe776513b24d84b39af8ab0930fef7f">max</a></div><div class="ttdeci">#define max(a, b)</div><div class="ttdef"><b>Definition</b> stdlib.h:44</div></div>
-<div class="ttc" id="aterm_8cpp_html_a6150e0515f7202e2fb518f7206ed97dc"><div class="ttname"><a href="term_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a></div><div class="ttdeci">int x</div><div class="ttdef"><b>Definition</b> term.cpp:49</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
