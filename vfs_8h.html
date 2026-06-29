@@ -191,8 +191,8 @@ Typedefs</h2></td></tr>
 <tr class="separator:a6aa65b91c7c60ff053a996f25b2d08e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0182ad2ffaee0d9d9b4e415bcb26a53f" id="r_a0182ad2ffaee0d9d9b4e415bcb26a53f"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8h.html#a0182ad2ffaee0d9d9b4e415bcb26a53f">readdir_callback</a>) (struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *fs, struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *dir, <a class="el" href="vfs_8h.html#ab107b4b5500131a5838491616deebea5">AuDirectoryEntry</a> *dirent)</td></tr>
 <tr class="separator:a0182ad2ffaee0d9d9b4e415bcb26a53f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ef4d7a76e66864ec976dd7dce1a4ff8" id="r_a4ef4d7a76e66864ec976dd7dce1a4ff8"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8h.html#a4ef4d7a76e66864ec976dd7dce1a4ff8">get_disk_block_cb</a>) (struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *fs, struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *file, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> fs_block)</td></tr>
-<tr class="separator:a4ef4d7a76e66864ec976dd7dce1a4ff8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a654a21c8a981858551b281b8f500eafb" id="r_a654a21c8a981858551b281b8f500eafb"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8h.html#a654a21c8a981858551b281b8f500eafb">get_disk_block</a>) (struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *fs, struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *file, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> fs_block)</td></tr>
+<tr class="separator:a654a21c8a981858551b281b8f500eafb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a260fc9783d4a68fd359cd6029aa9ff0c" id="r_a260fc9783d4a68fd359cd6029aa9ff0c"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8h.html#a260fc9783d4a68fd359cd6029aa9ff0c">fs_getblockfor</a>) (struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *fs, struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *file, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> offset)</td></tr>
 <tr class="separator:a260fc9783d4a68fd359cd6029aa9ff0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e5aff63d019f11b9e810ff9f2165b57" id="r_a5e5aff63d019f11b9e810ff9f2165b57"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a></td></tr>
@@ -664,14 +664,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a4ef4d7a76e66864ec976dd7dce1a4ff8" name="a4ef4d7a76e66864ec976dd7dce1a4ff8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4ef4d7a76e66864ec976dd7dce1a4ff8">&#9670;&#160;</a></span>get_disk_block_cb</h2>
+<a id="a654a21c8a981858551b281b8f500eafb" name="a654a21c8a981858551b281b8f500eafb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a654a21c8a981858551b281b8f500eafb">&#9670;&#160;</a></span>get_disk_block</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>(* get_disk_block_cb) (struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *fs, struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *file, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> fs_block)</td>
+          <td class="memname">typedef <a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>(* get_disk_block) (struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *fs, struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *file, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> fs_block)</td>
         </tr>
       </table>
 </div><div class="memdoc">

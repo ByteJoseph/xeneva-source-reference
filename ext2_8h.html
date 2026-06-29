@@ -137,6 +137,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__ext2__dir__.html">_ext2_dir_</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__ext2__fs__.html">_ext2_fs_</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
@@ -207,11 +209,13 @@ Typedefs</h2></td></tr>
 <tr class="separator:ab11a9069bde6f61d6b32822ffb279ec1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a214c46db2434dc65541564fc37bbc3d3" id="r_a214c46db2434dc65541564fc37bbc3d3"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct__ext2__dir__.html">_ext2_dir_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ext2_8h.html#a214c46db2434dc65541564fc37bbc3d3">Ext2Dir</a></td></tr>
 <tr class="separator:a214c46db2434dc65541564fc37bbc3d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac4c741de68b4f6b8bc5bf2cc8296064" id="r_aac4c741de68b4f6b8bc5bf2cc8296064"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct__ext2__fs__.html">_ext2_fs_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ext2_8h.html#aac4c741de68b4f6b8bc5bf2cc8296064">Ext2Fs</a></td></tr>
+<tr class="separator:aac4c741de68b4f6b8bc5bf2cc8296064"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a24d8aac3cfe864223c7ea51c84814577" id="r_a24d8aac3cfe864223c7ea51c84814577"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ext2_8h.html#a24d8aac3cfe864223c7ea51c84814577">Ext2Initialise</a> (<a class="el" href="vdisk_8h.html#a1e346824b0cac8290e37754e1c580e50">AuVDisk</a> *vdisk, char *mountname)</td></tr>
-<tr class="separator:a24d8aac3cfe864223c7ea51c84814577"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26adea9c74a6b439cfb243cc16c09e89" id="r_a26adea9c74a6b439cfb243cc16c09e89"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vfs_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ext2_8h.html#a26adea9c74a6b439cfb243cc16c09e89">Ext2Initialise</a> (<a class="el" href="vdisk_8h.html#a1e346824b0cac8290e37754e1c580e50">AuVDisk</a> *vdisk, char *mountname)</td></tr>
+<tr class="separator:a26adea9c74a6b439cfb243cc16c09e89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a691dc5d22405eecd90820d4deab1cbc4" name="a691dc5d22405eecd90820d4deab1cbc4"></a>
@@ -643,6 +647,20 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="aac4c741de68b4f6b8bc5bf2cc8296064" name="aac4c741de68b4f6b8bc5bf2cc8296064"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac4c741de68b4f6b8bc5bf2cc8296064">&#9670;&#160;</a></span>Ext2Fs</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct__ext2__fs__.html">_ext2_fs_</a> <a class="el" href="ext2_8h.html#aac4c741de68b4f6b8bc5bf2cc8296064">Ext2Fs</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ab11a9069bde6f61d6b32822ffb279ec1" name="ab11a9069bde6f61d6b32822ffb279ec1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab11a9069bde6f61d6b32822ffb279ec1">&#9670;&#160;</a></span>Ext2Inode</h2>
 
@@ -672,17 +690,14 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a24d8aac3cfe864223c7ea51c84814577" name="a24d8aac3cfe864223c7ea51c84814577"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a24d8aac3cfe864223c7ea51c84814577">&#9670;&#160;</a></span>Ext2Initialise()</h2>
+<a id="a26adea9c74a6b439cfb243cc16c09e89" name="a26adea9c74a6b439cfb243cc16c09e89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26adea9c74a6b439cfb243cc16c09e89">&#9670;&#160;</a></span>Ext2Initialise()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Ext2Initialise </td>
+          <td class="memname"><a class="el" href="vfs_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> * Ext2Initialise </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="vdisk_8h.html#a1e346824b0cac8290e37754e1c580e50">AuVDisk</a> *&#160;</td>
           <td class="paramname"><em>vdisk</em>, </td>
@@ -699,11 +714,6 @@ Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 <p>BSD 2-Clause License</p>
 <p>Copyright (c) 2022-2025, Manas Kamal Choudhury All rights reserved.</p>
@@ -712,7 +722,14 @@ Functions</h2></td></tr>
 <li>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</li>
 <li>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</li>
 </ol>
-<p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. </p>
+<p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</p>
+<p>Ext2Initialise &ndash; initialize the ext2 file system </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vdisk</td><td>&ndash; Pointer to vdisk structure </td></tr>
+    <tr><td class="paramname">mountname</td><td>&ndash; mount file system name </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
