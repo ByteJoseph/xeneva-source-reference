@@ -82,9 +82,11 @@ Collaboration diagram for Terminal:</div>
 <div class="dyncontent">
 <div class="center"><img src="structTerminal__coll__graph.png" border="0" usemap="#aTerminal_coll__map" alt="Collaboration graph"/></div>
 <map name="aTerminal_coll__map" id="aTerminal_coll__map">
-<area shape="rect" title=" " alt="" coords="5,93,84,119"/>
-<area shape="rect" href="struct__cell__.html" title=" " alt="" coords="15,5,74,31"/>
-<area shape="poly" title=" " alt="" coords="47,45,47,93,42,93,42,45"/>
+<area shape="rect" title=" " alt="" coords="51,93,130,119"/>
+<area shape="rect" href="struct__cell__.html" title=" " alt="" coords="5,5,64,31"/>
+<area shape="poly" title=" " alt="" coords="52,41,85,91,81,94,47,44"/>
+<area shape="rect" href="struct__term__history__.html" title=" " alt="" coords="89,5,207,31"/>
+<area shape="poly" title=" " alt="" coords="135,44,101,94,96,91,130,41"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -122,6 +124,18 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a97764dd4b10a904972b92350922de3a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:affb9b4c6042df70a3279cf71615405aa" id="r_affb9b4c6042df70a3279cf71615405aa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTerminal.html#affb9b4c6042df70a3279cf71615405aa">scrollBot</a></td></tr>
 <tr class="separator:affb9b4c6042df70a3279cf71615405aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6290397bafb65ef182b981518ccfc3c8" id="r_a6290397bafb65ef182b981518ccfc3c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="term_8h.html#a8d41757b34893ce6bdfb915bf7bf57fa">TerminalHistory</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTerminal.html#a6290397bafb65ef182b981518ccfc3c8">history</a></td></tr>
+<tr class="separator:a6290397bafb65ef182b981518ccfc3c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4258090378620f0aa545318ce96cc22" id="r_af4258090378620f0aa545318ce96cc22"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTerminal.html#af4258090378620f0aa545318ce96cc22">inputBuffer</a> [256]</td></tr>
+<tr class="separator:af4258090378620f0aa545318ce96cc22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f426723ad2474bca5454f36af1d51d6" id="r_a9f426723ad2474bca5454f36af1d51d6"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTerminal.html#a9f426723ad2474bca5454f36af1d51d6">inputSaved</a> [256]</td></tr>
+<tr class="separator:a9f426723ad2474bca5454f36af1d51d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec5a31c95e0be95de8ddb71fe38ba542" id="r_aec5a31c95e0be95de8ddb71fe38ba542"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTerminal.html#aec5a31c95e0be95de8ddb71fe38ba542">intputLen</a></td></tr>
+<tr class="separator:aec5a31c95e0be95de8ddb71fe38ba542"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a849c4fa1d460e80df7e7e2fa6a22aca3" id="r_a849c4fa1d460e80df7e7e2fa6a22aca3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTerminal.html#a849c4fa1d460e80df7e7e2fa6a22aca3">lastCellXClicked</a></td></tr>
+<tr class="separator:a849c4fa1d460e80df7e7e2fa6a22aca3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8068fb9b67f44b99dd87837109fdff1" id="r_ae8068fb9b67f44b99dd87837109fdff1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTerminal.html#ae8068fb9b67f44b99dd87837109fdff1">lastCellYClicked</a></td></tr>
+<tr class="separator:ae8068fb9b67f44b99dd87837109fdff1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="a821714c5a0fb0ca91373503c46b16232" name="a821714c5a0fb0ca91373503c46b16232"></a>
@@ -244,6 +258,90 @@ Public Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> Terminal::defaultFg</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6290397bafb65ef182b981518ccfc3c8" name="a6290397bafb65ef182b981518ccfc3c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6290397bafb65ef182b981518ccfc3c8">&#9670;&#160;</a></span>history</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="term_8h.html#a8d41757b34893ce6bdfb915bf7bf57fa">TerminalHistory</a> Terminal::history</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af4258090378620f0aa545318ce96cc22" name="af4258090378620f0aa545318ce96cc22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4258090378620f0aa545318ce96cc22">&#9670;&#160;</a></span>inputBuffer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char Terminal::inputBuffer[256]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9f426723ad2474bca5454f36af1d51d6" name="a9f426723ad2474bca5454f36af1d51d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f426723ad2474bca5454f36af1d51d6">&#9670;&#160;</a></span>inputSaved</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char Terminal::inputSaved[256]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aec5a31c95e0be95de8ddb71fe38ba542" name="aec5a31c95e0be95de8ddb71fe38ba542"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec5a31c95e0be95de8ddb71fe38ba542">&#9670;&#160;</a></span>intputLen</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Terminal::intputLen</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a849c4fa1d460e80df7e7e2fa6a22aca3" name="a849c4fa1d460e80df7e7e2fa6a22aca3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a849c4fa1d460e80df7e7e2fa6a22aca3">&#9670;&#160;</a></span>lastCellXClicked</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Terminal::lastCellXClicked</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae8068fb9b67f44b99dd87837109fdff1" name="ae8068fb9b67f44b99dd87837109fdff1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8068fb9b67f44b99dd87837109fdff1">&#9670;&#160;</a></span>lastCellYClicked</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Terminal::lastCellYClicked</td>
         </tr>
       </table>
 </div><div class="memdoc">
