@@ -179,7 +179,7 @@ var searchData=
   ['deassertmask_176',['DeassertMask',['../structacpi__asf__alert.html#ac917b1752d301ef2cd52fabffa6bac28',1,'acpi_asf_alert']]],
   ['deauthenticate_177',['Deauthenticate',['../struct__EFI__WIRELESS__MAC__CONNECTION__PROTOCOL.html#a066c749ab9c8ccf13fe1d223843c2eb3',1,'_EFI_WIRELESS_MAC_CONNECTION_PROTOCOL']]],
   ['debouncetimeout_178',['debouncetimeout',['../structacpi__resource__gpio.html#a714870784b926d6496b8444b6725a518',1,'acpi_resource_gpio::DebounceTimeout'],['../structaml__resource__gpio.html#a20fb2fbddc4688952f39e26abeab487f',1,'aml_resource_gpio::DebounceTimeout'],['../Acpi50_8h.html#a15602c8dca1da94f52627165f3588eae',1,'DebounceTimeout:&#160;Acpi50.h']]],
-  ['debug_179',['debug',['../__heap_8cpp.html#ad72dbcf6d0153db1b8d8a58001feed83',1,'DEBUG:&#160;_heap.cpp'],['../dlmalloc_8c.html#ad72dbcf6d0153db1b8d8a58001feed83',1,'DEBUG:&#160;dlmalloc.c'],['../DebugLib_8h.html#a5a2881b4db06fb84701cdcd70e12686c',1,'DEBUG:&#160;DebugLib.h'],['../sched_8c.html#a398527b3e9e358c345c5047b16871957',1,'debug:&#160;sched.c']]],
+  ['debug_179',['debug',['../dlmalloc_8c.html#ad72dbcf6d0153db1b8d8a58001feed83',1,'DEBUG:&#160;dlmalloc.c'],['../DebugLib_8h.html#a5a2881b4db06fb84701cdcd70e12686c',1,'DEBUG:&#160;DebugLib.h'],['../sched_8c.html#a398527b3e9e358c345c5047b16871957',1,'debug:&#160;sched.c'],['../__heap_8cpp.html#ad72dbcf6d0153db1b8d8a58001feed83',1,'DEBUG:&#160;_heap.cpp']]],
   ['debug_5fblkio_180',['DEBUG_BLKIO',['../DebugLib_8h.html#aaa354147c571306887ddc4d719c21f2f',1,'DebugLib.h']]],
   ['debug_5fbm_181',['DEBUG_BM',['../DebugLib_8h.html#ab6f0333bf707518f9fdc99c4b9cb63f0',1,'DebugLib.h']]],
   ['debug_5fcache_182',['DEBUG_CACHE',['../DebugLib_8h.html#a513a16537e1832689c4c62587c533c78',1,'DebugLib.h']]],
