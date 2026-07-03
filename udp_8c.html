@@ -167,6 +167,9 @@ Include dependency graph for udp.c:</div>
 Functions</h2></td></tr>
 <tr class="memitem:ab85dc2bcb8fc0339d76770ffb5419fe6" id="r_ab85dc2bcb8fc0339d76770ffb5419fe6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#ab85dc2bcb8fc0339d76770ffb5419fe6">UDPGetPort</a> (<a class="el" href="BaseHdr_2Net_2socket_8h.html#a0e2dc8f0c99c77c61791320f0d944592">AuSocket</a> *sock)</td></tr>
 <tr class="separator:ab85dc2bcb8fc0339d76770ffb5419fe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a169bc57ad1e69bc193b18dbd07012357" id="r_a169bc57ad1e69bc193b18dbd07012357"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a169bc57ad1e69bc193b18dbd07012357">UDPHandlePacket</a> (char *packet)</td></tr>
+<tr class="memdesc:a169bc57ad1e69bc193b18dbd07012357"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuUDPHandlePacket &ndash; handle incoming packet.  <br /></td></tr>
+<tr class="separator:a169bc57ad1e69bc193b18dbd07012357"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adcb95e5b35457dd7dfdf7dbf41df81c1" id="r_adcb95e5b35457dd7dfdf7dbf41df81c1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#adcb95e5b35457dd7dfdf7dbf41df81c1">AuUDPReceive</a> (<a class="el" href="BaseHdr_2Net_2socket_8h.html#a0e2dc8f0c99c77c61791320f0d944592">AuSocket</a> *sock, <a class="el" href="BaseHdr_2Net_2socket_8h.html#a9330982c7bab0a2048d0828aa091d903">msghdr</a> *msg, int flags)</td></tr>
 <tr class="memdesc:adcb95e5b35457dd7dfdf7dbf41df81c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuUDPReceive &ndash; UDP protocol receive interface.  <br /></td></tr>
 <tr class="separator:adcb95e5b35457dd7dfdf7dbf41df81c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -499,6 +502,33 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a169bc57ad1e69bc193b18dbd07012357" name="a169bc57ad1e69bc193b18dbd07012357"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a169bc57ad1e69bc193b18dbd07012357">&#9670;&#160;</a></span>UDPHandlePacket()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UDPHandlePacket </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>packet</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>AuUDPHandlePacket &ndash; handle incoming packet. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">packet</td><td>&ndash; pointer to ipv4 packet </td></tr>
+  </table>
+  </dd>
+</dl>
+<p>add it to its destination socket</p>
 
 </div>
 </div>
