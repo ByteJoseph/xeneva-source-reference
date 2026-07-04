@@ -135,6 +135,12 @@ Macros</h2></td></tr>
 <tr class="separator:a2d424ba5cbe36512cd7dc4cd9357f9ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3baac3d55c71c36d03994078c15014ad" id="r_a3baac3d55c71c36d03994078c15014ad"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="virt_8c.html#a3baac3d55c71c36d03994078c15014ad">VIRTIO_INPUT_TABLET</a>&#160;&#160;&#160;2</td></tr>
 <tr class="separator:a3baac3d55c71c36d03994078c15014ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a194041e14cae1deab9f7aac5e9f2caf0" id="r_a194041e14cae1deab9f7aac5e9f2caf0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="virt_8c.html#a194041e14cae1deab9f7aac5e9f2caf0">GOOGLE_GOLDFISH_RTC_BASE</a>&#160;&#160;&#160;0x09010000</td></tr>
+<tr class="separator:a194041e14cae1deab9f7aac5e9f2caf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd29aa600a8ead6cb5c33e9c85b22503" id="r_abd29aa600a8ead6cb5c33e9c85b22503"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="virt_8c.html#abd29aa600a8ead6cb5c33e9c85b22503">RTC_TIME_LOW</a>&#160;&#160;&#160;((volatile <a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>*)(<a class="el" href="virt_8c.html#a194041e14cae1deab9f7aac5e9f2caf0">GOOGLE_GOLDFISH_RTC_BASE</a> + 0x00))</td></tr>
+<tr class="separator:abd29aa600a8ead6cb5c33e9c85b22503"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6dc070f43ca45f1428949171045a4caa" id="r_a6dc070f43ca45f1428949171045a4caa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="virt_8c.html#a6dc070f43ca45f1428949171045a4caa">RTC_TIME_HIGH</a>&#160;&#160;&#160;((volatile <a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>*)(<a class="el" href="virt_8c.html#a194041e14cae1deab9f7aac5e9f2caf0">GOOGLE_GOLDFISH_RTC_BASE</a> + 0x04))</td></tr>
+<tr class="separator:a6dc070f43ca45f1428949171045a4caa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -143,6 +149,8 @@ Functions</h2></td></tr>
 <tr class="memitem:af91f94787a70ed8f1d6c24e6147fef93" id="r_af91f94787a70ed8f1d6c24e6147fef93"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="virt_8c.html#af91f94787a70ed8f1d6c24e6147fef93">AuVirtIOInputInitialize</a> ()</td></tr>
 <tr class="memdesc:af91f94787a70ed8f1d6c24e6147fef93"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuVirtIOInputInitialize &ndash; initialize virtIO input device.  <br /></td></tr>
 <tr class="separator:af91f94787a70ed8f1d6c24e6147fef93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a516e3189e41df24e599e38753df3bf83" id="r_a516e3189e41df24e599e38753df3bf83"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="virt_8c.html#a516e3189e41df24e599e38753df3bf83">AuVirtGetBootEpoch</a> ()</td></tr>
+<tr class="separator:a516e3189e41df24e599e38753df3bf83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>BSD 2-Clause License</p>
@@ -154,6 +162,48 @@ Functions</h2></td></tr>
 </ol>
 <p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a194041e14cae1deab9f7aac5e9f2caf0" name="a194041e14cae1deab9f7aac5e9f2caf0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a194041e14cae1deab9f7aac5e9f2caf0">&#9670;&#160;</a></span>GOOGLE_GOLDFISH_RTC_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GOOGLE_GOLDFISH_RTC_BASE&#160;&#160;&#160;0x09010000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6dc070f43ca45f1428949171045a4caa" name="a6dc070f43ca45f1428949171045a4caa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6dc070f43ca45f1428949171045a4caa">&#9670;&#160;</a></span>RTC_TIME_HIGH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RTC_TIME_HIGH&#160;&#160;&#160;((volatile <a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>*)(<a class="el" href="virt_8c.html#a194041e14cae1deab9f7aac5e9f2caf0">GOOGLE_GOLDFISH_RTC_BASE</a> + 0x04))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abd29aa600a8ead6cb5c33e9c85b22503" name="abd29aa600a8ead6cb5c33e9c85b22503"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd29aa600a8ead6cb5c33e9c85b22503">&#9670;&#160;</a></span>RTC_TIME_LOW</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RTC_TIME_LOW&#160;&#160;&#160;((volatile <a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>*)(<a class="el" href="virt_8c.html#a194041e14cae1deab9f7aac5e9f2caf0">GOOGLE_GOLDFISH_RTC_BASE</a> + 0x00))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a2d424ba5cbe36512cd7dc4cd9357f9ed" name="a2d424ba5cbe36512cd7dc4cd9357f9ed"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2d424ba5cbe36512cd7dc4cd9357f9ed">&#9670;&#160;</a></span>VIRTIO_INPUT_KEYBOARD</h2>
 
@@ -183,6 +233,23 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a516e3189e41df24e599e38753df3bf83" name="a516e3189e41df24e599e38753df3bf83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a516e3189e41df24e599e38753df3bf83">&#9670;&#160;</a></span>AuVirtGetBootEpoch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> AuVirtGetBootEpoch </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aab9e6de46a0687e062215abfd693e2e0" name="aab9e6de46a0687e062215abfd693e2e0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aab9e6de46a0687e062215abfd693e2e0">&#9670;&#160;</a></span>AuVirtIOInputCheck()</h2>
 

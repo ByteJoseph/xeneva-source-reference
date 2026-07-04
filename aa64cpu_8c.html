@@ -123,6 +123,8 @@ Include dependency graph for aa64cpu.c:</div>
 <area shape="poly" title=" " alt="" coords="423,119,423,153,418,153,418,119"/>
 <area shape="poly" title=" " alt="" coords="105,116,254,190,359,236,468,277,581,308,680,329,679,334,580,314,467,283,357,241,252,195,102,121"/>
 <area shape="poly" title=" " alt="" coords="137,116,370,165,369,170,136,121"/>
+<area shape="rect" title=" " alt="" coords="50,167,114,192"/>
+<area shape="poly" title=" " alt="" coords="85,119,85,153,79,153,79,119"/>
 <area shape="poly" title=" " alt="" coords="578,121,560,134,542,152,532,171,531,181,534,191,547,214,563,235,603,272,647,300,687,320,685,325,644,305,600,276,559,239,542,217,529,193,526,181,527,169,538,148,556,130,575,117"/>
 <area shape="poly" title=" " alt="" coords="569,121,463,164,461,159,567,116"/>
 <area shape="rect" href="aa64hcode_8h.html" title=" " alt="" coords="544,167,649,192"/>
@@ -151,6 +153,8 @@ Include dependency graph for aa64cpu.c:</div>
 Macros</h2></td></tr>
 <tr class="memitem:af89f60b07247176687889ade776c8e10" id="r_af89f60b07247176687889ade776c8e10"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aa64cpu_8c.html#af89f60b07247176687889ade776c8e10">CACHE_LINE_SIZE</a>&#160;&#160;&#160;64</td></tr>
 <tr class="separator:af89f60b07247176687889ade776c8e10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9831d5f876c11077628b1ef1de8d4da" id="r_ad9831d5f876c11077628b1ef1de8d4da"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aa64cpu_8c.html#ad9831d5f876c11077628b1ef1de8d4da">SUBSECONDS_PER_SECOND</a>&#160;&#160;&#160;1000000</td></tr>
+<tr class="separator:ad9831d5f876c11077628b1ef1de8d4da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -172,6 +176,17 @@ Functions</h2></td></tr>
 <tr class="separator:ad0f3fd1fb4a6dad989c9af7c3079af10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0d7b25abecdf969f5bcf60a036ce19c" id="r_aa0d7b25abecdf969f5bcf60a036ce19c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aa64cpu_8c.html#aa0d7b25abecdf969f5bcf60a036ce19c">AA64CPUImplementer</a> (<a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> midr)</td></tr>
 <tr class="separator:aa0d7b25abecdf969f5bcf60a036ce19c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9822b0f079271a8d56a50a6a4e16927f" id="r_a9822b0f079271a8d56a50a6a4e16927f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aa64cpu_8c.html#a9822b0f079271a8d56a50a6a4e16927f">updateTicks</a> (<a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> ticks, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> *<a class="el" href="Process_2systray_2main_8cpp.html#a56cdff732cfd3029548e41ddd27bfb29">timerTick</a>, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> *timerSubticks)</td></tr>
+<tr class="separator:a9822b0f079271a8d56a50a6a4e16927f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7f4d197d8e89ec9bfb40dca3f81ff80" id="r_ae7f4d197d8e89ec9bfb40dca3f81ff80"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aa64cpu_8c.html#ae7f4d197d8e89ec9bfb40dca3f81ff80">aa64_gettimeofday</a> (<a class="el" href="BaseHdr_2time_8h.html#adc19250392a51548a9b87f8904fb36b1">timeval</a> *<a class="el" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a>)</td></tr>
+<tr class="separator:ae7f4d197d8e89ec9bfb40dca3f81ff80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a856cb9c66f4eb5b7536db4abffbc8e29" id="r_a856cb9c66f4eb5b7536db4abffbc8e29"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aa64cpu_8c.html#a856cb9c66f4eb5b7536db4abffbc8e29">aa64_now</a> ()</td></tr>
+<tr class="separator:a856cb9c66f4eb5b7536db4abffbc8e29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76e35f6f852c26578e2f679c7d3e870b" id="r_a76e35f6f852c26578e2f679c7d3e870b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aa64cpu_8c.html#a76e35f6f852c26578e2f679c7d3e870b">aa64_settimeofday</a> (<a class="el" href="BaseHdr_2time_8h.html#adc19250392a51548a9b87f8904fb36b1">timeval</a> *<a class="el" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a>)</td></tr>
+<tr class="separator:a76e35f6f852c26578e2f679c7d3e870b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0aed48caf5addfb44dca8627c7375fe" id="r_af0aed48caf5addfb44dca8627c7375fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aa64cpu_8c.html#af0aed48caf5addfb44dca8627c7375fe">aa64_calculate_ticks</a> (<a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> seconds, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> subsec, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> *out_seconds, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> *out_subsec)</td></tr>
+<tr class="memdesc:af0aed48caf5addfb44dca8627c7375fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">aa64_calculate_ticks &ndash; calculate the number of ticks from given milliseconds  <br /></td></tr>
+<tr class="separator:af0aed48caf5addfb44dca8627c7375fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29514d1bbb75eecac798e82205707f14" id="r_a29514d1bbb75eecac798e82205707f14"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aa64cpu_8c.html#a29514d1bbb75eecac798e82205707f14">AA64SleepUS</a> (<a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> us)</td></tr>
 <tr class="memdesc:a29514d1bbb75eecac798e82205707f14"><td class="mdescLeft">&#160;</td><td class="mdescRight">AA64SleepUS &ndash; sleep for sometimes.  <br /></td></tr>
 <tr class="separator:a29514d1bbb75eecac798e82205707f14"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -195,6 +210,8 @@ Variables</h2></td></tr>
 <tr class="separator:a312be5bd94e2b09855a6c247723b37f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac5f47d5d88de3381850f738356c223d7" id="r_ac5f47d5d88de3381850f738356c223d7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aa64cpu_8c.html#ac5f47d5d88de3381850f738356c223d7">cpuFrequency</a></td></tr>
 <tr class="separator:ac5f47d5d88de3381850f738356c223d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c08e1edfe230d0c902f0765bddd3265" id="r_a9c08e1edfe230d0c902f0765bddd3265"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aa64cpu_8c.html#a9c08e1edfe230d0c902f0765bddd3265">bootTime</a></td></tr>
+<tr class="separator:a9c08e1edfe230d0c902f0765bddd3265"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>BSD 2-Clause License</p>
@@ -220,7 +237,70 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="ad9831d5f876c11077628b1ef1de8d4da" name="ad9831d5f876c11077628b1ef1de8d4da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9831d5f876c11077628b1ef1de8d4da">&#9670;&#160;</a></span>SUBSECONDS_PER_SECOND</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SUBSECONDS_PER_SECOND&#160;&#160;&#160;1000000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="af0aed48caf5addfb44dca8627c7375fe" name="af0aed48caf5addfb44dca8627c7375fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0aed48caf5addfb44dca8627c7375fe">&#9670;&#160;</a></span>aa64_calculate_ticks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void aa64_calculate_ticks </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>&#160;</td>
+          <td class="paramname"><em>seconds</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>&#160;</td>
+          <td class="paramname"><em>subsec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> *&#160;</td>
+          <td class="paramname"><em>out_seconds</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> *&#160;</td>
+          <td class="paramname"><em>out_subsec</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>aa64_calculate_ticks &ndash; calculate the number of ticks from given milliseconds </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">seconds</td><td>&ndash; amount of seconds </td></tr>
+    <tr><td class="paramname">out_milliseconds</td><td>&ndash; where to store the number of ticks </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a63f360449b03599d5f865ad6bc63cb5e" name="a63f360449b03599d5f865ad6bc63cb5e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a63f360449b03599d5f865ad6bc63cb5e">&#9670;&#160;</a></span>aa64_data_cache_clean_range()</h2>
 
@@ -299,6 +379,59 @@ Variables</h2></td></tr>
           <td></td>
           <td>)</td>
           <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae7f4d197d8e89ec9bfb40dca3f81ff80" name="ae7f4d197d8e89ec9bfb40dca3f81ff80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7f4d197d8e89ec9bfb40dca3f81ff80">&#9670;&#160;</a></span>aa64_gettimeofday()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int aa64_gettimeofday </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="BaseHdr_2time_8h.html#adc19250392a51548a9b87f8904fb36b1">timeval</a> *&#160;</td>
+          <td class="paramname"><em>t</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a856cb9c66f4eb5b7536db4abffbc8e29" name="a856cb9c66f4eb5b7536db4abffbc8e29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a856cb9c66f4eb5b7536db4abffbc8e29">&#9670;&#160;</a></span>aa64_now()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> aa64_now </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a76e35f6f852c26578e2f679c7d3e870b" name="a76e35f6f852c26578e2f679c7d3e870b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76e35f6f852c26578e2f679c7d3e870b">&#9670;&#160;</a></span>aa64_settimeofday()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int aa64_settimeofday </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="BaseHdr_2time_8h.html#adc19250392a51548a9b87f8904fb36b1">timeval</a> *&#160;</td>
+          <td class="paramname"><em>t</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -534,6 +667,40 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a9822b0f079271a8d56a50a6a4e16927f" name="a9822b0f079271a8d56a50a6a4e16927f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9822b0f079271a8d56a50a6a4e16927f">&#9670;&#160;</a></span>updateTicks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void updateTicks </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>&#160;</td>
+          <td class="paramname"><em>ticks</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> *&#160;</td>
+          <td class="paramname"><em>timerTick</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> *&#160;</td>
+          <td class="paramname"><em>timerSubticks</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Variable Documentation</h2>
 <a id="a312be5bd94e2b09855a6c247723b37f2" name="a312be5bd94e2b09855a6c247723b37f2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a312be5bd94e2b09855a6c247723b37f2">&#9670;&#160;</a></span>basisTime</h2>
@@ -543,6 +710,20 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> basisTime</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9c08e1edfe230d0c902f0765bddd3265" name="a9c08e1edfe230d0c902f0765bddd3265"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c08e1edfe230d0c902f0765bddd3265">&#9670;&#160;</a></span>bootTime</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> bootTime</td>
         </tr>
       </table>
 </div><div class="memdoc">
