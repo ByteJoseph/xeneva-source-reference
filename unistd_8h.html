@@ -74,23 +74,28 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#define-members">Macros</a>  </div>
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">unistd.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="__xeneva_8h_source.html">_xeneva.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="__ketimer_8h_source.html">sys/_ketimer.h</a>&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for unistd.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="unistd_8h__incl.png" border="0" usemap="#aXenevaOS_2Libs_2XEClib_2includes_2unistd_8h" alt=""/></div>
 <map name="aXenevaOS_2Libs_2XEClib_2includes_2unistd_8h" id="aXenevaOS_2Libs_2XEClib_2includes_2unistd_8h">
 <area shape="rect" title=" " alt="" coords="5,5,171,45"/>
-<area shape="rect" href="__xeneva_8h.html" title=" " alt="" coords="44,93,132,119"/>
-<area shape="poly" title=" " alt="" coords="91,46,91,79,85,79,85,46"/>
-<area shape="rect" href="Libs_2XEClib_2includes_2stdint_8h.html" title=" " alt="" coords="53,167,123,192"/>
-<area shape="poly" title=" " alt="" coords="91,119,91,153,85,153,85,119"/>
-<area shape="rect" href="size__t_8h.html" title=" " alt="" coords="52,240,124,265"/>
+<area shape="rect" href="__xeneva_8h.html" title=" " alt="" coords="44,167,132,192"/>
+<area shape="poly" title=" " alt="" coords="81,46,70,80,67,99,68,118,79,153,74,155,63,119,62,99,65,79,76,45"/>
+<area shape="rect" href="__ketimer_8h.html" title=" " alt="" coords="78,93,194,119"/>
+<area shape="poly" title=" " alt="" coords="102,44,124,80,119,83,97,47"/>
+<area shape="rect" href="Libs_2XEClib_2includes_2stdint_8h.html" title=" " alt="" coords="53,240,123,265"/>
 <area shape="poly" title=" " alt="" coords="91,192,91,226,85,226,85,192"/>
+<area shape="rect" href="size__t_8h.html" title=" " alt="" coords="52,313,124,339"/>
+<area shape="poly" title=" " alt="" coords="91,266,91,300,85,300,85,266"/>
+<area shape="poly" title=" " alt="" coords="130,121,106,157,101,154,126,118"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -98,11 +103,17 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="unistd_8h__dep__incl.png" border="0" usemap="#aXenevaOS_2Libs_2XEClib_2includes_2unistd_8hdep" alt=""/></div>
 <map name="aXenevaOS_2Libs_2XEClib_2includes_2unistd_8hdep" id="aXenevaOS_2Libs_2XEClib_2includes_2unistd_8hdep">
-<area shape="rect" title=" " alt="" coords="121,5,287,45"/>
+<area shape="rect" title=" " alt="" coords="427,5,592,45"/>
 <area shape="rect" href="accygwin_8h.html" title=" " alt="" coords="5,93,192,133"/>
-<area shape="poly" title=" " alt="" coords="172,56,124,95,120,91,169,52"/>
+<area shape="poly" title=" " alt="" coords="414,49,189,96,188,91,412,44"/>
 <area shape="rect" href="aclinux_8h.html" title=" " alt="" coords="216,93,403,133"/>
-<area shape="poly" title=" " alt="" coords="239,52,288,91,284,95,236,56"/>
+<area shape="poly" title=" " alt="" coords="454,53,354,96,352,91,452,48"/>
+<area shape="rect" href="Libs_2XEClib_2time_8cpp.html" title=" " alt="" coords="427,93,592,133"/>
+<area shape="poly" title=" " alt="" coords="512,59,512,93,507,93,507,59"/>
+<area shape="rect" href="term_8cpp.html" title=" " alt="" coords="616,93,819,133"/>
+<area shape="poly" title=" " alt="" coords="569,48,673,91,671,96,567,53"/>
+<area shape="rect" href="Process_2XEShell_2main_8cpp.html" title=" " alt="" coords="843,93,1039,133"/>
+<area shape="poly" title=" " alt="" coords="606,43,847,91,846,96,605,48"/>
 <area shape="rect" href="acmacosx_8h.html" title=" " alt="" coords="216,181,403,221"/>
 <area shape="poly" title=" " alt="" coords="312,147,312,181,307,181,307,147"/>
 </map>
@@ -142,6 +153,13 @@ Macros</h2></td></tr>
 <tr class="separator:aa03a34a5fe9aa42f97660e38d0aa5ce0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad873e517dcede9586aaa3d6270e82699" id="r_ad873e517dcede9586aaa3d6270e82699"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unistd_8h.html#ad873e517dcede9586aaa3d6270e82699">__NEED_useconds_t</a></td></tr>
 <tr class="separator:ad873e517dcede9586aaa3d6270e82699"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0591ab8215329155d84a01edc48354bb" id="r_a0591ab8215329155d84a01edc48354bb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unistd_8h.html#a0591ab8215329155d84a01edc48354bb">alarm</a>(x)&#160;&#160;&#160;<a class="el" href="__ketimer_8h.html#a43e3e905a29832a7c0c8a6315d46ec84">_KeSetAlarm</a>((unsigned long long)x)</td></tr>
+<tr class="separator:a0591ab8215329155d84a01edc48354bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a2ed0d4f18fe940fe1dc9a4afcdcf3917" id="r_a2ed0d4f18fe940fe1dc9a4afcdcf3917"><td class="memItemLeft" align="right" valign="top"><a class="el" href="__xeneva_8h.html#a3640283d666d4a8b25a736424ee25866">XE_LIB</a> unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unistd_8h.html#a2ed0d4f18fe940fe1dc9a4afcdcf3917">sleep</a> (unsigned int seconds)</td></tr>
+<tr class="separator:a2ed0d4f18fe940fe1dc9a4afcdcf3917"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>BSD 2-Clause License</p>
@@ -265,6 +283,24 @@ Macros</h2></td></tr>
 
 </div>
 </div>
+<a id="a0591ab8215329155d84a01edc48354bb" name="a0591ab8215329155d84a01edc48354bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0591ab8215329155d84a01edc48354bb">&#9670;&#160;</a></span>alarm</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define alarm</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x</td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="__ketimer_8h.html#a43e3e905a29832a7c0c8a6315d46ec84">_KeSetAlarm</a>((unsigned long long)x)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a070d2ce7b6bb7e5c05602aa8c308d0c4" name="a070d2ce7b6bb7e5c05602aa8c308d0c4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a070d2ce7b6bb7e5c05602aa8c308d0c4">&#9670;&#160;</a></span>NULL</h2>
 
@@ -360,6 +396,26 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a2ed0d4f18fe940fe1dc9a4afcdcf3917" name="a2ed0d4f18fe940fe1dc9a4afcdcf3917"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ed0d4f18fe940fe1dc9a4afcdcf3917">&#9670;&#160;</a></span>sleep()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="__xeneva_8h.html#a3640283d666d4a8b25a736424ee25866">XE_LIB</a> unsigned int sleep </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>seconds</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p><a class="el" href="unistd_8h.html">unistd.h</a> sleep implementation </p>
 
 </div>
 </div>

@@ -106,6 +106,10 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a6632332dcd0243d15b67a926acad207c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8240ac9f789342ac1c91956a8533bba" id="r_af8240ac9f789342ac1c91956a8533bba"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTerminal.html#af8240ac9f789342ac1c91956a8533bba">lastCursorY</a></td></tr>
 <tr class="separator:af8240ac9f789342ac1c91956a8533bba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae01d7bc05d4ee8feca597abc2aad9ec9" id="r_ae01d7bc05d4ee8feca597abc2aad9ec9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTerminal.html#ae01d7bc05d4ee8feca597abc2aad9ec9">inputStartX</a></td></tr>
+<tr class="separator:ae01d7bc05d4ee8feca597abc2aad9ec9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5575865baa0744ed91fe9563096831a6" id="r_a5575865baa0744ed91fe9563096831a6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTerminal.html#a5575865baa0744ed91fe9563096831a6">inputStartY</a></td></tr>
+<tr class="separator:a5575865baa0744ed91fe9563096831a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d15504d496f1c90aaa80fa5f20f8751" id="r_a9d15504d496f1c90aaa80fa5f20f8751"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTerminal.html#a9d15504d496f1c90aaa80fa5f20f8751">cellW</a></td></tr>
 <tr class="separator:a9d15504d496f1c90aaa80fa5f20f8751"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab1df5dab5cc783f335014e5e2586fa4" id="r_aab1df5dab5cc783f335014e5e2586fa4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTerminal.html#aab1df5dab5cc783f335014e5e2586fa4">cellH</a></td></tr>
@@ -136,6 +140,10 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a849c4fa1d460e80df7e7e2fa6a22aca3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8068fb9b67f44b99dd87837109fdff1" id="r_ae8068fb9b67f44b99dd87837109fdff1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTerminal.html#ae8068fb9b67f44b99dd87837109fdff1">lastCellYClicked</a></td></tr>
 <tr class="separator:ae8068fb9b67f44b99dd87837109fdff1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a640b4b9fc7d42bb2aef5bda68d8826e0" id="r_a640b4b9fc7d42bb2aef5bda68d8826e0"><td class="memItemLeft" align="right" valign="top">volatile <a class="el" href="stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTerminal.html#a640b4b9fc7d42bb2aef5bda68d8826e0">blink_visible</a></td></tr>
+<tr class="separator:a640b4b9fc7d42bb2aef5bda68d8826e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7326b0ccc86649551ad1d3fa49eb81b" id="r_af7326b0ccc86649551ad1d3fa49eb81b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTerminal.html#af7326b0ccc86649551ad1d3fa49eb81b">scrolling</a></td></tr>
+<tr class="separator:af7326b0ccc86649551ad1d3fa49eb81b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="a821714c5a0fb0ca91373503c46b16232" name="a821714c5a0fb0ca91373503c46b16232"></a>
@@ -146,6 +154,20 @@ Public Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">int Terminal::baseine</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a640b4b9fc7d42bb2aef5bda68d8826e0" name="a640b4b9fc7d42bb2aef5bda68d8826e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a640b4b9fc7d42bb2aef5bda68d8826e0">&#9670;&#160;</a></span>blink_visible</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile <a class="el" href="stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> Terminal::blink_visible</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -306,6 +328,34 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="ae01d7bc05d4ee8feca597abc2aad9ec9" name="ae01d7bc05d4ee8feca597abc2aad9ec9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae01d7bc05d4ee8feca597abc2aad9ec9">&#9670;&#160;</a></span>inputStartX</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Terminal::inputStartX</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5575865baa0744ed91fe9563096831a6" name="a5575865baa0744ed91fe9563096831a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5575865baa0744ed91fe9563096831a6">&#9670;&#160;</a></span>inputStartY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Terminal::inputStartY</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aec5a31c95e0be95de8ddb71fe38ba542" name="aec5a31c95e0be95de8ddb71fe38ba542"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aec5a31c95e0be95de8ddb71fe38ba542">&#9670;&#160;</a></span>intputLen</h2>
 
@@ -426,6 +476,20 @@ Public Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">int Terminal::scrollBot</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af7326b0ccc86649551ad1d3fa49eb81b" name="af7326b0ccc86649551ad1d3fa49eb81b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7326b0ccc86649551ad1d3fa49eb81b">&#9670;&#160;</a></span>scrolling</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> Terminal::scrolling</td>
         </tr>
       </table>
 </div><div class="memdoc">

@@ -74,6 +74,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">timer.c File Reference</div></div>
 </div><!--header-->
@@ -83,22 +84,28 @@ $(function() {
 <code>#include &lt;string.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="aucon_8h_source.html">aucon.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="uart_8h_source.html">Drivers/uart.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="__null_8h_source.html">_null.h</a>&gt;</code><br />
+<code>#include &lt;signal.h&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for timer.c:</div>
 <div class="dyncontent">
 <div class="center"><img src="timer_8c__incl.png" border="0" usemap="#aXenevaOS_2KernelAA64_2timer_8c" alt=""/></div>
 <map name="aXenevaOS_2KernelAA64_2timer_8c" id="aXenevaOS_2KernelAA64_2timer_8c">
-<area shape="rect" title=" " alt="" coords="146,5,314,45"/>
+<area shape="rect" title=" " alt="" coords="298,5,466,45"/>
 <area shape="rect" title=" " alt="" coords="5,93,73,119"/>
-<area shape="poly" title=" " alt="" coords="185,48,81,91,79,86,183,43"/>
+<area shape="poly" title=" " alt="" coords="299,48,87,96,86,90,297,42"/>
 <area shape="rect" href="aa64lowlevel_8h.html" title=" " alt="" coords="289,93,475,119"/>
-<area shape="poly" title=" " alt="" coords="268,43,348,84,346,89,265,48"/>
+<area shape="poly" title=" " alt="" coords="385,46,385,79,379,79,379,46"/>
 <area shape="rect" title=" " alt="" coords="195,93,265,119"/>
-<area shape="poly" title=" " alt="" coords="233,46,233,79,227,79,227,46"/>
+<area shape="poly" title=" " alt="" coords="347,48,266,89,264,84,344,43"/>
 <area shape="rect" href="aucon_8h.html" title=" " alt="" coords="97,93,171,119"/>
-<area shape="poly" title=" " alt="" coords="208,48,160,87,157,82,205,43"/>
+<area shape="poly" title=" " alt="" coords="323,48,184,92,182,87,322,43"/>
 <area shape="rect" href="uart_8h.html" title=" " alt="" coords="499,93,609,119"/>
-<area shape="poly" title=" " alt="" coords="308,43,494,88,493,93,307,48"/>
+<area shape="poly" title=" " alt="" coords="424,43,517,85,515,90,422,48"/>
+<area shape="rect" href="__null_8h.html" title=" " alt="" coords="633,93,699,119"/>
+<area shape="poly" title=" " alt="" coords="451,43,620,89,619,95,449,48"/>
+<area shape="rect" title=" " alt="" coords="723,93,796,119"/>
+<area shape="poly" title=" " alt="" coords="467,40,709,90,708,95,466,46"/>
 <area shape="rect" title=" " alt="" coords="347,167,423,192"/>
 <area shape="poly" title=" " alt="" coords="385,119,386,153,381,153,380,119"/>
 <area shape="rect" href="BaseHdr_2aurora_8h.html" title=" " alt="" coords="96,167,172,192"/>
@@ -118,6 +125,15 @@ Include dependency graph for timer.c:</div>
 </map>
 </div>
 </div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ace5b149f36c4133045c32d756e2b9a82" id="r_ace5b149f36c4133045c32d756e2b9a82"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="timer_8c.html#ace5b149f36c4133045c32d756e2b9a82">ITIMER_REAL</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:ace5b149f36c4133045c32d756e2b9a82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a330e4df6b49a32d370804104ee3eecce" id="r_a330e4df6b49a32d370804104ee3eecce"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="timer_8c.html#a330e4df6b49a32d370804104ee3eecce">ITIMER_VIRTUAL</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:a330e4df6b49a32d370804104ee3eecce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d71f3bf9d4bc0941c00d3135f808f06" id="r_a7d71f3bf9d4bc0941c00d3135f808f06"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="timer_8c.html#a7d71f3bf9d4bc0941c00d3135f808f06">ITIMER_PROF</a>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:a7d71f3bf9d4bc0941c00d3135f808f06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a301796ffe1bb2bafdf21ddb177898455" id="r_a301796ffe1bb2bafdf21ddb177898455"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="timer_8c.html#a301796ffe1bb2bafdf21ddb177898455">AuroraTimerInitialize</a> ()</td></tr>
@@ -142,6 +158,16 @@ Functions</h2></td></tr>
 <tr class="separator:a2edbbf8bd76cb112eca72da6ec2a1e08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0025a303af090ddd3d8a4b04415ab40b" id="r_a0025a303af090ddd3d8a4b04415ab40b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="timer_8c.html#a0025a303af090ddd3d8a4b04415ab40b">AuGetCurrentUS</a> ()</td></tr>
 <tr class="separator:a0025a303af090ddd3d8a4b04415ab40b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6d037c467145d20ebac3f22411393fc" id="r_ad6d037c467145d20ebac3f22411393fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="timer_8c.html#ad6d037c467145d20ebac3f22411393fc">__kernel_timer_alarm_callback</a> (void *param)</td></tr>
+<tr class="separator:ad6d037c467145d20ebac3f22411393fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b261e5d0c6f39c6aa0f620ae4abd862" id="r_a9b261e5d0c6f39c6aa0f620ae4abd862"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="timer_8c.html#a9b261e5d0c6f39c6aa0f620ae4abd862">AuTimerCalculateAlarm</a> (AA64Thread *thr, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> seconds)</td></tr>
+<tr class="memdesc:a9b261e5d0c6f39c6aa0f620ae4abd862"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuTimerCalculateAlarm &ndash; schedule a timer to one-shot mode respective to given seconds.  <br /></td></tr>
+<tr class="separator:a9b261e5d0c6f39c6aa0f620ae4abd862"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcbbe0975e16fa890df6ee6e463e6155" id="r_abcbbe0975e16fa890df6ee6e463e6155"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="timer_8c.html#abcbbe0975e16fa890df6ee6e463e6155">AuTimerSetITimer</a> (AA64Thread *thr, int which, const <a class="el" href="timer_8h.html#aad546fe66cc4bea5d5432cf48bbe7115">itimerval_t</a> *newval, <a class="el" href="timer_8h.html#aad546fe66cc4bea5d5432cf48bbe7115">itimerval_t</a> *oldval)</td></tr>
+<tr class="memdesc:abcbbe0975e16fa890df6ee6e463e6155"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuTimerSetITimer &ndash; posix standard implementation of setting periodic timer.  <br /></td></tr>
+<tr class="separator:abcbbe0975e16fa890df6ee6e463e6155"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b5ced1faf5bdbe8f756f7d1e780881f" id="r_a4b5ced1faf5bdbe8f756f7d1e780881f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="timer_8c.html#a4b5ced1faf5bdbe8f756f7d1e780881f">AuTimerGetITimer</a> (AA64Thread *thr, int which, <a class="el" href="timer_8h.html#aad546fe66cc4bea5d5432cf48bbe7115">itimerval_t</a> *curr_value)</td></tr>
+<tr class="separator:a4b5ced1faf5bdbe8f756f7d1e780881f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>BSD 2-Clause License</p>
@@ -152,7 +178,68 @@ Functions</h2></td></tr>
 <li>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</li>
 </ol>
 <p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. </p>
-</div><h2 class="groupheader">Function Documentation</h2>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a7d71f3bf9d4bc0941c00d3135f808f06" name="a7d71f3bf9d4bc0941c00d3135f808f06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d71f3bf9d4bc0941c00d3135f808f06">&#9670;&#160;</a></span>ITIMER_PROF</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ITIMER_PROF&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ace5b149f36c4133045c32d756e2b9a82" name="ace5b149f36c4133045c32d756e2b9a82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace5b149f36c4133045c32d756e2b9a82">&#9670;&#160;</a></span>ITIMER_REAL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ITIMER_REAL&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a330e4df6b49a32d370804104ee3eecce" name="a330e4df6b49a32d370804104ee3eecce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a330e4df6b49a32d370804104ee3eecce">&#9670;&#160;</a></span>ITIMER_VIRTUAL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ITIMER_VIRTUAL&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="ad6d037c467145d20ebac3f22411393fc" name="ad6d037c467145d20ebac3f22411393fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6d037c467145d20ebac3f22411393fc">&#9670;&#160;</a></span>__kernel_timer_alarm_callback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void __kernel_timer_alarm_callback </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>param</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a2edbbf8bd76cb112eca72da6ec2a1e08" name="a2edbbf8bd76cb112eca72da6ec2a1e08"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2edbbf8bd76cb112eca72da6ec2a1e08">&#9670;&#160;</a></span>AuGetCurrentMS()</h2>
 
@@ -368,6 +455,119 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>AuroraTimerTick &ndash; called by kernel to handle all expired timers. </p>
+
+</div>
+</div>
+<a id="a9b261e5d0c6f39c6aa0f620ae4abd862" name="a9b261e5d0c6f39c6aa0f620ae4abd862"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b261e5d0c6f39c6aa0f620ae4abd862">&#9670;&#160;</a></span>AuTimerCalculateAlarm()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int AuTimerCalculateAlarm </td>
+          <td>(</td>
+          <td class="paramtype">AA64Thread *&#160;</td>
+          <td class="paramname"><em>thr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>&#160;</td>
+          <td class="paramname"><em>seconds</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>AuTimerCalculateAlarm &ndash; schedule a timer to one-shot mode respective to given seconds. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">thr</td><td>&ndash; pointer to thread which requires one-shot timer </td></tr>
+    <tr><td class="paramname">seconds</td><td>&ndash; amount of second to wait </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4b5ced1faf5bdbe8f756f7d1e780881f" name="a4b5ced1faf5bdbe8f756f7d1e780881f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b5ced1faf5bdbe8f756f7d1e780881f">&#9670;&#160;</a></span>AuTimerGetITimer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int AuTimerGetITimer </td>
+          <td>(</td>
+          <td class="paramtype">AA64Thread *&#160;</td>
+          <td class="paramname"><em>thr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>which</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="timer_8h.html#aad546fe66cc4bea5d5432cf48bbe7115">itimerval_t</a> *&#160;</td>
+          <td class="paramname"><em>curr_value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abcbbe0975e16fa890df6ee6e463e6155" name="abcbbe0975e16fa890df6ee6e463e6155"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcbbe0975e16fa890df6ee6e463e6155">&#9670;&#160;</a></span>AuTimerSetITimer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int AuTimerSetITimer </td>
+          <td>(</td>
+          <td class="paramtype">AA64Thread *&#160;</td>
+          <td class="paramname"><em>thr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>which</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="timer_8h.html#aad546fe66cc4bea5d5432cf48bbe7115">itimerval_t</a> *&#160;</td>
+          <td class="paramname"><em>newval</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="timer_8h.html#aad546fe66cc4bea5d5432cf48bbe7115">itimerval_t</a> *&#160;</td>
+          <td class="paramname"><em>oldval</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>AuTimerSetITimer &ndash; posix standard implementation of setting periodic timer. </p>
 
 </div>
 </div>

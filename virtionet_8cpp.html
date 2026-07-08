@@ -76,7 +76,6 @@ $(function() {
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#define-members">Macros</a> &#124;
-<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">virtionet.cpp File Reference</div></div>
@@ -190,8 +189,6 @@ Include dependency graph for virtionet.cpp:</div>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVirtioNetCfg.html">VirtioNetCfg</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__ethernet__.html">_ethernet_</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
@@ -230,13 +227,10 @@ Macros</h2></td></tr>
 <tr class="memitem:a8db9686a1e0ab12153dd696690f452d5" id="r_a8db9686a1e0ab12153dd696690f452d5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="virtionet_8cpp.html#a8db9686a1e0ab12153dd696690f452d5">MAKE_IP</a>(a,  b,  c,  d)&#160;&#160;&#160;    ((<a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>)(d) &lt;&lt; 24 | (<a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>)(c) &lt;&lt; 16 | (<a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>)(b) &lt;&lt; 8 | (<a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>)(a))</td></tr>
 <tr class="separator:a8db9686a1e0ab12153dd696690f452d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:a1360a7e706bb2077846b72c81a80d02f" id="r_a1360a7e706bb2077846b72c81a80d02f"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct__ethernet__.html">_ethernet_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="virtionet_8cpp.html#a1360a7e706bb2077846b72c81a80d02f">Ethernet</a></td></tr>
-<tr class="separator:a1360a7e706bb2077846b72c81a80d02f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:af193be9be600ca0da9b74f9041e3e637" id="r_af193be9be600ca0da9b74f9041e3e637"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="virtionet_8cpp.html#af193be9be600ca0da9b74f9041e3e637">__declspec</a> (align(2)) typedef struct _ethernet_</td></tr>
+<tr class="separator:af193be9be600ca0da9b74f9041e3e637"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adfa1c138cb03ab87f2ede09531070a24" id="r_adfa1c138cb03ab87f2ede09531070a24"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="virtionet_8cpp.html#adfa1c138cb03ab87f2ede09531070a24">AuVirtioNetHandler</a> (int spiNum)</td></tr>
 <tr class="memdesc:adfa1c138cb03ab87f2ede09531070a24"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuVirtioNetHandler &ndash; interrupt handler for virtio-net-dev.  <br /></td></tr>
 <tr class="separator:adfa1c138cb03ab87f2ede09531070a24"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -282,6 +276,8 @@ Variables</h2></td></tr>
 <tr class="separator:a520bf6a1c47a61d938646ef39fc45d76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1efc918e12947e8212c7d4dff2fd0a91" id="r_a1efc918e12947e8212c7d4dff2fd0a91"><td class="memItemLeft" align="right" valign="top"><a class="el" href="aunet_8h.html#aa88e3af66112f0dccc059e64ee35cb4c">AuNetworkDevice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="virtionet_8cpp.html#a1efc918e12947e8212c7d4dff2fd0a91">ndev</a></td></tr>
 <tr class="separator:a1efc918e12947e8212c7d4dff2fd0a91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8d4259c84253dc8325e1decfa133206" id="r_ab8d4259c84253dc8325e1decfa133206"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="virtionet_8cpp.html#ab8d4259c84253dc8325e1decfa133206">Ethernet</a></td></tr>
+<tr class="separator:ab8d4259c84253dc8325e1decfa133206"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a4c4f153799e067ed950a33e35590cf48" name="a4c4f153799e067ed950a33e35590cf48"></a>
@@ -548,22 +544,25 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<h2 class="groupheader">Typedef Documentation</h2>
-<a id="a1360a7e706bb2077846b72c81a80d02f" name="a1360a7e706bb2077846b72c81a80d02f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1360a7e706bb2077846b72c81a80d02f">&#9670;&#160;</a></span>Ethernet</h2>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="af193be9be600ca0da9b74f9041e3e637" name="af193be9be600ca0da9b74f9041e3e637"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af193be9be600ca0da9b74f9041e3e637">&#9670;&#160;</a></span>__declspec()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef struct <a class="el" href="struct__ethernet__.html">_ethernet_</a> <a class="el" href="virtionet_8cpp.html#a1360a7e706bb2077846b72c81a80d02f">Ethernet</a></td>
+          <td class="memname">__declspec </td>
+          <td>(</td>
+          <td class="paramtype">align(2)&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<h2 class="groupheader">Function Documentation</h2>
 <a id="aab8f66947a5b2eca55c1dd544ae33146" name="aab8f66947a5b2eca55c1dd544ae33146"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aab8f66947a5b2eca55c1dd544ae33146">&#9670;&#160;</a></span>AuDriverMain()</h2>
 
@@ -807,6 +806,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>here we need to have virtio_net_hdr, because this is called by raw sockets</p>
 
 </div>
 </div>
@@ -855,6 +855,20 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="structVirtioCommonCfg.html">VirtioCommonCfg</a>* _cfg</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab8d4259c84253dc8325e1decfa133206" name="ab8d4259c84253dc8325e1decfa133206"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8d4259c84253dc8325e1decfa133206">&#9670;&#160;</a></span>Ethernet</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Ethernet</td>
         </tr>
       </table>
 </div><div class="memdoc">

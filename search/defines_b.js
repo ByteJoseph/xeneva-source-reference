@@ -99,9 +99,10 @@ var searchData=
   ['keyword_5fhandler_5fundefined_5fprocessing_5ferror_96',['KEYWORD_HANDLER_UNDEFINED_PROCESSING_ERROR',['../HiiConfigKeyword_8h.html#a0517419e03c355523397c0a7e452bda8',1,'HiiConfigKeyword.h']]],
   ['khaki_97',['KHAKI',['../color_8h.html#aceb0ccbd356cd7336c2266cfaa3c36e3',1,'color.h']]],
   ['khz_98',['KHz',['../SpiConfiguration_8h.html#ab7ce8ffede54efe563f07f462fa1baea',1,'SpiConfiguration.h']]],
-  ['kmalloc_99',['kmalloc',['../kernel_8h.html#a454f45c6964953eececcaea3d800617f',1,'kernel.h']]],
-  ['ktime_5fmax_100',['KTIME_MAX',['../kernel_8h.html#ad85a301c90e30e6aa03decedb6b149c0',1,'kernel.h']]],
-  ['ktime_5fmin_101',['KTIME_MIN',['../kernel_8h.html#a54f5120d09da7f3f92da899d078cebd3',1,'kernel.h']]],
-  ['ktime_5fsec_5fmax_102',['KTIME_SEC_MAX',['../kernel_8h.html#af9be822943531a48e75d20bb44bb43b1',1,'kernel.h']]],
-  ['kzalloc_103',['kzalloc',['../kernel_8h.html#a86d666177e8f7ca864af308aa067cd5c',1,'kernel.h']]]
+  ['kill_99',['kill',['../Libs_2XEClib_2includes_2signal_8h.html#af8d60d6f47d016a20e32c773cc1527e6',1,'signal.h']]],
+  ['kmalloc_100',['kmalloc',['../kernel_8h.html#a454f45c6964953eececcaea3d800617f',1,'kernel.h']]],
+  ['ktime_5fmax_101',['KTIME_MAX',['../kernel_8h.html#ad85a301c90e30e6aa03decedb6b149c0',1,'kernel.h']]],
+  ['ktime_5fmin_102',['KTIME_MIN',['../kernel_8h.html#a54f5120d09da7f3f92da899d078cebd3',1,'kernel.h']]],
+  ['ktime_5fsec_5fmax_103',['KTIME_SEC_MAX',['../kernel_8h.html#af9be822943531a48e75d20bb44bb43b1',1,'kernel.h']]],
+  ['kzalloc_104',['kzalloc',['../kernel_8h.html#a86d666177e8f7ca864af308aa067cd5c',1,'kernel.h']]]
 ];

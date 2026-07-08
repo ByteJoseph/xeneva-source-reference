@@ -86,41 +86,49 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#define __UNISTD_H__</span></div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#include &lt;<a class="code" href="__xeneva_8h.html">_xeneva.h</a>&gt;</span></div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><a class="code hl_define" href="__xeneva_8h.html#ab246fc80dcb7c6e842a5c117d20a2719">XE_EXTERN</a> {</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="unistd_8h.html#afcf80a6d91178952d107ad00b165752b">   41</a></span><span class="preprocessor">#define STDIN_FILENO 0</span></div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="unistd_8h.html#abd165ee6474b5b75bf075842fff13a04">   42</a></span><span class="preprocessor">#define STDOUT_FILENO 1</span></div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="unistd_8h.html#ae2fe1725bb5e9823d089c46b9ed5266e">   43</a></span><span class="preprocessor">#define STDERR_FILENO 2</span></div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="unistd_8h.html#a0d112bae8fd35be772185b6ec6bcbe64">   45</a></span><span class="preprocessor">#define SEEK_SET 0</span></div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="unistd_8h.html#a4c8d0b76b470ba65a43ca46a88320f39">   46</a></span><span class="preprocessor">#define SEEK_CUR 1</span></div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="unistd_8h.html#ad2a2e6c114780c3071efd24f16c7f7d8">   47</a></span><span class="preprocessor">#define SEEK_END 2</span></div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="preprocessor">#define NULL 0L</span></div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="unistd_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">   52</a></span><span class="preprocessor">#define NULL ((void*)0)</span></div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="unistd_8h.html#af5ff0ddb287a97be99547162f2af7cce">   55</a></span><span class="preprocessor">#define __NEED_size_t</span></div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="unistd_8h.html#a61e86d6697d1c4bf4ffb12fa604bb60d">   56</a></span><span class="preprocessor">#define __NEED_ssize_t</span></div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="unistd_8h.html#a26234344b8a5515600d6b6cf37381455">   57</a></span><span class="preprocessor">#define __NEED_uid_t</span></div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="unistd_8h.html#a6cd85b38b96c3c7fd7efd009f77b118d">   58</a></span><span class="preprocessor">#define __NEED_gid_t</span></div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="unistd_8h.html#adf6b68389f99830fdeec632fb89df8eb">   59</a></span><span class="preprocessor">#define __NEED_off_t</span></div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="unistd_8h.html#af82ca2e2d274651d62b1bb33166374bf">   60</a></span><span class="preprocessor">#define __NEED_pid_t</span></div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="unistd_8h.html#aa03a34a5fe9aa42f97660e38d0aa5ce0">   61</a></span><span class="preprocessor">#define __NEED_intptr_t</span></div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="unistd_8h.html#ad873e517dcede9586aaa3d6270e82699">   62</a></span><span class="preprocessor">#define __NEED_useconds_t</span></div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>}</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#include &lt;<a class="code" href="__ketimer_8h.html">sys/_ketimer.h</a>&gt;</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><a class="code hl_define" href="__xeneva_8h.html#ab246fc80dcb7c6e842a5c117d20a2719">XE_EXTERN</a>{</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="unistd_8h.html#afcf80a6d91178952d107ad00b165752b">   42</a></span><span class="preprocessor">#define STDIN_FILENO 0</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="unistd_8h.html#abd165ee6474b5b75bf075842fff13a04">   43</a></span><span class="preprocessor">#define STDOUT_FILENO 1</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="unistd_8h.html#ae2fe1725bb5e9823d089c46b9ed5266e">   44</a></span><span class="preprocessor">#define STDERR_FILENO 2</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="unistd_8h.html#a0d112bae8fd35be772185b6ec6bcbe64">   46</a></span><span class="preprocessor">#define SEEK_SET 0</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="unistd_8h.html#a4c8d0b76b470ba65a43ca46a88320f39">   47</a></span><span class="preprocessor">#define SEEK_CUR 1</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="unistd_8h.html#ad2a2e6c114780c3071efd24f16c7f7d8">   48</a></span><span class="preprocessor">#define SEEK_END 2</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="preprocessor">#define NULL 0L</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="unistd_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">   53</a></span><span class="preprocessor">#define NULL ((void*)0)</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="unistd_8h.html#af5ff0ddb287a97be99547162f2af7cce">   56</a></span><span class="preprocessor">#define __NEED_size_t</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="unistd_8h.html#a61e86d6697d1c4bf4ffb12fa604bb60d">   57</a></span><span class="preprocessor">#define __NEED_ssize_t</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="unistd_8h.html#a26234344b8a5515600d6b6cf37381455">   58</a></span><span class="preprocessor">#define __NEED_uid_t</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="unistd_8h.html#a6cd85b38b96c3c7fd7efd009f77b118d">   59</a></span><span class="preprocessor">#define __NEED_gid_t</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="unistd_8h.html#adf6b68389f99830fdeec632fb89df8eb">   60</a></span><span class="preprocessor">#define __NEED_off_t</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="unistd_8h.html#af82ca2e2d274651d62b1bb33166374bf">   61</a></span><span class="preprocessor">#define __NEED_pid_t</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="unistd_8h.html#aa03a34a5fe9aa42f97660e38d0aa5ce0">   62</a></span><span class="preprocessor">#define __NEED_intptr_t</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="unistd_8h.html#ad873e517dcede9586aaa3d6270e82699">   63</a></span><span class="preprocessor">#define __NEED_useconds_t</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="unistd_8h.html#a0591ab8215329155d84a01edc48354bb">   65</a></span><span class="preprocessor">#define alarm(x) _KeSetAlarm((unsigned long long)x)</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <a class="code hl_define" href="__xeneva_8h.html#a3640283d666d4a8b25a736424ee25866">XE_LIB</a> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_function" href="unistd_8h.html#a2ed0d4f18fe940fe1dc9a4afcdcf3917">sleep</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> seconds);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>}</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="a__ketimer_8h_html"><div class="ttname"><a href="__ketimer_8h.html">_ketimer.h</a></div></div>
 <div class="ttc" id="a__xeneva_8h_html"><div class="ttname"><a href="__xeneva_8h.html">_xeneva.h</a></div></div>
+<div class="ttc" id="a__xeneva_8h_html_a3640283d666d4a8b25a736424ee25866"><div class="ttname"><a href="__xeneva_8h.html#a3640283d666d4a8b25a736424ee25866">XE_LIB</a></div><div class="ttdeci">#define XE_LIB</div><div class="ttdef"><b>Definition</b> _xeneva.h:55</div></div>
 <div class="ttc" id="a__xeneva_8h_html_ab246fc80dcb7c6e842a5c117d20a2719"><div class="ttname"><a href="__xeneva_8h.html#ab246fc80dcb7c6e842a5c117d20a2719">XE_EXTERN</a></div><div class="ttdeci">#define XE_EXTERN</div><div class="ttdef"><b>Definition</b> _xeneva.h:50</div></div>
+<div class="ttc" id="aunistd_8h_html_a2ed0d4f18fe940fe1dc9a4afcdcf3917"><div class="ttname"><a href="unistd_8h.html#a2ed0d4f18fe940fe1dc9a4afcdcf3917">sleep</a></div><div class="ttdeci">XE_LIB unsigned int sleep(unsigned int seconds)</div><div class="ttdef"><b>Definition</b> time.cpp:171</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
