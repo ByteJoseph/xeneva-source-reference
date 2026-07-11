@@ -110,6 +110,10 @@ Public Attributes</h2></td></tr>
 <tr class="separator:ae01d7bc05d4ee8feca597abc2aad9ec9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5575865baa0744ed91fe9563096831a6" id="r_a5575865baa0744ed91fe9563096831a6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTerminal.html#a5575865baa0744ed91fe9563096831a6">inputStartY</a></td></tr>
 <tr class="separator:a5575865baa0744ed91fe9563096831a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad783372af6e88a78443ff67d8d382d6a" id="r_ad783372af6e88a78443ff67d8d382d6a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTerminal.html#ad783372af6e88a78443ff67d8d382d6a">savedCursorX</a></td></tr>
+<tr class="separator:ad783372af6e88a78443ff67d8d382d6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad24ca1decac44ae1747f7f283b8a842b" id="r_ad24ca1decac44ae1747f7f283b8a842b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTerminal.html#ad24ca1decac44ae1747f7f283b8a842b">savedCursorY</a></td></tr>
+<tr class="separator:ad24ca1decac44ae1747f7f283b8a842b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d15504d496f1c90aaa80fa5f20f8751" id="r_a9d15504d496f1c90aaa80fa5f20f8751"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTerminal.html#a9d15504d496f1c90aaa80fa5f20f8751">cellW</a></td></tr>
 <tr class="separator:a9d15504d496f1c90aaa80fa5f20f8751"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab1df5dab5cc783f335014e5e2586fa4" id="r_aab1df5dab5cc783f335014e5e2586fa4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTerminal.html#aab1df5dab5cc783f335014e5e2586fa4">cellH</a></td></tr>
@@ -144,6 +148,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a640b4b9fc7d42bb2aef5bda68d8826e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7326b0ccc86649551ad1d3fa49eb81b" id="r_af7326b0ccc86649551ad1d3fa49eb81b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTerminal.html#af7326b0ccc86649551ad1d3fa49eb81b">scrolling</a></td></tr>
 <tr class="separator:af7326b0ccc86649551ad1d3fa49eb81b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17014cb3e9ef7e8d1a4676e2a1eb6134" id="r_a17014cb3e9ef7e8d1a4676e2a1eb6134"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTerminal.html#a17014cb3e9ef7e8d1a4676e2a1eb6134">cursor_hide</a></td></tr>
+<tr class="separator:a17014cb3e9ef7e8d1a4676e2a1eb6134"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="a821714c5a0fb0ca91373503c46b16232" name="a821714c5a0fb0ca91373503c46b16232"></a>
@@ -224,6 +230,20 @@ Public Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">int Terminal::cols</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a17014cb3e9ef7e8d1a4676e2a1eb6134" name="a17014cb3e9ef7e8d1a4676e2a1eb6134"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17014cb3e9ef7e8d1a4676e2a1eb6134">&#9670;&#160;</a></span>cursor_hide</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> Terminal::cursor_hide</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -462,6 +482,34 @@ Public Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">int Terminal::rows</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad783372af6e88a78443ff67d8d382d6a" name="ad783372af6e88a78443ff67d8d382d6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad783372af6e88a78443ff67d8d382d6a">&#9670;&#160;</a></span>savedCursorX</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Terminal::savedCursorX</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad24ca1decac44ae1747f7f283b8a842b" name="ad24ca1decac44ae1747f7f283b8a842b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad24ca1decac44ae1747f7f283b8a842b">&#9670;&#160;</a></span>savedCursorY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Terminal::savedCursorY</td>
         </tr>
       </table>
 </div><div class="memdoc">

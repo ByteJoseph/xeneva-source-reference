@@ -241,6 +241,11 @@ Functions</h2></td></tr>
 <tr class="separator:a2c7426fc49c2bd4c65749ffe61c3f5e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9249f8e3b4e0ddb3b3deff25e67f78b7" id="r_a9249f8e3b4e0ddb3b3deff25e67f78b7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nmdapha_8h.html#a9249f8e3b4e0ddb3b3deff25e67f78b7">NamdaphaGetScreenHeight</a> ()</td></tr>
 <tr class="separator:a9249f8e3b4e0ddb3b3deff25e67f78b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c91cf0118f08cfd9e8230f055ecfdf3" id="r_a1c91cf0118f08cfd9e8230f055ecfdf3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nmdapha_8h.html#a1c91cf0118f08cfd9e8230f055ecfdf3">NamdaphaGetYMD</a> (<a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> *year, <a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> *month, <a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> *day, <a class="el" href="acefiex_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> tz_offset)</td></tr>
+<tr class="memdesc:a1c91cf0118f08cfd9e8230f055ecfdf3"><td class="mdescLeft">&#160;</td><td class="mdescRight">NamdaphaGetYOD &ndash; get year, month and date.  <br /></td></tr>
+<tr class="separator:a1c91cf0118f08cfd9e8230f055ecfdf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ba0b9b15ee171e16334bc26daa84251" id="r_a7ba0b9b15ee171e16334bc26daa84251"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nmdapha_8h.html#a7ba0b9b15ee171e16334bc26daa84251">NamdaphaGetWallTime</a> (int *hour, int *minute, int *sec, int tz_offset)</td></tr>
+<tr class="separator:a7ba0b9b15ee171e16334bc26daa84251"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a3d1d9cf9c5f255d38939929aeb9a9139" name="a3d1d9cf9c5f255d38939929aeb9a9139"></a>
@@ -606,6 +611,122 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7ba0b9b15ee171e16334bc26daa84251" name="a7ba0b9b15ee171e16334bc26daa84251"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ba0b9b15ee171e16334bc26daa84251">&#9670;&#160;</a></span>NamdaphaGetWallTime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NamdaphaGetWallTime </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>hour</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>minute</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>sec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tz_offset</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>NamdaphaGetWallTime &ndash; get the walltime update </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">hour</td><td>&ndash; memory location to store hour </td></tr>
+    <tr><td class="paramname">minute</td><td>&ndash; memory location to store minute </td></tr>
+    <tr><td class="paramname">sec</td><td>&ndash; memory location to store second </td></tr>
+    <tr><td class="paramname">tz_offset</td><td>&ndash; timezone offset </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1c91cf0118f08cfd9e8230f055ecfdf3" name="a1c91cf0118f08cfd9e8230f055ecfdf3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c91cf0118f08cfd9e8230f055ecfdf3">&#9670;&#160;</a></span>NamdaphaGetYMD()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NamdaphaGetYMD </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> *&#160;</td>
+          <td class="paramname"><em>year</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> *&#160;</td>
+          <td class="paramname"><em>month</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> *&#160;</td>
+          <td class="paramname"><em>day</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="acefiex_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td>
+          <td class="paramname"><em>tz_offset</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>NamdaphaGetYOD &ndash; get year, month and date. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">year</td><td>&ndash; memory location where to store year </td></tr>
+    <tr><td class="paramname">month</td><td>&ndash; memory location where to store month </td></tr>
+    <tr><td class="paramname">day</td><td>&ndash; memory location where to store day </td></tr>
+    <tr><td class="paramname">tz_offset</td><td>&ndash; timezone offset in second </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

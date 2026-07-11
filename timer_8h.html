@@ -166,6 +166,10 @@ Functions</h2></td></tr>
 <tr class="separator:abcbbe0975e16fa890df6ee6e463e6155"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b5ced1faf5bdbe8f756f7d1e780881f" id="r_a4b5ced1faf5bdbe8f756f7d1e780881f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="timer_8h.html#a4b5ced1faf5bdbe8f756f7d1e780881f">AuTimerGetITimer</a> (AA64Thread *thr, int which, <a class="el" href="timer_8h.html#aad546fe66cc4bea5d5432cf48bbe7115">itimerval_t</a> *curr_value)</td></tr>
 <tr class="separator:a4b5ced1faf5bdbe8f756f7d1e780881f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae63730d50f8aab1f9b59edfeb914a50b" id="r_ae63730d50f8aab1f9b59edfeb914a50b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="timer_8h.html#ae63730d50f8aab1f9b59edfeb914a50b">AuSetWalltime</a> (<a class="el" href="acefiex_8h.html#a5364f98f8223d7185accc99cf9c8f712">int64_t</a> sec, <a class="el" href="acefiex_8h.html#a5364f98f8223d7185accc99cf9c8f712">int64_t</a> nsec)</td></tr>
+<tr class="separator:ae63730d50f8aab1f9b59edfeb914a50b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fff9aa5eeeb2b78c02e87bc9eec6fed" id="r_a9fff9aa5eeeb2b78c02e87bc9eec6fed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="timer_8h.html#a9fff9aa5eeeb2b78c02e87bc9eec6fed">AuGetWalltime</a> (<a class="el" href="acefiex_8h.html#a5364f98f8223d7185accc99cf9c8f712">int64_t</a> *out_sec, <a class="el" href="acefiex_8h.html#a5364f98f8223d7185accc99cf9c8f712">int64_t</a> *out_ns)</td></tr>
+<tr class="separator:a9fff9aa5eeeb2b78c02e87bc9eec6fed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>BSD 2-Clause License</p>
@@ -280,6 +284,43 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9fff9aa5eeeb2b78c02e87bc9eec6fed" name="a9fff9aa5eeeb2b78c02e87bc9eec6fed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fff9aa5eeeb2b78c02e87bc9eec6fed">&#9670;&#160;</a></span>AuGetWalltime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AuGetWalltime </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="acefiex_8h.html#a5364f98f8223d7185accc99cf9c8f712">int64_t</a> *&#160;</td>
+          <td class="paramname"><em>out_sec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="acefiex_8h.html#a5364f98f8223d7185accc99cf9c8f712">int64_t</a> *&#160;</td>
+          <td class="paramname"><em>out_ns</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>need credential verifications too, for security</p>
 
 </div>
 </div>
@@ -472,6 +513,43 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>AuroraTimerTick &ndash; called by kernel to handle all expired timers. </p>
+
+</div>
+</div>
+<a id="ae63730d50f8aab1f9b59edfeb914a50b" name="ae63730d50f8aab1f9b59edfeb914a50b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae63730d50f8aab1f9b59edfeb914a50b">&#9670;&#160;</a></span>AuSetWalltime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AuSetWalltime </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="acefiex_8h.html#a5364f98f8223d7185accc99cf9c8f712">int64_t</a>&#160;</td>
+          <td class="paramname"><em>sec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="acefiex_8h.html#a5364f98f8223d7185accc99cf9c8f712">int64_t</a>&#160;</td>
+          <td class="paramname"><em>nsec</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>need credential verifications too, for security</p>
 
 </div>
 </div>

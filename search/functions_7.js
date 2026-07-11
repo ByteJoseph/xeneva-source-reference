@@ -35,7 +35,7 @@ var searchData=
   ['getimage_32',['GetImage',['../classJpeg_1_1Decoder.html#aa15448c02528aaa293f0cdc3d2a4f850',1,'Jpeg::Decoder']]],
   ['getimagesize_33',['GetImageSize',['../classJpeg_1_1Decoder.html#a4d4a2deeb82a44426bd2df66304be6dc',1,'Jpeg::Decoder']]],
   ['getinterruptstate_34',['GetInterruptState',['../BaseLib_8h.html#a27e613963d5cb68b0144e3764b6e39dc',1,'BaseLib.h']]],
-  ['getitimer_35',['getitimer',['../sysserv_8h.html#a09cc25838aa1f4ea1ec6927b3de8d20f',1,'GetITImer(int which, const itimerval_t *curr_value):&#160;thrserv.c'],['../thrserv_8c.html#a09cc25838aa1f4ea1ec6927b3de8d20f',1,'GetITImer(int which, const itimerval_t *curr_value):&#160;thrserv.c']]],
+  ['getitimer_35',['getitimer',['../sysserv_8h.html#a2b7c59aea17ba3dfe340f241584d13e1',1,'GetITimer(int which, const itimerval_t *curr_value):&#160;thrserv.c'],['../thrserv_8c.html#a2b7c59aea17ba3dfe340f241584d13e1',1,'GetITimer(int which, const itimerval_t *curr_value):&#160;thrserv.c']]],
   ['getmacaddress_36',['getmacaddress',['../uspios_8c.html#a5ea6665b0be58d69463ef8303bc602c9',1,'GetMACAddress(unsigned char Buffer[6]):&#160;uspios.c'],['../uspios_8h.html#a5ea6665b0be58d69463ef8303bc602c9',1,'GetMACAddress(unsigned char Buffer[6]):&#160;uspios.c']]],
   ['getmonthtext_37',['GetMonthText',['../Process_2Calender_2main_8cpp.html#a0cea8a12ce56580cbe848b6a3b25109c',1,'main.cpp']]],
   ['getnextdevicepathinstance_38',['GetNextDevicePathInstance',['../DevicePathLib_8h.html#a978d6eba27bfc10d6e8fec8e54628c95',1,'DevicePathLib.h']]],
