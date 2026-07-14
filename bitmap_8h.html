@@ -145,23 +145,23 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ab3ba090d4e822e3d52107f5c18c21290" id="r_ab3ba090d4e822e3d52107f5c18c21290"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bitmap_8h.html#ab3ba090d4e822e3d52107f5c18c21290">BITS_TO_LONGS</a>(nr)&#160;&#160;&#160;(((nr) + <a class="el" href="kernel_8h.html#a2f660aa23a5dbc0f4b8df48b4302b8c3">BITS_PER_LONG</a> - 1) / <a class="el" href="kernel_8h.html#a2f660aa23a5dbc0f4b8df48b4302b8c3">BITS_PER_LONG</a>)</td></tr>
+<tr class="memitem:ab3ba090d4e822e3d52107f5c18c21290" id="r_ab3ba090d4e822e3d52107f5c18c21290"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bitmap_8h.html#ab3ba090d4e822e3d52107f5c18c21290">BITS_TO_LONGS</a>(nr)&#160;&#160;&#160;(((nr) + <a class="el" href="bordoisila__bits_8h.html#a2f660aa23a5dbc0f4b8df48b4302b8c3">BITS_PER_LONG</a> - 1) / <a class="el" href="bordoisila__bits_8h.html#a2f660aa23a5dbc0f4b8df48b4302b8c3">BITS_PER_LONG</a>)</td></tr>
 <tr class="separator:ab3ba090d4e822e3d52107f5c18c21290"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae986f6f717d5c21d8b3f69d60424778e" id="r_ae986f6f717d5c21d8b3f69d60424778e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bitmap_8h.html#ae986f6f717d5c21d8b3f69d60424778e">DECLARE_BITMAP</a>(name,  bits)&#160;&#160;&#160; unsigned long name[<a class="el" href="bitmap_8h.html#ab3ba090d4e822e3d52107f5c18c21290">BITS_TO_LONGS</a>(bits)]</td></tr>
+<tr class="memitem:ae986f6f717d5c21d8b3f69d60424778e" id="r_ae986f6f717d5c21d8b3f69d60424778e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bitmap_8h.html#ae986f6f717d5c21d8b3f69d60424778e">DECLARE_BITMAP</a>(name,  bits)&#160;&#160;&#160; unsigned long name[<a class="el" href="bordoisila__bits_8h.html#ab3ba090d4e822e3d52107f5c18c21290">BITS_TO_LONGS</a>(bits)]</td></tr>
 <tr class="separator:ae986f6f717d5c21d8b3f69d60424778e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1092889a966f906260044e4291f4fce" id="r_aa1092889a966f906260044e4291f4fce"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bitmap_8h.html#aa1092889a966f906260044e4291f4fce">set_bit</a>(nr,  addr)&#160;&#160;&#160; ((addr)[(nr) / <a class="el" href="kernel_8h.html#a2f660aa23a5dbc0f4b8df48b4302b8c3">BITS_PER_LONG</a>] |= (1UL &lt;&lt; ((nr) % <a class="el" href="kernel_8h.html#a2f660aa23a5dbc0f4b8df48b4302b8c3">BITS_PER_LONG</a>)))</td></tr>
+<tr class="memitem:aa1092889a966f906260044e4291f4fce" id="r_aa1092889a966f906260044e4291f4fce"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bitmap_8h.html#aa1092889a966f906260044e4291f4fce">set_bit</a>(nr,  addr)&#160;&#160;&#160; ((addr)[(nr) / <a class="el" href="bordoisila__bits_8h.html#a2f660aa23a5dbc0f4b8df48b4302b8c3">BITS_PER_LONG</a>] |= (1UL &lt;&lt; ((nr) % <a class="el" href="bordoisila__bits_8h.html#a2f660aa23a5dbc0f4b8df48b4302b8c3">BITS_PER_LONG</a>)))</td></tr>
 <tr class="separator:aa1092889a966f906260044e4291f4fce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1672a87d9d374137e03703199af7fb94" id="r_a1672a87d9d374137e03703199af7fb94"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bitmap_8h.html#a1672a87d9d374137e03703199af7fb94">clear_bit</a>(nr,  addr)&#160;&#160;&#160;  ((addr)[(nr) / <a class="el" href="kernel_8h.html#a2f660aa23a5dbc0f4b8df48b4302b8c3">BITS_PER_LONG</a>] &amp;= ~(1UL &lt;&lt; ((nr) % <a class="el" href="kernel_8h.html#a2f660aa23a5dbc0f4b8df48b4302b8c3">BITS_PER_LONG</a>)))</td></tr>
+<tr class="memitem:a1672a87d9d374137e03703199af7fb94" id="r_a1672a87d9d374137e03703199af7fb94"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bitmap_8h.html#a1672a87d9d374137e03703199af7fb94">clear_bit</a>(nr,  addr)&#160;&#160;&#160;  ((addr)[(nr) / <a class="el" href="bordoisila__bits_8h.html#a2f660aa23a5dbc0f4b8df48b4302b8c3">BITS_PER_LONG</a>] &amp;= ~(1UL &lt;&lt; ((nr) % <a class="el" href="bordoisila__bits_8h.html#a2f660aa23a5dbc0f4b8df48b4302b8c3">BITS_PER_LONG</a>)))</td></tr>
 <tr class="separator:a1672a87d9d374137e03703199af7fb94"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab45ee727a6bbb4a50689d8530ebc173f" id="r_ab45ee727a6bbb4a50689d8530ebc173f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bitmap_8h.html#ab45ee727a6bbb4a50689d8530ebc173f">test_bit</a>(nr,  addr)&#160;&#160;&#160;  (!!((addr)[(nr) / <a class="el" href="kernel_8h.html#a2f660aa23a5dbc0f4b8df48b4302b8c3">BITS_PER_LONG</a>] &amp; (1UL &lt;&lt; ((nr) % <a class="el" href="kernel_8h.html#a2f660aa23a5dbc0f4b8df48b4302b8c3">BITS_PER_LONG</a>))))</td></tr>
+<tr class="memitem:ab45ee727a6bbb4a50689d8530ebc173f" id="r_ab45ee727a6bbb4a50689d8530ebc173f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bitmap_8h.html#ab45ee727a6bbb4a50689d8530ebc173f">test_bit</a>(nr,  addr)&#160;&#160;&#160;  (!!((addr)[(nr) / <a class="el" href="bordoisila__bits_8h.html#a2f660aa23a5dbc0f4b8df48b4302b8c3">BITS_PER_LONG</a>] &amp; (1UL &lt;&lt; ((nr) % <a class="el" href="bordoisila__bits_8h.html#a2f660aa23a5dbc0f4b8df48b4302b8c3">BITS_PER_LONG</a>))))</td></tr>
 <tr class="separator:ab45ee727a6bbb4a50689d8530ebc173f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa946486de3da1066ae81d345200e485d" id="r_aa946486de3da1066ae81d345200e485d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bitmap_8h.html#aa946486de3da1066ae81d345200e485d">test_and_set_bit</a>(nr,  addr)&#160;&#160;&#160;  ({int __old = <a class="el" href="bitmap_8h.html#ab45ee727a6bbb4a50689d8530ebc173f">test_bit</a>(nr, addr); <a class="el" href="bitmap_8h.html#aa1092889a966f906260044e4291f4fce">set_bit</a>(nr, addr); __old; })</td></tr>
 <tr class="separator:aa946486de3da1066ae81d345200e485d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57542002c313c4d6dc1a8458557e967c" id="r_a57542002c313c4d6dc1a8458557e967c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bitmap_8h.html#a57542002c313c4d6dc1a8458557e967c">test_and_clear_bit</a>(nr,  addr)&#160;&#160;&#160;  ({ int __old = <a class="el" href="bitmap_8h.html#ab45ee727a6bbb4a50689d8530ebc173f">test_bit</a>(nr, addr); <a class="el" href="bitmap_8h.html#a1672a87d9d374137e03703199af7fb94">clear_bit</a>(nr,addr); __old;})</td></tr>
 <tr class="separator:a57542002c313c4d6dc1a8458557e967c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd288844dc4668cba01f90a927f48390" id="r_abd288844dc4668cba01f90a927f48390"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bitmap_8h.html#abd288844dc4668cba01f90a927f48390">bitmap_zero</a>(dst,  nbits)&#160;&#160;&#160; <a class="el" href="acclib_8h.html#afd91f3adbf8d52d42618b6357b0ed895">memset</a>(dst, 0, <a class="el" href="bitmap_8h.html#ab3ba090d4e822e3d52107f5c18c21290">BITS_TO_LONGS</a>(nbits) * sizeof(unsigned long))</td></tr>
+<tr class="memitem:abd288844dc4668cba01f90a927f48390" id="r_abd288844dc4668cba01f90a927f48390"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bitmap_8h.html#abd288844dc4668cba01f90a927f48390">bitmap_zero</a>(dst,  nbits)&#160;&#160;&#160; <a class="el" href="acclib_8h.html#afd91f3adbf8d52d42618b6357b0ed895">memset</a>(dst, 0, <a class="el" href="bordoisila__bits_8h.html#ab3ba090d4e822e3d52107f5c18c21290">BITS_TO_LONGS</a>(nbits) * sizeof(unsigned long))</td></tr>
 <tr class="separator:abd288844dc4668cba01f90a927f48390"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39bc465062cd405cfdc24ee6d5778912" id="r_a39bc465062cd405cfdc24ee6d5778912"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bitmap_8h.html#a39bc465062cd405cfdc24ee6d5778912">bitmap_copy</a>(dst,  src,  nbits)&#160;&#160;&#160; <a class="el" href="acclib_8h.html#a659178273c07bb50b395e1e0da5a0638">memcpy</a>(dst, src, <a class="el" href="bitmap_8h.html#ab3ba090d4e822e3d52107f5c18c21290">BITS_TO_LONGS</a>(nbits) * sizeof(unsigned long))</td></tr>
+<tr class="memitem:a39bc465062cd405cfdc24ee6d5778912" id="r_a39bc465062cd405cfdc24ee6d5778912"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bitmap_8h.html#a39bc465062cd405cfdc24ee6d5778912">bitmap_copy</a>(dst,  src,  nbits)&#160;&#160;&#160; <a class="el" href="acclib_8h.html#a659178273c07bb50b395e1e0da5a0638">memcpy</a>(dst, src, <a class="el" href="bordoisila__bits_8h.html#ab3ba090d4e822e3d52107f5c18c21290">BITS_TO_LONGS</a>(nbits) * sizeof(unsigned long))</td></tr>
 <tr class="separator:a39bc465062cd405cfdc24ee6d5778912"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
@@ -192,7 +192,7 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160; <a class="el" href="acclib_8h.html#a659178273c07bb50b395e1e0da5a0638">memcpy</a>(dst, src, <a class="el" href="bitmap_8h.html#ab3ba090d4e822e3d52107f5c18c21290">BITS_TO_LONGS</a>(nbits) * sizeof(unsigned long))</td>
+          <td></td><td>&#160;&#160;&#160; <a class="el" href="acclib_8h.html#a659178273c07bb50b395e1e0da5a0638">memcpy</a>(dst, src, <a class="el" href="bordoisila__bits_8h.html#ab3ba090d4e822e3d52107f5c18c21290">BITS_TO_LONGS</a>(nbits) * sizeof(unsigned long))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -220,7 +220,7 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160; <a class="el" href="acclib_8h.html#afd91f3adbf8d52d42618b6357b0ed895">memset</a>(dst, 0, <a class="el" href="bitmap_8h.html#ab3ba090d4e822e3d52107f5c18c21290">BITS_TO_LONGS</a>(nbits) * sizeof(unsigned long))</td>
+          <td></td><td>&#160;&#160;&#160; <a class="el" href="acclib_8h.html#afd91f3adbf8d52d42618b6357b0ed895">memset</a>(dst, 0, <a class="el" href="bordoisila__bits_8h.html#ab3ba090d4e822e3d52107f5c18c21290">BITS_TO_LONGS</a>(nbits) * sizeof(unsigned long))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -238,7 +238,7 @@ Macros</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">nr</td><td>)</td>
-          <td>&#160;&#160;&#160;(((nr) + <a class="el" href="kernel_8h.html#a2f660aa23a5dbc0f4b8df48b4302b8c3">BITS_PER_LONG</a> - 1) / <a class="el" href="kernel_8h.html#a2f660aa23a5dbc0f4b8df48b4302b8c3">BITS_PER_LONG</a>)</td>
+          <td>&#160;&#160;&#160;(((nr) + <a class="el" href="bordoisila__bits_8h.html#a2f660aa23a5dbc0f4b8df48b4302b8c3">BITS_PER_LONG</a> - 1) / <a class="el" href="bordoisila__bits_8h.html#a2f660aa23a5dbc0f4b8df48b4302b8c3">BITS_PER_LONG</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -266,7 +266,7 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;  ((addr)[(nr) / <a class="el" href="kernel_8h.html#a2f660aa23a5dbc0f4b8df48b4302b8c3">BITS_PER_LONG</a>] &amp;= ~(1UL &lt;&lt; ((nr) % <a class="el" href="kernel_8h.html#a2f660aa23a5dbc0f4b8df48b4302b8c3">BITS_PER_LONG</a>)))</td>
+          <td></td><td>&#160;&#160;&#160;  ((addr)[(nr) / <a class="el" href="bordoisila__bits_8h.html#a2f660aa23a5dbc0f4b8df48b4302b8c3">BITS_PER_LONG</a>] &amp;= ~(1UL &lt;&lt; ((nr) % <a class="el" href="bordoisila__bits_8h.html#a2f660aa23a5dbc0f4b8df48b4302b8c3">BITS_PER_LONG</a>)))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -294,7 +294,7 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160; unsigned long name[<a class="el" href="bitmap_8h.html#ab3ba090d4e822e3d52107f5c18c21290">BITS_TO_LONGS</a>(bits)]</td>
+          <td></td><td>&#160;&#160;&#160; unsigned long name[<a class="el" href="bordoisila__bits_8h.html#ab3ba090d4e822e3d52107f5c18c21290">BITS_TO_LONGS</a>(bits)]</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -322,7 +322,7 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160; ((addr)[(nr) / <a class="el" href="kernel_8h.html#a2f660aa23a5dbc0f4b8df48b4302b8c3">BITS_PER_LONG</a>] |= (1UL &lt;&lt; ((nr) % <a class="el" href="kernel_8h.html#a2f660aa23a5dbc0f4b8df48b4302b8c3">BITS_PER_LONG</a>)))</td>
+          <td></td><td>&#160;&#160;&#160; ((addr)[(nr) / <a class="el" href="bordoisila__bits_8h.html#a2f660aa23a5dbc0f4b8df48b4302b8c3">BITS_PER_LONG</a>] |= (1UL &lt;&lt; ((nr) % <a class="el" href="bordoisila__bits_8h.html#a2f660aa23a5dbc0f4b8df48b4302b8c3">BITS_PER_LONG</a>)))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -406,7 +406,7 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;  (!!((addr)[(nr) / <a class="el" href="kernel_8h.html#a2f660aa23a5dbc0f4b8df48b4302b8c3">BITS_PER_LONG</a>] &amp; (1UL &lt;&lt; ((nr) % <a class="el" href="kernel_8h.html#a2f660aa23a5dbc0f4b8df48b4302b8c3">BITS_PER_LONG</a>))))</td>
+          <td></td><td>&#160;&#160;&#160;  (!!((addr)[(nr) / <a class="el" href="bordoisila__bits_8h.html#a2f660aa23a5dbc0f4b8df48b4302b8c3">BITS_PER_LONG</a>] &amp; (1UL &lt;&lt; ((nr) % <a class="el" href="bordoisila__bits_8h.html#a2f660aa23a5dbc0f4b8df48b4302b8c3">BITS_PER_LONG</a>))))</td>
         </tr>
       </table>
 </div><div class="memdoc">

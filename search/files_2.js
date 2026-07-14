@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['backdirty_2ecpp_0',['backdirty.cpp',['../DeodhaiXR_2backdirty_8cpp.html',1,'(Global Namespace)'],['../Deodhai_2backdirty_8cpp.html',1,'(Global Namespace)']]],
+  ['backdirty_2ecpp_0',['backdirty.cpp',['../Deodhai_2backdirty_8cpp.html',1,'(Global Namespace)'],['../DeodhaiXR_2backdirty_8cpp.html',1,'(Global Namespace)']]],
   ['backdirty_2eh_1',['backdirty.h',['../DeodhaiXR_2backdirty_8h.html',1,'(Global Namespace)'],['../Deodhai_2backdirty_8h.html',1,'(Global Namespace)']]],
   ['base_2ecpp_2',['base.cpp',['../base_8cpp.html',1,'']]],
   ['base_2eh_3',['base.h',['../Base_8h.html',1,'(Global Namespace)'],['../base_8h.html',1,'(Global Namespace)']]],
@@ -27,12 +27,14 @@ var searchData=
   ['board_2eh_24',['board.h',['../board_8h.html',1,'']]],
   ['bootinrecoverymode_2eh_25',['BootInRecoveryMode.h',['../BootInRecoveryMode_8h.html',1,'']]],
   ['bootmanagerpolicy_2eh_26',['BootManagerPolicy.h',['../BootManagerPolicy_8h.html',1,'']]],
-  ['boxblur_2ecpp_27',['boxblur.cpp',['../boxblur_8cpp.html',1,'']]],
-  ['boxblur_2eh_28',['boxblur.h',['../boxblur_8h.html',1,'']]],
-  ['btt_2eh_29',['Btt.h',['../Btt_8h.html',1,'']]],
-  ['buddy_2ecpp_30',['buddy.cpp',['../buddy_8cpp.html',1,'']]],
-  ['buddy_2eh_31',['buddy.h',['../buddy_8h.html',1,'']]],
-  ['busspecificdriveroverride_2eh_32',['BusSpecificDriverOverride.h',['../BusSpecificDriverOverride_8h.html',1,'']]],
-  ['button_2ecpp_33',['button.cpp',['../Libs_2Chitralekha_2widgets_2button_8cpp.html',1,'(Global Namespace)'],['../Process_2XELnch_2button_8cpp.html',1,'(Global Namespace)']]],
-  ['button_2eh_34',['button.h',['../Libs_2Chitralekha_2widgets_2button_8h.html',1,'(Global Namespace)'],['../Process_2XELnch_2button_8h.html',1,'(Global Namespace)']]]
+  ['bordoisila_5fbits_2eh_27',['bordoisila_bits.h',['../bordoisila__bits_8h.html',1,'']]],
+  ['bordoisila_5fio_2eh_28',['bordoisila_io.h',['../bordoisila__io_8h.html',1,'']]],
+  ['boxblur_2ecpp_29',['boxblur.cpp',['../boxblur_8cpp.html',1,'']]],
+  ['boxblur_2eh_30',['boxblur.h',['../boxblur_8h.html',1,'']]],
+  ['btt_2eh_31',['Btt.h',['../Btt_8h.html',1,'']]],
+  ['buddy_2ecpp_32',['buddy.cpp',['../buddy_8cpp.html',1,'']]],
+  ['buddy_2eh_33',['buddy.h',['../buddy_8h.html',1,'']]],
+  ['busspecificdriveroverride_2eh_34',['BusSpecificDriverOverride.h',['../BusSpecificDriverOverride_8h.html',1,'']]],
+  ['button_2ecpp_35',['button.cpp',['../Libs_2Chitralekha_2widgets_2button_8cpp.html',1,'(Global Namespace)'],['../Process_2XELnch_2button_8cpp.html',1,'(Global Namespace)']]],
+  ['button_2eh_36',['button.h',['../Libs_2Chitralekha_2widgets_2button_8h.html',1,'(Global Namespace)'],['../Process_2XELnch_2button_8h.html',1,'(Global Namespace)']]]
 ];
