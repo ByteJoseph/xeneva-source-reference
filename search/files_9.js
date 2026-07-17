@@ -4,7 +4,7 @@ var searchData=
   ['i2cenumerate_2eh_1',['I2cEnumerate.h',['../I2cEnumerate_8h.html',1,'']]],
   ['i2chost_2eh_2',['I2cHost.h',['../I2cHost_8h.html',1,'']]],
   ['i2cio_2eh_3',['I2cIo.h',['../I2cIo_8h.html',1,'']]],
-  ['i2cmaster_2eh_4',['i2cmaster.h',['../Protocol_2I2cMaster_8h.html',1,'(Global Namespace)'],['../Ppi_2I2cMaster_8h.html',1,'(Global Namespace)']]],
+  ['i2cmaster_2eh_4',['i2cmaster.h',['../Ppi_2I2cMaster_8h.html',1,'(Global Namespace)'],['../Protocol_2I2cMaster_8h.html',1,'(Global Namespace)']]],
   ['icmp_2ec_5',['icmp.c',['../icmp_8c.html',1,'']]],
   ['icmp_2ecpp_6',['icmp.cpp',['../icmp_8cpp.html',1,'']]],
   ['icmp_2eh_7',['icmp.h',['../icmp_8h.html',1,'']]],

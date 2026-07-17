@@ -2,7 +2,7 @@ var searchData=
 [
   ['lan7800_2ec_0',['lan7800.c',['../lan7800_8c.html',1,'']]],
   ['lan7800_2ecpp_1',['lan7800.cpp',['../lan7800_8cpp.html',1,'']]],
-  ['lan7800_2eh_2',['lan7800.h',['../dwc2-uspi_2uspi_2lan7800_8h.html',1,'(Global Namespace)'],['../dwc2-otg_2lan7800_8h.html',1,'(Global Namespace)']]],
+  ['lan7800_2eh_2',['lan7800.h',['../dwc2-otg_2lan7800_8h.html',1,'(Global Namespace)'],['../dwc2-uspi_2uspi_2lan7800_8h.html',1,'(Global Namespace)']]],
   ['launcher_2eh_3',['launcher.h',['../launcher_8h.html',1,'']]],
   ['lconfig_2ecpp_4',['lconfig.cpp',['../lconfig_8cpp.html',1,'']]],
   ['legacybiosmptable_2eh_5',['LegacyBiosMpTable.h',['../LegacyBiosMpTable_8h.html',1,'']]],
@@ -27,7 +27,7 @@ var searchData=
   ['loader_2ec_24',['loader.c',['../loader_8c.html',1,'']]],
   ['loader_2ecpp_25',['loader.cpp',['../loader_8cpp.html',1,'']]],
   ['loader_2eh_26',['loader.h',['../loader_8h.html',1,'']]],
-  ['loadfile_2eh_27',['loadfile.h',['../Protocol_2LoadFile_8h.html',1,'(Global Namespace)'],['../Ppi_2LoadFile_8h.html',1,'(Global Namespace)']]],
+  ['loadfile_2eh_27',['loadfile.h',['../Ppi_2LoadFile_8h.html',1,'(Global Namespace)'],['../Protocol_2LoadFile_8h.html',1,'(Global Namespace)']]],
   ['loadfile2_2eh_28',['LoadFile2.h',['../LoadFile2_8h.html',1,'']]],
   ['loadimage_2eh_29',['LoadImage.h',['../LoadImage_8h.html',1,'']]],
   ['lowlevel_2eh_30',['lowlevel.h',['../BootAA64_2lowlevel_8h.html',1,'(Global Namespace)'],['../Boot_2lowlevel_8h.html',1,'(Global Namespace)']]],
