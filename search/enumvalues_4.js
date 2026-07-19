@@ -91,10 +91,8 @@ var searchData=
   ['disassociateinvalidparameters_88',['DisassociateInvalidParameters',['../WiFi_8h.html#a9bfececa4c6b7cb2a9179019de441834a08e8a0ae789b2b895b4733d90a3e1acf',1,'WiFi.h']]],
   ['disassociatesuccess_89',['DisassociateSuccess',['../WiFi_8h.html#a9bfececa4c6b7cb2a9179019de441834afabe4bdf98e190ddc7d69e477004713a',1,'WiFi.h']]],
   ['disconnected_90',['Disconnected',['../EapManagement_8h.html#a3ebc9ca175a515aa56591810bd6b64b3a84ab0fbbb76a8c897feb1cd806d56443',1,'EapManagement.h']]],
-  ['display_5ftype_5fdsi_91',['DISPLAY_TYPE_DSI',['../vc4dsi_8c.html#a0371ce8588bab14349e8e19dea2473e1a1dfaf48b8cfb8e4d9aaeff9bb4763a10',1,'vc4dsi.c']]],
-  ['display_5ftype_5fhdmi_92',['DISPLAY_TYPE_HDMI',['../vc4dsi_8c.html#a0371ce8588bab14349e8e19dea2473e1a1f7ec75bfd0e4ef61e54b25f4a0a5a6b',1,'vc4dsi.c']]],
-  ['dram_5falt_5fclk_5froot_93',['DRAM_ALT_CLK_ROOT',['../imx8mp__clk_8h.html#a3e63855b2f0d43453e8495a789f6214dae94d4694e84ac60e8b3b17ab67529337',1,'imx8mp_clk.h']]],
-  ['dram_5fapb_5fclk_5froot_94',['DRAM_APB_CLK_ROOT',['../imx8mp__clk_8h.html#a3e63855b2f0d43453e8495a789f6214da079c420e0abdf2610174df12b7dff931',1,'imx8mp_clk.h']]],
-  ['dram_5fclk_5froot_5fsel_95',['DRAM_CLK_ROOT_SEL',['../imx8mp__clk_8h.html#a3e63855b2f0d43453e8495a789f6214da9ace127324f7222f4143bbd93990ac21',1,'imx8mp_clk.h']]],
-  ['dspprocessor_96',['DspProcessor',['../IndustryStandard_2SmBios_8h.html#a7b7dceede968db5a2e644e135604f86ba7ea878e115558d69c8460c701f676497',1,'SmBios.h']]]
+  ['dram_5falt_5fclk_5froot_91',['DRAM_ALT_CLK_ROOT',['../imx8mp__clk_8h.html#a3e63855b2f0d43453e8495a789f6214dae94d4694e84ac60e8b3b17ab67529337',1,'imx8mp_clk.h']]],
+  ['dram_5fapb_5fclk_5froot_92',['DRAM_APB_CLK_ROOT',['../imx8mp__clk_8h.html#a3e63855b2f0d43453e8495a789f6214da079c420e0abdf2610174df12b7dff931',1,'imx8mp_clk.h']]],
+  ['dram_5fclk_5froot_5fsel_93',['DRAM_CLK_ROOT_SEL',['../imx8mp__clk_8h.html#a3e63855b2f0d43453e8495a789f6214da9ace127324f7222f4143bbd93990ac21',1,'imx8mp_clk.h']]],
+  ['dspprocessor_94',['DspProcessor',['../IndustryStandard_2SmBios_8h.html#a7b7dceede968db5a2e644e135604f86ba7ea878e115558d69c8460c701f676497',1,'SmBios.h']]]
 ];

@@ -108,11 +108,9 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="bordoisila__io_8h__dep__incl.png" border="0" usemap="#aXenevaOS_2BaseHdr_2bordoisila__io_8hdep" alt=""/></div>
 <map name="aXenevaOS_2BaseHdr_2bordoisila__io_8hdep" id="aXenevaOS_2BaseHdr_2bordoisila__io_8hdep">
-<area shape="rect" title=" " alt="" coords="83,5,329,31"/>
-<area shape="rect" href="imx8mp__clk__gate_8c.html" title=" " alt="" coords="5,79,185,133"/>
-<area shape="poly" title=" " alt="" coords="182,41,131,81,127,77,179,37"/>
-<area shape="rect" href="imx8mp__pll_8c.html" title=" " alt="" coords="209,86,424,126"/>
-<area shape="poly" title=" " alt="" coords="234,37,294,84,291,88,230,41"/>
+<area shape="rect" title=" " alt="" coords="5,5,252,31"/>
+<area shape="rect" href="imx8mp__pll_8c.html" title=" " alt="" coords="21,79,236,119"/>
+<area shape="poly" title=" " alt="" coords="131,44,131,79,126,79,126,44"/>
 </map>
 </div>
 </div>
@@ -132,6 +130,8 @@ Macros</h2></td></tr>
 <tr class="separator:a19b1b57cd667e88e8bee993efc2624f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a96b012ccfae4d6ca3af5cb718ef14afd" id="r_a96b012ccfae4d6ca3af5cb718ef14afd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bordoisila__io_8h.html#a96b012ccfae4d6ca3af5cb718ef14afd">_bordoisila_writel</a>(val,  addr)</td></tr>
 <tr class="separator:a96b012ccfae4d6ca3af5cb718ef14afd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77db05588dae84c548f05b408042491c" id="r_a77db05588dae84c548f05b408042491c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bordoisila__io_8h.html#a77db05588dae84c548f05b408042491c">_bordoisila_read_poll_timeout</a>(addr,  val,  cond,  sleep_us,  timeout_us)</td></tr>
+<tr class="separator:a77db05588dae84c548f05b408042491c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>BSD 2-Clause License</p>
@@ -143,6 +143,74 @@ Macros</h2></td></tr>
 </ol>
 <p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a77db05588dae84c548f05b408042491c" name="a77db05588dae84c548f05b408042491c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77db05588dae84c548f05b408042491c">&#9670;&#160;</a></span>_bordoisila_read_poll_timeout</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define _bordoisila_read_poll_timeout</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">addr, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">val, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">cond, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">sleep_us, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">timeout_us&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">     ({\</div>
+<div class="line">     <a class="code hl_typedef" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> __timeout_us = (timeout_us);\</div>
+<div class="line">     <a class="code hl_typedef" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> __elapsed_us = 0; \</div>
+<div class="line">     <span class="keywordtype">int</span> __ret = 0; \</div>
+<div class="line">     while(1){ \</div>
+<div class="line">         (val) = *(<span class="keyword">volatile</span> <a class="code hl_typedef" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>*)(addr);\</div>
+<div class="line">         if (cond)\</div>
+<div class="line">            <span class="keywordflow">break</span>;\</div>
+<div class="line">         if (__elapsed_us &gt;= __timeout_us) {\</div>
+<div class="line">             __ret = -1; \</div>
+<div class="line">             <span class="keywordflow">break</span>;\</div>
+<div class="line">         } \</div>
+<div class="line">         if (sleep_us) { \</div>
+<div class="line">             AuAA64BoardSleepUS(sleep_us); \</div>
+<div class="line">             __elapsed_us += (sleep_us); \</div>
+<div class="line">         }<span class="keywordflow">else</span> {\</div>
+<div class="line">             __elapsed_us++; \</div>
+<div class="line">         }\</div>
+<div class="line">     }\</div>
+<div class="line">     __ret; \</div>
+<div class="line">})</div>
+<div class="ttc" id="aacefiex_8h_html_a435d1572bf3f880d55459d9805097f62"><div class="ttname"><a href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></div><div class="ttdeci">unsigned int uint32_t</div><div class="ttdef"><b>Definition</b> acefiex.h:163</div></div>
+</div><!-- fragment -->
+</div>
+</div>
 <a id="ada3be54dcb9362f525f04dc412ba688a" name="ada3be54dcb9362f525f04dc412ba688a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ada3be54dcb9362f525f04dc412ba688a">&#9670;&#160;</a></span>_bordoisila_readb</h2>
 
@@ -259,7 +327,6 @@ Macros</h2></td></tr>
 <div class="line">  dsb_sy_barrier(); \</div>
 <div class="line">  dsb_ish();\</div>
 <div class="line">  isb_flush();</div>
-<div class="ttc" id="aacefiex_8h_html_a435d1572bf3f880d55459d9805097f62"><div class="ttname"><a href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></div><div class="ttdeci">unsigned int uint32_t</div><div class="ttdef"><b>Definition</b> acefiex.h:163</div></div>
 </div><!-- fragment -->
 </div>
 </div>

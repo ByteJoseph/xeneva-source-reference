@@ -17,10 +17,11 @@ var searchData=
   ['_5fgid_5fentries_5f_14',['_gid_entries_',['../group_8h.html#a7faf502306dbe3d6052eba1a43cb57fa',1,'_gid_entries_:&#160;group.h'],['../__kecred_8h.html#a7faf502306dbe3d6052eba1a43cb57fa',1,'_gid_entries_:&#160;_kecred.h']]],
   ['_5forientation_5f_15',['_orientation_',['../scrollbar_8h.html#aef66e1f12b366d05e1c04b1823cfd1bb',1,'scrollbar.h']]],
   ['_5fpower_5fbutton_5ftype_5f_16',['_power_button_type_',['../pwbutton_8h.html#a9e0a5e50db9a3175859e7cb1a35e2207',1,'pwbutton.h']]],
-  ['_5fproc_5ftokens_5f_17',['_proc_tokens_',['../proctoken_8h.html#af1093d9200e682a14610af620b1c704b',1,'_proc_tokens_:&#160;proctoken.h'],['../__keproc_8h.html#af1093d9200e682a14610af620b1c704b',1,'_proc_tokens_:&#160;_keproc.h']]],
-  ['_5froot_5fid_5f_18',['_root_id_',['../imx8mp__clk_8h.html#a69c1c6c028b5b10f6cfb7918e7d93a34',1,'imx8mp_clk.h']]],
-  ['_5fsignal_5fnum_5f_19',['_signal_num_',['../BaseHdr_2signal_8h.html#a5c3ec84f70f0659462126f145b94f674',1,'signal.h']]],
-  ['_5ftitemtype_5f_20',['_titemType_',['../toolbar_8h.html#a26973337c9c64b78a8c6fd59b34e8348',1,'toolbar.h']]],
-  ['_5ftoolbar_5forientation_5f_21',['_toolbar_orientation_',['../toolbar_8h.html#acc94b156a9848487111ceb487f0dce2f',1,'toolbar.h']]],
-  ['_5ftransfer_5fstage_5f_22',['_transfer_stage_',['../dwc2__usbdev_8h.html#a44aed7f64d31994a4cf3d416471ca447',1,'dwc2_usbdev.h']]]
+  ['_5fpower_5fdomain_5fid_5f_17',['_power_domain_id_',['../imx8mp__gpc_8h.html#a1cd5b8385cdf180525693c53a825f76a',1,'imx8mp_gpc.h']]],
+  ['_5fproc_5ftokens_5f_18',['_proc_tokens_',['../proctoken_8h.html#af1093d9200e682a14610af620b1c704b',1,'_proc_tokens_:&#160;proctoken.h'],['../__keproc_8h.html#af1093d9200e682a14610af620b1c704b',1,'_proc_tokens_:&#160;_keproc.h']]],
+  ['_5froot_5fid_5f_19',['_root_id_',['../imx8mp__clk_8h.html#a69c1c6c028b5b10f6cfb7918e7d93a34',1,'imx8mp_clk.h']]],
+  ['_5fsignal_5fnum_5f_20',['_signal_num_',['../BaseHdr_2signal_8h.html#a5c3ec84f70f0659462126f145b94f674',1,'signal.h']]],
+  ['_5ftitemtype_5f_21',['_titemType_',['../toolbar_8h.html#a26973337c9c64b78a8c6fd59b34e8348',1,'toolbar.h']]],
+  ['_5ftoolbar_5forientation_5f_22',['_toolbar_orientation_',['../toolbar_8h.html#acc94b156a9848487111ceb487f0dce2f',1,'toolbar.h']]],
+  ['_5ftransfer_5fstage_5f_23',['_transfer_stage_',['../dwc2__usbdev_8h.html#a44aed7f64d31994a4cf3d416471ca447',1,'dwc2_usbdev.h']]]
 ];
