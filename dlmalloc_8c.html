@@ -572,6 +572,8 @@ Typedefs</h2></td></tr>
 <tr class="separator:a2b5e00c0c5a5aa5199ba9f28ec3e8caa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a3e0cda5f1249bef6db47c5eb8e3813" id="r_a2a3e0cda5f1249bef6db47c5eb8e3813"><td class="memItemLeft" align="right" valign="top">typedef long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dlmalloc_8c.html#a2a3e0cda5f1249bef6db47c5eb8e3813">LONG</a></td></tr>
 <tr class="separator:a2a3e0cda5f1249bef6db47c5eb8e3813"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1391029fd5d5d35fab28d7423c8cca9b" id="r_a1391029fd5d5d35fab28d7423c8cca9b"><td class="memItemLeft" align="right" valign="top">typedef long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dlmalloc_8c.html#a1391029fd5d5d35fab28d7423c8cca9b">ptrdiff_t</a></td></tr>
+<tr class="separator:a1391029fd5d5d35fab28d7423c8cca9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6412caf3aa493b17e390b53cef6fcca7" id="r_a6412caf3aa493b17e390b53cef6fcca7"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structmalloc__chunk.html">malloc_chunk</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dlmalloc_8c.html#a6412caf3aa493b17e390b53cef6fcca7">mchunk</a></td></tr>
 <tr class="separator:a6412caf3aa493b17e390b53cef6fcca7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab2c188a259d6c4bd443ed712a92714c" id="r_aab2c188a259d6c4bd443ed712a92714c"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structmalloc__chunk.html">malloc_chunk</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dlmalloc_8c.html#aab2c188a259d6c4bd443ed712a92714c">mchunkptr</a></td></tr>
@@ -643,7 +645,7 @@ Functions</h2></td></tr>
 <tr class="separator:a7a3119e2d540f93ac410bbe64d51ce31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8923af8a1039983906f9617a57022e98" id="r_a8923af8a1039983906f9617a57022e98"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dlmalloc_8c.html#a8923af8a1039983906f9617a57022e98">dlmalloc_usable_size</a> (void *)</td></tr>
 <tr class="separator:a8923af8a1039983906f9617a57022e98"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05e0badf381a634015907071cdbdbbdf" id="r_a05e0badf381a634015907071cdbdbbdf"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dlmalloc_8c.html#a05e0badf381a634015907071cdbdbbdf">sbrk</a> (<a class="el" href="stddef_8h.html#afbe679a40a36da5983ebc5b39754c065">ptrdiff_t</a>)</td></tr>
+<tr class="memitem:a05e0badf381a634015907071cdbdbbdf" id="r_a05e0badf381a634015907071cdbdbbdf"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dlmalloc_8c.html#a05e0badf381a634015907071cdbdbbdf">sbrk</a> (<a class="el" href="BaseHdr_2stddef_8h.html#a1dc40b717b840c7d6bd59de9f3ca50de">ptrdiff_t</a>)</td></tr>
 <tr class="separator:a05e0badf381a634015907071cdbdbbdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c6367328ed688a118d756151de3455d" id="r_a5c6367328ed688a118d756151de3455d"><td class="memItemLeft" align="right" valign="top">void **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dlmalloc_8c.html#a5c6367328ed688a118d756151de3455d">dlindependent_calloc</a> (<a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> n_elements, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> elem_size, void *chunks[])</td></tr>
 <tr class="separator:a5c6367328ed688a118d756151de3455d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -733,9 +735,9 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"> ((((<a class="code hl_typedef" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>)(A) &amp; <a class="code hl_define" href="dlmalloc_8c.html#a46f5899c4a72acfdd20872d893679bb0">CHUNK_ALIGN_MASK</a>) == 0)? 0 :\</div>
 <div class="line">  ((<a class="code hl_define" href="dlmalloc_8c.html#a05897f13370acbdecbf31034f8bec0d5">MALLOC_ALIGNMENT</a> - ((<a class="code hl_typedef" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>)(A) &amp; <a class="code hl_define" href="dlmalloc_8c.html#a46f5899c4a72acfdd20872d893679bb0">CHUNK_ALIGN_MASK</a>)) &amp; <a class="code hl_define" href="dlmalloc_8c.html#a46f5899c4a72acfdd20872d893679bb0">CHUNK_ALIGN_MASK</a>))</div>
-<div class="ttc" id="aBaseHdr_2stdint_8h_html_a186ea1339bffb378854987065835afe3"><div class="ttname"><a href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a></div><div class="ttdeci">uint64_t size_t</div><div class="ttdef"><b>Definition</b> stdint.h:105</div></div>
+<div class="ttc" id="aBaseHdr_2stdint_8h_html_a186ea1339bffb378854987065835afe3"><div class="ttname"><a href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a></div><div class="ttdeci">uint64_t size_t</div><div class="ttdef"><b>Definition</b> stdint.h:104</div></div>
 <div class="ttc" id="adlmalloc_8c_html_a05897f13370acbdecbf31034f8bec0d5"><div class="ttname"><a href="dlmalloc_8c.html#a05897f13370acbdecbf31034f8bec0d5">MALLOC_ALIGNMENT</a></div><div class="ttdeci">#define MALLOC_ALIGNMENT</div><div class="ttdef"><b>Definition</b> dlmalloc.c:702</div></div>
-<div class="ttc" id="adlmalloc_8c_html_a46f5899c4a72acfdd20872d893679bb0"><div class="ttname"><a href="dlmalloc_8c.html#a46f5899c4a72acfdd20872d893679bb0">CHUNK_ALIGN_MASK</a></div><div class="ttdeci">#define CHUNK_ALIGN_MASK</div><div class="ttdef"><b>Definition</b> dlmalloc.c:1697</div></div>
+<div class="ttc" id="adlmalloc_8c_html_a46f5899c4a72acfdd20872d893679bb0"><div class="ttname"><a href="dlmalloc_8c.html#a46f5899c4a72acfdd20872d893679bb0">CHUNK_ALIGN_MASK</a></div><div class="ttdeci">#define CHUNK_ALIGN_MASK</div><div class="ttdef"><b>Definition</b> dlmalloc.c:1698</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1420,7 +1422,7 @@ Functions</h2></td></tr>
 <div class="line">  N += K = Y &gt;&gt; (1-0) &amp;  1;  Y &gt;&gt;= K;\</div>
 <div class="line">  I = (<a class="code hl_typedef" href="dlmalloc_8c.html#a4c04048d19db75c080e5f0ab19d45f8f">bindex_t</a>)(N + Y);\</div>
 <div class="line">}</div>
-<div class="ttc" id="adlmalloc_8c_html_a4c04048d19db75c080e5f0ab19d45f8f"><div class="ttname"><a href="dlmalloc_8c.html#a4c04048d19db75c080e5f0ab19d45f8f">bindex_t</a></div><div class="ttdeci">unsigned int bindex_t</div><div class="ttdef"><b>Definition</b> dlmalloc.c:2276</div></div>
+<div class="ttc" id="adlmalloc_8c_html_a4c04048d19db75c080e5f0ab19d45f8f"><div class="ttname"><a href="dlmalloc_8c.html#a4c04048d19db75c080e5f0ab19d45f8f">bindex_t</a></div><div class="ttdeci">unsigned int bindex_t</div><div class="ttdef"><b>Definition</b> dlmalloc.c:2277</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1465,8 +1467,8 @@ Functions</h2></td></tr>
 <div class="line">    I = (K &lt;&lt; 1) + ((S &gt;&gt; (K + (<a class="code hl_define" href="dlmalloc_8c.html#a84cfe33e7f07c4b874fe1a82ba327c2e">TREEBIN_SHIFT</a>-1)) &amp; 1));\</div>
 <div class="line">  }\</div>
 <div class="line">}</div>
-<div class="ttc" id="adlmalloc_8c_html_a187fe34f71c63b486f6d79ac51117061"><div class="ttname"><a href="dlmalloc_8c.html#a187fe34f71c63b486f6d79ac51117061">NTREEBINS</a></div><div class="ttdeci">#define NTREEBINS</div><div class="ttdef"><b>Definition</b> dlmalloc.c:2653</div></div>
-<div class="ttc" id="adlmalloc_8c_html_a84cfe33e7f07c4b874fe1a82ba327c2e"><div class="ttname"><a href="dlmalloc_8c.html#a84cfe33e7f07c4b874fe1a82ba327c2e">TREEBIN_SHIFT</a></div><div class="ttdeci">#define TREEBIN_SHIFT</div><div class="ttdef"><b>Definition</b> dlmalloc.c:2656</div></div>
+<div class="ttc" id="adlmalloc_8c_html_a187fe34f71c63b486f6d79ac51117061"><div class="ttname"><a href="dlmalloc_8c.html#a187fe34f71c63b486f6d79ac51117061">NTREEBINS</a></div><div class="ttdeci">#define NTREEBINS</div><div class="ttdef"><b>Definition</b> dlmalloc.c:2654</div></div>
+<div class="ttc" id="adlmalloc_8c_html_a84cfe33e7f07c4b874fe1a82ba327c2e"><div class="ttname"><a href="dlmalloc_8c.html#a84cfe33e7f07c4b874fe1a82ba327c2e">TREEBIN_SHIFT</a></div><div class="ttdeci">#define TREEBIN_SHIFT</div><div class="ttdef"><b>Definition</b> dlmalloc.c:2657</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1974,8 +1976,8 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">  (((S) + (mparams.<a class="code hl_variable" href="structmalloc__params.html#aa0609453d9ec826c8ffc632cbfb8cf68">granularity</a> - <a class="code hl_define" href="dlmalloc_8c.html#a1a115588725fa912f1bcaca9f08fb658">SIZE_T_ONE</a>))\</div>
 <div class="line">   &amp; ~(mparams.<a class="code hl_variable" href="structmalloc__params.html#aa0609453d9ec826c8ffc632cbfb8cf68">granularity</a> - <a class="code hl_define" href="dlmalloc_8c.html#a1a115588725fa912f1bcaca9f08fb658">SIZE_T_ONE</a>))</div>
-<div class="ttc" id="adlmalloc_8c_html_a1a115588725fa912f1bcaca9f08fb658"><div class="ttname"><a href="dlmalloc_8c.html#a1a115588725fa912f1bcaca9f08fb658">SIZE_T_ONE</a></div><div class="ttdeci">#define SIZE_T_ONE</div><div class="ttdef"><b>Definition</b> dlmalloc.c:1688</div></div>
-<div class="ttc" id="astructmalloc__params_html_aa0609453d9ec826c8ffc632cbfb8cf68"><div class="ttname"><a href="structmalloc__params.html#aa0609453d9ec826c8ffc632cbfb8cf68">malloc_params::granularity</a></div><div class="ttdeci">size_t granularity</div><div class="ttdef"><b>Definition</b> dlmalloc.c:2700</div></div>
+<div class="ttc" id="adlmalloc_8c_html_a1a115588725fa912f1bcaca9f08fb658"><div class="ttname"><a href="dlmalloc_8c.html#a1a115588725fa912f1bcaca9f08fb658">SIZE_T_ONE</a></div><div class="ttdeci">#define SIZE_T_ONE</div><div class="ttdef"><b>Definition</b> dlmalloc.c:1689</div></div>
+<div class="ttc" id="astructmalloc__params_html_aa0609453d9ec826c8ffc632cbfb8cf68"><div class="ttname"><a href="structmalloc__params.html#aa0609453d9ec826c8ffc632cbfb8cf68">malloc_params::granularity</a></div><div class="ttdeci">size_t granularity</div><div class="ttdef"><b>Definition</b> dlmalloc.c:2701</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2146,11 +2148,11 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">if</span> (<a class="code hl_define" href="dlmalloc_8c.html#aadc2cdd1444477c387fc30e64f061432">is_small</a>(S)) <a class="code hl_define" href="dlmalloc_8c.html#adb28fc94857fe6fd0d13a790c1866284">insert_small_chunk</a>(M, P, S)\</div>
 <div class="line">  <span class="keywordflow">else</span> { <a class="code hl_struct" href="structmalloc__tree__chunk.html">tchunkptr</a> TP = (<a class="code hl_typedef" href="dlmalloc_8c.html#addd456ccc8fb838310e92a3f394fc1b1">tchunkptr</a>)(P); <a class="code hl_define" href="dlmalloc_8c.html#ac38ba865e6c3bf916fcdcb6bfa8be00d">insert_large_chunk</a>(M, TP, S); }</div>
-<div class="ttc" id="adlmalloc_8c_html_aadc2cdd1444477c387fc30e64f061432"><div class="ttname"><a href="dlmalloc_8c.html#aadc2cdd1444477c387fc30e64f061432">is_small</a></div><div class="ttdeci">#define is_small(s)</div><div class="ttdef"><b>Definition</b> dlmalloc.c:2906</div></div>
-<div class="ttc" id="adlmalloc_8c_html_ac38ba865e6c3bf916fcdcb6bfa8be00d"><div class="ttname"><a href="dlmalloc_8c.html#ac38ba865e6c3bf916fcdcb6bfa8be00d">insert_large_chunk</a></div><div class="ttdeci">#define insert_large_chunk(M, X, S)</div><div class="ttdef"><b>Definition</b> dlmalloc.c:3727</div></div>
-<div class="ttc" id="adlmalloc_8c_html_adb28fc94857fe6fd0d13a790c1866284"><div class="ttname"><a href="dlmalloc_8c.html#adb28fc94857fe6fd0d13a790c1866284">insert_small_chunk</a></div><div class="ttdeci">#define insert_small_chunk(M, P, S)</div><div class="ttdef"><b>Definition</b> dlmalloc.c:3649</div></div>
-<div class="ttc" id="adlmalloc_8c_html_addd456ccc8fb838310e92a3f394fc1b1"><div class="ttname"><a href="dlmalloc_8c.html#addd456ccc8fb838310e92a3f394fc1b1">tchunkptr</a></div><div class="ttdeci">struct malloc_tree_chunk * tchunkptr</div><div class="ttdef"><b>Definition</b> dlmalloc.c:2488</div></div>
-<div class="ttc" id="astructmalloc__tree__chunk_html"><div class="ttname"><a href="structmalloc__tree__chunk.html">malloc_tree_chunk</a></div><div class="ttdef"><b>Definition</b> dlmalloc.c:2475</div></div>
+<div class="ttc" id="adlmalloc_8c_html_aadc2cdd1444477c387fc30e64f061432"><div class="ttname"><a href="dlmalloc_8c.html#aadc2cdd1444477c387fc30e64f061432">is_small</a></div><div class="ttdeci">#define is_small(s)</div><div class="ttdef"><b>Definition</b> dlmalloc.c:2907</div></div>
+<div class="ttc" id="adlmalloc_8c_html_ac38ba865e6c3bf916fcdcb6bfa8be00d"><div class="ttname"><a href="dlmalloc_8c.html#ac38ba865e6c3bf916fcdcb6bfa8be00d">insert_large_chunk</a></div><div class="ttdeci">#define insert_large_chunk(M, X, S)</div><div class="ttdef"><b>Definition</b> dlmalloc.c:3728</div></div>
+<div class="ttc" id="adlmalloc_8c_html_adb28fc94857fe6fd0d13a790c1866284"><div class="ttname"><a href="dlmalloc_8c.html#adb28fc94857fe6fd0d13a790c1866284">insert_small_chunk</a></div><div class="ttdeci">#define insert_small_chunk(M, P, S)</div><div class="ttdef"><b>Definition</b> dlmalloc.c:3650</div></div>
+<div class="ttc" id="adlmalloc_8c_html_addd456ccc8fb838310e92a3f394fc1b1"><div class="ttname"><a href="dlmalloc_8c.html#addd456ccc8fb838310e92a3f394fc1b1">tchunkptr</a></div><div class="ttdeci">struct malloc_tree_chunk * tchunkptr</div><div class="ttdef"><b>Definition</b> dlmalloc.c:2489</div></div>
+<div class="ttc" id="astructmalloc__tree__chunk_html"><div class="ttname"><a href="structmalloc__tree__chunk.html">malloc_tree_chunk</a></div><div class="ttdef"><b>Definition</b> dlmalloc.c:2476</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2236,15 +2238,15 @@ Functions</h2></td></tr>
 <div class="line">  P-&gt;<a class="code hl_variable" href="structmalloc__chunk.html#a3bf7a41ce24baa8f17a5a4d13abfdef4">fd</a> = F;\</div>
 <div class="line">  P-&gt;<a class="code hl_variable" href="structmalloc__chunk.html#a1c0148642730c23c73bee9043deaf398">bk</a> = B;\</div>
 <div class="line">}</div>
-<div class="ttc" id="adlmalloc_8c_html_a162ea143ef987e2bc98d5e4b69f7bff6"><div class="ttname"><a href="dlmalloc_8c.html#a162ea143ef987e2bc98d5e4b69f7bff6">ok_address</a></div><div class="ttdeci">#define ok_address(M, a)</div><div class="ttdef"><b>Definition</b> dlmalloc.c:3091</div></div>
-<div class="ttc" id="adlmalloc_8c_html_a1f3d4249e522c896509b7999860090ea"><div class="ttname"><a href="dlmalloc_8c.html#a1f3d4249e522c896509b7999860090ea">small_index</a></div><div class="ttdeci">#define small_index(s)</div><div class="ttdef"><b>Definition</b> dlmalloc.c:2907</div></div>
-<div class="ttc" id="adlmalloc_8c_html_a545357ca2a355288874c27ea94eca166"><div class="ttname"><a href="dlmalloc_8c.html#a545357ca2a355288874c27ea94eca166">smallmap_is_marked</a></div><div class="ttdeci">#define smallmap_is_marked(M, i)</div><div class="ttdef"><b>Definition</b> dlmalloc.c:3002</div></div>
-<div class="ttc" id="adlmalloc_8c_html_a862c7dc1f319911e1f06b9d99485cc54"><div class="ttname"><a href="dlmalloc_8c.html#a862c7dc1f319911e1f06b9d99485cc54">smallbin_at</a></div><div class="ttdeci">#define smallbin_at(M, i)</div><div class="ttdef"><b>Definition</b> dlmalloc.c:2912</div></div>
-<div class="ttc" id="adlmalloc_8c_html_abf35d28195f0f301fe63d0ea867f4379"><div class="ttname"><a href="dlmalloc_8c.html#abf35d28195f0f301fe63d0ea867f4379">MIN_CHUNK_SIZE</a></div><div class="ttdeci">#define MIN_CHUNK_SIZE</div><div class="ttdef"><b>Definition</b> dlmalloc.c:2296</div></div>
-<div class="ttc" id="adlmalloc_8c_html_afe7e6535ba41a91be580eb2bba5890e2"><div class="ttname"><a href="dlmalloc_8c.html#afe7e6535ba41a91be580eb2bba5890e2">RTCHECK</a></div><div class="ttdeci">#define RTCHECK(e)</div><div class="ttdef"><b>Definition</b> dlmalloc.c:3118</div></div>
-<div class="ttc" id="astructmalloc__chunk_html"><div class="ttname"><a href="structmalloc__chunk.html">malloc_chunk</a></div><div class="ttdef"><b>Definition</b> dlmalloc.c:2266</div></div>
-<div class="ttc" id="astructmalloc__chunk_html_a1c0148642730c23c73bee9043deaf398"><div class="ttname"><a href="structmalloc__chunk.html#a1c0148642730c23c73bee9043deaf398">malloc_chunk::bk</a></div><div class="ttdeci">struct malloc_chunk * bk</div><div class="ttdef"><b>Definition</b> dlmalloc.c:2270</div></div>
-<div class="ttc" id="astructmalloc__chunk_html_a3bf7a41ce24baa8f17a5a4d13abfdef4"><div class="ttname"><a href="structmalloc__chunk.html#a3bf7a41ce24baa8f17a5a4d13abfdef4">malloc_chunk::fd</a></div><div class="ttdeci">struct malloc_chunk * fd</div><div class="ttdef"><b>Definition</b> dlmalloc.c:2269</div></div>
+<div class="ttc" id="adlmalloc_8c_html_a162ea143ef987e2bc98d5e4b69f7bff6"><div class="ttname"><a href="dlmalloc_8c.html#a162ea143ef987e2bc98d5e4b69f7bff6">ok_address</a></div><div class="ttdeci">#define ok_address(M, a)</div><div class="ttdef"><b>Definition</b> dlmalloc.c:3092</div></div>
+<div class="ttc" id="adlmalloc_8c_html_a1f3d4249e522c896509b7999860090ea"><div class="ttname"><a href="dlmalloc_8c.html#a1f3d4249e522c896509b7999860090ea">small_index</a></div><div class="ttdeci">#define small_index(s)</div><div class="ttdef"><b>Definition</b> dlmalloc.c:2908</div></div>
+<div class="ttc" id="adlmalloc_8c_html_a545357ca2a355288874c27ea94eca166"><div class="ttname"><a href="dlmalloc_8c.html#a545357ca2a355288874c27ea94eca166">smallmap_is_marked</a></div><div class="ttdeci">#define smallmap_is_marked(M, i)</div><div class="ttdef"><b>Definition</b> dlmalloc.c:3003</div></div>
+<div class="ttc" id="adlmalloc_8c_html_a862c7dc1f319911e1f06b9d99485cc54"><div class="ttname"><a href="dlmalloc_8c.html#a862c7dc1f319911e1f06b9d99485cc54">smallbin_at</a></div><div class="ttdeci">#define smallbin_at(M, i)</div><div class="ttdef"><b>Definition</b> dlmalloc.c:2913</div></div>
+<div class="ttc" id="adlmalloc_8c_html_abf35d28195f0f301fe63d0ea867f4379"><div class="ttname"><a href="dlmalloc_8c.html#abf35d28195f0f301fe63d0ea867f4379">MIN_CHUNK_SIZE</a></div><div class="ttdeci">#define MIN_CHUNK_SIZE</div><div class="ttdef"><b>Definition</b> dlmalloc.c:2297</div></div>
+<div class="ttc" id="adlmalloc_8c_html_afe7e6535ba41a91be580eb2bba5890e2"><div class="ttname"><a href="dlmalloc_8c.html#afe7e6535ba41a91be580eb2bba5890e2">RTCHECK</a></div><div class="ttdeci">#define RTCHECK(e)</div><div class="ttdef"><b>Definition</b> dlmalloc.c:3119</div></div>
+<div class="ttc" id="astructmalloc__chunk_html"><div class="ttname"><a href="structmalloc__chunk.html">malloc_chunk</a></div><div class="ttdef"><b>Definition</b> dlmalloc.c:2267</div></div>
+<div class="ttc" id="astructmalloc__chunk_html_a1c0148642730c23c73bee9043deaf398"><div class="ttname"><a href="structmalloc__chunk.html#a1c0148642730c23c73bee9043deaf398">malloc_chunk::bk</a></div><div class="ttdeci">struct malloc_chunk * bk</div><div class="ttdef"><b>Definition</b> dlmalloc.c:2271</div></div>
+<div class="ttc" id="astructmalloc__chunk_html_a3bf7a41ce24baa8f17a5a4d13abfdef4"><div class="ttname"><a href="structmalloc__chunk.html#a3bf7a41ce24baa8f17a5a4d13abfdef4">malloc_chunk::fd</a></div><div class="ttdeci">struct malloc_chunk * fd</div><div class="ttdef"><b>Definition</b> dlmalloc.c:2270</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2751,7 +2753,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">   ((i == <a class="code hl_define" href="dlmalloc_8c.html#a187fe34f71c63b486f6d79ac51117061">NTREEBINS</a>-1)? 0 : \</div>
 <div class="line">    ((<a class="code hl_define" href="dlmalloc_8c.html#a9d769150c841cbb7512476c56aaf5617">SIZE_T_BITSIZE</a>-<a class="code hl_define" href="dlmalloc_8c.html#a1a115588725fa912f1bcaca9f08fb658">SIZE_T_ONE</a>) - (((i) &gt;&gt; 1) + <a class="code hl_define" href="dlmalloc_8c.html#a84cfe33e7f07c4b874fe1a82ba327c2e">TREEBIN_SHIFT</a> - 2)))</div>
-<div class="ttc" id="adlmalloc_8c_html_a9d769150c841cbb7512476c56aaf5617"><div class="ttname"><a href="dlmalloc_8c.html#a9d769150c841cbb7512476c56aaf5617">SIZE_T_BITSIZE</a></div><div class="ttdeci">#define SIZE_T_BITSIZE</div><div class="ttdef"><b>Definition</b> dlmalloc.c:1683</div></div>
+<div class="ttc" id="adlmalloc_8c_html_a9d769150c841cbb7512476c56aaf5617"><div class="ttname"><a href="dlmalloc_8c.html#a9d769150c841cbb7512476c56aaf5617">SIZE_T_BITSIZE</a></div><div class="ttdeci">#define SIZE_T_BITSIZE</div><div class="ttdef"><b>Definition</b> dlmalloc.c:1684</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -3229,8 +3231,8 @@ Functions</h2></td></tr>
 <div class="line">            mmap(0, (s), <a class="code hl_define" href="dlmalloc_8c.html#ab3a1aea60d3139bc62769ccc05bfa21e">MMAP_PROT</a>, <a class="code hl_define" href="dlmalloc_8c.html#ad2d83ed2587a673f05e96fb46a11193e">MMAP_FLAGS</a>, dev_zero_fd, 0)) : \</div>
 <div class="line">            mmap(0, (s), <a class="code hl_define" href="dlmalloc_8c.html#ab3a1aea60d3139bc62769ccc05bfa21e">MMAP_PROT</a>, <a class="code hl_define" href="dlmalloc_8c.html#ad2d83ed2587a673f05e96fb46a11193e">MMAP_FLAGS</a>, dev_zero_fd, 0))</div>
 <div class="ttc" id="aacwin_8h_html_a8854c2a82db965759bd6095a666ffb76"><div class="ttname"><a href="acwin_8h.html#a8854c2a82db965759bd6095a666ffb76">open</a></div><div class="ttdeci">#define open</div><div class="ttdef"><b>Definition</b> acwin.h:179</div></div>
-<div class="ttc" id="adlmalloc_8c_html_ab3a1aea60d3139bc62769ccc05bfa21e"><div class="ttname"><a href="dlmalloc_8c.html#ab3a1aea60d3139bc62769ccc05bfa21e">MMAP_PROT</a></div><div class="ttdeci">#define MMAP_PROT</div><div class="ttdef"><b>Definition</b> dlmalloc.c:1724</div></div>
-<div class="ttc" id="adlmalloc_8c_html_ad2d83ed2587a673f05e96fb46a11193e"><div class="ttname"><a href="dlmalloc_8c.html#ad2d83ed2587a673f05e96fb46a11193e">MMAP_FLAGS</a></div><div class="ttdeci">#define MMAP_FLAGS</div><div class="ttdef"><b>Definition</b> dlmalloc.c:1736</div></div>
+<div class="ttc" id="adlmalloc_8c_html_ab3a1aea60d3139bc62769ccc05bfa21e"><div class="ttname"><a href="dlmalloc_8c.html#ab3a1aea60d3139bc62769ccc05bfa21e">MMAP_PROT</a></div><div class="ttdeci">#define MMAP_PROT</div><div class="ttdef"><b>Definition</b> dlmalloc.c:1725</div></div>
+<div class="ttc" id="adlmalloc_8c_html_ad2d83ed2587a673f05e96fb46a11193e"><div class="ttname"><a href="dlmalloc_8c.html#ad2d83ed2587a673f05e96fb46a11193e">MMAP_FLAGS</a></div><div class="ttdeci">#define MMAP_FLAGS</div><div class="ttdef"><b>Definition</b> dlmalloc.c:1737</div></div>
 <div class="ttc" id="ammap_8h_html_abb0586253488ee61072b73557eeb873b"><div class="ttname"><a href="mmap_8h.html#abb0586253488ee61072b73557eeb873b">O_RDWR</a></div><div class="ttdeci">#define O_RDWR</div><div class="ttdef"><b>Definition</b> mmap.h:47</div></div>
 </div><!-- fragment -->
 </div>
@@ -4071,8 +4073,8 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">  ((p)-&gt;head = (((p)-&gt;head &amp; <a class="code hl_define" href="dlmalloc_8c.html#aa41e697181baeec7157ff5f0f6ae747a">PINUSE_BIT</a>)|s|<a class="code hl_define" href="dlmalloc_8c.html#a8f8153cc167dd042af6840f7130b9721">CINUSE_BIT</a>),\</div>
 <div class="line">  ((<a class="code hl_struct" href="structmalloc__chunk.html">mchunkptr</a>)(((<span class="keywordtype">char</span>*)(p)) + (s)))-&gt;head |= <a class="code hl_define" href="dlmalloc_8c.html#aa41e697181baeec7157ff5f0f6ae747a">PINUSE_BIT</a>)</div>
-<div class="ttc" id="adlmalloc_8c_html_a8f8153cc167dd042af6840f7130b9721"><div class="ttname"><a href="dlmalloc_8c.html#a8f8153cc167dd042af6840f7130b9721">CINUSE_BIT</a></div><div class="ttdeci">#define CINUSE_BIT</div><div class="ttdef"><b>Definition</b> dlmalloc.c:2329</div></div>
-<div class="ttc" id="adlmalloc_8c_html_aa41e697181baeec7157ff5f0f6ae747a"><div class="ttname"><a href="dlmalloc_8c.html#aa41e697181baeec7157ff5f0f6ae747a">PINUSE_BIT</a></div><div class="ttdeci">#define PINUSE_BIT</div><div class="ttdef"><b>Definition</b> dlmalloc.c:2328</div></div>
+<div class="ttc" id="adlmalloc_8c_html_a8f8153cc167dd042af6840f7130b9721"><div class="ttname"><a href="dlmalloc_8c.html#a8f8153cc167dd042af6840f7130b9721">CINUSE_BIT</a></div><div class="ttdeci">#define CINUSE_BIT</div><div class="ttdef"><b>Definition</b> dlmalloc.c:2330</div></div>
+<div class="ttc" id="adlmalloc_8c_html_aa41e697181baeec7157ff5f0f6ae747a"><div class="ttname"><a href="dlmalloc_8c.html#aa41e697181baeec7157ff5f0f6ae747a">PINUSE_BIT</a></div><div class="ttdeci">#define PINUSE_BIT</div><div class="ttdef"><b>Definition</b> dlmalloc.c:2329</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -4109,7 +4111,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">  ((p)-&gt;head = (s|<a class="code hl_define" href="dlmalloc_8c.html#aa41e697181baeec7157ff5f0f6ae747a">PINUSE_BIT</a>|<a class="code hl_define" href="dlmalloc_8c.html#a8f8153cc167dd042af6840f7130b9721">CINUSE_BIT</a>),\</div>
 <div class="line">  ((<a class="code hl_typedef" href="dlmalloc_8c.html#aab2c188a259d6c4bd443ed712a92714c">mchunkptr</a>)(((<span class="keywordtype">char</span>*)(p)) + (s)))-&gt;head |= <a class="code hl_define" href="dlmalloc_8c.html#aa41e697181baeec7157ff5f0f6ae747a">PINUSE_BIT</a>)</div>
-<div class="ttc" id="adlmalloc_8c_html_aab2c188a259d6c4bd443ed712a92714c"><div class="ttname"><a href="dlmalloc_8c.html#aab2c188a259d6c4bd443ed712a92714c">mchunkptr</a></div><div class="ttdeci">struct malloc_chunk * mchunkptr</div><div class="ttdef"><b>Definition</b> dlmalloc.c:2274</div></div>
+<div class="ttc" id="adlmalloc_8c_html_aab2c188a259d6c4bd443ed712a92714c"><div class="ttname"><a href="dlmalloc_8c.html#aab2c188a259d6c4bd443ed712a92714c">mchunkptr</a></div><div class="ttdeci">struct malloc_chunk * mchunkptr</div><div class="ttdef"><b>Definition</b> dlmalloc.c:2275</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -4141,7 +4143,7 @@ Functions</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line"> ((M)-&gt;mflags = (L)?\</div>
 <div class="line">  ((M)-&gt;mflags | <a class="code hl_define" href="dlmalloc_8c.html#a02a456408564b69d6f3de5f8fede4931">USE_LOCK_BIT</a>) :\</div>
 <div class="line">  ((M)-&gt;mflags &amp; ~<a class="code hl_define" href="dlmalloc_8c.html#a02a456408564b69d6f3de5f8fede4931">USE_LOCK_BIT</a>))</div>
-<div class="ttc" id="adlmalloc_8c_html_a02a456408564b69d6f3de5f8fede4931"><div class="ttname"><a href="dlmalloc_8c.html#a02a456408564b69d6f3de5f8fede4931">USE_LOCK_BIT</a></div><div class="ttdeci">#define USE_LOCK_BIT</div><div class="ttdef"><b>Definition</b> dlmalloc.c:1887</div></div>
+<div class="ttc" id="adlmalloc_8c_html_a02a456408564b69d6f3de5f8fede4931"><div class="ttname"><a href="dlmalloc_8c.html#a02a456408564b69d6f3de5f8fede4931">USE_LOCK_BIT</a></div><div class="ttdeci">#define USE_LOCK_BIT</div><div class="ttdef"><b>Definition</b> dlmalloc.c:1888</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -4612,8 +4614,8 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">if</span> (<a class="code hl_define" href="dlmalloc_8c.html#aadc2cdd1444477c387fc30e64f061432">is_small</a>(S)) <a class="code hl_define" href="dlmalloc_8c.html#a6681f6fb034ce0fcee30f1df143fcefc">unlink_small_chunk</a>(M, P, S)\</div>
 <div class="line">  <span class="keywordflow">else</span> { <a class="code hl_struct" href="structmalloc__tree__chunk.html">tchunkptr</a> TP = (<a class="code hl_typedef" href="dlmalloc_8c.html#addd456ccc8fb838310e92a3f394fc1b1">tchunkptr</a>)(P); <a class="code hl_define" href="dlmalloc_8c.html#a2af36a6897c8bac0fd68a329cf3b43c9">unlink_large_chunk</a>(M, TP); }</div>
-<div class="ttc" id="adlmalloc_8c_html_a2af36a6897c8bac0fd68a329cf3b43c9"><div class="ttname"><a href="dlmalloc_8c.html#a2af36a6897c8bac0fd68a329cf3b43c9">unlink_large_chunk</a></div><div class="ttdeci">#define unlink_large_chunk(M, X)</div><div class="ttdef"><b>Definition</b> dlmalloc.c:3795</div></div>
-<div class="ttc" id="adlmalloc_8c_html_a6681f6fb034ce0fcee30f1df143fcefc"><div class="ttname"><a href="dlmalloc_8c.html#a6681f6fb034ce0fcee30f1df143fcefc">unlink_small_chunk</a></div><div class="ttdeci">#define unlink_small_chunk(M, P, S)</div><div class="ttdef"><b>Definition</b> dlmalloc.c:3668</div></div>
+<div class="ttc" id="adlmalloc_8c_html_a2af36a6897c8bac0fd68a329cf3b43c9"><div class="ttname"><a href="dlmalloc_8c.html#a2af36a6897c8bac0fd68a329cf3b43c9">unlink_large_chunk</a></div><div class="ttdeci">#define unlink_large_chunk(M, X)</div><div class="ttdef"><b>Definition</b> dlmalloc.c:3796</div></div>
+<div class="ttc" id="adlmalloc_8c_html_a6681f6fb034ce0fcee30f1df143fcefc"><div class="ttname"><a href="dlmalloc_8c.html#a6681f6fb034ce0fcee30f1df143fcefc">unlink_small_chunk</a></div><div class="ttdeci">#define unlink_small_chunk(M, P, S)</div><div class="ttdef"><b>Definition</b> dlmalloc.c:3669</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -4670,8 +4672,8 @@ Functions</h2></td></tr>
 <div class="line">    CORRUPTION_ERROR_ACTION(M);\</div>
 <div class="line">  }\</div>
 <div class="line">}</div>
-<div class="ttc" id="adlmalloc_8c_html_a0bd05b2720a9f79a0c066086c4f7e2fa"><div class="ttname"><a href="dlmalloc_8c.html#a0bd05b2720a9f79a0c066086c4f7e2fa">chunksize</a></div><div class="ttdeci">#define chunksize(p)</div><div class="ttdef"><b>Definition</b> dlmalloc.c:2344</div></div>
-<div class="ttc" id="adlmalloc_8c_html_a377939ca061c1b170053c2927af26cdc"><div class="ttname"><a href="dlmalloc_8c.html#a377939ca061c1b170053c2927af26cdc">small_index2size</a></div><div class="ttdeci">#define small_index2size(i)</div><div class="ttdef"><b>Definition</b> dlmalloc.c:2908</div></div>
+<div class="ttc" id="adlmalloc_8c_html_a0bd05b2720a9f79a0c066086c4f7e2fa"><div class="ttname"><a href="dlmalloc_8c.html#a0bd05b2720a9f79a0c066086c4f7e2fa">chunksize</a></div><div class="ttdeci">#define chunksize(p)</div><div class="ttdef"><b>Definition</b> dlmalloc.c:2345</div></div>
+<div class="ttc" id="adlmalloc_8c_html_a377939ca061c1b170053c2927af26cdc"><div class="ttname"><a href="dlmalloc_8c.html#a377939ca061c1b170053c2927af26cdc">small_index2size</a></div><div class="ttdeci">#define small_index2size(i)</div><div class="ttdef"><b>Definition</b> dlmalloc.c:2909</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -5105,6 +5107,20 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">typedef struct <a class="el" href="structmalloc__state.html">malloc_state</a>* <a class="el" href="dlmalloc_8c.html#a77915996ce21724eda56ab99e2ce75e6">mstate</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1391029fd5d5d35fab28d7423c8cca9b" name="a1391029fd5d5d35fab28d7423c8cca9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1391029fd5d5d35fab28d7423c8cca9b">&#9670;&#160;</a></span>ptrdiff_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef long <a class="el" href="BaseHdr_2stddef_8h.html#a1dc40b717b840c7d6bd59de9f3ca50de">ptrdiff_t</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -5828,7 +5844,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void * sbrk </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="stddef_8h.html#afbe679a40a36da5983ebc5b39754c065">ptrdiff_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="BaseHdr_2stddef_8h.html#a1dc40b717b840c7d6bd59de9f3ca50de">ptrdiff_t</a>&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>

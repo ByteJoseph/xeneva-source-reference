@@ -88,43 +88,52 @@ $(function() {
 <code>#include &lt;<a class="el" href="uart_8h_source.html">Drivers/uart.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="efi_8h_source.html">efi.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="profile_8h_source.html">Hal/AA64/profile.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="aucon_8h_source.html">aucon.h</a>&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for pmmngr.c:</div>
 <div class="dyncontent">
 <div class="center"><img src="pmmngr_8c__incl.png" border="0" usemap="#aXenevaOS_2KernelAA64_2Mm_2pmmngr_8c" alt=""/></div>
 <map name="aXenevaOS_2KernelAA64_2Mm_2pmmngr_8c" id="aXenevaOS_2KernelAA64_2Mm_2pmmngr_8c">
-<area shape="rect" title=" " alt="" coords="267,5,435,45"/>
-<area shape="rect" href="pmmngr_8h.html" title=" " alt="" coords="5,167,123,192"/>
-<area shape="poly" title=" " alt="" coords="267,30,222,36,175,48,130,67,91,95,81,108,75,123,68,153,62,152,69,121,77,105,87,91,127,62,173,43,221,31,266,25"/>
-<area shape="rect" href="aa64lowlevel_8h.html" title=" " alt="" coords="102,93,287,119"/>
-<area shape="poly" title=" " alt="" coords="314,48,231,89,229,85,312,43"/>
-<area shape="rect" href="BaseHdr_2Mm_2vmmngr_8h.html" title=" " alt="" coords="197,167,315,192"/>
-<area shape="poly" title=" " alt="" coords="343,47,301,120,275,157,271,154,296,117,339,44"/>
-<area shape="rect" href="uart_8h.html" title=" " alt="" coords="351,167,462,192"/>
-<area shape="poly" title=" " alt="" coords="360,45,400,153,395,155,355,47"/>
-<area shape="rect" href="efi_8h.html" title=" " alt="" coords="652,93,703,119"/>
-<area shape="poly" title=" " alt="" coords="430,43,639,93,638,98,428,48"/>
-<area shape="rect" href="profile_8h.html" title=" " alt="" coords="413,93,552,119"/>
-<area shape="poly" title=" " alt="" coords="384,43,452,84,450,88,381,48"/>
-<area shape="rect" title=" " alt="" coords="115,240,191,265"/>
-<area shape="poly" title=" " alt="" coords="80,190,130,229,126,233,77,194"/>
-<area shape="poly" title=" " alt="" coords="194,120,163,227,158,226,189,118"/>
-<area shape="poly" title=" " alt="" coords="241,194,183,234,180,230,238,190"/>
-<area shape="rect" title=" " alt="" coords="309,401,379,427"/>
-<area shape="poly" title=" " alt="" coords="259,192,269,262,280,308,297,352,324,390,320,393,292,355,275,309,264,263,254,193"/>
-<area shape="poly" title=" " alt="" coords="367,195,206,240,204,234,365,189"/>
-<area shape="poly" title=" " alt="" coords="370,194,335,213,320,226,308,241,302,254,299,274,301,305,312,352,330,389,325,391,307,354,295,306,293,273,297,252,303,239,316,222,332,208,368,190"/>
-<area shape="rect" href="aa64hcode_8h.html" title=" " alt="" coords="530,240,635,265"/>
-<area shape="poly" title=" " alt="" coords="436,190,542,232,540,237,434,194"/>
-<area shape="rect" href="imx8mp_8h.html" title=" " alt="" coords="318,240,506,265"/>
-<area shape="poly" title=" " alt="" coords="410,192,413,226,407,227,405,193"/>
-<area shape="rect" href="imx8mp__uart_8h.html" title=" " alt="" coords="321,313,497,353"/>
-<area shape="poly" title=" " alt="" coords="414,266,413,300,408,300,409,265"/>
-<area shape="poly" title=" " alt="" coords="396,355,364,392,360,389,391,352"/>
-<area shape="rect" href="BaseHdr_2stdint_8h.html" title=" " alt="" coords="711,167,782,192"/>
-<area shape="poly" title=" " alt="" coords="691,117,728,155,724,159,687,121"/>
-<area shape="poly" title=" " alt="" coords="515,116,565,140,618,173,639,194,653,216,658,241,650,266,627,299,598,327,565,350,530,368,457,395,394,409,393,404,456,389,527,364,563,345,595,323,623,296,646,264,653,240,648,218,635,197,615,178,563,144,512,121"/>
-<area shape="poly" title=" " alt="" coords="472,121,431,159,427,155,469,117"/>
+<area shape="rect" title=" " alt="" coords="501,5,669,45"/>
+<area shape="rect" href="pmmngr_8h.html" title=" " alt="" coords="215,167,333,192"/>
+<area shape="poly" title=" " alt="" coords="547,48,311,163,309,158,545,43"/>
+<area shape="rect" href="aa64lowlevel_8h.html" title=" " alt="" coords="5,167,191,192"/>
+<area shape="poly" title=" " alt="" coords="525,48,149,165,147,160,524,43"/>
+<area shape="rect" href="BaseHdr_2Mm_2vmmngr_8h.html" title=" " alt="" coords="357,167,474,192"/>
+<area shape="poly" title=" " alt="" coords="565,48,440,159,437,155,562,44"/>
+<area shape="rect" href="uart_8h.html" title=" " alt="" coords="499,167,609,192"/>
+<area shape="poly" title=" " alt="" coords="577,47,559,94,555,124,555,153,550,153,550,124,554,93,572,45"/>
+<area shape="rect" href="efi_8h.html" title=" " alt="" coords="830,93,881,119"/>
+<area shape="poly" title=" " alt="" coords="651,43,817,91,818,91,816,96,816,96,649,48"/>
+<area shape="rect" href="profile_8h.html" title=" " alt="" coords="569,93,707,119"/>
+<area shape="poly" title=" " alt="" coords="600,44,624,80,620,83,595,47"/>
+<area shape="rect" href="aucon_8h.html" title=" " alt="" coords="732,93,805,119"/>
+<area shape="poly" title=" " alt="" coords="630,43,730,85,728,90,628,48"/>
+<area shape="rect" title=" " alt="" coords="905,93,976,119"/>
+<area shape="poly" title=" " alt="" coords="670,42,892,91,891,96,669,47"/>
+<area shape="rect" title=" " alt="" coords="236,240,312,265"/>
+<area shape="poly" title=" " alt="" coords="277,192,277,226,271,226,271,192"/>
+<area shape="poly" title=" " alt="" coords="127,190,233,232,231,237,125,194"/>
+<area shape="poly" title=" " alt="" coords="394,194,310,236,308,231,391,190"/>
+<area shape="rect" title=" " alt="" coords="429,401,500,427"/>
+<area shape="poly" title=" " alt="" coords="409,194,395,215,385,241,371,298,373,323,384,352,403,375,427,393,424,397,399,379,380,355,368,324,366,298,379,239,391,212,404,191"/>
+<area shape="poly" title=" " alt="" coords="510,195,326,241,325,236,508,189"/>
+<area shape="poly" title=" " alt="" coords="499,194,459,212,442,225,428,241,422,253,419,272,421,304,433,352,450,389,446,391,427,354,416,304,413,272,417,251,424,239,438,221,457,207,497,189"/>
+<area shape="rect" href="aa64hcode_8h.html" title=" " alt="" coords="651,240,756,265"/>
+<area shape="poly" title=" " alt="" coords="579,190,668,232,665,236,577,194"/>
+<area shape="rect" href="imx8mp_8h.html" title=" " alt="" coords="439,240,627,265"/>
+<area shape="poly" title=" " alt="" coords="553,193,543,228,537,226,548,192"/>
+<area shape="rect" href="imx8mp__uart_8h.html" title=" " alt="" coords="442,313,618,353"/>
+<area shape="poly" title=" " alt="" coords="535,266,534,300,528,300,530,265"/>
+<area shape="poly" title=" " alt="" coords="516,355,485,392,481,389,512,352"/>
+<area shape="rect" href="BaseHdr_2stdint_8h.html" title=" " alt="" coords="872,240,943,265"/>
+<area shape="poly" title=" " alt="" coords="876,117,901,137,922,166,926,181,926,198,920,227,915,226,921,197,921,182,917,168,897,141,873,121"/>
+<area shape="poly" title=" " alt="" coords="662,116,703,141,745,176,762,197,774,219,777,243,770,266,747,299,718,327,685,350,650,368,577,394,514,409,513,404,576,389,647,363,682,345,715,323,743,296,765,264,772,242,769,221,758,200,742,180,699,145,659,121"/>
+<area shape="poly" title=" " alt="" coords="626,121,580,160,577,155,623,117"/>
+<area shape="rect" href="BaseHdr_2aurora_8h.html" title=" " alt="" coords="832,167,908,192"/>
+<area shape="poly" title=" " alt="" coords="786,116,844,156,841,161,783,121"/>
+<area shape="poly" title=" " alt="" coords="879,191,897,227,893,229,874,194"/>
 </map>
 </div>
 </div><table class="memberdecls">
@@ -148,9 +157,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a3b0c99c44967619733476b3e80428dc2" id="r_a3b0c99c44967619733476b3e80428dc2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pmmngr_8c.html#a3b0c99c44967619733476b3e80428dc2">AuPmmngrInitBitmap</a> (<a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> BSize, void *Buffer)</td></tr>
 <tr class="memdesc:a3b0c99c44967619733476b3e80428dc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuPmmngrInitBitmap &ndash; Initialize the Ram bitmap with all zeros.  <br /></td></tr>
 <tr class="separator:a3b0c99c44967619733476b3e80428dc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac364baca267f4c88130885106b2e3232" id="r_ac364baca267f4c88130885106b2e3232"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pmmngr_8c.html#ac364baca267f4c88130885106b2e3232">AuPmmngrBitmapCheck</a> (<a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> <a class="el" href="Libs_2XEClib_2includes_2string_8h.html#a48b8e98743833e6ce735f3d9f2fb240f">index</a>)</td></tr>
+<tr class="memitem:ac364baca267f4c88130885106b2e3232" id="r_ac364baca267f4c88130885106b2e3232"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pmmngr_8c.html#ac364baca267f4c88130885106b2e3232">AuPmmngrBitmapCheck</a> (<a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> <a class="el" href="Libs_2XEClib_2includes_2string_8h.html#a48b8e98743833e6ce735f3d9f2fb240f">index</a>)</td></tr>
 <tr class="separator:ac364baca267f4c88130885106b2e3232"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b7747c93a566b464ee42b7786cc32a8" id="r_a5b7747c93a566b464ee42b7786cc32a8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pmmngr_8c.html#a5b7747c93a566b464ee42b7786cc32a8">AuPmmngrBitmapSet</a> (<a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> <a class="el" href="Libs_2XEClib_2includes_2string_8h.html#a48b8e98743833e6ce735f3d9f2fb240f">index</a>, <a class="el" href="stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> value)</td></tr>
+<tr class="memitem:a5b7747c93a566b464ee42b7786cc32a8" id="r_a5b7747c93a566b464ee42b7786cc32a8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pmmngr_8c.html#a5b7747c93a566b464ee42b7786cc32a8">AuPmmngrBitmapSet</a> (<a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> <a class="el" href="Libs_2XEClib_2includes_2string_8h.html#a48b8e98743833e6ce735f3d9f2fb240f">index</a>, <a class="el" href="BaseHdr_2stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> value)</td></tr>
 <tr class="separator:a5b7747c93a566b464ee42b7786cc32a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9a28dcde3ea9efe5b76ffd5bc31e17c" id="r_ab9a28dcde3ea9efe5b76ffd5bc31e17c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pmmngr_8c.html#ab9a28dcde3ea9efe5b76ffd5bc31e17c">AuPmmngrLockPage</a> (<a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> <a class="el" href="acpixf_8h.html#a5c9068e87bdb7dd28aaf9b2565a0cc3c">Address</a>)</td></tr>
 <tr class="memdesc:ab9a28dcde3ea9efe5b76ffd5bc31e17c"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuPmmngrLockPage &ndash; Lock a given page.  <br /></td></tr>
@@ -164,7 +173,7 @@ Functions</h2></td></tr>
 <tr class="memitem:a13457b62e4feacef08d19976d455a649" id="r_a13457b62e4feacef08d19976d455a649"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pmmngr_8c.html#a13457b62e4feacef08d19976d455a649">AuPmmngrInitialize</a> (<a class="el" href="BaseHdr_2aurora_8h.html#a886498d078ece21b18b0bf2dad40fccd">KERNEL_BOOT_INFO</a> *info)</td></tr>
 <tr class="memdesc:a13457b62e4feacef08d19976d455a649"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuPmmngrInitialise &ndash; initialise the physical memory manager.  <br /></td></tr>
 <tr class="separator:a13457b62e4feacef08d19976d455a649"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44d94b3bca0ca9ce1c0822d3261a38c3" id="r_a44d94b3bca0ca9ce1c0822d3261a38c3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pmmngr_8c.html#a44d94b3bca0ca9ce1c0822d3261a38c3">AuPmmngrAllocCheck</a> (<a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> address)</td></tr>
+<tr class="memitem:a44d94b3bca0ca9ce1c0822d3261a38c3" id="r_a44d94b3bca0ca9ce1c0822d3261a38c3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pmmngr_8c.html#a44d94b3bca0ca9ce1c0822d3261a38c3">AuPmmngrAllocCheck</a> (<a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> address)</td></tr>
 <tr class="separator:a44d94b3bca0ca9ce1c0822d3261a38c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2192681a5a5c133f4dd36c7fa028adb8" id="r_a2192681a5a5c133f4dd36c7fa028adb8"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pmmngr_8c.html#a2192681a5a5c133f4dd36c7fa028adb8">AuPmmngrAlloc</a> ()</td></tr>
 <tr class="memdesc:a2192681a5a5c133f4dd36c7fa028adb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuPmmngrAlloc &ndash; Allocate a single physical page frame and return it to the caller.  <br /></td></tr>
@@ -213,7 +222,7 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:ac884e2f002c2994bc00aeb5870eb61be" id="r_ac884e2f002c2994bc00aeb5870eb61be"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pmmngr_8c.html#ac884e2f002c2994bc00aeb5870eb61be">debugon</a></td></tr>
+<tr class="memitem:ac884e2f002c2994bc00aeb5870eb61be" id="r_ac884e2f002c2994bc00aeb5870eb61be"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pmmngr_8c.html#ac884e2f002c2994bc00aeb5870eb61be">debugon</a></td></tr>
 <tr class="separator:ac884e2f002c2994bc00aeb5870eb61be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -345,7 +354,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> AuPmmngrAllocCheck </td>
+          <td class="memname"><a class="el" href="BaseHdr_2stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> AuPmmngrAllocCheck </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>&#160;</td>
           <td class="paramname"><em>address</em></td><td>)</td>
@@ -363,7 +372,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> AuPmmngrBitmapCheck </td>
+          <td class="memname"><a class="el" href="BaseHdr_2stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> AuPmmngrBitmapCheck </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>&#160;</td>
           <td class="paramname"><em>index</em></td><td>)</td>
@@ -381,7 +390,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> AuPmmngrBitmapSet </td>
+          <td class="memname"><a class="el" href="BaseHdr_2stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> AuPmmngrBitmapSet </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>&#160;</td>
           <td class="paramname"><em>index</em>, </td>
@@ -389,7 +398,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="BaseHdr_2stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td>
           <td class="paramname"><em>value</em>&#160;</td>
         </tr>
         <tr>
@@ -861,7 +870,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> debugon</td>
+          <td class="memname"><a class="el" href="BaseHdr_2stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> debugon</td>
         </tr>
       </table>
 </div><div class="memdoc">

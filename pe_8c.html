@@ -187,10 +187,10 @@ Functions</h2></td></tr>
 <tr class="memitem:aa16b4459afd146802ac5408fcb5859c3" id="r_aa16b4459afd146802ac5408fcb5859c3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pe_8c.html#aa16b4459afd146802ac5408fcb5859c3">AuKernelRelocatePE</a> (void *image, <a class="el" href="BaseHdr_2pe_8h.html#a7d164fdaa649432afb8e0c370dd5685c">PIMAGE_NT_HEADERS</a> nt, int diff)</td></tr>
 <tr class="memdesc:aa16b4459afd146802ac5408fcb5859c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuKernelRelocatePE &ndash; relocates the image from its actual base address.  <br /></td></tr>
 <tr class="separator:aa16b4459afd146802ac5408fcb5859c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2025404d497229fad831115375357f1c" id="r_a2025404d497229fad831115375357f1c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pe_8c.html#a2025404d497229fad831115375357f1c">AuPEFileIsDynamicallyLinked</a> (void *image)</td></tr>
+<tr class="memitem:a2025404d497229fad831115375357f1c" id="r_a2025404d497229fad831115375357f1c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pe_8c.html#a2025404d497229fad831115375357f1c">AuPEFileIsDynamicallyLinked</a> (void *image)</td></tr>
 <tr class="memdesc:a2025404d497229fad831115375357f1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuPEFileIsDynamicallyLinked &ndash; checks if the current binary image is dynamically linked.  <br /></td></tr>
 <tr class="separator:a2025404d497229fad831115375357f1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12853d7dadfc67dab792bd5a9001e24f" id="r_a12853d7dadfc67dab792bd5a9001e24f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pe_8c.html#a12853d7dadfc67dab792bd5a9001e24f">AuCoffResolveAddress</a> (<a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *imageBase, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> paddr)</td></tr>
+<tr class="memitem:a12853d7dadfc67dab792bd5a9001e24f" id="r_a12853d7dadfc67dab792bd5a9001e24f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pe_8c.html#a12853d7dadfc67dab792bd5a9001e24f">AuCoffResolveAddress</a> (<a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *imageBase, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> paddr)</td></tr>
 <tr class="memdesc:a12853d7dadfc67dab792bd5a9001e24f"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuCoffResolveAddress &ndash; print the symbol function name for specific pointing address.  <br /></td></tr>
 <tr class="separator:a12853d7dadfc67dab792bd5a9001e24f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -424,10 +424,10 @@ Functions</h2></td></tr>
 <div class="ttc" id="aLittleBoot_2pe_8h_html_a25612f60df7b78e988643b03669d9815"><div class="ttname"><a href="LittleBoot_2pe_8h.html#a25612f60df7b78e988643b03669d9815">FileHeader</a></div><div class="ttdeci">IMAGE_FILE_HEADER FileHeader</div><div class="ttdef"><b>Definition</b> pe.h:1</div></div>
 <div class="ttc" id="aLittleBoot_2pe_8h_html_ad6272a2366c4d11b39c31e9a0f0f6be8"><div class="ttname"><a href="LittleBoot_2pe_8h.html#ad6272a2366c4d11b39c31e9a0f0f6be8">OptionalHeader</a></div><div class="ttdeci">IMAGE_OPTIONAL_HEADER_PE32PLUS OptionalHeader</div><div class="ttdef"><b>Definition</b> pe.h:2</div></div>
 <div class="ttc" id="aacefiex_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition</b> acefiex.h:161</div></div>
-<div class="ttc" id="ape_8c_html_a06fd590700d3bb729116e93acb353ce3"><div class="ttname"><a href="pe_8c.html#a06fd590700d3bb729116e93acb353ce3">OFFSETOF</a></div><div class="ttdeci">#define OFFSETOF(s, m)</div><div class="ttdef"><b>Definition</b> pe.c:302</div></div>
-<div class="ttc" id="astruct__IMAGE__FILE__HEADER___html_ac1bf7f9c4b91c3bf65a6008270e5a640"><div class="ttname"><a href="struct__IMAGE__FILE__HEADER__.html#ac1bf7f9c4b91c3bf65a6008270e5a640">_IMAGE_FILE_HEADER_::SizeOfOptionaHeader</a></div><div class="ttdeci">uint16_t SizeOfOptionaHeader</div><div class="ttdef"><b>Definition</b> pe.h:85</div></div>
-<div class="ttc" id="astruct__IMAGE__NT__HEADERS__PE32PLUS_html"><div class="ttname"><a href="struct__IMAGE__NT__HEADERS__PE32PLUS.html">_IMAGE_NT_HEADERS_PE32PLUS</a></div><div class="ttdef"><b>Definition</b> pe.h:175</div></div>
-<div class="ttc" id="astruct__IMAGE__SECTION__HEADER_html"><div class="ttname"><a href="struct__IMAGE__SECTION__HEADER.html">_IMAGE_SECTION_HEADER</a></div><div class="ttdef"><b>Definition</b> pe.h:196</div></div>
+<div class="ttc" id="ape_8c_html_a06fd590700d3bb729116e93acb353ce3"><div class="ttname"><a href="pe_8c.html#a06fd590700d3bb729116e93acb353ce3">OFFSETOF</a></div><div class="ttdeci">#define OFFSETOF(s, m)</div><div class="ttdef"><b>Definition</b> pe.c:307</div></div>
+<div class="ttc" id="astruct__IMAGE__FILE__HEADER___html_ac1bf7f9c4b91c3bf65a6008270e5a640"><div class="ttname"><a href="struct__IMAGE__FILE__HEADER__.html#ac1bf7f9c4b91c3bf65a6008270e5a640">_IMAGE_FILE_HEADER_::SizeOfOptionaHeader</a></div><div class="ttdeci">uint16_t SizeOfOptionaHeader</div><div class="ttdef"><b>Definition</b> pe.h:84</div></div>
+<div class="ttc" id="astruct__IMAGE__NT__HEADERS__PE32PLUS_html"><div class="ttname"><a href="struct__IMAGE__NT__HEADERS__PE32PLUS.html">_IMAGE_NT_HEADERS_PE32PLUS</a></div><div class="ttdef"><b>Definition</b> pe.h:174</div></div>
+<div class="ttc" id="astruct__IMAGE__SECTION__HEADER_html"><div class="ttname"><a href="struct__IMAGE__SECTION__HEADER.html">_IMAGE_SECTION_HEADER</a></div><div class="ttdef"><b>Definition</b> pe.h:195</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -594,7 +594,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> AuCoffResolveAddress </td>
+          <td class="memname"><a class="el" href="BaseHdr_2stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> AuCoffResolveAddress </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
           <td class="paramname"><em>imageBase</em>, </td>
@@ -763,7 +763,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> AuPEFileIsDynamicallyLinked </td>
+          <td class="memname"><a class="el" href="BaseHdr_2stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> AuPEFileIsDynamicallyLinked </td>
           <td>(</td>
           <td class="paramtype">void *&#160;</td>
           <td class="paramname"><em>image</em></td><td>)</td>

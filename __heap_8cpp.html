@@ -767,7 +767,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"> ((((<a class="code hl_typedef" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>)(A) &amp; <a class="code hl_define" href="__heap_8cpp.html#a46f5899c4a72acfdd20872d893679bb0">CHUNK_ALIGN_MASK</a>) == 0)? 0 :\</div>
 <div class="line">  ((<a class="code hl_define" href="__heap_8cpp.html#a05897f13370acbdecbf31034f8bec0d5">MALLOC_ALIGNMENT</a> - ((<a class="code hl_typedef" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>)(A) &amp; <a class="code hl_define" href="__heap_8cpp.html#a46f5899c4a72acfdd20872d893679bb0">CHUNK_ALIGN_MASK</a>)) &amp; <a class="code hl_define" href="__heap_8cpp.html#a46f5899c4a72acfdd20872d893679bb0">CHUNK_ALIGN_MASK</a>))</div>
-<div class="ttc" id="aBaseHdr_2stdint_8h_html_a186ea1339bffb378854987065835afe3"><div class="ttname"><a href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a></div><div class="ttdeci">uint64_t size_t</div><div class="ttdef"><b>Definition</b> stdint.h:105</div></div>
+<div class="ttc" id="aBaseHdr_2stdint_8h_html_a186ea1339bffb378854987065835afe3"><div class="ttname"><a href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a></div><div class="ttdeci">uint64_t size_t</div><div class="ttdef"><b>Definition</b> stdint.h:104</div></div>
 <div class="ttc" id="a__heap_8cpp_html_a05897f13370acbdecbf31034f8bec0d5"><div class="ttname"><a href="__heap_8cpp.html#a05897f13370acbdecbf31034f8bec0d5">MALLOC_ALIGNMENT</a></div><div class="ttdeci">#define MALLOC_ALIGNMENT</div><div class="ttdef"><b>Definition</b> _heap.cpp:706</div></div>
 <div class="ttc" id="a__heap_8cpp_html_a46f5899c4a72acfdd20872d893679bb0"><div class="ttname"><a href="__heap_8cpp.html#a46f5899c4a72acfdd20872d893679bb0">CHUNK_ALIGN_MASK</a></div><div class="ttdeci">#define CHUNK_ALIGN_MASK</div><div class="ttdef"><b>Definition</b> _heap.cpp:1701</div></div>
 </div><!-- fragment -->
@@ -2009,7 +2009,7 @@ Functions</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line">  (((S) + (mparams.<a class="code hl_variable" href="structmalloc__params.html#aa0609453d9ec826c8ffc632cbfb8cf68">granularity</a> - <a class="code hl_define" href="__heap_8cpp.html#a1a115588725fa912f1bcaca9f08fb658">SIZE_T_ONE</a>))\</div>
 <div class="line">   &amp; ~(mparams.<a class="code hl_variable" href="structmalloc__params.html#aa0609453d9ec826c8ffc632cbfb8cf68">granularity</a> - <a class="code hl_define" href="__heap_8cpp.html#a1a115588725fa912f1bcaca9f08fb658">SIZE_T_ONE</a>))</div>
 <div class="ttc" id="a__heap_8cpp_html_a1a115588725fa912f1bcaca9f08fb658"><div class="ttname"><a href="__heap_8cpp.html#a1a115588725fa912f1bcaca9f08fb658">SIZE_T_ONE</a></div><div class="ttdeci">#define SIZE_T_ONE</div><div class="ttdef"><b>Definition</b> _heap.cpp:1692</div></div>
-<div class="ttc" id="astructmalloc__params_html_aa0609453d9ec826c8ffc632cbfb8cf68"><div class="ttname"><a href="structmalloc__params.html#aa0609453d9ec826c8ffc632cbfb8cf68">malloc_params::granularity</a></div><div class="ttdeci">size_t granularity</div><div class="ttdef"><b>Definition</b> dlmalloc.c:2700</div></div>
+<div class="ttc" id="astructmalloc__params_html_aa0609453d9ec826c8ffc632cbfb8cf68"><div class="ttname"><a href="structmalloc__params.html#aa0609453d9ec826c8ffc632cbfb8cf68">malloc_params::granularity</a></div><div class="ttdeci">size_t granularity</div><div class="ttdef"><b>Definition</b> dlmalloc.c:2701</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2184,7 +2184,7 @@ Functions</h2></td></tr>
 <div class="ttc" id="a__heap_8cpp_html_ac38ba865e6c3bf916fcdcb6bfa8be00d"><div class="ttname"><a href="__heap_8cpp.html#ac38ba865e6c3bf916fcdcb6bfa8be00d">insert_large_chunk</a></div><div class="ttdeci">#define insert_large_chunk(M, X, S)</div><div class="ttdef"><b>Definition</b> _heap.cpp:3731</div></div>
 <div class="ttc" id="a__heap_8cpp_html_adb28fc94857fe6fd0d13a790c1866284"><div class="ttname"><a href="__heap_8cpp.html#adb28fc94857fe6fd0d13a790c1866284">insert_small_chunk</a></div><div class="ttdeci">#define insert_small_chunk(M, P, S)</div><div class="ttdef"><b>Definition</b> _heap.cpp:3653</div></div>
 <div class="ttc" id="a__heap_8cpp_html_addd456ccc8fb838310e92a3f394fc1b1"><div class="ttname"><a href="__heap_8cpp.html#addd456ccc8fb838310e92a3f394fc1b1">tchunkptr</a></div><div class="ttdeci">struct malloc_tree_chunk * tchunkptr</div><div class="ttdef"><b>Definition</b> _heap.cpp:2492</div></div>
-<div class="ttc" id="astructmalloc__tree__chunk_html"><div class="ttname"><a href="structmalloc__tree__chunk.html">malloc_tree_chunk</a></div><div class="ttdef"><b>Definition</b> dlmalloc.c:2475</div></div>
+<div class="ttc" id="astructmalloc__tree__chunk_html"><div class="ttname"><a href="structmalloc__tree__chunk.html">malloc_tree_chunk</a></div><div class="ttdef"><b>Definition</b> dlmalloc.c:2476</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2276,10 +2276,10 @@ Functions</h2></td></tr>
 <div class="ttc" id="a__heap_8cpp_html_a862c7dc1f319911e1f06b9d99485cc54"><div class="ttname"><a href="__heap_8cpp.html#a862c7dc1f319911e1f06b9d99485cc54">smallbin_at</a></div><div class="ttdeci">#define smallbin_at(M, i)</div><div class="ttdef"><b>Definition</b> _heap.cpp:2916</div></div>
 <div class="ttc" id="a__heap_8cpp_html_abf35d28195f0f301fe63d0ea867f4379"><div class="ttname"><a href="__heap_8cpp.html#abf35d28195f0f301fe63d0ea867f4379">MIN_CHUNK_SIZE</a></div><div class="ttdeci">#define MIN_CHUNK_SIZE</div><div class="ttdef"><b>Definition</b> _heap.cpp:2300</div></div>
 <div class="ttc" id="a__heap_8cpp_html_afe7e6535ba41a91be580eb2bba5890e2"><div class="ttname"><a href="__heap_8cpp.html#afe7e6535ba41a91be580eb2bba5890e2">RTCHECK</a></div><div class="ttdeci">#define RTCHECK(e)</div><div class="ttdef"><b>Definition</b> _heap.cpp:3122</div></div>
-<div class="ttc" id="adlmalloc_8c_html_a4c04048d19db75c080e5f0ab19d45f8f"><div class="ttname"><a href="dlmalloc_8c.html#a4c04048d19db75c080e5f0ab19d45f8f">bindex_t</a></div><div class="ttdeci">unsigned int bindex_t</div><div class="ttdef"><b>Definition</b> dlmalloc.c:2276</div></div>
-<div class="ttc" id="astructmalloc__chunk_html"><div class="ttname"><a href="structmalloc__chunk.html">malloc_chunk</a></div><div class="ttdef"><b>Definition</b> dlmalloc.c:2266</div></div>
-<div class="ttc" id="astructmalloc__chunk_html_a1c0148642730c23c73bee9043deaf398"><div class="ttname"><a href="structmalloc__chunk.html#a1c0148642730c23c73bee9043deaf398">malloc_chunk::bk</a></div><div class="ttdeci">struct malloc_chunk * bk</div><div class="ttdef"><b>Definition</b> dlmalloc.c:2270</div></div>
-<div class="ttc" id="astructmalloc__chunk_html_a3bf7a41ce24baa8f17a5a4d13abfdef4"><div class="ttname"><a href="structmalloc__chunk.html#a3bf7a41ce24baa8f17a5a4d13abfdef4">malloc_chunk::fd</a></div><div class="ttdeci">struct malloc_chunk * fd</div><div class="ttdef"><b>Definition</b> dlmalloc.c:2269</div></div>
+<div class="ttc" id="adlmalloc_8c_html_a4c04048d19db75c080e5f0ab19d45f8f"><div class="ttname"><a href="dlmalloc_8c.html#a4c04048d19db75c080e5f0ab19d45f8f">bindex_t</a></div><div class="ttdeci">unsigned int bindex_t</div><div class="ttdef"><b>Definition</b> dlmalloc.c:2277</div></div>
+<div class="ttc" id="astructmalloc__chunk_html"><div class="ttname"><a href="structmalloc__chunk.html">malloc_chunk</a></div><div class="ttdef"><b>Definition</b> dlmalloc.c:2267</div></div>
+<div class="ttc" id="astructmalloc__chunk_html_a1c0148642730c23c73bee9043deaf398"><div class="ttname"><a href="structmalloc__chunk.html#a1c0148642730c23c73bee9043deaf398">malloc_chunk::bk</a></div><div class="ttdeci">struct malloc_chunk * bk</div><div class="ttdef"><b>Definition</b> dlmalloc.c:2271</div></div>
+<div class="ttc" id="astructmalloc__chunk_html_a3bf7a41ce24baa8f17a5a4d13abfdef4"><div class="ttname"><a href="structmalloc__chunk.html#a3bf7a41ce24baa8f17a5a4d13abfdef4">malloc_chunk::fd</a></div><div class="ttdeci">struct malloc_chunk * fd</div><div class="ttdef"><b>Definition</b> dlmalloc.c:2270</div></div>
 </div><!-- fragment -->
 </div>
 </div>

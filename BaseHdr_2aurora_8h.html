@@ -223,6 +223,8 @@ Macros</h2></td></tr>
 <tr class="separator:a3607dee4064d4867f4eb5504d6eca568"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77383d4c5311d4c7fe49364766887650" id="r_a77383d4c5311d4c7fe49364766887650"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BaseHdr_2aurora_8h.html#a77383d4c5311d4c7fe49364766887650">KERNEL_STACK_SIZE</a>&#160;&#160;&#160;40960</td></tr>
 <tr class="separator:a77383d4c5311d4c7fe49364766887650"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e7a3bf6003d72a62606f343c2db6245" id="r_a8e7a3bf6003d72a62606f343c2db6245"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BaseHdr_2aurora_8h.html#a8e7a3bf6003d72a62606f343c2db6245">ALIGNED</a>(x)</td></tr>
+<tr class="separator:a8e7a3bf6003d72a62606f343c2db6245"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d3af5c396abb99ca853c1611ce77348" id="r_a1d3af5c396abb99ca853c1611ce77348"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BaseHdr_2aurora_8h.html#a1d3af5c396abb99ca853c1611ce77348">BOOT_UEFI_x64</a>&#160;&#160;&#160;1</td></tr>
 <tr class="separator:a1d3af5c396abb99ca853c1611ce77348"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1fa98a96006a80a0709d5148c96c103" id="r_ab1fa98a96006a80a0709d5148c96c103"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BaseHdr_2aurora_8h.html#ab1fa98a96006a80a0709d5148c96c103">BOOT_UEFI_ARM64</a>&#160;&#160;&#160;2</td></tr>
@@ -232,6 +234,8 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
+<tr class="memitem:add0344b7fed4a4c4d9ff442571c0adb7" id="r_add0344b7fed4a4c4d9ff442571c0adb7"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BaseHdr_2aurora_8h.html#add0344b7fed4a4c4d9ff442571c0adb7">CapRights</a></td></tr>
+<tr class="separator:add0344b7fed4a4c4d9ff442571c0adb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f6b8563a974774699338eb2caba4bf8" id="r_a7f6b8563a974774699338eb2caba4bf8"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct__lbprotocol__.html">_lbprotocol_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BaseHdr_2aurora_8h.html#a7f6b8563a974774699338eb2caba4bf8">AuLittleBootProtocol</a></td></tr>
 <tr class="separator:a7f6b8563a974774699338eb2caba4bf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a886498d078ece21b18b0bf2dad40fccd" id="r_a886498d078ece21b18b0bf2dad40fccd"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct__KERNEL__BOOT__INFO__.html">_KERNEL_BOOT_INFO_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BaseHdr_2aurora_8h.html#a886498d078ece21b18b0bf2dad40fccd">KERNEL_BOOT_INFO</a></td></tr>
@@ -246,6 +250,24 @@ Functions</h2></td></tr>
 <tr class="separator:ab676945e1697fb717af289a3cc86d817"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a8e7a3bf6003d72a62606f343c2db6245" name="a8e7a3bf6003d72a62606f343c2db6245"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e7a3bf6003d72a62606f343c2db6245">&#9670;&#160;</a></span>ALIGNED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ALIGNED</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a0fe486a3ff3c57b134906cb852a447ba" name="a0fe486a3ff3c57b134906cb852a447ba"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0fe486a3ff3c57b134906cb852a447ba">&#9670;&#160;</a></span>AU_ALIGN</h2>
 
@@ -393,6 +415,20 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">typedef struct <a class="el" href="struct__lbprotocol__.html">_lbprotocol_</a> <a class="el" href="BaseHdr_2aurora_8h.html#a7f6b8563a974774699338eb2caba4bf8">AuLittleBootProtocol</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="add0344b7fed4a4c4d9ff442571c0adb7" name="add0344b7fed4a4c4d9ff442571c0adb7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add0344b7fed4a4c4d9ff442571c0adb7">&#9670;&#160;</a></span>CapRights</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> <a class="el" href="BaseHdr_2aurora_8h.html#add0344b7fed4a4c4d9ff442571c0adb7">CapRights</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
