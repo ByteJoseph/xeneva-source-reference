@@ -138,6 +138,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a5cb544299454c8c800694b1443c39d09" id="r_a5cb544299454c8c800694b1443c39d09"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aucon_8h.html#a5cb544299454c8c800694b1443c39d09">AuConsolePostInitialise</a> (<a class="el" href="BaseHdr_2aurora_8h.html#a32e3a1cc3a4fdb59d8cdf38b301555a0">PKERNEL_BOOT_INFO</a> info)</td></tr>
 <tr class="memdesc:a5cb544299454c8c800694b1443c39d09"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuConsolePostInitialise &ndash; initialise the post console process.  <br /></td></tr>
 <tr class="separator:a5cb544299454c8c800694b1443c39d09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af02356a10c6f48f156c8b2d3fb0816fd" id="r_af02356a10c6f48f156c8b2d3fb0816fd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aucon_8h.html#af02356a10c6f48f156c8b2d3fb0816fd">AuPutS</a> (char *str)</td></tr>
+<tr class="memdesc:af02356a10c6f48f156c8b2d3fb0816fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints string to console output.  <br /></td></tr>
+<tr class="separator:af02356a10c6f48f156c8b2d3fb0816fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1bcbb7f3afdc885c1a5679cf3dfcf93" id="r_ae1bcbb7f3afdc885c1a5679cf3dfcf93"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aucon_8h.html#ae1bcbb7f3afdc885c1a5679cf3dfcf93">AuPutS_Color</a> (char *str, <a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> color)</td></tr>
+<tr class="memdesc:ae1bcbb7f3afdc885c1a5679cf3dfcf93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints string to console output.  <br /></td></tr>
+<tr class="separator:ae1bcbb7f3afdc885c1a5679cf3dfcf93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d980fe586466e2818569101c9bf9d10" id="r_a5d980fe586466e2818569101c9bf9d10"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aucon_8h.html#a5d980fe586466e2818569101c9bf9d10">AuTextOut</a> (const char *text,...)</td></tr>
 <tr class="memdesc:a5d980fe586466e2818569101c9bf9d10"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuTextOut &ndash; standard text printing function for entire kernel.  <br /></td></tr>
 <tr class="separator:a5d980fe586466e2818569101c9bf9d10"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -517,6 +523,86 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="af02356a10c6f48f156c8b2d3fb0816fd" name="af02356a10c6f48f156c8b2d3fb0816fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af02356a10c6f48f156c8b2d3fb0816fd">&#9670;&#160;</a></span>AuPutS()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AuPutS </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Prints string to console output. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>&ndash; string to print </td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Scroll</p>
+
+</div>
+</div>
+<a id="ae1bcbb7f3afdc885c1a5679cf3dfcf93" name="ae1bcbb7f3afdc885c1a5679cf3dfcf93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1bcbb7f3afdc885c1a5679cf3dfcf93">&#9670;&#160;</a></span>AuPutS_Color()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AuPutS_Color </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td>
+          <td class="paramname"><em>color</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Prints string to console output. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>&ndash; string to print </td></tr>
+    <tr><td class="paramname">col</td><td>&ndash; foreground color </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

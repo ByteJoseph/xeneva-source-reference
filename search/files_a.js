@@ -13,8 +13,10 @@ var searchData=
   ['keymap_5fit_2eh_10',['keymap_it.h',['../keymap__it_8h.html',1,'']]],
   ['keymap_5fuk_2eh_11',['keymap_uk.h',['../keymap__uk_8h.html',1,'']]],
   ['keymap_5fus_2eh_12',['keymap_us.h',['../keymap__us_8h.html',1,'']]],
-  ['kmalloc_2ec_13',['kmalloc.c',['../kmalloc_8c.html',1,'']]],
-  ['kmalloc_2ecpp_14',['kmalloc.cpp',['../kmalloc_8cpp.html',1,'']]],
-  ['kmalloc_2eh_15',['kmalloc.h',['../kmalloc_8h.html',1,'']]],
-  ['kms_2eh_16',['Kms.h',['../Kms_8h.html',1,'']]]
+  ['klog_2ec_13',['klog.c',['../klog_8c.html',1,'']]],
+  ['klog_2eh_14',['klog.h',['../klog_8h.html',1,'']]],
+  ['kmalloc_2ec_15',['kmalloc.c',['../kmalloc_8c.html',1,'']]],
+  ['kmalloc_2ecpp_16',['kmalloc.cpp',['../kmalloc_8cpp.html',1,'']]],
+  ['kmalloc_2eh_17',['kmalloc.h',['../kmalloc_8h.html',1,'']]],
+  ['kms_2eh_18',['Kms.h',['../Kms_8h.html',1,'']]]
 ];

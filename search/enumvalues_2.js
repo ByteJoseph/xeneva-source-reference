@@ -35,8 +35,13 @@ var searchData=
   ['bootinformationstatussystemsecurityviolation_32',['BootInformationStatusSystemSecurityViolation',['../IndustryStandard_2SmBios_8h.html#a6c66616038c144ad7e1931dcc4b4f001a48441b377227d6ca12e8858081c1eea0',1,'SmBios.h']]],
   ['bootinformationstatususerrequestedboot_33',['BootInformationStatusUserRequestedBoot',['../IndustryStandard_2SmBios_8h.html#a6c66616038c144ad7e1931dcc4b4f001aa758be9b89f60eb06cd9b4667f041721',1,'SmBios.h']]],
   ['bootinformationstatuswatchdogtimerexpired_34',['BootInformationStatusWatchdogTimerExpired',['../IndustryStandard_2SmBios_8h.html#a6c66616038c144ad7e1931dcc4b4f001ac082eb97a38359a97fafdb6df174edb9',1,'SmBios.h']]],
-  ['both_35',['Both',['../Supplicant_8h.html#ad64984a28acf10f8bb9dd4ef2843635caedf69634e61e7ec5d006874d299bc0d4',1,'Supplicant.h']]],
-  ['bumpthresholdcountfunctionid_36',['BumpThresholdCountFunctionId',['../ExtendedSalServiceClasses_8h.html#a8a8bfbbaac171a9516c2fece2bf9d5c5a7b03cf8133f547942e826072762321dc',1,'ExtendedSalServiceClasses.h']]],
-  ['byprotocol_37',['ByProtocol',['../UefiSpec_8h.html#abc5a8a9c636f68115cb3956d6e12e27ca3f1ef40caf6007fd5c451665f1087454',1,'UefiSpec.h']]],
-  ['byregisternotify_38',['ByRegisterNotify',['../UefiSpec_8h.html#abc5a8a9c636f68115cb3956d6e12e27cadfb199f4d2c676c2769ea1455c8f27fd',1,'UefiSpec.h']]]
+  ['bordoisila_5fdebug_35',['BORDOISILA_DEBUG',['../klog_8h.html#a3441fcd3cbcc6ae3d2c6fc523bd5b3cea7bfb428f13c05cb133ed2a717985238e',1,'klog.h']]],
+  ['bordoisila_5femerg_36',['BORDOISILA_EMERG',['../klog_8h.html#a3441fcd3cbcc6ae3d2c6fc523bd5b3cea96056ae3270ece38c194d39f0f2c7b3c',1,'klog.h']]],
+  ['bordoisila_5ferror_37',['BORDOISILA_ERROR',['../klog_8h.html#a3441fcd3cbcc6ae3d2c6fc523bd5b3cead10f0cfc44e4c0e8a4de4c41ad61af64',1,'klog.h']]],
+  ['bordoisila_5finfo_38',['BORDOISILA_INFO',['../klog_8h.html#a3441fcd3cbcc6ae3d2c6fc523bd5b3cea09a366abc6a588abca593adbaaca1aa4',1,'klog.h']]],
+  ['bordoisila_5fwarn_39',['BORDOISILA_WARN',['../klog_8h.html#a3441fcd3cbcc6ae3d2c6fc523bd5b3cea6d39e2222b7d6213f925f7e8ca3fb5a3',1,'klog.h']]],
+  ['both_40',['Both',['../Supplicant_8h.html#ad64984a28acf10f8bb9dd4ef2843635caedf69634e61e7ec5d006874d299bc0d4',1,'Supplicant.h']]],
+  ['bumpthresholdcountfunctionid_41',['BumpThresholdCountFunctionId',['../ExtendedSalServiceClasses_8h.html#a8a8bfbbaac171a9516c2fece2bf9d5c5a7b03cf8133f547942e826072762321dc',1,'ExtendedSalServiceClasses.h']]],
+  ['byprotocol_42',['ByProtocol',['../UefiSpec_8h.html#abc5a8a9c636f68115cb3956d6e12e27ca3f1ef40caf6007fd5c451665f1087454',1,'UefiSpec.h']]],
+  ['byregisternotify_43',['ByRegisterNotify',['../UefiSpec_8h.html#abc5a8a9c636f68115cb3956d6e12e27cadfb199f4d2c676c2769ea1455c8f27fd',1,'UefiSpec.h']]]
 ];
