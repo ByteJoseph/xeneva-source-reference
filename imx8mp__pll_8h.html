@@ -242,6 +242,11 @@ Macros</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a98de7d943af976a4f7bb3e7ebcf591c8" id="r_a98de7d943af976a4f7bb3e7ebcf591c8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__pll_8h.html#a98de7d943af976a4f7bb3e7ebcf591c8">imx8mp_pll_init</a> ()</td></tr>
 <tr class="separator:a98de7d943af976a4f7bb3e7ebcf591c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96582c661833897fbd7d104c97eaaa21" id="r_a96582c661833897fbd7d104c97eaaa21"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__pll_8h.html#a96582c661833897fbd7d104c97eaaa21">imx8mp_pll_recalc_rate</a> (<a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> pllbase, unsigned long parent_rate)</td></tr>
+<tr class="memdesc:a96582c661833897fbd7d104c97eaaa21"><td class="mdescLeft">&#160;</td><td class="mdescRight">imx8mp_pll_recalc_rate &ndash; recalculate pll rate  <br /></td></tr>
+<tr class="separator:a96582c661833897fbd7d104c97eaaa21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f574a3e2ec565d141b2a6b743df97e0" id="r_a8f574a3e2ec565d141b2a6b743df97e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imx8mp__pll_8h.html#a8f574a3e2ec565d141b2a6b743df97e0">imx8mp_pll_get_parent_rate</a> (<a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> pll_base)</td></tr>
+<tr class="separator:a8f574a3e2ec565d141b2a6b743df97e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>BSD 2-Clause License</p>
@@ -489,6 +494,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>This file is all about PLL interface, which is used to change or modify PLL clock source from CCM module, by default, values are set according to the suitable environment so directly PLL can be used on target registers </p>
 
 </div>
 </div>
@@ -1110,6 +1116,32 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a8f574a3e2ec565d141b2a6b743df97e0" name="a8f574a3e2ec565d141b2a6b743df97e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f574a3e2ec565d141b2a6b743df97e0">&#9670;&#160;</a></span>imx8mp_pll_get_parent_rate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> imx8mp_pll_get_parent_rate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>&#160;</td>
+          <td class="paramname"><em>pll_base</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a98de7d943af976a4f7bb3e7ebcf591c8" name="a98de7d943af976a4f7bb3e7ebcf591c8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a98de7d943af976a4f7bb3e7ebcf591c8">&#9670;&#160;</a></span>imx8mp_pll_init()</h2>
 
@@ -1132,6 +1164,51 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a96582c661833897fbd7d104c97eaaa21" name="a96582c661833897fbd7d104c97eaaa21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96582c661833897fbd7d104c97eaaa21">&#9670;&#160;</a></span>imx8mp_pll_recalc_rate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned long imx8mp_pll_recalc_rate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>&#160;</td>
+          <td class="paramname"><em>pllbase</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned long&#160;</td>
+          <td class="paramname"><em>parent_rate</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>imx8mp_pll_recalc_rate &ndash; recalculate pll rate </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pllbase</td><td>&ndash; pll base source or entry </td></tr>
+    <tr><td class="paramname">parent_rate</td><td>&ndash; clock rate, if the target root is high powered device, it uses osc_24m sel otherwise osc_32k is used for low powered device </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
