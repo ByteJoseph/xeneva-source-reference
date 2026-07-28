@@ -141,6 +141,12 @@ Functions</h2></td></tr>
 <tr class="separator:ad01aab18a17d62d2cf6bcd95492fa8a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c0f0893f9108a678084e577871812a9" id="r_a7c0f0893f9108a678084e577871812a9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> <a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BaseHdr_2dtb_8h.html#a7c0f0893f9108a678084e577871812a9">AuDeviceTreeGetU32Property</a> (<a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> *node, const char *property, <a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> default_val)</td></tr>
 <tr class="separator:a7c0f0893f9108a678084e577871812a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5eccb7ed70cf65a3c6e826c85a71685d" id="r_a5eccb7ed70cf65a3c6e826c85a71685d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> <a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BaseHdr_2dtb_8h.html#a5eccb7ed70cf65a3c6e826c85a71685d">AuDeviceTreeGetPropCells</a> (<a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> *node, const char *property, <a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> *out_num_cells)</td></tr>
+<tr class="separator:a5eccb7ed70cf65a3c6e826c85a71685d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7073370d618d4cdf90e6127439eb5fa1" id="r_a7073370d618d4cdf90e6127439eb5fa1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BaseHdr_2dtb_8h.html#a7073370d618d4cdf90e6127439eb5fa1">AuDeviceTreeDumpAll</a> ()</td></tr>
+<tr class="separator:a7073370d618d4cdf90e6127439eb5fa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11b5133652de3e145d57feacc98b79e6" id="r_a11b5133652de3e145d57feacc98b79e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BaseHdr_2dtb_8h.html#a11b5133652de3e145d57feacc98b79e6">AuDeviceTreeDumpAllProps</a> (const char *node_name)</td></tr>
+<tr class="separator:a11b5133652de3e145d57feacc98b79e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0aff00b54a29ff95e274c807be3d0472" id="r_a0aff00b54a29ff95e274c807be3d0472"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BaseHdr_2dtb_8h.html#a0aff00b54a29ff95e274c807be3d0472">AuDeviceTreeInitialize</a> (<a class="el" href="BaseHdr_2aurora_8h.html#a886498d078ece21b18b0bf2dad40fccd">KERNEL_BOOT_INFO</a> *info)</td></tr>
 <tr class="memdesc:a0aff00b54a29ff95e274c807be3d0472"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuDeviceTreeInitialize &ndash; initialize the device tree.  <br /></td></tr>
 <tr class="separator:a0aff00b54a29ff95e274c807be3d0472"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -173,6 +179,57 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a7073370d618d4cdf90e6127439eb5fa1" name="a7073370d618d4cdf90e6127439eb5fa1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7073370d618d4cdf90e6127439eb5fa1">&#9670;&#160;</a></span>AuDeviceTreeDumpAll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AuDeviceTreeDumpAll </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a11b5133652de3e145d57feacc98b79e6" name="a11b5133652de3e145d57feacc98b79e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11b5133652de3e145d57feacc98b79e6">&#9670;&#160;</a></span>AuDeviceTreeDumpAllProps()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AuDeviceTreeDumpAllProps </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>node_name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a210fea329acaf84869f7e5588ed451d0" name="a210fea329acaf84869f7e5588ed451d0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a210fea329acaf84869f7e5588ed451d0">&#9670;&#160;</a></span>AuDeviceTreeFindProperty()</h2>
 
@@ -259,6 +316,40 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a5eccb7ed70cf65a3c6e826c85a71685d" name="a5eccb7ed70cf65a3c6e826c85a71685d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5eccb7ed70cf65a3c6e826c85a71685d">&#9670;&#160;</a></span>AuDeviceTreeGetPropCells()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> <a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> AuDeviceTreeGetPropCells </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> *&#160;</td>
+          <td class="paramname"><em>node</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>property</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> *&#160;</td>
+          <td class="paramname"><em>out_num_cells</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
