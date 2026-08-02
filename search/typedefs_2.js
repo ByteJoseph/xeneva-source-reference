@@ -21,12 +21,13 @@ var searchData=
   ['bordoisilaclk_18',['BordoisilaClk',['../res_8h.html#ab3e7881e0ccbe9b93eccb902213acc90',1,'res.h']]],
   ['bordoisiladriver_19',['BordoisilaDriver',['../core_8h.html#a28057d31e048868a9f415b00b39b1a4d',1,'core.h']]],
   ['bordoisiladriverresource_20',['BordoisilaDriverResource',['../core_8h.html#ad23ad8a1d13db8e74e232462cc8ee48e',1,'core.h']]],
-  ['bordoisilaregulator_21',['BordoisilaRegulator',['../res_8h.html#a341ca6ea117445d44c4dc975a3b05b81',1,'res.h']]],
-  ['boxsize_5ft_22',['boxsize_t',['../AudioPlayer_2minimp4_8h.html#a589fdb9ea985caf07d8a399871758d06',1,'boxsize_t:&#160;minimp4.h'],['../mp4plr_2minimp4_8h.html#a589fdb9ea985caf07d8a399871758d06',1,'boxsize_t:&#160;minimp4.h']]],
-  ['bsize_23',['BSIZE',['../Tpm20_8h.html#a6999169afc71ec279d10439376d3f715',1,'Tpm20.h']]],
-  ['bulk_5ftransfer_24',['bulk_transfer',['../BaseHdr_2Drivers_2usb_8h.html#a1ed8e44f32de58c306010d81db798515',1,'usb.h']]],
-  ['buttonicon_25',['ButtonIcon',['../Process_2XELnch_2button_8h.html#a75728bef909bfc7cd0031d46c148ec55',1,'button.h']]],
-  ['buttoninfo_26',['ButtonInfo',['../nmdapha_8h.html#a36a72e9c895cd29c58b038fd563f37d2',1,'nmdapha.h']]],
-  ['buttonmatch_27',['ButtonMatch',['../search_8cpp.html#a853d64b9b6a6c7b0fb40a74587ecf4b1',1,'search.cpp']]],
-  ['byte_28',['BYTE',['../Tpm20_8h.html#a7f198a4ec02dba18942d78b7bc065e06',1,'Tpm20.h']]]
+  ['bordoisilapower_21',['BordoisilaPower',['../res_8h.html#aafe266b66f76000a30e94d97d60f146e',1,'res.h']]],
+  ['bordoisilaregulator_22',['BordoisilaRegulator',['../res_8h.html#a341ca6ea117445d44c4dc975a3b05b81',1,'res.h']]],
+  ['boxsize_5ft_23',['boxsize_t',['../AudioPlayer_2minimp4_8h.html#a589fdb9ea985caf07d8a399871758d06',1,'boxsize_t:&#160;minimp4.h'],['../mp4plr_2minimp4_8h.html#a589fdb9ea985caf07d8a399871758d06',1,'boxsize_t:&#160;minimp4.h']]],
+  ['bsize_24',['BSIZE',['../Tpm20_8h.html#a6999169afc71ec279d10439376d3f715',1,'Tpm20.h']]],
+  ['bulk_5ftransfer_25',['bulk_transfer',['../BaseHdr_2Drivers_2usb_8h.html#a1ed8e44f32de58c306010d81db798515',1,'usb.h']]],
+  ['buttonicon_26',['ButtonIcon',['../Process_2XELnch_2button_8h.html#a75728bef909bfc7cd0031d46c148ec55',1,'button.h']]],
+  ['buttoninfo_27',['ButtonInfo',['../nmdapha_8h.html#a36a72e9c895cd29c58b038fd563f37d2',1,'nmdapha.h']]],
+  ['buttonmatch_28',['ButtonMatch',['../search_8cpp.html#a853d64b9b6a6c7b0fb40a74587ecf4b1',1,'search.cpp']]],
+  ['byte_29',['BYTE',['../Tpm20_8h.html#a7f198a4ec02dba18942d78b7bc065e06',1,'Tpm20.h']]]
 ];
