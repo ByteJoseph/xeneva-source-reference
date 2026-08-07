@@ -93,7 +93,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">#define AU_IMPORT</span></div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#define AU_ALIGN(x) __attribute__((aligned(x)))</span></div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">   41</a></span><span class="preprocessor">#define AU_EXPORT  __declspec(dllexport)</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">   41</a></span><span class="preprocessor">#define AU_EXPORT  __declspec(dllexport) __declspec(noinline)</span></div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="BaseHdr_2aurora_8h.html#af0c122148e7313c84bacbeaf049abe9e">   42</a></span><span class="preprocessor">#define AU_IMPORT  __declspec(dllimport)</span></div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="BaseHdr_2aurora_8h.html#a0fe486a3ff3c57b134906cb852a447ba">   43</a></span><span class="preprocessor">#define AU_ALIGN(x) __declspec(align(x))</span></div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">#endif</span></div>

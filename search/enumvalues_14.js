@@ -145,5 +145,6 @@ var searchData=
   ['virtio_5fsnd_5fs_5fok_142',['VIRTIO_SND_S_OK',['../Drivers_2Sound_2virtiosnd_2main_8cpp.html#aa684652a3ad226861d3cd9c8bee090eba88a9e42e943aa0d59ef5a1580778acba',1,'main.cpp']]],
   ['vpu_5fbus_5fclk_5froot_143',['VPU_BUS_CLK_ROOT',['../imx8mp__clk_8h.html#a3e63855b2f0d43453e8495a789f6214daa449d3651ad93dd4f0c0baa31acf532b',1,'imx8mp_clk.h']]],
   ['vpu_5fg1_5fclk_5froot_144',['VPU_G1_CLK_ROOT',['../imx8mp__clk_8h.html#a3e63855b2f0d43453e8495a789f6214da6caaa032d75b3a5693d64370af44136d',1,'imx8mp_clk.h']]],
-  ['vpu_5fg2_5fclk_5froot_145',['VPU_G2_CLK_ROOT',['../imx8mp__clk_8h.html#a3e63855b2f0d43453e8495a789f6214da4819e8b940b282885b34a266c7291b7d',1,'imx8mp_clk.h']]]
+  ['vpu_5fg2_5fclk_5froot_145',['VPU_G2_CLK_ROOT',['../imx8mp__clk_8h.html#a3e63855b2f0d43453e8495a789f6214da4819e8b940b282885b34a266c7291b7d',1,'imx8mp_clk.h']]],
+  ['vpu_5fvc8000e_5fclk_5froot_146',['VPU_VC8000E_CLK_ROOT',['../imx8mp__clk_8h.html#a3e63855b2f0d43453e8495a789f6214daf0653d8753feca2f994de0af6bbfdbc2',1,'imx8mp_clk.h']]]
 ];

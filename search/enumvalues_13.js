@@ -119,5 +119,6 @@ var searchData=
   ['usbtransferstatuscomplete_116',['UsbTransferStatusComplete',['../UsbFunctionIo_8h.html#aa0f9cbf733d2ccba201cc44d12940455af8d749e6a161f7c341166fa8a823b6a7',1,'UsbFunctionIo.h']]],
   ['usbtransferstatusnone_117',['UsbTransferStatusNone',['../UsbFunctionIo_8h.html#aa0f9cbf733d2ccba201cc44d12940455ab174ef267660f5de9af5253065b4ee7a',1,'UsbFunctionIo.h']]],
   ['usbtransferstatusunknown_118',['UsbTransferStatusUnknown',['../UsbFunctionIo_8h.html#aa0f9cbf733d2ccba201cc44d12940455aea11890e854ed756f40bcdc45ba44c0b',1,'UsbFunctionIo.h']]],
-  ['usbwake_119',['UsbWake',['../MmUsbDispatch_8h.html#a55091d697e867a77dbd73d77ab404ab6a8b73702bb6ed2ec1b0545d1fd9ca7b73',1,'MmUsbDispatch.h']]]
+  ['usbwake_119',['UsbWake',['../MmUsbDispatch_8h.html#a55091d697e867a77dbd73d77ab404ab6a8b73702bb6ed2ec1b0545d1fd9ca7b73',1,'MmUsbDispatch.h']]],
+  ['usdhc3_5fclk_5froot_120',['USDHC3_CLK_ROOT',['../imx8mp__clk_8h.html#a3e63855b2f0d43453e8495a789f6214dad69b8713c9691401790039efe520f6e6',1,'imx8mp_clk.h']]]
 ];
