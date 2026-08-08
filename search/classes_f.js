@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['reportitem_0',['ReportItem',['../structReportItem.html',1,'']]],
-  ['reportstate_1',['ReportState',['../structReportState.html',1,'']]]
+  ['reg_5fsettings_0',['reg_settings',['../structreg__settings.html',1,'']]],
+  ['reportitem_1',['ReportItem',['../structReportItem.html',1,'']]],
+  ['reportstate_2',['ReportState',['../structReportState.html',1,'']]]
 ];
