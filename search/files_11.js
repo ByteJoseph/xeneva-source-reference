@@ -12,7 +12,7 @@ var searchData=
   ['reportstatuscodelib_2eh_9',['ReportStatusCodeLib.h',['../ReportStatusCodeLib_8h.html',1,'']]],
   ['res_2ec_10',['res.c',['../res_8c.html',1,'']]],
   ['res_2eh_11',['res.h',['../res_8h.html',1,'']]],
-  ['reset_2eh_12',['reset.h',['../Protocol_2Reset_8h.html',1,'(Global Namespace)'],['../Ppi_2Reset_8h.html',1,'(Global Namespace)']]],
+  ['reset_2eh_12',['reset.h',['../Ppi_2Reset_8h.html',1,'(Global Namespace)'],['../Protocol_2Reset_8h.html',1,'(Global Namespace)']]],
   ['reset2_2eh_13',['Reset2.h',['../Reset2_8h.html',1,'']]],
   ['resetnotification_2eh_14',['ResetNotification.h',['../ResetNotification_8h.html',1,'']]],
   ['resourcepublicationlib_2eh_15',['ResourcePublicationLib.h',['../ResourcePublicationLib_8h.html',1,'']]],
