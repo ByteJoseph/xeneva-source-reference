@@ -85,33 +85,36 @@ $(function() {
 <code>#include &lt;string.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="stdlib_8h_source.html">stdlib.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="__keproc_8h_source.html">sys/_keproc.h</a>&gt;</code><br />
+<code>#include &lt;signal.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="unistd_8h_source.html">unistd.h</a>&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for main.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="Process_2monitor_2main_8cpp__incl.png" border="0" usemap="#aXenevaOS_2Process_2monitor_2main_8cpp" alt=""/></div>
 <map name="aXenevaOS_2Process_2monitor_2main_8cpp" id="aXenevaOS_2Process_2monitor_2main_8cpp">
-<area shape="rect" title=" " alt="" coords="190,5,389,45"/>
-<area shape="rect" title=" " alt="" coords="32,93,99,119"/>
-<area shape="poly" title=" " alt="" coords="237,48,112,91,110,86,235,43"/>
+<area shape="rect" title=" " alt="" coords="221,5,419,45"/>
+<area shape="rect" title=" " alt="" coords="25,93,92,119"/>
+<area shape="poly" title=" " alt="" coords="258,48,106,93,104,88,257,43"/>
 <area shape="rect" title=" " alt="" coords="278,167,349,192"/>
-<area shape="poly" title=" " alt="" coords="295,45,303,93,312,152,307,153,297,94,290,46"/>
-<area shape="rect" title=" " alt="" coords="218,93,289,119"/>
-<area shape="poly" title=" " alt="" coords="283,47,267,82,262,79,278,44"/>
-<area shape="rect" href="stdlib_8h.html" title=" " alt="" coords="123,93,194,119"/>
-<area shape="poly" title=" " alt="" coords="259,48,191,88,188,84,256,43"/>
-<area shape="rect" href="__keproc_8h.html" title=" " alt="" coords="371,93,482,119"/>
-<area shape="poly" title=" " alt="" coords="324,43,396,84,393,89,321,48"/>
-<area shape="rect" href="unistd_8h.html" title=" " alt="" coords="545,93,620,119"/>
-<area shape="poly" title=" " alt="" coords="360,43,533,89,531,94,359,48"/>
+<area shape="poly" title=" " alt="" coords="322,46,317,153,312,153,316,46"/>
+<area shape="rect" title=" " alt="" coords="211,93,282,119"/>
+<area shape="poly" title=" " alt="" coords="304,47,269,85,265,81,300,44"/>
+<area shape="rect" href="stdlib_8h.html" title=" " alt="" coords="117,93,187,119"/>
+<area shape="poly" title=" " alt="" coords="281,48,190,90,188,85,279,43"/>
+<area shape="rect" href="__keproc_8h.html" title=" " alt="" coords="358,93,469,119"/>
+<area shape="poly" title=" " alt="" coords="344,44,390,82,387,86,341,48"/>
+<area shape="rect" title=" " alt="" coords="493,93,566,119"/>
+<area shape="poly" title=" " alt="" coords="371,43,487,86,485,91,369,48"/>
+<area shape="rect" href="unistd_8h.html" title=" " alt="" coords="591,93,665,119"/>
+<area shape="poly" title=" " alt="" coords="394,43,578,89,576,94,393,48"/>
 <area shape="rect" href="__xeneva_8h.html" title=" " alt="" coords="209,240,297,265"/>
-<area shape="poly" title=" " alt="" coords="173,117,194,138,216,165,233,196,247,226,242,228,229,199,211,168,190,142,169,121"/>
+<area shape="poly" title=" " alt="" coords="168,117,192,138,215,165,234,196,247,226,242,228,229,199,211,168,188,142,165,121"/>
 <area shape="rect" href="Libs_2XEClib_2includes_2stddef_8h.html" title=" " alt="" coords="5,240,80,265"/>
-<area shape="poly" title=" " alt="" coords="147,121,98,168,58,229,53,226,94,165,143,117"/>
+<area shape="poly" title=" " alt="" coords="142,121,98,168,58,230,53,227,94,165,138,117"/>
 <area shape="rect" href="__xeprint_8h.html" title=" " alt="" coords="115,167,202,192"/>
-<area shape="poly" title=" " alt="" coords="161,119,161,153,156,153,156,119"/>
+<area shape="poly" title=" " alt="" coords="156,119,159,153,154,153,150,119"/>
 <area shape="rect" href="Libs_2XEClib_2includes_2stdarg_8h.html" title=" " alt="" coords="108,240,183,265"/>
-<area shape="poly" title=" " alt="" coords="144,121,122,141,105,168,103,183,107,199,125,228,121,231,102,201,97,184,100,166,118,138,141,117"/>
+<area shape="poly" title=" " alt="" coords="140,121,121,141,105,168,103,183,107,199,126,228,121,231,102,201,98,184,100,166,116,138,136,117"/>
 <area shape="rect" href="Libs_2XEClib_2includes_2stdint_8h.html" title=" " alt="" coords="109,313,179,339"/>
 <area shape="poly" title=" " alt="" coords="237,268,175,308,172,303,234,263"/>
 <area shape="rect" href="size__t_8h.html" title=" " alt="" coords="108,387,180,412"/>
@@ -119,13 +122,13 @@ Include dependency graph for main.cpp:</div>
 <area shape="poly" title=" " alt="" coords="60,263,118,303,115,307,57,268"/>
 <area shape="poly" title=" " alt="" coords="175,190,228,229,225,234,172,194"/>
 <area shape="poly" title=" " alt="" coords="159,193,153,227,147,226,154,192"/>
-<area shape="poly" title=" " alt="" coords="410,121,345,162,342,157,407,116"/>
-<area shape="poly" title=" " alt="" coords="453,116,478,131,501,149,514,170,515,182,509,194,496,205,476,215,426,230,311,249,311,243,424,225,474,210,493,200,505,190,509,181,509,172,497,153,475,135,450,121"/>
+<area shape="poly" title=" " alt="" coords="399,121,342,161,339,156,396,117"/>
+<area shape="poly" title=" " alt="" coords="444,116,472,130,498,148,513,169,513,182,507,194,494,205,475,214,425,230,311,249,311,243,424,225,473,210,491,200,503,190,508,180,508,171,494,152,469,135,442,121"/>
 <area shape="rect" href="__kesignal_8h.html" title=" " alt="" coords="373,167,494,192"/>
-<area shape="poly" title=" " alt="" coords="430,119,434,153,428,153,425,119"/>
-<area shape="poly" title=" " alt="" coords="581,120,563,157,548,177,530,194,476,222,418,240,361,250,311,254,311,249,360,245,417,235,474,217,526,190,544,174,558,154,576,118"/>
+<area shape="poly" title=" " alt="" coords="419,118,429,153,424,154,414,120"/>
+<area shape="poly" title=" " alt="" coords="620,121,583,157,557,177,529,194,474,217,415,233,311,250,310,244,414,228,472,212,527,190,554,173,579,153,616,117"/>
 <area shape="rect" href="__ketimer_8h.html" title=" " alt="" coords="621,167,737,192"/>
-<area shape="poly" title=" " alt="" coords="600,117,653,156,650,160,597,121"/>
+<area shape="poly" title=" " alt="" coords="639,117,665,154,660,157,634,121"/>
 <area shape="poly" title=" " alt="" coords="621,193,312,244,311,239,620,188"/>
 </map>
 </div>
@@ -163,6 +166,8 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a466a34202030e6189e8ed351d754abe8" id="r_a466a34202030e6189e8ed351d754abe8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Process_2monitor_2main_8cpp.html#a466a34202030e6189e8ed351d754abe8">SignalHandler</a> (int signo)</td></tr>
+<tr class="separator:a466a34202030e6189e8ed351d754abe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac330d5cc391d0ecb058a196a9b36dfea" id="r_ac330d5cc391d0ecb058a196a9b36dfea"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Process_2monitor_2main_8cpp.html#ac330d5cc391d0ecb058a196a9b36dfea">DisplayProcessListLive</a> ()</td></tr>
 <tr class="separator:ac330d5cc391d0ecb058a196a9b36dfea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4" id="r_ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Process_2monitor_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
@@ -401,6 +406,24 @@ Variables</h2></td></tr>
           <td class="memname">int main </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a466a34202030e6189e8ed351d754abe8" name="a466a34202030e6189e8ed351d754abe8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a466a34202030e6189e8ed351d754abe8">&#9670;&#160;</a></span>SignalHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SignalHandler </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>signo</em></td><td>)</td>
           <td></td>
         </tr>
       </table>

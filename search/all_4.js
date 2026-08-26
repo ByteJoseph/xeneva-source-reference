@@ -2,7 +2,7 @@ var searchData=
 [
   ['c_0',['c',['../keymap_8c.html#a2f6e00995598c27240a258da3476f324',1,'C:&#160;keymap.c'],['../struct__fis__reg__h2d__.html#a02be36d4cab28c134a2425fb1080ab69',1,'_fis_reg_h2d_::c'],['../struct__cmd__list__hdr__.html#a8ad2c12d1205f5cf2d1d0a704f451d21',1,'_cmd_list_hdr_::c'],['../struct__cell__.html#ab53e5a468670b674ba89eabaf5afaa58',1,'_cell_::c']]],
   ['c_20r_20i_20p_20t_20o_20r_20t_20a_20b_20l_20e_1',['G L O B A L     D E S C R I P T O R    T A B L E',['../x86__64__gdt_8cpp.html#autotoc_md8',1,'']]],
-  ['c_20t_20i_20o_20n_20s_2',['c t i o n s',['../x86__64__lowlevel_8h.html#autotoc_md0',1,'G L O B A L     F U N C T I O N S'],['../Libs_2XEClib_2includes_2string_8h.html#autotoc_md13',1,'M E M O R Y  G L O B A L   F U N C T I O N S']]],
+  ['c_20t_20i_20o_20n_20s_2',['c t i o n s',['../x86__64__lowlevel_8h.html#autotoc_md0',1,'G L O B A L     F U N C T I O N S'],['../Libs_2XEClib_2string_8cpp.html#autotoc_md13',1,'M E M O R Y  G L O B A L   F U N C T I O N S']]],
   ['c1_3',['C1',['../minimp3_8cpp.html#a44779f18d87e71c78fc9fbf9dc88537d',1,'minimp3.cpp']]],
   ['c2_4',['C2',['../minimp3_8cpp.html#ad6fc13322a4f1c314332ff34aa8b3fa0',1,'minimp3.cpp']]],
   ['c2latency_5',['c2latency',['../structacpi__table__fadt.html#aacad3d22737dee7cb71aad27474563d9',1,'acpi_table_fadt::C2Latency'],['../structacpiFadt.html#aafc01d812d3bc42eaac6b8e0372dd88d',1,'acpiFadt::c2Latency']]],
@@ -1459,7 +1459,7 @@ var searchData=
   ['corbsize_1456',['CORBSIZE',['../ihda_8h.html#a67f292b8d689003a72d858b1d7bb770a',1,'ihda.h']]],
   ['corbsts_1457',['CORBSTS',['../ihda_8h.html#aaa36e62be186cbec3a281cf77451c8b0',1,'ihda.h']]],
   ['corbubase_1458',['CORBUBASE',['../ihda_8h.html#a90981d5846bd17a9dff72237978dd7fe',1,'ihda.h']]],
-  ['corbwp_1459',['corbwp',['../ihda_8cpp.html#a296a4ee5019784427db9663246ed0ec0',1,'corbwp:&#160;ihda.cpp'],['../ihda_8h.html#ae2136403f0c1c456f5b53178c6cf77b2',1,'CORBWP:&#160;ihda.h']]],
+  ['corbwp_1459',['corbwp',['../ihda_8h.html#ae2136403f0c1c456f5b53178c6cf77b2',1,'CORBWP:&#160;ihda.h'],['../ihda_8cpp.html#a296a4ee5019784427db9663246ed0ec0',1,'corbwp:&#160;ihda.cpp']]],
   ['corbwrite_1460',['corbwrite',['../ihda_8h.html#acf19776c0f1c1180fbcc4ee3d33b3367',1,'CORBWrite(uint32_t verb):&#160;ihda.cpp'],['../ihda_8cpp.html#acf19776c0f1c1180fbcc4ee3d33b3367',1,'CORBWrite(uint32_t verb):&#160;ihda.cpp']]],
   ['core_1461',['Core',['../structEFI__CPU__PHYSICAL__LOCATION.html#a96033da37a9b244026a3728096b35a4e',1,'EFI_CPU_PHYSICAL_LOCATION']]],
   ['core_2ec_1462',['core.c',['../core_8c.html',1,'']]],

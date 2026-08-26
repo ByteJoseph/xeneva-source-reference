@@ -2,7 +2,7 @@ var searchData=
 [
   ['o_20b_20a_20l_20d_20e_20s_20c_20r_20i_20p_20t_20o_20r_20t_20a_20b_20l_20e_0',['G L O B A L     D E S C R I P T O R    T A B L E',['../x86__64__gdt_8cpp.html#autotoc_md8',1,'']]],
   ['o_20b_20a_20l_20f_20u_20n_20c_20t_20i_20o_20n_20s_1',['G L O B A L     F U N C T I O N S',['../x86__64__lowlevel_8h.html#autotoc_md0',1,'']]],
-  ['o_20r_20y_20g_20l_20o_20b_20a_20l_20f_20u_20n_20c_20t_20i_20o_20n_20s_2',['M E M O R Y  G L O B A L   F U N C T I O N S',['../Libs_2XEClib_2includes_2string_8h.html#autotoc_md13',1,'']]],
+  ['o_20r_20y_20g_20l_20o_20b_20a_20l_20f_20u_20n_20c_20t_20i_20o_20n_20s_2',['M E M O R Y  G L O B A L   F U N C T I O N S',['../Libs_2XEClib_2string_8cpp.html#autotoc_md13',1,'']]],
   ['o_5faccmode_3',['O_ACCMODE',['../fcntl_8h.html#a4dc4d45e07d2abc899bcaf04b2846a87',1,'fcntl.h']]],
   ['o_5fappend_4',['O_APPEND',['../fcntl_8h.html#ae036f789407d21f07b211552d67b3214',1,'fcntl.h']]],
   ['o_5fbinary_5',['o_binary',['../acwin64_8h.html#a36fa9b2e726512bc17a7a6d3e39002be',1,'O_BINARY:&#160;acwin64.h'],['../acwin_8h.html#a36fa9b2e726512bc17a7a6d3e39002be',1,'O_BINARY:&#160;acwin.h']]],

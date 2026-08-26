@@ -1,7 +1,7 @@
 var searchData=
 [
   ['l_20o_20b_20a_20l_20d_20e_20s_20c_20r_20i_20p_20t_20o_20r_20t_20a_20b_20l_20e_0',['G L O B A L     D E S C R I P T O R    T A B L E',['../x86__64__gdt_8cpp.html#autotoc_md8',1,'']]],
-  ['l_20o_20b_20a_20l_20f_20u_20n_20c_20t_20i_20o_20n_20s_1',['l o b a l f u n c t i o n s',['../x86__64__lowlevel_8h.html#autotoc_md0',1,'G L O B A L     F U N C T I O N S'],['../Libs_2XEClib_2includes_2string_8h.html#autotoc_md13',1,'M E M O R Y  G L O B A L   F U N C T I O N S']]],
+  ['l_20o_20b_20a_20l_20f_20u_20n_20c_20t_20i_20o_20n_20s_1',['l o b a l f u n c t i o n s',['../x86__64__lowlevel_8h.html#autotoc_md0',1,'G L O B A L     F U N C T I O N S'],['../Libs_2XEClib_2string_8cpp.html#autotoc_md13',1,'M E M O R Y  G L O B A L   F U N C T I O N S']]],
   ['l0_5ftable_5fbase_2',['l0_table_base',['../BootAA64_2paging_8cpp.html#a5403247dea08dfb5be65c40eb7f4dd87',1,'paging.cpp']]],
   ['l0sexitlatency_3',['L0sExitLatency',['../unionPCI__REG__PCIE__LINK__CAPABILITY.html#a8a230e04ba2527f67898d5b6d6f231f3',1,'PCI_REG_PCIE_LINK_CAPABILITY']]],
   ['l1_5fdata_5fcache_5fline_5flength_4',['L1_DATA_CACHE_LINE_LENGTH',['../synchronize_8c.html#a4c1e06f505d01cbed97294fda8d9a196',1,'synchronize.c']]],
@@ -505,7 +505,7 @@ var searchData=
   ['list_2eh_502',['list.h',['../BaseHdr_2linux_2list_8h.html',1,'(Global Namespace)'],['../Libs_2Chitralekha_2widgets_2list_8h.html',1,'(Global Namespace)'],['../BaseHdr_2list_8h.html',1,'(Global Namespace)']]],
   ['list_5fadd_503',['list_add',['../Libs_2Chitralekha_2widgets_2list_8h.html#a4424b70a0b4d577ed91acd29d5299ce5',1,'list_add(list_t *list, void *data):&#160;list.cpp'],['../Libs_2Chitralekha_2widgets_2list_8cpp.html#a8b5ff6fa8183cd1af30812200b7deb24',1,'list_add(list_t *list, void *data):&#160;list.cpp'],['../list_8c.html#a8b5ff6fa8183cd1af30812200b7deb24',1,'list_add(list_t *list, void *data):&#160;list.c'],['../Kernel_2list_8cpp.html#a8b5ff6fa8183cd1af30812200b7deb24',1,'list_add(list_t *list, void *data):&#160;list.cpp'],['../BaseHdr_2list_8h.html#ac369c1500b448f9d8e0484107a3fe9d9',1,'list_add(list_t *list, void *data):&#160;list.cpp']]],
   ['list_5fclear_5fall_504',['list_clear_all',['../Libs_2Chitralekha_2widgets_2list_8h.html#aa888c4af40c88c85178e4db6593939e1',1,'list_clear_all(list_t *list):&#160;list.cpp'],['../Libs_2Chitralekha_2widgets_2list_8cpp.html#a7869df6f22f709ee1d9fafb4ac1287b0',1,'list_clear_all(list_t *list):&#160;list.cpp']]],
-  ['list_5fentry_505',['list_entry',['../Base_8h.html#afe2819542d515b3631539098349c6d52',1,'LIST_ENTRY:&#160;Base.h'],['../BaseHdr_2linux_2list_8h.html#a26c976b7f654e70df318c1843e5094de',1,'list_entry:&#160;list.h']]],
+  ['list_5fentry_505',['list_entry',['../BaseHdr_2linux_2list_8h.html#a26c976b7f654e70df318c1843e5094de',1,'list_entry:&#160;list.h'],['../Base_8h.html#afe2819542d515b3631539098349c6d52',1,'LIST_ENTRY:&#160;Base.h']]],
   ['list_5ffirst_5fentry_506',['list_first_entry',['../BaseHdr_2linux_2list_8h.html#a29b80cf9d55392a4949d2071b7db4d5c',1,'list.h']]],
   ['list_5ffor_5feach_507',['list_for_each',['../BaseHdr_2linux_2list_8h.html#ab8b24e6660ab3760c923e4b4db3fa502',1,'list.h']]],
   ['list_5ffor_5feach_5fentry_508',['list_for_each_entry',['../BaseHdr_2linux_2list_8h.html#a9b782fefb5ab71ce9762182e45a615e1',1,'list.h']]],

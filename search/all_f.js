@@ -1,7 +1,7 @@
 var searchData=
 [
   ['n_0',['n',['../structTPMS__ALGORITHM__DETAIL__ECC.html#a85409f51125605f942a38df1b3ddc7be',1,'TPMS_ALGORITHM_DETAIL_ECC']]],
-  ['n_20c_20t_20i_20o_20n_20s_1',['n c t i o n s',['../x86__64__lowlevel_8h.html#autotoc_md0',1,'G L O B A L     F U N C T I O N S'],['../Libs_2XEClib_2includes_2string_8h.html#autotoc_md13',1,'M E M O R Y  G L O B A L   F U N C T I O N S']]],
+  ['n_20c_20t_20i_20o_20n_20s_1',['n c t i o n s',['../x86__64__lowlevel_8h.html#autotoc_md0',1,'G L O B A L     F U N C T I O N S'],['../Libs_2XEClib_2string_8cpp.html#autotoc_md13',1,'M E M O R Y  G L O B A L   F U N C T I O N S']]],
   ['n1_2',['n1',['../structtdTPM__CHANGEAUTH__VALIDATE.html#a1dab0818d971d1eb938e872f49f7075d',1,'tdTPM_CHANGEAUTH_VALIDATE']]],
   ['n_5fcontours_3',['n_contours',['../structFT__Outline__.html#a0313ba9c2c51f10e6b7d7ef97bd946e2',1,'FT_Outline_::n_contours'],['../structTT__GlyphZoneRec__.html#a1aa2ffa863fbd8a8985fe3e39e8bb92a',1,'TT_GlyphZoneRec_::n_contours'],['../structTT__LoaderRec__.html#a829910a8b1d82620efa96bf25a119e35',1,'TT_LoaderRec_::n_contours']]],
   ['n_5fpoints_4',['n_points',['../structFT__Outline__.html#a7ebcf3c33231af88655534d1ac02b66e',1,'FT_Outline_::n_points'],['../structTT__GlyphZoneRec__.html#a2acc389958f0e593f7eed29f7ca15b94',1,'TT_GlyphZoneRec_::n_points']]],

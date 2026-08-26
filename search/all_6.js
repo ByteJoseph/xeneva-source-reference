@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['e_20m_20o_20r_20y_20g_20l_20o_20b_20a_20l_20f_20u_20n_20c_20t_20i_20o_20n_20s_0',['M E M O R Y  G L O B A L   F U N C T I O N S',['../Libs_2XEClib_2includes_2string_8h.html#autotoc_md13',1,'']]],
+  ['e_20m_20o_20r_20y_20g_20l_20o_20b_20a_20l_20f_20u_20n_20c_20t_20i_20o_20n_20s_0',['M E M O R Y  G L O B A L   F U N C T I O N S',['../Libs_2XEClib_2string_8cpp.html#autotoc_md13',1,'']]],
   ['e_20s_20c_20r_20i_20p_20t_20o_20r_20t_20a_20b_20l_20e_1',['G L O B A L     D E S C R I P T O R    T A B L E',['../x86__64__gdt_8cpp.html#autotoc_md8',1,'']]],
   ['e1000_2ecpp_2',['e1000.cpp',['../e1000_8cpp.html',1,'']]],
   ['e1000_2eh_3',['e1000.h',['../e1000_8h.html',1,'']]],
@@ -10574,7 +10574,7 @@ var searchData=
   ['exfield_2ec_10571',['exfield.c',['../exfield_8c.html',1,'']]],
   ['exfldio_2ec_10572',['exfldio.c',['../exfldio_8c.html',1,'']]],
   ['exfull_10573',['EXFULL',['../errno_8h.html#a69aa360ec60f24c128556361f7729e48',1,'errno.h']]],
-  ['exit_10574',['exit',['../stdlib_8cpp.html#a49ce74072dcbd258879bc051916333b8',1,'exit(int errno):&#160;stdlib.cpp'],['../stdlib_8h.html#a18278d8624d6aef8c92577d8f15a47e7',1,'exit(int errno):&#160;stdlib.cpp'],['../UefiApplicationEntryPoint_8h.html#ab46cf12426652c38141c12d282c2c9a8',1,'Exit(IN EFI_STATUS Status):&#160;UefiApplicationEntryPoint.h'],['../struct__ACPI__EFI__BOOT__SERVICES.html#a7c9cd15aefc7a8905c620ae60f9d91fb',1,'_ACPI_EFI_BOOT_SERVICES::Exit'],['../structEFI__BOOT__SERVICES.html#ac30733460ca67d3cfea0f43b6ea90624',1,'EFI_BOOT_SERVICES::Exit']]],
+  ['exit_10574',['exit',['../UefiApplicationEntryPoint_8h.html#ab46cf12426652c38141c12d282c2c9a8',1,'Exit(IN EFI_STATUS Status):&#160;UefiApplicationEntryPoint.h'],['../stdlib_8cpp.html#a49ce74072dcbd258879bc051916333b8',1,'exit(int errno):&#160;stdlib.cpp'],['../stdlib_8h.html#a18278d8624d6aef8c92577d8f15a47e7',1,'exit(int errno):&#160;stdlib.cpp'],['../struct__ACPI__EFI__BOOT__SERVICES.html#a7c9cd15aefc7a8905c620ae60f9d91fb',1,'_ACPI_EFI_BOOT_SERVICES::Exit'],['../structEFI__BOOT__SERVICES.html#ac30733460ca67d3cfea0f43b6ea90624',1,'EFI_BOOT_SERVICES::Exit']]],
   ['exit_5ffailure_10575',['EXIT_FAILURE',['../stdlib_8h.html#a73efe787c131b385070f25d18b7c9aa4',1,'stdlib.h']]],
   ['exit_5fsuccess_10576',['EXIT_SUCCESS',['../stdlib_8h.html#a687984f47d8cce148d1b914d2b79612a',1,'stdlib.h']]],
   ['exitaddress_10577',['ExitAddress',['../structacpi__table__drtm.html#a1ba0740d7bdbe674d8ce27e39b02da33',1,'acpi_table_drtm']]],

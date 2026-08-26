@@ -148,9 +148,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ad52650c6ed3ba21521160eced510c8bf" id="r_ad52650c6ed3ba21521160eced510c8bf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> <a class="el" href="BaseHdr_2stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="timer_8h.html#ad52650c6ed3ba21521160eced510c8bf">AuroraTimerIsActive</a> (int tNum)</td></tr>
 <tr class="memdesc:ad52650c6ed3ba21521160eced510c8bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuroraTimerIsActive &ndash; check if timer is active.  <br /></td></tr>
 <tr class="separator:ad52650c6ed3ba21521160eced510c8bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aafffeec7e611ad13f79b77809dfe235b" id="r_aafffeec7e611ad13f79b77809dfe235b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="timer_8h.html#aafffeec7e611ad13f79b77809dfe235b">AuroraTimerCancel</a> (int tNum)</td></tr>
-<tr class="memdesc:aafffeec7e611ad13f79b77809dfe235b"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuroraTimerCancel &ndash; cancel a timer.  <br /></td></tr>
-<tr class="separator:aafffeec7e611ad13f79b77809dfe235b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72d7c4bcac1b2aa323e3d804065a4c92" id="r_a72d7c4bcac1b2aa323e3d804065a4c92"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="timer_8h.html#a72d7c4bcac1b2aa323e3d804065a4c92">AuroraTimerCancel</a> (int tNum)</td></tr>
+<tr class="memdesc:a72d7c4bcac1b2aa323e3d804065a4c92"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuroraTimerCancel &ndash; cancel a timer.  <br /></td></tr>
+<tr class="separator:a72d7c4bcac1b2aa323e3d804065a4c92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ec22b0cfccdfc5017c9f23c84c64fb5" id="r_a1ec22b0cfccdfc5017c9f23c84c64fb5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="timer_8h.html#a1ec22b0cfccdfc5017c9f23c84c64fb5">AuroraTimerTick</a> ()</td></tr>
 <tr class="memdesc:a1ec22b0cfccdfc5017c9f23c84c64fb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuroraTimerTick &ndash; called by kernel to handle all expired timers.  <br /></td></tr>
 <tr class="separator:a1ec22b0cfccdfc5017c9f23c84c64fb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -170,6 +170,9 @@ Functions</h2></td></tr>
 <tr class="separator:ae63730d50f8aab1f9b59edfeb914a50b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9fff9aa5eeeb2b78c02e87bc9eec6fed" id="r_a9fff9aa5eeeb2b78c02e87bc9eec6fed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="timer_8h.html#a9fff9aa5eeeb2b78c02e87bc9eec6fed">AuGetWalltime</a> (<a class="el" href="acefiex_8h.html#a5364f98f8223d7185accc99cf9c8f712">int64_t</a> *out_sec, <a class="el" href="acefiex_8h.html#a5364f98f8223d7185accc99cf9c8f712">int64_t</a> *out_ns)</td></tr>
 <tr class="separator:a9fff9aa5eeeb2b78c02e87bc9eec6fed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a876d2198dcded30568a30e1e395243c8" id="r_a876d2198dcded30568a30e1e395243c8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="timer_8h.html#a876d2198dcded30568a30e1e395243c8">AuGetTimerByThread</a> (void *param)</td></tr>
+<tr class="memdesc:a876d2198dcded30568a30e1e395243c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuGetTimerByThread &ndash; checks and return a timer id respective to its thread.  <br /></td></tr>
+<tr class="separator:a876d2198dcded30568a30e1e395243c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>BSD 2-Clause License</p>
@@ -287,6 +290,34 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a876d2198dcded30568a30e1e395243c8" name="a876d2198dcded30568a30e1e395243c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a876d2198dcded30568a30e1e395243c8">&#9670;&#160;</a></span>AuGetTimerByThread()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int AuGetTimerByThread </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>param</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>AuGetTimerByThread &ndash; checks and return a timer id respective to its thread. </p>
+
+</div>
+</div>
 <a id="a9fff9aa5eeeb2b78c02e87bc9eec6fed" name="a9fff9aa5eeeb2b78c02e87bc9eec6fed"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9fff9aa5eeeb2b78c02e87bc9eec6fed">&#9670;&#160;</a></span>AuGetWalltime()</h2>
 
@@ -324,14 +355,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aafffeec7e611ad13f79b77809dfe235b" name="aafffeec7e611ad13f79b77809dfe235b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aafffeec7e611ad13f79b77809dfe235b">&#9670;&#160;</a></span>AuroraTimerCancel()</h2>
+<a id="a72d7c4bcac1b2aa323e3d804065a4c92" name="a72d7c4bcac1b2aa323e3d804065a4c92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72d7c4bcac1b2aa323e3d804065a4c92">&#9670;&#160;</a></span>AuroraTimerCancel()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> void AuroraTimerCancel </td>
+          <td class="memname">void AuroraTimerCancel </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>tNum</em></td><td>)</td>

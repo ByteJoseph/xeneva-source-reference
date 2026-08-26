@@ -2,7 +2,7 @@ var searchData=
 [
   ['g_0',['g',['../struct__EFI__HII__RGB__PIXEL.html#a3ed13b15c67578ed1db03ba4edddb6af',1,'_EFI_HII_RGB_PIXEL']]],
   ['g_20l_20o_20b_20a_20l_20d_20e_20s_20c_20r_20i_20p_20t_20o_20r_20t_20a_20b_20l_20e_1',['G L O B A L     D E S C R I P T O R    T A B L E',['../x86__64__gdt_8cpp.html#autotoc_md8',1,'']]],
-  ['g_20l_20o_20b_20a_20l_20f_20u_20n_20c_20t_20i_20o_20n_20s_2',['g l o b a l f u n c t i o n s',['../x86__64__lowlevel_8h.html#autotoc_md0',1,'G L O B A L     F U N C T I O N S'],['../Libs_2XEClib_2includes_2string_8h.html#autotoc_md13',1,'M E M O R Y  G L O B A L   F U N C T I O N S']]],
+  ['g_20l_20o_20b_20a_20l_20f_20u_20n_20c_20t_20i_20o_20n_20s_2',['g l o b a l f u n c t i o n s',['../x86__64__lowlevel_8h.html#autotoc_md0',1,'G L O B A L     F U N C T I O N S'],['../Libs_2XEClib_2string_8cpp.html#autotoc_md13',1,'M E M O R Y  G L O B A L   F U N C T I O N S']]],
   ['gadapterinfoplatformsecurityguid_3',['gAdapterInfoPlatformSecurityGuid',['../Hsti_8h.html#aa67876d2d79d32c17c65840a2d2ce18e',1,'Hsti.h']]],
   ['gadget_4',['gadget',['../structusb__otg.html#a950ba40bf19b87c58bcf6fa52b58aa75',1,'usb_otg']]],
   ['gahbcfg_5',['gahbcfg',['../structdwc2__core__regs.html#aca8be818531431e1b695e982e0a9b3a0',1,'dwc2_core_regs']]],

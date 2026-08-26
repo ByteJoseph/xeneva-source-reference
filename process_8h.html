@@ -344,28 +344,34 @@ Typedefs</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a259a15b1064ce5a466532823818037da" id="r_a259a15b1064ce5a466532823818037da"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="process_8h.html#a259a15b1064ce5a466532823818037da">AuAddProcess</a> (<a class="el" href="process_8h.html#af7383c550ee680158b77cf18ef1d275a">AuProcess</a> *parent, <a class="el" href="process_8h.html#af7383c550ee680158b77cf18ef1d275a">AuProcess</a> *proc)</td></tr>
+<tr class="memdesc:a259a15b1064ce5a466532823818037da"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuAddProcess &ndash; adds process to kernel data structure.  <br /></td></tr>
 <tr class="separator:a259a15b1064ce5a466532823818037da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a583d0c4953b7e2852be121d9826e7884" id="r_a583d0c4953b7e2852be121d9826e7884"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="process_8h.html#a583d0c4953b7e2852be121d9826e7884">AuRemoveProcess</a> (<a class="el" href="process_8h.html#af7383c550ee680158b77cf18ef1d275a">AuProcess</a> *parent, <a class="el" href="process_8h.html#af7383c550ee680158b77cf18ef1d275a">AuProcess</a> *proc)</td></tr>
+<tr class="memdesc:a583d0c4953b7e2852be121d9826e7884"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuRemoveProcess &ndash; removes a process from the process data structure.  <br /></td></tr>
 <tr class="separator:a583d0c4953b7e2852be121d9826e7884"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06a5fff511a9f8ef919f1ce7168f76f2" id="r_a06a5fff511a9f8ef919f1ce7168f76f2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="process_8h.html#a06a5fff511a9f8ef919f1ce7168f76f2">CreateKernelStack</a> (<a class="el" href="process_8h.html#af7383c550ee680158b77cf18ef1d275a">AuProcess</a> *proc, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> *cr3)</td></tr>
 <tr class="separator:a06a5fff511a9f8ef919f1ce7168f76f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a805d3034dd156a9acd448e93f4757c93" id="r_a805d3034dd156a9acd448e93f4757c93"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="process_8h.html#a805d3034dd156a9acd448e93f4757c93">KernelStackFree</a> (<a class="el" href="process_8h.html#af7383c550ee680158b77cf18ef1d275a">AuProcess</a> *proc, void *ptr, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> *cr3)</td></tr>
 <tr class="separator:a805d3034dd156a9acd448e93f4757c93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa2bfb49f2fc116df0d3033f859826a5e" id="r_aa2bfb49f2fc116df0d3033f859826a5e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="process_8h.html#af7383c550ee680158b77cf18ef1d275a">AuProcess</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="process_8h.html#aa2bfb49f2fc116df0d3033f859826a5e">AuProcessFindPID</a> (int pid)</td></tr>
+<tr class="memdesc:aa2bfb49f2fc116df0d3033f859826a5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuProcessFindPID &ndash; finds a process by its pid from the process tree.  <br /></td></tr>
 <tr class="separator:aa2bfb49f2fc116df0d3033f859826a5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab549bb8621b409bbb03fd96bac6cdfd0" id="r_ab549bb8621b409bbb03fd96bac6cdfd0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="process_8h.html#ab549bb8621b409bbb03fd96bac6cdfd0">CreateUserStack</a> (<a class="el" href="process_8h.html#af7383c550ee680158b77cf18ef1d275a">AuProcess</a> *proc, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> *cr3)</td></tr>
+<tr class="memdesc:ab549bb8621b409bbb03fd96bac6cdfd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">CreateUserStack &ndash; creates new user stack.  <br /></td></tr>
 <tr class="separator:ab549bb8621b409bbb03fd96bac6cdfd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a68e774374656e9101fe592350858774f" id="r_a68e774374656e9101fe592350858774f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="process_8h.html#a68e774374656e9101fe592350858774f">AuStartRootProc</a> ()</td></tr>
 <tr class="separator:a68e774374656e9101fe592350858774f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24e22447f7e5a100a1ce6c33d00169da" id="r_a24e22447f7e5a100a1ce6c33d00169da"><td class="memItemLeft" align="right" valign="top"><a class="el" href="process_8h.html#af7383c550ee680158b77cf18ef1d275a">AuProcess</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="process_8h.html#a24e22447f7e5a100a1ce6c33d00169da">AuGetRootProcess</a> ()</td></tr>
 <tr class="separator:a24e22447f7e5a100a1ce6c33d00169da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ba30bbe6abb3b19d3625a2046a17304" id="r_a2ba30bbe6abb3b19d3625a2046a17304"><td class="memItemLeft" align="right" valign="top"><a class="el" href="process_8h.html#af7383c550ee680158b77cf18ef1d275a">AuProcess</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="process_8h.html#a2ba30bbe6abb3b19d3625a2046a17304">AuCreateProcessSlot</a> (<a class="el" href="process_8h.html#af7383c550ee680158b77cf18ef1d275a">AuProcess</a> *parent, char *name)</td></tr>
+<tr class="memdesc:a2ba30bbe6abb3b19d3625a2046a17304"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuCreateProcessSlot &ndash; creates a blank process slot.  <br /></td></tr>
 <tr class="separator:a2ba30bbe6abb3b19d3625a2046a17304"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af114c154fef57cb77ab4736648c6c57f" id="r_af114c154fef57cb77ab4736648c6c57f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="process_8h.html#af7383c550ee680158b77cf18ef1d275a">AuProcess</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="process_8h.html#af114c154fef57cb77ab4736648c6c57f">AuProcessFork</a> (<a class="el" href="process_8h.html#af7383c550ee680158b77cf18ef1d275a">AuProcess</a> *parent)</td></tr>
 <tr class="separator:af114c154fef57cb77ab4736648c6c57f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc6f957fba059e2696c2873462a6b551" id="r_afc6f957fba059e2696c2873462a6b551"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="process_8h.html#afc6f957fba059e2696c2873462a6b551">AuProcessExit</a> (<a class="el" href="process_8h.html#af7383c550ee680158b77cf18ef1d275a">AuProcess</a> *proc, <a class="el" href="BaseHdr_2stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> schedulable)</td></tr>
 <tr class="separator:afc6f957fba059e2696c2873462a6b551"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89700f4a4bf68668b8d6d32ac1abbb02" id="r_a89700f4a4bf68668b8d6d32ac1abbb02"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="process_8h.html#a89700f4a4bf68668b8d6d32ac1abbb02">AuProcessGetFileDesc</a> (<a class="el" href="process_8h.html#af7383c550ee680158b77cf18ef1d275a">AuProcess</a> *proc)</td></tr>
+<tr class="memdesc:a89700f4a4bf68668b8d6d32ac1abbb02"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuProcessGetFileDesc &ndash; returns a empty file descriptor from process slot, 0, 1 &amp; 2 are reserved for terminal output.  <br /></td></tr>
 <tr class="separator:a89700f4a4bf68668b8d6d32ac1abbb02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e01762dcef031b89d7ea78d4686fae6" id="r_a1e01762dcef031b89d7ea78d4686fae6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="process_8h.html#a1e01762dcef031b89d7ea78d4686fae6">AuProcessWaitForTermination</a> (<a class="el" href="process_8h.html#af7383c550ee680158b77cf18ef1d275a">AuProcess</a> *proc, int pid)</td></tr>
 <tr class="memdesc:a1e01762dcef031b89d7ea78d4686fae6"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuProcessWaitForTermination &ndash; waits for termination of child processes.  <br /></td></tr>
@@ -720,6 +726,15 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>AuAddProcess &ndash; adds process to kernel data structure. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">root</td><td>&ndash; pointer to the root process </td></tr>
+    <tr><td class="paramname">proc</td><td>&ndash; process to add </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a2ba30bbe6abb3b19d3625a2046a17304" name="a2ba30bbe6abb3b19d3625a2046a17304"></a>
@@ -755,6 +770,14 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>AuCreateProcessSlot &ndash; creates a blank process slot. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td>&ndash; pointer to the parent process </td></tr>
+  </table>
+  </dd>
+</dl>
 <p>confusing code :hehehehe</p>
 <p>just inherit all parent credential's to belong to that uac and group</p>
 
@@ -949,6 +972,14 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>AuProcessFindPID &ndash; finds a process by its pid from the process tree. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pid</td><td>&ndash; process id of the process </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="af114c154fef57cb77ab4736648c6c57f" name="af114c154fef57cb77ab4736648c6c57f"></a>
@@ -1000,6 +1031,14 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>AuProcessGetFileDesc &ndash; returns a empty file descriptor from process slot, 0, 1 &amp; 2 are reserved for terminal output. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">proc</td><td>&ndash; pointer to process slot </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1109,6 +1148,15 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>AuRemoveProcess &ndash; removes a process from the process data structure. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td>&ndash; pointer to the parent process </td></tr>
+    <tr><td class="paramname">proc</td><td>&ndash; process to remove </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a68e774374656e9101fe592350858774f" name="a68e774374656e9101fe592350858774f"></a>
@@ -1205,6 +1253,15 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>CreateUserStack &ndash; creates new user stack. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">proc</td><td>&ndash; Pointer to process slot </td></tr>
+    <tr><td class="paramname">cr3</td><td>&ndash; pointer to the address space where to map </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
