@@ -369,6 +369,7 @@ Functions</h2></td></tr>
 <tr class="memitem:af114c154fef57cb77ab4736648c6c57f" id="r_af114c154fef57cb77ab4736648c6c57f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="process_8h.html#af7383c550ee680158b77cf18ef1d275a">AuProcess</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="process_8h.html#af114c154fef57cb77ab4736648c6c57f">AuProcessFork</a> (<a class="el" href="process_8h.html#af7383c550ee680158b77cf18ef1d275a">AuProcess</a> *parent)</td></tr>
 <tr class="separator:af114c154fef57cb77ab4736648c6c57f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc6f957fba059e2696c2873462a6b551" id="r_afc6f957fba059e2696c2873462a6b551"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="process_8h.html#afc6f957fba059e2696c2873462a6b551">AuProcessExit</a> (<a class="el" href="process_8h.html#af7383c550ee680158b77cf18ef1d275a">AuProcess</a> *proc, <a class="el" href="BaseHdr_2stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> schedulable)</td></tr>
+<tr class="memdesc:afc6f957fba059e2696c2873462a6b551"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuProcessExit &ndash; exits a process.  <br /></td></tr>
 <tr class="separator:afc6f957fba059e2696c2873462a6b551"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89700f4a4bf68668b8d6d32ac1abbb02" id="r_a89700f4a4bf68668b8d6d32ac1abbb02"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="process_8h.html#a89700f4a4bf68668b8d6d32ac1abbb02">AuProcessGetFileDesc</a> (<a class="el" href="process_8h.html#af7383c550ee680158b77cf18ef1d275a">AuProcess</a> *proc)</td></tr>
 <tr class="memdesc:a89700f4a4bf68668b8d6d32ac1abbb02"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuProcessGetFileDesc &ndash; returns a empty file descriptor from process slot, 0, 1 &amp; 2 are reserved for terminal output.  <br /></td></tr>
@@ -900,6 +901,21 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>AuProcessExit &ndash; exits a process. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">proc</td><td>&ndash; process to exit </td></tr>
+    <tr><td class="paramname">schedulable</td><td>&ndash; schedule to next thread </td></tr>
+  </table>
+  </dd>
+</dl>
+<p>free up all allocated files by this process</p>
+<p>conditional check for cache flag</p>
+<p>unblock all waitlisted threads</p>
+<ul>
+<li>mark all the threads as blocked *&zwj;/</li>
+</ul>
 
 </div>
 </div>
