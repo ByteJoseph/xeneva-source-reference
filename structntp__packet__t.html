@@ -112,8 +112,19 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a7ab67ccfafbda604650fa70f430a40b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1174cbc7d90d9dc0aab78705d8ba04f" id="r_aa1174cbc7d90d9dc0aab78705d8ba04f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structntp__packet__t.html#aa1174cbc7d90d9dc0aab78705d8ba04f">transmit_ts_frac</a></td></tr>
 <tr class="separator:aa1174cbc7d90d9dc0aab78705d8ba04f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4a45e3c65d15a3472f891a564f47a36" id="r_aa4a45e3c65d15a3472f891a564f47a36"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structntp__packet__t.html#aa4a45e3c65d15a3472f891a564f47a36">reference_ts_frac</a></td></tr>
+<tr class="separator:aa4a45e3c65d15a3472f891a564f47a36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Data Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>BSD 2-Clause License</p>
+<p>Copyright (c) 2026, Xeneva Contributors All rights reserved.</p>
+<p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
+<ol type="1">
+<li>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</li>
+<li>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</li>
+</ol>
+<p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. ntpd &ndash; minimal background SNTPv4 client. Syncs the kernel walltime (_KeSetWalltime) on boot and periodically thereafter, since the PL031 RTC is never enabled and walltime otherwise sits at unix epoch 0. </p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
 <a id="a27236d389126a66d96c8d42409567829" name="a27236d389126a66d96c8d42409567829"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a27236d389126a66d96c8d42409567829">&#9670;&#160;</a></span>li</h2>
 
@@ -240,6 +251,20 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="aa4a45e3c65d15a3472f891a564f47a36" name="aa4a45e3c65d15a3472f891a564f47a36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4a45e3c65d15a3472f891a564f47a36">&#9670;&#160;</a></span>reference_ts_frac</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> ntp_packet_t::reference_ts_frac</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ad5a6af121d0d1d54019016451fd464c4" name="ad5a6af121d0d1d54019016451fd464c4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad5a6af121d0d1d54019016451fd464c4">&#9670;&#160;</a></span>reference_ts_sec</h2>
 
@@ -352,8 +377,9 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<hr/>The documentation for this struct was generated from the following file:<ul>
+<hr/>The documentation for this struct was generated from the following files:<ul>
 <li>XenevaOS/Process/Namdapha/<a class="el" href="__gettime_8cpp.html">_gettime.cpp</a></li>
+<li>XenevaOS/Process/Ntpd/<a class="el" href="Process_2Ntpd_2main_8cpp.html">main.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

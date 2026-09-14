@@ -173,6 +173,9 @@ Functions</h2></td></tr>
 <tr class="separator:ad457f9df47d985c45316eed5e0cefe8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c2f5b8a229705a40cd31ecc6a0f0074" id="r_a1c2f5b8a229705a40cd31ecc6a0f0074"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gic_8h.html#a1c2f5b8a229705a40cd31ecc6a0f0074">GICCheckPending</a> (<a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> irq)</td></tr>
 <tr class="separator:a1c2f5b8a229705a40cd31ecc6a0f0074"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a640ecbce58226a6372a6706e18e4116a" id="r_a640ecbce58226a6372a6706e18e4116a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gic_8h.html#a640ecbce58226a6372a6706e18e4116a">GICDumpSPI</a> (<a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> irq)</td></tr>
+<tr class="memdesc:a640ecbce58226a6372a6706e18e4116a"><td class="mdescLeft">&#160;</td><td class="mdescRight">GICDumpSPI &ndash; one-line GICv2/v3 distributor+CPU view for an SPI. Call after <a class="el" href="qemu_8h.html#af91f94787a70ed8f1d6c24e6147fef93">AuVirtIOInputInitialize()</a> or from a debugger when an MSI device raises (used.idx advances) but IAR never reports it.  <br /></td></tr>
+<tr class="separator:a640ecbce58226a6372a6706e18e4116a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf8c762adb7974f8ba27125ef916160f" id="r_acf8c762adb7974f8ba27125ef916160f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gic_8h.html#acf8c762adb7974f8ba27125ef916160f">AuGICGetMSIAddress</a> (int interruptID)</td></tr>
 <tr class="memdesc:acf8c762adb7974f8ba27125ef916160f"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuGICGetMSIAddress &ndash; calculate and return MSI address for given spi offset.  <br /></td></tr>
 <tr class="separator:acf8c762adb7974f8ba27125ef916160f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -190,8 +193,8 @@ Functions</h2></td></tr>
 <tr class="separator:a2b30efedc02508d60f5b0cb37512c59c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a448d2d578b64f2b3682001f675f13c37" id="r_a448d2d578b64f2b3682001f675f13c37"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gic_8h.html#a448d2d578b64f2b3682001f675f13c37">GICSetupTimer</a> ()</td></tr>
 <tr class="separator:a448d2d578b64f2b3682001f675f13c37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8342bedc1941a0962b5082d805fdb675" id="r_a8342bedc1941a0962b5082d805fdb675"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gic_8h.html#a8342bedc1941a0962b5082d805fdb675">GICSetTargetCPU</a> (int spi)</td></tr>
-<tr class="separator:a8342bedc1941a0962b5082d805fdb675"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80215081527b3bc79823b6ac3f1a996b" id="r_a80215081527b3bc79823b6ac3f1a996b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gic_8h.html#a80215081527b3bc79823b6ac3f1a996b">GICSetTargetCPU</a> (int spi)</td></tr>
+<tr class="separator:a80215081527b3bc79823b6ac3f1a996b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add1f5668a99e1b24ed02480686956957" id="r_add1f5668a99e1b24ed02480686956957"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gic_8h.html#add1f5668a99e1b24ed02480686956957">GICRegisterSPIHandler</a> (void *fptr, int spi)</td></tr>
 <tr class="memdesc:add1f5668a99e1b24ed02480686956957"><td class="mdescLeft">&#160;</td><td class="mdescRight">GICRegisterSPIHandler &ndash; register a spi handler to callback list.  <br /></td></tr>
 <tr class="separator:add1f5668a99e1b24ed02480686956957"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -447,6 +450,34 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a640ecbce58226a6372a6706e18e4116a" name="a640ecbce58226a6372a6706e18e4116a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a640ecbce58226a6372a6706e18e4116a">&#9670;&#160;</a></span>GICDumpSPI()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GICDumpSPI </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td>
+          <td class="paramname"><em>irq</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>GICDumpSPI &ndash; one-line GICv2/v3 distributor+CPU view for an SPI. Call after <a class="el" href="qemu_8h.html#af91f94787a70ed8f1d6c24e6147fef93">AuVirtIOInputInitialize()</a> or from a debugger when an MSI device raises (used.idx advances) but IAR never reports it. </p>
+
+</div>
+</div>
 <a id="a5718cd0aa80985700383ecc1fb71e61c" name="a5718cd0aa80985700383ecc1fb71e61c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5718cd0aa80985700383ecc1fb71e61c">&#9670;&#160;</a></span>GICEnableIRQ()</h2>
 
@@ -624,14 +655,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a8342bedc1941a0962b5082d805fdb675" name="a8342bedc1941a0962b5082d805fdb675"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8342bedc1941a0962b5082d805fdb675">&#9670;&#160;</a></span>GICSetTargetCPU()</h2>
+<a id="a80215081527b3bc79823b6ac3f1a996b" name="a80215081527b3bc79823b6ac3f1a996b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80215081527b3bc79823b6ac3f1a996b">&#9670;&#160;</a></span>GICSetTargetCPU()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> void GICSetTargetCPU </td>
+          <td class="memname">void GICSetTargetCPU </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>spi</em></td><td>)</td>

@@ -75,12 +75,14 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">ipv6.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
+<code>#include &lt;stddef.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="vfs_8h_source.html">Fs/vfs.h</a>&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for ipv6.h:</div>
@@ -88,20 +90,22 @@ Include dependency graph for ipv6.h:</div>
 <div class="center"><img src="ipv6_8h__incl.png" border="0" usemap="#aXenevaOS_2BaseHdr_2Net_2ipv6_8h" alt=""/></div>
 <map name="aXenevaOS_2BaseHdr_2Net_2ipv6_8h" id="aXenevaOS_2BaseHdr_2Net_2ipv6_8h">
 <area shape="rect" title=" " alt="" coords="5,5,180,45"/>
-<area shape="rect" title=" " alt="" coords="51,240,121,265"/>
-<area shape="poly" title=" " alt="" coords="95,46,89,226,84,226,89,45"/>
-<area shape="rect" href="vfs_8h.html" title=" " alt="" coords="159,93,232,119"/>
-<area shape="poly" title=" " alt="" coords="119,43,171,83,168,87,116,48"/>
-<area shape="poly" title=" " alt="" coords="172,121,141,141,113,168,99,197,92,227,86,226,94,196,109,165,138,136,170,117"/>
-<area shape="rect" title=" " alt="" coords="124,167,179,192"/>
-<area shape="poly" title=" " alt="" coords="190,120,168,156,163,154,186,118"/>
-<area shape="rect" title=" " alt="" coords="203,167,279,192"/>
-<area shape="poly" title=" " alt="" coords="205,118,228,154,224,157,201,120"/>
-<area shape="rect" href="group_8h.html" title=" " alt="" coords="303,167,408,192"/>
-<area shape="poly" title=" " alt="" coords="222,116,318,159,316,163,220,121"/>
-<area shape="rect" href="user_8h.html" title=" " alt="" coords="432,167,527,192"/>
-<area shape="poly" title=" " alt="" coords="233,114,421,161,420,166,232,119"/>
-<area shape="poly" title=" " alt="" coords="313,195,136,241,134,236,311,189"/>
+<area shape="rect" title=" " alt="" coords="17,240,88,265"/>
+<area shape="poly" title=" " alt="" coords="75,47,59,69,46,94,39,129,39,165,48,226,43,227,33,165,34,129,41,92,54,66,71,44"/>
+<area shape="rect" title=" " alt="" coords="55,93,130,119"/>
+<area shape="poly" title=" " alt="" coords="95,46,95,79,90,79,90,46"/>
+<area shape="rect" href="vfs_8h.html" title=" " alt="" coords="163,93,236,119"/>
+<area shape="poly" title=" " alt="" coords="120,43,174,83,171,87,117,48"/>
+<area shape="poly" title=" " alt="" coords="164,119,120,138,98,151,80,168,65,197,57,227,52,225,60,195,76,165,95,147,117,133,161,114"/>
+<area shape="rect" title=" " alt="" coords="91,167,145,192"/>
+<area shape="poly" title=" " alt="" coords="188,121,143,160,140,156,185,117"/>
+<area shape="rect" title=" " alt="" coords="169,167,245,192"/>
+<area shape="poly" title=" " alt="" coords="203,119,207,153,202,153,198,119"/>
+<area shape="rect" href="group_8h.html" title=" " alt="" coords="269,167,375,192"/>
+<area shape="poly" title=" " alt="" coords="220,116,292,157,289,162,218,121"/>
+<area shape="rect" href="user_8h.html" title=" " alt="" coords="399,167,493,192"/>
+<area shape="poly" title=" " alt="" coords="237,115,394,160,392,165,236,120"/>
+<area shape="poly" title=" " alt="" coords="279,195,102,241,101,236,278,189"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -109,11 +113,109 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="ipv6_8h__dep__incl.png" border="0" usemap="#aXenevaOS_2BaseHdr_2Net_2ipv6_8hdep" alt=""/></div>
 <map name="aXenevaOS_2BaseHdr_2Net_2ipv6_8hdep" id="aXenevaOS_2BaseHdr_2Net_2ipv6_8hdep">
-<area shape="rect" title=" " alt="" coords="91,5,265,45"/>
-<area shape="rect" href="ethernet_8cpp.html" title=" " alt="" coords="5,93,167,133"/>
-<area shape="poly" title=" " alt="" coords="150,57,108,95,105,91,146,53"/>
-<area shape="rect" href="ipv6_8cpp.html" title=" " alt="" coords="191,93,352,133"/>
-<area shape="poly" title=" " alt="" coords="211,53,252,91,249,95,207,57"/>
+<area shape="rect" title=" " alt="" coords="2825,5,3000,45"/>
+<area shape="rect" href="aunet_8h.html" title=" " alt="" coords="2316,93,2491,133"/>
+<area shape="poly" title=" " alt="" coords="2812,46,2491,100,2491,95,2811,41"/>
+<area shape="rect" href="ethernet_8cpp.html" title=" " alt="" coords="1548,181,1709,221"/>
+<area shape="poly" title=" " alt="" coords="2812,39,2580,63,2305,96,2013,136,1722,184,1710,186,1709,181,1722,179,2012,130,2304,91,2579,58,2811,34"/>
+<area shape="rect" href="ipv6_8cpp.html" title=" " alt="" coords="5,181,167,221"/>
+<area shape="poly" title=" " alt="" coords="2811,30,2505,35,2058,46,1535,66,1001,96,588,129,409,150,178,184,167,186,166,181,178,179,408,145,588,123,1000,91,1535,60,2058,41,2505,30,2811,25"/>
+<area shape="rect" href="ethernet_8c.html" title=" " alt="" coords="377,181,545,221"/>
+<area shape="poly" title=" " alt="" coords="2812,31,2443,43,1887,68,1565,88,1229,114,890,145,557,184,545,186,544,180,556,179,889,140,1229,108,1565,83,1887,63,2443,37,2811,26"/>
+<area shape="rect" href="icmpv6_8c.html" title=" " alt="" coords="2319,181,2487,221"/>
+<area shape="poly" title=" " alt="" coords="2812,42,2704,62,2647,77,2591,96,2545,116,2502,139,2431,184,2428,179,2499,135,2543,111,2589,91,2645,72,2703,57,2811,37"/>
+<area shape="rect" href="ipv6_8c.html" title=" " alt="" coords="2890,181,3058,221"/>
+<area shape="poly" title=" " alt="" coords="2973,50,2997,68,3015,92,3021,116,3016,141,3005,164,2992,183,2988,180,3001,161,3011,139,3015,116,3010,94,2993,72,2970,55"/>
+<area shape="rect" href="ndp_8c.html" title=" " alt="" coords="2511,181,2679,221"/>
+<area shape="poly" title=" " alt="" coords="2812,40,2696,61,2648,77,2617,95,2605,115,2598,138,2596,181,2590,181,2593,137,2600,112,2613,91,2646,72,2695,56,2811,35"/>
+<area shape="rect" href="socket_8c.html" title=" " alt="" coords="4410,181,4578,221"/>
+<area shape="poly" title=" " alt="" coords="3014,31,3335,54,3734,91,4067,129,4398,179,4410,181,4409,186,4398,184,4066,134,3734,96,3335,59,3014,36"/>
+<area shape="rect" href="tcp_8c.html" title=" " alt="" coords="4031,181,4199,221"/>
+<area shape="poly" title=" " alt="" coords="3014,30,3285,52,3448,69,3612,91,3847,135,4041,179,4040,184,3846,140,3611,96,3448,74,3284,57,3014,35"/>
+<area shape="rect" href="udp_8c.html" title=" " alt="" coords="3647,181,3815,221"/>
+<area shape="poly" title=" " alt="" coords="3014,29,3305,51,3449,69,3508,79,3554,91,3599,110,3642,133,3709,179,3706,183,3639,138,3597,114,3552,96,3507,84,3449,74,3304,56,3013,35"/>
+<area shape="rect" href="icmpv6_8h.html" title=" " alt="" coords="2627,93,2801,133"/>
+<area shape="poly" title=" " alt="" coords="2858,53,2759,96,2756,91,2855,48"/>
+<area shape="rect" href="ndp_8h.html" title=" " alt="" coords="2825,93,3000,133"/>
+<area shape="poly" title=" " alt="" coords="2915,59,2915,93,2910,93,2910,59"/>
+<area shape="rect" href="route_8h.html" title=" " alt="" coords="4407,93,4581,133"/>
+<area shape="poly" title=" " alt="" coords="3014,29,4203,91,4406,103,4406,109,4203,96,3014,34"/>
+<area shape="rect" href="tcp_8h.html" title=" " alt="" coords="3365,93,3540,133"/>
+<area shape="poly" title=" " alt="" coords="3014,40,3365,96,3365,101,3013,45"/>
+<area shape="rect" href="udp_8h.html" title=" " alt="" coords="3076,93,3251,133"/>
+<area shape="poly" title=" " alt="" coords="2981,47,3109,91,3108,96,2979,52"/>
+<area shape="rect" href="e1000_8cpp.html" title=" " alt="" coords="1734,181,1918,221"/>
+<area shape="poly" title=" " alt="" coords="2302,131,1932,184,1919,186,1918,181,1931,179,2302,125"/>
+<area shape="rect" href="virtionet_8cpp.html" title=" " alt="" coords="1943,181,2109,221"/>
+<area shape="poly" title=" " alt="" coords="2308,139,2109,184,2108,179,2307,134"/>
+<area shape="rect" href="arp_8cpp.html" title=" " alt="" coords="2133,181,2295,221"/>
+<area shape="poly" title=" " alt="" coords="2351,141,2257,184,2254,179,2348,137"/>
+<area shape="rect" href="aunet_8cpp.html" title=" " alt="" coords="4224,181,4385,221"/>
+<area shape="poly" title=" " alt="" coords="2505,122,2615,131,2858,141,3064,144,3415,140,3583,139,3764,143,3970,155,4212,179,4224,180,4224,186,4211,184,3969,161,3764,148,3583,144,3415,145,3064,150,2858,147,2615,136,2504,127"/>
+<area shape="poly" title=" " alt="" coords="2303,124,2039,146,1881,163,1722,184,1710,186,1709,181,1722,179,1880,158,2039,141,2302,119"/>
+<area shape="rect" href="icmp_8cpp.html" title=" " alt="" coords="191,181,352,221"/>
+<area shape="poly" title=" " alt="" coords="2302,118,1903,124,1343,136,778,156,543,169,365,184,352,186,352,180,364,179,543,163,778,150,1343,131,1903,119,2302,113"/>
+<area shape="rect" href="ipv4_8cpp.html" title=" " alt="" coords="3083,181,3244,221"/>
+<area shape="poly" title=" " alt="" coords="2505,121,2807,149,3070,179,3083,181,3082,186,3070,184,2807,154,2504,126"/>
+<area shape="poly" title=" " alt="" coords="2302,118,1870,123,1256,134,634,154,374,167,178,184,167,185,167,180,178,179,374,162,634,148,1256,129,1870,118,2302,113"/>
+<area shape="rect" href="tcp_8cpp.html" title=" " alt="" coords="3461,181,3623,221"/>
+<area shape="poly" title=" " alt="" coords="2505,122,2616,131,2850,143,3033,147,3215,155,3449,179,3462,180,3461,186,3448,184,3215,160,3033,152,2850,148,2615,136,2504,127"/>
+<area shape="rect" href="udp_8cpp.html" title=" " alt="" coords="2704,181,2865,221"/>
+<area shape="poly" title=" " alt="" coords="2501,134,2704,179,2703,185,2500,139"/>
+<area shape="rect" href="init_8cpp.html" title=" " alt="" coords="569,189,755,214"/>
+<area shape="poly" title=" " alt="" coords="2303,120,1532,142,1090,161,907,172,768,184,718,191,718,186,767,179,907,167,1090,156,1532,137,2302,114"/>
+<area shape="rect" href="virtionet_8c.html" title=" " alt="" coords="779,181,947,221"/>
+<area shape="poly" title=" " alt="" coords="2302,117,2063,119,1730,128,1348,148,1152,164,960,184,948,186,947,180,959,179,1151,159,1347,143,1730,123,2063,114,2302,112"/>
+<area shape="rect" href="arp_8c.html" title=" " alt="" coords="971,181,1139,221"/>
+<area shape="poly" title=" " alt="" coords="2302,118,2092,122,1806,132,1481,152,1314,166,1152,184,1140,186,1139,180,1151,179,1314,161,1480,147,1806,127,2092,117,2302,113"/>
+<area shape="rect" href="aunet_8c.html" title=" " alt="" coords="3839,181,4007,221"/>
+<area shape="poly" title=" " alt="" coords="2505,122,2616,131,2800,140,2956,144,3222,144,3350,145,3488,150,3644,160,3828,179,3840,180,3839,186,3827,184,3643,165,3488,155,3350,150,3222,150,2956,149,2800,145,2615,136,2504,127"/>
+<area shape="poly" title=" " alt="" coords="2302,119,1433,139,927,158,716,170,557,184,545,186,544,180,556,179,716,165,927,153,1432,133,2302,114"/>
+<area shape="rect" href="icmp_8c.html" title=" " alt="" coords="1163,181,1331,221"/>
+<area shape="poly" title=" " alt="" coords="2302,119,2122,125,1883,137,1614,156,1344,184,1332,186,1331,180,1343,179,1614,150,1883,131,2122,120,2302,114"/>
+<area shape="poly" title=" " alt="" coords="2406,147,2406,181,2401,181,2401,147"/>
+<area shape="rect" href="ipv4_8c.html" title=" " alt="" coords="3269,181,3437,221"/>
+<area shape="poly" title=" " alt="" coords="2505,121,2616,131,2796,143,2937,149,3077,158,3257,179,3269,180,3268,186,3256,184,3077,164,2936,154,2796,148,2615,136,2504,127"/>
+<area shape="poly" title=" " alt="" coords="2505,125,2680,148,2878,179,2890,181,2889,186,2878,184,2679,154,2504,130"/>
+<area shape="poly" title=" " alt="" coords="2459,137,2554,179,2552,184,2457,141"/>
+<area shape="poly" title=" " alt="" coords="2505,122,2615,131,2887,142,3117,145,3508,139,3696,137,3898,141,4128,154,4398,179,4410,180,4410,185,4398,184,4127,159,3898,146,3696,143,3508,145,3117,150,2887,148,2615,136,2504,128"/>
+<area shape="poly" title=" " alt="" coords="2505,122,2615,131,2829,141,3010,144,3318,143,3467,143,3626,147,3807,158,4020,179,4032,180,4031,185,4019,184,3806,163,3626,152,3467,148,3318,148,3010,150,2829,146,2615,136,2504,127"/>
+<area shape="poly" title=" " alt="" coords="2505,122,2615,131,2902,143,3126,146,3350,153,3481,162,3636,179,3648,180,3647,186,3635,184,3480,168,3349,158,3126,151,2902,149,2615,136,2504,127"/>
+<area shape="rect" href="init_8c.html" title=" " alt="" coords="1355,181,1523,221"/>
+<area shape="poly" title=" " alt="" coords="2302,121,1962,142,1750,160,1537,184,1524,186,1523,181,1536,179,1749,154,1962,136,2302,116"/>
+<area shape="poly" title=" " alt="" coords="2815,131,2970,145,3100,152,3323,154,3545,156,3675,163,3828,179,3840,180,3839,186,3827,184,3675,169,3545,161,3323,159,3100,158,2969,150,2815,136"/>
+<area shape="poly" title=" " alt="" coords="2633,140,2472,184,2471,179,2632,134"/>
+<area shape="poly" title=" " alt="" coords="2785,135,2918,179,2916,184,2783,140"/>
+<area shape="poly" title=" " alt="" coords="2678,144,2623,183,2620,179,2675,139"/>
+<area shape="poly" title=" " alt="" coords="3014,125,3065,131,3279,145,3447,150,3614,157,3828,179,3840,180,3839,186,3827,184,3613,163,3446,156,3279,151,3064,136,3013,131"/>
+<area shape="poly" title=" " alt="" coords="2812,136,2654,160,2500,184,2488,186,2487,181,2499,179,2654,155,2811,131"/>
+<area shape="poly" title=" " alt="" coords="2936,143,2963,180,2958,183,2932,146"/>
+<area shape="poly" title=" " alt="" coords="2830,140,2666,184,2664,179,2829,134"/>
+<area shape="poly" title=" " alt="" coords="4441,141,4347,184,4345,179,4439,137"/>
+<area shape="poly" title=" " alt="" coords="4393,130,4218,154,4020,184,4008,186,4007,181,4019,179,4218,148,4392,125"/>
+<area shape="poly" title=" " alt="" coords="4497,147,4497,181,4491,181,4491,147"/>
+<area shape="rect" href="route_8cpp.html" title=" " alt="" coords="4603,181,4764,221"/>
+<area shape="poly" title=" " alt="" coords="4549,137,4643,179,4641,184,4547,141"/>
+<area shape="rect" href="socket_8cpp.html" title=" " alt="" coords="4788,181,4949,221"/>
+<area shape="poly" title=" " alt="" coords="4590,134,4789,179,4787,184,4589,139"/>
+<area shape="rect" href="route_8c.html" title=" " alt="" coords="4974,181,5142,221"/>
+<area shape="poly" title=" " alt="" coords="4596,125,4767,149,4962,179,4974,181,4973,186,4962,184,4767,154,4595,130"/>
+<area shape="poly" title=" " alt="" coords="3554,117,3850,139,4031,156,4212,179,4224,181,4223,186,4211,184,4030,161,3849,144,3554,123"/>
+<area shape="poly" title=" " alt="" coords="3377,140,3227,184,3226,179,3376,135"/>
+<area shape="poly" title=" " alt="" coords="3484,141,3524,179,3520,183,3481,145"/>
+<area shape="poly" title=" " alt="" coords="3554,130,3828,179,3840,181,3839,186,3827,184,3553,135"/>
+<area shape="poly" title=" " alt="" coords="3422,144,3377,183,3373,179,3418,140"/>
+<area shape="poly" title=" " alt="" coords="3352,134,3072,184,3059,186,3058,181,3071,179,3351,129"/>
+<area shape="poly" title=" " alt="" coords="3554,122,3769,145,4020,179,4032,181,4031,186,4019,184,3768,150,3553,127"/>
+<area shape="poly" title=" " alt="" coords="3265,123,3354,131,3595,144,3783,148,3971,155,4082,164,4212,179,4224,180,4223,186,4211,184,4081,169,3971,160,3783,153,3595,149,3354,136,3264,128"/>
+<area shape="poly" title=" " alt="" coords="3062,131,3013,136,2816,149,2650,153,2367,152,2230,151,2084,155,1918,165,1722,184,1710,186,1709,180,1722,179,1917,159,2084,149,2230,146,2367,147,2650,148,2816,143,3012,131,3062,126"/>
+<area shape="poly" title=" " alt="" coords="3166,147,3166,181,3161,181,3161,147"/>
+<area shape="poly" title=" " alt="" coords="3068,139,2866,184,2865,179,3067,134"/>
+<area shape="poly" title=" " alt="" coords="3265,122,3828,179,3840,181,3839,186,3827,184,3264,127"/>
+<area shape="poly" title=" " alt="" coords="3062,131,3013,136,2639,156,2322,160,2043,155,1783,146,1524,139,1245,139,929,152,751,165,557,184,545,185,545,180,556,179,751,160,929,147,1245,133,1524,133,1784,141,2043,150,2322,155,2639,150,3012,131,3062,126"/>
+<area shape="poly" title=" " alt="" coords="3218,137,3312,179,3310,184,3216,141"/>
+<area shape="poly" title=" " alt="" coords="3111,141,3017,184,3014,179,3108,137"/>
+<area shape="poly" title=" " alt="" coords="3265,125,3439,148,3636,179,3648,181,3647,186,3635,184,3438,154,3264,130"/>
 </map>
 </div>
 </div>
@@ -121,22 +223,120 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structip6__addr.html">ip6_addr</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__ip6__addr__.html">_ip6_addr_</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__ipv6__head__.html">_ipv6_head_</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ae0b4fb4806be129a97badce38da77e7c" id="r_ae0b4fb4806be129a97badce38da77e7c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ipv6_8h.html#ae0b4fb4806be129a97badce38da77e7c">IPV6_NEXT_HOPOPT</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:ae0b4fb4806be129a97badce38da77e7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81f7616d290212905b1d308206fe52d6" id="r_a81f7616d290212905b1d308206fe52d6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ipv6_8h.html#a81f7616d290212905b1d308206fe52d6">IPV6_NEXT_TCP</a>&#160;&#160;&#160;6</td></tr>
+<tr class="separator:a81f7616d290212905b1d308206fe52d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0c9932c1e021aa6189941c23021adca" id="r_aa0c9932c1e021aa6189941c23021adca"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ipv6_8h.html#aa0c9932c1e021aa6189941c23021adca">IPV6_NEXT_UDP</a>&#160;&#160;&#160;17</td></tr>
+<tr class="separator:aa0c9932c1e021aa6189941c23021adca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4cb7c21576d6ba111d2bb2486e031f3" id="r_ae4cb7c21576d6ba111d2bb2486e031f3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ipv6_8h.html#ae4cb7c21576d6ba111d2bb2486e031f3">IPV6_NEXT_ICMPV6</a>&#160;&#160;&#160;58</td></tr>
+<tr class="separator:ae4cb7c21576d6ba111d2bb2486e031f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
+<tr class="memitem:a8d8af0dca1cafda09b81ee4b8ecbb672" id="r_a8d8af0dca1cafda09b81ee4b8ecbb672"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct__ip6__addr__.html">_ip6_addr_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ipv6_8h.html#a8d8af0dca1cafda09b81ee4b8ecbb672">ip6_addr</a></td></tr>
+<tr class="separator:a8d8af0dca1cafda09b81ee4b8ecbb672"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20903fd0d87cbd29f3fa56aa9c40c6e7" id="r_a20903fd0d87cbd29f3fa56aa9c40c6e7"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct__ipv6__head__.html">_ipv6_head_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ipv6_8h.html#a20903fd0d87cbd29f3fa56aa9c40c6e7">IPv6Header</a></td></tr>
 <tr class="separator:a20903fd0d87cbd29f3fa56aa9c40c6e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a5c413e02ec8f3305133c98d2b83da0e3" id="r_a5c413e02ec8f3305133c98d2b83da0e3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ipv6_8h.html#a5c413e02ec8f3305133c98d2b83da0e3">IPv6PseudoChecksum</a> (const <a class="el" href="ipv6_8h.html#a8d8af0dca1cafda09b81ee4b8ecbb672">ip6_addr</a> *src, const <a class="el" href="ipv6_8h.html#a8d8af0dca1cafda09b81ee4b8ecbb672">ip6_addr</a> *dst, <a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> length, <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> nextHeader, const void *data, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> dataLen)</td></tr>
+<tr class="separator:a5c413e02ec8f3305133c98d2b83da0e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afeef704b1207d4319a2d83a31413aee1" id="r_afeef704b1207d4319a2d83a31413aee1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ipv6_8h.html#afeef704b1207d4319a2d83a31413aee1">CreateIPv6Socket</a> (int type, int protocol)</td></tr>
+<tr class="separator:afeef704b1207d4319a2d83a31413aee1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89488d7d64a5f935b22c65c807d8f80d" id="r_a89488d7d64a5f935b22c65c807d8f80d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ipv6_8h.html#a89488d7d64a5f935b22c65c807d8f80d">IPv6HandlePacket</a> (void *data, <a class="el" href="vfs_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *<a class="el" href="e1000_8cpp.html#a520bf6a1c47a61d938646ef39fc45d76">nic</a>)</td></tr>
 <tr class="separator:a89488d7d64a5f935b22c65c807d8f80d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66dfb50ae39e2cb87a21d1fffe52f6a5" id="r_a66dfb50ae39e2cb87a21d1fffe52f6a5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ipv6_8h.html#a66dfb50ae39e2cb87a21d1fffe52f6a5">IPV6SendPacket</a> (<a class="el" href="ipv6_8h.html#a20903fd0d87cbd29f3fa56aa9c40c6e7">IPv6Header</a> *packet, <a class="el" href="vfs_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *<a class="el" href="e1000_8cpp.html#a520bf6a1c47a61d938646ef39fc45d76">nic</a>)</td></tr>
+<tr class="separator:a66dfb50ae39e2cb87a21d1fffe52f6a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="ae0b4fb4806be129a97badce38da77e7c" name="ae0b4fb4806be129a97badce38da77e7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0b4fb4806be129a97badce38da77e7c">&#9670;&#160;</a></span>IPV6_NEXT_HOPOPT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IPV6_NEXT_HOPOPT&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>BSD 2-Clause License</p>
+<p>Copyright (c) 2022-2025, Manas Kamal Choudhury All rights reserved.</p>
+<p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
+<ol type="1">
+<li>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</li>
+<li>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</li>
+</ol>
+<p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. </p>
+
+</div>
+</div>
+<a id="ae4cb7c21576d6ba111d2bb2486e031f3" name="ae4cb7c21576d6ba111d2bb2486e031f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4cb7c21576d6ba111d2bb2486e031f3">&#9670;&#160;</a></span>IPV6_NEXT_ICMPV6</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IPV6_NEXT_ICMPV6&#160;&#160;&#160;58</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a81f7616d290212905b1d308206fe52d6" name="a81f7616d290212905b1d308206fe52d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81f7616d290212905b1d308206fe52d6">&#9670;&#160;</a></span>IPV6_NEXT_TCP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IPV6_NEXT_TCP&#160;&#160;&#160;6</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa0c9932c1e021aa6189941c23021adca" name="aa0c9932c1e021aa6189941c23021adca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0c9932c1e021aa6189941c23021adca">&#9670;&#160;</a></span>IPV6_NEXT_UDP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IPV6_NEXT_UDP&#160;&#160;&#160;17</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Typedef Documentation</h2>
+<a id="a8d8af0dca1cafda09b81ee4b8ecbb672" name="a8d8af0dca1cafda09b81ee4b8ecbb672"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d8af0dca1cafda09b81ee4b8ecbb672">&#9670;&#160;</a></span>ip6_addr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct__ip6__addr__.html">_ip6_addr_</a> <a class="el" href="ipv6_8h.html#a8d8af0dca1cafda09b81ee4b8ecbb672">ip6_addr</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a20903fd0d87cbd29f3fa56aa9c40c6e7" name="a20903fd0d87cbd29f3fa56aa9c40c6e7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a20903fd0d87cbd29f3fa56aa9c40c6e7">&#9670;&#160;</a></span>IPv6Header</h2>
 
@@ -152,6 +352,42 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="afeef704b1207d4319a2d83a31413aee1" name="afeef704b1207d4319a2d83a31413aee1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afeef704b1207d4319a2d83a31413aee1">&#9670;&#160;</a></span>CreateIPv6Socket()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CreateIPv6Socket </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>protocol</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a89488d7d64a5f935b22c65c807d8f80d" name="a89488d7d64a5f935b22c65c807d8f80d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a89488d7d64a5f935b22c65c807d8f80d">&#9670;&#160;</a></span>IPv6HandlePacket()</h2>
 
@@ -166,6 +402,111 @@ Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">void *&#160;</td>
           <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="vfs_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *&#160;</td>
+          <td class="paramname"><em>nic</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5c413e02ec8f3305133c98d2b83da0e3" name="a5c413e02ec8f3305133c98d2b83da0e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c413e02ec8f3305133c98d2b83da0e3">&#9670;&#160;</a></span>IPv6PseudoChecksum()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> IPv6PseudoChecksum </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="ipv6_8h.html#a8d8af0dca1cafda09b81ee4b8ecbb672">ip6_addr</a> *&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="ipv6_8h.html#a8d8af0dca1cafda09b81ee4b8ecbb672">ip6_addr</a> *&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramname"><em>nextHeader</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>&#160;</td>
+          <td class="paramname"><em>dataLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>BSD 2-Clause License</p>
+<p>Copyright (c) 2022-2025, Manas Kamal Choudhury All rights reserved.</p>
+<p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
+<ol type="1">
+<li>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</li>
+<li>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</li>
+</ol>
+<p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</p>
+<p>Note: Full IPv6 (NDP/ICMPv6/UDP6/TCP6) lives in KernelAA64/Net/. This x86 twin keeps EtherType dispatch and shared helpers compiling. </p>
+
+</div>
+</div>
+<a id="a66dfb50ae39e2cb87a21d1fffe52f6a5" name="a66dfb50ae39e2cb87a21d1fffe52f6a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66dfb50ae39e2cb87a21d1fffe52f6a5">&#9670;&#160;</a></span>IPV6SendPacket()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void IPV6SendPacket </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ipv6_8h.html#a20903fd0d87cbd29f3fa56aa9c40c6e7">IPv6Header</a> *&#160;</td>
+          <td class="paramname"><em>packet</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>

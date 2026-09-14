@@ -214,8 +214,6 @@ Macros</h2></td></tr>
 <tr class="separator:a0f9154f65e54a6e1ca0a019e56897ca1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:accd52d2b75f5ceeaefebcebde7c86579" id="r_accd52d2b75f5ceeaefebcebde7c86579"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="loader_8c.html#accd52d2b75f5ceeaefebcebde7c86579">PUSHALIGN</a>(stack,  align)</td></tr>
 <tr class="separator:accd52d2b75f5ceeaefebcebde7c86579"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2dd2fda8d737584f8fa6ef86fb038155" id="r_a2dd2fda8d737584f8fa6ef86fb038155"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="loader_8c.html#a2dd2fda8d737584f8fa6ef86fb038155">PUSHSTRING</a>(stack,  s)</td></tr>
-<tr class="separator:a2dd2fda8d737584f8fa6ef86fb038155"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -335,42 +333,6 @@ Variables</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line">    <span class="keywordflow">do</span> {                                                                                           \</div>
 <div class="line">        stack &amp;= ~((align) - 1);                                                                   \</div>
 <div class="line">    } <span class="keywordflow">while</span> (0)</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a2dd2fda8d737584f8fa6ef86fb038155" name="a2dd2fda8d737584f8fa6ef86fb038155"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2dd2fda8d737584f8fa6ef86fb038155">&#9670;&#160;</a></span>PUSHSTRING</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PUSHSTRING</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">stack, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">s&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">    <span class="keywordflow">do</span> {                                                                                           \</div>
-<div class="line">        <span class="keywordtype">size_t</span> l = <a class="code hl_function" href="acclib_8h.html#a81bf03e7aa5c8eae478600026facc485">strlen</a>(s) - 1;                                                                  \</div>
-<div class="line">        <span class="keywordflow">do</span> {                                                                                       \</div>
-<div class="line">            PUSH2(stack, <span class="keywordtype">char</span>, s[l]);                                                              \</div>
-<div class="line">            l--;                                                                                   \</div>
-<div class="line">        } <span class="keywordflow">while</span> (l &gt;= 0);                                                                          \</div>
-<div class="line">    } <span class="keywordflow">while</span> (0)</div>
-<div class="ttc" id="aacclib_8h_html_a81bf03e7aa5c8eae478600026facc485"><div class="ttname"><a href="acclib_8h.html#a81bf03e7aa5c8eae478600026facc485">strlen</a></div><div class="ttdeci">ACPI_SIZE strlen(const char *String)</div><div class="ttdef"><b>Definition</b> utclib.c:379</div></div>
 </div><!-- fragment -->
 </div>
 </div>
