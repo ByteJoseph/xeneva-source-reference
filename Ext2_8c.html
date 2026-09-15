@@ -151,6 +151,10 @@ Include dependency graph for Ext2.c:</div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a258eebfe5690ec78a4b5f21de8a68c7d" id="r_a258eebfe5690ec78a4b5f21de8a68c7d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ext2_8c.html#a258eebfe5690ec78a4b5f21de8a68c7d">Ext2FreeBlock</a> (<a class="el" href="ext2_8h.html#aac4c741de68b4f6b8bc5bf2cc8296064">Ext2Fs</a> *fs, <a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> block_num)</td></tr>
+<tr class="separator:a258eebfe5690ec78a4b5f21de8a68c7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fdaabd71c51babde8d1d8e055338bb3" id="r_a0fdaabd71c51babde8d1d8e055338bb3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ext2_8c.html#a0fdaabd71c51babde8d1d8e055338bb3">Ext2FreeInode</a> (<a class="el" href="ext2_8h.html#aac4c741de68b4f6b8bc5bf2cc8296064">Ext2Fs</a> *fs, <a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> inode_num)</td></tr>
+<tr class="separator:a0fdaabd71c51babde8d1d8e055338bb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14d3d7376431b5e0446a2f2d396932e2" id="r_a14d3d7376431b5e0446a2f2d396932e2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ext2_8c.html#a14d3d7376431b5e0446a2f2d396932e2">Ext2FindEntry</a> (<a class="el" href="ext2_8h.html#aac4c741de68b4f6b8bc5bf2cc8296064">Ext2Fs</a> *fs, <a class="el" href="ext2_8h.html#ab11a9069bde6f61d6b32822ffb279ec1">Ext2Inode</a> *dir_inode, const char *name)</td></tr>
 <tr class="separator:a14d3d7376431b5e0446a2f2d396932e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac151ba579fd16dba294738e5f69063ca" id="r_ac151ba579fd16dba294738e5f69063ca"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ext2_8c.html#ac151ba579fd16dba294738e5f69063ca">Ext2ReadInode</a> (<a class="el" href="ext2_8h.html#aac4c741de68b4f6b8bc5bf2cc8296064">Ext2Fs</a> *fs, <a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> inode_num, <a class="el" href="ext2_8h.html#ab11a9069bde6f61d6b32822ffb279ec1">Ext2Inode</a> *out_inode)</td></tr>
@@ -214,6 +218,62 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a258eebfe5690ec78a4b5f21de8a68c7d" name="a258eebfe5690ec78a4b5f21de8a68c7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a258eebfe5690ec78a4b5f21de8a68c7d">&#9670;&#160;</a></span>Ext2FreeBlock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Ext2FreeBlock </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ext2_8h.html#aac4c741de68b4f6b8bc5bf2cc8296064">Ext2Fs</a> *&#160;</td>
+          <td class="paramname"><em>fs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td>
+          <td class="paramname"><em>block_num</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0fdaabd71c51babde8d1d8e055338bb3" name="a0fdaabd71c51babde8d1d8e055338bb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0fdaabd71c51babde8d1d8e055338bb3">&#9670;&#160;</a></span>Ext2FreeInode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Ext2FreeInode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ext2_8h.html#aac4c741de68b4f6b8bc5bf2cc8296064">Ext2Fs</a> *&#160;</td>
+          <td class="paramname"><em>fs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td>
+          <td class="paramname"><em>inode_num</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

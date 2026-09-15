@@ -316,7 +316,7 @@ var searchData=
   ['mfi_5fscsi_5fio_5ftype_5fraid_313',['MFI_SCSI_IO_TYPE_RAID',['../ScsiIo_8h.html#ad2b910f7d7dae80d8be51b77962e9f84',1,'ScsiIo.h']]],
   ['mfi_5fscsi_5fio_5ftype_5frbc_314',['MFI_SCSI_IO_TYPE_RBC',['../ScsiIo_8h.html#a616fb23d26395d73d3819c8ec58ef252',1,'ScsiIo.h']]],
   ['mfi_5fscsi_5fio_5ftype_5fses_315',['MFI_SCSI_IO_TYPE_SES',['../ScsiIo_8h.html#ac47ea4d974e6e6a45958c09899c7aec3',1,'ScsiIo.h']]],
-  ['mhz_316',['mhz',['../imx8mp-samsung-phy_8cpp.html#a91dd8b26b5bbdd9ca65de2ebb0119743',1,'MHZ:&#160;imx8mp-samsung-phy.cpp'],['../SpiConfiguration_8h.html#aa41d09b537170c44c3d77cb1b2e44ed6',1,'MHz:&#160;SpiConfiguration.h']]],
+  ['mhz_316',['mhz',['../SpiConfiguration_8h.html#aa41d09b537170c44c3d77cb1b2e44ed6',1,'MHz:&#160;SpiConfiguration.h'],['../imx8mp-samsung-phy_8cpp.html#a91dd8b26b5bbdd9ca65de2ebb0119743',1,'MHZ:&#160;imx8mp-samsung-phy.cpp']]],
   ['middle_5fclick_317',['MIDDLE_CLICK',['../devinput_8h.html#abd305efd646d98c3a4928668e6a6f5e5',1,'devinput.h']]],
   ['midi_5fclass_318',['MIDI_CLASS',['../uspi_8h.html#aaaff6470231b3695c57a622f23493f47',1,'uspi.h']]],
   ['mii_5facc_319',['MII_ACC',['../lan7800_8c.html#a9ece0eba83be3294988bb334e7b49bd3',1,'lan7800.c']]],

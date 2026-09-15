@@ -68,11 +68,15 @@ var searchData=
   ['ext2_2ec_65',['Ext2.c',['../Ext2_8c.html',1,'']]],
   ['ext2_2ecpp_66',['ext2.cpp',['../ext2_8cpp.html',1,'']]],
   ['ext2_2eh_67',['ext2.h',['../ext2_8h.html',1,'']]],
-  ['extendedsalbootservice_2eh_68',['ExtendedSalBootService.h',['../ExtendedSalBootService_8h.html',1,'']]],
-  ['extendedsallib_2eh_69',['ExtendedSalLib.h',['../ExtendedSalLib_8h.html',1,'']]],
-  ['extendedsalserviceclasses_2eh_70',['ExtendedSalServiceClasses.h',['../ExtendedSalServiceClasses_8h.html',1,'']]],
-  ['extmngr_2ecpp_71',['extmngr.cpp',['../extmngr_8cpp.html',1,'']]],
-  ['extrace_2ec_72',['extrace.c',['../extrace_8c.html',1,'']]],
-  ['extractguidedsectionlib_2eh_73',['ExtractGuidedSectionLib.h',['../ExtractGuidedSectionLib_8h.html',1,'']]],
-  ['exutils_2ec_74',['exutils.c',['../exutils_8c.html',1,'']]]
+  ['ext2dir_2ec_68',['ext2dir.c',['../ext2dir_8c.html',1,'']]],
+  ['ext2dir_2eh_69',['ext2dir.h',['../ext2dir_8h.html',1,'']]],
+  ['ext2file_2ec_70',['ext2file.c',['../ext2file_8c.html',1,'']]],
+  ['ext2file_2eh_71',['ext2file.h',['../ext2file_8h.html',1,'']]],
+  ['extendedsalbootservice_2eh_72',['ExtendedSalBootService.h',['../ExtendedSalBootService_8h.html',1,'']]],
+  ['extendedsallib_2eh_73',['ExtendedSalLib.h',['../ExtendedSalLib_8h.html',1,'']]],
+  ['extendedsalserviceclasses_2eh_74',['ExtendedSalServiceClasses.h',['../ExtendedSalServiceClasses_8h.html',1,'']]],
+  ['extmngr_2ecpp_75',['extmngr.cpp',['../extmngr_8cpp.html',1,'']]],
+  ['extrace_2ec_76',['extrace.c',['../extrace_8c.html',1,'']]],
+  ['extractguidedsectionlib_2eh_77',['ExtractGuidedSectionLib.h',['../ExtractGuidedSectionLib_8h.html',1,'']]],
+  ['exutils_2ec_78',['exutils.c',['../exutils_8c.html',1,'']]]
 ];
