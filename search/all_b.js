@@ -11,11 +11,12 @@ var searchData=
   ['jmp_5fm_5fcs_8',['JMP_M_CS',['../Ebc_8h.html#a952bfe800ecd2332458c055145340817',1,'Ebc.h']]],
   ['jmp_5fm_5frelative_9',['JMP_M_RELATIVE',['../Ebc_8h.html#a9c995fcb048995334a80790591f1127b',1,'Ebc.h']]],
   ['job_10',['job',['../Process_2XEShell_2main_8cpp.html#a0a729bce66882cf7f07e605ca8bf1f38',1,'main.cpp']]],
-  ['journal_5fdev_11',['journal_dev',['../struct__ext2__sb__.html#a2d5e34c52c04cae8f48c354d69757e61',1,'_ext2_sb_']]],
-  ['journal_5finum_12',['journal_inum',['../struct__ext2__sb__.html#aa1b337628ff91d088d277ac163871fdf',1,'_ext2_sb_']]],
-  ['journal_5fuuid_13',['journal_uuid',['../struct__ext2__sb__.html#a5b004d2a268573085789cbc06846f648',1,'_ext2_sb_']]],
-  ['jpeg_14',['Jpeg',['../namespaceJpeg.html',1,'']]],
-  ['jpeg_5fdecoder_5fthrow_15',['JPEG_DECODER_THROW',['../nanojpg_8h.html#a56dc4276b2dc0b3b5cd09a8c75d6dd0f',1,'nanojpg.h']]],
-  ['jump_16',['jump',['../struct__chwin__.html#a74b6a5c96107f0e11379e2ada5e93c5c',1,'_chwin_']]],
-  ['jump_5fbuffer_17',['jump_buffer',['../structFT__ValidatorRec__.html#aa0b346f9ef78939e93c85389aa2b54b3',1,'FT_ValidatorRec_']]]
+  ['jobs_11',['jobs',['../structsoak__edf__stat.html#ab23fdce163cb9a8a5972dbea354af92b',1,'soak_edf_stat']]],
+  ['journal_5fdev_12',['journal_dev',['../struct__ext2__sb__.html#a2d5e34c52c04cae8f48c354d69757e61',1,'_ext2_sb_']]],
+  ['journal_5finum_13',['journal_inum',['../struct__ext2__sb__.html#aa1b337628ff91d088d277ac163871fdf',1,'_ext2_sb_']]],
+  ['journal_5fuuid_14',['journal_uuid',['../struct__ext2__sb__.html#a5b004d2a268573085789cbc06846f648',1,'_ext2_sb_']]],
+  ['jpeg_15',['Jpeg',['../namespaceJpeg.html',1,'']]],
+  ['jpeg_5fdecoder_5fthrow_16',['JPEG_DECODER_THROW',['../nanojpg_8h.html#a56dc4276b2dc0b3b5cd09a8c75d6dd0f',1,'nanojpg.h']]],
+  ['jump_17',['jump',['../struct__chwin__.html#a74b6a5c96107f0e11379e2ada5e93c5c',1,'_chwin_']]],
+  ['jump_5fbuffer_18',['jump_buffer',['../structFT__ValidatorRec__.html#aa0b346f9ef78939e93c85389aa2b54b3',1,'FT_ValidatorRec_']]]
 ];

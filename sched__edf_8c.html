@@ -74,48 +74,331 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">sched_edf.c File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="sched_8h_source.html">Hal/AA64/sched.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="aa64lowlevel_8h_source.html">Hal/AA64/aa64lowlevel.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="uart_8h_source.html">Drivers/uart.h</a>&gt;</code><br />
+<code>#include &lt;timer.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="__null_8h_source.html">_null.h</a>&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for sched_edf.c:</div>
 <div class="dyncontent">
 <div class="center"><img src="sched__edf_8c__incl.png" border="0" usemap="#aXenevaOS_2KernelAA64_2Hal_2sched__edf_8c" alt=""/></div>
 <map name="aXenevaOS_2KernelAA64_2Hal_2sched__edf_8c" id="aXenevaOS_2KernelAA64_2Hal_2sched__edf_8c">
-<area shape="rect" title=" " alt="" coords="5,5,173,45"/>
-<area shape="rect" title=" " alt="" coords="53,240,123,265"/>
-<area shape="poly" title=" " alt="" coords="82,46,65,94,63,130,66,166,81,226,76,228,61,167,57,130,60,93,77,44"/>
-<area shape="rect" href="sched_8h.html" title=" " alt="" coords="75,93,211,119"/>
-<area shape="poly" title=" " alt="" coords="104,44,129,80,125,83,100,47"/>
-<area shape="poly" title=" " alt="" coords="139,120,117,168,97,227,92,226,112,166,134,118"/>
-<area shape="rect" href="aa64cpu_8h.html" title=" " alt="" coords="126,167,279,192"/>
-<area shape="poly" title=" " alt="" coords="155,117,186,154,182,158,151,121"/>
-<area shape="poly" title=" " alt="" coords="186,194,120,235,117,230,183,190"/>
-<area shape="rect" title=" " alt="" coords="155,240,231,265"/>
-<area shape="poly" title=" " alt="" coords="204,193,199,227,194,226,198,192"/>
-<area shape="rect" title=" " alt="" coords="256,240,320,265"/>
-<area shape="poly" title=" " alt="" coords="218,190,265,229,262,233,215,194"/>
+<area shape="rect" title=" " alt="" coords="324,5,492,45"/>
+<area shape="rect" title=" " alt="" coords="63,328,134,353"/>
+<area shape="poly" title=" " alt="" coords="324,35,247,43,167,55,97,72,71,83,52,95,32,116,19,137,11,158,8,179,16,226,37,279,51,300,70,318,67,322,47,304,32,281,10,228,3,179,6,156,14,134,28,113,48,91,68,78,96,67,166,50,247,38,323,30"/>
+<area shape="rect" href="sched_8h.html" title=" " alt="" coords="62,93,198,119"/>
+<area shape="poly" title=" " alt="" coords="342,48,185,92,183,87,340,43"/>
+<area shape="rect" href="aa64lowlevel_8h.html" title=" " alt="" coords="231,167,416,192"/>
+<area shape="poly" title=" " alt="" coords="399,47,339,156,334,153,395,45"/>
+<area shape="rect" href="uart_8h.html" title=" " alt="" coords="399,93,510,119"/>
+<area shape="poly" title=" " alt="" coords="421,44,442,80,438,83,417,47"/>
+<area shape="rect" title=" " alt="" coords="534,93,602,119"/>
+<area shape="poly" title=" " alt="" coords="447,43,533,85,531,90,445,48"/>
+<area shape="rect" href="__null_8h.html" title=" " alt="" coords="626,93,691,119"/>
+<area shape="poly" title=" " alt="" coords="468,43,613,88,612,93,467,48"/>
+<area shape="poly" title=" " alt="" coords="101,121,69,140,54,153,43,168,36,187,35,207,43,248,62,285,82,316,78,319,57,288,38,249,29,207,31,186,39,165,50,149,65,135,98,116"/>
+<area shape="rect" href="aa64cpu_8h.html" title=" " alt="" coords="54,167,207,192"/>
+<area shape="poly" title=" " alt="" coords="133,119,133,153,128,153,128,119"/>
+<area shape="poly" title=" " alt="" coords="131,193,106,315,101,314,125,192"/>
+<area shape="rect" title=" " alt="" coords="286,247,362,273"/>
+<area shape="poly" title=" " alt="" coords="159,190,284,240,282,245,157,194"/>
+<area shape="rect" title=" " alt="" coords="136,247,200,273"/>
+<area shape="poly" title=" " alt="" coords="138,191,159,234,154,236,133,193"/>
+<area shape="poly" title=" " alt="" coords="326,192,326,233,321,233,321,192"/>
+<area shape="poly" title=" " alt="" coords="459,118,463,152,462,173,457,193,442,224,426,247,404,264,374,282,316,308,255,325,197,335,147,340,147,335,196,330,254,320,315,303,372,278,401,260,422,243,438,222,452,191,456,172,458,152,454,119"/>
+<area shape="poly" title=" " alt="" coords="456,119,448,154,441,175,430,194,399,223,365,243,363,239,396,218,425,190,436,172,443,153,450,118"/>
+<area shape="rect" href="aa64hcode_8h.html" title=" " alt="" coords="543,167,648,192"/>
+<area shape="poly" title=" " alt="" coords="478,116,562,158,559,163,476,121"/>
+<area shape="rect" href="imx8mp_8h.html" title=" " alt="" coords="672,167,860,192"/>
+<area shape="poly" title=" " alt="" coords="505,116,703,161,702,166,504,121"/>
+<area shape="rect" href="imx8mp__uart_8h.html" title=" " alt="" coords="610,240,786,280"/>
+<area shape="poly" title=" " alt="" coords="758,194,726,231,722,228,754,190"/>
+<area shape="poly" title=" " alt="" coords="610,275,147,336,147,330,609,270"/>
 </map>
 </div>
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__edf__params__.html">_edf_params_</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:af8240d38d0d2bf07c67101ff73262da7" id="r_af8240d38d0d2bf07c67101ff73262da7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sched__edf_8c.html#af8240d38d0d2bf07c67101ff73262da7">AuEDFSetParams</a> (AA64Thread *thread, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> period_us, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> wcet_us)</td></tr>
+<tr class="memdesc:af8240d38d0d2bf07c67101ff73262da7"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuEDFSetParams &ndash; admit a thread to the EDF class.  <br /></td></tr>
+<tr class="separator:af8240d38d0d2bf07c67101ff73262da7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49d888667c6965295e440226703e0b06" id="r_a49d888667c6965295e440226703e0b06"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sched__edf_8c.html#a49d888667c6965295e440226703e0b06">AuEDFRemove</a> (AA64Thread *thread)</td></tr>
+<tr class="memdesc:a49d888667c6965295e440226703e0b06"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuEDFRemove &ndash; drop a thread's EDF reservation.  <br /></td></tr>
+<tr class="separator:a49d888667c6965295e440226703e0b06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d142b1fc8101d0b1fbc600380996b21" id="r_a7d142b1fc8101d0b1fbc600380996b21"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sched__edf_8c.html#a7d142b1fc8101d0b1fbc600380996b21">AuEDFWaitPeriod</a> (AA64Thread *thread)</td></tr>
+<tr class="memdesc:a7d142b1fc8101d0b1fbc600380996b21"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuEDFWaitPeriod &ndash; end current job, sleep until next release Must be called by the EDF thread itself (thread context, not IRQ). Counts a deadline miss when the job overran, catches up whole missed periods, then blocks until the next release and yields the CPU.  <br /></td></tr>
+<tr class="separator:a7d142b1fc8101d0b1fbc600380996b21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81f46dc136e4607a1e80dbe838a87cc2" id="r_a81f46dc136e4607a1e80dbe838a87cc2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sched__edf_8c.html#a81f46dc136e4607a1e80dbe838a87cc2">AuEDFHandleReleases</a> (<a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> now_us)</td></tr>
+<tr class="memdesc:a81f46dc136e4607a1e80dbe838a87cc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuEDFHandleReleases &ndash; wake EDF threads whose release arrived Called once per timer tick from AuScheduleThread. Accepts BLOCKED and LEFT_IN_KERNEL: <a class="el" href="sched_8c.html#ae996da84e66e4fb09f1cb4ee9a6fd0c2" title="AuScheduleNext – forcefully schedule to idle thread.">AuScheduleNext()</a> (used to yield after WaitPeriod) always parks as LEFT_IN_KERNEL, mirroring AuHandleSleepThreads which likewise wakes sleepers out of that state &ndash; the cooperative resume path in AuScheduleThread restores them correctly.  <br /></td></tr>
+<tr class="separator:a81f46dc136e4607a1e80dbe838a87cc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c6de1ef1b4aeb6a8ad7b0907021e060" id="r_a4c6de1ef1b4aeb6a8ad7b0907021e060"><td class="memItemLeft" align="right" valign="top">AA64Thread *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sched__edf_8c.html#a4c6de1ef1b4aeb6a8ad7b0907021e060">AuEDFPickNext</a> (void)</td></tr>
+<tr class="memdesc:a4c6de1ef1b4aeb6a8ad7b0907021e060"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuEDFPickNext &ndash; earliest absolute deadline among runnable EDF threads Accepts READY and LEFT_IN_KERNEL (parked by AuScheduleNext): the LEFT_IN_KERNEL resume branch in AuScheduleThread restores parked threads from their cooperative frame either way.  <br /></td></tr>
+<tr class="separator:a4c6de1ef1b4aeb6a8ad7b0907021e060"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a91838699bfae22ae8b52876ea4aab5" id="r_a7a91838699bfae22ae8b52876ea4aab5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sched__edf_8c.html#a7a91838699bfae22ae8b52876ea4aab5">AuEDFGetMisses</a> (AA64Thread *thread)</td></tr>
+<tr class="separator:a7a91838699bfae22ae8b52876ea4aab5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4caa3fbe6a6ca0d596c2cfea06df6647" id="r_a4caa3fbe6a6ca0d596c2cfea06df6647"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sched__edf_8c.html#a4caa3fbe6a6ca0d596c2cfea06df6647">AuEDFSelfTestStart</a> (void)</td></tr>
+<tr class="separator:a4caa3fbe6a6ca0d596c2cfea06df6647"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a332987b4e319816120998a11a994ab6a" id="r_a332987b4e319816120998a11a994ab6a"><td class="memItemLeft" align="right" valign="top">AA64Thread *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sched__edf_8c.html#a332987b4e319816120998a11a994ab6a">thread_list_head</a></td></tr>
+<tr class="separator:a332987b4e319816120998a11a994ab6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e572d8a9e21280c6e0b54b43ec7123f" id="r_a0e572d8a9e21280c6e0b54b43ec7123f"><td class="memItemLeft" align="right" valign="top">AA64Thread *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sched__edf_8c.html#a0e572d8a9e21280c6e0b54b43ec7123f">blocked_thr_head</a></td></tr>
+<tr class="separator:a0e572d8a9e21280c6e0b54b43ec7123f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addd60bd817905b251137134d154b8863" id="r_addd60bd817905b251137134d154b8863"><td class="memItemLeft" align="right" valign="top">AA64Thread *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sched__edf_8c.html#addd60bd817905b251137134d154b8863">_idle_thr</a></td></tr>
+<tr class="separator:addd60bd817905b251137134d154b8863"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>BSD 2-Clause License</p>
-<p>Copyright (c) 2022-2026, Manas Kamal Choudhury All rights reserved.</p>
+<div class="textblock"><p>Earliest-Deadline-First real-time class for the AA64 scheduler.</p>
+<p>Model: implicit-deadline periodic tasks. An EDF thread publishes (period, wcet); each job released every period has absolute deadline release + period. Admission control enforces total utilization &lt;= 1 (Q16 fixed point), so admitted tasks are schedulable on one CPU.</p>
+<p>Two-class design: EDF threads strictly preempt best-effort threads, which keep the existing round-robin behavior untouched. Threads that never call AuEDFSetParams see zero behavior change.</p>
+<p>No WCET enforcement (cooperative): an overrunning job is charged a deadline miss and re-armed, never killed. Timebase is the CNTV microsecond counter (AuGetCurrentUS), tick granularity for wakeups. </p>
+</div><h2 class="groupheader">Function Documentation</h2>
+<a id="a7a91838699bfae22ae8b52876ea4aab5" name="a7a91838699bfae22ae8b52876ea4aab5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a91838699bfae22ae8b52876ea4aab5">&#9670;&#160;</a></span>AuEDFGetMisses()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> AuEDFGetMisses </td>
+          <td>(</td>
+          <td class="paramtype">AA64Thread *&#160;</td>
+          <td class="paramname"><em>thread</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a81f46dc136e4607a1e80dbe838a87cc2" name="a81f46dc136e4607a1e80dbe838a87cc2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81f46dc136e4607a1e80dbe838a87cc2">&#9670;&#160;</a></span>AuEDFHandleReleases()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AuEDFHandleReleases </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>&#160;</td>
+          <td class="paramname"><em>now_us</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>AuEDFHandleReleases &ndash; wake EDF threads whose release arrived Called once per timer tick from AuScheduleThread. Accepts BLOCKED and LEFT_IN_KERNEL: <a class="el" href="sched_8c.html#ae996da84e66e4fb09f1cb4ee9a6fd0c2" title="AuScheduleNext – forcefully schedule to idle thread.">AuScheduleNext()</a> (used to yield after WaitPeriod) always parks as LEFT_IN_KERNEL, mirroring AuHandleSleepThreads which likewise wakes sleepers out of that state &ndash; the cooperative resume path in AuScheduleThread restores them correctly. </p>
+
+</div>
+</div>
+<a id="a4c6de1ef1b4aeb6a8ad7b0907021e060" name="a4c6de1ef1b4aeb6a8ad7b0907021e060"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c6de1ef1b4aeb6a8ad7b0907021e060">&#9670;&#160;</a></span>AuEDFPickNext()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">AA64Thread * AuEDFPickNext </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>AuEDFPickNext &ndash; earliest absolute deadline among runnable EDF threads Accepts READY and LEFT_IN_KERNEL (parked by AuScheduleNext): the LEFT_IN_KERNEL resume branch in AuScheduleThread restores parked threads from their cooperative frame either way. </p>
+<dl class="section return"><dt>Returns</dt><dd>winner, or NULL when no EDF thread is runnable </dd></dl>
+
+</div>
+</div>
+<a id="a49d888667c6965295e440226703e0b06" name="a49d888667c6965295e440226703e0b06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49d888667c6965295e440226703e0b06">&#9670;&#160;</a></span>AuEDFRemove()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AuEDFRemove </td>
+          <td>(</td>
+          <td class="paramtype">AA64Thread *&#160;</td>
+          <td class="paramname"><em>thread</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>AuEDFRemove &ndash; drop a thread's EDF reservation. </p>
+
+</div>
+</div>
+<a id="a4caa3fbe6a6ca0d596c2cfea06df6647" name="a4caa3fbe6a6ca0d596c2cfea06df6647"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4caa3fbe6a6ca0d596c2cfea06df6647">&#9670;&#160;</a></span>AuEDFSelfTestStart()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AuEDFSelfTestStart </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af8240d38d0d2bf07c67101ff73262da7" name="af8240d38d0d2bf07c67101ff73262da7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8240d38d0d2bf07c67101ff73262da7">&#9670;&#160;</a></span>AuEDFSetParams()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="BaseHdr_2stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> AuEDFSetParams </td>
+          <td>(</td>
+          <td class="paramtype">AA64Thread *&#160;</td>
+          <td class="paramname"><em>thread</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>&#160;</td>
+          <td class="paramname"><em>period_us</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>&#160;</td>
+          <td class="paramname"><em>wcet_us</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>AuEDFSetParams &ndash; admit a thread to the EDF class. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">thread</td><td>&ndash; target thread (usually self) </td></tr>
+    <tr><td class="paramname">period_us</td><td>&ndash; period == relative deadline, must be &gt; 0 </td></tr>
+    <tr><td class="paramname">wcet_us</td><td>&ndash; worst-case execution time, 0 &lt; wcet &lt;= period </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if admitted (deadline armed at now + period) </dd></dl>
+
+</div>
+</div>
+<a id="a7d142b1fc8101d0b1fbc600380996b21" name="a7d142b1fc8101d0b1fbc600380996b21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d142b1fc8101d0b1fbc600380996b21">&#9670;&#160;</a></span>AuEDFWaitPeriod()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AuEDFWaitPeriod </td>
+          <td>(</td>
+          <td class="paramtype">AA64Thread *&#160;</td>
+          <td class="paramname"><em>thread</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>AuEDFWaitPeriod &ndash; end current job, sleep until next release Must be called by the EDF thread itself (thread context, not IRQ). Counts a deadline miss when the job overran, catches up whole missed periods, then blocks until the next release and yields the CPU. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="addd60bd817905b251137134d154b8863" name="addd60bd817905b251137134d154b8863"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addd60bd817905b251137134d154b8863">&#9670;&#160;</a></span>_idle_thr</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">AA64Thread* _idle_thr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0e572d8a9e21280c6e0b54b43ec7123f" name="a0e572d8a9e21280c6e0b54b43ec7123f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e572d8a9e21280c6e0b54b43ec7123f">&#9670;&#160;</a></span>blocked_thr_head</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">AA64Thread* blocked_thr_head</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a332987b4e319816120998a11a994ab6a" name="a332987b4e319816120998a11a994ab6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a332987b4e319816120998a11a994ab6a">&#9670;&#160;</a></span>thread_list_head</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">AA64Thread* thread_list_head</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>BSD 2-Clause License</p>
+<p>Copyright (c) 2022-2023, Manas Kamal Choudhury All rights reserved.</p>
 <p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
 <ol type="1">
 <li>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</li>
 <li>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</li>
 </ol>
 <p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. </p>
-</div></div><!-- contents -->
+
+</div>
+</div>
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8

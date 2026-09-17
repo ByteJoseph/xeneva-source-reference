@@ -6,9 +6,10 @@ var searchData=
   ['jiffies_3',['jiffies',['../linux_2timer_8h.html#a023d8b2505ba4156d0ddf7bcbbe7944d',1,'timer.h']]],
   ['jmp_4',['jmp',['../struct__FAT__BPB__.html#a538d660429579ea9c2056e209dacc2c3',1,'_FAT_BPB_::jmp'],['../Process_2Files_2main_8cpp.html#ab8ebbfeb517fea7812af441dc3718d02',1,'jmp:&#160;main.cpp']]],
   ['job_5',['job',['../Process_2XEShell_2main_8cpp.html#a0a729bce66882cf7f07e605ca8bf1f38',1,'main.cpp']]],
-  ['journal_5fdev_6',['journal_dev',['../struct__ext2__sb__.html#a2d5e34c52c04cae8f48c354d69757e61',1,'_ext2_sb_']]],
-  ['journal_5finum_7',['journal_inum',['../struct__ext2__sb__.html#aa1b337628ff91d088d277ac163871fdf',1,'_ext2_sb_']]],
-  ['journal_5fuuid_8',['journal_uuid',['../struct__ext2__sb__.html#a5b004d2a268573085789cbc06846f648',1,'_ext2_sb_']]],
-  ['jump_9',['jump',['../struct__chwin__.html#a74b6a5c96107f0e11379e2ada5e93c5c',1,'_chwin_']]],
-  ['jump_5fbuffer_10',['jump_buffer',['../structFT__ValidatorRec__.html#aa0b346f9ef78939e93c85389aa2b54b3',1,'FT_ValidatorRec_']]]
+  ['jobs_6',['jobs',['../structsoak__edf__stat.html#ab23fdce163cb9a8a5972dbea354af92b',1,'soak_edf_stat']]],
+  ['journal_5fdev_7',['journal_dev',['../struct__ext2__sb__.html#a2d5e34c52c04cae8f48c354d69757e61',1,'_ext2_sb_']]],
+  ['journal_5finum_8',['journal_inum',['../struct__ext2__sb__.html#aa1b337628ff91d088d277ac163871fdf',1,'_ext2_sb_']]],
+  ['journal_5fuuid_9',['journal_uuid',['../struct__ext2__sb__.html#a5b004d2a268573085789cbc06846f648',1,'_ext2_sb_']]],
+  ['jump_10',['jump',['../struct__chwin__.html#a74b6a5c96107f0e11379e2ada5e93c5c',1,'_chwin_']]],
+  ['jump_5fbuffer_11',['jump_buffer',['../structFT__ValidatorRec__.html#aa0b346f9ef78939e93c85389aa2b54b3',1,'FT_ValidatorRec_']]]
 ];
