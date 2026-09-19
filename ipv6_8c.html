@@ -210,11 +210,11 @@ Include dependency graph for ipv6.c:</div>
 Functions</h2></td></tr>
 <tr class="memitem:a5c413e02ec8f3305133c98d2b83da0e3" id="r_a5c413e02ec8f3305133c98d2b83da0e3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ipv6_8c.html#a5c413e02ec8f3305133c98d2b83da0e3">IPv6PseudoChecksum</a> (const <a class="el" href="ipv6_8h.html#a8d8af0dca1cafda09b81ee4b8ecbb672">ip6_addr</a> *src, const <a class="el" href="ipv6_8h.html#a8d8af0dca1cafda09b81ee4b8ecbb672">ip6_addr</a> *dst, <a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> length, <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> nextHeader, const void *data, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> dataLen)</td></tr>
 <tr class="separator:a5c413e02ec8f3305133c98d2b83da0e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89488d7d64a5f935b22c65c807d8f80d" id="r_a89488d7d64a5f935b22c65c807d8f80d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ipv6_8c.html#a89488d7d64a5f935b22c65c807d8f80d">IPv6HandlePacket</a> (void *data, <a class="el" href="vfs_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *<a class="el" href="e1000_8cpp.html#a520bf6a1c47a61d938646ef39fc45d76">nic</a>)</td></tr>
+<tr class="memitem:a89488d7d64a5f935b22c65c807d8f80d" id="r_a89488d7d64a5f935b22c65c807d8f80d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ipv6_8c.html#a89488d7d64a5f935b22c65c807d8f80d">IPv6HandlePacket</a> (void *data, <a class="el" href="devinput_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *<a class="el" href="e1000_8cpp.html#a520bf6a1c47a61d938646ef39fc45d76">nic</a>)</td></tr>
 <tr class="separator:a89488d7d64a5f935b22c65c807d8f80d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afeef704b1207d4319a2d83a31413aee1" id="r_afeef704b1207d4319a2d83a31413aee1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ipv6_8c.html#afeef704b1207d4319a2d83a31413aee1">CreateIPv6Socket</a> (int type, int protocol)</td></tr>
 <tr class="separator:afeef704b1207d4319a2d83a31413aee1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a66dfb50ae39e2cb87a21d1fffe52f6a5" id="r_a66dfb50ae39e2cb87a21d1fffe52f6a5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ipv6_8c.html#a66dfb50ae39e2cb87a21d1fffe52f6a5">IPV6SendPacket</a> (<a class="el" href="ipv6_8h.html#a20903fd0d87cbd29f3fa56aa9c40c6e7">IPv6Header</a> *packet, <a class="el" href="vfs_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *<a class="el" href="e1000_8cpp.html#a520bf6a1c47a61d938646ef39fc45d76">nic</a>)</td></tr>
+<tr class="memitem:a66dfb50ae39e2cb87a21d1fffe52f6a5" id="r_a66dfb50ae39e2cb87a21d1fffe52f6a5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ipv6_8c.html#a66dfb50ae39e2cb87a21d1fffe52f6a5">IPV6SendPacket</a> (<a class="el" href="ipv6_8h.html#a20903fd0d87cbd29f3fa56aa9c40c6e7">IPv6Header</a> *packet, <a class="el" href="devinput_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *<a class="el" href="e1000_8cpp.html#a520bf6a1c47a61d938646ef39fc45d76">nic</a>)</td></tr>
 <tr class="separator:a66dfb50ae39e2cb87a21d1fffe52f6a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -270,7 +270,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="vfs_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="devinput_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *&#160;</td>
           <td class="paramname"><em>nic</em>&#160;</td>
         </tr>
         <tr>
@@ -359,7 +359,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="vfs_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="devinput_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *&#160;</td>
           <td class="paramname"><em>nic</em>&#160;</td>
         </tr>
         <tr>

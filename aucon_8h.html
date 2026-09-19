@@ -124,11 +124,15 @@ Macros</h2></td></tr>
 <tr class="separator:aa1829f703aac408150f5fdc4e107d022"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5361a816f49ed2e75cc555429619fd63" id="r_a5361a816f49ed2e75cc555429619fd63"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aucon_8h.html#a5361a816f49ed2e75cc555429619fd63">SCREEN_GET_FB</a>&#160;&#160;&#160;209</td></tr>
 <tr class="separator:a5361a816f49ed2e75cc555429619fd63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92e575cb8abf7d3780cc5331c971e325" id="r_a92e575cb8abf7d3780cc5331c971e325"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aucon_8h.html#a92e575cb8abf7d3780cc5331c971e325">SCREEN_RESTORE_BOOT_FB</a>&#160;&#160;&#160;210</td></tr>
+<tr class="separator:a92e575cb8abf7d3780cc5331c971e325"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:aac25aef9defe336f873f4f08b398a8dd" id="r_aac25aef9defe336f873f4f08b398a8dd"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct__aucon__.html">_aucon_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aucon_8h.html#aac25aef9defe336f873f4f08b398a8dd">AuConsole</a></td></tr>
 <tr class="separator:aac25aef9defe336f873f4f08b398a8dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc70ba7fc48cf31d7796f111aba0938a" id="r_afc70ba7fc48cf31d7796f111aba0938a"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aucon_8h.html#afc70ba7fc48cf31d7796f111aba0938a">AuConsolePresentFn</a>) (<a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> *src, <a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> src_pitch, int x, int y, int w, int h)</td></tr>
+<tr class="separator:afc70ba7fc48cf31d7796f111aba0938a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -152,6 +156,14 @@ Functions</h2></td></tr>
 <tr class="memitem:a281044ff3d31487f9f8f49db87a32413" id="r_a281044ff3d31487f9f8f49db87a32413"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aucon_8h.html#a281044ff3d31487f9f8f49db87a32413">AuConsoleEarlyEnable</a> (<a class="el" href="BaseHdr_2stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> value)</td></tr>
 <tr class="memdesc:a281044ff3d31487f9f8f49db87a32413"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuConsoleEarlyEnable &ndash; enables or disable early mode text output.  <br /></td></tr>
 <tr class="separator:a281044ff3d31487f9f8f49db87a32413"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dd9a7569894a39f7e47f3b497944af9" id="r_a0dd9a7569894a39f7e47f3b497944af9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aucon_8h.html#a0dd9a7569894a39f7e47f3b497944af9">AuConsoleSetDisplayOwned</a> (void)</td></tr>
+<tr class="memdesc:a0dd9a7569894a39f7e47f3b497944af9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Put a character to console output.  <br /></td></tr>
+<tr class="separator:a0dd9a7569894a39f7e47f3b497944af9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca6ffae334e5294de4aaa861bb05938c" id="r_aca6ffae334e5294de4aaa861bb05938c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aucon_8h.html#aca6ffae334e5294de4aaa861bb05938c">AuConsoleRestoreBootFb</a> (void)</td></tr>
+<tr class="memdesc:aca6ffae334e5294de4aaa861bb05938c"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuConsoleRestoreBootFb &ndash; move the kernel console back onto the boot (GOP/ramfb) framebuffer saved by the first SetConInfo repoint.  <br /></td></tr>
+<tr class="separator:aca6ffae334e5294de4aaa861bb05938c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac598315755aaea09795f8f3886dcd32d" id="r_ac598315755aaea09795f8f3886dcd32d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aucon_8h.html#ac598315755aaea09795f8f3886dcd32d">AuConsoleSetPresentHook</a> (<a class="el" href="aucon_8h.html#afc70ba7fc48cf31d7796f111aba0938a">AuConsolePresentFn</a> fn)</td></tr>
+<tr class="separator:ac598315755aaea09795f8f3886dcd32d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f6d8705a1f72010834c0258b722c84d" id="r_a1f6d8705a1f72010834c0258b722c84d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aucon_8h.html#a1f6d8705a1f72010834c0258b722c84d">AuConsoleGetScreenWidth</a> ()</td></tr>
 <tr class="memdesc:a1f6d8705a1f72010834c0258b722c84d"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuConsoleGetScreenWidth &ndash; return the screen width.  <br /></td></tr>
 <tr class="separator:a1f6d8705a1f72010834c0258b722c84d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -260,6 +272,20 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a92e575cb8abf7d3780cc5331c971e325" name="a92e575cb8abf7d3780cc5331c971e325"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92e575cb8abf7d3780cc5331c971e325">&#9670;&#160;</a></span>SCREEN_RESTORE_BOOT_FB</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCREEN_RESTORE_BOOT_FB&#160;&#160;&#160;210</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aae34be5384c5222594417ab4d1f9f04b" name="aae34be5384c5222594417ab4d1f9f04b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aae34be5384c5222594417ab4d1f9f04b">&#9670;&#160;</a></span>SCREEN_SETBPP</h2>
 
@@ -325,6 +351,20 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="afc70ba7fc48cf31d7796f111aba0938a" name="afc70ba7fc48cf31d7796f111aba0938a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc70ba7fc48cf31d7796f111aba0938a">&#9670;&#160;</a></span>AuConsolePresentFn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* AuConsolePresentFn) (<a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> *src, <a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> src_pitch, int x, int y, int w, int h)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a281044ff3d31487f9f8f49db87a32413" name="a281044ff3d31487f9f8f49db87a32413"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a281044ff3d31487f9f8f49db87a32413">&#9670;&#160;</a></span>AuConsoleEarlyEnable()</h2>
@@ -376,7 +416,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>AuConsoleGetScreenHeight &ndash; return the screen height. </p>
-<dl class="section return"><dt>Returns</dt><dd>return screen height </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>return screen height See AuConsoleGetScreenWidth: desktop size for pointer mapping. &ndash;axiss </dd></dl>
 
 </div>
 </div>
@@ -404,7 +444,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>AuConsoleGetScreenWidth &ndash; return the screen width. </p>
-<dl class="section return"><dt>Returns</dt><dd>return screen width </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>return screen width The only caller is the tablet driver: report the desktop size the compositor draws at, not the firmware GOP console size, so absolute pointer input spans the whole desktop at any resolution. &ndash;axiss </dd></dl>
 
 </div>
 </div>
@@ -486,6 +526,27 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="aca6ffae334e5294de4aaa861bb05938c" name="aca6ffae334e5294de4aaa861bb05938c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca6ffae334e5294de4aaa861bb05938c">&#9670;&#160;</a></span>AuConsoleRestoreBootFb()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int AuConsoleRestoreBootFb </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>AuConsoleRestoreBootFb &ndash; move the kernel console back onto the boot (GOP/ramfb) framebuffer saved by the first SetConInfo repoint. </p>
+<dl class="section return"><dt>Returns</dt><dd>1 when restored, 0 when there is nothing to restore </dd></dl>
+
+</div>
+</div>
 <a id="ac3811c6042a00951490a1523ee00d0da" name="ac3811c6042a00951490a1523ee00d0da"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac3811c6042a00951490a1523ee00d0da">&#9670;&#160;</a></span>AuConsoleSetConInfo()</h2>
 
@@ -520,6 +581,50 @@ Functions</h2></td></tr>
           <td></td>
           <td>)</td>
           <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0dd9a7569894a39f7e47f3b497944af9" name="a0dd9a7569894a39f7e47f3b497944af9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0dd9a7569894a39f7e47f3b497944af9">&#9670;&#160;</a></span>AuConsoleSetDisplayOwned()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AuConsoleSetDisplayOwned </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Put a character to console output. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">c</td><td>&ndash; character to print </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac598315755aaea09795f8f3886dcd32d" name="ac598315755aaea09795f8f3886dcd32d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac598315755aaea09795f8f3886dcd32d">&#9670;&#160;</a></span>AuConsoleSetPresentHook()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> void AuConsoleSetPresentHook </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="aucon_8h.html#afc70ba7fc48cf31d7796f111aba0938a">AuConsolePresentFn</a>&#160;</td>
+          <td class="paramname"><em>fn</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">

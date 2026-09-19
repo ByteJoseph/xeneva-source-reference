@@ -87,40 +87,43 @@ $(function() {
 <code>#include &lt;<a class="el" href="__procheap_8h_source.html">sys/_procheap.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="__heap_8h_source.html">sys/_heap.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="mman_8h_source.html">sys/mman.h</a>&gt;</code><br />
+<code>#include &lt;pthread.h&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for _heap.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="__heap_8cpp__incl.png" border="0" usemap="#aXenevaOS_2Libs_2XEClib_2sys_2__heap_8cpp" alt=""/></div>
 <map name="aXenevaOS_2Libs_2XEClib_2sys_2__heap_8cpp" id="aXenevaOS_2Libs_2XEClib_2sys_2__heap_8cpp">
-<area shape="rect" title=" " alt="" coords="181,5,346,45"/>
-<area shape="rect" title=" " alt="" coords="48,167,119,192"/>
-<area shape="poly" title=" " alt="" coords="181,40,80,62,39,77,14,95,9,111,16,127,31,143,51,157,48,162,28,147,11,130,3,111,9,92,36,72,78,57,180,35"/>
+<area shape="rect" title=" " alt="" coords="246,5,411,45"/>
+<area shape="rect" title=" " alt="" coords="49,167,120,192"/>
+<area shape="poly" title=" " alt="" coords="246,35,178,43,109,55,49,72,28,83,13,95,9,103,8,111,16,127,32,143,52,157,49,162,28,147,11,130,3,112,4,101,9,92,25,79,47,67,107,50,177,38,245,30"/>
 <area shape="rect" title=" " alt="" coords="559,93,629,119"/>
-<area shape="poly" title=" " alt="" coords="345,43,546,90,545,95,344,48"/>
+<area shape="poly" title=" " alt="" coords="393,43,546,88,545,93,392,48"/>
 <area shape="rect" href="__keproc_8h.html" title=" " alt="" coords="273,93,384,119"/>
-<area shape="poly" title=" " alt="" coords="281,44,312,81,308,84,277,47"/>
+<area shape="poly" title=" " alt="" coords="331,46,331,79,326,79,326,46"/>
 <area shape="rect" href="__procheap_8h.html" title=" " alt="" coords="408,93,535,119"/>
-<area shape="poly" title=" " alt="" coords="314,43,429,86,427,91,312,48"/>
-<area shape="rect" href="__heap_8h.html" title=" " alt="" coords="23,93,122,119"/>
-<area shape="poly" title=" " alt="" coords="219,48,114,91,112,86,217,43"/>
-<area shape="rect" href="mman_8h.html" title=" " alt="" coords="147,93,249,119"/>
-<area shape="poly" title=" " alt="" coords="250,47,218,84,214,81,246,44"/>
-<area shape="poly" title=" " alt="" coords="290,121,132,167,131,162,289,116"/>
-<area shape="rect" href="__xeneva_8h.html" title=" " alt="" coords="154,167,242,192"/>
-<area shape="poly" title=" " alt="" coords="309,121,232,162,230,158,306,116"/>
+<area shape="poly" title=" " alt="" coords="364,43,440,84,437,89,362,48"/>
+<area shape="rect" href="__heap_8h.html" title=" " alt="" coords="150,93,249,119"/>
+<area shape="poly" title=" " alt="" coords="299,48,231,88,229,84,296,43"/>
+<area shape="rect" href="mman_8h.html" title=" " alt="" coords="23,93,125,119"/>
+<area shape="poly" title=" " alt="" coords="268,48,125,92,124,87,267,43"/>
+<area shape="rect" title=" " alt="" coords="653,93,737,119"/>
+<area shape="poly" title=" " alt="" coords="412,42,641,90,640,96,411,47"/>
+<area shape="poly" title=" " alt="" coords="290,121,134,167,132,161,289,116"/>
+<area shape="rect" href="__xeneva_8h.html" title=" " alt="" coords="155,167,243,192"/>
+<area shape="poly" title=" " alt="" coords="309,121,234,162,232,157,307,116"/>
 <area shape="rect" href="__kesignal_8h.html" title=" " alt="" coords="268,167,389,192"/>
 <area shape="poly" title=" " alt="" coords="331,119,331,153,326,153,326,119"/>
-<area shape="rect" href="Libs_2XEClib_2includes_2stdint_8h.html" title=" " alt="" coords="163,240,233,265"/>
-<area shape="poly" title=" " alt="" coords="201,192,201,226,195,226,195,192"/>
-<area shape="rect" href="size__t_8h.html" title=" " alt="" coords="162,313,234,339"/>
-<area shape="poly" title=" " alt="" coords="201,266,201,300,195,300,195,266"/>
-<area shape="poly" title=" " alt="" coords="428,121,256,166,255,161,427,116"/>
+<area shape="rect" href="Libs_2XEClib_2includes_2stdint_8h.html" title=" " alt="" coords="164,240,235,265"/>
+<area shape="poly" title=" " alt="" coords="202,192,202,226,197,226,197,192"/>
+<area shape="rect" href="size__t_8h.html" title=" " alt="" coords="163,313,235,339"/>
+<area shape="poly" title=" " alt="" coords="202,266,202,300,197,300,197,266"/>
+<area shape="poly" title=" " alt="" coords="428,121,257,166,256,161,427,116"/>
 <area shape="rect" title=" " alt="" coords="438,167,505,192"/>
 <area shape="poly" title=" " alt="" coords="474,119,474,153,469,153,469,119"/>
-<area shape="poly" title=" " alt="" coords="77,119,82,153,77,154,72,119"/>
-<area shape="poly" title=" " alt="" coords="94,116,167,157,164,162,92,121"/>
-<area shape="poly" title=" " alt="" coords="181,121,115,162,112,157,178,116"/>
-<area shape="poly" title=" " alt="" coords="201,119,201,153,195,153,195,119"/>
+<area shape="poly" title=" " alt="" coords="182,121,116,162,114,157,180,116"/>
+<area shape="poly" title=" " alt="" coords="202,119,202,153,197,153,197,119"/>
+<area shape="poly" title=" " alt="" coords="78,119,84,153,78,154,73,119"/>
+<area shape="poly" title=" " alt="" coords="95,116,168,157,166,162,93,121"/>
 </map>
 </div>
 </div><table class="memberdecls">
@@ -159,8 +162,20 @@ Macros</h2></td></tr>
 <tr class="separator:af3f7542b311a5ccfc7cdba686524c29f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8daa92b80aa3dc0630a25bb53bee6988" id="r_a8daa92b80aa3dc0630a25bb53bee6988"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#a8daa92b80aa3dc0630a25bb53bee6988">LACKS_TIME_H</a></td></tr>
 <tr class="separator:a8daa92b80aa3dc0630a25bb53bee6988"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc15a339eab4721df5fcd099004f1840" id="r_afc15a339eab4721df5fcd099004f1840"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#afc15a339eab4721df5fcd099004f1840">USE_LOCKS</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memitem:ae2f5715f1d4c1a9a6d1d84178acd14ab" id="r_ae2f5715f1d4c1a9a6d1d84178acd14ab"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#ae2f5715f1d4c1a9a6d1d84178acd14ab">LACKS_SCHED_H</a></td></tr>
+<tr class="separator:ae2f5715f1d4c1a9a6d1d84178acd14ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc15a339eab4721df5fcd099004f1840" id="r_afc15a339eab4721df5fcd099004f1840"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#afc15a339eab4721df5fcd099004f1840">USE_LOCKS</a>&#160;&#160;&#160;2</td></tr>
 <tr class="separator:afc15a339eab4721df5fcd099004f1840"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91c701aa5f47a3078e77df34f88e7980" id="r_a91c701aa5f47a3078e77df34f88e7980"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#a91c701aa5f47a3078e77df34f88e7980">INITIAL_LOCK</a>(lock)&#160;&#160;&#160;(*(lock) = 0)</td></tr>
+<tr class="separator:a91c701aa5f47a3078e77df34f88e7980"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac41d18dbddf54fe8d6a921dec4523b46" id="r_ac41d18dbddf54fe8d6a921dec4523b46"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#ac41d18dbddf54fe8d6a921dec4523b46">DESTROY_LOCK</a>(lock)&#160;&#160;&#160;(0)</td></tr>
+<tr class="separator:ac41d18dbddf54fe8d6a921dec4523b46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62b389dd8d99fa162b3cd831a66ee371" id="r_a62b389dd8d99fa162b3cd831a66ee371"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#a62b389dd8d99fa162b3cd831a66ee371">ACQUIRE_LOCK</a>(lock)&#160;&#160;&#160;xe_malloc_lock(lock)</td></tr>
+<tr class="separator:a62b389dd8d99fa162b3cd831a66ee371"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a882ccd18d4b03f23ff102f844fcd6bbc" id="r_a882ccd18d4b03f23ff102f844fcd6bbc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#a882ccd18d4b03f23ff102f844fcd6bbc">RELEASE_LOCK</a>(lock)&#160;&#160;&#160;(__atomic_store_n((lock), 0, __ATOMIC_RELEASE), 0)</td></tr>
+<tr class="separator:a882ccd18d4b03f23ff102f844fcd6bbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd06deafe6b85d36624dbf40e68206e0" id="r_acd06deafe6b85d36624dbf40e68206e0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#acd06deafe6b85d36624dbf40e68206e0">TRY_LOCK</a>(lock)&#160;&#160;&#160;(!__atomic_exchange_n((lock), 1, __ATOMIC_ACQUIRE))</td></tr>
+<tr class="separator:acd06deafe6b85d36624dbf40e68206e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae5869ce6c79206810a98c59f60b9f9db" id="r_ae5869ce6c79206810a98c59f60b9f9db"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#ae5869ce6c79206810a98c59f60b9f9db">MALLOC_FAILURE_ACTION</a></td></tr>
 <tr class="separator:ae5869ce6c79206810a98c59f60b9f9db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a770489b0e49399e8e749d5e861a94bfc" id="r_a770489b0e49399e8e749d5e861a94bfc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#a770489b0e49399e8e749d5e861a94bfc">CALL_MMAP</a>(size)&#160;&#160;&#160;<a class="el" href="__heap_8cpp.html#ad7ac989a1249c4d94709a950152862d4">xe_request_page</a>(size)</td></tr>
@@ -223,8 +238,6 @@ Macros</h2></td></tr>
 <tr class="separator:a2a9a6954fa3b77b824988fe9bc4f4899"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6a20ec9394445398c2618b055acbcb1" id="r_ad6a20ec9394445398c2618b055acbcb1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#ad6a20ec9394445398c2618b055acbcb1">MAX_SIZE_T</a>&#160;&#160;&#160;(~(<a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>)0)</td></tr>
 <tr class="separator:ad6a20ec9394445398c2618b055acbcb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2272cf5f1db0ea5dd0e89d1a3c5028f0" id="r_a2272cf5f1db0ea5dd0e89d1a3c5028f0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#a2272cf5f1db0ea5dd0e89d1a3c5028f0">USE_SPIN_LOCKS</a>&#160;&#160;&#160;0</td></tr>
-<tr class="separator:a2272cf5f1db0ea5dd0e89d1a3c5028f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb595638a14befbd356f77f8ec2a5c0d" id="r_aeb595638a14befbd356f77f8ec2a5c0d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#aeb595638a14befbd356f77f8ec2a5c0d">ONLY_MSPACES</a>&#160;&#160;&#160;0</td></tr>
 <tr class="separator:aeb595638a14befbd356f77f8ec2a5c0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab69b328d35c5a8e3bdc3463d3603e950" id="r_ab69b328d35c5a8e3bdc3463d3603e950"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#ab69b328d35c5a8e3bdc3463d3603e950">MSPACES</a>&#160;&#160;&#160;0</td></tr>
@@ -333,15 +346,11 @@ Macros</h2></td></tr>
 <tr class="separator:ac7f41c328146bb45481fe3e0c20787d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57ab793cfa029220055825980f7e6edf" id="r_a57ab793cfa029220055825980f7e6edf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#a57ab793cfa029220055825980f7e6edf">EXTERN_BIT</a>&#160;&#160;&#160;(8U)</td></tr>
 <tr class="separator:a57ab793cfa029220055825980f7e6edf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a02a456408564b69d6f3de5f8fede4931" id="r_a02a456408564b69d6f3de5f8fede4931"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#a02a456408564b69d6f3de5f8fede4931">USE_LOCK_BIT</a>&#160;&#160;&#160;(0U)</td></tr>
+<tr class="memitem:a02a456408564b69d6f3de5f8fede4931" id="r_a02a456408564b69d6f3de5f8fede4931"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#a02a456408564b69d6f3de5f8fede4931">USE_LOCK_BIT</a>&#160;&#160;&#160;(2U)</td></tr>
 <tr class="separator:a02a456408564b69d6f3de5f8fede4931"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61cf32dcdf0f1bcb268e3fe3f32b69dc" id="r_a61cf32dcdf0f1bcb268e3fe3f32b69dc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#a61cf32dcdf0f1bcb268e3fe3f32b69dc">INITIAL_LOCK</a>(l)&#160;&#160;&#160;(0)</td></tr>
-<tr class="separator:a61cf32dcdf0f1bcb268e3fe3f32b69dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf7ea24a3875d0b5dbcba8a863a5e2d0" id="r_acf7ea24a3875d0b5dbcba8a863a5e2d0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#acf7ea24a3875d0b5dbcba8a863a5e2d0">DESTROY_LOCK</a>(l)&#160;&#160;&#160;(0)</td></tr>
-<tr class="separator:acf7ea24a3875d0b5dbcba8a863a5e2d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3c43629ddadadeb43d75494062e5342" id="r_aa3c43629ddadadeb43d75494062e5342"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#aa3c43629ddadadeb43d75494062e5342">ACQUIRE_MALLOC_GLOBAL_LOCK</a>()</td></tr>
+<tr class="memitem:aa3c43629ddadadeb43d75494062e5342" id="r_aa3c43629ddadadeb43d75494062e5342"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#aa3c43629ddadadeb43d75494062e5342">ACQUIRE_MALLOC_GLOBAL_LOCK</a>()&#160;&#160;&#160;<a class="el" href="__heap_8cpp.html#a62b389dd8d99fa162b3cd831a66ee371">ACQUIRE_LOCK</a>(&amp;malloc_global_mutex);</td></tr>
 <tr class="separator:aa3c43629ddadadeb43d75494062e5342"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f3df62568086e570fba515b493fb8f4" id="r_a2f3df62568086e570fba515b493fb8f4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#a2f3df62568086e570fba515b493fb8f4">RELEASE_MALLOC_GLOBAL_LOCK</a>()</td></tr>
+<tr class="memitem:a2f3df62568086e570fba515b493fb8f4" id="r_a2f3df62568086e570fba515b493fb8f4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#a2f3df62568086e570fba515b493fb8f4">RELEASE_MALLOC_GLOBAL_LOCK</a>()&#160;&#160;&#160;<a class="el" href="__heap_8cpp.html#a882ccd18d4b03f23ff102f844fcd6bbc">RELEASE_LOCK</a>(&amp;malloc_global_mutex);</td></tr>
 <tr class="separator:a2f3df62568086e570fba515b493fb8f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3cedaeb11325fd3f4b08e92107be0d2" id="r_af3cedaeb11325fd3f4b08e92107be0d2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#af3cedaeb11325fd3f4b08e92107be0d2">MCHUNK_SIZE</a>&#160;&#160;&#160;(sizeof(<a class="el" href="dlmalloc_8c.html#a6412caf3aa493b17e390b53cef6fcca7">mchunk</a>))</td></tr>
 <tr class="separator:af3cedaeb11325fd3f4b08e92107be0d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -453,7 +462,7 @@ Macros</h2></td></tr>
 <tr class="separator:a7c7ff8add3d9f12d4af529f9f43d7644"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7eff565061029c1af31eecb25dca0be" id="r_aa7eff565061029c1af31eecb25dca0be"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#aa7eff565061029c1af31eecb25dca0be">enable_lock</a>(M)&#160;&#160;&#160;((M)-&gt;mflags |=  <a class="el" href="dlmalloc_8c.html#a02a456408564b69d6f3de5f8fede4931">USE_LOCK_BIT</a>)</td></tr>
 <tr class="separator:aa7eff565061029c1af31eecb25dca0be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a349dcd06c8dcf826a592f4d9a7b2949c" id="r_a349dcd06c8dcf826a592f4d9a7b2949c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#a349dcd06c8dcf826a592f4d9a7b2949c">disable_lock</a>(M)</td></tr>
+<tr class="memitem:a349dcd06c8dcf826a592f4d9a7b2949c" id="r_a349dcd06c8dcf826a592f4d9a7b2949c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#a349dcd06c8dcf826a592f4d9a7b2949c">disable_lock</a>(M)&#160;&#160;&#160;((M)-&gt;mflags &amp;= ~<a class="el" href="dlmalloc_8c.html#a02a456408564b69d6f3de5f8fede4931">USE_LOCK_BIT</a>)</td></tr>
 <tr class="separator:a349dcd06c8dcf826a592f4d9a7b2949c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acab9406dcc7caedf7a63038e271d45a5" id="r_acab9406dcc7caedf7a63038e271d45a5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#acab9406dcc7caedf7a63038e271d45a5">use_mmap</a>(M)&#160;&#160;&#160;((M)-&gt;mflags &amp;   <a class="el" href="dlmalloc_8c.html#a6792a808878980b064a53729e42a1b55">USE_MMAP_BIT</a>)</td></tr>
 <tr class="separator:acab9406dcc7caedf7a63038e271d45a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -485,9 +494,9 @@ Macros</h2></td></tr>
 <tr class="separator:a8fcca0fe7fd7176c642cb7eaca01e3c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b8c23c29e153672fb62406384791948" id="r_a3b8c23c29e153672fb62406384791948"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#a3b8c23c29e153672fb62406384791948">TOP_FOOT_SIZE</a>&#160;&#160;&#160;  (<a class="el" href="dlmalloc_8c.html#a2e22ed02137eff655b87a572b974eb37">align_offset</a>(<a class="el" href="dlmalloc_8c.html#accb5f8e767e1e6ca196937cd24f8a1e2">chunk2mem</a>(0))+<a class="el" href="dlmalloc_8c.html#abc9ba9df02632268a7b15ef992a94035">pad_request</a>(sizeof(struct <a class="el" href="structmalloc__segment.html">malloc_segment</a>))+<a class="el" href="dlmalloc_8c.html#abf35d28195f0f301fe63d0ea867f4379">MIN_CHUNK_SIZE</a>)</td></tr>
 <tr class="separator:a3b8c23c29e153672fb62406384791948"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9abf67cb3bc9027f0b44bab676e05f09" id="r_a9abf67cb3bc9027f0b44bab676e05f09"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#a9abf67cb3bc9027f0b44bab676e05f09">PREACTION</a>(M)&#160;&#160;&#160;(0)</td></tr>
+<tr class="memitem:a9abf67cb3bc9027f0b44bab676e05f09" id="r_a9abf67cb3bc9027f0b44bab676e05f09"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#a9abf67cb3bc9027f0b44bab676e05f09">PREACTION</a>(M)&#160;&#160;&#160;((<a class="el" href="dlmalloc_8c.html#a7c7ff8add3d9f12d4af529f9f43d7644">use_lock</a>(M))? <a class="el" href="__heap_8cpp.html#a62b389dd8d99fa162b3cd831a66ee371">ACQUIRE_LOCK</a>(&amp;(M)-&gt;<a class="el" href="kernel_8h.html#af032b75de11187259c0463e6bf0f11d9">mutex</a>) : 0)</td></tr>
 <tr class="separator:a9abf67cb3bc9027f0b44bab676e05f09"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c176fdaf0d14b883ba250c8a569b88e" id="r_a8c176fdaf0d14b883ba250c8a569b88e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#a8c176fdaf0d14b883ba250c8a569b88e">POSTACTION</a>(M)</td></tr>
+<tr class="memitem:a8c176fdaf0d14b883ba250c8a569b88e" id="r_a8c176fdaf0d14b883ba250c8a569b88e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#a8c176fdaf0d14b883ba250c8a569b88e">POSTACTION</a>(M)&#160;&#160;&#160;{ if (<a class="el" href="dlmalloc_8c.html#a7c7ff8add3d9f12d4af529f9f43d7644">use_lock</a>(M)) <a class="el" href="__heap_8cpp.html#a882ccd18d4b03f23ff102f844fcd6bbc">RELEASE_LOCK</a>(&amp;(M)-&gt;<a class="el" href="kernel_8h.html#af032b75de11187259c0463e6bf0f11d9">mutex</a>); }</td></tr>
 <tr class="separator:a8c176fdaf0d14b883ba250c8a569b88e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb20d711da475d4c59ef88569579b4d4" id="r_acb20d711da475d4c59ef88569579b4d4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#acb20d711da475d4c59ef88569579b4d4">CORRUPTION_ERROR_ACTION</a>(m)&#160;&#160;&#160;<a class="el" href="dlmalloc_8c.html#a5376571bbf4cdc9782683635f366f89a">ABORT</a></td></tr>
 <tr class="separator:acb20d711da475d4c59ef88569579b4d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -592,6 +601,8 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
+<tr class="memitem:a94e0f030dcb39a8d7d7c238299999c49" id="r_a94e0f030dcb39a8d7d7c238299999c49"><td class="memItemLeft" align="right" valign="top">typedef int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#a94e0f030dcb39a8d7d7c238299999c49">MLOCK_T</a></td></tr>
+<tr class="separator:a94e0f030dcb39a8d7d7c238299999c49"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad342ac907eb044443153a22f964bf0af" id="r_ad342ac907eb044443153a22f964bf0af"><td class="memItemLeft" align="right" valign="top">typedef unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#ad342ac907eb044443153a22f964bf0af">DWORD</a></td></tr>
 <tr class="separator:ad342ac907eb044443153a22f964bf0af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8c0374618b33785ccb02f74bcfebc46" id="r_aa8c0374618b33785ccb02f74bcfebc46"><td class="memItemLeft" align="right" valign="top">typedef void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#aa8c0374618b33785ccb02f74bcfebc46">HANDLE</a></td></tr>
@@ -715,6 +726,24 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a62b389dd8d99fa162b3cd831a66ee371" name="a62b389dd8d99fa162b3cd831a66ee371"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62b389dd8d99fa162b3cd831a66ee371">&#9670;&#160;</a></span>ACQUIRE_LOCK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ACQUIRE_LOCK</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">lock</td><td>)</td>
+          <td>&#160;&#160;&#160;xe_malloc_lock(lock)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aa3c43629ddadadeb43d75494062e5342" name="aa3c43629ddadadeb43d75494062e5342"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa3c43629ddadadeb43d75494062e5342">&#9670;&#160;</a></span>ACQUIRE_MALLOC_GLOBAL_LOCK</h2>
 
@@ -725,7 +754,7 @@ Functions</h2></td></tr>
           <td class="memname">#define ACQUIRE_MALLOC_GLOBAL_LOCK</td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td>&#160;&#160;&#160;<a class="el" href="__heap_8cpp.html#a62b389dd8d99fa162b3cd831a66ee371">ACQUIRE_LOCK</a>(&amp;malloc_global_mutex);</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -768,8 +797,8 @@ Functions</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line"> ((((<a class="code hl_typedef" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>)(A) &amp; <a class="code hl_define" href="__heap_8cpp.html#a46f5899c4a72acfdd20872d893679bb0">CHUNK_ALIGN_MASK</a>) == 0)? 0 :\</div>
 <div class="line">  ((<a class="code hl_define" href="__heap_8cpp.html#a05897f13370acbdecbf31034f8bec0d5">MALLOC_ALIGNMENT</a> - ((<a class="code hl_typedef" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>)(A) &amp; <a class="code hl_define" href="__heap_8cpp.html#a46f5899c4a72acfdd20872d893679bb0">CHUNK_ALIGN_MASK</a>)) &amp; <a class="code hl_define" href="__heap_8cpp.html#a46f5899c4a72acfdd20872d893679bb0">CHUNK_ALIGN_MASK</a>))</div>
 <div class="ttc" id="aBaseHdr_2stdint_8h_html_a186ea1339bffb378854987065835afe3"><div class="ttname"><a href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a></div><div class="ttdeci">uint64_t size_t</div><div class="ttdef"><b>Definition</b> stdint.h:104</div></div>
-<div class="ttc" id="a__heap_8cpp_html_a05897f13370acbdecbf31034f8bec0d5"><div class="ttname"><a href="__heap_8cpp.html#a05897f13370acbdecbf31034f8bec0d5">MALLOC_ALIGNMENT</a></div><div class="ttdeci">#define MALLOC_ALIGNMENT</div><div class="ttdef"><b>Definition</b> _heap.cpp:706</div></div>
-<div class="ttc" id="a__heap_8cpp_html_a46f5899c4a72acfdd20872d893679bb0"><div class="ttname"><a href="__heap_8cpp.html#a46f5899c4a72acfdd20872d893679bb0">CHUNK_ALIGN_MASK</a></div><div class="ttdeci">#define CHUNK_ALIGN_MASK</div><div class="ttdef"><b>Definition</b> _heap.cpp:1701</div></div>
+<div class="ttc" id="a__heap_8cpp_html_a05897f13370acbdecbf31034f8bec0d5"><div class="ttname"><a href="__heap_8cpp.html#a05897f13370acbdecbf31034f8bec0d5">MALLOC_ALIGNMENT</a></div><div class="ttdeci">#define MALLOC_ALIGNMENT</div><div class="ttdef"><b>Definition</b> _heap.cpp:726</div></div>
+<div class="ttc" id="a__heap_8cpp_html_a46f5899c4a72acfdd20872d893679bb0"><div class="ttname"><a href="__heap_8cpp.html#a46f5899c4a72acfdd20872d893679bb0">CHUNK_ALIGN_MASK</a></div><div class="ttdeci">#define CHUNK_ALIGN_MASK</div><div class="ttdef"><b>Definition</b> _heap.cpp:1721</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1454,7 +1483,7 @@ Functions</h2></td></tr>
 <div class="line">  N += K = Y &gt;&gt; (1-0) &amp;  1;  Y &gt;&gt;= K;\</div>
 <div class="line">  I = (<a class="code hl_typedef" href="__heap_8cpp.html#a4c04048d19db75c080e5f0ab19d45f8f">bindex_t</a>)(N + Y);\</div>
 <div class="line">}</div>
-<div class="ttc" id="a__heap_8cpp_html_a4c04048d19db75c080e5f0ab19d45f8f"><div class="ttname"><a href="__heap_8cpp.html#a4c04048d19db75c080e5f0ab19d45f8f">bindex_t</a></div><div class="ttdeci">unsigned int bindex_t</div><div class="ttdef"><b>Definition</b> _heap.cpp:2280</div></div>
+<div class="ttc" id="a__heap_8cpp_html_a4c04048d19db75c080e5f0ab19d45f8f"><div class="ttname"><a href="__heap_8cpp.html#a4c04048d19db75c080e5f0ab19d45f8f">bindex_t</a></div><div class="ttdeci">unsigned int bindex_t</div><div class="ttdef"><b>Definition</b> _heap.cpp:2300</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1499,8 +1528,8 @@ Functions</h2></td></tr>
 <div class="line">    I = (K &lt;&lt; 1) + ((S &gt;&gt; (K + (<a class="code hl_define" href="__heap_8cpp.html#a84cfe33e7f07c4b874fe1a82ba327c2e">TREEBIN_SHIFT</a>-1)) &amp; 1));\</div>
 <div class="line">  }\</div>
 <div class="line">}</div>
-<div class="ttc" id="a__heap_8cpp_html_a187fe34f71c63b486f6d79ac51117061"><div class="ttname"><a href="__heap_8cpp.html#a187fe34f71c63b486f6d79ac51117061">NTREEBINS</a></div><div class="ttdeci">#define NTREEBINS</div><div class="ttdef"><b>Definition</b> _heap.cpp:2657</div></div>
-<div class="ttc" id="a__heap_8cpp_html_a84cfe33e7f07c4b874fe1a82ba327c2e"><div class="ttname"><a href="__heap_8cpp.html#a84cfe33e7f07c4b874fe1a82ba327c2e">TREEBIN_SHIFT</a></div><div class="ttdeci">#define TREEBIN_SHIFT</div><div class="ttdef"><b>Definition</b> _heap.cpp:2660</div></div>
+<div class="ttc" id="a__heap_8cpp_html_a187fe34f71c63b486f6d79ac51117061"><div class="ttname"><a href="__heap_8cpp.html#a187fe34f71c63b486f6d79ac51117061">NTREEBINS</a></div><div class="ttdeci">#define NTREEBINS</div><div class="ttdef"><b>Definition</b> _heap.cpp:2677</div></div>
+<div class="ttc" id="a__heap_8cpp_html_a84cfe33e7f07c4b874fe1a82ba327c2e"><div class="ttname"><a href="__heap_8cpp.html#a84cfe33e7f07c4b874fe1a82ba327c2e">TREEBIN_SHIFT</a></div><div class="ttdeci">#define TREEBIN_SHIFT</div><div class="ttdef"><b>Definition</b> _heap.cpp:2680</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1578,8 +1607,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="acf7ea24a3875d0b5dbcba8a863a5e2d0" name="acf7ea24a3875d0b5dbcba8a863a5e2d0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acf7ea24a3875d0b5dbcba8a863a5e2d0">&#9670;&#160;</a></span>DESTROY_LOCK</h2>
+<a id="ac41d18dbddf54fe8d6a921dec4523b46" name="ac41d18dbddf54fe8d6a921dec4523b46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac41d18dbddf54fe8d6a921dec4523b46">&#9670;&#160;</a></span>DESTROY_LOCK</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1588,7 +1617,7 @@ Functions</h2></td></tr>
           <td class="memname">#define DESTROY_LOCK</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">l</td><td>)</td>
+          <td class="paramname">lock</td><td>)</td>
           <td>&#160;&#160;&#160;(0)</td>
         </tr>
       </table>
@@ -1643,7 +1672,7 @@ Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">M</td><td>)</td>
-          <td></td>
+          <td>&#160;&#160;&#160;((M)-&gt;mflags &amp;= ~<a class="el" href="dlmalloc_8c.html#a02a456408564b69d6f3de5f8fede4931">USE_LOCK_BIT</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2008,7 +2037,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">  (((S) + (mparams.<a class="code hl_variable" href="structmalloc__params.html#aa0609453d9ec826c8ffc632cbfb8cf68">granularity</a> - <a class="code hl_define" href="__heap_8cpp.html#a1a115588725fa912f1bcaca9f08fb658">SIZE_T_ONE</a>))\</div>
 <div class="line">   &amp; ~(mparams.<a class="code hl_variable" href="structmalloc__params.html#aa0609453d9ec826c8ffc632cbfb8cf68">granularity</a> - <a class="code hl_define" href="__heap_8cpp.html#a1a115588725fa912f1bcaca9f08fb658">SIZE_T_ONE</a>))</div>
-<div class="ttc" id="a__heap_8cpp_html_a1a115588725fa912f1bcaca9f08fb658"><div class="ttname"><a href="__heap_8cpp.html#a1a115588725fa912f1bcaca9f08fb658">SIZE_T_ONE</a></div><div class="ttdeci">#define SIZE_T_ONE</div><div class="ttdef"><b>Definition</b> _heap.cpp:1692</div></div>
+<div class="ttc" id="a__heap_8cpp_html_a1a115588725fa912f1bcaca9f08fb658"><div class="ttname"><a href="__heap_8cpp.html#a1a115588725fa912f1bcaca9f08fb658">SIZE_T_ONE</a></div><div class="ttdeci">#define SIZE_T_ONE</div><div class="ttdef"><b>Definition</b> _heap.cpp:1712</div></div>
 <div class="ttc" id="astructmalloc__params_html_aa0609453d9ec826c8ffc632cbfb8cf68"><div class="ttname"><a href="structmalloc__params.html#aa0609453d9ec826c8ffc632cbfb8cf68">malloc_params::granularity</a></div><div class="ttdeci">size_t granularity</div><div class="ttdef"><b>Definition</b> dlmalloc.c:2691</div></div>
 </div><!-- fragment -->
 </div>
@@ -2115,8 +2144,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a61cf32dcdf0f1bcb268e3fe3f32b69dc" name="a61cf32dcdf0f1bcb268e3fe3f32b69dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a61cf32dcdf0f1bcb268e3fe3f32b69dc">&#9670;&#160;</a></span>INITIAL_LOCK</h2>
+<a id="a91c701aa5f47a3078e77df34f88e7980" name="a91c701aa5f47a3078e77df34f88e7980"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91c701aa5f47a3078e77df34f88e7980">&#9670;&#160;</a></span>INITIAL_LOCK</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2125,8 +2154,8 @@ Functions</h2></td></tr>
           <td class="memname">#define INITIAL_LOCK</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">l</td><td>)</td>
-          <td>&#160;&#160;&#160;(0)</td>
+          <td class="paramname">lock</td><td>)</td>
+          <td>&#160;&#160;&#160;(*(lock) = 0)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2180,10 +2209,10 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">if</span> (<a class="code hl_define" href="__heap_8cpp.html#aadc2cdd1444477c387fc30e64f061432">is_small</a>(S)) <a class="code hl_define" href="__heap_8cpp.html#adb28fc94857fe6fd0d13a790c1866284">insert_small_chunk</a>(M, P, S)\</div>
 <div class="line">  <span class="keywordflow">else</span> { <a class="code hl_struct" href="structmalloc__tree__chunk.html">tchunkptr</a> TP = (<a class="code hl_typedef" href="__heap_8cpp.html#addd456ccc8fb838310e92a3f394fc1b1">tchunkptr</a>)(P); <a class="code hl_define" href="__heap_8cpp.html#ac38ba865e6c3bf916fcdcb6bfa8be00d">insert_large_chunk</a>(M, TP, S); }</div>
-<div class="ttc" id="a__heap_8cpp_html_aadc2cdd1444477c387fc30e64f061432"><div class="ttname"><a href="__heap_8cpp.html#aadc2cdd1444477c387fc30e64f061432">is_small</a></div><div class="ttdeci">#define is_small(s)</div><div class="ttdef"><b>Definition</b> _heap.cpp:2910</div></div>
-<div class="ttc" id="a__heap_8cpp_html_ac38ba865e6c3bf916fcdcb6bfa8be00d"><div class="ttname"><a href="__heap_8cpp.html#ac38ba865e6c3bf916fcdcb6bfa8be00d">insert_large_chunk</a></div><div class="ttdeci">#define insert_large_chunk(M, X, S)</div><div class="ttdef"><b>Definition</b> _heap.cpp:3731</div></div>
-<div class="ttc" id="a__heap_8cpp_html_adb28fc94857fe6fd0d13a790c1866284"><div class="ttname"><a href="__heap_8cpp.html#adb28fc94857fe6fd0d13a790c1866284">insert_small_chunk</a></div><div class="ttdeci">#define insert_small_chunk(M, P, S)</div><div class="ttdef"><b>Definition</b> _heap.cpp:3653</div></div>
-<div class="ttc" id="a__heap_8cpp_html_addd456ccc8fb838310e92a3f394fc1b1"><div class="ttname"><a href="__heap_8cpp.html#addd456ccc8fb838310e92a3f394fc1b1">tchunkptr</a></div><div class="ttdeci">struct malloc_tree_chunk * tchunkptr</div><div class="ttdef"><b>Definition</b> _heap.cpp:2492</div></div>
+<div class="ttc" id="a__heap_8cpp_html_aadc2cdd1444477c387fc30e64f061432"><div class="ttname"><a href="__heap_8cpp.html#aadc2cdd1444477c387fc30e64f061432">is_small</a></div><div class="ttdeci">#define is_small(s)</div><div class="ttdef"><b>Definition</b> _heap.cpp:2930</div></div>
+<div class="ttc" id="a__heap_8cpp_html_ac38ba865e6c3bf916fcdcb6bfa8be00d"><div class="ttname"><a href="__heap_8cpp.html#ac38ba865e6c3bf916fcdcb6bfa8be00d">insert_large_chunk</a></div><div class="ttdeci">#define insert_large_chunk(M, X, S)</div><div class="ttdef"><b>Definition</b> _heap.cpp:3751</div></div>
+<div class="ttc" id="a__heap_8cpp_html_adb28fc94857fe6fd0d13a790c1866284"><div class="ttname"><a href="__heap_8cpp.html#adb28fc94857fe6fd0d13a790c1866284">insert_small_chunk</a></div><div class="ttdeci">#define insert_small_chunk(M, P, S)</div><div class="ttdef"><b>Definition</b> _heap.cpp:3673</div></div>
+<div class="ttc" id="a__heap_8cpp_html_addd456ccc8fb838310e92a3f394fc1b1"><div class="ttname"><a href="__heap_8cpp.html#addd456ccc8fb838310e92a3f394fc1b1">tchunkptr</a></div><div class="ttdeci">struct malloc_tree_chunk * tchunkptr</div><div class="ttdef"><b>Definition</b> _heap.cpp:2512</div></div>
 <div class="ttc" id="astructmalloc__tree__chunk_html"><div class="ttname"><a href="structmalloc__tree__chunk.html">malloc_tree_chunk</a></div><div class="ttdef"><b>Definition</b> dlmalloc.c:2466</div></div>
 </div><!-- fragment -->
 </div>
@@ -2270,12 +2299,12 @@ Functions</h2></td></tr>
 <div class="line">  P-&gt;<a class="code hl_variable" href="structmalloc__chunk.html#a3bf7a41ce24baa8f17a5a4d13abfdef4">fd</a> = F;\</div>
 <div class="line">  P-&gt;<a class="code hl_variable" href="structmalloc__chunk.html#a1c0148642730c23c73bee9043deaf398">bk</a> = B;\</div>
 <div class="line">}</div>
-<div class="ttc" id="a__heap_8cpp_html_a162ea143ef987e2bc98d5e4b69f7bff6"><div class="ttname"><a href="__heap_8cpp.html#a162ea143ef987e2bc98d5e4b69f7bff6">ok_address</a></div><div class="ttdeci">#define ok_address(M, a)</div><div class="ttdef"><b>Definition</b> _heap.cpp:3095</div></div>
-<div class="ttc" id="a__heap_8cpp_html_a1f3d4249e522c896509b7999860090ea"><div class="ttname"><a href="__heap_8cpp.html#a1f3d4249e522c896509b7999860090ea">small_index</a></div><div class="ttdeci">#define small_index(s)</div><div class="ttdef"><b>Definition</b> _heap.cpp:2911</div></div>
-<div class="ttc" id="a__heap_8cpp_html_a545357ca2a355288874c27ea94eca166"><div class="ttname"><a href="__heap_8cpp.html#a545357ca2a355288874c27ea94eca166">smallmap_is_marked</a></div><div class="ttdeci">#define smallmap_is_marked(M, i)</div><div class="ttdef"><b>Definition</b> _heap.cpp:3006</div></div>
-<div class="ttc" id="a__heap_8cpp_html_a862c7dc1f319911e1f06b9d99485cc54"><div class="ttname"><a href="__heap_8cpp.html#a862c7dc1f319911e1f06b9d99485cc54">smallbin_at</a></div><div class="ttdeci">#define smallbin_at(M, i)</div><div class="ttdef"><b>Definition</b> _heap.cpp:2916</div></div>
-<div class="ttc" id="a__heap_8cpp_html_abf35d28195f0f301fe63d0ea867f4379"><div class="ttname"><a href="__heap_8cpp.html#abf35d28195f0f301fe63d0ea867f4379">MIN_CHUNK_SIZE</a></div><div class="ttdeci">#define MIN_CHUNK_SIZE</div><div class="ttdef"><b>Definition</b> _heap.cpp:2300</div></div>
-<div class="ttc" id="a__heap_8cpp_html_afe7e6535ba41a91be580eb2bba5890e2"><div class="ttname"><a href="__heap_8cpp.html#afe7e6535ba41a91be580eb2bba5890e2">RTCHECK</a></div><div class="ttdeci">#define RTCHECK(e)</div><div class="ttdef"><b>Definition</b> _heap.cpp:3122</div></div>
+<div class="ttc" id="a__heap_8cpp_html_a162ea143ef987e2bc98d5e4b69f7bff6"><div class="ttname"><a href="__heap_8cpp.html#a162ea143ef987e2bc98d5e4b69f7bff6">ok_address</a></div><div class="ttdeci">#define ok_address(M, a)</div><div class="ttdef"><b>Definition</b> _heap.cpp:3115</div></div>
+<div class="ttc" id="a__heap_8cpp_html_a1f3d4249e522c896509b7999860090ea"><div class="ttname"><a href="__heap_8cpp.html#a1f3d4249e522c896509b7999860090ea">small_index</a></div><div class="ttdeci">#define small_index(s)</div><div class="ttdef"><b>Definition</b> _heap.cpp:2931</div></div>
+<div class="ttc" id="a__heap_8cpp_html_a545357ca2a355288874c27ea94eca166"><div class="ttname"><a href="__heap_8cpp.html#a545357ca2a355288874c27ea94eca166">smallmap_is_marked</a></div><div class="ttdeci">#define smallmap_is_marked(M, i)</div><div class="ttdef"><b>Definition</b> _heap.cpp:3026</div></div>
+<div class="ttc" id="a__heap_8cpp_html_a862c7dc1f319911e1f06b9d99485cc54"><div class="ttname"><a href="__heap_8cpp.html#a862c7dc1f319911e1f06b9d99485cc54">smallbin_at</a></div><div class="ttdeci">#define smallbin_at(M, i)</div><div class="ttdef"><b>Definition</b> _heap.cpp:2936</div></div>
+<div class="ttc" id="a__heap_8cpp_html_abf35d28195f0f301fe63d0ea867f4379"><div class="ttname"><a href="__heap_8cpp.html#abf35d28195f0f301fe63d0ea867f4379">MIN_CHUNK_SIZE</a></div><div class="ttdeci">#define MIN_CHUNK_SIZE</div><div class="ttdef"><b>Definition</b> _heap.cpp:2320</div></div>
+<div class="ttc" id="a__heap_8cpp_html_afe7e6535ba41a91be580eb2bba5890e2"><div class="ttname"><a href="__heap_8cpp.html#afe7e6535ba41a91be580eb2bba5890e2">RTCHECK</a></div><div class="ttdeci">#define RTCHECK(e)</div><div class="ttdef"><b>Definition</b> _heap.cpp:3142</div></div>
 <div class="ttc" id="adlmalloc_8c_html_a4c04048d19db75c080e5f0ab19d45f8f"><div class="ttname"><a href="dlmalloc_8c.html#a4c04048d19db75c080e5f0ab19d45f8f">bindex_t</a></div><div class="ttdeci">unsigned int bindex_t</div><div class="ttdef"><b>Definition</b> dlmalloc.c:2274</div></div>
 <div class="ttc" id="astructmalloc__chunk_html"><div class="ttname"><a href="structmalloc__chunk.html">malloc_chunk</a></div><div class="ttdef"><b>Definition</b> dlmalloc.c:2264</div></div>
 <div class="ttc" id="astructmalloc__chunk_html_a1c0148642730c23c73bee9043deaf398"><div class="ttname"><a href="structmalloc__chunk.html#a1c0148642730c23c73bee9043deaf398">malloc_chunk::bk</a></div><div class="ttdeci">struct malloc_chunk * bk</div><div class="ttdef"><b>Definition</b> dlmalloc.c:2268</div></div>
@@ -2575,6 +2604,20 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ae2f5715f1d4c1a9a6d1d84178acd14ab" name="ae2f5715f1d4c1a9a6d1d84178acd14ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2f5715f1d4c1a9a6d1d84178acd14ab">&#9670;&#160;</a></span>LACKS_SCHED_H</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LACKS_SCHED_H</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a458b5bbd019d21e100f8809233331dc2" name="a458b5bbd019d21e100f8809233331dc2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a458b5bbd019d21e100f8809233331dc2">&#9670;&#160;</a></span>LACKS_STDLIB_H</h2>
 
@@ -2786,7 +2829,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">   ((i == <a class="code hl_define" href="__heap_8cpp.html#a187fe34f71c63b486f6d79ac51117061">NTREEBINS</a>-1)? 0 : \</div>
 <div class="line">    ((<a class="code hl_define" href="__heap_8cpp.html#a9d769150c841cbb7512476c56aaf5617">SIZE_T_BITSIZE</a>-<a class="code hl_define" href="__heap_8cpp.html#a1a115588725fa912f1bcaca9f08fb658">SIZE_T_ONE</a>) - (((i) &gt;&gt; 1) + <a class="code hl_define" href="__heap_8cpp.html#a84cfe33e7f07c4b874fe1a82ba327c2e">TREEBIN_SHIFT</a> - 2)))</div>
-<div class="ttc" id="a__heap_8cpp_html_a9d769150c841cbb7512476c56aaf5617"><div class="ttname"><a href="__heap_8cpp.html#a9d769150c841cbb7512476c56aaf5617">SIZE_T_BITSIZE</a></div><div class="ttdeci">#define SIZE_T_BITSIZE</div><div class="ttdef"><b>Definition</b> _heap.cpp:1687</div></div>
+<div class="ttc" id="a__heap_8cpp_html_a9d769150c841cbb7512476c56aaf5617"><div class="ttname"><a href="__heap_8cpp.html#a9d769150c841cbb7512476c56aaf5617">SIZE_T_BITSIZE</a></div><div class="ttdeci">#define SIZE_T_BITSIZE</div><div class="ttdef"><b>Definition</b> _heap.cpp:1707</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -3263,8 +3306,8 @@ Functions</h2></td></tr>
 <div class="line">           (dev_zero_fd = <a class="code hl_define" href="acwin_8h.html#a8854c2a82db965759bd6095a666ffb76">open</a>(<span class="stringliteral">&quot;/dev/zero&quot;</span>, <a class="code hl_define" href="mmap_8h.html#abb0586253488ee61072b73557eeb873b">O_RDWR</a>), \</div>
 <div class="line">            mmap(0, (s), <a class="code hl_define" href="__heap_8cpp.html#ab3a1aea60d3139bc62769ccc05bfa21e">MMAP_PROT</a>, <a class="code hl_define" href="__heap_8cpp.html#ad2d83ed2587a673f05e96fb46a11193e">MMAP_FLAGS</a>, dev_zero_fd, 0)) : \</div>
 <div class="line">            mmap(0, (s), <a class="code hl_define" href="__heap_8cpp.html#ab3a1aea60d3139bc62769ccc05bfa21e">MMAP_PROT</a>, <a class="code hl_define" href="__heap_8cpp.html#ad2d83ed2587a673f05e96fb46a11193e">MMAP_FLAGS</a>, dev_zero_fd, 0))</div>
-<div class="ttc" id="a__heap_8cpp_html_ab3a1aea60d3139bc62769ccc05bfa21e"><div class="ttname"><a href="__heap_8cpp.html#ab3a1aea60d3139bc62769ccc05bfa21e">MMAP_PROT</a></div><div class="ttdeci">#define MMAP_PROT</div><div class="ttdef"><b>Definition</b> _heap.cpp:1728</div></div>
-<div class="ttc" id="a__heap_8cpp_html_ad2d83ed2587a673f05e96fb46a11193e"><div class="ttname"><a href="__heap_8cpp.html#ad2d83ed2587a673f05e96fb46a11193e">MMAP_FLAGS</a></div><div class="ttdeci">#define MMAP_FLAGS</div><div class="ttdef"><b>Definition</b> _heap.cpp:1740</div></div>
+<div class="ttc" id="a__heap_8cpp_html_ab3a1aea60d3139bc62769ccc05bfa21e"><div class="ttname"><a href="__heap_8cpp.html#ab3a1aea60d3139bc62769ccc05bfa21e">MMAP_PROT</a></div><div class="ttdeci">#define MMAP_PROT</div><div class="ttdef"><b>Definition</b> _heap.cpp:1748</div></div>
+<div class="ttc" id="a__heap_8cpp_html_ad2d83ed2587a673f05e96fb46a11193e"><div class="ttname"><a href="__heap_8cpp.html#ad2d83ed2587a673f05e96fb46a11193e">MMAP_FLAGS</a></div><div class="ttdeci">#define MMAP_FLAGS</div><div class="ttdef"><b>Definition</b> _heap.cpp:1760</div></div>
 <div class="ttc" id="aacwin_8h_html_a8854c2a82db965759bd6095a666ffb76"><div class="ttname"><a href="acwin_8h.html#a8854c2a82db965759bd6095a666ffb76">open</a></div><div class="ttdeci">#define open</div><div class="ttdef"><b>Definition</b> acwin.h:179</div></div>
 <div class="ttc" id="ammap_8h_html_abb0586253488ee61072b73557eeb873b"><div class="ttname"><a href="mmap_8h.html#abb0586253488ee61072b73557eeb873b">O_RDWR</a></div><div class="ttdeci">#define O_RDWR</div><div class="ttdef"><b>Definition</b> mmap.h:47</div></div>
 </div><!-- fragment -->
@@ -3793,7 +3836,7 @@ Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">M</td><td>)</td>
-          <td></td>
+          <td>&#160;&#160;&#160;{ if (<a class="el" href="dlmalloc_8c.html#a7c7ff8add3d9f12d4af529f9f43d7644">use_lock</a>(M)) <a class="el" href="__heap_8cpp.html#a882ccd18d4b03f23ff102f844fcd6bbc">RELEASE_LOCK</a>(&amp;(M)-&gt;<a class="el" href="kernel_8h.html#af032b75de11187259c0463e6bf0f11d9">mutex</a>); }</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -3811,7 +3854,7 @@ Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">M</td><td>)</td>
-          <td>&#160;&#160;&#160;(0)</td>
+          <td>&#160;&#160;&#160;((<a class="el" href="dlmalloc_8c.html#a7c7ff8add3d9f12d4af529f9f43d7644">use_lock</a>(M))? <a class="el" href="__heap_8cpp.html#a62b389dd8d99fa162b3cd831a66ee371">ACQUIRE_LOCK</a>(&amp;(M)-&gt;<a class="el" href="kernel_8h.html#af032b75de11187259c0463e6bf0f11d9">mutex</a>) : 0)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -3850,6 +3893,24 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a882ccd18d4b03f23ff102f844fcd6bbc" name="a882ccd18d4b03f23ff102f844fcd6bbc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a882ccd18d4b03f23ff102f844fcd6bbc">&#9670;&#160;</a></span>RELEASE_LOCK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RELEASE_LOCK</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">lock</td><td>)</td>
+          <td>&#160;&#160;&#160;(__atomic_store_n((lock), 0, __ATOMIC_RELEASE), 0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a2f3df62568086e570fba515b493fb8f4" name="a2f3df62568086e570fba515b493fb8f4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2f3df62568086e570fba515b493fb8f4">&#9670;&#160;</a></span>RELEASE_MALLOC_GLOBAL_LOCK</h2>
 
@@ -3860,7 +3921,7 @@ Functions</h2></td></tr>
           <td class="memname">#define RELEASE_MALLOC_GLOBAL_LOCK</td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td>&#160;&#160;&#160;<a class="el" href="__heap_8cpp.html#a882ccd18d4b03f23ff102f844fcd6bbc">RELEASE_LOCK</a>(&amp;malloc_global_mutex);</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -4106,8 +4167,8 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">  ((p)-&gt;head = (((p)-&gt;head &amp; <a class="code hl_define" href="__heap_8cpp.html#aa41e697181baeec7157ff5f0f6ae747a">PINUSE_BIT</a>)|s|<a class="code hl_define" href="__heap_8cpp.html#a8f8153cc167dd042af6840f7130b9721">CINUSE_BIT</a>),\</div>
 <div class="line">  ((<a class="code hl_struct" href="structmalloc__chunk.html">mchunkptr</a>)(((<span class="keywordtype">char</span>*)(p)) + (s)))-&gt;head |= <a class="code hl_define" href="__heap_8cpp.html#aa41e697181baeec7157ff5f0f6ae747a">PINUSE_BIT</a>)</div>
-<div class="ttc" id="a__heap_8cpp_html_a8f8153cc167dd042af6840f7130b9721"><div class="ttname"><a href="__heap_8cpp.html#a8f8153cc167dd042af6840f7130b9721">CINUSE_BIT</a></div><div class="ttdeci">#define CINUSE_BIT</div><div class="ttdef"><b>Definition</b> _heap.cpp:2333</div></div>
-<div class="ttc" id="a__heap_8cpp_html_aa41e697181baeec7157ff5f0f6ae747a"><div class="ttname"><a href="__heap_8cpp.html#aa41e697181baeec7157ff5f0f6ae747a">PINUSE_BIT</a></div><div class="ttdeci">#define PINUSE_BIT</div><div class="ttdef"><b>Definition</b> _heap.cpp:2332</div></div>
+<div class="ttc" id="a__heap_8cpp_html_a8f8153cc167dd042af6840f7130b9721"><div class="ttname"><a href="__heap_8cpp.html#a8f8153cc167dd042af6840f7130b9721">CINUSE_BIT</a></div><div class="ttdeci">#define CINUSE_BIT</div><div class="ttdef"><b>Definition</b> _heap.cpp:2353</div></div>
+<div class="ttc" id="a__heap_8cpp_html_aa41e697181baeec7157ff5f0f6ae747a"><div class="ttname"><a href="__heap_8cpp.html#aa41e697181baeec7157ff5f0f6ae747a">PINUSE_BIT</a></div><div class="ttdeci">#define PINUSE_BIT</div><div class="ttdef"><b>Definition</b> _heap.cpp:2352</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -4144,7 +4205,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">  ((p)-&gt;head = (s|<a class="code hl_define" href="__heap_8cpp.html#aa41e697181baeec7157ff5f0f6ae747a">PINUSE_BIT</a>|<a class="code hl_define" href="__heap_8cpp.html#a8f8153cc167dd042af6840f7130b9721">CINUSE_BIT</a>),\</div>
 <div class="line">  ((<a class="code hl_typedef" href="__heap_8cpp.html#aab2c188a259d6c4bd443ed712a92714c">mchunkptr</a>)(((<span class="keywordtype">char</span>*)(p)) + (s)))-&gt;head |= <a class="code hl_define" href="__heap_8cpp.html#aa41e697181baeec7157ff5f0f6ae747a">PINUSE_BIT</a>)</div>
-<div class="ttc" id="a__heap_8cpp_html_aab2c188a259d6c4bd443ed712a92714c"><div class="ttname"><a href="__heap_8cpp.html#aab2c188a259d6c4bd443ed712a92714c">mchunkptr</a></div><div class="ttdeci">struct malloc_chunk * mchunkptr</div><div class="ttdef"><b>Definition</b> _heap.cpp:2278</div></div>
+<div class="ttc" id="a__heap_8cpp_html_aab2c188a259d6c4bd443ed712a92714c"><div class="ttname"><a href="__heap_8cpp.html#aab2c188a259d6c4bd443ed712a92714c">mchunkptr</a></div><div class="ttdeci">struct malloc_chunk * mchunkptr</div><div class="ttdef"><b>Definition</b> _heap.cpp:2298</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -4176,7 +4237,7 @@ Functions</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line"> ((M)-&gt;mflags = (L)?\</div>
 <div class="line">  ((M)-&gt;mflags | <a class="code hl_define" href="__heap_8cpp.html#a02a456408564b69d6f3de5f8fede4931">USE_LOCK_BIT</a>) :\</div>
 <div class="line">  ((M)-&gt;mflags &amp; ~<a class="code hl_define" href="__heap_8cpp.html#a02a456408564b69d6f3de5f8fede4931">USE_LOCK_BIT</a>))</div>
-<div class="ttc" id="a__heap_8cpp_html_a02a456408564b69d6f3de5f8fede4931"><div class="ttname"><a href="__heap_8cpp.html#a02a456408564b69d6f3de5f8fede4931">USE_LOCK_BIT</a></div><div class="ttdeci">#define USE_LOCK_BIT</div><div class="ttdef"><b>Definition</b> _heap.cpp:1891</div></div>
+<div class="ttc" id="a__heap_8cpp_html_a02a456408564b69d6f3de5f8fede4931"><div class="ttname"><a href="__heap_8cpp.html#a02a456408564b69d6f3de5f8fede4931">USE_LOCK_BIT</a></div><div class="ttdeci">#define USE_LOCK_BIT</div><div class="ttdef"><b>Definition</b> _heap.cpp:2141</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -4600,6 +4661,24 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="acd06deafe6b85d36624dbf40e68206e0" name="acd06deafe6b85d36624dbf40e68206e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd06deafe6b85d36624dbf40e68206e0">&#9670;&#160;</a></span>TRY_LOCK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TRY_LOCK</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">lock</td><td>)</td>
+          <td>&#160;&#160;&#160;(!__atomic_exchange_n((lock), 1, __ATOMIC_ACQUIRE))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aea099b8fb6bf6975c70b2945de5064d1" name="aea099b8fb6bf6975c70b2945de5064d1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aea099b8fb6bf6975c70b2945de5064d1">&#9670;&#160;</a></span>TWO_SIZE_T_SIZES</h2>
 
@@ -4647,8 +4726,8 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">if</span> (<a class="code hl_define" href="__heap_8cpp.html#aadc2cdd1444477c387fc30e64f061432">is_small</a>(S)) <a class="code hl_define" href="__heap_8cpp.html#a6681f6fb034ce0fcee30f1df143fcefc">unlink_small_chunk</a>(M, P, S)\</div>
 <div class="line">  <span class="keywordflow">else</span> { <a class="code hl_struct" href="structmalloc__tree__chunk.html">tchunkptr</a> TP = (<a class="code hl_typedef" href="__heap_8cpp.html#addd456ccc8fb838310e92a3f394fc1b1">tchunkptr</a>)(P); <a class="code hl_define" href="__heap_8cpp.html#a2af36a6897c8bac0fd68a329cf3b43c9">unlink_large_chunk</a>(M, TP); }</div>
-<div class="ttc" id="a__heap_8cpp_html_a2af36a6897c8bac0fd68a329cf3b43c9"><div class="ttname"><a href="__heap_8cpp.html#a2af36a6897c8bac0fd68a329cf3b43c9">unlink_large_chunk</a></div><div class="ttdeci">#define unlink_large_chunk(M, X)</div><div class="ttdef"><b>Definition</b> _heap.cpp:3799</div></div>
-<div class="ttc" id="a__heap_8cpp_html_a6681f6fb034ce0fcee30f1df143fcefc"><div class="ttname"><a href="__heap_8cpp.html#a6681f6fb034ce0fcee30f1df143fcefc">unlink_small_chunk</a></div><div class="ttdeci">#define unlink_small_chunk(M, P, S)</div><div class="ttdef"><b>Definition</b> _heap.cpp:3672</div></div>
+<div class="ttc" id="a__heap_8cpp_html_a2af36a6897c8bac0fd68a329cf3b43c9"><div class="ttname"><a href="__heap_8cpp.html#a2af36a6897c8bac0fd68a329cf3b43c9">unlink_large_chunk</a></div><div class="ttdeci">#define unlink_large_chunk(M, X)</div><div class="ttdef"><b>Definition</b> _heap.cpp:3819</div></div>
+<div class="ttc" id="a__heap_8cpp_html_a6681f6fb034ce0fcee30f1df143fcefc"><div class="ttname"><a href="__heap_8cpp.html#a6681f6fb034ce0fcee30f1df143fcefc">unlink_small_chunk</a></div><div class="ttdeci">#define unlink_small_chunk(M, P, S)</div><div class="ttdef"><b>Definition</b> _heap.cpp:3692</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -4705,8 +4784,8 @@ Functions</h2></td></tr>
 <div class="line">    CORRUPTION_ERROR_ACTION(M);\</div>
 <div class="line">  }\</div>
 <div class="line">}</div>
-<div class="ttc" id="a__heap_8cpp_html_a0bd05b2720a9f79a0c066086c4f7e2fa"><div class="ttname"><a href="__heap_8cpp.html#a0bd05b2720a9f79a0c066086c4f7e2fa">chunksize</a></div><div class="ttdeci">#define chunksize(p)</div><div class="ttdef"><b>Definition</b> _heap.cpp:2348</div></div>
-<div class="ttc" id="a__heap_8cpp_html_a377939ca061c1b170053c2927af26cdc"><div class="ttname"><a href="__heap_8cpp.html#a377939ca061c1b170053c2927af26cdc">small_index2size</a></div><div class="ttdeci">#define small_index2size(i)</div><div class="ttdef"><b>Definition</b> _heap.cpp:2912</div></div>
+<div class="ttc" id="a__heap_8cpp_html_a0bd05b2720a9f79a0c066086c4f7e2fa"><div class="ttname"><a href="__heap_8cpp.html#a0bd05b2720a9f79a0c066086c4f7e2fa">chunksize</a></div><div class="ttdeci">#define chunksize(p)</div><div class="ttdef"><b>Definition</b> _heap.cpp:2368</div></div>
+<div class="ttc" id="a__heap_8cpp_html_a377939ca061c1b170053c2927af26cdc"><div class="ttname"><a href="__heap_8cpp.html#a377939ca061c1b170053c2927af26cdc">small_index2size</a></div><div class="ttdeci">#define small_index2size(i)</div><div class="ttdef"><b>Definition</b> _heap.cpp:2932</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -4891,7 +4970,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define USE_LOCK_BIT&#160;&#160;&#160;(0U)</td>
+          <td class="memname">#define USE_LOCK_BIT&#160;&#160;&#160;(2U)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -4905,7 +4984,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define USE_LOCKS&#160;&#160;&#160;0</td>
+          <td class="memname">#define USE_LOCKS&#160;&#160;&#160;2</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -4971,20 +5050,6 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define USE_NONCONTIGUOUS_BIT&#160;&#160;&#160;(4U)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a2272cf5f1db0ea5dd0e89d1a3c5028f0" name="a2272cf5f1db0ea5dd0e89d1a3c5028f0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2272cf5f1db0ea5dd0e89d1a3c5028f0">&#9670;&#160;</a></span>USE_SPIN_LOCKS</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define USE_SPIN_LOCKS&#160;&#160;&#160;0</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -5098,6 +5163,20 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">typedef struct <a class="el" href="structmalloc__chunk.html">malloc_chunk</a>* <a class="el" href="dlmalloc_8c.html#aab2c188a259d6c4bd443ed712a92714c">mchunkptr</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a94e0f030dcb39a8d7d7c238299999c49" name="a94e0f030dcb39a8d7d7c238299999c49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94e0f030dcb39a8d7d7c238299999c49">&#9670;&#160;</a></span>MLOCK_T</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef int <a class="el" href="__heap_8cpp.html#a94e0f030dcb39a8d7d7c238299999c49">MLOCK_T</a></td>
         </tr>
       </table>
 </div><div class="memdoc">

@@ -125,7 +125,7 @@ var searchData=
   ['descriptor_5ftype_5finterface_122',['DESCRIPTOR_TYPE_INTERFACE',['../usb__desc_8h.html#a427b229a1546e0ed033c1c0efc7c625e',1,'usb_desc.h']]],
   ['design_5fid_123',['DESIGN_ID',['../imx8mp__hdmi__tx__c_8h.html#a2149272abde2d8ded1fca20dc358c3aa',1,'imx8mp_hdmi_tx_c.h']]],
   ['deskblue_124',['DESKBLUE',['../color_8h.html#a5bed30f80b7cb1578bb275d6ce2ce726',1,'color.h']]],
-  ['destroy_5flock_125',['destroy_lock',['../__heap_8cpp.html#acf7ea24a3875d0b5dbcba8a863a5e2d0',1,'DESTROY_LOCK:&#160;_heap.cpp'],['../dlmalloc_8c.html#acf7ea24a3875d0b5dbcba8a863a5e2d0',1,'DESTROY_LOCK:&#160;dlmalloc.c']]],
+  ['destroy_5flock_125',['destroy_lock',['../__heap_8cpp.html#ac41d18dbddf54fe8d6a921dec4523b46',1,'DESTROY_LOCK:&#160;_heap.cpp'],['../dlmalloc_8c.html#acf7ea24a3875d0b5dbcba8a863a5e2d0',1,'DESTROY_LOCK:&#160;dlmalloc.c']]],
   ['destroy_5fworkqueue_126',['destroy_workqueue',['../workqueue_8h.html#a3e5f60e60d01e4c8b779af889b3b86b7',1,'workqueue.h']]],
   ['device_5fclass_5fethernet_127',['DEVICE_CLASS_ETHERNET',['../audrv_8h.html#ab5aa7c7c0959240325b49e5a701e7f92',1,'audrv.h']]],
   ['device_5fclass_5fhd_5faudio_128',['DEVICE_CLASS_HD_AUDIO',['../audrv_8h.html#ad4aec26bd43b2377ecb0619313e32b26',1,'audrv.h']]],

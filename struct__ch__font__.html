@@ -82,13 +82,15 @@ Collaboration diagram for _ch_font_:</div>
 <div class="dyncontent">
 <div class="center"><img src="struct__ch__font____coll__graph.png" border="0" usemap="#a__ch__font___coll__map" alt="Collaboration graph"/></div>
 <map name="a__ch__font___coll__map" id="a__ch__font___coll__map">
-<area shape="rect" title=" " alt="" coords="100,269,184,295"/>
+<area shape="rect" title=" " alt="" coords="181,269,265,295"/>
 <area shape="rect" href="structstbtt__fontinfo.html" title=" " alt="" coords="5,174,116,199"/>
-<area shape="poly" title=" " alt="" coords="82,208,134,267,130,271,78,212"/>
+<area shape="poly" title=" " alt="" coords="94,204,205,267,202,272,91,208"/>
 <area shape="rect" href="structstbtt____buf.html" title=" " alt="" coords="17,5,104,31"/>
 <area shape="poly" title=" " alt="" coords="63,44,63,174,58,174,58,44"/>
 <area shape="rect" href="struct__ch__font__glyph__cache__entry__.html" title=" " alt="" coords="141,167,306,207"/>
-<area shape="poly" title=" " alt="" coords="200,219,154,271,150,267,196,215"/>
+<area shape="poly" title=" " alt="" coords="226,221,226,269,221,269,221,221"/>
+<area shape="rect" href="structstbtt__bakedchar.html" title=" " alt="" coords="331,174,457,199"/>
+<area shape="poly" title=" " alt="" coords="370,210,311,248,257,272,255,267,309,243,367,205"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -120,8 +122,88 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a3b21dcf66540c466a45c3e282c35187a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1bd99ff707091d603f9e683109fc5248" id="r_a1bd99ff707091d603f9e683109fc5248"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Libs_2Chitralekha_2font_8h.html#a966edec72ebe0f8c00f50d113ee3f48b">ChFontGlyphCacheEntry</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__ch__font__.html#a1bd99ff707091d603f9e683109fc5248">glyphCache</a> [<a class="el" href="Libs_2Chitralekha_2font_8h.html#a6ad16921f7981297460aacd72b66dcb2">CH_FONT_GLYPH_CACHE_SIZE</a>]</td></tr>
 <tr class="separator:a1bd99ff707091d603f9e683109fc5248"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a970563b0a217209541c3fb8d4fa5ab87" id="r_a970563b0a217209541c3fb8d4fa5ab87"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__ch__font__.html#a970563b0a217209541c3fb8d4fa5ab87">atlasPixels</a></td></tr>
+<tr class="separator:a970563b0a217209541c3fb8d4fa5ab87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91526cc96d2c4a36d8c88fe4f13bc6cb" id="r_a91526cc96d2c4a36d8c88fe4f13bc6cb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__ch__font__.html#a91526cc96d2c4a36d8c88fe4f13bc6cb">atlasW</a></td></tr>
+<tr class="separator:a91526cc96d2c4a36d8c88fe4f13bc6cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80a49af3d7ad3f290eba3c2369839300" id="r_a80a49af3d7ad3f290eba3c2369839300"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__ch__font__.html#a80a49af3d7ad3f290eba3c2369839300">atlasH</a></td></tr>
+<tr class="separator:a80a49af3d7ad3f290eba3c2369839300"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a7c279728720d73c29b5098058ca609" id="r_a4a7c279728720d73c29b5098058ca609"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__ch__font__.html#a4a7c279728720d73c29b5098058ca609">atlasReady</a></td></tr>
+<tr class="separator:a4a7c279728720d73c29b5098058ca609"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1eab334a3d3df7368e70f75ea80400c" id="r_af1eab334a3d3df7368e70f75ea80400c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structstbtt__bakedchar.html">stbtt_bakedchar</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__ch__font__.html#af1eab334a3d3df7368e70f75ea80400c">atlasChars</a> [<a class="el" href="Libs_2Chitralekha_2font_8h.html#af724adeb28c11a54241936b35bc50eae">CH_FONT_ATLAS_COUNT</a>]</td></tr>
+<tr class="separator:af1eab334a3d3df7368e70f75ea80400c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="af1eab334a3d3df7368e70f75ea80400c" name="af1eab334a3d3df7368e70f75ea80400c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1eab334a3d3df7368e70f75ea80400c">&#9670;&#160;</a></span>atlasChars</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structstbtt__bakedchar.html">stbtt_bakedchar</a> _ch_font_::atlasChars[<a class="el" href="Libs_2Chitralekha_2font_8h.html#af724adeb28c11a54241936b35bc50eae">CH_FONT_ATLAS_COUNT</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a80a49af3d7ad3f290eba3c2369839300" name="a80a49af3d7ad3f290eba3c2369839300"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80a49af3d7ad3f290eba3c2369839300">&#9670;&#160;</a></span>atlasH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int _ch_font_::atlasH</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a970563b0a217209541c3fb8d4fa5ab87" name="a970563b0a217209541c3fb8d4fa5ab87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a970563b0a217209541c3fb8d4fa5ab87">&#9670;&#160;</a></span>atlasPixels</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>* _ch_font_::atlasPixels</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4a7c279728720d73c29b5098058ca609" name="a4a7c279728720d73c29b5098058ca609"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a7c279728720d73c29b5098058ca609">&#9670;&#160;</a></span>atlasReady</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int _ch_font_::atlasReady</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a91526cc96d2c4a36d8c88fe4f13bc6cb" name="a91526cc96d2c4a36d8c88fe4f13bc6cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91526cc96d2c4a36d8c88fe4f13bc6cb">&#9670;&#160;</a></span>atlasW</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int _ch_font_::atlasW</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a2d757a9528fa0f438d5c216fd43c329c" name="a2d757a9528fa0f438d5c216fd43c329c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2d757a9528fa0f438d5c216fd43c329c">&#9670;&#160;</a></span>buffer</h2>
 

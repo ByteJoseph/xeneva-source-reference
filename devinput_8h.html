@@ -140,6 +140,10 @@ This graph shows which files directly or indirectly include this file:</div>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__au__input__msg__.html">_au_input_msg_</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__au__input__ring__.html">_au_input_ring_</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__au__input__ring__stats__.html">_au_input_ring_stats_</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
@@ -161,15 +165,25 @@ Macros</h2></td></tr>
 <tr class="separator:a9d20b8f33cd44911042231190233cf0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc1ee7f1a557e910716f282dda7c3eab" id="r_acc1ee7f1a557e910716f282dda7c3eab"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="devinput_8h.html#acc1ee7f1a557e910716f282dda7c3eab">MOUSE_IOCODE_SETPOS</a>&#160;&#160;&#160;10</td></tr>
 <tr class="separator:acc1ee7f1a557e910716f282dda7c3eab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa292dcf44446c3b9463875c0d5cd878f" id="r_aa292dcf44446c3b9463875c0d5cd878f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="devinput_8h.html#aa292dcf44446c3b9463875c0d5cd878f">INPUT_RING_IOCODE_GET_STATS</a>&#160;&#160;&#160;11</td></tr>
+<tr class="separator:aa292dcf44446c3b9463875c0d5cd878f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41aa16e61e8f87120d198b90558afdbc" id="r_a41aa16e61e8f87120d198b90558afdbc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="devinput_8h.html#a41aa16e61e8f87120d198b90558afdbc">NUM_MOUSE_PACKETS</a>&#160;&#160;&#160;20</td></tr>
 <tr class="separator:a41aa16e61e8f87120d198b90558afdbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16b879657f7f4683ef581668cba5c579" id="r_a16b879657f7f4683ef581668cba5c579"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="devinput_8h.html#a16b879657f7f4683ef581668cba5c579">NUM_KEYBOARD_PACKETS</a>&#160;&#160;&#160;512</td></tr>
 <tr class="separator:a16b879657f7f4683ef581668cba5c579"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa49fdaef02e070b45431ef64ca793721" id="r_aa49fdaef02e070b45431ef64ca793721"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="devinput_8h.html#aa49fdaef02e070b45431ef64ca793721">NUM_INPUT_RING_PACKETS</a>&#160;&#160;&#160;256</td></tr>
+<tr class="separator:aa49fdaef02e070b45431ef64ca793721"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
+<tr class="memitem:a5e5aff63d019f11b9e810ff9f2165b57" id="r_a5e5aff63d019f11b9e810ff9f2165b57"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="devinput_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a></td></tr>
+<tr class="separator:a5e5aff63d019f11b9e810ff9f2165b57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae37a741093881f1676fd9a2a87f2fd4e" id="r_ae37a741093881f1676fd9a2a87f2fd4e"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct__au__input__msg__.html">_au_input_msg_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="devinput_8h.html#ae37a741093881f1676fd9a2a87f2fd4e">AuInputMessage</a></td></tr>
 <tr class="separator:ae37a741093881f1676fd9a2a87f2fd4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9813bd43b40dafc718d17710ac8ad63a" id="r_a9813bd43b40dafc718d17710ac8ad63a"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct__au__input__ring__.html">_au_input_ring_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="devinput_8h.html#a9813bd43b40dafc718d17710ac8ad63a">AuInputRing</a></td></tr>
+<tr class="separator:a9813bd43b40dafc718d17710ac8ad63a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f02e43340a63daecc475e12f7c2884c" id="r_a9f02e43340a63daecc475e12f7c2884c"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct__au__input__ring__stats__.html">_au_input_ring_stats_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="devinput_8h.html#a9f02e43340a63daecc475e12f7c2884c">AuInputRingStats</a></td></tr>
+<tr class="separator:a9f02e43340a63daecc475e12f7c2884c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -185,6 +199,8 @@ Functions</h2></td></tr>
 <tr class="separator:a7eb39d2304065ce56a4ad763a397f085"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a712ee2002115eab70fab5e9d18663b14" id="r_a712ee2002115eab70fab5e9d18663b14"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="devinput_8h.html#a712ee2002115eab70fab5e9d18663b14">AuDevWriteKybrd</a> (<a class="el" href="devinput_8h.html#ae37a741093881f1676fd9a2a87f2fd4e">AuInputMessage</a> *outmsg)</td></tr>
 <tr class="separator:a712ee2002115eab70fab5e9d18663b14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99ff5d4a42d5667ed96ea61a181679dd" id="r_a99ff5d4a42d5667ed96ea61a181679dd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="devinput_8h.html#a99ff5d4a42d5667ed96ea61a181679dd">AuDevInputRingRead</a> (<a class="el" href="devinput_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *fs, <a class="el" href="devinput_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *file, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> *buffer, <a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> length)</td></tr>
+<tr class="separator:a99ff5d4a42d5667ed96ea61a181679dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a67e9689dd1f2ef936f4c577919840053" name="a67e9689dd1f2ef936f4c577919840053"></a>
@@ -229,6 +245,20 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="aa292dcf44446c3b9463875c0d5cd878f" name="aa292dcf44446c3b9463875c0d5cd878f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa292dcf44446c3b9463875c0d5cd878f">&#9670;&#160;</a></span>INPUT_RING_IOCODE_GET_STATS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define INPUT_RING_IOCODE_GET_STATS&#160;&#160;&#160;11</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ae131505929d266ec4603f41551684452" name="ae131505929d266ec4603f41551684452"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae131505929d266ec4603f41551684452">&#9670;&#160;</a></span>LEFT_CLICK</h2>
 
@@ -240,14 +270,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>BSD 2-Clause License</p>
-<p>Copyright (c) 2022-2023, Manas Kamal Choudhury All rights reserved.</p>
-<p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
-<ol type="1">
-<li>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</li>
-<li>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</li>
-</ol>
-<p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. </p>
 
 </div>
 </div>
@@ -301,6 +323,20 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define MOUSE_SCROLL_UP&#160;&#160;&#160;0x05</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa49fdaef02e070b45431ef64ca793721" name="aa49fdaef02e070b45431ef64ca793721"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa49fdaef02e070b45431ef64ca793721">&#9670;&#160;</a></span>NUM_INPUT_RING_PACKETS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NUM_INPUT_RING_PACKETS&#160;&#160;&#160;256</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -364,6 +400,48 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a9813bd43b40dafc718d17710ac8ad63a" name="a9813bd43b40dafc718d17710ac8ad63a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9813bd43b40dafc718d17710ac8ad63a">&#9670;&#160;</a></span>AuInputRing</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct__au__input__ring__.html">_au_input_ring_</a> <a class="el" href="devinput_8h.html#a9813bd43b40dafc718d17710ac8ad63a">AuInputRing</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9f02e43340a63daecc475e12f7c2884c" name="a9f02e43340a63daecc475e12f7c2884c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f02e43340a63daecc475e12f7c2884c">&#9670;&#160;</a></span>AuInputRingStats</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct__au__input__ring__stats__.html">_au_input_ring_stats_</a> <a class="el" href="devinput_8h.html#a9f02e43340a63daecc475e12f7c2884c">AuInputRingStats</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5e5aff63d019f11b9e810ff9f2165b57" name="a5e5aff63d019f11b9e810ff9f2165b57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e5aff63d019f11b9e810ff9f2165b57">&#9670;&#160;</a></span>AuVFSNode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> <a class="el" href="devinput_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a835aae5330fed8a70f8631e4b0f5c776" name="a835aae5330fed8a70f8631e4b0f5c776"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a835aae5330fed8a70f8631e4b0f5c776">&#9670;&#160;</a></span>AuDevInputInitialise()</h2>
@@ -386,6 +464,46 @@ Functions</h2></td></tr>
 <span class="mlabels"><span class="mlabel">extern</span></span>  </td>
   </tr>
 </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a99ff5d4a42d5667ed96ea61a181679dd" name="a99ff5d4a42d5667ed96ea61a181679dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99ff5d4a42d5667ed96ea61a181679dd">&#9670;&#160;</a></span>AuDevInputRingRead()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> AuDevInputRingRead </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="devinput_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *&#160;</td>
+          <td class="paramname"><em>fs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="devinput_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td>
+          <td class="paramname"><em>length</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
 </div><div class="memdoc">
 
 </div>

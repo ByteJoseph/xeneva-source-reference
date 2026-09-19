@@ -82,6 +82,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
+<code>#include &lt;aurora.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="virtio_8h_source.html">Drivers/virtio.h</a>&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for virtiogpu.h:</div>
@@ -89,13 +90,15 @@ Include dependency graph for virtiogpu.h:</div>
 <div class="center"><img src="virtiogpu_8h__incl.png" border="0" usemap="#aXenevaOS_2Drivers_2GPU_2virtiogpu_2virtiogpu_8h" alt=""/></div>
 <map name="aXenevaOS_2Drivers_2GPU_2virtiogpu_2virtiogpu_8h" id="aXenevaOS_2Drivers_2GPU_2virtiogpu_2virtiogpu_8h">
 <area shape="rect" title=" " alt="" coords="5,5,177,45"/>
-<area shape="rect" title=" " alt="" coords="8,167,79,192"/>
-<area shape="poly" title=" " alt="" coords="88,46,73,94,54,154,49,153,67,93,83,45"/>
-<area shape="rect" href="virtio_8h.html" title=" " alt="" coords="81,93,200,119"/>
-<area shape="poly" title=" " alt="" coords="106,44,128,80,124,83,101,47"/>
-<area shape="poly" title=" " alt="" coords="127,121,72,160,69,156,123,117"/>
-<area shape="rect" title=" " alt="" coords="103,167,178,192"/>
-<area shape="poly" title=" " alt="" coords="143,119,143,153,138,153,138,119"/>
+<area shape="rect" title=" " alt="" coords="31,167,101,192"/>
+<area shape="poly" title=" " alt="" coords="74,47,56,69,43,94,41,109,43,125,54,154,49,156,37,126,35,109,38,93,52,66,69,44"/>
+<area shape="rect" title=" " alt="" coords="53,93,129,119"/>
+<area shape="poly" title=" " alt="" coords="94,46,94,79,89,79,89,46"/>
+<area shape="rect" href="virtio_8h.html" title=" " alt="" coords="153,93,272,119"/>
+<area shape="poly" title=" " alt="" coords="122,43,185,84,182,88,119,48"/>
+<area shape="poly" title=" " alt="" coords="190,121,103,163,101,158,188,116"/>
+<area shape="rect" title=" " alt="" coords="175,167,250,192"/>
+<area shape="poly" title=" " alt="" coords="215,119,215,153,210,153,210,119"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -244,6 +247,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ac98e46097ada599e8d49b07e3b3c9284" id="r_ac98e46097ada599e8d49b07e3b3c9284"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structVirtioCommonCfg.html">VirtioCommonCfg</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="virtiogpu_8h.html#ac98e46097ada599e8d49b07e3b3c9284">gpu_get_config_pointer</a> ()</td></tr>
 <tr class="memdesc:ac98e46097ada599e8d49b07e3b3c9284"><td class="mdescLeft">&#160;</td><td class="mdescRight">gpu_get_config_pointer &ndash; return the pointer virtio common config descriptor from pcie  <br /></td></tr>
 <tr class="separator:ac98e46097ada599e8d49b07e3b3c9284"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52fc7876abba67feb806e390f52c1303" id="r_a52fc7876abba67feb806e390f52c1303"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="virtiogpu_8h.html#a52fc7876abba67feb806e390f52c1303">virt_gpu_default_resource_id</a> ()</td></tr>
+<tr class="memdesc:a52fc7876abba67feb806e390f52c1303"><td class="mdescLeft">&#160;</td><td class="mdescRight">virt_gpu_default_resource_id &ndash; resource id of the scanout created at driver init (the one the console mirror presents to)  <br /></td></tr>
+<tr class="separator:a52fc7876abba67feb806e390f52c1303"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a43b96278032b26a8f68c58df7188c6" id="r_a3a43b96278032b26a8f68c58df7188c6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="virtiogpu_8h.html#a3a43b96278032b26a8f68c58df7188c6">VirtGpuConsolePresent</a> (<a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> *src, <a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> src_pitch, int x, int y, int w, int h)</td></tr>
+<tr class="memdesc:a3a43b96278032b26a8f68c58df7188c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">VirtGpuConsolePresent &ndash; copy a console damage rect into the scanout backing and transfer+flush exactly that rect. Installed as the kernel console present hook; aucon only calls it while no compositor owns the display. Exported: under this toolchain AU_EXPORT is the only thing lld honors for COFF exports, and the kernel resolves the hook by plain name from our export table &ndash; an unexported symbol silently never matches (C linkage alone is not enough). &ndash;axiss.  <br /></td></tr>
+<tr class="separator:a3a43b96278032b26a8f68c58df7188c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a8ac569ea4b4cce5ad25aacee46042f00" name="a8ac569ea4b4cce5ad25aacee46042f00"></a>
@@ -652,6 +661,88 @@ Functions</h2></td></tr>
 
 <p>gpu_is_virgl_supported &ndash; returns if virgl is supported by host </p>
 <dl class="section return"><dt>Returns</dt><dd>true if supported, false if not supported </dd></dl>
+
+</div>
+</div>
+<a id="a52fc7876abba67feb806e390f52c1303" name="a52fc7876abba67feb806e390f52c1303"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52fc7876abba67feb806e390f52c1303">&#9670;&#160;</a></span>virt_gpu_default_resource_id()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int virt_gpu_default_resource_id </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>virt_gpu_default_resource_id &ndash; resource id of the scanout created at driver init (the one the console mirror presents to) </p>
+
+</div>
+</div>
+<a id="a3a43b96278032b26a8f68c58df7188c6" name="a3a43b96278032b26a8f68c58df7188c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a43b96278032b26a8f68c58df7188c6">&#9670;&#160;</a></span>VirtGpuConsolePresent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> void VirtGpuConsolePresent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> *&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td>
+          <td class="paramname"><em>src_pitch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>h</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>VirtGpuConsolePresent &ndash; copy a console damage rect into the scanout backing and transfer+flush exactly that rect. Installed as the kernel console present hook; aucon only calls it while no compositor owns the display. Exported: under this toolchain AU_EXPORT is the only thing lld honors for COFF exports, and the kernel resolves the hook by plain name from our export table &ndash; an unexported symbol silently never matches (C linkage alone is not enough). &ndash;axiss. </p>
+<p>VirtGpuConsolePresent &ndash; copy a console damage rect into the scanout backing and transfer+flush exactly that rect. Installed as the kernel console present hook; aucon only calls it while no compositor owns the display. Exported: under this toolchain AU_EXPORT is the only thing lld honors for COFF exports, and the kernel resolves the hook by plain name from our export table &ndash; an unexported symbol silently never matches (C linkage alone is not enough). &ndash;axiss. </p>
 
 </div>
 </div>

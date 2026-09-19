@@ -110,10 +110,22 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="keyword">extern</span> <a class="code hl_define" href="acefi_8h.html#a7f319bfc2492a2136964194204e7a8cf">VOID</a> <a class="code hl_function" href="Boot_2file_8h.html#aa2eee8ebfac754020bca0ba4838f297e">XECloseFile</a>(<a class="code hl_struct" href="struct__XEFILE__.html">XEFile</a>* file);</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment"> * XEFileExists -- probe for a file without reading it</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="comment"> * @param ImageHandle -- Image handle passed by EFI firmware</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment"> * @param Filename -- name and path of the file</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment"> * @return true when the file can be opened for reading</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment"> * Silent on miss: absence is the normal case (used for the NOMENU</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment"> * boot-menu skip marker). Prints only when the ESP itself is broken.</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="keyword">extern</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="BootAA64_2file_8h.html#a50b23aefb4f7c0620940a4b2e909a579">XEFileExists</a>(<a class="code hl_typedef" href="UefiBaseType_8h.html#af943d518ce8a229e7e51ce3fed0e3122">EFI_HANDLE</a> ImageHandle, <a class="code hl_typedef" href="AArch64_2ProcessorBind_8h.html#a7ae886893bd2a2ae253eb2b021a48724">CHAR16</a>* Filename);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aAArch64_2ProcessorBind_8h_html_a4a2fc3b6f740e9cca9f895579c167560"><div class="ttname"><a href="AArch64_2ProcessorBind_8h.html#a4a2fc3b6f740e9cca9f895579c167560">UINTN</a></div><div class="ttdeci">UINT64 UINTN</div><div class="ttdef"><b>Definition</b> ProcessorBind.h:118</div></div>
 <div class="ttc" id="aAArch64_2ProcessorBind_8h_html_a7ae886893bd2a2ae253eb2b021a48724"><div class="ttname"><a href="AArch64_2ProcessorBind_8h.html#a7ae886893bd2a2ae253eb2b021a48724">CHAR16</a></div><div class="ttdeci">unsigned short CHAR16</div><div class="ttdef"><b>Definition</b> ProcessorBind.h:105</div></div>
 <div class="ttc" id="aBootAA64_2clib_8h_html"><div class="ttname"><a href="BootAA64_2clib_8h.html">clib.h</a></div></div>
+<div class="ttc" id="aBootAA64_2file_8h_html_a50b23aefb4f7c0620940a4b2e909a579"><div class="ttname"><a href="BootAA64_2file_8h.html#a50b23aefb4f7c0620940a4b2e909a579">XEFileExists</a></div><div class="ttdeci">bool XEFileExists(EFI_HANDLE ImageHandle, CHAR16 *Filename)</div><div class="ttdef"><b>Definition</b> file.cpp:171</div></div>
 <div class="ttc" id="aBootAA64_2xnldr_8h_html"><div class="ttname"><a href="BootAA64_2xnldr_8h.html">xnldr.h</a></div></div>
 <div class="ttc" id="aBootAA64_2xnout_8h_html"><div class="ttname"><a href="BootAA64_2xnout_8h.html">xnout.h</a></div></div>
 <div class="ttc" id="aBoot_2file_8h_html_a5a2318fbe7916980221130264b2db16a"><div class="ttname"><a href="Boot_2file_8h.html#a5a2318fbe7916980221130264b2db16a">XEFile</a></div><div class="ttdeci">struct _XEFILE_ XEFile</div></div>
