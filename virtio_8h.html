@@ -76,23 +76,26 @@ $(function() {
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#define-members">Macros</a> &#124;
-<a href="#typedef-members">Typedefs</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">virtio.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
 <code>#include &lt;stddef.h&gt;</code><br />
+<code>#include &lt;aurora.h&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for virtio.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="virtio_8h__incl.png" border="0" usemap="#aXenevaOS_2BaseHdr_2Drivers_2virtio_8h" alt=""/></div>
 <map name="aXenevaOS_2BaseHdr_2Drivers_2virtio_8h" id="aXenevaOS_2BaseHdr_2Drivers_2virtio_8h">
-<area shape="rect" title=" " alt="" coords="5,5,204,45"/>
-<area shape="rect" title=" " alt="" coords="21,93,92,119"/>
-<area shape="poly" title=" " alt="" coords="95,47,73,83,69,80,91,44"/>
-<area shape="rect" title=" " alt="" coords="117,93,191,119"/>
-<area shape="poly" title=" " alt="" coords="119,44,142,80,137,83,114,47"/>
+<area shape="rect" title=" " alt="" coords="39,5,237,45"/>
+<area shape="rect" title=" " alt="" coords="5,93,76,119"/>
+<area shape="poly" title=" " alt="" coords="116,48,67,87,64,82,113,43"/>
+<area shape="rect" title=" " alt="" coords="101,93,175,119"/>
+<area shape="poly" title=" " alt="" coords="141,46,141,79,135,79,135,46"/>
+<area shape="rect" title=" " alt="" coords="200,93,276,119"/>
+<area shape="poly" title=" " alt="" coords="164,43,214,82,211,87,161,48"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -232,22 +235,21 @@ Macros</h2></td></tr>
 <tr class="memitem:a3fd15a0745ac8b7c405515c489273ace" id="r_a3fd15a0745ac8b7c405515c489273ace"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="virtio_8h.html#a3fd15a0745ac8b7c405515c489273ace">VIRTIO_MSI_NO_VECTOR</a>&#160;&#160;&#160;0xFFFF</td></tr>
 <tr class="separator:a3fd15a0745ac8b7c405515c489273ace"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:a634fc3946f674214e4bcdd8b70bf5a7f" id="r_a634fc3946f674214e4bcdd8b70bf5a7f"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct__virtio__net__hdr__.html">_virtio_net_hdr_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="virtio_8h.html#a634fc3946f674214e4bcdd8b70bf5a7f">virtio_net_hdr_t</a></td></tr>
-<tr class="separator:a634fc3946f674214e4bcdd8b70bf5a7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a5f325bac0ac82ed81498f28e3d7bde0f" id="r_a5f325bac0ac82ed81498f28e3d7bde0f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="virtio_8h.html#a5f325bac0ac82ed81498f28e3d7bde0f">AuVirtioPCIInit</a> (<a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> address, int bus, int dev, int func, <a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> wantedFeaturesLow, struct <a class="el" href="structVirtioPCIDevice.html">VirtioPCIDevice</a> *out)</td></tr>
-<tr class="memdesc:a5f325bac0ac82ed81498f28e3d7bde0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuVirtioPCIInit &ndash; walks the PCI capability list of a modern virtio-pci device, maps its common/notify/isr/device config BARs, resets it and negotiates VIRTIO_F_VERSION_1 plus wantedFeaturesLow (bits 0-31).  <br /></td></tr>
-<tr class="separator:a5f325bac0ac82ed81498f28e3d7bde0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73ed9bcb02108e5a88b8f540d5a3807d" id="r_a73ed9bcb02108e5a88b8f540d5a3807d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="virtio_8h.html#a73ed9bcb02108e5a88b8f540d5a3807d">AuVirtioPCISetupQueue</a> (struct <a class="el" href="structVirtioPCIDevice.html">VirtioPCIDevice</a> *dev, <a class="el" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> qidx, struct <a class="el" href="structVirtqDesc.html">VirtqDesc</a> **outDesc, struct <a class="el" href="structVirtqAvailHdr.html">VirtqAvailHdr</a> **outAvail, struct <a class="el" href="structVirtqUsedHdr.html">VirtqUsedHdr</a> **outUsed, <a class="el" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> msixVector)</td></tr>
-<tr class="memdesc:a73ed9bcb02108e5a88b8f540d5a3807d"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuVirtioPCISetupQueue &ndash; selects queue qidx, allocates desc/avail/used rings sized to the device-reported queue size and enables the queue.  <br /></td></tr>
-<tr class="separator:a73ed9bcb02108e5a88b8f540d5a3807d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1766f2d5309f007fe4cff80591d1bd26" id="r_a1766f2d5309f007fe4cff80591d1bd26"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="virtio_8h.html#a1766f2d5309f007fe4cff80591d1bd26">AuVirtioPCINotifyQueue</a> (struct <a class="el" href="structVirtioPCIDevice.html">VirtioPCIDevice</a> *dev, <a class="el" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> qidx)</td></tr>
-<tr class="memdesc:a1766f2d5309f007fe4cff80591d1bd26"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuVirtioPCINotifyQueue &ndash; kicks the device for queue qidx.  <br /></td></tr>
-<tr class="separator:a1766f2d5309f007fe4cff80591d1bd26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a792ea2487c8eefa3dbaeb234600eafde" id="r_a792ea2487c8eefa3dbaeb234600eafde"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="struct__virtio__net__hdr__.html">_virtio_net_hdr_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="virtio_8h.html#a792ea2487c8eefa3dbaeb234600eafde">__attribute__</a> ((packed)) virtio_net_hdr_t</td></tr>
+<tr class="separator:a792ea2487c8eefa3dbaeb234600eafde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1ec03753337e2b1931d531b71426c91" id="r_ad1ec03753337e2b1931d531b71426c91"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> <a class="el" href="BaseHdr_2stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="virtio_8h.html#ad1ec03753337e2b1931d531b71426c91">AuVirtioPCIInit</a> (<a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> address, int bus, int dev, int func, <a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> wantedFeaturesLow, struct <a class="el" href="structVirtioPCIDevice.html">VirtioPCIDevice</a> *out)</td></tr>
+<tr class="memdesc:ad1ec03753337e2b1931d531b71426c91"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuVirtioPCIInit &ndash; walks the PCI capability list of a modern virtio-pci device, maps its common/notify/isr/device config BARs, resets it and negotiates VIRTIO_F_VERSION_1 plus wantedFeaturesLow (bits 0-31).  <br /></td></tr>
+<tr class="separator:ad1ec03753337e2b1931d531b71426c91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3837543eaeee87ad7fd889329bdb92d" id="r_aa3837543eaeee87ad7fd889329bdb92d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> <a class="el" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="virtio_8h.html#aa3837543eaeee87ad7fd889329bdb92d">AuVirtioPCISetupQueue</a> (struct <a class="el" href="structVirtioPCIDevice.html">VirtioPCIDevice</a> *dev, <a class="el" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> qidx, struct <a class="el" href="structVirtqDesc.html">VirtqDesc</a> **outDesc, struct <a class="el" href="structVirtqAvailHdr.html">VirtqAvailHdr</a> **outAvail, struct <a class="el" href="structVirtqUsedHdr.html">VirtqUsedHdr</a> **outUsed, <a class="el" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> msixVector)</td></tr>
+<tr class="memdesc:aa3837543eaeee87ad7fd889329bdb92d"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuVirtioPCISetupQueue &ndash; selects queue qidx, allocates desc/avail/used rings sized to the device-reported queue size and enables the queue.  <br /></td></tr>
+<tr class="separator:aa3837543eaeee87ad7fd889329bdb92d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a983f231385493af26bae520870d43c81" id="r_a983f231385493af26bae520870d43c81"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="virtio_8h.html#a983f231385493af26bae520870d43c81">AuVirtioPCINotifyQueue</a> (struct <a class="el" href="structVirtioPCIDevice.html">VirtioPCIDevice</a> *dev, <a class="el" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> qidx)</td></tr>
+<tr class="memdesc:a983f231385493af26bae520870d43c81"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuVirtioPCINotifyQueue &ndash; kicks the device for queue qidx.  <br /></td></tr>
+<tr class="separator:a983f231385493af26bae520870d43c81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1da27ab3ae2786f2773a58d6132262e2" id="r_a1da27ab3ae2786f2773a58d6132262e2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="virtio_8h.html#a1da27ab3ae2786f2773a58d6132262e2">AuVirtioPCIPostAvail</a> (struct <a class="el" href="structVirtqDesc.html">VirtqDesc</a> *desc, struct <a class="el" href="structVirtqAvailHdr.html">VirtqAvailHdr</a> *avail, <a class="el" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> qsize, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> bufPhys, <a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> bufSize, <a class="el" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> nbuf, <a class="el" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> <a class="el" href="virtio_8h.html#aa2585d779da0ab21273a8d92de9a0ebe">flags</a>)</td></tr>
+<tr class="separator:a1da27ab3ae2786f2773a58d6132262e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3b937420152dd8d695c147a4d1a6499" id="r_ae3b937420152dd8d695c147a4d1a6499"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="virtio_8h.html#ae3b937420152dd8d695c147a4d1a6499">AuVirtioBlkInitialize</a> (<a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> <a class="el" href="Drivers_2USB_2hid_2main_8cpp.html#aa01b53b251b673a86b7c563fde808273">device</a>, int bus, int dev, int func)</td></tr>
 <tr class="memdesc:ae3b937420152dd8d695c147a4d1a6499"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuVirtioBlkInitialize &ndash; initialize the virtio block device.  <br /></td></tr>
 <tr class="separator:ae3b937420152dd8d695c147a4d1a6499"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -264,6 +266,25 @@ Functions</h2></td></tr>
 <tr class="memitem:a88fca7cc37f20872a9c662edaa3c62fe" id="r_a88fca7cc37f20872a9c662edaa3c62fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="virtio_8h.html#a88fca7cc37f20872a9c662edaa3c62fe">AuVirtioNetInitialize</a> (<a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> <a class="el" href="Drivers_2USB_2hid_2main_8cpp.html#aa01b53b251b673a86b7c563fde808273">device</a>)</td></tr>
 <tr class="memdesc:a88fca7cc37f20872a9c662edaa3c62fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuVirtioNetInitialize &ndash; initialize the virtio network device.  <br /></td></tr>
 <tr class="separator:a88fca7cc37f20872a9c662edaa3c62fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a720173e80c53ae6b5fa163fd6e81ad27" id="r_a720173e80c53ae6b5fa163fd6e81ad27"><td class="memItemLeft" align="right" valign="top">typedef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="virtio_8h.html#a720173e80c53ae6b5fa163fd6e81ad27">__attribute__</a></td></tr>
+<tr class="separator:a720173e80c53ae6b5fa163fd6e81ad27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2585d779da0ab21273a8d92de9a0ebe" id="r_aa2585d779da0ab21273a8d92de9a0ebe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="virtio_8h.html#aa2585d779da0ab21273a8d92de9a0ebe">flags</a></td></tr>
+<tr class="separator:aa2585d779da0ab21273a8d92de9a0ebe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93accb5ba722083c10375148df23f5ba" id="r_a93accb5ba722083c10375148df23f5ba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="virtio_8h.html#a93accb5ba722083c10375148df23f5ba">gso_type</a></td></tr>
+<tr class="separator:a93accb5ba722083c10375148df23f5ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a402d45c9147f75825a11b609cc79f869" id="r_a402d45c9147f75825a11b609cc79f869"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="virtio_8h.html#a402d45c9147f75825a11b609cc79f869">hdr_len</a></td></tr>
+<tr class="separator:a402d45c9147f75825a11b609cc79f869"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bda46892fe42bfda4f9aa31c80a5ccc" id="r_a8bda46892fe42bfda4f9aa31c80a5ccc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="virtio_8h.html#a8bda46892fe42bfda4f9aa31c80a5ccc">gso_size</a></td></tr>
+<tr class="separator:a8bda46892fe42bfda4f9aa31c80a5ccc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a254de678b4a6f6750124b1eb74cc71e5" id="r_a254de678b4a6f6750124b1eb74cc71e5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="virtio_8h.html#a254de678b4a6f6750124b1eb74cc71e5">csum_start</a></td></tr>
+<tr class="separator:a254de678b4a6f6750124b1eb74cc71e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7273480cee9c930381e150fa88a4a33e" id="r_a7273480cee9c930381e150fa88a4a33e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="virtio_8h.html#a7273480cee9c930381e150fa88a4a33e">csum_offset</a></td></tr>
+<tr class="separator:a7273480cee9c930381e150fa88a4a33e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bf152e518744753fff6e6bc6c7b7f9e" id="r_a0bf152e518744753fff6e6bc6c7b7f9e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="virtio_8h.html#a0bf152e518744753fff6e6bc6c7b7f9e">num_buffers</a></td></tr>
+<tr class="separator:a0bf152e518744753fff6e6bc6c7b7f9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>BSD 2-Clause License</p>
@@ -597,22 +618,33 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<h2 class="groupheader">Typedef Documentation</h2>
-<a id="a634fc3946f674214e4bcdd8b70bf5a7f" name="a634fc3946f674214e4bcdd8b70bf5a7f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a634fc3946f674214e4bcdd8b70bf5a7f">&#9670;&#160;</a></span>virtio_net_hdr_t</h2>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a792ea2487c8eefa3dbaeb234600eafde" name="a792ea2487c8eefa3dbaeb234600eafde"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a792ea2487c8eefa3dbaeb234600eafde">&#9670;&#160;</a></span>__attribute__()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef struct <a class="el" href="struct__virtio__net__hdr__.html">_virtio_net_hdr_</a> <a class="el" href="virtio_8h.html#a634fc3946f674214e4bcdd8b70bf5a7f">virtio_net_hdr_t</a></td>
+          <td class="memname">struct <a class="el" href="struct__virtio__net__hdr__.html">_virtio_net_hdr_</a> __attribute__ </td>
+          <td>(</td>
+          <td class="paramtype">(packed)&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>BSD 2-Clause License</p>
+<p>Copyright (c) 2022-2025, Manas Kamal Choudhury All rights reserved.</p>
+<p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
+<ol type="1">
+<li>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</li>
+<li>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</li>
+</ol>
+<p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. </p>
 
 </div>
 </div>
-<h2 class="groupheader">Function Documentation</h2>
 <a id="ae3b937420152dd8d695c147a4d1a6499" name="ae3b937420152dd8d695c147a4d1a6499"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae3b937420152dd8d695c147a4d1a6499">&#9670;&#160;</a></span>AuVirtioBlkInitialize()</h2>
 
@@ -779,22 +811,17 @@ Functions</h2></td></tr>
 </dl>
 <p>feature negotiation</p>
 <p>enable RX+TX queue</p>
-<p>feature negotiation</p>
-<p>enable RX+TX queue</p>
 
 </div>
 </div>
-<a id="a5f325bac0ac82ed81498f28e3d7bde0f" name="a5f325bac0ac82ed81498f28e3d7bde0f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5f325bac0ac82ed81498f28e3d7bde0f">&#9670;&#160;</a></span>AuVirtioPCIInit()</h2>
+<a id="ad1ec03753337e2b1931d531b71426c91" name="ad1ec03753337e2b1931d531b71426c91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1ec03753337e2b1931d531b71426c91">&#9670;&#160;</a></span>AuVirtioPCIInit()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="BaseHdr_2stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> AuVirtioPCIInit </td>
+          <td class="memname"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> <a class="el" href="BaseHdr_2stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> AuVirtioPCIInit </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>&#160;</td>
           <td class="paramname"><em>address</em>, </td>
@@ -835,11 +862,6 @@ Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>AuVirtioPCIInit &ndash; walks the PCI capability list of a modern virtio-pci device, maps its common/notify/isr/device config BARs, resets it and negotiates VIRTIO_F_VERSION_1 plus wantedFeaturesLow (bits 0-31). </p>
@@ -848,17 +870,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a1766f2d5309f007fe4cff80591d1bd26" name="a1766f2d5309f007fe4cff80591d1bd26"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1766f2d5309f007fe4cff80591d1bd26">&#9670;&#160;</a></span>AuVirtioPCINotifyQueue()</h2>
+<a id="a983f231385493af26bae520870d43c81" name="a983f231385493af26bae520870d43c81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a983f231385493af26bae520870d43c81">&#9670;&#160;</a></span>AuVirtioPCINotifyQueue()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void AuVirtioPCINotifyQueue </td>
+          <td class="memname"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> void AuVirtioPCINotifyQueue </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structVirtioPCIDevice.html">VirtioPCIDevice</a> *&#160;</td>
           <td class="paramname"><em>dev</em>, </td>
@@ -875,11 +894,6 @@ Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>AuVirtioPCINotifyQueue &ndash; kicks the device for queue qidx. </p>
@@ -887,17 +901,72 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a73ed9bcb02108e5a88b8f540d5a3807d" name="a73ed9bcb02108e5a88b8f540d5a3807d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a73ed9bcb02108e5a88b8f540d5a3807d">&#9670;&#160;</a></span>AuVirtioPCISetupQueue()</h2>
+<a id="a1da27ab3ae2786f2773a58d6132262e2" name="a1da27ab3ae2786f2773a58d6132262e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1da27ab3ae2786f2773a58d6132262e2">&#9670;&#160;</a></span>AuVirtioPCIPostAvail()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> AuVirtioPCISetupQueue </td>
+          <td class="memname"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> void AuVirtioPCIPostAvail </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structVirtqDesc.html">VirtqDesc</a> *&#160;</td>
+          <td class="paramname"><em>desc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structVirtqAvailHdr.html">VirtqAvailHdr</a> *&#160;</td>
+          <td class="paramname"><em>avail</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a>&#160;</td>
+          <td class="paramname"><em>qsize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>&#160;</td>
+          <td class="paramname"><em>bufPhys</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td>
+          <td class="paramname"><em>bufSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a>&#160;</td>
+          <td class="paramname"><em>nbuf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a>&#160;</td>
+          <td class="paramname"><em>flags</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa3837543eaeee87ad7fd889329bdb92d" name="aa3837543eaeee87ad7fd889329bdb92d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3837543eaeee87ad7fd889329bdb92d">&#9670;&#160;</a></span>AuVirtioPCISetupQueue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> <a class="el" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> AuVirtioPCISetupQueue </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structVirtioPCIDevice.html">VirtioPCIDevice</a> *&#160;</td>
           <td class="paramname"><em>dev</em>, </td>
@@ -938,11 +1007,6 @@ Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>AuVirtioPCISetupQueue &ndash; selects queue qidx, allocates desc/avail/used rings sized to the device-reported queue size and enables the queue. </p>
@@ -1030,6 +1094,119 @@ Functions</h2></td></tr>
 
 <p>AuVirtioTabletInitialize &ndash; initialize virtio tablet. </p>
 <p>AuVirtioTabletInitialize &ndash; initialize virtio tablet. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a720173e80c53ae6b5fa163fd6e81ad27" name="a720173e80c53ae6b5fa163fd6e81ad27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a720173e80c53ae6b5fa163fd6e81ad27">&#9670;&#160;</a></span>__attribute__</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct __attribute__</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7273480cee9c930381e150fa88a4a33e" name="a7273480cee9c930381e150fa88a4a33e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7273480cee9c930381e150fa88a4a33e">&#9670;&#160;</a></span>csum_offset</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> csum_offset</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a254de678b4a6f6750124b1eb74cc71e5" name="a254de678b4a6f6750124b1eb74cc71e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a254de678b4a6f6750124b1eb74cc71e5">&#9670;&#160;</a></span>csum_start</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> csum_start</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa2585d779da0ab21273a8d92de9a0ebe" name="aa2585d779da0ab21273a8d92de9a0ebe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2585d779da0ab21273a8d92de9a0ebe">&#9670;&#160;</a></span>flags</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> flags</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8bda46892fe42bfda4f9aa31c80a5ccc" name="a8bda46892fe42bfda4f9aa31c80a5ccc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8bda46892fe42bfda4f9aa31c80a5ccc">&#9670;&#160;</a></span>gso_size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> gso_size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a93accb5ba722083c10375148df23f5ba" name="a93accb5ba722083c10375148df23f5ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93accb5ba722083c10375148df23f5ba">&#9670;&#160;</a></span>gso_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> gso_type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a402d45c9147f75825a11b609cc79f869" name="a402d45c9147f75825a11b609cc79f869"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a402d45c9147f75825a11b609cc79f869">&#9670;&#160;</a></span>hdr_len</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> hdr_len</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0bf152e518744753fff6e6bc6c7b7f9e" name="a0bf152e518744753fff6e6bc6c7b7f9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0bf152e518744753fff6e6bc6c7b7f9e">&#9670;&#160;</a></span>num_buffers</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> num_buffers</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

@@ -170,6 +170,8 @@ Functions</h2></td></tr>
 <tr class="separator:a40c59b44bbd39a1d9320b85ad74d278b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9247d4bfaca40cbcdead4eebde162fbd" id="r_a9247d4bfaca40cbcdead4eebde162fbd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ndp_8h.html#a9247d4bfaca40cbcdead4eebde162fbd">AuNDRequestMAC</a> (<a class="el" href="devinput_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *<a class="el" href="e1000_8cpp.html#a520bf6a1c47a61d938646ef39fc45d76">nic</a>, const <a class="el" href="ipv6_8h.html#a8d8af0dca1cafda09b81ee4b8ecbb672">ip6_addr</a> *addr)</td></tr>
 <tr class="separator:a9247d4bfaca40cbcdead4eebde162fbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5672eca946b7c163d82120dd19c2c2d1" id="r_a5672eca946b7c163d82120dd19c2c2d1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ndp_8h.html#a7267575a572bb868467109fe7fb53d5c">AuNDCache</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ndp_8h.html#a5672eca946b7c163d82120dd19c2c2d1">AuNDResolve</a> (<a class="el" href="devinput_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *<a class="el" href="e1000_8cpp.html#a520bf6a1c47a61d938646ef39fc45d76">nic</a>, const <a class="el" href="ipv6_8h.html#a8d8af0dca1cafda09b81ee4b8ecbb672">ip6_addr</a> *addr)</td></tr>
+<tr class="separator:a5672eca946b7c163d82120dd19c2c2d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4509a3704472bc0d393e82b4ae0be900" id="r_a4509a3704472bc0d393e82b4ae0be900"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ndp_8h.html#a4509a3704472bc0d393e82b4ae0be900">NDHandleNeighborSolicit</a> (<a class="el" href="ipv6_8h.html#a20903fd0d87cbd29f3fa56aa9c40c6e7">IPv6Header</a> *ipv6, <a class="el" href="devinput_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *<a class="el" href="e1000_8cpp.html#a520bf6a1c47a61d938646ef39fc45d76">nic</a>)</td></tr>
 <tr class="separator:a4509a3704472bc0d393e82b4ae0be900"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92f90dd67ce4d539c0bffc28de8e51d4" id="r_a92f90dd67ce4d539c0bffc28de8e51d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ndp_8h.html#a92f90dd67ce4d539c0bffc28de8e51d4">NDHandleNeighborAdvert</a> (<a class="el" href="ipv6_8h.html#a20903fd0d87cbd29f3fa56aa9c40c6e7">IPv6Header</a> *ipv6, <a class="el" href="devinput_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *<a class="el" href="e1000_8cpp.html#a520bf6a1c47a61d938646ef39fc45d76">nic</a>)</td></tr>
@@ -307,6 +309,42 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">void AuNDRequestMAC </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="devinput_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *&#160;</td>
+          <td class="paramname"><em>nic</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="ipv6_8h.html#a8d8af0dca1cafda09b81ee4b8ecbb672">ip6_addr</a> *&#160;</td>
+          <td class="paramname"><em>addr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5672eca946b7c163d82120dd19c2c2d1" name="a5672eca946b7c163d82120dd19c2c2d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5672eca946b7c163d82120dd19c2c2d1">&#9670;&#160;</a></span>AuNDResolve()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ndp_8h.html#a7267575a572bb868467109fe7fb53d5c">AuNDCache</a> * AuNDResolve </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="devinput_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *&#160;</td>
           <td class="paramname"><em>nic</em>, </td>

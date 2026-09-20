@@ -1092,7 +1092,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l01019" name="l01019"></a><span class="lineno"> 1019</span>    <span class="comment">//             You have to have called stbtt_InitFont() first.</span></div>
 <div class="line"><a id="l01020" name="l01020"></a><span class="lineno"> 1020</span> </div>
 <div class="line"><a id="l01021" name="l01021"></a><span class="lineno"> 1021</span> </div>
-<div class="line"><a id="l01022" name="l01022"></a><span class="lineno"><a class="line" href="stb__truetype_8h.html#a76ec14e5c7e57981dc5a409d89b5e92f"> 1022</a></span>    <a class="code hl_define" href="stb__truetype_8h.html#ab459250c5579b1d942e0d8eb23936827">STBTT_DEF</a> <span class="keywordtype">int</span> <a class="code hl_function" href="stb__truetype_8h.html#a76ec14e5c7e57981dc5a409d89b5e92f">stbtt_FindMatchingFont</a>(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>* fontdata, <span class="keyword">const</span> <span class="keywordtype">char</span>* name, <span class="keywordtype">int</span> flags);</div>
+<div class="line"><a id="l01022" name="l01022"></a><span class="lineno"><a class="line" href="stb__truetype_8h.html#a76ec14e5c7e57981dc5a409d89b5e92f"> 1022</a></span>    <a class="code hl_define" href="stb__truetype_8h.html#ab459250c5579b1d942e0d8eb23936827">STBTT_DEF</a> <span class="keywordtype">int</span> <a class="code hl_function" href="stb__truetype_8h.html#a76ec14e5c7e57981dc5a409d89b5e92f">stbtt_FindMatchingFont</a>(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>* fontdata, <span class="keyword">const</span> <span class="keywordtype">char</span>* name, <span class="keywordtype">int</span> <a class="code hl_variable" href="virtio_8h.html#aa2585d779da0ab21273a8d92de9a0ebe">flags</a>);</div>
 <div class="line"><a id="l01023" name="l01023"></a><span class="lineno"> 1023</span>    <span class="comment">// returns the offset (not index) of the font that matches, or -1 if none</span></div>
 <div class="line"><a id="l01024" name="l01024"></a><span class="lineno"> 1024</span>    <span class="comment">//   if you use STBTT_MACSTYLE_DONTCARE, use a font name like &quot;Arial Bold&quot;.</span></div>
 <div class="line"><a id="l01025" name="l01025"></a><span class="lineno"> 1025</span>    <span class="comment">//   if you use any other flag, use a font name like &quot;Arial&quot;; this checks</span></div>
@@ -1763,7 +1763,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l01698" name="l01698"></a><span class="lineno"> 1698</span>    numberOfContours = ttSHORT(data + g);</div>
 <div class="line"><a id="l01699" name="l01699"></a><span class="lineno"> 1699</span> </div>
 <div class="line"><a id="l01700" name="l01700"></a><span class="lineno"> 1700</span>    <span class="keywordflow">if</span> (numberOfContours &gt; 0) {</div>
-<div class="line"><a id="l01701" name="l01701"></a><span class="lineno"> 1701</span>        stbtt_uint8 flags = 0, flagcount;</div>
+<div class="line"><a id="l01701" name="l01701"></a><span class="lineno"> 1701</span>        stbtt_uint8 <a class="code hl_variable" href="virtio_8h.html#aa2585d779da0ab21273a8d92de9a0ebe">flags</a> = 0, flagcount;</div>
 <div class="line"><a id="l01702" name="l01702"></a><span class="lineno"> 1702</span>        stbtt_int32 ins, i, j = 0, m, n, next_move, was_off = 0, off, start_off = 0;</div>
 <div class="line"><a id="l01703" name="l01703"></a><span class="lineno"> 1703</span>        stbtt_int32 x, y, cx, cy, sx, sy, scx, scy;</div>
 <div class="line"><a id="l01704" name="l01704"></a><span class="lineno"> 1704</span>        stbtt_uint8* points;</div>
@@ -1791,25 +1791,25 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l01726" name="l01726"></a><span class="lineno"> 1726</span> </div>
 <div class="line"><a id="l01727" name="l01727"></a><span class="lineno"> 1727</span>        <span class="keywordflow">for</span> (i = 0; i &lt; n; ++i) {</div>
 <div class="line"><a id="l01728" name="l01728"></a><span class="lineno"> 1728</span>            <span class="keywordflow">if</span> (flagcount == 0) {</div>
-<div class="line"><a id="l01729" name="l01729"></a><span class="lineno"> 1729</span>                flags = *points++;</div>
-<div class="line"><a id="l01730" name="l01730"></a><span class="lineno"> 1730</span>                <span class="keywordflow">if</span> (flags &amp; 8)</div>
+<div class="line"><a id="l01729" name="l01729"></a><span class="lineno"> 1729</span>                <a class="code hl_variable" href="virtio_8h.html#aa2585d779da0ab21273a8d92de9a0ebe">flags</a> = *points++;</div>
+<div class="line"><a id="l01730" name="l01730"></a><span class="lineno"> 1730</span>                <span class="keywordflow">if</span> (<a class="code hl_variable" href="virtio_8h.html#aa2585d779da0ab21273a8d92de9a0ebe">flags</a> &amp; 8)</div>
 <div class="line"><a id="l01731" name="l01731"></a><span class="lineno"> 1731</span>                    flagcount = *points++;</div>
 <div class="line"><a id="l01732" name="l01732"></a><span class="lineno"> 1732</span>            }</div>
 <div class="line"><a id="l01733" name="l01733"></a><span class="lineno"> 1733</span>            <span class="keywordflow">else</span></div>
 <div class="line"><a id="l01734" name="l01734"></a><span class="lineno"> 1734</span>                --flagcount;</div>
-<div class="line"><a id="l01735" name="l01735"></a><span class="lineno"> 1735</span>            vertices[off + i].<a class="code hl_variable" href="structstbtt__vertex.html#aa325b3707b88e7e104c0de46bb2bf395">type</a> = flags;</div>
+<div class="line"><a id="l01735" name="l01735"></a><span class="lineno"> 1735</span>            vertices[off + i].<a class="code hl_variable" href="structstbtt__vertex.html#aa325b3707b88e7e104c0de46bb2bf395">type</a> = <a class="code hl_variable" href="virtio_8h.html#aa2585d779da0ab21273a8d92de9a0ebe">flags</a>;</div>
 <div class="line"><a id="l01736" name="l01736"></a><span class="lineno"> 1736</span>        }</div>
 <div class="line"><a id="l01737" name="l01737"></a><span class="lineno"> 1737</span> </div>
 <div class="line"><a id="l01738" name="l01738"></a><span class="lineno"> 1738</span>        <span class="comment">// now load x coordinates</span></div>
 <div class="line"><a id="l01739" name="l01739"></a><span class="lineno"> 1739</span>        x = 0;</div>
 <div class="line"><a id="l01740" name="l01740"></a><span class="lineno"> 1740</span>        <span class="keywordflow">for</span> (i = 0; i &lt; n; ++i) {</div>
-<div class="line"><a id="l01741" name="l01741"></a><span class="lineno"> 1741</span>            flags = vertices[off + i].<a class="code hl_variable" href="structstbtt__vertex.html#aa325b3707b88e7e104c0de46bb2bf395">type</a>;</div>
-<div class="line"><a id="l01742" name="l01742"></a><span class="lineno"> 1742</span>            <span class="keywordflow">if</span> (flags &amp; 2) {</div>
+<div class="line"><a id="l01741" name="l01741"></a><span class="lineno"> 1741</span>            <a class="code hl_variable" href="virtio_8h.html#aa2585d779da0ab21273a8d92de9a0ebe">flags</a> = vertices[off + i].<a class="code hl_variable" href="structstbtt__vertex.html#aa325b3707b88e7e104c0de46bb2bf395">type</a>;</div>
+<div class="line"><a id="l01742" name="l01742"></a><span class="lineno"> 1742</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="virtio_8h.html#aa2585d779da0ab21273a8d92de9a0ebe">flags</a> &amp; 2) {</div>
 <div class="line"><a id="l01743" name="l01743"></a><span class="lineno"> 1743</span>                stbtt_int16 dx = *points++;</div>
-<div class="line"><a id="l01744" name="l01744"></a><span class="lineno"> 1744</span>                x += (flags &amp; 16) ? dx : -dx; <span class="comment">// ???</span></div>
+<div class="line"><a id="l01744" name="l01744"></a><span class="lineno"> 1744</span>                x += (<a class="code hl_variable" href="virtio_8h.html#aa2585d779da0ab21273a8d92de9a0ebe">flags</a> &amp; 16) ? dx : -dx; <span class="comment">// ???</span></div>
 <div class="line"><a id="l01745" name="l01745"></a><span class="lineno"> 1745</span>            }</div>
 <div class="line"><a id="l01746" name="l01746"></a><span class="lineno"> 1746</span>            <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l01747" name="l01747"></a><span class="lineno"> 1747</span>                <span class="keywordflow">if</span> (!(flags &amp; 16)) {</div>
+<div class="line"><a id="l01747" name="l01747"></a><span class="lineno"> 1747</span>                <span class="keywordflow">if</span> (!(<a class="code hl_variable" href="virtio_8h.html#aa2585d779da0ab21273a8d92de9a0ebe">flags</a> &amp; 16)) {</div>
 <div class="line"><a id="l01748" name="l01748"></a><span class="lineno"> 1748</span>                    x = x + (stbtt_int16)(points[0] * 256 + points[1]);</div>
 <div class="line"><a id="l01749" name="l01749"></a><span class="lineno"> 1749</span>                    points += 2;</div>
 <div class="line"><a id="l01750" name="l01750"></a><span class="lineno"> 1750</span>                }</div>
@@ -1820,13 +1820,13 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l01755" name="l01755"></a><span class="lineno"> 1755</span>        <span class="comment">// now load y coordinates</span></div>
 <div class="line"><a id="l01756" name="l01756"></a><span class="lineno"> 1756</span>        y = 0;</div>
 <div class="line"><a id="l01757" name="l01757"></a><span class="lineno"> 1757</span>        <span class="keywordflow">for</span> (i = 0; i &lt; n; ++i) {</div>
-<div class="line"><a id="l01758" name="l01758"></a><span class="lineno"> 1758</span>            flags = vertices[off + i].<a class="code hl_variable" href="structstbtt__vertex.html#aa325b3707b88e7e104c0de46bb2bf395">type</a>;</div>
-<div class="line"><a id="l01759" name="l01759"></a><span class="lineno"> 1759</span>            <span class="keywordflow">if</span> (flags &amp; 4) {</div>
+<div class="line"><a id="l01758" name="l01758"></a><span class="lineno"> 1758</span>            <a class="code hl_variable" href="virtio_8h.html#aa2585d779da0ab21273a8d92de9a0ebe">flags</a> = vertices[off + i].<a class="code hl_variable" href="structstbtt__vertex.html#aa325b3707b88e7e104c0de46bb2bf395">type</a>;</div>
+<div class="line"><a id="l01759" name="l01759"></a><span class="lineno"> 1759</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="virtio_8h.html#aa2585d779da0ab21273a8d92de9a0ebe">flags</a> &amp; 4) {</div>
 <div class="line"><a id="l01760" name="l01760"></a><span class="lineno"> 1760</span>                stbtt_int16 dy = *points++;</div>
-<div class="line"><a id="l01761" name="l01761"></a><span class="lineno"> 1761</span>                y += (flags &amp; 32) ? dy : -dy; <span class="comment">// ???</span></div>
+<div class="line"><a id="l01761" name="l01761"></a><span class="lineno"> 1761</span>                y += (<a class="code hl_variable" href="virtio_8h.html#aa2585d779da0ab21273a8d92de9a0ebe">flags</a> &amp; 32) ? dy : -dy; <span class="comment">// ???</span></div>
 <div class="line"><a id="l01762" name="l01762"></a><span class="lineno"> 1762</span>            }</div>
 <div class="line"><a id="l01763" name="l01763"></a><span class="lineno"> 1763</span>            <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l01764" name="l01764"></a><span class="lineno"> 1764</span>                <span class="keywordflow">if</span> (!(flags &amp; 32)) {</div>
+<div class="line"><a id="l01764" name="l01764"></a><span class="lineno"> 1764</span>                <span class="keywordflow">if</span> (!(<a class="code hl_variable" href="virtio_8h.html#aa2585d779da0ab21273a8d92de9a0ebe">flags</a> &amp; 32)) {</div>
 <div class="line"><a id="l01765" name="l01765"></a><span class="lineno"> 1765</span>                    y = y + (stbtt_int16)(points[0] * 256 + points[1]);</div>
 <div class="line"><a id="l01766" name="l01766"></a><span class="lineno"> 1766</span>                    points += 2;</div>
 <div class="line"><a id="l01767" name="l01767"></a><span class="lineno"> 1767</span>                }</div>
@@ -1838,7 +1838,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l01773" name="l01773"></a><span class="lineno"> 1773</span>        num_vertices = 0;</div>
 <div class="line"><a id="l01774" name="l01774"></a><span class="lineno"> 1774</span>        sx = sy = cx = cy = scx = scy = 0;</div>
 <div class="line"><a id="l01775" name="l01775"></a><span class="lineno"> 1775</span>        <span class="keywordflow">for</span> (i = 0; i &lt; n; ++i) {</div>
-<div class="line"><a id="l01776" name="l01776"></a><span class="lineno"> 1776</span>            flags = vertices[off + i].<a class="code hl_variable" href="structstbtt__vertex.html#aa325b3707b88e7e104c0de46bb2bf395">type</a>;</div>
+<div class="line"><a id="l01776" name="l01776"></a><span class="lineno"> 1776</span>            <a class="code hl_variable" href="virtio_8h.html#aa2585d779da0ab21273a8d92de9a0ebe">flags</a> = vertices[off + i].<a class="code hl_variable" href="structstbtt__vertex.html#aa325b3707b88e7e104c0de46bb2bf395">type</a>;</div>
 <div class="line"><a id="l01777" name="l01777"></a><span class="lineno"> 1777</span>            x = (stbtt_int16)vertices[off + i].x;</div>
 <div class="line"><a id="l01778" name="l01778"></a><span class="lineno"> 1778</span>            y = (stbtt_int16)vertices[off + i].y;</div>
 <div class="line"><a id="l01779" name="l01779"></a><span class="lineno"> 1779</span> </div>
@@ -1847,7 +1847,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l01782" name="l01782"></a><span class="lineno"> 1782</span>                    num_vertices = stbtt__close_shape(vertices, num_vertices, was_off, start_off, sx, sy, scx, scy, cx, cy);</div>
 <div class="line"><a id="l01783" name="l01783"></a><span class="lineno"> 1783</span> </div>
 <div class="line"><a id="l01784" name="l01784"></a><span class="lineno"> 1784</span>                <span class="comment">// now start the new one</span></div>
-<div class="line"><a id="l01785" name="l01785"></a><span class="lineno"> 1785</span>                start_off = !(flags &amp; 1);</div>
+<div class="line"><a id="l01785" name="l01785"></a><span class="lineno"> 1785</span>                start_off = !(<a class="code hl_variable" href="virtio_8h.html#aa2585d779da0ab21273a8d92de9a0ebe">flags</a> &amp; 1);</div>
 <div class="line"><a id="l01786" name="l01786"></a><span class="lineno"> 1786</span>                <span class="keywordflow">if</span> (start_off) {</div>
 <div class="line"><a id="l01787" name="l01787"></a><span class="lineno"> 1787</span>                    <span class="comment">// if we start off with an off-curve point, then when we need to find a point on the curve</span></div>
 <div class="line"><a id="l01788" name="l01788"></a><span class="lineno"> 1788</span>                    <span class="comment">// where we can start, and we need to save some state for when we wraparound.</span></div>
@@ -1875,7 +1875,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l01810" name="l01810"></a><span class="lineno"> 1810</span>                ++j;</div>
 <div class="line"><a id="l01811" name="l01811"></a><span class="lineno"> 1811</span>            }</div>
 <div class="line"><a id="l01812" name="l01812"></a><span class="lineno"> 1812</span>            <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l01813" name="l01813"></a><span class="lineno"> 1813</span>                <span class="keywordflow">if</span> (!(flags &amp; 1)) { <span class="comment">// if it&#39;s a curve</span></div>
+<div class="line"><a id="l01813" name="l01813"></a><span class="lineno"> 1813</span>                <span class="keywordflow">if</span> (!(<a class="code hl_variable" href="virtio_8h.html#aa2585d779da0ab21273a8d92de9a0ebe">flags</a> &amp; 1)) { <span class="comment">// if it&#39;s a curve</span></div>
 <div class="line"><a id="l01814" name="l01814"></a><span class="lineno"> 1814</span>                    <span class="keywordflow">if</span> (was_off) <span class="comment">// two off-curve control points in a row means interpolate an on-curve midpoint</span></div>
 <div class="line"><a id="l01815" name="l01815"></a><span class="lineno"> 1815</span>                        stbtt_setvertex(&amp;vertices[num_vertices++], <a class="code hl_enumvalue" href="stb__truetype_8h.html#ad57961b0da495d56db7a954ebaaff9e0ab9ac3e527ce18873abeab556f6768ce4">STBTT_vcurve</a>, (cx + x) &gt;&gt; 1, (cy + y) &gt;&gt; 1, cx, cy);</div>
 <div class="line"><a id="l01816" name="l01816"></a><span class="lineno"> 1816</span>                    cx = x;</div>
@@ -1900,16 +1900,16 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l01835" name="l01835"></a><span class="lineno"> 1835</span>        num_vertices = 0;</div>
 <div class="line"><a id="l01836" name="l01836"></a><span class="lineno"> 1836</span>        vertices = 0;</div>
 <div class="line"><a id="l01837" name="l01837"></a><span class="lineno"> 1837</span>        <span class="keywordflow">while</span> (more) {</div>
-<div class="line"><a id="l01838" name="l01838"></a><span class="lineno"> 1838</span>            stbtt_uint16 flags, gidx;</div>
+<div class="line"><a id="l01838" name="l01838"></a><span class="lineno"> 1838</span>            stbtt_uint16 <a class="code hl_variable" href="virtio_8h.html#aa2585d779da0ab21273a8d92de9a0ebe">flags</a>, gidx;</div>
 <div class="line"><a id="l01839" name="l01839"></a><span class="lineno"> 1839</span>            <span class="keywordtype">int</span> comp_num_verts = 0, i;</div>
 <div class="line"><a id="l01840" name="l01840"></a><span class="lineno"> 1840</span>            <a class="code hl_struct" href="structstbtt__vertex.html">stbtt_vertex</a>* comp_verts = 0, * tmp = 0;</div>
 <div class="line"><a id="l01841" name="l01841"></a><span class="lineno"> 1841</span>            <span class="keywordtype">float</span> mtx[6] = { 1,0,0,1,0,0 }, m, n;</div>
 <div class="line"><a id="l01842" name="l01842"></a><span class="lineno"> 1842</span> </div>
-<div class="line"><a id="l01843" name="l01843"></a><span class="lineno"> 1843</span>            flags = ttSHORT(comp); comp += 2;</div>
+<div class="line"><a id="l01843" name="l01843"></a><span class="lineno"> 1843</span>            <a class="code hl_variable" href="virtio_8h.html#aa2585d779da0ab21273a8d92de9a0ebe">flags</a> = ttSHORT(comp); comp += 2;</div>
 <div class="line"><a id="l01844" name="l01844"></a><span class="lineno"> 1844</span>            gidx = ttSHORT(comp); comp += 2;</div>
 <div class="line"><a id="l01845" name="l01845"></a><span class="lineno"> 1845</span> </div>
-<div class="line"><a id="l01846" name="l01846"></a><span class="lineno"> 1846</span>            <span class="keywordflow">if</span> (flags &amp; 2) { <span class="comment">// XY values</span></div>
-<div class="line"><a id="l01847" name="l01847"></a><span class="lineno"> 1847</span>                <span class="keywordflow">if</span> (flags &amp; 1) { <span class="comment">// shorts</span></div>
+<div class="line"><a id="l01846" name="l01846"></a><span class="lineno"> 1846</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="virtio_8h.html#aa2585d779da0ab21273a8d92de9a0ebe">flags</a> &amp; 2) { <span class="comment">// XY values</span></div>
+<div class="line"><a id="l01847" name="l01847"></a><span class="lineno"> 1847</span>                <span class="keywordflow">if</span> (<a class="code hl_variable" href="virtio_8h.html#aa2585d779da0ab21273a8d92de9a0ebe">flags</a> &amp; 1) { <span class="comment">// shorts</span></div>
 <div class="line"><a id="l01848" name="l01848"></a><span class="lineno"> 1848</span>                    mtx[4] = ttSHORT(comp); comp += 2;</div>
 <div class="line"><a id="l01849" name="l01849"></a><span class="lineno"> 1849</span>                    mtx[5] = ttSHORT(comp); comp += 2;</div>
 <div class="line"><a id="l01850" name="l01850"></a><span class="lineno"> 1850</span>                }</div>
@@ -1922,16 +1922,16 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l01857" name="l01857"></a><span class="lineno"> 1857</span>                <span class="comment">// @TODO handle matching point</span></div>
 <div class="line"><a id="l01858" name="l01858"></a><span class="lineno"> 1858</span>                <a class="code hl_define" href="font_8cpp.html#a1123d905f512c19c8d796a6d294a3a84">STBTT_assert</a>(0);</div>
 <div class="line"><a id="l01859" name="l01859"></a><span class="lineno"> 1859</span>            }</div>
-<div class="line"><a id="l01860" name="l01860"></a><span class="lineno"> 1860</span>            <span class="keywordflow">if</span> (flags &amp; (1 &lt;&lt; 3)) { <span class="comment">// WE_HAVE_A_SCALE</span></div>
+<div class="line"><a id="l01860" name="l01860"></a><span class="lineno"> 1860</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="virtio_8h.html#aa2585d779da0ab21273a8d92de9a0ebe">flags</a> &amp; (1 &lt;&lt; 3)) { <span class="comment">// WE_HAVE_A_SCALE</span></div>
 <div class="line"><a id="l01861" name="l01861"></a><span class="lineno"> 1861</span>                mtx[0] = mtx[3] = ttSHORT(comp) / 16384.0f; comp += 2;</div>
 <div class="line"><a id="l01862" name="l01862"></a><span class="lineno"> 1862</span>                mtx[1] = mtx[2] = 0;</div>
 <div class="line"><a id="l01863" name="l01863"></a><span class="lineno"> 1863</span>            }</div>
-<div class="line"><a id="l01864" name="l01864"></a><span class="lineno"> 1864</span>            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (flags &amp; (1 &lt;&lt; 6)) { <span class="comment">// WE_HAVE_AN_X_AND_YSCALE</span></div>
+<div class="line"><a id="l01864" name="l01864"></a><span class="lineno"> 1864</span>            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="virtio_8h.html#aa2585d779da0ab21273a8d92de9a0ebe">flags</a> &amp; (1 &lt;&lt; 6)) { <span class="comment">// WE_HAVE_AN_X_AND_YSCALE</span></div>
 <div class="line"><a id="l01865" name="l01865"></a><span class="lineno"> 1865</span>                mtx[0] = ttSHORT(comp) / 16384.0f; comp += 2;</div>
 <div class="line"><a id="l01866" name="l01866"></a><span class="lineno"> 1866</span>                mtx[1] = mtx[2] = 0;</div>
 <div class="line"><a id="l01867" name="l01867"></a><span class="lineno"> 1867</span>                mtx[3] = ttSHORT(comp) / 16384.0f; comp += 2;</div>
 <div class="line"><a id="l01868" name="l01868"></a><span class="lineno"> 1868</span>            }</div>
-<div class="line"><a id="l01869" name="l01869"></a><span class="lineno"> 1869</span>            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (flags &amp; (1 &lt;&lt; 7)) { <span class="comment">// WE_HAVE_A_TWO_BY_TWO</span></div>
+<div class="line"><a id="l01869" name="l01869"></a><span class="lineno"> 1869</span>            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="virtio_8h.html#aa2585d779da0ab21273a8d92de9a0ebe">flags</a> &amp; (1 &lt;&lt; 7)) { <span class="comment">// WE_HAVE_A_TWO_BY_TWO</span></div>
 <div class="line"><a id="l01870" name="l01870"></a><span class="lineno"> 1870</span>                mtx[0] = ttSHORT(comp) / 16384.0f; comp += 2;</div>
 <div class="line"><a id="l01871" name="l01871"></a><span class="lineno"> 1871</span>                mtx[1] = ttSHORT(comp) / 16384.0f; comp += 2;</div>
 <div class="line"><a id="l01872" name="l01872"></a><span class="lineno"> 1872</span>                mtx[2] = ttSHORT(comp) / 16384.0f; comp += 2;</div>
@@ -1971,7 +1971,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l01906" name="l01906"></a><span class="lineno"> 1906</span>                num_vertices += comp_num_verts;</div>
 <div class="line"><a id="l01907" name="l01907"></a><span class="lineno"> 1907</span>            }</div>
 <div class="line"><a id="l01908" name="l01908"></a><span class="lineno"> 1908</span>            <span class="comment">// More components ?</span></div>
-<div class="line"><a id="l01909" name="l01909"></a><span class="lineno"> 1909</span>            more = flags &amp; (1 &lt;&lt; 5);</div>
+<div class="line"><a id="l01909" name="l01909"></a><span class="lineno"> 1909</span>            more = <a class="code hl_variable" href="virtio_8h.html#aa2585d779da0ab21273a8d92de9a0ebe">flags</a> &amp; (1 &lt;&lt; 5);</div>
 <div class="line"><a id="l01910" name="l01910"></a><span class="lineno"> 1910</span>        }</div>
 <div class="line"><a id="l01911" name="l01911"></a><span class="lineno"> 1911</span>    }</div>
 <div class="line"><a id="l01912" name="l01912"></a><span class="lineno"> 1912</span>    <span class="keywordflow">else</span> {</div>
@@ -5017,22 +5017,22 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l04961" name="l04961"></a><span class="lineno"> 4961</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a id="l04962" name="l04962"></a><span class="lineno"> 4962</span>}</div>
 <div class="line"><a id="l04963" name="l04963"></a><span class="lineno"> 4963</span> </div>
-<div class="line"><a id="l04964" name="l04964"></a><span class="lineno"> 4964</span><span class="keyword">static</span> <span class="keywordtype">int</span> stbtt__matches(stbtt_uint8* fc, stbtt_uint32 offset, stbtt_uint8* name, stbtt_int32 flags)</div>
+<div class="line"><a id="l04964" name="l04964"></a><span class="lineno"> 4964</span><span class="keyword">static</span> <span class="keywordtype">int</span> stbtt__matches(stbtt_uint8* fc, stbtt_uint32 offset, stbtt_uint8* name, stbtt_int32 <a class="code hl_variable" href="virtio_8h.html#aa2585d779da0ab21273a8d92de9a0ebe">flags</a>)</div>
 <div class="line"><a id="l04965" name="l04965"></a><span class="lineno"> 4965</span>{</div>
 <div class="line"><a id="l04966" name="l04966"></a><span class="lineno"> 4966</span>    stbtt_int32 nlen = (stbtt_int32)STBTT_strlen((<span class="keywordtype">char</span>*)name);</div>
 <div class="line"><a id="l04967" name="l04967"></a><span class="lineno"> 4967</span>    stbtt_uint32 nm, hd;</div>
 <div class="line"><a id="l04968" name="l04968"></a><span class="lineno"> 4968</span>    <span class="keywordflow">if</span> (!stbtt__isfont(fc + offset)) <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a id="l04969" name="l04969"></a><span class="lineno"> 4969</span> </div>
 <div class="line"><a id="l04970" name="l04970"></a><span class="lineno"> 4970</span>    <span class="comment">// check italics/bold/underline flags in macStyle...</span></div>
-<div class="line"><a id="l04971" name="l04971"></a><span class="lineno"> 4971</span>    <span class="keywordflow">if</span> (flags) {</div>
+<div class="line"><a id="l04971" name="l04971"></a><span class="lineno"> 4971</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="virtio_8h.html#aa2585d779da0ab21273a8d92de9a0ebe">flags</a>) {</div>
 <div class="line"><a id="l04972" name="l04972"></a><span class="lineno"> 4972</span>        hd = stbtt__find_table(fc, offset, <span class="stringliteral">&quot;head&quot;</span>);</div>
-<div class="line"><a id="l04973" name="l04973"></a><span class="lineno"> 4973</span>        <span class="keywordflow">if</span> ((ttUSHORT(fc + hd + 44) &amp; 7) != (flags &amp; 7)) <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a id="l04973" name="l04973"></a><span class="lineno"> 4973</span>        <span class="keywordflow">if</span> ((ttUSHORT(fc + hd + 44) &amp; 7) != (<a class="code hl_variable" href="virtio_8h.html#aa2585d779da0ab21273a8d92de9a0ebe">flags</a> &amp; 7)) <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a id="l04974" name="l04974"></a><span class="lineno"> 4974</span>    }</div>
 <div class="line"><a id="l04975" name="l04975"></a><span class="lineno"> 4975</span> </div>
 <div class="line"><a id="l04976" name="l04976"></a><span class="lineno"> 4976</span>    nm = stbtt__find_table(fc, offset, <span class="stringliteral">&quot;name&quot;</span>);</div>
 <div class="line"><a id="l04977" name="l04977"></a><span class="lineno"> 4977</span>    <span class="keywordflow">if</span> (!nm) <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a id="l04978" name="l04978"></a><span class="lineno"> 4978</span> </div>
-<div class="line"><a id="l04979" name="l04979"></a><span class="lineno"> 4979</span>    <span class="keywordflow">if</span> (flags) {</div>
+<div class="line"><a id="l04979" name="l04979"></a><span class="lineno"> 4979</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="virtio_8h.html#aa2585d779da0ab21273a8d92de9a0ebe">flags</a>) {</div>
 <div class="line"><a id="l04980" name="l04980"></a><span class="lineno"> 4980</span>        <span class="comment">// if we checked the macStyle flags, then just check the family and ignore the subfamily</span></div>
 <div class="line"><a id="l04981" name="l04981"></a><span class="lineno"> 4981</span>        <span class="keywordflow">if</span> (stbtt__matchpair(fc, nm, name, nlen, 16, -1))  <span class="keywordflow">return</span> 1;</div>
 <div class="line"><a id="l04982" name="l04982"></a><span class="lineno"> 4982</span>        <span class="keywordflow">if</span> (stbtt__matchpair(fc, nm, name, nlen, 1, -1))  <span class="keywordflow">return</span> 1;</div>
@@ -5047,13 +5047,13 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l04991" name="l04991"></a><span class="lineno"> 4991</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a id="l04992" name="l04992"></a><span class="lineno"> 4992</span>}</div>
 <div class="line"><a id="l04993" name="l04993"></a><span class="lineno"> 4993</span> </div>
-<div class="line"><a id="l04994" name="l04994"></a><span class="lineno"> 4994</span><span class="keyword">static</span> <span class="keywordtype">int</span> stbtt_FindMatchingFont_internal(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>* font_collection, <span class="keywordtype">char</span>* name_utf8, stbtt_int32 flags)</div>
+<div class="line"><a id="l04994" name="l04994"></a><span class="lineno"> 4994</span><span class="keyword">static</span> <span class="keywordtype">int</span> stbtt_FindMatchingFont_internal(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>* font_collection, <span class="keywordtype">char</span>* name_utf8, stbtt_int32 <a class="code hl_variable" href="virtio_8h.html#aa2585d779da0ab21273a8d92de9a0ebe">flags</a>)</div>
 <div class="line"><a id="l04995" name="l04995"></a><span class="lineno"> 4995</span>{</div>
 <div class="line"><a id="l04996" name="l04996"></a><span class="lineno"> 4996</span>    stbtt_int32 i;</div>
 <div class="line"><a id="l04997" name="l04997"></a><span class="lineno"> 4997</span>    <span class="keywordflow">for</span> (i = 0;; ++i) {</div>
 <div class="line"><a id="l04998" name="l04998"></a><span class="lineno"> 4998</span>        stbtt_int32 off = <a class="code hl_function" href="stb__truetype_8h.html#a5ba17159df62ca39649e6f2231ac6e89">stbtt_GetFontOffsetForIndex</a>(font_collection, i);</div>
 <div class="line"><a id="l04999" name="l04999"></a><span class="lineno"> 4999</span>        <span class="keywordflow">if</span> (off &lt; 0) <span class="keywordflow">return</span> off;</div>
-<div class="line"><a id="l05000" name="l05000"></a><span class="lineno"> 5000</span>        <span class="keywordflow">if</span> (stbtt__matches((stbtt_uint8*)font_collection, off, (stbtt_uint8*)name_utf8, flags))</div>
+<div class="line"><a id="l05000" name="l05000"></a><span class="lineno"> 5000</span>        <span class="keywordflow">if</span> (stbtt__matches((stbtt_uint8*)font_collection, off, (stbtt_uint8*)name_utf8, <a class="code hl_variable" href="virtio_8h.html#aa2585d779da0ab21273a8d92de9a0ebe">flags</a>))</div>
 <div class="line"><a id="l05001" name="l05001"></a><span class="lineno"> 5001</span>            <span class="keywordflow">return</span> off;</div>
 <div class="line"><a id="l05002" name="l05002"></a><span class="lineno"> 5002</span>    }</div>
 <div class="line"><a id="l05003" name="l05003"></a><span class="lineno"> 5003</span>}</div>
@@ -5085,9 +5085,9 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l05029" name="l05029"></a><span class="lineno"> 5029</span>    <span class="keywordflow">return</span> stbtt_InitFont_internal(info, (<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>*)data, offset);</div>
 <div class="line"><a id="l05030" name="l05030"></a><span class="lineno"> 5030</span>}</div>
 <div class="line"><a id="l05031" name="l05031"></a><span class="lineno"> 5031</span> </div>
-<div class="line"><a id="l05032" name="l05032"></a><span class="lineno"> 5032</span><a class="code hl_define" href="stb__truetype_8h.html#ab459250c5579b1d942e0d8eb23936827">STBTT_DEF</a> <span class="keywordtype">int</span> <a class="code hl_function" href="stb__truetype_8h.html#a76ec14e5c7e57981dc5a409d89b5e92f">stbtt_FindMatchingFont</a>(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>* fontdata, <span class="keyword">const</span> <span class="keywordtype">char</span>* name, <span class="keywordtype">int</span> flags)</div>
+<div class="line"><a id="l05032" name="l05032"></a><span class="lineno"> 5032</span><a class="code hl_define" href="stb__truetype_8h.html#ab459250c5579b1d942e0d8eb23936827">STBTT_DEF</a> <span class="keywordtype">int</span> <a class="code hl_function" href="stb__truetype_8h.html#a76ec14e5c7e57981dc5a409d89b5e92f">stbtt_FindMatchingFont</a>(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>* fontdata, <span class="keyword">const</span> <span class="keywordtype">char</span>* name, <span class="keywordtype">int</span> <a class="code hl_variable" href="virtio_8h.html#aa2585d779da0ab21273a8d92de9a0ebe">flags</a>)</div>
 <div class="line"><a id="l05033" name="l05033"></a><span class="lineno"> 5033</span>{</div>
-<div class="line"><a id="l05034" name="l05034"></a><span class="lineno"> 5034</span>    <span class="keywordflow">return</span> stbtt_FindMatchingFont_internal((<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>*)fontdata, (<span class="keywordtype">char</span>*)name, flags);</div>
+<div class="line"><a id="l05034" name="l05034"></a><span class="lineno"> 5034</span>    <span class="keywordflow">return</span> stbtt_FindMatchingFont_internal((<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>*)fontdata, (<span class="keywordtype">char</span>*)name, <a class="code hl_variable" href="virtio_8h.html#aa2585d779da0ab21273a8d92de9a0ebe">flags</a>);</div>
 <div class="line"><a id="l05035" name="l05035"></a><span class="lineno"> 5035</span>}</div>
 <div class="line"><a id="l05036" name="l05036"></a><span class="lineno"> 5036</span> </div>
 <div class="line"><a id="l05037" name="l05037"></a><span class="lineno"> 5037</span><a class="code hl_define" href="stb__truetype_8h.html#ab459250c5579b1d942e0d8eb23936827">STBTT_DEF</a> <span class="keywordtype">int</span> <a class="code hl_function" href="stb__truetype_8h.html#aafc4974ee424f18246f47b0926a1cd31">stbtt_CompareUTF8toUTF16_bigendian</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* s1, <span class="keywordtype">int</span> len1, <span class="keyword">const</span> <span class="keywordtype">char</span>* s2, <span class="keywordtype">int</span> len2)</div>
@@ -5428,6 +5428,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="ttc" id="astructstbtt__vertex_html_aa325b3707b88e7e104c0de46bb2bf395"><div class="ttname"><a href="structstbtt__vertex.html#aa325b3707b88e7e104c0de46bb2bf395">stbtt_vertex::type</a></div><div class="ttdeci">unsigned char type</div><div class="ttdef"><b>Definition</b> stb_truetype.h:839</div></div>
 <div class="ttc" id="atty_8cpp_html_a1b03470c8a075b07d2b608209a3b9bf9"><div class="ttname"><a href="tty_8cpp.html#a1b03470c8a075b07d2b608209a3b9bf9">last</a></div><div class="ttdeci">TTY * last</div><div class="ttdef"><b>Definition</b> tty.cpp:48</div></div>
 <div class="ttc" id="atty_8cpp_html_aa3ddf14a1307cc0427854f3dee730073"><div class="ttname"><a href="tty_8cpp.html#aa3ddf14a1307cc0427854f3dee730073">root</a></div><div class="ttdeci">TTY * root</div><div class="ttdef"><b>Definition</b> tty.cpp:47</div></div>
+<div class="ttc" id="avirtio_8h_html_aa2585d779da0ab21273a8d92de9a0ebe"><div class="ttname"><a href="virtio_8h.html#aa2585d779da0ab21273a8d92de9a0ebe">flags</a></div><div class="ttdeci">uint8_t flags</div><div class="ttdef"><b>Definition</b> virtio.h:0</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

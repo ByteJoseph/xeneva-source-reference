@@ -105,9 +105,9 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a191cf0037085a80c54bc8930b0b581a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2899578c01bd3d0a64d35938e1a89cc8" id="r_a2899578c01bd3d0a64d35938e1a89cc8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__socket__.html#a2899578c01bd3d0a64d35938e1a89cc8">ipv4Iden</a></td></tr>
 <tr class="separator:a2899578c01bd3d0a64d35938e1a89cc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade24a0cf32cc6eeb534113237f462510" id="r_ade24a0cf32cc6eeb534113237f462510"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__socket__.html#ade24a0cf32cc6eeb534113237f462510">receive</a> )(struct <a class="el" href="struct__socket__.html">_socket_</a> *sock, <a class="el" href="BaseHdr_2Net_2socket_8h.html#a9330982c7bab0a2048d0828aa091d903">msghdr</a> *msg, int flags)</td></tr>
+<tr class="memitem:ade24a0cf32cc6eeb534113237f462510" id="r_ade24a0cf32cc6eeb534113237f462510"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__socket__.html#ade24a0cf32cc6eeb534113237f462510">receive</a> )(struct <a class="el" href="struct__socket__.html">_socket_</a> *sock, <a class="el" href="BaseHdr_2Net_2socket_8h.html#a9330982c7bab0a2048d0828aa091d903">msghdr</a> *msg, int <a class="el" href="virtio_8h.html#aa2585d779da0ab21273a8d92de9a0ebe">flags</a>)</td></tr>
 <tr class="separator:ade24a0cf32cc6eeb534113237f462510"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2fff24c73cfe7c20c735cdbfd028e7cc" id="r_a2fff24c73cfe7c20c735cdbfd028e7cc"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__socket__.html#a2fff24c73cfe7c20c735cdbfd028e7cc">send</a> )(struct <a class="el" href="struct__socket__.html">_socket_</a> *sock, <a class="el" href="BaseHdr_2Net_2socket_8h.html#a9330982c7bab0a2048d0828aa091d903">msghdr</a> *msg, int flags)</td></tr>
+<tr class="memitem:a2fff24c73cfe7c20c735cdbfd028e7cc" id="r_a2fff24c73cfe7c20c735cdbfd028e7cc"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__socket__.html#a2fff24c73cfe7c20c735cdbfd028e7cc">send</a> )(struct <a class="el" href="struct__socket__.html">_socket_</a> *sock, <a class="el" href="BaseHdr_2Net_2socket_8h.html#a9330982c7bab0a2048d0828aa091d903">msghdr</a> *msg, int <a class="el" href="virtio_8h.html#aa2585d779da0ab21273a8d92de9a0ebe">flags</a>)</td></tr>
 <tr class="separator:a2fff24c73cfe7c20c735cdbfd028e7cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a354f0868d6613442cac13c782929d949" id="r_a354f0868d6613442cac13c782929d949"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__socket__.html#a354f0868d6613442cac13c782929d949">close</a> )(struct <a class="el" href="struct__socket__.html">_socket_</a> *sock)</td></tr>
 <tr class="separator:a354f0868d6613442cac13c782929d949"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -256,7 +256,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int(* _socket_::receive) (struct <a class="el" href="struct__socket__.html">_socket_</a> *sock, <a class="el" href="BaseHdr_2Net_2socket_8h.html#a9330982c7bab0a2048d0828aa091d903">msghdr</a> *msg, int flags)</td>
+          <td class="memname">int(* _socket_::receive) (struct <a class="el" href="struct__socket__.html">_socket_</a> *sock, <a class="el" href="BaseHdr_2Net_2socket_8h.html#a9330982c7bab0a2048d0828aa091d903">msghdr</a> *msg, int <a class="el" href="virtio_8h.html#aa2585d779da0ab21273a8d92de9a0ebe">flags</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -284,7 +284,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int(* _socket_::send) (struct <a class="el" href="struct__socket__.html">_socket_</a> *sock, <a class="el" href="BaseHdr_2Net_2socket_8h.html#a9330982c7bab0a2048d0828aa091d903">msghdr</a> *msg, int flags)</td>
+          <td class="memname">int(* _socket_::send) (struct <a class="el" href="struct__socket__.html">_socket_</a> *sock, <a class="el" href="BaseHdr_2Net_2socket_8h.html#a9330982c7bab0a2048d0828aa091d903">msghdr</a> *msg, int <a class="el" href="virtio_8h.html#aa2585d779da0ab21273a8d92de9a0ebe">flags</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">

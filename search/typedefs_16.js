@@ -5,9 +5,8 @@ var searchData=
   ['vdisk_5fread_2',['vdisk_read',['../vdisk_8h.html#a06c6c22d1db960d7b71d378c1ba0f103',1,'vdisk.h']]],
   ['vdisk_5fwrite_3',['vdisk_write',['../vdisk_8h.html#a7b62534bf1c4e8e523691cd1f619dd0e',1,'vdisk.h']]],
   ['vendor_5fdefined_5fdevice_5fpath_4',['VENDOR_DEFINED_DEVICE_PATH',['../DevicePath_8h.html#a2cb0a0ea94a4309359735ee0223302d1',1,'DevicePath.h']]],
-  ['virtio_5fnet_5fhdr_5ft_5',['virtio_net_hdr_t',['../virtio_8h.html#a634fc3946f674214e4bcdd8b70bf5a7f',1,'virtio.h']]],
-  ['virtio_5fsnd_5fpcm_5fxfer_6',['virtio_snd_pcm_xfer',['../Drivers_2Sound_2virtiosnd_2main_8cpp.html#a6cf8bf40522afcb4cfd0614a0cebef27',1,'main.cpp']]],
-  ['virtio_5fsnd_5fquery_5finfo_7',['virtio_snd_query_info',['../Drivers_2Sound_2virtiosnd_2main_8cpp.html#ad2a41ecdcfa847765e8de7803b131222',1,'main.cpp']]],
-  ['vlc_5ft_8',['vlc_t',['../minimp3_8cpp.html#ae7187d8026b2b6e191d6a48fb8a69455',1,'minimp3.cpp']]],
-  ['vpage_9',['VPage',['../LittleBoot_2vmmngr_8c.html#a4a01ed878c0fae30aadd8f4c1441993c',1,'vmmngr.c']]]
+  ['virtio_5fsnd_5fpcm_5fxfer_5',['virtio_snd_pcm_xfer',['../Drivers_2Sound_2virtiosnd_2main_8cpp.html#a6cf8bf40522afcb4cfd0614a0cebef27',1,'main.cpp']]],
+  ['virtio_5fsnd_5fquery_5finfo_6',['virtio_snd_query_info',['../Drivers_2Sound_2virtiosnd_2main_8cpp.html#ad2a41ecdcfa847765e8de7803b131222',1,'main.cpp']]],
+  ['vlc_5ft_7',['vlc_t',['../minimp3_8cpp.html#ae7187d8026b2b6e191d6a48fb8a69455',1,'minimp3.cpp']]],
+  ['vpage_8',['VPage',['../LittleBoot_2vmmngr_8c.html#a4a01ed878c0fae30aadd8f4c1441993c',1,'vmmngr.c']]]
 ];

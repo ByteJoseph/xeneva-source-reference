@@ -236,6 +236,10 @@ Macros</h2></td></tr>
 <tr class="separator:a0128cbe727f147b457578a0f043152dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a248a4611f0f5a5ede63ef13459feda89" id="r_a248a4611f0f5a5ede63ef13459feda89"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aunet_8h.html#a248a4611f0f5a5ede63ef13459feda89">AUNET_SET_IPV6_PREFIX</a>&#160;&#160;&#160;0x10D</td></tr>
 <tr class="separator:a248a4611f0f5a5ede63ef13459feda89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b22d77717b70b223ae47d5a63ea6418" id="r_a3b22d77717b70b223ae47d5a63ea6418"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aunet_8h.html#a3b22d77717b70b223ae47d5a63ea6418">AU_DNS_MAX4</a>&#160;&#160;&#160;4</td></tr>
+<tr class="separator:a3b22d77717b70b223ae47d5a63ea6418"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cf587f0c8f937ba8eafaedb29c45913" id="r_a1cf587f0c8f937ba8eafaedb29c45913"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aunet_8h.html#a1cf587f0c8f937ba8eafaedb29c45913">AU_DNS_MAX6</a>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:a1cf587f0c8f937ba8eafaedb29c45913"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -262,16 +266,60 @@ Functions</h2></td></tr>
 <tr class="separator:a25efd5e1bfb3afe73901f54e8299a948"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae88d7cc4222318309e76f0571b72b218" id="r_ae88d7cc4222318309e76f0571b72b218"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aunet_8h.html#ae88d7cc4222318309e76f0571b72b218">AuAddrIsLocal6</a> (const <a class="el" href="ipv6_8h.html#a8d8af0dca1cafda09b81ee4b8ecbb672">ip6_addr</a> *address)</td></tr>
 <tr class="separator:ae88d7cc4222318309e76f0571b72b218"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1fb19679a5127d8cb9c5c9e490375ca7" id="r_a1fb19679a5127d8cb9c5c9e490375ca7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aunet_8h.html#a1fb19679a5127d8cb9c5c9e490375ca7">AuNetAddConnectedRoute4</a> (<a class="el" href="devinput_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *<a class="el" href="e1000_8cpp.html#a520bf6a1c47a61d938646ef39fc45d76">nic</a>, const char *ifname)</td></tr>
-<tr class="separator:a1fb19679a5127d8cb9c5c9e490375ca7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c8cdaff8a044f603cb0a7387cfc17ac" id="r_a7c8cdaff8a044f603cb0a7387cfc17ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aunet_8h.html#a7c8cdaff8a044f603cb0a7387cfc17ac">AuNetAddConnectedRoute6</a> (<a class="el" href="devinput_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *<a class="el" href="e1000_8cpp.html#a520bf6a1c47a61d938646ef39fc45d76">nic</a>, const char *ifname)</td></tr>
-<tr class="separator:a7c8cdaff8a044f603cb0a7387cfc17ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a775d4fdf202f5bab547cec8a15dc9e59" id="r_a775d4fdf202f5bab547cec8a15dc9e59"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aunet_8h.html#a775d4fdf202f5bab547cec8a15dc9e59">AuNetAddDefaultRoute4</a> (<a class="el" href="devinput_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *<a class="el" href="e1000_8cpp.html#a520bf6a1c47a61d938646ef39fc45d76">nic</a>, const char *ifname)</td></tr>
-<tr class="separator:a775d4fdf202f5bab547cec8a15dc9e59"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab81f57449b87307d50e64a4f36eef6ea" id="r_ab81f57449b87307d50e64a4f36eef6ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aunet_8h.html#ab81f57449b87307d50e64a4f36eef6ea">AuNetAddDefaultRoute6</a> (<a class="el" href="devinput_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *<a class="el" href="e1000_8cpp.html#a520bf6a1c47a61d938646ef39fc45d76">nic</a>, const char *ifname)</td></tr>
-<tr class="separator:ab81f57449b87307d50e64a4f36eef6ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab55d9134a8b4351f02a11344b191aa80" id="r_ab55d9134a8b4351f02a11344b191aa80"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aunet_8h.html#ab55d9134a8b4351f02a11344b191aa80">AuNetAddConnectedRoute4</a> (<a class="el" href="devinput_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *<a class="el" href="e1000_8cpp.html#a520bf6a1c47a61d938646ef39fc45d76">nic</a>, const char *ifname)</td></tr>
+<tr class="separator:ab55d9134a8b4351f02a11344b191aa80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f92b90b5a01051c43f6df111d22497b" id="r_a4f92b90b5a01051c43f6df111d22497b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aunet_8h.html#a4f92b90b5a01051c43f6df111d22497b">AuNetAddConnectedRoute6</a> (<a class="el" href="devinput_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *<a class="el" href="e1000_8cpp.html#a520bf6a1c47a61d938646ef39fc45d76">nic</a>, const char *ifname)</td></tr>
+<tr class="separator:a4f92b90b5a01051c43f6df111d22497b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a122b6508cc8a4d985ea4f66bd031cf76" id="r_a122b6508cc8a4d985ea4f66bd031cf76"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aunet_8h.html#a122b6508cc8a4d985ea4f66bd031cf76">AuNetAddDefaultRoute4</a> (<a class="el" href="devinput_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *<a class="el" href="e1000_8cpp.html#a520bf6a1c47a61d938646ef39fc45d76">nic</a>, const char *ifname)</td></tr>
+<tr class="separator:a122b6508cc8a4d985ea4f66bd031cf76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5be1052c3036128c996c83adf11a0cf3" id="r_a5be1052c3036128c996c83adf11a0cf3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aunet_8h.html#a5be1052c3036128c996c83adf11a0cf3">AuNetAddDefaultRoute6</a> (<a class="el" href="devinput_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *<a class="el" href="e1000_8cpp.html#a520bf6a1c47a61d938646ef39fc45d76">nic</a>, const char *ifname)</td></tr>
+<tr class="separator:a5be1052c3036128c996c83adf11a0cf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addcb6c5800d9fbaa5288ca203dada40a" id="r_addcb6c5800d9fbaa5288ca203dada40a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aunet_8h.html#addcb6c5800d9fbaa5288ca203dada40a">AuDnsAddServer4</a> (<a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> addr)</td></tr>
+<tr class="separator:addcb6c5800d9fbaa5288ca203dada40a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26c19da2ba0f9bddff7d31609e13c758" id="r_a26c19da2ba0f9bddff7d31609e13c758"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aunet_8h.html#a26c19da2ba0f9bddff7d31609e13c758">AuDnsSetServer4</a> (int <a class="el" href="Libs_2XEClib_2includes_2string_8h.html#a48b8e98743833e6ce735f3d9f2fb240f">index</a>, <a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> addr)</td></tr>
+<tr class="separator:a26c19da2ba0f9bddff7d31609e13c758"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab68451f69b3ea5c085a774d1eff4ca5" id="r_aab68451f69b3ea5c085a774d1eff4ca5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aunet_8h.html#aab68451f69b3ea5c085a774d1eff4ca5">AuDnsGetServer4</a> (int <a class="el" href="Libs_2XEClib_2includes_2string_8h.html#a48b8e98743833e6ce735f3d9f2fb240f">index</a>, <a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> *out)</td></tr>
+<tr class="separator:aab68451f69b3ea5c085a774d1eff4ca5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a675cc6b37a21f5dedc534fac99e577f0" id="r_a675cc6b37a21f5dedc534fac99e577f0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aunet_8h.html#a675cc6b37a21f5dedc534fac99e577f0">AuDnsAddServer6</a> (const <a class="el" href="ipv6_8h.html#a8d8af0dca1cafda09b81ee4b8ecbb672">ip6_addr</a> *addr)</td></tr>
+<tr class="separator:a675cc6b37a21f5dedc534fac99e577f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8971e17705530e61ae5c51d60fbda05" id="r_ae8971e17705530e61ae5c51d60fbda05"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aunet_8h.html#ae8971e17705530e61ae5c51d60fbda05">AuDnsSetServer6</a> (int <a class="el" href="Libs_2XEClib_2includes_2string_8h.html#a48b8e98743833e6ce735f3d9f2fb240f">index</a>, const <a class="el" href="ipv6_8h.html#a8d8af0dca1cafda09b81ee4b8ecbb672">ip6_addr</a> *addr)</td></tr>
+<tr class="separator:ae8971e17705530e61ae5c51d60fbda05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73bb43f04a1be3a5614b12452cccb2c7" id="r_a73bb43f04a1be3a5614b12452cccb2c7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aunet_8h.html#a73bb43f04a1be3a5614b12452cccb2c7">AuDnsGetServer6</a> (int <a class="el" href="Libs_2XEClib_2includes_2string_8h.html#a48b8e98743833e6ce735f3d9f2fb240f">index</a>, <a class="el" href="ipv6_8h.html#a8d8af0dca1cafda09b81ee4b8ecbb672">ip6_addr</a> *out)</td></tr>
+<tr class="separator:a73bb43f04a1be3a5614b12452cccb2c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c5ff57f74de80917e66fb4dfa1601db" id="r_a1c5ff57f74de80917e66fb4dfa1601db"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aunet_8h.html#a1c5ff57f74de80917e66fb4dfa1601db">AuNetRegisterRxPoll</a> (void(*fn)(void))</td></tr>
+<tr class="separator:a1c5ff57f74de80917e66fb4dfa1601db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a435769d1cf980bfe5ef19114ef4520fe" id="r_a435769d1cf980bfe5ef19114ef4520fe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aunet_8h.html#a435769d1cf980bfe5ef19114ef4520fe">AuNetRxPoll</a> (void)</td></tr>
+<tr class="separator:a435769d1cf980bfe5ef19114ef4520fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a3b22d77717b70b223ae47d5a63ea6418" name="a3b22d77717b70b223ae47d5a63ea6418"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b22d77717b70b223ae47d5a63ea6418">&#9670;&#160;</a></span>AU_DNS_MAX4</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define AU_DNS_MAX4&#160;&#160;&#160;4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1cf587f0c8f937ba8eafaedb29c45913" name="a1cf587f0c8f937ba8eafaedb29c45913"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1cf587f0c8f937ba8eafaedb29c45913">&#9670;&#160;</a></span>AU_DNS_MAX6</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define AU_DNS_MAX6&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ac2d18621218e931e889719cf58e9d556" name="ac2d18621218e931e889719cf58e9d556"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac2d18621218e931e889719cf58e9d556">&#9670;&#160;</a></span>AUNET_GET_GATEWAY_ADDRESS</h2>
 
@@ -742,6 +790,170 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="addcb6c5800d9fbaa5288ca203dada40a" name="addcb6c5800d9fbaa5288ca203dada40a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addcb6c5800d9fbaa5288ca203dada40a">&#9670;&#160;</a></span>AuDnsAddServer4()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> void AuDnsAddServer4 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td>
+          <td class="paramname"><em>addr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a675cc6b37a21f5dedc534fac99e577f0" name="a675cc6b37a21f5dedc534fac99e577f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a675cc6b37a21f5dedc534fac99e577f0">&#9670;&#160;</a></span>AuDnsAddServer6()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> void AuDnsAddServer6 </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="ipv6_8h.html#a8d8af0dca1cafda09b81ee4b8ecbb672">ip6_addr</a> *&#160;</td>
+          <td class="paramname"><em>addr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aab68451f69b3ea5c085a774d1eff4ca5" name="aab68451f69b3ea5c085a774d1eff4ca5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab68451f69b3ea5c085a774d1eff4ca5">&#9670;&#160;</a></span>AuDnsGetServer4()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int AuDnsGetServer4 </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> *&#160;</td>
+          <td class="paramname"><em>out</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a73bb43f04a1be3a5614b12452cccb2c7" name="a73bb43f04a1be3a5614b12452cccb2c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73bb43f04a1be3a5614b12452cccb2c7">&#9670;&#160;</a></span>AuDnsGetServer6()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int AuDnsGetServer6 </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ipv6_8h.html#a8d8af0dca1cafda09b81ee4b8ecbb672">ip6_addr</a> *&#160;</td>
+          <td class="paramname"><em>out</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a26c19da2ba0f9bddff7d31609e13c758" name="a26c19da2ba0f9bddff7d31609e13c758"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26c19da2ba0f9bddff7d31609e13c758">&#9670;&#160;</a></span>AuDnsSetServer4()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> void AuDnsSetServer4 </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td>
+          <td class="paramname"><em>addr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae8971e17705530e61ae5c51d60fbda05" name="ae8971e17705530e61ae5c51d60fbda05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8971e17705530e61ae5c51d60fbda05">&#9670;&#160;</a></span>AuDnsSetServer6()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> void AuDnsSetServer6 </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="ipv6_8h.html#a8d8af0dca1cafda09b81ee4b8ecbb672">ip6_addr</a> *&#160;</td>
+          <td class="paramname"><em>addr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ab0673647a8c9ac9b61a104f2d89f308b" name="ab0673647a8c9ac9b61a104f2d89f308b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab0673647a8c9ac9b61a104f2d89f308b">&#9670;&#160;</a></span>AuGetNetworkAdapter()</h2>
 
@@ -795,17 +1007,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a1fb19679a5127d8cb9c5c9e490375ca7" name="a1fb19679a5127d8cb9c5c9e490375ca7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1fb19679a5127d8cb9c5c9e490375ca7">&#9670;&#160;</a></span>AuNetAddConnectedRoute4()</h2>
+<a id="ab55d9134a8b4351f02a11344b191aa80" name="ab55d9134a8b4351f02a11344b191aa80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab55d9134a8b4351f02a11344b191aa80">&#9670;&#160;</a></span>AuNetAddConnectedRoute4()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void AuNetAddConnectedRoute4 </td>
+          <td class="memname"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> void AuNetAddConnectedRoute4 </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="devinput_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *&#160;</td>
           <td class="paramname"><em>nic</em>, </td>
@@ -822,26 +1031,18 @@ Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a7c8cdaff8a044f603cb0a7387cfc17ac" name="a7c8cdaff8a044f603cb0a7387cfc17ac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7c8cdaff8a044f603cb0a7387cfc17ac">&#9670;&#160;</a></span>AuNetAddConnectedRoute6()</h2>
+<a id="a4f92b90b5a01051c43f6df111d22497b" name="a4f92b90b5a01051c43f6df111d22497b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f92b90b5a01051c43f6df111d22497b">&#9670;&#160;</a></span>AuNetAddConnectedRoute6()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void AuNetAddConnectedRoute6 </td>
+          <td class="memname"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> void AuNetAddConnectedRoute6 </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="devinput_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *&#160;</td>
           <td class="paramname"><em>nic</em>, </td>
@@ -858,26 +1059,18 @@ Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a775d4fdf202f5bab547cec8a15dc9e59" name="a775d4fdf202f5bab547cec8a15dc9e59"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a775d4fdf202f5bab547cec8a15dc9e59">&#9670;&#160;</a></span>AuNetAddDefaultRoute4()</h2>
+<a id="a122b6508cc8a4d985ea4f66bd031cf76" name="a122b6508cc8a4d985ea4f66bd031cf76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a122b6508cc8a4d985ea4f66bd031cf76">&#9670;&#160;</a></span>AuNetAddDefaultRoute4()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void AuNetAddDefaultRoute4 </td>
+          <td class="memname"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> void AuNetAddDefaultRoute4 </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="devinput_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *&#160;</td>
           <td class="paramname"><em>nic</em>, </td>
@@ -894,26 +1087,18 @@ Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="ab81f57449b87307d50e64a4f36eef6ea" name="ab81f57449b87307d50e64a4f36eef6ea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab81f57449b87307d50e64a4f36eef6ea">&#9670;&#160;</a></span>AuNetAddDefaultRoute6()</h2>
+<a id="a5be1052c3036128c996c83adf11a0cf3" name="a5be1052c3036128c996c83adf11a0cf3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5be1052c3036128c996c83adf11a0cf3">&#9670;&#160;</a></span>AuNetAddDefaultRoute6()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void AuNetAddDefaultRoute6 </td>
+          <td class="memname"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> void AuNetAddDefaultRoute6 </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="devinput_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *&#160;</td>
           <td class="paramname"><em>nic</em>, </td>
@@ -930,11 +1115,42 @@ Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1c5ff57f74de80917e66fb4dfa1601db" name="a1c5ff57f74de80917e66fb4dfa1601db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c5ff57f74de80917e66fb4dfa1601db">&#9670;&#160;</a></span>AuNetRegisterRxPoll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> void AuNetRegisterRxPoll </td>
+          <td>(</td>
+          <td class="paramtype">void(*)(void)&#160;</td>
+          <td class="paramname"><em>fn</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a435769d1cf980bfe5ef19114ef4520fe" name="a435769d1cf980bfe5ef19114ef4520fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a435769d1cf980bfe5ef19114ef4520fe">&#9670;&#160;</a></span>AuNetRxPoll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> void AuNetRxPoll </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
 </div><div class="memdoc">
 
 </div>

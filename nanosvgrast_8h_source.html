@@ -180,7 +180,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <span class="keywordtype">float</span> dx, dy;</div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    <span class="keywordtype">float</span> len;</div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    <span class="keywordtype">float</span> dmx, dmy;</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> flags;</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code hl_variable" href="virtio_8h.html#aa2585d779da0ab21273a8d92de9a0ebe">flags</a>;</div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>} NSVGpoint;</div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="keyword">typedef</span> <span class="keyword">struct </span>NSVGactiveEdge {</div>
@@ -237,7 +237,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>{</div>
 <div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>    <a class="code hl_typedef" href="nanosvgrast_8h.html#aff19e84b6849fa7700bb5e300f0e9048">NSVGrasterizer</a>* r = (<a class="code hl_typedef" href="nanosvgrast_8h.html#aff19e84b6849fa7700bb5e300f0e9048">NSVGrasterizer</a>*)<a class="code hl_function" href="uspios_8c.html#a22da0d108a87441f43cfeea0229f6963">malloc</a>(<span class="keyword">sizeof</span>(<a class="code hl_typedef" href="nanosvgrast_8h.html#aff19e84b6849fa7700bb5e300f0e9048">NSVGrasterizer</a>));</div>
 <div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>    <span class="keywordflow">if</span> (r == <a class="code hl_define" href="actypes_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>) <span class="keywordflow">goto</span> error;</div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>    <a class="code hl_function" href="acclib_8h.html#afd91f3adbf8d52d42618b6357b0ed895">memset</a>(r, 0, <span class="keyword">sizeof</span>(<a class="code hl_typedef" href="nanosvgrast_8h.html#aff19e84b6849fa7700bb5e300f0e9048">NSVGrasterizer</a>));</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>    <a class="code hl_function" href="kernel__exports_8c.html#a7df3ac2b03b7909016fbfc0254c9e866">memset</a>(r, 0, <span class="keyword">sizeof</span>(<a class="code hl_typedef" href="nanosvgrast_8h.html#aff19e84b6849fa7700bb5e300f0e9048">NSVGrasterizer</a>));</div>
 <div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span> </div>
 <div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>    r-&gt;tessTol = 0.25f;</div>
 <div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>    r-&gt;distTol = 0.01f;</div>
@@ -282,7 +282,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>    <span class="comment">// Alloc new page</span></div>
 <div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>    newp = (NSVGmemPage*)<a class="code hl_function" href="uspios_8c.html#a22da0d108a87441f43cfeea0229f6963">malloc</a>(<span class="keyword">sizeof</span>(NSVGmemPage));</div>
 <div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>    <span class="keywordflow">if</span> (newp == <a class="code hl_define" href="actypes_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>) <span class="keywordflow">return</span> <a class="code hl_define" href="actypes_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
-<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>    <a class="code hl_function" href="acclib_8h.html#afd91f3adbf8d52d42618b6357b0ed895">memset</a>(newp, 0, <span class="keyword">sizeof</span>(NSVGmemPage));</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>    <a class="code hl_function" href="kernel__exports_8c.html#a7df3ac2b03b7909016fbfc0254c9e866">memset</a>(newp, 0, <span class="keyword">sizeof</span>(NSVGmemPage));</div>
 <div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span> </div>
 <div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>    <span class="comment">// Add to linked list</span></div>
 <div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>    <span class="keywordflow">if</span> (cur != <a class="code hl_define" href="actypes_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)</div>
@@ -322,14 +322,14 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>    <span class="keywordflow">return</span> dx * dx + dy * dy &lt; tol* tol;</div>
 <div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>}</div>
 <div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span> </div>
-<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span><span class="keyword">static</span> <span class="keywordtype">void</span> nsvg__addPathPoint(<a class="code hl_typedef" href="nanosvgrast_8h.html#aff19e84b6849fa7700bb5e300f0e9048">NSVGrasterizer</a>* r, <span class="keywordtype">float</span> x, <span class="keywordtype">float</span> y, <span class="keywordtype">int</span> flags)</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span><span class="keyword">static</span> <span class="keywordtype">void</span> nsvg__addPathPoint(<a class="code hl_typedef" href="nanosvgrast_8h.html#aff19e84b6849fa7700bb5e300f0e9048">NSVGrasterizer</a>* r, <span class="keywordtype">float</span> x, <span class="keywordtype">float</span> y, <span class="keywordtype">int</span> <a class="code hl_variable" href="virtio_8h.html#aa2585d779da0ab21273a8d92de9a0ebe">flags</a>)</div>
 <div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>{</div>
 <div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>    NSVGpoint* pt;</div>
 <div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span> </div>
 <div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>    <span class="keywordflow">if</span> (r-&gt;npoints &gt; 0) {</div>
 <div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>        pt = &amp;r-&gt;points[r-&gt;npoints - 1];</div>
 <div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>        <span class="keywordflow">if</span> (nsvg__ptEquals(pt-&gt;x, pt-&gt;y, x, y, r-&gt;distTol)) {</div>
-<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>            pt-&gt;flags = (<span class="keywordtype">unsigned</span> char)(pt-&gt;flags | flags);</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>            pt-&gt;flags = (<span class="keywordtype">unsigned</span> char)(pt-&gt;flags | <a class="code hl_variable" href="virtio_8h.html#aa2585d779da0ab21273a8d92de9a0ebe">flags</a>);</div>
 <div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>            <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>        }</div>
 <div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>    }</div>
@@ -343,7 +343,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>    pt = &amp;r-&gt;points[r-&gt;npoints];</div>
 <div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>    pt-&gt;x = x;</div>
 <div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>    pt-&gt;y = y;</div>
-<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>    pt-&gt;flags = (<span class="keywordtype">unsigned</span> char)flags;</div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>    pt-&gt;flags = (<span class="keywordtype">unsigned</span> char)<a class="code hl_variable" href="virtio_8h.html#aa2585d779da0ab21273a8d92de9a0ebe">flags</a>;</div>
 <div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>    r-&gt;npoints++;</div>
 <div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>}</div>
 <div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span> </div>
@@ -366,7 +366,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>        <span class="keywordflow">if</span> (r-&gt;points2 == <a class="code hl_define" href="actypes_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>) <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>    }</div>
 <div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span> </div>
-<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>    <a class="code hl_function" href="acclib_8h.html#a659178273c07bb50b395e1e0da5a0638">memcpy</a>(r-&gt;points2, r-&gt;points, <span class="keyword">sizeof</span>(NSVGpoint) * r-&gt;npoints);</div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>    <a class="code hl_function" href="kernel__exports_8c.html#adc3b1e0cfaf8284eaf41e372a25b255f">memcpy</a>(r-&gt;points2, r-&gt;points, <span class="keyword">sizeof</span>(NSVGpoint) * r-&gt;npoints);</div>
 <div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>    r-&gt;npoints2 = r-&gt;npoints;</div>
 <div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>}</div>
 <div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span> </div>
@@ -1229,7 +1229,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l01146" name="l01146"></a><span class="lineno"> 1146</span>    <span class="keywordtype">int</span> xmin, xmax;</div>
 <div class="line"><a id="l01147" name="l01147"></a><span class="lineno"> 1147</span> </div>
 <div class="line"><a id="l01148" name="l01148"></a><span class="lineno"> 1148</span>    <span class="keywordflow">for</span> (y = 0; y &lt; r-&gt;height; y++) {</div>
-<div class="line"><a id="l01149" name="l01149"></a><span class="lineno"> 1149</span>        <a class="code hl_function" href="acclib_8h.html#afd91f3adbf8d52d42618b6357b0ed895">memset</a>(r-&gt;scanline, 0, r-&gt;width);</div>
+<div class="line"><a id="l01149" name="l01149"></a><span class="lineno"> 1149</span>        <a class="code hl_function" href="kernel__exports_8c.html#a7df3ac2b03b7909016fbfc0254c9e866">memset</a>(r-&gt;scanline, 0, r-&gt;width);</div>
 <div class="line"><a id="l01150" name="l01150"></a><span class="lineno"> 1150</span>        xmin = r-&gt;width;</div>
 <div class="line"><a id="l01151" name="l01151"></a><span class="lineno"> 1151</span>        xmax = 0;</div>
 <div class="line"><a id="l01152" name="l01152"></a><span class="lineno"> 1152</span>        <span class="keywordflow">for</span> (s = 0; s &lt; NSVG__SUBSAMPLES; ++s) {</div>
@@ -1386,7 +1386,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l01303" name="l01303"></a><span class="lineno"> 1303</span>    grad = paint-&gt;<a class="code hl_variable" href="structNSVGpaint.html#ac0c406cd769a715148aa1aecd63816bf">gradient</a>;</div>
 <div class="line"><a id="l01304" name="l01304"></a><span class="lineno"> 1304</span> </div>
 <div class="line"><a id="l01305" name="l01305"></a><span class="lineno"> 1305</span>    cache-&gt;spread = grad-&gt;<a class="code hl_variable" href="structNSVGgradient.html#ad0ca9ce76308864dbb28c25a9746ec78">spread</a>;</div>
-<div class="line"><a id="l01306" name="l01306"></a><span class="lineno"> 1306</span>    <a class="code hl_function" href="acclib_8h.html#a659178273c07bb50b395e1e0da5a0638">memcpy</a>(cache-&gt;xform, grad-&gt;<a class="code hl_variable" href="structNSVGgradient.html#aa3f41bbeafbf866b27a7bc00692627fd">xform</a>, <span class="keyword">sizeof</span>(<span class="keywordtype">float</span>) * 6);</div>
+<div class="line"><a id="l01306" name="l01306"></a><span class="lineno"> 1306</span>    <a class="code hl_function" href="kernel__exports_8c.html#adc3b1e0cfaf8284eaf41e372a25b255f">memcpy</a>(cache-&gt;xform, grad-&gt;<a class="code hl_variable" href="structNSVGgradient.html#aa3f41bbeafbf866b27a7bc00692627fd">xform</a>, <span class="keyword">sizeof</span>(<span class="keywordtype">float</span>) * 6);</div>
 <div class="line"><a id="l01307" name="l01307"></a><span class="lineno"> 1307</span> </div>
 <div class="line"><a id="l01308" name="l01308"></a><span class="lineno"> 1308</span>    <span class="keywordflow">if</span> (grad-&gt;<a class="code hl_variable" href="structNSVGgradient.html#ac9e36f37d0cb087a0e599d966956f212">nstops</a> == 0) {</div>
 <div class="line"><a id="l01309" name="l01309"></a><span class="lineno"> 1309</span>        <span class="keywordflow">for</span> (i = 0; i &lt; 256; i++)</div>
@@ -1499,7 +1499,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l01416" name="l01416"></a><span class="lineno"> 1416</span>    }</div>
 <div class="line"><a id="l01417" name="l01417"></a><span class="lineno"> 1417</span> </div>
 <div class="line"><a id="l01418" name="l01418"></a><span class="lineno"> 1418</span>    <span class="keywordflow">for</span> (i = 0; i &lt; h; i++)</div>
-<div class="line"><a id="l01419" name="l01419"></a><span class="lineno"> 1419</span>        <a class="code hl_function" href="acclib_8h.html#afd91f3adbf8d52d42618b6357b0ed895">memset</a>(&amp;dst[i * stride], 0, w * 4);</div>
+<div class="line"><a id="l01419" name="l01419"></a><span class="lineno"> 1419</span>        <a class="code hl_function" href="kernel__exports_8c.html#a7df3ac2b03b7909016fbfc0254c9e866">memset</a>(&amp;dst[i * stride], 0, w * 4);</div>
 <div class="line"><a id="l01420" name="l01420"></a><span class="lineno"> 1420</span> </div>
 <div class="line"><a id="l01421" name="l01421"></a><span class="lineno"> 1421</span>    <span class="keywordflow">for</span> (shape = image-&gt;<a class="code hl_variable" href="structNSVGimage.html#af1c994285b47d78661b631f9ce43d7c8">shapes</a>; shape != <a class="code hl_define" href="actypes_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>; shape = shape-&gt;<a class="code hl_variable" href="structNSVGshape.html#a72513ada67dc08af8a484f024b44d485">next</a>) {</div>
 <div class="line"><a id="l01422" name="l01422"></a><span class="lineno"> 1422</span>        <span class="keywordflow">if</span> (!(shape-&gt;<a class="code hl_variable" href="structNSVGshape.html#a9aa4edfee40c4a3558bb34af06de4943">flags</a> &amp; <a class="code hl_enumvalue" href="nanosvg_8h.html#a442ffb30d60efc73c39713a8f2c819a5a92bf0b9fc191000cdbe5d52ae393e407">NSVG_FLAGS_VISIBLE</a>))</div>
@@ -1577,13 +1577,13 @@ $(document).ready(function() { init_codefold(0); });
 <div class="ttc" id="aLibs_2XEClib_2includes_2sys_2socket_8h_html_aee06293d6e1d808ad1a635bee90ba275"><div class="ttname"><a href="Libs_2XEClib_2includes_2sys_2socket_8h.html#aee06293d6e1d808ad1a635bee90ba275">connect</a></div><div class="ttdeci">XE_LIB int connect(int sockfd, sockaddr_ *addr, socklen_t addrlen)</div></div>
 <div class="ttc" id="aProcess_2Calender_2main_8cpp_html_a5b9f2c8eed2b49ee91dd608d9a0ec4bd"><div class="ttname"><a href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a></div><div class="ttdeci">XETime t</div><div class="ttdef"><b>Definition</b> main.cpp:53</div></div>
 <div class="ttc" id="aProcess_2Files_2main_8cpp_html_a44196e6a5696d10442c29e639437196e"><div class="ttname"><a href="Process_2Files_2main_8cpp.html#a44196e6a5696d10442c29e639437196e">path</a></div><div class="ttdeci">char * path</div><div class="ttdef"><b>Definition</b> main.cpp:68</div></div>
-<div class="ttc" id="aacclib_8h_html_a659178273c07bb50b395e1e0da5a0638"><div class="ttname"><a href="acclib_8h.html#a659178273c07bb50b395e1e0da5a0638">memcpy</a></div><div class="ttdeci">void * memcpy(void *Dest, const void *Src, ACPI_SIZE Count)</div><div class="ttdef"><b>Definition</b> utclib.c:310</div></div>
-<div class="ttc" id="aacclib_8h_html_afd91f3adbf8d52d42618b6357b0ed895"><div class="ttname"><a href="acclib_8h.html#afd91f3adbf8d52d42618b6357b0ed895">memset</a></div><div class="ttdeci">void * memset(void *Dest, int Value, ACPI_SIZE Count)</div><div class="ttdef"><b>Definition</b> utclib.c:346</div></div>
 <div class="ttc" id="aacosf_8cpp_html_a983a9e1aa7568df39153ea4d8e16653b"><div class="ttname"><a href="acosf_8cpp.html#a983a9e1aa7568df39153ea4d8e16653b">acosf</a></div><div class="ttdeci">float acosf(float x)</div><div class="ttdef"><b>Definition</b> acosf.cpp:45</div></div>
 <div class="ttc" id="aactypes_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="actypes_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition</b> actypes.h:561</div></div>
 <div class="ttc" id="aatan2f_8cpp_html_af9e5469acf7a7bf82f29d86a77f539d4"><div class="ttname"><a href="atan2f_8cpp.html#af9e5469acf7a7bf82f29d86a77f539d4">atan2f</a></div><div class="ttdeci">float atan2f(float y, float x)</div><div class="ttdef"><b>Definition</b> atan2f.cpp:35</div></div>
 <div class="ttc" id="aceilf_8cpp_html_a8c1a8db0710bb3f25f643a0fca68fc60"><div class="ttname"><a href="ceilf_8cpp.html#a8c1a8db0710bb3f25f643a0fca68fc60">ceilf</a></div><div class="ttdeci">float ceilf(float x)</div><div class="ttdef"><b>Definition</b> ceilf.cpp:3</div></div>
 <div class="ttc" id="afmodf_8cpp_html_af17ec425baca2b5f3882a05b5e19dfb5"><div class="ttname"><a href="fmodf_8cpp.html#af17ec425baca2b5f3882a05b5e19dfb5">fmodf</a></div><div class="ttdeci">float fmodf(float x, float y)</div><div class="ttdef"><b>Definition</b> fmodf.cpp:10</div></div>
+<div class="ttc" id="akernel__exports_8c_html_a7df3ac2b03b7909016fbfc0254c9e866"><div class="ttname"><a href="kernel__exports_8c.html#a7df3ac2b03b7909016fbfc0254c9e866">memset</a></div><div class="ttdeci">void memset(void)</div></div>
+<div class="ttc" id="akernel__exports_8c_html_adc3b1e0cfaf8284eaf41e372a25b255f"><div class="ttname"><a href="kernel__exports_8c.html#adc3b1e0cfaf8284eaf41e372a25b255f">memcpy</a></div><div class="ttdeci">void memcpy(void)</div></div>
 <div class="ttc" id="amath_8h_html"><div class="ttname"><a href="math_8h.html">math.h</a></div></div>
 <div class="ttc" id="amath_8h_html_a2e1baae9134e580910322362dc23290e"><div class="ttname"><a href="math_8h.html#a2e1baae9134e580910322362dc23290e">isnan</a></div><div class="ttdeci">#define isnan(x)</div><div class="ttdef"><b>Definition</b> math.h:150</div></div>
 <div class="ttc" id="amath_8h_html_a7d3630c851132d142d74dadd05899ea6"><div class="ttname"><a href="math_8h.html#a7d3630c851132d142d74dadd05899ea6">floorf</a></div><div class="ttdeci">XE_LIB float floorf(float)</div><div class="ttdef"><b>Definition</b> math.cpp:145</div></div>
@@ -1644,6 +1644,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="ttc" id="astructNSVGshape_html_ad18b4f32d9c90769faced7d041955e63"><div class="ttname"><a href="structNSVGshape.html#ad18b4f32d9c90769faced7d041955e63">NSVGshape::paintOrder</a></div><div class="ttdeci">unsigned char paintOrder</div><div class="ttdef"><b>Definition</b> nanosvg.h:159</div></div>
 <div class="ttc" id="auspios_8c_html_a22da0d108a87441f43cfeea0229f6963"><div class="ttname"><a href="uspios_8c.html#a22da0d108a87441f43cfeea0229f6963">malloc</a></div><div class="ttdeci">void * malloc(unsigned nSize)</div><div class="ttdef"><b>Definition</b> uspios.c:31</div></div>
 <div class="ttc" id="auspios_8c_html_a4f98ff4502b9d7ebedf752c1a7721441"><div class="ttname"><a href="uspios_8c.html#a4f98ff4502b9d7ebedf752c1a7721441">free</a></div><div class="ttdeci">void free(void *pBlock)</div><div class="ttdef"><b>Definition</b> uspios.c:35</div></div>
+<div class="ttc" id="avirtio_8h_html_aa2585d779da0ab21273a8d92de9a0ebe"><div class="ttname"><a href="virtio_8h.html#aa2585d779da0ab21273a8d92de9a0ebe">flags</a></div><div class="ttdeci">uint8_t flags</div><div class="ttdef"><b>Definition</b> virtio.h:0</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
