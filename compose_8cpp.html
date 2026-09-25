@@ -157,6 +157,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a45ba975ae4d4c60a29ebf5c8c8582bc1" id="r_a45ba975ae4d4c60a29ebf5c8c8582bc1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compose_8cpp.html#a45ba975ae4d4c60a29ebf5c8c8582bc1">_compose_dirty_area_</a> (<a class="el" href="chitralekha_8h.html#a2ab1b11981de5401546c85b8ba90a595">ChCanvas</a> *<a class="el" href="deomain_8cpp.html#a4c8d0bbb93dc6fd886c9b998a249a64a">canvas</a>, <a class="el" href="Process_2Deodhai_2window_8h.html#a8992679d9f1b8c5d1cd6a3f8979e0573">Window</a> *<a class="el" href="namdapha_8cpp.html#a60284ea0d2e293995badb97f5cf80c2d">win</a>, <a class="el" href="Process_2Deodhai_2window_8h.html#a8992679d9f1b8c5d1cd6a3f8979e0573">Window</a> *<a class="el" href="deomain_8cpp.html#a953eba25a272d12cafcab7e67801b3c0">focusedWin</a>, <a class="el" href="Process_2Deodhai_2window_8h.html#a53bc978102cea75fdf6b7b9adbf36d2c">WinSharedInfo</a> *info)</td></tr>
 <tr class="memdesc:a45ba975ae4d4c60a29ebf5c8c8582bc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check for small area updates !! not entire window.  <br /></td></tr>
 <tr class="separator:a45ba975ae4d4c60a29ebf5c8c8582bc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcbb26588292c76420d637de8486ee29" id="r_abcbb26588292c76420d637de8486ee29"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compose_8cpp.html#abcbb26588292c76420d637de8486ee29">compose_window_zoomed</a> (<a class="el" href="chitralekha_8h.html#a2ab1b11981de5401546c85b8ba90a595">ChCanvas</a> *<a class="el" href="deomain_8cpp.html#a4c8d0bbb93dc6fd886c9b998a249a64a">canvas</a>, <a class="el" href="Process_2Deodhai_2window_8h.html#a8992679d9f1b8c5d1cd6a3f8979e0573">Window</a> *<a class="el" href="namdapha_8cpp.html#a60284ea0d2e293995badb97f5cf80c2d">win</a>, <a class="el" href="Process_2Deodhai_2window_8h.html#a53bc978102cea75fdf6b7b9adbf36d2c">WinSharedInfo</a> *info)</td></tr>
+<tr class="memdesc:abcbb26588292c76420d637de8486ee29"><td class="mdescLeft">&#160;</td><td class="mdescRight">compose_window_zoomed &ndash; stretched-fill upscale of a window buffer into the compose canvas (the back surface the GPU flush presents from), honoring WinSharedInfo-&gt;zoomed. Fullscreen dirty is published by the caller so transfer moves the whole frame. The whole buffer (titlebar chrome included) stretches: the bar stays visible and its buttons stay clickable via remapped input. Nearest-neighbor. Fixed-point stepping (no float), 4-wide opaque fast path; only translucent pixels pay for a blend call.  <br /></td></tr>
+<tr class="separator:abcbb26588292c76420d637de8486ee29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5600a93b509b29ae8d1be0236e43df98" id="r_a5600a93b509b29ae8d1be0236e43df98"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compose_8cpp.html#a5600a93b509b29ae8d1be0236e43df98">_compose_entire_window</a> (<a class="el" href="chitralekha_8h.html#a2ab1b11981de5401546c85b8ba90a595">ChCanvas</a> *<a class="el" href="deomain_8cpp.html#a4c8d0bbb93dc6fd886c9b998a249a64a">canvas</a>, <a class="el" href="Process_2Deodhai_2window_8h.html#a8992679d9f1b8c5d1cd6a3f8979e0573">Window</a> *<a class="el" href="namdapha_8cpp.html#a60284ea0d2e293995badb97f5cf80c2d">win</a>, <a class="el" href="BaseHdr_2stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> <a class="el" href="deomain_8cpp.html#a7768b8ffd3384d7e78a555812e803aa7">_window_update_all_</a>, <a class="el" href="Process_2Deodhai_2window_8h.html#a53bc978102cea75fdf6b7b9adbf36d2c">WinSharedInfo</a> *info, <a class="el" href="Process_2Deodhai_2window_8h.html#a8992679d9f1b8c5d1cd6a3f8979e0573">Window</a> *<a class="el" href="deomain_8cpp.html#a953eba25a272d12cafcab7e67801b3c0">focusedWin</a>, <a class="el" href="BaseHdr_2stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> <a class="el" href="deomain_8cpp.html#ae0a832ee33cc542fe01f59b10bd83247">_window_moving_</a>, <a class="el" href="BaseHdr_2stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> <a class="el" href="deomain_8cpp.html#a60f55aa246e84429d56172fb0c159846">_shadow_update</a>)</td></tr>
 <tr class="memdesc:a5600a93b509b29ae8d1be0236e43df98"><td class="mdescLeft">&#160;</td><td class="mdescRight"><em>compose_entire_window</em> &ndash; composes an entire window to canvas  <br /></td></tr>
 <tr class="separator:a5600a93b509b29ae8d1be0236e43df98"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -425,6 +428,43 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="abcbb26588292c76420d637de8486ee29" name="abcbb26588292c76420d637de8486ee29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcbb26588292c76420d637de8486ee29">&#9670;&#160;</a></span>compose_window_zoomed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void compose_window_zoomed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="chitralekha_8h.html#a2ab1b11981de5401546c85b8ba90a595">ChCanvas</a> *&#160;</td>
+          <td class="paramname"><em>canvas</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="Process_2Deodhai_2window_8h.html#a8992679d9f1b8c5d1cd6a3f8979e0573">Window</a> *&#160;</td>
+          <td class="paramname"><em>win</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="Process_2Deodhai_2window_8h.html#a53bc978102cea75fdf6b7b9adbf36d2c">WinSharedInfo</a> *&#160;</td>
+          <td class="paramname"><em>info</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>compose_window_zoomed &ndash; stretched-fill upscale of a window buffer into the compose canvas (the back surface the GPU flush presents from), honoring WinSharedInfo-&gt;zoomed. Fullscreen dirty is published by the caller so transfer moves the whole frame. The whole buffer (titlebar chrome included) stretches: the bar stays visible and its buttons stay clickable via remapped input. Nearest-neighbor. Fixed-point stepping (no float), 4-wide opaque fast path; only translucent pixels pay for a blend call. </p>
+<p>compose_window_zoomed &ndash; stretched-fill bilinear upscale of a window buffer to the full scanout (WinSharedInfo-&gt;zoomed) </p>
 
 </div>
 </div>

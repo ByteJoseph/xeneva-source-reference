@@ -147,7 +147,7 @@ This graph shows which files directly or indirectly include this file:</div>
 Macros</h2></td></tr>
 <tr class="memitem:ab3ba090d4e822e3d52107f5c18c21290" id="r_ab3ba090d4e822e3d52107f5c18c21290"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bitmap_8h.html#ab3ba090d4e822e3d52107f5c18c21290">BITS_TO_LONGS</a>(nr)&#160;&#160;&#160;(((nr) + <a class="el" href="bordoisila__bits_8h.html#a2f660aa23a5dbc0f4b8df48b4302b8c3">BITS_PER_LONG</a> - 1) / <a class="el" href="bordoisila__bits_8h.html#a2f660aa23a5dbc0f4b8df48b4302b8c3">BITS_PER_LONG</a>)</td></tr>
 <tr class="separator:ab3ba090d4e822e3d52107f5c18c21290"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae986f6f717d5c21d8b3f69d60424778e" id="r_ae986f6f717d5c21d8b3f69d60424778e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bitmap_8h.html#ae986f6f717d5c21d8b3f69d60424778e">DECLARE_BITMAP</a>(name,  bits)&#160;&#160;&#160; unsigned long name[<a class="el" href="bordoisila__bits_8h.html#ab3ba090d4e822e3d52107f5c18c21290">BITS_TO_LONGS</a>(bits)]</td></tr>
+<tr class="memitem:ae986f6f717d5c21d8b3f69d60424778e" id="r_ae986f6f717d5c21d8b3f69d60424778e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bitmap_8h.html#ae986f6f717d5c21d8b3f69d60424778e">DECLARE_BITMAP</a>(<a class="el" href="codec__8859_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>,  bits)&#160;&#160;&#160; unsigned long <a class="el" href="codec__8859_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>[<a class="el" href="bordoisila__bits_8h.html#ab3ba090d4e822e3d52107f5c18c21290">BITS_TO_LONGS</a>(bits)]</td></tr>
 <tr class="separator:ae986f6f717d5c21d8b3f69d60424778e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1092889a966f906260044e4291f4fce" id="r_aa1092889a966f906260044e4291f4fce"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bitmap_8h.html#aa1092889a966f906260044e4291f4fce">set_bit</a>(nr,  addr)&#160;&#160;&#160; ((addr)[(nr) / <a class="el" href="bordoisila__bits_8h.html#a2f660aa23a5dbc0f4b8df48b4302b8c3">BITS_PER_LONG</a>] |= (1UL &lt;&lt; ((nr) % <a class="el" href="bordoisila__bits_8h.html#a2f660aa23a5dbc0f4b8df48b4302b8c3">BITS_PER_LONG</a>)))</td></tr>
 <tr class="separator:aa1092889a966f906260044e4291f4fce"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -283,7 +283,7 @@ Macros</h2></td></tr>
           <td class="memname">#define DECLARE_BITMAP</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">name, </td>
+          <td class="paramname"><a class="el" href="codec__8859_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -294,7 +294,7 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160; unsigned long name[<a class="el" href="bordoisila__bits_8h.html#ab3ba090d4e822e3d52107f5c18c21290">BITS_TO_LONGS</a>(bits)]</td>
+          <td></td><td>&#160;&#160;&#160; unsigned long <a class="el" href="codec__8859_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>[<a class="el" href="bordoisila__bits_8h.html#ab3ba090d4e822e3d52107f5c18c21290">BITS_TO_LONGS</a>(bits)]</td>
         </tr>
       </table>
 </div><div class="memdoc">

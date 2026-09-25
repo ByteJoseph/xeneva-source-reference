@@ -120,9 +120,9 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a4642d4b7df28478bb762fe43c85b5c63" id="r_a4642d4b7df28478bb762fe43c85b5c63"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BaseHdr_2linux_2list_8h.html#a4642d4b7df28478bb762fe43c85b5c63">LIST_HEAD_INIT</a>(name)&#160;&#160;&#160;{&amp;(name), &amp;(name) }</td></tr>
+<tr class="memitem:a4642d4b7df28478bb762fe43c85b5c63" id="r_a4642d4b7df28478bb762fe43c85b5c63"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BaseHdr_2linux_2list_8h.html#a4642d4b7df28478bb762fe43c85b5c63">LIST_HEAD_INIT</a>(<a class="el" href="codec__8859_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>)&#160;&#160;&#160;{&amp;(<a class="el" href="codec__8859_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>), &amp;(<a class="el" href="codec__8859_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>) }</td></tr>
 <tr class="separator:a4642d4b7df28478bb762fe43c85b5c63"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a42f0e72af970a790b60a740af8c9ecd0" id="r_a42f0e72af970a790b60a740af8c9ecd0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BaseHdr_2linux_2list_8h.html#a42f0e72af970a790b60a740af8c9ecd0">LIST_HEAD</a>(name)&#160;&#160;&#160;struct <a class="el" href="structlist__head.html">list_head</a> name = <a class="el" href="BaseHdr_2linux_2list_8h.html#a4642d4b7df28478bb762fe43c85b5c63">LIST_HEAD_INIT</a>(name)</td></tr>
+<tr class="memitem:a42f0e72af970a790b60a740af8c9ecd0" id="r_a42f0e72af970a790b60a740af8c9ecd0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BaseHdr_2linux_2list_8h.html#a42f0e72af970a790b60a740af8c9ecd0">LIST_HEAD</a>(<a class="el" href="codec__8859_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>)&#160;&#160;&#160;struct <a class="el" href="structlist__head.html">list_head</a> <a class="el" href="codec__8859_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a> = <a class="el" href="BaseHdr_2linux_2list_8h.html#a4642d4b7df28478bb762fe43c85b5c63">LIST_HEAD_INIT</a>(<a class="el" href="codec__8859_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>)</td></tr>
 <tr class="separator:a42f0e72af970a790b60a740af8c9ecd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26c976b7f654e70df318c1843e5094de" id="r_a26c976b7f654e70df318c1843e5094de"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BaseHdr_2linux_2list_8h.html#a26c976b7f654e70df318c1843e5094de">list_entry</a>(ptr,  type,  member)&#160;&#160;&#160;    <a class="el" href="kernel_8h.html#af8c317a42292b61c93aae91e59118a46">container_of</a>(ptr, type, member)</td></tr>
 <tr class="separator:a26c976b7f654e70df318c1843e5094de"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -405,8 +405,8 @@ Macros</h2></td></tr>
           <td class="memname">#define LIST_HEAD</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">name</td><td>)</td>
-          <td>&#160;&#160;&#160;struct <a class="el" href="structlist__head.html">list_head</a> name = <a class="el" href="BaseHdr_2linux_2list_8h.html#a4642d4b7df28478bb762fe43c85b5c63">LIST_HEAD_INIT</a>(name)</td>
+          <td class="paramname"><a class="el" href="codec__8859_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a></td><td>)</td>
+          <td>&#160;&#160;&#160;struct <a class="el" href="structlist__head.html">list_head</a> <a class="el" href="codec__8859_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a> = <a class="el" href="BaseHdr_2linux_2list_8h.html#a4642d4b7df28478bb762fe43c85b5c63">LIST_HEAD_INIT</a>(<a class="el" href="codec__8859_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -423,8 +423,8 @@ Macros</h2></td></tr>
           <td class="memname">#define LIST_HEAD_INIT</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">name</td><td>)</td>
-          <td>&#160;&#160;&#160;{&amp;(name), &amp;(name) }</td>
+          <td class="paramname"><a class="el" href="codec__8859_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a></td><td>)</td>
+          <td>&#160;&#160;&#160;{&amp;(<a class="el" href="codec__8859_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>), &amp;(<a class="el" href="codec__8859_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>) }</td>
         </tr>
       </table>
 </div><div class="memdoc">

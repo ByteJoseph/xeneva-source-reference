@@ -457,27 +457,27 @@ Macros</h2></td></tr>
 <tr class="separator:a3344f5638240b82a2128c71d6073a9b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8223ecd78e9937dc1fc43a49deec1554" id="r_a8223ecd78e9937dc1fc43a49deec1554"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#a8223ecd78e9937dc1fc43a49deec1554">gm</a>&#160;&#160;&#160;(&amp;_gm_)</td></tr>
 <tr class="separator:a8223ecd78e9937dc1fc43a49deec1554"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf6941f282e0b4e708de251c482eaeed" id="r_abf6941f282e0b4e708de251c482eaeed"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#abf6941f282e0b4e708de251c482eaeed">is_global</a>(M)&#160;&#160;&#160;((M) == &amp;_gm_)</td></tr>
+<tr class="memitem:abf6941f282e0b4e708de251c482eaeed" id="r_abf6941f282e0b4e708de251c482eaeed"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#abf6941f282e0b4e708de251c482eaeed">is_global</a>(<a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>)&#160;&#160;&#160;((<a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>) == &amp;_gm_)</td></tr>
 <tr class="separator:abf6941f282e0b4e708de251c482eaeed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af3b001bbc18e175f99b0c8644d63dd4d" id="r_af3b001bbc18e175f99b0c8644d63dd4d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#af3b001bbc18e175f99b0c8644d63dd4d">is_initialized</a>(M)&#160;&#160;&#160;((M)-&gt;top != 0)</td></tr>
+<tr class="memitem:af3b001bbc18e175f99b0c8644d63dd4d" id="r_af3b001bbc18e175f99b0c8644d63dd4d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#af3b001bbc18e175f99b0c8644d63dd4d">is_initialized</a>(<a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>)&#160;&#160;&#160;((<a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>)-&gt;<a class="el" href="p__spec_8h.html#a61be60bd0fc3c2a1b8637d2bee8ea317a3961740aa293a50c701d278225f7050a">top</a> != 0)</td></tr>
 <tr class="separator:af3b001bbc18e175f99b0c8644d63dd4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c7ff8add3d9f12d4af529f9f43d7644" id="r_a7c7ff8add3d9f12d4af529f9f43d7644"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#a7c7ff8add3d9f12d4af529f9f43d7644">use_lock</a>(M)&#160;&#160;&#160;((M)-&gt;mflags &amp;   <a class="el" href="dlmalloc_8c.html#a02a456408564b69d6f3de5f8fede4931">USE_LOCK_BIT</a>)</td></tr>
+<tr class="memitem:a7c7ff8add3d9f12d4af529f9f43d7644" id="r_a7c7ff8add3d9f12d4af529f9f43d7644"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#a7c7ff8add3d9f12d4af529f9f43d7644">use_lock</a>(<a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>)&#160;&#160;&#160;((<a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>)-&gt;mflags &amp;   <a class="el" href="dlmalloc_8c.html#a02a456408564b69d6f3de5f8fede4931">USE_LOCK_BIT</a>)</td></tr>
 <tr class="separator:a7c7ff8add3d9f12d4af529f9f43d7644"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7eff565061029c1af31eecb25dca0be" id="r_aa7eff565061029c1af31eecb25dca0be"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#aa7eff565061029c1af31eecb25dca0be">enable_lock</a>(M)&#160;&#160;&#160;((M)-&gt;mflags |=  <a class="el" href="dlmalloc_8c.html#a02a456408564b69d6f3de5f8fede4931">USE_LOCK_BIT</a>)</td></tr>
+<tr class="memitem:aa7eff565061029c1af31eecb25dca0be" id="r_aa7eff565061029c1af31eecb25dca0be"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#aa7eff565061029c1af31eecb25dca0be">enable_lock</a>(<a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>)&#160;&#160;&#160;((<a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>)-&gt;mflags |=  <a class="el" href="dlmalloc_8c.html#a02a456408564b69d6f3de5f8fede4931">USE_LOCK_BIT</a>)</td></tr>
 <tr class="separator:aa7eff565061029c1af31eecb25dca0be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a349dcd06c8dcf826a592f4d9a7b2949c" id="r_a349dcd06c8dcf826a592f4d9a7b2949c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#a349dcd06c8dcf826a592f4d9a7b2949c">disable_lock</a>(M)</td></tr>
+<tr class="memitem:a349dcd06c8dcf826a592f4d9a7b2949c" id="r_a349dcd06c8dcf826a592f4d9a7b2949c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#a349dcd06c8dcf826a592f4d9a7b2949c">disable_lock</a>(<a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>)</td></tr>
 <tr class="separator:a349dcd06c8dcf826a592f4d9a7b2949c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acab9406dcc7caedf7a63038e271d45a5" id="r_acab9406dcc7caedf7a63038e271d45a5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#acab9406dcc7caedf7a63038e271d45a5">use_mmap</a>(M)&#160;&#160;&#160;((M)-&gt;mflags &amp;   <a class="el" href="dlmalloc_8c.html#a6792a808878980b064a53729e42a1b55">USE_MMAP_BIT</a>)</td></tr>
+<tr class="memitem:acab9406dcc7caedf7a63038e271d45a5" id="r_acab9406dcc7caedf7a63038e271d45a5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#acab9406dcc7caedf7a63038e271d45a5">use_mmap</a>(<a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>)&#160;&#160;&#160;((<a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>)-&gt;mflags &amp;   <a class="el" href="dlmalloc_8c.html#a6792a808878980b064a53729e42a1b55">USE_MMAP_BIT</a>)</td></tr>
 <tr class="separator:acab9406dcc7caedf7a63038e271d45a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f290b320a0eac1ac56491a51cbed8df" id="r_a2f290b320a0eac1ac56491a51cbed8df"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#a2f290b320a0eac1ac56491a51cbed8df">enable_mmap</a>(M)&#160;&#160;&#160;((M)-&gt;mflags |=  <a class="el" href="dlmalloc_8c.html#a6792a808878980b064a53729e42a1b55">USE_MMAP_BIT</a>)</td></tr>
+<tr class="memitem:a2f290b320a0eac1ac56491a51cbed8df" id="r_a2f290b320a0eac1ac56491a51cbed8df"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#a2f290b320a0eac1ac56491a51cbed8df">enable_mmap</a>(<a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>)&#160;&#160;&#160;((<a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>)-&gt;mflags |=  <a class="el" href="dlmalloc_8c.html#a6792a808878980b064a53729e42a1b55">USE_MMAP_BIT</a>)</td></tr>
 <tr class="separator:a2f290b320a0eac1ac56491a51cbed8df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73914fa402851f1661c5f8026003be64" id="r_a73914fa402851f1661c5f8026003be64"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#a73914fa402851f1661c5f8026003be64">disable_mmap</a>(M)&#160;&#160;&#160;((M)-&gt;mflags &amp;= ~<a class="el" href="dlmalloc_8c.html#a6792a808878980b064a53729e42a1b55">USE_MMAP_BIT</a>)</td></tr>
+<tr class="memitem:a73914fa402851f1661c5f8026003be64" id="r_a73914fa402851f1661c5f8026003be64"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#a73914fa402851f1661c5f8026003be64">disable_mmap</a>(<a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>)&#160;&#160;&#160;((<a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>)-&gt;mflags &amp;= ~<a class="el" href="dlmalloc_8c.html#a6792a808878980b064a53729e42a1b55">USE_MMAP_BIT</a>)</td></tr>
 <tr class="separator:a73914fa402851f1661c5f8026003be64"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6cbe613595e5001cbb1b85de17ce1c27" id="r_a6cbe613595e5001cbb1b85de17ce1c27"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#a6cbe613595e5001cbb1b85de17ce1c27">use_noncontiguous</a>(M)&#160;&#160;&#160;((M)-&gt;mflags &amp;   <a class="el" href="dlmalloc_8c.html#ac7f41c328146bb45481fe3e0c20787d4">USE_NONCONTIGUOUS_BIT</a>)</td></tr>
+<tr class="memitem:a6cbe613595e5001cbb1b85de17ce1c27" id="r_a6cbe613595e5001cbb1b85de17ce1c27"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#a6cbe613595e5001cbb1b85de17ce1c27">use_noncontiguous</a>(<a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>)&#160;&#160;&#160;((<a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>)-&gt;mflags &amp;   <a class="el" href="dlmalloc_8c.html#ac7f41c328146bb45481fe3e0c20787d4">USE_NONCONTIGUOUS_BIT</a>)</td></tr>
 <tr class="separator:a6cbe613595e5001cbb1b85de17ce1c27"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c844cd4da4c0805c2b2e8424513f1fd" id="r_a1c844cd4da4c0805c2b2e8424513f1fd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#a1c844cd4da4c0805c2b2e8424513f1fd">disable_contiguous</a>(M)&#160;&#160;&#160;((M)-&gt;mflags |=  <a class="el" href="dlmalloc_8c.html#ac7f41c328146bb45481fe3e0c20787d4">USE_NONCONTIGUOUS_BIT</a>)</td></tr>
+<tr class="memitem:a1c844cd4da4c0805c2b2e8424513f1fd" id="r_a1c844cd4da4c0805c2b2e8424513f1fd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#a1c844cd4da4c0805c2b2e8424513f1fd">disable_contiguous</a>(<a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>)&#160;&#160;&#160;((<a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>)-&gt;mflags |=  <a class="el" href="dlmalloc_8c.html#ac7f41c328146bb45481fe3e0c20787d4">USE_NONCONTIGUOUS_BIT</a>)</td></tr>
 <tr class="separator:a1c844cd4da4c0805c2b2e8424513f1fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae06e664473337b87ba3d95609fef288" id="r_aae06e664473337b87ba3d95609fef288"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#aae06e664473337b87ba3d95609fef288">set_lock</a>(M,  L)</td></tr>
+<tr class="memitem:aae06e664473337b87ba3d95609fef288" id="r_aae06e664473337b87ba3d95609fef288"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#aae06e664473337b87ba3d95609fef288">set_lock</a>(<a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>,  L)</td></tr>
 <tr class="separator:aae06e664473337b87ba3d95609fef288"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26099b7c631584ea0a7df48d5663b316" id="r_a26099b7c631584ea0a7df48d5663b316"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#a26099b7c631584ea0a7df48d5663b316">page_align</a>(S)&#160;&#160;&#160; (((S) + (mparams.page_size - <a class="el" href="dlmalloc_8c.html#a1a115588725fa912f1bcaca9f08fb658">SIZE_T_ONE</a>)) &amp; ~(mparams.page_size - <a class="el" href="dlmalloc_8c.html#a1a115588725fa912f1bcaca9f08fb658">SIZE_T_ONE</a>))</td></tr>
 <tr class="separator:a26099b7c631584ea0a7df48d5663b316"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -493,29 +493,29 @@ Macros</h2></td></tr>
 <tr class="separator:aef1cfe43fae84cc03ab977f8512f0a11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3616a6ae475e54f73816dfa69d1483e8" id="r_a3616a6ae475e54f73816dfa69d1483e8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#a3616a6ae475e54f73816dfa69d1483e8">segment_holds</a>(S,  A)&#160;&#160;&#160;  ((char*)(A) &gt;= S-&gt;base &amp;&amp; (char*)(A) &lt; S-&gt;base + S-&gt;size)</td></tr>
 <tr class="separator:a3616a6ae475e54f73816dfa69d1483e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8fcca0fe7fd7176c642cb7eaca01e3c8" id="r_a8fcca0fe7fd7176c642cb7eaca01e3c8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#a8fcca0fe7fd7176c642cb7eaca01e3c8">should_trim</a>(M,  s)&#160;&#160;&#160;(1)</td></tr>
+<tr class="memitem:a8fcca0fe7fd7176c642cb7eaca01e3c8" id="r_a8fcca0fe7fd7176c642cb7eaca01e3c8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#a8fcca0fe7fd7176c642cb7eaca01e3c8">should_trim</a>(<a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>,  s)&#160;&#160;&#160;(1)</td></tr>
 <tr class="separator:a8fcca0fe7fd7176c642cb7eaca01e3c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b8c23c29e153672fb62406384791948" id="r_a3b8c23c29e153672fb62406384791948"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#a3b8c23c29e153672fb62406384791948">TOP_FOOT_SIZE</a>&#160;&#160;&#160;  (<a class="el" href="dlmalloc_8c.html#a2e22ed02137eff655b87a572b974eb37">align_offset</a>(<a class="el" href="dlmalloc_8c.html#accb5f8e767e1e6ca196937cd24f8a1e2">chunk2mem</a>(0))+<a class="el" href="dlmalloc_8c.html#abc9ba9df02632268a7b15ef992a94035">pad_request</a>(sizeof(struct <a class="el" href="structmalloc__segment.html">malloc_segment</a>))+<a class="el" href="dlmalloc_8c.html#abf35d28195f0f301fe63d0ea867f4379">MIN_CHUNK_SIZE</a>)</td></tr>
 <tr class="separator:a3b8c23c29e153672fb62406384791948"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9abf67cb3bc9027f0b44bab676e05f09" id="r_a9abf67cb3bc9027f0b44bab676e05f09"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#a9abf67cb3bc9027f0b44bab676e05f09">PREACTION</a>(M)&#160;&#160;&#160;(0)</td></tr>
+<tr class="memitem:a9abf67cb3bc9027f0b44bab676e05f09" id="r_a9abf67cb3bc9027f0b44bab676e05f09"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#a9abf67cb3bc9027f0b44bab676e05f09">PREACTION</a>(<a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>)&#160;&#160;&#160;(0)</td></tr>
 <tr class="separator:a9abf67cb3bc9027f0b44bab676e05f09"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c176fdaf0d14b883ba250c8a569b88e" id="r_a8c176fdaf0d14b883ba250c8a569b88e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#a8c176fdaf0d14b883ba250c8a569b88e">POSTACTION</a>(M)</td></tr>
+<tr class="memitem:a8c176fdaf0d14b883ba250c8a569b88e" id="r_a8c176fdaf0d14b883ba250c8a569b88e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#a8c176fdaf0d14b883ba250c8a569b88e">POSTACTION</a>(<a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>)</td></tr>
 <tr class="separator:a8c176fdaf0d14b883ba250c8a569b88e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb20d711da475d4c59ef88569579b4d4" id="r_acb20d711da475d4c59ef88569579b4d4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#acb20d711da475d4c59ef88569579b4d4">CORRUPTION_ERROR_ACTION</a>(m)&#160;&#160;&#160;<a class="el" href="dlmalloc_8c.html#a5376571bbf4cdc9782683635f366f89a">ABORT</a></td></tr>
 <tr class="separator:acb20d711da475d4c59ef88569579b4d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab207e868102874ef0dee095572e35597" id="r_ab207e868102874ef0dee095572e35597"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#ab207e868102874ef0dee095572e35597">USAGE_ERROR_ACTION</a>(m,  p)&#160;&#160;&#160;<a class="el" href="dlmalloc_8c.html#a5376571bbf4cdc9782683635f366f89a">ABORT</a></td></tr>
 <tr class="separator:ab207e868102874ef0dee095572e35597"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ee253420495ac1a115acad3a7e2045c" id="r_a4ee253420495ac1a115acad3a7e2045c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#a4ee253420495ac1a115acad3a7e2045c">check_free_chunk</a>(M,  P)</td></tr>
+<tr class="memitem:a4ee253420495ac1a115acad3a7e2045c" id="r_a4ee253420495ac1a115acad3a7e2045c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#a4ee253420495ac1a115acad3a7e2045c">check_free_chunk</a>(<a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>,  P)</td></tr>
 <tr class="separator:a4ee253420495ac1a115acad3a7e2045c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a10639890e0474f257429c8aec650bb" id="r_a4a10639890e0474f257429c8aec650bb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#a4a10639890e0474f257429c8aec650bb">check_inuse_chunk</a>(M,  P)</td></tr>
+<tr class="memitem:a4a10639890e0474f257429c8aec650bb" id="r_a4a10639890e0474f257429c8aec650bb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#a4a10639890e0474f257429c8aec650bb">check_inuse_chunk</a>(<a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>,  P)</td></tr>
 <tr class="separator:a4a10639890e0474f257429c8aec650bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae26652400ab077acf28998ca58aa7bf1" id="r_ae26652400ab077acf28998ca58aa7bf1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#ae26652400ab077acf28998ca58aa7bf1">check_malloced_chunk</a>(M,  P,  N)</td></tr>
+<tr class="memitem:ae26652400ab077acf28998ca58aa7bf1" id="r_ae26652400ab077acf28998ca58aa7bf1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#ae26652400ab077acf28998ca58aa7bf1">check_malloced_chunk</a>(<a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>,  P,  N)</td></tr>
 <tr class="separator:ae26652400ab077acf28998ca58aa7bf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab4a8a939c748e7bf809ebf9cde15f974" id="r_ab4a8a939c748e7bf809ebf9cde15f974"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#ab4a8a939c748e7bf809ebf9cde15f974">check_mmapped_chunk</a>(M,  P)</td></tr>
+<tr class="memitem:ab4a8a939c748e7bf809ebf9cde15f974" id="r_ab4a8a939c748e7bf809ebf9cde15f974"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#ab4a8a939c748e7bf809ebf9cde15f974">check_mmapped_chunk</a>(<a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>,  P)</td></tr>
 <tr class="separator:ab4a8a939c748e7bf809ebf9cde15f974"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa00ceb10e333a5edffe0c4a429207b0" id="r_afa00ceb10e333a5edffe0c4a429207b0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#afa00ceb10e333a5edffe0c4a429207b0">check_malloc_state</a>(M)</td></tr>
+<tr class="memitem:afa00ceb10e333a5edffe0c4a429207b0" id="r_afa00ceb10e333a5edffe0c4a429207b0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#afa00ceb10e333a5edffe0c4a429207b0">check_malloc_state</a>(<a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>)</td></tr>
 <tr class="separator:afa00ceb10e333a5edffe0c4a429207b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9da830f14086f890cc55fc4172a02eb6" id="r_a9da830f14086f890cc55fc4172a02eb6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#a9da830f14086f890cc55fc4172a02eb6">check_top_chunk</a>(M,  P)</td></tr>
+<tr class="memitem:a9da830f14086f890cc55fc4172a02eb6" id="r_a9da830f14086f890cc55fc4172a02eb6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#a9da830f14086f890cc55fc4172a02eb6">check_top_chunk</a>(<a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>,  P)</td></tr>
 <tr class="separator:a9da830f14086f890cc55fc4172a02eb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aadc2cdd1444477c387fc30e64f061432" id="r_aadc2cdd1444477c387fc30e64f061432"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#aadc2cdd1444477c387fc30e64f061432">is_small</a>(s)&#160;&#160;&#160;(((s) &gt;&gt; <a class="el" href="dlmalloc_8c.html#a35c7b74e5fe8c45a869115cc6e154fe9">SMALLBIN_SHIFT</a>) &lt; <a class="el" href="dlmalloc_8c.html#afe898942dfe9b3557981d0dc935fddde">NSMALLBINS</a>)</td></tr>
 <tr class="separator:aadc2cdd1444477c387fc30e64f061432"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -525,9 +525,9 @@ Macros</h2></td></tr>
 <tr class="separator:a377939ca061c1b170053c2927af26cdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06f22f4c7be02a90000e46f2e7eb873b" id="r_a06f22f4c7be02a90000e46f2e7eb873b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#a06f22f4c7be02a90000e46f2e7eb873b">MIN_SMALL_INDEX</a>&#160;&#160;&#160;(<a class="el" href="dlmalloc_8c.html#a1f3d4249e522c896509b7999860090ea">small_index</a>(<a class="el" href="dlmalloc_8c.html#abf35d28195f0f301fe63d0ea867f4379">MIN_CHUNK_SIZE</a>))</td></tr>
 <tr class="separator:a06f22f4c7be02a90000e46f2e7eb873b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a862c7dc1f319911e1f06b9d99485cc54" id="r_a862c7dc1f319911e1f06b9d99485cc54"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#a862c7dc1f319911e1f06b9d99485cc54">smallbin_at</a>(M,  i)&#160;&#160;&#160;((<a class="el" href="dlmalloc_8c.html#ac42f888c90017483ad23708b9a346798">sbinptr</a>)((char*)&amp;((M)-&gt;smallbins[(i)&lt;&lt;1])))</td></tr>
+<tr class="memitem:a862c7dc1f319911e1f06b9d99485cc54" id="r_a862c7dc1f319911e1f06b9d99485cc54"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#a862c7dc1f319911e1f06b9d99485cc54">smallbin_at</a>(<a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>,  i)&#160;&#160;&#160;((<a class="el" href="dlmalloc_8c.html#ac42f888c90017483ad23708b9a346798">sbinptr</a>)((char*)&amp;((<a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>)-&gt;smallbins[(i)&lt;&lt;1])))</td></tr>
 <tr class="separator:a862c7dc1f319911e1f06b9d99485cc54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9890e7becae3c880548653acb11ef261" id="r_a9890e7becae3c880548653acb11ef261"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#a9890e7becae3c880548653acb11ef261">treebin_at</a>(M,  i)&#160;&#160;&#160;(&amp;((M)-&gt;treebins[i]))</td></tr>
+<tr class="memitem:a9890e7becae3c880548653acb11ef261" id="r_a9890e7becae3c880548653acb11ef261"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#a9890e7becae3c880548653acb11ef261">treebin_at</a>(<a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>,  i)&#160;&#160;&#160;(&amp;((<a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>)-&gt;treebins[i]))</td></tr>
 <tr class="separator:a9890e7becae3c880548653acb11ef261"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a057276ef94e26754cae354fd9f56bcef" id="r_a057276ef94e26754cae354fd9f56bcef"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#a057276ef94e26754cae354fd9f56bcef">compute_tree_index</a>(S,  I)</td></tr>
 <tr class="separator:a057276ef94e26754cae354fd9f56bcef"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -539,17 +539,17 @@ Macros</h2></td></tr>
 <tr class="separator:a5ab894e6672002a76fde663e4abda3bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef388580685989725034bdcb7c5543bf" id="r_aef388580685989725034bdcb7c5543bf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#aef388580685989725034bdcb7c5543bf">idx2bit</a>(i)&#160;&#160;&#160;((<a class="el" href="dlmalloc_8c.html#a2714ff4b4994bc59cce3c3dce1e60c27">binmap_t</a>)(1) &lt;&lt; (i))</td></tr>
 <tr class="separator:aef388580685989725034bdcb7c5543bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add2106bac689c78a86e8dc2b7ba9e533" id="r_add2106bac689c78a86e8dc2b7ba9e533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#add2106bac689c78a86e8dc2b7ba9e533">mark_smallmap</a>(M,  i)&#160;&#160;&#160;((M)-&gt;smallmap |=  <a class="el" href="dlmalloc_8c.html#aef388580685989725034bdcb7c5543bf">idx2bit</a>(i))</td></tr>
+<tr class="memitem:add2106bac689c78a86e8dc2b7ba9e533" id="r_add2106bac689c78a86e8dc2b7ba9e533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#add2106bac689c78a86e8dc2b7ba9e533">mark_smallmap</a>(<a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>,  i)&#160;&#160;&#160;((<a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>)-&gt;smallmap |=  <a class="el" href="dlmalloc_8c.html#aef388580685989725034bdcb7c5543bf">idx2bit</a>(i))</td></tr>
 <tr class="separator:add2106bac689c78a86e8dc2b7ba9e533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5429f913012abf9059d0bd93940c9e0e" id="r_a5429f913012abf9059d0bd93940c9e0e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#a5429f913012abf9059d0bd93940c9e0e">clear_smallmap</a>(M,  i)&#160;&#160;&#160;((M)-&gt;smallmap &amp;= ~<a class="el" href="dlmalloc_8c.html#aef388580685989725034bdcb7c5543bf">idx2bit</a>(i))</td></tr>
+<tr class="memitem:a5429f913012abf9059d0bd93940c9e0e" id="r_a5429f913012abf9059d0bd93940c9e0e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#a5429f913012abf9059d0bd93940c9e0e">clear_smallmap</a>(<a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>,  i)&#160;&#160;&#160;((<a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>)-&gt;smallmap &amp;= ~<a class="el" href="dlmalloc_8c.html#aef388580685989725034bdcb7c5543bf">idx2bit</a>(i))</td></tr>
 <tr class="separator:a5429f913012abf9059d0bd93940c9e0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a545357ca2a355288874c27ea94eca166" id="r_a545357ca2a355288874c27ea94eca166"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#a545357ca2a355288874c27ea94eca166">smallmap_is_marked</a>(M,  i)&#160;&#160;&#160;((M)-&gt;smallmap &amp;   <a class="el" href="dlmalloc_8c.html#aef388580685989725034bdcb7c5543bf">idx2bit</a>(i))</td></tr>
+<tr class="memitem:a545357ca2a355288874c27ea94eca166" id="r_a545357ca2a355288874c27ea94eca166"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#a545357ca2a355288874c27ea94eca166">smallmap_is_marked</a>(<a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>,  i)&#160;&#160;&#160;((<a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>)-&gt;smallmap &amp;   <a class="el" href="dlmalloc_8c.html#aef388580685989725034bdcb7c5543bf">idx2bit</a>(i))</td></tr>
 <tr class="separator:a545357ca2a355288874c27ea94eca166"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4cee82f9e5d26a5118b2e743c7fd1a2" id="r_aa4cee82f9e5d26a5118b2e743c7fd1a2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#aa4cee82f9e5d26a5118b2e743c7fd1a2">mark_treemap</a>(M,  i)&#160;&#160;&#160;((M)-&gt;treemap  |=  <a class="el" href="dlmalloc_8c.html#aef388580685989725034bdcb7c5543bf">idx2bit</a>(i))</td></tr>
+<tr class="memitem:aa4cee82f9e5d26a5118b2e743c7fd1a2" id="r_aa4cee82f9e5d26a5118b2e743c7fd1a2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#aa4cee82f9e5d26a5118b2e743c7fd1a2">mark_treemap</a>(<a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>,  i)&#160;&#160;&#160;((<a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>)-&gt;treemap  |=  <a class="el" href="dlmalloc_8c.html#aef388580685989725034bdcb7c5543bf">idx2bit</a>(i))</td></tr>
 <tr class="separator:aa4cee82f9e5d26a5118b2e743c7fd1a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c003dab5a3337bde0315d6a58c1a9cd" id="r_a6c003dab5a3337bde0315d6a58c1a9cd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#a6c003dab5a3337bde0315d6a58c1a9cd">clear_treemap</a>(M,  i)&#160;&#160;&#160;((M)-&gt;treemap  &amp;= ~<a class="el" href="dlmalloc_8c.html#aef388580685989725034bdcb7c5543bf">idx2bit</a>(i))</td></tr>
+<tr class="memitem:a6c003dab5a3337bde0315d6a58c1a9cd" id="r_a6c003dab5a3337bde0315d6a58c1a9cd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#a6c003dab5a3337bde0315d6a58c1a9cd">clear_treemap</a>(<a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>,  i)&#160;&#160;&#160;((<a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>)-&gt;treemap  &amp;= ~<a class="el" href="dlmalloc_8c.html#aef388580685989725034bdcb7c5543bf">idx2bit</a>(i))</td></tr>
 <tr class="separator:a6c003dab5a3337bde0315d6a58c1a9cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a5f672f882ef6645bcc97b6d0e30d7d" id="r_a0a5f672f882ef6645bcc97b6d0e30d7d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#a0a5f672f882ef6645bcc97b6d0e30d7d">treemap_is_marked</a>(M,  i)&#160;&#160;&#160;((M)-&gt;treemap  &amp;   <a class="el" href="dlmalloc_8c.html#aef388580685989725034bdcb7c5543bf">idx2bit</a>(i))</td></tr>
+<tr class="memitem:a0a5f672f882ef6645bcc97b6d0e30d7d" id="r_a0a5f672f882ef6645bcc97b6d0e30d7d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#a0a5f672f882ef6645bcc97b6d0e30d7d">treemap_is_marked</a>(<a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>,  i)&#160;&#160;&#160;((<a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>)-&gt;treemap  &amp;   <a class="el" href="dlmalloc_8c.html#aef388580685989725034bdcb7c5543bf">idx2bit</a>(i))</td></tr>
 <tr class="separator:a0a5f672f882ef6645bcc97b6d0e30d7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63b9c45d67753a9da2be543ca879c261" id="r_a63b9c45d67753a9da2be543ca879c261"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#a63b9c45d67753a9da2be543ca879c261">least_bit</a>(x)&#160;&#160;&#160;((x) &amp; -(x))</td></tr>
 <tr class="separator:a63b9c45d67753a9da2be543ca879c261"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -557,9 +557,9 @@ Macros</h2></td></tr>
 <tr class="separator:a24d6f7ffb2d8e91878f8b6c06b803c5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace4a96b1b78fcc4d93372fb9336f899f" id="r_ace4a96b1b78fcc4d93372fb9336f899f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#ace4a96b1b78fcc4d93372fb9336f899f">same_or_left_bits</a>(x)&#160;&#160;&#160;((x) | -(x))</td></tr>
 <tr class="separator:ace4a96b1b78fcc4d93372fb9336f899f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8199000024d5b45dbf79400df381dfc" id="r_ac8199000024d5b45dbf79400df381dfc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#ac8199000024d5b45dbf79400df381dfc">compute_bit2idx</a>(X,  I)</td></tr>
+<tr class="memitem:ac8199000024d5b45dbf79400df381dfc" id="r_ac8199000024d5b45dbf79400df381dfc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#ac8199000024d5b45dbf79400df381dfc">compute_bit2idx</a>(<a class="el" href="sha1_8c.html#add48b1ce38c3ada11068889d7fa0fad0">X</a>,  I)</td></tr>
 <tr class="separator:ac8199000024d5b45dbf79400df381dfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a162ea143ef987e2bc98d5e4b69f7bff6" id="r_a162ea143ef987e2bc98d5e4b69f7bff6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#a162ea143ef987e2bc98d5e4b69f7bff6">ok_address</a>(M,  a)&#160;&#160;&#160;((char*)(a) &gt;= (M)-&gt;least_addr)</td></tr>
+<tr class="memitem:a162ea143ef987e2bc98d5e4b69f7bff6" id="r_a162ea143ef987e2bc98d5e4b69f7bff6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#a162ea143ef987e2bc98d5e4b69f7bff6">ok_address</a>(<a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>,  a)&#160;&#160;&#160;((char*)(a) &gt;= (<a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>)-&gt;least_addr)</td></tr>
 <tr class="separator:a162ea143ef987e2bc98d5e4b69f7bff6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57b2c8e49aeb87c3cb1922648ef9ad3c" id="r_a57b2c8e49aeb87c3cb1922648ef9ad3c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#a57b2c8e49aeb87c3cb1922648ef9ad3c">ok_next</a>(p,  n)&#160;&#160;&#160;((char*)(p) &lt; (char*)(n))</td></tr>
 <tr class="separator:a57b2c8e49aeb87c3cb1922648ef9ad3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -567,33 +567,33 @@ Macros</h2></td></tr>
 <tr class="separator:a27bd04a29396a4164edab26cb11e543c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aded4345a9d79e45d438506d86f550cd6" id="r_aded4345a9d79e45d438506d86f550cd6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#aded4345a9d79e45d438506d86f550cd6">ok_pinuse</a>(p)&#160;&#160;&#160;<a class="el" href="dlmalloc_8c.html#a7d865edc2d2e8b7a33b3eb02ee22c2e7">pinuse</a>(p)</td></tr>
 <tr class="separator:aded4345a9d79e45d438506d86f550cd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92a34445b3f1e6050ad4ffb2f6dd8297" id="r_a92a34445b3f1e6050ad4ffb2f6dd8297"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#a92a34445b3f1e6050ad4ffb2f6dd8297">ok_magic</a>(M)&#160;&#160;&#160;(1)</td></tr>
+<tr class="memitem:a92a34445b3f1e6050ad4ffb2f6dd8297" id="r_a92a34445b3f1e6050ad4ffb2f6dd8297"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#a92a34445b3f1e6050ad4ffb2f6dd8297">ok_magic</a>(<a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>)&#160;&#160;&#160;(1)</td></tr>
 <tr class="separator:a92a34445b3f1e6050ad4ffb2f6dd8297"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe7e6535ba41a91be580eb2bba5890e2" id="r_afe7e6535ba41a91be580eb2bba5890e2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#afe7e6535ba41a91be580eb2bba5890e2">RTCHECK</a>(e)&#160;&#160;&#160;(e)</td></tr>
 <tr class="separator:afe7e6535ba41a91be580eb2bba5890e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae33f10cb02fb28aa399e3a7ff644a3a6" id="r_ae33f10cb02fb28aa399e3a7ff644a3a6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#ae33f10cb02fb28aa399e3a7ff644a3a6">mark_inuse_foot</a>(M,  p,  s)</td></tr>
+<tr class="memitem:ae33f10cb02fb28aa399e3a7ff644a3a6" id="r_ae33f10cb02fb28aa399e3a7ff644a3a6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#ae33f10cb02fb28aa399e3a7ff644a3a6">mark_inuse_foot</a>(<a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>,  p,  s)</td></tr>
 <tr class="separator:ae33f10cb02fb28aa399e3a7ff644a3a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e4f613ffb89c72f5686586939b13cf6" id="r_a1e4f613ffb89c72f5686586939b13cf6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#a1e4f613ffb89c72f5686586939b13cf6">set_inuse</a>(M,  p,  s)</td></tr>
+<tr class="memitem:a1e4f613ffb89c72f5686586939b13cf6" id="r_a1e4f613ffb89c72f5686586939b13cf6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#a1e4f613ffb89c72f5686586939b13cf6">set_inuse</a>(<a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>,  p,  s)</td></tr>
 <tr class="separator:a1e4f613ffb89c72f5686586939b13cf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b0498b45088d3b87e6b2daed2f6fa92" id="r_a6b0498b45088d3b87e6b2daed2f6fa92"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#a6b0498b45088d3b87e6b2daed2f6fa92">set_inuse_and_pinuse</a>(M,  p,  s)</td></tr>
+<tr class="memitem:a6b0498b45088d3b87e6b2daed2f6fa92" id="r_a6b0498b45088d3b87e6b2daed2f6fa92"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#a6b0498b45088d3b87e6b2daed2f6fa92">set_inuse_and_pinuse</a>(<a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>,  p,  s)</td></tr>
 <tr class="separator:a6b0498b45088d3b87e6b2daed2f6fa92"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a076ff214648e7d19ddaa7a4d963aae4a" id="r_a076ff214648e7d19ddaa7a4d963aae4a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#a076ff214648e7d19ddaa7a4d963aae4a">set_size_and_pinuse_of_inuse_chunk</a>(M,  p,  s)&#160;&#160;&#160;  ((p)-&gt;head = (s|<a class="el" href="dlmalloc_8c.html#aa41e697181baeec7157ff5f0f6ae747a">PINUSE_BIT</a>|<a class="el" href="dlmalloc_8c.html#a8f8153cc167dd042af6840f7130b9721">CINUSE_BIT</a>))</td></tr>
+<tr class="memitem:a076ff214648e7d19ddaa7a4d963aae4a" id="r_a076ff214648e7d19ddaa7a4d963aae4a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#a076ff214648e7d19ddaa7a4d963aae4a">set_size_and_pinuse_of_inuse_chunk</a>(<a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>,  p,  s)&#160;&#160;&#160;  ((p)-&gt;head = (s|<a class="el" href="dlmalloc_8c.html#aa41e697181baeec7157ff5f0f6ae747a">PINUSE_BIT</a>|<a class="el" href="dlmalloc_8c.html#a8f8153cc167dd042af6840f7130b9721">CINUSE_BIT</a>))</td></tr>
 <tr class="separator:a076ff214648e7d19ddaa7a4d963aae4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb28fc94857fe6fd0d13a790c1866284" id="r_adb28fc94857fe6fd0d13a790c1866284"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#adb28fc94857fe6fd0d13a790c1866284">insert_small_chunk</a>(M,  P,  S)</td></tr>
+<tr class="memitem:adb28fc94857fe6fd0d13a790c1866284" id="r_adb28fc94857fe6fd0d13a790c1866284"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#adb28fc94857fe6fd0d13a790c1866284">insert_small_chunk</a>(<a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>,  P,  S)</td></tr>
 <tr class="separator:adb28fc94857fe6fd0d13a790c1866284"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6681f6fb034ce0fcee30f1df143fcefc" id="r_a6681f6fb034ce0fcee30f1df143fcefc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#a6681f6fb034ce0fcee30f1df143fcefc">unlink_small_chunk</a>(M,  P,  S)</td></tr>
+<tr class="memitem:a6681f6fb034ce0fcee30f1df143fcefc" id="r_a6681f6fb034ce0fcee30f1df143fcefc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#a6681f6fb034ce0fcee30f1df143fcefc">unlink_small_chunk</a>(<a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>,  P,  S)</td></tr>
 <tr class="separator:a6681f6fb034ce0fcee30f1df143fcefc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4710edd84badb715ced379a5a7000b61" id="r_a4710edd84badb715ced379a5a7000b61"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#a4710edd84badb715ced379a5a7000b61">unlink_first_small_chunk</a>(M,  B,  P,  I)</td></tr>
+<tr class="memitem:a4710edd84badb715ced379a5a7000b61" id="r_a4710edd84badb715ced379a5a7000b61"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#a4710edd84badb715ced379a5a7000b61">unlink_first_small_chunk</a>(<a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>,  B,  P,  I)</td></tr>
 <tr class="separator:a4710edd84badb715ced379a5a7000b61"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a374c640361e6a18551c63f548079ad05" id="r_a374c640361e6a18551c63f548079ad05"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#a374c640361e6a18551c63f548079ad05">replace_dv</a>(M,  P,  S)</td></tr>
+<tr class="memitem:a374c640361e6a18551c63f548079ad05" id="r_a374c640361e6a18551c63f548079ad05"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#a374c640361e6a18551c63f548079ad05">replace_dv</a>(<a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>,  P,  S)</td></tr>
 <tr class="separator:a374c640361e6a18551c63f548079ad05"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac38ba865e6c3bf916fcdcb6bfa8be00d" id="r_ac38ba865e6c3bf916fcdcb6bfa8be00d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#ac38ba865e6c3bf916fcdcb6bfa8be00d">insert_large_chunk</a>(M,  X,  S)</td></tr>
+<tr class="memitem:ac38ba865e6c3bf916fcdcb6bfa8be00d" id="r_ac38ba865e6c3bf916fcdcb6bfa8be00d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#ac38ba865e6c3bf916fcdcb6bfa8be00d">insert_large_chunk</a>(<a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>,  <a class="el" href="sha1_8c.html#add48b1ce38c3ada11068889d7fa0fad0">X</a>,  S)</td></tr>
 <tr class="separator:ac38ba865e6c3bf916fcdcb6bfa8be00d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2af36a6897c8bac0fd68a329cf3b43c9" id="r_a2af36a6897c8bac0fd68a329cf3b43c9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#a2af36a6897c8bac0fd68a329cf3b43c9">unlink_large_chunk</a>(M,  X)</td></tr>
+<tr class="memitem:a2af36a6897c8bac0fd68a329cf3b43c9" id="r_a2af36a6897c8bac0fd68a329cf3b43c9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#a2af36a6897c8bac0fd68a329cf3b43c9">unlink_large_chunk</a>(<a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>,  <a class="el" href="sha1_8c.html#add48b1ce38c3ada11068889d7fa0fad0">X</a>)</td></tr>
 <tr class="separator:a2af36a6897c8bac0fd68a329cf3b43c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec697f44cce422498bc01b7c19114b5a" id="r_aec697f44cce422498bc01b7c19114b5a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#aec697f44cce422498bc01b7c19114b5a">insert_chunk</a>(M,  P,  S)</td></tr>
+<tr class="memitem:aec697f44cce422498bc01b7c19114b5a" id="r_aec697f44cce422498bc01b7c19114b5a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#aec697f44cce422498bc01b7c19114b5a">insert_chunk</a>(<a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>,  P,  S)</td></tr>
 <tr class="separator:aec697f44cce422498bc01b7c19114b5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3e9aeaeefa7e2fc61f84cafffc6a13a" id="r_ad3e9aeaeefa7e2fc61f84cafffc6a13a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#ad3e9aeaeefa7e2fc61f84cafffc6a13a">unlink_chunk</a>(M,  P,  S)</td></tr>
+<tr class="memitem:ad3e9aeaeefa7e2fc61f84cafffc6a13a" id="r_ad3e9aeaeefa7e2fc61f84cafffc6a13a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#ad3e9aeaeefa7e2fc61f84cafffc6a13a">unlink_chunk</a>(<a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>,  P,  S)</td></tr>
 <tr class="separator:ad3e9aeaeefa7e2fc61f84cafffc6a13a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5444a4a9f6894b7afd5d0a461a7cdb02" id="r_a5444a4a9f6894b7afd5d0a461a7cdb02"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#a5444a4a9f6894b7afd5d0a461a7cdb02">internal_malloc</a>(m,  b)&#160;&#160;&#160;<a class="el" href="init_8c.html#a32045a52f33800becda8c86ada702dcb">dlmalloc</a>(b)</td></tr>
 <tr class="separator:a5444a4a9f6894b7afd5d0a461a7cdb02"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1039,7 +1039,7 @@ Functions</h2></td></tr>
           <td class="memname">#define check_free_chunk</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">M, </td>
+          <td class="paramname"><a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1067,7 +1067,7 @@ Functions</h2></td></tr>
           <td class="memname">#define check_inuse_chunk</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">M, </td>
+          <td class="paramname"><a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1095,7 +1095,7 @@ Functions</h2></td></tr>
           <td class="memname">#define check_malloc_state</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">M</td><td>)</td>
+          <td class="paramname"><a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1113,7 +1113,7 @@ Functions</h2></td></tr>
           <td class="memname">#define check_malloced_chunk</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">M, </td>
+          <td class="paramname"><a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1147,7 +1147,7 @@ Functions</h2></td></tr>
           <td class="memname">#define check_mmapped_chunk</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">M, </td>
+          <td class="paramname"><a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1175,7 +1175,7 @@ Functions</h2></td></tr>
           <td class="memname">#define check_top_chunk</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">M, </td>
+          <td class="paramname"><a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1391,7 +1391,7 @@ Functions</h2></td></tr>
           <td class="memname">#define clear_smallmap</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">M, </td>
+          <td class="paramname"><a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1402,7 +1402,7 @@ Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;((M)-&gt;smallmap &amp;= ~<a class="el" href="dlmalloc_8c.html#aef388580685989725034bdcb7c5543bf">idx2bit</a>(i))</td>
+          <td></td><td>&#160;&#160;&#160;((<a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>)-&gt;smallmap &amp;= ~<a class="el" href="dlmalloc_8c.html#aef388580685989725034bdcb7c5543bf">idx2bit</a>(i))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1419,7 +1419,7 @@ Functions</h2></td></tr>
           <td class="memname">#define clear_treemap</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">M, </td>
+          <td class="paramname"><a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1430,7 +1430,7 @@ Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;((M)-&gt;treemap  &amp;= ~<a class="el" href="dlmalloc_8c.html#aef388580685989725034bdcb7c5543bf">idx2bit</a>(i))</td>
+          <td></td><td>&#160;&#160;&#160;((<a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>)-&gt;treemap  &amp;= ~<a class="el" href="dlmalloc_8c.html#aef388580685989725034bdcb7c5543bf">idx2bit</a>(i))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1461,7 +1461,7 @@ Functions</h2></td></tr>
           <td class="memname">#define compute_bit2idx</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">X, </td>
+          <td class="paramname"><a class="el" href="sha1_8c.html#add48b1ce38c3ada11068889d7fa0fad0">X</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1477,7 +1477,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">{\</div>
-<div class="line">  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> Y = X - 1;\</div>
+<div class="line">  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> Y = <a class="code hl_define" href="sha1_8c.html#add48b1ce38c3ada11068889d7fa0fad0">X</a> - 1;\</div>
 <div class="line">  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> K = Y &gt;&gt; (16-4) &amp; 16;\</div>
 <div class="line">  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> N = K;        Y &gt;&gt;= K;\</div>
 <div class="line">  N += K = Y &gt;&gt; (8-3) &amp;  8;  Y &gt;&gt;= K;\</div>
@@ -1487,6 +1487,7 @@ Functions</h2></td></tr>
 <div class="line">  I = (<a class="code hl_typedef" href="__heap_8cpp.html#a4c04048d19db75c080e5f0ab19d45f8f">bindex_t</a>)(N + Y);\</div>
 <div class="line">}</div>
 <div class="ttc" id="a__heap_8cpp_html_a4c04048d19db75c080e5f0ab19d45f8f"><div class="ttname"><a href="__heap_8cpp.html#a4c04048d19db75c080e5f0ab19d45f8f">bindex_t</a></div><div class="ttdeci">unsigned int bindex_t</div><div class="ttdef"><b>Definition</b> _heap.cpp:2300</div></div>
+<div class="ttc" id="asha1_8c_html_add48b1ce38c3ada11068889d7fa0fad0"><div class="ttname"><a href="sha1_8c.html#add48b1ce38c3ada11068889d7fa0fad0">X</a></div><div class="ttdeci">#define X(a)</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1516,13 +1517,13 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">{\</div>
-<div class="line">  <span class="keywordtype">size_t</span> X = S &gt;&gt; <a class="code hl_define" href="__heap_8cpp.html#a84cfe33e7f07c4b874fe1a82ba327c2e">TREEBIN_SHIFT</a>;\</div>
-<div class="line">  if (X == 0)\</div>
+<div class="line">  <span class="keywordtype">size_t</span> <a class="code hl_define" href="sha1_8c.html#add48b1ce38c3ada11068889d7fa0fad0">X</a> = S &gt;&gt; <a class="code hl_define" href="__heap_8cpp.html#a84cfe33e7f07c4b874fe1a82ba327c2e">TREEBIN_SHIFT</a>;\</div>
+<div class="line">  if (<a class="code hl_define" href="sha1_8c.html#add48b1ce38c3ada11068889d7fa0fad0">X</a> == 0)\</div>
 <div class="line">    I = 0;\</div>
-<div class="line">  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (X &gt; 0xFFFF)\</div>
+<div class="line">  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_define" href="sha1_8c.html#add48b1ce38c3ada11068889d7fa0fad0">X</a> &gt; 0xFFFF)\</div>
 <div class="line">    I = <a class="code hl_define" href="__heap_8cpp.html#a187fe34f71c63b486f6d79ac51117061">NTREEBINS</a>-1;\</div>
 <div class="line">  <span class="keywordflow">else</span> {\</div>
-<div class="line">    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> Y = (<span class="keywordtype">unsigned</span> int)X;\</div>
+<div class="line">    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> Y = (<span class="keywordtype">unsigned</span> int)<a class="code hl_define" href="sha1_8c.html#add48b1ce38c3ada11068889d7fa0fad0">X</a>;\</div>
 <div class="line">    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> N = ((Y - 0x100) &gt;&gt; 16) &amp; 8;\</div>
 <div class="line">    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> K = (((Y &lt;&lt;= N) - 0x1000) &gt;&gt; 16) &amp; 4;\</div>
 <div class="line">    N += K;\</div>
@@ -1674,8 +1675,8 @@ Functions</h2></td></tr>
           <td class="memname">#define disable_contiguous</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">M</td><td>)</td>
-          <td>&#160;&#160;&#160;((M)-&gt;mflags |=  <a class="el" href="dlmalloc_8c.html#ac7f41c328146bb45481fe3e0c20787d4">USE_NONCONTIGUOUS_BIT</a>)</td>
+          <td class="paramname"><a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a></td><td>)</td>
+          <td>&#160;&#160;&#160;((<a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>)-&gt;mflags |=  <a class="el" href="dlmalloc_8c.html#ac7f41c328146bb45481fe3e0c20787d4">USE_NONCONTIGUOUS_BIT</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1692,7 +1693,7 @@ Functions</h2></td></tr>
           <td class="memname">#define disable_lock</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">M</td><td>)</td>
+          <td class="paramname"><a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1710,8 +1711,8 @@ Functions</h2></td></tr>
           <td class="memname">#define disable_mmap</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">M</td><td>)</td>
-          <td>&#160;&#160;&#160;((M)-&gt;mflags &amp;= ~<a class="el" href="dlmalloc_8c.html#a6792a808878980b064a53729e42a1b55">USE_MMAP_BIT</a>)</td>
+          <td class="paramname"><a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a></td><td>)</td>
+          <td>&#160;&#160;&#160;((<a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>)-&gt;mflags &amp;= ~<a class="el" href="dlmalloc_8c.html#a6792a808878980b064a53729e42a1b55">USE_MMAP_BIT</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1770,8 +1771,8 @@ Functions</h2></td></tr>
           <td class="memname">#define enable_lock</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">M</td><td>)</td>
-          <td>&#160;&#160;&#160;((M)-&gt;mflags |=  <a class="el" href="dlmalloc_8c.html#a02a456408564b69d6f3de5f8fede4931">USE_LOCK_BIT</a>)</td>
+          <td class="paramname"><a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a></td><td>)</td>
+          <td>&#160;&#160;&#160;((<a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>)-&gt;mflags |=  <a class="el" href="dlmalloc_8c.html#a02a456408564b69d6f3de5f8fede4931">USE_LOCK_BIT</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1788,8 +1789,8 @@ Functions</h2></td></tr>
           <td class="memname">#define enable_mmap</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">M</td><td>)</td>
-          <td>&#160;&#160;&#160;((M)-&gt;mflags |=  <a class="el" href="dlmalloc_8c.html#a6792a808878980b064a53729e42a1b55">USE_MMAP_BIT</a>)</td>
+          <td class="paramname"><a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a></td><td>)</td>
+          <td>&#160;&#160;&#160;((<a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>)-&gt;mflags |=  <a class="el" href="dlmalloc_8c.html#a6792a808878980b064a53729e42a1b55">USE_MMAP_BIT</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2225,7 +2226,7 @@ Functions</h2></td></tr>
           <td class="memname">#define insert_chunk</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">M, </td>
+          <td class="paramname"><a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -2246,12 +2247,13 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">if</span> (<a class="code hl_define" href="__heap_8cpp.html#aadc2cdd1444477c387fc30e64f061432">is_small</a>(S)) <a class="code hl_define" href="__heap_8cpp.html#adb28fc94857fe6fd0d13a790c1866284">insert_small_chunk</a>(M, P, S)\</div>
-<div class="line">  <span class="keywordflow">else</span> { <a class="code hl_struct" href="structmalloc__tree__chunk.html">tchunkptr</a> TP = (<a class="code hl_typedef" href="__heap_8cpp.html#addd456ccc8fb838310e92a3f394fc1b1">tchunkptr</a>)(P); <a class="code hl_define" href="__heap_8cpp.html#ac38ba865e6c3bf916fcdcb6bfa8be00d">insert_large_chunk</a>(M, TP, S); }</div>
+<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">if</span> (<a class="code hl_define" href="__heap_8cpp.html#aadc2cdd1444477c387fc30e64f061432">is_small</a>(S)) <a class="code hl_define" href="__heap_8cpp.html#adb28fc94857fe6fd0d13a790c1866284">insert_small_chunk</a>(<a class="code hl_define" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>, P, S)\</div>
+<div class="line">  <span class="keywordflow">else</span> { <a class="code hl_struct" href="structmalloc__tree__chunk.html">tchunkptr</a> TP = (<a class="code hl_typedef" href="__heap_8cpp.html#addd456ccc8fb838310e92a3f394fc1b1">tchunkptr</a>)(P); <a class="code hl_define" href="__heap_8cpp.html#ac38ba865e6c3bf916fcdcb6bfa8be00d">insert_large_chunk</a>(<a class="code hl_define" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>, TP, S); }</div>
 <div class="ttc" id="a__heap_8cpp_html_aadc2cdd1444477c387fc30e64f061432"><div class="ttname"><a href="__heap_8cpp.html#aadc2cdd1444477c387fc30e64f061432">is_small</a></div><div class="ttdeci">#define is_small(s)</div><div class="ttdef"><b>Definition</b> _heap.cpp:2930</div></div>
 <div class="ttc" id="a__heap_8cpp_html_ac38ba865e6c3bf916fcdcb6bfa8be00d"><div class="ttname"><a href="__heap_8cpp.html#ac38ba865e6c3bf916fcdcb6bfa8be00d">insert_large_chunk</a></div><div class="ttdeci">#define insert_large_chunk(M, X, S)</div><div class="ttdef"><b>Definition</b> _heap.cpp:3753</div></div>
 <div class="ttc" id="a__heap_8cpp_html_adb28fc94857fe6fd0d13a790c1866284"><div class="ttname"><a href="__heap_8cpp.html#adb28fc94857fe6fd0d13a790c1866284">insert_small_chunk</a></div><div class="ttdeci">#define insert_small_chunk(M, P, S)</div><div class="ttdef"><b>Definition</b> _heap.cpp:3675</div></div>
 <div class="ttc" id="a__heap_8cpp_html_addd456ccc8fb838310e92a3f394fc1b1"><div class="ttname"><a href="__heap_8cpp.html#addd456ccc8fb838310e92a3f394fc1b1">tchunkptr</a></div><div class="ttdeci">struct malloc_tree_chunk * tchunkptr</div><div class="ttdef"><b>Definition</b> _heap.cpp:2512</div></div>
+<div class="ttc" id="asha1_8c_html_a7116c76bbda5a9f38809bd6db21f54e7"><div class="ttname"><a href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a></div><div class="ttdeci">#define M(i)</div></div>
 <div class="ttc" id="astructmalloc__tree__chunk_html"><div class="ttname"><a href="structmalloc__tree__chunk.html">malloc_tree_chunk</a></div><div class="ttdef"><b>Definition</b> dlmalloc.c:2466</div></div>
 </div><!-- fragment -->
 </div>
@@ -2266,13 +2268,13 @@ Functions</h2></td></tr>
           <td class="memname">#define insert_large_chunk</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">M, </td>
+          <td class="paramname"><a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">X, </td>
+          <td class="paramname"><a class="el" href="sha1_8c.html#add48b1ce38c3ada11068889d7fa0fad0">X</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -2300,7 +2302,7 @@ Functions</h2></td></tr>
           <td class="memname">#define insert_small_chunk</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">M, </td>
+          <td class="paramname"><a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -2323,15 +2325,15 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">  {\</div>
 <div class="line">  <a class="code hl_typedef" href="dlmalloc_8c.html#a4c04048d19db75c080e5f0ab19d45f8f">bindex_t</a> I  = <a class="code hl_define" href="__heap_8cpp.html#a1f3d4249e522c896509b7999860090ea">small_index</a>(S);\</div>
-<div class="line">  <a class="code hl_struct" href="structmalloc__chunk.html">mchunkptr</a> B = <a class="code hl_define" href="__heap_8cpp.html#a862c7dc1f319911e1f06b9d99485cc54">smallbin_at</a>(M, I);\</div>
+<div class="line">  <a class="code hl_struct" href="structmalloc__chunk.html">mchunkptr</a> B = <a class="code hl_define" href="__heap_8cpp.html#a862c7dc1f319911e1f06b9d99485cc54">smallbin_at</a>(<a class="code hl_define" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>, I);\</div>
 <div class="line">  <a class="code hl_struct" href="structmalloc__chunk.html">mchunkptr</a> F = B;\</div>
 <div class="line">  assert(S &gt;= <a class="code hl_define" href="__heap_8cpp.html#abf35d28195f0f301fe63d0ea867f4379">MIN_CHUNK_SIZE</a>);\</div>
-<div class="line">  if (!<a class="code hl_define" href="__heap_8cpp.html#a545357ca2a355288874c27ea94eca166">smallmap_is_marked</a>(M, I))\</div>
-<div class="line">    mark_smallmap(M, I);\</div>
-<div class="line">  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_define" href="__heap_8cpp.html#afe7e6535ba41a91be580eb2bba5890e2">RTCHECK</a>(<a class="code hl_define" href="__heap_8cpp.html#a162ea143ef987e2bc98d5e4b69f7bff6">ok_address</a>(M, B-&gt;<a class="code hl_variable" href="structmalloc__chunk.html#a3bf7a41ce24baa8f17a5a4d13abfdef4">fd</a>)))\</div>
+<div class="line">  if (!<a class="code hl_define" href="__heap_8cpp.html#a545357ca2a355288874c27ea94eca166">smallmap_is_marked</a>(<a class="code hl_define" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>, I))\</div>
+<div class="line">    mark_smallmap(<a class="code hl_define" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>, I);\</div>
+<div class="line">  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_define" href="__heap_8cpp.html#afe7e6535ba41a91be580eb2bba5890e2">RTCHECK</a>(<a class="code hl_define" href="__heap_8cpp.html#a162ea143ef987e2bc98d5e4b69f7bff6">ok_address</a>(<a class="code hl_define" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>, B-&gt;<a class="code hl_variable" href="structmalloc__chunk.html#a3bf7a41ce24baa8f17a5a4d13abfdef4">fd</a>)))\</div>
 <div class="line">    F = B-&gt;<a class="code hl_variable" href="structmalloc__chunk.html#a3bf7a41ce24baa8f17a5a4d13abfdef4">fd</a>;\</div>
 <div class="line">  <span class="keywordflow">else</span> {\</div>
-<div class="line">    CORRUPTION_ERROR_ACTION(M);\</div>
+<div class="line">    CORRUPTION_ERROR_ACTION(<a class="code hl_define" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>);\</div>
 <div class="line">  }\</div>
 <div class="line">  B-&gt;<a class="code hl_variable" href="structmalloc__chunk.html#a3bf7a41ce24baa8f17a5a4d13abfdef4">fd</a> = P;\</div>
 <div class="line">  F-&gt;<a class="code hl_variable" href="structmalloc__chunk.html#a1c0148642730c23c73bee9043deaf398">bk</a> = P;\</div>
@@ -2467,8 +2469,8 @@ Functions</h2></td></tr>
           <td class="memname">#define is_global</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">M</td><td>)</td>
-          <td>&#160;&#160;&#160;((M) == &amp;_gm_)</td>
+          <td class="paramname"><a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a></td><td>)</td>
+          <td>&#160;&#160;&#160;((<a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>) == &amp;_gm_)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2503,8 +2505,8 @@ Functions</h2></td></tr>
           <td class="memname">#define is_initialized</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">M</td><td>)</td>
-          <td>&#160;&#160;&#160;((M)-&gt;top != 0)</td>
+          <td class="paramname"><a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a></td><td>)</td>
+          <td>&#160;&#160;&#160;((<a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>)-&gt;<a class="el" href="p__spec_8h.html#a61be60bd0fc3c2a1b8637d2bee8ea317a3961740aa293a50c701d278225f7050a">top</a> != 0)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -3008,7 +3010,7 @@ Functions</h2></td></tr>
           <td class="memname">#define mark_inuse_foot</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">M, </td>
+          <td class="paramname"><a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -3042,7 +3044,7 @@ Functions</h2></td></tr>
           <td class="memname">#define mark_smallmap</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">M, </td>
+          <td class="paramname"><a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -3053,7 +3055,7 @@ Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;((M)-&gt;smallmap |=  <a class="el" href="dlmalloc_8c.html#aef388580685989725034bdcb7c5543bf">idx2bit</a>(i))</td>
+          <td></td><td>&#160;&#160;&#160;((<a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>)-&gt;smallmap |=  <a class="el" href="dlmalloc_8c.html#aef388580685989725034bdcb7c5543bf">idx2bit</a>(i))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -3070,7 +3072,7 @@ Functions</h2></td></tr>
           <td class="memname">#define mark_treemap</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">M, </td>
+          <td class="paramname"><a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -3081,7 +3083,7 @@ Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;((M)-&gt;treemap  |=  <a class="el" href="dlmalloc_8c.html#aef388580685989725034bdcb7c5543bf">idx2bit</a>(i))</td>
+          <td></td><td>&#160;&#160;&#160;((<a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>)-&gt;treemap  |=  <a class="el" href="dlmalloc_8c.html#aef388580685989725034bdcb7c5543bf">idx2bit</a>(i))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -3664,7 +3666,7 @@ Functions</h2></td></tr>
           <td class="memname">#define ok_address</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">M, </td>
+          <td class="paramname"><a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -3675,7 +3677,7 @@ Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;((char*)(a) &gt;= (M)-&gt;least_addr)</td>
+          <td></td><td>&#160;&#160;&#160;((char*)(a) &gt;= (<a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>)-&gt;least_addr)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -3710,7 +3712,7 @@ Functions</h2></td></tr>
           <td class="memname">#define ok_magic</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">M</td><td>)</td>
+          <td class="paramname"><a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a></td><td>)</td>
           <td>&#160;&#160;&#160;(1)</td>
         </tr>
       </table>
@@ -3874,7 +3876,7 @@ Functions</h2></td></tr>
           <td class="memname">#define POSTACTION</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">M</td><td>)</td>
+          <td class="paramname"><a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -3892,7 +3894,7 @@ Functions</h2></td></tr>
           <td class="memname">#define PREACTION</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">M</td><td>)</td>
+          <td class="paramname"><a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a></td><td>)</td>
           <td>&#160;&#160;&#160;(0)</td>
         </tr>
       </table>
@@ -3977,7 +3979,7 @@ Functions</h2></td></tr>
           <td class="memname">#define replace_dv</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">M, </td>
+          <td class="paramname"><a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -3999,14 +4001,14 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">  {\</div>
-<div class="line">  <span class="keywordtype">size_t</span> DVS = M-&gt;dvsize;\</div>
+<div class="line">  <span class="keywordtype">size_t</span> DVS = <a class="code hl_define" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>-&gt;dvsize;\</div>
 <div class="line">  assert(<a class="code hl_define" href="__heap_8cpp.html#aadc2cdd1444477c387fc30e64f061432">is_small</a>(DVS));\</div>
 <div class="line">  if (DVS != 0) {\</div>
-<div class="line">    <a class="code hl_struct" href="structmalloc__chunk.html">mchunkptr</a> DV = M-&gt;dv;\</div>
-<div class="line">    insert_small_chunk(M, DV, DVS);\</div>
+<div class="line">    <a class="code hl_struct" href="structmalloc__chunk.html">mchunkptr</a> DV = <a class="code hl_define" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>-&gt;dv;\</div>
+<div class="line">    insert_small_chunk(<a class="code hl_define" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>, DV, DVS);\</div>
 <div class="line">  }\</div>
-<div class="line">  M-&gt;dvsize = S;\</div>
-<div class="line">  M-&gt;dv = P;\</div>
+<div class="line">  <a class="code hl_define" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>-&gt;dvsize = S;\</div>
+<div class="line">  <a class="code hl_define" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>-&gt;dv = P;\</div>
 <div class="line">}</div>
 </div><!-- fragment -->
 </div>
@@ -4183,7 +4185,7 @@ Functions</h2></td></tr>
           <td class="memname">#define set_inuse</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">M, </td>
+          <td class="paramname"><a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -4221,7 +4223,7 @@ Functions</h2></td></tr>
           <td class="memname">#define set_inuse_and_pinuse</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">M, </td>
+          <td class="paramname"><a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -4258,7 +4260,7 @@ Functions</h2></td></tr>
           <td class="memname">#define set_lock</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">M, </td>
+          <td class="paramname"><a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -4273,9 +4275,9 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"> ((M)-&gt;mflags = (L)?\</div>
-<div class="line">  ((M)-&gt;mflags | <a class="code hl_define" href="__heap_8cpp.html#a02a456408564b69d6f3de5f8fede4931">USE_LOCK_BIT</a>) :\</div>
-<div class="line">  ((M)-&gt;mflags &amp; ~<a class="code hl_define" href="__heap_8cpp.html#a02a456408564b69d6f3de5f8fede4931">USE_LOCK_BIT</a>))</div>
+<b>Value:</b><div class="fragment"><div class="line"> ((<a class="code hl_define" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>)-&gt;mflags = (L)?\</div>
+<div class="line">  ((<a class="code hl_define" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>)-&gt;mflags | <a class="code hl_define" href="__heap_8cpp.html#a02a456408564b69d6f3de5f8fede4931">USE_LOCK_BIT</a>) :\</div>
+<div class="line">  ((<a class="code hl_define" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>)-&gt;mflags &amp; ~<a class="code hl_define" href="__heap_8cpp.html#a02a456408564b69d6f3de5f8fede4931">USE_LOCK_BIT</a>))</div>
 <div class="ttc" id="a__heap_8cpp_html_a02a456408564b69d6f3de5f8fede4931"><div class="ttname"><a href="__heap_8cpp.html#a02a456408564b69d6f3de5f8fede4931">USE_LOCK_BIT</a></div><div class="ttdeci">#define USE_LOCK_BIT</div><div class="ttdef"><b>Definition</b> _heap.cpp:1911</div></div>
 </div><!-- fragment -->
 </div>
@@ -4318,7 +4320,7 @@ Functions</h2></td></tr>
           <td class="memname">#define set_size_and_pinuse_of_inuse_chunk</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">M, </td>
+          <td class="paramname"><a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -4352,7 +4354,7 @@ Functions</h2></td></tr>
           <td class="memname">#define should_trim</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">M, </td>
+          <td class="paramname"><a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -4514,7 +4516,7 @@ Functions</h2></td></tr>
           <td class="memname">#define smallbin_at</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">M, </td>
+          <td class="paramname"><a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -4525,7 +4527,7 @@ Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;((<a class="el" href="dlmalloc_8c.html#ac42f888c90017483ad23708b9a346798">sbinptr</a>)((char*)&amp;((M)-&gt;smallbins[(i)&lt;&lt;1])))</td>
+          <td></td><td>&#160;&#160;&#160;((<a class="el" href="dlmalloc_8c.html#ac42f888c90017483ad23708b9a346798">sbinptr</a>)((char*)&amp;((<a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>)-&gt;smallbins[(i)&lt;&lt;1])))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -4570,7 +4572,7 @@ Functions</h2></td></tr>
           <td class="memname">#define smallmap_is_marked</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">M, </td>
+          <td class="paramname"><a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -4581,7 +4583,7 @@ Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;((M)-&gt;smallmap &amp;   <a class="el" href="dlmalloc_8c.html#aef388580685989725034bdcb7c5543bf">idx2bit</a>(i))</td>
+          <td></td><td>&#160;&#160;&#160;((<a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>)-&gt;smallmap &amp;   <a class="el" href="dlmalloc_8c.html#aef388580685989725034bdcb7c5543bf">idx2bit</a>(i))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -4640,7 +4642,7 @@ Functions</h2></td></tr>
           <td class="memname">#define treebin_at</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">M, </td>
+          <td class="paramname"><a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -4651,7 +4653,7 @@ Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;(&amp;((M)-&gt;treebins[i]))</td>
+          <td></td><td>&#160;&#160;&#160;(&amp;((<a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>)-&gt;treebins[i]))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -4682,7 +4684,7 @@ Functions</h2></td></tr>
           <td class="memname">#define treemap_is_marked</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">M, </td>
+          <td class="paramname"><a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -4693,7 +4695,7 @@ Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;((M)-&gt;treemap  &amp;   <a class="el" href="dlmalloc_8c.html#aef388580685989725034bdcb7c5543bf">idx2bit</a>(i))</td>
+          <td></td><td>&#160;&#160;&#160;((<a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>)-&gt;treemap  &amp;   <a class="el" href="dlmalloc_8c.html#aef388580685989725034bdcb7c5543bf">idx2bit</a>(i))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -4742,7 +4744,7 @@ Functions</h2></td></tr>
           <td class="memname">#define unlink_chunk</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">M, </td>
+          <td class="paramname"><a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -4763,8 +4765,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">if</span> (<a class="code hl_define" href="__heap_8cpp.html#aadc2cdd1444477c387fc30e64f061432">is_small</a>(S)) <a class="code hl_define" href="__heap_8cpp.html#a6681f6fb034ce0fcee30f1df143fcefc">unlink_small_chunk</a>(M, P, S)\</div>
-<div class="line">  <span class="keywordflow">else</span> { <a class="code hl_struct" href="structmalloc__tree__chunk.html">tchunkptr</a> TP = (<a class="code hl_typedef" href="__heap_8cpp.html#addd456ccc8fb838310e92a3f394fc1b1">tchunkptr</a>)(P); <a class="code hl_define" href="__heap_8cpp.html#a2af36a6897c8bac0fd68a329cf3b43c9">unlink_large_chunk</a>(M, TP); }</div>
+<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">if</span> (<a class="code hl_define" href="__heap_8cpp.html#aadc2cdd1444477c387fc30e64f061432">is_small</a>(S)) <a class="code hl_define" href="__heap_8cpp.html#a6681f6fb034ce0fcee30f1df143fcefc">unlink_small_chunk</a>(<a class="code hl_define" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>, P, S)\</div>
+<div class="line">  <span class="keywordflow">else</span> { <a class="code hl_struct" href="structmalloc__tree__chunk.html">tchunkptr</a> TP = (<a class="code hl_typedef" href="__heap_8cpp.html#addd456ccc8fb838310e92a3f394fc1b1">tchunkptr</a>)(P); <a class="code hl_define" href="__heap_8cpp.html#a2af36a6897c8bac0fd68a329cf3b43c9">unlink_large_chunk</a>(<a class="code hl_define" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>, TP); }</div>
 <div class="ttc" id="a__heap_8cpp_html_a2af36a6897c8bac0fd68a329cf3b43c9"><div class="ttname"><a href="__heap_8cpp.html#a2af36a6897c8bac0fd68a329cf3b43c9">unlink_large_chunk</a></div><div class="ttdeci">#define unlink_large_chunk(M, X)</div><div class="ttdef"><b>Definition</b> _heap.cpp:3821</div></div>
 <div class="ttc" id="a__heap_8cpp_html_a6681f6fb034ce0fcee30f1df143fcefc"><div class="ttname"><a href="__heap_8cpp.html#a6681f6fb034ce0fcee30f1df143fcefc">unlink_small_chunk</a></div><div class="ttdeci">#define unlink_small_chunk(M, P, S)</div><div class="ttdef"><b>Definition</b> _heap.cpp:3694</div></div>
 </div><!-- fragment -->
@@ -4780,7 +4782,7 @@ Functions</h2></td></tr>
           <td class="memname">#define unlink_first_small_chunk</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">M, </td>
+          <td class="paramname"><a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -4813,14 +4815,14 @@ Functions</h2></td></tr>
 <div class="line">  assert(P != F);\</div>
 <div class="line">  assert(<a class="code hl_define" href="__heap_8cpp.html#a0bd05b2720a9f79a0c066086c4f7e2fa">chunksize</a>(P) == <a class="code hl_define" href="__heap_8cpp.html#a377939ca061c1b170053c2927af26cdc">small_index2size</a>(I));\</div>
 <div class="line">  if (B == F) {\</div>
-<div class="line">    clear_smallmap(M, I);\</div>
+<div class="line">    clear_smallmap(<a class="code hl_define" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>, I);\</div>
 <div class="line">  }\</div>
-<div class="line">  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_define" href="__heap_8cpp.html#afe7e6535ba41a91be580eb2bba5890e2">RTCHECK</a>(<a class="code hl_define" href="__heap_8cpp.html#a162ea143ef987e2bc98d5e4b69f7bff6">ok_address</a>(M, F) &amp;&amp; F-&gt;<a class="code hl_variable" href="structmalloc__chunk.html#a1c0148642730c23c73bee9043deaf398">bk</a> == P)) {\</div>
+<div class="line">  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_define" href="__heap_8cpp.html#afe7e6535ba41a91be580eb2bba5890e2">RTCHECK</a>(<a class="code hl_define" href="__heap_8cpp.html#a162ea143ef987e2bc98d5e4b69f7bff6">ok_address</a>(<a class="code hl_define" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>, F) &amp;&amp; F-&gt;<a class="code hl_variable" href="structmalloc__chunk.html#a1c0148642730c23c73bee9043deaf398">bk</a> == P)) {\</div>
 <div class="line">    F-&gt;<a class="code hl_variable" href="structmalloc__chunk.html#a1c0148642730c23c73bee9043deaf398">bk</a> = B;\</div>
 <div class="line">    B-&gt;<a class="code hl_variable" href="structmalloc__chunk.html#a3bf7a41ce24baa8f17a5a4d13abfdef4">fd</a> = F;\</div>
 <div class="line">  }\</div>
 <div class="line">  <span class="keywordflow">else</span> {\</div>
-<div class="line">    CORRUPTION_ERROR_ACTION(M);\</div>
+<div class="line">    CORRUPTION_ERROR_ACTION(<a class="code hl_define" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>);\</div>
 <div class="line">  }\</div>
 <div class="line">}</div>
 <div class="ttc" id="a__heap_8cpp_html_a0bd05b2720a9f79a0c066086c4f7e2fa"><div class="ttname"><a href="__heap_8cpp.html#a0bd05b2720a9f79a0c066086c4f7e2fa">chunksize</a></div><div class="ttdeci">#define chunksize(p)</div><div class="ttdef"><b>Definition</b> _heap.cpp:2368</div></div>
@@ -4838,13 +4840,13 @@ Functions</h2></td></tr>
           <td class="memname">#define unlink_large_chunk</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">M, </td>
+          <td class="paramname"><a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">X&#160;</td>
+          <td class="paramname"><a class="el" href="sha1_8c.html#add48b1ce38c3ada11068889d7fa0fad0">X</a>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -4866,7 +4868,7 @@ Functions</h2></td></tr>
           <td class="memname">#define unlink_small_chunk</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">M, </td>
+          <td class="paramname"><a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -4894,21 +4896,21 @@ Functions</h2></td></tr>
 <div class="line">  assert(P != B);\</div>
 <div class="line">  assert(P != F);\</div>
 <div class="line">  assert(<a class="code hl_define" href="__heap_8cpp.html#a0bd05b2720a9f79a0c066086c4f7e2fa">chunksize</a>(P) == <a class="code hl_define" href="__heap_8cpp.html#a377939ca061c1b170053c2927af26cdc">small_index2size</a>(I));\</div>
-<div class="line">  if (<a class="code hl_define" href="__heap_8cpp.html#afe7e6535ba41a91be580eb2bba5890e2">RTCHECK</a>(F == <a class="code hl_define" href="__heap_8cpp.html#a862c7dc1f319911e1f06b9d99485cc54">smallbin_at</a>(M,I) || (<a class="code hl_define" href="__heap_8cpp.html#a162ea143ef987e2bc98d5e4b69f7bff6">ok_address</a>(M, F) &amp;&amp; F-&gt;<a class="code hl_variable" href="structmalloc__chunk.html#a1c0148642730c23c73bee9043deaf398">bk</a> == P))) { \</div>
+<div class="line">  if (<a class="code hl_define" href="__heap_8cpp.html#afe7e6535ba41a91be580eb2bba5890e2">RTCHECK</a>(F == <a class="code hl_define" href="__heap_8cpp.html#a862c7dc1f319911e1f06b9d99485cc54">smallbin_at</a>(<a class="code hl_define" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>,I) || (<a class="code hl_define" href="__heap_8cpp.html#a162ea143ef987e2bc98d5e4b69f7bff6">ok_address</a>(<a class="code hl_define" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>, F) &amp;&amp; F-&gt;<a class="code hl_variable" href="structmalloc__chunk.html#a1c0148642730c23c73bee9043deaf398">bk</a> == P))) { \</div>
 <div class="line">    if (B == F) {\</div>
-<div class="line">      clear_smallmap(M, I);\</div>
+<div class="line">      clear_smallmap(<a class="code hl_define" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>, I);\</div>
 <div class="line">    }\</div>
-<div class="line">    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_define" href="__heap_8cpp.html#afe7e6535ba41a91be580eb2bba5890e2">RTCHECK</a>(B == <a class="code hl_define" href="__heap_8cpp.html#a862c7dc1f319911e1f06b9d99485cc54">smallbin_at</a>(M,I) ||\</div>
-<div class="line">                     (<a class="code hl_define" href="__heap_8cpp.html#a162ea143ef987e2bc98d5e4b69f7bff6">ok_address</a>(M, B) &amp;&amp; B-&gt;<a class="code hl_variable" href="structmalloc__chunk.html#a3bf7a41ce24baa8f17a5a4d13abfdef4">fd</a> == P))) {\</div>
+<div class="line">    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_define" href="__heap_8cpp.html#afe7e6535ba41a91be580eb2bba5890e2">RTCHECK</a>(B == <a class="code hl_define" href="__heap_8cpp.html#a862c7dc1f319911e1f06b9d99485cc54">smallbin_at</a>(<a class="code hl_define" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>,I) ||\</div>
+<div class="line">                     (<a class="code hl_define" href="__heap_8cpp.html#a162ea143ef987e2bc98d5e4b69f7bff6">ok_address</a>(<a class="code hl_define" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>, B) &amp;&amp; B-&gt;<a class="code hl_variable" href="structmalloc__chunk.html#a3bf7a41ce24baa8f17a5a4d13abfdef4">fd</a> == P))) {\</div>
 <div class="line">      F-&gt;<a class="code hl_variable" href="structmalloc__chunk.html#a1c0148642730c23c73bee9043deaf398">bk</a> = B;\</div>
 <div class="line">      B-&gt;<a class="code hl_variable" href="structmalloc__chunk.html#a3bf7a41ce24baa8f17a5a4d13abfdef4">fd</a> = F;\</div>
 <div class="line">    }\</div>
 <div class="line">    <span class="keywordflow">else</span> {\</div>
-<div class="line">      CORRUPTION_ERROR_ACTION(M);\</div>
+<div class="line">      CORRUPTION_ERROR_ACTION(<a class="code hl_define" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>);\</div>
 <div class="line">    }\</div>
 <div class="line">  }\</div>
 <div class="line">  <span class="keywordflow">else</span> {\</div>
-<div class="line">    CORRUPTION_ERROR_ACTION(M);\</div>
+<div class="line">    CORRUPTION_ERROR_ACTION(<a class="code hl_define" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>);\</div>
 <div class="line">  }\</div>
 <div class="line">}</div>
 </div><!-- fragment -->
@@ -4994,8 +4996,8 @@ Functions</h2></td></tr>
           <td class="memname">#define use_lock</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">M</td><td>)</td>
-          <td>&#160;&#160;&#160;((M)-&gt;mflags &amp;   <a class="el" href="dlmalloc_8c.html#a02a456408564b69d6f3de5f8fede4931">USE_LOCK_BIT</a>)</td>
+          <td class="paramname"><a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a></td><td>)</td>
+          <td>&#160;&#160;&#160;((<a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>)-&gt;mflags &amp;   <a class="el" href="dlmalloc_8c.html#a02a456408564b69d6f3de5f8fede4931">USE_LOCK_BIT</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -5040,8 +5042,8 @@ Functions</h2></td></tr>
           <td class="memname">#define use_mmap</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">M</td><td>)</td>
-          <td>&#160;&#160;&#160;((M)-&gt;mflags &amp;   <a class="el" href="dlmalloc_8c.html#a6792a808878980b064a53729e42a1b55">USE_MMAP_BIT</a>)</td>
+          <td class="paramname"><a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a></td><td>)</td>
+          <td>&#160;&#160;&#160;((<a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>)-&gt;mflags &amp;   <a class="el" href="dlmalloc_8c.html#a6792a808878980b064a53729e42a1b55">USE_MMAP_BIT</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -5073,8 +5075,8 @@ Functions</h2></td></tr>
           <td class="memname">#define use_noncontiguous</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">M</td><td>)</td>
-          <td>&#160;&#160;&#160;((M)-&gt;mflags &amp;   <a class="el" href="dlmalloc_8c.html#ac7f41c328146bb45481fe3e0c20787d4">USE_NONCONTIGUOUS_BIT</a>)</td>
+          <td class="paramname"><a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a></td><td>)</td>
+          <td>&#160;&#160;&#160;((<a class="el" href="sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>)-&gt;mflags &amp;   <a class="el" href="dlmalloc_8c.html#ac7f41c328146bb45481fe3e0c20787d4">USE_NONCONTIGUOUS_BIT</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">

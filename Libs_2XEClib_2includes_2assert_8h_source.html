@@ -93,13 +93,13 @@ $(document).ready(function() { init_codefold(0); });
 <div class="foldopen" id="foldopen00040" data-start="" data-end="">
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="Libs_2XEClib_2includes_2assert_8h.html#a0041af519e0e7d47c9bcc83760c4669e">   40</a></span><span class="preprocessor">#define assert(expression)                                                                         \</span></div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">    {                                                                                              \</span></div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="preprocessor">        if (!expression) {                                                                         \</span></div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="preprocessor">            </span><span class="comment">/*  vfprintf(stderr, &quot;ASSERT failed: %s line %d: %s \n&quot;, __FILE__, \</span></div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">    __LINE__, (#expression)); */</span><span class="preprocessor">                    \</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="preprocessor">        if (!(expression)) {                                                                         \</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="preprocessor">            _KePrint(&quot;ASSERT failed: %s line %d: %s \n&quot;, __FILE__, __LINE__, \</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">            (#expression)); \</span></div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="preprocessor">            abort();                                                                               \</span></div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="preprocessor">        }                                                                                          \</span></div>
-</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="preprocessor">    }</span></div>
+</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="preprocessor">#else</span></div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="preprocessor">#define assert(expression) ((void)0)</span></div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="preprocessor">#endif</span></div>

@@ -121,7 +121,7 @@ Macros</h2></td></tr>
 <tr class="separator:af952892475f447a16744d7d5bc085756"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39b85562363751f35afcc821fcb320fc" id="r_a39b85562363751f35afcc821fcb320fc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ftserv_8h.html#a39b85562363751f35afcc821fcb320fc">FT_FACE_LOOKUP_SERVICE</a>(face,  ptr,  id)</td></tr>
 <tr class="separator:a39b85562363751f35afcc821fcb320fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b5632fff44151a55025c8505d553cd0" id="r_a8b5632fff44151a55025c8505d553cd0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ftserv_8h.html#a8b5632fff44151a55025c8505d553cd0">FT_DEFINE_SERVICE</a>(name)</td></tr>
+<tr class="memitem:a8b5632fff44151a55025c8505d553cd0" id="r_a8b5632fff44151a55025c8505d553cd0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ftserv_8h.html#a8b5632fff44151a55025c8505d553cd0">FT_DEFINE_SERVICE</a>(<a class="el" href="codec__8859_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>)</td></tr>
 <tr class="separator:a8b5632fff44151a55025c8505d553cd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d7dec3e2cf35a40f4d7fb47d93a911c" id="r_a4d7dec3e2cf35a40f4d7fb47d93a911c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ftserv_8h.html#a4d7dec3e2cf35a40f4d7fb47d93a911c">FT_SERVICE_BDF_H</a>&#160;&#160;&#160;&lt;freetype/internal/services/svbdf.h&gt;</td></tr>
 <tr class="separator:a4d7dec3e2cf35a40f4d7fb47d93a911c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -191,16 +191,17 @@ Functions</h2></td></tr>
           <td class="memname">#define FT_DEFINE_SERVICE</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">name</td><td>)</td>
+          <td class="paramname"><a class="el" href="codec__8859_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  <span class="keyword">typedef</span> <span class="keyword">struct </span>FT_Service_ ## name ## Rec_ \</div>
-<div class="line">    FT_Service_ ## name ## Rec ;             \</div>
-<div class="line">  <span class="keyword">typedef</span> <span class="keyword">struct </span>FT_Service_ ## name ## Rec_ \</div>
-<div class="line">    const * FT_Service_ ## name ;            \</div>
-<div class="line">  <span class="keyword">struct </span>FT_Service_ ## name ## Rec_</div>
+<b>Value:</b><div class="fragment"><div class="line">  <span class="keyword">typedef</span> <span class="keyword">struct </span>FT_Service_ ## <a class="code hl_variable" href="codec__8859_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a> ## Rec_ \</div>
+<div class="line">    FT_Service_ ## <a class="code hl_variable" href="codec__8859_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a> ## Rec ;             \</div>
+<div class="line">  <span class="keyword">typedef</span> <span class="keyword">struct </span>FT_Service_ ## <a class="code hl_variable" href="codec__8859_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a> ## Rec_ \</div>
+<div class="line">    const * FT_Service_ ## <a class="code hl_variable" href="codec__8859_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a> ;            \</div>
+<div class="line">  <span class="keyword">struct </span>FT_Service_ ## <a class="code hl_variable" href="codec__8859_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a> ## Rec_</div>
+<div class="ttc" id="acodec__8859_8c_html_a8f8f80d37794cde9472343e4487ba3eb"><div class="ttname"><a href="codec__8859_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a></div><div class="ttdeci">const char * name</div><div class="ttdef"><b>Definition</b> codec_8859.c:22</div></div>
 </div><!-- fragment -->
 </div>
 </div>

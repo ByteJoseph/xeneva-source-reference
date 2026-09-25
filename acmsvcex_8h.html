@@ -90,7 +90,7 @@ Macros</h2></td></tr>
 <tr class="separator:a6aa1aeea3b1af7b5a27c2fdfc294b562"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af95c44c133b2d704f71d18da3ce473ed" id="r_af95c44c133b2d704f71d18da3ce473ed"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="acmsvcex_8h.html#af95c44c133b2d704f71d18da3ce473ed">_ADNBND</a>&#160;&#160;&#160;(sizeof (ACPI_NATIVE_INT) - 1)</td></tr>
 <tr class="separator:af95c44c133b2d704f71d18da3ce473ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5fc2ddf76b68a071c426ffc4e100e29" id="r_ae5fc2ddf76b68a071c426ffc4e100e29"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="acmsvcex_8h.html#ae5fc2ddf76b68a071c426ffc4e100e29">_Bnd</a>(X,  bnd)&#160;&#160;&#160;(((sizeof (X)) + (bnd)) &amp; (~(bnd)))</td></tr>
+<tr class="memitem:ae5fc2ddf76b68a071c426ffc4e100e29" id="r_ae5fc2ddf76b68a071c426ffc4e100e29"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="acmsvcex_8h.html#ae5fc2ddf76b68a071c426ffc4e100e29">_Bnd</a>(<a class="el" href="sha1_8c.html#add48b1ce38c3ada11068889d7fa0fad0">X</a>,  bnd)&#160;&#160;&#160;(((sizeof (<a class="el" href="sha1_8c.html#add48b1ce38c3ada11068889d7fa0fad0">X</a>)) + (bnd)) &amp; (~(bnd)))</td></tr>
 <tr class="separator:ae5fc2ddf76b68a071c426ffc4e100e29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeadee2e4cbb1885879319bcb1de03fdc" id="r_aeadee2e4cbb1885879319bcb1de03fdc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="acmsvcex_8h.html#aeadee2e4cbb1885879319bcb1de03fdc">va_arg</a>(ap,  T)&#160;&#160;&#160;(*(T *)(((ap) += (<a class="el" href="acmsvcex_8h.html#ae5fc2ddf76b68a071c426ffc4e100e29">_Bnd</a> (T, <a class="el" href="acmsvcex_8h.html#a6aa1aeea3b1af7b5a27c2fdfc294b562">_AUPBND</a>))) - (<a class="el" href="acmsvcex_8h.html#ae5fc2ddf76b68a071c426ffc4e100e29">_Bnd</a> (T,<a class="el" href="acmsvcex_8h.html#af95c44c133b2d704f71d18da3ce473ed">_ADNBND</a>))))</td></tr>
 <tr class="separator:aeadee2e4cbb1885879319bcb1de03fdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -143,7 +143,7 @@ Typedefs</h2></td></tr>
           <td class="memname">#define _Bnd</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">X, </td>
+          <td class="paramname"><a class="el" href="sha1_8c.html#add48b1ce38c3ada11068889d7fa0fad0">X</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -154,7 +154,7 @@ Typedefs</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;(((sizeof (X)) + (bnd)) &amp; (~(bnd)))</td>
+          <td></td><td>&#160;&#160;&#160;(((sizeof (<a class="el" href="sha1_8c.html#add48b1ce38c3ada11068889d7fa0fad0">X</a>)) + (bnd)) &amp; (~(bnd)))</td>
         </tr>
       </table>
 </div><div class="memdoc">

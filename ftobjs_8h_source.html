@@ -376,7 +376,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>  <a class="code hl_define" href="ftconfig_8h.html#ad9b0c555bd9c667187a720e265943bfc">FT_BASE</a>( <span class="keywordtype">void</span> )</div>
 <div class="line"><a id="l00274" name="l00274"></a><span class="lineno"><a class="line" href="ftobjs_8h.html#a9c236e86b7486cfbd88b8959247d327a">  274</a></span>  <a class="code hl_function" href="ftobjs_8h.html#a9c236e86b7486cfbd88b8959247d327a">ft_lcd_padding</a>( <a class="code hl_struct" href="structFT__BBox__.html">FT_BBox</a>*        cbox,</div>
 <div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>                  <a class="code hl_struct" href="structFT__GlyphSlotRec__.html">FT_GlyphSlot</a>    slot,</div>
-<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>                  <a class="code hl_typedef" href="freetype_8h.html#a42c69ed4922d28c7d8cc9173237f966b">FT_Render_Mode</a>  mode );</div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>                  <a class="code hl_typedef" href="freetype_8h.html#a42c69ed4922d28c7d8cc9173237f966b">FT_Render_Mode</a>  <a class="code hl_variable" href="d__mode_8c.html#a07bb4e8cdc92d8c8e99069d0e29cb370">mode</a> );</div>
 <div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span> </div>
 <div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span><span class="preprocessor">#ifdef FT_CONFIG_OPTION_SUBPIXEL_RENDERING</span></div>
 <div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span> </div>
@@ -388,7 +388,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>  <span class="comment">/* This is the default LCD filter, an in-place, 5-tap FIR filter. */</span></div>
 <div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>  <a class="code hl_define" href="ftconfig_8h.html#ad9b0c555bd9c667187a720e265943bfc">FT_BASE</a>( <span class="keywordtype">void</span> )</div>
 <div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>  ft_lcd_filter_fir( <a class="code hl_struct" href="structFT__Bitmap__.html">FT_Bitmap</a>*           bitmap,</div>
-<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>                     <a class="code hl_typedef" href="freetype_8h.html#a42c69ed4922d28c7d8cc9173237f966b">FT_Render_Mode</a>       mode,</div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>                     <a class="code hl_typedef" href="freetype_8h.html#a42c69ed4922d28c7d8cc9173237f966b">FT_Render_Mode</a>       <a class="code hl_variable" href="d__mode_8c.html#a07bb4e8cdc92d8c8e99069d0e29cb370">mode</a>,</div>
 <div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>                     <a class="code hl_typedef" href="ftlcdfil_8h.html#aad84df0eb14f9896e340ea965328fead">FT_LcdFiveTapFilter</a>  weights );</div>
 <div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span> </div>
 <div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span><span class="preprocessor">#endif </span><span class="comment">/* FT_CONFIG_OPTION_SUBPIXEL_RENDERING */</span><span class="preprocessor"></span></div>
@@ -836,7 +836,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00705" name="l00705"></a><span class="lineno">  705</span>  <span class="comment">/* and check whether the truncated bbox is too large for rendering. */</span></div>
 <div class="line"><a id="l00706" name="l00706"></a><span class="lineno">  706</span>  <a class="code hl_define" href="ftconfig_8h.html#ad9b0c555bd9c667187a720e265943bfc">FT_BASE</a>( <a class="code hl_variable" href="fttypes_8h.html#a1a832a256bb5a7e6e884afaa1a07f3ae">FT_Bool</a> )</div>
 <div class="line"><a id="l00707" name="l00707"></a><span class="lineno"><a class="line" href="ftobjs_8h.html#a47c5a66f91e2fa252586c0e25bdb5aae">  707</a></span>  <a class="code hl_function" href="ftobjs_8h.html#a47c5a66f91e2fa252586c0e25bdb5aae">ft_glyphslot_preset_bitmap</a>( <a class="code hl_struct" href="structFT__GlyphSlotRec__.html">FT_GlyphSlot</a>      slot,</div>
-<div class="line"><a id="l00708" name="l00708"></a><span class="lineno">  708</span>                              <a class="code hl_typedef" href="freetype_8h.html#a42c69ed4922d28c7d8cc9173237f966b">FT_Render_Mode</a>    mode,</div>
+<div class="line"><a id="l00708" name="l00708"></a><span class="lineno">  708</span>                              <a class="code hl_typedef" href="freetype_8h.html#a42c69ed4922d28c7d8cc9173237f966b">FT_Render_Mode</a>    <a class="code hl_variable" href="d__mode_8c.html#a07bb4e8cdc92d8c8e99069d0e29cb370">mode</a>,</div>
 <div class="line"><a id="l00709" name="l00709"></a><span class="lineno">  709</span>                              const <a class="code hl_struct" href="structFT__Vector__.html">FT_Vector</a>*  origin );</div>
 <div class="line"><a id="l00710" name="l00710"></a><span class="lineno">  710</span> </div>
 <div class="line"><a id="l00711" name="l00711"></a><span class="lineno">  711</span>  <span class="comment">/* Allocate a new bitmap buffer in a glyph slot. */</span></div>
@@ -1387,6 +1387,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l01234" name="l01234"></a><span class="lineno"> 1234</span> </div>
 <div class="line"><a id="l01235" name="l01235"></a><span class="lineno"> 1235</span> </div>
 <div class="line"><a id="l01236" name="l01236"></a><span class="lineno"> 1236</span><span class="comment">/* END */</span></div>
+<div class="ttc" id="ad__mode_8c_html_a07bb4e8cdc92d8c8e99069d0e29cb370"><div class="ttname"><a href="d__mode_8c.html#a07bb4e8cdc92d8c8e99069d0e29cb370">mode</a></div><div class="ttdeci">GameMode_t mode</div><div class="ttdef"><b>Definition</b> d_mode.c:29</div></div>
 <div class="ttc" id="afreetype_8h_html_a07cbb98ddcb2cc8c58b5ac03e513382f"><div class="ttname"><a href="freetype_8h.html#a07cbb98ddcb2cc8c58b5ac03e513382f">FT_Glyph_Metrics</a></div><div class="ttdeci">FT_BEGIN_HEADER struct FT_Glyph_Metrics_ FT_Glyph_Metrics</div></div>
 <div class="ttc" id="afreetype_8h_html_a42c69ed4922d28c7d8cc9173237f966b"><div class="ttname"><a href="freetype_8h.html#a42c69ed4922d28c7d8cc9173237f966b">FT_Render_Mode</a></div><div class="ttdeci">enum FT_Render_Mode_ FT_Render_Mode</div></div>
 <div class="ttc" id="aft2build_8h_html"><div class="ttname"><a href="ft2build_8h.html">ft2build.h</a></div></div>

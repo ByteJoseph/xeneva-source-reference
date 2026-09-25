@@ -146,9 +146,9 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">    {                                                                                              \</div>
-<div class="line">        if (!expression) {                                                                         \</div>
-<div class="line">            <span class="comment">/*  vfprintf(stderr, &quot;ASSERT failed: %s line %d: %s \n&quot;, __FILE__, \</span></div>
-<div class="line"><span class="comment">    __LINE__, (#expression)); */</span>                    \</div>
+<div class="line">        if (!(expression)) {                                                                         \</div>
+<div class="line">            _KePrint(<span class="stringliteral">&quot;ASSERT failed: %s line %d: %s \n&quot;</span>, __FILE__, __LINE__, \</div>
+<div class="line">            (#expression)); \</div>
 <div class="line">            abort();                                                                               \</div>
 <div class="line">        }                                                                                          \</div>
 <div class="line">    }</div>

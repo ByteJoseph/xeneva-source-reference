@@ -224,33 +224,33 @@ Macros</h2></td></tr>
 <tr class="separator:a9778b38d326d97840b97dc6f7093a4f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae335575a7b75916318476c02daeff6a5" id="r_ae335575a7b75916318476c02daeff6a5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="minimp3_8cpp.html#ae335575a7b75916318476c02daeff6a5">NEG_USR32</a>(a,  s)&#160;&#160;&#160;(((<a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>)(a)) &gt;&gt; (32 - (s)))</td></tr>
 <tr class="separator:ae335575a7b75916318476c02daeff6a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e35137d6a961c3a91c29b9f3c1705a3" id="r_a5e35137d6a961c3a91c29b9f3c1705a3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="minimp3_8cpp.html#a5e35137d6a961c3a91c29b9f3c1705a3">OPEN_READER</a>(name,  gb)</td></tr>
+<tr class="memitem:a5e35137d6a961c3a91c29b9f3c1705a3" id="r_a5e35137d6a961c3a91c29b9f3c1705a3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="minimp3_8cpp.html#a5e35137d6a961c3a91c29b9f3c1705a3">OPEN_READER</a>(<a class="el" href="codec__8859_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>,  gb)</td></tr>
 <tr class="separator:a5e35137d6a961c3a91c29b9f3c1705a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40567ab5dc596078bd4d122e1ef1d057" id="r_a40567ab5dc596078bd4d122e1ef1d057"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="minimp3_8cpp.html#a40567ab5dc596078bd4d122e1ef1d057">CLOSE_READER</a>(name,  gb)&#160;&#160;&#160;(gb)-&gt;<a class="el" href="Libs_2XEClib_2includes_2string_8h.html#a48b8e98743833e6ce735f3d9f2fb240f">index</a> = name##_index;</td></tr>
+<tr class="memitem:a40567ab5dc596078bd4d122e1ef1d057" id="r_a40567ab5dc596078bd4d122e1ef1d057"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="minimp3_8cpp.html#a40567ab5dc596078bd4d122e1ef1d057">CLOSE_READER</a>(<a class="el" href="codec__8859_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>,  gb)&#160;&#160;&#160;(gb)-&gt;<a class="el" href="Libs_2XEClib_2includes_2string_8h.html#a48b8e98743833e6ce735f3d9f2fb240f">index</a> = <a class="el" href="codec__8859_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>##_index;</td></tr>
 <tr class="separator:a40567ab5dc596078bd4d122e1ef1d057"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a757e9fd1245a692628b2bb0c699be27c" id="r_a757e9fd1245a692628b2bb0c699be27c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="minimp3_8cpp.html#a757e9fd1245a692628b2bb0c699be27c">UPDATE_CACHE</a>(name,  gb)&#160;&#160;&#160;	name##_cache = unaligned32_be(&amp;((gb)-&gt;buffer[name##_index &gt;&gt; 3])) &lt;&lt; (name##_index &amp; 0x07);</td></tr>
+<tr class="memitem:a757e9fd1245a692628b2bb0c699be27c" id="r_a757e9fd1245a692628b2bb0c699be27c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="minimp3_8cpp.html#a757e9fd1245a692628b2bb0c699be27c">UPDATE_CACHE</a>(<a class="el" href="codec__8859_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>,  gb)&#160;&#160;&#160;	<a class="el" href="codec__8859_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>##_cache = unaligned32_be(&amp;((gb)-&gt;buffer[<a class="el" href="codec__8859_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>##_index &gt;&gt; 3])) &lt;&lt; (<a class="el" href="codec__8859_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>##_index &amp; 0x07);</td></tr>
 <tr class="separator:a757e9fd1245a692628b2bb0c699be27c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3383e4ed8ec358f65176c49e53488922" id="r_a3383e4ed8ec358f65176c49e53488922"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="minimp3_8cpp.html#a3383e4ed8ec358f65176c49e53488922">SKIP_CACHE</a>(name,  gb,  num)&#160;&#160;&#160;name##_cache &lt;&lt;= (num);</td></tr>
+<tr class="memitem:a3383e4ed8ec358f65176c49e53488922" id="r_a3383e4ed8ec358f65176c49e53488922"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="minimp3_8cpp.html#a3383e4ed8ec358f65176c49e53488922">SKIP_CACHE</a>(<a class="el" href="codec__8859_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>,  gb,  num)&#160;&#160;&#160;<a class="el" href="codec__8859_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>##_cache &lt;&lt;= (num);</td></tr>
 <tr class="separator:a3383e4ed8ec358f65176c49e53488922"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5635d3f42aa9eb98ccdae1d2fd13000" id="r_ac5635d3f42aa9eb98ccdae1d2fd13000"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="minimp3_8cpp.html#ac5635d3f42aa9eb98ccdae1d2fd13000">SKIP_COUNTER</a>(name,  gb,  num)&#160;&#160;&#160;name##_index += (num);</td></tr>
+<tr class="memitem:ac5635d3f42aa9eb98ccdae1d2fd13000" id="r_ac5635d3f42aa9eb98ccdae1d2fd13000"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="minimp3_8cpp.html#ac5635d3f42aa9eb98ccdae1d2fd13000">SKIP_COUNTER</a>(<a class="el" href="codec__8859_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>,  gb,  num)&#160;&#160;&#160;<a class="el" href="codec__8859_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>##_index += (num);</td></tr>
 <tr class="separator:ac5635d3f42aa9eb98ccdae1d2fd13000"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7418c19702b25b0e27522746e22e7b8d" id="r_a7418c19702b25b0e27522746e22e7b8d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="minimp3_8cpp.html#a7418c19702b25b0e27522746e22e7b8d">SKIP_BITS</a>(name,  gb,  num)&#160;&#160;&#160;{<a class="el" href="minimp3_8cpp.html#a3383e4ed8ec358f65176c49e53488922">SKIP_CACHE</a>(name, gb, num) <a class="el" href="minimp3_8cpp.html#ac5635d3f42aa9eb98ccdae1d2fd13000">SKIP_COUNTER</a>(name, gb, num)}</td></tr>
+<tr class="memitem:a7418c19702b25b0e27522746e22e7b8d" id="r_a7418c19702b25b0e27522746e22e7b8d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="minimp3_8cpp.html#a7418c19702b25b0e27522746e22e7b8d">SKIP_BITS</a>(<a class="el" href="codec__8859_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>,  gb,  num)&#160;&#160;&#160;{<a class="el" href="minimp3_8cpp.html#a3383e4ed8ec358f65176c49e53488922">SKIP_CACHE</a>(<a class="el" href="codec__8859_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, gb, num) <a class="el" href="minimp3_8cpp.html#ac5635d3f42aa9eb98ccdae1d2fd13000">SKIP_COUNTER</a>(<a class="el" href="codec__8859_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, gb, num)}</td></tr>
 <tr class="separator:a7418c19702b25b0e27522746e22e7b8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0812a4b49d1655382604bb231ee5893" id="r_aa0812a4b49d1655382604bb231ee5893"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="minimp3_8cpp.html#aa0812a4b49d1655382604bb231ee5893">LAST_SKIP_BITS</a>(name,  gb,  num)&#160;&#160;&#160;<a class="el" href="minimp3_8cpp.html#ac5635d3f42aa9eb98ccdae1d2fd13000">SKIP_COUNTER</a>(name, gb, num)</td></tr>
+<tr class="memitem:aa0812a4b49d1655382604bb231ee5893" id="r_aa0812a4b49d1655382604bb231ee5893"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="minimp3_8cpp.html#aa0812a4b49d1655382604bb231ee5893">LAST_SKIP_BITS</a>(<a class="el" href="codec__8859_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>,  gb,  num)&#160;&#160;&#160;<a class="el" href="minimp3_8cpp.html#ac5635d3f42aa9eb98ccdae1d2fd13000">SKIP_COUNTER</a>(<a class="el" href="codec__8859_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, gb, num)</td></tr>
 <tr class="separator:aa0812a4b49d1655382604bb231ee5893"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2f903561f687a1f47e40e9d593588ae" id="r_ae2f903561f687a1f47e40e9d593588ae"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="minimp3_8cpp.html#ae2f903561f687a1f47e40e9d593588ae">LAST_SKIP_CACHE</a>(name,  gb,  num)&#160;&#160;&#160;;</td></tr>
+<tr class="memitem:ae2f903561f687a1f47e40e9d593588ae" id="r_ae2f903561f687a1f47e40e9d593588ae"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="minimp3_8cpp.html#ae2f903561f687a1f47e40e9d593588ae">LAST_SKIP_CACHE</a>(<a class="el" href="codec__8859_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>,  gb,  num)&#160;&#160;&#160;;</td></tr>
 <tr class="separator:ae2f903561f687a1f47e40e9d593588ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e11e2c007540a289872ed149593167e" id="r_a4e11e2c007540a289872ed149593167e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="minimp3_8cpp.html#a4e11e2c007540a289872ed149593167e">SHOW_UBITS</a>(name,  gb,  num)&#160;&#160;&#160;<a class="el" href="minimp3_8cpp.html#ae335575a7b75916318476c02daeff6a5">NEG_USR32</a>(name##_cache, num)</td></tr>
+<tr class="memitem:a4e11e2c007540a289872ed149593167e" id="r_a4e11e2c007540a289872ed149593167e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="minimp3_8cpp.html#a4e11e2c007540a289872ed149593167e">SHOW_UBITS</a>(<a class="el" href="codec__8859_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>,  gb,  num)&#160;&#160;&#160;<a class="el" href="minimp3_8cpp.html#ae335575a7b75916318476c02daeff6a5">NEG_USR32</a>(<a class="el" href="codec__8859_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>##_cache, num)</td></tr>
 <tr class="separator:a4e11e2c007540a289872ed149593167e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56e1113a1a2581ba4bc0115eda920b69" id="r_a56e1113a1a2581ba4bc0115eda920b69"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="minimp3_8cpp.html#a56e1113a1a2581ba4bc0115eda920b69">SHOW_SBITS</a>(name,  gb,  num)&#160;&#160;&#160;<a class="el" href="minimp3_8cpp.html#a9778b38d326d97840b97dc6f7093a4f1">NEG_SSR32</a>(name##_cache, num)</td></tr>
+<tr class="memitem:a56e1113a1a2581ba4bc0115eda920b69" id="r_a56e1113a1a2581ba4bc0115eda920b69"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="minimp3_8cpp.html#a56e1113a1a2581ba4bc0115eda920b69">SHOW_SBITS</a>(<a class="el" href="codec__8859_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>,  gb,  num)&#160;&#160;&#160;<a class="el" href="minimp3_8cpp.html#a9778b38d326d97840b97dc6f7093a4f1">NEG_SSR32</a>(<a class="el" href="codec__8859_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>##_cache, num)</td></tr>
 <tr class="separator:a56e1113a1a2581ba4bc0115eda920b69"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a273cb6b1f292c7c8eed282a9ec44cd21" id="r_a273cb6b1f292c7c8eed282a9ec44cd21"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="minimp3_8cpp.html#a273cb6b1f292c7c8eed282a9ec44cd21">GET_CACHE</a>(name,  gb)&#160;&#160;&#160;((<a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>)name##_cache)</td></tr>
+<tr class="memitem:a273cb6b1f292c7c8eed282a9ec44cd21" id="r_a273cb6b1f292c7c8eed282a9ec44cd21"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="minimp3_8cpp.html#a273cb6b1f292c7c8eed282a9ec44cd21">GET_CACHE</a>(<a class="el" href="codec__8859_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>,  gb)&#160;&#160;&#160;((<a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>)<a class="el" href="codec__8859_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>##_cache)</td></tr>
 <tr class="separator:a273cb6b1f292c7c8eed282a9ec44cd21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac266989e93beaad352082b15d6d88fe7" id="r_ac266989e93beaad352082b15d6d88fe7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="minimp3_8cpp.html#ac266989e93beaad352082b15d6d88fe7">skip_bits</a>&#160;&#160;&#160;skip_bits_long</td></tr>
 <tr class="separator:ac266989e93beaad352082b15d6d88fe7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a17f72ce482f978afd0ebd4167b2764bb" id="r_a17f72ce482f978afd0ebd4167b2764bb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="minimp3_8cpp.html#a17f72ce482f978afd0ebd4167b2764bb">GET_DATA</a>(v,  table,  i,  wrap,  size)</td></tr>
+<tr class="memitem:a17f72ce482f978afd0ebd4167b2764bb" id="r_a17f72ce482f978afd0ebd4167b2764bb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="minimp3_8cpp.html#a17f72ce482f978afd0ebd4167b2764bb">GET_DATA</a>(v,  <a class="el" href="codec__8859_8c.html#a05be6af94bcc30c135e4b6089bf9cfd9">table</a>,  i,  wrap,  size)</td></tr>
 <tr class="separator:a17f72ce482f978afd0ebd4167b2764bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a173c6606153d5128a769de10bc383fb9" id="r_a173c6606153d5128a769de10bc383fb9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="minimp3_8cpp.html#a173c6606153d5128a769de10bc383fb9">GET_VLC</a>(code,  name,  gb,  table,  bits,  max_depth)</td></tr>
+<tr class="memitem:a173c6606153d5128a769de10bc383fb9" id="r_a173c6606153d5128a769de10bc383fb9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="minimp3_8cpp.html#a173c6606153d5128a769de10bc383fb9">GET_VLC</a>(code,  <a class="el" href="codec__8859_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>,  gb,  <a class="el" href="codec__8859_8c.html#a05be6af94bcc30c135e4b6089bf9cfd9">table</a>,  bits,  max_depth)</td></tr>
 <tr class="separator:a173c6606153d5128a769de10bc383fb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28103e4bce80e76a5da571e159b3b464" id="r_a28103e4bce80e76a5da571e159b3b464"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="minimp3_8cpp.html#a28103e4bce80e76a5da571e159b3b464">INT_AA</a>(j)</td></tr>
 <tr class="separator:a28103e4bce80e76a5da571e159b3b464"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -657,7 +657,7 @@ Functions</h2></td></tr>
           <td class="memname">#define CLOSE_READER</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">name, </td>
+          <td class="paramname"><a class="el" href="codec__8859_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -668,7 +668,7 @@ Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;(gb)-&gt;<a class="el" href="Libs_2XEClib_2includes_2string_8h.html#a48b8e98743833e6ce735f3d9f2fb240f">index</a> = name##_index;</td>
+          <td></td><td>&#160;&#160;&#160;(gb)-&gt;<a class="el" href="Libs_2XEClib_2includes_2string_8h.html#a48b8e98743833e6ce735f3d9f2fb240f">index</a> = <a class="el" href="codec__8859_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>##_index;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1233,7 +1233,7 @@ Functions</h2></td></tr>
           <td class="memname">#define GET_CACHE</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">name, </td>
+          <td class="paramname"><a class="el" href="codec__8859_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1244,7 +1244,7 @@ Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;((<a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>)name##_cache)</td>
+          <td></td><td>&#160;&#160;&#160;((<a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>)<a class="el" href="codec__8859_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>##_cache)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1267,7 +1267,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">table, </td>
+          <td class="paramname"><a class="el" href="codec__8859_8c.html#a05be6af94bcc30c135e4b6089bf9cfd9">table</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1295,7 +1295,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">    {                                                                                              \</div>
-<div class="line">        <span class="keyword">const</span> <a class="code hl_typedef" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>* ptr = (<span class="keyword">const</span> <a class="code hl_typedef" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>*)table + i * wrap;                                     \</div>
+<div class="line">        <span class="keyword">const</span> <a class="code hl_typedef" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>* ptr = (<span class="keyword">const</span> <a class="code hl_typedef" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>*)<a class="code hl_variable" href="codec__8859_8c.html#a05be6af94bcc30c135e4b6089bf9cfd9">table</a> + i * wrap;                                     \</div>
 <div class="line">        switch (size) {                                                                            \</div>
 <div class="line">        <span class="keywordflow">case</span> 1:                                                                                    \</div>
 <div class="line">            v = *(<span class="keyword">const</span> <a class="code hl_typedef" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>*)ptr;                                                              \</div>
@@ -1311,6 +1311,7 @@ Functions</h2></td></tr>
 <div class="ttc" id="aacefiex_8h_html_a435d1572bf3f880d55459d9805097f62"><div class="ttname"><a href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></div><div class="ttdeci">unsigned int uint32_t</div><div class="ttdef"><b>Definition</b> acefiex.h:163</div></div>
 <div class="ttc" id="aacefiex_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition</b> acefiex.h:161</div></div>
 <div class="ttc" id="aacefiex_8h_html_adf4d876453337156dde61095e1f20223"><div class="ttname"><a href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a></div><div class="ttdeci">unsigned short int uint16_t</div><div class="ttdef"><b>Definition</b> acefiex.h:162</div></div>
+<div class="ttc" id="acodec__8859_8c_html_a05be6af94bcc30c135e4b6089bf9cfd9"><div class="ttname"><a href="codec__8859_8c.html#a05be6af94bcc30c135e4b6089bf9cfd9">table</a></div><div class="ttdeci">uint32_t * table</div><div class="ttdef"><b>Definition</b> codec_8859.c:24</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1330,7 +1331,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">name, </td>
+          <td class="paramname"><a class="el" href="codec__8859_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1342,7 +1343,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">table, </td>
+          <td class="paramname"><a class="el" href="codec__8859_8c.html#a05be6af94bcc30c135e4b6089bf9cfd9">table</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1366,33 +1367,34 @@ Functions</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line">    {                                                                                              \</div>
 <div class="line">        <span class="keywordtype">int</span> n, <a class="code hl_define" href="Libs_2XEClib_2includes_2string_8h.html#a48b8e98743833e6ce735f3d9f2fb240f">index</a>, nb_bits;                                                                     \</div>
 <div class="line">                                                                                                   \</div>
-<div class="line">        <a class="code hl_define" href="Libs_2XEClib_2includes_2string_8h.html#a48b8e98743833e6ce735f3d9f2fb240f">index</a> = <a class="code hl_define" href="minimp3_8cpp.html#a4e11e2c007540a289872ed149593167e">SHOW_UBITS</a>(name, gb, bits);                                                        \</div>
-<div class="line">        code = table[<a class="code hl_define" href="Libs_2XEClib_2includes_2string_8h.html#a48b8e98743833e6ce735f3d9f2fb240f">index</a>][0];                                                                    \</div>
-<div class="line">        n = table[<a class="code hl_define" href="Libs_2XEClib_2includes_2string_8h.html#a48b8e98743833e6ce735f3d9f2fb240f">index</a>][1];                                                                       \</div>
+<div class="line">        <a class="code hl_define" href="Libs_2XEClib_2includes_2string_8h.html#a48b8e98743833e6ce735f3d9f2fb240f">index</a> = <a class="code hl_define" href="minimp3_8cpp.html#a4e11e2c007540a289872ed149593167e">SHOW_UBITS</a>(<a class="code hl_variable" href="codec__8859_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, gb, bits);                                                        \</div>
+<div class="line">        code = <a class="code hl_variable" href="codec__8859_8c.html#a05be6af94bcc30c135e4b6089bf9cfd9">table</a>[<a class="code hl_define" href="Libs_2XEClib_2includes_2string_8h.html#a48b8e98743833e6ce735f3d9f2fb240f">index</a>][0];                                                                    \</div>
+<div class="line">        n = <a class="code hl_variable" href="codec__8859_8c.html#a05be6af94bcc30c135e4b6089bf9cfd9">table</a>[<a class="code hl_define" href="Libs_2XEClib_2includes_2string_8h.html#a48b8e98743833e6ce735f3d9f2fb240f">index</a>][1];                                                                       \</div>
 <div class="line">                                                                                                   \</div>
 <div class="line">        if (max_depth &gt; 1 &amp;&amp; n &lt; 0) {                                                              \</div>
-<div class="line">            LAST_SKIP_BITS(name, gb, bits)                                                         \</div>
-<div class="line">            UPDATE_CACHE(name, gb)                                                                 \</div>
+<div class="line">            LAST_SKIP_BITS(<a class="code hl_variable" href="codec__8859_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, gb, bits)                                                         \</div>
+<div class="line">            UPDATE_CACHE(<a class="code hl_variable" href="codec__8859_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, gb)                                                                 \</div>
 <div class="line">                                                                                                   \</div>
 <div class="line">            nb_bits = -n;                                                                          \</div>
 <div class="line">                                                                                                   \</div>
-<div class="line">            <a class="code hl_define" href="Libs_2XEClib_2includes_2string_8h.html#a48b8e98743833e6ce735f3d9f2fb240f">index</a> = <a class="code hl_define" href="minimp3_8cpp.html#a4e11e2c007540a289872ed149593167e">SHOW_UBITS</a>(name, gb, nb_bits) + code;                                          \</div>
-<div class="line">            code = table[<a class="code hl_define" href="Libs_2XEClib_2includes_2string_8h.html#a48b8e98743833e6ce735f3d9f2fb240f">index</a>][0];                                                                \</div>
-<div class="line">            n = table[<a class="code hl_define" href="Libs_2XEClib_2includes_2string_8h.html#a48b8e98743833e6ce735f3d9f2fb240f">index</a>][1];                                                                   \</div>
+<div class="line">            <a class="code hl_define" href="Libs_2XEClib_2includes_2string_8h.html#a48b8e98743833e6ce735f3d9f2fb240f">index</a> = <a class="code hl_define" href="minimp3_8cpp.html#a4e11e2c007540a289872ed149593167e">SHOW_UBITS</a>(<a class="code hl_variable" href="codec__8859_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, gb, nb_bits) + code;                                          \</div>
+<div class="line">            code = <a class="code hl_variable" href="codec__8859_8c.html#a05be6af94bcc30c135e4b6089bf9cfd9">table</a>[<a class="code hl_define" href="Libs_2XEClib_2includes_2string_8h.html#a48b8e98743833e6ce735f3d9f2fb240f">index</a>][0];                                                                \</div>
+<div class="line">            n = <a class="code hl_variable" href="codec__8859_8c.html#a05be6af94bcc30c135e4b6089bf9cfd9">table</a>[<a class="code hl_define" href="Libs_2XEClib_2includes_2string_8h.html#a48b8e98743833e6ce735f3d9f2fb240f">index</a>][1];                                                                   \</div>
 <div class="line">            if (max_depth &gt; 2 &amp;&amp; n &lt; 0) {                                                          \</div>
-<div class="line">                LAST_SKIP_BITS(name, gb, nb_bits)                                                  \</div>
-<div class="line">                UPDATE_CACHE(name, gb)                                                             \</div>
+<div class="line">                LAST_SKIP_BITS(<a class="code hl_variable" href="codec__8859_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, gb, nb_bits)                                                  \</div>
+<div class="line">                UPDATE_CACHE(<a class="code hl_variable" href="codec__8859_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, gb)                                                             \</div>
 <div class="line">                                                                                                   \</div>
 <div class="line">                nb_bits = -n;                                                                      \</div>
 <div class="line">                                                                                                   \</div>
-<div class="line">                <a class="code hl_define" href="Libs_2XEClib_2includes_2string_8h.html#a48b8e98743833e6ce735f3d9f2fb240f">index</a> = <a class="code hl_define" href="minimp3_8cpp.html#a4e11e2c007540a289872ed149593167e">SHOW_UBITS</a>(name, gb, nb_bits) + code;                                      \</div>
-<div class="line">                code = table[<a class="code hl_define" href="Libs_2XEClib_2includes_2string_8h.html#a48b8e98743833e6ce735f3d9f2fb240f">index</a>][0];                                                            \</div>
-<div class="line">                n = table[<a class="code hl_define" href="Libs_2XEClib_2includes_2string_8h.html#a48b8e98743833e6ce735f3d9f2fb240f">index</a>][1];                                                               \</div>
+<div class="line">                <a class="code hl_define" href="Libs_2XEClib_2includes_2string_8h.html#a48b8e98743833e6ce735f3d9f2fb240f">index</a> = <a class="code hl_define" href="minimp3_8cpp.html#a4e11e2c007540a289872ed149593167e">SHOW_UBITS</a>(<a class="code hl_variable" href="codec__8859_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, gb, nb_bits) + code;                                      \</div>
+<div class="line">                code = <a class="code hl_variable" href="codec__8859_8c.html#a05be6af94bcc30c135e4b6089bf9cfd9">table</a>[<a class="code hl_define" href="Libs_2XEClib_2includes_2string_8h.html#a48b8e98743833e6ce735f3d9f2fb240f">index</a>][0];                                                            \</div>
+<div class="line">                n = <a class="code hl_variable" href="codec__8859_8c.html#a05be6af94bcc30c135e4b6089bf9cfd9">table</a>[<a class="code hl_define" href="Libs_2XEClib_2includes_2string_8h.html#a48b8e98743833e6ce735f3d9f2fb240f">index</a>][1];                                                               \</div>
 <div class="line">            }                                                                                      \</div>
 <div class="line">        }                                                                                          \</div>
-<div class="line">        SKIP_BITS(name, gb, n)                                                                     \</div>
+<div class="line">        SKIP_BITS(<a class="code hl_variable" href="codec__8859_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, gb, n)                                                                     \</div>
 <div class="line">    }</div>
 <div class="ttc" id="aLibs_2XEClib_2includes_2string_8h_html_a48b8e98743833e6ce735f3d9f2fb240f"><div class="ttname"><a href="Libs_2XEClib_2includes_2string_8h.html#a48b8e98743833e6ce735f3d9f2fb240f">index</a></div><div class="ttdeci">#define index(str, chr)</div><div class="ttdef"><b>Definition</b> string.h:66</div></div>
+<div class="ttc" id="acodec__8859_8c_html_a8f8f80d37794cde9472343e4487ba3eb"><div class="ttname"><a href="codec__8859_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a></div><div class="ttdeci">const char * name</div><div class="ttdef"><b>Definition</b> codec_8859.c:22</div></div>
 <div class="ttc" id="aminimp3_8cpp_html_a4e11e2c007540a289872ed149593167e"><div class="ttname"><a href="minimp3_8cpp.html#a4e11e2c007540a289872ed149593167e">SHOW_UBITS</a></div><div class="ttdeci">#define SHOW_UBITS(name, gb, num)</div><div class="ttdef"><b>Definition</b> minimp3.cpp:938</div></div>
 </div><!-- fragment -->
 </div>
@@ -1458,7 +1460,7 @@ Functions</h2></td></tr>
           <td class="memname">#define LAST_SKIP_BITS</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">name, </td>
+          <td class="paramname"><a class="el" href="codec__8859_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1475,7 +1477,7 @@ Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="minimp3_8cpp.html#ac5635d3f42aa9eb98ccdae1d2fd13000">SKIP_COUNTER</a>(name, gb, num)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="minimp3_8cpp.html#ac5635d3f42aa9eb98ccdae1d2fd13000">SKIP_COUNTER</a>(<a class="el" href="codec__8859_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, gb, num)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1492,7 +1494,7 @@ Functions</h2></td></tr>
           <td class="memname">#define LAST_SKIP_CACHE</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">name, </td>
+          <td class="paramname"><a class="el" href="codec__8859_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1806,7 +1808,7 @@ Functions</h2></td></tr>
           <td class="memname">#define OPEN_READER</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">name, </td>
+          <td class="paramname"><a class="el" href="codec__8859_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1821,8 +1823,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">    <span class="keywordtype">int</span> name##_index = (gb)-&gt;<a class="code hl_define" href="Libs_2XEClib_2includes_2string_8h.html#a48b8e98743833e6ce735f3d9f2fb240f">index</a>;                                                                \</div>
-<div class="line">    <span class="keywordtype">int</span> name##_cache = 0;</div>
+<b>Value:</b><div class="fragment"><div class="line">    <span class="keywordtype">int</span> <a class="code hl_variable" href="codec__8859_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>##_index = (gb)-&gt;<a class="code hl_define" href="Libs_2XEClib_2includes_2string_8h.html#a48b8e98743833e6ce735f3d9f2fb240f">index</a>;                                                                \</div>
+<div class="line">    <span class="keywordtype">int</span> <a class="code hl_variable" href="codec__8859_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>##_cache = 0;</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1906,7 +1908,7 @@ Functions</h2></td></tr>
           <td class="memname">#define SHOW_SBITS</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">name, </td>
+          <td class="paramname"><a class="el" href="codec__8859_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1923,7 +1925,7 @@ Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="minimp3_8cpp.html#a9778b38d326d97840b97dc6f7093a4f1">NEG_SSR32</a>(name##_cache, num)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="minimp3_8cpp.html#a9778b38d326d97840b97dc6f7093a4f1">NEG_SSR32</a>(<a class="el" href="codec__8859_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>##_cache, num)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1940,7 +1942,7 @@ Functions</h2></td></tr>
           <td class="memname">#define SHOW_UBITS</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">name, </td>
+          <td class="paramname"><a class="el" href="codec__8859_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1957,7 +1959,7 @@ Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="minimp3_8cpp.html#ae335575a7b75916318476c02daeff6a5">NEG_USR32</a>(name##_cache, num)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="minimp3_8cpp.html#ae335575a7b75916318476c02daeff6a5">NEG_USR32</a>(<a class="el" href="codec__8859_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>##_cache, num)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1974,7 +1976,7 @@ Functions</h2></td></tr>
           <td class="memname">#define SKIP_BITS</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">name, </td>
+          <td class="paramname"><a class="el" href="codec__8859_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1991,7 +1993,7 @@ Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;{<a class="el" href="minimp3_8cpp.html#a3383e4ed8ec358f65176c49e53488922">SKIP_CACHE</a>(name, gb, num) <a class="el" href="minimp3_8cpp.html#ac5635d3f42aa9eb98ccdae1d2fd13000">SKIP_COUNTER</a>(name, gb, num)}</td>
+          <td></td><td>&#160;&#160;&#160;{<a class="el" href="minimp3_8cpp.html#a3383e4ed8ec358f65176c49e53488922">SKIP_CACHE</a>(<a class="el" href="codec__8859_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, gb, num) <a class="el" href="minimp3_8cpp.html#ac5635d3f42aa9eb98ccdae1d2fd13000">SKIP_COUNTER</a>(<a class="el" href="codec__8859_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, gb, num)}</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2022,7 +2024,7 @@ Functions</h2></td></tr>
           <td class="memname">#define SKIP_CACHE</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">name, </td>
+          <td class="paramname"><a class="el" href="codec__8859_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -2039,7 +2041,7 @@ Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;name##_cache &lt;&lt;= (num);</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="codec__8859_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>##_cache &lt;&lt;= (num);</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2056,7 +2058,7 @@ Functions</h2></td></tr>
           <td class="memname">#define SKIP_COUNTER</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">name, </td>
+          <td class="paramname"><a class="el" href="codec__8859_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -2073,7 +2075,7 @@ Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;name##_index += (num);</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="codec__8859_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>##_index += (num);</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2240,7 +2242,7 @@ Functions</h2></td></tr>
           <td class="memname">#define UPDATE_CACHE</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">name, </td>
+          <td class="paramname"><a class="el" href="codec__8859_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -2251,7 +2253,7 @@ Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;	name##_cache = unaligned32_be(&amp;((gb)-&gt;buffer[name##_index &gt;&gt; 3])) &lt;&lt; (name##_index &amp; 0x07);</td>
+          <td></td><td>&#160;&#160;&#160;	<a class="el" href="codec__8859_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>##_cache = unaligned32_be(&amp;((gb)-&gt;buffer[<a class="el" href="codec__8859_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>##_index &gt;&gt; 3])) &lt;&lt; (<a class="el" href="codec__8859_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>##_index &amp; 0x07);</td>
         </tr>
       </table>
 </div><div class="memdoc">

@@ -145,5 +145,6 @@ var searchData=
   ['efi_5fusb_5fport_5ffeature_142',['EFI_USB_PORT_FEATURE',['../Usb2HostController_8h.html#a1ba853e5061502aafe570d746a9b96b3',1,'Usb2HostController.h']]],
   ['emmc_5fpartition_5ftype_143',['EMMC_PARTITION_TYPE',['../Emmc_8h.html#ac64628fc642698cafc38136378ab5a93',1,'Emmc.h']]],
   ['event_5flog_5ftype_5fdata_144',['EVENT_LOG_TYPE_DATA',['../IndustryStandard_2SmBios_8h.html#afa202c6eb3b756fa6eec2fad7fbfe986',1,'SmBios.h']]],
-  ['event_5flog_5fvariable_5fdata_145',['EVENT_LOG_VARIABLE_DATA',['../IndustryStandard_2SmBios_8h.html#a8dbd90855beb55cfaded58b0f0d34d08',1,'SmBios.h']]]
+  ['event_5flog_5fvariable_5fdata_145',['EVENT_LOG_VARIABLE_DATA',['../IndustryStandard_2SmBios_8h.html#a8dbd90855beb55cfaded58b0f0d34d08',1,'SmBios.h']]],
+  ['evtype_5ft_146',['evtype_t',['../d__event_8h.html#a4c676ef04244b4debba9a1d0306d00af',1,'d_event.h']]]
 ];

@@ -10,6 +10,16 @@ var searchData=
   ['journal_5fdev_7',['journal_dev',['../struct__ext2__sb__.html#a2d5e34c52c04cae8f48c354d69757e61',1,'_ext2_sb_']]],
   ['journal_5finum_8',['journal_inum',['../struct__ext2__sb__.html#aa1b337628ff91d088d277ac163871fdf',1,'_ext2_sb_']]],
   ['journal_5fuuid_9',['journal_uuid',['../struct__ext2__sb__.html#a5b004d2a268573085789cbc06846f648',1,'_ext2_sb_']]],
-  ['jump_10',['jump',['../struct__chwin__.html#a74b6a5c96107f0e11379e2ada5e93c5c',1,'_chwin_']]],
-  ['jump_5fbuffer_11',['jump_buffer',['../structFT__ValidatorRec__.html#aa0b346f9ef78939e93c85389aa2b54b3',1,'FT_ValidatorRec_']]]
+  ['joybfire_10',['joybfire',['../m__controls_8c.html#a977268cbb9fbac75daa8f979b5cecaaf',1,'joybfire:&#160;m_controls.c'],['../m__controls_8h.html#a977268cbb9fbac75daa8f979b5cecaaf',1,'joybfire:&#160;m_controls.c']]],
+  ['joybjump_11',['joybjump',['../m__controls_8h.html#af2c1e5c42586a6ce56f228215e3bbd2d',1,'joybjump:&#160;m_controls.c'],['../m__controls_8c.html#af2c1e5c42586a6ce56f228215e3bbd2d',1,'joybjump:&#160;m_controls.c']]],
+  ['joybmenu_12',['joybmenu',['../m__controls_8c.html#adb835d69c48a7fce531fe9ecee3c1ca6',1,'joybmenu:&#160;m_controls.c'],['../m__controls_8h.html#adb835d69c48a7fce531fe9ecee3c1ca6',1,'joybmenu:&#160;m_controls.c']]],
+  ['joybnextweapon_13',['joybnextweapon',['../m__controls_8c.html#a4957e86dd2e8be34a59a6f229c8449e6',1,'joybnextweapon:&#160;m_controls.c'],['../m__controls_8h.html#a4957e86dd2e8be34a59a6f229c8449e6',1,'joybnextweapon:&#160;m_controls.c']]],
+  ['joybprevweapon_14',['joybprevweapon',['../m__controls_8c.html#ad245bf89214be351699d7aa7e32fad0a',1,'joybprevweapon:&#160;m_controls.c'],['../m__controls_8h.html#ad245bf89214be351699d7aa7e32fad0a',1,'joybprevweapon:&#160;m_controls.c']]],
+  ['joybspeed_15',['joybspeed',['../m__controls_8c.html#ad27c5dc10909c4c9d7126a8e6f4b3ef7',1,'joybspeed:&#160;m_controls.c'],['../m__controls_8h.html#ad27c5dc10909c4c9d7126a8e6f4b3ef7',1,'joybspeed:&#160;m_controls.c']]],
+  ['joybstrafe_16',['joybstrafe',['../m__controls_8c.html#a557d2da028c08a1f20e9ce9b8d66c9fa',1,'joybstrafe:&#160;m_controls.c'],['../m__controls_8h.html#a557d2da028c08a1f20e9ce9b8d66c9fa',1,'joybstrafe:&#160;m_controls.c']]],
+  ['joybstrafeleft_17',['joybstrafeleft',['../m__controls_8c.html#ad2451c3a7e5fd5a9701839abece07b66',1,'joybstrafeleft:&#160;m_controls.c'],['../m__controls_8h.html#ad2451c3a7e5fd5a9701839abece07b66',1,'joybstrafeleft:&#160;m_controls.c']]],
+  ['joybstraferight_18',['joybstraferight',['../m__controls_8c.html#a2e546bc23792e7608866458fea480637',1,'joybstraferight:&#160;m_controls.c'],['../m__controls_8h.html#a2e546bc23792e7608866458fea480637',1,'joybstraferight:&#160;m_controls.c']]],
+  ['joybuse_19',['joybuse',['../m__controls_8h.html#a7fa30c9959c8509275aeafb4119acdf6',1,'joybuse:&#160;m_controls.c'],['../m__controls_8c.html#a7fa30c9959c8509275aeafb4119acdf6',1,'joybuse:&#160;m_controls.c']]],
+  ['jump_20',['jump',['../struct__chwin__.html#a74b6a5c96107f0e11379e2ada5e93c5c',1,'_chwin_']]],
+  ['jump_5fbuffer_21',['jump_buffer',['../structFT__ValidatorRec__.html#aa0b346f9ef78939e93c85389aa2b54b3',1,'FT_ValidatorRec_']]]
 ];

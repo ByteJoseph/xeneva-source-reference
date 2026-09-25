@@ -7,6 +7,8 @@ var searchData=
   ['vendor_5fdefined_5fdevice_5fpath_4',['VENDOR_DEFINED_DEVICE_PATH',['../DevicePath_8h.html#a2cb0a0ea94a4309359735ee0223302d1',1,'DevicePath.h']]],
   ['virtio_5fsnd_5fpcm_5fxfer_5',['virtio_snd_pcm_xfer',['../Drivers_2Sound_2virtiosnd_2main_8cpp.html#a6cf8bf40522afcb4cfd0614a0cebef27',1,'main.cpp']]],
   ['virtio_5fsnd_5fquery_5finfo_6',['virtio_snd_query_info',['../Drivers_2Sound_2virtiosnd_2main_8cpp.html#ad2a41ecdcfa847765e8de7803b131222',1,'main.cpp']]],
-  ['vlc_5ft_7',['vlc_t',['../minimp3_8cpp.html#ae7187d8026b2b6e191d6a48fb8a69455',1,'minimp3.cpp']]],
-  ['vpage_8',['VPage',['../LittleBoot_2vmmngr_8c.html#a4a01ed878c0fae30aadd8f4c1441993c',1,'vmmngr.c']]]
+  ['vissprite_5ft_7',['vissprite_t',['../r__defs_8h.html#a6246e7adb3d0adbf98e8645e0f789bca',1,'r_defs.h']]],
+  ['vlc_5ft_8',['vlc_t',['../minimp3_8cpp.html#ae7187d8026b2b6e191d6a48fb8a69455',1,'minimp3.cpp']]],
+  ['vpage_9',['VPage',['../LittleBoot_2vmmngr_8c.html#a4a01ed878c0fae30aadd8f4c1441993c',1,'vmmngr.c']]],
+  ['vpatchclipfunc_5ft_10',['vpatchclipfunc_t',['../v__video_8h.html#ae89892b58e5dafdbb0fc289d490a24c4',1,'v_video.h']]]
 ];

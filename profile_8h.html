@@ -142,9 +142,9 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ab5fdb544f4ed7efc8f001e695a4cd18c" id="r_ab5fdb544f4ed7efc8f001e695a4cd18c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="profile_8h.html#ab5fdb544f4ed7efc8f001e695a4cd18c">PROFILE_START</a>(name)&#160;&#160;&#160;     <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> __start_profile = <a class="el" href="profile_8h.html#a59b8e46f33267416b68d6001ae0469be">AuProfileReadCycles</a>();</td></tr>
+<tr class="memitem:ab5fdb544f4ed7efc8f001e695a4cd18c" id="r_ab5fdb544f4ed7efc8f001e695a4cd18c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="profile_8h.html#ab5fdb544f4ed7efc8f001e695a4cd18c">PROFILE_START</a>(<a class="el" href="codec__8859_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>)&#160;&#160;&#160;     <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> __start_profile = <a class="el" href="profile_8h.html#a59b8e46f33267416b68d6001ae0469be">AuProfileReadCycles</a>();</td></tr>
 <tr class="separator:ab5fdb544f4ed7efc8f001e695a4cd18c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3bc341ac97f2d837588a7f29a0ae2ad" id="r_ae3bc341ac97f2d837588a7f29a0ae2ad"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="profile_8h.html#ae3bc341ac97f2d837588a7f29a0ae2ad">PROFILE_END</a>(name)</td></tr>
+<tr class="memitem:ae3bc341ac97f2d837588a7f29a0ae2ad" id="r_ae3bc341ac97f2d837588a7f29a0ae2ad"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="profile_8h.html#ae3bc341ac97f2d837588a7f29a0ae2ad">PROFILE_END</a>(<a class="el" href="codec__8859_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>)</td></tr>
 <tr class="separator:ae3bc341ac97f2d837588a7f29a0ae2ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
@@ -174,7 +174,7 @@ Functions</h2></td></tr>
           <td class="memname">#define PROFILE_END</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">name</td><td>)</td>
+          <td class="paramname"><a class="el" href="codec__8859_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -184,9 +184,10 @@ Functions</h2></td></tr>
 <div class="line">    <a class="code hl_typedef" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> freq = <a class="code hl_function" href="aa64lowlevel_8h.html#ab5910fed70441916f9607fc6bdcfc15a">get_cntfrq_el0</a>(); \</div>
 <div class="line">    <span class="keywordtype">double</span> sec = (double)diff / freq; \</div>
 <div class="line">    <span class="keywordtype">double</span> ms = (double)diff * 1000.0 / freq; \</div>
-<div class="line">    UARTDebugOut(<span class="stringliteral">&quot;[AURORA-PROFILE]: %s : time: %f sec, time: %f ms, cpu cycles : %d\r\n&quot;</span>, name, sec, ms, (__end_profile - __start_profile));</div>
+<div class="line">    UARTDebugOut(<span class="stringliteral">&quot;[AURORA-PROFILE]: %s : time: %f sec, time: %f ms, cpu cycles : %d\r\n&quot;</span>, <a class="code hl_variable" href="codec__8859_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, sec, ms, (__end_profile - __start_profile));</div>
 <div class="ttc" id="aaa64lowlevel_8h_html_ab5910fed70441916f9607fc6bdcfc15a"><div class="ttname"><a href="aa64lowlevel_8h.html#ab5910fed70441916f9607fc6bdcfc15a">get_cntfrq_el0</a></div><div class="ttdeci">AU_EXTERN AU_EXPORT uint64_t get_cntfrq_el0()</div></div>
 <div class="ttc" id="aacefiex_8h_html_ace97e810e06af5096bfe72ee3e7c5316"><div class="ttname"><a href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a></div><div class="ttdeci">COMPILER_DEPENDENT_UINT64 uint64_t</div><div class="ttdef"><b>Definition</b> acefiex.h:165</div></div>
+<div class="ttc" id="acodec__8859_8c_html_a8f8f80d37794cde9472343e4487ba3eb"><div class="ttname"><a href="codec__8859_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a></div><div class="ttdeci">const char * name</div><div class="ttdef"><b>Definition</b> codec_8859.c:22</div></div>
 <div class="ttc" id="aprofile_8h_html_a59b8e46f33267416b68d6001ae0469be"><div class="ttname"><a href="profile_8h.html#a59b8e46f33267416b68d6001ae0469be">AuProfileReadCycles</a></div><div class="ttdeci">uint64_t AuProfileReadCycles()</div><div class="ttdef"><b>Definition</b> profile.c:35</div></div>
 </div><!-- fragment -->
 </div>
@@ -201,7 +202,7 @@ Functions</h2></td></tr>
           <td class="memname">#define PROFILE_START</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">name</td><td>)</td>
+          <td class="paramname"><a class="el" href="codec__8859_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a></td><td>)</td>
           <td>&#160;&#160;&#160;     <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> __start_profile = <a class="el" href="profile_8h.html#a59b8e46f33267416b68d6001ae0469be">AuProfileReadCycles</a>();</td>
         </tr>
       </table>
