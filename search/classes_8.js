@@ -12,5 +12,6 @@ var searchData=
   ['hrdparameters_5ft_9',['hrdParameters_t',['../structhrdParameters__t.html',1,'']]],
   ['hu_5fitext_5ft_10',['hu_itext_t',['../structhu__itext__t.html',1,'']]],
   ['hu_5fstext_5ft_11',['hu_stext_t',['../structhu__stext__t.html',1,'']]],
-  ['hu_5ftextline_5ft_12',['hu_textline_t',['../structhu__textline__t.html',1,'']]]
+  ['hu_5ftextline_5ft_12',['hu_textline_t',['../structhu__textline__t.html',1,'']]],
+  ['hwrng_5fview_13',['hwrng_view',['../structhwrng__view.html',1,'']]]
 ];

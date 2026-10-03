@@ -1545,7 +1545,7 @@ var searchData=
   ['srulesetend_1542',['sRulesetEnd',['../Ports_2CssLibs_2libcss_2src_2parse_2parse_8c.html#a3f676d286e71e953c88a0c249fcd53e9ac25ace31d96e6fb913550522382ac275',1,'parse.c']]],
   ['ss_1543',['sS',['../lex_8c.html#a99fd38d5c7c142a589caf16e56ccd688ab4ae933516baf0a424506278473c5582',1,'lex.c']]],
   ['sselector_1544',['sSelector',['../Ports_2CssLibs_2libcss_2src_2parse_2parse_8c.html#a3f676d286e71e953c88a0c249fcd53e9a381f8230172288dd192855991e748d23',1,'parse.c']]],
-  ['sstart_1545',['sstart',['../lex_8c.html#a99fd38d5c7c142a589caf16e56ccd688af3aee7951aba8a2965f13a51fd615af7',1,'sSTART:&#160;lex.c'],['../Ports_2CssLibs_2libcss_2src_2parse_2parse_8c.html#a3f676d286e71e953c88a0c249fcd53e9ac0a4c8ef528b9f9d6212253bd3b878ad',1,'sStart:&#160;parse.c']]],
+  ['sstart_1545',['sstart',['../Ports_2CssLibs_2libcss_2src_2parse_2parse_8c.html#a3f676d286e71e953c88a0c249fcd53e9ac0a4c8ef528b9f9d6212253bd3b878ad',1,'sStart:&#160;parse.c'],['../lex_8c.html#a99fd38d5c7c142a589caf16e56ccd688af3aee7951aba8a2965f13a51fd615af7',1,'sSTART:&#160;lex.c']]],
   ['sstatement_1546',['sStatement',['../Ports_2CssLibs_2libcss_2src_2parse_2parse_8c.html#a3f676d286e71e953c88a0c249fcd53e9a9d770214a0753366b73deba6f7c1d08c',1,'parse.c']]],
   ['sstring_1547',['sSTRING',['../lex_8c.html#a99fd38d5c7c142a589caf16e56ccd688ab3c5c896cad61127a2b7370e7ada1f3d',1,'lex.c']]],
   ['sstylesheet_1548',['sStylesheet',['../Ports_2CssLibs_2libcss_2src_2parse_2parse_8c.html#a3f676d286e71e953c88a0c249fcd53e9a2b62cc02e5e51821a83c502f9d51164f',1,'parse.c']]],

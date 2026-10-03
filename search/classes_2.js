@@ -16,6 +16,8 @@ var searchData=
   ['bond_13',['Bond',['../structBond.html',1,'']]],
   ['boundary_5ftag_14',['boundary_tag',['../structboundary__tag.html',1,'']]],
   ['bs_5ft_15',['bS_t',['../structbS__t.html',1,'']]],
-  ['button_5ft_16',['button_t',['../structbutton__t.html',1,'']]],
-  ['bx_5ffontcharbitmap_5ft_17',['bx_fontcharbitmap_t',['../structbx__fontcharbitmap__t.html',1,'']]]
+  ['btsbcch_16',['BtSbcCh',['../structBtSbcCh.html',1,'']]],
+  ['btsbcenc_17',['BtSbcEnc',['../structBtSbcEnc.html',1,'']]],
+  ['button_5ft_18',['button_t',['../structbutton__t.html',1,'']]],
+  ['bx_5ffontcharbitmap_5ft_19',['bx_fontcharbitmap_t',['../structbx__fontcharbitmap__t.html',1,'']]]
 ];

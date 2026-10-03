@@ -1395,7 +1395,7 @@ Functions</h2></td></tr>
   <table class="retval">
     <tr><td class="paramname">RETURN_SUCCESS</td><td>String is appended. </td></tr>
     <tr><td class="paramname">RETURN_BAD_BUFFER_SIZE</td><td>If DestMax is NOT greater than StrLen(Destination). </td></tr>
-    <tr><td class="paramname">RETURN_BUFFER_TOO_SMALL</td><td>If (DestMax - StrLen(Destination)) is NOT greater than <a class="el" href="Base_8h.html#a3acffbd305ee72dcd4593c0d8af64a4f">MIN(StrLen(Source), Length)</a>. </td></tr>
+    <tr><td class="paramname">RETURN_BUFFER_TOO_SMALL</td><td>If (DestMax - StrLen(Destination)) is NOT greater than <a class="el" href="kernel_8h.html#a3acffbd305ee72dcd4593c0d8af64a4f">MIN(StrLen(Source), Length)</a>. </td></tr>
     <tr><td class="paramname">RETURN_INVALID_PARAMETER</td><td>If Destination is NULL. If Source is NULL. If PcdMaximumAsciiStringLength is not zero, and DestMax is greater than PcdMaximumAsciiStringLength. If DestMax is 0. </td></tr>
     <tr><td class="paramname">RETURN_ACCESS_DENIED</td><td>If Source and Destination overlap. </td></tr>
   </table>
@@ -1556,7 +1556,7 @@ Functions</h2></td></tr>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">RETURN_SUCCESS</td><td>String is copied. </td></tr>
-    <tr><td class="paramname">RETURN_BUFFER_TOO_SMALL</td><td>If DestMax is NOT greater than <a class="el" href="Base_8h.html#a3acffbd305ee72dcd4593c0d8af64a4f">MIN(StrLen(Source), Length)</a>. </td></tr>
+    <tr><td class="paramname">RETURN_BUFFER_TOO_SMALL</td><td>If DestMax is NOT greater than <a class="el" href="kernel_8h.html#a3acffbd305ee72dcd4593c0d8af64a4f">MIN(StrLen(Source), Length)</a>. </td></tr>
     <tr><td class="paramname">RETURN_INVALID_PARAMETER</td><td>If Destination is NULL. If Source is NULL. If PcdMaximumAsciiStringLength is not zero, and DestMax is greater than PcdMaximumAsciiStringLength. If DestMax is 0. </td></tr>
     <tr><td class="paramname">RETURN_ACCESS_DENIED</td><td>If Source and Destination overlap. </td></tr>
   </table>
@@ -1700,7 +1700,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Convert not more than Length successive characters from a Null-terminated Ascii string to a Null-terminated Unicode string. If no null char is copied from Source, then Destination[Length] is always set to null.</p>
 <p>This function converts not more than Length successive characters from the Ascii string Source to the Unicode string Destination. The function terminates the Unicode string Destination by appending a Null-terminator character at the end.</p>
-<p>The caller is responsible to make sure Destination points to a buffer with size not smaller than ((<a class="el" href="Base_8h.html#a3acffbd305ee72dcd4593c0d8af64a4f">MIN(AsciiStrLen(Source), Length)</a> + 1) * sizeof (CHAR8)) in bytes.</p>
+<p>The caller is responsible to make sure Destination points to a buffer with size not smaller than ((<a class="el" href="kernel_8h.html#a3acffbd305ee72dcd4593c0d8af64a4f">MIN(AsciiStrLen(Source), Length)</a> + 1) * sizeof (CHAR8)) in bytes.</p>
 <p>If Destination is not aligned on a 16-bit boundary, then <a class="el" href="DebugLib_8h.html#a76b4aae2259415ea4b7e2c9b34ede0bb">ASSERT()</a>. If an error would be returned, then the function will also <a class="el" href="DebugLib_8h.html#a76b4aae2259415ea4b7e2c9b34ede0bb">ASSERT()</a>.</p>
 <p>If an error is returned, then Destination and DestinationLength are unmodified.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -1717,7 +1717,7 @@ Functions</h2></td></tr>
   <table class="retval">
     <tr><td class="paramname">RETURN_SUCCESS</td><td>String is converted. </td></tr>
     <tr><td class="paramname">RETURN_INVALID_PARAMETER</td><td>If Destination is NULL. If Source is NULL. If DestinationLength is NULL. If PcdMaximumUnicodeStringLength is not zero, and Length or DestMax is greater than PcdMaximumUnicodeStringLength. If PcdMaximumAsciiStringLength is not zero, and Length or DestMax is greater than PcdMaximumAsciiStringLength. If DestMax is 0. </td></tr>
-    <tr><td class="paramname">RETURN_BUFFER_TOO_SMALL</td><td>If DestMax is NOT greater than <a class="el" href="Base_8h.html#a3acffbd305ee72dcd4593c0d8af64a4f">MIN(AsciiStrLen(Source), Length)</a>. </td></tr>
+    <tr><td class="paramname">RETURN_BUFFER_TOO_SMALL</td><td>If DestMax is NOT greater than <a class="el" href="kernel_8h.html#a3acffbd305ee72dcd4593c0d8af64a4f">MIN(AsciiStrLen(Source), Length)</a>. </td></tr>
     <tr><td class="paramname">RETURN_ACCESS_DENIED</td><td>If Source and Destination overlap. </td></tr>
   </table>
   </dd>
@@ -6075,7 +6075,7 @@ Functions</h2></td></tr>
   <table class="retval">
     <tr><td class="paramname">RETURN_SUCCESS</td><td>String is appended. </td></tr>
     <tr><td class="paramname">RETURN_BAD_BUFFER_SIZE</td><td>If DestMax is NOT greater than StrLen(Destination). </td></tr>
-    <tr><td class="paramname">RETURN_BUFFER_TOO_SMALL</td><td>If (DestMax - StrLen(Destination)) is NOT greater than <a class="el" href="Base_8h.html#a3acffbd305ee72dcd4593c0d8af64a4f">MIN(StrLen(Source), Length)</a>. </td></tr>
+    <tr><td class="paramname">RETURN_BUFFER_TOO_SMALL</td><td>If (DestMax - StrLen(Destination)) is NOT greater than <a class="el" href="kernel_8h.html#a3acffbd305ee72dcd4593c0d8af64a4f">MIN(StrLen(Source), Length)</a>. </td></tr>
     <tr><td class="paramname">RETURN_INVALID_PARAMETER</td><td>If Destination is NULL. If Source is NULL. If PcdMaximumUnicodeStringLength is not zero, and DestMax is greater than PcdMaximumUnicodeStringLength. If DestMax is 0. </td></tr>
     <tr><td class="paramname">RETURN_ACCESS_DENIED</td><td>If Source and Destination overlap. </td></tr>
   </table>
@@ -6236,7 +6236,7 @@ Functions</h2></td></tr>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">RETURN_SUCCESS</td><td>String is copied. </td></tr>
-    <tr><td class="paramname">RETURN_BUFFER_TOO_SMALL</td><td>If DestMax is NOT greater than <a class="el" href="Base_8h.html#a3acffbd305ee72dcd4593c0d8af64a4f">MIN(StrLen(Source), Length)</a>. </td></tr>
+    <tr><td class="paramname">RETURN_BUFFER_TOO_SMALL</td><td>If DestMax is NOT greater than <a class="el" href="kernel_8h.html#a3acffbd305ee72dcd4593c0d8af64a4f">MIN(StrLen(Source), Length)</a>. </td></tr>
     <tr><td class="paramname">RETURN_INVALID_PARAMETER</td><td>If Destination is NULL. If Source is NULL. If PcdMaximumUnicodeStringLength is not zero, and DestMax is greater than PcdMaximumUnicodeStringLength. If DestMax is 0. </td></tr>
     <tr><td class="paramname">RETURN_ACCESS_DENIED</td><td>If Source and Destination overlap. </td></tr>
   </table>
@@ -6835,7 +6835,7 @@ Functions</h2></td></tr>
   <table class="retval">
     <tr><td class="paramname">RETURN_SUCCESS</td><td>String is converted. </td></tr>
     <tr><td class="paramname">RETURN_INVALID_PARAMETER</td><td>If Destination is NULL. If Source is NULL. If DestinationLength is NULL. If PcdMaximumAsciiStringLength is not zero, and Length or DestMax is greater than PcdMaximumAsciiStringLength. If PcdMaximumUnicodeStringLength is not zero, and Length or DestMax is greater than PcdMaximumUnicodeStringLength. If DestMax is 0. </td></tr>
-    <tr><td class="paramname">RETURN_BUFFER_TOO_SMALL</td><td>If DestMax is NOT greater than <a class="el" href="Base_8h.html#a3acffbd305ee72dcd4593c0d8af64a4f">MIN(StrLen(Source), Length)</a>. </td></tr>
+    <tr><td class="paramname">RETURN_BUFFER_TOO_SMALL</td><td>If DestMax is NOT greater than <a class="el" href="kernel_8h.html#a3acffbd305ee72dcd4593c0d8af64a4f">MIN(StrLen(Source), Length)</a>. </td></tr>
     <tr><td class="paramname">RETURN_ACCESS_DENIED</td><td>If Source and Destination overlap. </td></tr>
   </table>
   </dd>
