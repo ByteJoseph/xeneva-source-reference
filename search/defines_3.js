@@ -185,7 +185,7 @@ var searchData=
   ['chunksize_182',['chunksize',['../__heap_8cpp.html#a0bd05b2720a9f79a0c066086c4f7e2fa',1,'chunksize:&#160;_heap.cpp'],['../dlmalloc_8c.html#a0bd05b2720a9f79a0c066086c4f7e2fa',1,'chunksize:&#160;dlmalloc.c']]],
   ['cinuse_183',['cinuse',['../dlmalloc_8c.html#a01d65bf1aca48739daba1789e75731d4',1,'cinuse:&#160;dlmalloc.c'],['../__heap_8cpp.html#a01d65bf1aca48739daba1789e75731d4',1,'cinuse:&#160;_heap.cpp']]],
   ['cinuse_5fbit_184',['cinuse_bit',['../dlmalloc_8c.html#a8f8153cc167dd042af6840f7130b9721',1,'CINUSE_BIT:&#160;dlmalloc.c'],['../__heap_8cpp.html#a8f8153cc167dd042af6840f7130b9721',1,'CINUSE_BIT:&#160;_heap.cpp']]],
-  ['clamp_185',['clamp',['../BaseHdr_2stdint_8h.html#afe7f454e724563cccb0ee848d624792e',1,'CLAMP:&#160;stdint.h'],['../kernel_8h.html#a2260fa2b208b82b6d02f176e3979e54a',1,'clamp:&#160;kernel.h']]],
+  ['clamp_185',['clamp',['../kernel_8h.html#a2260fa2b208b82b6d02f176e3979e54a',1,'clamp:&#160;kernel.h'],['../BaseHdr_2stdint_8h.html#afe7f454e724563cccb0ee848d624792e',1,'CLAMP:&#160;stdint.h']]],
   ['clamp_5ft_186',['clamp_t',['../BaseHdr_2stdint_8h.html#a21694456224a000bc72cce5484760e8a',1,'stdint.h']]],
   ['clear_187',['CLEAR',['../Tpm20_8h.html#a611cc9b5f655508482f3d7a9751c182a',1,'Tpm20.h']]],
   ['clear_5fbit_188',['clear_bit',['../bitmap_8h.html#a1672a87d9d374137e03703199af7fb94',1,'bitmap.h']]],

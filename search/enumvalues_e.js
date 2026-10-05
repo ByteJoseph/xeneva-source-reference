@@ -66,7 +66,7 @@ var searchData=
   ['noc_5fclk_5froot_63',['NOC_CLK_ROOT',['../imx8mp__clk_8h.html#a3e63855b2f0d43453e8495a789f6214da5f87f7958c1fd941161b377def2fba6e',1,'imx8mp_clk.h']]],
   ['noc_5fio_5fclk_5froot_64',['NOC_IO_CLK_ROOT',['../imx8mp__clk_8h.html#a3e63855b2f0d43453e8495a789f6214da5f4f99ffa62643f071123e839063dba1',1,'imx8mp_clk.h']]],
   ['non_5fexisting_65',['NON_EXISTING',['../h264bsd__dpb_8h.html#ac3c0847a0fe74ce5edc9e37edf80bd84ae00375552cfea7eb1240913ddfaf0f8a',1,'h264bsd_dpb.h']]],
-  ['none_66',['none',['../d__mode_8h.html#a4eb6fbd03f97172d747b60e89ed39031ab7e4e0120a041dbe6528b050c04269e0',1,'none:&#160;d_mode.h'],['../propstrings_8h.html#a4f5123d66a81bcb14f312d3dd8aa300eac157bdf0b85a40d2619cbc8bc1ae5fe2',1,'NONE:&#160;propstrings.h'],['../usbgamepad_8c.html#a3dffb8a83596be0c3a6885fdcfa96466ac9d3e887722f2bc482bcca9d41c512af',1,'None:&#160;usbgamepad.c']]],
+  ['none_66',['none',['../d__mode_8h.html#a4eb6fbd03f97172d747b60e89ed39031ab7e4e0120a041dbe6528b050c04269e0',1,'none:&#160;d_mode.h'],['../usbgamepad_8c.html#a3dffb8a83596be0c3a6885fdcfa96466ac9d3e887722f2bc482bcca9d41c512af',1,'None:&#160;usbgamepad.c'],['../propstrings_8h.html#a4f5123d66a81bcb14f312d3dd8aa300eac157bdf0b85a40d2619cbc8bc1ae5fe2',1,'NONE:&#160;propstrings.h']]],
   ['noparity_67',['NoParity',['../SerialIo_8h.html#aef4b1454477bdc474ee20d4a58fbfd69ace14956de18352766b5b9744e4ee6885',1,'SerialIo.h']]],
   ['normal_68',['NORMAL',['../propstrings_8h.html#a4f5123d66a81bcb14f312d3dd8aa300ea50d1448013c6f17125caee18aa418af7',1,'propstrings.h']]],
   ['nostate_69',['NoState',['../wi__stuff_8h.html#a56e1c4b0731621fcc856f91a00a719e7a3e6ae43560d675d2e63a69271844efee',1,'wi_stuff.h']]],
