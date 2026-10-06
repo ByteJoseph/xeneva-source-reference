@@ -29,7 +29,7 @@ var searchData=
   ['usb_5fdevice_5fdescriptor_26',['USB_DEVICE_DESCRIPTOR',['../structUSB__DEVICE__DESCRIPTOR.html',1,'']]],
   ['usb_5fdevice_5fpath_27',['USB_DEVICE_PATH',['../structUSB__DEVICE__PATH.html',1,'']]],
   ['usb_5fdevice_5frequest_28',['USB_DEVICE_REQUEST',['../structUSB__DEVICE__REQUEST.html',1,'']]],
-  ['usb_5fendpoint_5fdescriptor_29',['usb_endpoint_descriptor',['../structUSB__ENDPOINT__DESCRIPTOR.html',1,'USB_ENDPOINT_DESCRIPTOR'],['../structusb__endpoint__descriptor.html',1,'usb_endpoint_descriptor']]],
+  ['usb_5fendpoint_5fdescriptor_29',['usb_endpoint_descriptor',['../structusb__endpoint__descriptor.html',1,'usb_endpoint_descriptor'],['../structUSB__ENDPOINT__DESCRIPTOR.html',1,'USB_ENDPOINT_DESCRIPTOR']]],
   ['usb_5fep_30',['usb_ep',['../structusb__ep.html',1,'']]],
   ['usb_5fhost_5fendpoint_31',['usb_host_endpoint',['../structusb__host__endpoint.html',1,'']]],
   ['usb_5finterface_5fdescriptor_32',['USB_INTERFACE_DESCRIPTOR',['../structUSB__INTERFACE__DESCRIPTOR.html',1,'']]],

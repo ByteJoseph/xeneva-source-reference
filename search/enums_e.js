@@ -7,7 +7,7 @@ var searchData=
   ['pcd_5ftype_4',['PCD_TYPE',['../PcdLib_8h.html#a8192ca8309a8077c8b5e688e155e64e9',1,'PcdLib.h']]],
   ['pci_5fmem_5fbar_5ftypes_5',['PCI_MEM_BAR_TYPES',['../pcie_8c.html#a6bc1a713f26d7e6df634719fa869041d',1,'pcie.c']]],
   ['pemachinetype_6',['pemachinetype',['../BaseHdr_2pe_8h.html#a2f9ea362ca7056b4830e72a8bebfbc04',1,'PeMachineType:&#160;pe.h'],['../Boot_2pe_8h.html#a2f9ea362ca7056b4830e72a8bebfbc04',1,'PeMachineType:&#160;pe.h'],['../BootAA64_2pe_8h.html#a2f9ea362ca7056b4830e72a8bebfbc04',1,'PeMachineType:&#160;pe.h'],['../pe___8h.html#a2f9ea362ca7056b4830e72a8bebfbc04',1,'PeMachineType:&#160;pe_.h']]],
-  ['peoptionalmagic_7',['peoptionalmagic',['../BaseHdr_2pe_8h.html#aa91dda8372002204d9911cdb8468daaa',1,'PeOptionalMagic:&#160;pe.h'],['../Boot_2pe_8h.html#aa91dda8372002204d9911cdb8468daaa',1,'PeOptionalMagic:&#160;pe.h'],['../BootAA64_2pe_8h.html#aa91dda8372002204d9911cdb8468daaa',1,'PeOptionalMagic:&#160;pe.h'],['../LittleBoot_2pe_8h.html#aa91dda8372002204d9911cdb8468daaa',1,'PeOptionalMagic:&#160;pe.h'],['../pe___8h.html#aa91dda8372002204d9911cdb8468daaa',1,'PeOptionalMagic:&#160;pe_.h']]],
+  ['peoptionalmagic_7',['peoptionalmagic',['../BaseHdr_2pe_8h.html#aa91dda8372002204d9911cdb8468daaa',1,'PeOptionalMagic:&#160;pe.h'],['../pe___8h.html#aa91dda8372002204d9911cdb8468daaa',1,'PeOptionalMagic:&#160;pe_.h'],['../LittleBoot_2pe_8h.html#aa91dda8372002204d9911cdb8468daaa',1,'PeOptionalMagic:&#160;pe.h'],['../BootAA64_2pe_8h.html#aa91dda8372002204d9911cdb8468daaa',1,'PeOptionalMagic:&#160;pe.h'],['../Boot_2pe_8h.html#aa91dda8372002204d9911cdb8468daaa',1,'PeOptionalMagic:&#160;pe.h']]],
   ['pin_5fcapabilities_8',['pin_capabilities',['../ihda_8h.html#afb59a3712deb83819234a682a152d709',1,'ihda.h']]],
   ['pin_5fctl_5fflags_9',['pin_ctl_flags',['../ihda_8h.html#a5b635e841c542da43507ac82c14c1431',1,'ihda.h']]],
   ['plat_5fe_10',['plat_e',['../p__spec_8h.html#ad46c72f353ae5de7b983ff417b0df959',1,'p_spec.h']]],
@@ -23,5 +23,11 @@ var searchData=
   ['processor_5ftype_5fdata_20',['PROCESSOR_TYPE_DATA',['../IndustryStandard_2SmBios_8h.html#a7b7dceede968db5a2e644e135604f86b',1,'SmBios.h']]],
   ['processor_5fupgrade_21',['PROCESSOR_UPGRADE',['../IndustryStandard_2SmBios_8h.html#a822c3fcdce3bc74b2bb5e4febdc52462',1,'SmBios.h']]],
   ['ps_5fdict_5fkeys_5f_22',['PS_Dict_Keys_',['../t1tables_8h.html#a6313831849290c77cb42f1ac103138bb',1,'t1tables.h']]],
-  ['psprnum_5ft_23',['psprnum_t',['../p__pspr_8h.html#a361b82641ca00e49fc3d5f0ad8851928',1,'p_pspr.h']]]
+  ['psa_5fcrypto_5fdriver_5fpake_5fstep_23',['psa_crypto_driver_pake_step',['../crypto__extra_8h.html#a0ef6329e313384e4d7cce369b0252685',1,'crypto_extra.h']]],
+  ['psa_5fencrypt_5for_5fdecrypt_5ft_24',['psa_encrypt_or_decrypt_t',['../crypto__driver__common_8h.html#ad4cfad719c2b1ad88835d193f593371d',1,'crypto_driver_common.h']]],
+  ['psa_5fjpake_5fio_5fmode_25',['psa_jpake_io_mode',['../crypto__extra_8h.html#a23fc07090cc40ab3ed067f6b87c19b9a',1,'crypto_extra.h']]],
+  ['psa_5fjpake_5fround_26',['psa_jpake_round',['../crypto__extra_8h.html#a35934e47040ddf65b39e87e80a0b0543',1,'crypto_extra.h']]],
+  ['psa_5fkey_5fcreation_5fmethod_5ft_27',['psa_key_creation_method_t',['../group__se__key__management.html#ga984d5535962320e0c4692bb4ede486ef',1,'crypto_se_driver.h']]],
+  ['psa_5fkey_5fslot_5fstate_5ft_28',['psa_key_slot_state_t',['../psa__crypto__core_8h.html#a60ba8a0e78f38a115497fe46c83e44e0',1,'psa_crypto_core.h']]],
+  ['psprnum_5ft_29',['psprnum_t',['../p__pspr_8h.html#a361b82641ca00e49fc3d5f0ad8851928',1,'p_pspr.h']]]
 ];

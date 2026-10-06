@@ -81,9 +81,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
-<code>#include &lt;<a class="el" href="Libs_2XEClib_2includes_2sys_2socket_8h_source.html">sys/socket.h</a>&gt;</code><br />
+<code>#include &lt;sys/socket.h&gt;</code><br />
 <code>#include &lt;string.h&gt;</code><br />
-<code>#include &lt;<a class="el" href="inet_8h_source.html">arpa/inet.h</a>&gt;</code><br />
+<code>#include &lt;arpa/inet.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="netdb_8h_source.html">sys/netdb.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="__ketime_8h_source.html">sys/_ketime.h</a>&gt;</code><br />
 <code>#include &lt;time.h&gt;</code><br />
@@ -93,44 +93,37 @@ Include dependency graph for _gettime.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="__gettime_8cpp__incl.png" border="0" usemap="#aXenevaOS_2Process_2Namdapha_2__gettime_8cpp" alt=""/></div>
 <map name="aXenevaOS_2Process_2Namdapha_2__gettime_8cpp" id="aXenevaOS_2Process_2Namdapha_2__gettime_8cpp">
-<area shape="rect" title=" " alt="" coords="215,5,434,45"/>
-<area shape="rect" title=" " alt="" coords="132,240,202,265"/>
-<area shape="poly" title=" " alt="" coords="215,41,156,56,97,81,70,97,47,117,27,140,12,168,8,180,12,190,28,203,54,216,119,237,117,242,52,221,25,208,7,194,3,180,7,166,23,137,43,113,67,93,94,76,154,51,214,35"/>
-<area shape="rect" href="Libs_2XEClib_2includes_2sys_2socket_8h.html" title=" " alt="" coords="22,167,125,192"/>
-<area shape="poly" title=" " alt="" coords="215,42,157,62,130,77,106,95,88,123,79,154,74,152,83,121,102,92,127,72,155,57,214,37"/>
-<area shape="rect" title=" " alt="" coords="505,93,576,119"/>
-<area shape="poly" title=" " alt="" coords="377,43,497,86,495,91,375,48"/>
-<area shape="rect" href="inet_8h.html" title=" " alt="" coords="117,93,209,119"/>
-<area shape="poly" title=" " alt="" coords="287,48,200,90,198,85,284,43"/>
-<area shape="rect" href="netdb_8h.html" title=" " alt="" coords="233,93,330,119"/>
-<area shape="poly" title=" " alt="" coords="316,47,297,83,292,80,312,44"/>
-<area shape="rect" href="__ketime_8h.html" title=" " alt="" coords="352,167,464,192"/>
-<area shape="poly" title=" " alt="" coords="337,45,398,153,393,156,333,47"/>
-<area shape="rect" title=" " alt="" coords="600,93,664,119"/>
-<area shape="poly" title=" " alt="" coords="399,43,587,90,586,96,398,48"/>
-<area shape="rect" href="unistd_8h.html" title=" " alt="" coords="406,93,480,119"/>
-<area shape="poly" title=" " alt="" coords="354,43,416,84,413,88,352,48"/>
-<area shape="poly" title=" " alt="" coords="90,190,142,229,139,234,87,194"/>
-<area shape="rect" href="__xeneva_8h.html" title=" " alt="" coords="318,240,406,265"/>
-<area shape="poly" title=" " alt="" coords="121,189,305,235,304,240,119,195"/>
-<area shape="rect" title=" " alt="" coords="32,240,107,265"/>
-<area shape="poly" title=" " alt="" coords="76,192,74,227,68,226,70,192"/>
-<area shape="rect" href="Libs_2XEClib_2includes_2stdint_8h.html" title=" " alt="" coords="326,313,397,339"/>
-<area shape="poly" title=" " alt="" coords="364,266,364,300,359,300,359,266"/>
-<area shape="rect" href="size__t_8h.html" title=" " alt="" coords="326,387,398,412"/>
-<area shape="poly" title=" " alt="" coords="364,339,364,373,359,373,359,339"/>
-<area shape="poly" title=" " alt="" coords="166,119,169,226,164,226,161,119"/>
-<area shape="poly" title=" " alt="" coords="150,121,101,160,97,156,147,117"/>
-<area shape="poly" title=" " alt="" coords="180,117,336,229,333,234,177,121"/>
-<area shape="poly" title=" " alt="" coords="274,121,187,231,182,228,270,117"/>
-<area shape="poly" title=" " alt="" coords="249,121,121,165,119,160,247,116"/>
-<area shape="poly" title=" " alt="" coords="290,118,351,227,346,229,286,120"/>
-<area shape="poly" title=" " alt="" coords="370,195,217,240,215,234,369,189"/>
-<area shape="poly" title=" " alt="" coords="403,194,379,230,375,227,398,191"/>
-<area shape="poly" title=" " alt="" coords="456,117,479,152,484,173,479,193,453,221,420,238,417,234,449,216,474,191,478,173,474,154,452,120"/>
-<area shape="rect" href="__ketimer_8h.html" title=" " alt="" coords="540,167,656,192"/>
-<area shape="poly" title=" " alt="" coords="469,116,561,158,559,163,467,121"/>
-<area shape="poly" title=" " alt="" coords="560,195,414,239,412,233,559,189"/>
+<area shape="rect" title=" " alt="" coords="309,5,528,45"/>
+<area shape="rect" title=" " alt="" coords="342,167,413,192"/>
+<area shape="poly" title=" " alt="" coords="415,47,400,94,385,154,380,153,395,93,410,45"/>
+<area shape="rect" title=" " alt="" coords="163,167,266,192"/>
+<area shape="poly" title=" " alt="" coords="310,44,264,63,244,77,226,95,219,108,215,123,214,153,208,152,209,122,214,106,222,92,240,73,261,59,308,39"/>
+<area shape="rect" title=" " alt="" coords="545,93,615,119"/>
+<area shape="poly" title=" " alt="" coords="459,43,545,85,543,90,456,48"/>
+<area shape="rect" title=" " alt="" coords="639,93,731,119"/>
+<area shape="poly" title=" " alt="" coords="483,43,634,87,632,92,482,48"/>
+<area shape="rect" href="netdb_8h.html" title=" " alt="" coords="237,93,334,119"/>
+<area shape="poly" title=" " alt="" coords="388,48,318,89,315,84,386,43"/>
+<area shape="rect" href="__ketime_8h.html" title=" " alt="" coords="409,93,521,119"/>
+<area shape="poly" title=" " alt="" coords="432,44,454,80,449,83,428,47"/>
+<area shape="rect" title=" " alt="" coords="756,93,820,119"/>
+<area shape="poly" title=" " alt="" coords="517,43,743,90,742,96,516,48"/>
+<area shape="rect" href="unistd_8h.html" title=" " alt="" coords="44,93,119,119"/>
+<area shape="poly" title=" " alt="" coords="339,48,133,96,132,90,337,43"/>
+<area shape="poly" title=" " alt="" coords="302,117,353,156,350,160,299,121"/>
+<area shape="poly" title=" " alt="" coords="276,121,238,159,234,155,272,117"/>
+<area shape="rect" href="__xeneva_8h.html" title=" " alt="" coords="148,240,236,265"/>
+<area shape="poly" title=" " alt="" coords="290,119,291,154,288,174,280,193,259,218,233,236,230,231,255,214,275,191,282,173,286,153,285,119"/>
+<area shape="rect" href="Libs_2XEClib_2includes_2stdint_8h.html" title=" " alt="" coords="157,313,227,339"/>
+<area shape="poly" title=" " alt="" coords="195,266,195,300,189,300,189,266"/>
+<area shape="rect" href="size__t_8h.html" title=" " alt="" coords="156,387,228,412"/>
+<area shape="poly" title=" " alt="" coords="195,339,195,373,189,373,189,339"/>
+<area shape="poly" title=" " alt="" coords="453,121,404,160,401,156,450,117"/>
+<area shape="poly" title=" " alt="" coords="466,120,453,156,442,177,426,194,384,220,338,237,292,247,250,252,250,247,291,242,337,232,382,215,422,190,437,174,448,154,460,118"/>
+<area shape="poly" title=" " alt="" coords="61,121,39,135,20,153,9,172,9,181,13,190,38,214,68,231,102,241,135,247,134,252,101,246,66,236,34,219,9,194,3,182,4,171,15,149,36,131,58,116"/>
+<area shape="rect" href="__ketimer_8h.html" title=" " alt="" coords="23,167,139,192"/>
+<area shape="poly" title=" " alt="" coords="84,119,84,153,79,153,79,119"/>
+<area shape="poly" title=" " alt="" coords="101,190,164,230,161,235,98,194"/>
 </map>
 </div>
 </div><table class="memberdecls">

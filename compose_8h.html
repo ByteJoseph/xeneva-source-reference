@@ -175,6 +175,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a106918e235fb4815ea6e9452852c64c1" id="r_a106918e235fb4815ea6e9452852c64c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compose_8h.html#a106918e235fb4815ea6e9452852c64c1">compose_window_scaled_to</a> (<a class="el" href="chitralekha_8h.html#a2ab1b11981de5401546c85b8ba90a595">ChCanvas</a> *<a class="el" href="deomain_8cpp.html#a4c8d0bbb93dc6fd886c9b998a249a64a">canvas</a>, <a class="el" href="Process_2Deodhai_2window_8h.html#a8992679d9f1b8c5d1cd6a3f8979e0573">Window</a> *<a class="el" href="namdapha_8cpp.html#a60284ea0d2e293995badb97f5cf80c2d">win</a>, int src_w, int src_h, int dst_x, int dst_y, int dw, int dh)</td></tr>
 <tr class="memdesc:a106918e235fb4815ea6e9452852c64c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">compose_window_scaled_to &ndash; scales the window's own buffer (src_w x src_h) to (dw x dh) and alpha-blends it onto the canvas at (dst_x, dst_y). Clipped to the canvas, NEON fast path kept.  <br /></td></tr>
 <tr class="separator:a106918e235fb4815ea6e9452852c64c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0633cd3c91720b98f2b31d1831926ad5" id="r_a0633cd3c91720b98f2b31d1831926ad5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compose_8h.html#a0633cd3c91720b98f2b31d1831926ad5">compose_window_scaled_to_clip</a> (<a class="el" href="chitralekha_8h.html#a2ab1b11981de5401546c85b8ba90a595">ChCanvas</a> *<a class="el" href="deomain_8cpp.html#a4c8d0bbb93dc6fd886c9b998a249a64a">canvas</a>, <a class="el" href="Process_2Deodhai_2window_8h.html#a8992679d9f1b8c5d1cd6a3f8979e0573">Window</a> *<a class="el" href="namdapha_8cpp.html#a60284ea0d2e293995badb97f5cf80c2d">win</a>, int src_w, int src_h, int dst_x, int dst_y, int dw, int dh, int clip_x, int clip_y, int clip_w, int clip_h)</td></tr>
+<tr class="memdesc:a0633cd3c91720b98f2b31d1831926ad5"><td class="mdescLeft">&#160;</td><td class="mdescRight">compose_window_scaled_to_clip &ndash; scales the window's own buffer (src_w x src_h) to (dw x dh) and alpha-blends it onto the canvas at (dst_x, dst_y). Clipped to the canvas, NEON fast path kept.  <br /></td></tr>
+<tr class="separator:a0633cd3c91720b98f2b31d1831926ad5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43106868c80aa831bfc213b6bf2f3cd0" id="r_a43106868c80aa831bfc213b6bf2f3cd0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compose_8h.html#a43106868c80aa831bfc213b6bf2f3cd0">_compose_always_on_top_dirty</a> (<a class="el" href="chitralekha_8h.html#a2ab1b11981de5401546c85b8ba90a595">ChCanvas</a> *<a class="el" href="deomain_8cpp.html#a4c8d0bbb93dc6fd886c9b998a249a64a">canvas</a>, <a class="el" href="Process_2Deodhai_2window_8h.html#a53bc978102cea75fdf6b7b9adbf36d2c">WinSharedInfo</a> *info, <a class="el" href="BaseHdr_2stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> <a class="el" href="deomain_8cpp.html#ae0a832ee33cc542fe01f59b10bd83247">_window_moving_</a>, <a class="el" href="Process_2Deodhai_2window_8h.html#a8992679d9f1b8c5d1cd6a3f8979e0573">Window</a> *<a class="el" href="deomain_8cpp.html#a953eba25a272d12cafcab7e67801b3c0">focusedWin</a>, <a class="el" href="Process_2Deodhai_2window_8h.html#a8992679d9f1b8c5d1cd6a3f8979e0573">Window</a> *<a class="el" href="namdapha_8cpp.html#a60284ea0d2e293995badb97f5cf80c2d">win</a>)</td></tr>
 <tr class="memdesc:a43106868c80aa831bfc213b6bf2f3cd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">_compose_always_on_top_dirty &ndash; compose always on top window's dirty rectangles  <br /></td></tr>
 <tr class="separator:a43106868c80aa831bfc213b6bf2f3cd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -504,6 +507,104 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>compose_window_scaled_to &ndash; scales the window's own buffer (src_w x src_h) to (dw x dh) and alpha-blends it onto the canvas at (dst_x, dst_y). Clipped to the canvas, NEON fast path kept. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">src_w,src_h</td><td>&ndash; ORIGINAL size of win-&gt;backBuffer (not info-&gt;width/height, those change while resizing) </td></tr>
+    <tr><td class="paramname">dst_x,dst_y</td><td>&ndash; top-left of the scaled window on the canvas </td></tr>
+    <tr><td class="paramname">dw,dh</td><td>&ndash; size to scale to </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0633cd3c91720b98f2b31d1831926ad5" name="a0633cd3c91720b98f2b31d1831926ad5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0633cd3c91720b98f2b31d1831926ad5">&#9670;&#160;</a></span>compose_window_scaled_to_clip()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void compose_window_scaled_to_clip </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="chitralekha_8h.html#a2ab1b11981de5401546c85b8ba90a595">ChCanvas</a> *&#160;</td>
+          <td class="paramname"><em>canvas</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="Process_2Deodhai_2window_8h.html#a8992679d9f1b8c5d1cd6a3f8979e0573">Window</a> *&#160;</td>
+          <td class="paramname"><em>win</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>src_w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>src_h</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>dst_x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>dst_y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>dw</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>dh</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>clip_x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>clip_y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>clip_w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>clip_h</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>compose_window_scaled_to_clip &ndash; scales the window's own buffer (src_w x src_h) to (dw x dh) and alpha-blends it onto the canvas at (dst_x, dst_y). Clipped to the canvas, NEON fast path kept. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">src_w,src_h</td><td>&ndash; ORIGINAL size of win-&gt;backBuffer (not info-&gt;width/height, those change while resizing) </td></tr>
