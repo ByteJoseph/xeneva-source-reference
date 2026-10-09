@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['kannada_0',['KANNADA',['../propstrings_8h.html#a4f5123d66a81bcb14f312d3dd8aa300ea0bc65a1e1848a76ec78569a336a450e4',1,'propstrings.h']]],
-  ['katakana_1',['KATAKANA',['../propstrings_8h.html#a4f5123d66a81bcb14f312d3dd8aa300ea69c5a2da58ffba91bcc2162947cd5368',1,'propstrings.h']]],
-  ['katakana_5firoha_2',['KATAKANA_IROHA',['../propstrings_8h.html#a4f5123d66a81bcb14f312d3dd8aa300eac217b6448afb9ef50e1b3fe5485067ed',1,'propstrings.h']]],
+  ['kannada_0',['KANNADA',['../propstrings_8h.html#a2286f81d072b1055a06d00beac87896ca0bc65a1e1848a76ec78569a336a450e4',1,'propstrings.h']]],
+  ['katakana_1',['KATAKANA',['../propstrings_8h.html#a2286f81d072b1055a06d00beac87896ca69c5a2da58ffba91bcc2162947cd5368',1,'propstrings.h']]],
+  ['katakana_5firoha_2',['KATAKANA_IROHA',['../propstrings_8h.html#a2286f81d072b1055a06d00beac87896cac217b6448afb9ef50e1b3fe5485067ed',1,'propstrings.h']]],
   ['key_5f0_3',['key_0',['../ps2kybrd_8h.html#a3a8455e781f79e7ba5f49d1ac064c7b5a6b30f8af6c880e1aca01b91aa13c6ff9',1,'KEY_0:&#160;ps2kybrd.h'],['../keycode_8h.html#a3a8455e781f79e7ba5f49d1ac064c7b5a6b30f8af6c880e1aca01b91aa13c6ff9',1,'KEY_0:&#160;keycode.h']]],
   ['key_5f1_4',['key_1',['../ps2kybrd_8h.html#a3a8455e781f79e7ba5f49d1ac064c7b5a35bcc2bc85513df4f3897a9d64a9c51c',1,'KEY_1:&#160;ps2kybrd.h'],['../keycode_8h.html#a3a8455e781f79e7ba5f49d1ac064c7b5a35bcc2bc85513df4f3897a9d64a9c51c',1,'KEY_1:&#160;keycode.h']]],
   ['key_5f2_5',['key_2',['../ps2kybrd_8h.html#a3a8455e781f79e7ba5f49d1ac064c7b5a2333d7c312aa98622c41e74c5d13e8de',1,'KEY_2:&#160;ps2kybrd.h'],['../keycode_8h.html#a3a8455e781f79e7ba5f49d1ac064c7b5a2333d7c312aa98622c41e74c5d13e8de',1,'KEY_2:&#160;keycode.h']]],
@@ -186,10 +186,10 @@ var searchData=
   ['keyspace_183',['KeySpace',['../keymap_8h.html#a62a1ef4272cdd2b3efaddecb5f9eb173a82cb18dd6ef2d9721dcf85b92c30b4ab',1,'keymap.h']]],
   ['keytabulator_184',['KeyTabulator',['../keymap_8h.html#a62a1ef4272cdd2b3efaddecb5f9eb173a0e6bd674e0768993f383e6c192b6462a',1,'keymap.h']]],
   ['keyup_185',['KeyUp',['../keymap_8h.html#a62a1ef4272cdd2b3efaddecb5f9eb173aa7effd93e048b37c190aebbebde2ba29',1,'keymap.h']]],
-  ['khaki_186',['KHAKI',['../propstrings_8h.html#a4f5123d66a81bcb14f312d3dd8aa300ea9dae921ba1d8778f3308fd26918278d9',1,'propstrings.h']]],
-  ['khmer_187',['KHMER',['../propstrings_8h.html#a4f5123d66a81bcb14f312d3dd8aa300ea667545a517466717c1a0b889d754312f',1,'propstrings.h']]],
-  ['killthings_188',['killthings',['../m__menu_8c.html#a946f4400e7ad81e0c461ebc33db07e03a0511f718406524b00a5d286ae12dc264',1,'m_menu.c']]],
-  ['korean_5fhangul_5fformal_189',['KOREAN_HANGUL_FORMAL',['../propstrings_8h.html#a4f5123d66a81bcb14f312d3dd8aa300ea6fc0cb40730cb8ca89e68559597bdbd1',1,'propstrings.h']]],
-  ['korean_5fhanja_5fformal_190',['KOREAN_HANJA_FORMAL',['../propstrings_8h.html#a4f5123d66a81bcb14f312d3dd8aa300eaefce8a81ef914245842209d607912237',1,'propstrings.h']]],
-  ['korean_5fhanja_5finformal_191',['KOREAN_HANJA_INFORMAL',['../propstrings_8h.html#a4f5123d66a81bcb14f312d3dd8aa300ea86a00a78870e70e3ef1fc815490bf844',1,'propstrings.h']]]
+  ['khaki_186',['KHAKI',['../propstrings_8h.html#a2286f81d072b1055a06d00beac87896ca9dae921ba1d8778f3308fd26918278d9',1,'propstrings.h']]],
+  ['khmer_187',['KHMER',['../propstrings_8h.html#a2286f81d072b1055a06d00beac87896ca667545a517466717c1a0b889d754312f',1,'propstrings.h']]],
+  ['killthings_188',['killthings',['../m__menu_8c.html#a87f509ca9b46d27043fa6d68bcf8d73da0511f718406524b00a5d286ae12dc264',1,'m_menu.c']]],
+  ['korean_5fhangul_5fformal_189',['KOREAN_HANGUL_FORMAL',['../propstrings_8h.html#a2286f81d072b1055a06d00beac87896ca6fc0cb40730cb8ca89e68559597bdbd1',1,'propstrings.h']]],
+  ['korean_5fhanja_5fformal_190',['KOREAN_HANJA_FORMAL',['../propstrings_8h.html#a2286f81d072b1055a06d00beac87896caefce8a81ef914245842209d607912237',1,'propstrings.h']]],
+  ['korean_5fhanja_5finformal_191',['KOREAN_HANJA_INFORMAL',['../propstrings_8h.html#a2286f81d072b1055a06d00beac87896ca86a00a78870e70e3ef1fc815490bf844',1,'propstrings.h']]]
 ];

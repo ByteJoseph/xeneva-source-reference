@@ -114,6 +114,8 @@ Classes</h2></td></tr>
 Typedefs</h2></td></tr>
 <tr class="memitem:ac5bd3387f24ccc81a0705f9f60e66560" id="r_ac5bd3387f24ccc81a0705f9f60e66560"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct__sys__proc__list__.html">_sys_proc_list_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__keproc_8h.html#ac5bd3387f24ccc81a0705f9f60e66560">XEProcessList</a></td></tr>
 <tr class="separator:ac5bd3387f24ccc81a0705f9f60e66560"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af08f23287ae39ab69ae6a8b2a0bc8006" id="r_af08f23287ae39ab69ae6a8b2a0bc8006"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__keproc_8h.html#af08f23287ae39ab69ae6a8b2a0bc8006">_XEThreadEntry</a>) ()</td></tr>
+<tr class="separator:af08f23287ae39ab69ae6a8b2a0bc8006"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -172,6 +174,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a4998236bb9bdf4f2ff42b679bc8994f9" id="r_a4998236bb9bdf4f2ff42b679bc8994f9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="__xeneva_8h.html#a3640283d666d4a8b25a736424ee25866">XE_LIB</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__keproc_8h.html#a4998236bb9bdf4f2ff42b679bc8994f9">_KeSendSignal</a> (int pid, int signum)</td></tr>
 <tr class="memdesc:a4998236bb9bdf4f2ff42b679bc8994f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">_KeSendSignal &ndash; send a signal to desired process  <br /></td></tr>
 <tr class="separator:a4998236bb9bdf4f2ff42b679bc8994f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8947fbdcff09af879ee4528ea55f2a3" id="r_ab8947fbdcff09af879ee4528ea55f2a3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="__xeneva_8h.html#a3640283d666d4a8b25a736424ee25866">XE_LIB</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__keproc_8h.html#ab8947fbdcff09af879ee4528ea55f2a3">_KeSendSignalToThread</a> (int tid, int signum)</td></tr>
+<tr class="memdesc:ab8947fbdcff09af879ee4528ea55f2a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">_KeSendSignalToThread &ndash; send a signal to desired thread  <br /></td></tr>
+<tr class="separator:ab8947fbdcff09af879ee4528ea55f2a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0614022a60d599e0993336e0e3893a2f" id="r_a0614022a60d599e0993336e0e3893a2f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="__xeneva_8h.html#a3640283d666d4a8b25a736424ee25866">XE_LIB</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__keproc_8h.html#a0614022a60d599e0993336e0e3893a2f">_KeProcessGetFileDesc</a> (const char *filename)</td></tr>
 <tr class="separator:a0614022a60d599e0993336e0e3893a2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a745abe354cd1abbc78b58c9927a187c0" id="r_a745abe354cd1abbc78b58c9927a187c0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="__xeneva_8h.html#a3640283d666d4a8b25a736424ee25866">XE_LIB</a> <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__keproc_8h.html#a745abe354cd1abbc78b58c9927a187c0">_KeGetEnvironmentBlock</a> ()</td></tr>
@@ -189,6 +194,8 @@ Functions</h2></td></tr>
 <tr class="separator:aebb1ec2a1a4dfb6624c13286fa2b6fcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af357055bb43253c16750add19f4bc99f" id="r_af357055bb43253c16750add19f4bc99f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="__xeneva_8h.html#a3640283d666d4a8b25a736424ee25866">XE_LIB</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__keproc_8h.html#af357055bb43253c16750add19f4bc99f">_KeProcessFetch</a> (<a class="el" href="__keproc_8h.html#ac5bd3387f24ccc81a0705f9f60e66560">XEProcessList</a> *<a class="el" href="Process_2monitor_2main_8cpp.html#a67027eed2bf6d1d5e1650c8ce28bf115">list</a>, int num_proc_count)</td></tr>
 <tr class="separator:af357055bb43253c16750add19f4bc99f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6b84f1d666b278565b7032760262d68" id="r_af6b84f1d666b278565b7032760262d68"><td class="memItemLeft" align="right" valign="top"><a class="el" href="__xeneva_8h.html#a3640283d666d4a8b25a736424ee25866">XE_LIB</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__keproc_8h.html#af6b84f1d666b278565b7032760262d68">_KeExitSubThread</a> (int thread_id)</td></tr>
+<tr class="separator:af6b84f1d666b278565b7032760262d68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>BSD 2-Clause License</p>
@@ -200,6 +207,20 @@ Functions</h2></td></tr>
 </ol>
 <p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. </p>
 </div><h2 class="groupheader">Typedef Documentation</h2>
+<a id="af08f23287ae39ab69ae6a8b2a0bc8006" name="af08f23287ae39ab69ae6a8b2a0bc8006"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af08f23287ae39ab69ae6a8b2a0bc8006">&#9670;&#160;</a></span>_XEThreadEntry</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* _XEThreadEntry) ()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ac5bd3387f24ccc81a0705f9f60e66560" name="ac5bd3387f24ccc81a0705f9f60e66560"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac5bd3387f24ccc81a0705f9f60e66560">&#9670;&#160;</a></span>XEProcessList</h2>
 
@@ -304,6 +325,24 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>_KeCreateThread &ndash; creates a new thread inside current process slot </p>
+
+</div>
+</div>
+<a id="af6b84f1d666b278565b7032760262d68" name="af6b84f1d666b278565b7032760262d68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6b84f1d666b278565b7032760262d68">&#9670;&#160;</a></span>_KeExitSubThread()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="__xeneva_8h.html#a3640283d666d4a8b25a736424ee25866">XE_LIB</a> int _KeExitSubThread </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>thread_id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -725,6 +764,43 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">pid</td><td>&ndash; thread id </td></tr>
+    <tr><td class="paramname">signum</td><td>&ndash; signal number </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab8947fbdcff09af879ee4528ea55f2a3" name="ab8947fbdcff09af879ee4528ea55f2a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8947fbdcff09af879ee4528ea55f2a3">&#9670;&#160;</a></span>_KeSendSignalToThread()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="__xeneva_8h.html#a3640283d666d4a8b25a736424ee25866">XE_LIB</a> int _KeSendSignalToThread </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>signum</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>_KeSendSignalToThread &ndash; send a signal to desired thread </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tid</td><td>&ndash; thread id </td></tr>
     <tr><td class="paramname">signum</td><td>&ndash; signal number </td></tr>
   </table>
   </dd>

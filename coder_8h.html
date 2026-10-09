@@ -215,15 +215,15 @@ Macros</h2></td></tr>
 <tr class="separator:af44f17b4d16c9ee4eb2170188dc001c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2706cab155039b70637d13eb9bfec2ca" id="r_a2706cab155039b70637d13eb9bfec2ca"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="coder_8h.html#a2706cab155039b70637d13eb9bfec2ca">FBITS_OUT_DQ</a>&#160;&#160;&#160;20</td></tr>
 <tr class="separator:a2706cab155039b70637d13eb9bfec2ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ebe0b628f8a421768bc72b3a53d7ed3" id="r_a5ebe0b628f8a421768bc72b3a53d7ed3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="coder_8h.html#a5ebe0b628f8a421768bc72b3a53d7ed3">FBITS_OUT_DQ_OFF</a>&#160;&#160;&#160;(<a class="el" href="coder_8h.html#a2706cab155039b70637d13eb9bfec2ca">FBITS_OUT_DQ</a> - <a class="el" href="coder_8h.html#af44f17b4d16c9ee4eb2170188dc001c5">SF_DQ_OFFSET</a>)   /* number of fraction bits out of dequant, including 2^15 bias */</td></tr>
+<tr class="memitem:a5ebe0b628f8a421768bc72b3a53d7ed3" id="r_a5ebe0b628f8a421768bc72b3a53d7ed3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="coder_8h.html#a5ebe0b628f8a421768bc72b3a53d7ed3">FBITS_OUT_DQ_OFF</a>&#160;&#160;&#160;(<a class="el" href="coder_8h.html#a2706cab155039b70637d13eb9bfec2ca">FBITS_OUT_DQ</a> - <a class="el" href="coder_8h.html#af44f17b4d16c9ee4eb2170188dc001c5">SF_DQ_OFFSET</a>)   /* number of fraction bits <a class="el" href="Process_2wifictl_2main_8cpp.html#a50fe33eaae68b43814656f241a6ac907">out</a> of dequant, including 2^15 bias */</td></tr>
 <tr class="separator:a5ebe0b628f8a421768bc72b3a53d7ed3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe1092b404159d633fcb1054b06d4770" id="r_abe1092b404159d633fcb1054b06d4770"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="coder_8h.html#abe1092b404159d633fcb1054b06d4770">FBITS_IN_IMDCT</a>&#160;&#160;&#160;<a class="el" href="coder_8h.html#a5ebe0b628f8a421768bc72b3a53d7ed3">FBITS_OUT_DQ_OFF</a>        /* number of fraction bits into <a class="el" href="statname_8h.html#ac1de66cbad5f43c7749c529cd09a8ad6">IMDCT</a> */</td></tr>
 <tr class="separator:abe1092b404159d633fcb1054b06d4770"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40d7c3ad0d6df3bc16df0bf63f21892b" id="r_a40d7c3ad0d6df3bc16df0bf63f21892b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="coder_8h.html#a40d7c3ad0d6df3bc16df0bf63f21892b">GBITS_IN_DCT4</a>&#160;&#160;&#160;4                                       /* <a class="el" href="__print_8c.html#ac6afabdc09a49a433ee19d8a9486056d">min</a> guard bits in for <a class="el" href="coder_8h.html#a4271b6bd48551ba95083c46751c84010">DCT4</a> */</td></tr>
 <tr class="separator:a40d7c3ad0d6df3bc16df0bf63f21892b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3250202151d167b0a00749490e723c1d" id="r_a3250202151d167b0a00749490e723c1d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="coder_8h.html#a3250202151d167b0a00749490e723c1d">FBITS_LOST_DCT4</a>&#160;&#160;&#160;1               /* number of fraction bits lost (&gt;&gt; out) in DCT-IV */</td></tr>
+<tr class="memitem:a3250202151d167b0a00749490e723c1d" id="r_a3250202151d167b0a00749490e723c1d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="coder_8h.html#a3250202151d167b0a00749490e723c1d">FBITS_LOST_DCT4</a>&#160;&#160;&#160;1               /* number of fraction bits lost (&gt;&gt; <a class="el" href="Process_2wifictl_2main_8cpp.html#a50fe33eaae68b43814656f241a6ac907">out</a>) in DCT-IV */</td></tr>
 <tr class="separator:a3250202151d167b0a00749490e723c1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a367cd51b980067a5fc48b060e1f6cc39" id="r_a367cd51b980067a5fc48b060e1f6cc39"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="coder_8h.html#a367cd51b980067a5fc48b060e1f6cc39">FBITS_LOST_WND</a>&#160;&#160;&#160;1               /* number of fraction bits lost (&gt;&gt; out) in synthesis window (neg = gain frac bits) */</td></tr>
+<tr class="memitem:a367cd51b980067a5fc48b060e1f6cc39" id="r_a367cd51b980067a5fc48b060e1f6cc39"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="coder_8h.html#a367cd51b980067a5fc48b060e1f6cc39">FBITS_LOST_WND</a>&#160;&#160;&#160;1               /* number of fraction bits lost (&gt;&gt; <a class="el" href="Process_2wifictl_2main_8cpp.html#a50fe33eaae68b43814656f241a6ac907">out</a>) in synthesis window (neg = gain frac bits) */</td></tr>
 <tr class="separator:a367cd51b980067a5fc48b060e1f6cc39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afce506c961a9e9bfc00f9561c21ea1ae" id="r_afce506c961a9e9bfc00f9561c21ea1ae"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="coder_8h.html#afce506c961a9e9bfc00f9561c21ea1ae">FBITS_LOST_IMDCT</a>&#160;&#160;&#160;(<a class="el" href="coder_8h.html#a3250202151d167b0a00749490e723c1d">FBITS_LOST_DCT4</a> + <a class="el" href="coder_8h.html#a367cd51b980067a5fc48b060e1f6cc39">FBITS_LOST_WND</a>)</td></tr>
 <tr class="separator:afce506c961a9e9bfc00f9561c21ea1ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -715,7 +715,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define FBITS_LOST_DCT4&#160;&#160;&#160;1               /* number of fraction bits lost (&gt;&gt; out) in DCT-IV */</td>
+          <td class="memname">#define FBITS_LOST_DCT4&#160;&#160;&#160;1               /* number of fraction bits lost (&gt;&gt; <a class="el" href="Process_2wifictl_2main_8cpp.html#a50fe33eaae68b43814656f241a6ac907">out</a>) in DCT-IV */</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -743,7 +743,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define FBITS_LOST_WND&#160;&#160;&#160;1               /* number of fraction bits lost (&gt;&gt; out) in synthesis window (neg = gain frac bits) */</td>
+          <td class="memname">#define FBITS_LOST_WND&#160;&#160;&#160;1               /* number of fraction bits lost (&gt;&gt; <a class="el" href="Process_2wifictl_2main_8cpp.html#a50fe33eaae68b43814656f241a6ac907">out</a>) in synthesis window (neg = gain frac bits) */</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -771,7 +771,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define FBITS_OUT_DQ_OFF&#160;&#160;&#160;(<a class="el" href="coder_8h.html#a2706cab155039b70637d13eb9bfec2ca">FBITS_OUT_DQ</a> - <a class="el" href="coder_8h.html#af44f17b4d16c9ee4eb2170188dc001c5">SF_DQ_OFFSET</a>)   /* number of fraction bits out of dequant, including 2^15 bias */</td>
+          <td class="memname">#define FBITS_OUT_DQ_OFF&#160;&#160;&#160;(<a class="el" href="coder_8h.html#a2706cab155039b70637d13eb9bfec2ca">FBITS_OUT_DQ</a> - <a class="el" href="coder_8h.html#af44f17b4d16c9ee4eb2170188dc001c5">SF_DQ_OFFSET</a>)   /* number of fraction bits <a class="el" href="Process_2wifictl_2main_8cpp.html#a50fe33eaae68b43814656f241a6ac907">out</a> of dequant, including 2^15 bias */</td>
         </tr>
       </table>
 </div><div class="memdoc">

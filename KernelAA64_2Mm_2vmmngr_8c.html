@@ -74,6 +74,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">vmmngr.c File Reference</div></div>
@@ -137,10 +138,15 @@ Include dependency graph for vmmngr.c:</div>
 </map>
 </div>
 </div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ad8d302ef0271f8bb5e6da98deb51f44b" id="r_ad8d302ef0271f8bb5e6da98deb51f44b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="KernelAA64_2Mm_2vmmngr_8c.html#ad8d302ef0271f8bb5e6da98deb51f44b">VMM_PHYS_MASK</a>&#160;&#160;&#160;0x0000FFFFFFFFF000ULL</td></tr>
+<tr class="separator:ad8d302ef0271f8bb5e6da98deb51f44b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ac0e0942ec8ce5c838a97a40bf7206c7e" id="r_ac0e0942ec8ce5c838a97a40bf7206c7e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="KernelAA64_2Mm_2vmmngr_8c.html#ac0e0942ec8ce5c838a97a40bf7206c7e">envmdebug</a> ()</td></tr>
-<tr class="separator:ac0e0942ec8ce5c838a97a40bf7206c7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06cdd1f677170ace3f8935c4e439b0d7" id="r_a06cdd1f677170ace3f8935c4e439b0d7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="KernelAA64_2Mm_2vmmngr_8c.html#a06cdd1f677170ace3f8935c4e439b0d7">AuIsVirtualAddressSpaceActive</a> (<a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> *<a class="el" href="tty_8cpp.html#aa3ddf14a1307cc0427854f3dee730073">root</a>)</td></tr>
+<tr class="separator:a06cdd1f677170ace3f8935c4e439b0d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a376137ed2daef150fde7ca6946007709" id="r_a376137ed2daef150fde7ca6946007709"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="KernelAA64_2Mm_2vmmngr_8c.html#a376137ed2daef150fde7ca6946007709">AuVmmngrInitialize</a> ()</td></tr>
 <tr class="memdesc:a376137ed2daef150fde7ca6946007709"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuVmmngrInitialize &ndash; initialize the virtual memory manager.  <br /></td></tr>
 <tr class="separator:a376137ed2daef150fde7ca6946007709"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -161,6 +167,10 @@ Functions</h2></td></tr>
 <tr class="memitem:afee913df92f37b35f3bf5131c6c0ee97" id="r_afee913df92f37b35f3bf5131c6c0ee97"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="KernelAA64_2Mm_2vmmngr_8c.html#afee913df92f37b35f3bf5131c6c0ee97">AuFreePages</a> (<a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> virt_addr, <a class="el" href="BaseHdr_2stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> free_physical, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> s)</td></tr>
 <tr class="memdesc:afee913df92f37b35f3bf5131c6c0ee97"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuFreePages &ndash; frees up contiguous pages.  <br /></td></tr>
 <tr class="separator:afee913df92f37b35f3bf5131c6c0ee97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a765fdf1fa9ab4cb5b23ceb0f8b78e8ed" id="r_a765fdf1fa9ab4cb5b23ceb0f8b78e8ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="KernelAA64_2Mm_2vmmngr_8c.html#a765fdf1fa9ab4cb5b23ceb0f8b78e8ed">AuFreePagesEx</a> (<a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> *<a class="el" href="tty_8cpp.html#aa3ddf14a1307cc0427854f3dee730073">root</a>, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> virt_addr, <a class="el" href="BaseHdr_2stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> free_physical, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> size)</td></tr>
+<tr class="separator:a765fdf1fa9ab4cb5b23ceb0f8b78e8ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af372fb9751556e802517c56839e3133c" id="r_af372fb9751556e802517c56839e3133c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="KernelAA64_2Mm_2vmmngr_8c.html#af372fb9751556e802517c56839e3133c">AuDestroyVirtualAddressSpace</a> (<a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> *<a class="el" href="tty_8cpp.html#aa3ddf14a1307cc0427854f3dee730073">root</a>)</td></tr>
+<tr class="separator:af372fb9751556e802517c56839e3133c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91d46587afaac853fd2fc435ab96c34a" id="r_a91d46587afaac853fd2fc435ab96c34a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="KernelAA64_2Mm_2vmmngr_8c.html#a91d46587afaac853fd2fc435ab96c34a">AuUpdatePageFlags</a> (<a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> virt_addr, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> <a class="el" href="Drivers_2virtio_8h.html#aa2585d779da0ab21273a8d92de9a0ebe">flags</a>)</td></tr>
 <tr class="memdesc:a91d46587afaac853fd2fc435ab96c34a"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuFreePages &ndash; frees up contiguous pages.  <br /></td></tr>
 <tr class="separator:a91d46587afaac853fd2fc435ab96c34a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -175,8 +185,6 @@ Functions</h2></td></tr>
 <tr class="separator:a5ed630229c2dfb530c98560516c948fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6810967631742244b813c3acf52b94e7" id="r_a6810967631742244b813c3acf52b94e7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="KernelAA64_2Mm_2vmmngr_8c.html#a6810967631742244b813c3acf52b94e7">AuGetRootPageTable</a> ()</td></tr>
 <tr class="separator:a6810967631742244b813c3acf52b94e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1471c2d20cde33ae697e82d175888217" id="r_a1471c2d20cde33ae697e82d175888217"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="KernelAA64_2Mm_2vmmngr_8c.html#a1471c2d20cde33ae697e82d175888217">AuConsoleFlushFramebuffer</a> ()</td></tr>
-<tr class="separator:a1471c2d20cde33ae697e82d175888217"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d90d2a075e51c9ac94125be430514bd" id="r_a3d90d2a075e51c9ac94125be430514bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="KernelAA64_2Mm_2vmmngr_8c.html#a3d90d2a075e51c9ac94125be430514bd">AuVmmngrBootFree</a> ()</td></tr>
 <tr class="separator:a3d90d2a075e51c9ac94125be430514bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -188,8 +196,6 @@ Variables</h2></td></tr>
 <tr class="separator:a8ada99f4b6f679ff3c6ed99ba22b8122"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e4fb6199fc5f91ffbf2f63542f54bf4" id="r_a5e4fb6199fc5f91ffbf2f63542f54bf4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="KernelAA64_2Mm_2vmmngr_8c.html#a5e4fb6199fc5f91ffbf2f63542f54bf4">_MMIOBase</a></td></tr>
 <tr class="separator:a5e4fb6199fc5f91ffbf2f63542f54bf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aafd855b9a3c4354ca407cb601f9b3cc6" id="r_aafd855b9a3c4354ca407cb601f9b3cc6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="KernelAA64_2Mm_2vmmngr_8c.html#aafd855b9a3c4354ca407cb601f9b3cc6">_vmdebug</a> = 0</td></tr>
-<tr class="separator:aafd855b9a3c4354ca407cb601f9b3cc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>BSD 2-Clause License</p>
@@ -200,32 +206,22 @@ Variables</h2></td></tr>
 <li>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</li>
 </ol>
 <p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. </p>
-</div><h2 class="groupheader">Function Documentation</h2>
-<a id="a1471c2d20cde33ae697e82d175888217" name="a1471c2d20cde33ae697e82d175888217"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1471c2d20cde33ae697e82d175888217">&#9670;&#160;</a></span>AuConsoleFlushFramebuffer()</h2>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="ad8d302ef0271f8bb5e6da98deb51f44b" name="ad8d302ef0271f8bb5e6da98deb51f44b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8d302ef0271f8bb5e6da98deb51f44b">&#9670;&#160;</a></span>VMM_PHYS_MASK</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void AuConsoleFlushFramebuffer </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="memname">#define VMM_PHYS_MASK&#160;&#160;&#160;0x0000FFFFFFFFF000ULL</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 </div>
 </div>
+<h2 class="groupheader">Function Documentation</h2>
 <a id="a5ed630229c2dfb530c98560516c948fe" name="a5ed630229c2dfb530c98560516c948fe"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5ed630229c2dfb530c98560516c948fe">&#9670;&#160;</a></span>AuCreateVirtualAddressSpace()</h2>
 
@@ -243,6 +239,24 @@ Variables</h2></td></tr>
 
 <p>AuCreateVirtualAddressSpace &ndash; create a new virtual address space. </p>
 <dl class="section return"><dt>Returns</dt><dd>pointer to newly created address space </dd></dl>
+
+</div>
+</div>
+<a id="af372fb9751556e802517c56839e3133c" name="af372fb9751556e802517c56839e3133c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af372fb9751556e802517c56839e3133c">&#9670;&#160;</a></span>AuDestroyVirtualAddressSpace()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="BaseHdr_2stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> AuDestroyVirtualAddressSpace </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> *&#160;</td>
+          <td class="paramname"><em>root</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -287,6 +301,46 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a765fdf1fa9ab4cb5b23ceb0f8b78e8ed" name="a765fdf1fa9ab4cb5b23ceb0f8b78e8ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a765fdf1fa9ab4cb5b23ceb0f8b78e8ed">&#9670;&#160;</a></span>AuFreePagesEx()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AuFreePagesEx </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> *&#160;</td>
+          <td class="paramname"><em>root</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>&#160;</td>
+          <td class="paramname"><em>virt_addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="BaseHdr_2stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td>
+          <td class="paramname"><em>free_physical</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -402,6 +456,24 @@ Variables</h2></td></tr>
           <td class="memname"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> * AuGetRootPageTable </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a06cdd1f677170ace3f8935c4e439b0d7" name="a06cdd1f677170ace3f8935c4e439b0d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06cdd1f677170ace3f8935c4e439b0d7">&#9670;&#160;</a></span>AuIsVirtualAddressSpaceActive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="BaseHdr_2stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> AuIsVirtualAddressSpaceActive </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> *&#160;</td>
+          <td class="paramname"><em>root</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -661,23 +733,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ac0e0942ec8ce5c838a97a40bf7206c7e" name="ac0e0942ec8ce5c838a97a40bf7206c7e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac0e0942ec8ce5c838a97a40bf7206c7e">&#9670;&#160;</a></span>envmdebug()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void envmdebug </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Variable Documentation</h2>
 <a id="a5e4fb6199fc5f91ffbf2f63542f54bf4" name="a5e4fb6199fc5f91ffbf2f63542f54bf4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5e4fb6199fc5f91ffbf2f63542f54bf4">&#9670;&#160;</a></span>_MMIOBase</h2>
@@ -715,20 +770,6 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>* _RootPagingKe</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aafd855b9a3c4354ca407cb601f9b3cc6" name="aafd855b9a3c4354ca407cb601f9b3cc6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aafd855b9a3c4354ca407cb601f9b3cc6">&#9670;&#160;</a></span>_vmdebug</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="BaseHdr_2stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> _vmdebug = 0</td>
         </tr>
       </table>
 </div><div class="memdoc">

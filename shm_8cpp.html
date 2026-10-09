@@ -271,8 +271,8 @@ Variables</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">proc</td><td>&ndash; Creator process </td></tr>
     <tr><td class="paramname">key</td><td>&ndash; unique key to use </td></tr>
-    <tr><td class="paramname">sz</td><td>&ndash; size in multiple of PAGE_SIZE </td></tr>
-    <tr><td class="paramname">flags</td><td>&ndash; security flags </td></tr>
+    <tr><td class="paramname">sz</td><td>&ndash; size in bytes, rounded up to whole pages </td></tr>
+    <tr><td class="paramname">flags</td><td>&ndash; reserved </td></tr>
   </table>
   </dd>
 </dl>
@@ -325,6 +325,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void AuInitialiseSHMMan </td>
           <td>(</td>
+          <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -362,6 +363,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> AuSHMGetID </td>
           <td>(</td>
+          <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -413,7 +415,8 @@ Variables</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">proc</td><td>&ndash; Calling process </td></tr>
     <tr><td class="paramname">id</td><td>&ndash; shm segment id </td></tr>
-    <tr><td class="paramname">shmaddr</td><td>&ndash; starting shared memory address to map @parma shmflg &ndash; flags </td></tr>
+    <tr><td class="paramname">shmaddr</td><td>&ndash; reserved; the kernel chooses the mapping address </td></tr>
+    <tr><td class="paramname">shmflg</td><td>&ndash; reserved </td></tr>
   </table>
   </dd>
 </dl>

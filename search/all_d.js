@@ -1,8 +1,8 @@
 var searchData=
 [
   ['jacks_0',['jacks',['../structvirtio__snd__config.html#a0c5466caff9bbf404e62d12523056309',1,'virtio_snd_config']]],
-  ['japanese_5fformal_1',['JAPANESE_FORMAL',['../propstrings_8h.html#a4f5123d66a81bcb14f312d3dd8aa300ea12637f5946d0a0b63a5e168bbc65dfc4',1,'propstrings.h']]],
-  ['japanese_5finformal_2',['JAPANESE_INFORMAL',['../propstrings_8h.html#a4f5123d66a81bcb14f312d3dd8aa300eaf7661a17d627077276b1df39290157d5',1,'propstrings.h']]],
+  ['japanese_5fformal_1',['JAPANESE_FORMAL',['../propstrings_8h.html#a2286f81d072b1055a06d00beac87896ca12637f5946d0a0b63a5e168bbc65dfc4',1,'propstrings.h']]],
+  ['japanese_5finformal_2',['JAPANESE_INFORMAL',['../propstrings_8h.html#a2286f81d072b1055a06d00beac87896caf7661a17d627077276b1df39290157d5',1,'propstrings.h']]],
   ['japanesenecfloppyissupported_3',['JapaneseNecFloppyIsSupported',['../structMISC__BIOS__CHARACTERISTICS.html#ac15bcdfebe71d04d4311369a9bd39a1b',1,'MISC_BIOS_CHARACTERISTICS']]],
   ['japanesetoshibafloppyissupported_4',['JapaneseToshibaFloppyIsSupported',['../structMISC__BIOS__CHARACTERISTICS.html#a2ecf2b7dd7ba299d688a74001bd1a14c',1,'MISC_BIOS_CHARACTERISTICS']]],
   ['jiffies_5',['jiffies',['../linux_2timer_8h.html#a023d8b2505ba4156d0ddf7bcbbe7944d',1,'timer.h']]],
@@ -31,8 +31,8 @@ var searchData=
   ['jpeg_5fdecoder_5fthrow_28',['JPEG_DECODER_THROW',['../nanojpg_8h.html#a56dc4276b2dc0b3b5cd09a8c75d6dd0f',1,'nanojpg.h']]],
   ['jump_29',['jump',['../struct__chwin__.html#a74b6a5c96107f0e11379e2ada5e93c5c',1,'_chwin_']]],
   ['jump_5fbuffer_30',['jump_buffer',['../structFT__ValidatorRec__.html#aa0b346f9ef78939e93c85389aa2b54b3',1,'FT_ValidatorRec_']]],
-  ['justify_31',['JUSTIFY',['../propstrings_8h.html#a4f5123d66a81bcb14f312d3dd8aa300ea065bf94521279904f4ef68d5f5f47b74',1,'propstrings.h']]],
-  ['justify_5fcontent_32',['JUSTIFY_CONTENT',['../propstrings_8h.html#a4f5123d66a81bcb14f312d3dd8aa300ea9e2da0c7d8c3f9689d7a4e218d99c13f',1,'propstrings.h']]],
+  ['justify_31',['JUSTIFY',['../propstrings_8h.html#a2286f81d072b1055a06d00beac87896ca065bf94521279904f4ef68d5f5f47b74',1,'propstrings.h']]],
+  ['justify_5fcontent_32',['JUSTIFY_CONTENT',['../propstrings_8h.html#a2286f81d072b1055a06d00beac87896ca9e2da0c7d8c3f9689d7a4e218d99c13f',1,'propstrings.h']]],
   ['justify_5fcontent_2ec_33',['justify_content.c',['../justify__content_8c.html',1,'']]],
   ['justify_5fcontent_5fcenter_34',['JUSTIFY_CONTENT_CENTER',['../opcodes_8h.html#acb25d51a7d3e1afbaed16ded639eae44a70d3d58c158b5b2e709764e5e8c5d7c9',1,'opcodes.h']]],
   ['justify_5fcontent_5fflex_5fend_35',['JUSTIFY_CONTENT_FLEX_END',['../opcodes_8h.html#acb25d51a7d3e1afbaed16ded639eae44a6f51b84efcf9696e88d1a01392fb7c0b',1,'opcodes.h']]],

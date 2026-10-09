@@ -96,7 +96,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment">/* the base address from where every executable image</span></div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment"> * starts</span></div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="loader_8h.html#a2d32709373819fcfa081225e5b555119">   44</a></span><span class="preprocessor">#define PROC_IMAGE_BASE_START  0x0000000000600000</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="loader_8h.html#a2d32709373819fcfa081225e5b555119">   44</a></span><span class="preprocessor">#define PROC_IMAGE_BASE_START 0x0000000000600000</span></div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code hl_function" href="loader_8h.html#abb6f4cfec25828c3c2877987f1bc6fbd">AuInitialiseLoader</a>();</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
@@ -108,7 +108,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment">* @param argc -- number of arguments</span></div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment">* @param argv -- array of argument in strings</span></div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment">*/</span></div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="keyword">extern</span> <span class="keywordtype">int</span> <a class="code hl_function" href="loader_8h.html#aca80cf203cb78721b7659f449478784c">AuLoadExecToProcess</a>(<a class="code hl_struct" href="struct__au__proc__.html">AuProcess</a>* proc, <span class="keywordtype">char</span>* filename, <span class="keywordtype">int</span> argc,<span class="keywordtype">char</span>** argv);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="keyword">extern</span> <span class="keywordtype">int</span> <a class="code hl_function" href="loader_8h.html#aca80cf203cb78721b7659f449478784c">AuLoadExecToProcess</a>(<a class="code hl_struct" href="struct__au__proc__.html">AuProcess</a>* proc, <span class="keywordtype">char</span>* filename, <span class="keywordtype">int</span> argc, <span class="keywordtype">char</span>** argv);</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment">/*</span></div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment">* AuProcessEntUser -- main kernel thread call</span></div>
@@ -117,17 +117,19 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment">*/</span></div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code hl_function" href="loader_8h.html#a7897d2c42d7adc72398b56a0448a5d18">AuProcessEntUser</a>(<a class="code hl_typedef" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> rcx);</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="preprocessor">#ifdef ARCH_X64</span></div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment">* AuLoaderGetMutex -- returns loader</span></div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment">* mutex</span></div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment">*/</span></div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="keyword">extern</span> <a class="code hl_struct" href="struct__mutex__.html">AuMutex</a>* <a class="code hl_function" href="loader_8cpp.html#a401cacb14775aafb8f622e1e84442dc7">AuLoaderGetMutex</a>();</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code hl_function" href="loader_8h.html#ab7367ce5476d0907c485283987ecfa31">AuProcessEntSubThread</a>(<a class="code hl_typedef" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> rcx);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="preprocessor">#ifdef ARCH_X64</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment">* AuLoaderGetMutex -- returns loader</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment">* mutex</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="keyword">extern</span> <a class="code hl_struct" href="struct__mutex__.html">AuMutex</a>* <a class="code hl_function" href="loader_8cpp.html#a401cacb14775aafb8f622e1e84442dc7">AuLoaderGetMutex</a>();</div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="keyword">extern</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="loader_8h.html#a232e15eb06c628225895885385bb7c63">AuIsLoaderBusy</a>();</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="keyword">extern</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="loader_8h.html#a232e15eb06c628225895885385bb7c63">AuIsLoaderBusy</a>();</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aLibs_2XEClib_2includes_2stdint_8h_html"><div class="ttname"><a href="Libs_2XEClib_2includes_2stdint_8h.html">stdint.h</a></div></div>
 <div class="ttc" id="aLittleBoot_2pe_8h_html"><div class="ttname"><a href="LittleBoot_2pe_8h.html">pe.h</a></div></div>
 <div class="ttc" id="aSync_2mutex_8h_html"><div class="ttname"><a href="Sync_2mutex_8h.html">mutex.h</a></div></div>
@@ -135,10 +137,11 @@ $(document).ready(function() { init_codefold(0); });
 <div class="ttc" id="aloader_8cpp_html_a401cacb14775aafb8f622e1e84442dc7"><div class="ttname"><a href="loader_8cpp.html#a401cacb14775aafb8f622e1e84442dc7">AuLoaderGetMutex</a></div><div class="ttdeci">AuMutex * AuLoaderGetMutex()</div><div class="ttdef"><b>Definition</b> loader.cpp:309</div></div>
 <div class="ttc" id="aloader_8h_html_a232e15eb06c628225895885385bb7c63"><div class="ttname"><a href="loader_8h.html#a232e15eb06c628225895885385bb7c63">AuIsLoaderBusy</a></div><div class="ttdeci">bool AuIsLoaderBusy()</div><div class="ttdef"><b>Definition</b> loader.cpp:313</div></div>
 <div class="ttc" id="aloader_8h_html_a7897d2c42d7adc72398b56a0448a5d18"><div class="ttname"><a href="loader_8h.html#a7897d2c42d7adc72398b56a0448a5d18">AuProcessEntUser</a></div><div class="ttdeci">void AuProcessEntUser(uint64_t rcx)</div><div class="ttdoc">AuProcessEntUser – main kernel thread call in order to enter user for processes.</div><div class="ttdef"><b>Definition</b> loader.cpp:82</div></div>
+<div class="ttc" id="aloader_8h_html_ab7367ce5476d0907c485283987ecfa31"><div class="ttname"><a href="loader_8h.html#ab7367ce5476d0907c485283987ecfa31">AuProcessEntSubThread</a></div><div class="ttdeci">void AuProcessEntSubThread(uint64_t rcx)</div><div class="ttdef"><b>Definition</b> loader.c:143</div></div>
 <div class="ttc" id="aloader_8h_html_abb6f4cfec25828c3c2877987f1bc6fbd"><div class="ttname"><a href="loader_8h.html#abb6f4cfec25828c3c2877987f1bc6fbd">AuInitialiseLoader</a></div><div class="ttdeci">void AuInitialiseLoader()</div><div class="ttdoc">AuInitialiseLoader – initialize the loader and allocate atleast 1 MiB for scratch use.</div><div class="ttdef"><b>Definition</b> loader.cpp:298</div></div>
 <div class="ttc" id="aloader_8h_html_aca80cf203cb78721b7659f449478784c"><div class="ttname"><a href="loader_8h.html#aca80cf203cb78721b7659f449478784c">AuLoadExecToProcess</a></div><div class="ttdeci">int AuLoadExecToProcess(AuProcess *proc, char *filename, int argc, char **argv)</div><div class="ttdoc">AuLoadExecToProcess – loads an executable to the process.</div><div class="ttdef"><b>Definition</b> loader.cpp:126</div></div>
 <div class="ttc" id="aprocess_8h_html"><div class="ttname"><a href="process_8h.html">process.h</a></div></div>
-<div class="ttc" id="astruct__au__proc___html"><div class="ttname"><a href="struct__au__proc__.html">_au_proc_</a></div><div class="ttdef"><b>Definition</b> process.h:125</div></div>
+<div class="ttc" id="astruct__au__proc___html"><div class="ttname"><a href="struct__au__proc__.html">_au_proc_</a></div><div class="ttdef"><b>Definition</b> process.h:124</div></div>
 <div class="ttc" id="astruct__mutex___html"><div class="ttname"><a href="struct__mutex__.html">_mutex_</a></div><div class="ttdef"><b>Definition</b> mutex.h:40</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

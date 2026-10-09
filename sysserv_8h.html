@@ -231,6 +231,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ac3581d934f1c83b19790155b5717eee7" id="r_ac3581d934f1c83b19790155b5717eee7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sysserv_8h.html#ac3581d934f1c83b19790155b5717eee7">SendSignal</a> (int pid, int signo)</td></tr>
 <tr class="memdesc:ac3581d934f1c83b19790155b5717eee7"><td class="mdescLeft">&#160;</td><td class="mdescRight">SendSignal &ndash; sends a signal to desired process note here pid means thread id.  <br /></td></tr>
 <tr class="separator:ac3581d934f1c83b19790155b5717eee7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae7bf58a17c0d7ba92009bd5c39b8ea5" id="r_aae7bf58a17c0d7ba92009bd5c39b8ea5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sysserv_8h.html#aae7bf58a17c0d7ba92009bd5c39b8ea5">SendSignalToThread</a> (int thread_id, int signum)</td></tr>
+<tr class="memdesc:aae7bf58a17c0d7ba92009bd5c39b8ea5"><td class="mdescLeft">&#160;</td><td class="mdescRight">SendSignalToThread &ndash; sends a signal to specific thread.  <br /></td></tr>
+<tr class="separator:aae7bf58a17c0d7ba92009bd5c39b8ea5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa59df0e26f4611c55f507dddec0b1a9" id="r_afa59df0e26f4611c55f507dddec0b1a9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sysserv_8h.html#afa59df0e26f4611c55f507dddec0b1a9">GetCurrentTime</a> (void *ptr)</td></tr>
 <tr class="separator:afa59df0e26f4611c55f507dddec0b1a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab4c38057ff9aa6790a0f6400979ae45f" id="r_ab4c38057ff9aa6790a0f6400979ae45f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sysserv_8h.html#ab4c38057ff9aa6790a0f6400979ae45f">KillProcess</a> (int proc_id)</td></tr>
@@ -285,6 +288,9 @@ Functions</h2></td></tr>
 <tr class="separator:a2497232d3d24e82321ec23bf6bc72df9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b7c59aea17ba3dfe340f241584d13e1" id="r_a2b7c59aea17ba3dfe340f241584d13e1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sysserv_8h.html#a2b7c59aea17ba3dfe340f241584d13e1">GetITimer</a> (int which, const <a class="el" href="timer_8h.html#aad546fe66cc4bea5d5432cf48bbe7115">itimerval_t</a> *curr_value)</td></tr>
 <tr class="separator:a2b7c59aea17ba3dfe340f241584d13e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add7b8049e8265964e6e2735bae2d1841" id="r_add7b8049e8265964e6e2735bae2d1841"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sysserv_8h.html#add7b8049e8265964e6e2735bae2d1841">ExitSubThread</a> (int thread_id)</td></tr>
+<tr class="memdesc:add7b8049e8265964e6e2735bae2d1841"><td class="mdescLeft">&#160;</td><td class="mdescRight">ExitSubThread &ndash; exit a sub thread from process.  <br /></td></tr>
+<tr class="separator:add7b8049e8265964e6e2735bae2d1841"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a35b08bc113bf5a6b7de654feaa6a6bf9" name="a35b08bc113bf5a6b7de654feaa6a6bf9"></a>
@@ -640,6 +646,34 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>DestroyTimer &ndash; remove the timer. </p>
+
+</div>
+</div>
+<a id="add7b8049e8265964e6e2735bae2d1841" name="add7b8049e8265964e6e2735bae2d1841"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add7b8049e8265964e6e2735bae2d1841">&#9670;&#160;</a></span>ExitSubThread()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ExitSubThread </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>thread_id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ExitSubThread &ndash; exit a sub thread from process. </p>
 
 </div>
 </div>
@@ -1871,6 +1905,51 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">pid</td><td>&ndash; process id </td></tr>
     <tr><td class="paramname">signum</td><td>&ndash; signal number </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aae7bf58a17c0d7ba92009bd5c39b8ea5" name="aae7bf58a17c0d7ba92009bd5c39b8ea5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae7bf58a17c0d7ba92009bd5c39b8ea5">&#9670;&#160;</a></span>SendSignalToThread()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SendSignalToThread </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>thread_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>signum</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>SendSignalToThread &ndash; sends a signal to specific thread. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">thread_id</td><td>&ndash; thread id </td></tr>
+    <tr><td class="paramname">signum</td><td>&ndash; signal num tu kela </td></tr>
   </table>
   </dd>
 </dl>

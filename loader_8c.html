@@ -226,6 +226,8 @@ Functions</h2></td></tr>
 <tr class="memitem:a7897d2c42d7adc72398b56a0448a5d18" id="r_a7897d2c42d7adc72398b56a0448a5d18"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="loader_8c.html#a7897d2c42d7adc72398b56a0448a5d18">AuProcessEntUser</a> (<a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> rcx)</td></tr>
 <tr class="memdesc:a7897d2c42d7adc72398b56a0448a5d18"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuProcessEntUser &ndash; main kernel thread call in order to enter user for processes.  <br /></td></tr>
 <tr class="separator:a7897d2c42d7adc72398b56a0448a5d18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7367ce5476d0907c485283987ecfa31" id="r_ab7367ce5476d0907c485283987ecfa31"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="loader_8c.html#ab7367ce5476d0907c485283987ecfa31">AuProcessEntSubThread</a> (<a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> rcx)</td></tr>
+<tr class="separator:ab7367ce5476d0907c485283987ecfa31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae82de74dc9e95135c47c7f4a4f803112" id="r_ae82de74dc9e95135c47c7f4a4f803112"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="loader_8c.html#ae82de74dc9e95135c47c7f4a4f803112">AuLoaderMapExecFromCache</a> (<a class="el" href="process_8h.html#af7383c550ee680158b77cf18ef1d275a">AuProcess</a> *proc, <a class="el" href="mmfile_8h.html#a7b1ef5aa3cf45509abbc317535d6dbcc">AuMMFileBack</a> *fb, <a class="el" href="BaseHdr_2pe_8h.html#a7d164fdaa649432afb8e0c370dd5685c">PIMAGE_NT_HEADERS</a> nt, <a class="el" href="BaseHdr_2pe_8h.html#a9e29f07df01ebd5e7bf6a516c1ca0062">PSECTION_HEADER</a> secthdr, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> _image_base_)</td></tr>
 <tr class="memdesc:ae82de74dc9e95135c47c7f4a4f803112"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuLoaderMapExecFromCache &ndash; file cache lookup and map directly from the file cache page collections, this function called from inside AuLoadExecToProcess.  <br /></td></tr>
 <tr class="separator:ae82de74dc9e95135c47c7f4a4f803112"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -467,6 +469,25 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success -1 on failure </dd></dl>
+
+</div>
+</div>
+<a id="ab7367ce5476d0907c485283987ecfa31" name="ab7367ce5476d0907c485283987ecfa31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7367ce5476d0907c485283987ecfa31">&#9670;&#160;</a></span>AuProcessEntSubThread()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AuProcessEntSubThread </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>&#160;</td>
+          <td class="paramname"><em>rcx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>AuProcessEntSubThread &ndash; Sub process thread entry helper </p>
 
 </div>
 </div>

@@ -634,7 +634,7 @@ Macros</h2></td></tr>
 <tr class="separator:ac6b760e39e1ec9a3cad23d72a6b4f489"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a773a43db0ff9a2772cad80d2035a1e3f" id="r_a773a43db0ff9a2772cad80d2035a1e3f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actbl2_8h.html#a773a43db0ff9a2772cad80d2035a1e3f">ACPI_NFIT_NODE_ID_OFFSET</a>&#160;&#160;&#160;16</td></tr>
 <tr class="separator:a773a43db0ff9a2772cad80d2035a1e3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13f38b9a463921658ce25aaaf5035086" id="r_a13f38b9a463921658ce25aaaf5035086"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actbl2_8h.html#a13f38b9a463921658ce25aaaf5035086">ACPI_NFIT_BUILD_DEVICE_HANDLE</a>(dimm,  channel,  memory,  <a class="el" href="Libs_2XEClib_2includes_2sys_2socket_8h.html#ae5817a73339cc5e215ec6d57dca1fd2b">socket</a>,  node)</td></tr>
+<tr class="memitem:a13f38b9a463921658ce25aaaf5035086" id="r_a13f38b9a463921658ce25aaaf5035086"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actbl2_8h.html#a13f38b9a463921658ce25aaaf5035086">ACPI_NFIT_BUILD_DEVICE_HANDLE</a>(dimm,  <a class="el" href="wifi_8cpp.html#a715f5cb061d11eb75981741eda4dafcd">channel</a>,  memory,  <a class="el" href="Libs_2XEClib_2includes_2sys_2socket_8h.html#ae5817a73339cc5e215ec6d57dca1fd2b">socket</a>,  node)</td></tr>
 <tr class="separator:a13f38b9a463921658ce25aaaf5035086"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b5510ccd9e2470c91e944c8fda7e3d8" id="r_a4b5510ccd9e2470c91e944c8fda7e3d8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actbl2_8h.html#a4b5510ccd9e2470c91e944c8fda7e3d8">ACPI_NFIT_GET_DIMM_NUMBER</a>(handle)&#160;&#160;&#160;    ((handle) &amp; <a class="el" href="actbl2_8h.html#a0abb8da6e62d6e34323f033e75e1b74b">ACPI_NFIT_DIMM_NUMBER_MASK</a>)</td></tr>
 <tr class="separator:a4b5510ccd9e2470c91e944c8fda7e3d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2213,7 +2213,7 @@ Enumerations</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">channel, </td>
+          <td class="paramname"><a class="el" href="wifi_8cpp.html#a715f5cb061d11eb75981741eda4dafcd">channel</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -2241,7 +2241,7 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">    ((dimm)                                         | \</div>
-<div class="line">    ((channel) &lt;&lt; <a class="code hl_define" href="actbl2_8h.html#a63e9f14d3bd97e486f1bfcc36accf32a">ACPI_NFIT_CHANNEL_NUMBER_OFFSET</a>)  | \</div>
+<div class="line">    ((<a class="code hl_variable" href="wifi_8cpp.html#a715f5cb061d11eb75981741eda4dafcd">channel</a>) &lt;&lt; <a class="code hl_define" href="actbl2_8h.html#a63e9f14d3bd97e486f1bfcc36accf32a">ACPI_NFIT_CHANNEL_NUMBER_OFFSET</a>)  | \</div>
 <div class="line">    ((memory)  &lt;&lt; <a class="code hl_define" href="actbl2_8h.html#a099729e7bca7b61fe30c171e8d849fce">ACPI_NFIT_MEMORY_ID_OFFSET</a>)       | \</div>
 <div class="line">    ((<a class="code hl_function" href="Libs_2XEClib_2includes_2sys_2socket_8h.html#ae5817a73339cc5e215ec6d57dca1fd2b">socket</a>)  &lt;&lt; <a class="code hl_define" href="actbl2_8h.html#ac6b760e39e1ec9a3cad23d72a6b4f489">ACPI_NFIT_SOCKET_ID_OFFSET</a>)       | \</div>
 <div class="line">    ((node)    &lt;&lt; <a class="code hl_define" href="actbl2_8h.html#a773a43db0ff9a2772cad80d2035a1e3f">ACPI_NFIT_NODE_ID_OFFSET</a>))</div>
@@ -2250,6 +2250,7 @@ Enumerations</h2></td></tr>
 <div class="ttc" id="aactbl2_8h_html_a63e9f14d3bd97e486f1bfcc36accf32a"><div class="ttname"><a href="actbl2_8h.html#a63e9f14d3bd97e486f1bfcc36accf32a">ACPI_NFIT_CHANNEL_NUMBER_OFFSET</a></div><div class="ttdeci">#define ACPI_NFIT_CHANNEL_NUMBER_OFFSET</div><div class="ttdef"><b>Definition</b> actbl2.h:1485</div></div>
 <div class="ttc" id="aactbl2_8h_html_a773a43db0ff9a2772cad80d2035a1e3f"><div class="ttname"><a href="actbl2_8h.html#a773a43db0ff9a2772cad80d2035a1e3f">ACPI_NFIT_NODE_ID_OFFSET</a></div><div class="ttdeci">#define ACPI_NFIT_NODE_ID_OFFSET</div><div class="ttdef"><b>Definition</b> actbl2.h:1488</div></div>
 <div class="ttc" id="aactbl2_8h_html_ac6b760e39e1ec9a3cad23d72a6b4f489"><div class="ttname"><a href="actbl2_8h.html#ac6b760e39e1ec9a3cad23d72a6b4f489">ACPI_NFIT_SOCKET_ID_OFFSET</a></div><div class="ttdeci">#define ACPI_NFIT_SOCKET_ID_OFFSET</div><div class="ttdef"><b>Definition</b> actbl2.h:1487</div></div>
+<div class="ttc" id="awifi_8cpp_html_a715f5cb061d11eb75981741eda4dafcd"><div class="ttname"><a href="wifi_8cpp.html#a715f5cb061d11eb75981741eda4dafcd">channel</a></div><div class="ttdeci">uint8_t channel</div><div class="ttdef"><b>Definition</b> wifi.cpp:795</div></div>
 </div><!-- fragment -->
 </div>
 </div>

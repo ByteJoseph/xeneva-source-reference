@@ -112,6 +112,8 @@ Macros</h2></td></tr>
 <tr class="separator:abf91cff2a1f1e63a9f9343bf94794b45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74bf8259cbf86a13130a2d18413de50f" id="r_a74bf8259cbf86a13130a2d18413de50f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pmmngr_8h.html#a74bf8259cbf86a13130a2d18413de50f">AURORA_PAGE_NORMAL</a>&#160;&#160;&#160;(1ULL &lt;&lt; 3)</td></tr>
 <tr class="separator:a74bf8259cbf86a13130a2d18413de50f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad83456f24c17cdcb95d5d1626727d456" id="r_ad83456f24c17cdcb95d5d1626727d456"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pmmngr_8h.html#ad83456f24c17cdcb95d5d1626727d456">PMM_OWNER_KERNEL</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:ad83456f24c17cdcb95d5d1626727d456"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c672939171ba774d56e1f76338140b6" id="r_a1c672939171ba774d56e1f76338140b6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pmmngr_8h.html#a1c672939171ba774d56e1f76338140b6">PMM_INVALID_PHYS</a>&#160;&#160;&#160;UINT64_MAX</td></tr>
 <tr class="separator:a1c672939171ba774d56e1f76338140b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:affaac2c7d6d993f13bd6c60c3570a713" id="r_affaac2c7d6d993f13bd6c60c3570a713"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pmmngr_8h.html#affaac2c7d6d993f13bd6c60c3570a713">AuPmmngrAllocPage</a>(type)&#160;&#160;&#160;((<a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>)<a class="el" href="pmmngr_8h.html#a3eae16cdcca7744bcb2bb5d0fa7394e5">AuPmmngrAlloc</a>())</td></tr>
@@ -130,6 +132,14 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ac7c97b760f239c0058814036c9dd8e03" id="r_ac7c97b760f239c0058814036c9dd8e03"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pmmngr_8h.html#ac7c97b760f239c0058814036c9dd8e03">AuPmmngrAllocPageForOwner</a> (<a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> page_type, <a class="el" href="acefiex_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> owner)</td></tr>
+<tr class="separator:ac7c97b760f239c0058814036c9dd8e03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a151a0f7abd27bde987ebf1b57be2c1e3" id="r_a151a0f7abd27bde987ebf1b57be2c1e3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pmmngr_8h.html#a151a0f7abd27bde987ebf1b57be2c1e3">AuPmmngrAllocPagesForOwner</a> (<a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> pages, <a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> alignment_pages, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> max_phys_inclusive, <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> page_type, <a class="el" href="acefiex_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> owner)</td></tr>
+<tr class="separator:a151a0f7abd27bde987ebf1b57be2c1e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ce350bc9ab36e055dfa5db55b794f9f" id="r_a7ce350bc9ab36e055dfa5db55b794f9f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pmmngr_8h.html#a7ce350bc9ab36e055dfa5db55b794f9f">AuPmmOwnerPages</a> (<a class="el" href="acefiex_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> owner)</td></tr>
+<tr class="separator:a7ce350bc9ab36e055dfa5db55b794f9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a695b79e77dea559c01d49f39cf263124" id="r_a695b79e77dea559c01d49f39cf263124"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pmmngr_8h.html#a695b79e77dea559c01d49f39cf263124">AuPmmOwnerTeardownCheck</a> (<a class="el" href="acefiex_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> owner, const char *tag)</td></tr>
+<tr class="separator:a695b79e77dea559c01d49f39cf263124"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13457b62e4feacef08d19976d455a649" id="r_a13457b62e4feacef08d19976d455a649"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pmmngr_8h.html#a13457b62e4feacef08d19976d455a649">AuPmmngrInitialize</a> (<a class="el" href="BaseHdr_2aurora_8h.html#a886498d078ece21b18b0bf2dad40fccd">KERNEL_BOOT_INFO</a> *info)</td></tr>
 <tr class="separator:a13457b62e4feacef08d19976d455a649"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3eae16cdcca7744bcb2bb5d0fa7394e5" id="r_a3eae16cdcca7744bcb2bb5d0fa7394e5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pmmngr_8h.html#a3eae16cdcca7744bcb2bb5d0fa7394e5">AuPmmngrAlloc</a> ()</td></tr>
@@ -320,6 +330,20 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ad83456f24c17cdcb95d5d1626727d456" name="ad83456f24c17cdcb95d5d1626727d456"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad83456f24c17cdcb95d5d1626727d456">&#9670;&#160;</a></span>PMM_OWNER_KERNEL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PMM_OWNER_KERNEL&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="a3237e325b936017f4067c5bf16f2a514" name="a3237e325b936017f4067c5bf16f2a514"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3237e325b936017f4067c5bf16f2a514">&#9670;&#160;</a></span>AuPageDesc</h2>
@@ -415,6 +439,80 @@ Functions</h2></td></tr>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>num</em></td><td>)</td>
           <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac7c97b760f239c0058814036c9dd8e03" name="ac7c97b760f239c0058814036c9dd8e03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7c97b760f239c0058814036c9dd8e03">&#9670;&#160;</a></span>AuPmmngrAllocPageForOwner()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> AuPmmngrAllocPageForOwner </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramname"><em>page_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="acefiex_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td>
+          <td class="paramname"><em>owner</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a151a0f7abd27bde987ebf1b57be2c1e3" name="a151a0f7abd27bde987ebf1b57be2c1e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a151a0f7abd27bde987ebf1b57be2c1e3">&#9670;&#160;</a></span>AuPmmngrAllocPagesForOwner()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> AuPmmngrAllocPagesForOwner </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td>
+          <td class="paramname"><em>pages</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td>
+          <td class="paramname"><em>alignment_pages</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>&#160;</td>
+          <td class="paramname"><em>max_phys_inclusive</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramname"><em>page_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="acefiex_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td>
+          <td class="paramname"><em>owner</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -667,6 +765,60 @@ Functions</h2></td></tr>
           <td></td>
           <td class="paramtype"><a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
           <td class="paramname"><em>flags</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7ce350bc9ab36e055dfa5db55b794f9f" name="a7ce350bc9ab36e055dfa5db55b794f9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ce350bc9ab36e055dfa5db55b794f9f">&#9670;&#160;</a></span>AuPmmOwnerPages()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> AuPmmOwnerPages </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="acefiex_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td>
+          <td class="paramname"><em>owner</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a695b79e77dea559c01d49f39cf263124" name="a695b79e77dea559c01d49f39cf263124"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a695b79e77dea559c01d49f39cf263124">&#9670;&#160;</a></span>AuPmmOwnerTeardownCheck()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AuPmmOwnerTeardownCheck </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="acefiex_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td>
+          <td class="paramname"><em>owner</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>tag</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
