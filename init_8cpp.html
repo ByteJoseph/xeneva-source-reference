@@ -90,8 +90,8 @@ $(function() {
 <code>#include &lt;<a class="el" href="x86__64__lowlevel_8h_source.html">Hal/x86_64_lowlevel.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="x86__64__cpu_8h_source.html">Hal/x86_64_cpu.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="apic_8h_source.html">Hal/apic.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="spinlock_8h_source.html">Sync/spinlock.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="serial_8h_source.html">Hal/serial.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="Sync_2spinlock_8h_source.html">Sync/spinlock.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="Hal_2serial_8h_source.html">Hal/serial.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="pcpu_8h_source.html">Hal/pcpu.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="kmalloc_8h_source.html">Mm/kmalloc.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="mmap_8h_source.html">Mm/mmap.h</a>&gt;</code><br />
@@ -99,7 +99,7 @@ $(function() {
 <code>#include &lt;<a class="el" href="buddy_8h_source.html">Mm/buddy.h</a>&gt;</code><br />
 <code>#include &lt;ahci.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="vfs_8h_source.html">Fs/vfs.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="tty_8h_source.html">Fs/tty.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="Fs_2tty_8h_source.html">Fs/tty.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="pipe_8h_source.html">Fs/pipe.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="initrd_8h_source.html">Fs/initrd.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="mouse_8h_source.html">Drivers/mouse.h</a>&gt;</code><br />
@@ -146,7 +146,7 @@ Include dependency graph for init.cpp:</div>
 <area shape="poly" title=" " alt="" coords="1751,25,1629,31,1491,42,1364,59,1312,69,1274,81,1244,95,1222,109,1205,127,1186,153,1172,183,1165,212,1160,211,1167,181,1181,151,1200,123,1219,105,1241,90,1272,76,1311,64,1363,53,1491,37,1629,26,1751,20"/>
 <area shape="rect" href="vfs_8h.html" title=" " alt="" coords="463,299,536,324"/>
 <area shape="poly" title=" " alt="" coords="1751,23,1453,27,1066,36,711,54,584,66,509,81,479,94,457,107,439,125,423,153,421,164,423,177,427,215,440,249,456,270,474,288,470,292,452,274,436,252,422,216,418,178,416,164,418,151,435,122,453,103,477,89,508,76,583,61,711,48,1066,31,1453,21,1751,17"/>
-<area shape="rect" href="spinlock_8h.html" title=" " alt="" coords="1421,299,1543,324"/>
+<area shape="rect" href="Sync_2spinlock_8h.html" title=" " alt="" coords="1421,299,1543,324"/>
 <area shape="poly" title=" " alt="" coords="1795,33,1747,51,1724,64,1703,81,1684,104,1676,127,1668,152,1652,179,1619,214,1582,246,1514,294,1511,289,1578,242,1615,211,1648,176,1664,149,1671,125,1680,102,1699,77,1721,60,1745,47,1793,28"/>
 <area shape="rect" href="hal_8h.html" title=" " alt="" coords="1558,152,1638,177"/>
 <area shape="poly" title=" " alt="" coords="1772,33,1714,51,1685,64,1658,81,1631,109,1611,141,1607,138,1627,106,1655,77,1682,60,1712,46,1771,28"/>
@@ -158,7 +158,7 @@ Include dependency graph for init.cpp:</div>
 <area shape="poly" title=" " alt="" coords="1792,33,1714,53,1630,81,1557,114,1497,147,1494,143,1555,109,1628,76,1713,48,1791,28"/>
 <area shape="rect" href="apic_8h.html" title=" " alt="" coords="2193,299,2280,324"/>
 <area shape="poly" title=" " alt="" coords="1873,28,1912,49,1953,77,1978,100,1997,122,2024,165,2051,206,2070,227,2096,248,2139,274,2183,292,2181,297,2136,279,2092,253,2066,231,2047,209,2019,168,1992,126,1974,104,1950,81,1909,53,1870,33"/>
-<area shape="rect" href="serial_8h.html" title=" " alt="" coords="2647,152,2743,177"/>
+<area shape="rect" href="Hal_2serial_8h.html" title=" " alt="" coords="2647,152,2743,177"/>
 <area shape="poly" title=" " alt="" coords="1938,20,2334,38,2523,55,2590,65,2630,76,2648,89,2664,105,2686,138,2682,141,2659,108,2645,93,2628,81,2589,70,2523,60,2334,44,1938,25"/>
 <area shape="rect" title=" " alt="" coords="2797,225,2868,251"/>
 <area shape="poly" title=" " alt="" coords="1938,17,2112,19,2321,28,2521,46,2602,59,2663,76,2714,104,2758,141,2794,180,2820,213,2815,216,2790,183,2754,145,2711,108,2661,81,2601,64,2520,51,2321,33,2111,25,1938,22"/>
@@ -172,7 +172,7 @@ Include dependency graph for init.cpp:</div>
 <area shape="poly" title=" " alt="" coords="1751,24,1379,40,1139,57,892,81,891,76,1138,52,1379,35,1751,19"/>
 <area shape="rect" title=" " alt="" coords="3353,79,3414,104"/>
 <area shape="poly" title=" " alt="" coords="1938,18,2234,22,2633,33,3035,50,3205,62,3339,76,3339,82,3205,67,3034,55,2632,38,2233,28,1938,23"/>
-<area shape="rect" href="tty_8h.html" title=" " alt="" coords="1713,79,1782,104"/>
+<area shape="rect" href="Fs_2tty_8h.html" title=" " alt="" coords="1713,79,1782,104"/>
 <area shape="poly" title=" " alt="" coords="1831,33,1776,72,1773,68,1827,29"/>
 <area shape="rect" href="pipe_8h.html" title=" " alt="" coords="5,225,87,251"/>
 <area shape="poly" title=" " alt="" coords="1751,22,1400,24,930,32,698,40,493,50,336,64,280,72,244,81,189,109,139,146,97,184,67,216,63,213,93,180,136,142,186,105,242,76,279,67,335,58,493,45,698,34,930,27,1400,19,1751,17"/>

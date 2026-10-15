@@ -603,7 +603,7 @@ Variables</h2></td></tr>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">EFI_SUCCESS</td><td>File information was returned successfully. </td></tr>
+    <tr><td class="paramname">EFI_SUCCESS</td><td><a class="el" href="structFile.html">File</a> information was returned successfully. </td></tr>
     <tr><td class="paramname">EFI_VOLUME_CORRUPTED</td><td>The file system structures have been corrupted. </td></tr>
     <tr><td class="paramname">EFI_DEVICE_ERROR</td><td>The device reported an error. </td></tr>
     <tr><td class="paramname">EFI_NO_MEDIA</td><td>The device media is not present. </td></tr>
@@ -896,7 +896,7 @@ Variables</h2></td></tr>
 <p>This function allocates a buffer to store the file's information. It's the caller's responsibility to free the buffer.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">FileHandle</td><td>A File Handle.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">FileHandle</td><td>A <a class="el" href="structFile.html">File</a> Handle.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1191,7 +1191,7 @@ Variables</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">FileName</td><td>Points to the NULL-terminated UCS-2 encoded file name. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">FileHandle</td><td>On return, points to the file handle. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">OpenMode</td><td>File open mode. Either EFI_FILE_MODE_READ or EFI_FILE_MODE_WRITE from section 12.4 of the UEFI Specification. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">OpenMode</td><td><a class="el" href="structFile.html">File</a> open mode. Either EFI_FILE_MODE_READ or EFI_FILE_MODE_WRITE from section 12.4 of the UEFI Specification. </td></tr>
   </table>
   </dd>
 </dl>

@@ -142,7 +142,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>This function returns the version value associated with the driver specified by This.</p>
-<p>Retrieves the version of the driver that is used by the EFI Boot Service ConnectController() to sort the set of Driver Binding Protocols in order from highest priority to lowest priority. For drivers that support the Driver Family Override Protocol, those drivers are sorted so that the drivers with higher values returned by GetVersion() are higher priority than drivers that return lower values from GetVersion().</p>
+<p>Retrieves the version of the driver that is used by the EFI Boot <a class="el" href="structService.html">Service</a> ConnectController() to sort the set of Driver Binding Protocols in order from highest priority to lowest priority. For drivers that support the Driver Family Override Protocol, those drivers are sorted so that the drivers with higher values returned by GetVersion() are higher priority than drivers that return lower values from GetVersion().</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">This</td><td>A pointer to the EFI_DRIVER_FAMILY_OVERRIDE_PROTOCOL instance.</td></tr>

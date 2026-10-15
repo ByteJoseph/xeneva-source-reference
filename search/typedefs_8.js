@@ -23,5 +23,9 @@ var searchData=
   ['hiddescriptor_20',['hiddescriptor',['../BaseHdr_2Drivers_2hid_8h.html#a08b09bc2cc7759f0a411a9ed3be0c543',1,'HIDDescriptor:&#160;hid.h'],['../Drivers_2USB_2hid_2hid_8h.html#a08b09bc2cc7759f0a411a9ed3be0c543',1,'HIDDescriptor:&#160;hid.h'],['../Drivers_2Usb3_2classes_2hid_8h.html#a08b09bc2cc7759f0a411a9ed3be0c543',1,'HIDDescriptor:&#160;hid.h']]],
   ['hiddescriptorlink_21',['hiddescriptorlink',['../BaseHdr_2Drivers_2hid_8h.html#a925bf5391f35eb08c02d21e94e1e3d8c',1,'HIDDescriptorLink:&#160;hid.h'],['../Drivers_2USB_2hid_2hid_8h.html#a925bf5391f35eb08c02d21e94e1e3d8c',1,'HIDDescriptorLink:&#160;hid.h'],['../Drivers_2Usb3_2classes_2hid_8h.html#a925bf5391f35eb08c02d21e94e1e3d8c',1,'HIDDescriptorLink:&#160;hid.h']]],
   ['huff_5ftable_5ft_22',['huff_table_t',['../minimp3_8cpp.html#ab8638f701a2ffd126655e6e6e3c85133',1,'minimp3.cpp']]],
-  ['huffinfo_23',['huffinfo',['../coder_8h.html#adb9b41df1e1f9e21aad966cb745d5b1a',1,'HuffInfo:&#160;coder.h'],['../sbr_8h.html#adb9b41df1e1f9e21aad966cb745d5b1a',1,'HuffInfo:&#160;sbr.h']]]
+  ['huffinfo_23',['huffinfo',['../coder_8h.html#adb9b41df1e1f9e21aad966cb745d5b1a',1,'HuffInfo:&#160;coder.h'],['../sbr_8h.html#adb9b41df1e1f9e21aad966cb745d5b1a',1,'HuffInfo:&#160;sbr.h']]],
+  ['hwbar_24',['HwBar',['../devhw_8c.html#a118a557148b13ac8dd731b104d0e81ee',1,'devhw.c']]],
+  ['hwdma_25',['HwDma',['../devhw_8c.html#a08ba2c62ca2066da338ebc93acfc59f1',1,'devhw.c']]],
+  ['hwmap_26',['HwMap',['../devhw_8c.html#a72b60a6b4c98bee721383bf58fec6c0e',1,'devhw.c']]],
+  ['hwpci_27',['HwPci',['../devhw_8c.html#a72b44bcdedfb6bb58ddbdeb5f40145ed',1,'devhw.c']]]
 ];

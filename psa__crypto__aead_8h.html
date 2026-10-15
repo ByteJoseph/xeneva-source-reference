@@ -992,9 +992,9 @@ Functions</h2></td></tr>
 <p>Encrypt or decrypt a message fragment in an active AEAD operation.</p>
 <dl class="section note"><dt>Note</dt><dd>The signature of this function is that of a PSA driver aead_update entry point. This function behaves as an aead_update entry point as defined in the PSA driver interface specification for transparent drivers.</dd></dl>
 <p>Before calling this function, the PSA core will:</p><ol type="1">
-<li>Call either <a class="el" href="psa__crypto__aead_8h.html#a0e00c524ba005bd3c6063df3b1ef0f33">mbedtls_psa_aead_encrypt_setup()</a> or <a class="el" href="psa__crypto__aead_8h.html#a6dfe1ec41dd0ce6705cd6688ceb42526">mbedtls_psa_aead_decrypt_setup()</a>. The choice of setup function determines whether this function encrypts or decrypts its input.</li>
+<li><a class="el" href="structCall.html">Call</a> either <a class="el" href="psa__crypto__aead_8h.html#a0e00c524ba005bd3c6063df3b1ef0f33">mbedtls_psa_aead_encrypt_setup()</a> or <a class="el" href="psa__crypto__aead_8h.html#a6dfe1ec41dd0ce6705cd6688ceb42526">mbedtls_psa_aead_decrypt_setup()</a>. The choice of setup function determines whether this function encrypts or decrypts its input.</li>
 <li>Set the nonce with <a class="el" href="psa__crypto__aead_8h.html#aee66733c7e992e621f58c7ab7588183e">mbedtls_psa_aead_set_nonce()</a>.</li>
-<li>Call <a class="el" href="psa__crypto__aead_8h.html#a66f19c78caa49f560b03ff50a384ab86">mbedtls_psa_aead_update_ad()</a> to pass all the additional data.</li>
+<li><a class="el" href="structCall.html">Call</a> <a class="el" href="psa__crypto__aead_8h.html#a66f19c78caa49f560b03ff50a384ab86">mbedtls_psa_aead_update_ad()</a> to pass all the additional data.</li>
 </ol>
 <p>If this function returns an error status, the PSA core will call <a class="el" href="psa__crypto__aead_8h.html#aa0999053f856c555a70d8c245e829d9c">mbedtls_psa_aead_abort()</a>.</p>
 <p>This function does not require the input to be aligned to any particular block boundary. If the implementation can only process a whole block at a time, it must consume all the input provided, but it may delay the end of the corresponding output until a subsequent call to <a class="el" href="psa__crypto__aead_8h.html#a65729568b87c01c42308eddab37f4e02">mbedtls_psa_aead_update()</a>, <a class="el" href="psa__crypto__aead_8h.html#a97de42562d83cd6f8a84f106858b4764">mbedtls_psa_aead_finish()</a> provides sufficient input. The amount of data that can be delayed in this way is bounded by <a class="el" href="crypto__sizes_8h.html#a38c502f21653f1b3708ae8897d1bb01d">PSA_AEAD_UPDATE_OUTPUT_SIZE</a>.</p>
@@ -1059,7 +1059,7 @@ Functions</h2></td></tr>
 <p>Additional data is authenticated, but not encrypted.</p>
 <p>The PSA core can call this function multiple times to pass successive fragments of the additional data. It will not call this function after passing data to encrypt or decrypt with <a class="el" href="psa__crypto__aead_8h.html#a65729568b87c01c42308eddab37f4e02">mbedtls_psa_aead_update()</a>.</p>
 <p>Before calling this function, the PSA core will:</p><ol type="1">
-<li>Call either <a class="el" href="psa__crypto__aead_8h.html#a0e00c524ba005bd3c6063df3b1ef0f33">mbedtls_psa_aead_encrypt_setup()</a> or <a class="el" href="psa__crypto__aead_8h.html#a6dfe1ec41dd0ce6705cd6688ceb42526">mbedtls_psa_aead_decrypt_setup()</a>.</li>
+<li><a class="el" href="structCall.html">Call</a> either <a class="el" href="psa__crypto__aead_8h.html#a0e00c524ba005bd3c6063df3b1ef0f33">mbedtls_psa_aead_encrypt_setup()</a> or <a class="el" href="psa__crypto__aead_8h.html#a6dfe1ec41dd0ce6705cd6688ceb42526">mbedtls_psa_aead_decrypt_setup()</a>.</li>
 <li>Set the nonce with <a class="el" href="psa__crypto__aead_8h.html#aee66733c7e992e621f58c7ab7588183e">mbedtls_psa_aead_set_nonce()</a>.</li>
 </ol>
 <p>If this function returns an error status, the PSA core will call <a class="el" href="psa__crypto__aead_8h.html#aa0999053f856c555a70d8c245e829d9c">mbedtls_psa_aead_abort()</a>.</p>

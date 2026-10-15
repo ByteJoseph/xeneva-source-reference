@@ -338,19 +338,19 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span> </div>
 <div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>  <span class="comment">/* print a message */</span></div>
 <div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>  <a class="code hl_define" href="ftconfig_8h.html#ad9b0c555bd9c667187a720e265943bfc">FT_BASE</a>( <span class="keywordtype">void</span> )</div>
-<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>  FT_Message( <span class="keyword">const</span> <span class="keywordtype">char</span>*  fmt,</div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>  FT_Message( <span class="keyword">const</span> <span class="keywordtype">char</span>*  <a class="code hl_variable" href="debugfs_8h.html#a74ed1e77776625232642440d5479c092">fmt</a>,</div>
 <div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>              ... );</div>
 <div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span> </div>
 <div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>  <span class="comment">/* print a message and exit */</span></div>
 <div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>  <a class="code hl_define" href="ftconfig_8h.html#ad9b0c555bd9c667187a720e265943bfc">FT_BASE</a>( <span class="keywordtype">void</span> )</div>
-<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>  FT_Panic( <span class="keyword">const</span> <span class="keywordtype">char</span>*  fmt,</div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>  FT_Panic( <span class="keyword">const</span> <span class="keywordtype">char</span>*  <a class="code hl_variable" href="debugfs_8h.html#a74ed1e77776625232642440d5479c092">fmt</a>,</div>
 <div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>            ... );</div>
 <div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span> </div>
 <div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>  <span class="comment">/* report file name and line number of an error */</span></div>
 <div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>  <a class="code hl_define" href="ftconfig_8h.html#ad9b0c555bd9c667187a720e265943bfc">FT_BASE</a>( <span class="keywordtype">int</span> )</div>
 <div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>  FT_Throw( <a class="code hl_typedef" href="fttypes_8h.html#a64c8060bdb3d6eec844a1bf670e06bdd">FT_Error</a>     error,</div>
 <div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>            <span class="keywordtype">int</span>          line,</div>
-<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>            <span class="keyword">const</span> <span class="keywordtype">char</span>*  file );</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>            <span class="keyword">const</span> <span class="keywordtype">char</span>*  <a class="code hl_struct" href="structfile.html">file</a> );</div>
 <div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span> </div>
 <div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span><span class="preprocessor">#endif </span><span class="comment">/* FT_DEBUG_LEVEL_ERROR */</span><span class="preprocessor"></span></div>
 <div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span> </div>
@@ -364,6 +364,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span> </div>
 <div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span> </div>
 <div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span><span class="comment">/* END */</span></div>
+<div class="ttc" id="adebugfs_8h_html_a74ed1e77776625232642440d5479c092"><div class="ttname"><a href="debugfs_8h.html#a74ed1e77776625232642440d5479c092">fmt</a></div><div class="ttdeci">static int const char * fmt</div><div class="ttdef"><b>Definition</b> debugfs.h:360</div></div>
 <div class="ttc" id="aft2build_8h_html"><div class="ttname"><a href="ft2build_8h.html">ft2build.h</a></div></div>
 <div class="ttc" id="aftconfig_8h_html_ad9b0c555bd9c667187a720e265943bfc"><div class="ttname"><a href="ftconfig_8h.html#ad9b0c555bd9c667187a720e265943bfc">FT_BASE</a></div><div class="ttdeci">#define FT_BASE(x)</div><div class="ttdef"><b>Definition</b> ftconfig.h:407</div></div>
 <div class="ttc" id="aftdebug_8h_html_a205f1d6093fcaf813104f3b3fe50c011"><div class="ttname"><a href="ftdebug_8h.html#a205f1d6093fcaf813104f3b3fe50c011">FT_Trace_Get_Name</a></div><div class="ttdeci">FT_Trace_Get_Name(FT_Int idx)</div></div>
@@ -375,6 +376,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="ttc" id="aftheader_8h_html_a72ee5814b3ae378ebb7fd3a8e3ddec14"><div class="ttname"><a href="ftheader_8h.html#a72ee5814b3ae378ebb7fd3a8e3ddec14">FT_BEGIN_HEADER</a></div><div class="ttdeci">#define FT_BEGIN_HEADER</div><div class="ttdef"><b>Definition</b> ftheader.h:36</div></div>
 <div class="ttc" id="afttypes_8h_html_a64c8060bdb3d6eec844a1bf670e06bdd"><div class="ttname"><a href="fttypes_8h.html#a64c8060bdb3d6eec844a1bf670e06bdd">FT_Error</a></div><div class="ttdeci">int FT_Error</div><div class="ttdef"><b>Definition</b> fttypes.h:299</div></div>
 <div class="ttc" id="afttypes_8h_html_af90e5fb0d07e21be9fe6faa33f02484c"><div class="ttname"><a href="fttypes_8h.html#af90e5fb0d07e21be9fe6faa33f02484c">FT_Int</a></div><div class="ttdeci">signed int FT_Int</div><div class="ttdef"><b>Definition</b> fttypes.h:220</div></div>
+<div class="ttc" id="astructfile_html"><div class="ttname"><a href="structfile.html">file</a></div><div class="ttdef"><b>Definition</b> fs.h:106</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

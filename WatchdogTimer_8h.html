@@ -212,7 +212,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This function registers a handler that is to be invoked when the watchdog timer fires. By default, the EFI_WATCHDOG_TIMER protocol will call the Runtime Service ResetSystem() when the watchdog timer fires. If a NotifyFunction is registered, then the NotifyFunction will be called before the Runtime Service ResetSystem() is called. If NotifyFunction is NULL, then the watchdog handler is unregistered. If a watchdog handler is registered, then EFI_SUCCESS is returned. If an attempt is made to register a handler when a handler is already registered, then EFI_ALREADY_STARTED is returned. If an attempt is made to uninstall a handler when a handler is not installed, then return EFI_INVALID_PARAMETER.</p>
+<p>This function registers a handler that is to be invoked when the watchdog timer fires. By default, the EFI_WATCHDOG_TIMER protocol will call the Runtime <a class="el" href="structService.html">Service</a> ResetSystem() when the watchdog timer fires. If a NotifyFunction is registered, then the NotifyFunction will be called before the Runtime <a class="el" href="structService.html">Service</a> ResetSystem() is called. If NotifyFunction is NULL, then the watchdog handler is unregistered. If a watchdog handler is registered, then EFI_SUCCESS is returned. If an attempt is made to register a handler when a handler is already registered, then EFI_ALREADY_STARTED is returned. If an attempt is made to uninstall a handler when a handler is not installed, then return EFI_INVALID_PARAMETER.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">This</td><td>The EFI_WATCHDOG_TIMER_ARCH_PROTOCOL instance. </td></tr>

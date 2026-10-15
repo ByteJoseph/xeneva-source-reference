@@ -60,5 +60,6 @@ var searchData=
   ['ammotype_5ft_57',['ammotype_t',['../doomdef_8h.html#a109ff02105ecee6025bd7fc17ef5b07e',1,'doomdef.h']]],
   ['animenum_5ft_58',['animenum_t',['../wi__stuff_8c.html#a18fddbb708d9b24fbf90c52f1e5144ef',1,'wi_stuff.c']]],
   ['asl_5fcomment_5ftypes_59',['ASL_COMMENT_TYPES',['../aclocal_8h.html#a4c880fafc693d499bbfa31ea45237bfc',1,'aclocal.h']]],
-  ['aurora_5ffs_5ftype_60',['aurora_fs_type',['../fsprobe_8h.html#af8e66c5edf0cfbfb5566ae8eca01bca3',1,'aurora_fs_type:&#160;fsprobe.h'],['../fsprobe_8c.html#af8e66c5edf0cfbfb5566ae8eca01bca3',1,'aurora_fs_type:&#160;fsprobe.c']]]
+  ['aureskind_60',['AuResKind',['../aucomponent_8h.html#a2d276f9d35222a6f1c11c91becc915ce',1,'aucomponent.h']]],
+  ['aurora_5ffs_5ftype_61',['aurora_fs_type',['../fsprobe_8h.html#af8e66c5edf0cfbfb5566ae8eca01bca3',1,'aurora_fs_type:&#160;fsprobe.h'],['../fsprobe_8c.html#af8e66c5edf0cfbfb5566ae8eca01bca3',1,'aurora_fs_type:&#160;fsprobe.c']]]
 ];

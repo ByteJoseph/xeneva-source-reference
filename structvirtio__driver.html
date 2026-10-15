@@ -82,22 +82,30 @@ Collaboration diagram for virtio_driver:</div>
 <div class="dyncontent">
 <div class="center"><img src="structvirtio__driver__coll__graph.png" border="0" usemap="#avirtio__driver_coll__map" alt="Collaboration graph"/></div>
 <map name="avirtio__driver_coll__map" id="avirtio__driver_coll__map">
-<area shape="rect" title=" " alt="" coords="17,93,119,119"/>
-<area shape="rect" href="structvirtio__device__id.html" title=" " alt="" coords="5,5,131,31"/>
-<area shape="poly" title=" " alt="" coords="71,45,71,93,65,93,65,45"/>
+<area shape="rect" title=" " alt="" coords="81,93,182,119"/>
+<area shape="rect" href="structdevice__driver.html" title=" " alt="" coords="5,5,116,31"/>
+<area shape="poly" title=" " alt="" coords="81,39,124,91,119,94,77,43"/>
+<area shape="rect" href="structvirtio__device__id.html" title=" " alt="" coords="141,5,266,31"/>
+<area shape="poly" title=" " alt="" coords="187,43,143,95,139,91,183,39"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:aa68210af564ccec539211057669e5599" id="r_aa68210af564ccec539211057669e5599"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvirtio__driver.html#aa68210af564ccec539211057669e5599">name</a></td></tr>
-<tr class="separator:aa68210af564ccec539211057669e5599"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a299ea1fc1fd24187399095c2e7ea957a" id="r_a299ea1fc1fd24187399095c2e7ea957a"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvirtio__driver.html#a299ea1fc1fd24187399095c2e7ea957a">_device_driver_tail</a> [144]</td></tr>
-<tr class="separator:a299ea1fc1fd24187399095c2e7ea957a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae794fa25f17657233c6d5b882a59aace" id="r_ae794fa25f17657233c6d5b882a59aace"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structdevice__driver.html">device_driver</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvirtio__driver.html#ae794fa25f17657233c6d5b882a59aace">driver</a></td></tr>
+<tr class="separator:ae794fa25f17657233c6d5b882a59aace"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada4d08885408eb24e3ee1460e537abe2" id="r_ada4d08885408eb24e3ee1460e537abe2"><td class="memItemLeft" align="right" valign="top">const struct <a class="el" href="structvirtio__device__id.html">virtio_device_id</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvirtio__driver.html#ada4d08885408eb24e3ee1460e537abe2">id_table</a></td></tr>
 <tr class="separator:ada4d08885408eb24e3ee1460e537abe2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af863eb30de1b4bba643865a857f8b6e7" id="r_af863eb30de1b4bba643865a857f8b6e7"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvirtio__driver.html#af863eb30de1b4bba643865a857f8b6e7">_gap</a> [40]</td></tr>
-<tr class="separator:af863eb30de1b4bba643865a857f8b6e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3973246bf658b50681a9eaaec2784d7" id="r_ad3973246bf658b50681a9eaaec2784d7"><td class="memItemLeft" align="right" valign="top">const unsigned int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvirtio__driver.html#ad3973246bf658b50681a9eaaec2784d7">feature_table</a></td></tr>
+<tr class="separator:ad3973246bf658b50681a9eaaec2784d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6630ddf70843cd24af7a69740900b37c" id="r_a6630ddf70843cd24af7a69740900b37c"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvirtio__driver.html#a6630ddf70843cd24af7a69740900b37c">feature_table_size</a></td></tr>
+<tr class="separator:a6630ddf70843cd24af7a69740900b37c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a471f2e4e097dc8a073cadd1afac2e2" id="r_a9a471f2e4e097dc8a073cadd1afac2e2"><td class="memItemLeft" align="right" valign="top">const unsigned int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvirtio__driver.html#a9a471f2e4e097dc8a073cadd1afac2e2">feature_table_legacy</a></td></tr>
+<tr class="separator:a9a471f2e4e097dc8a073cadd1afac2e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a962f2f64e24e068b066c2cda628239a1" id="r_a962f2f64e24e068b066c2cda628239a1"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvirtio__driver.html#a962f2f64e24e068b066c2cda628239a1">feature_table_size_legacy</a></td></tr>
+<tr class="separator:a962f2f64e24e068b066c2cda628239a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b0402880edf9dfd6209971adaab0b16" id="r_a4b0402880edf9dfd6209971adaab0b16"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvirtio__driver.html#a4b0402880edf9dfd6209971adaab0b16">validate</a> )(struct <a class="el" href="structvirtio__device.html">virtio_device</a> *vdev)</td></tr>
+<tr class="separator:a4b0402880edf9dfd6209971adaab0b16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61e83c87eebcf52f7b368e13e38b0558" id="r_a61e83c87eebcf52f7b368e13e38b0558"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvirtio__driver.html#a61e83c87eebcf52f7b368e13e38b0558">probe</a> )(struct <a class="el" href="structvirtio__device.html">virtio_device</a> *vdev)</td></tr>
 <tr class="separator:a61e83c87eebcf52f7b368e13e38b0558"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e2e02279416c35b86478d2da4e4dd19" id="r_a6e2e02279416c35b86478d2da4e4dd19"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvirtio__driver.html#a6e2e02279416c35b86478d2da4e4dd19">scan</a> )(struct <a class="el" href="structvirtio__device.html">virtio_device</a> *vdev)</td></tr>
@@ -112,34 +120,6 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a24f0ef42f34acfebae75551fc7c80e56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a299ea1fc1fd24187399095c2e7ea957a" name="a299ea1fc1fd24187399095c2e7ea957a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a299ea1fc1fd24187399095c2e7ea957a">&#9670;&#160;</a></span>_device_driver_tail</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">unsigned char virtio_driver::_device_driver_tail[144]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="af863eb30de1b4bba643865a857f8b6e7" name="af863eb30de1b4bba643865a857f8b6e7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af863eb30de1b4bba643865a857f8b6e7">&#9670;&#160;</a></span>_gap</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">unsigned char virtio_driver::_gap[40]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ae881f966eeefd9ba79e0a0bfa79f80a9" name="ae881f966eeefd9ba79e0a0bfa79f80a9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae881f966eeefd9ba79e0a0bfa79f80a9">&#9670;&#160;</a></span>config_changed</h2>
 
@@ -148,6 +128,76 @@ Public Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">void(* virtio_driver::config_changed) (struct <a class="el" href="structvirtio__device.html">virtio_device</a> *vdev)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae794fa25f17657233c6d5b882a59aace" name="ae794fa25f17657233c6d5b882a59aace"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae794fa25f17657233c6d5b882a59aace">&#9670;&#160;</a></span>driver</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structdevice__driver.html">device_driver</a> virtio_driver::driver</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad3973246bf658b50681a9eaaec2784d7" name="ad3973246bf658b50681a9eaaec2784d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3973246bf658b50681a9eaaec2784d7">&#9670;&#160;</a></span>feature_table</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const unsigned int* virtio_driver::feature_table</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9a471f2e4e097dc8a073cadd1afac2e2" name="a9a471f2e4e097dc8a073cadd1afac2e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a471f2e4e097dc8a073cadd1afac2e2">&#9670;&#160;</a></span>feature_table_legacy</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const unsigned int* virtio_driver::feature_table_legacy</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6630ddf70843cd24af7a69740900b37c" name="a6630ddf70843cd24af7a69740900b37c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6630ddf70843cd24af7a69740900b37c">&#9670;&#160;</a></span>feature_table_size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int virtio_driver::feature_table_size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a962f2f64e24e068b066c2cda628239a1" name="a962f2f64e24e068b066c2cda628239a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a962f2f64e24e068b066c2cda628239a1">&#9670;&#160;</a></span>feature_table_size_legacy</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int virtio_driver::feature_table_size_legacy</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -176,20 +226,6 @@ Public Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">const struct <a class="el" href="structvirtio__device__id.html">virtio_device_id</a>* virtio_driver::id_table</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aa68210af564ccec539211057669e5599" name="aa68210af564ccec539211057669e5599"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa68210af564ccec539211057669e5599">&#9670;&#160;</a></span>name</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const char* virtio_driver::name</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -246,6 +282,20 @@ Public Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">void(* virtio_driver::scan) (struct <a class="el" href="structvirtio__device.html">virtio_device</a> *vdev)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4b0402880edf9dfd6209971adaab0b16" name="a4b0402880edf9dfd6209971adaab0b16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b0402880edf9dfd6209971adaab0b16">&#9670;&#160;</a></span>validate</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int(* virtio_driver::validate) (struct <a class="el" href="structvirtio__device.html">virtio_device</a> *vdev)</td>
         </tr>
       </table>
 </div><div class="memdoc">

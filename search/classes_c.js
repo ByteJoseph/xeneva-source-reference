@@ -165,5 +165,6 @@ var searchData=
   ['mpoint_5ft_162',['mpoint_t',['../structmpoint__t.html',1,'']]],
   ['music_5fmodule_5ft_163',['music_module_t',['../structmusic__module__t.html',1,'']]],
   ['musicinfo_5ft_164',['musicinfo_t',['../structmusicinfo__t.html',1,'']]],
-  ['mv_5ft_165',['mv_t',['../structmv__t.html',1,'']]]
+  ['mutex_165',['mutex',['../structmutex.html',1,'']]],
+  ['mv_5ft_166',['mv_t',['../structmv__t.html',1,'']]]
 ];

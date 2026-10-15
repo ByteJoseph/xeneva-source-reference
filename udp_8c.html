@@ -137,9 +137,9 @@ Include dependency graph for udp.c:</div>
 <area shape="poly" title=" " alt="" coords="1092,191,1112,224,1118,245,1117,266,1107,290,1093,311,1089,308,1102,287,1111,265,1113,245,1107,226,1087,194"/>
 <area shape="rect" href="BaseHdr_2stdint_8h.html" title=" " alt="" coords="84,401,155,427"/>
 <area shape="poly" title=" " alt="" coords="1037,183,944,185,816,192,672,210,599,225,528,243,503,254,478,268,303,343,163,399,161,394,301,338,475,263,500,249,526,237,598,219,671,205,816,187,944,179,1037,177"/>
-<area shape="rect" href="capability_8h.html" title=" " alt="" coords="977,240,1102,265"/>
+<area shape="rect" href="Cap_2capability_8h.html" title=" " alt="" coords="977,240,1102,265"/>
 <area shape="poly" title=" " alt="" coords="1075,194,1055,229,1050,227,1070,191"/>
-<area shape="rect" href="spinlock_8h.html" title=" " alt="" coords="830,240,953,265"/>
+<area shape="rect" href="Sync_2spinlock_8h.html" title=" " alt="" coords="830,240,953,265"/>
 <area shape="poly" title=" " alt="" coords="1050,195,936,237,934,232,1048,190"/>
 <area shape="rect" href="BaseHdr_2list_8h.html" title=" " alt="" coords="16,240,71,265"/>
 <area shape="poly" title=" " alt="" coords="1037,185,667,204,404,221,134,243,85,248,84,243,134,237,403,215,666,198,1037,180"/>
@@ -200,24 +200,24 @@ Functions</h2></td></tr>
 <tr class="memitem:a107461f1e21eb13d3b84b2e700175e6b" id="r_a107461f1e21eb13d3b84b2e700175e6b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a107461f1e21eb13d3b84b2e700175e6b">AuUDPBind</a> (<a class="el" href="BaseHdr_2Net_2socket_8h.html#a0e2dc8f0c99c77c61791320f0d944592">AuSocket</a> *sock, <a class="el" href="BaseHdr_2Net_2socket_8h.html#a8bb60190bcf8fd80045d0198b25c2384">sockaddr</a> *addr, <a class="el" href="BaseHdr_2Net_2socket_8h.html#acf0ed818b0a3c85ff6a9206679d6d91a">socklen_t</a> addrlen)</td></tr>
 <tr class="memdesc:a107461f1e21eb13d3b84b2e700175e6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuUDPBind &ndash; bind a local address to the current socket, it also verifies if there is already a socket with this local address, if not found, then assign this socket with the given local address and assign it to NIC for listening to incoming communication.  <br /></td></tr>
 <tr class="separator:a107461f1e21eb13d3b84b2e700175e6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50600fd23870daa34a4311c46b294aad" id="r_a50600fd23870daa34a4311c46b294aad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a50600fd23870daa34a4311c46b294aad">AuUDPRead</a> (<a class="el" href="devinput_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *node, <a class="el" href="devinput_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *file, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> *buffer, <a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> <a class="el" href="codec__8859_8c.html#a7360b55975153b822efc5217b7734e6a">len</a>)</td></tr>
+<tr class="memitem:a50600fd23870daa34a4311c46b294aad" id="r_a50600fd23870daa34a4311c46b294aad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a50600fd23870daa34a4311c46b294aad">AuUDPRead</a> (<a class="el" href="devclip_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *node, <a class="el" href="devclip_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *<a class="el" href="structfile.html">file</a>, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> *buffer, <a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> <a class="el" href="codec__8859_8c.html#a7360b55975153b822efc5217b7734e6a">len</a>)</td></tr>
 <tr class="separator:a50600fd23870daa34a4311c46b294aad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a642a87f54cf759a3c80361d78fa2e71c" id="r_a642a87f54cf759a3c80361d78fa2e71c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a642a87f54cf759a3c80361d78fa2e71c">AuUDPWrite</a> (<a class="el" href="devinput_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *node, <a class="el" href="devinput_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *file, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> *buffer, <a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> <a class="el" href="codec__8859_8c.html#a7360b55975153b822efc5217b7734e6a">len</a>)</td></tr>
+<tr class="memitem:a642a87f54cf759a3c80361d78fa2e71c" id="r_a642a87f54cf759a3c80361d78fa2e71c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a642a87f54cf759a3c80361d78fa2e71c">AuUDPWrite</a> (<a class="el" href="devclip_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *node, <a class="el" href="devclip_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *<a class="el" href="structfile.html">file</a>, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> *buffer, <a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> <a class="el" href="codec__8859_8c.html#a7360b55975153b822efc5217b7734e6a">len</a>)</td></tr>
 <tr class="separator:a642a87f54cf759a3c80361d78fa2e71c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae49a9351e3f7e65ad3d3a6c8058fee74" id="r_ae49a9351e3f7e65ad3d3a6c8058fee74"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#ae49a9351e3f7e65ad3d3a6c8058fee74">AuUDPFileClose</a> (<a class="el" href="devinput_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *fsys, <a class="el" href="devinput_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *file)</td></tr>
+<tr class="memitem:ae49a9351e3f7e65ad3d3a6c8058fee74" id="r_ae49a9351e3f7e65ad3d3a6c8058fee74"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#ae49a9351e3f7e65ad3d3a6c8058fee74">AuUDPFileClose</a> (<a class="el" href="devclip_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *fsys, <a class="el" href="devclip_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *<a class="el" href="structfile.html">file</a>)</td></tr>
 <tr class="separator:ae49a9351e3f7e65ad3d3a6c8058fee74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2c25cb1b8116a4a609d8a9701437a33" id="r_af2c25cb1b8116a4a609d8a9701437a33"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#af2c25cb1b8116a4a609d8a9701437a33">CreateUDPSocket</a> ()</td></tr>
 <tr class="separator:af2c25cb1b8116a4a609d8a9701437a33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaab083490022241d3f24d0803a7c1647" id="r_aaab083490022241d3f24d0803a7c1647"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#aaab083490022241d3f24d0803a7c1647">UDPProtocolInstall</a> ()</td></tr>
 <tr class="memdesc:aaab083490022241d3f24d0803a7c1647"><td class="mdescLeft">&#160;</td><td class="mdescRight">UDPProtocolInstall &ndash; initialize the UDP socket.  <br /></td></tr>
 <tr class="separator:aaab083490022241d3f24d0803a7c1647"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aadc6419cfc5c54d8839662834266ba82" id="r_aadc6419cfc5c54d8839662834266ba82"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2list_8h.html#a16f120636a2232190d06eda34a04cf16">list_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#aadc6419cfc5c54d8839662834266ba82">UDPProtocolGetSockList</a> ()</td></tr>
+<tr class="memitem:aadc6419cfc5c54d8839662834266ba82" id="r_aadc6419cfc5c54d8839662834266ba82"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Hal_2AA64_2sched_8h.html#a16f120636a2232190d06eda34a04cf16">list_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#aadc6419cfc5c54d8839662834266ba82">UDPProtocolGetSockList</a> ()</td></tr>
 <tr class="memdesc:aadc6419cfc5c54d8839662834266ba82"><td class="mdescLeft">&#160;</td><td class="mdescRight">UDPProtocolGetSockList &ndash; returns the socket list.  <br /></td></tr>
 <tr class="separator:aadc6419cfc5c54d8839662834266ba82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:acf0bdeaf4830cd470a05ff5434b59a6a" id="r_acf0bdeaf4830cd470a05ff5434b59a6a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2list_8h.html#a16f120636a2232190d06eda34a04cf16">list_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#acf0bdeaf4830cd470a05ff5434b59a6a">udp_socket_list</a></td></tr>
+<tr class="memitem:acf0bdeaf4830cd470a05ff5434b59a6a" id="r_acf0bdeaf4830cd470a05ff5434b59a6a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Hal_2AA64_2sched_8h.html#a16f120636a2232190d06eda34a04cf16">list_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#acf0bdeaf4830cd470a05ff5434b59a6a">udp_socket_list</a></td></tr>
 <tr class="separator:acf0bdeaf4830cd470a05ff5434b59a6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -301,13 +301,13 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">int AuUDPFileClose </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="devinput_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="devclip_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *&#160;</td>
           <td class="paramname"><em>fsys</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="devinput_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="devclip_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *&#160;</td>
           <td class="paramname"><em>file</em>&#160;</td>
         </tr>
         <tr>
@@ -329,13 +329,13 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> AuUDPRead </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="devinput_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="devclip_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *&#160;</td>
           <td class="paramname"><em>node</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="devinput_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="devclip_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *&#160;</td>
           <td class="paramname"><em>file</em>, </td>
         </tr>
         <tr>
@@ -457,13 +457,13 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> AuUDPWrite </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="devinput_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="devclip_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *&#160;</td>
           <td class="paramname"><em>node</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="devinput_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="devclip_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *&#160;</td>
           <td class="paramname"><em>file</em>, </td>
         </tr>
         <tr>
@@ -575,7 +575,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="BaseHdr_2list_8h.html#a16f120636a2232190d06eda34a04cf16">list_t</a> * UDPProtocolGetSockList </td>
+          <td class="memname"><a class="el" href="Hal_2AA64_2sched_8h.html#a16f120636a2232190d06eda34a04cf16">list_t</a> * UDPProtocolGetSockList </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -614,7 +614,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="BaseHdr_2list_8h.html#a16f120636a2232190d06eda34a04cf16">list_t</a>* udp_socket_list</td>
+          <td class="memname"><a class="el" href="Hal_2AA64_2sched_8h.html#a16f120636a2232190d06eda34a04cf16">list_t</a>* udp_socket_list</td>
         </tr>
       </table>
 </div><div class="memdoc">

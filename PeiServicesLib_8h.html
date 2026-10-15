@@ -315,7 +315,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This service is a wrapper for the PEI Service FfsFindByName(), except the pointer to the PEI Services Table has been removed. See the Platform Initialization Pre-EFI Initialization Core Interface Specification for details.</p>
+<p>This service is a wrapper for the PEI <a class="el" href="structService.html">Service</a> FfsFindByName(), except the pointer to the PEI Services Table has been removed. See the Platform Initialization Pre-EFI Initialization Core Interface Specification for details.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">FileName</td><td>A pointer to the name of the file to find within the firmware volume.</td></tr>
@@ -326,8 +326,8 @@ Functions</h2></td></tr>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">EFI_SUCCESS</td><td>File was found.</td></tr>
-    <tr><td class="paramname">EFI_NOT_FOUND</td><td>File was not found.</td></tr>
+    <tr><td class="paramname">EFI_SUCCESS</td><td><a class="el" href="structFile.html">File</a> was found.</td></tr>
+    <tr><td class="paramname">EFI_NOT_FOUND</td><td><a class="el" href="structFile.html">File</a> was not found.</td></tr>
     <tr><td class="paramname">EFI_INVALID_PARAMETER</td><td>VolumeHandle or FileHandle or FileName was NULL. </td></tr>
   </table>
   </dd>
@@ -569,7 +569,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This service is a wrapper for the PEI Service FfsGetFileInfo(), except the pointer to the PEI Services Table has been removed. See the Platform Initialization Pre-EFI Initialization Core Interface Specification for details.</p>
+<p>This service is a wrapper for the PEI <a class="el" href="structService.html">Service</a> FfsGetFileInfo(), except the pointer to the PEI Services Table has been removed. See the Platform Initialization Pre-EFI Initialization Core Interface Specification for details.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">FileHandle</td><td>Handle of the file.</td></tr>
@@ -579,7 +579,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">EFI_SUCCESS</td><td>File information returned.</td></tr>
+    <tr><td class="paramname">EFI_SUCCESS</td><td><a class="el" href="structFile.html">File</a> information returned.</td></tr>
     <tr><td class="paramname">EFI_INVALID_PARAMETER</td><td>If FileHandle does not represent a valid file.</td></tr>
     <tr><td class="paramname">EFI_INVALID_PARAMETER</td><td>If FileInfo is NULL. </td></tr>
   </table>
@@ -613,7 +613,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This service is a wrapper for the PEI Service FfsGetFileInfo2(), except the pointer to the PEI Services Table has been removed. See the Platform Initialization Pre-EFI Initialization Core Interface Specification for details.</p>
+<p>This service is a wrapper for the PEI <a class="el" href="structService.html">Service</a> FfsGetFileInfo2(), except the pointer to the PEI Services Table has been removed. See the Platform Initialization Pre-EFI Initialization Core Interface Specification for details.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">FileHandle</td><td>Handle of the file.</td></tr>
@@ -623,7 +623,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">EFI_SUCCESS</td><td>File information returned.</td></tr>
+    <tr><td class="paramname">EFI_SUCCESS</td><td><a class="el" href="structFile.html">File</a> information returned.</td></tr>
     <tr><td class="paramname">EFI_INVALID_PARAMETER</td><td>If FileHandle does not represent a valid file.</td></tr>
     <tr><td class="paramname">EFI_INVALID_PARAMETER</td><td>If FileInfo is NULL. </td></tr>
   </table>
@@ -657,7 +657,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This service is a wrapper for the PEI Service FfsGetVolumeInfo(), except the pointer to the PEI Services Table has been removed. See the Platform Initialization Pre-EFI Initialization Core Interface Specification for details.</p>
+<p>This service is a wrapper for the PEI <a class="el" href="structService.html">Service</a> FfsGetVolumeInfo(), except the pointer to the PEI Services Table has been removed. See the Platform Initialization Pre-EFI Initialization Core Interface Specification for details.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">VolumeHandle</td><td>Handle of the volume.</td></tr>
@@ -667,7 +667,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">EFI_SUCCESS</td><td>File information returned.</td></tr>
+    <tr><td class="paramname">EFI_SUCCESS</td><td><a class="el" href="structFile.html">File</a> information returned.</td></tr>
     <tr><td class="paramname">EFI_INVALID_PARAMETER</td><td>If FileHandle does not represent a valid file.</td></tr>
     <tr><td class="paramname">EFI_INVALID_PARAMETER</td><td>If FileInfo is NULL. </td></tr>
   </table>
@@ -1091,7 +1091,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This service is a wrapper for the PEI Service RegisterForShadow(), except the pointer to the PEI Services Table has been removed. See the Platform Initialization Pre-EFI Initialization Core Interface Specification for details.</p>
+<p>This service is a wrapper for the PEI <a class="el" href="structService.html">Service</a> RegisterForShadow(), except the pointer to the PEI Services Table has been removed. See the Platform Initialization Pre-EFI Initialization Core Interface Specification for details.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">FileHandle</td><td>PEIM's file handle. Must be the currently executing PEIM.</td></tr>

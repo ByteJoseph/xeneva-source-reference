@@ -114,9 +114,9 @@ Macros</h2></td></tr>
 <tr class="separator:a6dbf1171438a39bb7a60fa7504356f88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9dc9bfdcb3c61a8a488568a04bb9d76b" id="r_a9dc9bfdcb3c61a8a488568a04bb9d76b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Udf_8h.html#a9dc9bfdcb3c61a8a488568a04bb9d76b">UDF_LOGICAL_SECTOR_SHIFT</a>&#160;&#160;&#160;11</td></tr>
 <tr class="separator:a9dc9bfdcb3c61a8a488568a04bb9d76b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa635046ce8189cb5fe954aa50f6ce5e" id="r_afa635046ce8189cb5fe954aa50f6ce5e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Udf_8h.html#afa635046ce8189cb5fe954aa50f6ce5e">UDF_LOGICAL_SECTOR_SIZE</a>&#160;&#160;&#160;((<a class="el" href="actypes_8h.html#ab712fece103eee54554694bbc2c1a64e">UINT64</a>)(1ULL &lt;&lt; <a class="el" href="Udf_8h.html#a9dc9bfdcb3c61a8a488568a04bb9d76b">UDF_LOGICAL_SECTOR_SHIFT</a>))</td></tr>
+<tr class="memitem:afa635046ce8189cb5fe954aa50f6ce5e" id="r_afa635046ce8189cb5fe954aa50f6ce5e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Udf_8h.html#afa635046ce8189cb5fe954aa50f6ce5e">UDF_LOGICAL_SECTOR_SIZE</a>&#160;&#160;&#160;((<a class="el" href="actypes_8h.html#ab712fece103eee54554694bbc2c1a64e">UINT64</a>)(1<a class="el" href="vdso_2const_8h.html#ae7289206560e57188eb393096c91e575">ULL</a> &lt;&lt; <a class="el" href="Udf_8h.html#a9dc9bfdcb3c61a8a488568a04bb9d76b">UDF_LOGICAL_SECTOR_SHIFT</a>))</td></tr>
 <tr class="separator:afa635046ce8189cb5fe954aa50f6ce5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab8c98cc0cf4c79a702cfcba57e91341f" id="r_ab8c98cc0cf4c79a702cfcba57e91341f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Udf_8h.html#ab8c98cc0cf4c79a702cfcba57e91341f">UDF_VRS_START_OFFSET</a>&#160;&#160;&#160;((<a class="el" href="actypes_8h.html#ab712fece103eee54554694bbc2c1a64e">UINT64</a>)(16ULL &lt;&lt; <a class="el" href="Udf_8h.html#a9dc9bfdcb3c61a8a488568a04bb9d76b">UDF_LOGICAL_SECTOR_SHIFT</a>))</td></tr>
+<tr class="memitem:ab8c98cc0cf4c79a702cfcba57e91341f" id="r_ab8c98cc0cf4c79a702cfcba57e91341f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Udf_8h.html#ab8c98cc0cf4c79a702cfcba57e91341f">UDF_VRS_START_OFFSET</a>&#160;&#160;&#160;((<a class="el" href="actypes_8h.html#ab712fece103eee54554694bbc2c1a64e">UINT64</a>)(16<a class="el" href="vdso_2const_8h.html#ae7289206560e57188eb393096c91e575">ULL</a> &lt;&lt; <a class="el" href="Udf_8h.html#a9dc9bfdcb3c61a8a488568a04bb9d76b">UDF_LOGICAL_SECTOR_SHIFT</a>))</td></tr>
 <tr class="separator:ab8c98cc0cf4c79a702cfcba57e91341f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
@@ -184,7 +184,7 @@ Enumerations</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define UDF_LOGICAL_SECTOR_SIZE&#160;&#160;&#160;((<a class="el" href="actypes_8h.html#ab712fece103eee54554694bbc2c1a64e">UINT64</a>)(1ULL &lt;&lt; <a class="el" href="Udf_8h.html#a9dc9bfdcb3c61a8a488568a04bb9d76b">UDF_LOGICAL_SECTOR_SHIFT</a>))</td>
+          <td class="memname">#define UDF_LOGICAL_SECTOR_SIZE&#160;&#160;&#160;((<a class="el" href="actypes_8h.html#ab712fece103eee54554694bbc2c1a64e">UINT64</a>)(1<a class="el" href="vdso_2const_8h.html#ae7289206560e57188eb393096c91e575">ULL</a> &lt;&lt; <a class="el" href="Udf_8h.html#a9dc9bfdcb3c61a8a488568a04bb9d76b">UDF_LOGICAL_SECTOR_SHIFT</a>))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -240,7 +240,7 @@ Enumerations</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define UDF_VRS_START_OFFSET&#160;&#160;&#160;((<a class="el" href="actypes_8h.html#ab712fece103eee54554694bbc2c1a64e">UINT64</a>)(16ULL &lt;&lt; <a class="el" href="Udf_8h.html#a9dc9bfdcb3c61a8a488568a04bb9d76b">UDF_LOGICAL_SECTOR_SHIFT</a>))</td>
+          <td class="memname">#define UDF_VRS_START_OFFSET&#160;&#160;&#160;((<a class="el" href="actypes_8h.html#ab712fece103eee54554694bbc2c1a64e">UINT64</a>)(16<a class="el" href="vdso_2const_8h.html#ae7289206560e57188eb393096c91e575">ULL</a> &lt;&lt; <a class="el" href="Udf_8h.html#a9dc9bfdcb3c61a8a488568a04bb9d76b">UDF_LOGICAL_SECTOR_SHIFT</a>))</td>
         </tr>
       </table>
 </div><div class="memdoc">

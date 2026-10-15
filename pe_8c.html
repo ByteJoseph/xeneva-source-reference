@@ -173,8 +173,10 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a5660d56a68bf934beae02aad9f023138" id="r_a5660d56a68bf934beae02aad9f023138"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pe_8c.html#a5660d56a68bf934beae02aad9f023138">AuDriverImportOverride</a> (const char *<a class="el" href="kobject_8h.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>)</td></tr>
+<tr class="memdesc:a5660d56a68bf934beae02aad9f023138"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuGetProcAddress &ndash; get procedure address in a dll image.  <br /></td></tr>
+<tr class="separator:a5660d56a68bf934beae02aad9f023138"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adaa9d15f7a52c8c758d15c3fa873189a" id="r_adaa9d15f7a52c8c758d15c3fa873189a"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pe_8c.html#adaa9d15f7a52c8c758d15c3fa873189a">AuGetProcAddress</a> (void *image, const char *procname)</td></tr>
-<tr class="memdesc:adaa9d15f7a52c8c758d15c3fa873189a"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuGetProcAddress &ndash; get procedure address in a dll image.  <br /></td></tr>
 <tr class="separator:adaa9d15f7a52c8c758d15c3fa873189a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1aa7725c4990fb459c5f38ac2a12c87b" id="r_a1aa7725c4990fb459c5f38ac2a12c87b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pe_8c.html#a1aa7725c4990fb459c5f38ac2a12c87b">AuPEPrintExports</a> (void *image)</td></tr>
 <tr class="memdesc:a1aa7725c4990fb459c5f38ac2a12c87b"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuPEPrintExports &ndash; print all function exports for DEBUG purpose.  <br /></td></tr>
@@ -421,7 +423,7 @@ Functions</h2></td></tr>
 <div class="ttc" id="aLittleBoot_2pe_8h_html_a25612f60df7b78e988643b03669d9815"><div class="ttname"><a href="LittleBoot_2pe_8h.html#a25612f60df7b78e988643b03669d9815">FileHeader</a></div><div class="ttdeci">IMAGE_FILE_HEADER FileHeader</div><div class="ttdef"><b>Definition</b> pe.h:1</div></div>
 <div class="ttc" id="aLittleBoot_2pe_8h_html_ad6272a2366c4d11b39c31e9a0f0f6be8"><div class="ttname"><a href="LittleBoot_2pe_8h.html#ad6272a2366c4d11b39c31e9a0f0f6be8">OptionalHeader</a></div><div class="ttdeci">IMAGE_OPTIONAL_HEADER_PE32PLUS OptionalHeader</div><div class="ttdef"><b>Definition</b> pe.h:2</div></div>
 <div class="ttc" id="aacefiex_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition</b> acefiex.h:161</div></div>
-<div class="ttc" id="ape_8c_html_a06fd590700d3bb729116e93acb353ce3"><div class="ttname"><a href="pe_8c.html#a06fd590700d3bb729116e93acb353ce3">OFFSETOF</a></div><div class="ttdeci">#define OFFSETOF(s, m)</div><div class="ttdef"><b>Definition</b> pe.c:317</div></div>
+<div class="ttc" id="ape_8c_html_a06fd590700d3bb729116e93acb353ce3"><div class="ttname"><a href="pe_8c.html#a06fd590700d3bb729116e93acb353ce3">OFFSETOF</a></div><div class="ttdeci">#define OFFSETOF(s, m)</div><div class="ttdef"><b>Definition</b> pe.c:328</div></div>
 <div class="ttc" id="astruct__IMAGE__FILE__HEADER___html_ac1bf7f9c4b91c3bf65a6008270e5a640"><div class="ttname"><a href="struct__IMAGE__FILE__HEADER__.html#ac1bf7f9c4b91c3bf65a6008270e5a640">_IMAGE_FILE_HEADER_::SizeOfOptionaHeader</a></div><div class="ttdeci">uint16_t SizeOfOptionaHeader</div><div class="ttdef"><b>Definition</b> pe.h:84</div></div>
 <div class="ttc" id="astruct__IMAGE__NT__HEADERS__PE32PLUS_html"><div class="ttname"><a href="struct__IMAGE__NT__HEADERS__PE32PLUS.html">_IMAGE_NT_HEADERS_PE32PLUS</a></div><div class="ttdef"><b>Definition</b> pe.h:174</div></div>
 <div class="ttc" id="astruct__IMAGE__SECTION__HEADER_html"><div class="ttname"><a href="struct__IMAGE__SECTION__HEADER.html">_IMAGE_SECTION_HEADER</a></div><div class="ttdef"><b>Definition</b> pe.h:195</div></div>
@@ -621,6 +623,42 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a5660d56a68bf934beae02aad9f023138" name="a5660d56a68bf934beae02aad9f023138"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5660d56a68bf934beae02aad9f023138">&#9670;&#160;</a></span>AuDriverImportOverride()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void * AuDriverImportOverride </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>AuGetProcAddress &ndash; get procedure address in a dll image. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">image</td><td>&ndash; dll image </td></tr>
+    <tr><td class="paramname">procname</td><td>&ndash; procedure name </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>return the procedure address in memory </dd></dl>
+
+</div>
+</div>
 <a id="adaa9d15f7a52c8c758d15c3fa873189a" name="adaa9d15f7a52c8c758d15c3fa873189a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adaa9d15f7a52c8c758d15c3fa873189a">&#9670;&#160;</a></span>AuGetProcAddress()</h2>
 
@@ -646,16 +684,14 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>AuGetProcAddress &ndash; get procedure address in a dll image. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">image</td><td>&ndash; dll image </td></tr>
-    <tr><td class="paramname">procname</td><td>&ndash; procedure name </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>return the procedure address in memory </dd></dl>
+<p>BSD 2-Clause License</p>
+<p>Copyright (c) 2022-2023, Manas Kamal Choudhury All rights reserved.</p>
+<p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
+<ol type="1">
+<li>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</li>
+<li>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</li>
+</ol>
+<p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. </p>
 
 </div>
 </div>

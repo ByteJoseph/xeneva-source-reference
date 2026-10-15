@@ -417,7 +417,7 @@ Variables</h2></td></tr>
 <p>Function to get a full filename given a EFI_FILE_HANDLE somewhere lower on the directory 'stack'. If the file is a directory, then append the '\' char at the end of name string. If it's not a directory, then the last '\' should not be added.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">Handle</td><td>Handle to the Directory or File to create path to. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">Handle</td><td>Handle to the Directory or <a class="el" href="structFile.html">File</a> to create path to. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">FullFileName</td><td>Pointer to pointer to generated full file name. It is the responsibility of the caller to free this memory with a call to <a class="el" href="MemoryAllocationLib_8h.html#a8b1cbc21e0cebcfc6a992546ec9b4941">FreePool()</a>. </td></tr>
   </table>
   </dd>

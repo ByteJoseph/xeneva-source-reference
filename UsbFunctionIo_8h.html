@@ -431,7 +431,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>Configures endpoints based on supplied device and configuration descriptors.</p>
 <p>Assuming that the hardware has already been initialized, this function configures the endpoints using the device information supplied by DeviceInfo, activates the port, and starts receiving USB events.</p>
-<p>This function must ignore the bMaxPacketSize0field of the Standard Device Descriptor and the wMaxPacketSize field of the Standard Endpoint Descriptor that are made available through DeviceInfo.</p>
+<p>This function must ignore the bMaxPacketSize0field of the Standard Device Descriptor and the wMaxPacketSize field of the Standard <a class="el" href="structEndpoint.html">Endpoint</a> Descriptor that are made available through DeviceInfo.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">This</td><td>A pointer to the EFI_USBFN_IO_PROTOCOL instance. </td></tr>
@@ -600,7 +600,7 @@ Variables</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">This</td><td>A pointer to the EFI_USBFN_IO_PROTOCOLinstance. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">EndpointType</td><td>Endpoint type as defined as EFI_USB_ENDPOINT_TYPE. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">EndpointType</td><td><a class="el" href="structEndpoint.html">Endpoint</a> type as defined as EFI_USB_ENDPOINT_TYPE. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">BusSpeed</td><td>Bus speed as defined as EFI_USB_BUS_SPEED. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">MaxPacketSize</td><td>The maximum packet size, in bytes, of the specified endpoint type.</td></tr>
   </table>

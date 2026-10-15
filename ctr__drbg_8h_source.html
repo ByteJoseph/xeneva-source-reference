@@ -211,7 +211,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span><span class="comment">     * Note that this invariant may change without notice. Do not rely on it</span></div>
 <div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span><span class="comment">     * and do not access the mutex directly in application code.</span></div>
 <div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span><span class="comment">     */</span></div>
-<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>    mbedtls_threading_mutex_t <a class="code hl_variable" href="structmbedtls__ctr__drbg__context.html#a65e5556851c03beb2adcfe2fc042d66c">MBEDTLS_PRIVATE</a>(<a class="code hl_typedef" href="kernel_8h.html#af032b75de11187259c0463e6bf0f11d9">mutex</a>);</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>    mbedtls_threading_mutex_t <a class="code hl_variable" href="structmbedtls__ctr__drbg__context.html#a65e5556851c03beb2adcfe2fc042d66c">MBEDTLS_PRIVATE</a>(<a class="code hl_struct" href="structmutex.html">mutex</a>);</div>
 <div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>}</div>
 </div>
@@ -296,7 +296,6 @@ $(document).ready(function() { init_codefold(0); });
 <div class="ttc" id="aentropy_8h_html"><div class="ttname"><a href="entropy_8h.html">entropy.h</a></div><div class="ttdoc">Entropy accumulator implementation.</div></div>
 <div class="ttc" id="agroup__key__lifetimes_html_ga9a5375bd0cb9694f3a2694adc0a6ae13"><div class="ttname"><a href="group__key__lifetimes.html#ga9a5375bd0cb9694f3a2694adc0a6ae13">mbedtls_svc_key_id_t</a></div><div class="ttdeci">psa_key_id_t mbedtls_svc_key_id_t</div><div class="ttdef"><b>Definition</b> crypto_types.h:292</div></div>
 <div class="ttc" id="ahost__selftest_8c_html_a6f4c2d5ae50d4f122a6a1468480a9c3e"><div class="ttname"><a href="host__selftest_8c.html#a6f4c2d5ae50d4f122a6a1468480a9c3e">mbedtls_ctr_drbg_self_test</a></div><div class="ttdeci">int mbedtls_ctr_drbg_self_test(int verbose)</div></div>
-<div class="ttc" id="akernel_8h_html_af032b75de11187259c0463e6bf0f11d9"><div class="ttname"><a href="kernel_8h.html#af032b75de11187259c0463e6bf0f11d9">mutex</a></div><div class="ttdeci">int mutex</div><div class="ttdef"><b>Definition</b> kernel.h:44</div></div>
 <div class="ttc" id="ambedtls_2build__info_8h_html"><div class="ttname"><a href="mbedtls_2build__info_8h.html">build_info.h</a></div><div class="ttdoc">Build-time configuration info.</div></div>
 <div class="ttc" id="aprivate__access_8h_html"><div class="ttname"><a href="private__access_8h.html">private_access.h</a></div><div class="ttdoc">Macro wrapper for struct's members.</div></div>
 <div class="ttc" id="astructmbedtls__aes__context_html"><div class="ttname"><a href="structmbedtls__aes__context.html">mbedtls_aes_context</a></div><div class="ttdoc">The AES context-type definition.</div><div class="ttdef"><b>Definition</b> aes.h:63</div></div>
@@ -312,6 +311,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="ttc" id="astructmbedtls__ctr__drbg__psa__context_html"><div class="ttname"><a href="structmbedtls__ctr__drbg__psa__context.html">mbedtls_ctr_drbg_psa_context</a></div><div class="ttdef"><b>Definition</b> ctr_drbg.h:176</div></div>
 <div class="ttc" id="astructmbedtls__ctr__drbg__psa__context_html_a13c6211270978b1d284bd010f915bdfa"><div class="ttname"><a href="structmbedtls__ctr__drbg__psa__context.html#a13c6211270978b1d284bd010f915bdfa">mbedtls_ctr_drbg_psa_context::operation</a></div><div class="ttdeci">psa_cipher_operation_t operation</div><div class="ttdef"><b>Definition</b> ctr_drbg.h:178</div></div>
 <div class="ttc" id="astructmbedtls__ctr__drbg__psa__context_html_a6a3e8bb872cb4db1876ee8cec632957f"><div class="ttname"><a href="structmbedtls__ctr__drbg__psa__context.html#a6a3e8bb872cb4db1876ee8cec632957f">mbedtls_ctr_drbg_psa_context::key_id</a></div><div class="ttdeci">mbedtls_svc_key_id_t key_id</div><div class="ttdef"><b>Definition</b> ctr_drbg.h:177</div></div>
+<div class="ttc" id="astructmutex_html"><div class="ttname"><a href="structmutex.html">mutex</a></div><div class="ttdef"><b>Definition</b> mutex.h:49</div></div>
 <div class="ttc" id="astructpsa__cipher__operation__s_html"><div class="ttname"><a href="structpsa__cipher__operation__s.html">psa_cipher_operation_s</a></div><div class="ttdef"><b>Definition</b> crypto_struct.h:95</div></div>
 <div class="ttc" id="athreading_8h_html"><div class="ttname"><a href="threading_8h.html">threading.h</a></div><div class="ttdoc">Threading abstraction layer.</div></div>
 </div><!-- fragment --></div><!-- contents -->

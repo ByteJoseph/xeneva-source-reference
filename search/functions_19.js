@@ -13,5 +13,6 @@ var searchData=
   ['z_5fmalloc_10',['z_malloc',['../z__zone_8c.html#abc493fa8efbc5a6aadb7524d49a4004e',1,'Z_Malloc(int size, int tag, void *user):&#160;z_zone.c'],['../z__zone_8h.html#a5d06496ee3aef2b8fddbb2d5965e9fb9',1,'Z_Malloc(int size, int tag, void *ptr):&#160;z_zone.c']]],
   ['z_5fzonesize_11',['z_zonesize',['../z__zone_8c.html#a651c8b4297a12559d9526de4fc710aea',1,'Z_ZoneSize(void):&#160;z_zone.c'],['../z__zone_8h.html#a651c8b4297a12559d9526de4fc710aea',1,'Z_ZoneSize(void):&#160;z_zone.c']]],
   ['zeroaction_12',['zeroaction',['../actions_8cpp.html#a478c51deb77b97423c12d422207a73bd',1,'ZeroAction(ChWidget *wid, ChWindow *win):&#160;actions.cpp'],['../calculator_8h.html#a478c51deb77b97423c12d422207a73bd',1,'ZeroAction(ChWidget *wid, ChWindow *win):&#160;actions.cpp']]],
-  ['zeromem_13',['ZeroMem',['../BaseMemoryLib_8h.html#a9fd4b31ee70d7924b0909970450bae59',1,'BaseMemoryLib.h']]]
+  ['zeromem_13',['ZeroMem',['../BaseMemoryLib_8h.html#a9fd4b31ee70d7924b0909970450bae59',1,'BaseMemoryLib.h']]],
+  ['zone_5fwatermark_5fok_14',['zone_watermark_ok',['../mmzone_8h.html#a106ca290108cf34a86da506d38df83ad',1,'mmzone.h']]]
 ];

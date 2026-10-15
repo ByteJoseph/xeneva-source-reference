@@ -201,12 +201,12 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns the location of the Management Mode Service Table (MMST).</p>
-<p>This function returns the location of the Management Mode Service Table (MMST). The use of the API is such that a driver can discover the location of the MMST in its entry point and then cache it in some driver global variable so that the MMST can be invoked in subsequent handlers.</p>
+<p>Returns the location of the Management Mode <a class="el" href="structService.html">Service</a> Table (MMST).</p>
+<p>This function returns the location of the Management Mode <a class="el" href="structService.html">Service</a> Table (MMST). The use of the API is such that a driver can discover the location of the MMST in its entry point and then cache it in some driver global variable so that the MMST can be invoked in subsequent handlers.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">This</td><td>The EFI_MM_BASE_PROTOCOL instance. </td></tr>
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">Mmst</td><td>On return, points to a pointer to the Management Mode Service Table (MMST).</td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">Mmst</td><td>On return, points to a pointer to the Management Mode <a class="el" href="structService.html">Service</a> Table (MMST).</td></tr>
   </table>
   </dd>
 </dl>
@@ -232,7 +232,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Service to indicate whether the driver is currently executing in the MM Initialization phase.</p>
+<p><a class="el" href="structService.html">Service</a> to indicate whether the driver is currently executing in the MM Initialization phase.</p>
 <p>This service is used to indicate whether the driver is currently executing in the MM Initialization phase. For MM drivers, this will return TRUE in InMmram while inside the driver's entry point and otherwise FALSE. For combination MM/DXE drivers, this will return FALSE in the DXE launch. For the MM launch, it behaves as an MM driver.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">

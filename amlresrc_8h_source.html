@@ -978,7 +978,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00813" name="l00813"></a><span class="lineno">  813</span> </div>
 <div class="line"><a id="l00814" name="l00814"></a><span class="lineno">  814</span><span class="keywordtype">void</span></div>
 <div class="line"><a id="l00815" name="l00815"></a><span class="lineno"><a class="line" href="amlresrc_8h.html#a8b8d8aac88971b9bd64e0c7a3f64b05e">  815</a></span><a class="code hl_function" href="amlresrc_8h.html#a8b8d8aac88971b9bd64e0c7a3f64b05e">MpSaveGpioInfo</a> (</div>
-<div class="line"><a id="l00816" name="l00816"></a><span class="lineno">  816</span>    <a class="code hl_union" href="unionacpi__parse__object.html">ACPI_PARSE_OBJECT</a>       *Op,</div>
+<div class="line"><a id="l00816" name="l00816"></a><span class="lineno">  816</span>    <a class="code hl_union" href="unionacpi__parse__object.html">ACPI_PARSE_OBJECT</a>       *<a class="code hl_struct" href="structOp.html">Op</a>,</div>
 <div class="line"><a id="l00817" name="l00817"></a><span class="lineno">  817</span>    <a class="code hl_union" href="unionaml__resource.html">AML_RESOURCE</a>            *Resource,</div>
 <div class="line"><a id="l00818" name="l00818"></a><span class="lineno">  818</span>    <a class="code hl_typedef" href="AArch64_2ProcessorBind_8h.html#ae1e6edbbc26d6fbc71a90190d0266018">UINT32</a>                  PinCount,</div>
 <div class="line"><a id="l00819" name="l00819"></a><span class="lineno">  819</span>    <a class="code hl_typedef" href="actypes_8h.html#a09f1a1fb2293e33483cc8d44aefb1eb1">UINT16</a>                  *PinList,</div>
@@ -986,7 +986,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00821" name="l00821"></a><span class="lineno">  821</span> </div>
 <div class="line"><a id="l00822" name="l00822"></a><span class="lineno">  822</span><span class="keywordtype">void</span></div>
 <div class="line"><a id="l00823" name="l00823"></a><span class="lineno"><a class="line" href="amlresrc_8h.html#afdeec8371f4c6d298d2a2cec1b9f291d">  823</a></span><a class="code hl_function" href="amlresrc_8h.html#afdeec8371f4c6d298d2a2cec1b9f291d">MpSaveSerialInfo</a> (</div>
-<div class="line"><a id="l00824" name="l00824"></a><span class="lineno">  824</span>    <a class="code hl_union" href="unionacpi__parse__object.html">ACPI_PARSE_OBJECT</a>       *Op,</div>
+<div class="line"><a id="l00824" name="l00824"></a><span class="lineno">  824</span>    <a class="code hl_union" href="unionacpi__parse__object.html">ACPI_PARSE_OBJECT</a>       *<a class="code hl_struct" href="structOp.html">Op</a>,</div>
 <div class="line"><a id="l00825" name="l00825"></a><span class="lineno">  825</span>    <a class="code hl_union" href="unionaml__resource.html">AML_RESOURCE</a>            *Resource,</div>
 <div class="line"><a id="l00826" name="l00826"></a><span class="lineno">  826</span>    <span class="keywordtype">char</span>                    *DeviceName);</div>
 <div class="line"><a id="l00827" name="l00827"></a><span class="lineno">  827</span> </div>
@@ -1000,14 +1000,14 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00835" name="l00835"></a><span class="lineno">  835</span> </div>
 <div class="line"><a id="l00836" name="l00836"></a><span class="lineno">  836</span><span class="keywordtype">char</span> *</div>
 <div class="line"><a id="l00837" name="l00837"></a><span class="lineno"><a class="line" href="amlresrc_8h.html#a3cb587d398270e33cebc9ae3871b75b8">  837</a></span><a class="code hl_function" href="amlresrc_8h.html#a3cb587d398270e33cebc9ae3871b75b8">MpGetConnectionInfo</a> (</div>
-<div class="line"><a id="l00838" name="l00838"></a><span class="lineno">  838</span>    <a class="code hl_union" href="unionacpi__parse__object.html">ACPI_PARSE_OBJECT</a>       *Op,</div>
+<div class="line"><a id="l00838" name="l00838"></a><span class="lineno">  838</span>    <a class="code hl_union" href="unionacpi__parse__object.html">ACPI_PARSE_OBJECT</a>       *<a class="code hl_struct" href="structOp.html">Op</a>,</div>
 <div class="line"><a id="l00839" name="l00839"></a><span class="lineno">  839</span>    <a class="code hl_typedef" href="AArch64_2ProcessorBind_8h.html#ae1e6edbbc26d6fbc71a90190d0266018">UINT32</a>                  PinIndex,</div>
 <div class="line"><a id="l00840" name="l00840"></a><span class="lineno">  840</span>    <a class="code hl_struct" href="structacpi__namespace__node.html">ACPI_NAMESPACE_NODE</a>     **TargetNode,</div>
 <div class="line"><a id="l00841" name="l00841"></a><span class="lineno">  841</span>    <span class="keywordtype">char</span>                    **TargetName);</div>
 <div class="line"><a id="l00842" name="l00842"></a><span class="lineno">  842</span> </div>
 <div class="line"><a id="l00843" name="l00843"></a><span class="lineno">  843</span><span class="keywordtype">char</span> *</div>
 <div class="line"><a id="l00844" name="l00844"></a><span class="lineno"><a class="line" href="amlresrc_8h.html#ad4dd64c527015233c44111e7c6788e18">  844</a></span><a class="code hl_function" href="amlresrc_8h.html#ad4dd64c527015233c44111e7c6788e18">MpGetParentDeviceHid</a> (</div>
-<div class="line"><a id="l00845" name="l00845"></a><span class="lineno">  845</span>    <a class="code hl_union" href="unionacpi__parse__object.html">ACPI_PARSE_OBJECT</a>       *Op,</div>
+<div class="line"><a id="l00845" name="l00845"></a><span class="lineno">  845</span>    <a class="code hl_union" href="unionacpi__parse__object.html">ACPI_PARSE_OBJECT</a>       *<a class="code hl_struct" href="structOp.html">Op</a>,</div>
 <div class="line"><a id="l00846" name="l00846"></a><span class="lineno">  846</span>    <a class="code hl_struct" href="structacpi__namespace__node.html">ACPI_NAMESPACE_NODE</a>     **TargetNode,</div>
 <div class="line"><a id="l00847" name="l00847"></a><span class="lineno">  847</span>    <span class="keywordtype">char</span>                    **ParentDeviceName);</div>
 <div class="line"><a id="l00848" name="l00848"></a><span class="lineno">  848</span> </div>
@@ -1073,6 +1073,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="ttc" id="aamlresrc_8h_html_af431dfe05eea4bcbd24b287d99449a9e"><div class="ttname"><a href="amlresrc_8h.html#af431dfe05eea4bcbd24b287d99449a9e">AML_RESOURCE_SPI_SERIALBUS</a></div><div class="ttdeci">struct aml_resource_spi_serialbus AML_RESOURCE_SPI_SERIALBUS</div></div>
 <div class="ttc" id="aamlresrc_8h_html_afba63a7fdd06037bf5cf6b7969158f23"><div class="ttname"><a href="amlresrc_8h.html#afba63a7fdd06037bf5cf6b7969158f23">AML_RESOURCE_PIN_GROUP_CONFIG</a></div><div class="ttdeci">struct aml_resource_pin_group_config AML_RESOURCE_PIN_GROUP_CONFIG</div></div>
 <div class="ttc" id="aamlresrc_8h_html_afdeec8371f4c6d298d2a2cec1b9f291d"><div class="ttname"><a href="amlresrc_8h.html#afdeec8371f4c6d298d2a2cec1b9f291d">MpSaveSerialInfo</a></div><div class="ttdeci">void MpSaveSerialInfo(ACPI_PARSE_OBJECT *Op, AML_RESOURCE *Resource, char *DeviceName)</div></div>
+<div class="ttc" id="astructOp_html"><div class="ttname"><a href="structOp.html">Op</a></div><div class="ttdef"><b>Definition</b> srvfs.c:50</div></div>
 <div class="ttc" id="astructacpi__namespace__node_html"><div class="ttname"><a href="structacpi__namespace__node.html">acpi_namespace_node</a></div><div class="ttdef"><b>Definition</b> aclocal.h:294</div></div>
 <div class="ttc" id="astructaml__resource__address16_html"><div class="ttname"><a href="structaml__resource__address16.html">aml_resource_address16</a></div><div class="ttdef"><b>Definition</b> amlresrc.h:485</div></div>
 <div class="ttc" id="astructaml__resource__address16_html_a0c19765c49c0768795f62c0ef7ad2d14"><div class="ttname"><a href="structaml__resource__address16.html#a0c19765c49c0768795f62c0ef7ad2d14">aml_resource_address16::TranslationOffset</a></div><div class="ttdeci">UINT16 TranslationOffset</div><div class="ttdef"><b>Definition</b> amlresrc.h:491</div></div>

@@ -93,7 +93,7 @@ Public Attributes</h2></td></tr>
 <tr class="separator:aced2795804b78833f9748a5793226fbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The EFI_BDS_ARCH_PROTOCOL transfers control from DXE to an operating system or a system utility. If there are not enough drivers initialized when this protocol is used to access the required boot <a class="el" href="Drivers_2USB_2hid_2main_8cpp.html#aa01b53b251b673a86b7c563fde808273">device(s)</a>, then this protocol should add drivers to the dispatch queue and return control back to the dispatcher. Once the required boot devices are available, then the boot device can be used to load and invoke an OS or a system utility. </p>
+<div class="textblock"><p>The EFI_BDS_ARCH_PROTOCOL transfers control from DXE to an operating system or a system utility. If there are not enough drivers initialized when this protocol is used to access the required boot <a class="el" href="structdevice.html">device(s)</a>, then this protocol should add drivers to the dispatch queue and return control back to the dispatcher. Once the required boot devices are available, then the boot device can be used to load and invoke an OS or a system utility. </p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
 <a id="aced2795804b78833f9748a5793226fbe" name="aced2795804b78833f9748a5793226fbe"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aced2795804b78833f9748a5793226fbe">&#9670;&#160;</a></span>Entry</h2>

@@ -283,7 +283,7 @@ Macros</h2></td></tr>
 <tr class="separator:a976813970c83aebd611482673617e74d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3a1aea60d3139bc62769ccc05bfa21e" id="r_ab3a1aea60d3139bc62769ccc05bfa21e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dlmalloc_8c.html#ab3a1aea60d3139bc62769ccc05bfa21e">MMAP_PROT</a>&#160;&#160;&#160;(<a class="el" href="mmap_8h.html#a15bf68ce8b590838b3a5c0b639d8d519">PROT_READ</a> | <a class="el" href="mmap_8h.html#a2a79c8ceefb8fc25a940ae07a3d94429">PROT_WRITE</a>)</td></tr>
 <tr class="separator:ab3a1aea60d3139bc62769ccc05bfa21e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad2d83ed2587a673f05e96fb46a11193e" id="r_ad2d83ed2587a673f05e96fb46a11193e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dlmalloc_8c.html#ad2d83ed2587a673f05e96fb46a11193e">MMAP_FLAGS</a>&#160;&#160;&#160;(<a class="el" href="mmap_8h.html#a398ef47a991a44389aa9818c98a28d24">MAP_PRIVATE</a>)</td></tr>
+<tr class="memitem:ad2d83ed2587a673f05e96fb46a11193e" id="r_ad2d83ed2587a673f05e96fb46a11193e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dlmalloc_8c.html#ad2d83ed2587a673f05e96fb46a11193e">MMAP_FLAGS</a>&#160;&#160;&#160;(<a class="el" href="BaseHdr_2linux_2mman_8h.html#a398ef47a991a44389aa9818c98a28d24">MAP_PRIVATE</a>)</td></tr>
 <tr class="separator:ad2d83ed2587a673f05e96fb46a11193e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ffaf2bbf4640080a18b722339db2125" id="r_a2ffaf2bbf4640080a18b722339db2125"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dlmalloc_8c.html#a2ffaf2bbf4640080a18b722339db2125">MMAP_DEFAULT</a>(s)</td></tr>
 <tr class="separator:a2ffaf2bbf4640080a18b722339db2125"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -451,7 +451,7 @@ Macros</h2></td></tr>
 <tr class="separator:a07ca81810ed532d2c932a26984f16fcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef1cfe43fae84cc03ab977f8512f0a11" id="r_aef1cfe43fae84cc03ab977f8512f0a11"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dlmalloc_8c.html#aef1cfe43fae84cc03ab977f8512f0a11">is_granularity_aligned</a>(S)&#160;&#160;&#160;(((<a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>)(S) &amp; (mparams.granularity - <a class="el" href="dlmalloc_8c.html#a1a115588725fa912f1bcaca9f08fb658">SIZE_T_ONE</a>)) == 0)</td></tr>
 <tr class="separator:aef1cfe43fae84cc03ab977f8512f0a11"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3616a6ae475e54f73816dfa69d1483e8" id="r_a3616a6ae475e54f73816dfa69d1483e8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dlmalloc_8c.html#a3616a6ae475e54f73816dfa69d1483e8">segment_holds</a>(S,  A)&#160;&#160;&#160;((char*)(A) &gt;= S-&gt;base &amp;&amp; (char*)(A) &lt; S-&gt;base + S-&gt;size)</td></tr>
+<tr class="memitem:a3616a6ae475e54f73816dfa69d1483e8" id="r_a3616a6ae475e54f73816dfa69d1483e8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dlmalloc_8c.html#a3616a6ae475e54f73816dfa69d1483e8">segment_holds</a>(S,  A)&#160;&#160;&#160;((char*)(A) &gt;= S-&gt;<a class="el" href="audrv_8c.html#aeca790c0426654358d031f8180e84aca">base</a> &amp;&amp; (char*)(A) &lt; S-&gt;<a class="el" href="audrv_8c.html#aeca790c0426654358d031f8180e84aca">base</a> + S-&gt;size)</td></tr>
 <tr class="separator:a3616a6ae475e54f73816dfa69d1483e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8fcca0fe7fd7176c642cb7eaca01e3c8" id="r_a8fcca0fe7fd7176c642cb7eaca01e3c8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dlmalloc_8c.html#a8fcca0fe7fd7176c642cb7eaca01e3c8">should_trim</a>(<a class="el" href="Process_2Doomgeneric_2sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>,  s)&#160;&#160;&#160;(0)</td></tr>
 <tr class="separator:a8fcca0fe7fd7176c642cb7eaca01e3c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -601,9 +601,9 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a1ead118dece8874bf2e15d2cb402c776" id="r_a1ead118dece8874bf2e15d2cb402c776"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dlmalloc_8c.html#a1ead118dece8874bf2e15d2cb402c776">au_request_page</a> (int pages)</td></tr>
+<tr class="memitem:a1ead118dece8874bf2e15d2cb402c776" id="r_a1ead118dece8874bf2e15d2cb402c776"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dlmalloc_8c.html#a1ead118dece8874bf2e15d2cb402c776">au_request_page</a> (int <a class="el" href="audrv_8c.html#a68500bf3713e530f85d34c2ce24997d8">pages</a>)</td></tr>
 <tr class="separator:a1ead118dece8874bf2e15d2cb402c776"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a9efa2db6f714edd5d8868897a4284f" id="r_a4a9efa2db6f714edd5d8868897a4284f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dlmalloc_8c.html#a4a9efa2db6f714edd5d8868897a4284f">au_free_page</a> (void *ptr, int pages)</td></tr>
+<tr class="memitem:a4a9efa2db6f714edd5d8868897a4284f" id="r_a4a9efa2db6f714edd5d8868897a4284f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dlmalloc_8c.html#a4a9efa2db6f714edd5d8868897a4284f">au_free_page</a> (void *ptr, int <a class="el" href="audrv_8c.html#a68500bf3713e530f85d34c2ce24997d8">pages</a>)</td></tr>
 <tr class="separator:a4a9efa2db6f714edd5d8868897a4284f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26873cdcd8583a61feb458e52f579689" id="r_a26873cdcd8583a61feb458e52f579689"><td class="memItemLeft" align="right" valign="top"><a class="el" href="dlmalloc_8c.html#a58ef5120047a35956d86ee00c2d364dc">DLMALLOC_EXPORT</a> void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dlmalloc_8c.html#a26873cdcd8583a61feb458e52f579689">dlmalloc</a> (<a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>)</td></tr>
 <tr class="separator:a26873cdcd8583a61feb458e52f579689"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -3231,13 +3231,13 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">    ((dev_zero_fd &lt; 0) ? (dev_zero_fd = <a class="code hl_define" href="acwin_8h.html#a8854c2a82db965759bd6095a666ffb76">open</a>(<span class="stringliteral">&quot;/dev/zero&quot;</span>, <a class="code hl_define" href="mmap_8h.html#abb0586253488ee61072b73557eeb873b">O_RDWR</a>),                                 \</div>
+<b>Value:</b><div class="fragment"><div class="line">    ((dev_zero_fd &lt; 0) ? (dev_zero_fd = <a class="code hl_define" href="acwin_8h.html#a8854c2a82db965759bd6095a666ffb76">open</a>(<span class="stringliteral">&quot;/dev/zero&quot;</span>, <a class="code hl_define" href="BaseHdr_2linux_2fcntl_8h.html#abb0586253488ee61072b73557eeb873b">O_RDWR</a>),                                 \</div>
 <div class="line">                          mmap(0, (s), <a class="code hl_define" href="dlmalloc_8c.html#ab3a1aea60d3139bc62769ccc05bfa21e">MMAP_PROT</a>, <a class="code hl_define" href="dlmalloc_8c.html#ad2d83ed2587a673f05e96fb46a11193e">MMAP_FLAGS</a>, dev_zero_fd, 0))                     \</div>
 <div class="line">                       : mmap(0, (s), <a class="code hl_define" href="dlmalloc_8c.html#ab3a1aea60d3139bc62769ccc05bfa21e">MMAP_PROT</a>, <a class="code hl_define" href="dlmalloc_8c.html#ad2d83ed2587a673f05e96fb46a11193e">MMAP_FLAGS</a>, dev_zero_fd, 0))</div>
+<div class="ttc" id="aBaseHdr_2linux_2fcntl_8h_html_abb0586253488ee61072b73557eeb873b"><div class="ttname"><a href="BaseHdr_2linux_2fcntl_8h.html#abb0586253488ee61072b73557eeb873b">O_RDWR</a></div><div class="ttdeci">#define O_RDWR</div><div class="ttdef"><b>Definition</b> fcntl.h:50</div></div>
 <div class="ttc" id="aacwin_8h_html_a8854c2a82db965759bd6095a666ffb76"><div class="ttname"><a href="acwin_8h.html#a8854c2a82db965759bd6095a666ffb76">open</a></div><div class="ttdeci">#define open</div><div class="ttdef"><b>Definition</b> acwin.h:179</div></div>
 <div class="ttc" id="adlmalloc_8c_html_ab3a1aea60d3139bc62769ccc05bfa21e"><div class="ttname"><a href="dlmalloc_8c.html#ab3a1aea60d3139bc62769ccc05bfa21e">MMAP_PROT</a></div><div class="ttdeci">#define MMAP_PROT</div><div class="ttdef"><b>Definition</b> dlmalloc.c:1725</div></div>
 <div class="ttc" id="adlmalloc_8c_html_ad2d83ed2587a673f05e96fb46a11193e"><div class="ttname"><a href="dlmalloc_8c.html#ad2d83ed2587a673f05e96fb46a11193e">MMAP_FLAGS</a></div><div class="ttdeci">#define MMAP_FLAGS</div><div class="ttdef"><b>Definition</b> dlmalloc.c:1737</div></div>
-<div class="ttc" id="ammap_8h_html_abb0586253488ee61072b73557eeb873b"><div class="ttname"><a href="mmap_8h.html#abb0586253488ee61072b73557eeb873b">O_RDWR</a></div><div class="ttdeci">#define O_RDWR</div><div class="ttdef"><b>Definition</b> mmap.h:47</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -3248,7 +3248,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define MMAP_FLAGS&#160;&#160;&#160;(<a class="el" href="mmap_8h.html#a398ef47a991a44389aa9818c98a28d24">MAP_PRIVATE</a>)</td>
+          <td class="memname">#define MMAP_FLAGS&#160;&#160;&#160;(<a class="el" href="BaseHdr_2linux_2mman_8h.html#a398ef47a991a44389aa9818c98a28d24">MAP_PRIVATE</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -3957,7 +3957,7 @@ Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;((char*)(A) &gt;= S-&gt;base &amp;&amp; (char*)(A) &lt; S-&gt;base + S-&gt;size)</td>
+          <td></td><td>&#160;&#160;&#160;((char*)(A) &gt;= S-&gt;<a class="el" href="audrv_8c.html#aeca790c0426654358d031f8180e84aca">base</a> &amp;&amp; (char*)(A) &lt; S-&gt;<a class="el" href="audrv_8c.html#aeca790c0426654358d031f8180e84aca">base</a> + S-&gt;size)</td>
         </tr>
       </table>
 </div><div class="memdoc">

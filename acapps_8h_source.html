@@ -332,11 +332,11 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span> </div>
 <div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span><a class="code hl_typedef" href="actypes_8h.html#a112e3146cb38b6ee95e64d85842e380a">BOOLEAN</a></div>
 <div class="line"><a id="l00237" name="l00237"></a><span class="lineno"><a class="line" href="acapps_8h.html#ae25a1a33d02314b945267bc3cf614d5b">  237</a></span><a class="code hl_function" href="acapps_8h.html#ae25a1a33d02314b945267bc3cf614d5b">AcIsFileBinary</a> (</div>
-<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>    <a class="code hl_struct" href="struct__IO__FILE__.html">FILE</a>                    *File);</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>    <a class="code hl_struct" href="struct__IO__FILE__.html">FILE</a>                    *<a class="code hl_struct" href="structFile.html">File</a>);</div>
 <div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span> </div>
 <div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span><a class="code hl_typedef" href="actypes_8h.html#a9c335cb71b6a3ba18516e73f4d7030a2">ACPI_STATUS</a></div>
 <div class="line"><a id="l00241" name="l00241"></a><span class="lineno"><a class="line" href="acapps_8h.html#aa1d9c43333e8aa0dadc237e0292f34b6">  241</a></span><a class="code hl_function" href="acapps_8h.html#aa1d9c43333e8aa0dadc237e0292f34b6">AcValidateTableHeader</a> (</div>
-<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>    <a class="code hl_struct" href="struct__IO__FILE__.html">FILE</a>                    *File,</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>    <a class="code hl_struct" href="struct__IO__FILE__.html">FILE</a>                    *<a class="code hl_struct" href="structFile.html">File</a>,</div>
 <div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>    <span class="keywordtype">long</span>                    TableOffset);</div>
 <div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span> </div>
 <div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span> </div>
@@ -371,7 +371,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span><a class="code hl_typedef" href="AArch64_2ProcessorBind_8h.html#ae1e6edbbc26d6fbc71a90190d0266018">UINT32</a></div>
 <div class="line"><a id="l00276" name="l00276"></a><span class="lineno"><a class="line" href="acapps_8h.html#a25d027abab0591a6ea0f48906dfe842c">  276</a></span><a class="code hl_function" href="acapps_8h.html#a25d027abab0591a6ea0f48906dfe842c">CmGetFileSize</a> (</div>
-<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>    <a class="code hl_define" href="acenv_8h.html#a666d505ea2814d2be09194bf516f8033">ACPI_FILE</a>               File);</div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>    <a class="code hl_define" href="acenv_8h.html#a666d505ea2814d2be09194bf516f8033">ACPI_FILE</a>               <a class="code hl_struct" href="structFile.html">File</a>);</div>
 <div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span> </div>
 <div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span> </div>
 <div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span><span class="comment">/*</span></div>
@@ -468,6 +468,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="ttc" id="aactypes_8h_html_ab27e9918b538ce9d8ca692479b375b6a"><div class="ttname"><a href="actypes_8h.html#ab27e9918b538ce9d8ca692479b375b6a">UINT8</a></div><div class="ttdeci">unsigned char UINT8</div><div class="ttdef"><b>Definition</b> actypes.h:236</div></div>
 <div class="ttc" id="aactypes_8h_html_abdc63466a45a100c0951421f0a60a19e"><div class="ttname"><a href="actypes_8h.html#abdc63466a45a100c0951421f0a60a19e">ACPI_OWNER_ID</a></div><div class="ttdeci">UINT8 ACPI_OWNER_ID</div><div class="ttdef"><b>Definition</b> actypes.h:594</div></div>
 <div class="ttc" id="astat_8h_html"><div class="ttname"><a href="stat_8h.html">stat.h</a></div></div>
+<div class="ttc" id="astructFile_html"><div class="ttname"><a href="structFile.html">File</a></div><div class="ttdef"><b>Definition</b> main.cpp:24</div></div>
 <div class="ttc" id="astruct__IO__FILE___html"><div class="ttname"><a href="struct__IO__FILE__.html">_IO_FILE_</a></div><div class="ttdef"><b>Definition</b> stdio.h:41</div></div>
 <div class="ttc" id="astructacpi__namespace__node_html"><div class="ttname"><a href="structacpi__namespace__node.html">acpi_namespace_node</a></div><div class="ttdef"><b>Definition</b> aclocal.h:294</div></div>
 <div class="ttc" id="astructacpi__new__table__desc_html"><div class="ttname"><a href="structacpi__new__table__desc.html">acpi_new_table_desc</a></div><div class="ttdef"><b>Definition</b> aclocal.h:359</div></div>

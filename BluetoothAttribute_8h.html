@@ -316,7 +316,7 @@ Variables</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">This</td><td>Pointer to the EFI_BLUETOOTH_ATTRIBUTE_PROTOCOL instance. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">DeviceInfoSize</td><td>A pointer to the size, in bytes, of the DeviceInfo buffer. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">DeviceInfo</td><td>A pointer to a callee allocated buffer that returns Bluetooth device information. Callee allocates this buffer by using EFI Boot Service <a class="el" href="MemoryAllocationLib_8h.html#a1c677b257b7d0e9fee0ac869947c5606">AllocatePool()</a>. If this device is Bluetooth classic device, <a class="el" href="structEFI__BLUETOOTH__DEVICE__INFO.html">EFI_BLUETOOTH_DEVICE_INFO</a> should be used. If this device is Bluetooth LE device, <a class="el" href="structEFI__BLUETOOTH__LE__DEVICE__INFO.html">EFI_BLUETOOTH_LE_DEVICE_INFO</a> should be used.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">DeviceInfo</td><td>A pointer to a callee allocated buffer that returns Bluetooth device information. Callee allocates this buffer by using EFI Boot <a class="el" href="structService.html">Service</a> <a class="el" href="MemoryAllocationLib_8h.html#a1c677b257b7d0e9fee0ac869947c5606">AllocatePool()</a>. If this device is Bluetooth classic device, <a class="el" href="structEFI__BLUETOOTH__DEVICE__INFO.html">EFI_BLUETOOTH_DEVICE_INFO</a> should be used. If this device is Bluetooth LE device, <a class="el" href="structEFI__BLUETOOTH__LE__DEVICE__INFO.html">EFI_BLUETOOTH_LE_DEVICE_INFO</a> should be used.</td></tr>
   </table>
   </dd>
 </dl>
@@ -346,7 +346,7 @@ Variables</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">This</td><td>Pointer to the EFI_BLUETOOTH_ATTRIBUTE_PROTOCOL instance. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">ServiceInfoSize</td><td>A pointer to the size, in bytes, of the ServiceInfo buffer. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">ServiceInfo</td><td>A pointer to a callee allocated buffer that returns Bluetooth discovered service information. Callee allocates this buffer by using EFI Boot Service <a class="el" href="MemoryAllocationLib_8h.html#a1c677b257b7d0e9fee0ac869947c5606">AllocatePool()</a>.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">ServiceInfo</td><td>A pointer to a callee allocated buffer that returns Bluetooth discovered service information. Callee allocates this buffer by using EFI Boot <a class="el" href="structService.html">Service</a> <a class="el" href="MemoryAllocationLib_8h.html#a1c677b257b7d0e9fee0ac869947c5606">AllocatePool()</a>.</td></tr>
   </table>
   </dd>
 </dl>

@@ -1167,7 +1167,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Set the password for a password-authenticated key exchange from key ID.</p>
-<p>Call this function when the password, or a value derived from the password, is already present in the key store.</p>
+<p><a class="el" href="structCall.html">Call</a> this function when the password, or a value derived from the password, is already present in the key store.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in,out]</td><td class="paramname">operation</td><td>The operation object to set the password for. It must have been set up by <a class="el" href="group__pake.html#ga45e914c064160f4fe1d511f9d0506400">psa_pake_setup()</a> and not yet in use (neither <a class="el" href="group__pake.html#ga592e6102db23692862d800f569a8f1fe">psa_pake_output()</a> nor <a class="el" href="group__pake.html#ga35af752a83762fe23daa47e3ddef3a68">psa_pake_input()</a> has been called yet). It must be on operation for which the password hasn't been set yet (<a class="el" href="group__pake.html#ga070417b83e6d602e9a6cc6748a14ea91">psa_pake_set_password_key()</a> hasn't been called yet). </td></tr>
@@ -1226,7 +1226,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Set the peer ID for a password-authenticated key exchange.</p>
-<p>Call this function in addition to <a class="el" href="group__pake.html#ga64fe9f62b09d39056e169325a9d33aac">psa_pake_set_user()</a> for PAKE algorithms that associate a user identifier with each side of the session. For PAKE algorithms that associate a single user identifier with the session, call <a class="el" href="group__pake.html#ga64fe9f62b09d39056e169325a9d33aac">psa_pake_set_user()</a> only.</p>
+<p><a class="el" href="structCall.html">Call</a> this function in addition to <a class="el" href="group__pake.html#ga64fe9f62b09d39056e169325a9d33aac">psa_pake_set_user()</a> for PAKE algorithms that associate a user identifier with each side of the session. For PAKE algorithms that associate a single user identifier with the session, call <a class="el" href="group__pake.html#ga64fe9f62b09d39056e169325a9d33aac">psa_pake_set_user()</a> only.</p>
 <p>Refer to the documentation of individual PAKE algorithm types (<code>PSA_ALG_XXX</code> values of type <a class="el" href="group__crypto__types.html#gac2e4d47f1300d73c2f829a6d99252d69" title="Encoding of a cryptographic algorithm.">psa_algorithm_t</a> such that <a class="el" href="group__crypto__types.html#ga947bd13805e0243541e586b7b7d803ae">PSA_ALG_IS_PAKE</a>(<code>alg</code>) is true) for more information.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1332,7 +1332,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Set the user ID for a password-authenticated key exchange.</p>
-<p>Call this function to set the user ID. For PAKE algorithms that associate a user identifier with each side of the session you need to call <a class="el" href="group__pake.html#gabae9a3e54d1c895032a4ee543b494958">psa_pake_set_peer()</a> as well. For PAKE algorithms that associate a single user identifier with the session, call <a class="el" href="group__pake.html#ga64fe9f62b09d39056e169325a9d33aac">psa_pake_set_user()</a> only.</p>
+<p><a class="el" href="structCall.html">Call</a> this function to set the user ID. For PAKE algorithms that associate a user identifier with each side of the session you need to call <a class="el" href="group__pake.html#gabae9a3e54d1c895032a4ee543b494958">psa_pake_set_peer()</a> as well. For PAKE algorithms that associate a single user identifier with the session, call <a class="el" href="group__pake.html#ga64fe9f62b09d39056e169325a9d33aac">psa_pake_set_user()</a> only.</p>
 <p>Refer to the documentation of individual PAKE algorithm types (<code>PSA_ALG_XXX</code> values of type <a class="el" href="group__crypto__types.html#gac2e4d47f1300d73c2f829a6d99252d69" title="Encoding of a cryptographic algorithm.">psa_algorithm_t</a> such that <a class="el" href="group__crypto__types.html#ga947bd13805e0243541e586b7b7d803ae">PSA_ALG_IS_PAKE</a>(<code>alg</code>) is true) for more information.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1386,15 +1386,15 @@ Functions</h2></td></tr>
 <p>The sequence of operations to set up a password-authenticated key exchange is as follows:</p><ol type="1">
 <li>Allocate an operation object which will be passed to all the functions listed here.</li>
 <li>Initialize the operation object with one of the methods described in the documentation for <a class="el" href="group__pake.html#ga2b408ef3a7b22400e4590a2c98a503df">psa_pake_operation_t</a>, e.g. <a class="el" href="crypto__extra_8h.html#a0ce235183de6d1a0744b00ced5be7c74">PSA_PAKE_OPERATION_INIT</a>.</li>
-<li>Call <a class="el" href="group__pake.html#ga45e914c064160f4fe1d511f9d0506400">psa_pake_setup()</a> to specify the cipher suite.</li>
-<li>Call <code>psa_pake_set_xxx()</code> functions on the operation to complete the setup. The exact sequence of <code>psa_pake_set_xxx()</code> functions that needs to be called depends on the algorithm in use.</li>
+<li><a class="el" href="structCall.html">Call</a> <a class="el" href="group__pake.html#ga45e914c064160f4fe1d511f9d0506400">psa_pake_setup()</a> to specify the cipher suite.</li>
+<li><a class="el" href="structCall.html">Call</a> <code>psa_pake_set_xxx()</code> functions on the operation to complete the setup. The exact sequence of <code>psa_pake_set_xxx()</code> functions that needs to be called depends on the algorithm in use.</li>
 </ol>
 <p>Refer to the documentation of individual PAKE algorithm types (<code>PSA_ALG_XXX</code> values of type <a class="el" href="group__crypto__types.html#gac2e4d47f1300d73c2f829a6d99252d69" title="Encoding of a cryptographic algorithm.">psa_algorithm_t</a> such that <a class="el" href="group__crypto__types.html#ga947bd13805e0243541e586b7b7d803ae">PSA_ALG_IS_PAKE</a>(<code>alg</code>) is true) for more information.</p>
 <p>A typical sequence of calls to perform a password-authenticated key exchange:</p><ol type="1">
-<li>Call psa_pake_output(operation, <a class="el" href="group__pake.html#ga043357cc339a34134089e9c8be93bfdb">PSA_PAKE_STEP_KEY_SHARE</a>, ...) to get the key share that needs to be sent to the peer.</li>
-<li>Call psa_pake_input(operation, <a class="el" href="group__pake.html#ga043357cc339a34134089e9c8be93bfdb">PSA_PAKE_STEP_KEY_SHARE</a>, ...) to provide the key share that was received from the peer.</li>
+<li><a class="el" href="structCall.html">Call</a> psa_pake_output(operation, <a class="el" href="group__pake.html#ga043357cc339a34134089e9c8be93bfdb">PSA_PAKE_STEP_KEY_SHARE</a>, ...) to get the key share that needs to be sent to the peer.</li>
+<li><a class="el" href="structCall.html">Call</a> psa_pake_input(operation, <a class="el" href="group__pake.html#ga043357cc339a34134089e9c8be93bfdb">PSA_PAKE_STEP_KEY_SHARE</a>, ...) to provide the key share that was received from the peer.</li>
 <li>Depending on the algorithm additional calls to <a class="el" href="group__pake.html#ga592e6102db23692862d800f569a8f1fe">psa_pake_output()</a> and <a class="el" href="group__pake.html#ga35af752a83762fe23daa47e3ddef3a68">psa_pake_input()</a> might be necessary.</li>
-<li>Call <a class="el" href="group__pake.html#gae1e7c28c10bf767f4b6927f820740103">psa_pake_get_implicit_key()</a> for accessing the shared secret.</li>
+<li><a class="el" href="structCall.html">Call</a> <a class="el" href="group__pake.html#gae1e7c28c10bf767f4b6927f820740103">psa_pake_get_implicit_key()</a> for accessing the shared secret.</li>
 </ol>
 <p>Refer to the documentation of individual PAKE algorithm types (<code>PSA_ALG_XXX</code> values of type <a class="el" href="group__crypto__types.html#gac2e4d47f1300d73c2f829a6d99252d69" title="Encoding of a cryptographic algorithm.">psa_algorithm_t</a> such that <a class="el" href="group__crypto__types.html#ga947bd13805e0243541e586b7b7d803ae">PSA_ALG_IS_PAKE</a>(<code>alg</code>) is true) for more information.</p>
 <p>If an error occurs at any step after a call to <a class="el" href="group__pake.html#ga45e914c064160f4fe1d511f9d0506400">psa_pake_setup()</a>, the operation will need to be reset by a call to <a class="el" href="group__pake.html#ga20bed96cc254d2e1829d666edc74376a">psa_pake_abort()</a>. The application may call <a class="el" href="group__pake.html#ga20bed96cc254d2e1829d666edc74376a">psa_pake_abort()</a> at any time after the operation has been initialized.</p>

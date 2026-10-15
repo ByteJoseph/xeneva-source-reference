@@ -116,10 +116,62 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="printk_8h.html#a024172b9fa6bfdc45a193a0efbfb0306">   33</a></span><span class="preprocessor">#define dev_info(dev, fmt, ...)   printk(fmt, ##__VA_ARGS__)</span></div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="printk_8h.html#a1031c3bda54503a96be0478dc6a3949b">   34</a></span><span class="preprocessor">#define dev_dbg(dev, fmt, ...)    do {} while (0)</span></div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="printk_8h.html#a7f2052adde8f3e80bac53bb89502628c">   36</a></span><span class="preprocessor">#define panic(fmt, ...) do { printk(&quot;PANIC: &quot; fmt, ##__VA_ARGS__); while(1); } while(0)</span></div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment"> * The _ratelimited spelling: same output, minus the flood.  mainline routes</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment"> * these through a ratelimit_state so a driver spinning on a fault cannot fill</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment"> * the log; DCL has no ratelimit machinery, and the two call sites are</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment"> * serial8250_set_termios()&#39;s &quot;LSR safety check engaged!&quot; (:2306) and the</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment"> * repeated-warning path at :2346 -- both once-per-change rather than</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment"> * once-per-byte.  So the body is dev_info/dev_warn exactly, and what is *not*</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment"> * claimed is the limiting: if a call site ever spins, the right fix is a</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment"> * ratelimit, not a comment saying these were limited.</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="printk_8h.html#a389f3869bc870c6e29e8ce446efa22ee">   46</a></span><span class="preprocessor">#define dev_info_ratelimited(dev, fmt, ...)  dev_info((dev), fmt, ##__VA_ARGS__)</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="printk_8h.html#a6924b5036ae382890e66bd01f91334bb">   47</a></span><span class="preprocessor">#define dev_warn_ratelimited(dev, fmt, ...)   dev_warn((dev), fmt, ##__VA_ARGS__)</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment"> * oops_in_progress is set *before* the message goes out, not after: the whole</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment"> * point is that serial8250_console_write() reads it while printing this very</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment"> * panic, and a console write that happens after the fact protects nothing.</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment"> * Declared in &lt;linux/kernel.h&gt;, defined in DCL/linux_irq_shim.c.</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="keyword">extern</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="printk_8h.html#a74eb463f9daae9b14832b4c3e4b237d0">oops_in_progress</a>;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="foldopen" id="foldopen00057" data-start="" data-end="">
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="printk_8h.html#a7f2052adde8f3e80bac53bb89502628c">   57</a></span><span class="preprocessor">#define panic(fmt, ...) do { oops_in_progress = 1; \</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="preprocessor">    printk(&quot;PANIC: &quot; fmt, ##__VA_ARGS__); while(1); } while(0)</span></div>
+</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="printk_8h.html#ac6a2c2cdfa8a750df2b8e2dadbdc7fa2">   61</a></span><span class="preprocessor">#define dev_notice_ratelimited(dev, fmt, ...)  dev_notice((dev), fmt, ##__VA_ARGS__)</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment"> * dev_err_probe(dev, err, fmt, ...) -- &quot;report this probe failure, unless it</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment"> * is -EPROBE_DEFER, which is normal&quot;.</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment"> * The whole behaviour is that one exception: mainline suppresses the</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment"> * -EPROBE_DEFER message because a deferred probe is the driver asking to be</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment"> * called again, not a fault, and printing every one would bury real errors.</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment"> * The value comes back unchanged either way -- the caller at serial_core.c:3575</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="comment"> * does `return dev_err_probe(...)`, so what matters is that the *original*</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="comment"> * error reaches the caller, not what was printed.</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="comment"> * Statement expression because it has both jobs in one call: evaluate the</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="comment"> * error once, print conditionally, yield the error.  `dev` is dropped by</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="comment"> * dev_err below exactly as it is for every other dev_* in this header.</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="comment"> */</span></div>
+<div class="foldopen" id="foldopen00078" data-start="" data-end="">
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="printk_8h.html#af4bc03612fa95878b8b8b46cf8750e7c">   78</a></span><span class="preprocessor">#define dev_err_probe(dev, err, fmt, ...)               \</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="preprocessor">    ({                              \</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="preprocessor">        int __e = (err);                    \</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="preprocessor">        if (__e != -EPROBE_DEFER)               \</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="preprocessor">            dev_err((dev), fmt, ##__VA_ARGS__);     \</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="preprocessor">        __e;                            \</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="preprocessor">    })</span></div>
+</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aaucon_8h_html"><div class="ttname"><a href="aucon_8h.html">aucon.h</a></div></div>
+<div class="ttc" id="aprintk_8h_html_a74eb463f9daae9b14832b4c3e4b237d0"><div class="ttname"><a href="printk_8h.html#a74eb463f9daae9b14832b4c3e4b237d0">oops_in_progress</a></div><div class="ttdeci">int oops_in_progress</div></div>
 <div class="ttc" id="auart_8h_html"><div class="ttname"><a href="uart_8h.html">uart.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

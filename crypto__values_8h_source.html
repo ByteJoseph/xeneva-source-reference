@@ -1002,14 +1002,14 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l02491" name="l02491"></a><span class="lineno"> 2491</span>    mbedtls_key_owner_id_t owner_id, <a class="code hl_typedef" href="group__key__lifetimes.html#ga11e986351c65bd3dc3c0fe2cd9926e4b">psa_key_id_t</a> key_id)</div>
 <div class="line"><a id="l02492" name="l02492"></a><span class="lineno"> 2492</span>{</div>
 <div class="line"><a id="l02493" name="l02493"></a><span class="lineno"> 2493</span>    <span class="keywordflow">return</span> (<a class="code hl_typedef" href="group__key__lifetimes.html#ga9a5375bd0cb9694f3a2694adc0a6ae13">mbedtls_svc_key_id_t</a>){ .MBEDTLS_PRIVATE(key_id) = key_id,</div>
-<div class="line"><a id="l02494" name="l02494"></a><span class="lineno"> 2494</span>                                   .MBEDTLS_PRIVATE(owner) = owner_id };</div>
+<div class="line"><a id="l02494" name="l02494"></a><span class="lineno"> 2494</span>                                   .MBEDTLS_PRIVATE(<a class="code hl_variable" href="netproxy_8c.html#aa753df16772ca09092f62763145e5179">owner</a>) = owner_id };</div>
 <div class="line"><a id="l02495" name="l02495"></a><span class="lineno"> 2495</span>}</div>
 <div class="line"><a id="l02496" name="l02496"></a><span class="lineno"> 2496</span> </div>
 <div class="line"><a id="l02504" name="l02504"></a><span class="lineno"> 2504</span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">int</span> mbedtls_svc_key_id_equal(<a class="code hl_typedef" href="group__key__lifetimes.html#ga9a5375bd0cb9694f3a2694adc0a6ae13">mbedtls_svc_key_id_t</a> id1,</div>
 <div class="line"><a id="l02505" name="l02505"></a><span class="lineno"> 2505</span>                                           <a class="code hl_typedef" href="group__key__lifetimes.html#ga9a5375bd0cb9694f3a2694adc0a6ae13">mbedtls_svc_key_id_t</a> id2)</div>
 <div class="line"><a id="l02506" name="l02506"></a><span class="lineno"> 2506</span>{</div>
 <div class="line"><a id="l02507" name="l02507"></a><span class="lineno"> 2507</span>    <span class="keywordflow">return</span> (id1.MBEDTLS_PRIVATE(key_id) == id2.MBEDTLS_PRIVATE(key_id)) &amp;&amp;</div>
-<div class="line"><a id="l02508" name="l02508"></a><span class="lineno"> 2508</span>           mbedtls_key_owner_id_equal(id1.MBEDTLS_PRIVATE(owner), id2.MBEDTLS_PRIVATE(owner));</div>
+<div class="line"><a id="l02508" name="l02508"></a><span class="lineno"> 2508</span>           mbedtls_key_owner_id_equal(id1.MBEDTLS_PRIVATE(<a class="code hl_variable" href="netproxy_8c.html#aa753df16772ca09092f62763145e5179">owner</a>), id2.MBEDTLS_PRIVATE(<a class="code hl_variable" href="netproxy_8c.html#aa753df16772ca09092f62763145e5179">owner</a>));</div>
 <div class="line"><a id="l02509" name="l02509"></a><span class="lineno"> 2509</span>}</div>
 <div class="line"><a id="l02510" name="l02510"></a><span class="lineno"> 2510</span> </div>
 <div class="line"><a id="l02517" name="l02517"></a><span class="lineno"> 2517</span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">int</span> mbedtls_svc_key_id_is_null(<a class="code hl_typedef" href="group__key__lifetimes.html#ga9a5375bd0cb9694f3a2694adc0a6ae13">mbedtls_svc_key_id_t</a> key)</div>
@@ -1079,6 +1079,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l02783" name="l02783"></a><span class="lineno"> 2783</span><span class="preprocessor">#endif </span><span class="comment">/* PSA_CRYPTO_VALUES_H */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="agroup__key__lifetimes_html_ga11e986351c65bd3dc3c0fe2cd9926e4b"><div class="ttname"><a href="group__key__lifetimes.html#ga11e986351c65bd3dc3c0fe2cd9926e4b">psa_key_id_t</a></div><div class="ttdeci">uint32_t psa_key_id_t</div><div class="ttdef"><b>Definition</b> crypto_types.h:275</div></div>
 <div class="ttc" id="agroup__key__lifetimes_html_ga9a5375bd0cb9694f3a2694adc0a6ae13"><div class="ttname"><a href="group__key__lifetimes.html#ga9a5375bd0cb9694f3a2694adc0a6ae13">mbedtls_svc_key_id_t</a></div><div class="ttdeci">psa_key_id_t mbedtls_svc_key_id_t</div><div class="ttdef"><b>Definition</b> crypto_types.h:292</div></div>
+<div class="ttc" id="anetproxy_8c_html_aa753df16772ca09092f62763145e5179"><div class="ttname"><a href="netproxy_8c.html#aa753df16772ca09092f62763145e5179">owner</a></div><div class="ttdeci">AuProcess * owner</div><div class="ttdef"><b>Definition</b> netproxy.c:38</div></div>
 <div class="ttc" id="aprivate__access_8h_html"><div class="ttname"><a href="private__access_8h.html">private_access.h</a></div><div class="ttdoc">Macro wrapper for struct's members.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

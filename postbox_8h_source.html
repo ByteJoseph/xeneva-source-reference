@@ -94,7 +94,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">#ifdef ARCH_X64</span></div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="preprocessor">#include &lt;<a class="code" href="x86__64__sched_8h.html">Hal/x86_64_sched.h</a>&gt;</span></div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="preprocessor">#elif ARCH_ARM64</span></div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">#include &lt;<a class="code" href="sched_8h.html">Hal/AA64/sched.h</a>&gt;</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">#include &lt;<a class="code" href="Hal_2AA64_2sched_8h.html">Hal/AA64/sched.h</a>&gt;</span></div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="preprocessor">#include &lt;<a class="code" href="vfs_8h.html">Fs/vfs.h</a>&gt;</span></div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
@@ -177,10 +177,11 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span> </div>
 <div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span><span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code hl_function" href="postbox_8h.html#a225984811baa705f2ba384ec57cfd03b">PostBoxDestroyByID</a>(<a class="code hl_typedef" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> <span class="keywordtype">id</span>);</div>
 <div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span> </div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span><span class="keyword">extern</span> <span class="keywordtype">int</span> <a class="code hl_function" href="postbox_8h.html#a335239715ced641b831b264326fadac8">PostBoxIOControl</a>(<a class="code hl_struct" href="struct____VFS__NODE____.html">AuVFSNode</a>* file, <span class="keywordtype">int</span> code, <span class="keywordtype">void</span>* arg);</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span><span class="keyword">extern</span> <span class="keywordtype">int</span> <a class="code hl_function" href="postbox_8h.html#a335239715ced641b831b264326fadac8">PostBoxIOControl</a>(<a class="code hl_struct" href="struct____VFS__NODE____.html">AuVFSNode</a>* <a class="code hl_struct" href="structfile.html">file</a>, <span class="keywordtype">int</span> code, <span class="keywordtype">void</span>* arg);</div>
 <div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span> </div>
 <div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span> </div>
 <div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aHal_2AA64_2sched_8h_html"><div class="ttname"><a href="Hal_2AA64_2sched_8h.html">sched.h</a></div></div>
 <div class="ttc" id="aacefiex_8h_html_a435d1572bf3f880d55459d9805097f62"><div class="ttname"><a href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></div><div class="ttdeci">unsigned int uint32_t</div><div class="ttdef"><b>Definition</b> acefiex.h:163</div></div>
 <div class="ttc" id="aacefiex_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition</b> acefiex.h:161</div></div>
 <div class="ttc" id="aacefiex_8h_html_ace97e810e06af5096bfe72ee3e7c5316"><div class="ttname"><a href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a></div><div class="ttdeci">COMPILER_DEPENDENT_UINT64 uint64_t</div><div class="ttdef"><b>Definition</b> acefiex.h:165</div></div>
@@ -194,7 +195,6 @@ $(document).ready(function() { init_codefold(0); });
 <div class="ttc" id="apostbox_8h_html_a9a7b470f16dc31483c2317bf5263501c"><div class="ttname"><a href="postbox_8h.html#a9a7b470f16dc31483c2317bf5263501c">PostBox</a></div><div class="ttdeci">struct _postbox_ PostBox</div></div>
 <div class="ttc" id="apostbox_8h_html_abbaafaf8b5c5a60fc0cb6beae02bd840"><div class="ttname"><a href="postbox_8h.html#abbaafaf8b5c5a60fc0cb6beae02bd840">AuPostBOXGetNode</a></div><div class="ttdeci">AuVFSNode * AuPostBOXGetNode()</div><div class="ttdef"><b>Definition</b> postbox.c:286</div></div>
 <div class="ttc" id="apostbox_8h_html_ac84a77c618106d5d8e95f2a83a55b2d9"><div class="ttname"><a href="postbox_8h.html#ac84a77c618106d5d8e95f2a83a55b2d9">PostEvent</a></div><div class="ttdeci">struct _post_event_ PostEvent</div></div>
-<div class="ttc" id="asched_8h_html"><div class="ttname"><a href="sched_8h.html">sched.h</a></div></div>
 <div class="ttc" id="astruct____VFS__NODE_____html"><div class="ttname"><a href="struct____VFS__NODE____.html">__VFS_NODE__</a></div><div class="ttdef"><b>Definition</b> vfs.h:98</div></div>
 <div class="ttc" id="astruct__au__thread___html"><div class="ttname"><a href="struct__au__thread__.html">_au_thread_</a></div><div class="ttdef"><b>Definition</b> x86_64_sched.h:118</div></div>
 <div class="ttc" id="astruct__post__event___html"><div class="ttname"><a href="struct__post__event__.html">_post_event_</a></div><div class="ttdef"><b>Definition</b> postbox.h:63</div></div>
@@ -223,6 +223,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="ttc" id="astruct__postbox___html_a89180d9746bfee03a82256e7e9ac453b"><div class="ttname"><a href="struct__postbox__.html#a89180d9746bfee03a82256e7e9ac453b">_postbox_::next</a></div><div class="ttdeci">struct _postbox_ * next</div><div class="ttdef"><b>Definition</b> postbox.h:93</div></div>
 <div class="ttc" id="astruct__postbox___html_a9977cda9738c1762275cbbf2ea79e0b7"><div class="ttname"><a href="struct__postbox__.html#a9977cda9738c1762275cbbf2ea79e0b7">_postbox_::full</a></div><div class="ttdeci">bool full</div><div class="ttdef"><b>Definition</b> postbox.h:91</div></div>
 <div class="ttc" id="astruct__postbox___html_af131b199215daeccce837e68804f181b"><div class="ttname"><a href="struct__postbox__.html#af131b199215daeccce837e68804f181b">_postbox_::tailIdx</a></div><div class="ttdeci">int tailIdx</div><div class="ttdef"><b>Definition</b> postbox.h:90</div></div>
+<div class="ttc" id="astructfile_html"><div class="ttname"><a href="structfile.html">file</a></div><div class="ttdef"><b>Definition</b> fs.h:106</div></div>
 <div class="ttc" id="atty_8cpp_html_aa3ddf14a1307cc0427854f3dee730073"><div class="ttname"><a href="tty_8cpp.html#aa3ddf14a1307cc0427854f3dee730073">root</a></div><div class="ttdeci">TTY * root</div><div class="ttdef"><b>Definition</b> tty.cpp:47</div></div>
 <div class="ttc" id="avfs_8h_html"><div class="ttname"><a href="vfs_8h.html">vfs.h</a></div></div>
 <div class="ttc" id="ax86__64__sched_8h_html"><div class="ttname"><a href="x86__64__sched_8h.html">x86_64_sched.h</a></div></div>

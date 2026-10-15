@@ -206,7 +206,7 @@ Variables</h2></td></tr>
 <tr class="separator:abedec325dadb06c576b50673b98349b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>UEFI Multicast Trivial File Transfer Protocol v6 Definition, which is built upon the EFI UDPv6 Protocol and provides basic services for client-side unicast and/or multicast TFTP operations.</p>
+<div class="textblock"><p>UEFI Multicast Trivial <a class="el" href="structFile.html">File</a> Transfer Protocol v6 Definition, which is built upon the EFI UDPv6 Protocol and provides basic services for client-side unicast and/or multicast TFTP operations.</p>
 <p>Copyright (c) 2008 - 2011, Intel Corporation. All rights reserved.<br  />
  (C) Copyright 2016 Hewlett Packard Enterprise Development LP<br  />
 </p>
@@ -745,7 +745,7 @@ Variables</h2></td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">PacketLen</td><td>Length of the OACK packet to be parsed. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">Packet</td><td>Pointer to the OACK packet to be parsed. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">OptionCount</td><td>Pointer to the number of options in the following OptionList. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">OptionList</td><td>Pointer to <a class="el" href="structEFI__MTFTP6__OPTION.html">EFI_MTFTP6_OPTION</a> storage. Each pointer in the OptionList points to the corresponding MTFTP option buffer in the Packet. Call the EFI Boot Service <a class="el" href="MemoryAllocationLib_8h.html#a8b1cbc21e0cebcfc6a992546ec9b4941">FreePool()</a> to release the OptionList if the options in this OptionList are not needed any more.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">OptionList</td><td>Pointer to <a class="el" href="structEFI__MTFTP6__OPTION.html">EFI_MTFTP6_OPTION</a> storage. Each pointer in the OptionList points to the corresponding MTFTP option buffer in the Packet. <a class="el" href="structCall.html">Call</a> the EFI Boot <a class="el" href="structService.html">Service</a> <a class="el" href="MemoryAllocationLib_8h.html#a8b1cbc21e0cebcfc6a992546ec9b4941">FreePool()</a> to release the OptionList if the options in this OptionList are not needed any more.</td></tr>
   </table>
   </dd>
 </dl>

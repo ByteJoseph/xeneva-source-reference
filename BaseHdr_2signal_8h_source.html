@@ -86,7 +86,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#define __SIGNAL_H__</span></div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#include &lt;<a class="code" href="Libs_2XEClib_2includes_2stdint_8h.html">stdint.h</a>&gt;</span></div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#include &lt;<a class="code" href="sched_8h.html">Hal/AA64/sched.h</a>&gt;</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#include &lt;<a class="code" href="Hal_2AA64_2sched_8h.html">Hal/AA64/sched.h</a>&gt;</span></div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#if defined(__GNUC__) || defined(__clang__)</span></div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#ifndef __cplusplus</span></div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#include &lt;stdbool.h&gt;</span></div>
@@ -158,10 +158,10 @@ $(document).ready(function() { init_codefold(0); });
 <div class="ttc" id="aBaseHdr_2signal_8h_html_aba38ef7b8ae6bdcce2e509d702a3dce1"><div class="ttname"><a href="BaseHdr_2signal_8h.html#aba38ef7b8ae6bdcce2e509d702a3dce1">AuSignalHandler</a></div><div class="ttdeci">void(* AuSignalHandler)(int signum)</div><div class="ttdef"><b>Definition</b> signal.h:65</div></div>
 <div class="ttc" id="aBaseHdr_2signal_8h_html_abc48a2c1b61293da94e135cc17d26e00"><div class="ttname"><a href="BaseHdr_2signal_8h.html#abc48a2c1b61293da94e135cc17d26e00">AuSignalInitializeTrampoline</a></div><div class="ttdeci">void AuSignalInitializeTrampoline(AA64Thread *t)</div><div class="ttdoc">AuSignalInitializeTrampoline – installs return trampoline code to threads sig return address.</div><div class="ttdef"><b>Definition</b> signal.c:122</div></div>
 <div class="ttc" id="aBaseHdr_2signal_8h_html_af66d3c1feab0c89c1332a0d11f75b185"><div class="ttname"><a href="BaseHdr_2signal_8h.html#af66d3c1feab0c89c1332a0d11f75b185">AuSignalDeliver</a></div><div class="ttdeci">bool AuSignalDeliver(AA64Thread *current_thread)</div><div class="ttdoc">AuSignalDeliver – deliver the current thread's signal.</div><div class="ttdef"><b>Definition</b> signal.c:101</div></div>
+<div class="ttc" id="aHal_2AA64_2sched_8h_html"><div class="ttname"><a href="Hal_2AA64_2sched_8h.html">sched.h</a></div></div>
 <div class="ttc" id="aLibs_2XEClib_2includes_2stdint_8h_html"><div class="ttname"><a href="Libs_2XEClib_2includes_2stdint_8h.html">stdint.h</a></div></div>
 <div class="ttc" id="aProcess_2Calender_2main_8cpp_html_a5b9f2c8eed2b49ee91dd608d9a0ec4bd"><div class="ttname"><a href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a></div><div class="ttdeci">XETime t</div><div class="ttdef"><b>Definition</b> main.cpp:53</div></div>
-<div class="ttc" id="asched_8c_html_a4158d48cec4f78258a7b3b5b535f6702"><div class="ttname"><a href="sched_8c.html#a4158d48cec4f78258a7b3b5b535f6702">current_thread</a></div><div class="ttdeci">AA64Thread * current_thread</div><div class="ttdef"><b>Definition</b> sched.c:77</div></div>
-<div class="ttc" id="asched_8h_html"><div class="ttname"><a href="sched_8h.html">sched.h</a></div></div>
+<div class="ttc" id="asched_8c_html_a4158d48cec4f78258a7b3b5b535f6702"><div class="ttname"><a href="sched_8c.html#a4158d48cec4f78258a7b3b5b535f6702">current_thread</a></div><div class="ttdeci">AA64Thread * current_thread</div><div class="ttdef"><b>Definition</b> sched.c:78</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

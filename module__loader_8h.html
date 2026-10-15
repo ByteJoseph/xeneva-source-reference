@@ -81,7 +81,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
-<code>#include &lt;stddef.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="BaseHdr_2linux_2stddef_8h_source.html">stddef.h</a>&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for module_loader.h:</div>
 <div class="dyncontent">
@@ -90,8 +90,10 @@ Include dependency graph for module_loader.h:</div>
 <area shape="rect" title=" " alt="" coords="5,5,189,45"/>
 <area shape="rect" title=" " alt="" coords="14,93,85,119"/>
 <area shape="poly" title=" " alt="" coords="88,47,66,83,61,80,83,44"/>
-<area shape="rect" title=" " alt="" coords="109,93,184,119"/>
+<area shape="rect" href="BaseHdr_2linux_2stddef_8h.html" title=" " alt="" coords="109,93,184,119"/>
 <area shape="poly" title=" " alt="" coords="112,44,134,80,130,83,107,47"/>
+<area shape="rect" href="BaseHdr_2uapi_2linux_2stddef_8h.html" title=" " alt="" coords="75,167,218,192"/>
+<area shape="poly" title=" " alt="" coords="149,119,149,153,144,153,144,119"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -99,13 +101,9 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="module__loader_8h__dep__incl.png" border="0" usemap="#aXenevaOS_2BaseHdr_2linux_2module__loader_8hdep" alt=""/></div>
 <map name="aXenevaOS_2BaseHdr_2linux_2module__loader_8hdep" id="aXenevaOS_2BaseHdr_2linux_2module__loader_8hdep">
-<area shape="rect" title=" " alt="" coords="207,5,391,45"/>
-<area shape="rect" href="modload__test_8c.html" title=" " alt="" coords="5,93,183,133"/>
-<area shape="poly" title=" " alt="" coords="243,53,140,96,138,91,241,48"/>
-<area shape="rect" href="module__loader_8c.html" title=" " alt="" coords="207,93,391,133"/>
-<area shape="poly" title=" " alt="" coords="302,59,302,93,297,93,297,59"/>
-<area shape="rect" href="init_8c.html" title=" " alt="" coords="415,93,583,133"/>
-<area shape="poly" title=" " alt="" coords="357,48,457,91,454,96,355,53"/>
+<area shape="rect" title=" " alt="" coords="5,5,189,45"/>
+<area shape="rect" href="init_8c.html" title=" " alt="" coords="13,93,181,133"/>
+<area shape="poly" title=" " alt="" coords="100,59,100,93,95,93,95,59"/>
 </map>
 </div>
 </div>
@@ -127,7 +125,7 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aaf85843bb2872bc82745e43a59c8a9b6" id="r_aaf85843bb2872bc82745e43a59c8a9b6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="module__loader_8h.html#aaf85843bb2872bc82745e43a59c8a9b6">mod_load</a> (const void *data, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> size, struct <a class="el" href="structmod__handle.html">mod_handle</a> *handle)</td></tr>
+<tr class="memitem:aaf85843bb2872bc82745e43a59c8a9b6" id="r_aaf85843bb2872bc82745e43a59c8a9b6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="module__loader_8h.html#aaf85843bb2872bc82745e43a59c8a9b6">mod_load</a> (const void *<a class="el" href="sndproxy_8c.html#abe222f6d3581e7920dcad5306cc906a8">data</a>, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> size, struct <a class="el" href="structmod__handle.html">mod_handle</a> *handle)</td></tr>
 <tr class="separator:aaf85843bb2872bc82745e43a59c8a9b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c684dd453b3eec04fe219bf1dc30c46" id="r_a5c684dd453b3eec04fe219bf1dc30c46"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="module__loader_8h.html#a5c684dd453b3eec04fe219bf1dc30c46">mod_unload</a> (struct <a class="el" href="structmod__handle.html">mod_handle</a> *handle)</td></tr>
 <tr class="separator:a5c684dd453b3eec04fe219bf1dc30c46"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -135,7 +133,7 @@ Functions</h2></td></tr>
 <tr class="separator:af460ed7d83d45de53e5a2a77b09a0653"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a681b0bef4d3a5a8626f9b5b8529360dc" id="r_a681b0bef4d3a5a8626f9b5b8529360dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="module__loader_8h.html#a681b0bef4d3a5a8626f9b5b8529360dc">mod_call_exit</a> (struct <a class="el" href="structmod__handle.html">mod_handle</a> *handle)</td></tr>
 <tr class="separator:a681b0bef4d3a5a8626f9b5b8529360dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a212b768468001f5c6518590bf1ccad" id="r_a9a212b768468001f5c6518590bf1ccad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="module__loader_8h.html#a9a212b768468001f5c6518590bf1ccad">k_export_lookup</a> (const char *<a class="el" href="codec__8859_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>)</td></tr>
+<tr class="memitem:a9a212b768468001f5c6518590bf1ccad" id="r_a9a212b768468001f5c6518590bf1ccad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="module__loader_8h.html#a9a212b768468001f5c6518590bf1ccad">k_export_lookup</a> (const char *<a class="el" href="kobject_8h.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>)</td></tr>
 <tr class="separator:a9a212b768468001f5c6518590bf1ccad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>

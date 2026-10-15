@@ -162,7 +162,7 @@ Variables</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">This</td><td>The EFI_SECURITY2_ARCH_PROTOCOL instance. </td></tr>
-    <tr><td class="paramname">File</td><td>A pointer to the device path of the file that is being dispatched. This will optionally be used for logging. </td></tr>
+    <tr><td class="paramname"><a class="el" href="structFile.html">File</a></td><td>A pointer to the device path of the file that is being dispatched. This will optionally be used for logging. </td></tr>
     <tr><td class="paramname">FileBuffer</td><td>A pointer to the buffer with the UEFI file image. </td></tr>
     <tr><td class="paramname">FileSize</td><td>The size of the file. </td></tr>
     <tr><td class="paramname">BootPolicy</td><td>A boot policy that was used to call LoadImage() UEFI service. If FileAuthentication() is invoked not from the LoadImage(), BootPolicy must be set to FALSE.</td></tr>
@@ -175,7 +175,7 @@ Variables</h2></td></tr>
     <tr><td class="paramname">EFI_SUCCESS</td><td>The device path specified by NULL device path DevicePath and non-NULL FileBuffer did authenticate, and the platform policy dictates that the DXE Foundation may execute the image in FileBuffer. </td></tr>
     <tr><td class="paramname">EFI_SUCCESS</td><td>FileBuffer is NULL and current user has permission to start UEFI device drivers on the device path specified by DevicePath. </td></tr>
     <tr><td class="paramname">EFI_SECURITY_VIOLATION</td><td>The file specified by DevicePath and FileBuffer did not authenticate, and the platform policy dictates that the file should be placed in the untrusted state. The image has been added to the file execution table. </td></tr>
-    <tr><td class="paramname">EFI_ACCESS_DENIED</td><td>The file specified by File and FileBuffer did not authenticate, and the platform policy dictates that the DXE Foundation may not use File. </td></tr>
+    <tr><td class="paramname">EFI_ACCESS_DENIED</td><td>The file specified by <a class="el" href="structFile.html">File</a> and FileBuffer did not authenticate, and the platform policy dictates that the DXE Foundation may not use <a class="el" href="structFile.html">File</a>. </td></tr>
     <tr><td class="paramname">EFI_SECURITY_VIOLATION</td><td>FileBuffer is NULL and the user has no permission to start UEFI device drivers on the device path specified by DevicePath. </td></tr>
     <tr><td class="paramname">EFI_SECURITY_VIOLATION</td><td>FileBuffer is not NULL and the user has no permission to load drivers from the device path specified by DevicePath. The image has been added into the list of the deferred images. </td></tr>
   </table>

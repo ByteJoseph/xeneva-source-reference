@@ -19,7 +19,7 @@ var searchData=
   ['bmp_16',['bmp',['../bmp_8h.html#a12fe53f172b9f3480f963c54e6dd8be7',1,'BMP:&#160;bmp.h'],['../deodhai_8h.html#a12fe53f172b9f3480f963c54e6dd8be7',1,'BMP:&#160;deodhai.h'],['../deodxr_8h.html#a12fe53f172b9f3480f963c54e6dd8be7',1,'BMP:&#160;deodxr.h'],['../splash_8cpp.html#a12fe53f172b9f3480f963c54e6dd8be7',1,'BMP:&#160;splash.cpp'],['../NamdaphaButton_8cpp.html#a12fe53f172b9f3480f963c54e6dd8be7',1,'BMP:&#160;NamdaphaButton.cpp'],['../launcher_8h.html#a12fe53f172b9f3480f963c54e6dd8be7',1,'BMP:&#160;launcher.h']]],
   ['bmpinfo_17',['bmpinfo',['../launcher_8h.html#ab63e9a99b38c06d8603e8f7b363fd5c1',1,'BMPInfo:&#160;launcher.h'],['../NamdaphaButton_8cpp.html#ab63e9a99b38c06d8603e8f7b363fd5c1',1,'BMPInfo:&#160;NamdaphaButton.cpp'],['../splash_8cpp.html#ab63e9a99b38c06d8603e8f7b363fd5c1',1,'BMPInfo:&#160;splash.cpp'],['../deodhai_8h.html#ab63e9a99b38c06d8603e8f7b363fd5c1',1,'BMPInfo:&#160;deodhai.h'],['../bmp_8h.html#ab63e9a99b38c06d8603e8f7b363fd5c1',1,'BMPInfo:&#160;bmp.h'],['../deodxr_8h.html#ab63e9a99b38c06d8603e8f7b363fd5c1',1,'BMPInfo:&#160;deodxr.h']]],
   ['bool_18',['BOOL',['../BaseHdr_2stdint_8h.html#a67bb6a3d7ee6a2a5950ce437abbe31c8',1,'stdint.h']]],
-  ['boolean_19',['boolean',['../actypes_8h.html#a112e3146cb38b6ee95e64d85842e380a',1,'BOOLEAN:&#160;actypes.h'],['../AArch64_2ProcessorBind_8h.html#a112e3146cb38b6ee95e64d85842e380a',1,'BOOLEAN:&#160;ProcessorBind.h'],['../Arm_2ProcessorBind_8h.html#a112e3146cb38b6ee95e64d85842e380a',1,'BOOLEAN:&#160;ProcessorBind.h'],['../Ebc_2ProcessorBind_8h.html#a112e3146cb38b6ee95e64d85842e380a',1,'BOOLEAN:&#160;ProcessorBind.h'],['../Ia32_2ProcessorBind_8h.html#a112e3146cb38b6ee95e64d85842e380a',1,'BOOLEAN:&#160;ProcessorBind.h'],['../Drivers_2USB_2dwc2-uspi_2uspi_2types_8h.html#a621c38f1f10a1c565d897e3178b16d6e',1,'boolean:&#160;types.h']]],
+  ['boolean_19',['boolean',['../Drivers_2USB_2dwc2-uspi_2uspi_2types_8h.html#a621c38f1f10a1c565d897e3178b16d6e',1,'boolean:&#160;types.h'],['../actypes_8h.html#a112e3146cb38b6ee95e64d85842e380a',1,'BOOLEAN:&#160;actypes.h'],['../AArch64_2ProcessorBind_8h.html#a112e3146cb38b6ee95e64d85842e380a',1,'BOOLEAN:&#160;ProcessorBind.h'],['../Arm_2ProcessorBind_8h.html#a112e3146cb38b6ee95e64d85842e380a',1,'BOOLEAN:&#160;ProcessorBind.h'],['../Ebc_2ProcessorBind_8h.html#a112e3146cb38b6ee95e64d85842e380a',1,'BOOLEAN:&#160;ProcessorBind.h'],['../Ia32_2ProcessorBind_8h.html#a112e3146cb38b6ee95e64d85842e380a',1,'BOOLEAN:&#160;ProcessorBind.h']]],
   ['bordoisilaclk_20',['BordoisilaClk',['../res_8h.html#ab3e7881e0ccbe9b93eccb902213acc90',1,'res.h']]],
   ['bordoisiladriver_21',['BordoisilaDriver',['../core_8h.html#a28057d31e048868a9f415b00b39b1a4d',1,'core.h']]],
   ['bordoisiladriverresource_22',['BordoisilaDriverResource',['../core_8h.html#ad23ad8a1d13db8e74e232462cc8ee48e',1,'core.h']]],
@@ -31,9 +31,9 @@ var searchData=
   ['bth4_28',['BtH4',['../h4_8h.html#ad4c65b9514d7e5783b2629ee942f92d7',1,'h4.h']]],
   ['btinfo_29',['BtInfo',['../bt_8h.html#a69d931c56d81ec4a2ba6785b3085d785',1,'bt.h']]],
   ['btscanent_30',['BtScanEnt',['../bt_8h.html#a48f08244f6a8eb9bba6d8d58c2fc9f92',1,'bt.h']]],
-  ['bulk_5ftransfer_31',['bulk_transfer',['../BaseHdr_2Drivers_2usb_8h.html#a1ed8e44f32de58c306010d81db798515',1,'usb.h']]],
+  ['bulk_5ftransfer_31',['bulk_transfer',['../BaseHdr_2Drivers_2usb_8h.html#aaee189254120c0a9a9cf805662a8cd61',1,'usb.h']]],
   ['buttonicon_32',['ButtonIcon',['../Process_2XELnch_2button_8h.html#a75728bef909bfc7cd0031d46c148ec55',1,'button.h']]],
   ['buttoninfo_33',['ButtonInfo',['../nmdapha_8h.html#a36a72e9c895cd29c58b038fd563f37d2',1,'nmdapha.h']]],
   ['buttonmatch_34',['ButtonMatch',['../search_8cpp.html#a853d64b9b6a6c7b0fb40a74587ecf4b1',1,'search.cpp']]],
-  ['byte_35',['byte',['../Tpm20_8h.html#a7f198a4ec02dba18942d78b7bc065e06',1,'BYTE:&#160;Tpm20.h'],['../doomtype_8h.html#ab8ef12fab634c171394422d0ee8baf94',1,'byte:&#160;doomtype.h']]]
+  ['byte_35',['byte',['../doomtype_8h.html#ab8ef12fab634c171394422d0ee8baf94',1,'byte:&#160;doomtype.h'],['../Tpm20_8h.html#a7f198a4ec02dba18942d78b7bc065e06',1,'BYTE:&#160;Tpm20.h']]]
 ];

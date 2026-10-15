@@ -295,7 +295,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span><a class="code hl_typedef" href="actypes_8h.html#a9c335cb71b6a3ba18516e73f4d7030a2">ACPI_STATUS</a></div>
 <div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>AcpiDbSingleStep (</div>
 <div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>    <a class="code hl_struct" href="structacpi__walk__state.html">ACPI_WALK_STATE</a>         *WalkState,</div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>    <a class="code hl_union" href="unionacpi__parse__object.html">ACPI_PARSE_OBJECT</a>       *Op,</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>    <a class="code hl_union" href="unionacpi__parse__object.html">ACPI_PARSE_OBJECT</a>       *<a class="code hl_struct" href="structOp.html">Op</a>,</div>
 <div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>    <a class="code hl_typedef" href="AArch64_2ProcessorBind_8h.html#ae1e6edbbc26d6fbc71a90190d0266018">UINT32</a>                  OpType))</div>
 <div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span> </div>
 <div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span><a class="code hl_define" href="acpixf_8h.html#ad3b017584f2ec807c6a1178ea9eb0abc">ACPI_DBR_DEPENDENT_RETURN_VOID</a> (</div>
@@ -411,11 +411,11 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00320" name="l00320"></a><span class="lineno"><a class="line" href="acdebug_8h.html#ac155304488e62279571bbf9d4b97e45c">  320</a></span><a class="code hl_function" href="acdebug_8h.html#ac155304488e62279571bbf9d4b97e45c">AcpiDbSetMethodBreakpoint</a> (</div>
 <div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>    <span class="keywordtype">char</span>                    *Location,</div>
 <div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>    <a class="code hl_struct" href="structacpi__walk__state.html">ACPI_WALK_STATE</a>         *WalkState,</div>
-<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>    <a class="code hl_union" href="unionacpi__parse__object.html">ACPI_PARSE_OBJECT</a>       *Op);</div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>    <a class="code hl_union" href="unionacpi__parse__object.html">ACPI_PARSE_OBJECT</a>       *<a class="code hl_struct" href="structOp.html">Op</a>);</div>
 <div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span> </div>
 <div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span><span class="keywordtype">void</span></div>
 <div class="line"><a id="l00326" name="l00326"></a><span class="lineno"><a class="line" href="acdebug_8h.html#ace864f1be759679b0eeee8e2899d48a8">  326</a></span><a class="code hl_function" href="acdebug_8h.html#ace864f1be759679b0eeee8e2899d48a8">AcpiDbSetMethodCallBreakpoint</a> (</div>
-<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>    <a class="code hl_union" href="unionacpi__parse__object.html">ACPI_PARSE_OBJECT</a>       *Op);</div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>    <a class="code hl_union" href="unionacpi__parse__object.html">ACPI_PARSE_OBJECT</a>       *<a class="code hl_struct" href="structOp.html">Op</a>);</div>
 <div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span> </div>
 <div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span><span class="keywordtype">void</span></div>
 <div class="line"><a id="l00330" name="l00330"></a><span class="lineno"><a class="line" href="acdebug_8h.html#a1b7251478221fbb5abc5614c38ba6638">  330</a></span><a class="code hl_function" href="acdebug_8h.html#a1b7251478221fbb5abc5614c38ba6638">AcpiDbSetMethodData</a> (</div>
@@ -430,7 +430,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span><span class="keywordtype">void</span></div>
 <div class="line"><a id="l00340" name="l00340"></a><span class="lineno"><a class="line" href="acdebug_8h.html#aadf29f659bef10df42251ce1e57143f7">  340</a></span><a class="code hl_function" href="acdebug_8h.html#aadf29f659bef10df42251ce1e57143f7">AcpiDbDisassembleAml</a> (</div>
 <div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>    <span class="keywordtype">char</span>                    *Statements,</div>
-<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>    <a class="code hl_union" href="unionacpi__parse__object.html">ACPI_PARSE_OBJECT</a>       *Op);</div>
+<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>    <a class="code hl_union" href="unionacpi__parse__object.html">ACPI_PARSE_OBJECT</a>       *<a class="code hl_struct" href="structOp.html">Op</a>);</div>
 <div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span> </div>
 <div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span><span class="keywordtype">void</span></div>
 <div class="line"><a id="l00345" name="l00345"></a><span class="lineno"><a class="line" href="acdebug_8h.html#a560c94f1bb077f27137b95cb75c8a055">  345</a></span><a class="code hl_function" href="acdebug_8h.html#a560c94f1bb077f27137b95cb75c8a055">AcpiDbEvaluatePredefinedNames</a> (</div>
@@ -489,7 +489,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span><span class="keywordtype">void</span></div>
 <div class="line"><a id="l00400" name="l00400"></a><span class="lineno"><a class="line" href="acdebug_8h.html#a009ad8750584d5597b98103180fbf98d">  400</a></span><a class="code hl_function" href="acdebug_8h.html#a009ad8750584d5597b98103180fbf98d">AcpiDbDisplayMethodInfo</a> (</div>
-<div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span>    <a class="code hl_union" href="unionacpi__parse__object.html">ACPI_PARSE_OBJECT</a>       *Op);</div>
+<div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span>    <a class="code hl_union" href="unionacpi__parse__object.html">ACPI_PARSE_OBJECT</a>       *<a class="code hl_struct" href="structOp.html">Op</a>);</div>
 <div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span> </div>
 <div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span><span class="keywordtype">void</span></div>
 <div class="line"><a id="l00404" name="l00404"></a><span class="lineno"><a class="line" href="acdebug_8h.html#af5a55d726d4dd340c87736738db77e8c">  404</a></span><a class="code hl_function" href="acdebug_8h.html#af5a55d726d4dd340c87736738db77e8c">AcpiDbDecodeAndDisplayObject</a> (</div>
@@ -619,7 +619,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00528" name="l00528"></a><span class="lineno"><a class="line" href="acdebug_8h.html#a19b39998ff4a36b6dd70d22f684bee6b">  528</a></span><a class="code hl_function" href="acdebug_8h.html#a19b39998ff4a36b6dd70d22f684bee6b">AcpiDbCommandDispatch</a> (</div>
 <div class="line"><a id="l00529" name="l00529"></a><span class="lineno">  529</span>    <span class="keywordtype">char</span>                    *InputBuffer,</div>
 <div class="line"><a id="l00530" name="l00530"></a><span class="lineno">  530</span>    <a class="code hl_struct" href="structacpi__walk__state.html">ACPI_WALK_STATE</a>         *WalkState,</div>
-<div class="line"><a id="l00531" name="l00531"></a><span class="lineno">  531</span>    <a class="code hl_union" href="unionacpi__parse__object.html">ACPI_PARSE_OBJECT</a>       *Op);</div>
+<div class="line"><a id="l00531" name="l00531"></a><span class="lineno">  531</span>    <a class="code hl_union" href="unionacpi__parse__object.html">ACPI_PARSE_OBJECT</a>       *<a class="code hl_struct" href="structOp.html">Op</a>);</div>
 <div class="line"><a id="l00532" name="l00532"></a><span class="lineno">  532</span> </div>
 <div class="line"><a id="l00533" name="l00533"></a><span class="lineno">  533</span><span class="keywordtype">void</span> <a class="code hl_define" href="acenv_8h.html#ad4437609964dd6a9a52aca0a52573529">ACPI_SYSTEM_XFACE</a></div>
 <div class="line"><a id="l00534" name="l00534"></a><span class="lineno"><a class="line" href="acdebug_8h.html#a3a2400440055ea6c71f86091df931065">  534</a></span><a class="code hl_function" href="acdebug_8h.html#a3a2400440055ea6c71f86091df931065">AcpiDbExecuteThread</a> (</div>
@@ -790,6 +790,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="ttc" id="aactypes_8h_html_a3275c9cf8b4cad8f8e0daaaeeb690be6"><div class="ttname"><a href="actypes_8h.html#a3275c9cf8b4cad8f8e0daaaeeb690be6">ACPI_OBJECT_TYPE</a></div><div class="ttdeci">UINT32 ACPI_OBJECT_TYPE</div><div class="ttdef"><b>Definition</b> actypes.h:784</div></div>
 <div class="ttc" id="aactypes_8h_html_a9c335cb71b6a3ba18516e73f4d7030a2"><div class="ttname"><a href="actypes_8h.html#a9c335cb71b6a3ba18516e73f4d7030a2">ACPI_STATUS</a></div><div class="ttdeci">uint32_t ACPI_STATUS</div><div class="ttdef"><b>Definition</b> actypes.h:568</div></div>
 <div class="ttc" id="aactypes_8h_html_ab27e9918b538ce9d8ca692479b375b6a"><div class="ttname"><a href="actypes_8h.html#ab27e9918b538ce9d8ca692479b375b6a">UINT8</a></div><div class="ttdeci">unsigned char UINT8</div><div class="ttdef"><b>Definition</b> actypes.h:236</div></div>
+<div class="ttc" id="astructOp_html"><div class="ttname"><a href="structOp.html">Op</a></div><div class="ttdef"><b>Definition</b> srvfs.c:50</div></div>
 <div class="ttc" id="astructacpi__db__argument__info_html"><div class="ttname"><a href="structacpi__db__argument__info.html">acpi_db_argument_info</a></div><div class="ttdef"><b>Definition</b> acdebug.h:181</div></div>
 <div class="ttc" id="astructacpi__db__argument__info_html_aeb1f34d2e80a4d1629837e9a22d3daac"><div class="ttname"><a href="structacpi__db__argument__info.html#aeb1f34d2e80a4d1629837e9a22d3daac">acpi_db_argument_info::Name</a></div><div class="ttdeci">const char * Name</div><div class="ttdef"><b>Definition</b> acdebug.h:182</div></div>
 <div class="ttc" id="astructacpi__db__command__help_html"><div class="ttname"><a href="structacpi__db__command__help.html">acpi_db_command_help</a></div><div class="ttdef"><b>Definition</b> acdebug.h:173</div></div>

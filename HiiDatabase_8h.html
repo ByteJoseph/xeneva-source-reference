@@ -506,10 +506,10 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>This function updates the existing package list (which has the specified Handle) in the HII databases, using the new package list specified by PackageList. The update process has the following steps: Collect all the package types in the package list specified by PackageList. A package type consists of the Type field of <a class="el" href="structEFI__HII__PACKAGE__HEADER.html">EFI_HII_PACKAGE_HEADER</a> and, if the Type is EFI_HII_PACKAGE_TYPE_GUID, the Guid field, as defined in EFI_HII_PACKAGE_GUID_HEADER. Iterate through the packages within the existing package list in the HII database specified by Handle. If a package's type matches one of the collected types collected in step 1, then perform the following steps:</p><ul>
-<li>Call any functions registered with the notification type REMOVE_PACK.</li>
+<li><a class="el" href="structCall.html">Call</a> any functions registered with the notification type REMOVE_PACK.</li>
 <li>Remove the package from the package list and the HII database. Add all of the packages within the new package list specified by PackageList, using the following steps:</li>
 <li>Add the package to the package list and the HII database.</li>
-<li>Call any functions registered with the notification type ADD_PACK.</li>
+<li><a class="el" href="structCall.html">Call</a> any functions registered with the notification type ADD_PACK.</li>
 </ul>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">

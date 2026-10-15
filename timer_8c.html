@@ -292,6 +292,13 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p><a class="el" href="sndproxy_8c.html">sndproxy.c</a> &ndash; kernel half of a user-space sound driver.</p>
+<p>A server process (Process/sndsrv) that owns the sound hardware through /dev/hwdev passes the kernel a shared ring (see <a class="el" href="sndsrv_8h.html">BaseHdr/sndsrv.h</a>). The kernel then registers an ordinary sound card, "virtio-sound", whose <a class="el" href="acwin_8h.html#ac40a1eaac5f8dbc1eef9b944d494770c">write()</a> copies the mixer's PCM into that ring instead of touching hardware. The rest of the sound stack (mixer, DSP clients) cannot tell the difference.</p>
+<p>Safety rules:</p><ul>
+<li>the ring must be one of the caller's own hwdev DMA buffers (AuHwdevOwnsDma)</li>
+<li><a class="el" href="acwin_8h.html#ac40a1eaac5f8dbc1eef9b944d494770c">write()</a> never spins or waits on the server: it paces itself by sleeping, and if the server stops draining, data is dropped rather than hanging</li>
+<li>when the server's device handle goes away (exit/crash) the card is removed and in-flight writers are drained BEFORE its memory is freed </li>
+</ul>
 
 </div>
 </div>

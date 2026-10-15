@@ -168,7 +168,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Queue an I2C transaction for execution on the I2C controller.</p>
+<p><a class="el" href="structQueue.html">Queue</a> an I2C transaction for execution on the I2C controller.</p>
 <p>This routine must be called at or below TPL_NOTIFY. For synchronous requests this routine must be called at or below TPL_CALLBACK.</p>
 <p>The I2C host protocol uses the concept of I2C bus configurations to describe the I2C bus. An I2C bus configuration is defined as a unique setting of the multiplexers and switches in the I2C bus which enable access to one or more I2C devices. When using a switch to divide a bus, due to bus frequency differences, the I2C bus configuration management protocol defines an I2C bus configuration for the I2C devices on each side of the switch. When using a multiplexer, the I2C bus configuration management defines an I2C bus configuration for each of the selector values required to control the multiplexer. See Figure 1 in the I2C -bus specification and user manual for a complex I2C bus configuration.</p>
 <p>The I2C host protocol processes all transactions in FIFO order. Prior to performing the transaction, the I2C host protocol calls EnableI2cBusConfiguration to reconfigure the switches and multiplexers in the I2C bus enabling access to the specified I2C device. The EnableI2cBusConfiguration also selects the I2C bus frequency for the I2C device. After the I2C bus is configured, the I2C host protocol calls the I2C master protocol to start the I2C transaction.</p>

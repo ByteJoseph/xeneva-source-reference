@@ -111,9 +111,9 @@ Include dependency graph for cred.h:</div>
 <area shape="poly" title=" " alt="" coords="341,121,225,164,224,159,339,116"/>
 <area shape="rect" href="BaseHdr_2stdint_8h.html" title=" " alt="" coords="693,313,764,339"/>
 <area shape="poly" title=" " alt="" coords="413,104,461,107,517,116,576,134,603,148,629,165,650,188,660,211,668,236,682,264,711,301,706,304,677,267,663,238,655,213,646,190,626,169,601,152,574,139,516,121,460,112,412,109"/>
-<area shape="rect" href="capability_8h.html" title=" " alt="" coords="343,167,469,192"/>
+<area shape="rect" href="Cap_2capability_8h.html" title=" " alt="" coords="343,167,469,192"/>
 <area shape="poly" title=" " alt="" coords="378,118,396,153,392,156,374,120"/>
-<area shape="rect" href="spinlock_8h.html" title=" " alt="" coords="493,167,615,192"/>
+<area shape="rect" href="Sync_2spinlock_8h.html" title=" " alt="" coords="493,167,615,192"/>
 <area shape="poly" title=" " alt="" coords="401,116,512,159,510,164,399,121"/>
 <area shape="rect" href="BaseHdr_2list_8h.html" title=" " alt="" coords="701,167,756,192"/>
 <area shape="poly" title=" " alt="" coords="413,113,672,164,688,167,687,173,671,169,412,118"/>
@@ -171,7 +171,7 @@ Macros</h2></td></tr>
 <tr class="separator:a793c70faedfc7ce38adb48e5a093df04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7811c881f68272d6cd0e62bda214028b" id="r_a7811c881f68272d6cd0e62bda214028b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cred_8h.html#a7811c881f68272d6cd0e62bda214028b">CRED_IS_CAPABLE</a>(a,  b)&#160;&#160;&#160;((a &gt;&gt; b) &amp; 0x1)</td></tr>
 <tr class="separator:a7811c881f68272d6cd0e62bda214028b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e647e86c4ce363f7f97c77b37a21f08" id="r_a6e647e86c4ce363f7f97c77b37a21f08"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cred_8h.html#a6e647e86c4ce363f7f97c77b37a21f08">CRED_SET_CAP</a>(b)&#160;&#160;&#160;(1ULL&lt;&lt; b)</td></tr>
+<tr class="memitem:a6e647e86c4ce363f7f97c77b37a21f08" id="r_a6e647e86c4ce363f7f97c77b37a21f08"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cred_8h.html#a6e647e86c4ce363f7f97c77b37a21f08">CRED_SET_CAP</a>(b)&#160;&#160;&#160;(1<a class="el" href="vdso_2const_8h.html#ae7289206560e57188eb393096c91e575">ULL</a>&lt;&lt; b)</td></tr>
 <tr class="separator:a6e647e86c4ce363f7f97c77b37a21f08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2069e59b716e2bd3bb8ad39fc6b712dc" id="r_a2069e59b716e2bd3bb8ad39fc6b712dc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cred_8h.html#a2069e59b716e2bd3bb8ad39fc6b712dc">CRED_SET_CAP_ROOT</a>(proc)&#160;&#160;&#160;(proc-&gt;creds.caps = UINT8_MAX)</td></tr>
 <tr class="separator:a2069e59b716e2bd3bb8ad39fc6b712dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -190,7 +190,7 @@ Functions</h2></td></tr>
 <tr class="separator:ad0f254e840354f26d120c6387ee92414"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf0d076bb0281390445490e430adae2f" id="r_aaf0d076bb0281390445490e430adae2f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cred_8h.html#aaf0d076bb0281390445490e430adae2f">AuCredGetCap</a> (int proc_id)</td></tr>
 <tr class="separator:aaf0d076bb0281390445490e430adae2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ed74a6c13305f88c1dc9bf0f5eba312" id="r_a5ed74a6c13305f88c1dc9bf0f5eba312"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cred_8h.html#a5ed74a6c13305f88c1dc9bf0f5eba312">AuCredCheckPermissions</a> (<a class="el" href="devinput_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *node, <a class="el" href="process_8h.html#acbc5fb691c345803a45de43b7debcd58">AuProcCredentials</a> *cred)</td></tr>
+<tr class="memitem:a5ed74a6c13305f88c1dc9bf0f5eba312" id="r_a5ed74a6c13305f88c1dc9bf0f5eba312"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cred_8h.html#a5ed74a6c13305f88c1dc9bf0f5eba312">AuCredCheckPermissions</a> (<a class="el" href="devclip_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *node, <a class="el" href="process_8h.html#acbc5fb691c345803a45de43b7debcd58">AuProcCredentials</a> *cred)</td></tr>
 <tr class="memdesc:a5ed74a6c13305f88c1dc9bf0f5eba312"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuCredCheckPermissions &ndash; before giving permission, check all credentials, enei aru access koriba dibi neki, ji pai take korba nori tu.  <br /></td></tr>
 <tr class="separator:a5ed74a6c13305f88c1dc9bf0f5eba312"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac80b2b442b3e64ad743d698147db7126" id="r_ac80b2b442b3e64ad743d698147db7126"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cred_8h.html#ac80b2b442b3e64ad743d698147db7126">AuSetUID</a> (int proc_id, <a class="el" href="user_8h.html#a158f59266d68ec49f2d89bac773e70ee">UID_NUM</a> uid)</td></tr>
@@ -354,7 +354,7 @@ Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">b</td><td>)</td>
-          <td>&#160;&#160;&#160;(1ULL&lt;&lt; b)</td>
+          <td>&#160;&#160;&#160;(1<a class="el" href="vdso_2const_8h.html#ae7289206560e57188eb393096c91e575">ULL</a>&lt;&lt; b)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -493,7 +493,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">int AuCredCheckPermissions </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="devinput_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="devclip_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *&#160;</td>
           <td class="paramname"><em>node</em>, </td>
         </tr>
         <tr>
@@ -518,7 +518,7 @@ Functions</h2></td></tr>
 <p>AuCredCheckPermissions &ndash; before giving permission, check all credentials, enei aru access koriba dibi neki, ji pai take korba nori tu. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">node</td><td>&ndash; File node </td></tr>
+    <tr><td class="paramname">node</td><td>&ndash; <a class="el" href="structFile.html">File</a> node </td></tr>
     <tr><td class="paramname">cred</td><td>&ndash; Process's credential </td></tr>
   </table>
   </dd>

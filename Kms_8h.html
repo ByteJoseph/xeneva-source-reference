@@ -272,7 +272,7 @@ Variables</h2></td></tr>
 <tr class="separator:ab8030cdf8cb54f42047fc8f856dbcce1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The Key Management Service (KMS) protocol as defined in the UEFI 2.3.1 specification is to provides services to generate, store, retrieve, and manage cryptographic keys. The intention is to specify a simple generic protocol that could be used for many implementations.</p>
+<div class="textblock"><p>The Key Management <a class="el" href="structService.html">Service</a> (KMS) protocol as defined in the UEFI 2.3.1 specification is to provides services to generate, store, retrieve, and manage cryptographic keys. The intention is to specify a simple generic protocol that could be used for many implementations.</p>
 <p>A driver implementing the protocol may need to provide basic key service that consists of a key store and cryptographic key generation capability. It may connect to an external key server over the network, or to a Hardware Security Module (HSM) attached to the system it runs on, or anything else that is capable of providing the key management service.</p>
 <p>Copyright (c) 2011 - 2018, Intel Corporation. All rights reserved.<br  />
  This program and the accompanying materials are licensed and made available under the terms and conditions of the BSD License that accompanies this distribution. The full text of the license may be found at <a href="http://opensource.org/licenses/bsd-license.php">http://opensource.org/licenses/bsd-license.php</a>.</p>
@@ -1275,7 +1275,7 @@ Variables</h2></td></tr>
     <tr><td class="paramname">EFI_SUCCESS</td><td>Successfully retrieved all requested keys. </td></tr>
     <tr><td class="paramname">EFI_OUT_OF_RESOURCES</td><td>Could not allocate required resources. </td></tr>
     <tr><td class="paramname">EFI_TIMEOUT</td><td>Timed out waiting for device or key server. Check individual key attribute request(s) to see which ones may have been processed. </td></tr>
-    <tr><td class="paramname">EFI_BUFFER_TOO_SMALL</td><td>If multiple keys are associated with the attribute(s), and the KeyValue buffer does not contain enough structures (KeyDescriptorCount) to contain all the key data, then the available structures will be filled and KeyDescriptorCount will be updated to indicate the number of keys which could not be processed. </td></tr>
+    <tr><td class="paramname">EFI_BUFFER_TOO_SMALL</td><td>If multiple keys are associated with the <a class="el" href="structattribute.html">attribute(s)</a>, and the KeyValue buffer does not contain enough structures (KeyDescriptorCount) to contain all the key data, then the available structures will be filled and KeyDescriptorCount will be updated to indicate the number of keys which could not be processed. </td></tr>
     <tr><td class="paramname">EFI_ACCESS_DENIED</td><td>Access was denied by the device or the key server; OR a ClientId is required by the server and either none or an invalid id was provided. </td></tr>
     <tr><td class="paramname">EFI_DEVICE_ERROR</td><td>Device or key server error. Check individual key attribute request(s) (i.e. key attribute status for each) to see which ones may have been processed. </td></tr>
     <tr><td class="paramname">EFI_INVALID_PARAMETER</td><td>This is NULL, ClientId is required but it is NULL, KeyDescriptorCount is NULL, or KeyDescriptors is NULL or KeyAttributes is NULL, or KeyAttributesCount is NULL. </td></tr>

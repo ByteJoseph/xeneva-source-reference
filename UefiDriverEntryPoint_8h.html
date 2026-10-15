@@ -220,7 +220,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Invokes the library destructors for all dependent libraries and terminates the DXE Driver, DXE Runtime Driver, DXE SMM Driver, or UEFI Driver.</p>
-<p>This function calls <a class="el" href="UefiDriverEntryPoint_8h.html#a2fab933ac696811d7b309613c76aef61">ProcessLibraryDestructorList()</a> and the EFI Boot Service <a class="el" href="UefiApplicationEntryPoint_8h.html#ab46cf12426652c38141c12d282c2c9a8">Exit()</a> with a status specified by Status.</p>
+<p>This function calls <a class="el" href="UefiDriverEntryPoint_8h.html#a2fab933ac696811d7b309613c76aef61">ProcessLibraryDestructorList()</a> and the EFI Boot <a class="el" href="structService.html">Service</a> <a class="el" href="UefiApplicationEntryPoint_8h.html#ab46cf12426652c38141c12d282c2c9a8">Exit()</a> with a status specified by Status.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">Status</td><td>Status returned by the driver that is exiting. </td></tr>

@@ -197,12 +197,12 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns the location of the System Management Service Table (SMST).</p>
-<p>This function returns the location of the System Management Service Table (SMST). The use of the API is such that a driver can discover the location of the SMST in its entry point and then cache it in some driver global variable so that the SMST can be invoked in subsequent handlers.</p>
+<p>Returns the location of the System Management <a class="el" href="structService.html">Service</a> Table (SMST).</p>
+<p>This function returns the location of the System Management <a class="el" href="structService.html">Service</a> Table (SMST). The use of the API is such that a driver can discover the location of the SMST in its entry point and then cache it in some driver global variable so that the SMST can be invoked in subsequent handlers.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">This</td><td>The EFI_SMM_BASE2_PROTOCOL instance. </td></tr>
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">Smst</td><td>On return, points to a pointer to the System Management Service Table (SMST).</td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">Smst</td><td>On return, points to a pointer to the System Management <a class="el" href="structService.html">Service</a> Table (SMST).</td></tr>
   </table>
   </dd>
 </dl>
@@ -228,7 +228,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Service to indicate whether the driver is currently executing in the SMM Initialization phase.</p>
+<p><a class="el" href="structService.html">Service</a> to indicate whether the driver is currently executing in the SMM Initialization phase.</p>
 <p>This service is used to indicate whether the driver is currently executing in the SMM Initialization phase. For SMM drivers, this will return TRUE in InSmram while inside the driver's entry point and otherwise FALSE. For combination SMM/DXE drivers, this will return FALSE in the DXE launch. For the SMM launch, it behaves as an SMM driver.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">

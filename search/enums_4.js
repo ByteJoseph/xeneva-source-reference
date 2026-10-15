@@ -7,6 +7,8 @@ var searchData=
   ['dhcp6_5fopt_5fcode_4',['DHCP6_OPT_CODE',['../Dhcp_8h.html#a36c6dc3ed1e40cfff12317508fbc38fa',1,'Dhcp.h']]],
   ['dhcp6_5fsts_5fcode_5',['DHCP6_STS_CODE',['../Dhcp_8h.html#a26b00fbce2cd07042c94751b1356a29b',1,'Dhcp.h']]],
   ['dirtype_5ft_6',['dirtype_t',['../p__enemy_8c.html#a97c5113bdf2c6f55680664d378825eb4',1,'p_enemy.c']]],
-  ['dpbpicturestatus_5fe_7',['dpbPictureStatus_e',['../h264bsd__dpb_8h.html#ac3c0847a0fe74ce5edc9e37edf80bd84',1,'h264bsd_dpb.h']]],
-  ['driver_5ftype_8',['driver_type',['../core_8h.html#a6bb533f22fc3ffa26a6602df217d0d0f',1,'core.h']]]
+  ['dma_5fslave_5fbuswidth_7',['dma_slave_buswidth',['../dmaengine_8h.html#ac5d2bb5f0bab44161a151ba30f868ef4',1,'dmaengine.h']]],
+  ['dma_5ftransfer_5fdirection_8',['dma_transfer_direction',['../dmaengine_8h.html#a2e810c5a48eca7f1951cc6109e6fd1b1',1,'dmaengine.h']]],
+  ['dpbpicturestatus_5fe_9',['dpbPictureStatus_e',['../h264bsd__dpb_8h.html#ac3c0847a0fe74ce5edc9e37edf80bd84',1,'h264bsd_dpb.h']]],
+  ['driver_5ftype_10',['driver_type',['../core_8h.html#a6bb533f22fc3ffa26a6602df217d0d0f',1,'core.h']]]
 ];

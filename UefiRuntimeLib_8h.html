@@ -179,7 +179,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Determines the new virtual address that is to be used on subsequent memory accesses.</p>
-<p>For IA32, x64, and EBC, this service is a wrapper for the UEFI Runtime Service ConvertPointer(). See the UEFI Specification for details. For IPF, this function interprets Address as a pointer to an EFI_PLABEL structure and both the EntryPoint and GP fields of an EFI_PLABEL are converted from physical to virtiual addressing. Since IPF allows the GP to point to an address outside a PE/COFF image, the physical to virtual offset for the EntryPoint field is used to adjust the GP field. The UEFI Runtime Service ConvertPointer() is used to convert EntryPoint and the status code for this conversion is always returned. If the convertion of EntryPoint fails, then neither EntryPoint nor GP are modified. See the UEFI Specification for details on the UEFI Runtime Service ConvertPointer().</p>
+<p>For IA32, x64, and EBC, this service is a wrapper for the UEFI Runtime <a class="el" href="structService.html">Service</a> ConvertPointer(). See the UEFI Specification for details. For IPF, this function interprets Address as a pointer to an EFI_PLABEL structure and both the EntryPoint and GP fields of an EFI_PLABEL are converted from physical to virtiual addressing. Since IPF allows the GP to point to an address outside a PE/COFF image, the physical to virtual offset for the EntryPoint field is used to adjust the GP field. The UEFI Runtime <a class="el" href="structService.html">Service</a> ConvertPointer() is used to convert EntryPoint and the status code for this conversion is always returned. If the convertion of EntryPoint fails, then neither EntryPoint nor GP are modified. See the UEFI Specification for details on the UEFI Runtime <a class="el" href="structService.html">Service</a> ConvertPointer().</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">DebugDisposition</td><td>Supplies type information for the pointer being converted. </td></tr>
@@ -260,7 +260,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This service is a wrapper for the UEFI Runtime Service ConvertPointer().</p>
+<p>This service is a wrapper for the UEFI Runtime <a class="el" href="structService.html">Service</a> ConvertPointer().</p>
 <p>The ConvertPointer() function is used by an EFI component during the SetVirtualAddressMap() operation. ConvertPointer()must be called using physical address pointers during the execution of SetVirtualAddressMap().</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -296,7 +296,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This service is a wrapper for the UEFI Runtime Service GetNextHighMonotonicCount().</p>
+<p>This service is a wrapper for the UEFI Runtime <a class="el" href="structService.html">Service</a> GetNextHighMonotonicCount().</p>
 <p>The platform's monotonic counter is comprised of two 32-bit quantities: the high 32 bits and the low 32 bits. During boot service time the low 32-bit value is volatile: it is reset to zero on every system reset and is increased by 1 on every call to GetNextMonotonicCount(). The high 32-bit value is nonvolatile and is increased by 1 whenever the system resets or whenever the low 32-bit count (returned by GetNextMonoticCount()) overflows.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -346,7 +346,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This service is a wrapper for the UEFI Runtime Service GetNextVariableName().</p>
+<p>This service is a wrapper for the UEFI Runtime <a class="el" href="structService.html">Service</a> GetNextVariableName().</p>
 <p>GetNextVariableName() is called multiple times to retrieve the VariableName and VendorGuid of all variables currently available in the system. On each call to GetNextVariableName() the previous results are passed into the interface, and on output the interface returns the next variable name data. When the entire variable list has been returned, the error EFI_NOT_FOUND is returned.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -396,7 +396,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This service is a wrapper for the UEFI Runtime Service GetTime().</p>
+<p>This service is a wrapper for the UEFI Runtime <a class="el" href="structService.html">Service</a> GetTime().</p>
 <p>The GetTime() function returns a time that was valid sometime during the call to the function. While the returned <a class="el" href="structEFI__TIME.html">EFI_TIME</a> structure contains TimeZone and Daylight savings time information, the actual clock does not maintain these values. The current time zone and daylight saving time information returned by GetTime() are the values that were last set via SetTime(). The GetTime() function should take approximately the same amount of time to read the time each time it is called. All reported device capabilities are to be rounded up. During runtime, if a PC-AT CMOS device is present in the platform, the caller must synchronize access to the device before calling GetTime().</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -459,7 +459,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This service is a wrapper for the UEFI Runtime Service <a class="el" href="UefiLib_8h.html#a436f22f1b5fcc30b11cf96188be0e978">GetVariable()</a>.</p>
+<p>This service is a wrapper for the UEFI Runtime <a class="el" href="structService.html">Service</a> <a class="el" href="UefiLib_8h.html#a436f22f1b5fcc30b11cf96188be0e978">GetVariable()</a>.</p>
 <p>Each vendor may create and manage its own variables without the risk of name conflicts by using a unique VendorGuid. When a variable is set, its Attributes are supplied to indicate how the data variable should be stored and maintained by the system. The attributes affect when the variable may be accessed and volatility of the data. Any attempts to access a variable that does not have the attribute set for runtime access will yield the EFI_NOT_FOUND error. If the Data buffer is too small to hold the contents of the variable, the error EFI_BUFFER_TOO_SMALL is returned and DataSize is set to the required buffer size to obtain the data.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -519,7 +519,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This service is a wrapper for the UEFI Runtime Service GetWakeupTime().</p>
+<p>This service is a wrapper for the UEFI Runtime <a class="el" href="structService.html">Service</a> GetWakeupTime().</p>
 <p>The alarm clock time may be rounded from the set alarm clock time to be within the resolution of the alarm clock device. The resolution of the alarm clock device is defined to be one second. During runtime, if a PC-AT CMOS device is present in the platform the caller must synchronize access to the device before calling GetWakeupTime().</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -607,7 +607,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This service is a wrapper for the UEFI Runtime Service QueryCapsuleCapabilities().</p>
+<p>This service is a wrapper for the UEFI Runtime <a class="el" href="structService.html">Service</a> QueryCapsuleCapabilities().</p>
 <p>The QueryCapsuleCapabilities() function allows a caller to test to see if a capsule or capsules can be updated via UpdateCapsule(). The Flags values in the capsule header and size of the entire capsule is checked. If the caller needs to query for generic capsule capability a fake <a class="el" href="structEFI__CAPSULE__HEADER.html">EFI_CAPSULE_HEADER</a> can be constructed where CapsuleImageSize is equal to HeaderSize that is equal to sizeof (<a class="el" href="structEFI__CAPSULE__HEADER.html">EFI_CAPSULE_HEADER</a>). To determine reset requirements, CAPSULE_FLAGS_PERSIST_ACROSS_RESET should be set in the Flags field of the <a class="el" href="structEFI__CAPSULE__HEADER.html">EFI_CAPSULE_HEADER</a>. The firmware must support any capsule that has the CAPSULE_FLAGS_PERSIST_ACROSS_RESET flag set in <a class="el" href="structEFI__CAPSULE__HEADER.html">EFI_CAPSULE_HEADER</a>. The firmware sets the policy for what capsules are supported that do not have the CAPSULE_FLAGS_PERSIST_ACROSS_RESET flag set.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -667,7 +667,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This service is a wrapper for the UEFI Runtime Service QueryVariableInfo().</p>
+<p>This service is a wrapper for the UEFI Runtime <a class="el" href="structService.html">Service</a> QueryVariableInfo().</p>
 <p>The QueryVariableInfo() function allows a caller to obtain the information about the maximum size of the storage space available for the EFI variables, the remaining size of the storage space available for the EFI variables and the maximum size of each individual EFI variable, associated with the attributes specified. The returned MaximumVariableStorageSize, RemainingVariableStorageSize, MaximumVariableSize information may change immediately after the call based on other runtime activities including asynchronous error events. Also, these values associated with different attributes are not additive in nature.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -726,7 +726,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This service is a wrapper for the UEFI Runtime Service ResetSystem().</p>
+<p>This service is a wrapper for the UEFI Runtime <a class="el" href="structService.html">Service</a> ResetSystem().</p>
 <p>The ResetSystem()function resets the entire platform, including all processors and devices,and reboots the system. Calling this interface with ResetType of EfiResetCold causes a system-wide reset. This sets all circuitry within the system to its initial state. This type of reset is asynchronous to system operation and operates without regard to cycle boundaries. EfiResetCold is tantamount to a system power cycle. Calling this interface with ResetType of EfiResetWarm causes a system-wide initialization. The processors are set to their initial state, and pending cycles are not corrupted. If the system does not support this reset type, then an EfiResetCold must be performed. Calling this interface with ResetType of EfiResetShutdown causes the system to enter a power state equivalent to the ACPI G2/S5 or G3 states. If the system does not support this reset type, then when the system is rebooted, it should exhibit the EfiResetCold attributes. The platform may optionally log the parameters from any non-normal reset that occurs. The ResetSystem() function does not return.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -755,7 +755,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This service is a wrapper for the UEFI Runtime Service SetTime().</p>
+<p>This service is a wrapper for the UEFI Runtime <a class="el" href="structService.html">Service</a> SetTime().</p>
 <p>The SetTime() function sets the real time clock device to the supplied time, and records the current time zone and daylight savings time information. The SetTime() function is not allowed to loop based on the current time. For example, if the device does not support a hardware reset for the sub-resolution time, the code is not to implement the feature by waiting for the time to wrap. During runtime, if a PC-AT CMOS device is present in the platform, the caller must synchronize access to the device before calling SetTime().</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -817,7 +817,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This service is a wrapper for the UEFI Runtime Service GetNextVariableName()</p>
+<p>This service is a wrapper for the UEFI Runtime <a class="el" href="structService.html">Service</a> GetNextVariableName()</p>
 <p>Variables are stored by the firmware and may maintain their values across power cycles. Each vendor may create and manage its own variables without the risk of name conflicts by using a unique VendorGuid.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -883,7 +883,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This service is a wrapper for the UEFI Runtime Service SetVirtualAddressMap().</p>
+<p>This service is a wrapper for the UEFI Runtime <a class="el" href="structService.html">Service</a> SetVirtualAddressMap().</p>
 <p>The SetVirtualAddressMap() function is used by the OS loader. The function can only be called at runtime, and is called by the owner of the system's memory map. I.e., the component which called ExitBootServices(). All events of type EVT_SIGNAL_VIRTUAL_ADDRESS_CHANGE must be signaled before SetVirtualAddressMap() returns.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -932,7 +932,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This service is a wrapper for the UEFI Runtime Service SetWakeupTime()</p>
+<p>This service is a wrapper for the UEFI Runtime <a class="el" href="structService.html">Service</a> SetWakeupTime()</p>
 <p>Setting a system wakeup alarm causes the system to wake up or power on at the set time. When the alarm fires, the alarm signal is latched until it is acknowledged by calling SetWakeupTime() to disable the alarm. If the alarm fires before the system is put into a sleeping or off state, since the alarm signal is latched the system will immediately wake up. If the alarm fires while the system is off and there is insufficient power to power on the system, the system is powered on when power is restored.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -984,7 +984,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This service is a wrapper for the UEFI Runtime Service UpdateCapsule().</p>
+<p>This service is a wrapper for the UEFI Runtime <a class="el" href="structService.html">Service</a> UpdateCapsule().</p>
 <p>Passes capsules to the firmware with both virtual and physical mapping. Depending on the intended consumption, the firmware may process the capsule immediately. If the payload should persist across a system reset, the reset value returned from EFI_QueryCapsuleCapabilities must be passed into ResetSystem() and will cause the capsule to be processed by the firmware as part of the reset process.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">

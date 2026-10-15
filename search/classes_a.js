@@ -1,5 +1,19 @@
 var searchData=
 [
-  ['kernel_5fexport_0',['kernel_export',['../structkernel__export.html',1,'']]],
-  ['key_5fdata_1',['key_data',['../structpsa__key__slot__t_1_1key__data.html',1,'psa_key_slot_t']]]
+  ['kcsan_5fscoped_5faccess_0',['kcsan_scoped_access',['../structkcsan__scoped__access.html',1,'']]],
+  ['kernel_5fexport_1',['kernel_export',['../structkernel__export.html',1,'']]],
+  ['key_5fdata_2',['key_data',['../structpsa__key__slot__t_1_1key__data.html',1,'psa_key_slot_t']]],
+  ['kfifo_3',['kfifo',['../structkfifo.html',1,'']]],
+  ['kgid_5ft_4',['kgid_t',['../structkgid__t.html',1,'']]],
+  ['kiocb_5',['kiocb',['../structkiocb.html',1,'']]],
+  ['kobj_5fattribute_6',['kobj_attribute',['../structkobj__attribute.html',1,'']]],
+  ['kobj_5fns_5ftype_5foperations_7',['kobj_ns_type_operations',['../structkobj__ns__type__operations.html',1,'']]],
+  ['kobj_5ftype_8',['kobj_type',['../structkobj__type.html',1,'']]],
+  ['kobj_5fuevent_5fenv_9',['kobj_uevent_env',['../structkobj__uevent__env.html',1,'']]],
+  ['kobject_10',['kobject',['../structkobject.html',1,'']]],
+  ['kref_11',['kref',['../structkref.html',1,'']]],
+  ['kset_12',['kset',['../structkset.html',1,'']]],
+  ['kset_5fuevent_5fops_13',['kset_uevent_ops',['../structkset__uevent__ops.html',1,'']]],
+  ['ktermios_14',['ktermios',['../structktermios.html',1,'']]],
+  ['kuid_5ft_15',['kuid_t',['../structkuid__t.html',1,'']]]
 ];
