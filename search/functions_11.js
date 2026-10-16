@@ -176,13 +176,12 @@ var searchData=
   ['ret_5ffrom_5fsyscall_173',['ret_from_syscall',['../sched_8c.html#a6ab0267d05b5896246a040165874b5cd',1,'sched.c']]],
   ['rindex_174',['rindex',['../Libs_2XEClib_2includes_2strings_8h.html#ade2040652d364de17e7057f3584a0f4b',1,'strings.h']]],
   ['rirbread_175',['rirbread',['../ihda_8cpp.html#a6e591e8692109420849abc77232a8d73',1,'RIRBRead(uint64_t *response):&#160;ihda.cpp'],['../ihda_8h.html#a6e591e8692109420849abc77232a8d73',1,'RIRBRead(uint64_t *response):&#160;ihda.cpp']]],
-  ['roadmapbutton_176',['RoadMapButton',['../ctrl_8cpp.html#aefbc2a1b156aa46ebfa4fd16faa158d1',1,'ctrl.cpp']]],
-  ['root_5fhub_5fget_5finterrupt_5fbuffer_177',['root_hub_get_interrupt_buffer',['../dwc2_8h.html#a3738a9676498ab4c1c768d2cc404b31e',1,'root_hub_get_interrupt_buffer():&#160;dwc2_root.cpp'],['../dwc2__root_8cpp.html#a3738a9676498ab4c1c768d2cc404b31e',1,'root_hub_get_interrupt_buffer():&#160;dwc2_root.cpp']]],
-  ['root_5fhub_5fhandle_5fport_5fchange_178',['root_hub_handle_port_change',['../dwc2_8h.html#aea3beb1c1cb5d7d090b3cd5312d6885e',1,'root_hub_handle_port_change(dwc2_core_regs *regs, uint8_t port):&#160;dwc2_root.cpp'],['../dwc2__root_8cpp.html#aea3beb1c1cb5d7d090b3cd5312d6885e',1,'root_hub_handle_port_change(dwc2_core_regs *regs, uint8_t port):&#160;dwc2_root.cpp']]],
-  ['root_5fhub_5ftransfer_5fint_179',['root_hub_transfer_int',['../dwc2_8h.html#aaa335d07df1555b7377978c758aea008',1,'root_hub_transfer_int(dwc2_core_regs *regs, uint8_t pid):&#160;dwc2_root.cpp'],['../dwc2__root_8cpp.html#aaa335d07df1555b7377978c758aea008',1,'root_hub_transfer_int(dwc2_core_regs *regs, uint8_t pid):&#160;dwc2_root.cpp']]],
-  ['roundf_180',['roundf',['../math_8h.html#ad52f1453fd91980d0ca8614c6068b167',1,'roundf(float x):&#160;roundf.cpp'],['../roundf_8cpp.html#ade09185c0cf8101fa9e2f25c15041b81',1,'roundf(float x):&#160;roundf.cpp']]],
-  ['rpi3buartinit_181',['RPI3BUartInit',['../mbox_8h.html#a385855627571622da35bc7618daa6263',1,'mbox.h']]],
-  ['rrotu32_182',['RRotU32',['../BaseLib_8h.html#a0c7568c04463016f3413d2b1a0945dd3',1,'BaseLib.h']]],
-  ['rrotu64_183',['RRotU64',['../BaseLib_8h.html#ab36738699d72a082e7ab40bc9d3cf228',1,'BaseLib.h']]],
-  ['rshiftu64_184',['RShiftU64',['../BaseLib_8h.html#a828bad213358fde251a46509ddaa9672',1,'BaseLib.h']]]
+  ['root_5fhub_5fget_5finterrupt_5fbuffer_176',['root_hub_get_interrupt_buffer',['../dwc2_8h.html#a3738a9676498ab4c1c768d2cc404b31e',1,'root_hub_get_interrupt_buffer():&#160;dwc2_root.cpp'],['../dwc2__root_8cpp.html#a3738a9676498ab4c1c768d2cc404b31e',1,'root_hub_get_interrupt_buffer():&#160;dwc2_root.cpp']]],
+  ['root_5fhub_5fhandle_5fport_5fchange_177',['root_hub_handle_port_change',['../dwc2_8h.html#aea3beb1c1cb5d7d090b3cd5312d6885e',1,'root_hub_handle_port_change(dwc2_core_regs *regs, uint8_t port):&#160;dwc2_root.cpp'],['../dwc2__root_8cpp.html#aea3beb1c1cb5d7d090b3cd5312d6885e',1,'root_hub_handle_port_change(dwc2_core_regs *regs, uint8_t port):&#160;dwc2_root.cpp']]],
+  ['root_5fhub_5ftransfer_5fint_178',['root_hub_transfer_int',['../dwc2_8h.html#aaa335d07df1555b7377978c758aea008',1,'root_hub_transfer_int(dwc2_core_regs *regs, uint8_t pid):&#160;dwc2_root.cpp'],['../dwc2__root_8cpp.html#aaa335d07df1555b7377978c758aea008',1,'root_hub_transfer_int(dwc2_core_regs *regs, uint8_t pid):&#160;dwc2_root.cpp']]],
+  ['roundf_179',['roundf',['../math_8h.html#ad52f1453fd91980d0ca8614c6068b167',1,'roundf(float x):&#160;roundf.cpp'],['../roundf_8cpp.html#ade09185c0cf8101fa9e2f25c15041b81',1,'roundf(float x):&#160;roundf.cpp']]],
+  ['rpi3buartinit_180',['RPI3BUartInit',['../mbox_8h.html#a385855627571622da35bc7618daa6263',1,'mbox.h']]],
+  ['rrotu32_181',['RRotU32',['../BaseLib_8h.html#a0c7568c04463016f3413d2b1a0945dd3',1,'BaseLib.h']]],
+  ['rrotu64_182',['RRotU64',['../BaseLib_8h.html#ab36738699d72a082e7ab40bc9d3cf228',1,'BaseLib.h']]],
+  ['rshiftu64_183',['RShiftU64',['../BaseLib_8h.html#a828bad213358fde251a46509ddaa9672',1,'BaseLib.h']]]
 ];

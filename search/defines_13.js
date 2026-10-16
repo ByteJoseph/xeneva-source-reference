@@ -576,7 +576,7 @@ var searchData=
   ['size_5ft_5fzero_573',['size_t_zero',['../dlmalloc_8c.html#acd3fa67eabd0de0d56e206fa3a416de9',1,'SIZE_T_ZERO:&#160;dlmalloc.c'],['../__heap_8cpp.html#acd3fa67eabd0de0d56e206fa3a416de9',1,'SIZE_T_ZERO:&#160;_heap.cpp']]],
   ['sizeof_5ffield_574',['sizeof_field',['../BaseHdr_2linux_2stddef_8h.html#ae301be7a648469a5ea1a5ca1e74432c4',1,'stddef.h']]],
   ['skb_5flist_5fpoison_5fnext_575',['SKB_LIST_POISON_NEXT',['../poison_8h.html#a66aea2102c6e0d9e707b21ddcb2957e1',1,'poison.h']]],
-  ['skip_5fbits_576',['skip_bits',['../minimp3_8cpp.html#ac266989e93beaad352082b15d6d88fe7',1,'skip_bits:&#160;minimp3.cpp'],['../minimp3_8cpp.html#a7418c19702b25b0e27522746e22e7b8d',1,'SKIP_BITS:&#160;minimp3.cpp']]],
+  ['skip_5fbits_576',['skip_bits',['../minimp3_8cpp.html#a7418c19702b25b0e27522746e22e7b8d',1,'SKIP_BITS:&#160;minimp3.cpp'],['../minimp3_8cpp.html#ac266989e93beaad352082b15d6d88fe7',1,'skip_bits:&#160;minimp3.cpp']]],
   ['skip_5fbytes_577',['SKIP_BYTES',['../usbconfigparser_8c.html#a7faadbf7e3c68a87280f596060ade93c',1,'usbconfigparser.c']]],
   ['skip_5fcache_578',['SKIP_CACHE',['../minimp3_8cpp.html#a3383e4ed8ec358f65176c49e53488922',1,'minimp3.cpp']]],
   ['skip_5fcounter_579',['SKIP_COUNTER',['../minimp3_8cpp.html#ac5635d3f42aa9eb98ccdae1d2fd13000',1,'minimp3.cpp']]],

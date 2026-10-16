@@ -2,7 +2,7 @@ var searchData=
 [
   ['z_0',['z',['../structXrQuaternionf.html#a45131a0d9220e0c718121b4521102026',1,'XrQuaternionf::z'],['../structmobj__s.html#aac7694b273b84ddc3f68a8b786f5c285',1,'mobj_s::z'],['../structdegenmobj__t.html#a9e69ad012e227aa7bed4ca4683f61d7c',1,'degenmobj_t::z'],['../structXrVector3f.html#aea54031010be2dd007dcba3a8102afb0',1,'XrVector3f::z']]],
   ['z_5findex_1',['z_index',['../structcss__computed__style__i.html#a7ddf652ef5e94e676ff32578f2eead4c',1,'css_computed_style_i']]],
-  ['zero_2',['zero',['../struct__idt.html#a11c97f8effe2280fcd0279c958c042ed',1,'_idt::zero'],['../structusb__request.html#a613436e607db78f1bdf5bf0e708a2916',1,'usb_request::zero'],['../struct__EFI__BTT__MAP__ENTRY.html#adde5f4dc54bf7918c28158ea4950042a',1,'_EFI_BTT_MAP_ENTRY::Zero']]],
+  ['zero_2',['zero',['../struct__EFI__BTT__MAP__ENTRY.html#adde5f4dc54bf7918c28158ea4950042a',1,'_EFI_BTT_MAP_ENTRY::Zero'],['../struct__idt.html#a11c97f8effe2280fcd0279c958c042ed',1,'_idt::zero'],['../structusb__request.html#a613436e607db78f1bdf5bf0e708a2916',1,'usb_request::zero']]],
   ['zerorunlength_3',['zeroRunLength',['../structseiSparePic__t.html#a7b3022fc4032b71191d86cbda8a6531a',1,'seiSparePic_t']]],
   ['zeros_4',['zeros',['../structIMAGE__COFF__SYMBOL.html#a7f2443498b53bf2855a6d2d386f80c64',1,'IMAGE_COFF_SYMBOL::zeros'],['../struct__tcpcheckheader__.html#a9032bee8fce7e0e9b72f01e8812a3d8a',1,'_tcpcheckheader_::zeros']]],
   ['zerovector_5',['ZeroVector',['../structEFI__FIRMWARE__VOLUME__HEADER.html#a9a841bbde5fd5a6ded8a5075c9c3612e',1,'EFI_FIRMWARE_VOLUME_HEADER']]],

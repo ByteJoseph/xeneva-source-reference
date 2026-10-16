@@ -1094,5 +1094,5 @@ var searchData=
   ['hwdev_5fioc_5fmap_5fbar_1091',['HWDEV_IOC_MAP_BAR',['../hwdev_8h.html#a9aaef4ff1a354cb8af6efab2536d371f',1,'hwdev.h']]],
   ['hwdev_5fioc_5fpci_5fopen_1092',['HWDEV_IOC_PCI_OPEN',['../hwdev_8h.html#a65aec2b745abad83162f312077245853',1,'hwdev.h']]],
   ['hwdev_5fok_1093',['HWDEV_OK',['../hwdev_8h.html#af62b60d79be3a2d214ea317059aa3ca6',1,'hwdev.h']]],
-  ['hz_1094',['hz',['../linux_2timer_8h.html#a8489802eaedf42fdb5f2ce1708eaffa2',1,'HZ:&#160;timer.h'],['../uspios_8h.html#a8489802eaedf42fdb5f2ce1708eaffa2',1,'HZ:&#160;uspios.h'],['../SpiConfiguration_8h.html#ae0bc4d13a19d453a21ebcce1380dbd03',1,'Hz:&#160;SpiConfiguration.h']]]
+  ['hz_1094',['hz',['../SpiConfiguration_8h.html#ae0bc4d13a19d453a21ebcce1380dbd03',1,'Hz:&#160;SpiConfiguration.h'],['../linux_2timer_8h.html#a8489802eaedf42fdb5f2ce1708eaffa2',1,'HZ:&#160;timer.h'],['../uspios_8h.html#a8489802eaedf42fdb5f2ce1708eaffa2',1,'HZ:&#160;uspios.h']]]
 ];

@@ -24,7 +24,7 @@ var searchData=
   ['z_5fzone_2eh_21',['z_zone.h',['../z__zone_8h.html',1,'']]],
   ['z_5fzonesize_22',['z_zonesize',['../z__zone_8h.html#a651c8b4297a12559d9526de4fc710aea',1,'Z_ZoneSize(void):&#160;z_zone.c'],['../z__zone_8c.html#a651c8b4297a12559d9526de4fc710aea',1,'Z_ZoneSize(void):&#160;z_zone.c']]],
   ['zenity_5fbinary_23',['ZENITY_BINARY',['../i__system_8c.html#a6afd06788753c3c44d9d883e7bd18b50',1,'i_system.c']]],
-  ['zero_24',['zero',['../struct__EFI__BTT__MAP__ENTRY.html#adde5f4dc54bf7918c28158ea4950042a',1,'_EFI_BTT_MAP_ENTRY::Zero'],['../structusb__request.html#a613436e607db78f1bdf5bf0e708a2916',1,'usb_request::zero'],['../struct__idt.html#a11c97f8effe2280fcd0279c958c042ed',1,'_idt::zero']]],
+  ['zero_24',['zero',['../structusb__request.html#a613436e607db78f1bdf5bf0e708a2916',1,'usb_request::zero'],['../struct__idt.html#a11c97f8effe2280fcd0279c958c042ed',1,'_idt::zero'],['../struct__EFI__BTT__MAP__ENTRY.html#adde5f4dc54bf7918c28158ea4950042a',1,'_EFI_BTT_MAP_ENTRY::Zero']]],
   ['zero_5fvalue_25',['ZERO_VALUE',['../propstrings_8h.html#a69dde2df63db010f5bf9c71b277f9504a64f7605902b6715a4512112fdef5f9df',1,'propstrings.h']]],
   ['zeroaction_26',['zeroaction',['../actions_8cpp.html#a478c51deb77b97423c12d422207a73bd',1,'ZeroAction(ChWidget *wid, ChWindow *win):&#160;actions.cpp'],['../calculator_8h.html#a478c51deb77b97423c12d422207a73bd',1,'ZeroAction(ChWidget *wid, ChWindow *win):&#160;actions.cpp']]],
   ['zeromem_27',['ZeroMem',['../BaseMemoryLib_8h.html#a9fd4b31ee70d7924b0909970450bae59',1,'BaseMemoryLib.h']]],
