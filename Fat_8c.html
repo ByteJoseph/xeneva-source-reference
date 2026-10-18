@@ -509,6 +509,9 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>previously get_cluster_for was iterating from first block instead of caching the last cluster read, this increased read time latency in larger files</p>
+<p>use the last resolved cluster as base and start iterating from here</p>
+<p>fallback to first cluster, if index &lt; last_resolved_index</p>
 
 </div>
 </div>

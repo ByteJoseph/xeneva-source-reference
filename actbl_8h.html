@@ -291,9 +291,9 @@ Macros</h2></td></tr>
 <tr class="separator:ac3036d43a02568c232db4884aaf71957"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9bad90844b34c750c1a742dc83a10da" id="r_af9bad90844b34c750c1a742dc83a10da"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actbl_8h.html#af9bad90844b34c750c1a742dc83a10da">ACPI_FADT_WBINVD_FLUSH</a>&#160;&#160;&#160;(1&lt;&lt;1)      /* 01: [V1] WBINVD flushes but does not invalidate caches */</td></tr>
 <tr class="separator:af9bad90844b34c750c1a742dc83a10da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae01b29b5a0295fceb730889b4f8521c7" id="r_ae01b29b5a0295fceb730889b4f8521c7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actbl_8h.html#ae01b29b5a0295fceb730889b4f8521c7">ACPI_FADT_C1_SUPPORTED</a>&#160;&#160;&#160;(1&lt;&lt;2)      /* 02: [V1] All processors support <a class="el" href="minimp3_8cpp.html#a44779f18d87e71c78fc9fbf9dc88537d">C1</a> state */</td></tr>
+<tr class="memitem:ae01b29b5a0295fceb730889b4f8521c7" id="r_ae01b29b5a0295fceb730889b4f8521c7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actbl_8h.html#ae01b29b5a0295fceb730889b4f8521c7">ACPI_FADT_C1_SUPPORTED</a>&#160;&#160;&#160;(1&lt;&lt;2)      /* 02: [V1] All processors support C1 state */</td></tr>
 <tr class="separator:ae01b29b5a0295fceb730889b4f8521c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69d9c36ac0100d4d32620de272ec41cd" id="r_a69d9c36ac0100d4d32620de272ec41cd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actbl_8h.html#a69d9c36ac0100d4d32620de272ec41cd">ACPI_FADT_C2_MP_SUPPORTED</a>&#160;&#160;&#160;(1&lt;&lt;3)      /* 03: [V1] <a class="el" href="minimp3_8cpp.html#ad6fc13322a4f1c314332ff34aa8b3fa0">C2</a> state works on MP <a class="el" href="stdlib_8h.html#adbfe0fb81d91e9b64da8ff2a0a9dc0e9">system</a> */</td></tr>
+<tr class="memitem:a69d9c36ac0100d4d32620de272ec41cd" id="r_a69d9c36ac0100d4d32620de272ec41cd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actbl_8h.html#a69d9c36ac0100d4d32620de272ec41cd">ACPI_FADT_C2_MP_SUPPORTED</a>&#160;&#160;&#160;(1&lt;&lt;3)      /* 03: [V1] C2 state works on MP <a class="el" href="stdlib_8h.html#adbfe0fb81d91e9b64da8ff2a0a9dc0e9">system</a> */</td></tr>
 <tr class="separator:a69d9c36ac0100d4d32620de272ec41cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93b9fc99ae7df49493c4ed2431638ad7" id="r_a93b9fc99ae7df49493c4ed2431638ad7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actbl_8h.html#a93b9fc99ae7df49493c4ed2431638ad7">ACPI_FADT_POWER_BUTTON</a>&#160;&#160;&#160;(1&lt;&lt;4)      /* 04: [V1] Power button is handled as a control method <a class="el" href="structdevice.html">device</a> */</td></tr>
 <tr class="separator:a93b9fc99ae7df49493c4ed2431638ad7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -517,7 +517,7 @@ Enumerations</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define ACPI_FADT_C1_SUPPORTED&#160;&#160;&#160;(1&lt;&lt;2)      /* 02: [V1] All processors support <a class="el" href="minimp3_8cpp.html#a44779f18d87e71c78fc9fbf9dc88537d">C1</a> state */</td>
+          <td class="memname">#define ACPI_FADT_C1_SUPPORTED&#160;&#160;&#160;(1&lt;&lt;2)      /* 02: [V1] All processors support C1 state */</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -531,7 +531,7 @@ Enumerations</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define ACPI_FADT_C2_MP_SUPPORTED&#160;&#160;&#160;(1&lt;&lt;3)      /* 03: [V1] <a class="el" href="minimp3_8cpp.html#ad6fc13322a4f1c314332ff34aa8b3fa0">C2</a> state works on MP <a class="el" href="stdlib_8h.html#adbfe0fb81d91e9b64da8ff2a0a9dc0e9">system</a> */</td>
+          <td class="memname">#define ACPI_FADT_C2_MP_SUPPORTED&#160;&#160;&#160;(1&lt;&lt;3)      /* 03: [V1] C2 state works on MP <a class="el" href="stdlib_8h.html#adbfe0fb81d91e9b64da8ff2a0a9dc0e9">system</a> */</td>
         </tr>
       </table>
 </div><div class="memdoc">

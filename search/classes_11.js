@@ -8,9 +8,10 @@ var searchData=
   ['rep_5',['rep',['../unionmbedtls__mpi__mod__modulus_1_1rep.html',1,'mbedtls_mpi_mod_modulus']]],
   ['reportitem_6',['ReportItem',['../structReportItem.html',1,'']]],
   ['reportstate_7',['ReportState',['../structReportState.html',1,'']]],
-  ['residual_5ft_8',['residual_t',['../structresidual__t.html',1,'']]],
-  ['resource_9',['resource',['../structresource.html',1,'']]],
-  ['revert_5fdata_10',['revert_data',['../structrevert__data.html',1,'']]],
-  ['ring_11',['Ring',['../structRing.html',1,'']]],
-  ['rw_5fsemaphore_12',['rw_semaphore',['../structrw__semaphore.html',1,'']]]
+  ['resampler_8',['Resampler',['../structResampler.html',1,'']]],
+  ['residual_5ft_9',['residual_t',['../structresidual__t.html',1,'']]],
+  ['resource_10',['resource',['../structresource.html',1,'']]],
+  ['revert_5fdata_11',['revert_data',['../structrevert__data.html',1,'']]],
+  ['ring_12',['Ring',['../structRing.html',1,'']]],
+  ['rw_5fsemaphore_13',['rw_semaphore',['../structrw__semaphore.html',1,'']]]
 ];

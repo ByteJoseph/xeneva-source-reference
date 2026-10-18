@@ -8,7 +8,7 @@ var searchData=
   ['featurebyte2_5f5_5',['FEATUREBYTE2_5',['../structFEATUREBYTE2__5.html',1,'']]],
   ['fibrechannel_5fdevice_5fpath_6',['FIBRECHANNEL_DEVICE_PATH',['../structFIBRECHANNEL__DEVICE__PATH.html',1,'']]],
   ['fibrechannelex_5fdevice_5fpath_7',['FIBRECHANNELEX_DEVICE_PATH',['../structFIBRECHANNELEX__DEVICE__PATH.html',1,'']]],
-  ['file_8',['file',['../structfile.html',1,'file'],['../structFile.html',1,'File']]],
+  ['file_8',['file',['../structFile.html',1,'File'],['../structfile.html',1,'file']]],
   ['file_5foperations_9',['file_operations',['../structfile__operations.html',1,'']]],
   ['filepath_5fdevice_5fpath_10',['FILEPATH_DEVICE_PATH',['../structFILEPATH__DEVICE__PATH.html',1,'']]],
   ['fireflicker_5ft_11',['fireflicker_t',['../structfireflicker__t.html',1,'']]],

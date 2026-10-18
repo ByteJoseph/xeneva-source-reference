@@ -233,9 +233,9 @@ Macros</h2></td></tr>
 <tr class="separator:a20e010fee3553a39ff6af7a5cc2837c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a208ab0e95f24325454621095b80fcf27" id="r_a208ab0e95f24325454621095b80fcf27"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Drivers_2Sound_2virtiosnd_2main_8cpp.html#a208ab0e95f24325454621095b80fcf27">VIRTQ_DESC_F_WRITE</a>&#160;&#160;&#160;2</td></tr>
 <tr class="separator:a208ab0e95f24325454621095b80fcf27"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c806eb23c9b175c85a4bbd3620fafc2" id="r_a6c806eb23c9b175c85a4bbd3620fafc2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Drivers_2Sound_2virtiosnd_2main_8cpp.html#a6c806eb23c9b175c85a4bbd3620fafc2">VIRTIO_PCM_PERIOD</a>&#160;&#160;&#160;4096</td></tr>
+<tr class="memitem:a6c806eb23c9b175c85a4bbd3620fafc2" id="r_a6c806eb23c9b175c85a4bbd3620fafc2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Drivers_2Sound_2virtiosnd_2main_8cpp.html#a6c806eb23c9b175c85a4bbd3620fafc2">VIRTIO_PCM_PERIOD</a>&#160;&#160;&#160;2048</td></tr>
 <tr class="separator:a6c806eb23c9b175c85a4bbd3620fafc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad77c89f3175d89d3704632b42d32c66f" id="r_ad77c89f3175d89d3704632b42d32c66f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Drivers_2Sound_2virtiosnd_2main_8cpp.html#ad77c89f3175d89d3704632b42d32c66f">VIRTIO_PCM_BUFFER</a>&#160;&#160;&#160;(<a class="el" href="Drivers_2Sound_2virtiosnd_2main_8cpp.html#a6c806eb23c9b175c85a4bbd3620fafc2">VIRTIO_PCM_PERIOD</a> * 2)</td></tr>
+<tr class="memitem:ad77c89f3175d89d3704632b42d32c66f" id="r_ad77c89f3175d89d3704632b42d32c66f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Drivers_2Sound_2virtiosnd_2main_8cpp.html#ad77c89f3175d89d3704632b42d32c66f">VIRTIO_PCM_BUFFER</a>&#160;&#160;&#160;(<a class="el" href="Drivers_2Sound_2virtiosnd_2main_8cpp.html#a6c806eb23c9b175c85a4bbd3620fafc2">VIRTIO_PCM_PERIOD</a> * 4)</td></tr>
 <tr class="separator:ad77c89f3175d89d3704632b42d32c66f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
@@ -441,7 +441,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define VIRTIO_PCM_BUFFER&#160;&#160;&#160;(<a class="el" href="Drivers_2Sound_2virtiosnd_2main_8cpp.html#a6c806eb23c9b175c85a4bbd3620fafc2">VIRTIO_PCM_PERIOD</a> * 2)</td>
+          <td class="memname">#define VIRTIO_PCM_BUFFER&#160;&#160;&#160;(<a class="el" href="Drivers_2Sound_2virtiosnd_2main_8cpp.html#a6c806eb23c9b175c85a4bbd3620fafc2">VIRTIO_PCM_PERIOD</a> * 4)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -455,10 +455,18 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define VIRTIO_PCM_PERIOD&#160;&#160;&#160;4096</td>
+          <td class="memname">#define VIRTIO_PCM_PERIOD&#160;&#160;&#160;2048</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<hr  />
+<p> | Low Latency | 128 frame | 3 Period | 512 (period_bytes) | 1,536 (buffer_bytes) | General | 512 frame | 4 period | 2048 (period_bytes) | 8,192 (buffer_bytes) </p>
+<h2><a class="anchor" id="autotoc_md13"></a>
+| Media/Battery| 2048 frame | 3 period | 8,192 (period_byte) | 24,576 (buffer_bytes)</h2>
+<p>Latency profiles |-----------------------------&mdash; | Low latency | 8ms | 1 Page | General | 43 ms | 2 page |Media/Battery| 128 ms | 6 Pages |------------------------------&mdash;</p>
+<p>Formulas: frame_bytes = channels (2=stereo) x bytes_per_sample period_bytes = period_frames x frame_bytes byffer_bytes = period_bytes x N_periods latency = buffer_bytes / (rate x frame_bytes) = N x period_frames / rate) period_frames = rate x target_latency / N</p>
+<p>Sample bytes value U8/S8 = 1 bytes S16 = 2 bytes S24 = 3 bytes S24 in 32_BIT Container = 4 bytes S32/FLOAT32 = 4 bytes FLOAT64 = 8 bytes</p>
+<p>Let's choose General profile </p>
 
 </div>
 </div>

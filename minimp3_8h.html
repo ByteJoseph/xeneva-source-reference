@@ -81,16 +81,28 @@ $(function() {
   <div class="headertitle"><div class="title">minimp3.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><div class="dynheader">
+<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Include dependency graph for minimp3.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="minimp3_8h__incl.png" border="0" usemap="#aXenevaOS_2Process_2AudioPlayer_2minimp3_8h" alt=""/></div>
+<map name="aXenevaOS_2Process_2AudioPlayer_2minimp3_8h" id="aXenevaOS_2Process_2AudioPlayer_2minimp3_8h">
+<area shape="rect" title=" " alt="" coords="5,5,231,45"/>
+<area shape="rect" title=" " alt="" coords="36,93,107,119"/>
+<area shape="poly" title=" " alt="" coords="109,47,88,83,83,80,104,44"/>
+<area shape="rect" title=" " alt="" coords="131,93,201,119"/>
+<area shape="poly" title=" " alt="" coords="132,44,154,80,149,83,127,47"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="minimp3_8h__dep__incl.png" border="0" usemap="#aXenevaOS_2Process_2AudioPlayer_2minimp3_8hdep" alt=""/></div>
 <map name="aXenevaOS_2Process_2AudioPlayer_2minimp3_8hdep" id="aXenevaOS_2Process_2AudioPlayer_2minimp3_8hdep">
-<area shape="rect" title=" " alt="" coords="129,5,355,45"/>
+<area shape="rect" title=" " alt="" coords="5,5,231,45"/>
 <area shape="rect" href="Process_2AudioPlayer_2main_8cpp.html" title=" " alt="" coords="5,93,231,133"/>
-<area shape="poly" title=" " alt="" coords="205,55,147,95,144,91,202,51"/>
-<area shape="rect" href="minimp3_8cpp.html" title=" " alt="" coords="255,93,480,133"/>
-<area shape="poly" title=" " alt="" coords="283,51,341,91,338,95,280,56"/>
+<area shape="poly" title=" " alt="" coords="121,59,121,93,115,93,115,59"/>
 </map>
 </div>
 </div>
@@ -98,64 +110,37 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__mp3__info.html">_mp3_info</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmp3dec__frame__info__t.html">mp3dec_frame_info_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmp3dec__t.html">mp3dec_t</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:abc92c42ea97b1b2c1575405c209dbc66" id="r_abc92c42ea97b1b2c1575405c209dbc66"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="minimp3_8h.html#abc92c42ea97b1b2c1575405c209dbc66">MP3_MAX_SAMPLES_PER_FRAME</a>&#160;&#160;&#160;(1152 * 2)</td></tr>
-<tr class="separator:abc92c42ea97b1b2c1575405c209dbc66"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a02cdb4b6fbd20d9cb08cf674f9dc0857" id="r_a02cdb4b6fbd20d9cb08cf674f9dc0857"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="minimp3_8h.html#a02cdb4b6fbd20d9cb08cf674f9dc0857">mp3_free</a>(dec)</td></tr>
-<tr class="separator:a02cdb4b6fbd20d9cb08cf674f9dc0857"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60ef7262cf8772c101938ce095ecd482" id="r_a60ef7262cf8772c101938ce095ecd482"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="minimp3_8h.html#a60ef7262cf8772c101938ce095ecd482">MINIMP3_MAX_SAMPLES_PER_FRAME</a>&#160;&#160;&#160;(1152 * 2)</td></tr>
+<tr class="separator:a60ef7262cf8772c101938ce095ecd482"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:aeceeda34e2d22c791818ff0bbcbe913b" id="r_aeceeda34e2d22c791818ff0bbcbe913b"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct__mp3__info.html">_mp3_info</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="minimp3_8h.html#aeceeda34e2d22c791818ff0bbcbe913b">mp3_info_t</a></td></tr>
-<tr class="separator:aeceeda34e2d22c791818ff0bbcbe913b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a17b8b0c7aeecfe872aa435a077f472ce" id="r_a17b8b0c7aeecfe872aa435a077f472ce"><td class="memItemLeft" align="right" valign="top">typedef void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="minimp3_8h.html#a17b8b0c7aeecfe872aa435a077f472ce">mp3_decoder_t</a></td></tr>
-<tr class="separator:a17b8b0c7aeecfe872aa435a077f472ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a829d503db4023edb6b1705acc319b008" id="r_a829d503db4023edb6b1705acc319b008"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="acefiex_8h.html#a66634143db08bebe9b46ab4cb1fc6fd3">int16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="minimp3_8h.html#a829d503db4023edb6b1705acc319b008">mp3d_sample_t</a></td></tr>
+<tr class="separator:a829d503db4023edb6b1705acc319b008"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a7aa3be3b03832fda23492266983d351c" id="r_a7aa3be3b03832fda23492266983d351c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="minimp3_8h.html#a17b8b0c7aeecfe872aa435a077f472ce">mp3_decoder_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="minimp3_8h.html#a7aa3be3b03832fda23492266983d351c">mp3_create</a> (void)</td></tr>
-<tr class="separator:a7aa3be3b03832fda23492266983d351c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a853e7c0ffcba15afc3fa269fd2d6afe5" id="r_a853e7c0ffcba15afc3fa269fd2d6afe5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="minimp3_8h.html#a853e7c0ffcba15afc3fa269fd2d6afe5">mp3_decode</a> (<a class="el" href="minimp3_8h.html#a17b8b0c7aeecfe872aa435a077f472ce">mp3_decoder_t</a> dec, void *buf, int bytes, signed short *<a class="el" href="Process_2wifictl_2main_8cpp.html#a50fe33eaae68b43814656f241a6ac907">out</a>, <a class="el" href="minimp3_8h.html#aeceeda34e2d22c791818ff0bbcbe913b">mp3_info_t</a> *info)</td></tr>
-<tr class="separator:a853e7c0ffcba15afc3fa269fd2d6afe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58a02336690a9c0eca15d1ede96fee4c" id="r_a58a02336690a9c0eca15d1ede96fee4c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="minimp3_8h.html#a58a02336690a9c0eca15d1ede96fee4c">mp3_done</a> (<a class="el" href="minimp3_8h.html#a17b8b0c7aeecfe872aa435a077f472ce">mp3_decoder_t</a> *dec)</td></tr>
-<tr class="separator:a58a02336690a9c0eca15d1ede96fee4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca77f543f7ddc47bfb8cc180d0ba17f0" id="r_aca77f543f7ddc47bfb8cc180d0ba17f0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="minimp3_8h.html#aca77f543f7ddc47bfb8cc180d0ba17f0">mp3dec_init</a> (<a class="el" href="structmp3dec__t.html">mp3dec_t</a> *dec)</td></tr>
+<tr class="separator:aca77f543f7ddc47bfb8cc180d0ba17f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2aa8926ba887fad5315b6d538e751df" id="r_ae2aa8926ba887fad5315b6d538e751df"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="minimp3_8h.html#ae2aa8926ba887fad5315b6d538e751df">mp3dec_decode_frame</a> (<a class="el" href="structmp3dec__t.html">mp3dec_t</a> *dec, const <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *mp3, int mp3_bytes, <a class="el" href="minimp3_8h.html#a829d503db4023edb6b1705acc319b008">mp3d_sample_t</a> *pcm, <a class="el" href="structmp3dec__frame__info__t.html">mp3dec_frame_info_t</a> *info)</td></tr>
+<tr class="separator:ae2aa8926ba887fad5315b6d538e751df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a02cdb4b6fbd20d9cb08cf674f9dc0857" name="a02cdb4b6fbd20d9cb08cf674f9dc0857"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a02cdb4b6fbd20d9cb08cf674f9dc0857">&#9670;&#160;</a></span>mp3_free</h2>
+<a id="a60ef7262cf8772c101938ce095ecd482" name="a60ef7262cf8772c101938ce095ecd482"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60ef7262cf8772c101938ce095ecd482">&#9670;&#160;</a></span>MINIMP3_MAX_SAMPLES_PER_FRAME</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define mp3_free</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">dec</td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">    <span class="keywordflow">do</span> {                                                                                           \</div>
-<div class="line">        mp3_done(dec);                                                                             \</div>
-<div class="line">        dec = <a class="code hl_define" href="actypes_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;                                                                                \</div>
-<div class="line">    } <span class="keywordflow">while</span> (0)</div>
-<div class="ttc" id="aactypes_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="actypes_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition</b> actypes.h:561</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="abc92c42ea97b1b2c1575405c209dbc66" name="abc92c42ea97b1b2c1575405c209dbc66"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abc92c42ea97b1b2c1575405c209dbc66">&#9670;&#160;</a></span>MP3_MAX_SAMPLES_PER_FRAME</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MP3_MAX_SAMPLES_PER_FRAME&#160;&#160;&#160;(1152 * 2)</td>
+          <td class="memname">#define MINIMP3_MAX_SAMPLES_PER_FRAME&#160;&#160;&#160;(1152 * 2)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -163,28 +148,14 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a id="a17b8b0c7aeecfe872aa435a077f472ce" name="a17b8b0c7aeecfe872aa435a077f472ce"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a17b8b0c7aeecfe872aa435a077f472ce">&#9670;&#160;</a></span>mp3_decoder_t</h2>
+<a id="a829d503db4023edb6b1705acc319b008" name="a829d503db4023edb6b1705acc319b008"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a829d503db4023edb6b1705acc319b008">&#9670;&#160;</a></span>mp3d_sample_t</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void* <a class="el" href="minimp3_8h.html#a17b8b0c7aeecfe872aa435a077f472ce">mp3_decoder_t</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aeceeda34e2d22c791818ff0bbcbe913b" name="aeceeda34e2d22c791818ff0bbcbe913b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeceeda34e2d22c791818ff0bbcbe913b">&#9670;&#160;</a></span>mp3_info_t</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef struct <a class="el" href="struct__mp3__info.html">_mp3_info</a> <a class="el" href="minimp3_8h.html#aeceeda34e2d22c791818ff0bbcbe913b">mp3_info_t</a></td>
+          <td class="memname">typedef <a class="el" href="acefiex_8h.html#a66634143db08bebe9b46ab4cb1fc6fd3">int16_t</a> <a class="el" href="minimp3_8h.html#a829d503db4023edb6b1705acc319b008">mp3d_sample_t</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -192,69 +163,40 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a7aa3be3b03832fda23492266983d351c" name="a7aa3be3b03832fda23492266983d351c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7aa3be3b03832fda23492266983d351c">&#9670;&#160;</a></span>mp3_create()</h2>
+<a id="ae2aa8926ba887fad5315b6d538e751df" name="ae2aa8926ba887fad5315b6d538e751df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2aa8926ba887fad5315b6d538e751df">&#9670;&#160;</a></span>mp3dec_decode_frame()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="minimp3_8h.html#a17b8b0c7aeecfe872aa435a077f472ce">mp3_decoder_t</a> mp3_create </td>
+          <td class="memname">int mp3dec_decode_frame </td>
           <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a853e7c0ffcba15afc3fa269fd2d6afe5" name="a853e7c0ffcba15afc3fa269fd2d6afe5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a853e7c0ffcba15afc3fa269fd2d6afe5">&#9670;&#160;</a></span>mp3_decode()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int mp3_decode </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="minimp3_8h.html#a17b8b0c7aeecfe872aa435a077f472ce">mp3_decoder_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="structmp3dec__t.html">mp3dec_t</a> *&#160;</td>
           <td class="paramname"><em>dec</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>buf</em>, </td>
+          <td class="paramtype">const <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
+          <td class="paramname"><em>mp3</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>bytes</em>, </td>
+          <td class="paramname"><em>mp3_bytes</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">signed short *&#160;</td>
-          <td class="paramname"><em>out</em>, </td>
+          <td class="paramtype"><a class="el" href="minimp3_8h.html#a829d503db4023edb6b1705acc319b008">mp3d_sample_t</a> *&#160;</td>
+          <td class="paramname"><em>pcm</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="minimp3_8h.html#aeceeda34e2d22c791818ff0bbcbe913b">mp3_info_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structmp3dec__frame__info__t.html">mp3dec_frame_info_t</a> *&#160;</td>
           <td class="paramname"><em>info</em>&#160;</td>
         </tr>
         <tr>
@@ -263,37 +205,24 @@ Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a58a02336690a9c0eca15d1ede96fee4c" name="a58a02336690a9c0eca15d1ede96fee4c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a58a02336690a9c0eca15d1ede96fee4c">&#9670;&#160;</a></span>mp3_done()</h2>
+<a id="aca77f543f7ddc47bfb8cc180d0ba17f0" name="aca77f543f7ddc47bfb8cc180d0ba17f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca77f543f7ddc47bfb8cc180d0ba17f0">&#9670;&#160;</a></span>mp3dec_init()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void mp3_done </td>
+          <td class="memname">void mp3dec_init </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="minimp3_8h.html#a17b8b0c7aeecfe872aa435a077f472ce">mp3_decoder_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structmp3dec__t.html">mp3dec_t</a> *&#160;</td>
           <td class="paramname"><em>dec</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 </div>

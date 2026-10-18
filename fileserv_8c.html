@@ -258,8 +258,11 @@ Functions</h2></td></tr>
 <tr class="memdesc:a34fb7b630a1a53282ee435ce4e7e5afa"><td class="mdescLeft">&#160;</td><td class="mdescRight">ProcessGetFileDesc &ndash; Searches all process file descriptor entries for specific filename fd.  <br /></td></tr>
 <tr class="separator:a34fb7b630a1a53282ee435ce4e7e5afa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71d7c967bccbc20363097e47537aa0e2" id="r_a71d7c967bccbc20363097e47537aa0e2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fileserv_8c.html#a71d7c967bccbc20363097e47537aa0e2">RemoveFile</a> (char *pathname)</td></tr>
-<tr class="memdesc:a71d7c967bccbc20363097e47537aa0e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">RemoveFile &ndash; remove a file. Only file systems that implement removal through a server (/srv) support it; anything else fails, as it always effectively did.  <br /></td></tr>
+<tr class="memdesc:a71d7c967bccbc20363097e47537aa0e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">RemoveFile &ndash; remove a directory or file Supports both /srv server filesystem and general VFS (e.g. FAT32).  <br /></td></tr>
 <tr class="separator:a71d7c967bccbc20363097e47537aa0e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9f6d9e3a923b58b108151db5475ea3b" id="r_ae9f6d9e3a923b58b108151db5475ea3b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fileserv_8c.html#ae9f6d9e3a923b58b108151db5475ea3b">CreateDir</a> (char *filename)</td></tr>
+<tr class="memdesc:ae9f6d9e3a923b58b108151db5475ea3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">CreateDir &ndash; create a directory.  <br /></td></tr>
+<tr class="separator:ae9f6d9e3a923b58b108151db5475ea3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>BSD 2-Clause License</p>
@@ -291,6 +294,33 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">fd</td><td>&ndash; file descriptor to close </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae9f6d9e3a923b58b108151db5475ea3b" name="ae9f6d9e3a923b58b108151db5475ea3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9f6d9e3a923b58b108151db5475ea3b">&#9670;&#160;</a></span>CreateDir()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CreateDir </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>CreateDir &ndash; create a directory. </p>
+<p>CreateDir &ndash; creates a directory.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>&ndash; directory pathname to create </td></tr>
   </table>
   </dd>
 </dl>
@@ -646,11 +676,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>RemoveFile &ndash; remove a file. Only file systems that implement removal through a server (/srv) support it; anything else fails, as it always effectively did. </p>
+<p>RemoveFile &ndash; remove a directory or file Supports both /srv server filesystem and general VFS (e.g. FAT32). </p>
 <p>RemoveFile &ndash; remove a directory or file.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pathname</td><td>&ndash; path to remove </td></tr>
+    <tr><td class="paramname">pathname</td><td>&ndash; path of directory or file to remove </td></tr>
   </table>
   </dd>
 </dl>
