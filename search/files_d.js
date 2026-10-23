@@ -37,7 +37,7 @@ var searchData=
   ['list_5fstyle_2ec_34',['list_style.c',['../list__style_8c.html',1,'']]],
   ['list_5fstyle_5fimage_2ec_35',['list_style_image.c',['../list__style__image_8c.html',1,'']]],
   ['list_5fstyle_5fposition_2ec_36',['list_style_position.c',['../list__style__position_8c.html',1,'']]],
-  ['list_5fstyle_5ftype_2ec_37',['list_style_type.c',['../select_2properties_2list__style__type_8c.html',1,'(Global Namespace)'],['../parse_2properties_2list__style__type_8c.html',1,'(Global Namespace)']]],
+  ['list_5fstyle_5ftype_2ec_37',['list_style_type.c',['../parse_2properties_2list__style__type_8c.html',1,'(Global Namespace)'],['../select_2properties_2list__style__type_8c.html',1,'(Global Namespace)']]],
   ['listview_2ecpp_38',['listview.cpp',['../listview_8cpp.html',1,'']]],
   ['listview_2eh_39',['listview.h',['../listview_8h.html',1,'']]],
   ['littleboot_2ec_40',['littleboot.c',['../littleboot_8c.html',1,'']]],

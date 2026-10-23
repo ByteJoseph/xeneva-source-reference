@@ -57,7 +57,7 @@ var searchData=
   ['vmarea_2eh_54',['vmarea.h',['../vmarea_8h.html',1,'']]],
   ['vmmngr_2ec_55',['vmmngr.c',['../KernelAA64_2Mm_2vmmngr_8c.html',1,'(Global Namespace)'],['../LittleBoot_2vmmngr_8c.html',1,'(Global Namespace)']]],
   ['vmmngr_2ecpp_56',['vmmngr.cpp',['../vmmngr_8cpp.html',1,'']]],
-  ['vmmngr_2eh_57',['vmmngr.h',['../LittleBoot_2vmmngr_8h.html',1,'(Global Namespace)'],['../BaseHdr_2Mm_2vmmngr_8h.html',1,'(Global Namespace)']]],
+  ['vmmngr_2eh_57',['vmmngr.h',['../BaseHdr_2Mm_2vmmngr_8h.html',1,'(Global Namespace)'],['../LittleBoot_2vmmngr_8h.html',1,'(Global Namespace)']]],
   ['vmware_2eh_58',['vmware.h',['../vmware_8h.html',1,'']]],
   ['voice_5ffamily_2ec_59',['voice_family.c',['../select_2properties_2voice__family_8c.html',1,'(Global Namespace)'],['../parse_2properties_2voice__family_8c.html',1,'(Global Namespace)']]],
   ['volume_2ec_60',['volume.c',['../volume_8c.html',1,'']]]

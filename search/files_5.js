@@ -83,7 +83,7 @@ var searchData=
   ['dhm_2eh_80',['dhm.h',['../dhm_8h.html',1,'']]],
   ['direction_2ec_81',['direction.c',['../direction_8c.html',1,'']]],
   ['dirty_2ecpp_82',['dirty.cpp',['../DeodhaiXR_2dirty_8cpp.html',1,'(Global Namespace)'],['../Deodhai_2dirty_8cpp.html',1,'(Global Namespace)']]],
-  ['dirty_2eh_83',['dirty.h',['../DeodhaiXR_2dirty_8h.html',1,'(Global Namespace)'],['../Deodhai_2dirty_8h.html',1,'(Global Namespace)']]],
+  ['dirty_2eh_83',['dirty.h',['../Deodhai_2dirty_8h.html',1,'(Global Namespace)'],['../DeodhaiXR_2dirty_8h.html',1,'(Global Namespace)']]],
   ['disk_2ecpp_84',['disk.cpp',['../disk_8cpp.html',1,'']]],
   ['disk_2eh_85',['disk.h',['../disk_8h.html',1,'']]],
   ['diskinfo_2eh_86',['DiskInfo.h',['../DiskInfo_8h.html',1,'']]],
