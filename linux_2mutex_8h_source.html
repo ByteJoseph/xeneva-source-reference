@@ -121,59 +121,93 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment"> * locking has to reach into driver context.</span></div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">#include &lt;<a class="code" href="kernel_8h.html">linux/kernel.h</a>&gt;</span>   <span class="comment">/* mutex_init/lock/unlock, typedef int mutex */</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">#include &lt;linux/kernel.h&gt;</span>   <span class="comment">/* mutex_init/lock/unlock, typedef int mutex */</span></div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="preprocessor">#include &lt;<a class="code" href="cleanup_8h.html">linux/cleanup.h</a>&gt;</span></div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="preprocessor">#include &lt;<a class="code" href="lockdep_8h.html">linux/lockdep.h</a>&gt;</span>  <span class="comment">/* lockdep_set_subclass() -- called on</span></div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">                 * &amp;tty_port.buf.lock by tty_buffer.c:618,</span></div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">                 * which includes no lockdep header itself,</span></div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">                 * so this is where it has to be reachable</span></div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment">                 * from. */</span></div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
-<div class="foldopen" id="foldopen00049" data-start="{" data-end="};">
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="structmutex.html">   49</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structmutex.html">mutex</a> {</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="structmutex.html#ab4b5d59dd67ee5efa07a72871ade4da2">   50</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="structmutex.html#ab4b5d59dd67ee5efa07a72871ade4da2">state</a>;</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>};</div>
-</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="linux_2mutex_8h.html#a615ac4c6875f331e0a6370eb2babaed9">   53</a></span><span class="preprocessor">#define mutex_lock_interruptible(m) (0)</span></div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="linux_2mutex_8h.html#a7c2f2c6e2f02b16208e8e3f8451876ed">   54</a></span><span class="preprocessor">#define mutex_trylock(m)        (1)</span></div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="linux_2mutex_8h.html#a8f3e90e16da5f43f0f0538d503ce1c76">   55</a></span><span class="preprocessor">#define mutex_is_locked(m)      (1)</span></div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="linux_2mutex_8h.html#aa53d73eb21ac881e31096cbbea9e6c86">   56</a></span><span class="preprocessor">#define mutex_lock_killable(m)      (0)</span></div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="linux_2mutex_8h.html#a59f993c58b7a8d8f5d71e82cf1751d4a">   57</a></span><span class="preprocessor">#define mutex_unlock_nested(m, s)   mutex_unlock(m)</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="preprocessor">#include &lt;<a class="code" href="atomic_8h.html">linux/atomic.h</a>&gt;</span>   <span class="comment">/* atomic_long_t -- &lt;linux/ww_mutex.h&gt; puts one</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">                 * in struct ww_class and adds to it from</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">                 * ww_mutex_lock() without naming this header.</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">                 * mainline&#39;s mutex.h takes it the same way</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment">                 * (:18), so this is DCL catching up rather</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment">                 * than a divergence: without it ww_mutex.h</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment">                 * saw neither the type nor</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment">                 * atomic_long_inc_return_relaxed() and clang</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment">                 * reported the definition as conflicting with</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment">                 * its own earlier implicit declaration. */</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="preprocessor">#include &lt;<a class="code" href="lockdep_8h.html">linux/lockdep.h</a>&gt;</span>  <span class="comment">/* lockdep_set_subclass() -- called on</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment">                 * &amp;tty_port.buf.lock by tty_buffer.c:618,</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment">                 * which includes no lockdep header itself,</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment">                 * so this is where it has to be reachable</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment">                 * from. */</span></div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="linux_2mutex_8h.html#a61ba6741f9aea2a40abdf1731fad9897">   59</a></span><a class="code hl_define" href="cleanup_8h.html#a86afaa7c27a5ab2aecb6f2217c39a067">DCL_LOCK_GUARD</a>(<a class="code hl_struct" href="structmutex.html">mutex</a>, <span class="keyword">struct</span> <a class="code hl_struct" href="structmutex.html">mutex</a>, <a class="code hl_define" href="kernel_8h.html#a29d3956dd6e06e14b8ea0f7afa7c123b">mutex_lock</a>(_T), <a class="code hl_define" href="kernel_8h.html#a8bf3e6cdea112cfe058e153508e18621">mutex_unlock</a>(_T))</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><a class="code hl_define" href="cleanup_8h.html#adcf1927d0a47d67d7d17bf29b024196e">DCL_LOCK_GUARD_COND</a>(mutex_intr, <span class="keyword">struct</span> <a class="code hl_struct" href="structmutex.html">mutex</a>,</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            <a class="code hl_define" href="linux_2mutex_8h.html#a615ac4c6875f331e0a6370eb2babaed9">mutex_lock_interruptible</a>(_T), <a class="code hl_define" href="kernel_8h.html#a8bf3e6cdea112cfe058e153508e18621">mutex_unlock</a>(_T))</div>
+<div class="foldopen" id="foldopen00059" data-start="{" data-end="};">
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="structmutex.html">   59</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structmutex.html">mutex</a> {</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="structmutex.html#ab4b5d59dd67ee5efa07a72871ade4da2">   60</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="structmutex.html#ab4b5d59dd67ee5efa07a72871ade4da2">state</a>;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>};</div>
+</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment"> * DEFINE_MUTEX(name) -- the static-initialiser form.</span></div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment"> * serial_core.c:40 writes `static DEFINE_MUTEX(port_mutex);`, and without the</span></div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment"> * macro clang read it as an implicit function declaration followed by a</span></div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment"> * parameter list: two errors (implicit-int, &quot;parameter list without types&quot;)</span></div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment"> * at one line, which is the tell for a missing object-like macro rather than</span></div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="comment"> * a missing function.  port_mutex is the lock serial_core holds while walking</span></div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="comment"> * its driver list (serial_core_ctrl_find() says as much in its doc comment),</span></div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="comment"> * so it has to be a real object with static storage duration even though</span></div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="comment"> * taking it is a no-op.</span></div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="comment"> * mainline&#39;s __MUTEX_INITIALIZER fills in wait_lock, osq, wait_list and a</span></div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="comment"> * lockdep map.  DCL&#39;s struct mutex is one int (see above), so { 0 } is the</span></div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="comment"> * entire initialiser -- and that is the point: there is nothing to lay out.</span></div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="preprocessor">#define DEFINE_MUTEX(name) struct mutex name = { 0 }</span></div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="preprocessor">#endif </span><span class="comment">/* __LINUX_MUTEX_H__ */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="linux_2mutex_8h.html#a615ac4c6875f331e0a6370eb2babaed9">   63</a></span><span class="preprocessor">#define mutex_lock_interruptible(m) (0)</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="linux_2mutex_8h.html#a7c2f2c6e2f02b16208e8e3f8451876ed">   64</a></span><span class="preprocessor">#define mutex_trylock(m)        (1)</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="linux_2mutex_8h.html#a8f3e90e16da5f43f0f0538d503ce1c76">   65</a></span><span class="preprocessor">#define mutex_is_locked(m)      (1)</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="linux_2mutex_8h.html#aa53d73eb21ac881e31096cbbea9e6c86">   66</a></span><span class="preprocessor">#define mutex_lock_killable(m)      (0)</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="linux_2mutex_8h.html#a59f993c58b7a8d8f5d71e82cf1751d4a">   67</a></span><span class="preprocessor">#define mutex_unlock_nested(m, s)   mutex_unlock(m)</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment">/* mainline kernel/locking/mutex.c; ww_mutex.h&#39;s ww_mutex_base_init()</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment"> * and drm_drv.c&#39;s teardown spell the constructor/destructor this way. */</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="linux_2mutex_8h.html#adbca8f1e3e9a604e8064e1f9c3b7e61e">   70</a></span><span class="preprocessor">#define __mutex_init(m, name, key)  mutex_init(m)</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="linux_2mutex_8h.html#ab5de37f8c9e4ded6a3471075a9e3d11c">   71</a></span><span class="preprocessor">#define mutex_destroy(m)        do { (void)(m); } while (0)</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="comment"> * atomic_dec_and_mutex_lock(v, lock) -- mainline&#39;s &quot;last reference takes the</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="comment"> * lock&quot; pair (mutex.h:64): decrement, and only if the counter reached zero,</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="comment"> * lock on the way out.  drm_file.c:505 (drm_release_noglobal) is the caller,</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="comment"> * and it branches on the return value.  The lock half is a no-op in DCL</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="comment"> * (mutex_lock, kernel.h:222), so atomic_dec_and_test() is the whole of the</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="comment"> * semantics that survives: false without locking when the count is not zero,</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="comment"> * true after locking when it is.  It is called through mutex_lock() rather</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="comment"> * than skipped so the day the mutex becomes real the pairing is already</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="comment"> * spelled out here.</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">bool</span> atomic_dec_and_mutex_lock(<a class="code hl_struct" href="structatomic__t.html">atomic_t</a>* v, <span class="keyword">struct</span> <a class="code hl_struct" href="structmutex.html">mutex</a>* lock)</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>{</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <span class="keywordflow">if</span> (!atomic_dec_and_test(v))</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    <a class="code hl_define" href="linux_2kernel_8h.html#a29d3956dd6e06e14b8ea0f7afa7c123b">mutex_lock</a>(lock);</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>}</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="linux_2mutex_8h.html#a61ba6741f9aea2a40abdf1731fad9897">   92</a></span><a class="code hl_define" href="cleanup_8h.html#a86afaa7c27a5ab2aecb6f2217c39a067">DCL_LOCK_GUARD</a>(<a class="code hl_struct" href="structmutex.html">mutex</a>, <span class="keyword">struct</span> <a class="code hl_struct" href="structmutex.html">mutex</a>, <a class="code hl_define" href="linux_2kernel_8h.html#a29d3956dd6e06e14b8ea0f7afa7c123b">mutex_lock</a>(_T), <a class="code hl_define" href="linux_2kernel_8h.html#a8bf3e6cdea112cfe058e153508e18621">mutex_unlock</a>(_T))</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><a class="code hl_define" href="cleanup_8h.html#adcf1927d0a47d67d7d17bf29b024196e">DCL_LOCK_GUARD_COND</a>(mutex_intr, <span class="keyword">struct</span> <a class="code hl_struct" href="structmutex.html">mutex</a>,</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>            <a class="code hl_define" href="linux_2mutex_8h.html#a615ac4c6875f331e0a6370eb2babaed9">mutex_lock_interruptible</a>(_T), <a class="code hl_define" href="linux_2kernel_8h.html#a8bf3e6cdea112cfe058e153508e18621">mutex_unlock</a>(_T))</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="comment"> * DEFINE_MUTEX(name) -- the static-initialiser form.</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="comment"> * serial_core.c:40 writes `static DEFINE_MUTEX(port_mutex);`, and without the</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="comment"> * macro clang read it as an implicit function declaration followed by a</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><span class="comment"> * parameter list: two errors (implicit-int, &quot;parameter list without types&quot;)</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="comment"> * at one line, which is the tell for a missing object-like macro rather than</span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="comment"> * a missing function.  port_mutex is the lock serial_core holds while walking</span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="comment"> * its driver list (serial_core_ctrl_find() says as much in its doc comment),</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="comment"> * so it has to be a real object with static storage duration even though</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="comment"> * taking it is a no-op.</span></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="comment"> * mainline&#39;s __MUTEX_INITIALIZER fills in wait_lock, osq, wait_list and a</span></div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="comment"> * lockdep map.  DCL&#39;s struct mutex is one int (see above), so { 0 } is the</span></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="comment"> * entire initialiser -- and that is the point: there is nothing to lay out.</span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span><span class="preprocessor">#define DEFINE_MUTEX(name) struct mutex name = { 0 }</span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span><span class="preprocessor">#endif </span><span class="comment">/* __LINUX_MUTEX_H__ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="aatomic_8h_html"><div class="ttname"><a href="atomic_8h.html">atomic.h</a></div></div>
 <div class="ttc" id="acleanup_8h_html"><div class="ttname"><a href="cleanup_8h.html">cleanup.h</a></div></div>
-<div class="ttc" id="acleanup_8h_html_a86afaa7c27a5ab2aecb6f2217c39a067"><div class="ttname"><a href="cleanup_8h.html#a86afaa7c27a5ab2aecb6f2217c39a067">DCL_LOCK_GUARD</a></div><div class="ttdeci">#define DCL_LOCK_GUARD(name, type, acquire, release)</div><div class="ttdef"><b>Definition</b> cleanup.h:101</div></div>
-<div class="ttc" id="acleanup_8h_html_adcf1927d0a47d67d7d17bf29b024196e"><div class="ttname"><a href="cleanup_8h.html#adcf1927d0a47d67d7d17bf29b024196e">DCL_LOCK_GUARD_COND</a></div><div class="ttdeci">#define DCL_LOCK_GUARD_COND(name, type, acquire, release)</div><div class="ttdef"><b>Definition</b> cleanup.h:113</div></div>
-<div class="ttc" id="akernel_8h_html"><div class="ttname"><a href="kernel_8h.html">kernel.h</a></div></div>
-<div class="ttc" id="akernel_8h_html_a29d3956dd6e06e14b8ea0f7afa7c123b"><div class="ttname"><a href="kernel_8h.html#a29d3956dd6e06e14b8ea0f7afa7c123b">mutex_lock</a></div><div class="ttdeci">#define mutex_lock(m)</div><div class="ttdef"><b>Definition</b> kernel.h:187</div></div>
-<div class="ttc" id="akernel_8h_html_a8bf3e6cdea112cfe058e153508e18621"><div class="ttname"><a href="kernel_8h.html#a8bf3e6cdea112cfe058e153508e18621">mutex_unlock</a></div><div class="ttdeci">#define mutex_unlock(m)</div><div class="ttdef"><b>Definition</b> kernel.h:188</div></div>
-<div class="ttc" id="alinux_2mutex_8h_html_a615ac4c6875f331e0a6370eb2babaed9"><div class="ttname"><a href="linux_2mutex_8h.html#a615ac4c6875f331e0a6370eb2babaed9">mutex_lock_interruptible</a></div><div class="ttdeci">#define mutex_lock_interruptible(m)</div><div class="ttdef"><b>Definition</b> mutex.h:53</div></div>
+<div class="ttc" id="acleanup_8h_html_a86afaa7c27a5ab2aecb6f2217c39a067"><div class="ttname"><a href="cleanup_8h.html#a86afaa7c27a5ab2aecb6f2217c39a067">DCL_LOCK_GUARD</a></div><div class="ttdeci">#define DCL_LOCK_GUARD(name, type, acquire, release)</div><div class="ttdef"><b>Definition</b> cleanup.h:168</div></div>
+<div class="ttc" id="acleanup_8h_html_adcf1927d0a47d67d7d17bf29b024196e"><div class="ttname"><a href="cleanup_8h.html#adcf1927d0a47d67d7d17bf29b024196e">DCL_LOCK_GUARD_COND</a></div><div class="ttdeci">#define DCL_LOCK_GUARD_COND(name, type, acquire, release)</div><div class="ttdef"><b>Definition</b> cleanup.h:180</div></div>
+<div class="ttc" id="alinux_2kernel_8h_html_a29d3956dd6e06e14b8ea0f7afa7c123b"><div class="ttname"><a href="linux_2kernel_8h.html#a29d3956dd6e06e14b8ea0f7afa7c123b">mutex_lock</a></div><div class="ttdeci">#define mutex_lock(m)</div><div class="ttdef"><b>Definition</b> kernel.h:229</div></div>
+<div class="ttc" id="alinux_2kernel_8h_html_a8bf3e6cdea112cfe058e153508e18621"><div class="ttname"><a href="linux_2kernel_8h.html#a8bf3e6cdea112cfe058e153508e18621">mutex_unlock</a></div><div class="ttdeci">#define mutex_unlock(m)</div><div class="ttdef"><b>Definition</b> kernel.h:230</div></div>
+<div class="ttc" id="alinux_2mutex_8h_html_a615ac4c6875f331e0a6370eb2babaed9"><div class="ttname"><a href="linux_2mutex_8h.html#a615ac4c6875f331e0a6370eb2babaed9">mutex_lock_interruptible</a></div><div class="ttdeci">#define mutex_lock_interruptible(m)</div><div class="ttdef"><b>Definition</b> mutex.h:63</div></div>
 <div class="ttc" id="alockdep_8h_html"><div class="ttname"><a href="lockdep_8h.html">lockdep.h</a></div></div>
-<div class="ttc" id="astructmutex_html"><div class="ttname"><a href="structmutex.html">mutex</a></div><div class="ttdef"><b>Definition</b> mutex.h:49</div></div>
-<div class="ttc" id="astructmutex_html_ab4b5d59dd67ee5efa07a72871ade4da2"><div class="ttname"><a href="structmutex.html#ab4b5d59dd67ee5efa07a72871ade4da2">mutex::state</a></div><div class="ttdeci">int state</div><div class="ttdef"><b>Definition</b> mutex.h:50</div></div>
+<div class="ttc" id="astructatomic__t_html"><div class="ttname"><a href="structatomic__t.html">atomic_t</a></div><div class="ttdef"><b>Definition</b> atomic.h:31</div></div>
+<div class="ttc" id="astructmutex_html"><div class="ttname"><a href="structmutex.html">mutex</a></div><div class="ttdef"><b>Definition</b> mutex.h:59</div></div>
+<div class="ttc" id="astructmutex_html_ab4b5d59dd67ee5efa07a72871ade4da2"><div class="ttname"><a href="structmutex.html#ab4b5d59dd67ee5efa07a72871ade4da2">mutex::state</a></div><div class="ttdeci">int state</div><div class="ttdef"><b>Definition</b> mutex.h:60</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

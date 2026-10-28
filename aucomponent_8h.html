@@ -75,7 +75,6 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
@@ -85,35 +84,56 @@ $(function() {
 <div class="textblock"><code>#include &lt;<a class="el" href="BaseHdr_2stdint_8h_source.html">stdint.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="BaseHdr_2stddef_8h_source.html">stddef.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="audrv_8h_source.html">audrv.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="drvctl_8h_source.html">drvctl.h</a>&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for aucomponent.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="aucomponent_8h__incl.png" border="0" usemap="#aXenevaOS_2BaseHdr_2aucomponent_8h" alt=""/></div>
 <map name="aXenevaOS_2BaseHdr_2aucomponent_8h" id="aXenevaOS_2BaseHdr_2aucomponent_8h">
-<area shape="rect" title=" " alt="" coords="5,5,259,31"/>
-<area shape="rect" href="BaseHdr_2stdint_8h.html" title=" " alt="" coords="97,152,167,177"/>
-<area shape="poly" title=" " alt="" coords="135,31,135,138,129,138,129,31"/>
-<area shape="rect" href="BaseHdr_2stddef_8h.html" title=" " alt="" coords="20,79,95,104"/>
-<area shape="poly" title=" " alt="" coords="122,33,81,71,78,67,118,29"/>
-<area shape="rect" href="audrv_8h.html" title=" " alt="" coords="170,79,241,104"/>
-<area shape="poly" title=" " alt="" coords="146,29,185,67,182,71,142,33"/>
-<area shape="poly" title=" " alt="" coords="71,102,112,141,108,144,67,106"/>
-<area shape="rect" href="__null_8h.html" title=" " alt="" coords="7,152,73,177"/>
-<area shape="poly" title=" " alt="" coords="57,105,49,140,43,138,52,104"/>
-<area shape="poly" title=" " alt="" coords="195,106,156,144,152,140,191,102"/>
-<area shape="rect" href="vfs_8h.html" title=" " alt="" coords="191,152,265,177"/>
-<area shape="poly" title=" " alt="" coords="212,104,223,138,218,140,207,105"/>
-<area shape="rect" title=" " alt="" coords="173,299,243,324"/>
-<area shape="poly" title=" " alt="" coords="193,180,138,202,115,215,101,227,97,237,97,246,109,264,133,280,161,292,158,297,130,285,106,268,92,248,91,236,96,224,111,210,135,197,191,175"/>
-<area shape="rect" title=" " alt="" coords="111,225,166,251"/>
-<area shape="poly" title=" " alt="" coords="215,179,166,219,162,214,212,175"/>
-<area shape="rect" title=" " alt="" coords="190,225,266,251"/>
-<area shape="poly" title=" " alt="" coords="231,178,231,212,225,212,225,178"/>
-<area shape="rect" href="group_8h.html" title=" " alt="" coords="290,225,395,251"/>
-<area shape="poly" title=" " alt="" coords="248,175,314,216,311,220,245,180"/>
-<area shape="rect" href="user_8h.html" title=" " alt="" coords="419,225,514,251"/>
-<area shape="poly" title=" " alt="" coords="266,174,416,219,415,224,264,179"/>
-<area shape="poly" title=" " alt="" coords="322,253,243,294,241,290,320,248"/>
+<area shape="rect" title=" " alt="" coords="167,5,420,31"/>
+<area shape="rect" href="BaseHdr_2stdint_8h.html" title=" " alt="" coords="267,152,338,177"/>
+<area shape="poly" title=" " alt="" coords="292,31,286,64,285,104,295,139,290,140,280,104,280,64,287,30"/>
+<area shape="rect" href="BaseHdr_2stddef_8h.html" title=" " alt="" coords="145,79,220,104"/>
+<area shape="poly" title=" " alt="" coords="277,33,214,73,211,69,274,28"/>
+<area shape="rect" href="audrv_8h.html" title=" " alt="" coords="390,79,461,104"/>
+<area shape="poly" title=" " alt="" coords="316,28,393,70,391,74,313,33"/>
+<area shape="rect" href="drvctl_8h.html" title=" " alt="" coords="295,79,366,104"/>
+<area shape="poly" title=" " alt="" coords="302,30,321,65,316,68,297,32"/>
+<area shape="poly" title=" " alt="" coords="203,102,272,142,270,147,201,106"/>
+<area shape="rect" href="__null_8h.html" title=" " alt="" coords="150,152,215,177"/>
+<area shape="poly" title=" " alt="" coords="185,104,185,138,180,138,180,104"/>
+<area shape="poly" title=" " alt="" coords="407,106,336,147,333,143,404,102"/>
+<area shape="rect" href="vfs_8h.html" title=" " alt="" coords="389,152,462,177"/>
+<area shape="poly" title=" " alt="" coords="428,104,428,138,423,138,423,104"/>
+<area shape="rect" title=" " alt="" coords="142,519,213,544"/>
+<area shape="poly" title=" " alt="" coords="389,177,286,203,159,239,52,278,19,296,11,304,8,311,8,386,11,409,20,429,33,448,50,464,90,492,131,511,128,516,87,496,47,468,29,451,15,432,6,410,3,386,3,309,6,301,16,291,50,273,158,234,285,198,388,172"/>
+<area shape="rect" title=" " alt="" coords="521,225,575,251"/>
+<area shape="poly" title=" " alt="" coords="446,175,518,216,515,221,444,180"/>
+<area shape="rect" title=" " alt="" coords="434,519,510,544"/>
+<area shape="poly" title=" " alt="" coords="436,176,466,232,480,270,485,310,485,386,483,451,478,505,472,505,477,450,480,386,480,310,475,271,462,234,431,179"/>
+<area shape="rect" href="group_8h.html" title=" " alt="" coords="43,299,149,324"/>
+<area shape="poly" title=" " alt="" coords="392,180,265,228,130,295,127,290,263,223,390,175"/>
+<area shape="rect" href="user_8h.html" title=" " alt="" coords="599,225,694,251"/>
+<area shape="poly" title=" " alt="" coords="462,175,599,219,597,224,460,180"/>
+<area shape="rect" href="BaseHdr_2Sync_2poll_8h.html" title=" " alt="" coords="276,225,369,251"/>
+<area shape="poly" title=" " alt="" coords="410,180,352,219,349,215,407,175"/>
+<area shape="poly" title=" " alt="" coords="100,324,110,388,121,429,136,469,160,507,156,510,131,472,115,431,105,389,94,325"/>
+<area shape="poly" title=" " alt="" coords="283,253,246,272,228,284,214,300,200,325,189,352,177,409,175,462,177,505,172,505,169,462,172,408,184,350,195,323,210,297,225,280,243,267,281,248"/>
+<area shape="rect" href="waitq_8h.html" title=" " alt="" coords="225,299,330,324"/>
+<area shape="poly" title=" " alt="" coords="317,252,294,289,290,286,313,250"/>
+<area shape="rect" href="Hal_2AA64_2sched_8h.html" title=" " alt="" coords="300,372,436,397"/>
+<area shape="poly" title=" " alt="" coords="329,250,363,358,358,360,324,252"/>
+<area shape="poly" title=" " alt="" coords="274,325,191,507,186,505,270,323"/>
+<area shape="rect" href="aa64cpu_8h.html" title=" " alt="" coords="291,445,445,471"/>
+<area shape="poly" title=" " alt="" coords="279,325,279,359,283,378,290,396,309,419,333,436,330,441,306,423,286,399,278,379,274,359,273,325"/>
+<area shape="poly" title=" " alt="" coords="294,322,344,361,341,365,290,326"/>
+<area shape="poly" title=" " alt="" coords="338,473,222,516,220,511,336,468"/>
+<area shape="poly" title=" " alt="" coords="386,468,445,508,442,513,383,473"/>
+<area shape="rect" title=" " alt="" coords="336,519,400,544"/>
+<area shape="poly" title=" " alt="" coords="371,471,371,505,365,505,365,471"/>
+<area shape="poly" title=" " alt="" coords="351,400,280,447,202,512,198,508,277,443,348,395"/>
+<area shape="poly" title=" " alt="" coords="371,398,371,432,365,432,365,398"/>
+<area shape="poly" title=" " alt="" coords="329,105,315,140,310,138,324,103"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -121,11 +141,13 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="aucomponent_8h__dep__incl.png" border="0" usemap="#aXenevaOS_2BaseHdr_2aucomponent_8hdep" alt=""/></div>
 <map name="aXenevaOS_2BaseHdr_2aucomponent_8hdep" id="aXenevaOS_2BaseHdr_2aucomponent_8hdep">
-<area shape="rect" title=" " alt="" coords="59,5,312,31"/>
-<area shape="rect" href="devhw_8c.html" title=" " alt="" coords="5,79,173,119"/>
-<area shape="poly" title=" " alt="" coords="162,41,114,81,111,76,159,37"/>
-<area shape="rect" href="audrv_8c.html" title=" " alt="" coords="197,79,365,119"/>
-<area shape="poly" title=" " alt="" coords="212,37,260,76,256,81,208,41"/>
+<area shape="rect" title=" " alt="" coords="155,5,408,31"/>
+<area shape="rect" href="devfs_8c.html" title=" " alt="" coords="5,79,173,119"/>
+<area shape="poly" title=" " alt="" coords="242,38,136,81,134,76,240,33"/>
+<area shape="rect" href="devhw_8c.html" title=" " alt="" coords="197,79,365,119"/>
+<area shape="poly" title=" " alt="" coords="284,44,284,79,279,79,279,44"/>
+<area shape="rect" href="audrv_8c.html" title=" " alt="" coords="389,79,557,119"/>
+<area shape="poly" title=" " alt="" coords="323,33,428,76,426,81,321,38"/>
 </map>
 </div>
 </div>
@@ -135,19 +157,6 @@ This graph shows which files directly or indirectly include this file:</div>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__au__resource__.html">_au_resource_</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:a29d648e6f625bc7df7f33146c04e1076" id="r_a29d648e6f625bc7df7f33146c04e1076"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aucomponent_8h.html#a29d648e6f625bc7df7f33146c04e1076">AU_UNLOAD_OK</a>&#160;&#160;&#160;0</td></tr>
-<tr class="separator:a29d648e6f625bc7df7f33146c04e1076"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0f624077471aa659afe25f21624eb0a" id="r_ab0f624077471aa659afe25f21624eb0a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aucomponent_8h.html#ab0f624077471aa659afe25f21624eb0a">AU_UNLOAD_NOT_FOUND</a>&#160;&#160;&#160;-1</td></tr>
-<tr class="separator:ab0f624077471aa659afe25f21624eb0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15b9adcfa350d1c4017e674661743511" id="r_a15b9adcfa350d1c4017e674661743511"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aucomponent_8h.html#a15b9adcfa350d1c4017e674661743511">AU_UNLOAD_NOT_OPTED</a>&#160;&#160;&#160;-2   /* driver did not export <a class="el" href="audrv_8h.html#ad1f8f3d26ae989611cf81bddc3e8cbcc">AU_DRV_FLAG_UNLOADABLE</a> */</td></tr>
-<tr class="separator:a15b9adcfa350d1c4017e674661743511"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e46c2d577f7624d1741e5dc84917f55" id="r_a4e46c2d577f7624d1741e5dc84917f55"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aucomponent_8h.html#a4e46c2d577f7624d1741e5dc84917f55">AU_UNLOAD_BUSY</a>&#160;&#160;&#160;-3   /* refcount &gt; 0 */</td></tr>
-<tr class="separator:a4e46c2d577f7624d1741e5dc84917f55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abdc2b8db00448a52e43b733721a2dbc1" id="r_abdc2b8db00448a52e43b733721a2dbc1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aucomponent_8h.html#abdc2b8db00448a52e43b733721a2dbc1">AU_UNLOAD_VETOED</a>&#160;&#160;&#160;-4   /* <a class="el" href="aucomponent_8h.html#a0fd0fcd57405cd75b747791c9637fc93">AuDriverUnload</a>() returned non-zero */</td></tr>
-<tr class="separator:abdc2b8db00448a52e43b733721a2dbc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -168,7 +177,7 @@ Functions</h2></td></tr>
 <tr class="memitem:a4acc30e1d3d7d26f2804e580ba9623c0" id="r_a4acc30e1d3d7d26f2804e580ba9623c0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="audrv_8h.html#a9e3aee018af3077c7b4044bdd751930a">AuDriver</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aucomponent_8h.html#a4acc30e1d3d7d26f2804e580ba9623c0">AuDriverOwnerOf</a> (<a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> addr)</td></tr>
 <tr class="memdesc:a4acc30e1d3d7d26f2804e580ba9623c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuDriverOwnerOf &ndash; the loaded driver whose image contains addr.  <br /></td></tr>
 <tr class="separator:a4acc30e1d3d7d26f2804e580ba9623c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b5598b50936bbeb026929443f6c8f28" id="r_a2b5598b50936bbeb026929443f6c8f28"><td class="memItemLeft" align="right" valign="top"><a class="el" href="audrv_8h.html#a9e3aee018af3077c7b4044bdd751930a">AuDriver</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aucomponent_8h.html#a2b5598b50936bbeb026929443f6c8f28">AuDriverFindByName</a> (const char *<a class="el" href="kobject_8h.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>)</td></tr>
+<tr class="memitem:a2b5598b50936bbeb026929443f6c8f28" id="r_a2b5598b50936bbeb026929443f6c8f28"><td class="memItemLeft" align="right" valign="top"><a class="el" href="audrv_8h.html#a9e3aee018af3077c7b4044bdd751930a">AuDriver</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aucomponent_8h.html#a2b5598b50936bbeb026929443f6c8f28">AuDriverFindByName</a> (const char *<a class="el" href="drm__crtc_8h.html#aed88e009d7772dfc9026cb1f5492b458">name</a>)</td></tr>
 <tr class="separator:a2b5598b50936bbeb026929443f6c8f28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ac4340c6f2d71c19708390f243ff8b9" id="r_a5ac4340c6f2d71c19708390f243ff8b9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aucomponent_8h.html#a5ac4340c6f2d71c19708390f243ff8b9">AuDriverRef</a> (<a class="el" href="audrv_8h.html#a9e3aee018af3077c7b4044bdd751930a">AuDriver</a> *drv)</td></tr>
 <tr class="separator:a5ac4340c6f2d71c19708390f243ff8b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -180,92 +189,21 @@ Functions</h2></td></tr>
 <tr class="separator:ab3cbda294257c9ab54939f8787c9394a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a811bd60a78927f7309f329f4fe20b9eb" id="r_a811bd60a78927f7309f329f4fe20b9eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aucomponent_8h.html#a811bd60a78927f7309f329f4fe20b9eb">AuDriverUntrackAny</a> (<a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> kind, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> value)</td></tr>
 <tr class="separator:a811bd60a78927f7309f329f4fe20b9eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5660d56a68bf934beae02aad9f023138" id="r_a5660d56a68bf934beae02aad9f023138"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aucomponent_8h.html#a5660d56a68bf934beae02aad9f023138">AuDriverImportOverride</a> (const char *<a class="el" href="kobject_8h.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>)</td></tr>
+<tr class="memitem:a5660d56a68bf934beae02aad9f023138" id="r_a5660d56a68bf934beae02aad9f023138"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aucomponent_8h.html#a5660d56a68bf934beae02aad9f023138">AuDriverImportOverride</a> (const char *<a class="el" href="drm__crtc_8h.html#aed88e009d7772dfc9026cb1f5492b458">name</a>)</td></tr>
 <tr class="separator:a5660d56a68bf934beae02aad9f023138"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e17ac5c9ca89a766fc489db3dcd6bcf" id="r_a6e17ac5c9ca89a766fc489db3dcd6bcf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aucomponent_8h.html#a6e17ac5c9ca89a766fc489db3dcd6bcf">AuDriverLoadByName</a> (const char *<a class="el" href="kobject_8h.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>)</td></tr>
+<tr class="memitem:a6e17ac5c9ca89a766fc489db3dcd6bcf" id="r_a6e17ac5c9ca89a766fc489db3dcd6bcf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aucomponent_8h.html#a6e17ac5c9ca89a766fc489db3dcd6bcf">AuDriverLoadByName</a> (const char *<a class="el" href="drm__crtc_8h.html#aed88e009d7772dfc9026cb1f5492b458">name</a>)</td></tr>
 <tr class="memdesc:a6e17ac5c9ca89a766fc489db3dcd6bcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuDriverLoadByName &ndash; (re)load a driver that is not currently loaded, then run its AuDriverMain. Returns 0 on success.  <br /></td></tr>
 <tr class="separator:a6e17ac5c9ca89a766fc489db3dcd6bcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35bd2f398c5800be056636214a24e2a7" id="r_a35bd2f398c5800be056636214a24e2a7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aucomponent_8h.html#a35bd2f398c5800be056636214a24e2a7">AuDriverClaimsPci</a> (int bus, int dev, int func)</td></tr>
+<tr class="memitem:a35bd2f398c5800be056636214a24e2a7" id="r_a35bd2f398c5800be056636214a24e2a7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aucomponent_8h.html#a35bd2f398c5800be056636214a24e2a7">AuDriverClaimsPci</a> (int bus, int <a class="el" href="drm__print_8h.html#a1572ef5e3355461e391f0d510070cd36">dev</a>, int func)</td></tr>
 <tr class="separator:a35bd2f398c5800be056636214a24e2a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff3600f7f8eadf389480ddf32700af76" id="r_aff3600f7f8eadf389480ddf32700af76"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aucomponent_8h.html#aff3600f7f8eadf389480ddf32700af76">AuDriverCtlInitialize</a> (void)</td></tr>
 <tr class="separator:aff3600f7f8eadf389480ddf32700af76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0fd0fcd57405cd75b747791c9637fc93" id="r_a0fd0fcd57405cd75b747791c9637fc93"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aucomponent_8h.html#a0fd0fcd57405cd75b747791c9637fc93">AuDriverUnload</a> (<a class="el" href="audrv_8h.html#a9e3aee018af3077c7b4044bdd751930a">AuDriver</a> *drv)</td></tr>
 <tr class="memdesc:a0fd0fcd57405cd75b747791c9637fc93"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuDriverUnload &ndash; unload a running driver.  <br /></td></tr>
 <tr class="separator:a0fd0fcd57405cd75b747791c9637fc93"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4c06b8d0475a3e3653daa5fa0ecc6cd" id="r_ad4c06b8d0475a3e3653daa5fa0ecc6cd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aucomponent_8h.html#ad4c06b8d0475a3e3653daa5fa0ecc6cd">AuDriverUnloadByName</a> (const char *<a class="el" href="kobject_8h.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>)</td></tr>
+<tr class="memitem:ad4c06b8d0475a3e3653daa5fa0ecc6cd" id="r_ad4c06b8d0475a3e3653daa5fa0ecc6cd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aucomponent_8h.html#ad4c06b8d0475a3e3653daa5fa0ecc6cd">AuDriverUnloadByName</a> (const char *<a class="el" href="drm__crtc_8h.html#aed88e009d7772dfc9026cb1f5492b458">name</a>)</td></tr>
 <tr class="separator:ad4c06b8d0475a3e3653daa5fa0ecc6cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a4e46c2d577f7624d1741e5dc84917f55" name="a4e46c2d577f7624d1741e5dc84917f55"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4e46c2d577f7624d1741e5dc84917f55">&#9670;&#160;</a></span>AU_UNLOAD_BUSY</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define AU_UNLOAD_BUSY&#160;&#160;&#160;-3   /* refcount &gt; 0 */</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ab0f624077471aa659afe25f21624eb0a" name="ab0f624077471aa659afe25f21624eb0a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab0f624077471aa659afe25f21624eb0a">&#9670;&#160;</a></span>AU_UNLOAD_NOT_FOUND</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define AU_UNLOAD_NOT_FOUND&#160;&#160;&#160;-1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a15b9adcfa350d1c4017e674661743511" name="a15b9adcfa350d1c4017e674661743511"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a15b9adcfa350d1c4017e674661743511">&#9670;&#160;</a></span>AU_UNLOAD_NOT_OPTED</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define AU_UNLOAD_NOT_OPTED&#160;&#160;&#160;-2   /* driver did not export <a class="el" href="audrv_8h.html#ad1f8f3d26ae989611cf81bddc3e8cbcc">AU_DRV_FLAG_UNLOADABLE</a> */</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a29d648e6f625bc7df7f33146c04e1076" name="a29d648e6f625bc7df7f33146c04e1076"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a29d648e6f625bc7df7f33146c04e1076">&#9670;&#160;</a></span>AU_UNLOAD_OK</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define AU_UNLOAD_OK&#160;&#160;&#160;0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="abdc2b8db00448a52e43b733721a2dbc1" name="abdc2b8db00448a52e43b733721a2dbc1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abdc2b8db00448a52e43b733721a2dbc1">&#9670;&#160;</a></span>AU_UNLOAD_VETOED</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define AU_UNLOAD_VETOED&#160;&#160;&#160;-4   /* <a class="el" href="aucomponent_8h.html#a0fd0fcd57405cd75b747791c9637fc93">AuDriverUnload</a>() returned non-zero */</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="a9baa0907bb6b40650c584765863c49b4" name="a9baa0907bb6b40650c584765863c49b4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9baa0907bb6b40650c584765863c49b4">&#9670;&#160;</a></span>AuResource</h2>

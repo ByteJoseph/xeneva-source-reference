@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['selector_0',['selector',['../rule.html',1,'']]]
+  ['map_0',['page to map.',['../The.html',1,'']]]
 ];

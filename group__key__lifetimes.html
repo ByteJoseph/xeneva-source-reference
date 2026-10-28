@@ -612,10 +612,10 @@ Values of this type are encoded in the persistent key store. Any changes to exis
 <p>Encoding of key persistence levels.</p>
 <p>What distinguishes different persistence levels is what device management events may cause keys to be destroyed. <em>Volatile</em> keys are destroyed by a power reset. Persistent keys may be destroyed by events such as a transfer of ownership or a factory reset. What management events actually affect persistent keys at different levels is outside the scope of the PSA Cryptography specification.</p>
 <p>The PSA Cryptography specification defines the following values of persistence levels:</p><ul>
-<li><code>0</code> = <a class="el" href="group__key__lifetimes.html#gaf3d1317436d19a15e7f2be1b9827edfc">PSA_KEY_PERSISTENCE_VOLATILE</a>: volatile key. A volatile key is automatically destroyed by the implementation when the application instance terminates. In particular, a volatile key is automatically destroyed on a power reset of the device.</li>
-<li><code>1</code> = <a class="el" href="group__key__lifetimes.html#gafc5d5c94f98e885ae5a2bb789deb4d91">PSA_KEY_PERSISTENCE_DEFAULT</a>: persistent key with a default lifetime.</li>
+<li><code>0</code> = PSA_KEY_PERSISTENCE_VOLATILE: volatile key. A volatile key is automatically destroyed by the implementation when the application instance terminates. In particular, a volatile key is automatically destroyed on a power reset of the device.</li>
+<li><code>1</code> = PSA_KEY_PERSISTENCE_DEFAULT: persistent key with a default lifetime.</li>
 <li><code>2-254</code>: currently not supported by Mbed TLS.</li>
-<li><code>255</code> = <a class="el" href="group__key__lifetimes.html#ga6be0f97ba7fb86f626b3fd2b03a1ac79">PSA_KEY_PERSISTENCE_READ_ONLY</a>: read-only or write-once key. A key with this persistence level cannot be destroyed. Mbed TLS does not currently offer a way to create such keys, but integrations of Mbed TLS can use it for built-in keys that the application cannot modify (for example, a hardware unique key (HUK)).</li>
+<li><code>255</code> = PSA_KEY_PERSISTENCE_READ_ONLY: read-only or write-once key. A key with this persistence level cannot be destroyed. Mbed TLS does not currently offer a way to create such keys, but integrations of Mbed TLS can use it for built-in keys that the application cannot modify (for example, a hardware unique key (HUK)).</li>
 </ul>
 <dl class="section note"><dt>Note</dt><dd>Key persistence levels are 8-bit values. Key management interfaces operate on lifetimes (type <a class="el" href="group__key__lifetimes.html#ga6821ff6dd39dc2bc370ded760ad8b0cf">psa_key_lifetime_t</a>) which encode the persistence as the lower 8 bits of a 32-bit value.</dd>
 <dd>

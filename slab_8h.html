@@ -74,173 +74,210 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#define-members">Macros</a>  </div>
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">slab.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="kmalloc_8h_source.html">Mm/kmalloc.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="BaseHdr_2Mm_2vmmngr_8h_source.html">Mm/vmmngr.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="kernel_8h_source.html">linux/kernel.h</a>&gt;</code><br />
+<code>#include &lt;linux/kernel.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="gfp__types_8h_source.html">linux/gfp_types.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="overflow_8h_source.html">linux/overflow.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="sprintf_8h_source.html">linux/sprintf.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="BaseHdr_2linux_2string_8h_source.html">linux/string.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="asm_2cache_8h_source.html">asm/cache.h</a>&gt;</code><br />
+<code>#include &lt;linux/kdev_t.h&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for slab.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="slab_8h__incl.png" border="0" usemap="#aXenevaOS_2BaseHdr_2linux_2slab_8h" alt=""/></div>
 <map name="aXenevaOS_2BaseHdr_2linux_2slab_8h" id="aXenevaOS_2BaseHdr_2linux_2slab_8h">
-<area shape="rect" title=" " alt="" coords="2773,5,2957,45"/>
-<area shape="rect" href="kmalloc_8h.html" title=" " alt="" coords="2807,167,2922,192"/>
-<area shape="poly" title=" " alt="" coords="2867,46,2867,153,2862,153,2862,46"/>
-<area shape="rect" href="BaseHdr_2Mm_2vmmngr_8h.html" title=" " alt="" coords="2966,240,3083,265"/>
-<area shape="poly" title=" " alt="" coords="2880,44,3011,227,3006,230,2876,47"/>
-<area shape="rect" href="kernel_8h.html" title=" " alt="" coords="1473,93,1584,119"/>
-<area shape="poly" title=" " alt="" coords="2772,35,1598,103,1597,98,2772,29"/>
-<area shape="rect" href="BaseHdr_2linux_2string_8h.html" title=" " alt="" coords="218,240,325,265"/>
-<area shape="poly" title=" " alt="" coords="2772,31,2247,41,1488,64,1107,83,769,106,626,120,507,135,416,151,358,169,337,181,318,197,289,230,285,226,315,193,334,177,355,164,415,146,507,129,626,114,768,101,1107,77,1488,59,2246,35,2772,25"/>
-<area shape="rect" href="sprintf_8h.html" title=" " alt="" coords="2997,167,3108,192"/>
-<area shape="poly" title=" " alt="" coords="2905,43,2942,65,2980,91,3012,123,3038,154,3034,158,3008,127,2976,95,2939,69,2902,48"/>
-<area shape="rect" title=" " alt="" coords="2268,460,2339,485"/>
-<area shape="poly" title=" " alt="" coords="2881,190,2911,218,2943,256,2954,277,2961,299,2960,320,2949,340,2931,357,2907,373,2843,399,2763,421,2674,438,2493,461,2353,472,2352,466,2493,456,2673,433,2762,416,2841,394,2904,368,2928,353,2945,337,2954,319,2955,300,2949,279,2938,259,2907,222,2877,194"/>
-<area shape="rect" title=" " alt="" coords="2367,313,2443,339"/>
-<area shape="poly" title=" " alt="" coords="2820,195,2648,243,2449,311,2447,306,2646,237,2819,189"/>
-<area shape="poly" title=" " alt="" coords="3029,265,3031,295,3030,336,3019,378,3009,397,2994,414,2958,429,2894,441,2711,459,2509,469,2352,473,2352,468,2509,463,2710,453,2893,436,2957,424,2991,410,3004,394,3014,376,3024,335,3026,295,3024,266"/>
-<area shape="poly" title=" " alt="" coords="2966,263,2456,321,2456,316,2965,258"/>
-<area shape="poly" title=" " alt="" coords="1584,105,1783,108,2081,117,2433,135,2794,164,2795,164,2794,169,2794,169,2433,140,2081,122,1782,114,1584,110"/>
-<area shape="poly" title=" " alt="" coords="1584,106,1752,110,1976,120,2197,138,2289,150,2357,164,2439,186,2470,204,2497,239,2508,262,2505,275,2490,280,2469,281,2442,281,2413,284,2384,295,2356,315,2342,338,2330,373,2311,447,2306,446,2325,372,2338,336,2352,312,2381,290,2412,279,2442,276,2469,275,2489,275,2501,272,2503,262,2493,241,2466,208,2436,191,2356,169,2288,155,2197,143,1976,126,1752,116,1584,111"/>
-<area shape="rect" href="aa64cpu_8h.html" title=" " alt="" coords="2201,240,2355,265"/>
-<area shape="poly" title=" " alt="" coords="1554,116,1651,164,1675,178,1700,189,1771,208,1832,219,1939,227,2048,229,2188,237,2187,243,2048,234,1938,233,1831,224,1770,213,1698,195,1673,183,1649,169,1551,121"/>
-<area shape="rect" href="__null_8h.html" title=" " alt="" coords="95,387,160,412"/>
-<area shape="poly" title=" " alt="" coords="1473,110,1243,111,919,119,751,126,593,137,458,151,357,169,311,181,275,193,243,211,208,242,141,376,136,373,204,238,240,207,273,188,309,176,356,164,458,146,593,131,751,121,919,114,1243,106,1473,105"/>
-<area shape="rect" href="aa64lowlevel_8h.html" title=" " alt="" coords="2465,167,2651,192"/>
-<area shape="poly" title=" " alt="" coords="1584,108,1946,128,2446,164,2451,164,2451,170,2446,169,1946,134,1584,113"/>
-<area shape="rect" href="build__bug_8h.html" title=" " alt="" coords="761,167,894,192"/>
-<area shape="poly" title=" " alt="" coords="1473,115,1230,137,913,169,908,170,908,165,912,164,1229,131,1473,109"/>
-<area shape="rect" href="compiler_8h.html" title=" " alt="" coords="749,240,876,265"/>
-<area shape="poly" title=" " alt="" coords="1473,110,1295,112,1065,120,955,127,859,138,787,152,764,160,751,168,745,183,751,199,765,215,783,230,780,234,761,219,746,202,739,183,746,165,762,155,786,146,858,133,954,122,1065,115,1295,107,1473,105"/>
-<area shape="rect" href="minmax_8h.html" title=" " alt="" coords="1712,167,1836,192"/>
-<area shape="poly" title=" " alt="" coords="1569,116,1722,160,1720,165,1567,121"/>
-<area shape="poly" title=" " alt="" coords="1473,110,1253,110,947,116,788,124,639,134,512,149,417,169,383,182,351,199,298,234,295,229,348,194,381,177,416,164,511,144,639,129,787,118,946,111,1253,105,1473,104"/>
-<area shape="poly" title=" " alt="" coords="1584,106,2133,123,2528,140,2934,164,2984,168,2983,173,2934,169,2528,146,2133,129,1584,111"/>
-<area shape="rect" href="bitmap_8h.html" title=" " alt="" coords="1860,167,1976,192"/>
-<area shape="poly" title=" " alt="" coords="1585,116,1847,164,1846,169,1584,121"/>
-<area shape="rect" href="BaseHdr_2linux_2list_8h.html" title=" " alt="" coords="29,313,119,339"/>
-<area shape="poly" title=" " alt="" coords="1473,110,1168,111,732,118,513,125,318,136,169,150,117,159,83,169,49,187,22,208,14,219,9,233,9,247,14,264,28,286,46,303,42,307,24,289,9,266,3,248,4,232,9,217,18,204,46,182,81,164,115,154,168,145,318,130,512,120,732,112,1168,106,1473,105"/>
-<area shape="rect" href="module_8h.html" title=" " alt="" coords="1948,240,2067,265"/>
-<area shape="poly" title=" " alt="" coords="1537,117,1564,154,1583,174,1606,190,1650,210,1689,223,1726,229,1761,231,1838,231,1934,237,1934,243,1838,236,1761,237,1725,235,1688,228,1648,215,1603,194,1580,178,1560,158,1533,121"/>
-<area shape="rect" href="printk_8h.html" title=" " alt="" coords="2675,167,2783,192"/>
-<area shape="poly" title=" " alt="" coords="1584,105,1762,109,2026,118,2338,136,2661,164,2660,169,2337,141,2025,124,1762,114,1584,111"/>
-<area shape="rect" href="linux_2timer_8h.html" title=" " alt="" coords="2379,240,2483,265"/>
-<area shape="poly" title=" " alt="" coords="1584,106,1664,111,1766,121,1877,138,1988,164,2014,177,2040,189,2130,212,2201,221,2274,226,2366,237,2367,237,2366,243,2366,243,2273,231,2201,226,2129,217,2038,195,2012,182,1986,169,1876,143,1765,126,1664,116,1584,111"/>
-<area shape="rect" href="workqueue_8h.html" title=" " alt="" coords="2052,167,2195,192"/>
-<area shape="poly" title=" " alt="" coords="1584,111,2033,164,2038,165,2037,170,2032,169,1584,116"/>
-<area shape="rect" href="ch9_8h.html" title=" " alt="" coords="23,240,143,265"/>
-<area shape="poly" title=" " alt="" coords="1473,110,1158,114,712,124,303,142,166,154,124,161,103,169,94,181,88,195,84,226,79,226,83,194,89,178,100,164,123,156,165,149,302,136,711,119,1158,109,1473,105"/>
-<area shape="rect" href="otg_8h.html" title=" " alt="" coords="115,167,233,192"/>
-<area shape="poly" title=" " alt="" coords="1473,112,992,131,652,148,303,169,248,174,247,168,303,164,652,143,992,126,1473,107"/>
-<area shape="rect" href="linux_2virtio_8h.html" title=" " alt="" coords="1431,167,1535,192"/>
-<area shape="poly" title=" " alt="" coords="1516,121,1492,156,1488,153,1512,117"/>
-<area shape="rect" href="autoconf_8h.html" title=" " alt="" coords="2219,167,2345,192"/>
-<area shape="poly" title=" " alt="" coords="1584,108,1847,129,2205,164,2205,169,1847,134,1584,114"/>
-<area shape="rect" href="kstrtox_8h.html" title=" " alt="" coords="429,167,545,192"/>
-<area shape="poly" title=" " alt="" coords="1473,112,1093,129,831,146,565,169,559,170,558,165,564,164,831,141,1092,124,1473,106"/>
-<area shape="poly" title=" " alt="" coords="2282,265,2303,445,2298,446,2277,266"/>
-<area shape="poly" title=" " alt="" coords="2300,263,2373,304,2370,309,2297,268"/>
-<area shape="rect" title=" " alt="" coords="2177,313,2241,339"/>
-<area shape="poly" title=" " alt="" coords="2268,268,2231,305,2227,302,2265,264"/>
-<area shape="poly" title=" " alt="" coords="2561,193,2558,228,2552,249,2541,267,2523,285,2502,298,2457,317,2455,312,2499,294,2520,280,2537,264,2547,246,2553,227,2556,192"/>
-<area shape="poly" title=" " alt="" coords="827,193,820,227,815,226,822,192"/>
-<area shape="poly" title=" " alt="" coords="308,237,337,239,347,244,351,253,349,260,342,265,321,269,320,264,340,260,344,257,346,253,343,247,335,244,307,243"/>
-<area shape="rect" href="__print_8h.html" title=" " alt="" coords="3107,240,3206,265"/>
-<area shape="poly" title=" " alt="" coords="3071,190,3130,230,3127,234,3068,194"/>
-<area shape="rect" title=" " alt="" coords="3119,313,3194,339"/>
-<area shape="poly" title=" " alt="" coords="3159,266,3159,300,3154,300,3154,266"/>
-<area shape="poly" title=" " alt="" coords="1861,169,1597,121,1598,116,1862,164"/>
-<area shape="poly" title=" " alt="" coords="85,337,113,374,108,377,81,341"/>
-<area shape="poly" title=" " alt="" coords="106,311,133,312,142,317,146,326,138,338,120,342,119,337,135,334,141,326,138,321,131,317,106,316"/>
-<area shape="rect" href="export_8h.html" title=" " alt="" coords="2021,313,2133,339"/>
-<area shape="poly" title=" " alt="" coords="2021,264,2058,302,2054,305,2017,268"/>
-<area shape="rect" href="init_8h.html" title=" " alt="" coords="1906,313,1997,339"/>
-<area shape="poly" title=" " alt="" coords="2000,267,1971,304,1967,301,1996,264"/>
-<area shape="rect" href="uart_8h.html" title=" " alt="" coords="2660,240,2771,265"/>
-<area shape="poly" title=" " alt="" coords="2729,193,2723,227,2717,226,2724,192"/>
-<area shape="rect" href="aucon_8h.html" title=" " alt="" coords="2807,240,2880,265"/>
-<area shape="poly" title=" " alt="" coords="2748,190,2814,230,2812,235,2746,194"/>
-<area shape="poly" title=" " alt="" coords="2660,266,2586,285,2546,299,2507,316,2453,348,2402,385,2326,452,2323,448,2399,381,2450,344,2505,311,2544,294,2584,280,2659,261"/>
-<area shape="poly" title=" " alt="" coords="2666,268,2456,316,2455,310,2665,263"/>
-<area shape="rect" href="aa64hcode_8h.html" title=" " alt="" coords="2731,313,2836,339"/>
-<area shape="poly" title=" " alt="" coords="2728,264,2765,301,2761,305,2725,268"/>
-<area shape="rect" href="imx8mp_8h.html" title=" " alt="" coords="2519,313,2707,339"/>
-<area shape="poly" title=" " alt="" coords="2700,268,2642,307,2639,303,2697,263"/>
-<area shape="rect" href="BaseHdr_2aurora_8h.html" title=" " alt="" coords="2860,313,2936,339"/>
-<area shape="poly" title=" " alt="" coords="2854,264,2883,301,2879,304,2850,267"/>
-<area shape="poly" title=" " alt="" coords="2173,189,2369,234,2368,240,2172,195"/>
-<area shape="poly" title=" " alt="" coords="84,266,80,300,75,299,79,265"/>
-<area shape="poly" title=" " alt="" coords="161,194,111,233,107,229,158,190"/>
-<area shape="poly" title=" " alt="" coords="1507,190,1597,238,1672,288,1728,332,1786,372,1822,391,1867,409,1918,426,1972,439,2080,457,2177,466,2254,469,2254,474,2177,471,2079,462,1971,444,1917,431,1865,415,1820,396,1783,377,1725,337,1669,292,1594,242,1505,195"/>
-<area shape="poly" title=" " alt="" coords="1495,165,1520,130,1524,133,1500,168"/>
-<area shape="poly" title=" " alt="" coords="1431,186,462,243,338,250,338,245,462,237,1431,181"/>
-<area shape="poly" title=" " alt="" coords="1449,195,1318,242,1292,256,1265,268,1194,278,1073,288,742,305,133,326,133,320,742,300,1073,283,1193,273,1264,263,1290,252,1315,238,1447,190"/>
-<area shape="poly" title=" " alt="" coords="1536,187,1554,189,1742,213,1934,237,1934,243,1742,218,1554,195,1535,192"/>
-<area shape="rect" href="BaseHdr_2linux_2stddef_8h.html" title=" " alt="" coords="1534,460,1609,485"/>
-<area shape="poly" title=" " alt="" coords="1495,191,1511,212,1526,239,1541,286,1547,324,1551,363,1559,411,1567,446,1562,448,1554,413,1546,364,1542,325,1536,287,1521,241,1507,215,1491,194"/>
-<area shape="rect" href="scatterlist_8h.html" title=" " alt="" coords="952,240,1087,265"/>
-<area shape="poly" title=" " alt="" coords="1431,191,1101,242,1100,236,1430,186"/>
-<area shape="rect" href="completion_8h.html" title=" " alt="" coords="1111,240,1253,265"/>
-<area shape="poly" title=" " alt="" coords="1435,195,1244,239,1243,234,1434,189"/>
-<area shape="rect" href="pm_8h.html" title=" " alt="" coords="1833,240,1923,265"/>
-<area shape="poly" title=" " alt="" coords="1536,187,1820,237,1820,237,1819,243,1819,243,1535,192"/>
-<area shape="rect" href="idr_8h.html" title=" " alt="" coords="2091,240,2177,265"/>
-<area shape="poly" title=" " alt="" coords="1536,183,1821,210,2078,238,2077,243,1820,216,1535,188"/>
-<area shape="rect" href="fs_8h.html" title=" " alt="" coords="1569,387,1651,412"/>
-<area shape="poly" title=" " alt="" coords="1510,190,1542,210,1571,238,1589,272,1601,309,1611,372,1606,373,1596,310,1584,274,1566,242,1538,214,1507,194"/>
-<area shape="rect" href="Drivers_2virtio_8h.html" title=" " alt="" coords="1689,240,1808,265"/>
-<area shape="poly" title=" " alt="" coords="1527,189,1693,234,1691,239,1525,195"/>
-<area shape="rect" href="uapi_2linux_2virtio__config_8h.html" title=" " alt="" coords="1329,240,1512,265"/>
-<area shape="poly" title=" " alt="" coords="1475,194,1442,231,1438,228,1471,191"/>
-<area shape="rect" href="BaseHdr_2uapi_2linux_2stddef_8h.html" title=" " alt="" coords="1500,533,1643,559"/>
-<area shape="poly" title=" " alt="" coords="1574,486,1574,520,1569,520,1569,486"/>
-<area shape="poly" title=" " alt="" coords="1059,237,1474,120,1476,125,1060,242"/>
-<area shape="poly" title=" " alt="" coords="1208,237,1487,122,1489,126,1210,242"/>
-<area shape="poly" title=" " alt="" coords="2090,245,2077,243,2013,235,1958,232,1863,232,1818,231,1769,225,1716,214,1654,194,1624,181,1596,164,1550,130,1553,126,1599,160,1627,176,1656,190,1717,209,1770,220,1818,225,1863,227,1958,227,2014,229,2078,237,2091,240"/>
-<area shape="poly" title=" " alt="" coords="1652,406,1670,409,1838,430,2004,446,2255,466,2254,471,2003,452,1837,435,1670,415,1651,412"/>
-<area shape="poly" title=" " alt="" coords="1606,414,1586,449,1582,447,1601,411"/>
-<area shape="poly" title=" " alt="" coords="1751,265,1756,301,1764,320,1776,337,1811,360,1863,382,1926,401,1997,419,2140,446,2255,463,2254,468,2139,451,1996,424,1925,406,1861,387,1808,365,1772,341,1759,323,1751,302,1746,266"/>
-<area shape="poly" title=" " alt="" coords="1809,261,1821,263,2122,296,2353,318,2353,323,2122,302,1820,268,1808,266"/>
-<area shape="rect" title=" " alt="" coords="1786,313,1861,339"/>
-<area shape="poly" title=" " alt="" coords="1762,263,1803,302,1799,306,1759,267"/>
-<area shape="rect" href="BaseHdr_2linux_2types_8h.html" title=" " alt="" coords="477,313,583,339"/>
-<area shape="poly" title=" " alt="" coords="1329,266,1310,268,905,301,597,323,597,317,905,295,1310,263,1329,261"/>
-<area shape="poly" title=" " alt="" coords="535,312,560,280,598,238,646,196,674,178,704,164,769,147,856,133,1069,115,1288,107,1460,105,1460,110,1288,112,1069,120,857,138,770,152,705,169,677,183,650,200,601,242,564,283,540,315"/>
-<area shape="rect" title=" " alt="" coords="417,387,499,412"/>
-<area shape="poly" title=" " alt="" coords="520,341,481,379,477,375,516,337"/>
-<area shape="poly" title=" " alt="" coords="481,194,464,227,461,246,464,264,479,286,499,304,496,308,475,290,459,266,455,246,459,225,476,191"/>
-<area shape="poly" title=" " alt="" coords="481,194,467,215,456,241,451,276,450,312,456,373,450,374,444,312,445,275,451,239,462,212,476,191"/>
-<area shape="rect" href="BaseHdr_2linux_2errno_8h.html" title=" " alt="" coords="621,240,725,265"/>
-<area shape="poly" title=" " alt="" coords="518,190,631,233,629,237,516,195"/>
-<area shape="rect" title=" " alt="" coords="475,240,545,265"/>
-<area shape="poly" title=" " alt="" coords="493,192,505,226,499,228,488,193"/>
-<area shape="poly" title=" " alt="" coords="675,238,698,200,715,180,737,164,779,152,851,142,1054,125,1279,113,1459,107,1459,112,1279,119,1054,130,852,147,780,157,739,169,719,184,702,204,680,241"/>
-<area shape="rect" href="err_8h.html" title=" " alt="" coords="871,313,957,339"/>
-<area shape="poly" title=" " alt="" coords="712,263,862,307,861,312,711,268"/>
-<area shape="poly" title=" " alt="" coords="911,313,917,276,924,256,937,238,976,212,1032,190,1099,170,1175,153,1330,127,1460,111,1460,117,1331,133,1176,159,1101,175,1033,195,979,217,941,242,929,258,922,278,917,313"/>
-<area shape="poly" title=" " alt="" coords="958,329,1555,390,1554,395,957,334"/>
+<area shape="rect" title=" " alt="" coords="613,5,797,45"/>
+<area shape="rect" href="kmalloc_8h.html" title=" " alt="" coords="147,93,261,119"/>
+<area shape="poly" title=" " alt="" coords="613,44,276,96,275,91,612,38"/>
+<area shape="rect" href="BaseHdr_2Mm_2vmmngr_8h.html" title=" " alt="" coords="5,93,123,119"/>
+<area shape="poly" title=" " alt="" coords="614,39,400,63,137,96,136,91,399,57,613,34"/>
+<area shape="rect" title=" " alt="" coords="289,321,399,346"/>
+<area shape="poly" title=" " alt="" coords="614,33,538,44,457,68,419,86,383,108,352,135,326,168,318,185,314,203,315,241,323,277,335,307,330,309,318,279,310,242,309,202,313,183,322,165,348,131,380,103,416,81,456,63,537,39,613,27"/>
+<area shape="rect" href="gfp__types_8h.html" title=" " alt="" coords="638,93,773,119"/>
+<area shape="poly" title=" " alt="" coords="708,46,708,79,703,79,703,46"/>
+<area shape="rect" href="overflow_8h.html" title=" " alt="" coords="797,93,923,119"/>
+<area shape="poly" title=" " alt="" coords="744,43,826,85,824,89,741,48"/>
+<area shape="rect" href="sprintf_8h.html" title=" " alt="" coords="947,93,1058,119"/>
+<area shape="poly" title=" " alt="" coords="777,43,947,87,946,92,776,48"/>
+<area shape="rect" href="BaseHdr_2linux_2string_8h.html" title=" " alt="" coords="483,93,589,119"/>
+<area shape="poly" title=" " alt="" coords="666,48,575,90,572,85,664,43"/>
+<area shape="rect" href="asm_2cache_8h.html" title=" " alt="" coords="1083,93,1187,119"/>
+<area shape="poly" title=" " alt="" coords="798,41,1069,90,1069,95,797,46"/>
+<area shape="rect" title=" " alt="" coords="1211,93,1325,119"/>
+<area shape="poly" title=" " alt="" coords="798,36,1198,91,1197,96,797,41"/>
+<area shape="rect" title=" " alt="" coords="147,167,218,192"/>
+<area shape="poly" title=" " alt="" coords="203,120,193,154,187,153,198,118"/>
+<area shape="rect" title=" " alt="" coords="37,167,113,192"/>
+<area shape="poly" title=" " alt="" coords="184,121,109,162,107,157,182,116"/>
+<area shape="poly" title=" " alt="" coords="84,116,153,157,150,162,82,121"/>
+<area shape="poly" title=" " alt="" coords="68,119,74,153,68,154,63,119"/>
+<area shape="rect" href="bits_8h.html" title=" " alt="" coords="673,167,767,192"/>
+<area shape="poly" title=" " alt="" coords="710,118,717,153,712,154,705,120"/>
+<area shape="rect" href="compiler_8h.html" title=" " alt="" coords="791,167,918,192"/>
+<area shape="poly" title=" " alt="" coords="862,119,859,153,854,153,856,119"/>
+<area shape="rect" title=" " alt="" coords="943,167,1049,192"/>
+<area shape="poly" title=" " alt="" coords="883,116,963,158,961,163,881,121"/>
+<area shape="rect" href="linux_2const_8h.html" title=" " alt="" coords="1074,167,1179,192"/>
+<area shape="poly" title=" " alt="" coords="904,116,1071,160,1069,166,902,121"/>
+<area shape="rect" href="compiler__types_8h.html" title=" " alt="" coords="769,240,940,265"/>
+<area shape="poly" title=" " alt="" coords="857,192,857,226,852,226,852,192"/>
+<area shape="rect" href="compiler-context-analysis_8h.html" title=" " alt="" coords="605,313,774,353"/>
+<area shape="poly" title=" " alt="" coords="832,268,743,310,741,305,829,263"/>
+<area shape="rect" href="percpu__types_8h.html" title=" " alt="" coords="798,321,951,346"/>
+<area shape="poly" title=" " alt="" coords="860,265,871,307,866,308,855,266"/>
+<area shape="rect" href="vdso_2const_8h.html" title=" " alt="" coords="1075,240,1179,265"/>
+<area shape="poly" title=" " alt="" coords="1129,192,1129,226,1124,226,1124,192"/>
+<area shape="rect" href="__print_8h.html" title=" " alt="" coords="1204,167,1303,192"/>
+<area shape="poly" title=" " alt="" coords="1044,116,1200,160,1199,165,1042,121"/>
+<area shape="rect" title=" " alt="" coords="1216,240,1291,265"/>
+<area shape="poly" title=" " alt="" coords="1256,192,1256,226,1251,226,1251,192"/>
+<area shape="poly" title=" " alt="" coords="572,91,601,92,612,97,616,106,613,113,606,118,586,122,585,117,604,113,609,110,611,106,608,101,600,97,572,96"/>
+<area shape="rect" href="BaseHdr_2linux_2stddef_8h.html" title=" " alt="" coords="573,167,648,192"/>
+<area shape="poly" title=" " alt="" coords="550,117,590,155,587,159,546,121"/>
+<area shape="rect" title=" " alt="" coords="473,321,556,346"/>
+<area shape="poly" title=" " alt="" coords="538,119,520,307,514,306,532,119"/>
+<area shape="rect" href="string__choices_8h.html" title=" " alt="" coords="336,167,499,192"/>
+<area shape="poly" title=" " alt="" coords="518,121,450,162,447,157,516,116"/>
+<area shape="rect" href="BaseHdr_2uapi_2linux_2stddef_8h.html" title=" " alt="" coords="574,240,717,265"/>
+<area shape="poly" title=" " alt="" coords="619,191,636,226,631,229,614,194"/>
+<area shape="rect" href="BaseHdr_2linux_2types_8h.html" title=" " alt="" coords="364,240,471,265"/>
+<area shape="poly" title=" " alt="" coords="420,192,420,226,415,226,415,192"/>
+<area shape="poly" title=" " alt="" coords="408,267,366,312,362,308,405,264"/>
+<area shape="poly" title=" " alt="" coords="433,263,491,310,488,314,430,268"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+This graph shows which files directly or indirectly include this file:</div>
+<div class="dyncontent">
+<div class="center"><img src="slab_8h__dep__incl.png" border="0" usemap="#aXenevaOS_2BaseHdr_2linux_2slab_8hdep" alt=""/></div>
+<map name="aXenevaOS_2BaseHdr_2linux_2slab_8hdep" id="aXenevaOS_2BaseHdr_2linux_2slab_8hdep">
+<area shape="rect" title=" " alt="" coords="581,5,765,45"/>
+<area shape="rect" href="faux_8h.html" title=" " alt="" coords="5,269,189,309"/>
+<area shape="poly" title=" " alt="" coords="612,53,506,96,296,193,136,272,133,267,294,188,504,91,610,48"/>
+<area shape="rect" href="devres_8h.html" title=" " alt="" coords="517,93,701,133"/>
+<area shape="poly" title=" " alt="" coords="653,58,626,95,621,92,649,55"/>
+<area shape="rect" href="dma-fence-chain_8h.html" title=" " alt="" coords="776,93,960,133"/>
+<area shape="poly" title=" " alt="" coords="729,48,826,91,824,96,727,53"/>
+<area shape="rect" href="dma-resv_8h.html" title=" " alt="" coords="1547,269,1731,309"/>
+<area shape="poly" title=" " alt="" coords="695,56,716,92,729,131,734,164,743,193,753,206,768,219,787,227,817,235,904,246,1018,253,1145,257,1389,262,1535,267,1547,268,1546,273,1534,272,1389,267,1145,263,1018,258,904,251,816,240,785,232,765,224,749,210,739,195,729,165,724,132,711,94,690,58"/>
+<area shape="rect" href="device_8h.html" title=" " alt="" coords="517,181,701,221"/>
+<area shape="poly" title=" " alt="" coords="612,147,612,181,607,181,607,147"/>
+<area shape="poly" title=" " alt="" coords="504,222,202,272,190,274,189,269,201,267,503,217"/>
+<area shape="rect" href="drm__kunit__helpers_8h.html" title=" " alt="" coords="1141,269,1320,309"/>
+<area shape="poly" title=" " alt="" coords="715,218,720,219,925,242,1015,251,1130,267,1142,269,1141,274,1129,272,1014,257,924,247,720,224,715,223"/>
+<area shape="rect" href="drm__mipi__dsi_8h.html" title=" " alt="" coords="1344,269,1523,309"/>
+<area shape="poly" title=" " alt="" coords="715,218,720,219,892,235,1026,242,1161,249,1332,267,1344,268,1344,274,1332,272,1160,254,1026,247,892,241,720,224,715,223"/>
+<area shape="rect" href="drm__print_8h.html" title=" " alt="" coords="213,269,392,309"/>
+<area shape="poly" title=" " alt="" coords="530,228,371,272,369,267,528,222"/>
+<area shape="rect" href="drm__privacy__screen__consumer_8h.html" title=" " alt="" coords="106,445,345,485"/>
+<area shape="poly" title=" " alt="" coords="558,230,484,272,415,318,349,368,249,447,246,443,345,363,412,314,481,267,556,225"/>
+<area shape="rect" href="drm__privacy__screen__driver_8h.html" title=" " alt="" coords="369,445,583,485"/>
+<area shape="poly" title=" " alt="" coords="553,230,528,248,508,271,487,316,478,365,475,410,477,445,471,445,470,410,472,364,482,314,503,268,524,244,550,226"/>
+<area shape="rect" href="cdev_8h.html" title=" " alt="" coords="725,269,909,309"/>
+<area shape="poly" title=" " alt="" coords="669,224,773,267,771,272,667,229"/>
+<area shape="rect" href="hdmi_8h.html" title=" " alt="" coords="517,269,701,309"/>
+<area shape="poly" title=" " alt="" coords="612,235,612,269,607,269,607,235"/>
+<area shape="rect" href="linux_2input_8h.html" title=" " alt="" coords="933,269,1117,309"/>
+<area shape="poly" title=" " alt="" coords="714,222,935,267,934,272,713,227"/>
+<area shape="rect" href="drm__connector_8h.html" title=" " alt="" coords="524,357,703,397"/>
+<area shape="poly" title=" " alt="" coords="614,323,615,357,610,357,608,323"/>
+<area shape="rect" href="drm__modes_8h.html" title=" " alt="" coords="955,445,1133,485"/>
+<area shape="poly" title=" " alt="" coords="670,312,998,443,996,448,668,317"/>
+<area shape="poly" title=" " alt="" coords="516,403,311,448,310,443,514,398"/>
+<area shape="poly" title=" " alt="" coords="573,407,507,448,505,443,570,403"/>
+<area shape="rect" href="drm__client_8h.html" title=" " alt="" coords="657,621,836,661"/>
+<area shape="poly" title=" " alt="" coords="631,408,739,620,735,622,627,411"/>
+<area shape="poly" title=" " alt="" coords="717,396,955,444,954,449,716,402"/>
+<area shape="rect" href="drm__writeback_8h.html" title=" " alt="" coords="684,709,863,749"/>
+<area shape="poly" title=" " alt="" coords="611,411,606,463,607,528,619,597,631,630,647,660,676,688,711,707,709,712,673,692,643,663,626,632,614,598,601,528,600,463,605,411"/>
+<area shape="rect" href="drm__fb__helper_8h.html" title=" " alt="" coords="481,709,660,749"/>
+<area shape="poly" title=" " alt="" coords="697,670,610,712,608,707,695,665"/>
+<area shape="rect" href="drm__bridge_8h.html" title=" " alt="" coords="887,709,1065,749"/>
+<area shape="poly" title=" " alt="" coords="995,495,969,513,945,535,916,575,901,622,897,642,901,660,920,687,945,707,942,711,916,690,896,662,892,642,896,621,911,572,941,532,965,509,992,490"/>
+<area shape="rect" href="drm__crtc_8h.html" title=" " alt="" coords="955,533,1133,573"/>
+<area shape="poly" title=" " alt="" coords="1047,499,1047,533,1041,533,1041,499"/>
+<area shape="rect" href="drm__gem__vram__helper_8h.html" title=" " alt="" coords="1563,533,1751,573"/>
+<area shape="poly" title=" " alt="" coords="1147,480,1163,483,1357,506,1551,531,1564,533,1563,538,1550,536,1356,511,1162,488,1146,486"/>
+<area shape="rect" href="drm__probe__helper_8h.html" title=" " alt="" coords="1157,533,1336,573"/>
+<area shape="poly" title=" " alt="" coords="1102,488,1203,531,1201,536,1100,493"/>
+<area shape="rect" href="drm__vblank_8h.html" title=" " alt="" coords="1360,533,1539,573"/>
+<area shape="poly" title=" " alt="" coords="1147,486,1361,531,1360,536,1146,491"/>
+<area shape="poly" title=" " alt="" coords="966,580,813,624,811,619,965,575"/>
+<area shape="rect" href="drm__atomic_8h.html" title=" " alt="" coords="911,621,1089,661"/>
+<area shape="poly" title=" " alt="" coords="1030,587,1012,622,1007,620,1026,585"/>
+<area shape="rect" href="drm__atomic__helper_8h.html" title=" " alt="" coords="1413,797,1592,837"/>
+<area shape="poly" title=" " alt="" coords="1148,572,1367,619,1427,634,1476,644,1498,653,1518,665,1538,683,1557,708,1563,732,1557,757,1542,780,1525,799,1521,795,1538,777,1552,755,1558,732,1552,710,1534,686,1515,669,1495,657,1474,650,1425,639,1366,624,1147,577"/>
+<area shape="rect" href="drm__encoder_8h.html" title=" " alt="" coords="1113,621,1292,661"/>
+<area shape="poly" title=" " alt="" coords="1092,578,1169,619,1167,624,1090,582"/>
+<area shape="rect" href="drm__modeset__helper__vtables_8h.html" title=" " alt="" coords="1311,709,1542,749"/>
+<area shape="poly" title=" " alt="" coords="1147,573,1258,599,1327,619,1355,639,1380,663,1416,707,1412,711,1376,666,1351,643,1324,624,1257,604,1146,579"/>
+<area shape="rect" href="drm__simple__kms__helper_8h.html" title=" " alt="" coords="1089,709,1287,749"/>
+<area shape="poly" title=" " alt="" coords="1148,572,1248,596,1286,608,1306,619,1313,634,1313,647,1308,661,1298,673,1269,694,1236,712,1234,707,1266,690,1294,669,1303,658,1308,646,1308,635,1302,623,1284,613,1247,601,1146,577"/>
+<area shape="poly" title=" " alt="" coords="994,675,984,710,979,708,988,674"/>
+<area shape="rect" href="drm__damage__helper_8h.html" title=" " alt="" coords="1413,885,1592,925"/>
+<area shape="poly" title=" " alt="" coords="1505,851,1505,885,1500,885,1500,851"/>
+<area shape="poly" title=" " alt="" coords="1141,669,1027,712,1025,707,1139,664"/>
+<area shape="poly" title=" " alt="" coords="1265,664,1379,707,1377,712,1264,669"/>
+<area shape="poly" title=" " alt="" coords="1200,675,1194,710,1189,709,1194,674"/>
+<area shape="poly" title=" " alt="" coords="1100,666,863,713,862,708,1099,660"/>
+<area shape="poly" title=" " alt="" coords="1455,758,1488,795,1484,799,1451,762"/>
+<area shape="rect" href="drm__mipi__dbi_8h.html" title=" " alt="" coords="1617,621,1796,661"/>
+<area shape="poly" title=" " alt="" coords="1350,571,1618,621,1617,626,1349,576"/>
+<area shape="rect" href="drm__syncobj_8h.html" title=" " alt="" coords="779,181,957,221"/>
+<area shape="poly" title=" " alt="" coords="871,147,871,181,865,181,865,147"/>
+<area shape="rect" href="drm__gem_8h.html" title=" " alt="" coords="1540,357,1719,397"/>
+<area shape="poly" title=" " alt="" coords="1638,323,1634,357,1629,357,1632,323"/>
+<area shape="rect" href="drm__gpuvm_8h.html" title=" " alt="" coords="1861,445,2040,485"/>
+<area shape="poly" title=" " alt="" coords="1686,314,1918,443,1915,447,1683,319"/>
+<area shape="poly" title=" " alt="" coords="1637,411,1657,533,1652,534,1632,412"/>
+<area shape="rect" href="drm__gem__dma__helper_8h.html" title=" " alt="" coords="1174,445,1357,485"/>
+<area shape="poly" title=" " alt="" coords="1537,403,1346,448,1344,443,1536,398"/>
+<area shape="rect" href="drm__gem__shmem__helper_8h.html" title=" " alt="" coords="1381,445,1584,485"/>
+<area shape="poly" title=" " alt="" coords="1586,407,1516,448,1513,443,1584,402"/>
+<area shape="rect" href="drm__gem__ttm__helper_8h.html" title=" " alt="" coords="1659,445,1837,485"/>
+<area shape="poly" title=" " alt="" coords="1668,403,1723,443,1720,447,1665,408"/>
+<area shape="poly" title=" " alt="" coords="1713,398,1881,443,1880,448,1712,403"/>
+<area shape="poly" title=" " alt="" coords="1720,497,1679,535,1676,531,1716,493"/>
+<area shape="rect" href="drm__debugfs_8h.html" title=" " alt="" coords="1861,533,2040,573"/>
+<area shape="poly" title=" " alt="" coords="1953,499,1953,533,1948,533,1948,499"/>
 </map>
 </div>
 </div>
 <p><a href="slab_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structkmem__cache.html">kmem_cache</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a68dc9ee2196f4fa5781aed6901aa77c8" id="r_a68dc9ee2196f4fa5781aed6901aa77c8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slab_8h.html#a68dc9ee2196f4fa5781aed6901aa77c8">KMALLOC_SHIFT_HIGH</a>&#160;&#160;&#160;22</td></tr>
 <tr class="separator:a68dc9ee2196f4fa5781aed6901aa77c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d47fa2014fd28cb10b103fe892e030c" id="r_a6d47fa2014fd28cb10b103fe892e030c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slab_8h.html#a6d47fa2014fd28cb10b103fe892e030c">KMALLOC_MIN_SIZE</a>&#160;&#160;&#160;8</td></tr>
 <tr class="separator:a6d47fa2014fd28cb10b103fe892e030c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a454f45c6964953eececcaea3d800617f" id="r_a454f45c6964953eececcaea3d800617f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slab_8h.html#a454f45c6964953eececcaea3d800617f">kmalloc</a>(size,  <a class="el" href="Drivers_2virtio_8h.html#aa2585d779da0ab21273a8d92de9a0ebe">flags</a>)&#160;&#160;&#160;dcl_kmalloc(size)</td></tr>
+<tr class="memitem:ae4f7e8559bf7e5aaa4cc1bc56a0736bd" id="r_ae4f7e8559bf7e5aaa4cc1bc56a0736bd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slab_8h.html#ae4f7e8559bf7e5aaa4cc1bc56a0736bd">ARCH_KMALLOC_MINALIGN</a>&#160;&#160;&#160;__alignof__(unsigned long long)</td></tr>
+<tr class="separator:ae4f7e8559bf7e5aaa4cc1bc56a0736bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a454f45c6964953eececcaea3d800617f" id="r_a454f45c6964953eececcaea3d800617f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slab_8h.html#a454f45c6964953eececcaea3d800617f">kmalloc</a>(<a class="el" href="drm__bridge_8h.html#a854352f53b148adc24983a58a1866d66">size</a>,  <a class="el" href="Drivers_2virtio_8h.html#a04a0bd666e371f3fab92b8d0ef5dbdb0">flags</a>)&#160;&#160;&#160;dcl_kmalloc_flags(<a class="el" href="drm__bridge_8h.html#a854352f53b148adc24983a58a1866d66">size</a>, <a class="el" href="Drivers_2virtio_8h.html#a04a0bd666e371f3fab92b8d0ef5dbdb0">flags</a>)</td></tr>
 <tr class="separator:a454f45c6964953eececcaea3d800617f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86d666177e8f7ca864af308aa067cd5c" id="r_a86d666177e8f7ca864af308aa067cd5c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slab_8h.html#a86d666177e8f7ca864af308aa067cd5c">kzalloc</a>(size,  <a class="el" href="Drivers_2virtio_8h.html#aa2585d779da0ab21273a8d92de9a0ebe">flags</a>)&#160;&#160;&#160;dcl_kzalloc(size)</td></tr>
+<tr class="memitem:a7b39a2dda318880b36902f310bf66c08" id="r_a7b39a2dda318880b36902f310bf66c08"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slab_8h.html#a7b39a2dda318880b36902f310bf66c08">kcalloc</a>(n,  <a class="el" href="drm__bridge_8h.html#a854352f53b148adc24983a58a1866d66">size</a>, ...)&#160;&#160;&#160;dcl_kcalloc((n), (<a class="el" href="drm__bridge_8h.html#a854352f53b148adc24983a58a1866d66">size</a>))</td></tr>
+<tr class="separator:a7b39a2dda318880b36902f310bf66c08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9b3f56245eddfb02055e52938d46de6" id="r_ad9b3f56245eddfb02055e52938d46de6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slab_8h.html#ad9b3f56245eddfb02055e52938d46de6">krealloc</a>(ptr,  <a class="el" href="drm__bridge_8h.html#a854352f53b148adc24983a58a1866d66">size</a>, ...)&#160;&#160;&#160;dcl_krealloc((ptr), (<a class="el" href="drm__bridge_8h.html#a854352f53b148adc24983a58a1866d66">size</a>))</td></tr>
+<tr class="separator:ad9b3f56245eddfb02055e52938d46de6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01d7ac5f56902ea52f19429dd5b06e0b" id="r_a01d7ac5f56902ea52f19429dd5b06e0b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slab_8h.html#a01d7ac5f56902ea52f19429dd5b06e0b">krealloc_array</a>(ptr,  n,  <a class="el" href="drm__bridge_8h.html#a854352f53b148adc24983a58a1866d66">size</a>,  <a class="el" href="Drivers_2virtio_8h.html#a04a0bd666e371f3fab92b8d0ef5dbdb0">flags</a>)&#160;&#160;&#160;	dcl_krealloc((ptr), <a class="el" href="overflow_8h.html#a2dea7287cefc777a16e9fc5282056699">array_size</a>((n), (<a class="el" href="drm__bridge_8h.html#a854352f53b148adc24983a58a1866d66">size</a>)))</td></tr>
+<tr class="separator:a01d7ac5f56902ea52f19429dd5b06e0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86d666177e8f7ca864af308aa067cd5c" id="r_a86d666177e8f7ca864af308aa067cd5c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slab_8h.html#a86d666177e8f7ca864af308aa067cd5c">kzalloc</a>(<a class="el" href="drm__bridge_8h.html#a854352f53b148adc24983a58a1866d66">size</a>,  <a class="el" href="Drivers_2virtio_8h.html#a04a0bd666e371f3fab92b8d0ef5dbdb0">flags</a>)&#160;&#160;&#160;dcl_kzalloc(<a class="el" href="drm__bridge_8h.html#a854352f53b148adc24983a58a1866d66">size</a>)</td></tr>
 <tr class="separator:a86d666177e8f7ca864af308aa067cd5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a699c78b56922b569c20624d03b3c5eff" id="r_a699c78b56922b569c20624d03b3c5eff"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slab_8h.html#a699c78b56922b569c20624d03b3c5eff">kzalloc_obj</a>(type)&#160;&#160;&#160;dcl_kzalloc((unsigned int)sizeof(type))</td></tr>
-<tr class="separator:a699c78b56922b569c20624d03b3c5eff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4ba210a4609a1fe757db3c151a33ee4" id="r_af4ba210a4609a1fe757db3c151a33ee4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slab_8h.html#af4ba210a4609a1fe757db3c151a33ee4">kzalloc_obj</a>(type, ...)&#160;&#160;&#160;dcl_kzalloc((unsigned int)sizeof(type))</td></tr>
+<tr class="separator:af4ba210a4609a1fe757db3c151a33ee4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0581237571644edf535b8644ba4c3c1a" id="r_a0581237571644edf535b8644ba4c3c1a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slab_8h.html#a0581237571644edf535b8644ba4c3c1a">kmalloc_obj</a>(type, ...)&#160;&#160;&#160;dcl_kmalloc((unsigned int)sizeof(type))</td></tr>
 <tr class="separator:a0581237571644edf535b8644ba4c3c1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad16e4916f64bf12d9016393d48ff9aa1" id="r_ad16e4916f64bf12d9016393d48ff9aa1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slab_8h.html#ad16e4916f64bf12d9016393d48ff9aa1">__GFP_NOWARN</a>&#160;&#160;&#160;0</td></tr>
@@ -251,12 +288,43 @@ Macros</h2></td></tr>
 <tr class="separator:ac0b7670c271edc18b8ef2cb46e568910"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4824c85b763d4a514a46945bffd9f9fd" id="r_a4824c85b763d4a514a46945bffd9f9fd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slab_8h.html#a4824c85b763d4a514a46945bffd9f9fd">kmalloc_flex</a>(p,  member,  count, ...)</td></tr>
 <tr class="separator:a4824c85b763d4a514a46945bffd9f9fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d4bf4ff14a5006abd9f215758d3b05c" id="r_a7d4bf4ff14a5006abd9f215758d3b05c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slab_8h.html#a7d4bf4ff14a5006abd9f215758d3b05c">kzalloc_flex</a>(p,  member,  count, ...)</td></tr>
+<tr class="separator:a7d4bf4ff14a5006abd9f215758d3b05c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8f5e65e10787c965bab5281d83a19b2" id="r_ac8f5e65e10787c965bab5281d83a19b2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slab_8h.html#ac8f5e65e10787c965bab5281d83a19b2">kzalloc_objs</a>(type,  count)&#160;&#160;&#160;	dcl_kzalloc((unsigned int)(sizeof(type) * (unsigned int)(count)))</td></tr>
 <tr class="separator:ac8f5e65e10787c965bab5281d83a19b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9545bf7a8d075c7e236e5bdb61e770c9" id="r_a9545bf7a8d075c7e236e5bdb61e770c9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slab_8h.html#a9545bf7a8d075c7e236e5bdb61e770c9">kmalloc_objs</a>(type,  count)&#160;&#160;&#160;	dcl_kmalloc((unsigned int)(sizeof(type) * (unsigned int)(count)))</td></tr>
 <tr class="separator:a9545bf7a8d075c7e236e5bdb61e770c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9c860d6bb9b229c3d58bb70463b6b4d" id="r_ab9c860d6bb9b229c3d58bb70463b6b4d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slab_8h.html#ab9c860d6bb9b229c3d58bb70463b6b4d">kvmalloc_objs</a>(type,  count)&#160;&#160;&#160;	dcl_kmalloc((unsigned int)(sizeof(type) * (unsigned int)(count)))</td></tr>
+<tr class="separator:ab9c860d6bb9b229c3d58bb70463b6b4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af834deaba33e4b8411ad72259e296162" id="r_af834deaba33e4b8411ad72259e296162"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slab_8h.html#af834deaba33e4b8411ad72259e296162">kvzalloc_objs</a>(type,  count)&#160;&#160;&#160;	<a class="el" href="slab_8h.html#ac8f5e65e10787c965bab5281d83a19b2">kzalloc_objs</a>(type, count)</td></tr>
+<tr class="separator:af834deaba33e4b8411ad72259e296162"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3826dcf16cb8ae79a1bb4ac800b02ada" id="r_a3826dcf16cb8ae79a1bb4ac800b02ada"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slab_8h.html#a3826dcf16cb8ae79a1bb4ac800b02ada">DCL_KASPRINTF_MAX</a>&#160;&#160;&#160;128</td></tr>
 <tr class="separator:a3826dcf16cb8ae79a1bb4ac800b02ada"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a29dc200ebb31622f19757fe5fc586c3e" id="r_a29dc200ebb31622f19757fe5fc586c3e"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slab_8h.html#a29dc200ebb31622f19757fe5fc586c3e">kvmalloc</a> (<a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> <a class="el" href="drm__bridge_8h.html#a854352f53b148adc24983a58a1866d66">size</a>, <a class="el" href="linux_2kernel_8h.html#a99dcacb83509949e516cf6ae0367ff73">gfp_t</a> <a class="el" href="Drivers_2virtio_8h.html#a04a0bd666e371f3fab92b8d0ef5dbdb0">flags</a>)</td></tr>
+<tr class="separator:a29dc200ebb31622f19757fe5fc586c3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc382958fa9b1f9232eef55d858fee19" id="r_abc382958fa9b1f9232eef55d858fee19"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slab_8h.html#abc382958fa9b1f9232eef55d858fee19">kvzalloc</a> (<a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> <a class="el" href="drm__bridge_8h.html#a854352f53b148adc24983a58a1866d66">size</a>, <a class="el" href="linux_2kernel_8h.html#a99dcacb83509949e516cf6ae0367ff73">gfp_t</a> <a class="el" href="Drivers_2virtio_8h.html#a04a0bd666e371f3fab92b8d0ef5dbdb0">flags</a>)</td></tr>
+<tr class="separator:abc382958fa9b1f9232eef55d858fee19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac88c4c777e1cffcd536d365ce527ba94" id="r_ac88c4c777e1cffcd536d365ce527ba94"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slab_8h.html#ac88c4c777e1cffcd536d365ce527ba94">kvfree</a> (const void *addr)</td></tr>
+<tr class="separator:ac88c4c777e1cffcd536d365ce527ba94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad92a67e3451f0b7971c08ecad26b2e4" id="r_aad92a67e3451f0b7971c08ecad26b2e4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slab_8h.html#aad92a67e3451f0b7971c08ecad26b2e4">ksize</a> (const void *objp)</td></tr>
+<tr class="separator:aad92a67e3451f0b7971c08ecad26b2e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d781e22f78ce6826e602f3209de0fba" id="r_a7d781e22f78ce6826e602f3209de0fba"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slab_8h.html#a7d781e22f78ce6826e602f3209de0fba">kstrdup_const</a> (const char *s, <a class="el" href="linux_2kernel_8h.html#a99dcacb83509949e516cf6ae0367ff73">gfp_t</a> gfp)</td></tr>
+<tr class="separator:a7d781e22f78ce6826e602f3209de0fba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa46e6038c53019567f54006a4b21d8d9" id="r_aa46e6038c53019567f54006a4b21d8d9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slab_8h.html#aa46e6038c53019567f54006a4b21d8d9">kfree_const</a> (const void *x)</td></tr>
+<tr class="separator:aa46e6038c53019567f54006a4b21d8d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a489b8cf9fecbbbc122e874207e48bf47" id="r_a489b8cf9fecbbbc122e874207e48bf47"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slab_8h.html#a489b8cf9fecbbbc122e874207e48bf47">memdup_array_user</a> (const void <a class="el" href="compiler_8h.html#ace6f17999da4ea3b93c4227beafcab95">__user</a> *src, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> n, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> <a class="el" href="drm__bridge_8h.html#a854352f53b148adc24983a58a1866d66">size</a>)</td></tr>
+<tr class="separator:a489b8cf9fecbbbc122e874207e48bf47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadd419a31193f955d78f66a634bd4a25" id="r_aadd419a31193f955d78f66a634bd4a25"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slab_8h.html#aadd419a31193f955d78f66a634bd4a25">vmemdup_array_user</a> (const void <a class="el" href="compiler_8h.html#ace6f17999da4ea3b93c4227beafcab95">__user</a> *src, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> n, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> <a class="el" href="drm__bridge_8h.html#a854352f53b148adc24983a58a1866d66">size</a>)</td></tr>
+<tr class="separator:aadd419a31193f955d78f66a634bd4a25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7611245933fdbb9235f8a83aa05f1b55" id="r_a7611245933fdbb9235f8a83aa05f1b55"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slab_8h.html#a7611245933fdbb9235f8a83aa05f1b55">memdup_user</a> (const void <a class="el" href="compiler_8h.html#ace6f17999da4ea3b93c4227beafcab95">__user</a> *src, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> <a class="el" href="initial_8c.html#a7360b55975153b822efc5217b7734e6a">len</a>)</td></tr>
+<tr class="separator:a7611245933fdbb9235f8a83aa05f1b55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5af5ac82f960c018920d6b9927532e36" id="r_a5af5ac82f960c018920d6b9927532e36"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slab_8h.html#a5af5ac82f960c018920d6b9927532e36">vmemdup_user</a> (const void <a class="el" href="compiler_8h.html#ace6f17999da4ea3b93c4227beafcab95">__user</a> *src, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> <a class="el" href="initial_8c.html#a7360b55975153b822efc5217b7734e6a">len</a>)</td></tr>
+<tr class="separator:a5af5ac82f960c018920d6b9927532e36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cc4fa3ed6726feb77b5b9d19b9f06eb" id="r_a8cc4fa3ed6726feb77b5b9d19b9f06eb"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slab_8h.html#a8cc4fa3ed6726feb77b5b9d19b9f06eb">kvasprintf</a> (<a class="el" href="linux_2kernel_8h.html#a99dcacb83509949e516cf6ae0367ff73">gfp_t</a> gfp, const char *<a class="el" href="drm__file_8h.html#a6c7e3fabe8f433618918504e845c8e99">fmt</a>, <a class="el" href="acmsvcex_8h.html#abaefbc6cabb217bf0138d4f9c94d4775">va_list</a> ap)</td></tr>
+<tr class="separator:a8cc4fa3ed6726feb77b5b9d19b9f06eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="ad16e4916f64bf12d9016393d48ff9aa1" name="ad16e4916f64bf12d9016393d48ff9aa1"></a>
@@ -301,6 +369,20 @@ Macros</h2></td></tr>
 
 </div>
 </div>
+<a id="ae4f7e8559bf7e5aaa4cc1bc56a0736bd" name="ae4f7e8559bf7e5aaa4cc1bc56a0736bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4f7e8559bf7e5aaa4cc1bc56a0736bd">&#9670;&#160;</a></span>ARCH_KMALLOC_MINALIGN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ARCH_KMALLOC_MINALIGN&#160;&#160;&#160;__alignof__(unsigned long long)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a3826dcf16cb8ae79a1bb4ac800b02ada" name="a3826dcf16cb8ae79a1bb4ac800b02ada"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3826dcf16cb8ae79a1bb4ac800b02ada">&#9670;&#160;</a></span>DCL_KASPRINTF_MAX</h2>
 
@@ -309,6 +391,40 @@ Macros</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define DCL_KASPRINTF_MAX&#160;&#160;&#160;128</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7b39a2dda318880b36902f310bf66c08" name="a7b39a2dda318880b36902f310bf66c08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b39a2dda318880b36902f310bf66c08">&#9670;&#160;</a></span>kcalloc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define kcalloc</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">n, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="drm__bridge_8h.html#a854352f53b148adc24983a58a1866d66">size</a>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;dcl_kcalloc((n), (<a class="el" href="drm__bridge_8h.html#a854352f53b148adc24983a58a1866d66">size</a>))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -325,18 +441,18 @@ Macros</h2></td></tr>
           <td class="memname">#define kmalloc</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">size, </td>
+          <td class="paramname"><a class="el" href="drm__bridge_8h.html#a854352f53b148adc24983a58a1866d66">size</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="Drivers_2virtio_8h.html#aa2585d779da0ab21273a8d92de9a0ebe">flags</a>&#160;</td>
+          <td class="paramname"><a class="el" href="Drivers_2virtio_8h.html#a04a0bd666e371f3fab92b8d0ef5dbdb0">flags</a>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;dcl_kmalloc(size)</td>
+          <td></td><td>&#160;&#160;&#160;dcl_kmalloc_flags(<a class="el" href="drm__bridge_8h.html#a854352f53b148adc24983a58a1866d66">size</a>, <a class="el" href="Drivers_2virtio_8h.html#a04a0bd666e371f3fab92b8d0ef5dbdb0">flags</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -469,6 +585,136 @@ Macros</h2></td></tr>
 
 </div>
 </div>
+<a id="ad9b3f56245eddfb02055e52938d46de6" name="ad9b3f56245eddfb02055e52938d46de6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9b3f56245eddfb02055e52938d46de6">&#9670;&#160;</a></span>krealloc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define krealloc</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">ptr, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="drm__bridge_8h.html#a854352f53b148adc24983a58a1866d66">size</a>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;dcl_krealloc((ptr), (<a class="el" href="drm__bridge_8h.html#a854352f53b148adc24983a58a1866d66">size</a>))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a01d7ac5f56902ea52f19429dd5b06e0b" name="a01d7ac5f56902ea52f19429dd5b06e0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01d7ac5f56902ea52f19429dd5b06e0b">&#9670;&#160;</a></span>krealloc_array</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define krealloc_array</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">ptr, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">n, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="drm__bridge_8h.html#a854352f53b148adc24983a58a1866d66">size</a>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="Drivers_2virtio_8h.html#a04a0bd666e371f3fab92b8d0ef5dbdb0">flags</a>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;	dcl_krealloc((ptr), <a class="el" href="overflow_8h.html#a2dea7287cefc777a16e9fc5282056699">array_size</a>((n), (<a class="el" href="drm__bridge_8h.html#a854352f53b148adc24983a58a1866d66">size</a>)))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab9c860d6bb9b229c3d58bb70463b6b4d" name="ab9c860d6bb9b229c3d58bb70463b6b4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9c860d6bb9b229c3d58bb70463b6b4d">&#9670;&#160;</a></span>kvmalloc_objs</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define kvmalloc_objs</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">type, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">count&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;	dcl_kmalloc((unsigned int)(sizeof(type) * (unsigned int)(count)))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af834deaba33e4b8411ad72259e296162" name="af834deaba33e4b8411ad72259e296162"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af834deaba33e4b8411ad72259e296162">&#9670;&#160;</a></span>kvzalloc_objs</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define kvzalloc_objs</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">type, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">count&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;	<a class="el" href="slab_8h.html#ac8f5e65e10787c965bab5281d83a19b2">kzalloc_objs</a>(type, count)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a86d666177e8f7ca864af308aa067cd5c" name="a86d666177e8f7ca864af308aa067cd5c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a86d666177e8f7ca864af308aa067cd5c">&#9670;&#160;</a></span>kzalloc</h2>
 
@@ -479,26 +725,68 @@ Macros</h2></td></tr>
           <td class="memname">#define kzalloc</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">size, </td>
+          <td class="paramname"><a class="el" href="drm__bridge_8h.html#a854352f53b148adc24983a58a1866d66">size</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="Drivers_2virtio_8h.html#aa2585d779da0ab21273a8d92de9a0ebe">flags</a>&#160;</td>
+          <td class="paramname"><a class="el" href="Drivers_2virtio_8h.html#a04a0bd666e371f3fab92b8d0ef5dbdb0">flags</a>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;dcl_kzalloc(size)</td>
+          <td></td><td>&#160;&#160;&#160;dcl_kzalloc(<a class="el" href="drm__bridge_8h.html#a854352f53b148adc24983a58a1866d66">size</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a699c78b56922b569c20624d03b3c5eff" name="a699c78b56922b569c20624d03b3c5eff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a699c78b56922b569c20624d03b3c5eff">&#9670;&#160;</a></span>kzalloc_obj</h2>
+<a id="a7d4bf4ff14a5006abd9f215758d3b05c" name="a7d4bf4ff14a5006abd9f215758d3b05c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d4bf4ff14a5006abd9f215758d3b05c">&#9670;&#160;</a></span>kzalloc_flex</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define kzalloc_flex</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">p, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">member, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">count, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">    dcl_kzalloc((<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>)(<span class="keyword">sizeof</span>(typeof(p)) +          \</div>
+<div class="line">            <span class="keyword">sizeof</span>(*((typeof(&amp;p))0)-&gt;member) * (<span class="keywordtype">size_t</span>)(count)))</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="af4ba210a4609a1fe757db3c151a33ee4" name="af4ba210a4609a1fe757db3c151a33ee4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4ba210a4609a1fe757db3c151a33ee4">&#9670;&#160;</a></span>kzalloc_obj</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -507,8 +795,18 @@ Macros</h2></td></tr>
           <td class="memname">#define kzalloc_obj</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">type</td><td>)</td>
-          <td>&#160;&#160;&#160;dcl_kzalloc((unsigned int)sizeof(type))</td>
+          <td class="paramname">type, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;dcl_kzalloc((unsigned int)sizeof(type))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -537,6 +835,303 @@ Macros</h2></td></tr>
           <td></td>
           <td>)</td>
           <td></td><td>&#160;&#160;&#160;	dcl_kzalloc((unsigned int)(sizeof(type) * (unsigned int)(count)))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="aa46e6038c53019567f54006a4b21d8d9" name="aa46e6038c53019567f54006a4b21d8d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa46e6038c53019567f54006a4b21d8d9">&#9670;&#160;</a></span>kfree_const()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void kfree_const </td>
+          <td>(</td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aad92a67e3451f0b7971c08ecad26b2e4" name="aad92a67e3451f0b7971c08ecad26b2e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad92a67e3451f0b7971c08ecad26b2e4">&#9670;&#160;</a></span>ksize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> ksize </td>
+          <td>(</td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>objp</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7d781e22f78ce6826e602f3209de0fba" name="a7d781e22f78ce6826e602f3209de0fba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d781e22f78ce6826e602f3209de0fba">&#9670;&#160;</a></span>kstrdup_const()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * kstrdup_const </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="linux_2kernel_8h.html#a99dcacb83509949e516cf6ae0367ff73">gfp_t</a>&#160;</td>
+          <td class="paramname"><em>gfp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8cc4fa3ed6726feb77b5b9d19b9f06eb" name="a8cc4fa3ed6726feb77b5b9d19b9f06eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8cc4fa3ed6726feb77b5b9d19b9f06eb">&#9670;&#160;</a></span>kvasprintf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char * kvasprintf </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="linux_2kernel_8h.html#a99dcacb83509949e516cf6ae0367ff73">gfp_t</a>&#160;</td>
+          <td class="paramname"><em>gfp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>fmt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="acmsvcex_8h.html#abaefbc6cabb217bf0138d4f9c94d4775">va_list</a>&#160;</td>
+          <td class="paramname"><em>ap</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac88c4c777e1cffcd536d365ce527ba94" name="ac88c4c777e1cffcd536d365ce527ba94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac88c4c777e1cffcd536d365ce527ba94">&#9670;&#160;</a></span>kvfree()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void kvfree </td>
+          <td>(</td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>addr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a29dc200ebb31622f19757fe5fc586c3e" name="a29dc200ebb31622f19757fe5fc586c3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29dc200ebb31622f19757fe5fc586c3e">&#9670;&#160;</a></span>kvmalloc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void * kvmalloc </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="linux_2kernel_8h.html#a99dcacb83509949e516cf6ae0367ff73">gfp_t</a>&#160;</td>
+          <td class="paramname"><em>flags</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abc382958fa9b1f9232eef55d858fee19" name="abc382958fa9b1f9232eef55d858fee19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc382958fa9b1f9232eef55d858fee19">&#9670;&#160;</a></span>kvzalloc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void * kvzalloc </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="linux_2kernel_8h.html#a99dcacb83509949e516cf6ae0367ff73">gfp_t</a>&#160;</td>
+          <td class="paramname"><em>flags</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a489b8cf9fecbbbc122e874207e48bf47" name="a489b8cf9fecbbbc122e874207e48bf47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a489b8cf9fecbbbc122e874207e48bf47">&#9670;&#160;</a></span>memdup_array_user()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void * memdup_array_user </td>
+          <td>(</td>
+          <td class="paramtype">const void <a class="el" href="compiler_8h.html#ace6f17999da4ea3b93c4227beafcab95">__user</a> *&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7611245933fdbb9235f8a83aa05f1b55" name="a7611245933fdbb9235f8a83aa05f1b55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7611245933fdbb9235f8a83aa05f1b55">&#9670;&#160;</a></span>memdup_user()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void * memdup_user </td>
+          <td>(</td>
+          <td class="paramtype">const void <a class="el" href="compiler_8h.html#ace6f17999da4ea3b93c4227beafcab95">__user</a> *&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aadd419a31193f955d78f66a634bd4a25" name="aadd419a31193f955d78f66a634bd4a25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aadd419a31193f955d78f66a634bd4a25">&#9670;&#160;</a></span>vmemdup_array_user()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void * vmemdup_array_user </td>
+          <td>(</td>
+          <td class="paramtype">const void <a class="el" href="compiler_8h.html#ace6f17999da4ea3b93c4227beafcab95">__user</a> *&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5af5ac82f960c018920d6b9927532e36" name="a5af5ac82f960c018920d6b9927532e36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5af5ac82f960c018920d6b9927532e36">&#9670;&#160;</a></span>vmemdup_user()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void * vmemdup_user </td>
+          <td>(</td>
+          <td class="paramtype">const void <a class="el" href="compiler_8h.html#ace6f17999da4ea3b93c4227beafcab95">__user</a> *&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

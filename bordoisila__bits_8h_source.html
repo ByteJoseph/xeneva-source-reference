@@ -98,7 +98,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="bordoisila__bits_8h.html#a35c19db14c981e9539b1e41d2c07ea69">   43</a></span><span class="preprocessor">#define BORDOISILA_BIT(nr)   (1UL &lt;&lt; (nr))</span></div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="bordoisila__bits_8h.html#a82c2075ce12f6e1f4ec6336c06862af8">   44</a></span><span class="preprocessor">#define BORDOISILA_GENMASK(h, l)  (((~0UL) - (1UL &lt;&lt; (l)) + 1) &amp; (~0UL &gt;&gt; (BITS_PER_LONG - 1 - (h))))</span></div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">int</span> __bf_shf(<a class="code hl_typedef" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> mask) {</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">int</span> <a class="code hl_define" href="bitfield_8h.html#a54f999e99cdda52dc57cd267a1bb80c8">__bf_shf</a>(<a class="code hl_typedef" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> mask) {</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keywordflow">if</span> (mask == 0) <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keywordtype">int</span> shift = 0;</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keywordflow">while</span> ((mask &amp; 1) == 0) {</div>
@@ -120,6 +120,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aLibs_2XEClib_2includes_2stdint_8h_html"><div class="ttname"><a href="Libs_2XEClib_2includes_2stdint_8h.html">stdint.h</a></div></div>
 <div class="ttc" id="aacefiex_8h_html_a435d1572bf3f880d55459d9805097f62"><div class="ttname"><a href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></div><div class="ttdeci">unsigned int uint32_t</div><div class="ttdef"><b>Definition</b> acefiex.h:163</div></div>
+<div class="ttc" id="abitfield_8h_html_a54f999e99cdda52dc57cd267a1bb80c8"><div class="ttname"><a href="bitfield_8h.html#a54f999e99cdda52dc57cd267a1bb80c8">__bf_shf</a></div><div class="ttdeci">#define __bf_shf</div><div class="ttdef"><b>Definition</b> bitfield.h:47</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

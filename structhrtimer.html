@@ -77,12 +77,27 @@ $(function() {
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="hrtimer_8h_source.html">hrtimer.h</a>&gt;</code></p>
+<div class="dynheader">
+Collaboration diagram for hrtimer:</div>
+<div class="dyncontent">
+<div class="center"><img src="structhrtimer__coll__graph.png" border="0" usemap="#ahrtimer_coll__map" alt="Collaboration graph"/></div>
+<map name="ahrtimer_coll__map" id="ahrtimer_coll__map">
+<area shape="rect" title=" " alt="" coords="38,185,109,211"/>
+<area shape="rect" href="structtimerqueue__node.html" title=" " alt="" coords="5,97,141,123"/>
+<area shape="poly" title=" " alt="" coords="76,137,76,185,71,185,71,137"/>
+<area shape="rect" href="structrb__node.html" title=" " alt="" coords="36,7,111,33"/>
+<area shape="poly" title=" " alt="" coords="76,46,76,97,71,97,71,46"/>
+<area shape="poly" title=" " alt="" coords="126,10,134,14,137,20,129,29,111,31,111,26,127,24,132,20,130,18,124,15"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
+<tr class="memitem:acf8c4866a88ee4eb26120be5c3982cb6" id="r_acf8c4866a88ee4eb26120be5c3982cb6"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structtimerqueue__node.html">timerqueue_node</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structhrtimer.html#acf8c4866a88ee4eb26120be5c3982cb6">node</a></td></tr>
+<tr class="separator:acf8c4866a88ee4eb26120be5c3982cb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a195c96b822f3c7e90be7883c0ead506c" id="r_a195c96b822f3c7e90be7883c0ead506c"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="hrtimer_8h.html#a0996eb0168fb2e9c6db89069ac35ed5e">hrtimer_mode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structhrtimer.html#a195c96b822f3c7e90be7883c0ead506c">mode</a></td></tr>
 <tr class="separator:a195c96b822f3c7e90be7883c0ead506c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab1a1c63e85565ebf07552c9445439802" id="r_ab1a1c63e85565ebf07552c9445439802"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_8h.html#a676b56a0511d8a4ad4da3f77c9367f42">ktime_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structhrtimer.html#ab1a1c63e85565ebf07552c9445439802">_softexpires</a></td></tr>
+<tr class="memitem:ab1a1c63e85565ebf07552c9445439802" id="r_ab1a1c63e85565ebf07552c9445439802"><td class="memItemLeft" align="right" valign="top"><a class="el" href="linux_2kernel_8h.html#a676b56a0511d8a4ad4da3f77c9367f42">ktime_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structhrtimer.html#ab1a1c63e85565ebf07552c9445439802">_softexpires</a></td></tr>
 <tr class="separator:ab1a1c63e85565ebf07552c9445439802"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16b476a3178eac659753739e753705e5" id="r_a16b476a3178eac659753739e753705e5"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="hrtimer_8h.html#a3c67a5c61b0e200e0c60fc71d45e1112">hrtimer_restart</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structhrtimer.html#a16b476a3178eac659753739e753705e5">function</a> )(struct <a class="el" href="structhrtimer.html">hrtimer</a> *timer)</td></tr>
 <tr class="separator:a16b476a3178eac659753739e753705e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -99,7 +114,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="kernel_8h.html#a676b56a0511d8a4ad4da3f77c9367f42">ktime_t</a> hrtimer::_softexpires</td>
+          <td class="memname"><a class="el" href="linux_2kernel_8h.html#a676b56a0511d8a4ad4da3f77c9367f42">ktime_t</a> hrtimer::_softexpires</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -128,6 +143,20 @@ Public Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">enum <a class="el" href="hrtimer_8h.html#a0996eb0168fb2e9c6db89069ac35ed5e">hrtimer_mode</a> hrtimer::mode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acf8c4866a88ee4eb26120be5c3982cb6" name="acf8c4866a88ee4eb26120be5c3982cb6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf8c4866a88ee4eb26120be5c3982cb6">&#9670;&#160;</a></span>node</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structtimerqueue__node.html">timerqueue_node</a> hrtimer::node</td>
         </tr>
       </table>
 </div><div class="memdoc">

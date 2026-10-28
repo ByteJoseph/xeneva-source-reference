@@ -82,11 +82,13 @@ Collaboration diagram for virtio_driver:</div>
 <div class="dyncontent">
 <div class="center"><img src="structvirtio__driver__coll__graph.png" border="0" usemap="#avirtio__driver_coll__map" alt="Collaboration graph"/></div>
 <map name="avirtio__driver_coll__map" id="avirtio__driver_coll__map">
-<area shape="rect" title=" " alt="" coords="81,93,182,119"/>
-<area shape="rect" href="structdevice__driver.html" title=" " alt="" coords="5,5,116,31"/>
-<area shape="poly" title=" " alt="" coords="81,39,124,91,119,94,77,43"/>
-<area shape="rect" href="structvirtio__device__id.html" title=" " alt="" coords="141,5,266,31"/>
-<area shape="poly" title=" " alt="" coords="187,43,143,95,139,91,183,39"/>
+<area shape="rect" title=" " alt="" coords="81,181,182,207"/>
+<area shape="rect" href="structdevice__driver.html" title=" " alt="" coords="5,93,116,119"/>
+<area shape="poly" title=" " alt="" coords="81,127,124,179,119,182,77,131"/>
+<area shape="rect" href="structdev__pm__ops.html" title=" " alt="" coords="9,5,113,31"/>
+<area shape="poly" title=" " alt="" coords="63,45,63,93,58,93,58,45"/>
+<area shape="rect" href="structvirtio__device__id.html" title=" " alt="" coords="141,93,266,119"/>
+<area shape="poly" title=" " alt="" coords="187,131,143,183,139,179,183,127"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -114,6 +116,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a6c14e1f0116bd793347d6194a92c4d4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae881f966eeefd9ba79e0a0bfa79f80a9" id="r_ae881f966eeefd9ba79e0a0bfa79f80a9"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvirtio__driver.html#ae881f966eeefd9ba79e0a0bfa79f80a9">config_changed</a> )(struct <a class="el" href="structvirtio__device.html">virtio_device</a> *vdev)</td></tr>
 <tr class="separator:ae881f966eeefd9ba79e0a0bfa79f80a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae9de1f2759811db898e445e4cd9863f" id="r_aae9de1f2759811db898e445e4cd9863f"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvirtio__driver.html#aae9de1f2759811db898e445e4cd9863f">shutdown</a> )(struct <a class="el" href="structvirtio__device.html">virtio_device</a> *vdev)</td></tr>
+<tr class="separator:aae9de1f2759811db898e445e4cd9863f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7db78fd4d25de0a0211644e0a1ad2fd" id="r_ad7db78fd4d25de0a0211644e0a1ad2fd"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvirtio__driver.html#ad7db78fd4d25de0a0211644e0a1ad2fd">freeze</a> )(struct <a class="el" href="structvirtio__device.html">virtio_device</a> *vdev)</td></tr>
 <tr class="separator:ad7db78fd4d25de0a0211644e0a1ad2fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24f0ef42f34acfebae75551fc7c80e56" id="r_a24f0ef42f34acfebae75551fc7c80e56"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvirtio__driver.html#a24f0ef42f34acfebae75551fc7c80e56">restore</a> )(struct <a class="el" href="structvirtio__device.html">virtio_device</a> *vdev)</td></tr>
@@ -282,6 +286,20 @@ Public Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">void(* virtio_driver::scan) (struct <a class="el" href="structvirtio__device.html">virtio_device</a> *vdev)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aae9de1f2759811db898e445e4cd9863f" name="aae9de1f2759811db898e445e4cd9863f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae9de1f2759811db898e445e4cd9863f">&#9670;&#160;</a></span>shutdown</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void(* virtio_driver::shutdown) (struct <a class="el" href="structvirtio__device.html">virtio_device</a> *vdev)</td>
         </tr>
       </table>
 </div><div class="memdoc">

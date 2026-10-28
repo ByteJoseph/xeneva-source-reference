@@ -261,13 +261,13 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span><span class="keywordtype">void</span></div>
 <div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>CvProcessComment (</div>
 <div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>    <a class="code hl_struct" href="structasl__comment__state.html">ASL_COMMENT_STATE</a>       CurrentState,</div>
-<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>    <span class="keywordtype">char</span>                    *StringBuffer,</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>    <span class="keywordtype">char</span>                    *<a class="code hl_struct" href="structStringBuffer.html">StringBuffer</a>,</div>
 <div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>    <span class="keywordtype">int</span>                     c1);</div>
 <div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span> </div>
 <div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span><span class="keywordtype">void</span></div>
 <div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>CvProcessCommentType2 (</div>
 <div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>    <a class="code hl_struct" href="structasl__comment__state.html">ASL_COMMENT_STATE</a>       CurrentState,</div>
-<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>    <span class="keywordtype">char</span>                    *StringBuffer);</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>    <span class="keywordtype">char</span>                    *<a class="code hl_struct" href="structStringBuffer.html">StringBuffer</a>);</div>
 <div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span> </div>
 <div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span><a class="code hl_typedef" href="AArch64_2ProcessorBind_8h.html#ae1e6edbbc26d6fbc71a90190d0266018">UINT32</a></div>
 <div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>CvCalculateCommentLengths(</div>
@@ -359,7 +359,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span><span class="keywordtype">void</span></div>
 <div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>CvSwitchFiles (</div>
-<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>    <a class="code hl_typedef" href="AArch64_2ProcessorBind_8h.html#ae1e6edbbc26d6fbc71a90190d0266018">UINT32</a>                  level,</div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>    <a class="code hl_typedef" href="AArch64_2ProcessorBind_8h.html#ae1e6edbbc26d6fbc71a90190d0266018">UINT32</a>                  <a class="code hl_variable" href="drm__print_8h.html#a4d8634ba374002ecc7800ee7e88b959f">level</a>,</div>
 <div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>    <a class="code hl_union" href="unionacpi__parse__object.html">ACPI_PARSE_OBJECT</a>       *op);</div>
 <div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span> </div>
 <div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span><a class="code hl_typedef" href="actypes_8h.html#a112e3146cb38b6ee95e64d85842e380a">BOOLEAN</a></div>
@@ -398,7 +398,9 @@ $(document).ready(function() { init_codefold(0); });
 <div class="ttc" id="aacpixf_8h_html_ab361d6187ad6230bccbce7d8dbe49abc"><div class="ttname"><a href="acpixf_8h.html#ab361d6187ad6230bccbce7d8dbe49abc">Type</a></div><div class="ttdeci">ACPI_PHYSICAL_ADDRESS ACPI_SIZE BOOLEAN Warn BOOLEAN Physical UINT32 ACPI_TABLE_HEADER *OutTableHeader ACPI_TABLE_HEADER **OutTable ACPI_HANDLE UINT32 ACPI_WALK_CALLBACK ACPI_WALK_CALLBACK void void **ReturnValue UINT32 ACPI_BUFFER *RetPathPtr ACPI_OBJECT_HANDLER void *Data ACPI_OBJECT_HANDLER void **Data ACPI_STRING ACPI_OBJECT_LIST ACPI_BUFFER *ReturnObjectBuffer ACPI_DEVICE_INFO **ReturnBuffer ACPI_HANDLE ACPI_HANDLE ACPI_HANDLE *OutHandle ACPI_HANDLE *OutHandle void *Context void *Context ACPI_EVENT_HANDLER Handler UINT32 UINT32 Type</div><div class="ttdef"><b>Definition</b> acpixf.h:894</div></div>
 <div class="ttc" id="aactypes_8h_html_a112e3146cb38b6ee95e64d85842e380a"><div class="ttname"><a href="actypes_8h.html#a112e3146cb38b6ee95e64d85842e380a">BOOLEAN</a></div><div class="ttdeci">unsigned char BOOLEAN</div><div class="ttdef"><b>Definition</b> actypes.h:235</div></div>
 <div class="ttc" id="aactypes_8h_html_ab27e9918b538ce9d8ca692479b375b6a"><div class="ttname"><a href="actypes_8h.html#ab27e9918b538ce9d8ca692479b375b6a">UINT8</a></div><div class="ttdeci">unsigned char UINT8</div><div class="ttdef"><b>Definition</b> actypes.h:236</div></div>
+<div class="ttc" id="adrm__print_8h_html_a4d8634ba374002ecc7800ee7e88b959f"><div class="ttname"><a href="drm__print_8h.html#a4d8634ba374002ecc7800ee7e88b959f">level</a></div><div class="ttdeci">const char * level</div><div class="ttdef"><b>Definition</b> drm_print.h:515</div></div>
 <div class="ttc" id="astructOp_html"><div class="ttname"><a href="structOp.html">Op</a></div><div class="ttdef"><b>Definition</b> srvfs.c:50</div></div>
+<div class="ttc" id="astructStringBuffer_html"><div class="ttname"><a href="structStringBuffer.html">StringBuffer</a></div><div class="ttdef"><b>Definition</b> quickjs.c:4082</div></div>
 <div class="ttc" id="astructacpi__comment__node_html"><div class="ttname"><a href="structacpi__comment__node.html">acpi_comment_node</a></div><div class="ttdef"><b>Definition</b> aclocal.h:1093</div></div>
 <div class="ttc" id="astructacpi__file__node_html"><div class="ttname"><a href="structacpi__file__node.html">acpi_file_node</a></div><div class="ttdef"><b>Definition</b> aclocal.h:1111</div></div>
 <div class="ttc" id="astructacpi__parse__state_html"><div class="ttname"><a href="structacpi__parse__state.html">acpi_parse_state</a></div><div class="ttdef"><b>Definition</b> aclocal.h:1208</div></div>

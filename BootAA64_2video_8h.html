@@ -209,7 +209,7 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a4a118ad3ee36468a3fa616977a64864e" id="r_a4a118ad3ee36468a3fa616977a64864e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BootAA64_2video_8h.html#a4a118ad3ee36468a3fa616977a64864e">RGB</a>(r,  g,  b)</td></tr>
+<tr class="memitem:a4a118ad3ee36468a3fa616977a64864e" id="r_a4a118ad3ee36468a3fa616977a64864e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BootAA64_2video_8h.html#a4a118ad3ee36468a3fa616977a64864e">RGB</a>(r,  g,  <a class="el" href="Process_2NetSurf_2main_8cpp.html#a9dc54a811b75d3d05d3deff10980ca7e">b</a>)</td></tr>
 <tr class="separator:a4a118ad3ee36468a3fa616977a64864e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72a10836d865ae348c00a803081486f4" id="r_a72a10836d865ae348c00a803081486f4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BootAA64_2video_8h.html#a72a10836d865ae348c00a803081486f4">RED</a>(col)&#160;&#160;&#160;((col &gt;&gt; 16) &amp; 0xFF)</td></tr>
 <tr class="separator:a72a10836d865ae348c00a803081486f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -326,7 +326,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">b&#160;</td>
+          <td class="paramname"><a class="el" href="Process_2NetSurf_2main_8cpp.html#a9dc54a811b75d3d05d3deff10980ca7e">b</a>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -335,8 +335,9 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">    (((b) &amp; 0xFF) | (((g) &lt;&lt; 8) &amp; 0xFF00) |                                                        \</div>
+<b>Value:</b><div class="fragment"><div class="line">    (((<a class="code hl_variable" href="Process_2NetSurf_2main_8cpp.html#a9dc54a811b75d3d05d3deff10980ca7e">b</a>) &amp; 0xFF) | (((g) &lt;&lt; 8) &amp; 0xFF00) |                                                        \</div>
 <div class="line">     (((r) &lt;&lt; 16) &amp; 0xFF0000))</div>
+<div class="ttc" id="aProcess_2NetSurf_2main_8cpp_html_a9dc54a811b75d3d05d3deff10980ca7e"><div class="ttname"><a href="Process_2NetSurf_2main_8cpp.html#a9dc54a811b75d3d05d3deff10980ca7e">b</a></div><div class="ttdeci">size_t b</div><div class="ttdef"><b>Definition</b> main.cpp:156</div></div>
 </div><!-- fragment --><p>BSD 2-Clause License</p>
 <p>Copyright (c) 2023-2025, Manas Kamal Choudhury All rights reserved.</p>
 <p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>

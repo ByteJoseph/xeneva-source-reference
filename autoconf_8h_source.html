@@ -106,126 +106,169 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="autoconf_8h.html#a9f29fd8340efba5588e5fa8054197bbb">   23</a></span><span class="preprocessor">#define ARCH_HAS_VALID_PHYS_ADDR_RANGE 1</span></div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment"> * Stage 3 (tty/serial): the two arms 8250_port.c reads with IS_ENABLED().</span></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment"> * CONFIG_SERIAL_8250_CONSOLE is the reason this stage exists -- it gates</span></div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment"> * 8250_port.c:3197 `port-&gt;has_sysrq = IS_ENABLED(CONFIG_SERIAL_8250_CONSOLE)`</span></div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment"> * and, more importantly, the #ifdef at :3241 that registers 8250 as a</span></div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment"> * console, so leaving it undefined would build every file, run every probe,</span></div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment"> * and still print nothing. IS_ENABLED() needs it *defined* (to 1), not just</span></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment"> * present: an undefined identifier reads as 0, which is the wrong answer.</span></div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment"> * CONFIG_SERIAL_8250_16550A_VARIANTS gates the extra divisor steps in</span></div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment"> * serial8250_do_set_termios (921). It is on because the hardware this is for</span></div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment"> * -- iMX8MP and RPi3b+ UARTs -- is 16550A-compatible, and a wrong divisor</span></div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment"> * table produces a port that transmits at the wrong baud rather than one that</span></div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment"> * fails to build.</span></div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="autoconf_8h.html#adb020251227e3a1813de746953479176">   42</a></span><span class="preprocessor">#define CONFIG_SERIAL_8250_CONSOLE 1</span></div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="autoconf_8h.html#a859682b3d479b9ef622185559d68c6a4">   43</a></span><span class="preprocessor">#define CONFIG_SERIAL_8250_16550A_VARIANTS 1</span></div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment"> * CONFIG_CPU_BIG_ENDIAN -- and the value is 0, which is not a placeholder</span></div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment"> * but the answer: iMX8MP, RPi3b+ and QEMU virt are all little-endian, and</span></div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment"> * the one place this is read is serial_core.c:2120</span></div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment"> *     *iotype = IS_ENABLED(CONFIG_CPU_BIG_ENDIAN) ? UPIO_MEM32BE : UPIO_MEM32;</span></div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment"> * so 0 selects UPIO_MEM32, the byte order every one of those UARTs is wired</span></div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment"> * in.  It has to be *defined* rather than left to the #ifdefs below because</span></div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment"> * DCL&#39;s IS_ENABLED is `!!(opt)` (kernel.h:139): it evaluates its argument,</span></div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment"> * where mainline&#39;s is a token-pasting trick that never touches the</span></div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment"> * identifier and so tolerates it being undefined.  An undefined</span></div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment"> * CONFIG_CPU_BIG_ENDIAN here is a hard `use of undeclared identifier` at</span></div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment"> * serial_core.c:2120, which is exactly how this was found -- the guard is</span></div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment"> * inside uart_parse_earlycon(), behind CONFIG_SERIAL_CORE_CONSOLE, so it did</span></div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="comment"> * not exist until that switch was turned on two edits ago.</span></div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment"> * Note the distinction from the block below: those are left *undefined*</span></div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment"> * because `#ifndef X` needs to see them as absent, while this one is</span></div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment"> * defined-to-0 because `!!X` needs to see it as present and false.  Defining</span></div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment"> * those to 0 instead would flip their guards the wrong way.</span></div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="autoconf_8h.html#a981da93ac2735692d314ca573a9f700d">   67</a></span><span class="preprocessor">#define CONFIG_CPU_BIG_ENDIAN 0</span></div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment"> * CONFIG_LDISC_AUTOLOAD 0 -- read by exactly one line, tty_ldisc.c:119,</span></div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="comment"> * `int tty_ldisc_autoload = IS_BUILTIN(CONFIG_LDISC_AUTOLOAD)`, which is the</span></div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="comment"> * flag tty_ldisc_get() consults before it calls request_module(&quot;tty-ldisc-%d&quot;)</span></div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="comment"> * (:154).</span></div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="comment"> * 0 is the truth and not a default: DCL&#39;s loader (DCL/module_loader.c) runs</span></div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="comment"> * the initcalls baked into this image and has no search path to ask for a</span></div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="comment"> * module by name, so request_module() here returns -ENOSYS and the second</span></div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="comment"> * get_ldops() attempt after it fails.  The gate above it reads</span></div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="comment"> * `!capable(CAP_SYS_MODULE) &amp;&amp; !tty_ldisc_autoload`, capable() answers yes,</span></div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="comment"> * and the `&amp;&amp;` short-circuits -- so the -EPERM arm is skipped, the no-op</span></div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="comment"> * request runs, and the caller gets a plain &quot;no such discipline&quot; back.  That</span></div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="comment"> * is the correct outcome; defining it 1 would promise a lookup that cannot</span></div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="comment"> * happen, and leaving it undefined would not compile at all, because DCL&#39;s</span></div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="comment"> * IS_BUILTIN evaluates its argument.</span></div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="comment"> * Note the difference from the block below: those are left *undefined* so</span></div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="comment"> * `#ifndef` sees them as absent, this is defined-to-0 so `!!` sees it as</span></div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="comment"> * present-and-false.</span></div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="autoconf_8h.html#acbaa5df769178c9488e803719de67659">   90</a></span><span class="preprocessor">#define CONFIG_LDISC_AUTOLOAD 0</span></div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="comment"> * CONFIG_SERIAL_CORE_CONSOLE -- serial_core.c&#39;s own console half, and the</span></div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="comment"> * reason it is *on* rather than left to the else-branch is a link error, not</span></div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="comment"> * a preference: the block at serial_core.c:2063 `#if defined(CONFIG_SERIAL_CORE_CONSOLE)</span></div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="comment"> * || defined(CONFIG_CONSOLE_POLL)` is where uart_parse_options() and</span></div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="comment"> * uart_set_options() are defined, and 8250_port.c calls both from its</span></div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="comment"> * console setup path (which is compiled, because CONFIG_SERIAL_8250_CONSOLE</span></div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="comment"> * above is on).  Leaving this off gave `undefined symbol: uart_set_options`</span></div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="comment"> * at link -- the guard had compiled the caller and dropped the callee.</span></div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><span class="comment"> * CONFIG_CONSOLE_POLL stays undefined: uart_poll_init() and the polled</span></div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="comment"> * console helpers at :2586/:2697 are for consoles that poll instead of take</span></div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="comment"> * interrupts, and DCL&#39;s console is interrupt-driven.  That the two guards</span></div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="comment"> * share one `#if` is why serial_core.c compiles with console output enabled</span></div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="comment"> * even though only one of the two conditions is true.</span></div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno"><a class="line" href="autoconf_8h.html#a33c2bde9bedb31deb07e6df1a8684871">  108</a></span><span class="preprocessor">#define CONFIG_SERIAL_CORE_CONSOLE 1</span></div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="comment"> * CONFIG_REMOTEPROC -- 0, deliberately, rather than left undefined.</span></div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span><span class="comment"> * &lt;linux/kernel.h&gt;:139 spells IS_ENABLED(opt) as `!!(opt)`, which is a *C*</span></div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span><span class="comment"> * expression and not a preprocessor test: an undefined CONFIG_REMOTEPROC</span></div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><span class="comment"> * there becomes an undeclared identifier in a function body</span></div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="comment"> * (virtio_console.c:332, `return is_rproc_enabled &amp;&amp; vdev-&gt;id.device == ...`)</span></div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="comment"> * rather than a silent 0. Defining it as 0 gives !!0, which folds to false,</span></div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span><span class="comment"> * and the `#if IS_ENABLED(CONFIG_REMOTEPROC)` at :2087 folds the same way.</span></div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="comment"> * The value is the honest one. Nothing here has a remoteproc subsystem: the</span></div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span><span class="comment"> * rproc serial transport is the path that allocates its buffers through</span></div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span><span class="comment"> * dma_alloc_coherent() and hangs them off vdev-&gt;dev.parent, and with this 0</span></div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span><span class="comment"> * every use of is_rproc_serial() folds out -- including the vdev-&gt;id.device</span></div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span><span class="comment"> * comparison beside it, which is why vdev-&gt;id can stay zeroed.</span></div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span><span class="comment"> * Undefined rather than 0 would be the mainline spelling (mainline leaves</span></div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span><span class="comment"> * unset options out of autoconf.h entirely), and it works everywhere except</span></div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span><span class="comment"> * the two places above, where mainline&#39;s IS_ENABLED has its own #if wrapper</span></div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span><span class="comment"> * and DCL&#39;s does not. The wrapper is what is missing, not the option; this</span></div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span><span class="comment"> * line supplies its effect at the source rather than re-deriving mainline&#39;s</span></div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span><span class="comment"> * __is_defined chain for one feature.</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment"> * CONFIG_DRM_CLIENT -- on, because the client half of DRM is in this image:</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment"> * Vendored/drivers/gpu/drm/drm_client.c and drm_client_event.c are both</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment"> * compiled, so there are real bodies for drm_client_dev_hotplug(), _restore(),</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment"> * _suspend(), _resume(), _unregister() and drm_client_debugfs_init().</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment"> * Leaving it undefined takes the #else arm of &lt;drm/drm_client_event.h&gt;:16 and</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment"> * of drm_internal.h:52, which answers those six names with empty *static</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment"> * inline* definitions.  The .c file then defines them at file scope and clang</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment"> * reports each one as a redefinition of a previous definition -- five errors</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment"> * at drm_client_event.c:32/:86/:105/:143/:176 pointing back at</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment"> * drm_client_event.h:17.  A guard whose off-arm collides with the source it</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment"> * is guarding is the wrong polarity: the option is what makes the header</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment"> * agree with the file.</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment"> * It gates nothing else -- the only other reader in the tree is</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment"> * drm_internal.h:60, paired with CONFIG_MAGIC_SYSRQ, which stays undefined</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment"> * so the sysrq half keeps its no-op stubs.</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="autoconf_8h.html#a91d319bce8b8561e2404120fa37600ee">   44</a></span><span class="preprocessor">#define CONFIG_DRM_CLIENT 1</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment"> * Stage 3 (tty/serial): the two arms 8250_port.c reads with IS_ENABLED().</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment"> * CONFIG_SERIAL_8250_CONSOLE is the reason this stage exists -- it gates</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment"> * 8250_port.c:3197 `port-&gt;has_sysrq = IS_ENABLED(CONFIG_SERIAL_8250_CONSOLE)`</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment"> * and, more importantly, the #ifdef at :3241 that registers 8250 as a</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment"> * console, so leaving it undefined would build every file, run every probe,</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment"> * and still print nothing. IS_ENABLED() needs it *defined* (to 1), not just</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment"> * present: an undefined identifier reads as 0, which is the wrong answer.</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment"> * CONFIG_SERIAL_8250_16550A_VARIANTS gates the extra divisor steps in</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment"> * serial8250_do_set_termios (921). It is on because the hardware this is for</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment"> * -- iMX8MP and RPi3b+ UARTs -- is 16550A-compatible, and a wrong divisor</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment"> * table produces a port that transmits at the wrong baud rather than one that</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="comment"> * fails to build.</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="autoconf_8h.html#adb020251227e3a1813de746953479176">   63</a></span><span class="preprocessor">#define CONFIG_SERIAL_8250_CONSOLE 1</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="autoconf_8h.html#a859682b3d479b9ef622185559d68c6a4">   64</a></span><span class="preprocessor">#define CONFIG_SERIAL_8250_16550A_VARIANTS 1</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment"> * CONFIG_CPU_BIG_ENDIAN -- deliberately left *undefined*, which is not a</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment"> * placeholder but the answer: iMX8MP, RPi3b+ and QEMU virt are all</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment"> * little-endian, and the two places it is read say so either way now that</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment"> * &lt;linux/kconfig.h&gt; is mainline&#39;s token paste:</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="comment"> *     *iotype = IS_ENABLED(CONFIG_CPU_BIG_ENDIAN) ? UPIO_MEM32BE : UPIO_MEM32;</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="comment"> * (serial_core.c:2120, false -&gt; UPIO_MEM32, the byte order those UARTs are</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="comment"> * wired in)</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="comment"> * and kconfig.h&#39;s own byte-order block, `#ifdef CONFIG_CPU_BIG_ENDIAN`.</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="comment"> * The second read is why this cannot be defined-to-0.  An option present at</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="comment"> * 0 is still present to an #ifdef, so a defined-but-false CONFIG_CPU_BIG_</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="comment"> * ENDIAN would take that arm, publish __BIG_ENDIAN -- and then drm_fourcc.h:42,</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="comment"> * drm_fourcc.c:221, drm_framebuffer.c:357 and seq_buf.c:278, all of which</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="comment"> * test `#ifdef __BIG_ENDIAN` to pick the host byte order, would stamp every</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="comment"> * little-endian framebuffer format with DRM_FORMAT_BIG_ENDIAN and hexdump</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="comment"> * buffers byte-reversed.  The same guard #warns from byteorder/</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="comment"> * little_endian.h:7.  Undefined reads correctly in both places.</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="comment"> * Defined-to-0 used to be required because IS_ENABLED was `!!(opt)`, an</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="comment"> * expression that evaluates its argument; mainline&#39;s is token pasting that</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="comment"> * never touches the identifier, so absent is a plain 0 in a #if and in a</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="comment"> * function body alike.  With that gone, every option in this file follows</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="comment"> * mainline&#39;s rule: present only when on.</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="comment"> * CONFIG_LDISC_AUTOLOAD -- undefined, i.e. off, read by exactly one line,</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="comment"> * tty_ldisc.c:119, `int tty_ldisc_autoload = IS_BUILTIN(CONFIG_LDISC_AUTOLOAD)`,</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="comment"> * which is the flag tty_ldisc_get() consults before it calls</span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="comment"> * request_module(&quot;tty-ldisc-%d&quot;) (:154).</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="comment"> * 0 is the truth and not a default: DCL&#39;s loader (DCL/module_loader.c) runs</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="comment"> * the initcalls baked into this image and has no search path to ask for a</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><span class="comment"> * module by name, so request_module() here returns -ENOSYS and the second</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="comment"> * get_ldops() attempt after it fails.  The gate above it reads</span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="comment"> * `!capable(CAP_SYS_MODULE) &amp;&amp; !tty_ldisc_autoload`, capable() answers yes,</span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="comment"> * and the `&amp;&amp;` short-circuits -- so the -EPERM arm is skipped, the no-op</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="comment"> * request runs, and the caller gets a plain &quot;no such discipline&quot; back.  That</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="comment"> * is the correct outcome; defining it 1 would promise a lookup that cannot</span></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="comment"> * happen.</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="comment"> * It used to be spelled `#define CONFIG_LDISC_AUTOLOAD 0` purely so that</span></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="comment"> * IS_BUILTIN&#39;s `!!(opt)` could evaluate it.  IS_BUILTIN is now mainline&#39;s</span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="comment"> * token paste, which never names the option, so absent gives the same 0 --</span></div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span><span class="comment"> * and leaves it invisible to an #ifdef, which is what the rest of this file</span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span><span class="comment"> * wants.</span></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span><span class="comment"> * CONFIG_SERIAL_CORE_CONSOLE -- serial_core.c&#39;s own console half, and the</span></div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span><span class="comment"> * reason it is *on* rather than left to the else-branch is a link error, not</span></div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="comment"> * a preference: the block at serial_core.c:2063 `#if defined(CONFIG_SERIAL_CORE_CONSOLE)</span></div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span><span class="comment"> * || defined(CONFIG_CONSOLE_POLL)` is where uart_parse_options() and</span></div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span><span class="comment"> * uart_set_options() are defined, and 8250_port.c calls both from its</span></div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span><span class="comment"> * console setup path (which is compiled, because CONFIG_SERIAL_8250_CONSOLE</span></div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span><span class="comment"> * above is on).  Leaving this off gave `undefined symbol: uart_set_options`</span></div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span><span class="comment"> * at link -- the guard had compiled the caller and dropped the callee.</span></div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span><span class="comment"> * CONFIG_CONSOLE_POLL stays undefined: uart_poll_init() and the polled</span></div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span><span class="comment"> * console helpers at :2586/:2697 are for consoles that poll instead of take</span></div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span><span class="comment"> * interrupts, and DCL&#39;s console is interrupt-driven.  That the two guards</span></div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span><span class="comment"> * share one `#if` is why serial_core.c compiles with console output enabled</span></div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span><span class="comment"> * even though only one of the two conditions is true.</span></div>
 <div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> </div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno"><a class="line" href="autoconf_8h.html#a9439572c89aa73bcc6ed8df84a983794">  134</a></span><span class="preprocessor">#define CONFIG_REMOTEPROC 0</span></div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span> </div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span><span class="comment">/* Deliberately undefined:</span></div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span><span class="comment"> *   CONFIG_DEVPORT           no x86 I/O ports on ARM64 -&gt; no /dev/port</span></div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span><span class="comment"> *   CONFIG_STRICT_DEVMEM     page_is_allowed() collapses to &quot;allow all&quot;</span></div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span><span class="comment"> *   CONFIG_HAVE_IOREMAP_PROT mmap_mem_ops stays empty (no generic_access_phys)</span></div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span><span class="comment"> *   CONFIG_TRANSPARENT_HUGEPAGE get_unmapped_area_zero uses mm_get_unmapped_area</span></div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span><span class="comment"> *   CONFIG_SECURITY          struct security does not exist; security_locked_down()</span></div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span><span class="comment"> *                            is still provided by DCL/linux_mm_shim.c</span></div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span> </div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span><span class="preprocessor">#endif </span><span class="comment">/* __LINUX_AUTOCONF_H__ */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno"><a class="line" href="autoconf_8h.html#a33c2bde9bedb31deb07e6df1a8684871">  133</a></span><span class="preprocessor">#define CONFIG_SERIAL_CORE_CONSOLE 1</span></div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span> </div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span><span class="comment"> * CONFIG_REMOTEPROC -- off, and so undefined, which is the mainline</span></div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span><span class="comment"> * spelling (unset options are simply left out of autoconf.h).</span></div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span><span class="comment"> * Nothing here has a remoteproc subsystem: the rproc serial transport is the</span></div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span><span class="comment"> * path that allocates its buffers through dma_alloc_coherent() and hangs them</span></div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span><span class="comment"> * off vdev-&gt;dev.parent, and with this off every use of is_rproc_serial()</span></div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span><span class="comment"> * folds out -- including the vdev-&gt;id.device comparison beside it, which is</span></div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span><span class="comment"> * why vdev-&gt;id can stay zeroed.  Both reads become 0:</span></div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span><span class="comment"> * `is_rproc_enabled` in the return at virtio_console.c:332, and the</span></div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span><span class="comment"> * `#if IS_ENABLED(CONFIG_REMOTEPROC)` at :2087.</span></div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span><span class="comment"> * It was `#define CONFIG_REMOTEPROC 0` before, because IS_ENABLED was</span></div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span><span class="comment"> * `!!(opt)`: a C expression, so an undefined option there would have been an</span></div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span><span class="comment"> * undeclared identifier in a function body rather than a silent 0.  The</span></div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span><span class="comment"> * comment used to say mainline&#39;s own #if wrapper was what was missing and</span></div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span><span class="comment"> * that this line supplied its effect at the source -- that wrapper is now</span></div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span><span class="comment"> * what &lt;linux/kconfig.h&gt; provides, so the line can go too.</span></div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span> </div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span><span class="comment"> * lib/xarray: multi-index entries and the chunk layout.  Both defaults are</span></div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span><span class="comment"> * mainline&#39;s (xarray: default y, BASE_SMALL default n).  Only XARRAY_MULTI</span></div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span><span class="comment"> * is defined, because only it is *on*: xarray.h:1622 reads it, and it keeps</span></div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span><span class="comment"> * marks[] in struct xa_node, which xas_set_mark() at :1745 indexes without a</span></div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span><span class="comment"> * guard of its own.  BASE_SMALL is off and so absent -- XA_CHUNK_SHIFT at</span></div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span><span class="comment"> * :1154 is `IS_ENABLED(CONFIG_BASE_SMALL) ? 4 : 6`, which is 6 either way,</span></div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span><span class="comment"> * now that IS_ENABLED accepts an undefined option.</span></div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno"><a class="line" href="autoconf_8h.html#ae720cc44bc58b7aaa87ee2c6a81e2e4f">  164</a></span><span class="preprocessor">#define CONFIG_XARRAY_MULTI 1</span></div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span> </div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span><span class="comment"> * CONFIG_DRM_VIRTIO_GPU_KMS -- on, and it has to be: virtio_gpu_init()</span></div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span><span class="comment"> * (Vendored/drivers/gpu/drm/virtio/virtgpu_kms.c:240) gates the modeset half</span></div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span><span class="comment"> * on it with IS_ENABLED(), and its &quot;#else&quot; clears DRIVER_MODESET and</span></div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span><span class="comment"> * DRIVER_ATOMIC from the driver features and writes num_scanouts = 0. A</span></div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span><span class="comment"> * virtio-gpu device without KMS is a driver that registers and then has no</span></div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span><span class="comment"> * output to prove anything on -- the scanout stage exists to prove exactly</span></div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span><span class="comment"> * that half, so the option is the feature table of this port, not a</span></div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span><span class="comment"> * preference. It gates nothing else in the tree; the driver is the only</span></div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span><span class="comment"> * reader.</span></div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno"><a class="line" href="autoconf_8h.html#acdf9c9d874aabb62e66fc544c86e21b3">  177</a></span><span class="preprocessor">#define CONFIG_DRM_VIRTIO_GPU_KMS 1</span></div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span> </div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span><span class="comment">/* Deliberately undefined:</span></div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span><span class="comment"> *   CONFIG_DEVPORT           no x86 I/O ports on ARM64 -&gt; no /dev/port</span></div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span><span class="comment"> *   CONFIG_STRICT_DEVMEM     page_is_allowed() collapses to &quot;allow all&quot;</span></div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span><span class="comment"> *   CONFIG_HAVE_IOREMAP_PROT mmap_mem_ops stays empty (no generic_access_phys)</span></div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span><span class="comment"> *   CONFIG_TRANSPARENT_HUGEPAGE get_unmapped_area_zero uses mm_get_unmapped_area</span></div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span><span class="comment"> *   CONFIG_SECURITY          struct security does not exist; security_locked_down()</span></div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span><span class="comment"> *                            is still provided by DCL/linux_mm_shim.c</span></div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span> </div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span><span class="preprocessor">#endif </span><span class="comment">/* __LINUX_AUTOCONF_H__ */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

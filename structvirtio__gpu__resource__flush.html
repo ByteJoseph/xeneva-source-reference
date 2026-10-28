@@ -76,17 +76,17 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="virtiogpu_8h_source.html">virtiogpu.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="virtio__gpu_8h_source.html">virtio_gpu.h</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for virtio_gpu_resource_flush:</div>
 <div class="dyncontent">
 <div class="center"><img src="structvirtio__gpu__resource__flush__coll__graph.png" border="0" usemap="#avirtio__gpu__resource__flush_coll__map" alt="Collaboration graph"/></div>
 <map name="avirtio__gpu__resource__flush_coll__map" id="avirtio__gpu__resource__flush_coll__map">
-<area shape="rect" title=" " alt="" coords="79,93,229,133"/>
+<area shape="rect" title=" " alt="" coords="79,108,229,148"/>
 <area shape="rect" href="structvirtio__gpu__ctrl__hdr.html" title=" " alt="" coords="5,5,148,31"/>
-<area shape="poly" title=" " alt="" coords="97,39,140,91,136,95,93,43"/>
+<area shape="poly" title=" " alt="" coords="95,40,143,106,138,109,91,43"/>
 <area shape="rect" href="structvirtio__gpu__rect.html" title=" " alt="" coords="172,5,291,31"/>
-<area shape="poly" title=" " alt="" coords="215,43,172,95,168,91,211,39"/>
+<area shape="poly" title=" " alt="" coords="217,43,170,109,165,106,213,40"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -94,6 +94,12 @@ Collaboration diagram for virtio_gpu_resource_flush:</div>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a9c0029aa6538501a1a00c837fc9386d4" id="r_a9c0029aa6538501a1a00c837fc9386d4"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structvirtio__gpu__ctrl__hdr.html">virtio_gpu_ctrl_hdr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvirtio__gpu__resource__flush.html#a9c0029aa6538501a1a00c837fc9386d4">hdr</a></td></tr>
 <tr class="separator:a9c0029aa6538501a1a00c837fc9386d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8461ba51262b8ca232db3746d2315d6f" id="r_a8461ba51262b8ca232db3746d2315d6f"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structvirtio__gpu__rect.html">virtio_gpu_rect</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvirtio__gpu__resource__flush.html#a8461ba51262b8ca232db3746d2315d6f">r</a></td></tr>
+<tr class="separator:a8461ba51262b8ca232db3746d2315d6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafe16abaefaff9b8c9f75a3143a8c341" id="r_aafe16abaefaff9b8c9f75a3143a8c341"><td class="memItemLeft" align="right" valign="top"><a class="el" href="linux_2kernel_8h.html#ad69331506820763dddbdff4f209fb280">__le32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvirtio__gpu__resource__flush.html#aafe16abaefaff9b8c9f75a3143a8c341">resource_id</a></td></tr>
+<tr class="separator:aafe16abaefaff9b8c9f75a3143a8c341"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73595ab5e388e207d8e6fc52c72197d1" id="r_a73595ab5e388e207d8e6fc52c72197d1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="linux_2kernel_8h.html#ad69331506820763dddbdff4f209fb280">__le32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvirtio__gpu__resource__flush.html#a73595ab5e388e207d8e6fc52c72197d1">padding</a></td></tr>
+<tr class="separator:a73595ab5e388e207d8e6fc52c72197d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26e1e071a6fcde7aaadff2896f719818" id="r_a26e1e071a6fcde7aaadff2896f719818"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structvirtio__gpu__rect.html">virtio_gpu_rect</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvirtio__gpu__resource__flush.html#a26e1e071a6fcde7aaadff2896f719818">rect</a></td></tr>
 <tr class="separator:a26e1e071a6fcde7aaadff2896f719818"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a329ab8ca4dd95b381e90f684db83d875" id="r_a329ab8ca4dd95b381e90f684db83d875"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvirtio__gpu__resource__flush.html#a329ab8ca4dd95b381e90f684db83d875">resource_id</a></td></tr>
@@ -116,14 +122,42 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a73595ab5e388e207d8e6fc52c72197d1" name="a73595ab5e388e207d8e6fc52c72197d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73595ab5e388e207d8e6fc52c72197d1">&#9670;&#160;</a></span>padding <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="linux_2kernel_8h.html#ad69331506820763dddbdff4f209fb280">__le32</a> virtio_gpu_resource_flush::padding</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a636d5e358c9550aa422300c6d467278f" name="a636d5e358c9550aa422300c6d467278f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a636d5e358c9550aa422300c6d467278f">&#9670;&#160;</a></span>padding</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a636d5e358c9550aa422300c6d467278f">&#9670;&#160;</a></span>padding <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> virtio_gpu_resource_flush::padding</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8461ba51262b8ca232db3746d2315d6f" name="a8461ba51262b8ca232db3746d2315d6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8461ba51262b8ca232db3746d2315d6f">&#9670;&#160;</a></span>r</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structvirtio__gpu__rect.html">virtio_gpu_rect</a> virtio_gpu_resource_flush::r</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -144,8 +178,22 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="aafe16abaefaff9b8c9f75a3143a8c341" name="aafe16abaefaff9b8c9f75a3143a8c341"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafe16abaefaff9b8c9f75a3143a8c341">&#9670;&#160;</a></span>resource_id <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="linux_2kernel_8h.html#ad69331506820763dddbdff4f209fb280">__le32</a> virtio_gpu_resource_flush::resource_id</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a329ab8ca4dd95b381e90f684db83d875" name="a329ab8ca4dd95b381e90f684db83d875"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a329ab8ca4dd95b381e90f684db83d875">&#9670;&#160;</a></span>resource_id</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a329ab8ca4dd95b381e90f684db83d875">&#9670;&#160;</a></span>resource_id <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -158,7 +206,8 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<hr/>The documentation for this struct was generated from the following file:<ul>
+<hr/>The documentation for this struct was generated from the following files:<ul>
+<li>XenevaOS/BaseHdr/linux/<a class="el" href="virtio__gpu_8h_source.html">virtio_gpu.h</a></li>
 <li>XenevaOS/Drivers/GPU/virtiogpu/<a class="el" href="virtiogpu_8h_source.html">virtiogpu.h</a></li>
 </ul>
 </div><!-- contents -->

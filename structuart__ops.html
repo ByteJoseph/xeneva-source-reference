@@ -114,7 +114,7 @@ Public Attributes</h2></td></tr>
 <tr class="separator:aa729ceb105a33e049b22a7c8a3feb3b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a58cad1911821d72223f89fec05c6bb9e" id="r_a58cad1911821d72223f89fec05c6bb9e"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structuart__ops.html#a58cad1911821d72223f89fec05c6bb9e">set_ldisc</a> )(struct <a class="el" href="structuart__port.html">uart_port</a> *, struct <a class="el" href="structktermios.html">ktermios</a> *)</td></tr>
 <tr class="separator:a58cad1911821d72223f89fec05c6bb9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a77719620fc8037b9e987d8617cadb28e" id="r_a77719620fc8037b9e987d8617cadb28e"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structuart__ops.html#a77719620fc8037b9e987d8617cadb28e">pm</a> )(struct <a class="el" href="structuart__port.html">uart_port</a> *, unsigned int state, unsigned int oldstate)</td></tr>
+<tr class="memitem:a77719620fc8037b9e987d8617cadb28e" id="r_a77719620fc8037b9e987d8617cadb28e"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structuart__ops.html#a77719620fc8037b9e987d8617cadb28e">pm</a> )(struct <a class="el" href="structuart__port.html">uart_port</a> *, unsigned int <a class="el" href="tokeniser_8c.html#a3be516b3475c638cf5ceeab7b83aecb2">state</a>, unsigned int oldstate)</td></tr>
 <tr class="separator:a77719620fc8037b9e987d8617cadb28e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a809dec27628d9af34e8db3aa5354b128" id="r_a809dec27628d9af34e8db3aa5354b128"><td class="memItemLeft" align="right" valign="top">const char *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structuart__ops.html#a809dec27628d9af34e8db3aa5354b128">type</a> )(struct <a class="el" href="structuart__port.html">uart_port</a> *)</td></tr>
 <tr class="separator:a809dec27628d9af34e8db3aa5354b128"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -248,7 +248,7 @@ Public Attributes</h2></td></tr>
 <p>Verify the new serial port information contained within @serinfo is suitable for this port type.</p>
 <p>Locking: none. Interrupts: caller dependent.</p>
 <p>@ioctl: <code>int ()(struct <a class="el" href="structuart__port.html">uart_port</a> *port, unsigned int cmd, unsigned long arg)</code></p>
-<p>Perform any port specific IOCTLs. IOCTL commands must be defined using the standard numbering system found in &lt;asm/ioctl.h&gt;.</p>
+<p>Perform any port specific IOCTLs. IOCTL commands must be defined using the standard numbering system found in &lt;<a class="el" href="asm_2ioctl_8h.html">asm/ioctl.h</a>&gt;.</p>
 <p>Locking: none. Interrupts: caller dependent.</p>
 <p>@poll_init: <code>int ()(struct <a class="el" href="structuart__port.html">uart_port</a> *port)</code></p>
 <p>Called by kgdb to perform the minimal hardware initialization needed to support @poll_put_char() and @poll_get_char(). Unlike @startup(), this should not request interrupts.</p>
@@ -351,7 +351,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void(* uart_ops::pm) (struct <a class="el" href="structuart__port.html">uart_port</a> *, unsigned int state, unsigned int oldstate)</td>
+          <td class="memname">void(* uart_ops::pm) (struct <a class="el" href="structuart__port.html">uart_port</a> *, unsigned int <a class="el" href="tokeniser_8c.html#a3be516b3475c638cf5ceeab7b83aecb2">state</a>, unsigned int oldstate)</td>
         </tr>
       </table>
 </div><div class="memdoc">

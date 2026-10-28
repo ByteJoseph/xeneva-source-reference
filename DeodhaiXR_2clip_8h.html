@@ -96,16 +96,18 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="DeodhaiXR_2clip_8h__dep__incl.png" border="0" usemap="#aXenevaOS_2Process_2DeodhaiXR_2clip_8hdep" alt=""/></div>
 <map name="aXenevaOS_2Process_2DeodhaiXR_2clip_8hdep" id="aXenevaOS_2Process_2DeodhaiXR_2clip_8hdep">
-<area shape="rect" title=" " alt="" coords="231,5,432,45"/>
-<area shape="rect" href="DeodhaiXR_2clip_8cpp.html" title=" " alt="" coords="5,93,207,133"/>
-<area shape="poly" title=" " alt="" coords="270,53,156,96,154,91,268,48"/>
-<area shape="rect" href="compose_8h.html" title=" " alt="" coords="231,93,432,133"/>
-<area shape="poly" title=" " alt="" coords="334,59,334,93,329,93,329,59"/>
-<area shape="rect" href="Process_2DeodhaiXR_2main_8cpp.html" title=" " alt="" coords="369,181,571,221"/>
-<area shape="poly" title=" " alt="" coords="396,50,423,68,447,92,459,114,467,138,473,181,467,182,462,139,454,116,443,95,420,72,393,54"/>
-<area shape="rect" href="compose_8cpp.html" title=" " alt="" coords="144,181,345,221"/>
-<area shape="poly" title=" " alt="" coords="304,145,266,183,262,179,301,141"/>
-<area shape="poly" title=" " alt="" coords="375,138,441,179,438,184,372,143"/>
+<area shape="rect" title=" " alt="" coords="253,5,455,45"/>
+<area shape="rect" href="DeodhaiXR_2clip_8cpp.html" title=" " alt="" coords="28,93,229,133"/>
+<area shape="poly" title=" " alt="" coords="293,53,179,96,177,91,291,48"/>
+<area shape="rect" href="compose_8h.html" title=" " alt="" coords="253,93,455,133"/>
+<area shape="poly" title=" " alt="" coords="357,59,357,93,351,93,351,59"/>
+<area shape="rect" href="Process_2DeodhaiXR_2main_8cpp.html" title=" " alt="" coords="456,181,657,221"/>
+<area shape="poly" title=" " alt="" coords="407,50,439,69,469,91,513,137,546,179,542,183,509,140,466,95,436,73,404,54"/>
+<area shape="rect" href="compose_8cpp.html" title=" " alt="" coords="5,181,207,221"/>
+<area shape="poly" title=" " alt="" coords="287,140,161,184,159,179,286,135"/>
+<area shape="rect" href="compose3d_8cpp.html" title=" " alt="" coords="231,181,432,221"/>
+<area shape="poly" title=" " alt="" coords="348,147,339,182,334,180,343,146"/>
+<area shape="poly" title=" " alt="" coords="412,136,513,179,511,184,410,141"/>
 </map>
 </div>
 </div>
@@ -193,6 +195,19 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+<p>int r_count = *count;</p>
+<p>Rect subcopy; subcopy.x = sub_rect-&gt;x; subcopy.y = sub_rect-&gt;y; subcopy.w = sub_rect-&gt;w; subcopy.h = sub_rect-&gt;h;</p>
+<p>if (RectGetLeft(cut_rect) &gt;= RectGetLeft(&amp;subcopy) &amp;&amp; RectGetLeft(cut_rect) &lt;= RectGetRight(&amp;subcopy)) { Rect r; memcpy(&amp;r, &amp;subcopy, sizeof(Rect)); int top = RectSetTop(&amp;r, RectGetTop(&amp;subcopy)); int left = RectSetLeft(&amp;r, RectGetLeft(&amp;subcopy)); int bottom = RectSetBottom(&amp;r, RectGetBottom(&amp;subcopy)); int right = RectSetRight(&amp;r, RectGetLeft(cut_rect));</p>
+<p>list[r_count].x = left; list[r_count].y = top; list[r_count].w = right - left; list[r_count].h = bottom - top; r_count++;</p>
+<p>int n_l = RectSetLeft(&amp;subcopy, RectGetLeft(cut_rect)); subcopy.x = n_l; }</p>
+<p>if (RectGetTop(cut_rect) &gt;= RectGetTop(&amp;subcopy) &amp;&amp; RectGetTop(cut_rect) &lt;= RectGetBottom(&amp;subcopy)) { Rect r; memcpy(&amp;r, &amp;subcopy, sizeof(Rect)); int top = RectSetTop(&amp;r, RectGetTop(&amp;subcopy)); int left = RectSetLeft(&amp;r, RectGetLeft(&amp;subcopy)); int bottom = RectSetBottom(&amp;r, RectGetTop(cut_rect)); int right = RectSetRight(&amp;r, RectGetRight(&amp;subcopy));</p>
+<p>list[r_count].x = left; list[r_count].y = top; list[r_count].w = right - left; list[r_count].h = bottom - top; r_count++; int n_t = RectSetTop(&amp;subcopy, RectGetTop(cut_rect)); subcopy.y = n_t; }</p>
+<p>if (RectGetRight(cut_rect) &gt;= RectGetLeft(&amp;subcopy) &amp;&amp; RectGetRight(cut_rect) &lt; RectGetRight(&amp;subcopy)) { Rect r; memcpy(&amp;r, &amp;subcopy, sizeof(Rect)); int top = RectSetTop(&amp;r, RectGetTop(&amp;subcopy)); int left = RectSetLeft(&amp;r, RectGetRight(cut_rect)); int bottom = RectSetBottom(&amp;r, RectGetBottom(&amp;subcopy)); int right = RectSetRight(&amp;r, RectGetRight(&amp;subcopy));</p>
+<p>list[r_count].x = left; list[r_count].y = top; list[r_count].w = right - left; list[r_count].h = bottom - top; r_count++;</p>
+<p>RectSetRight(&amp;subcopy, RectGetRight(cut_rect)); }</p>
+<p>if (RectGetBottom(cut_rect) &gt;= RectGetTop(&amp;subcopy) &amp;&amp; RectGetBottom(cut_rect) &lt;= RectGetBottom(&amp;subcopy)) { Rect r; memcpy(&amp;r, &amp;subcopy, sizeof(Rect)); int top = RectSetTop(&amp;r, RectGetBottom(cut_rect)); int left = RectSetLeft(&amp;r, RectGetLeft(&amp;subcopy)); int bottom = RectSetBottom(&amp;r, RectGetBottom(&amp;subcopy)); int right = RectSetRight(&amp;r, RectGetRight(&amp;subcopy));</p>
+<p>list[r_count].x = left; list[r_count].y = top; list[r_count].w = right - left; list[r_count].h = bottom - top; r_count++; RectSetBottom(&amp;subcopy, RectGetBottom(cut_rect)); }</p>
+<p>count = r_count;</p>
 
 </div>
 </div>

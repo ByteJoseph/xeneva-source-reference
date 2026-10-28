@@ -123,7 +123,7 @@ Classes</h2></td></tr>
 Macros</h2></td></tr>
 <tr class="memitem:a28e2ac1997a1d8645f0d9260181d1152" id="r_a28e2ac1997a1d8645f0d9260181d1152"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PciCfg2_8h.html#a28e2ac1997a1d8645f0d9260181d1152">EFI_PEI_PCI_CFG2_PPI_GUID</a>&#160;&#160;&#160;  { 0x57a449a, 0x1fdc, 0x4c06, { 0xbf, 0xc9, 0xf5, 0x3f, 0x6a, 0x99, 0xbb, 0x92 } }</td></tr>
 <tr class="separator:a28e2ac1997a1d8645f0d9260181d1152"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c8abc85e880985424760b8654471d4a" id="r_a4c8abc85e880985424760b8654471d4a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PciCfg2_8h.html#a4c8abc85e880985424760b8654471d4a">EFI_PEI_PCI_CFG_ADDRESS</a>(bus,  dev,  func,  reg)</td></tr>
+<tr class="memitem:a4c8abc85e880985424760b8654471d4a" id="r_a4c8abc85e880985424760b8654471d4a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PciCfg2_8h.html#a4c8abc85e880985424760b8654471d4a">EFI_PEI_PCI_CFG_ADDRESS</a>(bus,  <a class="el" href="drm__print_8h.html#a1572ef5e3355461e391f0d510070cd36">dev</a>,  func,  reg)</td></tr>
 <tr class="separator:a4c8abc85e880985424760b8654471d4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
@@ -191,7 +191,7 @@ Variables</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">dev, </td>
+          <td class="paramname"><a class="el" href="drm__print_8h.html#a1572ef5e3355461e391f0d510070cd36">dev</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -214,13 +214,14 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">  (<a class="code hl_typedef" href="actypes_8h.html#ab712fece103eee54554694bbc2c1a64e">UINT64</a>) ( \</div>
 <div class="line">  (((<a class="code hl_typedef" href="AArch64_2ProcessorBind_8h.html#a4a2fc3b6f740e9cca9f895579c167560">UINTN</a>) bus) &lt;&lt; 24) | \</div>
-<div class="line">  (((<a class="code hl_define" href="acefi_8h.html#a5fbbb6a3a9e225a064962c22222861d2">UINTN</a>) dev) &lt;&lt; 16) | \</div>
+<div class="line">  (((<a class="code hl_define" href="acefi_8h.html#a5fbbb6a3a9e225a064962c22222861d2">UINTN</a>) <a class="code hl_variable" href="drm__print_8h.html#a1572ef5e3355461e391f0d510070cd36">dev</a>) &lt;&lt; 16) | \</div>
 <div class="line">  (((<a class="code hl_typedef" href="AArch64_2ProcessorBind_8h.html#a4a2fc3b6f740e9cca9f895579c167560">UINTN</a>) func) &lt;&lt; 8) | \</div>
 <div class="line">  (((<a class="code hl_define" href="acefi_8h.html#a5fbbb6a3a9e225a064962c22222861d2">UINTN</a>) (reg)) &lt; 256 ? ((<a class="code hl_typedef" href="AArch64_2ProcessorBind_8h.html#a4a2fc3b6f740e9cca9f895579c167560">UINTN</a>) (reg)) : (<a class="code hl_typedef" href="actypes_8h.html#ab712fece103eee54554694bbc2c1a64e">UINT64</a>) (<a class="code hl_function" href="BaseLib_8h.html#ac11f862556922e955f34819af35148af">LShiftU64</a> ((<a class="code hl_typedef" href="actypes_8h.html#ab712fece103eee54554694bbc2c1a64e">UINT64</a>) (reg), 32))))</div>
 <div class="ttc" id="aAArch64_2ProcessorBind_8h_html_a4a2fc3b6f740e9cca9f895579c167560"><div class="ttname"><a href="AArch64_2ProcessorBind_8h.html#a4a2fc3b6f740e9cca9f895579c167560">UINTN</a></div><div class="ttdeci">UINT64 UINTN</div><div class="ttdef"><b>Definition</b> ProcessorBind.h:118</div></div>
 <div class="ttc" id="aBaseLib_8h_html_ac11f862556922e955f34819af35148af"><div class="ttname"><a href="BaseLib_8h.html#ac11f862556922e955f34819af35148af">LShiftU64</a></div><div class="ttdeci">UINT64 EFIAPI LShiftU64(IN UINT64 Operand, IN UINTN Count)</div></div>
 <div class="ttc" id="aacefi_8h_html_a5fbbb6a3a9e225a064962c22222861d2"><div class="ttname"><a href="acefi_8h.html#a5fbbb6a3a9e225a064962c22222861d2">UINTN</a></div><div class="ttdeci">#define UINTN</div><div class="ttdef"><b>Definition</b> acefi.h:222</div></div>
 <div class="ttc" id="aactypes_8h_html_ab712fece103eee54554694bbc2c1a64e"><div class="ttname"><a href="actypes_8h.html#ab712fece103eee54554694bbc2c1a64e">UINT64</a></div><div class="ttdeci">COMPILER_DEPENDENT_UINT64 UINT64</div><div class="ttdef"><b>Definition</b> actypes.h:239</div></div>
+<div class="ttc" id="adrm__print_8h_html_a1572ef5e3355461e391f0d510070cd36"><div class="ttname"><a href="drm__print_8h.html#a1572ef5e3355461e391f0d510070cd36">dev</a></div><div class="ttdeci">const struct device * dev</div><div class="ttdef"><b>Definition</b> drm_print.h:519</div></div>
 </div><!-- fragment -->
 </div>
 </div>

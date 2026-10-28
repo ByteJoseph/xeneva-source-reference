@@ -113,7 +113,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment"> * silently re-enable interrupts that the acquire disabled.</span></div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#include &lt;<a class="code" href="kernel_8h.html">linux/kernel.h</a>&gt;</span>   <span class="comment">/* spinlock_t, spin_lock_init, irqsave pair */</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#include &lt;linux/kernel.h&gt;</span>   <span class="comment">/* spinlock_t, spin_lock_init, irqsave pair */</span></div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#include &lt;<a class="code" href="cleanup_8h.html">linux/cleanup.h</a>&gt;</span></div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="linux_2spinlock_8h.html#a944ce97e10c9b9f3ee673e248d727ca9">   36</a></span><span class="preprocessor">#define spin_lock(l)         do {} while (0)</span></div>
@@ -182,80 +182,136 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="linux_2spinlock_8h.html#a96484998f3c7880367e52928536ee815">   99</a></span><span class="preprocessor">#define DEFINE_SPINLOCK(name) spinlock_t name = 0</span></div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><span class="comment"> * cpu_relax() -- the &quot;I am spinning, back off&quot; hint. virtio_console.c:563 and</span></div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="comment"> * :638 sit in loops that poll a virtqueue for a reply.</span></div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="comment"> * mainline puts it in &lt;asm/processor.h&gt; as a `yield`/`wfe`; DCL has no</span></div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="comment"> * sleeping scheduler to yield to (schedule() is mdelay(1), kernel.h) and no</span></div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="comment"> * WFE to issue against a hypervisor that may never signal, so there is no</span></div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="comment"> * instruction for the hint to map onto. The macro discards its (absent)</span></div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="comment"> * argument the way spin_lock() discards its lock above: the loop still reads</span></div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="comment"> * as a spin, and the busy-wait is unchanged from what the code does today.</span></div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="linux_2spinlock_8h.html#a89af7a9ebf21399bcbd8e892b6f3d41a">  112</a></span><span class="preprocessor">#define cpu_relax() ((void)0)</span></div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno"><a class="line" href="linux_2spinlock_8h.html#a9409a6bdf73865a6e18ea7e491c6dec3">  113</a></span><span class="preprocessor">#define raw_spin_lock_irqsave(l, f) do { (f) = 0; } while (0)</span></div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno"><a class="line" href="linux_2spinlock_8h.html#aeea8db54b178eec61533fa35d7db9136">  114</a></span><span class="preprocessor">#define raw_spin_unlock_irqrestore(l, f) do {} while (0)</span></div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="comment"> * spin_trylock_irqsave(lock, flags) -- try the lock, and set flags either way.</span></div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span><span class="comment"> * It has to be a macro, not a function: the call site is</span></div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="comment"> * `spin_trylock_irqsave(&amp;up-&gt;lock, *flags)` (serial_core.h:1005), where</span></div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span><span class="comment"> * `flags` arrives as a *value* that the macro is expected to assign into the</span></div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span><span class="comment"> * caller&#39;s lvalue and whose success boolean is the macro&#39;s value.  A function</span></div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span><span class="comment"> * could take a pointer and return the boolean, but it could not reproduce</span></div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span><span class="comment"> * that spelling -- and the spelling is mainline&#39;s, not DCL&#39;s to change.</span></div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span><span class="comment"> * Statement expression, so it can both assign and yield.  mainline&#39;s</span></div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span><span class="comment"> * implementation saves the interrupt flags first and restores them on</span></div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span><span class="comment"> * failure; DCL&#39;s spin_lock_irqsave() sets flags to 0 and does not touch</span></div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span><span class="comment"> * interrupt state at all (the header&#39;s own note), so saving means recording</span></div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span><span class="comment"> * 0, and the matching restore in uart_port_trylock_irqsave()&#39;s failure arm is</span></div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span><span class="comment"> * a no-op too.  Returning spin_trylock(l) -- which is `(1)` -- keeps the</span></div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span><span class="comment"> * &quot;lock acquired&quot; answer true, which is the only thing the caller branches on.</span></div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span><span class="comment"> */</span></div>
-<div class="foldopen" id="foldopen00134" data-start="" data-end="">
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno"><a class="line" href="linux_2spinlock_8h.html#ab8462ea96032c81f9903af38fe8879fa">  134</a></span><span class="preprocessor">#define spin_trylock_irqsave(l, f)\</span></div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span><span class="preprocessor">    ({ (f) = 0; spin_trylock(l); })</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><span class="comment"> * __SPIN_LOCK_UNLOCKED(lockname) -- the static initialiser, the spelling a</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="comment"> * file-scope struct field needs where DEFINE_SPINLOCK&#39;s `name = 0` cannot be</span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="comment"> * used. Two consumers, both struct members rather than objects:</span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="comment"> *     xarray.h:308   .xa_lock = __SPIN_LOCK_UNLOCKED(name.xa_lock)</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="comment"> *     seqlock.h:809  .lock =    __SPIN_LOCK_UNLOCKED(lockname)</span></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="comment"> * Neither existed here until drm_drv.c:65 expanded DEFINE_XARRAY_ALLOC()</span></div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="comment"> * (drm_minors_xa, the minor-number allocator). Undeclared, the token reads as</span></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="comment"> * an implicit int function call inside a static initialiser, and clang reports</span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="comment"> * &quot;initializer element is not a compile-time constant&quot; at the *declaration* --</span></div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span><span class="comment"> * a message that never mentions __SPIN_LOCK_UNLOCKED, so the missing name is</span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span><span class="comment"> * only findable by expanding the macro by hand.</span></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="comment"> * mainline&#39;s is a typeof() cast over a brace initialiser carrying the arch</span></div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="comment"> * unlock value, lockdep maps and debug fields. None of that has a referent:</span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span><span class="comment"> * spinlock_t is an int (kernel.h:43) and every lock operation is a no-op, so</span></div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span><span class="comment"> * the lock starts unlocked by having no other state to start in. `{ 0 }`</span></div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="comment"> * rather than `0` because the context is an initialiser for a struct member</span></div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span><span class="comment"> * and braced is what the other two initialisers in XARRAY_INIT spell.</span></div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span><span class="comment"> * The argument is dropped, not expanded -- callers pass an lvalue (an</span></div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span><span class="comment"> * existing lock, or a field of the object being defined) and evaluating it</span></div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span><span class="comment"> * during its own initialisation would be a read of an object not yet</span></div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span><span class="comment"> * complete.</span></div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span><span class="preprocessor">#ifndef __SPIN_LOCK_UNLOCKED</span></div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno"><a class="line" href="linux_2spinlock_8h.html#ab984dd2643420177a4f2a42064a553aa">  129</a></span><span class="preprocessor">#define __SPIN_LOCK_UNLOCKED(lockname) { 0 }</span></div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span><span class="comment"> * cpu_relax() -- the &quot;I am spinning, back off&quot; hint. virtio_console.c:563 and</span></div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span><span class="comment"> * :638 sit in loops that poll a virtqueue for a reply.</span></div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span><span class="comment"> * mainline puts it in &lt;asm/processor.h&gt; as a `yield`/`wfe`; DCL has no</span></div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span><span class="comment"> * sleeping scheduler to yield to (schedule() is mdelay(1), kernel.h) and no</span></div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span><span class="comment"> * WFE to issue against a hypervisor that may never signal, so there is no</span></div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span><span class="comment"> * instruction for the hint to map onto. The macro discards its (absent)</span></div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span><span class="comment"> * argument the way spin_lock() discards its lock above: the loop still reads</span></div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span><span class="comment"> * as a spin, and the busy-wait is unchanged from what the code does today.</span></div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno"><a class="line" href="linux_2spinlock_8h.html#a89af7a9ebf21399bcbd8e892b6f3d41a">  143</a></span><span class="preprocessor">#define cpu_relax() ((void)0)</span></div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno"><a class="line" href="linux_2spinlock_8h.html#a9409a6bdf73865a6e18ea7e491c6dec3">  144</a></span><span class="preprocessor">#define raw_spin_lock_irqsave(l, f) do { (f) = 0; } while (0)</span></div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno"><a class="line" href="linux_2spinlock_8h.html#aeea8db54b178eec61533fa35d7db9136">  145</a></span><span class="preprocessor">#define raw_spin_unlock_irqrestore(l, f) do {} while (0)</span></div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span> </div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span><span class="comment"> * spin_trylock_irqsave(lock, flags) -- try the lock, and set flags either way.</span></div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span><span class="comment"> * It has to be a macro, not a function: the call site is</span></div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span><span class="comment"> * `spin_trylock_irqsave(&amp;up-&gt;lock, *flags)` (serial_core.h:1005), where</span></div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span><span class="comment"> * `flags` arrives as a *value* that the macro is expected to assign into the</span></div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span><span class="comment"> * caller&#39;s lvalue and whose success boolean is the macro&#39;s value.  A function</span></div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span><span class="comment"> * could take a pointer and return the boolean, but it could not reproduce</span></div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span><span class="comment"> * that spelling -- and the spelling is mainline&#39;s, not DCL&#39;s to change.</span></div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span><span class="comment"> * Statement expression, so it can both assign and yield.  mainline&#39;s</span></div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span><span class="comment"> * implementation saves the interrupt flags first and restores them on</span></div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span><span class="comment"> * failure; DCL&#39;s spin_lock_irqsave() sets flags to 0 and does not touch</span></div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span><span class="comment"> * interrupt state at all (the header&#39;s own note), so saving means recording</span></div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span><span class="comment"> * 0, and the matching restore in uart_port_trylock_irqsave()&#39;s failure arm is</span></div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span><span class="comment"> * a no-op too.  Returning spin_trylock(l) -- which is `(1)` -- keeps the</span></div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span><span class="comment"> * &quot;lock acquired&quot; answer true, which is the only thing the caller branches on.</span></div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span><span class="comment"> */</span></div>
+<div class="foldopen" id="foldopen00165" data-start="" data-end="">
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno"><a class="line" href="linux_2spinlock_8h.html#ab8462ea96032c81f9903af38fe8879fa">  165</a></span><span class="preprocessor">#define spin_trylock_irqsave(l, f)\</span></div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span><span class="preprocessor">    ({ (f) = 0; spin_trylock(l); })</span></div>
 </div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span><span class="comment">/* Half of the irqsave pair, as a callable (see the note above). The (void)</span></div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span><span class="comment"> * casts are because kernel.h&#39;s macros discard both arguments -- with -Wextra</span></div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span><span class="comment"> * that would warn on every file that includes this header. */</span></div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> dcl_spin_lock_irqsave(<a class="code hl_typedef" href="kernel_8h.html#ae8229571968ef273d771ad747e87450b">spinlock_t</a>* l)</div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>{</div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <a class="code hl_variable" href="Drivers_2virtio_8h.html#aa2585d779da0ab21273a8d92de9a0ebe">flags</a> = 0;</div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>    (void)l;</div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>    <a class="code hl_define" href="kernel_8h.html#ab6e89fe2f58639618f24b36ff7235a30">spin_lock_irqsave</a>(l, <a class="code hl_variable" href="Drivers_2virtio_8h.html#aa2585d779da0ab21273a8d92de9a0ebe">flags</a>);</div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>    (void)<a class="code hl_variable" href="Drivers_2virtio_8h.html#aa2585d779da0ab21273a8d92de9a0ebe">flags</a>;</div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>}</div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span> </div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> dcl_spin_unlock_irqrestore(<a class="code hl_typedef" href="kernel_8h.html#ae8229571968ef273d771ad747e87450b">spinlock_t</a>* l)</div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>{</div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <a class="code hl_variable" href="Drivers_2virtio_8h.html#aa2585d779da0ab21273a8d92de9a0ebe">flags</a> = 0;</div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>    (void)l;</div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    <a class="code hl_define" href="kernel_8h.html#ab5bcef0843d61463db30243f81eb1c69">spin_unlock_irqrestore</a>(l, <a class="code hl_variable" href="Drivers_2virtio_8h.html#aa2585d779da0ab21273a8d92de9a0ebe">flags</a>);</div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>    (void)<a class="code hl_variable" href="Drivers_2virtio_8h.html#aa2585d779da0ab21273a8d92de9a0ebe">flags</a>;</div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>}</div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span> </div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span><span class="comment">/* The three classes 8250_port.c, serial_core.c, n_tty.c and tty_io.c name. */</span></div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno"><a class="line" href="linux_2spinlock_8h.html#a0cf1f0d3a3bfbb5ea58d591b338d32fb">  157</a></span><a class="code hl_define" href="cleanup_8h.html#a86afaa7c27a5ab2aecb6f2217c39a067">DCL_LOCK_GUARD</a>(spinlock, <a class="code hl_typedef" href="kernel_8h.html#ae8229571968ef273d771ad747e87450b">spinlock_t</a>, <a class="code hl_define" href="linux_2spinlock_8h.html#a944ce97e10c9b9f3ee673e248d727ca9">spin_lock</a>(_T), <a class="code hl_define" href="linux_2spinlock_8h.html#ab285f62c3a29b71e97d683e6b9c6b593">spin_unlock</a>(_T))</div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno"><a class="line" href="linux_2spinlock_8h.html#a1da8f49282da3021fb5d6aa77f0e310e">  158</a></span><a class="code hl_define" href="cleanup_8h.html#a86afaa7c27a5ab2aecb6f2217c39a067">DCL_LOCK_GUARD</a>(spinlock_irq, <a class="code hl_typedef" href="kernel_8h.html#ae8229571968ef273d771ad747e87450b">spinlock_t</a>, <a class="code hl_define" href="linux_2spinlock_8h.html#af085da8432f14e6a2fc26cd877a8e082">spin_lock_irq</a>(_T), <a class="code hl_define" href="linux_2spinlock_8h.html#afca8e3ff5bcfad0c986197e95f801b7f">spin_unlock_irq</a>(_T))</div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span><a class="code hl_define" href="cleanup_8h.html#a86afaa7c27a5ab2aecb6f2217c39a067">DCL_LOCK_GUARD</a>(spinlock_irqsave, <a class="code hl_typedef" href="kernel_8h.html#ae8229571968ef273d771ad747e87450b">spinlock_t</a>,</div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno"><a class="line" href="linux_2spinlock_8h.html#aece54b236fcbf11e7cbebfbd0fa99dbf">  160</a></span>        dcl_spin_lock_irqsave(_T), dcl_spin_unlock_irqrestore(_T))</div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span> </div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span><span class="preprocessor">#endif </span><span class="comment">/* __LINUX_SPINLOCK_H__ */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="aDrivers_2virtio_8h_html_aa2585d779da0ab21273a8d92de9a0ebe"><div class="ttname"><a href="Drivers_2virtio_8h.html#aa2585d779da0ab21273a8d92de9a0ebe">flags</a></div><div class="ttdeci">uint8_t flags</div><div class="ttdef"><b>Definition</b> virtio.h:0</div></div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span> </div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span><span class="comment">/* Half of the irqsave pair, as a callable (see the note above). The (void)</span></div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span><span class="comment"> * casts are because kernel.h&#39;s macros discard both arguments -- with -Wextra</span></div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span><span class="comment"> * that would warn on every file that includes this header. */</span></div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> dcl_spin_lock_irqsave(<a class="code hl_typedef" href="linux_2kernel_8h.html#ae8229571968ef273d771ad747e87450b">spinlock_t</a>* l)</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>{</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <a class="code hl_variable" href="Drivers_2virtio_8h.html#a04a0bd666e371f3fab92b8d0ef5dbdb0">flags</a> = 0;</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>    (void)l;</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>    <a class="code hl_define" href="linux_2kernel_8h.html#ab6e89fe2f58639618f24b36ff7235a30">spin_lock_irqsave</a>(l, <a class="code hl_variable" href="Drivers_2virtio_8h.html#a04a0bd666e371f3fab92b8d0ef5dbdb0">flags</a>);</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>    (void)<a class="code hl_variable" href="Drivers_2virtio_8h.html#a04a0bd666e371f3fab92b8d0ef5dbdb0">flags</a>;</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>}</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span> </div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> dcl_spin_unlock_irqrestore(<a class="code hl_typedef" href="linux_2kernel_8h.html#ae8229571968ef273d771ad747e87450b">spinlock_t</a>* l)</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>{</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <a class="code hl_variable" href="Drivers_2virtio_8h.html#a04a0bd666e371f3fab92b8d0ef5dbdb0">flags</a> = 0;</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>    (void)l;</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>    <a class="code hl_define" href="linux_2kernel_8h.html#ab5bcef0843d61463db30243f81eb1c69">spin_unlock_irqrestore</a>(l, <a class="code hl_variable" href="Drivers_2virtio_8h.html#a04a0bd666e371f3fab92b8d0ef5dbdb0">flags</a>);</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>    (void)<a class="code hl_variable" href="Drivers_2virtio_8h.html#a04a0bd666e371f3fab92b8d0ef5dbdb0">flags</a>;</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>}</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span> </div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span><span class="comment">/* The three classes 8250_port.c, serial_core.c, n_tty.c and tty_io.c name. */</span></div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno"><a class="line" href="linux_2spinlock_8h.html#a0cf1f0d3a3bfbb5ea58d591b338d32fb">  188</a></span><a class="code hl_define" href="cleanup_8h.html#a86afaa7c27a5ab2aecb6f2217c39a067">DCL_LOCK_GUARD</a>(spinlock, <a class="code hl_typedef" href="linux_2kernel_8h.html#ae8229571968ef273d771ad747e87450b">spinlock_t</a>, <a class="code hl_define" href="linux_2spinlock_8h.html#a944ce97e10c9b9f3ee673e248d727ca9">spin_lock</a>(_T), <a class="code hl_define" href="linux_2spinlock_8h.html#ab285f62c3a29b71e97d683e6b9c6b593">spin_unlock</a>(_T))</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno"><a class="line" href="linux_2spinlock_8h.html#a1da8f49282da3021fb5d6aa77f0e310e">  189</a></span><a class="code hl_define" href="cleanup_8h.html#a86afaa7c27a5ab2aecb6f2217c39a067">DCL_LOCK_GUARD</a>(spinlock_irq, <a class="code hl_typedef" href="linux_2kernel_8h.html#ae8229571968ef273d771ad747e87450b">spinlock_t</a>, <a class="code hl_define" href="linux_2spinlock_8h.html#af085da8432f14e6a2fc26cd877a8e082">spin_lock_irq</a>(_T), <a class="code hl_define" href="linux_2spinlock_8h.html#afca8e3ff5bcfad0c986197e95f801b7f">spin_unlock_irq</a>(_T))</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span><a class="code hl_define" href="cleanup_8h.html#a86afaa7c27a5ab2aecb6f2217c39a067">DCL_LOCK_GUARD</a>(spinlock_irqsave, <a class="code hl_typedef" href="linux_2kernel_8h.html#ae8229571968ef273d771ad747e87450b">spinlock_t</a>,</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno"><a class="line" href="linux_2spinlock_8h.html#aece54b236fcbf11e7cbebfbd0fa99dbf">  191</a></span>        dcl_spin_lock_irqsave(_T), dcl_spin_unlock_irqrestore(_T))</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span> </div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span><span class="comment"> * seqlock.h instantiates seqcount variants named over raw_spinlock_t,</span></div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span><span class="comment"> * spinlock_t, rwlock_t and struct mutex.  DCL has exactly one lock flavour</span></div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span><span class="comment"> * (an int), so the other three spellings alias it; the seqcount bodies only</span></div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span><span class="comment"> * ever store the pointer, they never take the lock.</span></div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>typedef <a class="code hl_typedef" href="linux_2kernel_8h.html#ae8229571968ef273d771ad747e87450b">spinlock_t</a> raw_spinlock_t;</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno"><a class="line" href="linux_2spinlock_8h.html#ada70ef94c1e9d35b9c5351e84aa093a9">  200</a></span>typedef <a class="code hl_typedef" href="linux_2kernel_8h.html#ae8229571968ef273d771ad747e87450b">spinlock_t</a> <a class="code hl_typedef" href="linux_2spinlock_8h.html#ada70ef94c1e9d35b9c5351e84aa093a9">rwlock_t</a>;</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span> </div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span><span class="comment"> * struct raw_spinlock -- the *type*, which drm_mode_config.h:501 embeds by</span></div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span><span class="comment"> * value in `panic_lock`.  mainline&#39;s holds an arch spinlock, a magic, a</span></div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span><span class="comment"> * waiter list and lockdep state; here the type exists to be a field, and</span></div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span><span class="comment"> * nothing locks through it (raw_spin_lock_* above are macros that never look</span></div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span><span class="comment"> * at their argument).  One int, so a `struct raw_spinlock` costs what the</span></div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span><span class="comment"> * int it stands in for does.</span></div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span><span class="comment"> */</span></div>
+<div class="foldopen" id="foldopen00210" data-start="{" data-end="};">
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno"><a class="line" href="structraw__spinlock.html">  210</a></span>struct <a class="code hl_struct" href="structraw__spinlock.html">raw_spinlock</a> {</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno"><a class="line" href="structraw__spinlock.html#afdf632f0ee0dd4c92c9c7a4cbc12f7a4">  211</a></span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="structraw__spinlock.html#afdf632f0ee0dd4c92c9c7a4cbc12f7a4">rlock</a>;</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>};</div>
+</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span> </div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span><span class="preprocessor">#endif </span><span class="comment">/* __LINUX_SPINLOCK_H__ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="aDrivers_2virtio_8h_html_a04a0bd666e371f3fab92b8d0ef5dbdb0"><div class="ttname"><a href="Drivers_2virtio_8h.html#a04a0bd666e371f3fab92b8d0ef5dbdb0">flags</a></div><div class="ttdeci">uint8_t flags</div><div class="ttdef"><b>Definition</b> virtio.h:0</div></div>
 <div class="ttc" id="acleanup_8h_html"><div class="ttname"><a href="cleanup_8h.html">cleanup.h</a></div></div>
-<div class="ttc" id="acleanup_8h_html_a86afaa7c27a5ab2aecb6f2217c39a067"><div class="ttname"><a href="cleanup_8h.html#a86afaa7c27a5ab2aecb6f2217c39a067">DCL_LOCK_GUARD</a></div><div class="ttdeci">#define DCL_LOCK_GUARD(name, type, acquire, release)</div><div class="ttdef"><b>Definition</b> cleanup.h:101</div></div>
-<div class="ttc" id="akernel_8h_html"><div class="ttname"><a href="kernel_8h.html">kernel.h</a></div></div>
-<div class="ttc" id="akernel_8h_html_ab5bcef0843d61463db30243f81eb1c69"><div class="ttname"><a href="kernel_8h.html#ab5bcef0843d61463db30243f81eb1c69">spin_unlock_irqrestore</a></div><div class="ttdeci">#define spin_unlock_irqrestore(l, f)</div><div class="ttdef"><b>Definition</b> kernel.h:185</div></div>
-<div class="ttc" id="akernel_8h_html_ab6e89fe2f58639618f24b36ff7235a30"><div class="ttname"><a href="kernel_8h.html#ab6e89fe2f58639618f24b36ff7235a30">spin_lock_irqsave</a></div><div class="ttdeci">#define spin_lock_irqsave(l, f)</div><div class="ttdef"><b>Definition</b> kernel.h:184</div></div>
-<div class="ttc" id="akernel_8h_html_ae8229571968ef273d771ad747e87450b"><div class="ttname"><a href="kernel_8h.html#ae8229571968ef273d771ad747e87450b">spinlock_t</a></div><div class="ttdeci">int spinlock_t</div><div class="ttdef"><b>Definition</b> kernel.h:44</div></div>
+<div class="ttc" id="acleanup_8h_html_a86afaa7c27a5ab2aecb6f2217c39a067"><div class="ttname"><a href="cleanup_8h.html#a86afaa7c27a5ab2aecb6f2217c39a067">DCL_LOCK_GUARD</a></div><div class="ttdeci">#define DCL_LOCK_GUARD(name, type, acquire, release)</div><div class="ttdef"><b>Definition</b> cleanup.h:168</div></div>
+<div class="ttc" id="alinux_2kernel_8h_html_ab5bcef0843d61463db30243f81eb1c69"><div class="ttname"><a href="linux_2kernel_8h.html#ab5bcef0843d61463db30243f81eb1c69">spin_unlock_irqrestore</a></div><div class="ttdeci">#define spin_unlock_irqrestore(l, f)</div><div class="ttdef"><b>Definition</b> kernel.h:227</div></div>
+<div class="ttc" id="alinux_2kernel_8h_html_ab6e89fe2f58639618f24b36ff7235a30"><div class="ttname"><a href="linux_2kernel_8h.html#ab6e89fe2f58639618f24b36ff7235a30">spin_lock_irqsave</a></div><div class="ttdeci">#define spin_lock_irqsave(l, f)</div><div class="ttdef"><b>Definition</b> kernel.h:226</div></div>
+<div class="ttc" id="alinux_2kernel_8h_html_ae8229571968ef273d771ad747e87450b"><div class="ttname"><a href="linux_2kernel_8h.html#ae8229571968ef273d771ad747e87450b">spinlock_t</a></div><div class="ttdeci">int spinlock_t</div><div class="ttdef"><b>Definition</b> kernel.h:44</div></div>
 <div class="ttc" id="alinux_2spinlock_8h_html_a944ce97e10c9b9f3ee673e248d727ca9"><div class="ttname"><a href="linux_2spinlock_8h.html#a944ce97e10c9b9f3ee673e248d727ca9">spin_lock</a></div><div class="ttdeci">#define spin_lock(l)</div><div class="ttdef"><b>Definition</b> spinlock.h:36</div></div>
 <div class="ttc" id="alinux_2spinlock_8h_html_ab285f62c3a29b71e97d683e6b9c6b593"><div class="ttname"><a href="linux_2spinlock_8h.html#ab285f62c3a29b71e97d683e6b9c6b593">spin_unlock</a></div><div class="ttdeci">#define spin_unlock(l)</div><div class="ttdef"><b>Definition</b> spinlock.h:37</div></div>
+<div class="ttc" id="alinux_2spinlock_8h_html_ada70ef94c1e9d35b9c5351e84aa093a9"><div class="ttname"><a href="linux_2spinlock_8h.html#ada70ef94c1e9d35b9c5351e84aa093a9">rwlock_t</a></div><div class="ttdeci">spinlock_t rwlock_t</div><div class="ttdef"><b>Definition</b> spinlock.h:200</div></div>
 <div class="ttc" id="alinux_2spinlock_8h_html_af085da8432f14e6a2fc26cd877a8e082"><div class="ttname"><a href="linux_2spinlock_8h.html#af085da8432f14e6a2fc26cd877a8e082">spin_lock_irq</a></div><div class="ttdeci">#define spin_lock_irq(l)</div><div class="ttdef"><b>Definition</b> spinlock.h:38</div></div>
 <div class="ttc" id="alinux_2spinlock_8h_html_afca8e3ff5bcfad0c986197e95f801b7f"><div class="ttname"><a href="linux_2spinlock_8h.html#afca8e3ff5bcfad0c986197e95f801b7f">spin_unlock_irq</a></div><div class="ttdeci">#define spin_unlock_irq(l)</div><div class="ttdef"><b>Definition</b> spinlock.h:39</div></div>
+<div class="ttc" id="astructraw__spinlock_html"><div class="ttname"><a href="structraw__spinlock.html">raw_spinlock</a></div><div class="ttdef"><b>Definition</b> spinlock.h:210</div></div>
+<div class="ttc" id="astructraw__spinlock_html_afdf632f0ee0dd4c92c9c7a4cbc12f7a4"><div class="ttname"><a href="structraw__spinlock.html#afdf632f0ee0dd4c92c9c7a4cbc12f7a4">raw_spinlock::rlock</a></div><div class="ttdeci">unsigned int rlock</div><div class="ttdef"><b>Definition</b> spinlock.h:211</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -85,82 +85,101 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define __LINUX_KREF_H__</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> * DCL &lt;linux/kref.h&gt; -- reference counting for tty_struct and tty_driver.</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"> * Both of those are handed around as bare pointers by tty_io.c (a cdev open</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment"> * finds a driver, a driver finds a port, a port finds a tty) and freed from</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment"> * whichever path happens to run last. kref is the contract that says &quot;last</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment"> * one out turns the lights off&quot;.</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment"> * Xeneva has no real concurrency in these paths -- &lt;linux/mutex.h&gt; records</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment"> * that plainly -- so the counter is atomic for mainline&#39;s reasons (the</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment"> * arithmetic must be indivisible on SMP) rather than because anyone here can</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment"> * actually race it. Keeping the operations atomic anyway costs a ldxr/stxr on</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"> * aarch64 and avoids a header whose semantics differ from mainline&#39;s the day</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> * the second core turns on.</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment"> * kref_get_unless_zero() is included because tty_port_get() (tty_port.h:164)</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment"> * is written around it: it must decline to take a reference on an object</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment"> * already at zero, or a hangup path resurrects a port being destroyed.</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#include &lt;<a class="code" href="atomic_8h.html">linux/atomic.h</a>&gt;</span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="foldopen" id="foldopen00026" data-start="{" data-end="};">
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="structkref.html">   26</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structkref.html">kref</a> {</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="structkref.html#a0d96318d7dd817600483f49523565ed9">   27</a></span>    <a class="code hl_struct" href="structatomic__t.html">atomic_t</a> <a class="code hl_variable" href="structkref.html#a0d96318d7dd817600483f49523565ed9">refcount</a>;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>};</div>
-</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="kref_8h.html#ac179084b2b0fbdc69e0de16f01b8c9a9">   30</a></span><span class="preprocessor">#define KREF_INIT(n) { ATOMIC_INIT(n) }</span></div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> kref_init(<span class="keyword">struct</span> <a class="code hl_struct" href="structkref.html">kref</a>* <a class="code hl_struct" href="structkref.html">kref</a>)</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>{</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    atomic_set(&amp;<a class="code hl_struct" href="structkref.html">kref</a>-&gt;<a class="code hl_variable" href="structkref.html#a0d96318d7dd817600483f49523565ed9">refcount</a>, 1);</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>}</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> kref_get(<span class="keyword">struct</span> <a class="code hl_struct" href="structkref.html">kref</a>* <a class="code hl_struct" href="structkref.html">kref</a>)</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>{</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    atomic_inc(&amp;<a class="code hl_struct" href="structkref.html">kref</a>-&gt;<a class="code hl_variable" href="structkref.html#a0d96318d7dd817600483f49523565ed9">refcount</a>);</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>}</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> * DCL &lt;linux/kref.h&gt; -- reference counting for tty_struct and tty_driver,</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment"> * and now for every drm object that embeds one.</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment"> * Both tty types are handed around as bare pointers by tty_io.c (a cdev open</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment"> * finds a driver, a driver finds a port, a port finds a tty) and freed from</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment"> * whichever path happens to run last. kref is the contract that says &quot;last</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment"> * one out turns the lights off&quot;.</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment"> * Xeneva has no real concurrency in these paths -- &lt;linux/mutex.h&gt; records</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment"> * that plainly -- so the counter is atomic for mainline&#39;s reasons (the</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment"> * arithmetic must be indivisible on SMP) rather than because anyone here can</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"> * actually race it. Keeping the operations atomic anyway costs a ldxr/stxr on</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> * aarch64 and avoids a header whose semantics differ from mainline&#39;s the day</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment"> * the second core turns on.</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment"> * The field is a refcount_t rather than the atomic_t it used to be. That was</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment"> * mainline&#39;s own change (commit &quot;kref: add refcount_t&quot;), and this tree could</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment"> * not skip it: drm_connector.c:1070 does not go through a kref helper, it</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment"> * reaches inside the struct and writes</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment"> *     if (!refcount_dec_and_test(&amp;conn-&gt;base.refcount.refcount))</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment"> * so the field has to be the type refcount_dec_and_test() takes. An</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment"> * atomic_t there would be the same width and would happen to work, but only</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment"> * by coincidence of layout -- and -Wno-error=incompatible-pointer-types is</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment"> * set for this build, so the mistake would be a warning nobody reads rather</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment"> * than a compile failure. refcount_t also buys saturation, which atomic_t</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment"> * does not have: a kref that underflows wraps to a large positive value and</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment"> * looks like a healthy object that will never be freed.</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment"> * kref_get_unless_zero() is included because tty_port_get() (tty_port.h:164)</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment"> * is written around it: it must decline to take a reference on an object</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment"> * already at zero, or a hangup path resurrects a port being destroyed. It now</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment"> * resolves to refcount_inc_not_zero(), which is mainline&#39;s spelling and adds</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment"> * the saturation check the atomic version lacked.</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">int</span> kref_get_unless_zero(<span class="keyword">struct</span> <a class="code hl_struct" href="structkref.html">kref</a>* <a class="code hl_struct" href="structkref.html">kref</a>)</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>{</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keywordflow">return</span> atomic_add_unless(&amp;<a class="code hl_struct" href="structkref.html">kref</a>-&gt;<a class="code hl_variable" href="structkref.html#a0d96318d7dd817600483f49523565ed9">refcount</a>, 1, 0);</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>}</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> kref_read(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="structkref.html">kref</a>* <a class="code hl_struct" href="structkref.html">kref</a>)</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>{</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keywordflow">return</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>)atomic_read(&amp;<a class="code hl_struct" href="structkref.html">kref</a>-&gt;<a class="code hl_variable" href="structkref.html#a0d96318d7dd817600483f49523565ed9">refcount</a>);</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>}</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment"> * kref_put_unless_zero() is deliberately absent. mainline implements it on</span></div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment"> * refcount_dec_not_one(), a primitive whose whole job is refusing to take a</span></div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment"> * count from 0 to -1; reproducing that on top of atomic_add_unless() would</span></div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment"> * need a loop, and the only call site in mainline is in a file this milestone</span></div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment"> * does not port. Add it with that caller, where the zero case can be tested.</span></div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="preprocessor">#include &lt;<a class="code" href="refcount_8h.html">linux/refcount.h</a>&gt;</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="foldopen" id="foldopen00044" data-start="{" data-end="};">
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="structkref.html">   44</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structkref.html">kref</a> {</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="structkref.html#aa477cc23513cef433f7bf0941dfc4d2d">   45</a></span>    <a class="code hl_struct" href="structrefcount__struct.html">refcount_t</a> <a class="code hl_variable" href="structkref.html#aa477cc23513cef433f7bf0941dfc4d2d">refcount</a>;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>};</div>
+</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="kref_8h.html#ac179084b2b0fbdc69e0de16f01b8c9a9">   48</a></span><span class="preprocessor">#define KREF_INIT(n) { REFCOUNT_INIT(n) }</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> kref_init(<span class="keyword">struct</span> <a class="code hl_struct" href="structkref.html">kref</a>* <a class="code hl_struct" href="structkref.html">kref</a>)</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>{</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    refcount_set(&amp;<a class="code hl_struct" href="structkref.html">kref</a>-&gt;<a class="code hl_variable" href="structkref.html#aa477cc23513cef433f7bf0941dfc4d2d">refcount</a>, 1);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>}</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> kref_get(<span class="keyword">struct</span> <a class="code hl_struct" href="structkref.html">kref</a>* <a class="code hl_struct" href="structkref.html">kref</a>)</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>{</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    refcount_inc(&amp;<a class="code hl_struct" href="structkref.html">kref</a>-&gt;<a class="code hl_variable" href="structkref.html#aa477cc23513cef433f7bf0941dfc4d2d">refcount</a>);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>}</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment"> * kref_put() -- mainline returns int (1 if this call released) because</span></div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment"> * tty_release_struct() and friends branch on it. The release function takes</span></div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment"> * the kref, so callers derive their container with container_of().</span></div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">int</span> kref_put(<span class="keyword">struct</span> <a class="code hl_struct" href="structkref.html">kref</a>* <a class="code hl_struct" href="structkref.html">kref</a>, <span class="keywordtype">void</span> (*release)(<span class="keyword">struct</span> <a class="code hl_struct" href="structkref.html">kref</a>* <a class="code hl_struct" href="structkref.html">kref</a>))</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">int</span> kref_get_unless_zero(<span class="keyword">struct</span> <a class="code hl_struct" href="structkref.html">kref</a>* <a class="code hl_struct" href="structkref.html">kref</a>)</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>{</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keywordflow">return</span> refcount_inc_not_zero(&amp;<a class="code hl_struct" href="structkref.html">kref</a>-&gt;<a class="code hl_variable" href="structkref.html#aa477cc23513cef433f7bf0941dfc4d2d">refcount</a>);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>}</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> kref_read(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="structkref.html">kref</a>* <a class="code hl_struct" href="structkref.html">kref</a>)</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>{</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keywordflow">if</span> (atomic_dec_and_test(&amp;<a class="code hl_struct" href="structkref.html">kref</a>-&gt;<a class="code hl_variable" href="structkref.html#a0d96318d7dd817600483f49523565ed9">refcount</a>)) {</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        release(<a class="code hl_struct" href="structkref.html">kref</a>);</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        <span class="keywordflow">return</span> 1;</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    }</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>}</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="preprocessor">#endif </span><span class="comment">/* __LINUX_KREF_H__ */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="aatomic_8h_html"><div class="ttname"><a href="atomic_8h.html">atomic.h</a></div></div>
-<div class="ttc" id="astructatomic__t_html"><div class="ttname"><a href="structatomic__t.html">atomic_t</a></div><div class="ttdef"><b>Definition</b> atomic.h:31</div></div>
-<div class="ttc" id="astructkref_html"><div class="ttname"><a href="structkref.html">kref</a></div><div class="ttdef"><b>Definition</b> kref.h:26</div></div>
-<div class="ttc" id="astructkref_html_a0d96318d7dd817600483f49523565ed9"><div class="ttname"><a href="structkref.html#a0d96318d7dd817600483f49523565ed9">kref::refcount</a></div><div class="ttdeci">atomic_t refcount</div><div class="ttdef"><b>Definition</b> kref.h:27</div></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keywordflow">return</span> refcount_read(&amp;<a class="code hl_struct" href="structkref.html">kref</a>-&gt;<a class="code hl_variable" href="structkref.html#aa477cc23513cef433f7bf0941dfc4d2d">refcount</a>);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>}</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="comment"> * kref_put_unless_zero() is deliberately absent. mainline implements it on</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="comment"> * refcount_dec_not_one(), a primitive whose whole job is refusing to take a</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="comment"> * count from 0 to -1. The only call site in this tree was in</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="comment"> * drm_gem_shmem_helper.c, which is not vendored (see Vendored/README.md);</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="comment"> * add both together, where the zero case can be tested against a real driver</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="comment"> * rather than against a stub.</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="comment"> * kref_put() -- mainline returns int (1 if this call released) because</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="comment"> * tty_release_struct() and friends branch on it. The release function takes</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="comment"> * the kref, so callers derive their container with container_of().</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">int</span> kref_put(<span class="keyword">struct</span> <a class="code hl_struct" href="structkref.html">kref</a>* <a class="code hl_struct" href="structkref.html">kref</a>, <span class="keywordtype">void</span> (*release)(<span class="keyword">struct</span> <a class="code hl_struct" href="structkref.html">kref</a>* <a class="code hl_struct" href="structkref.html">kref</a>))</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>{</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <span class="keywordflow">if</span> (refcount_dec_and_test(&amp;<a class="code hl_struct" href="structkref.html">kref</a>-&gt;<a class="code hl_variable" href="structkref.html#aa477cc23513cef433f7bf0941dfc4d2d">refcount</a>)) {</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        release(<a class="code hl_struct" href="structkref.html">kref</a>);</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        <span class="keywordflow">return</span> 1;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    }</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>}</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="preprocessor">#endif </span><span class="comment">/* __LINUX_KREF_H__ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="arefcount_8h_html"><div class="ttname"><a href="refcount_8h.html">refcount.h</a></div></div>
+<div class="ttc" id="astructkref_html"><div class="ttname"><a href="structkref.html">kref</a></div><div class="ttdef"><b>Definition</b> kref.h:44</div></div>
+<div class="ttc" id="astructkref_html_aa477cc23513cef433f7bf0941dfc4d2d"><div class="ttname"><a href="structkref.html#aa477cc23513cef433f7bf0941dfc4d2d">kref::refcount</a></div><div class="ttdeci">refcount_t refcount</div><div class="ttdef"><b>Definition</b> kref.h:45</div></div>
+<div class="ttc" id="astructrefcount__struct_html"><div class="ttname"><a href="structrefcount__struct.html">refcount_struct</a></div><div class="ttdef"><b>Definition</b> refcount_types.h:27</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

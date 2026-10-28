@@ -133,8 +133,8 @@ Variables</h2></td></tr>
 <tr class="separator:a928befcd1226f0765a1f139be95fa3ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>EFI NVDIMM Label Protocol Definition</p>
-<p>The EFI NVDIMM Label Protocol is used to Provides services that allow management of labels contained in a Label Storage Area that are associated with a specific NVDIMM Device Path.</p>
+<div class="textblock"><p>EFI NVDIMM <a class="el" href="structLabel.html">Label</a> Protocol Definition</p>
+<p>The EFI NVDIMM <a class="el" href="structLabel.html">Label</a> Protocol is used to Provides services that allow management of labels contained in a <a class="el" href="structLabel.html">Label</a> Storage Area that are associated with a specific NVDIMM Device Path.</p>
 <p>Copyright (c) 2017, Intel Corporation. All rights reserved.<br  />
  This program and the accompanying materials are licensed and made available under the terms and conditions of the BSD License that accompanies this distribution. The full text of the license may be found at <a href="http://opensource.org/licenses/bsd-license.php">http://opensource.org/licenses/bsd-license.php</a>.</p>
 <p>THE PROGRAM IS DISTRIBUTED UNDER THE BSD LICENSE ON AN "AS IS" BASIS, WITHOUT WARRANTIES OR REPRESENTATIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED.</p>
@@ -151,7 +151,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>When set, the complete label set is local to a single NVDIMM Label Storage Area. When clear, the complete label set is contained on multiple NVDIMM Label Storage Areas. </p>
+<p>When set, the complete label set is local to a single NVDIMM <a class="el" href="structLabel.html">Label</a> Storage Area. When clear, the complete label set is contained on multiple NVDIMM <a class="el" href="structLabel.html">Label</a> Storage Areas. </p>
 
 </div>
 </div>
@@ -285,11 +285,11 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Retrieves the Label Storage Area size and the maximum transfer size for the LabelStorageRead and LabelStorageWrite methods.</p>
+<p>Retrieves the <a class="el" href="structLabel.html">Label</a> Storage Area size and the maximum transfer size for the LabelStorageRead and LabelStorageWrite methods.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">This</td><td>A pointer to the EFI_NVDIMM_LABEL_PROTOCOL instance. </td></tr>
-    <tr><td class="paramname">SizeOfLabelStorageArea</td><td>The size of the Label Storage Area for the NVDIMM in bytes. </td></tr>
+    <tr><td class="paramname">SizeOfLabelStorageArea</td><td>The size of the <a class="el" href="structLabel.html">Label</a> Storage Area for the NVDIMM in bytes. </td></tr>
     <tr><td class="paramname">MaxTransferLength</td><td>The maximum number of bytes that can be transferred in a single call to LabelStorageRead or LabelStorageWrite.</td></tr>
   </table>
   </dd>
@@ -297,7 +297,7 @@ Variables</h2></td></tr>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">EFI_SUCCESS</td><td>The size of theLabel Storage Area and maximum transfer size returned are valid. </td></tr>
-    <tr><td class="paramname">EFI_ACCESS_DENIED</td><td>The Label Storage Area for the NVDIMM device is not currently accessible. </td></tr>
+    <tr><td class="paramname">EFI_ACCESS_DENIED</td><td>The <a class="el" href="structLabel.html">Label</a> Storage Area for the NVDIMM device is not currently accessible. </td></tr>
     <tr><td class="paramname">EFI_DEVICE_ERROR</td><td>A physical device error occurred and the data transfer failed to complete. </td></tr>
   </table>
   </dd>
@@ -316,26 +316,26 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Retrieves the label data for the requested offset and length from within the Label Storage Area for the NVDIMM.</p>
+<p>Retrieves the label data for the requested offset and length from within the <a class="el" href="structLabel.html">Label</a> Storage Area for the NVDIMM.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">This</td><td>A pointer to the EFI_NVDIMM_LABEL_PROTOCOL instance. </td></tr>
-    <tr><td class="paramname">Offset</td><td>The byte offset within the Label Storage Area to read from. </td></tr>
-    <tr><td class="paramname">TransferLength</td><td>Number of bytes to read from the Label Storage Area beginning at the byte Offset specified. A TransferLength of 0 reads no data. </td></tr>
-    <tr><td class="paramname">LabelData</td><td>The return label data read at the requested offset and length from within the Label Storage Area.</td></tr>
+    <tr><td class="paramname">Offset</td><td>The byte offset within the <a class="el" href="structLabel.html">Label</a> Storage Area to read from. </td></tr>
+    <tr><td class="paramname">TransferLength</td><td>Number of bytes to read from the <a class="el" href="structLabel.html">Label</a> Storage Area beginning at the byte Offset specified. A TransferLength of 0 reads no data. </td></tr>
+    <tr><td class="paramname">LabelData</td><td>The return label data read at the requested offset and length from within the <a class="el" href="structLabel.html">Label</a> Storage Area.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">EFI_SUCCESS</td><td>The label data from the Label Storage Area for the NVDIMM was read successfully at the specified Offset and TransferLength and LabelData contains valid data. </td></tr>
+    <tr><td class="paramname">EFI_SUCCESS</td><td>The label data from the <a class="el" href="structLabel.html">Label</a> Storage Area for the NVDIMM was read successfully at the specified Offset and TransferLength and LabelData contains valid data. </td></tr>
     <tr><td class="paramname">EFI_INVALID_PARAMETER</td><td>Any of the following are true:<ul>
 <li>Offset &gt; SizeOfLabelStorageArea reported in the LabelStorageInformation return data.</li>
 <li>Offset + TransferLength is &gt; SizeOfLabelStorageArea reported in the LabelStorageInformation return data.</li>
 <li>TransferLength is &gt; MaxTransferLength reported in the LabelStorageInformation return data. </li>
 </ul>
 </td></tr>
-    <tr><td class="paramname">EFI_ACCESS_DENIED</td><td>The Label Storage Area for the NVDIMM device is not currently accessible and labels cannot be read at this time. </td></tr>
+    <tr><td class="paramname">EFI_ACCESS_DENIED</td><td>The <a class="el" href="structLabel.html">Label</a> Storage Area for the NVDIMM device is not currently accessible and labels cannot be read at this time. </td></tr>
     <tr><td class="paramname">EFI_DEVICE_ERROR</td><td>A physical device error occurred and the data transfer failed to complete. </td></tr>
   </table>
   </dd>
@@ -354,26 +354,26 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Writes the label data for the requested offset and length in to the Label Storage Area for the NVDIMM.</p>
+<p>Writes the label data for the requested offset and length in to the <a class="el" href="structLabel.html">Label</a> Storage Area for the NVDIMM.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">This</td><td>A pointer to the EFI_NVDIMM_LABEL_PROTOCOL instance. </td></tr>
-    <tr><td class="paramname">Offset</td><td>The byte offset within the Label Storage Area to write to. </td></tr>
-    <tr><td class="paramname">TransferLength</td><td>Number of bytes to write to the Label Storage Area beginning at the byte Offset specified. A TransferLength of 0 writes no data. </td></tr>
-    <tr><td class="paramname">LabelData</td><td>The return label data write at the requested offset and length from within the Label Storage Area.</td></tr>
+    <tr><td class="paramname">Offset</td><td>The byte offset within the <a class="el" href="structLabel.html">Label</a> Storage Area to write to. </td></tr>
+    <tr><td class="paramname">TransferLength</td><td>Number of bytes to write to the <a class="el" href="structLabel.html">Label</a> Storage Area beginning at the byte Offset specified. A TransferLength of 0 writes no data. </td></tr>
+    <tr><td class="paramname">LabelData</td><td>The return label data write at the requested offset and length from within the <a class="el" href="structLabel.html">Label</a> Storage Area.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">EFI_SUCCESS</td><td>The label data from the Label Storage Area for the NVDIMM written read successfully at the specified Offset and TransferLength. </td></tr>
+    <tr><td class="paramname">EFI_SUCCESS</td><td>The label data from the <a class="el" href="structLabel.html">Label</a> Storage Area for the NVDIMM written read successfully at the specified Offset and TransferLength. </td></tr>
     <tr><td class="paramname">EFI_INVALID_PARAMETER</td><td>Any of the following are true:<ul>
 <li>Offset &gt; SizeOfLabelStorageArea reported in the LabelStorageInformation return data.</li>
 <li>Offset + TransferLength is &gt; SizeOfLabelStorageArea reported in the LabelStorageInformation return data.</li>
 <li>TransferLength is &gt; MaxTransferLength reported in the LabelStorageInformation return data. </li>
 </ul>
 </td></tr>
-    <tr><td class="paramname">EFI_ACCESS_DENIED</td><td>The Label Storage Area for the NVDIMM device is not currently accessible and labels cannot be written at this time. </td></tr>
+    <tr><td class="paramname">EFI_ACCESS_DENIED</td><td>The <a class="el" href="structLabel.html">Label</a> Storage Area for the NVDIMM device is not currently accessible and labels cannot be written at this time. </td></tr>
     <tr><td class="paramname">EFI_DEVICE_ERROR</td><td>A physical device error occurred and the data transfer failed to complete. </td></tr>
   </table>
   </dd>

@@ -115,44 +115,82 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment"> *   upstream  include/linux/property.h  (mainline v7.2)</span></div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#include &lt;<a class="code" href="BaseHdr_2linux_2errno_8h.html">linux/errno.h</a>&gt;</span>    <span class="comment">/* -ENODATA */</span></div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#include &lt;<a class="code" href="BaseHdr_2linux_2types_8h.html">linux/types.h</a>&gt;</span>    <span class="comment">/* u32 */</span></div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="keyword">struct </span><a class="code hl_struct" href="structdevice.html">device</a>;</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="keyword">struct </span>fwnode_handle;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#include &lt;<a class="code" href="BaseHdr_2linux_2types_8h.html">linux/types.h</a>&gt;</span>    <span class="comment">/* u32, u8 */</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#include &lt;<a class="code" href="BaseHdr_2linux_2list_8h.html">linux/list.h</a>&gt;</span> <span class="comment">/* struct list_head -- fwnode_handle&#39;s supplier and consumers */</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="keyword">struct </span><a class="code hl_struct" href="structdevice.html">device</a>;</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keyword">struct </span>fwnode_handle* dev_fwnode(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="structdevice.html">device</a>* dev)</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>{</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    (void)dev;</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keywordflow">return</span> <a class="code hl_define" href="actypes_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>}</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">int</span> device_property_read_u32_array(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="structdevice.html">device</a>* dev,</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>                         <span class="keyword">const</span> <span class="keywordtype">char</span>* propname,</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>                         <a class="code hl_typedef" href="kernel_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>* values,</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>                         <span class="keywordtype">size_t</span> nvalues)</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>{</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    (void)dev;</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    (void)propname;</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    (void)values;</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    (void)nvalues;</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keywordflow">return</span> -<a class="code hl_define" href="kernel_8h.html#a0030614bc864d1b24eaedd71585acc27">ENODATA</a>;</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>}</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">int</span> device_property_read_bool(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="structdevice.html">device</a>* dev,</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>                        <span class="keyword">const</span> <span class="keywordtype">char</span>* propname)</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>{</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    (void)dev;</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    (void)propname;</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>}</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="preprocessor">#endif </span><span class="comment">/* __LINUX_PROPERTY_H__ */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment"> * struct fwnode_handle -- mainline&#39;s definition, at property.h:66-73 of the</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment"> * same header. It was a forward declaration here until drm_connector.c:3492</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment"> * needed it: that line reads `connector-&gt;fwnode-&gt;secondary`, and a member</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment"> * access needs the definition, not the promise.</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment"> * All seven members are carried, not only the one that is read. A struct</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment"> * with three of them is indistinguishable from one with seven until somebody</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment"> * writes the fourth, and the write would compile and land at whatever offset</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment"> * the compiler had computed for it -- the failure an ABI pin exists to</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment"> * prevent, arriving in a file that is not pinned.</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment"> * This layout is never persisted and never crosses a boundary: there are no</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment"> * fwnodes in this kernel, so dev_fwnode() below returns NULL for every</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment"> * device and drm_connector.c:3492&#39;s comparison is always false.</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment"> */</span></div>
+<div class="foldopen" id="foldopen00056" data-start="{" data-end="};">
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="structfwnode__handle.html">   56</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structfwnode__handle.html">fwnode_handle</a> {</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="structfwnode__handle.html#a8ee51d0fa95e3a9ef024fbe11796115a">   57</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structfwnode__handle.html">fwnode_handle</a> *<a class="code hl_variable" href="structfwnode__handle.html#a8ee51d0fa95e3a9ef024fbe11796115a">secondary</a>;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="structfwnode__handle.html#a14a3e1dfdb31132e218140fca92240e7">   58</a></span>    <span class="keyword">const</span> <span class="keyword">struct </span>fwnode_operations *<a class="code hl_variable" href="structfwnode__handle.html#a14a3e1dfdb31132e218140fca92240e7">ops</a>;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="structfwnode__handle.html#ae41f5cec7f0687eeaaa5b3854c7ef560">   59</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structdevice.html">device</a> *<a class="code hl_variable" href="structfwnode__handle.html#ae41f5cec7f0687eeaaa5b3854c7ef560">dev</a>;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="structfwnode__handle.html#a300156cbbf4a5bb90d1cdaea8d551736">   60</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structlist__head.html">list_head</a> <a class="code hl_variable" href="structfwnode__handle.html#a300156cbbf4a5bb90d1cdaea8d551736">supplier</a>;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="structfwnode__handle.html#aee35b809ec3e035296e3f4447e40320b">   61</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structlist__head.html">list_head</a> <a class="code hl_variable" href="structfwnode__handle.html#aee35b809ec3e035296e3f4447e40320b">consumers</a>;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="structfwnode__handle.html#a3e0c904bca6b9e320effe1b57582587b">   62</a></span>    <a class="code hl_typedef" href="linux_2kernel_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> <a class="code hl_variable" href="structfwnode__handle.html#a3e0c904bca6b9e320effe1b57582587b">flags</a>;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>};</div>
+</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keyword">struct </span><a class="code hl_struct" href="structfwnode__handle.html">fwnode_handle</a>* dev_fwnode(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="structdevice.html">device</a>* <a class="code hl_variable" href="drm__print_8h.html#a1572ef5e3355461e391f0d510070cd36">dev</a>)</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>{</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    (void)<a class="code hl_variable" href="drm__print_8h.html#a1572ef5e3355461e391f0d510070cd36">dev</a>;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="keywordflow">return</span> <a class="code hl_define" href="actypes_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>}</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">int</span> device_property_read_u32_array(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="structdevice.html">device</a>* <a class="code hl_variable" href="drm__print_8h.html#a1572ef5e3355461e391f0d510070cd36">dev</a>,</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>                         <span class="keyword">const</span> <span class="keywordtype">char</span>* propname,</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>                         <a class="code hl_typedef" href="linux_2kernel_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>* values,</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>                         <span class="keywordtype">size_t</span> nvalues)</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>{</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    (void)<a class="code hl_variable" href="drm__print_8h.html#a1572ef5e3355461e391f0d510070cd36">dev</a>;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    (void)propname;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    (void)values;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    (void)nvalues;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="keywordflow">return</span> -<a class="code hl_define" href="linux_2kernel_8h.html#a0030614bc864d1b24eaedd71585acc27">ENODATA</a>;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>}</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">int</span> device_property_read_bool(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="structdevice.html">device</a>* <a class="code hl_variable" href="drm__print_8h.html#a1572ef5e3355461e391f0d510070cd36">dev</a>,</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>                        <span class="keyword">const</span> <span class="keywordtype">char</span>* propname)</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>{</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    (void)<a class="code hl_variable" href="drm__print_8h.html#a1572ef5e3355461e391f0d510070cd36">dev</a>;</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    (void)propname;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>}</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="preprocessor">#endif </span><span class="comment">/* __LINUX_PROPERTY_H__ */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="aBaseHdr_2linux_2errno_8h_html"><div class="ttname"><a href="BaseHdr_2linux_2errno_8h.html">errno.h</a></div></div>
+<div class="ttc" id="aBaseHdr_2linux_2list_8h_html"><div class="ttname"><a href="BaseHdr_2linux_2list_8h.html">list.h</a></div></div>
 <div class="ttc" id="aBaseHdr_2linux_2types_8h_html"><div class="ttname"><a href="BaseHdr_2linux_2types_8h.html">types.h</a></div></div>
 <div class="ttc" id="aactypes_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="actypes_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition</b> actypes.h:561</div></div>
-<div class="ttc" id="akernel_8h_html_a0030614bc864d1b24eaedd71585acc27"><div class="ttname"><a href="kernel_8h.html#a0030614bc864d1b24eaedd71585acc27">ENODATA</a></div><div class="ttdeci">#define ENODATA</div><div class="ttdef"><b>Definition</b> kernel.h:264</div></div>
-<div class="ttc" id="akernel_8h_html_afaa62991928fb9fb18ff0db62a040aba"><div class="ttname"><a href="kernel_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a></div><div class="ttdeci">uint32_t u32</div><div class="ttdef"><b>Definition</b> kernel.h:16</div></div>
-<div class="ttc" id="astructdevice_html"><div class="ttname"><a href="structdevice.html">device</a></div><div class="ttdef"><b>Definition</b> fs.h:184</div></div>
+<div class="ttc" id="adrm__print_8h_html_a1572ef5e3355461e391f0d510070cd36"><div class="ttname"><a href="drm__print_8h.html#a1572ef5e3355461e391f0d510070cd36">dev</a></div><div class="ttdeci">const struct device * dev</div><div class="ttdef"><b>Definition</b> drm_print.h:519</div></div>
+<div class="ttc" id="alinux_2kernel_8h_html_a0030614bc864d1b24eaedd71585acc27"><div class="ttname"><a href="linux_2kernel_8h.html#a0030614bc864d1b24eaedd71585acc27">ENODATA</a></div><div class="ttdeci">#define ENODATA</div><div class="ttdef"><b>Definition</b> kernel.h:318</div></div>
+<div class="ttc" id="alinux_2kernel_8h_html_a92c50087ca0e64fa93fc59402c55f8ca"><div class="ttname"><a href="linux_2kernel_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a></div><div class="ttdeci">uint8_t u8</div><div class="ttdef"><b>Definition</b> kernel.h:14</div></div>
+<div class="ttc" id="alinux_2kernel_8h_html_afaa62991928fb9fb18ff0db62a040aba"><div class="ttname"><a href="linux_2kernel_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a></div><div class="ttdeci">uint32_t u32</div><div class="ttdef"><b>Definition</b> kernel.h:16</div></div>
+<div class="ttc" id="astructdevice_html"><div class="ttname"><a href="structdevice.html">device</a></div><div class="ttdef"><b>Definition</b> fs.h:255</div></div>
+<div class="ttc" id="astructfwnode__handle_html"><div class="ttname"><a href="structfwnode__handle.html">fwnode_handle</a></div><div class="ttdef"><b>Definition</b> property.h:56</div></div>
+<div class="ttc" id="astructfwnode__handle_html_a14a3e1dfdb31132e218140fca92240e7"><div class="ttname"><a href="structfwnode__handle.html#a14a3e1dfdb31132e218140fca92240e7">fwnode_handle::ops</a></div><div class="ttdeci">const struct fwnode_operations * ops</div><div class="ttdef"><b>Definition</b> property.h:58</div></div>
+<div class="ttc" id="astructfwnode__handle_html_a300156cbbf4a5bb90d1cdaea8d551736"><div class="ttname"><a href="structfwnode__handle.html#a300156cbbf4a5bb90d1cdaea8d551736">fwnode_handle::supplier</a></div><div class="ttdeci">struct list_head supplier</div><div class="ttdef"><b>Definition</b> property.h:60</div></div>
+<div class="ttc" id="astructfwnode__handle_html_a3e0c904bca6b9e320effe1b57582587b"><div class="ttname"><a href="structfwnode__handle.html#a3e0c904bca6b9e320effe1b57582587b">fwnode_handle::flags</a></div><div class="ttdeci">u8 flags</div><div class="ttdef"><b>Definition</b> property.h:62</div></div>
+<div class="ttc" id="astructfwnode__handle_html_a8ee51d0fa95e3a9ef024fbe11796115a"><div class="ttname"><a href="structfwnode__handle.html#a8ee51d0fa95e3a9ef024fbe11796115a">fwnode_handle::secondary</a></div><div class="ttdeci">struct fwnode_handle * secondary</div><div class="ttdef"><b>Definition</b> property.h:57</div></div>
+<div class="ttc" id="astructfwnode__handle_html_ae41f5cec7f0687eeaaa5b3854c7ef560"><div class="ttname"><a href="structfwnode__handle.html#ae41f5cec7f0687eeaaa5b3854c7ef560">fwnode_handle::dev</a></div><div class="ttdeci">struct device * dev</div><div class="ttdef"><b>Definition</b> property.h:59</div></div>
+<div class="ttc" id="astructfwnode__handle_html_aee35b809ec3e035296e3f4447e40320b"><div class="ttname"><a href="structfwnode__handle.html#aee35b809ec3e035296e3f4447e40320b">fwnode_handle::consumers</a></div><div class="ttdeci">struct list_head consumers</div><div class="ttdef"><b>Definition</b> property.h:61</div></div>
+<div class="ttc" id="astructlist__head_html"><div class="ttname"><a href="structlist__head.html">list_head</a></div><div class="ttdef"><b>Definition</b> list.h:11</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

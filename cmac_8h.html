@@ -382,7 +382,7 @@ Functions</h2></td></tr>
 <p>This function calculates the full generic CMAC on the input buffer with the provided key. </p>
 <p>The function allocates the context, performs the calculation, and frees the context.</p>
 <p>The CMAC result is calculated as output = generic CMAC(cmac key, input buffer).</p>
-<dl class="section note"><dt>Note</dt><dd>When the CMAC implementation is supplied by an alternate implementation (through #MBEDTLS_CMAC_ALT), some ciphers may not be supported by that implementation, and thus return an error. Alternate implementations must support AES-128 and AES-256, and may support AES-192 and 3DES.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>When the CMAC implementation is supplied by an alternate implementation (through MBEDTLS_CMAC_ALT), some ciphers may not be supported by that implementation, and thus return an error. Alternate implementations must support AES-128 and AES-256, and may support AES-192 and 3DES.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">cipher_info</td><td>The cipher information. </td></tr>
@@ -506,7 +506,7 @@ Functions</h2></td></tr>
 <p>This function starts a new CMAC computation by setting the CMAC key, and preparing to authenticate the input data. It must be called with an initialized cipher context. </p>
 <p>Once this function has completed, data can be supplied to the CMAC computation by calling <a class="el" href="cmac_8h.html#a14441964606982e0a664a8bb48bddad6" title="This function feeds an input buffer into an ongoing CMAC computation.">mbedtls_cipher_cmac_update()</a>.</p>
 <p>To start a CMAC computation using the same key as a previous CMAC computation, use <a class="el" href="cmac_8h.html#a9adc5b4b09b40d41bb6554c8ecfa755d" title="This function finishes an ongoing CMAC operation, and writes the result to the output buffer.">mbedtls_cipher_cmac_finish()</a>.</p>
-<dl class="section note"><dt>Note</dt><dd>When the CMAC implementation is supplied by an alternate implementation (through #MBEDTLS_CMAC_ALT), some ciphers may not be supported by that implementation, and thus return an error. Alternate implementations must support AES-128 and AES-256, and may support AES-192 and 3DES.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>When the CMAC implementation is supplied by an alternate implementation (through MBEDTLS_CMAC_ALT), some ciphers may not be supported by that implementation, and thus return an error. Alternate implementations must support AES-128 and AES-256, and may support AES-192 and 3DES.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ctx</td><td>The cipher context used for the CMAC operation, initialized as one of the following types: MBEDTLS_CIPHER_AES_128_ECB, MBEDTLS_CIPHER_AES_192_ECB, MBEDTLS_CIPHER_AES_256_ECB, or MBEDTLS_CIPHER_DES_EDE3_ECB. </td></tr>

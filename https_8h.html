@@ -100,13 +100,15 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="https_8h__dep__incl.png" border="0" usemap="#aXenevaOS_2Ports_2mbedtls_2port_2https_8hdep" alt=""/></div>
 <map name="aXenevaOS_2Ports_2mbedtls_2port_2https_8hdep" id="aXenevaOS_2Ports_2mbedtls_2port_2https_8hdep">
-<area shape="rect" title=" " alt="" coords="219,5,401,45"/>
+<area shape="rect" title=" " alt="" coords="348,5,531,45"/>
 <area shape="rect" href="https_8cpp.html" title=" " alt="" coords="5,93,188,133"/>
-<area shape="poly" title=" " alt="" coords="252,53,144,96,142,91,250,48"/>
-<area shape="rect" href="Process_2NetSurf_2main_8cpp.html" title=" " alt="" coords="212,93,408,133"/>
-<area shape="poly" title=" " alt="" coords="313,59,313,93,307,93,307,59"/>
-<area shape="rect" href="Process_2http_2main_8cpp.html" title=" " alt="" coords="433,93,606,133"/>
-<area shape="poly" title=" " alt="" coords="370,48,475,91,472,96,368,53"/>
+<area shape="poly" title=" " alt="" coords="352,51,172,96,171,91,350,46"/>
+<area shape="rect" href="js_8c.html" title=" " alt="" coords="212,101,435,126"/>
+<area shape="poly" title=" " alt="" coords="404,56,341,103,337,98,401,52"/>
+<area shape="rect" href="Process_2NetSurf_2main_8cpp.html" title=" " alt="" coords="459,93,655,133"/>
+<area shape="poly" title=" " alt="" coords="478,52,532,91,529,95,475,56"/>
+<area shape="rect" href="Process_2http_2main_8cpp.html" title=" " alt="" coords="679,93,853,133"/>
+<area shape="poly" title=" " alt="" coords="525,46,695,91,694,96,523,51"/>
 </map>
 </div>
 </div>
@@ -123,6 +125,8 @@ Macros</h2></td></tr>
 <tr class="separator:a2d3db3558f39f560ed3401c411ca145c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeba80e9ae9f7ad80d68f4d918a6a05a3" id="r_aeba80e9ae9f7ad80d68f4d918a6a05a3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="https_8h.html#aeba80e9ae9f7ad80d68f4d918a6a05a3">XE_HTTP_HDR_MAX</a>&#160;&#160;&#160;1024</td></tr>
 <tr class="separator:aeba80e9ae9f7ad80d68f4d918a6a05a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94a42c46bc70b8544b030ab7b2aa2170" id="r_a94a42c46bc70b8544b030ab7b2aa2170"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="https_8h.html#a94a42c46bc70b8544b030ab7b2aa2170">XE_HTTP_MANY_MAX</a>&#160;&#160;&#160;8</td></tr>
+<tr class="separator:a94a42c46bc70b8544b030ab7b2aa2170"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -133,8 +137,22 @@ Typedefs</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a7468c4a25c3dfaefcf9712bf6ccfc99c" id="r_a7468c4a25c3dfaefcf9712bf6ccfc99c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="https_8h.html#a7468c4a25c3dfaefcf9712bf6ccfc99c">xe_http_get</a> (const char *url, const char *method, const char *user_agent, <a class="el" href="structxe__http__response.html">xe_http_response</a> *<a class="el" href="Process_2wifictl_2main_8cpp.html#a50fe33eaae68b43814656f241a6ac907">out</a>, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> max_body)</td></tr>
 <tr class="separator:a7468c4a25c3dfaefcf9712bf6ccfc99c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab043e773d90486b265d027aee2a8711e" id="r_ab043e773d90486b265d027aee2a8711e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="https_8h.html#ab043e773d90486b265d027aee2a8711e">xe_http_get_many</a> (const char **urls, int n, const char *user_agent, <a class="el" href="structxe__http__response.html">xe_http_response</a> *outs, const <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> *max_body, int *rcs)</td></tr>
+<tr class="separator:ab043e773d90486b265d027aee2a8711e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a877977fc2d35f8787474cf220194f734" id="r_a877977fc2d35f8787474cf220194f734"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="https_8h.html#a877977fc2d35f8787474cf220194f734">xe_http_response_free</a> (<a class="el" href="structxe__http__response.html">xe_http_response</a> *<a class="el" href="Process_2wifictl_2main_8cpp.html#a50fe33eaae68b43814656f241a6ac907">out</a>)</td></tr>
 <tr class="separator:a877977fc2d35f8787474cf220194f734"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf70eabab08a59198ba7394aa4fd8c38" id="r_adf70eabab08a59198ba7394aa4fd8c38"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="https_8h.html#adf70eabab08a59198ba7394aa4fd8c38">xe_http_set_referer</a> (const char *url)</td></tr>
+<tr class="separator:adf70eabab08a59198ba7394aa4fd8c38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae18379f3bfdab9d1900c08c1f3cb8ee5" id="r_ae18379f3bfdab9d1900c08c1f3cb8ee5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="https_8h.html#ae18379f3bfdab9d1900c08c1f3cb8ee5">xe_http_set_body</a> (const char *content_type, const void *body, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> <a class="el" href="initial_8c.html#a7360b55975153b822efc5217b7734e6a">len</a>)</td></tr>
+<tr class="separator:ae18379f3bfdab9d1900c08c1f3cb8ee5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7259941b13ea3ba55f28d919082554c" id="r_ab7259941b13ea3ba55f28d919082554c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="https_8h.html#ab7259941b13ea3ba55f28d919082554c">xe_http_last_url</a> (char *dst, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> dstsz)</td></tr>
+<tr class="separator:ab7259941b13ea3ba55f28d919082554c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8f1a5d2bdcfdef098372645cc897b75" id="r_aa8f1a5d2bdcfdef098372645cc897b75"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="https_8h.html#aa8f1a5d2bdcfdef098372645cc897b75">xe_cookie_set</a> (const char *page_url, const char *set_cookie, int from_http)</td></tr>
+<tr class="separator:aa8f1a5d2bdcfdef098372645cc897b75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c602ba34d9eb4c750f7e82d6d996bfc" id="r_a9c602ba34d9eb4c750f7e82d6d996bfc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="https_8h.html#a9c602ba34d9eb4c750f7e82d6d996bfc">xe_cookie_header</a> (const char *url, char *dst, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> dstsz)</td></tr>
+<tr class="separator:a9c602ba34d9eb4c750f7e82d6d996bfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad15f514088ea083da706c1c273421346" id="r_ad15f514088ea083da706c1c273421346"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="https_8h.html#ad15f514088ea083da706c1c273421346">xe_cookie_document</a> (const char *url, char *dst, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> dstsz)</td></tr>
+<tr class="separator:ad15f514088ea083da706c1c273421346"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a2d3db3558f39f560ed3401c411ca145c" name="a2d3db3558f39f560ed3401c411ca145c"></a>
@@ -173,6 +191,20 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a94a42c46bc70b8544b030ab7b2aa2170" name="a94a42c46bc70b8544b030ab7b2aa2170"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94a42c46bc70b8544b030ab7b2aa2170">&#9670;&#160;</a></span>XE_HTTP_MANY_MAX</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define XE_HTTP_MANY_MAX&#160;&#160;&#160;8</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="a1cb27e349a6db64f451f65081c71c2e9" name="a1cb27e349a6db64f451f65081c71c2e9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1cb27e349a6db64f451f65081c71c2e9">&#9670;&#160;</a></span>xe_http_response</h2>
@@ -189,6 +221,108 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="ad15f514088ea083da706c1c273421346" name="ad15f514088ea083da706c1c273421346"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad15f514088ea083da706c1c273421346">&#9670;&#160;</a></span>xe_cookie_document()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int xe_cookie_document </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>url</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>&#160;</td>
+          <td class="paramname"><em>dstsz</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9c602ba34d9eb4c750f7e82d6d996bfc" name="a9c602ba34d9eb4c750f7e82d6d996bfc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c602ba34d9eb4c750f7e82d6d996bfc">&#9670;&#160;</a></span>xe_cookie_header()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int xe_cookie_header </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>url</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>&#160;</td>
+          <td class="paramname"><em>dstsz</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa8f1a5d2bdcfdef098372645cc897b75" name="aa8f1a5d2bdcfdef098372645cc897b75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8f1a5d2bdcfdef098372645cc897b75">&#9670;&#160;</a></span>xe_cookie_set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xe_cookie_set </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>page_url</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>set_cookie</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>from_http</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a7468c4a25c3dfaefcf9712bf6ccfc99c" name="a7468c4a25c3dfaefcf9712bf6ccfc99c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7468c4a25c3dfaefcf9712bf6ccfc99c">&#9670;&#160;</a></span>xe_http_get()</h2>
 
@@ -235,6 +369,86 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ab043e773d90486b265d027aee2a8711e" name="ab043e773d90486b265d027aee2a8711e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab043e773d90486b265d027aee2a8711e">&#9670;&#160;</a></span>xe_http_get_many()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int xe_http_get_many </td>
+          <td>(</td>
+          <td class="paramtype">const char **&#160;</td>
+          <td class="paramname"><em>urls</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>user_agent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structxe__http__response.html">xe_http_response</a> *&#160;</td>
+          <td class="paramname"><em>outs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> *&#160;</td>
+          <td class="paramname"><em>max_body</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>rcs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab7259941b13ea3ba55f28d919082554c" name="ab7259941b13ea3ba55f28d919082554c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7259941b13ea3ba55f28d919082554c">&#9670;&#160;</a></span>xe_http_last_url()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xe_http_last_url </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>&#160;</td>
+          <td class="paramname"><em>dstsz</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a877977fc2d35f8787474cf220194f734" name="a877977fc2d35f8787474cf220194f734"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a877977fc2d35f8787474cf220194f734">&#9670;&#160;</a></span>xe_http_response_free()</h2>
 
@@ -246,6 +460,58 @@ Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structxe__http__response.html">xe_http_response</a> *&#160;</td>
           <td class="paramname"><em>out</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae18379f3bfdab9d1900c08c1f3cb8ee5" name="ae18379f3bfdab9d1900c08c1f3cb8ee5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae18379f3bfdab9d1900c08c1f3cb8ee5">&#9670;&#160;</a></span>xe_http_set_body()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xe_http_set_body </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>content_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>body</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adf70eabab08a59198ba7394aa4fd8c38" name="adf70eabab08a59198ba7394aa4fd8c38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf70eabab08a59198ba7394aa4fd8c38">&#9670;&#160;</a></span>xe_http_set_referer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xe_http_set_referer </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>url</em></td><td>)</td>
           <td></td>
         </tr>
       </table>

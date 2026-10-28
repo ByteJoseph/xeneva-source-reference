@@ -101,12 +101,17 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="random_8h.html#a6fc3fd6693f3f6fe7debbd30160df7a8">   19</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="random_8h.html#a6fc3fd6693f3f6fe7debbd30160df7a8">get_random_bytes</a>(<span class="keywordtype">void</span>* buf, <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> nbytes);</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#endif </span><span class="comment">/* __LINUX_RANDOM_H__ */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">/* Mainline credits input timing through its CRNG.  Xeneva has a hardware</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment"> * RNG, so the hook exists for the input core but contributes nothing. */</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="random_8h.html#a4aa9b6e74fd654a807823b178645aab3">   23</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="random_8h.html#a4aa9b6e74fd654a807823b178645aab3">add_input_randomness</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> type, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> code, <span class="keywordtype">int</span> value);</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#endif </span><span class="comment">/* __LINUX_RANDOM_H__ */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="afs_8h_html"><div class="ttname"><a href="fs_8h.html">fs.h</a></div></div>
+<div class="ttc" id="arandom_8h_html_a4aa9b6e74fd654a807823b178645aab3"><div class="ttname"><a href="random_8h.html#a4aa9b6e74fd654a807823b178645aab3">add_input_randomness</a></div><div class="ttdeci">void add_input_randomness(unsigned int type, unsigned int code, int value)</div></div>
 <div class="ttc" id="arandom_8h_html_a6fc3fd6693f3f6fe7debbd30160df7a8"><div class="ttname"><a href="random_8h.html#a6fc3fd6693f3f6fe7debbd30160df7a8">get_random_bytes</a></div><div class="ttdeci">void get_random_bytes(void *buf, unsigned long nbytes)</div></div>
 <div class="ttc" id="arandom_8h_html_ac77e55f1ae64a2151f0295e70d56d3a3"><div class="ttname"><a href="random_8h.html#ac77e55f1ae64a2151f0295e70d56d3a3">random_fops</a></div><div class="ttdeci">const struct file_operations random_fops</div></div>
 <div class="ttc" id="arandom_8h_html_afcee9e4be6580321144b4b84bfc8f38a"><div class="ttname"><a href="random_8h.html#afcee9e4be6580321144b4b84bfc8f38a">urandom_fops</a></div><div class="ttdeci">const struct file_operations urandom_fops</div></div>
-<div class="ttc" id="astructfile__operations_html"><div class="ttname"><a href="structfile__operations.html">file_operations</a></div><div class="ttdef"><b>Definition</b> fs.h:60</div></div>
+<div class="ttc" id="astructfile__operations_html"><div class="ttname"><a href="structfile__operations.html">file_operations</a></div><div class="ttdef"><b>Definition</b> fs.h:67</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

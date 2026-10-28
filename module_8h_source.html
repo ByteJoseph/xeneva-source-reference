@@ -119,22 +119,105 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="module_8h.html#a714438a119a783b824adc524b892c986">   37</a></span><span class="preprocessor">#define module_exit(func)</span></div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="module_8h.html#a75c514463c88250c8bf320c521322f59">   39</a></span><span class="preprocessor">#define MODULE_LICENSE(x)</span></div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="module_8h.html#a7137a9e92846364da24d0edeed1905cf">   40</a></span><span class="preprocessor">#define MODULE_AUTHOR(x)</span></div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="module_8h.html#a118e55b9fd0c764661d02e13472100e2">   41</a></span><span class="preprocessor">#define MODULE_DESCRIPTION(x)</span></div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="module_8h.html#ac2400271ebe0682f80802e5e5210bdea">   42</a></span><span class="preprocessor">#define MODULE_VERSION(x)</span></div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="module_8h.html#ae0217d79a23d39af192b5a015ced06e3">   43</a></span><span class="preprocessor">#define MODULE_ALIAS(x)</span></div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="module_8h.html#ab67328e9b3b975e5ede6e4356fdbe4e9">   44</a></span><span class="preprocessor">#define MODULE_DEVICE_TABLE(type, table)</span></div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="module_8h.html#ae0f01b1d26825ba6242c9e6d5b744e12">   45</a></span><span class="preprocessor">#define MODULE_INFO(info, val)</span></div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="module_8h.html#a026ecb225c8ecf49f8a6075a7071a962">   46</a></span><span class="preprocessor">#define THIS_MODULE ((void *)0)</span></div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="module_8h.html#a80f80ee21f75472c173767ea176238b5">   49</a></span><span class="preprocessor">#define try_module_get(m)   (1)</span></div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="module_8h.html#ac1376f1abe3871535b5625d2357bd89e">   50</a></span><span class="preprocessor">#define module_put(m)       do {} while (0)</span></div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment"> * module_driver() -- mainline&#39;s bus-driver registration helper (upstream:</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment"> * include/linux/device/driver.h). Two details in its shape are what other</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment"> * DCL pieces are built on:</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment"> *   - the init function it generates is named __driver##_init, taking the</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment"> *     driver variable&#39;s name; module_init then stamps that name into</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment"> *     __dcl_initcall_&lt;...&gt;_init, the name DclRunInitcalls() (DCL/</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment"> *     linux_mm_shim.c) calls. drm_module.h&#39;s</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment"> *     drm_module_pci_driver_if_modeset(bochs_pci_driver, bochs_modeset)</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment"> *     therefore produces __dcl_initcall_bochs_pci_driver_init.</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment"> *   - it takes the registration function as a macro argument and calls it</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment"> *     with the driver, so drm_module.h can slip the</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment"> *     drm_firmware_drivers_only() test between module_init and</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment"> *     pci_register_driver without this header knowing about DRM.</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment"> * Mainline also generates an exit half (__driver##_exit -&gt; __unregister) and</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment"> * passes it to module_exit(). DCL has no unload and module_exit above is</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment"> * empty, so that half would be a static function with no reference --</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment"> * -Wunused-function on every build. Dropped rather than silenced; it returns</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="comment"> * with module_exit() if unloading ever exists.</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment"> */</span></div>
+<div class="foldopen" id="foldopen00062" data-start="" data-end="">
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="module_8h.html#a058540a502a11aeb42422b45d1aa16cc">   62</a></span><span class="preprocessor">#define module_driver(__driver, __register, __unregister, ...) \</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="preprocessor">static int __init __driver##_init(void) \</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="preprocessor">{ \</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="preprocessor">    return __register(&amp;(__driver), ##__VA_ARGS__); \</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="preprocessor">} \</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="preprocessor">module_init(__driver##_init)</span></div>
+</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment"> * module_param_named() / module_param() / MODULE_PARM_DESC() -- no-ops, for</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="comment"> * the same reason MODULE_LICENSE() above is.</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="comment"> * mainline&#39;s module_param_named(name, value, type, perm) *declares* nothing:</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="comment"> * `value` must already exist as a variable in the file, and the macro only</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="comment"> * arranges for a boot-time setter and a sysfs entry to reach it. That is why</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="comment"> * this can be empty without breaking compilation -- vkms_drv.c writes</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="comment"> *     static bool enable_cursor = true;</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="comment"> *     module_param_named(enable_cursor, enable_cursor, bool, 0444);</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="comment"> * where the declaration on the first line is what the compiler sees and the</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="comment"> * second contributes nothing to it. The five vkms params are then read as</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="comment"> * plain statics, so their compiled behaviour is exactly their initialisers:</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="comment"> * cursor and writeback on, overlay and plane-pipeline off, default device</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="comment"> * created. Those defaults match mainline&#39;s, because mainline&#39;s defaults are</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="comment"> * the initialisers and not the parameter machinery.</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="comment"> * What is given up is the ability to change them: no boot argument, no</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="comment"> * /sys/module/&lt;name&gt;/parameters/. vkms is built into the image rather than</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="comment"> * loaded, so there is no module directory to hang a sysfs entry off, and</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="comment"> * nothing in this tree passes kernel command-line arguments to a driver.</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="comment"> * A driver that needs a runtime-configurable option has to reach for DCL&#39;s</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="comment"> * own config surface instead of this one.</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="comment"> * module_param() is the same macro with the variable named for itself, and</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="comment"> * both expand `value` in the no-op so a caller writing a complex expression</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="comment"> * there still gets a compile error rather than silent acceptance.</span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="module_8h.html#a7900723245170f69b306f8f673b8954e">   99</a></span><span class="preprocessor">#define module_param_named(name, value, type, perm)</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="module_8h.html#abbf8d03e94188bad19d66b79dc261ee5">  100</a></span><span class="preprocessor">#define module_param(name, type, perm)</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="module_8h.html#a21bf24acda7ffa1a1da99cac40c4c728">  101</a></span><span class="preprocessor">#define MODULE_PARM_DESC(name, description)</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="module_8h.html#a75c514463c88250c8bf320c521322f59">  103</a></span><span class="preprocessor">#define MODULE_LICENSE(x)</span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="module_8h.html#a7137a9e92846364da24d0edeed1905cf">  104</a></span><span class="preprocessor">#define MODULE_AUTHOR(x)</span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno"><a class="line" href="module_8h.html#a118e55b9fd0c764661d02e13472100e2">  105</a></span><span class="preprocessor">#define MODULE_DESCRIPTION(x)</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno"><a class="line" href="module_8h.html#ac2400271ebe0682f80802e5e5210bdea">  106</a></span><span class="preprocessor">#define MODULE_VERSION(x)</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno"><a class="line" href="module_8h.html#ae0217d79a23d39af192b5a015ced06e3">  107</a></span><span class="preprocessor">#define MODULE_ALIAS(x)</span></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno"><a class="line" href="module_8h.html#ab67328e9b3b975e5ede6e4356fdbe4e9">  108</a></span><span class="preprocessor">#define MODULE_DEVICE_TABLE(type, table)</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno"><a class="line" href="module_8h.html#ae0f01b1d26825ba6242c9e6d5b744e12">  109</a></span><span class="preprocessor">#define MODULE_INFO(info, val)</span></div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno"><a class="line" href="module_8h.html#a026ecb225c8ecf49f8a6075a7071a962">  110</a></span><span class="preprocessor">#define THIS_MODULE ((void *)0)</span></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="comment">/* The input core takes a module reference while an input device is alive.</span></div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span><span class="comment"> * DCL has no module refcount; the body in DCL/linux_input_shim.c is a no-op. */</span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno"><a class="line" href="module_8h.html#abea3ed70b166bb91bd209033be51ddcd">  114</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="module_8h.html#abea3ed70b166bb91bd209033be51ddcd">__module_get</a>(<span class="keywordtype">void</span>* module);</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno"><a class="line" href="module_8h.html#a80f80ee21f75472c173767ea176238b5">  117</a></span><span class="preprocessor">#define try_module_get(m)   (1)</span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno"><a class="line" href="module_8h.html#ac1376f1abe3871535b5625d2357bd89e">  118</a></span><span class="preprocessor">#define module_put(m)       do {} while (0)</span></div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span><span class="comment"> * MODULE_IMPORT_NS(ns) -- mainline&#39;s symbol-namespace import, a modpost-time</span></div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span><span class="comment"> * annotation that produces no code. It needs a name here only because</span></div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span><span class="comment"> * drm_gem_framebuffer_helper.c:23 spells `MODULE_IMPORT_NS(&quot;DMA_BUF&quot;);` at</span></div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span><span class="comment"> * file scope: undefined, the preprocessor leaves the identifier standing and</span></div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span><span class="comment"> * the line decays to a declaration with no type, which clang reports as</span></div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span><span class="comment"> * &quot;type specifier missing, defaults to &#39;int&#39;&quot;.</span></div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span><span class="comment"> * Empty, like the MODULE_* block above, and for the same reason.</span></div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno"><a class="line" href="module_8h.html#a85a78f3866f67c36deafab7c96b8f7f3">  130</a></span><span class="preprocessor">#define MODULE_IMPORT_NS(ns)</span></div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aexport_8h_html"><div class="ttname"><a href="export_8h.html">export.h</a></div></div>
 <div class="ttc" id="ainit_8h_html"><div class="ttname"><a href="init_8h.html">init.h</a></div></div>
+<div class="ttc" id="amodule_8h_html_abea3ed70b166bb91bd209033be51ddcd"><div class="ttname"><a href="module_8h.html#abea3ed70b166bb91bd209033be51ddcd">__module_get</a></div><div class="ttdeci">void __module_get(void *module)</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -1,13 +1,20 @@
 var searchData=
 [
   ['va_5flist_0',['va_list',['../acmsvcex_8h.html#abaefbc6cabb217bf0138d4f9c94d4775',1,'va_list:&#160;acmsvcex.h'],['../BaseHdr_2stdarg_8h.html#a90f5a53cfeaf133c17cd213633060737',1,'va_list:&#160;stdarg.h'],['../va__list_8h.html#a90f5a53cfeaf133c17cd213633060737',1,'va_list:&#160;va_list.h'],['../Libs_2XEClib_2includes_2stdarg_8h.html#a90f5a53cfeaf133c17cd213633060737',1,'va_list:&#160;stdarg.h'],['../Base_8h.html#ac09cee2816d13585d84bec462d282e41',1,'VA_LIST:&#160;Base.h']]],
-  ['vdisk_5fflush_1',['vdisk_flush',['../vdisk_8h.html#a177904f3a3c2ac439094928b3ff19695',1,'vdisk.h']]],
-  ['vdisk_5fread_2',['vdisk_read',['../vdisk_8h.html#a06c6c22d1db960d7b71d378c1ba0f103',1,'vdisk.h']]],
-  ['vdisk_5fwrite_3',['vdisk_write',['../vdisk_8h.html#a7b62534bf1c4e8e523691cd1f619dd0e',1,'vdisk.h']]],
-  ['vendor_5fdefined_5fdevice_5fpath_4',['VENDOR_DEFINED_DEVICE_PATH',['../DevicePath_8h.html#a2cb0a0ea94a4309359735ee0223302d1',1,'DevicePath.h']]],
-  ['virtio_5fsnd_5fpcm_5fxfer_5',['virtio_snd_pcm_xfer',['../Drivers_2Sound_2virtiosnd_2main_8cpp.html#a6cf8bf40522afcb4cfd0614a0cebef27',1,'main.cpp']]],
-  ['virtio_5fsnd_5fquery_5finfo_6',['virtio_snd_query_info',['../Drivers_2Sound_2virtiosnd_2main_8cpp.html#ad2a41ecdcfa847765e8de7803b131222',1,'main.cpp']]],
-  ['vissprite_5ft_7',['vissprite_t',['../r__defs_8h.html#a6246e7adb3d0adbf98e8645e0f789bca',1,'r_defs.h']]],
-  ['vpage_8',['VPage',['../LittleBoot_2vmmngr_8c.html#a4a01ed878c0fae30aadd8f4c1441993c',1,'vmmngr.c']]],
-  ['vpatchclipfunc_5ft_9',['vpatchclipfunc_t',['../v__video_8h.html#ae89892b58e5dafdbb0fc289d490a24c4',1,'v_video.h']]]
+  ['valuebuffer_1',['ValueBuffer',['../quickjs_8c.html#ad9e8f1eb5f0792c6de9e0b719eaaaa2b',1,'quickjs.c']]],
+  ['valueslot_2',['ValueSlot',['../quickjs_8c.html#aa898a01220b369469abed2a290e378be',1,'quickjs.c']]],
+  ['vdisk_5fflush_3',['vdisk_flush',['../vdisk_8h.html#a177904f3a3c2ac439094928b3ff19695',1,'vdisk.h']]],
+  ['vdisk_5fread_4',['vdisk_read',['../vdisk_8h.html#a06c6c22d1db960d7b71d378c1ba0f103',1,'vdisk.h']]],
+  ['vdisk_5fwrite_5',['vdisk_write',['../vdisk_8h.html#a7b62534bf1c4e8e523691cd1f619dd0e',1,'vdisk.h']]],
+  ['vec3_6',['Vec3',['../compose3d_8cpp.html#a08ff0902c8e82d070a03b38309a27b6d',1,'compose3d.cpp']]],
+  ['vendor_5fdefined_5fdevice_5fpath_7',['VENDOR_DEFINED_DEVICE_PATH',['../DevicePath_8h.html#a2cb0a0ea94a4309359735ee0223302d1',1,'DevicePath.h']]],
+  ['virtio_5fsnd_5fpcm_5fxfer_8',['virtio_snd_pcm_xfer',['../Drivers_2Sound_2virtiosnd_2main_8cpp.html#a6cf8bf40522afcb4cfd0614a0cebef27',1,'main.cpp']]],
+  ['virtio_5fsnd_5fquery_5finfo_9',['virtio_snd_query_info',['../Drivers_2Sound_2virtiosnd_2main_8cpp.html#ad2a41ecdcfa847765e8de7803b131222',1,'main.cpp']]],
+  ['vissprite_5ft_10',['vissprite_t',['../r__defs_8h.html#a6246e7adb3d0adbf98e8645e0f789bca',1,'r_defs.h']]],
+  ['vm_5fflags_5ft_11',['vm_flags_t',['../mm_8h.html#a9a896247f15e419979111514677f33ca',1,'mm.h']]],
+  ['voidp_12',['voidp',['../miniz_8h.html#aef6ee0fd51b4998d5eae9ffe4e44306c',1,'miniz.h']]],
+  ['voidpc_13',['voidpc',['../miniz_8h.html#aff7dd941ce5e1aa30ad76fa09845dad3',1,'miniz.h']]],
+  ['voidpf_14',['voidpf',['../miniz_8h.html#acb723a6acb493e64215f5a0613c11eb4',1,'miniz.h']]],
+  ['vpage_15',['VPage',['../LittleBoot_2vmmngr_8c.html#a4a01ed878c0fae30aadd8f4c1441993c',1,'vmmngr.c']]],
+  ['vpatchclipfunc_5ft_16',['vpatchclipfunc_t',['../v__video_8h.html#ae89892b58e5dafdbb0fc289d490a24c4',1,'v_video.h']]]
 ];

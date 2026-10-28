@@ -123,7 +123,7 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a2cb84a209e2d8810399a21ccb3ca5fd1" id="r_a2cb84a209e2d8810399a21ccb3ca5fd1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Common_8hpp.html#a2cb84a209e2d8810399a21ccb3ca5fd1">RAW_OFFSET</a>(type,  x,  offset)&#160;&#160;&#160;(type)((<a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>)x + offset)</td></tr>
+<tr class="memitem:a2cb84a209e2d8810399a21ccb3ca5fd1" id="r_a2cb84a209e2d8810399a21ccb3ca5fd1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Common_8hpp.html#a2cb84a209e2d8810399a21ccb3ca5fd1">RAW_OFFSET</a>(type,  x,  <a class="el" href="drm__bridge_8h.html#ad5b30797981ed10bc3571a689a73eeac">offset</a>)&#160;&#160;&#160;(type)((<a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>)x + <a class="el" href="drm__bridge_8h.html#ad5b30797981ed10bc3571a689a73eeac">offset</a>)</td></tr>
 <tr class="separator:a2cb84a209e2d8810399a21ccb3ca5fd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af67f286327c180a552853335544c2dc7" id="r_af67f286327c180a552853335544c2dc7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Common_8hpp.html#af67f286327c180a552853335544c2dc7">RAW_DIFF</a>(p1,  p2)&#160;&#160;&#160;((<a class="el" href="BaseHdr_2stdint_8h.html#a0fbe4a4f8dd857ee04923a901f27465f">intptr_t</a>)p1 - (<a class="el" href="BaseHdr_2stdint_8h.html#a0fbe4a4f8dd857ee04923a901f27465f">intptr_t</a>)p2)</td></tr>
 <tr class="separator:af67f286327c180a552853335544c2dc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -131,7 +131,7 @@ Macros</h2></td></tr>
 <tr class="separator:abeabeb9b7b657cffae07737d12442b2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff6165db3fa02d1c8646031870230232" id="r_aff6165db3fa02d1c8646031870230232"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Common_8hpp.html#aff6165db3fa02d1c8646031870230232">DIV_ROUND_UP</a>(x,  y)&#160;&#160;&#160;	((x + y - 1) / y)</td></tr>
 <tr class="separator:aff6165db3fa02d1c8646031870230232"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f62b3cca99dd27d1e326a2cf084beee" id="r_a2f62b3cca99dd27d1e326a2cf084beee"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Common_8hpp.html#a2f62b3cca99dd27d1e326a2cf084beee">ALIGN_UP</a>(x,  y)&#160;&#160;&#160;(<a class="el" href="kernel_8h.html#ae664e7492e37d324831caf2321ddda37">DIV_ROUND_UP</a>(x,y)*y)</td></tr>
+<tr class="memitem:a2f62b3cca99dd27d1e326a2cf084beee" id="r_a2f62b3cca99dd27d1e326a2cf084beee"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Common_8hpp.html#a2f62b3cca99dd27d1e326a2cf084beee">ALIGN_UP</a>(x,  y)&#160;&#160;&#160;(<a class="el" href="linux_2kernel_8h.html#ae664e7492e37d324831caf2321ddda37">DIV_ROUND_UP</a>(x,y)*y)</td></tr>
 <tr class="separator:a2f62b3cca99dd27d1e326a2cf084beee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
@@ -139,8 +139,8 @@ Functions</h2></td></tr>
 <tr class="memitem:a5090086ffa24ab438ead43b7c685ab96" id="r_a5090086ffa24ab438ead43b7c685ab96"><td class="memTemplParams" colspan="2">template&lt;typename T , std::enable_if_t&lt; <a class="el" href="structis__ptr__or__uint64.html">is_ptr_or_uint64</a>&lt; T &gt;::value, int &gt;  = 0&gt; </td></tr>
 <tr class="memitem:a5090086ffa24ab438ead43b7c685ab96"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2stddef_8h.html#a1dc40b717b840c7d6bd59de9f3ca50de">std::ptrdiff_t</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Common_8hpp.html#a5090086ffa24ab438ead43b7c685ab96">raw_diff</a> (T p1, T p2)</td></tr>
 <tr class="separator:a5090086ffa24ab438ead43b7c685ab96"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9cc90ef3841de8ae7b15096c54ac25ab" id="r_a9cc90ef3841de8ae7b15096c54ac25ab"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U , std::enable_if_t&lt; <a class="el" href="structis__ptr__or__uint64.html">is_ptr_or_uint64</a>&lt; T &gt;::value &amp;&amp;<a class="el" href="structis__ptr__or__uint64.html">is_ptr_or_uint64</a>&lt; U &gt;::value, int &gt;  = 0&gt; </td></tr>
-<tr class="memitem:a9cc90ef3841de8ae7b15096c54ac25ab"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Common_8hpp.html#a9cc90ef3841de8ae7b15096c54ac25ab">raw_offset</a> (U p1, <a class="el" href="BaseHdr_2stddef_8h.html#a1dc40b717b840c7d6bd59de9f3ca50de">std::ptrdiff_t</a> offset)</td></tr>
+<tr class="memitem:a9cc90ef3841de8ae7b15096c54ac25ab" id="r_a9cc90ef3841de8ae7b15096c54ac25ab"><td class="memTemplParams" colspan="2">template&lt;typename T , typename <a class="el" href="libunicode_8c.html#affc9cbf86b78292bdb405361761c47f5">U</a> , std::enable_if_t&lt; <a class="el" href="structis__ptr__or__uint64.html">is_ptr_or_uint64</a>&lt; T &gt;::value &amp;&amp;<a class="el" href="structis__ptr__or__uint64.html">is_ptr_or_uint64</a>&lt; <a class="el" href="libunicode_8c.html#affc9cbf86b78292bdb405361761c47f5">U</a> &gt;::value, int &gt;  = 0&gt; </td></tr>
+<tr class="memitem:a9cc90ef3841de8ae7b15096c54ac25ab"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Common_8hpp.html#a9cc90ef3841de8ae7b15096c54ac25ab">raw_offset</a> (<a class="el" href="libunicode_8c.html#affc9cbf86b78292bdb405361761c47f5">U</a> p1, <a class="el" href="BaseHdr_2stddef_8h.html#a1dc40b717b840c7d6bd59de9f3ca50de">std::ptrdiff_t</a> <a class="el" href="drm__bridge_8h.html#ad5b30797981ed10bc3571a689a73eeac">offset</a>)</td></tr>
 <tr class="separator:a9cc90ef3841de8ae7b15096c54ac25ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad691cdcaaaaa607bebe3166a93b3fe88" id="r_ad691cdcaaaaa607bebe3166a93b3fe88"><td class="memTemplParams" colspan="2">template&lt;typename T , std::enable_if_t&lt; <a class="el" href="structis__ptr__or__uint64.html">is_ptr_or_uint64</a>&lt; T &gt;::value, int &gt;  = 0&gt; </td></tr>
 <tr class="memitem:ad691cdcaaaaa607bebe3166a93b3fe88"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Common_8hpp.html#ad691cdcaaaaa607bebe3166a93b3fe88">mem_after</a> (T p1)</td></tr>
@@ -168,7 +168,7 @@ Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;(<a class="el" href="kernel_8h.html#ae664e7492e37d324831caf2321ddda37">DIV_ROUND_UP</a>(x,y)*y)</td>
+          <td></td><td>&#160;&#160;&#160;(<a class="el" href="linux_2kernel_8h.html#ae664e7492e37d324831caf2321ddda37">DIV_ROUND_UP</a>(x,y)*y)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -281,12 +281,12 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">offset&#160;</td>
+          <td class="paramname"><a class="el" href="drm__bridge_8h.html#ad5b30797981ed10bc3571a689a73eeac">offset</a>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;(type)((<a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>)x + offset)</td>
+          <td></td><td>&#160;&#160;&#160;(type)((<a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>)x + <a class="el" href="drm__bridge_8h.html#ad5b30797981ed10bc3571a689a73eeac">offset</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -350,12 +350,12 @@ template&lt;typename T , std::enable_if_t&lt; <a class="el" href="structis__ptr_
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T , typename U , std::enable_if_t&lt; <a class="el" href="structis__ptr__or__uint64.html">is_ptr_or_uint64</a>&lt; T &gt;::value &amp;&amp;<a class="el" href="structis__ptr__or__uint64.html">is_ptr_or_uint64</a>&lt; U &gt;::value, int &gt;  = 0&gt; </div>
+template&lt;typename T , typename <a class="el" href="libunicode_8c.html#affc9cbf86b78292bdb405361761c47f5">U</a> , std::enable_if_t&lt; <a class="el" href="structis__ptr__or__uint64.html">is_ptr_or_uint64</a>&lt; T &gt;::value &amp;&amp;<a class="el" href="structis__ptr__or__uint64.html">is_ptr_or_uint64</a>&lt; <a class="el" href="libunicode_8c.html#affc9cbf86b78292bdb405361761c47f5">U</a> &gt;::value, int &gt;  = 0&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">T raw_offset </td>
           <td>(</td>
-          <td class="paramtype">U&#160;</td>
+          <td class="paramtype"><a class="el" href="libunicode_8c.html#affc9cbf86b78292bdb405361761c47f5">U</a>&#160;</td>
           <td class="paramname"><em>p1</em>, </td>
         </tr>
         <tr>

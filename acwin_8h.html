@@ -174,15 +174,17 @@ Macros</h2></td></tr>
 <div class="line">        __asm and           edx, 0xFFFFFFFE         \</div>
 <div class="line">        __asm bts           edx, 1                  \</div>
 <div class="line">        __asm adc           edx, 0                  \</div>
-<div class="line">        __asm lock cmpxchg  dword ptr [ecx], edx    \</div>
+<div class="line">        __asm lock <a class="code hl_define" href="atomic_8h.html#a0cc1c2ccaf7114782da8fe703f641d9e">cmpxchg</a>  dword ptr [ecx], edx    \</div>
 <div class="line">        __asm jnz           acq10                   \</div>
 <div class="line">                                                    \</div>
-<div class="line">        __asm cmp           dl, 3                   \</div>
+<div class="line">        __asm <a class="code hl_typedef" href="list__sort_8h.html#a6a5e15f83e1aa62160eeda287045ba3e">cmp</a>           dl, 3                   \</div>
 <div class="line">        __asm sbb           eax, eax                \</div>
 <div class="line">                                                    \</div>
 <div class="line">        __asm exit_acq:                             \</div>
 <div class="line">        __asm mov           Acq, al                 \</div>
 <div class="line">}</div>
+<div class="ttc" id="aatomic_8h_html_a0cc1c2ccaf7114782da8fe703f641d9e"><div class="ttname"><a href="atomic_8h.html#a0cc1c2ccaf7114782da8fe703f641d9e">cmpxchg</a></div><div class="ttdeci">#define cmpxchg(ptr, old, new)</div><div class="ttdef"><b>Definition</b> atomic.h:321</div></div>
+<div class="ttc" id="alist__sort_8h_html_a6a5e15f83e1aa62160eeda287045ba3e"><div class="ttname"><a href="list__sort_8h.html#a6a5e15f83e1aa62160eeda287045ba3e">cmp</a></div><div class="ttdeci">int const struct list_head const struct list_head struct list_head list_cmp_func_t cmp</div><div class="ttdef"><b>Definition</b> list_sort.h:13</div></div>
 </div><!-- fragment --><p>[End] no source code translation ! </p>
 
 </div>
@@ -257,10 +259,10 @@ Macros</h2></td></tr>
 <div class="line">        __asm mov           eax, [ecx]              \</div>
 <div class="line">        __asm mov           edx, eax                \</div>
 <div class="line">        __asm and           edx, 0xFFFFFFFC         \</div>
-<div class="line">        __asm lock cmpxchg  dword ptr [ecx], edx    \</div>
+<div class="line">        __asm lock <a class="code hl_define" href="atomic_8h.html#a0cc1c2ccaf7114782da8fe703f641d9e">cmpxchg</a>  dword ptr [ecx], edx    \</div>
 <div class="line">        __asm jnz           Rel10                   \</div>
 <div class="line">                                                    \</div>
-<div class="line">        __asm cmp           dl, 3                   \</div>
+<div class="line">        __asm <a class="code hl_typedef" href="list__sort_8h.html#a6a5e15f83e1aa62160eeda287045ba3e">cmp</a>           dl, 3                   \</div>
 <div class="line">        __asm and           eax, 1                  \</div>
 <div class="line">                                                    \</div>
 <div class="line">        __asm exit_rel:                             \</div>

@@ -86,11 +86,23 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">/*</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> * linux/platform_device.h -- created by mkh.sh while porting 8250_port.c.</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment"> * Empty on purpose: it exists so the compiler can get past the</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"> * include and report the NEXT problem. The real content is whatever</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment"> * the errors demand -- see DCL_TODO.md, stage 3.</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#endif </span><span class="comment">/* __DCL_STUB_BaseHdr_linux_platform_device_h__ */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment"> * Still not a platform bus: nothing in this tree registers a platform</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"> * driver. The two declarations below are here because drm_module.h --</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment"> * which bochs.c reaches through &lt;drm/drm_module.h&gt; -- defines static</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment"> * inline registration helpers that name both functions. The PCI arm of</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment"> * that header is the one this target uses; the platform arm is parsed</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment"> * and never referenced, so declarations are all it needs. Without them</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment"> * the parse of every bochs.c compile would trip -Wimplicit-function-</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment"> * declaration for a function nobody calls.</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">struct </span>platform_driver;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="platform__device_8h.html#a94ad46bd870cea40aade8359ac0aabd7">   17</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="platform__device_8h.html#a94ad46bd870cea40aade8359ac0aabd7">platform_driver_register</a>(<span class="keyword">struct</span> platform_driver *drv);</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="platform__device_8h.html#a27f33b94c27acaaaecb66706bdf7fc18">   18</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="platform__device_8h.html#a27f33b94c27acaaaecb66706bdf7fc18">platform_driver_unregister</a>(<span class="keyword">struct</span> platform_driver *drv);</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#endif </span><span class="comment">/* __DCL_STUB_BaseHdr_linux_platform_device_h__ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="aplatform__device_8h_html_a27f33b94c27acaaaecb66706bdf7fc18"><div class="ttname"><a href="platform__device_8h.html#a27f33b94c27acaaaecb66706bdf7fc18">platform_driver_unregister</a></div><div class="ttdeci">void platform_driver_unregister(struct platform_driver *drv)</div></div>
+<div class="ttc" id="aplatform__device_8h_html_a94ad46bd870cea40aade8359ac0aabd7"><div class="ttname"><a href="platform__device_8h.html#a94ad46bd870cea40aade8359ac0aabd7">platform_driver_register</a></div><div class="ttdeci">int platform_driver_register(struct platform_driver *drv)</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

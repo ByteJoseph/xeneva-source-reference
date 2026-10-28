@@ -179,7 +179,7 @@ Include dependency graph for virtiokbd.c:</div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aecee4f6abfbe6d652e7489fab082741d" id="r_aecee4f6abfbe6d652e7489fab082741d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="virtiokbd_8c.html#aecee4f6abfbe6d652e7489fab082741d">AuVirtioKbdInitialize</a> (<a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> <a class="el" href="structdevice.html">device</a>, int bus, int dev, int func)</td></tr>
+<tr class="memitem:aecee4f6abfbe6d652e7489fab082741d" id="r_aecee4f6abfbe6d652e7489fab082741d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="virtiokbd_8c.html#aecee4f6abfbe6d652e7489fab082741d">AuVirtioKbdInitialize</a> (<a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> <a class="el" href="structdevice.html">device</a>, int bus, int <a class="el" href="drm__print_8h.html#a1572ef5e3355461e391f0d510070cd36">dev</a>, int func)</td></tr>
 <tr class="memdesc:aecee4f6abfbe6d652e7489fab082741d"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuVirtioKbdInitialize &ndash; initialize the virtio keyboard.  <br /></td></tr>
 <tr class="separator:aecee4f6abfbe6d652e7489fab082741d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29446d057d3194c34988fde9ed2e6d8e" id="r_a29446d057d3194c34988fde9ed2e6d8e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="virtiokbd_8c.html#a29446d057d3194c34988fde9ed2e6d8e">AuGICDeallocateSPI</a> (int spiID)</td></tr>
@@ -261,6 +261,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>dc_ivac((uint64_t)&amp;queue-&gt;used.index); <a class="el" href="aa64lowlevel_8h.html#ac8160b266b556d59e42f2aa9cdd9bc3f">dsb_sy_barrier()</a>; UARTDebugOut("[kbd-dbg]: idx=%d used=%d avail=%d qsz=%d irqs=%d \n", (int)index, (int)queue-&gt;used.index, (int)queue-&gt;available.index, (int)queueSize, (int)kbd_dbg_irqs);</p>
 
 </div>
 </div>

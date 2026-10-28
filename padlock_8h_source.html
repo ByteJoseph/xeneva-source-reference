@@ -127,12 +127,12 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="keywordtype">int</span> mbedtls_padlock_has_support(<span class="keywordtype">int</span> feature);</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="keywordtype">int</span> mbedtls_padlock_xcryptecb(<a class="code hl_struct" href="structmbedtls__aes__context.html">mbedtls_aes_context</a> *ctx,</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>                              <span class="keywordtype">int</span> <a class="code hl_variable" href="d__mode_8c.html#a07bb4e8cdc92d8c8e99069d0e29cb370">mode</a>,</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>                              <span class="keywordtype">int</span> <a class="code hl_define" href="treebuilder_8c.html#a2aa8bc6e431cc1e0cc602ac69a419095">mode</a>,</div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>                              <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code hl_variable" href="virtiokbd_8c.html#ac7ea4a68c5710086113a183d16feaf8d">input</a>[16],</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>                              <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> output[16]);</div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="keywordtype">int</span> mbedtls_padlock_xcryptcbc(<a class="code hl_struct" href="structmbedtls__aes__context.html">mbedtls_aes_context</a> *ctx,</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>                              <span class="keywordtype">int</span> <a class="code hl_variable" href="d__mode_8c.html#a07bb4e8cdc92d8c8e99069d0e29cb370">mode</a>,</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>                              <span class="keywordtype">int</span> <a class="code hl_define" href="treebuilder_8c.html#a2aa8bc6e431cc1e0cc602ac69a419095">mode</a>,</div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>                              <span class="keywordtype">size_t</span> length,</div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>                              <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> iv[16],</div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>                              <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *<a class="code hl_variable" href="virtiokbd_8c.html#ac7ea4a68c5710086113a183d16feaf8d">input</a>,</div>
@@ -146,9 +146,9 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="preprocessor">#endif </span><span class="comment">/* padlock.h */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="aaes_8h_html"><div class="ttname"><a href="aes_8h.html">aes.h</a></div><div class="ttdoc">This file contains AES definitions and functions.</div></div>
-<div class="ttc" id="ad__mode_8c_html_a07bb4e8cdc92d8c8e99069d0e29cb370"><div class="ttname"><a href="d__mode_8c.html#a07bb4e8cdc92d8c8e99069d0e29cb370">mode</a></div><div class="ttdeci">GameMode_t mode</div><div class="ttdef"><b>Definition</b> d_mode.c:29</div></div>
 <div class="ttc" id="ambedtls_2build__info_8h_html"><div class="ttname"><a href="mbedtls_2build__info_8h.html">build_info.h</a></div><div class="ttdoc">Build-time configuration info.</div></div>
 <div class="ttc" id="astructmbedtls__aes__context_html"><div class="ttname"><a href="structmbedtls__aes__context.html">mbedtls_aes_context</a></div><div class="ttdoc">The AES context-type definition.</div><div class="ttdef"><b>Definition</b> aes.h:63</div></div>
+<div class="ttc" id="atreebuilder_8c_html_a2aa8bc6e431cc1e0cc602ac69a419095"><div class="ttname"><a href="treebuilder_8c.html#a2aa8bc6e431cc1e0cc602ac69a419095">mode</a></div><div class="ttdeci">#define mode(x)</div></div>
 <div class="ttc" id="avirtiokbd_8c_html_ac7ea4a68c5710086113a183d16feaf8d"><div class="ttname"><a href="virtiokbd_8c.html#ac7ea4a68c5710086113a183d16feaf8d">input</a></div><div class="ttdeci">struct VirtioInputEvent * input</div><div class="ttdef"><b>Definition</b> virtiokbd.c:46</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

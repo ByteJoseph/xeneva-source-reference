@@ -106,8 +106,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a17b7205594cb841efa67037bf89d42bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b85113c20cf40a181e92d4322a2a465" id="r_a3b85113c20cf40a181e92d4322a2a465"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfile__operations.html#a3b85113c20cf40a181e92d4322a2a465">compat_ioctl</a></td></tr>
 <tr class="separator:a3b85113c20cf40a181e92d4322a2a465"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e0791ea43eba3a056a0996d80e616a5" id="r_a0e0791ea43eba3a056a0996d80e616a5"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfile__operations.html#a0e0791ea43eba3a056a0996d80e616a5">mmap</a></td></tr>
-<tr class="separator:a0e0791ea43eba3a056a0996d80e616a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab80d307187db59a69e720a5adfc171a1" id="r_ab80d307187db59a69e720a5adfc171a1"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfile__operations.html#ab80d307187db59a69e720a5adfc171a1">mmap</a> )(struct <a class="el" href="structfile.html">file</a> *, struct <a class="el" href="structvm__area__struct.html">vm_area_struct</a> *)</td></tr>
+<tr class="separator:ab80d307187db59a69e720a5adfc171a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b9fb8b526a07ae128e224def9352420" id="r_a5b9fb8b526a07ae128e224def9352420"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfile__operations.html#a5b9fb8b526a07ae128e224def9352420">open</a> )(struct <a class="el" href="structinode.html">inode</a> *, struct <a class="el" href="structfile.html">file</a> *)</td></tr>
 <tr class="separator:a5b9fb8b526a07ae128e224def9352420"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad777ab8691a210f303bb337b7b07df15" id="r_ad777ab8691a210f303bb337b7b07df15"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfile__operations.html#ad777ab8691a210f303bb337b7b07df15">flush</a></td></tr>
@@ -120,8 +120,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a412f0ff2ba1be6e9d310163fca113990"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6198dd5e4bb6afb644c46704f52e16d3" id="r_a6198dd5e4bb6afb644c46704f52e16d3"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfile__operations.html#a6198dd5e4bb6afb644c46704f52e16d3">lock</a></td></tr>
 <tr class="separator:a6198dd5e4bb6afb644c46704f52e16d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e019f2869b050450cf0e3d9c9adaa41" id="r_a6e019f2869b050450cf0e3d9c9adaa41"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfile__operations.html#a6e019f2869b050450cf0e3d9c9adaa41">get_unmapped_area</a></td></tr>
-<tr class="separator:a6e019f2869b050450cf0e3d9c9adaa41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06e9b1365b87c6fc62cec8e4180ed416" id="r_a06e9b1365b87c6fc62cec8e4180ed416"><td class="memItemLeft" align="right" valign="top">unsigned long(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfile__operations.html#a06e9b1365b87c6fc62cec8e4180ed416">get_unmapped_area</a> )(struct <a class="el" href="structfile.html">file</a> *, unsigned long, unsigned long, unsigned long, unsigned long)</td></tr>
+<tr class="separator:a06e9b1365b87c6fc62cec8e4180ed416"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f89487c04a7837ca860507effaadee1" id="r_a1f89487c04a7837ca860507effaadee1"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfile__operations.html#a1f89487c04a7837ca860507effaadee1">check_flags</a></td></tr>
 <tr class="separator:a1f89487c04a7837ca860507effaadee1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1276cac90f0fc72da5a984b01bc4ee3a" id="r_a1276cac90f0fc72da5a984b01bc4ee3a"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfile__operations.html#a1276cac90f0fc72da5a984b01bc4ee3a">flock</a></td></tr>
@@ -306,14 +306,14 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a6e019f2869b050450cf0e3d9c9adaa41" name="a6e019f2869b050450cf0e3d9c9adaa41"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6e019f2869b050450cf0e3d9c9adaa41">&#9670;&#160;</a></span>get_unmapped_area</h2>
+<a id="a06e9b1365b87c6fc62cec8e4180ed416" name="a06e9b1365b87c6fc62cec8e4180ed416"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06e9b1365b87c6fc62cec8e4180ed416">&#9670;&#160;</a></span>get_unmapped_area</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void* file_operations::get_unmapped_area</td>
+          <td class="memname">unsigned long(* file_operations::get_unmapped_area) (struct <a class="el" href="structfile.html">file</a> *, unsigned long, unsigned long, unsigned long, unsigned long)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -376,14 +376,14 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a0e0791ea43eba3a056a0996d80e616a5" name="a0e0791ea43eba3a056a0996d80e616a5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0e0791ea43eba3a056a0996d80e616a5">&#9670;&#160;</a></span>mmap</h2>
+<a id="ab80d307187db59a69e720a5adfc171a1" name="ab80d307187db59a69e720a5adfc171a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab80d307187db59a69e720a5adfc171a1">&#9670;&#160;</a></span>mmap</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void* file_operations::mmap</td>
+          <td class="memname">int(* file_operations::mmap) (struct <a class="el" href="structfile.html">file</a> *, struct <a class="el" href="structvm__area__struct.html">vm_area_struct</a> *)</td>
         </tr>
       </table>
 </div><div class="memdoc">

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['576_20buffer_5fbytes_0',['| Media/Battery| 2048 frame | 3 period | 8,192 (period_byte) | 24,576 (buffer_bytes)',['../Drivers_2Sound_2virtiosnd_2main_8cpp.html#autotoc_md13',1,'']]]
+  ['576_20buffer_5fbytes_0',['| Media/Battery| 2048 frame | 3 period | 8,192 (period_byte) | 24,576 (buffer_bytes)',['../Drivers_2Sound_2virtiosnd_2main_8cpp.html#autotoc_md19',1,'']]]
 ];

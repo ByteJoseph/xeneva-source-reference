@@ -409,7 +409,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>    <a class="code hl_typedef" href="actypes_8h.html#a09f1a1fb2293e33483cc8d44aefb1eb1">UINT16</a>                  Opcode,</div>
 <div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>    <a class="code hl_typedef" href="AArch64_2ProcessorBind_8h.html#ae1e6edbbc26d6fbc71a90190d0266018">UINT32</a>                  Index,</div>
 <div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>    <a class="code hl_struct" href="structacpi__walk__state.html">ACPI_WALK_STATE</a>         *WalkState,</div>
-<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>    <a class="code hl_union" href="unionacpi__operand__object.html">ACPI_OPERAND_OBJECT</a>     ***Node);</div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>    <a class="code hl_union" href="unionacpi__operand__object.html">ACPI_OPERAND_OBJECT</a>     ***<a class="code hl_struct" href="structNode.html">Node</a>);</div>
 <div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span> </div>
 <div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span><span class="keywordtype">void</span></div>
 <div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span><a class="code hl_function" href="acdispat_8h.html#a54fa7cd3d13b1712d07d036be4864db7">AcpiDsMethodDataDeleteAll</a> (</div>
@@ -437,7 +437,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>    <a class="code hl_typedef" href="actypes_8h.html#ab27e9918b538ce9d8ca692479b375b6a">UINT8</a>                   <a class="code hl_variable" href="acpixf_8h.html#ab361d6187ad6230bccbce7d8dbe49abc">Type</a>,</div>
 <div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>    <a class="code hl_typedef" href="AArch64_2ProcessorBind_8h.html#ae1e6edbbc26d6fbc71a90190d0266018">UINT32</a>                  Index,</div>
 <div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>    <a class="code hl_struct" href="structacpi__walk__state.html">ACPI_WALK_STATE</a>         *WalkState,</div>
-<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>    <a class="code hl_struct" href="structacpi__namespace__node.html">ACPI_NAMESPACE_NODE</a>     **Node);</div>
+<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>    <a class="code hl_struct" href="structacpi__namespace__node.html">ACPI_NAMESPACE_NODE</a>     **<a class="code hl_struct" href="structNode.html">Node</a>);</div>
 <div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span> </div>
 <div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span><span class="keywordtype">void</span></div>
 <div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span><a class="code hl_function" href="acdispat_8h.html#a6f609c7a6b44954de853ebc9f64ee569">AcpiDsMethodDataInit</a> (</div>
@@ -449,7 +449,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span><a class="code hl_typedef" href="actypes_8h.html#a9c335cb71b6a3ba18516e73f4d7030a2">ACPI_STATUS</a></div>
 <div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span><a class="code hl_function" href="acdispat_8h.html#a18e0c090c0a45707fea0518856023449">AcpiDsAutoSerializeMethod</a> (</div>
-<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span>    <a class="code hl_struct" href="structacpi__namespace__node.html">ACPI_NAMESPACE_NODE</a>     *Node,</div>
+<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span>    <a class="code hl_struct" href="structacpi__namespace__node.html">ACPI_NAMESPACE_NODE</a>     *<a class="code hl_struct" href="structNode.html">Node</a>,</div>
 <div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span>    <a class="code hl_union" href="unionacpi__operand__object.html">ACPI_OPERAND_OBJECT</a>     *ObjDesc);</div>
 <div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span> </div>
 <div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span><a class="code hl_typedef" href="actypes_8h.html#a9c335cb71b6a3ba18516e73f4d7030a2">ACPI_STATUS</a></div>
@@ -521,7 +521,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00438" name="l00438"></a><span class="lineno">  438</span><a class="code hl_typedef" href="actypes_8h.html#a9c335cb71b6a3ba18516e73f4d7030a2">ACPI_STATUS</a></div>
 <div class="line"><a id="l00439" name="l00439"></a><span class="lineno">  439</span><a class="code hl_function" href="acdispat_8h.html#a38820b6ed1b03e905aac5684b6df842b">AcpiDsCreateNode</a> (</div>
 <div class="line"><a id="l00440" name="l00440"></a><span class="lineno">  440</span>    <a class="code hl_struct" href="structacpi__walk__state.html">ACPI_WALK_STATE</a>         *WalkState,</div>
-<div class="line"><a id="l00441" name="l00441"></a><span class="lineno">  441</span>    <a class="code hl_struct" href="structacpi__namespace__node.html">ACPI_NAMESPACE_NODE</a>     *Node,</div>
+<div class="line"><a id="l00441" name="l00441"></a><span class="lineno">  441</span>    <a class="code hl_struct" href="structacpi__namespace__node.html">ACPI_NAMESPACE_NODE</a>     *<a class="code hl_struct" href="structNode.html">Node</a>,</div>
 <div class="line"><a id="l00442" name="l00442"></a><span class="lineno">  442</span>    <a class="code hl_union" href="unionacpi__parse__object.html">ACPI_PARSE_OBJECT</a>       *<a class="code hl_struct" href="structOp.html">Op</a>);</div>
 <div class="line"><a id="l00443" name="l00443"></a><span class="lineno">  443</span> </div>
 <div class="line"><a id="l00444" name="l00444"></a><span class="lineno">  444</span> </div>
@@ -589,7 +589,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00506" name="l00506"></a><span class="lineno">  506</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00507" name="l00507"></a><span class="lineno">  507</span><a class="code hl_typedef" href="actypes_8h.html#a9c335cb71b6a3ba18516e73f4d7030a2">ACPI_STATUS</a></div>
 <div class="line"><a id="l00508" name="l00508"></a><span class="lineno">  508</span><a class="code hl_function" href="acdispat_8h.html#a14e3c0276b6801741eac7d2a0a1a51b4">AcpiDsScopeStackPush</a> (</div>
-<div class="line"><a id="l00509" name="l00509"></a><span class="lineno">  509</span>    <a class="code hl_struct" href="structacpi__namespace__node.html">ACPI_NAMESPACE_NODE</a>     *Node,</div>
+<div class="line"><a id="l00509" name="l00509"></a><span class="lineno">  509</span>    <a class="code hl_struct" href="structacpi__namespace__node.html">ACPI_NAMESPACE_NODE</a>     *<a class="code hl_struct" href="structNode.html">Node</a>,</div>
 <div class="line"><a id="l00510" name="l00510"></a><span class="lineno">  510</span>    <a class="code hl_typedef" href="actypes_8h.html#a3275c9cf8b4cad8f8e0daaaeeb690be6">ACPI_OBJECT_TYPE</a>        <a class="code hl_variable" href="acpixf_8h.html#ab361d6187ad6230bccbce7d8dbe49abc">Type</a>,</div>
 <div class="line"><a id="l00511" name="l00511"></a><span class="lineno">  511</span>    <a class="code hl_struct" href="structacpi__walk__state.html">ACPI_WALK_STATE</a>         *WalkState);</div>
 <div class="line"><a id="l00512" name="l00512"></a><span class="lineno">  512</span> </div>
@@ -763,6 +763,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="ttc" id="aactypes_8h_html_ab27e9918b538ce9d8ca692479b375b6a"><div class="ttname"><a href="actypes_8h.html#ab27e9918b538ce9d8ca692479b375b6a">UINT8</a></div><div class="ttdeci">unsigned char UINT8</div><div class="ttdef"><b>Definition</b> actypes.h:236</div></div>
 <div class="ttc" id="aactypes_8h_html_ab4373cbcb448c2617629232a16e8de72"><div class="ttname"><a href="actypes_8h.html#ab4373cbcb448c2617629232a16e8de72">ACPI_HANDLE</a></div><div class="ttdeci">void * ACPI_HANDLE</div><div class="ttdef"><b>Definition</b> actypes.h:571</div></div>
 <div class="ttc" id="aactypes_8h_html_abdc63466a45a100c0951421f0a60a19e"><div class="ttname"><a href="actypes_8h.html#abdc63466a45a100c0951421f0a60a19e">ACPI_OWNER_ID</a></div><div class="ttdeci">UINT8 ACPI_OWNER_ID</div><div class="ttdef"><b>Definition</b> actypes.h:594</div></div>
+<div class="ttc" id="astructNode_html"><div class="ttname"><a href="structNode.html">Node</a></div><div class="ttdef"><b>Definition</b> xe_script.cpp:334</div></div>
 <div class="ttc" id="astructOp_html"><div class="ttname"><a href="structOp.html">Op</a></div><div class="ttdef"><b>Definition</b> srvfs.c:50</div></div>
 <div class="ttc" id="astructacpi__evaluate__info_html"><div class="ttname"><a href="structacpi__evaluate__info.html">acpi_evaluate_info</a></div><div class="ttdef"><b>Definition</b> acstruct.h:312</div></div>
 <div class="ttc" id="astructacpi__namespace__node_html"><div class="ttname"><a href="structacpi__namespace__node.html">acpi_namespace_node</a></div><div class="ttdef"><b>Definition</b> aclocal.h:294</div></div>

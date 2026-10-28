@@ -86,23 +86,41 @@ $(function() {
 <code>#include &lt;aurora.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="group_8h_source.html">Cred/group.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="user_8h_source.html">Cred/user.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="BaseHdr_2Sync_2poll_8h_source.html">Sync/poll.h</a>&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for vfs.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="vfs_8h__incl.png" border="0" usemap="#aXenevaOS_2BaseHdr_2Fs_2vfs_8h" alt=""/></div>
 <map name="aXenevaOS_2BaseHdr_2Fs_2vfs_8h" id="aXenevaOS_2BaseHdr_2Fs_2vfs_8h">
-<area shape="rect" title=" " alt="" coords="56,5,223,45"/>
-<area shape="rect" title=" " alt="" coords="84,167,155,192"/>
-<area shape="poly" title=" " alt="" coords="73,48,39,67,24,80,13,95,9,105,9,115,21,133,44,148,72,161,70,165,42,153,18,136,4,116,3,104,8,92,20,76,36,63,71,43"/>
-<area shape="rect" title=" " alt="" coords="23,93,78,119"/>
-<area shape="poly" title=" " alt="" coords="120,48,76,86,72,82,116,44"/>
-<area shape="rect" title=" " alt="" coords="102,93,178,119"/>
-<area shape="poly" title=" " alt="" coords="142,46,142,79,137,79,137,46"/>
-<area shape="rect" href="group_8h.html" title=" " alt="" coords="202,93,307,119"/>
-<area shape="poly" title=" " alt="" coords="169,43,228,83,225,88,166,48"/>
-<area shape="rect" href="user_8h.html" title=" " alt="" coords="331,93,426,119"/>
-<area shape="poly" title=" " alt="" coords="198,43,331,87,330,92,196,48"/>
-<area shape="poly" title=" " alt="" coords="234,121,155,162,153,158,231,116"/>
+<area shape="rect" title=" " alt="" coords="342,5,509,45"/>
+<area shape="rect" title=" " alt="" coords="142,387,213,412"/>
+<area shape="poly" title=" " alt="" coords="342,42,238,63,128,93,81,111,42,132,17,154,10,166,8,178,8,254,11,277,20,297,33,316,50,332,90,360,131,379,128,384,87,364,47,336,29,319,15,300,6,278,3,254,3,178,5,164,13,151,39,127,78,106,127,87,237,57,341,37"/>
+<area shape="rect" title=" " alt="" coords="521,93,575,119"/>
+<area shape="poly" title=" " alt="" coords="456,43,520,84,517,88,454,48"/>
+<area shape="rect" title=" " alt="" coords="434,387,510,412"/>
+<area shape="poly" title=" " alt="" coords="440,44,469,102,481,139,485,178,485,254,483,319,478,373,472,373,477,318,480,254,480,178,475,140,464,104,435,47"/>
+<area shape="rect" href="group_8h.html" title=" " alt="" coords="43,167,149,192"/>
+<area shape="poly" title=" " alt="" coords="378,48,265,96,131,163,128,158,263,91,376,43"/>
+<area shape="rect" href="user_8h.html" title=" " alt="" coords="599,93,694,119"/>
+<area shape="poly" title=" " alt="" coords="479,43,602,86,600,91,477,48"/>
+<area shape="rect" href="BaseHdr_2Sync_2poll_8h.html" title=" " alt="" coords="276,93,369,119"/>
+<area shape="poly" title=" " alt="" coords="402,48,350,87,347,83,399,43"/>
+<area shape="poly" title=" " alt="" coords="100,192,110,256,121,297,136,337,160,375,156,378,131,340,115,299,105,257,94,193"/>
+<area shape="poly" title=" " alt="" coords="284,121,247,140,230,152,215,168,201,193,190,220,178,277,175,330,177,373,172,373,170,330,173,276,185,218,196,191,211,165,226,149,244,135,282,116"/>
+<area shape="rect" href="waitq_8h.html" title=" " alt="" coords="225,167,330,192"/>
+<area shape="poly" title=" " alt="" coords="317,120,294,157,290,154,313,118"/>
+<area shape="rect" href="Hal_2AA64_2sched_8h.html" title=" " alt="" coords="300,240,436,265"/>
+<area shape="poly" title=" " alt="" coords="329,118,345,166,363,226,358,227,340,167,324,120"/>
+<area shape="poly" title=" " alt="" coords="274,193,191,375,186,373,270,191"/>
+<area shape="rect" href="aa64cpu_8h.html" title=" " alt="" coords="291,313,445,339"/>
+<area shape="poly" title=" " alt="" coords="279,193,279,227,283,246,290,264,309,287,333,304,330,309,306,291,286,267,278,247,274,227,273,193"/>
+<area shape="poly" title=" " alt="" coords="294,190,344,229,341,233,290,194"/>
+<area shape="poly" title=" " alt="" coords="338,341,222,384,220,379,336,336"/>
+<area shape="poly" title=" " alt="" coords="386,336,445,376,442,381,383,341"/>
+<area shape="rect" title=" " alt="" coords="336,387,400,412"/>
+<area shape="poly" title=" " alt="" coords="371,339,371,373,365,373,365,339"/>
+<area shape="poly" title=" " alt="" coords="351,268,282,315,202,380,199,376,278,311,348,263"/>
+<area shape="poly" title=" " alt="" coords="371,266,371,300,365,300,365,266"/>
 </map>
 </div>
 </div>
@@ -146,6 +164,26 @@ Macros</h2></td></tr>
 <tr class="separator:a16f58ba3abdd26013609a7c770ca8343"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a775a901bb8924ce524bbe20bc6ea6079" id="r_a775a901bb8924ce524bbe20bc6ea6079"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8h.html#a775a901bb8924ce524bbe20bc6ea6079">FS_FLAG_CACHED</a>&#160;&#160;&#160;(1 &lt;&lt; 11)</td></tr>
 <tr class="separator:a775a901bb8924ce524bbe20bc6ea6079"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30384a8cd2feb1615efd5eadc243684b" id="r_a30384a8cd2feb1615efd5eadc243684b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8h.html#a30384a8cd2feb1615efd5eadc243684b">S_ISUID</a>&#160;&#160;&#160;04000</td></tr>
+<tr class="separator:a30384a8cd2feb1615efd5eadc243684b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c9e4cc0a8acc43c99ae6c3d972ae2d8" id="r_a9c9e4cc0a8acc43c99ae6c3d972ae2d8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8h.html#a9c9e4cc0a8acc43c99ae6c3d972ae2d8">S_ISGID</a>&#160;&#160;&#160;02000</td></tr>
+<tr class="separator:a9c9e4cc0a8acc43c99ae6c3d972ae2d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97b5e445a72c99b37dc5b8d620fbd14e" id="r_a97b5e445a72c99b37dc5b8d620fbd14e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8h.html#a97b5e445a72c99b37dc5b8d620fbd14e">S_ISVTX</a>&#160;&#160;&#160;01000</td></tr>
+<tr class="separator:a97b5e445a72c99b37dc5b8d620fbd14e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe3da42e762f6362c93454682fad5eb5" id="r_afe3da42e762f6362c93454682fad5eb5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8h.html#afe3da42e762f6362c93454682fad5eb5">S_IRWXU</a>&#160;&#160;&#160;00700</td></tr>
+<tr class="separator:afe3da42e762f6362c93454682fad5eb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84c7dbf5cf2fdfb690f76348b60a8cb7" id="r_a84c7dbf5cf2fdfb690f76348b60a8cb7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8h.html#a84c7dbf5cf2fdfb690f76348b60a8cb7">S_IRUSR</a>&#160;&#160;&#160;00400</td></tr>
+<tr class="separator:a84c7dbf5cf2fdfb690f76348b60a8cb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad70001754261c15a1bdc8e876c6d09d7" id="r_ad70001754261c15a1bdc8e876c6d09d7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8h.html#ad70001754261c15a1bdc8e876c6d09d7">S_IWUSR</a>&#160;&#160;&#160;00200</td></tr>
+<tr class="separator:ad70001754261c15a1bdc8e876c6d09d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af10a35e3950795d6ee4e07157d000131" id="r_af10a35e3950795d6ee4e07157d000131"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8h.html#af10a35e3950795d6ee4e07157d000131">S_IXUSR</a>&#160;&#160;&#160;00100</td></tr>
+<tr class="separator:af10a35e3950795d6ee4e07157d000131"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a230c642d2bb81f15f85c122b1883de5c" id="r_a230c642d2bb81f15f85c122b1883de5c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8h.html#a230c642d2bb81f15f85c122b1883de5c">S_IRWXG</a>&#160;&#160;&#160;00070</td></tr>
+<tr class="separator:a230c642d2bb81f15f85c122b1883de5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b93e0da7fe32bbd4926626bffad96b1" id="r_a5b93e0da7fe32bbd4926626bffad96b1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8h.html#a5b93e0da7fe32bbd4926626bffad96b1">S_IRWXO</a>&#160;&#160;&#160;00007</td></tr>
+<tr class="separator:a5b93e0da7fe32bbd4926626bffad96b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63fef26ada8717a982f5e479cb248e20" id="r_a63fef26ada8717a982f5e479cb248e20"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8h.html#a63fef26ada8717a982f5e479cb248e20">S_IALLUGO</a>&#160;&#160;&#160;07777</td></tr>
+<tr class="separator:a63fef26ada8717a982f5e479cb248e20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ecac40e1cf0f68cfc5edfb895ce45fc" id="r_a1ecac40e1cf0f68cfc5edfb895ce45fc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8h.html#a1ecac40e1cf0f68cfc5edfb895ce45fc">FS_STATUS_FOUND</a>&#160;&#160;&#160;0x1</td></tr>
 <tr class="separator:a1ecac40e1cf0f68cfc5edfb895ce45fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98df294e72cda7427ac2f41dc99203ef" id="r_a98df294e72cda7427ac2f41dc99203ef"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8h.html#a98df294e72cda7427ac2f41dc99203ef">FS_STATUS_NF</a>&#160;&#160;&#160;0x0</td></tr>
@@ -167,25 +205,25 @@ Macros</h2></td></tr>
 Typedefs</h2></td></tr>
 <tr class="memitem:ab107b4b5500131a5838491616deebea5" id="r_ab107b4b5500131a5838491616deebea5"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct__AuDirectoryEnty__.html">_AuDirectoryEnty_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8h.html#ab107b4b5500131a5838491616deebea5">AuDirectoryEntry</a></td></tr>
 <tr class="separator:ab107b4b5500131a5838491616deebea5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab181c4bc526ab57981eac9bf58072499" id="r_ab181c4bc526ab57981eac9bf58072499"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8h.html#ab181c4bc526ab57981eac9bf58072499">open_callback</a>) (struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *node, char *<a class="el" href="Process_2Files_2main_8cpp.html#a44196e6a5696d10442c29e639437196e">path</a>)</td></tr>
+<tr class="memitem:ab181c4bc526ab57981eac9bf58072499" id="r_ab181c4bc526ab57981eac9bf58072499"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8h.html#ab181c4bc526ab57981eac9bf58072499">open_callback</a>) (struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *<a class="el" href="kthread_8h.html#af3fd9d829538e36331bf4a6fe7e6b7bc">node</a>, char *<a class="el" href="structpath.html">path</a>)</td></tr>
 <tr class="separator:ab181c4bc526ab57981eac9bf58072499"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0b28c897a61a1930bd622cb95e5a019" id="r_ab0b28c897a61a1930bd622cb95e5a019"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8h.html#ab0b28c897a61a1930bd622cb95e5a019">read_callback</a>) (struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *node, struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *<a class="el" href="structfile.html">file</a>, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> *buffer, <a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> length)</td></tr>
+<tr class="memitem:ab0b28c897a61a1930bd622cb95e5a019" id="r_ab0b28c897a61a1930bd622cb95e5a019"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8h.html#ab0b28c897a61a1930bd622cb95e5a019">read_callback</a>) (struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *<a class="el" href="kthread_8h.html#af3fd9d829538e36331bf4a6fe7e6b7bc">node</a>, struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *<a class="el" href="structfile.html">file</a>, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> *buffer, <a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> length)</td></tr>
 <tr class="separator:ab0b28c897a61a1930bd622cb95e5a019"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a11cc57c6443ce6fc5d09f119973aff" id="r_a3a11cc57c6443ce6fc5d09f119973aff"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8h.html#a3a11cc57c6443ce6fc5d09f119973aff">read_block_callback</a>) (struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *node, struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *<a class="el" href="structfile.html">file</a>, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> *buffer)</td></tr>
+<tr class="memitem:a3a11cc57c6443ce6fc5d09f119973aff" id="r_a3a11cc57c6443ce6fc5d09f119973aff"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8h.html#a3a11cc57c6443ce6fc5d09f119973aff">read_block_callback</a>) (struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *<a class="el" href="kthread_8h.html#af3fd9d829538e36331bf4a6fe7e6b7bc">node</a>, struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *<a class="el" href="structfile.html">file</a>, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> *buffer)</td></tr>
 <tr class="separator:a3a11cc57c6443ce6fc5d09f119973aff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a143fb678361b72730df096665594d945" id="r_a143fb678361b72730df096665594d945"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8h.html#a143fb678361b72730df096665594d945">write_callback</a>) (struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *node, struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *<a class="el" href="structfile.html">file</a>, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> *buffer, <a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> length)</td></tr>
+<tr class="memitem:a143fb678361b72730df096665594d945" id="r_a143fb678361b72730df096665594d945"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8h.html#a143fb678361b72730df096665594d945">write_callback</a>) (struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *<a class="el" href="kthread_8h.html#af3fd9d829538e36331bf4a6fe7e6b7bc">node</a>, struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *<a class="el" href="structfile.html">file</a>, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> *buffer, <a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> length)</td></tr>
 <tr class="separator:a143fb678361b72730df096665594d945"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d121355953c8881f11553ddca97fc27" id="r_a8d121355953c8881f11553ddca97fc27"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8h.html#a8d121355953c8881f11553ddca97fc27">create_dir_callback</a>) (struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *node, char *dirname)</td></tr>
+<tr class="memitem:a8d121355953c8881f11553ddca97fc27" id="r_a8d121355953c8881f11553ddca97fc27"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8h.html#a8d121355953c8881f11553ddca97fc27">create_dir_callback</a>) (struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *<a class="el" href="kthread_8h.html#af3fd9d829538e36331bf4a6fe7e6b7bc">node</a>, char *dirname)</td></tr>
 <tr class="separator:a8d121355953c8881f11553ddca97fc27"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a844f49bfac189bd905811f20cff36a7a" id="r_a844f49bfac189bd905811f20cff36a7a"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8h.html#a844f49bfac189bd905811f20cff36a7a">create_file_callback</a>) (struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *node, char *filename)</td></tr>
+<tr class="memitem:a844f49bfac189bd905811f20cff36a7a" id="r_a844f49bfac189bd905811f20cff36a7a"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8h.html#a844f49bfac189bd905811f20cff36a7a">create_file_callback</a>) (struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *<a class="el" href="kthread_8h.html#af3fd9d829538e36331bf4a6fe7e6b7bc">node</a>, char *filename)</td></tr>
 <tr class="separator:a844f49bfac189bd905811f20cff36a7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ad80358401642c1b656daa3db23e13e" id="r_a8ad80358401642c1b656daa3db23e13e"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8h.html#a8ad80358401642c1b656daa3db23e13e">remove_dir_callback</a>) (struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *node, struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *<a class="el" href="structfile.html">file</a>)</td></tr>
+<tr class="memitem:a8ad80358401642c1b656daa3db23e13e" id="r_a8ad80358401642c1b656daa3db23e13e"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8h.html#a8ad80358401642c1b656daa3db23e13e">remove_dir_callback</a>) (struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *<a class="el" href="kthread_8h.html#af3fd9d829538e36331bf4a6fe7e6b7bc">node</a>, struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *<a class="el" href="structfile.html">file</a>)</td></tr>
 <tr class="separator:a8ad80358401642c1b656daa3db23e13e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4a81fe76094ed673abc1a018c0516f3" id="r_ae4a81fe76094ed673abc1a018c0516f3"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8h.html#ae4a81fe76094ed673abc1a018c0516f3">remove_file_callback</a>) (struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *node, struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *<a class="el" href="structfile.html">file</a>)</td></tr>
+<tr class="memitem:ae4a81fe76094ed673abc1a018c0516f3" id="r_ae4a81fe76094ed673abc1a018c0516f3"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8h.html#ae4a81fe76094ed673abc1a018c0516f3">remove_file_callback</a>) (struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *<a class="el" href="kthread_8h.html#af3fd9d829538e36331bf4a6fe7e6b7bc">node</a>, struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *<a class="el" href="structfile.html">file</a>)</td></tr>
 <tr class="separator:ae4a81fe76094ed673abc1a018c0516f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74d929b51e6316ca49295da9c375a457" id="r_a74d929b51e6316ca49295da9c375a457"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8h.html#a74d929b51e6316ca49295da9c375a457">close_callback</a>) (struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *node, struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *<a class="el" href="structfile.html">file</a>)</td></tr>
+<tr class="memitem:a74d929b51e6316ca49295da9c375a457" id="r_a74d929b51e6316ca49295da9c375a457"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8h.html#a74d929b51e6316ca49295da9c375a457">close_callback</a>) (struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *<a class="el" href="kthread_8h.html#af3fd9d829538e36331bf4a6fe7e6b7bc">node</a>, struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *<a class="el" href="structfile.html">file</a>)</td></tr>
 <tr class="separator:a74d929b51e6316ca49295da9c375a457"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2047dca70ce230d50d50b93fc3077fe" id="r_af2047dca70ce230d50d50b93fc3077fe"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8h.html#af2047dca70ce230d50d50b93fc3077fe">iocontrol_callback</a>) (struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *<a class="el" href="structfile.html">file</a>, int code, void *arg)</td></tr>
+<tr class="memitem:af2047dca70ce230d50d50b93fc3077fe" id="r_af2047dca70ce230d50d50b93fc3077fe"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8h.html#af2047dca70ce230d50d50b93fc3077fe">iocontrol_callback</a>) (struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *<a class="el" href="structfile.html">file</a>, int code, void *<a class="el" href="unionarg.html">arg</a>)</td></tr>
 <tr class="separator:af2047dca70ce230d50d50b93fc3077fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6aa65b91c7c60ff053a996f25b2d08e2" id="r_a6aa65b91c7c60ff053a996f25b2d08e2"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8h.html#a6aa65b91c7c60ff053a996f25b2d08e2">opendir_callback</a>) (struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *fs, char *dirname)</td></tr>
 <tr class="separator:a6aa65b91c7c60ff053a996f25b2d08e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -193,8 +231,12 @@ Typedefs</h2></td></tr>
 <tr class="separator:a0182ad2ffaee0d9d9b4e415bcb26a53f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a654a21c8a981858551b281b8f500eafb" id="r_a654a21c8a981858551b281b8f500eafb"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8h.html#a654a21c8a981858551b281b8f500eafb">get_disk_block</a>) (struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *fs, struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *<a class="el" href="structfile.html">file</a>, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> fs_block)</td></tr>
 <tr class="separator:a654a21c8a981858551b281b8f500eafb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a260fc9783d4a68fd359cd6029aa9ff0c" id="r_a260fc9783d4a68fd359cd6029aa9ff0c"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8h.html#a260fc9783d4a68fd359cd6029aa9ff0c">fs_getblockfor</a>) (struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *fs, struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *<a class="el" href="structfile.html">file</a>, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> offset)</td></tr>
+<tr class="memitem:a260fc9783d4a68fd359cd6029aa9ff0c" id="r_a260fc9783d4a68fd359cd6029aa9ff0c"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8h.html#a260fc9783d4a68fd359cd6029aa9ff0c">fs_getblockfor</a>) (struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *fs, struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *<a class="el" href="structfile.html">file</a>, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> <a class="el" href="drm__bridge_8h.html#ad5b30797981ed10bc3571a689a73eeac">offset</a>)</td></tr>
 <tr class="separator:a260fc9783d4a68fd359cd6029aa9ff0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12e6e95a08a2d853eca67ccb84be7054" id="r_a12e6e95a08a2d853eca67ccb84be7054"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8h.html#a12e6e95a08a2d853eca67ccb84be7054">poll_callback</a>) (struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *fs, struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *<a class="el" href="structfile.html">file</a>, <a class="el" href="structAuPollTable.html">AuPollTable</a> *<a class="el" href="codec__8859_8c.html#a05be6af94bcc30c135e4b6089bf9cfd9">table</a>)</td></tr>
+<tr class="separator:a12e6e95a08a2d853eca67ccb84be7054"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c92fe6f48b83ecaadfe20ad0963a2fd" id="r_a3c92fe6f48b83ecaadfe20ad0963a2fd"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8h.html#a3c92fe6f48b83ecaadfe20ad0963a2fd">setattr_callback</a>) (struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *fs, struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *<a class="el" href="structfile.html">file</a>)</td></tr>
+<tr class="separator:a3c92fe6f48b83ecaadfe20ad0963a2fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e5aff63d019f11b9e810ff9f2165b57" id="r_a5e5aff63d019f11b9e810ff9f2165b57"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a></td></tr>
 <tr class="separator:a5e5aff63d019f11b9e810ff9f2165b57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa18891df42df99ec054df33f893b477" id="r_aaa18891df42df99ec054df33f893b477"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct__AuFileStatus__.html">_AuFileStatus_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8h.html#aaa18891df42df99ec054df33f893b477">AuFileStatus</a></td></tr>
@@ -213,25 +255,25 @@ Functions</h2></td></tr>
 <tr class="memitem:ac0b56fe477506bfb8f9c518c092f4607" id="r_ac0b56fe477506bfb8f9c518c092f4607"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8h.html#ac0b56fe477506bfb8f9c518c092f4607">AuVFSReserveMountPointLetter</a> ()</td></tr>
 <tr class="memdesc:ac0b56fe477506bfb8f9c518c092f4607"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuVFSReserveMountPointLetter &ndash; reserve a letter to mount a file system.  <br /></td></tr>
 <tr class="separator:ac0b56fe477506bfb8f9c518c092f4607"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e296cb55fe122a62b9f98ea5229584e" id="r_a1e296cb55fe122a62b9f98ea5229584e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> <a class="el" href="devclip_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8h.html#a1e296cb55fe122a62b9f98ea5229584e">AuVFSOpen</a> (char *<a class="el" href="Process_2Files_2main_8cpp.html#a44196e6a5696d10442c29e639437196e">path</a>)</td></tr>
+<tr class="memitem:a1e296cb55fe122a62b9f98ea5229584e" id="r_a1e296cb55fe122a62b9f98ea5229584e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> <a class="el" href="devclip_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8h.html#a1e296cb55fe122a62b9f98ea5229584e">AuVFSOpen</a> (char *<a class="el" href="structpath.html">path</a>)</td></tr>
 <tr class="memdesc:a1e296cb55fe122a62b9f98ea5229584e"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuVFSOpen &ndash; Opens a file.  <br /></td></tr>
 <tr class="separator:a1e296cb55fe122a62b9f98ea5229584e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab691633016d2d8b79fc522574d5477db" id="r_ab691633016d2d8b79fc522574d5477db"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8h.html#ab691633016d2d8b79fc522574d5477db">AuVFSNodeIOControl</a> (<a class="el" href="devclip_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *node, int code, void *arg)</td></tr>
+<tr class="memitem:ab691633016d2d8b79fc522574d5477db" id="r_ab691633016d2d8b79fc522574d5477db"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8h.html#ab691633016d2d8b79fc522574d5477db">AuVFSNodeIOControl</a> (<a class="el" href="devclip_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *<a class="el" href="kthread_8h.html#af3fd9d829538e36331bf4a6fe7e6b7bc">node</a>, int code, void *<a class="el" href="unionarg.html">arg</a>)</td></tr>
 <tr class="memdesc:ab691633016d2d8b79fc522574d5477db"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuVFSNodeIOControl &ndash; Calls node's iocontrol pointer.  <br /></td></tr>
 <tr class="separator:ab691633016d2d8b79fc522574d5477db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6bb7c22bb708eaa7704930c387c3a419" id="r_a6bb7c22bb708eaa7704930c387c3a419"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8h.html#a6bb7c22bb708eaa7704930c387c3a419">AuVFSAddFileSystem</a> (<a class="el" href="devclip_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *node)</td></tr>
+<tr class="memitem:a6bb7c22bb708eaa7704930c387c3a419" id="r_a6bb7c22bb708eaa7704930c387c3a419"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8h.html#a6bb7c22bb708eaa7704930c387c3a419">AuVFSAddFileSystem</a> (<a class="el" href="devclip_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *<a class="el" href="kthread_8h.html#af3fd9d829538e36331bf4a6fe7e6b7bc">node</a>)</td></tr>
 <tr class="memdesc:a6bb7c22bb708eaa7704930c387c3a419"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuVFSAddFileSystem &ndash; adds a file system to the vfs list.  <br /></td></tr>
 <tr class="separator:a6bb7c22bb708eaa7704930c387c3a419"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4ab2cb66852c8ab2b034da9a9ee8131" id="r_aa4ab2cb66852c8ab2b034da9a9ee8131"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8h.html#aa4ab2cb66852c8ab2b034da9a9ee8131">AuVFSRegisterRoot</a> (<a class="el" href="devclip_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *fs)</td></tr>
 <tr class="memdesc:aa4ab2cb66852c8ab2b034da9a9ee8131"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuVFSRegisterRoot &ndash; register the root file system.  <br /></td></tr>
 <tr class="separator:aa4ab2cb66852c8ab2b034da9a9ee8131"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e1c456ec2986d405d8ae891ff684ef5" id="r_a9e1c456ec2986d405d8ae891ff684ef5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> <a class="el" href="devclip_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8h.html#a9e1c456ec2986d405d8ae891ff684ef5">AuVFSFind</a> (char *<a class="el" href="Process_2Files_2main_8cpp.html#a44196e6a5696d10442c29e639437196e">path</a>)</td></tr>
+<tr class="memitem:a9e1c456ec2986d405d8ae891ff684ef5" id="r_a9e1c456ec2986d405d8ae891ff684ef5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> <a class="el" href="devclip_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8h.html#a9e1c456ec2986d405d8ae891ff684ef5">AuVFSFind</a> (char *<a class="el" href="structpath.html">path</a>)</td></tr>
 <tr class="memdesc:a9e1c456ec2986d405d8ae891ff684ef5"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuVFSFind &ndash; Searches a filesystem an return it to the caller.  <br /></td></tr>
 <tr class="separator:a9e1c456ec2986d405d8ae891ff684ef5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1174e467e751b00de01ad875dfc2d036" id="r_a1174e467e751b00de01ad875dfc2d036"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8h.html#a1174e467e751b00de01ad875dfc2d036">AuVFSNodeRead</a> (<a class="el" href="devclip_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *node, <a class="el" href="devclip_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *<a class="el" href="structfile.html">file</a>, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> *buffer, <a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> length)</td></tr>
+<tr class="memitem:a1174e467e751b00de01ad875dfc2d036" id="r_a1174e467e751b00de01ad875dfc2d036"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8h.html#a1174e467e751b00de01ad875dfc2d036">AuVFSNodeRead</a> (<a class="el" href="devclip_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *<a class="el" href="kthread_8h.html#af3fd9d829538e36331bf4a6fe7e6b7bc">node</a>, <a class="el" href="devclip_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *<a class="el" href="structfile.html">file</a>, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> *buffer, <a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> length)</td></tr>
 <tr class="memdesc:a1174e467e751b00de01ad875dfc2d036"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuVFSNodeRead &ndash; read from file system.  <br /></td></tr>
 <tr class="separator:a1174e467e751b00de01ad875dfc2d036"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4c1da1ffadb8117c25d95f5fd7898b1" id="r_ac4c1da1ffadb8117c25d95f5fd7898b1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8h.html#ac4c1da1ffadb8117c25d95f5fd7898b1">AuVFSNodeReadBlock</a> (<a class="el" href="devclip_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *node, <a class="el" href="devclip_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *<a class="el" href="structfile.html">file</a>, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> *buffer)</td></tr>
+<tr class="memitem:ac4c1da1ffadb8117c25d95f5fd7898b1" id="r_ac4c1da1ffadb8117c25d95f5fd7898b1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8h.html#ac4c1da1ffadb8117c25d95f5fd7898b1">AuVFSNodeReadBlock</a> (<a class="el" href="devclip_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *<a class="el" href="kthread_8h.html#af3fd9d829538e36331bf4a6fe7e6b7bc">node</a>, <a class="el" href="devclip_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *<a class="el" href="structfile.html">file</a>, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> *buffer)</td></tr>
 <tr class="memdesc:ac4c1da1ffadb8117c25d95f5fd7898b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuVFSNodeReadBlock &ndash; read a block size data from file system.  <br /></td></tr>
 <tr class="separator:ac4c1da1ffadb8117c25d95f5fd7898b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb1b77d7fa1ab9cc1023c775cb835d90" id="r_abb1b77d7fa1ab9cc1023c775cb835d90"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> <a class="el" href="devclip_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8h.html#abb1b77d7fa1ab9cc1023c775cb835d90">AuVFSCreateDir</a> (<a class="el" href="devclip_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *fsys, char *dirname)</td></tr>
@@ -246,18 +288,21 @@ Functions</h2></td></tr>
 <tr class="memitem:a323b045d10ced618a93b35ad32b7bbd5" id="r_a323b045d10ced618a93b35ad32b7bbd5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8h.html#a323b045d10ced618a93b35ad32b7bbd5">AuVFSRemoveDir</a> (<a class="el" href="devclip_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *fsys, <a class="el" href="devclip_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *<a class="el" href="structfile.html">file</a>)</td></tr>
 <tr class="memdesc:a323b045d10ced618a93b35ad32b7bbd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuVFSRemoveFile &ndash;remove a file from a file system.  <br /></td></tr>
 <tr class="separator:a323b045d10ced618a93b35ad32b7bbd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2eaa9ee595b0f9e00a01e245abeb30f1" id="r_a2eaa9ee595b0f9e00a01e245abeb30f1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8h.html#a2eaa9ee595b0f9e00a01e245abeb30f1">AuVFSNodeWrite</a> (<a class="el" href="devclip_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *node, <a class="el" href="devclip_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *<a class="el" href="structfile.html">file</a>, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> *buffer, <a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> length)</td></tr>
+<tr class="memitem:a2eaa9ee595b0f9e00a01e245abeb30f1" id="r_a2eaa9ee595b0f9e00a01e245abeb30f1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8h.html#a2eaa9ee595b0f9e00a01e245abeb30f1">AuVFSNodeWrite</a> (<a class="el" href="devclip_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *<a class="el" href="kthread_8h.html#af3fd9d829538e36331bf4a6fe7e6b7bc">node</a>, <a class="el" href="devclip_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *<a class="el" href="structfile.html">file</a>, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> *buffer, <a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> length)</td></tr>
 <tr class="memdesc:a2eaa9ee595b0f9e00a01e245abeb30f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuVFSNodeWrite &ndash; write to file system.  <br /></td></tr>
 <tr class="separator:a2eaa9ee595b0f9e00a01e245abeb30f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba7e7646e79c6755643717ad456a12a5" id="r_aba7e7646e79c6755643717ad456a12a5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8h.html#aba7e7646e79c6755643717ad456a12a5">AuVFSNodeClose</a> (<a class="el" href="devclip_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *node, <a class="el" href="devclip_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *<a class="el" href="structfile.html">file</a>)</td></tr>
+<tr class="memitem:aba7e7646e79c6755643717ad456a12a5" id="r_aba7e7646e79c6755643717ad456a12a5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8h.html#aba7e7646e79c6755643717ad456a12a5">AuVFSNodeClose</a> (<a class="el" href="devclip_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *<a class="el" href="kthread_8h.html#af3fd9d829538e36331bf4a6fe7e6b7bc">node</a>, <a class="el" href="devclip_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *<a class="el" href="structfile.html">file</a>)</td></tr>
 <tr class="memdesc:aba7e7646e79c6755643717ad456a12a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuVFSNodeClose &ndash; close a file system or file.  <br /></td></tr>
 <tr class="separator:aba7e7646e79c6755643717ad456a12a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d32e8f4e6304f96666b397e2dff4918" id="r_a9d32e8f4e6304f96666b397e2dff4918"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8h.html#a9d32e8f4e6304f96666b397e2dff4918">AuVFSGetBlockFor</a> (<a class="el" href="devclip_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *node, <a class="el" href="devclip_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *<a class="el" href="structfile.html">file</a>, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> offset)</td></tr>
+<tr class="memitem:a9d32e8f4e6304f96666b397e2dff4918" id="r_a9d32e8f4e6304f96666b397e2dff4918"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8h.html#a9d32e8f4e6304f96666b397e2dff4918">AuVFSGetBlockFor</a> (<a class="el" href="devclip_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *<a class="el" href="kthread_8h.html#af3fd9d829538e36331bf4a6fe7e6b7bc">node</a>, <a class="el" href="devclip_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *<a class="el" href="structfile.html">file</a>, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> <a class="el" href="drm__bridge_8h.html#ad5b30797981ed10bc3571a689a73eeac">offset</a>)</td></tr>
 <tr class="memdesc:a9d32e8f4e6304f96666b397e2dff4918"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuVFSGetBlockFor &ndash; returns a block number for certain byte offset of file.  <br /></td></tr>
 <tr class="separator:a9d32e8f4e6304f96666b397e2dff4918"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b8d31dc85b7e08f351e2f72d84cedee" id="r_a5b8d31dc85b7e08f351e2f72d84cedee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8h.html#a5b8d31dc85b7e08f351e2f72d84cedee">AuVFSSetCred</a> (<a class="el" href="devclip_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *node, <a class="el" href="user_8h.html#a158f59266d68ec49f2d89bac773e70ee">UID_NUM</a> uid, <a class="el" href="group_8h.html#a487dd0aecde7b311f15a556b1c2a3733">GID_NUM</a> gid)</td></tr>
+<tr class="memitem:a5b8d31dc85b7e08f351e2f72d84cedee" id="r_a5b8d31dc85b7e08f351e2f72d84cedee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8h.html#a5b8d31dc85b7e08f351e2f72d84cedee">AuVFSSetCred</a> (<a class="el" href="devclip_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *<a class="el" href="kthread_8h.html#af3fd9d829538e36331bf4a6fe7e6b7bc">node</a>, <a class="el" href="user_8h.html#a158f59266d68ec49f2d89bac773e70ee">UID_NUM</a> uid, <a class="el" href="group_8h.html#a487dd0aecde7b311f15a556b1c2a3733">GID_NUM</a> gid)</td></tr>
 <tr class="memdesc:a5b8d31dc85b7e08f351e2f72d84cedee"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuVFSSetCred &ndash; set gid/uid value for a file.  <br /></td></tr>
 <tr class="separator:a5b8d31dc85b7e08f351e2f72d84cedee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a546b7ab0cb402d48ba679b9b052ead25" id="r_a546b7ab0cb402d48ba679b9b052ead25"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8h.html#a546b7ab0cb402d48ba679b9b052ead25">AuVFSPoll</a> (<a class="el" href="devclip_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *<a class="el" href="structfile.html">file</a>, <a class="el" href="structAuPollTable.html">AuPollTable</a> *<a class="el" href="structpt.html">pt</a>)</td></tr>
+<tr class="memdesc:a546b7ab0cb402d48ba679b9b052ead25"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuVFSPoll &ndash; poll callback interface.  <br /></td></tr>
+<tr class="separator:a546b7ab0cb402d48ba679b9b052ead25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>BSD 2-Clause License</p>
@@ -493,6 +538,147 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a63fef26ada8717a982f5e479cb248e20" name="a63fef26ada8717a982f5e479cb248e20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63fef26ada8717a982f5e479cb248e20">&#9670;&#160;</a></span>S_IALLUGO</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define S_IALLUGO&#160;&#160;&#160;07777</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a84c7dbf5cf2fdfb690f76348b60a8cb7" name="a84c7dbf5cf2fdfb690f76348b60a8cb7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84c7dbf5cf2fdfb690f76348b60a8cb7">&#9670;&#160;</a></span>S_IRUSR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define S_IRUSR&#160;&#160;&#160;00400</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a230c642d2bb81f15f85c122b1883de5c" name="a230c642d2bb81f15f85c122b1883de5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a230c642d2bb81f15f85c122b1883de5c">&#9670;&#160;</a></span>S_IRWXG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define S_IRWXG&#160;&#160;&#160;00070</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5b93e0da7fe32bbd4926626bffad96b1" name="a5b93e0da7fe32bbd4926626bffad96b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b93e0da7fe32bbd4926626bffad96b1">&#9670;&#160;</a></span>S_IRWXO</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define S_IRWXO&#160;&#160;&#160;00007</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afe3da42e762f6362c93454682fad5eb5" name="afe3da42e762f6362c93454682fad5eb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe3da42e762f6362c93454682fad5eb5">&#9670;&#160;</a></span>S_IRWXU</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define S_IRWXU&#160;&#160;&#160;00700</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9c9e4cc0a8acc43c99ae6c3d972ae2d8" name="a9c9e4cc0a8acc43c99ae6c3d972ae2d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c9e4cc0a8acc43c99ae6c3d972ae2d8">&#9670;&#160;</a></span>S_ISGID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define S_ISGID&#160;&#160;&#160;02000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a30384a8cd2feb1615efd5eadc243684b" name="a30384a8cd2feb1615efd5eadc243684b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30384a8cd2feb1615efd5eadc243684b">&#9670;&#160;</a></span>S_ISUID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define S_ISUID&#160;&#160;&#160;04000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>file modes </p>
+
+</div>
+</div>
+<a id="a97b5e445a72c99b37dc5b8d620fbd14e" name="a97b5e445a72c99b37dc5b8d620fbd14e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97b5e445a72c99b37dc5b8d620fbd14e">&#9670;&#160;</a></span>S_ISVTX</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define S_ISVTX&#160;&#160;&#160;01000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad70001754261c15a1bdc8e876c6d09d7" name="ad70001754261c15a1bdc8e876c6d09d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad70001754261c15a1bdc8e876c6d09d7">&#9670;&#160;</a></span>S_IWUSR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define S_IWUSR&#160;&#160;&#160;00200</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af10a35e3950795d6ee4e07157d000131" name="af10a35e3950795d6ee4e07157d000131"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af10a35e3950795d6ee4e07157d000131">&#9670;&#160;</a></span>S_IXUSR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define S_IXUSR&#160;&#160;&#160;00100</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ab382a3a3df9f5a8a710eef53f9222072" name="ab382a3a3df9f5a8a710eef53f9222072"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab382a3a3df9f5a8a710eef53f9222072">&#9670;&#160;</a></span>VFS_MEDIA_TYPE_AHCI</h2>
 
@@ -615,7 +801,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef int(* close_callback) (struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *node, struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *<a class="el" href="structfile.html">file</a>)</td>
+          <td class="memname">typedef int(* close_callback) (struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *<a class="el" href="kthread_8h.html#af3fd9d829538e36331bf4a6fe7e6b7bc">node</a>, struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *<a class="el" href="structfile.html">file</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -629,7 +815,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *(* create_dir_callback) (struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *node, char *dirname)</td>
+          <td class="memname">typedef struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *(* create_dir_callback) (struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *<a class="el" href="kthread_8h.html#af3fd9d829538e36331bf4a6fe7e6b7bc">node</a>, char *dirname)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -643,7 +829,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *(* create_file_callback) (struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *node, char *filename)</td>
+          <td class="memname">typedef struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *(* create_file_callback) (struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *<a class="el" href="kthread_8h.html#af3fd9d829538e36331bf4a6fe7e6b7bc">node</a>, char *filename)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -657,7 +843,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>(* fs_getblockfor) (struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *fs, struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *<a class="el" href="structfile.html">file</a>, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> offset)</td>
+          <td class="memname">typedef <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>(* fs_getblockfor) (struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *fs, struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *<a class="el" href="structfile.html">file</a>, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> <a class="el" href="drm__bridge_8h.html#ad5b30797981ed10bc3571a689a73eeac">offset</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -685,7 +871,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef int(* iocontrol_callback) (struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *<a class="el" href="structfile.html">file</a>, int code, void *arg)</td>
+          <td class="memname">typedef int(* iocontrol_callback) (struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *<a class="el" href="structfile.html">file</a>, int code, void *<a class="el" href="unionarg.html">arg</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -699,7 +885,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *(* open_callback) (struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *node, char *<a class="el" href="Process_2Files_2main_8cpp.html#a44196e6a5696d10442c29e639437196e">path</a>)</td>
+          <td class="memname">typedef struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *(* open_callback) (struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *<a class="el" href="kthread_8h.html#af3fd9d829538e36331bf4a6fe7e6b7bc">node</a>, char *<a class="el" href="structpath.html">path</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -720,6 +906,20 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a12e6e95a08a2d853eca67ccb84be7054" name="a12e6e95a08a2d853eca67ccb84be7054"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12e6e95a08a2d853eca67ccb84be7054">&#9670;&#160;</a></span>poll_callback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef int(* poll_callback) (struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *fs, struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *<a class="el" href="structfile.html">file</a>, <a class="el" href="structAuPollTable.html">AuPollTable</a> *<a class="el" href="codec__8859_8c.html#a05be6af94bcc30c135e4b6089bf9cfd9">table</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a3a11cc57c6443ce6fc5d09f119973aff" name="a3a11cc57c6443ce6fc5d09f119973aff"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3a11cc57c6443ce6fc5d09f119973aff">&#9670;&#160;</a></span>read_block_callback</h2>
 
@@ -727,7 +927,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>(* read_block_callback) (struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *node, struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *<a class="el" href="structfile.html">file</a>, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> *buffer)</td>
+          <td class="memname">typedef <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>(* read_block_callback) (struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *<a class="el" href="kthread_8h.html#af3fd9d829538e36331bf4a6fe7e6b7bc">node</a>, struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *<a class="el" href="structfile.html">file</a>, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> *buffer)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -741,7 +941,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>(* read_callback) (struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *node, struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *<a class="el" href="structfile.html">file</a>, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> *buffer, <a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> length)</td>
+          <td class="memname">typedef <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>(* read_callback) (struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *<a class="el" href="kthread_8h.html#af3fd9d829538e36331bf4a6fe7e6b7bc">node</a>, struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *<a class="el" href="structfile.html">file</a>, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> *buffer, <a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> length)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -769,7 +969,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef int(* remove_dir_callback) (struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *node, struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *<a class="el" href="structfile.html">file</a>)</td>
+          <td class="memname">typedef int(* remove_dir_callback) (struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *<a class="el" href="kthread_8h.html#af3fd9d829538e36331bf4a6fe7e6b7bc">node</a>, struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *<a class="el" href="structfile.html">file</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -783,7 +983,21 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef int(* remove_file_callback) (struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *node, struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *<a class="el" href="structfile.html">file</a>)</td>
+          <td class="memname">typedef int(* remove_file_callback) (struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *<a class="el" href="kthread_8h.html#af3fd9d829538e36331bf4a6fe7e6b7bc">node</a>, struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *<a class="el" href="structfile.html">file</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3c92fe6f48b83ecaadfe20ad0963a2fd" name="a3c92fe6f48b83ecaadfe20ad0963a2fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c92fe6f48b83ecaadfe20ad0963a2fd">&#9670;&#160;</a></span>setattr_callback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef int(* setattr_callback) (struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *fs, struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *<a class="el" href="structfile.html">file</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -797,7 +1011,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>(* write_callback) (struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *node, struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *<a class="el" href="structfile.html">file</a>, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> *buffer, <a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> length)</td>
+          <td class="memname">typedef <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>(* write_callback) (struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *<a class="el" href="kthread_8h.html#af3fd9d829538e36331bf4a6fe7e6b7bc">node</a>, struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *<a class="el" href="structfile.html">file</a>, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> *buffer, <a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> length)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1262,6 +1476,43 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pointer to file node, on success </dd></dl>
 <p>Here check the eof bit, if EOF bit is not marked 1 this file is on used, we need to create a new file on memory, if eof is marked, already file is free on cache, we can reuse it, memory bachane ka clever technique broo/babe</p>
+
+</div>
+</div>
+<a id="a546b7ab0cb402d48ba679b9b052ead25" name="a546b7ab0cb402d48ba679b9b052ead25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a546b7ab0cb402d48ba679b9b052ead25">&#9670;&#160;</a></span>AuVFSPoll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> int AuVFSPoll </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="devclip_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structAuPollTable.html">AuPollTable</a> *&#160;</td>
+          <td class="paramname"><em>pt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>AuVFSPoll &ndash; poll callback interface. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file</td><td>&ndash; pointer to pollable file </td></tr>
+    <tr><td class="paramname">pt</td><td>&ndash; Pointer to PollTable holding information about caller </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

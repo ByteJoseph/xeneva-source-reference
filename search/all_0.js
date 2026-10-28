@@ -1,3 +1,3 @@
 var searchData=
 [
-'../Libs_2XEClib_2includes_2strings_8h.html#autotoc_md20',1,'==========================================================='];
+'../Libs_2XEClib_2includes_2strings_8h.html#autotoc_md26',1,'==========================================================='];

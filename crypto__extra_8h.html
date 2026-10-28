@@ -324,9 +324,9 @@ Macros</h2></td></tr>
 <tr class="separator:a78e33eb5906aa452ca64159191c2d975"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ce235183de6d1a0744b00ced5be7c74" id="r_a0ce235183de6d1a0744b00ced5be7c74"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="crypto__extra_8h.html#a0ce235183de6d1a0744b00ced5be7c74">PSA_PAKE_OPERATION_INIT</a></td></tr>
 <tr class="separator:a0ce235183de6d1a0744b00ced5be7c74"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c72597374a5f87d8f24f62ce6d981e4" id="r_a4c72597374a5f87d8f24f62ce6d981e4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="crypto__extra_8h.html#a4c72597374a5f87d8f24f62ce6d981e4">PSA_JPAKE_EXPECTED_INPUTS</a>(round)</td></tr>
+<tr class="memitem:a4c72597374a5f87d8f24f62ce6d981e4" id="r_a4c72597374a5f87d8f24f62ce6d981e4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="crypto__extra_8h.html#a4c72597374a5f87d8f24f62ce6d981e4">PSA_JPAKE_EXPECTED_INPUTS</a>(<a class="el" href="libm_8c.html#a7df19cf730447c00150569250a4b5e1d">round</a>)</td></tr>
 <tr class="separator:a4c72597374a5f87d8f24f62ce6d981e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a99683cf31f74b4508dd9d664cb865502" id="r_a99683cf31f74b4508dd9d664cb865502"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="crypto__extra_8h.html#a99683cf31f74b4508dd9d664cb865502">PSA_JPAKE_EXPECTED_OUTPUTS</a>(round)</td></tr>
+<tr class="memitem:a99683cf31f74b4508dd9d664cb865502" id="r_a99683cf31f74b4508dd9d664cb865502"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="crypto__extra_8h.html#a99683cf31f74b4508dd9d664cb865502">PSA_JPAKE_EXPECTED_OUTPUTS</a>(<a class="el" href="libm_8c.html#a7df19cf730447c00150569250a4b5e1d">round</a>)</td></tr>
 <tr class="separator:a99683cf31f74b4508dd9d664cb865502"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">SECTION: Module configuration options</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p>This section allows for the setting of module specific sizes and configuration options. The default values are already present in the relevant header files and should suffice for the regular use cases.</p>
@@ -475,7 +475,7 @@ Functions</h2></td></tr>
 <p>Use HMAC_DRBG with the specified hash algorithm for HMAC_DRBG for the PSA crypto subsystem.</p>
 <p>If this option is unset, the library chooses a hash (currently between <a class="el" href="md_8h.html#a219313cb40503ec3e34a857ab98b2296a0cdbe8272ceee7d63b2bfadd5ed05c26">MBEDTLS_MD_SHA512</a> and <a class="el" href="md_8h.html#a219313cb40503ec3e34a857ab98b2296a7634aa1a264b0e1a5ec65f4ed77468f8">MBEDTLS_MD_SHA256</a>) based on availability and unspecified heuristics.</p>
 <dl class="section note"><dt>Note</dt><dd>The PSA crypto subsystem uses the first available mechanism amongst the following:<ul>
-<li>#MBEDTLS_PSA_CRYPTO_EXTERNAL_RNG if enabled;</li>
+<li>MBEDTLS_PSA_CRYPTO_EXTERNAL_RNG if enabled;</li>
 <li>Entropy from <a class="el" href="mbedtls__config_8h.html#a24884ce4da3fed0ceff29962dd7a01fc">MBEDTLS_ENTROPY_C</a> plus CTR_DRBG with AES if <a class="el" href="mbedtls__config_8h.html#a493cf54dbd2c093c8541b1ad106436e9">MBEDTLS_CTR_DRBG_C</a> is enabled;</li>
 <li>Entropy from <a class="el" href="mbedtls__config_8h.html#a24884ce4da3fed0ceff29962dd7a01fc">MBEDTLS_ENTROPY_C</a> plus HMAC_DRBG.</li>
 </ul>
@@ -504,7 +504,7 @@ Functions</h2></td></tr>
 <div class="line">     <a class="code hl_define" href="crypto__sizes_8h.html#a22d467d5cf7da54dbb2a22117945b70b">PSA_EXPORT_KEY_PAIR_OR_PUBLIC_MAX_SIZE</a> : <a class="code hl_define" href="crypto__sizes_8h.html#ac7e03268363599dac2c4979c812f3fcf">PSA_CIPHER_MAX_KEY_LENGTH</a>)</div>
 <div class="ttc" id="acrypto__sizes_8h_html_a22d467d5cf7da54dbb2a22117945b70b"><div class="ttname"><a href="crypto__sizes_8h.html#a22d467d5cf7da54dbb2a22117945b70b">PSA_EXPORT_KEY_PAIR_OR_PUBLIC_MAX_SIZE</a></div><div class="ttdeci">#define PSA_EXPORT_KEY_PAIR_OR_PUBLIC_MAX_SIZE</div><div class="ttdef"><b>Definition</b> crypto_sizes.h:1041</div></div>
 <div class="ttc" id="acrypto__sizes_8h_html_ac7e03268363599dac2c4979c812f3fcf"><div class="ttname"><a href="crypto__sizes_8h.html#ac7e03268363599dac2c4979c812f3fcf">PSA_CIPHER_MAX_KEY_LENGTH</a></div><div class="ttdeci">#define PSA_CIPHER_MAX_KEY_LENGTH</div><div class="ttdef"><b>Definition</b> crypto_sizes.h:1110</div></div>
-</div><!-- fragment --><p>Define the size (in bytes) of each static key buffer when #MBEDTLS_PSA_STATIC_KEY_SLOTS is set. If not explicitly defined then it's automatically guessed from available PSA keys enabled in the build through PSA_WANT_xxx symbols. If required by the application this parameter can be set to higher values in order to store larger objects (ex: raw keys), but please note that this will increase RAM usage. </p>
+</div><!-- fragment --><p>Define the size (in bytes) of each static key buffer when MBEDTLS_PSA_STATIC_KEY_SLOTS is set. If not explicitly defined then it's automatically guessed from available PSA keys enabled in the build through PSA_WANT_xxx symbols. If required by the application this parameter can be set to higher values in order to store larger objects (ex: raw keys), but please note that this will increase RAM usage. </p>
 
 </div>
 </div>
@@ -532,15 +532,16 @@ Functions</h2></td></tr>
           <td class="memname">#define PSA_JPAKE_EXPECTED_INPUTS</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">round</td><td>)</td>
+          <td class="paramname"><a class="el" href="libm_8c.html#a7df19cf730447c00150569250a4b5e1d">round</a></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">                                          ((round) == <a class="code hl_enumvalue" href="crypto__extra_8h.html#a35934e47040ddf65b39e87e80a0b0543a2016b250a6f20acccab7316532d12aa5">PSA_JPAKE_FINISHED</a> ? 0 : \</div>
-<div class="line">                                          ((round) == <a class="code hl_enumvalue" href="crypto__extra_8h.html#a35934e47040ddf65b39e87e80a0b0543a99c1f2ef421eb70bd934e4dea2e9b25a">PSA_JPAKE_FIRST</a> ? 2 : 1))</div>
+<b>Value:</b><div class="fragment"><div class="line">                                          ((<a class="code hl_function" href="libm_8c.html#a7df19cf730447c00150569250a4b5e1d">round</a>) == <a class="code hl_enumvalue" href="crypto__extra_8h.html#a35934e47040ddf65b39e87e80a0b0543a2016b250a6f20acccab7316532d12aa5">PSA_JPAKE_FINISHED</a> ? 0 : \</div>
+<div class="line">                                          ((<a class="code hl_function" href="libm_8c.html#a7df19cf730447c00150569250a4b5e1d">round</a>) == <a class="code hl_enumvalue" href="crypto__extra_8h.html#a35934e47040ddf65b39e87e80a0b0543a99c1f2ef421eb70bd934e4dea2e9b25a">PSA_JPAKE_FIRST</a> ? 2 : 1))</div>
 <div class="ttc" id="acrypto__extra_8h_html_a35934e47040ddf65b39e87e80a0b0543a2016b250a6f20acccab7316532d12aa5"><div class="ttname"><a href="crypto__extra_8h.html#a35934e47040ddf65b39e87e80a0b0543a2016b250a6f20acccab7316532d12aa5">PSA_JPAKE_FINISHED</a></div><div class="ttdeci">@ PSA_JPAKE_FINISHED</div><div class="ttdef"><b>Definition</b> crypto_extra.h:1095</div></div>
 <div class="ttc" id="acrypto__extra_8h_html_a35934e47040ddf65b39e87e80a0b0543a99c1f2ef421eb70bd934e4dea2e9b25a"><div class="ttname"><a href="crypto__extra_8h.html#a35934e47040ddf65b39e87e80a0b0543a99c1f2ef421eb70bd934e4dea2e9b25a">PSA_JPAKE_FIRST</a></div><div class="ttdeci">@ PSA_JPAKE_FIRST</div><div class="ttdef"><b>Definition</b> crypto_extra.h:1093</div></div>
+<div class="ttc" id="alibm_8c_html_a7df19cf730447c00150569250a4b5e1d"><div class="ttname"><a href="libm_8c.html#a7df19cf730447c00150569250a4b5e1d">round</a></div><div class="ttdeci">double round(double x)</div><div class="ttdef"><b>Definition</b> libm.c:95</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -554,13 +555,13 @@ Functions</h2></td></tr>
           <td class="memname">#define PSA_JPAKE_EXPECTED_OUTPUTS</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">round</td><td>)</td>
+          <td class="paramname"><a class="el" href="libm_8c.html#a7df19cf730447c00150569250a4b5e1d">round</a></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">                                           ((round) == <a class="code hl_enumvalue" href="crypto__extra_8h.html#a35934e47040ddf65b39e87e80a0b0543a2016b250a6f20acccab7316532d12aa5">PSA_JPAKE_FINISHED</a> ? 0 : \</div>
-<div class="line">                                           ((round) == <a class="code hl_enumvalue" href="crypto__extra_8h.html#a35934e47040ddf65b39e87e80a0b0543a99c1f2ef421eb70bd934e4dea2e9b25a">PSA_JPAKE_FIRST</a> ? 2 : 1))</div>
+<b>Value:</b><div class="fragment"><div class="line">                                           ((<a class="code hl_function" href="libm_8c.html#a7df19cf730447c00150569250a4b5e1d">round</a>) == <a class="code hl_enumvalue" href="crypto__extra_8h.html#a35934e47040ddf65b39e87e80a0b0543a2016b250a6f20acccab7316532d12aa5">PSA_JPAKE_FINISHED</a> ? 0 : \</div>
+<div class="line">                                           ((<a class="code hl_function" href="libm_8c.html#a7df19cf730447c00150569250a4b5e1d">round</a>) == <a class="code hl_enumvalue" href="crypto__extra_8h.html#a35934e47040ddf65b39e87e80a0b0543a99c1f2ef421eb70bd934e4dea2e9b25a">PSA_JPAKE_FIRST</a> ? 2 : 1))</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1018,7 +1019,7 @@ If you use this function, you should use it as part of a factory provisioning pr
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">seed</td><td>Buffer containing the seed value to inject. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">seed_size</td><td>Size of the <code>seed</code> buffer. The size of the seed in bytes must be greater or equal to both #MBEDTLS_ENTROPY_BLOCK_SIZE and the value of <code>MBEDTLS_ENTROPY_MIN_PLATFORM</code> in <code><a class="el" href="entropy__poll_8h.html" title="Platform-specific and custom entropy polling functions.">library/entropy_poll.h</a></code> in the Mbed TLS source code. It must be less or equal to <a class="el" href="entropy_8h.html#afff6ba3d7fc6df1fedd007d3a9a4136b">MBEDTLS_ENTROPY_MAX_SEED_SIZE</a>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">seed_size</td><td>Size of the <code>seed</code> buffer. The size of the seed in bytes must be greater or equal to both MBEDTLS_ENTROPY_BLOCK_SIZE and the value of <code>MBEDTLS_ENTROPY_MIN_PLATFORM</code> in <code><a class="el" href="entropy__poll_8h.html" title="Platform-specific and custom entropy polling functions.">library/entropy_poll.h</a></code> in the Mbed TLS source code. It must be less or equal to <a class="el" href="entropy_8h.html#afff6ba3d7fc6df1fedd007d3a9a4136b">MBEDTLS_ENTROPY_MAX_SEED_SIZE</a>.</td></tr>
   </table>
   </dd>
 </dl>

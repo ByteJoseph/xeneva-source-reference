@@ -135,13 +135,13 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>};</div>
 </div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keyword">struct </span>gpio_desc* devm_gpiod_get_optional(<span class="keyword">struct</span> <a class="code hl_struct" href="structdevice.html">device</a>* dev,</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keyword">struct </span>gpio_desc* devm_gpiod_get_optional(<span class="keyword">struct</span> <a class="code hl_struct" href="structdevice.html">device</a>* <a class="code hl_variable" href="drm__print_8h.html#a1572ef5e3355461e391f0d510070cd36">dev</a>,</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>                            <span class="keyword">const</span> <span class="keywordtype">char</span>* con_id,</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>                            <span class="keyword">enum</span> <a class="code hl_enumeration" href="consumer_8h.html#a5a2f0423cb129fe0b6acecc3513e1b39">gpiod_flags</a> <a class="code hl_variable" href="Drivers_2virtio_8h.html#aa2585d779da0ab21273a8d92de9a0ebe">flags</a>)</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>                            <span class="keyword">enum</span> <a class="code hl_enumeration" href="consumer_8h.html#a5a2f0423cb129fe0b6acecc3513e1b39">gpiod_flags</a> <a class="code hl_variable" href="Drivers_2virtio_8h.html#a04a0bd666e371f3fab92b8d0ef5dbdb0">flags</a>)</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>{</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    (void)dev;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    (void)<a class="code hl_variable" href="drm__print_8h.html#a1572ef5e3355461e391f0d510070cd36">dev</a>;</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    (void)con_id;</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    (void)<a class="code hl_variable" href="Drivers_2virtio_8h.html#aa2585d779da0ab21273a8d92de9a0ebe">flags</a>;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    (void)<a class="code hl_variable" href="Drivers_2virtio_8h.html#a04a0bd666e371f3fab92b8d0ef5dbdb0">flags</a>;</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keywordflow">return</span> <a class="code hl_define" href="actypes_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;    <span class="comment">/* no controller: the line is simply not there */</span></div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>}</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
@@ -152,7 +152,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>}</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="preprocessor">#endif </span><span class="comment">/* __LINUX_GPIO_CONSUMER_H__ */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="aDrivers_2virtio_8h_html_aa2585d779da0ab21273a8d92de9a0ebe"><div class="ttname"><a href="Drivers_2virtio_8h.html#aa2585d779da0ab21273a8d92de9a0ebe">flags</a></div><div class="ttdeci">uint8_t flags</div><div class="ttdef"><b>Definition</b> virtio.h:0</div></div>
+<div class="ttc" id="aDrivers_2virtio_8h_html_a04a0bd666e371f3fab92b8d0ef5dbdb0"><div class="ttname"><a href="Drivers_2virtio_8h.html#a04a0bd666e371f3fab92b8d0ef5dbdb0">flags</a></div><div class="ttdeci">uint8_t flags</div><div class="ttdef"><b>Definition</b> virtio.h:0</div></div>
 <div class="ttc" id="aactypes_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="actypes_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition</b> actypes.h:561</div></div>
 <div class="ttc" id="aconsumer_8h_html_a4d4e96c2b96247c3e704cb056243878e"><div class="ttname"><a href="consumer_8h.html#a4d4e96c2b96247c3e704cb056243878e">GPIOD_FLAGS_BIT_OPEN_DRAIN</a></div><div class="ttdeci">#define GPIOD_FLAGS_BIT_OPEN_DRAIN</div><div class="ttdef"><b>Definition</b> consumer.h:41</div></div>
 <div class="ttc" id="aconsumer_8h_html_a53e622480cd7535825a2552261c44655"><div class="ttname"><a href="consumer_8h.html#a53e622480cd7535825a2552261c44655">GPIOD_FLAGS_BIT_DIR_VAL</a></div><div class="ttdeci">#define GPIOD_FLAGS_BIT_DIR_VAL</div><div class="ttdef"><b>Definition</b> consumer.h:40</div></div>
@@ -165,7 +165,8 @@ $(document).ready(function() { init_codefold(0); });
 <div class="ttc" id="aconsumer_8h_html_a5a2f0423cb129fe0b6acecc3513e1b39af35c63c10d43ced93b11ec27d7700f0b"><div class="ttname"><a href="consumer_8h.html#a5a2f0423cb129fe0b6acecc3513e1b39af35c63c10d43ced93b11ec27d7700f0b">GPIOD_OUT_LOW_OPEN_DRAIN</a></div><div class="ttdeci">@ GPIOD_OUT_LOW_OPEN_DRAIN</div><div class="ttdef"><b>Definition</b> consumer.h:49</div></div>
 <div class="ttc" id="aconsumer_8h_html_aad15758fc6bcbf91def870538dd00418"><div class="ttname"><a href="consumer_8h.html#aad15758fc6bcbf91def870538dd00418">GPIOD_FLAGS_BIT_DIR_SET</a></div><div class="ttdeci">#define GPIOD_FLAGS_BIT_DIR_SET</div><div class="ttdef"><b>Definition</b> consumer.h:38</div></div>
 <div class="ttc" id="aconsumer_8h_html_ae74f745f9d996776ae958aeb6f1e5e00"><div class="ttname"><a href="consumer_8h.html#ae74f745f9d996776ae958aeb6f1e5e00">GPIOD_FLAGS_BIT_DIR_OUT</a></div><div class="ttdeci">#define GPIOD_FLAGS_BIT_DIR_OUT</div><div class="ttdef"><b>Definition</b> consumer.h:39</div></div>
-<div class="ttc" id="astructdevice_html"><div class="ttname"><a href="structdevice.html">device</a></div><div class="ttdef"><b>Definition</b> fs.h:184</div></div>
+<div class="ttc" id="adrm__print_8h_html_a1572ef5e3355461e391f0d510070cd36"><div class="ttname"><a href="drm__print_8h.html#a1572ef5e3355461e391f0d510070cd36">dev</a></div><div class="ttdeci">const struct device * dev</div><div class="ttdef"><b>Definition</b> drm_print.h:519</div></div>
+<div class="ttc" id="astructdevice_html"><div class="ttname"><a href="structdevice.html">device</a></div><div class="ttdef"><b>Definition</b> fs.h:255</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

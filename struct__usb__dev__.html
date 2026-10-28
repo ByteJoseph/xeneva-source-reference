@@ -212,33 +212,33 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a47e2bcf28cb93b96a8d7253f16438bbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6164789a7961a5d38f19937291cf36b" id="r_ae6164789a7961a5d38f19937291cf36b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__usb__dev__.html#ae6164789a7961a5d38f19937291cf36b">driverInitialized</a></td></tr>
 <tr class="separator:ae6164789a7961a5d38f19937291cf36b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ea39cb3c70e336dcda869191d51f701" id="r_a9ea39cb3c70e336dcda869191d51f701"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__usb__dev__.html#a9ea39cb3c70e336dcda869191d51f701">schedule_interrupt</a> )(<a class="el" href="struct__usb__dev__.html">_usb_dev_</a> *dev, void *ep, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> buffer, void(*callback)(void *dev, void *slot, void *Endp))</td></tr>
+<tr class="memitem:a9ea39cb3c70e336dcda869191d51f701" id="r_a9ea39cb3c70e336dcda869191d51f701"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__usb__dev__.html#a9ea39cb3c70e336dcda869191d51f701">schedule_interrupt</a> )(<a class="el" href="struct__usb__dev__.html">_usb_dev_</a> *<a class="el" href="drm__print_8h.html#a1572ef5e3355461e391f0d510070cd36">dev</a>, void *ep, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> buffer, void(*callback)(void *<a class="el" href="drm__print_8h.html#a1572ef5e3355461e391f0d510070cd36">dev</a>, void *slot, void *Endp))</td></tr>
 <tr class="separator:a9ea39cb3c70e336dcda869191d51f701"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5086531681801b3783215a15566fd3a2" id="r_a5086531681801b3783215a15566fd3a2"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__usb__dev__.html#a5086531681801b3783215a15566fd3a2">control_transfer</a> )(<a class="el" href="struct__usb__dev__.html">_usb_dev_</a> *usbdev, const <a class="el" href="structUSB__REQUEST__PACKET.html">USB_REQUEST_PACKET</a> *request, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> buffer_addr, const <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> <a class="el" href="codec__8859_8c.html#a7360b55975153b822efc5217b7734e6a">len</a>)</td></tr>
+<tr class="memitem:a5086531681801b3783215a15566fd3a2" id="r_a5086531681801b3783215a15566fd3a2"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__usb__dev__.html#a5086531681801b3783215a15566fd3a2">control_transfer</a> )(<a class="el" href="struct__usb__dev__.html">_usb_dev_</a> *usbdev, const <a class="el" href="structUSB__REQUEST__PACKET.html">USB_REQUEST_PACKET</a> *request, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> buffer_addr, const <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> <a class="el" href="initial_8c.html#a7360b55975153b822efc5217b7734e6a">len</a>)</td></tr>
 <tr class="separator:a5086531681801b3783215a15566fd3a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f4fa3f096e20d94b54972f8d61e6420" id="r_a2f4fa3f096e20d94b54972f8d61e6420"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__usb__dev__.html#a2f4fa3f096e20d94b54972f8d61e6420">bulk_transfer</a> )(<a class="el" href="struct__usb__dev__.html">_usb_dev_</a> *usbdev, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> buffer, <a class="el" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> data_len, void *ep)</td></tr>
 <tr class="separator:a2f4fa3f096e20d94b54972f8d61e6420"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1be8c6fdadcb14c915f96525c34ebeea" id="r_a1be8c6fdadcb14c915f96525c34ebeea"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__usb__dev__.html#a1be8c6fdadcb14c915f96525c34ebeea">get_device_desc</a> )(<a class="el" href="struct__usb__dev__.html">_usb_dev_</a> *dev, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> buffer, <a class="el" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> <a class="el" href="codec__8859_8c.html#a7360b55975153b822efc5217b7734e6a">len</a>)</td></tr>
+<tr class="memitem:a1be8c6fdadcb14c915f96525c34ebeea" id="r_a1be8c6fdadcb14c915f96525c34ebeea"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__usb__dev__.html#a1be8c6fdadcb14c915f96525c34ebeea">get_device_desc</a> )(<a class="el" href="struct__usb__dev__.html">_usb_dev_</a> *<a class="el" href="drm__print_8h.html#a1572ef5e3355461e391f0d510070cd36">dev</a>, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> buffer, <a class="el" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> <a class="el" href="initial_8c.html#a7360b55975153b822efc5217b7734e6a">len</a>)</td></tr>
 <tr class="separator:a1be8c6fdadcb14c915f96525c34ebeea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a262c85071578adbb796c9e02cd8eeb95" id="r_a262c85071578adbb796c9e02cd8eeb95"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__usb__dev__.html#a262c85071578adbb796c9e02cd8eeb95">get_string_desc</a> )(<a class="el" href="struct__usb__dev__.html">_usb_dev_</a> *dev, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> buffer, <a class="el" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> id)</td></tr>
+<tr class="memitem:a262c85071578adbb796c9e02cd8eeb95" id="r_a262c85071578adbb796c9e02cd8eeb95"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__usb__dev__.html#a262c85071578adbb796c9e02cd8eeb95">get_string_desc</a> )(<a class="el" href="struct__usb__dev__.html">_usb_dev_</a> *<a class="el" href="drm__print_8h.html#a1572ef5e3355461e391f0d510070cd36">dev</a>, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> buffer, <a class="el" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> id)</td></tr>
 <tr class="separator:a262c85071578adbb796c9e02cd8eeb95"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ba9debf759b55ca603c030f50cdb8c6" id="r_a9ba9debf759b55ca603c030f50cdb8c6"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__usb__dev__.html#a9ba9debf759b55ca603c030f50cdb8c6">get_config_desc</a> )(<a class="el" href="struct__usb__dev__.html">_usb_dev_</a> *dev, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> buffer, <a class="el" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> <a class="el" href="codec__8859_8c.html#a7360b55975153b822efc5217b7734e6a">len</a>, <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> id)</td></tr>
+<tr class="memitem:a9ba9debf759b55ca603c030f50cdb8c6" id="r_a9ba9debf759b55ca603c030f50cdb8c6"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__usb__dev__.html#a9ba9debf759b55ca603c030f50cdb8c6">get_config_desc</a> )(<a class="el" href="struct__usb__dev__.html">_usb_dev_</a> *<a class="el" href="drm__print_8h.html#a1572ef5e3355461e391f0d510070cd36">dev</a>, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> buffer, <a class="el" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> <a class="el" href="initial_8c.html#a7360b55975153b822efc5217b7734e6a">len</a>, <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> id)</td></tr>
 <tr class="separator:a9ba9debf759b55ca603c030f50cdb8c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0cdfcc25c61dd9b017b18109fe75ab49" id="r_a0cdfcc25c61dd9b017b18109fe75ab49"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Drivers_2xHCI_2usb_8h.html#abe31671913697c0e3184bbd550dc8bd6">usb_descriptor_t</a> *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__usb__dev__.html#a0cdfcc25c61dd9b017b18109fe75ab49">get_descriptor</a> )(<a class="el" href="struct__usb__dev__.html">_usb_dev_</a> *dev, <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> type)</td></tr>
+<tr class="memitem:a0cdfcc25c61dd9b017b18109fe75ab49" id="r_a0cdfcc25c61dd9b017b18109fe75ab49"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Drivers_2xHCI_2usb_8h.html#abe31671913697c0e3184bbd550dc8bd6">usb_descriptor_t</a> *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__usb__dev__.html#a0cdfcc25c61dd9b017b18109fe75ab49">get_descriptor</a> )(<a class="el" href="struct__usb__dev__.html">_usb_dev_</a> *<a class="el" href="drm__print_8h.html#a1572ef5e3355461e391f0d510070cd36">dev</a>, <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> type)</td></tr>
 <tr class="separator:a0cdfcc25c61dd9b017b18109fe75ab49"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9eb3fb621c833dd3cca1b75981744ee" id="r_ad9eb3fb621c833dd3cca1b75981744ee"><td class="memItemLeft" align="right" valign="top">void *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__usb__dev__.html#ad9eb3fb621c833dd3cca1b75981744ee">get_endpoint</a> )(<a class="el" href="struct__usb__dev__.html">_usb_dev_</a> *dev, <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> ep_type)</td></tr>
+<tr class="memitem:ad9eb3fb621c833dd3cca1b75981744ee" id="r_ad9eb3fb621c833dd3cca1b75981744ee"><td class="memItemLeft" align="right" valign="top">void *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__usb__dev__.html#ad9eb3fb621c833dd3cca1b75981744ee">get_endpoint</a> )(<a class="el" href="struct__usb__dev__.html">_usb_dev_</a> *<a class="el" href="drm__print_8h.html#a1572ef5e3355461e391f0d510070cd36">dev</a>, <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> ep_type)</td></tr>
 <tr class="separator:ad9eb3fb621c833dd3cca1b75981744ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1ad5b54dfb1b68831fe2530a6e29f16" id="r_af1ad5b54dfb1b68831fe2530a6e29f16"><td class="memItemLeft" align="right" valign="top">void *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__usb__dev__.html#af1ad5b54dfb1b68831fe2530a6e29f16">get_bulk_ep</a> )(<a class="el" href="struct__usb__dev__.html">_usb_dev_</a> *dev, <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> dir)</td></tr>
+<tr class="memitem:af1ad5b54dfb1b68831fe2530a6e29f16" id="r_af1ad5b54dfb1b68831fe2530a6e29f16"><td class="memItemLeft" align="right" valign="top">void *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__usb__dev__.html#af1ad5b54dfb1b68831fe2530a6e29f16">get_bulk_ep</a> )(<a class="el" href="struct__usb__dev__.html">_usb_dev_</a> *<a class="el" href="drm__print_8h.html#a1572ef5e3355461e391f0d510070cd36">dev</a>, <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> dir)</td></tr>
 <tr class="separator:af1ad5b54dfb1b68831fe2530a6e29f16"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af3ca8061a0ae206ca50af294ddd94ab2" id="r_af3ca8061a0ae206ca50af294ddd94ab2"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__usb__dev__.html#af3ca8061a0ae206ca50af294ddd94ab2">get_max_pack_sz</a> )(<a class="el" href="struct__usb__dev__.html">_usb_dev_</a> *dev, void *ep)</td></tr>
+<tr class="memitem:af3ca8061a0ae206ca50af294ddd94ab2" id="r_af3ca8061a0ae206ca50af294ddd94ab2"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__usb__dev__.html#af3ca8061a0ae206ca50af294ddd94ab2">get_max_pack_sz</a> )(<a class="el" href="struct__usb__dev__.html">_usb_dev_</a> *<a class="el" href="drm__print_8h.html#a1572ef5e3355461e391f0d510070cd36">dev</a>, void *ep)</td></tr>
 <tr class="separator:af3ca8061a0ae206ca50af294ddd94ab2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab79bd8817df9effdee388588275ac8cb" id="r_ab79bd8817df9effdee388588275ac8cb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__usb__dev__.html#ab79bd8817df9effdee388588275ac8cb">get_endpoint_address</a> )(<a class="el" href="struct__usb__dev__.html">_usb_dev_</a> *dev, void *ep)</td></tr>
+<tr class="memitem:ab79bd8817df9effdee388588275ac8cb" id="r_ab79bd8817df9effdee388588275ac8cb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__usb__dev__.html#ab79bd8817df9effdee388588275ac8cb">get_endpoint_address</a> )(<a class="el" href="struct__usb__dev__.html">_usb_dev_</a> *<a class="el" href="drm__print_8h.html#a1572ef5e3355461e391f0d510070cd36">dev</a>, void *ep)</td></tr>
 <tr class="separator:ab79bd8817df9effdee388588275ac8cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a90f4f74f87a4d269ac57ea996dbb1690" id="r_a90f4f74f87a4d269ac57ea996dbb1690"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__usb__dev__.html#a90f4f74f87a4d269ac57ea996dbb1690">get_endpoint_attrib</a> )(<a class="el" href="struct__usb__dev__.html">_usb_dev_</a> *dev, void *ep)</td></tr>
+<tr class="memitem:a90f4f74f87a4d269ac57ea996dbb1690" id="r_a90f4f74f87a4d269ac57ea996dbb1690"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__usb__dev__.html#a90f4f74f87a4d269ac57ea996dbb1690">get_endpoint_attrib</a> )(<a class="el" href="struct__usb__dev__.html">_usb_dev_</a> *<a class="el" href="drm__print_8h.html#a1572ef5e3355461e391f0d510070cd36">dev</a>, void *ep)</td></tr>
 <tr class="separator:a90f4f74f87a4d269ac57ea996dbb1690"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad4aab11778c1c79bfcc6f7965a0b475" id="r_aad4aab11778c1c79bfcc6f7965a0b475"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__usb__dev__.html#aad4aab11778c1c79bfcc6f7965a0b475">set_config_val</a> )(<a class="el" href="struct__usb__dev__.html">_usb_dev_</a> *dev, <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> config_val)</td></tr>
+<tr class="memitem:aad4aab11778c1c79bfcc6f7965a0b475" id="r_aad4aab11778c1c79bfcc6f7965a0b475"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__usb__dev__.html#aad4aab11778c1c79bfcc6f7965a0b475">set_config_val</a> )(<a class="el" href="struct__usb__dev__.html">_usb_dev_</a> *<a class="el" href="drm__print_8h.html#a1572ef5e3355461e391f0d510070cd36">dev</a>, <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> config_val)</td></tr>
 <tr class="separator:aad4aab11778c1c79bfcc6f7965a0b475"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a4633380083997ca385f42546f2661b" id="r_a9a4633380083997ca385f42546f2661b"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__usb__dev__.html#a9a4633380083997ca385f42546f2661b">poll_wait</a> )(<a class="el" href="struct__usb__dev__.html">_usb_dev_</a> *dev, int wait_type)</td></tr>
+<tr class="memitem:a9a4633380083997ca385f42546f2661b" id="r_a9a4633380083997ca385f42546f2661b"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__usb__dev__.html#a9a4633380083997ca385f42546f2661b">poll_wait</a> )(<a class="el" href="struct__usb__dev__.html">_usb_dev_</a> *<a class="el" href="drm__print_8h.html#a1572ef5e3355461e391f0d510070cd36">dev</a>, int wait_type)</td></tr>
 <tr class="separator:a9a4633380083997ca385f42546f2661b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77164308a54ffaa4df9ca1ce03489872" id="r_a77164308a54ffaa4df9ca1ce03489872"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Drivers_2xHCI_2usb_8h.html#afaa02bcf63a37462a88abc83bd1dce8b">usb_drv_entry</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__usb__dev__.html#a77164308a54ffaa4df9ca1ce03489872">ClassEntry</a></td></tr>
 <tr class="separator:a77164308a54ffaa4df9ca1ce03489872"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -430,7 +430,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void(* _usb_dev_::control_transfer) (<a class="el" href="struct__usb__dev__.html">_usb_dev_</a> *usbdev, const <a class="el" href="structUSB__REQUEST__PACKET.html">USB_REQUEST_PACKET</a> *request, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> buffer_addr, const <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> <a class="el" href="codec__8859_8c.html#a7360b55975153b822efc5217b7734e6a">len</a>)</td>
+          <td class="memname">void(* _usb_dev_::control_transfer) (<a class="el" href="struct__usb__dev__.html">_usb_dev_</a> *usbdev, const <a class="el" href="structUSB__REQUEST__PACKET.html">USB_REQUEST_PACKET</a> *request, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> buffer_addr, const <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> <a class="el" href="initial_8c.html#a7360b55975153b822efc5217b7734e6a">len</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -626,7 +626,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void *(* _usb_dev_::get_bulk_ep) (<a class="el" href="struct__usb__dev__.html">_usb_dev_</a> *dev, <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> dir)</td>
+          <td class="memname">void *(* _usb_dev_::get_bulk_ep) (<a class="el" href="struct__usb__dev__.html">_usb_dev_</a> *<a class="el" href="drm__print_8h.html#a1572ef5e3355461e391f0d510070cd36">dev</a>, <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> dir)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -640,7 +640,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void(* _usb_dev_::get_config_desc) (<a class="el" href="struct__usb__dev__.html">_usb_dev_</a> *dev, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> buffer, <a class="el" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> <a class="el" href="codec__8859_8c.html#a7360b55975153b822efc5217b7734e6a">len</a>, <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> id)</td>
+          <td class="memname">void(* _usb_dev_::get_config_desc) (<a class="el" href="struct__usb__dev__.html">_usb_dev_</a> *<a class="el" href="drm__print_8h.html#a1572ef5e3355461e391f0d510070cd36">dev</a>, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> buffer, <a class="el" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> <a class="el" href="initial_8c.html#a7360b55975153b822efc5217b7734e6a">len</a>, <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> id)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -654,7 +654,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="Drivers_2xHCI_2usb_8h.html#abe31671913697c0e3184bbd550dc8bd6">usb_descriptor_t</a> *(* _usb_dev_::get_descriptor) (<a class="el" href="struct__usb__dev__.html">_usb_dev_</a> *dev, <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> type)</td>
+          <td class="memname"><a class="el" href="Drivers_2xHCI_2usb_8h.html#abe31671913697c0e3184bbd550dc8bd6">usb_descriptor_t</a> *(* _usb_dev_::get_descriptor) (<a class="el" href="struct__usb__dev__.html">_usb_dev_</a> *<a class="el" href="drm__print_8h.html#a1572ef5e3355461e391f0d510070cd36">dev</a>, <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> type)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -668,7 +668,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void(* _usb_dev_::get_device_desc) (<a class="el" href="struct__usb__dev__.html">_usb_dev_</a> *dev, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> buffer, <a class="el" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> <a class="el" href="codec__8859_8c.html#a7360b55975153b822efc5217b7734e6a">len</a>)</td>
+          <td class="memname">void(* _usb_dev_::get_device_desc) (<a class="el" href="struct__usb__dev__.html">_usb_dev_</a> *<a class="el" href="drm__print_8h.html#a1572ef5e3355461e391f0d510070cd36">dev</a>, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> buffer, <a class="el" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> <a class="el" href="initial_8c.html#a7360b55975153b822efc5217b7734e6a">len</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -682,7 +682,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void *(* _usb_dev_::get_endpoint) (<a class="el" href="struct__usb__dev__.html">_usb_dev_</a> *dev, <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> ep_type)</td>
+          <td class="memname">void *(* _usb_dev_::get_endpoint) (<a class="el" href="struct__usb__dev__.html">_usb_dev_</a> *<a class="el" href="drm__print_8h.html#a1572ef5e3355461e391f0d510070cd36">dev</a>, <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> ep_type)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -696,7 +696,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>(* _usb_dev_::get_endpoint_address) (<a class="el" href="struct__usb__dev__.html">_usb_dev_</a> *dev, void *ep)</td>
+          <td class="memname"><a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>(* _usb_dev_::get_endpoint_address) (<a class="el" href="struct__usb__dev__.html">_usb_dev_</a> *<a class="el" href="drm__print_8h.html#a1572ef5e3355461e391f0d510070cd36">dev</a>, void *ep)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -710,7 +710,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>(* _usb_dev_::get_endpoint_attrib) (<a class="el" href="struct__usb__dev__.html">_usb_dev_</a> *dev, void *ep)</td>
+          <td class="memname"><a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>(* _usb_dev_::get_endpoint_attrib) (<a class="el" href="struct__usb__dev__.html">_usb_dev_</a> *<a class="el" href="drm__print_8h.html#a1572ef5e3355461e391f0d510070cd36">dev</a>, void *ep)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -724,7 +724,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int(* _usb_dev_::get_max_pack_sz) (<a class="el" href="struct__usb__dev__.html">_usb_dev_</a> *dev, void *ep)</td>
+          <td class="memname">int(* _usb_dev_::get_max_pack_sz) (<a class="el" href="struct__usb__dev__.html">_usb_dev_</a> *<a class="el" href="drm__print_8h.html#a1572ef5e3355461e391f0d510070cd36">dev</a>, void *ep)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -738,7 +738,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void(* _usb_dev_::get_string_desc) (<a class="el" href="struct__usb__dev__.html">_usb_dev_</a> *dev, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> buffer, <a class="el" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> id)</td>
+          <td class="memname">void(* _usb_dev_::get_string_desc) (<a class="el" href="struct__usb__dev__.html">_usb_dev_</a> *<a class="el" href="drm__print_8h.html#a1572ef5e3355461e391f0d510070cd36">dev</a>, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> buffer, <a class="el" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> id)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -906,7 +906,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int(* _usb_dev_::poll_wait) (<a class="el" href="struct__usb__dev__.html">_usb_dev_</a> *dev, int wait_type)</td>
+          <td class="memname">int(* _usb_dev_::poll_wait) (<a class="el" href="struct__usb__dev__.html">_usb_dev_</a> *<a class="el" href="drm__print_8h.html#a1572ef5e3355461e391f0d510070cd36">dev</a>, int wait_type)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -962,7 +962,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void(* _usb_dev_::schedule_interrupt) (<a class="el" href="struct__usb__dev__.html">_usb_dev_</a> *dev, void *ep, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> buffer, void(*callback)(void *dev, void *slot, void *Endp))</td>
+          <td class="memname">void(* _usb_dev_::schedule_interrupt) (<a class="el" href="struct__usb__dev__.html">_usb_dev_</a> *<a class="el" href="drm__print_8h.html#a1572ef5e3355461e391f0d510070cd36">dev</a>, void *ep, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> buffer, void(*callback)(void *<a class="el" href="drm__print_8h.html#a1572ef5e3355461e391f0d510070cd36">dev</a>, void *slot, void *Endp))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -976,7 +976,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void(* _usb_dev_::set_config_val) (<a class="el" href="struct__usb__dev__.html">_usb_dev_</a> *dev, <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> config_val)</td>
+          <td class="memname">void(* _usb_dev_::set_config_val) (<a class="el" href="struct__usb__dev__.html">_usb_dev_</a> *<a class="el" href="drm__print_8h.html#a1572ef5e3355461e391f0d510070cd36">dev</a>, <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> config_val)</td>
         </tr>
       </table>
 </div><div class="memdoc">

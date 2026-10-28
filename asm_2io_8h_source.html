@@ -90,64 +90,72 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"> * ARM64 has no x86 I/O port space, but 8250&#39;s probe and PIO paths carry</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment"> * inb/outb/inl/outl calls that must still *compile* even though every port we</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment"> * intend to bind is MMIO (QEMU&#39;s pci-serial BAR, iMX8MP&#39;s UART -- both</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment"> * reach registers through readb/writeb, already in &lt;linux/kernel.h&gt;).</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment"> * So these are honest failures, not silent ones: a read answers 0 and a write</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment"> * drops, and the first of either logs once. 0 rather than 0xff on purpose --</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment"> * an all-ones answer makes LSR look like &quot;transmitter always empty&quot;, which</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment"> * would let the driver believe it is talking to a live UART, while 0 says</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"> * &quot;no line is ready&quot; and drives every polling loop into its timeout and out</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> * again. Failing toward the timeout is what keeps a misconfigured port from</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment"> * becoming a boot hang.</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment"> * When a board that genuinely needs PIO shows up, the body becomes a window</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment"> * (PCI I/O space is a mapping on ARM64, not an x86 instruction) and this</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment"> * comment is the thing to delete.</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#include &lt;<a class="code" href="kernel_8h.html">linux/kernel.h</a>&gt;</span>   <span class="comment">/* u8/u32 */</span></div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="asm_2io_8h.html#ab09f9e834e7b25d766f39d9c818f612a">   27</a></span><span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code hl_function" href="asm_2io_8h.html#ab09f9e834e7b25d766f39d9c818f612a">inb</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> addr);</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="asm_2io_8h.html#a4e2606cdf2ce04c627ad5ce18a24e4f9">   28</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="asm_2io_8h.html#a4e2606cdf2ce04c627ad5ce18a24e4f9">outb</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> v, <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> addr);</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="asm_2io_8h.html#acb7f46d601abd53b8a8d7c95ac5a2ad3">   29</a></span><span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_function" href="asm_2io_8h.html#acb7f46d601abd53b8a8d7c95ac5a2ad3">inl</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> addr);</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="asm_2io_8h.html#ad3ee43b6996e1db770bc3585205bfb33">   30</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="asm_2io_8h.html#ad3ee43b6996e1db770bc3585205bfb33">outl</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> v, <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> addr);</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment"> * reach registers through readb/writeb, already in &lt;linux/kernel.h&gt;). The</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment"> * 16-bit pair (inw/outw) is here for the same reason: bochs.c hands the</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment"> * VBE dispi registers that way when it has no MMIO BAR, and that whole arm</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment"> * is dead on this target because bochs_uses_mmio() folds to true (see</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment"> * &lt;linux/kconfig.h&gt;: CONFIG_HAS_IOPORT is undefined), but the call sites</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment"> * still have to name the functions.</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> * So these are honest failures, not silent ones: a read answers 0 and a write</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment"> * drops, and the first of either logs once. 0 rather than 0xff on purpose --</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment"> * an all-ones answer makes LSR look like &quot;transmitter always empty&quot;, which</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment"> * would let the driver believe it is talking to a live UART, while 0 says</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment"> * &quot;no line is ready&quot; and drives every polling loop into its timeout and out</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment"> * again. Failing toward the timeout is what keeps a misconfigured port from</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment"> * becoming a boot hang.</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment"> * When a board that genuinely needs PIO shows up, the body becomes a window</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment"> * (PCI I/O space is a mapping on ARM64, not an x86 instruction) and this</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment"> * comment is the thing to delete.</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#include &lt;linux/kernel.h&gt;</span>   <span class="comment">/* u8/u32 */</span></div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment"> * ioremap()/iounmap() and the be32 accessors, reached the way a mainline</span></div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment"> * driver reaches them: through &lt;asm/io.h&gt;.</span></div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment"> * DCL deliberately houses ioremap in &lt;linux/io.h&gt; rather than here (see the</span></div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment"> * note at the top of that header: on arm64 ioremap is a plain P2V, and it</span></div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment"> * belongs with the other map/unmap declarations).  The consequence was that</span></div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment"> * nothing included it -- every mainline source says &lt;asm/io.h&gt; and calls</span></div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment"> * ioremap, so 8250_port.c:2908 compiled as an implicit `int ioremap()` and</span></div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment"> * assigned the result to `void *port-&gt;membase`.  On this LLP64 target that is</span></div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment"> * not a warning to tolerate: the int is 32 bits, membase is 8, and the pointer</span></div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment"> * would have its top half zeroed before a single register was read through it.</span></div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment"> * Re-exporting the header here is what makes the declaration reach the</span></div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment"> * call sites that were always going to ask for it.</span></div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="preprocessor">#include &lt;<a class="code" href="linux_2io_8h.html">linux/io.h</a>&gt;</span></div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment">/* The `_p` (&quot;slow, with a pause&quot;) variants: same honest-failure answers as</span></div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment"> * inb/outb above -- 0 on read, drop on write -- because the pause exists to</span></div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment"> * slow down an x86 ISA access that has no counterpart here. */</span></div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> inb_p(<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> addr)</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>{</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="asm_2io_8h.html#ab09f9e834e7b25d766f39d9c818f612a">inb</a>(addr);</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>}</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> outb_p(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> v, <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> addr)</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>{</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <a class="code hl_function" href="asm_2io_8h.html#a4e2606cdf2ce04c627ad5ce18a24e4f9">outb</a>(v, addr);</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>}</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="preprocessor">#endif </span><span class="comment">/* __ASM_IO_H__ */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="asm_2io_8h.html#ab09f9e834e7b25d766f39d9c818f612a">   32</a></span><span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code hl_function" href="asm_2io_8h.html#ab09f9e834e7b25d766f39d9c818f612a">inb</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> addr);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="asm_2io_8h.html#a4e2606cdf2ce04c627ad5ce18a24e4f9">   33</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="asm_2io_8h.html#a4e2606cdf2ce04c627ad5ce18a24e4f9">outb</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> v, <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> addr);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="asm_2io_8h.html#aaff09810aaffb375bd4156a46fe9fd8e">   34</a></span><span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> <a class="code hl_function" href="asm_2io_8h.html#aaff09810aaffb375bd4156a46fe9fd8e">inw</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> addr);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="asm_2io_8h.html#a2c2c6fa90a00223be0272a613c5f8e88">   35</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="asm_2io_8h.html#a2c2c6fa90a00223be0272a613c5f8e88">outw</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> v, <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> addr);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="asm_2io_8h.html#acb7f46d601abd53b8a8d7c95ac5a2ad3">   36</a></span><span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_function" href="asm_2io_8h.html#acb7f46d601abd53b8a8d7c95ac5a2ad3">inl</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> addr);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="asm_2io_8h.html#ad3ee43b6996e1db770bc3585205bfb33">   37</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="asm_2io_8h.html#ad3ee43b6996e1db770bc3585205bfb33">outl</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> v, <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> addr);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment"> * ioremap()/iounmap() and the be32 accessors, reached the way a mainline</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment"> * driver reaches them: through &lt;asm/io.h&gt;.</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment"> * DCL deliberately houses ioremap in &lt;linux/io.h&gt; rather than here (see the</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment"> * note at the top of that header: on arm64 ioremap is a plain P2V, and it</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment"> * belongs with the other map/unmap declarations).  The consequence was that</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment"> * nothing included it -- every mainline source says &lt;asm/io.h&gt; and calls</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment"> * ioremap, so 8250_port.c:2908 compiled as an implicit `int ioremap()` and</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment"> * assigned the result to `void *port-&gt;membase`.  On this LLP64 target that is</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment"> * not a warning to tolerate: the int is 32 bits, membase is 8, and the pointer</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment"> * would have its top half zeroed before a single register was read through it.</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment"> * Re-exporting the header here is what makes the declaration reach the</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment"> * call sites that were always going to ask for it.</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="preprocessor">#include &lt;<a class="code" href="linux_2io_8h.html">linux/io.h</a>&gt;</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment">/* The `_p` (&quot;slow, with a pause&quot;) variants: same honest-failure answers as</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment"> * inb/outb above -- 0 on read, drop on write -- because the pause exists to</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment"> * slow down an x86 ISA access that has no counterpart here. */</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> inb_p(<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> addr)</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>{</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="asm_2io_8h.html#ab09f9e834e7b25d766f39d9c818f612a">inb</a>(addr);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>}</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> outb_p(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> v, <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> addr)</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>{</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <a class="code hl_function" href="asm_2io_8h.html#a4e2606cdf2ce04c627ad5ce18a24e4f9">outb</a>(v, addr);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>}</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="preprocessor">#endif </span><span class="comment">/* __ASM_IO_H__ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="aasm_2io_8h_html_a2c2c6fa90a00223be0272a613c5f8e88"><div class="ttname"><a href="asm_2io_8h.html#a2c2c6fa90a00223be0272a613c5f8e88">outw</a></div><div class="ttdeci">void outw(unsigned short v, unsigned long addr)</div></div>
 <div class="ttc" id="aasm_2io_8h_html_a4e2606cdf2ce04c627ad5ce18a24e4f9"><div class="ttname"><a href="asm_2io_8h.html#a4e2606cdf2ce04c627ad5ce18a24e4f9">outb</a></div><div class="ttdeci">void outb(unsigned char v, unsigned long addr)</div></div>
+<div class="ttc" id="aasm_2io_8h_html_aaff09810aaffb375bd4156a46fe9fd8e"><div class="ttname"><a href="asm_2io_8h.html#aaff09810aaffb375bd4156a46fe9fd8e">inw</a></div><div class="ttdeci">unsigned short inw(unsigned long addr)</div></div>
 <div class="ttc" id="aasm_2io_8h_html_ab09f9e834e7b25d766f39d9c818f612a"><div class="ttname"><a href="asm_2io_8h.html#ab09f9e834e7b25d766f39d9c818f612a">inb</a></div><div class="ttdeci">unsigned char inb(unsigned long addr)</div></div>
 <div class="ttc" id="aasm_2io_8h_html_acb7f46d601abd53b8a8d7c95ac5a2ad3"><div class="ttname"><a href="asm_2io_8h.html#acb7f46d601abd53b8a8d7c95ac5a2ad3">inl</a></div><div class="ttdeci">unsigned int inl(unsigned long addr)</div></div>
 <div class="ttc" id="aasm_2io_8h_html_ad3ee43b6996e1db770bc3585205bfb33"><div class="ttname"><a href="asm_2io_8h.html#ad3ee43b6996e1db770bc3585205bfb33">outl</a></div><div class="ttdeci">void outl(unsigned int v, unsigned long addr)</div></div>
-<div class="ttc" id="akernel_8h_html"><div class="ttname"><a href="kernel_8h.html">kernel.h</a></div></div>
 <div class="ttc" id="alinux_2io_8h_html"><div class="ttname"><a href="linux_2io_8h.html">io.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

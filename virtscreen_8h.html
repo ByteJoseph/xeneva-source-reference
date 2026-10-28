@@ -120,10 +120,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ab6558344c47d29d32b22207bf3e5a928" id="r_ab6558344c47d29d32b22207bf3e5a928"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="virtscreen_8h.html#ab6558344c47d29d32b22207bf3e5a928">virt_gpu_alloc_fb</a> (<a class="el" href="structVirtioCommonCfg.html">VirtioCommonCfg</a> *cfg, int resource_id)</td></tr>
 <tr class="memdesc:ab6558344c47d29d32b22207bf3e5a928"><td class="mdescLeft">&#160;</td><td class="mdescRight">virt_gpu_alloc_fb &ndash; allocate framebuffer for scanout  <br /></td></tr>
 <tr class="separator:ab6558344c47d29d32b22207bf3e5a928"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a144dbf0d09b3cbe91ab23daa729ac174" id="r_a144dbf0d09b3cbe91ab23daa729ac174"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="virtscreen_8h.html#a144dbf0d09b3cbe91ab23daa729ac174">virt_gpu_release_fb</a> (void)</td></tr>
+<tr class="separator:a144dbf0d09b3cbe91ab23daa729ac174"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b50d920072608489ec9adab0bd83418" id="r_a8b50d920072608489ec9adab0bd83418"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="virtscreen_8h.html#a8b50d920072608489ec9adab0bd83418">virt_gpu_set_scanout</a> (<a class="el" href="structVirtioCommonCfg.html">VirtioCommonCfg</a> *cfg, int resource_id, int scanout_id)</td></tr>
 <tr class="memdesc:a8b50d920072608489ec9adab0bd83418"><td class="mdescLeft">&#160;</td><td class="mdescRight">virt_gpu_set_scanout &ndash; initialize the scanout to the given screen  <br /></td></tr>
 <tr class="separator:a8b50d920072608489ec9adab0bd83418"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe411ef99e2ebbee06ff3653daac55c1" id="r_abe411ef99e2ebbee06ff3653daac55c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="virtscreen_8h.html#abe411ef99e2ebbee06ff3653daac55c1">virt_gpu_transfer_to_host2d</a> (<a class="el" href="structVirtioCommonCfg.html">VirtioCommonCfg</a> *cfg, int resource_id, int x, int y, int w, int h)</td></tr>
+<tr class="memitem:abe411ef99e2ebbee06ff3653daac55c1" id="r_abe411ef99e2ebbee06ff3653daac55c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="virtscreen_8h.html#abe411ef99e2ebbee06ff3653daac55c1">virt_gpu_transfer_to_host2d</a> (<a class="el" href="structVirtioCommonCfg.html">VirtioCommonCfg</a> *cfg, int resource_id, int x, int y, int w, int <a class="el" href="layout_8c.html#a16611451551e3d15916bae723c3f59f7">h</a>)</td></tr>
 <tr class="memdesc:abe411ef99e2ebbee06ff3653daac55c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">virt_gpu_transfer_to_host2d &ndash; transfer buffers from guest to host  <br /></td></tr>
 <tr class="separator:abe411ef99e2ebbee06ff3653daac55c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87df489a24527f92d2371b1262ffb005" id="r_a87df489a24527f92d2371b1262ffb005"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="virtscreen_8h.html#a87df489a24527f92d2371b1262ffb005">virt_gpu_flush</a> (<a class="el" href="structVirtioCommonCfg.html">VirtioCommonCfg</a> *cfg, int resource_id)</td></tr>
@@ -273,6 +275,33 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a144dbf0d09b3cbe91ab23daa729ac174" name="a144dbf0d09b3cbe91ab23daa729ac174"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a144dbf0d09b3cbe91ab23daa729ac174">&#9670;&#160;</a></span>virt_gpu_release_fb()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void virt_gpu_release_fb </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Release the fallback driver's scanout backing after the device is reset. </p>
 
 </div>
 </div>

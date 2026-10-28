@@ -118,7 +118,29 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="asm_2cache_8h.html#ac8b3701f35582232a293c1d89f031908">   35</a></span><span class="preprocessor">#define L1_CACHE_ALIGN(x) (((x) + (L1_CACHE_BYTES - 1)) &amp; ~(L1_CACHE_BYTES - 1))</span></div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">#endif </span><span class="comment">/* __ASM_CACHE_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment"> * ARCH_DMA_MINALIGN -- the alignment DMA-capable allocations must have, which</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment"> * mainline takes from arch/arm64/include/asm/cache.h. A number here rather</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment"> * than mainline&#39;s `____cacheline_aligned` attribute spelling: both call sites</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment"> * in this tree wrap it in __aligned(), and `__aligned(__attribute__(...))`</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment"> * does not parse. L1_CACHE_BYTES (64) is the same value mainline&#39;s spelling</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment"> * produces, which is the point -- an allocation DMA&#39;d into must start on a</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment"> * cache line or the device and the CPU disagree about which line it is.</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment"> * The one caller is drm_managed.c:56, `u8 __aligned(ARCH_DMA_MINALIGN) data[]`</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment"> * inside struct drmres, so a managed allocation gets its payload on a line of</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment"> * its own.</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment"> * ARCH_HAS_DMA_MINALIGN is deliberately *not* defined alongside it.</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment"> * dma-mapping.h tests that one and switches ____dma_from_device_aligned to</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment"> * the aligned spelling; flipping it would change virtio-rng.c&#39;s buffer</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment"> * layout, which the note there records as a decision rather than an omission.</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="preprocessor">#ifndef ARCH_DMA_MINALIGN</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="asm_2cache_8h.html#a0dbc93d21484800787343ffedb331ba1">   57</a></span><span class="preprocessor">#define ARCH_DMA_MINALIGN L1_CACHE_BYTES</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="preprocessor">#endif </span><span class="comment">/* __ASM_CACHE_H */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

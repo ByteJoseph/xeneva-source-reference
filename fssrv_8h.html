@@ -122,13 +122,13 @@ Macros</h2></td></tr>
 <tr class="separator:a80b70a7ee6f250237febaddf756e724b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b01d70eab88da011fa8c38249f730d9" id="r_a4b01d70eab88da011fa8c38249f730d9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fssrv_8h.html#a4b01d70eab88da011fa8c38249f730d9">FSSRV_MAX_DATA</a>&#160;&#160;&#160;4096</td></tr>
 <tr class="separator:a4b01d70eab88da011fa8c38249f730d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11bab5660b6d48bda937875a7465d35a" id="r_a11bab5660b6d48bda937875a7465d35a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fssrv_8h.html#a11bab5660b6d48bda937875a7465d35a">FSSRV_OP_OPEN</a>&#160;&#160;&#160;1        /* flags: FSSRV_F_*, answers size/uid        */</td></tr>
+<tr class="memitem:a11bab5660b6d48bda937875a7465d35a" id="r_a11bab5660b6d48bda937875a7465d35a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fssrv_8h.html#a11bab5660b6d48bda937875a7465d35a">FSSRV_OP_OPEN</a>&#160;&#160;&#160;1        /* flags: FSSRV_F_*, answers <a class="el" href="drm__bridge_8h.html#a854352f53b148adc24983a58a1866d66">size</a>/uid        */</td></tr>
 <tr class="separator:a11bab5660b6d48bda937875a7465d35a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac3666a452bd82a1fbefb9c272b0e831" id="r_aac3666a452bd82a1fbefb9c272b0e831"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fssrv_8h.html#aac3666a452bd82a1fbefb9c272b0e831">FSSRV_OP_READ</a>&#160;&#160;&#160;2        /* offset, <a class="el" href="codec__8859_8c.html#a7360b55975153b822efc5217b7734e6a">len</a> -&gt; <a class="el" href="sndproxy_8c.html#abe222f6d3581e7920dcad5306cc906a8">data</a>                       */</td></tr>
+<tr class="memitem:aac3666a452bd82a1fbefb9c272b0e831" id="r_aac3666a452bd82a1fbefb9c272b0e831"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fssrv_8h.html#aac3666a452bd82a1fbefb9c272b0e831">FSSRV_OP_READ</a>&#160;&#160;&#160;2        /* <a class="el" href="drm__bridge_8h.html#ad5b30797981ed10bc3571a689a73eeac">offset</a>, <a class="el" href="initial_8c.html#a7360b55975153b822efc5217b7734e6a">len</a> -&gt; <a class="el" href="kthread_8h.html#a735984d41155bc1032e09bece8f8d66d">data</a>                       */</td></tr>
 <tr class="separator:aac3666a452bd82a1fbefb9c272b0e831"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e3322444d9e75c24f981afb82347a5b" id="r_a7e3322444d9e75c24f981afb82347a5b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fssrv_8h.html#a7e3322444d9e75c24f981afb82347a5b">FSSRV_OP_WRITE</a>&#160;&#160;&#160;3        /* offset, <a class="el" href="sndproxy_8c.html#abe222f6d3581e7920dcad5306cc906a8">data</a> (<a class="el" href="codec__8859_8c.html#a7360b55975153b822efc5217b7734e6a">len</a> bytes follow)           */</td></tr>
+<tr class="memitem:a7e3322444d9e75c24f981afb82347a5b" id="r_a7e3322444d9e75c24f981afb82347a5b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fssrv_8h.html#a7e3322444d9e75c24f981afb82347a5b">FSSRV_OP_WRITE</a>&#160;&#160;&#160;3        /* <a class="el" href="drm__bridge_8h.html#ad5b30797981ed10bc3571a689a73eeac">offset</a>, <a class="el" href="kthread_8h.html#a735984d41155bc1032e09bece8f8d66d">data</a> (<a class="el" href="initial_8c.html#a7360b55975153b822efc5217b7734e6a">len</a> bytes follow)           */</td></tr>
 <tr class="separator:a7e3322444d9e75c24f981afb82347a5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4af762f503dc2de4e2e1349581b8ffca" id="r_a4af762f503dc2de4e2e1349581b8ffca"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fssrv_8h.html#a4af762f503dc2de4e2e1349581b8ffca">FSSRV_OP_READDIR</a>&#160;&#160;&#160;4        /* offset = <a class="el" href="process_8h.html#a12532d9e7797b0d9089521c02528e113">entry</a> <a class="el" href="Libs_2XEClib_2includes_2string_8h.html#a48b8e98743833e6ce735f3d9f2fb240f">index</a> -&gt; one <a class="el" href="structFsDirEnt.html">FsDirEnt</a> or <a class="el" href="fssrv_8h.html#a248c2c5c2c0563ab7f334302f00ad85c">FSSRV_E_NOENT</a> at the <a class="el" href="littleboot_8c.html#af4f810c521bcfd87215d3007005a8325">end</a> */</td></tr>
+<tr class="memitem:a4af762f503dc2de4e2e1349581b8ffca" id="r_a4af762f503dc2de4e2e1349581b8ffca"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fssrv_8h.html#a4af762f503dc2de4e2e1349581b8ffca">FSSRV_OP_READDIR</a>&#160;&#160;&#160;4        /* <a class="el" href="drm__bridge_8h.html#ad5b30797981ed10bc3571a689a73eeac">offset</a> = <a class="el" href="process_8h.html#a12532d9e7797b0d9089521c02528e113">entry</a> <a class="el" href="Libs_2XEClib_2includes_2string_8h.html#a48b8e98743833e6ce735f3d9f2fb240f">index</a> -&gt; one <a class="el" href="structFsDirEnt.html">FsDirEnt</a> or <a class="el" href="fssrv_8h.html#a248c2c5c2c0563ab7f334302f00ad85c">FSSRV_E_NOENT</a> at the <a class="el" href="littleboot_8c.html#af4f810c521bcfd87215d3007005a8325">end</a> */</td></tr>
 <tr class="separator:a4af762f503dc2de4e2e1349581b8ffca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29d5d6a9b21cc4d75e8451a4339fc5cf" id="r_a29d5d6a9b21cc4d75e8451a4339fc5cf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fssrv_8h.html#a29d5d6a9b21cc4d75e8451a4339fc5cf">FSSRV_OP_REMOVE</a>&#160;&#160;&#160;5        /* <a class="el" href="netproxy_8c.html#aa753df16772ca09092f62763145e5179">owner</a> or uid 0 only                       */</td></tr>
 <tr class="separator:a29d5d6a9b21cc4d75e8451a4339fc5cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -297,7 +297,7 @@ Macros</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define FSSRV_OP_OPEN&#160;&#160;&#160;1        /* flags: FSSRV_F_*, answers size/uid        */</td>
+          <td class="memname">#define FSSRV_OP_OPEN&#160;&#160;&#160;1        /* flags: FSSRV_F_*, answers <a class="el" href="drm__bridge_8h.html#a854352f53b148adc24983a58a1866d66">size</a>/uid        */</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -311,7 +311,7 @@ Macros</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define FSSRV_OP_READ&#160;&#160;&#160;2        /* offset, <a class="el" href="codec__8859_8c.html#a7360b55975153b822efc5217b7734e6a">len</a> -&gt; <a class="el" href="sndproxy_8c.html#abe222f6d3581e7920dcad5306cc906a8">data</a>                       */</td>
+          <td class="memname">#define FSSRV_OP_READ&#160;&#160;&#160;2        /* <a class="el" href="drm__bridge_8h.html#ad5b30797981ed10bc3571a689a73eeac">offset</a>, <a class="el" href="initial_8c.html#a7360b55975153b822efc5217b7734e6a">len</a> -&gt; <a class="el" href="kthread_8h.html#a735984d41155bc1032e09bece8f8d66d">data</a>                       */</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -325,7 +325,7 @@ Macros</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define FSSRV_OP_READDIR&#160;&#160;&#160;4        /* offset = <a class="el" href="process_8h.html#a12532d9e7797b0d9089521c02528e113">entry</a> <a class="el" href="Libs_2XEClib_2includes_2string_8h.html#a48b8e98743833e6ce735f3d9f2fb240f">index</a> -&gt; one <a class="el" href="structFsDirEnt.html">FsDirEnt</a> or <a class="el" href="fssrv_8h.html#a248c2c5c2c0563ab7f334302f00ad85c">FSSRV_E_NOENT</a> at the <a class="el" href="littleboot_8c.html#af4f810c521bcfd87215d3007005a8325">end</a> */</td>
+          <td class="memname">#define FSSRV_OP_READDIR&#160;&#160;&#160;4        /* <a class="el" href="drm__bridge_8h.html#ad5b30797981ed10bc3571a689a73eeac">offset</a> = <a class="el" href="process_8h.html#a12532d9e7797b0d9089521c02528e113">entry</a> <a class="el" href="Libs_2XEClib_2includes_2string_8h.html#a48b8e98743833e6ce735f3d9f2fb240f">index</a> -&gt; one <a class="el" href="structFsDirEnt.html">FsDirEnt</a> or <a class="el" href="fssrv_8h.html#a248c2c5c2c0563ab7f334302f00ad85c">FSSRV_E_NOENT</a> at the <a class="el" href="littleboot_8c.html#af4f810c521bcfd87215d3007005a8325">end</a> */</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -353,7 +353,7 @@ Macros</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define FSSRV_OP_WRITE&#160;&#160;&#160;3        /* offset, <a class="el" href="sndproxy_8c.html#abe222f6d3581e7920dcad5306cc906a8">data</a> (<a class="el" href="codec__8859_8c.html#a7360b55975153b822efc5217b7734e6a">len</a> bytes follow)           */</td>
+          <td class="memname">#define FSSRV_OP_WRITE&#160;&#160;&#160;3        /* <a class="el" href="drm__bridge_8h.html#ad5b30797981ed10bc3571a689a73eeac">offset</a>, <a class="el" href="kthread_8h.html#a735984d41155bc1032e09bece8f8d66d">data</a> (<a class="el" href="initial_8c.html#a7360b55975153b822efc5217b7734e6a">len</a> bytes follow)           */</td>
         </tr>
       </table>
 </div><div class="memdoc">

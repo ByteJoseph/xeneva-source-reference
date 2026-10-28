@@ -105,53 +105,65 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &lt;<a class="code" href="printk_8h.html">linux/printk.h</a>&gt;</span></div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="foldopen" id="foldopen00025" data-start="{" data-end="};">
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="structratelimit__state.html">   25</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structratelimit__state.html">ratelimit_state</a> {</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="structratelimit__state.html#a86ac4359769141ab2507c0467208046a">   26</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="structratelimit__state.html#a86ac4359769141ab2507c0467208046a">interval</a>;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="structratelimit__state.html#af5243b4e427a886f2e36fe9d340adce1">   27</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="structratelimit__state.html#af5243b4e427a886f2e36fe9d340adce1">burst</a>;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="structratelimit__state.html#aa5e3e5b53b5affc94a91eb23ecefdf88">   28</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="structratelimit__state.html#aa5e3e5b53b5affc94a91eb23ecefdf88">printed</a>;</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="structratelimit__state.html#ab74816e60d6e291720b84f904d67af46">   29</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="structratelimit__state.html#ab74816e60d6e291720b84f904d67af46">missed</a>;</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="structratelimit__state.html#abc65831c02417585601d07db83bb7bc9">   30</a></span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <a class="code hl_variable" href="structratelimit__state.html#abc65831c02417585601d07db83bb7bc9">begin</a>;</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>};</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment"> * DCL delta: mainline&#39;s defaults, added with the virtio-gpu port --</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment"> * virtgpu_vq.c:254&#39;s DRM_ERROR_RATELIMITED expands DEFINE_RATELIMIT_STATE</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment"> * with these. The value is inert here (__ratelimit() always proceeds), so</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment"> * the interval is written out rather than left as `5 * HZ`: this header</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment"> * cannot count on &lt;linux/timer.h&gt; being in scope at every use site, and 1250</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment"> * is five seconds at DCL&#39;s HZ (250, linux/timer.h:57) if the limiter ever</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment"> * grows teeth.</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="ratelimit_8h.html#a9b30ec61df3341e2b6493d52721daca4">   34</a></span><span class="preprocessor">#define DEFAULT_RATELIMIT_INTERVAL  1250</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="ratelimit_8h.html#a3bdfb16e1d39c8a149d82aa447cc70d1">   35</a></span><span class="preprocessor">#define DEFAULT_RATELIMIT_BURST     10</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="foldopen" id="foldopen00037" data-start="{" data-end="};">
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="structratelimit__state.html">   37</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structratelimit__state.html">ratelimit_state</a> {</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="structratelimit__state.html#a86ac4359769141ab2507c0467208046a">   38</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="structratelimit__state.html#a86ac4359769141ab2507c0467208046a">interval</a>;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="structratelimit__state.html#af5243b4e427a886f2e36fe9d340adce1">   39</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="structratelimit__state.html#af5243b4e427a886f2e36fe9d340adce1">burst</a>;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="structratelimit__state.html#aa5e3e5b53b5affc94a91eb23ecefdf88">   40</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="structratelimit__state.html#aa5e3e5b53b5affc94a91eb23ecefdf88">printed</a>;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="structratelimit__state.html#ab74816e60d6e291720b84f904d67af46">   41</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="structratelimit__state.html#ab74816e60d6e291720b84f904d67af46">missed</a>;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="structratelimit__state.html#abc65831c02417585601d07db83bb7bc9">   42</a></span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <a class="code hl_variable" href="structratelimit__state.html#abc65831c02417585601d07db83bb7bc9">begin</a>;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>};</div>
 </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="ratelimit_8h.html#a11a71744b271e69b0a61eaac90bf7d83">   33</a></span><span class="preprocessor">#define RATELIMIT_DISABLED (struct ratelimit_state){ .interval = 0 }</span></div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">int</span> __ratelimit(<span class="keyword">struct</span> <a class="code hl_struct" href="structratelimit__state.html">ratelimit_state</a>* rs)</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>{</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    (void)rs;</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keywordflow">return</span> 1;</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>}</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="foldopen" id="foldopen00041" data-start="" data-end="">
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="ratelimit_8h.html#a7c8eb6d37c9f209092c20f202a07fdf6">   41</a></span><span class="preprocessor">#define ratelimit_state_init(rs, b, i) \</span></div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="preprocessor">    do { (void)(rs); (void)(b); (void)(i); } while (0)</span></div>
-</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="foldopen" id="foldopen00044" data-start="" data-end="">
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="ratelimit_8h.html#af5383652637f251162e0a798bd6f11ef">   44</a></span><span class="preprocessor">#define DEFINE_RATELIMIT_STATE(name, interval_init, burst_init) \</span></div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="preprocessor">    struct ratelimit_state name = { (interval_init), (burst_init), 0, 0, 0 }</span></div>
-</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="ratelimit_8h.html#a11a71744b271e69b0a61eaac90bf7d83">   45</a></span><span class="preprocessor">#define RATELIMIT_DISABLED (struct ratelimit_state){ .interval = 0 }</span></div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="ratelimit_8h.html#afca4db5095679b5b4b369434adbbc4b4">   47</a></span><span class="preprocessor">#define pr_emerg_ratelimited(fmt, ...)   pr_emerg(fmt, ##__VA_ARGS__)</span></div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="ratelimit_8h.html#aaa00949ddce4ac597d403b0f4c860cb9">   48</a></span><span class="preprocessor">#define pr_alert_ratelimited(fmt, ...)   pr_alert(fmt, ##__VA_ARGS__)</span></div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="ratelimit_8h.html#a6b97374553fdd34d5f5bd5ad586a39a3">   49</a></span><span class="preprocessor">#define pr_crit_ratelimited(fmt, ...)    pr_crit(fmt, ##__VA_ARGS__)</span></div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="ratelimit_8h.html#ac60aca600196ff4d580a31ea3e2086ad">   50</a></span><span class="preprocessor">#define pr_err_ratelimited(fmt, ...)     pr_err(fmt, ##__VA_ARGS__)</span></div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="ratelimit_8h.html#a1240be6065ffd41ef14242adfa732b55">   51</a></span><span class="preprocessor">#define pr_warn_ratelimited(fmt, ...)    pr_warn(fmt, ##__VA_ARGS__)</span></div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="ratelimit_8h.html#a807ea1ed35c80d76a8f863a8d161b263">   52</a></span><span class="preprocessor">#define pr_notice_ratelimited(fmt, ...)  pr_notice(fmt, ##__VA_ARGS__)</span></div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="ratelimit_8h.html#a27d32046b2a4e16f87215f96e64ea444">   53</a></span><span class="preprocessor">#define pr_info_ratelimited(fmt, ...)    pr_info(fmt, ##__VA_ARGS__)</span></div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="ratelimit_8h.html#a67710010155e0dbb190ac3ad86d68766">   54</a></span><span class="preprocessor">#define pr_debug_ratelimited(fmt, ...)   pr_debug(fmt, ##__VA_ARGS__)</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">int</span> __ratelimit(<span class="keyword">struct</span> <a class="code hl_struct" href="structratelimit__state.html">ratelimit_state</a>* rs)</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>{</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    (void)rs;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keywordflow">return</span> 1;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>}</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="foldopen" id="foldopen00053" data-start="" data-end="">
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="ratelimit_8h.html#a7c8eb6d37c9f209092c20f202a07fdf6">   53</a></span><span class="preprocessor">#define ratelimit_state_init(rs, b, i) \</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="preprocessor">    do { (void)(rs); (void)(b); (void)(i); } while (0)</span></div>
+</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="ratelimit_8h.html#a87bc41065e9780a79aa1cbb58cb988d1">   56</a></span><span class="preprocessor">#define printk_ratelimited(fmt, ...)     printk(fmt, ##__VA_ARGS__)</span></div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="preprocessor">#endif </span><span class="comment">/* __LINUX_RATELIMIT_H__ */</span><span class="preprocessor"></span></div>
+<div class="foldopen" id="foldopen00056" data-start="" data-end="">
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="ratelimit_8h.html#af5383652637f251162e0a798bd6f11ef">   56</a></span><span class="preprocessor">#define DEFINE_RATELIMIT_STATE(name, interval_init, burst_init) \</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="preprocessor">    struct ratelimit_state name = { (interval_init), (burst_init), 0, 0, 0 }</span></div>
+</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="ratelimit_8h.html#afca4db5095679b5b4b369434adbbc4b4">   59</a></span><span class="preprocessor">#define pr_emerg_ratelimited(fmt, ...)   pr_emerg(fmt, ##__VA_ARGS__)</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="ratelimit_8h.html#aaa00949ddce4ac597d403b0f4c860cb9">   60</a></span><span class="preprocessor">#define pr_alert_ratelimited(fmt, ...)   pr_alert(fmt, ##__VA_ARGS__)</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="ratelimit_8h.html#a6b97374553fdd34d5f5bd5ad586a39a3">   61</a></span><span class="preprocessor">#define pr_crit_ratelimited(fmt, ...)    pr_crit(fmt, ##__VA_ARGS__)</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="ratelimit_8h.html#ac60aca600196ff4d580a31ea3e2086ad">   62</a></span><span class="preprocessor">#define pr_err_ratelimited(fmt, ...)     pr_err(fmt, ##__VA_ARGS__)</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="ratelimit_8h.html#a1240be6065ffd41ef14242adfa732b55">   63</a></span><span class="preprocessor">#define pr_warn_ratelimited(fmt, ...)    pr_warn(fmt, ##__VA_ARGS__)</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="ratelimit_8h.html#a807ea1ed35c80d76a8f863a8d161b263">   64</a></span><span class="preprocessor">#define pr_notice_ratelimited(fmt, ...)  pr_notice(fmt, ##__VA_ARGS__)</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="ratelimit_8h.html#a27d32046b2a4e16f87215f96e64ea444">   65</a></span><span class="preprocessor">#define pr_info_ratelimited(fmt, ...)    pr_info(fmt, ##__VA_ARGS__)</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="ratelimit_8h.html#a67710010155e0dbb190ac3ad86d68766">   66</a></span><span class="preprocessor">#define pr_debug_ratelimited(fmt, ...)   pr_debug(fmt, ##__VA_ARGS__)</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="ratelimit_8h.html#a87bc41065e9780a79aa1cbb58cb988d1">   68</a></span><span class="preprocessor">#define printk_ratelimited(fmt, ...)     printk(fmt, ##__VA_ARGS__)</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="preprocessor">#endif </span><span class="comment">/* __LINUX_RATELIMIT_H__ */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="aprintk_8h_html"><div class="ttname"><a href="printk_8h.html">printk.h</a></div></div>
-<div class="ttc" id="astructratelimit__state_html"><div class="ttname"><a href="structratelimit__state.html">ratelimit_state</a></div><div class="ttdef"><b>Definition</b> ratelimit.h:25</div></div>
-<div class="ttc" id="astructratelimit__state_html_a86ac4359769141ab2507c0467208046a"><div class="ttname"><a href="structratelimit__state.html#a86ac4359769141ab2507c0467208046a">ratelimit_state::interval</a></div><div class="ttdeci">int interval</div><div class="ttdef"><b>Definition</b> ratelimit.h:26</div></div>
-<div class="ttc" id="astructratelimit__state_html_aa5e3e5b53b5affc94a91eb23ecefdf88"><div class="ttname"><a href="structratelimit__state.html#aa5e3e5b53b5affc94a91eb23ecefdf88">ratelimit_state::printed</a></div><div class="ttdeci">int printed</div><div class="ttdef"><b>Definition</b> ratelimit.h:28</div></div>
-<div class="ttc" id="astructratelimit__state_html_ab74816e60d6e291720b84f904d67af46"><div class="ttname"><a href="structratelimit__state.html#ab74816e60d6e291720b84f904d67af46">ratelimit_state::missed</a></div><div class="ttdeci">int missed</div><div class="ttdef"><b>Definition</b> ratelimit.h:29</div></div>
-<div class="ttc" id="astructratelimit__state_html_abc65831c02417585601d07db83bb7bc9"><div class="ttname"><a href="structratelimit__state.html#abc65831c02417585601d07db83bb7bc9">ratelimit_state::begin</a></div><div class="ttdeci">unsigned long begin</div><div class="ttdef"><b>Definition</b> ratelimit.h:30</div></div>
-<div class="ttc" id="astructratelimit__state_html_af5243b4e427a886f2e36fe9d340adce1"><div class="ttname"><a href="structratelimit__state.html#af5243b4e427a886f2e36fe9d340adce1">ratelimit_state::burst</a></div><div class="ttdeci">int burst</div><div class="ttdef"><b>Definition</b> ratelimit.h:27</div></div>
+<div class="ttc" id="astructratelimit__state_html"><div class="ttname"><a href="structratelimit__state.html">ratelimit_state</a></div><div class="ttdef"><b>Definition</b> ratelimit.h:37</div></div>
+<div class="ttc" id="astructratelimit__state_html_a86ac4359769141ab2507c0467208046a"><div class="ttname"><a href="structratelimit__state.html#a86ac4359769141ab2507c0467208046a">ratelimit_state::interval</a></div><div class="ttdeci">int interval</div><div class="ttdef"><b>Definition</b> ratelimit.h:38</div></div>
+<div class="ttc" id="astructratelimit__state_html_aa5e3e5b53b5affc94a91eb23ecefdf88"><div class="ttname"><a href="structratelimit__state.html#aa5e3e5b53b5affc94a91eb23ecefdf88">ratelimit_state::printed</a></div><div class="ttdeci">int printed</div><div class="ttdef"><b>Definition</b> ratelimit.h:40</div></div>
+<div class="ttc" id="astructratelimit__state_html_ab74816e60d6e291720b84f904d67af46"><div class="ttname"><a href="structratelimit__state.html#ab74816e60d6e291720b84f904d67af46">ratelimit_state::missed</a></div><div class="ttdeci">int missed</div><div class="ttdef"><b>Definition</b> ratelimit.h:41</div></div>
+<div class="ttc" id="astructratelimit__state_html_abc65831c02417585601d07db83bb7bc9"><div class="ttname"><a href="structratelimit__state.html#abc65831c02417585601d07db83bb7bc9">ratelimit_state::begin</a></div><div class="ttdeci">unsigned long begin</div><div class="ttdef"><b>Definition</b> ratelimit.h:42</div></div>
+<div class="ttc" id="astructratelimit__state_html_af5243b4e427a886f2e36fe9d340adce1"><div class="ttname"><a href="structratelimit__state.html#af5243b4e427a886f2e36fe9d340adce1">ratelimit_state::burst</a></div><div class="ttdeci">int burst</div><div class="ttdef"><b>Definition</b> ratelimit.h:39</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

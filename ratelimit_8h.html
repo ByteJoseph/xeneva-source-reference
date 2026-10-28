@@ -85,13 +85,17 @@ Include dependency graph for ratelimit.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="ratelimit_8h__incl.png" border="0" usemap="#aXenevaOS_2BaseHdr_2linux_2ratelimit_8h" alt=""/></div>
 <map name="aXenevaOS_2BaseHdr_2linux_2ratelimit_8h" id="aXenevaOS_2BaseHdr_2linux_2ratelimit_8h">
-<area shape="rect" title=" " alt="" coords="190,5,374,45"/>
-<area shape="rect" href="printk_8h.html" title=" " alt="" coords="228,93,336,119"/>
-<area shape="poly" title=" " alt="" coords="285,46,285,79,279,79,279,46"/>
+<area shape="rect" title=" " alt="" coords="395,5,579,45"/>
+<area shape="rect" href="printk_8h.html" title=" " alt="" coords="433,93,541,119"/>
+<area shape="poly" title=" " alt="" coords="490,46,490,79,485,79,485,46"/>
 <area shape="rect" href="uart_8h.html" title=" " alt="" coords="169,167,280,192"/>
-<area shape="poly" title=" " alt="" coords="275,121,245,158,241,154,270,117"/>
+<area shape="poly" title=" " alt="" coords="446,121,281,166,280,160,444,116"/>
 <area shape="rect" href="aucon_8h.html" title=" " alt="" coords="401,167,475,192"/>
-<area shape="poly" title=" " alt="" coords="308,116,401,158,399,163,306,121"/>
+<area shape="poly" title=" " alt="" coords="481,121,456,157,452,154,477,117"/>
+<area shape="rect" href="BaseHdr_2linux_2stdarg_8h.html" title=" " alt="" coords="499,167,574,192"/>
+<area shape="poly" title=" " alt="" coords="498,117,523,154,519,157,493,121"/>
+<area shape="rect" href="stringify_8h.html" title=" " alt="" coords="623,167,744,192"/>
+<area shape="poly" title=" " alt="" coords="520,116,639,159,638,164,518,121"/>
 <area shape="rect" href="aa64hcode_8h.html" title=" " alt="" coords="5,240,111,265"/>
 <area shape="poly" title=" " alt="" coords="199,194,99,237,97,232,197,190"/>
 <area shape="rect" title=" " alt="" coords="229,401,300,427"/>
@@ -107,6 +111,17 @@ Include dependency graph for ratelimit.h:</div>
 <area shape="poly" title=" " alt="" coords="455,190,511,230,508,234,452,194"/>
 <area shape="rect" href="BaseHdr_2stdint_8h.html" title=" " alt="" coords="501,321,572,346"/>
 <area shape="poly" title=" " alt="" coords="539,266,539,307,534,307,534,266"/>
+<area shape="poly" title=" " alt="" coords="566,164,589,165,597,171,601,180,594,191,580,195,578,190,591,187,595,179,593,174,587,170,566,169"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+This graph shows which files directly or indirectly include this file:</div>
+<div class="dyncontent">
+<div class="center"><img src="ratelimit_8h__dep__incl.png" border="0" usemap="#aXenevaOS_2BaseHdr_2linux_2ratelimit_8hdep" alt=""/></div>
+<map name="aXenevaOS_2BaseHdr_2linux_2ratelimit_8hdep" id="aXenevaOS_2BaseHdr_2linux_2ratelimit_8hdep">
+<area shape="rect" title=" " alt="" coords="5,5,189,45"/>
+<area shape="rect" href="drm__print_8h.html" title=" " alt="" coords="8,93,187,133"/>
+<area shape="poly" title=" " alt="" coords="100,59,100,93,95,93,95,59"/>
 </map>
 </div>
 </div>
@@ -119,32 +134,64 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
+<tr class="memitem:a9b30ec61df3341e2b6493d52721daca4" id="r_a9b30ec61df3341e2b6493d52721daca4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ratelimit_8h.html#a9b30ec61df3341e2b6493d52721daca4">DEFAULT_RATELIMIT_INTERVAL</a>&#160;&#160;&#160;1250</td></tr>
+<tr class="separator:a9b30ec61df3341e2b6493d52721daca4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bdfb16e1d39c8a149d82aa447cc70d1" id="r_a3bdfb16e1d39c8a149d82aa447cc70d1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ratelimit_8h.html#a3bdfb16e1d39c8a149d82aa447cc70d1">DEFAULT_RATELIMIT_BURST</a>&#160;&#160;&#160;10</td></tr>
+<tr class="separator:a3bdfb16e1d39c8a149d82aa447cc70d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11a71744b271e69b0a61eaac90bf7d83" id="r_a11a71744b271e69b0a61eaac90bf7d83"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ratelimit_8h.html#a11a71744b271e69b0a61eaac90bf7d83">RATELIMIT_DISABLED</a>&#160;&#160;&#160;(struct <a class="el" href="structratelimit__state.html">ratelimit_state</a>){ .interval = 0 }</td></tr>
 <tr class="separator:a11a71744b271e69b0a61eaac90bf7d83"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c8eb6d37c9f209092c20f202a07fdf6" id="r_a7c8eb6d37c9f209092c20f202a07fdf6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ratelimit_8h.html#a7c8eb6d37c9f209092c20f202a07fdf6">ratelimit_state_init</a>(rs,  b,  i)&#160;&#160;&#160;	do { (void)(rs); (void)(b); (void)(i); } while (0)</td></tr>
+<tr class="memitem:a7c8eb6d37c9f209092c20f202a07fdf6" id="r_a7c8eb6d37c9f209092c20f202a07fdf6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ratelimit_8h.html#a7c8eb6d37c9f209092c20f202a07fdf6">ratelimit_state_init</a>(rs,  <a class="el" href="Process_2NetSurf_2main_8cpp.html#a9dc54a811b75d3d05d3deff10980ca7e">b</a>,  i)&#160;&#160;&#160;	do { (void)(rs); (void)(<a class="el" href="Process_2NetSurf_2main_8cpp.html#a9dc54a811b75d3d05d3deff10980ca7e">b</a>); (void)(i); } while (0)</td></tr>
 <tr class="separator:a7c8eb6d37c9f209092c20f202a07fdf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5383652637f251162e0a798bd6f11ef" id="r_af5383652637f251162e0a798bd6f11ef"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ratelimit_8h.html#af5383652637f251162e0a798bd6f11ef">DEFINE_RATELIMIT_STATE</a>(<a class="el" href="kobject_8h.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>,  interval_init,  burst_init)&#160;&#160;&#160;	struct <a class="el" href="structratelimit__state.html">ratelimit_state</a> <a class="el" href="kobject_8h.html#a8f8f80d37794cde9472343e4487ba3eb">name</a> = { (interval_init), (burst_init), 0, 0, 0 }</td></tr>
+<tr class="memitem:af5383652637f251162e0a798bd6f11ef" id="r_af5383652637f251162e0a798bd6f11ef"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ratelimit_8h.html#af5383652637f251162e0a798bd6f11ef">DEFINE_RATELIMIT_STATE</a>(<a class="el" href="drm__crtc_8h.html#aed88e009d7772dfc9026cb1f5492b458">name</a>,  interval_init,  burst_init)&#160;&#160;&#160;	struct <a class="el" href="structratelimit__state.html">ratelimit_state</a> <a class="el" href="drm__crtc_8h.html#aed88e009d7772dfc9026cb1f5492b458">name</a> = { (interval_init), (burst_init), 0, 0, 0 }</td></tr>
 <tr class="separator:af5383652637f251162e0a798bd6f11ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afca4db5095679b5b4b369434adbbc4b4" id="r_afca4db5095679b5b4b369434adbbc4b4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ratelimit_8h.html#afca4db5095679b5b4b369434adbbc4b4">pr_emerg_ratelimited</a>(<a class="el" href="debugfs_8h.html#a74ed1e77776625232642440d5479c092">fmt</a>, ...)&#160;&#160;&#160;<a class="el" href="printk_8h.html#a43cdc66f311476c41815d9da173c492c">pr_emerg</a>(<a class="el" href="debugfs_8h.html#a74ed1e77776625232642440d5479c092">fmt</a>, ##__VA_ARGS__)</td></tr>
+<tr class="memitem:afca4db5095679b5b4b369434adbbc4b4" id="r_afca4db5095679b5b4b369434adbbc4b4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ratelimit_8h.html#afca4db5095679b5b4b369434adbbc4b4">pr_emerg_ratelimited</a>(<a class="el" href="drm__file_8h.html#a6c7e3fabe8f433618918504e845c8e99">fmt</a>, ...)&#160;&#160;&#160;<a class="el" href="printk_8h.html#a43cdc66f311476c41815d9da173c492c">pr_emerg</a>(<a class="el" href="drm__file_8h.html#a6c7e3fabe8f433618918504e845c8e99">fmt</a>, ##__VA_ARGS__)</td></tr>
 <tr class="separator:afca4db5095679b5b4b369434adbbc4b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa00949ddce4ac597d403b0f4c860cb9" id="r_aaa00949ddce4ac597d403b0f4c860cb9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ratelimit_8h.html#aaa00949ddce4ac597d403b0f4c860cb9">pr_alert_ratelimited</a>(<a class="el" href="debugfs_8h.html#a74ed1e77776625232642440d5479c092">fmt</a>, ...)&#160;&#160;&#160;<a class="el" href="printk_8h.html#a77ab60ff6d7a17c5eef5c182051a2a49">pr_alert</a>(<a class="el" href="debugfs_8h.html#a74ed1e77776625232642440d5479c092">fmt</a>, ##__VA_ARGS__)</td></tr>
+<tr class="memitem:aaa00949ddce4ac597d403b0f4c860cb9" id="r_aaa00949ddce4ac597d403b0f4c860cb9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ratelimit_8h.html#aaa00949ddce4ac597d403b0f4c860cb9">pr_alert_ratelimited</a>(<a class="el" href="drm__file_8h.html#a6c7e3fabe8f433618918504e845c8e99">fmt</a>, ...)&#160;&#160;&#160;<a class="el" href="printk_8h.html#a77ab60ff6d7a17c5eef5c182051a2a49">pr_alert</a>(<a class="el" href="drm__file_8h.html#a6c7e3fabe8f433618918504e845c8e99">fmt</a>, ##__VA_ARGS__)</td></tr>
 <tr class="separator:aaa00949ddce4ac597d403b0f4c860cb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b97374553fdd34d5f5bd5ad586a39a3" id="r_a6b97374553fdd34d5f5bd5ad586a39a3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ratelimit_8h.html#a6b97374553fdd34d5f5bd5ad586a39a3">pr_crit_ratelimited</a>(<a class="el" href="debugfs_8h.html#a74ed1e77776625232642440d5479c092">fmt</a>, ...)&#160;&#160;&#160;<a class="el" href="printk_8h.html#af37f93b63e9a4fd0f497d4ca3982cb71">pr_crit</a>(<a class="el" href="debugfs_8h.html#a74ed1e77776625232642440d5479c092">fmt</a>, ##__VA_ARGS__)</td></tr>
+<tr class="memitem:a6b97374553fdd34d5f5bd5ad586a39a3" id="r_a6b97374553fdd34d5f5bd5ad586a39a3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ratelimit_8h.html#a6b97374553fdd34d5f5bd5ad586a39a3">pr_crit_ratelimited</a>(<a class="el" href="drm__file_8h.html#a6c7e3fabe8f433618918504e845c8e99">fmt</a>, ...)&#160;&#160;&#160;<a class="el" href="printk_8h.html#af37f93b63e9a4fd0f497d4ca3982cb71">pr_crit</a>(<a class="el" href="drm__file_8h.html#a6c7e3fabe8f433618918504e845c8e99">fmt</a>, ##__VA_ARGS__)</td></tr>
 <tr class="separator:a6b97374553fdd34d5f5bd5ad586a39a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac60aca600196ff4d580a31ea3e2086ad" id="r_ac60aca600196ff4d580a31ea3e2086ad"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ratelimit_8h.html#ac60aca600196ff4d580a31ea3e2086ad">pr_err_ratelimited</a>(<a class="el" href="debugfs_8h.html#a74ed1e77776625232642440d5479c092">fmt</a>, ...)&#160;&#160;&#160;<a class="el" href="printk_8h.html#aaaed834355e16ef8abac4ef764e34ed3">pr_err</a>(<a class="el" href="debugfs_8h.html#a74ed1e77776625232642440d5479c092">fmt</a>, ##__VA_ARGS__)</td></tr>
+<tr class="memitem:ac60aca600196ff4d580a31ea3e2086ad" id="r_ac60aca600196ff4d580a31ea3e2086ad"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ratelimit_8h.html#ac60aca600196ff4d580a31ea3e2086ad">pr_err_ratelimited</a>(<a class="el" href="drm__file_8h.html#a6c7e3fabe8f433618918504e845c8e99">fmt</a>, ...)&#160;&#160;&#160;<a class="el" href="printk_8h.html#aaaed834355e16ef8abac4ef764e34ed3">pr_err</a>(<a class="el" href="drm__file_8h.html#a6c7e3fabe8f433618918504e845c8e99">fmt</a>, ##__VA_ARGS__)</td></tr>
 <tr class="separator:ac60aca600196ff4d580a31ea3e2086ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1240be6065ffd41ef14242adfa732b55" id="r_a1240be6065ffd41ef14242adfa732b55"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ratelimit_8h.html#a1240be6065ffd41ef14242adfa732b55">pr_warn_ratelimited</a>(<a class="el" href="debugfs_8h.html#a74ed1e77776625232642440d5479c092">fmt</a>, ...)&#160;&#160;&#160;<a class="el" href="printk_8h.html#a38e2406dd2d2aa570c3d228c1e326f20">pr_warn</a>(<a class="el" href="debugfs_8h.html#a74ed1e77776625232642440d5479c092">fmt</a>, ##__VA_ARGS__)</td></tr>
+<tr class="memitem:a1240be6065ffd41ef14242adfa732b55" id="r_a1240be6065ffd41ef14242adfa732b55"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ratelimit_8h.html#a1240be6065ffd41ef14242adfa732b55">pr_warn_ratelimited</a>(<a class="el" href="drm__file_8h.html#a6c7e3fabe8f433618918504e845c8e99">fmt</a>, ...)&#160;&#160;&#160;<a class="el" href="printk_8h.html#a38e2406dd2d2aa570c3d228c1e326f20">pr_warn</a>(<a class="el" href="drm__file_8h.html#a6c7e3fabe8f433618918504e845c8e99">fmt</a>, ##__VA_ARGS__)</td></tr>
 <tr class="separator:a1240be6065ffd41ef14242adfa732b55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a807ea1ed35c80d76a8f863a8d161b263" id="r_a807ea1ed35c80d76a8f863a8d161b263"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ratelimit_8h.html#a807ea1ed35c80d76a8f863a8d161b263">pr_notice_ratelimited</a>(<a class="el" href="debugfs_8h.html#a74ed1e77776625232642440d5479c092">fmt</a>, ...)&#160;&#160;&#160;<a class="el" href="printk_8h.html#a5135990f6c17ec7c8e1d0435f85231ba">pr_notice</a>(<a class="el" href="debugfs_8h.html#a74ed1e77776625232642440d5479c092">fmt</a>, ##__VA_ARGS__)</td></tr>
+<tr class="memitem:a807ea1ed35c80d76a8f863a8d161b263" id="r_a807ea1ed35c80d76a8f863a8d161b263"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ratelimit_8h.html#a807ea1ed35c80d76a8f863a8d161b263">pr_notice_ratelimited</a>(<a class="el" href="drm__file_8h.html#a6c7e3fabe8f433618918504e845c8e99">fmt</a>, ...)&#160;&#160;&#160;<a class="el" href="printk_8h.html#a5135990f6c17ec7c8e1d0435f85231ba">pr_notice</a>(<a class="el" href="drm__file_8h.html#a6c7e3fabe8f433618918504e845c8e99">fmt</a>, ##__VA_ARGS__)</td></tr>
 <tr class="separator:a807ea1ed35c80d76a8f863a8d161b263"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27d32046b2a4e16f87215f96e64ea444" id="r_a27d32046b2a4e16f87215f96e64ea444"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ratelimit_8h.html#a27d32046b2a4e16f87215f96e64ea444">pr_info_ratelimited</a>(<a class="el" href="debugfs_8h.html#a74ed1e77776625232642440d5479c092">fmt</a>, ...)&#160;&#160;&#160;<a class="el" href="printk_8h.html#a6683b82f55e7ea04acdc8e2159fe5cbf">pr_info</a>(<a class="el" href="debugfs_8h.html#a74ed1e77776625232642440d5479c092">fmt</a>, ##__VA_ARGS__)</td></tr>
+<tr class="memitem:a27d32046b2a4e16f87215f96e64ea444" id="r_a27d32046b2a4e16f87215f96e64ea444"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ratelimit_8h.html#a27d32046b2a4e16f87215f96e64ea444">pr_info_ratelimited</a>(<a class="el" href="drm__file_8h.html#a6c7e3fabe8f433618918504e845c8e99">fmt</a>, ...)&#160;&#160;&#160;<a class="el" href="printk_8h.html#a6683b82f55e7ea04acdc8e2159fe5cbf">pr_info</a>(<a class="el" href="drm__file_8h.html#a6c7e3fabe8f433618918504e845c8e99">fmt</a>, ##__VA_ARGS__)</td></tr>
 <tr class="separator:a27d32046b2a4e16f87215f96e64ea444"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67710010155e0dbb190ac3ad86d68766" id="r_a67710010155e0dbb190ac3ad86d68766"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ratelimit_8h.html#a67710010155e0dbb190ac3ad86d68766">pr_debug_ratelimited</a>(<a class="el" href="debugfs_8h.html#a74ed1e77776625232642440d5479c092">fmt</a>, ...)&#160;&#160;&#160;<a class="el" href="printk_8h.html#adfc661c005cabb7d3bfe29d430a5856c">pr_debug</a>(<a class="el" href="debugfs_8h.html#a74ed1e77776625232642440d5479c092">fmt</a>, ##__VA_ARGS__)</td></tr>
+<tr class="memitem:a67710010155e0dbb190ac3ad86d68766" id="r_a67710010155e0dbb190ac3ad86d68766"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ratelimit_8h.html#a67710010155e0dbb190ac3ad86d68766">pr_debug_ratelimited</a>(<a class="el" href="drm__file_8h.html#a6c7e3fabe8f433618918504e845c8e99">fmt</a>, ...)&#160;&#160;&#160;<a class="el" href="printk_8h.html#adfc661c005cabb7d3bfe29d430a5856c">pr_debug</a>(<a class="el" href="drm__file_8h.html#a6c7e3fabe8f433618918504e845c8e99">fmt</a>, ##__VA_ARGS__)</td></tr>
 <tr class="separator:a67710010155e0dbb190ac3ad86d68766"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a87bc41065e9780a79aa1cbb58cb988d1" id="r_a87bc41065e9780a79aa1cbb58cb988d1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ratelimit_8h.html#a87bc41065e9780a79aa1cbb58cb988d1">printk_ratelimited</a>(<a class="el" href="debugfs_8h.html#a74ed1e77776625232642440d5479c092">fmt</a>, ...)&#160;&#160;&#160;<a class="el" href="printk_8h.html#ac002b290a55c356b2b46a7be61a791d4">printk</a>(<a class="el" href="debugfs_8h.html#a74ed1e77776625232642440d5479c092">fmt</a>, ##__VA_ARGS__)</td></tr>
+<tr class="memitem:a87bc41065e9780a79aa1cbb58cb988d1" id="r_a87bc41065e9780a79aa1cbb58cb988d1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ratelimit_8h.html#a87bc41065e9780a79aa1cbb58cb988d1">printk_ratelimited</a>(<a class="el" href="drm__file_8h.html#a6c7e3fabe8f433618918504e845c8e99">fmt</a>, ...)&#160;&#160;&#160;<a class="el" href="printk_8h.html#ac002b290a55c356b2b46a7be61a791d4">printk</a>(<a class="el" href="drm__file_8h.html#a6c7e3fabe8f433618918504e845c8e99">fmt</a>, ##__VA_ARGS__)</td></tr>
 <tr class="separator:a87bc41065e9780a79aa1cbb58cb988d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a3bdfb16e1d39c8a149d82aa447cc70d1" name="a3bdfb16e1d39c8a149d82aa447cc70d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3bdfb16e1d39c8a149d82aa447cc70d1">&#9670;&#160;</a></span>DEFAULT_RATELIMIT_BURST</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DEFAULT_RATELIMIT_BURST&#160;&#160;&#160;10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9b30ec61df3341e2b6493d52721daca4" name="a9b30ec61df3341e2b6493d52721daca4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b30ec61df3341e2b6493d52721daca4">&#9670;&#160;</a></span>DEFAULT_RATELIMIT_INTERVAL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DEFAULT_RATELIMIT_INTERVAL&#160;&#160;&#160;1250</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="af5383652637f251162e0a798bd6f11ef" name="af5383652637f251162e0a798bd6f11ef"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af5383652637f251162e0a798bd6f11ef">&#9670;&#160;</a></span>DEFINE_RATELIMIT_STATE</h2>
 
@@ -155,7 +202,7 @@ Macros</h2></td></tr>
           <td class="memname">#define DEFINE_RATELIMIT_STATE</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="kobject_8h.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, </td>
+          <td class="paramname"><a class="el" href="drm__crtc_8h.html#aed88e009d7772dfc9026cb1f5492b458">name</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -172,7 +219,7 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;	struct <a class="el" href="structratelimit__state.html">ratelimit_state</a> <a class="el" href="kobject_8h.html#a8f8f80d37794cde9472343e4487ba3eb">name</a> = { (interval_init), (burst_init), 0, 0, 0 }</td>
+          <td></td><td>&#160;&#160;&#160;	struct <a class="el" href="structratelimit__state.html">ratelimit_state</a> <a class="el" href="drm__crtc_8h.html#aed88e009d7772dfc9026cb1f5492b458">name</a> = { (interval_init), (burst_init), 0, 0, 0 }</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -189,7 +236,7 @@ Macros</h2></td></tr>
           <td class="memname">#define pr_alert_ratelimited</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="debugfs_8h.html#a74ed1e77776625232642440d5479c092">fmt</a>, </td>
+          <td class="paramname"><a class="el" href="drm__file_8h.html#a6c7e3fabe8f433618918504e845c8e99">fmt</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -200,7 +247,7 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="printk_8h.html#a77ab60ff6d7a17c5eef5c182051a2a49">pr_alert</a>(<a class="el" href="debugfs_8h.html#a74ed1e77776625232642440d5479c092">fmt</a>, ##__VA_ARGS__)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="printk_8h.html#a77ab60ff6d7a17c5eef5c182051a2a49">pr_alert</a>(<a class="el" href="drm__file_8h.html#a6c7e3fabe8f433618918504e845c8e99">fmt</a>, ##__VA_ARGS__)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -217,7 +264,7 @@ Macros</h2></td></tr>
           <td class="memname">#define pr_crit_ratelimited</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="debugfs_8h.html#a74ed1e77776625232642440d5479c092">fmt</a>, </td>
+          <td class="paramname"><a class="el" href="drm__file_8h.html#a6c7e3fabe8f433618918504e845c8e99">fmt</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -228,7 +275,7 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="printk_8h.html#af37f93b63e9a4fd0f497d4ca3982cb71">pr_crit</a>(<a class="el" href="debugfs_8h.html#a74ed1e77776625232642440d5479c092">fmt</a>, ##__VA_ARGS__)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="printk_8h.html#af37f93b63e9a4fd0f497d4ca3982cb71">pr_crit</a>(<a class="el" href="drm__file_8h.html#a6c7e3fabe8f433618918504e845c8e99">fmt</a>, ##__VA_ARGS__)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -245,7 +292,7 @@ Macros</h2></td></tr>
           <td class="memname">#define pr_debug_ratelimited</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="debugfs_8h.html#a74ed1e77776625232642440d5479c092">fmt</a>, </td>
+          <td class="paramname"><a class="el" href="drm__file_8h.html#a6c7e3fabe8f433618918504e845c8e99">fmt</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -256,7 +303,7 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="printk_8h.html#adfc661c005cabb7d3bfe29d430a5856c">pr_debug</a>(<a class="el" href="debugfs_8h.html#a74ed1e77776625232642440d5479c092">fmt</a>, ##__VA_ARGS__)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="printk_8h.html#adfc661c005cabb7d3bfe29d430a5856c">pr_debug</a>(<a class="el" href="drm__file_8h.html#a6c7e3fabe8f433618918504e845c8e99">fmt</a>, ##__VA_ARGS__)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -273,7 +320,7 @@ Macros</h2></td></tr>
           <td class="memname">#define pr_emerg_ratelimited</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="debugfs_8h.html#a74ed1e77776625232642440d5479c092">fmt</a>, </td>
+          <td class="paramname"><a class="el" href="drm__file_8h.html#a6c7e3fabe8f433618918504e845c8e99">fmt</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -284,7 +331,7 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="printk_8h.html#a43cdc66f311476c41815d9da173c492c">pr_emerg</a>(<a class="el" href="debugfs_8h.html#a74ed1e77776625232642440d5479c092">fmt</a>, ##__VA_ARGS__)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="printk_8h.html#a43cdc66f311476c41815d9da173c492c">pr_emerg</a>(<a class="el" href="drm__file_8h.html#a6c7e3fabe8f433618918504e845c8e99">fmt</a>, ##__VA_ARGS__)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -301,7 +348,7 @@ Macros</h2></td></tr>
           <td class="memname">#define pr_err_ratelimited</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="debugfs_8h.html#a74ed1e77776625232642440d5479c092">fmt</a>, </td>
+          <td class="paramname"><a class="el" href="drm__file_8h.html#a6c7e3fabe8f433618918504e845c8e99">fmt</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -312,7 +359,7 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="printk_8h.html#aaaed834355e16ef8abac4ef764e34ed3">pr_err</a>(<a class="el" href="debugfs_8h.html#a74ed1e77776625232642440d5479c092">fmt</a>, ##__VA_ARGS__)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="printk_8h.html#aaaed834355e16ef8abac4ef764e34ed3">pr_err</a>(<a class="el" href="drm__file_8h.html#a6c7e3fabe8f433618918504e845c8e99">fmt</a>, ##__VA_ARGS__)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -329,7 +376,7 @@ Macros</h2></td></tr>
           <td class="memname">#define pr_info_ratelimited</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="debugfs_8h.html#a74ed1e77776625232642440d5479c092">fmt</a>, </td>
+          <td class="paramname"><a class="el" href="drm__file_8h.html#a6c7e3fabe8f433618918504e845c8e99">fmt</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -340,7 +387,7 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="printk_8h.html#a6683b82f55e7ea04acdc8e2159fe5cbf">pr_info</a>(<a class="el" href="debugfs_8h.html#a74ed1e77776625232642440d5479c092">fmt</a>, ##__VA_ARGS__)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="printk_8h.html#a6683b82f55e7ea04acdc8e2159fe5cbf">pr_info</a>(<a class="el" href="drm__file_8h.html#a6c7e3fabe8f433618918504e845c8e99">fmt</a>, ##__VA_ARGS__)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -357,7 +404,7 @@ Macros</h2></td></tr>
           <td class="memname">#define pr_notice_ratelimited</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="debugfs_8h.html#a74ed1e77776625232642440d5479c092">fmt</a>, </td>
+          <td class="paramname"><a class="el" href="drm__file_8h.html#a6c7e3fabe8f433618918504e845c8e99">fmt</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -368,7 +415,7 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="printk_8h.html#a5135990f6c17ec7c8e1d0435f85231ba">pr_notice</a>(<a class="el" href="debugfs_8h.html#a74ed1e77776625232642440d5479c092">fmt</a>, ##__VA_ARGS__)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="printk_8h.html#a5135990f6c17ec7c8e1d0435f85231ba">pr_notice</a>(<a class="el" href="drm__file_8h.html#a6c7e3fabe8f433618918504e845c8e99">fmt</a>, ##__VA_ARGS__)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -385,7 +432,7 @@ Macros</h2></td></tr>
           <td class="memname">#define pr_warn_ratelimited</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="debugfs_8h.html#a74ed1e77776625232642440d5479c092">fmt</a>, </td>
+          <td class="paramname"><a class="el" href="drm__file_8h.html#a6c7e3fabe8f433618918504e845c8e99">fmt</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -396,7 +443,7 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="printk_8h.html#a38e2406dd2d2aa570c3d228c1e326f20">pr_warn</a>(<a class="el" href="debugfs_8h.html#a74ed1e77776625232642440d5479c092">fmt</a>, ##__VA_ARGS__)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="printk_8h.html#a38e2406dd2d2aa570c3d228c1e326f20">pr_warn</a>(<a class="el" href="drm__file_8h.html#a6c7e3fabe8f433618918504e845c8e99">fmt</a>, ##__VA_ARGS__)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -413,7 +460,7 @@ Macros</h2></td></tr>
           <td class="memname">#define printk_ratelimited</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="debugfs_8h.html#a74ed1e77776625232642440d5479c092">fmt</a>, </td>
+          <td class="paramname"><a class="el" href="drm__file_8h.html#a6c7e3fabe8f433618918504e845c8e99">fmt</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -424,7 +471,7 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="printk_8h.html#ac002b290a55c356b2b46a7be61a791d4">printk</a>(<a class="el" href="debugfs_8h.html#a74ed1e77776625232642440d5479c092">fmt</a>, ##__VA_ARGS__)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="printk_8h.html#ac002b290a55c356b2b46a7be61a791d4">printk</a>(<a class="el" href="drm__file_8h.html#a6c7e3fabe8f433618918504e845c8e99">fmt</a>, ##__VA_ARGS__)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -461,7 +508,7 @@ Macros</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">b, </td>
+          <td class="paramname"><a class="el" href="Process_2NetSurf_2main_8cpp.html#a9dc54a811b75d3d05d3deff10980ca7e">b</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -472,7 +519,7 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;	do { (void)(rs); (void)(b); (void)(i); } while (0)</td>
+          <td></td><td>&#160;&#160;&#160;	do { (void)(rs); (void)(<a class="el" href="Process_2NetSurf_2main_8cpp.html#a9dc54a811b75d3d05d3deff10980ca7e">b</a>); (void)(i); } while (0)</td>
         </tr>
       </table>
 </div><div class="memdoc">

@@ -153,12 +153,13 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">        { \</div>
-<div class="line">        <span class="keywordtype">int</span> <a class="code hl_define" href="draw_8cpp.html#ac740756f75e53153605d2702b30d2a9d">sign</a> = (y) &gt;&gt; 31;  \</div>
+<div class="line">        <span class="keywordtype">int</span> <a class="code hl_define" href="draw_8cpp.html#ac740756f75e53153605d2702b30d2a9d">sign</a> = (<a class="code hl_variable" href="layout_8c.html#a0a2f84ed7838f07779ae24c5a9086d33">y</a>) &gt;&gt; 31;  \</div>
 <div class="line">        if (<a class="code hl_define" href="draw_8cpp.html#ac740756f75e53153605d2702b30d2a9d">sign</a> != (y) &gt;&gt; (n))  { \</div>
-<div class="line">                (y) = <a class="code hl_define" href="draw_8cpp.html#ac740756f75e53153605d2702b30d2a9d">sign</a> ^ ((1 &lt;&lt; (n)) - 1); \</div>
+<div class="line">                (<a class="code hl_variable" href="layout_8c.html#a0a2f84ed7838f07779ae24c5a9086d33">y</a>) = <a class="code hl_define" href="draw_8cpp.html#ac740756f75e53153605d2702b30d2a9d">sign</a> ^ ((1 &lt;&lt; (n)) - 1); \</div>
 <div class="line">        } \</div>
 <div class="line">}</div>
 <div class="ttc" id="adraw_8cpp_html_ac740756f75e53153605d2702b30d2a9d"><div class="ttname"><a href="draw_8cpp.html#ac740756f75e53153605d2702b30d2a9d">sign</a></div><div class="ttdeci">#define sign(x)</div><div class="ttdef"><b>Definition</b> draw.cpp:36</div></div>
+<div class="ttc" id="alayout_8c_html_a0a2f84ed7838f07779ae24c5a9086d33"><div class="ttname"><a href="layout_8c.html#a0a2f84ed7838f07779ae24c5a9086d33">y</a></div><div class="ttdeci">int y</div><div class="ttdef"><b>Definition</b> layout.c:118</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -188,11 +189,11 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">        {                   \</div>
-<div class="line">        <span class="keywordtype">int</span> <a class="code hl_define" href="draw_8cpp.html#ac740756f75e53153605d2702b30d2a9d">sign</a> = (y) &gt;&gt; 31;                   \</div>
+<div class="line">        <span class="keywordtype">int</span> <a class="code hl_define" href="draw_8cpp.html#ac740756f75e53153605d2702b30d2a9d">sign</a> = (<a class="code hl_variable" href="layout_8c.html#a0a2f84ed7838f07779ae24c5a9086d33">y</a>) &gt;&gt; 31;                   \</div>
 <div class="line">        if (<a class="code hl_define" href="draw_8cpp.html#ac740756f75e53153605d2702b30d2a9d">sign</a> != (y) &gt;&gt; (30 - (n)))  {       \</div>
-<div class="line">            (y) = <a class="code hl_define" href="draw_8cpp.html#ac740756f75e53153605d2702b30d2a9d">sign</a> ^ (0x3fffffff);          \</div>
+<div class="line">            (<a class="code hl_variable" href="layout_8c.html#a0a2f84ed7838f07779ae24c5a9086d33">y</a>) = <a class="code hl_define" href="draw_8cpp.html#ac740756f75e53153605d2702b30d2a9d">sign</a> ^ (0x3fffffff);          \</div>
 <div class="line">        } <span class="keywordflow">else</span> {                                \</div>
-<div class="line">            (y) = (y) &lt;&lt; (n);                   \</div>
+<div class="line">            (<a class="code hl_variable" href="layout_8c.html#a0a2f84ed7838f07779ae24c5a9086d33">y</a>) = (y) &lt;&lt; (n);                   \</div>
 <div class="line">        }                                       \</div>
 <div class="line">    }</div>
 </div><!-- fragment -->

@@ -132,7 +132,7 @@ Macros</h2></td></tr>
 <tr class="separator:a369ecd38b3ab077fc235f892354bb46f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f660aa23a5dbc0f4b8df48b4302b8c3" id="r_a2f660aa23a5dbc0f4b8df48b4302b8c3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bordoisila__bits_8h.html#a2f660aa23a5dbc0f4b8df48b4302b8c3">BITS_PER_LONG</a>&#160;&#160;&#160;(sizeof(long) * <a class="el" href="bordoisila__bits_8h.html#a369ecd38b3ab077fc235f892354bb46f">BITS_PER_BYTE</a>)</td></tr>
 <tr class="separator:a2f660aa23a5dbc0f4b8df48b4302b8c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac210ffd3d3706d17e94cd8404d65b62b" id="r_ac210ffd3d3706d17e94cd8404d65b62b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bordoisila__bits_8h.html#ac210ffd3d3706d17e94cd8404d65b62b">BORDOISILA_DIV_ROUND_UP</a>(n,  d)&#160;&#160;&#160;(((n) + (d) - 1) / (d))</td></tr>
+<tr class="memitem:ac210ffd3d3706d17e94cd8404d65b62b" id="r_ac210ffd3d3706d17e94cd8404d65b62b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bordoisila__bits_8h.html#ac210ffd3d3706d17e94cd8404d65b62b">BORDOISILA_DIV_ROUND_UP</a>(n,  <a class="el" href="libunicode_8c.html#a2530554172d8629149ec56816eeaa947">d</a>)&#160;&#160;&#160;(((n) + (<a class="el" href="libunicode_8c.html#a2530554172d8629149ec56816eeaa947">d</a>) - 1) / (<a class="el" href="libunicode_8c.html#a2530554172d8629149ec56816eeaa947">d</a>))</td></tr>
 <tr class="separator:ac210ffd3d3706d17e94cd8404d65b62b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3ba090d4e822e3d52107f5c18c21290" id="r_ab3ba090d4e822e3d52107f5c18c21290"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bordoisila__bits_8h.html#ab3ba090d4e822e3d52107f5c18c21290">BITS_TO_LONGS</a>(nr)&#160;&#160;&#160;<a class="el" href="bordoisila__bits_8h.html#ac210ffd3d3706d17e94cd8404d65b62b">BORDOISILA_DIV_ROUND_UP</a>(nr, <a class="el" href="bordoisila__bits_8h.html#a2f660aa23a5dbc0f4b8df48b4302b8c3">BITS_PER_LONG</a>)</td></tr>
 <tr class="separator:ab3ba090d4e822e3d52107f5c18c21290"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -140,11 +140,11 @@ Macros</h2></td></tr>
 <tr class="separator:abbde66ce6ce3d759b73950275cf9b09d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35c19db14c981e9539b1e41d2c07ea69" id="r_a35c19db14c981e9539b1e41d2c07ea69"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bordoisila__bits_8h.html#a35c19db14c981e9539b1e41d2c07ea69">BORDOISILA_BIT</a>(nr)&#160;&#160;&#160;(1<a class="el" href="vdso_2const_8h.html#a2d1ace2be4b6d58d3260b1b5fd1d63e0">UL</a> &lt;&lt; (nr))</td></tr>
 <tr class="separator:a35c19db14c981e9539b1e41d2c07ea69"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82c2075ce12f6e1f4ec6336c06862af8" id="r_a82c2075ce12f6e1f4ec6336c06862af8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bordoisila__bits_8h.html#a82c2075ce12f6e1f4ec6336c06862af8">BORDOISILA_GENMASK</a>(h,  l)&#160;&#160;&#160;(((~0UL) - (1<a class="el" href="vdso_2const_8h.html#a2d1ace2be4b6d58d3260b1b5fd1d63e0">UL</a> &lt;&lt; (l)) + 1) &amp; (~0UL &gt;&gt; (<a class="el" href="bordoisila__bits_8h.html#a2f660aa23a5dbc0f4b8df48b4302b8c3">BITS_PER_LONG</a> - 1 - (h))))</td></tr>
+<tr class="memitem:a82c2075ce12f6e1f4ec6336c06862af8" id="r_a82c2075ce12f6e1f4ec6336c06862af8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bordoisila__bits_8h.html#a82c2075ce12f6e1f4ec6336c06862af8">BORDOISILA_GENMASK</a>(<a class="el" href="layout_8c.html#a16611451551e3d15916bae723c3f59f7">h</a>,  l)&#160;&#160;&#160;(((~0UL) - (1<a class="el" href="vdso_2const_8h.html#a2d1ace2be4b6d58d3260b1b5fd1d63e0">UL</a> &lt;&lt; (l)) + 1) &amp; (~0UL &gt;&gt; (<a class="el" href="bordoisila__bits_8h.html#a2f660aa23a5dbc0f4b8df48b4302b8c3">BITS_PER_LONG</a> - 1 - (<a class="el" href="layout_8c.html#a16611451551e3d15916bae723c3f59f7">h</a>))))</td></tr>
 <tr class="separator:a82c2075ce12f6e1f4ec6336c06862af8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3265b8c07792765e5c055bba7046a331" id="r_a3265b8c07792765e5c055bba7046a331"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bordoisila__bits_8h.html#a3265b8c07792765e5c055bba7046a331">BORDOISILA_GET_FIELD</a>(_mask,  _reg)&#160;&#160;&#160;(((_reg) &amp; (_mask)) &gt;&gt; __bf_shf(_mask))</td></tr>
+<tr class="memitem:a3265b8c07792765e5c055bba7046a331" id="r_a3265b8c07792765e5c055bba7046a331"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bordoisila__bits_8h.html#a3265b8c07792765e5c055bba7046a331">BORDOISILA_GET_FIELD</a>(_mask,  _reg)&#160;&#160;&#160;(((_reg) &amp; (_mask)) &gt;&gt; <a class="el" href="bitfield_8h.html#a54f999e99cdda52dc57cd267a1bb80c8">__bf_shf</a>(_mask))</td></tr>
 <tr class="separator:a3265b8c07792765e5c055bba7046a331"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4e5feb5b92f9425d6c83d9b298c2ad2" id="r_ae4e5feb5b92f9425d6c83d9b298c2ad2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bordoisila__bits_8h.html#ae4e5feb5b92f9425d6c83d9b298c2ad2">BORDOISILA_PREP_FIELD</a>(_mask,  _val)&#160;&#160;&#160;       (((_val) &lt;&lt; __bf_shf(_mask)) &amp; (_mask))</td></tr>
+<tr class="memitem:ae4e5feb5b92f9425d6c83d9b298c2ad2" id="r_ae4e5feb5b92f9425d6c83d9b298c2ad2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bordoisila__bits_8h.html#ae4e5feb5b92f9425d6c83d9b298c2ad2">BORDOISILA_PREP_FIELD</a>(_mask,  _val)&#160;&#160;&#160;       (((_val) &lt;&lt; <a class="el" href="bitfield_8h.html#a54f999e99cdda52dc57cd267a1bb80c8">__bf_shf</a>(_mask)) &amp; (_mask))</td></tr>
 <tr class="separator:ae4e5feb5b92f9425d6c83d9b298c2ad2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c7c6a69f690fc8d2abf0e385280a532" id="r_a3c7c6a69f690fc8d2abf0e385280a532"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bordoisila__bits_8h.html#a3c7c6a69f690fc8d2abf0e385280a532">ARRAY_SIZE</a>(arr)&#160;&#160;&#160;(sizeof(arr) / sizeof((arr)[0]))</td></tr>
 <tr class="separator:a3c7c6a69f690fc8d2abf0e385280a532"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -274,12 +274,12 @@ Macros</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">d&#160;</td>
+          <td class="paramname"><a class="el" href="libunicode_8c.html#a2530554172d8629149ec56816eeaa947">d</a>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;(((n) + (d) - 1) / (d))</td>
+          <td></td><td>&#160;&#160;&#160;(((n) + (<a class="el" href="libunicode_8c.html#a2530554172d8629149ec56816eeaa947">d</a>) - 1) / (<a class="el" href="libunicode_8c.html#a2530554172d8629149ec56816eeaa947">d</a>))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -296,7 +296,7 @@ Macros</h2></td></tr>
           <td class="memname">#define BORDOISILA_GENMASK</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">h, </td>
+          <td class="paramname"><a class="el" href="layout_8c.html#a16611451551e3d15916bae723c3f59f7">h</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -307,7 +307,7 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;(((~0UL) - (1<a class="el" href="vdso_2const_8h.html#a2d1ace2be4b6d58d3260b1b5fd1d63e0">UL</a> &lt;&lt; (l)) + 1) &amp; (~0UL &gt;&gt; (<a class="el" href="bordoisila__bits_8h.html#a2f660aa23a5dbc0f4b8df48b4302b8c3">BITS_PER_LONG</a> - 1 - (h))))</td>
+          <td></td><td>&#160;&#160;&#160;(((~0UL) - (1<a class="el" href="vdso_2const_8h.html#a2d1ace2be4b6d58d3260b1b5fd1d63e0">UL</a> &lt;&lt; (l)) + 1) &amp; (~0UL &gt;&gt; (<a class="el" href="bordoisila__bits_8h.html#a2f660aa23a5dbc0f4b8df48b4302b8c3">BITS_PER_LONG</a> - 1 - (<a class="el" href="layout_8c.html#a16611451551e3d15916bae723c3f59f7">h</a>))))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -335,7 +335,7 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;(((_reg) &amp; (_mask)) &gt;&gt; __bf_shf(_mask))</td>
+          <td></td><td>&#160;&#160;&#160;(((_reg) &amp; (_mask)) &gt;&gt; <a class="el" href="bitfield_8h.html#a54f999e99cdda52dc57cd267a1bb80c8">__bf_shf</a>(_mask))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -363,7 +363,7 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;       (((_val) &lt;&lt; __bf_shf(_mask)) &amp; (_mask))</td>
+          <td></td><td>&#160;&#160;&#160;       (((_val) &lt;&lt; <a class="el" href="bitfield_8h.html#a54f999e99cdda52dc57cd267a1bb80c8">__bf_shf</a>(_mask)) &amp; (_mask))</td>
         </tr>
       </table>
 </div><div class="memdoc">

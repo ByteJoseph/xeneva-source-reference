@@ -123,20 +123,20 @@ $(document).ready(function() { init_codefold(0); });
 </div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">// raw_offset: add byte offset to pointer or integer address</span></div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> U,</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> <a class="code hl_define" href="libunicode_8c.html#affc9cbf86b78292bdb405361761c47f5">U</a>,</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>          std::enable_if_t&lt;is_ptr_or_uint64&lt;T&gt;::value &amp;&amp; <a class="code hl_struct" href="structis__ptr__or__uint64.html">is_ptr_or_uint64&lt;U&gt;::value</a>, <span class="keywordtype">int</span>&gt; = 0&gt;</div>
 <div class="foldopen" id="foldopen00041" data-start="{" data-end="}">
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="Common_8hpp.html#a9cc90ef3841de8ae7b15096c54ac25ab">   41</a></span>T <a class="code hl_function" href="Common_8hpp.html#a9cc90ef3841de8ae7b15096c54ac25ab">raw_offset</a>(U p1, std::ptrdiff_t offset)</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="Common_8hpp.html#a9cc90ef3841de8ae7b15096c54ac25ab">   41</a></span>T <a class="code hl_function" href="Common_8hpp.html#a9cc90ef3841de8ae7b15096c54ac25ab">raw_offset</a>(<a class="code hl_define" href="libunicode_8c.html#affc9cbf86b78292bdb405361761c47f5">U</a> p1, std::ptrdiff_t <a class="code hl_variable" href="drm__bridge_8h.html#ad5b30797981ed10bc3571a689a73eeac">offset</a>)</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>{</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (std::is_pointer&lt;T&gt;::value)</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    {</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        <span class="keywordflow">return</span> <span class="keyword">reinterpret_cast&lt;</span>T<span class="keyword">&gt;</span>(</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>            <span class="keyword">reinterpret_cast&lt;</span>std::byte*<span class="keyword">&gt;</span>(p1) + offset</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>            <span class="keyword">reinterpret_cast&lt;</span>std::byte*<span class="keyword">&gt;</span>(p1) + <a class="code hl_variable" href="drm__bridge_8h.html#ad5b30797981ed10bc3571a689a73eeac">offset</a></div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        );</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    }</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keywordflow">else</span></div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    {</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(p1 + offset);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(p1 + <a class="code hl_variable" href="drm__bridge_8h.html#ad5b30797981ed10bc3571a689a73eeac">offset</a>);</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    }</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>}</div>
 </div>
@@ -175,6 +175,8 @@ $(document).ready(function() { init_codefold(0); });
 <div class="ttc" id="aCommon_8hpp_html_a9cc90ef3841de8ae7b15096c54ac25ab"><div class="ttname"><a href="Common_8hpp.html#a9cc90ef3841de8ae7b15096c54ac25ab">raw_offset</a></div><div class="ttdeci">T raw_offset(U p1, std::ptrdiff_t offset)</div><div class="ttdef"><b>Definition</b> Common.hpp:41</div></div>
 <div class="ttc" id="aCommon_8hpp_html_ad691cdcaaaaa607bebe3166a93b3fe88"><div class="ttname"><a href="Common_8hpp.html#ad691cdcaaaaa607bebe3166a93b3fe88">mem_after</a></div><div class="ttdeci">T mem_after(T p1)</div><div class="ttdef"><b>Definition</b> Common.hpp:58</div></div>
 <div class="ttc" id="aUefiBaseType_8h_html"><div class="ttname"><a href="UefiBaseType_8h.html">UefiBaseType.h</a></div></div>
+<div class="ttc" id="adrm__bridge_8h_html_ad5b30797981ed10bc3571a689a73eeac"><div class="ttname"><a href="drm__bridge_8h.html#ad5b30797981ed10bc3571a689a73eeac">offset</a></div><div class="ttdeci">size_t size_t offset</div><div class="ttdef"><b>Definition</b> drm_bridge.h:1299</div></div>
+<div class="ttc" id="alibunicode_8c_html_affc9cbf86b78292bdb405361761c47f5"><div class="ttname"><a href="libunicode_8c.html#affc9cbf86b78292bdb405361761c47f5">U</a></div><div class="ttdeci">#define U</div><div class="ttdef"><b>Definition</b> libunicode.c:1830</div></div>
 <div class="ttc" id="astructis__ptr__or__uint64_html"><div class="ttname"><a href="structis__ptr__or__uint64.html">is_ptr_or_uint64</a></div><div class="ttdef"><b>Definition</b> Common.hpp:21</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

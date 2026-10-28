@@ -434,7 +434,7 @@ Variables</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">This</td><td>A pointer to the EFI_FIRMWARE_MANAGEMENT_PROTOCOL instance. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">ImageIndex</td><td>A unique number identifying the firmware image(s) within the device. The number is between 1 and DescriptorCount. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ImageIndex</td><td>A unique number identifying the firmware <a class="el" href="i915__drm_8h.html#a3adfc64e23dd5089bd624248e0585a42">image(s)</a> within the device. The number is between 1 and DescriptorCount. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">Image</td><td>Points to the new image. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">ImageSize</td><td>Size of the new image in bytes. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">ImageUpdatable</td><td>Indicates if the new image is valid for update. It also provides, if available, additional information if the image is invalid.</td></tr>
@@ -469,7 +469,7 @@ Variables</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">This</td><td>A pointer to the EFI_FIRMWARE_MANAGEMENT_PROTOCOL instance. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">ImageIndex</td><td>A unique number identifying the firmware image(s) within the device. The number is between 1 and DescriptorCount. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ImageIndex</td><td>A unique number identifying the firmware <a class="el" href="i915__drm_8h.html#a3adfc64e23dd5089bd624248e0585a42">image(s)</a> within the device. The number is between 1 and DescriptorCount. </td></tr>
     <tr><td class="paramdir">[in,out]</td><td class="paramname">Image</td><td>Points to the buffer where the current image is copied to. </td></tr>
     <tr><td class="paramdir">[in,out]</td><td class="paramname">ImageSize</td><td>On entry, points to the size of the buffer pointed to by Image, in bytes. On return, points to the length of the image, in bytes.</td></tr>
   </table>
@@ -500,13 +500,13 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns information about the current firmware image(s) of the device.</p>
+<p>Returns information about the current firmware <a class="el" href="i915__drm_8h.html#a3adfc64e23dd5089bd624248e0585a42">image(s)</a> of the device.</p>
 <p>This function allows a copy of the current firmware image to be created and saved. The saved copy could later been used, for example, in firmware image recovery or rollback.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">This</td><td>A pointer to the EFI_FIRMWARE_MANAGEMENT_PROTOCOL instance. </td></tr>
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">ImageInfoSize</td><td>A pointer to the size, in bytes, of the ImageInfo buffer. On input, this is the size of the buffer allocated by the caller. On output, it is the size of the buffer returned by the firmware if the buffer was large enough, or the size of the buffer needed to contain the image(s) information if the buffer was too small. </td></tr>
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">ImageInfo</td><td>A pointer to the buffer in which firmware places the current image(s) information. The information is an array of EFI_FIRMWARE_IMAGE_DESCRIPTORs. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">ImageInfoSize</td><td>A pointer to the size, in bytes, of the ImageInfo buffer. On input, this is the size of the buffer allocated by the caller. On output, it is the size of the buffer returned by the firmware if the buffer was large enough, or the size of the buffer needed to contain the <a class="el" href="i915__drm_8h.html#a3adfc64e23dd5089bd624248e0585a42">image(s)</a> information if the buffer was too small. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">ImageInfo</td><td>A pointer to the buffer in which firmware places the current <a class="el" href="i915__drm_8h.html#a3adfc64e23dd5089bd624248e0585a42">image(s)</a> information. The information is an array of EFI_FIRMWARE_IMAGE_DESCRIPTORs. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">DescriptorVersion</td><td>A pointer to the location in which firmware returns the version number associated with the <a class="el" href="structEFI__FIRMWARE__IMAGE__DESCRIPTOR.html">EFI_FIRMWARE_IMAGE_DESCRIPTOR</a>. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">DescriptorCount</td><td>A pointer to the location in which firmware returns the number of descriptors or firmware images within this device. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">DescriptorSize</td><td>A pointer to the location in which firmware returns the size, in bytes, of an individual <a class="el" href="structEFI__FIRMWARE__IMAGE__DESCRIPTOR.html">EFI_FIRMWARE_IMAGE_DESCRIPTOR</a>. </td></tr>
@@ -518,7 +518,7 @@ Variables</h2></td></tr>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">EFI_SUCCESS</td><td>The device was successfully updated with the new image. </td></tr>
-    <tr><td class="paramname">EFI_BUFFER_TOO_SMALL</td><td>The ImageInfo buffer was too small. The current buffer size needed to hold the image(s) information is returned in ImageInfoSize. </td></tr>
+    <tr><td class="paramname">EFI_BUFFER_TOO_SMALL</td><td>The ImageInfo buffer was too small. The current buffer size needed to hold the <a class="el" href="i915__drm_8h.html#a3adfc64e23dd5089bd624248e0585a42">image(s)</a> information is returned in ImageInfoSize. </td></tr>
     <tr><td class="paramname">EFI_INVALID_PARAMETER</td><td>ImageInfoSize is NULL. </td></tr>
     <tr><td class="paramname">EFI_DEVICE_ERROR</td><td>Valid information could not be returned. Possible corrupted image. </td></tr>
   </table>
@@ -582,7 +582,7 @@ Variables</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">This</td><td>A pointer to the EFI_FIRMWARE_MANAGEMENT_PROTOCOL instance. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">ImageIndex</td><td>A unique number identifying the firmware image(s) within the device. The number is between 1 and DescriptorCount. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ImageIndex</td><td>A unique number identifying the firmware <a class="el" href="i915__drm_8h.html#a3adfc64e23dd5089bd624248e0585a42">image(s)</a> within the device. The number is between 1 and DescriptorCount. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">Image</td><td>Points to the new image. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">ImageSize</td><td>Size of the new image in bytes. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">VendorCode</td><td>This enables vendor to implement vendor-specific firmware image update policy. Null indicates the caller did not specify the policy or use the default policy. </td></tr>

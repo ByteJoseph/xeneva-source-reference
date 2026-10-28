@@ -82,7 +82,7 @@ $(function() {
 <div class="contents">
 <div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="BaseHdr_2linux_2stddef_8h_source.html">stddef.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="kernel_8h_source.html">linux/kernel.h</a>&gt;</code><br />
+<code>#include &lt;linux/kernel.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="scatterlist_8h_source.html">linux/scatterlist.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="BaseHdr_2linux_2string_8h_source.html">linux/string.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="completion_8h_source.html">linux/completion.h</a>&gt;</code><br />
@@ -90,6 +90,7 @@ $(function() {
 <code>#include &lt;<a class="el" href="idr_8h_source.html">linux/idr.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="module_8h_source.html">linux/module.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="fs_8h_source.html">linux/fs.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="driver_8h_source.html">linux/device/driver.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="BaseHdr_2linux_2list_8h_source.html">linux/list.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="Drivers_2virtio_8h_source.html">Drivers/virtio.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="uapi_2linux_2virtio__config_8h_source.html">uapi/linux/virtio_config.h</a>&gt;</code><br />
@@ -98,138 +99,121 @@ Include dependency graph for virtio.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="linux_2virtio_8h__incl.png" border="0" usemap="#aXenevaOS_2BaseHdr_2linux_2virtio_8h" alt=""/></div>
 <map name="aXenevaOS_2BaseHdr_2linux_2virtio_8h" id="aXenevaOS_2BaseHdr_2linux_2virtio_8h">
-<area shape="rect" title=" " alt="" coords="1380,5,1564,45"/>
-<area shape="rect" title=" " alt="" coords="1777,548,1847,573"/>
-<area shape="poly" title=" " alt="" coords="1564,25,1785,28,2055,39,2184,47,2295,58,2379,73,2408,81,2427,91,2444,110,2452,130,2453,178,2453,401,2450,425,2442,444,2429,459,2412,470,2371,486,2322,503,2283,514,2230,525,2102,542,1861,560,1861,554,2101,536,2230,520,2282,509,2321,497,2369,481,2410,465,2426,455,2438,441,2445,424,2448,401,2448,178,2447,131,2440,113,2424,95,2406,86,2378,78,2294,64,2183,52,2055,44,1785,34,1564,30"/>
-<area shape="rect" href="BaseHdr_2linux_2stddef_8h.html" title=" " alt="" coords="52,548,127,573"/>
-<area shape="poly" title=" " alt="" coords="1380,31,1085,39,703,53,351,72,223,83,149,96,97,108,51,119,33,127,20,138,11,155,8,178,8,400,14,440,30,477,51,510,71,536,67,539,46,513,25,480,9,442,3,401,3,178,6,153,16,135,30,122,49,113,95,103,147,91,223,78,350,67,702,48,1085,34,1380,26"/>
-<area shape="rect" href="kernel_8h.html" title=" " alt="" coords="1287,167,1398,192"/>
-<area shape="poly" title=" " alt="" coords="1479,45,1492,81,1493,101,1486,120,1471,137,1453,151,1412,169,1410,164,1450,146,1468,133,1482,117,1488,100,1487,82,1474,46"/>
-<area shape="rect" href="BaseHdr_2linux_2string_8h.html" title=" " alt="" coords="93,240,200,265"/>
-<area shape="poly" title=" " alt="" coords="1380,39,1167,63,915,96,705,128,497,169,337,206,204,239,202,234,336,200,495,164,704,123,914,91,1166,57,1379,34"/>
-<area shape="rect" href="BaseHdr_2linux_2list_8h.html" title=" " alt="" coords="1997,387,2088,412"/>
-<area shape="poly" title=" " alt="" coords="1565,34,1748,60,1857,79,1969,102,2076,129,2170,161,2246,197,2275,217,2297,238,2313,264,2319,289,2315,314,2299,340,2286,352,2267,361,2216,377,2158,388,2102,395,2101,390,2157,383,2215,372,2265,356,2283,347,2295,337,2310,313,2314,289,2308,266,2293,242,2272,221,2244,202,2168,166,2074,134,1968,107,1856,84,1747,65,1564,40"/>
-<area shape="rect" href="module_8h.html" title=" " alt="" coords="2489,240,2607,265"/>
-<area shape="poly" title=" " alt="" coords="1564,25,1793,30,2076,40,2212,49,2330,60,2419,74,2450,82,2471,91,2501,120,2523,156,2538,193,2546,225,2541,227,2532,195,2518,159,2497,124,2468,96,2449,87,2418,79,2329,65,2211,54,2076,46,1793,35,1564,30"/>
-<area shape="rect" href="fs_8h.html" title=" " alt="" coords="132,467,215,493"/>
-<area shape="poly" title=" " alt="" coords="1380,29,1040,35,823,43,600,56,392,75,219,101,152,117,101,136,69,156,61,167,59,178,59,327,61,348,67,367,89,404,117,434,146,457,142,461,114,438,85,407,62,370,56,349,53,327,53,178,56,165,66,152,99,131,150,112,218,96,392,69,600,50,823,38,1040,30,1380,24"/>
-<area shape="rect" href="scatterlist_8h.html" title=" " alt="" coords="1071,93,1206,119"/>
-<area shape="poly" title=" " alt="" coords="1393,48,1201,93,1200,88,1392,43"/>
-<area shape="rect" href="completion_8h.html" title=" " alt="" coords="1341,93,1483,119"/>
-<area shape="poly" title=" " alt="" coords="1460,47,1431,84,1427,81,1455,44"/>
-<area shape="rect" href="pm_8h.html" title=" " alt="" coords="2323,93,2413,119"/>
-<area shape="poly" title=" " alt="" coords="1564,29,1891,50,2097,68,2304,91,2310,91,2309,97,2304,96,2097,73,1891,55,1564,34"/>
-<area shape="rect" href="idr_8h.html" title=" " alt="" coords="1230,93,1317,119"/>
-<area shape="poly" title=" " alt="" coords="1425,48,1316,91,1314,86,1423,43"/>
-<area shape="rect" href="Drivers_2virtio_8h.html" title=" " alt="" coords="2739,313,2858,339"/>
-<area shape="poly" title=" " alt="" coords="1564,23,1779,24,2051,32,2188,41,2314,53,2422,69,2502,91,2548,111,2592,137,2672,195,2737,255,2782,301,2778,305,2733,258,2668,200,2589,141,2545,116,2500,96,2421,74,2314,58,2188,46,2051,38,1779,29,1564,28"/>
-<area shape="rect" href="uapi_2linux_2virtio__config_8h.html" title=" " alt="" coords="509,167,691,192"/>
-<area shape="poly" title=" " alt="" coords="1380,44,1059,96,673,167,672,161,1058,91,1380,38"/>
-<area shape="rect" href="BaseHdr_2uapi_2linux_2stddef_8h.html" title=" " alt="" coords="18,621,161,647"/>
-<area shape="poly" title=" " alt="" coords="92,574,92,608,87,608,87,574"/>
-<area shape="poly" title=" " alt="" coords="1398,171,1427,165,1457,155,1484,139,1506,117,1511,103,1511,88,1499,58,1504,56,1517,87,1517,104,1510,120,1488,143,1459,160,1429,170,1399,177"/>
-<area shape="poly" title=" " alt="" coords="1398,180,1887,198,2147,215,2240,226,2295,237,2336,251,2370,266,2383,275,2394,288,2400,304,2403,325,2403,401,2398,422,2385,441,2364,458,2337,473,2268,499,2184,520,2094,535,2005,547,1861,559,1861,554,2005,541,2093,530,2183,514,2266,494,2335,468,2361,453,2381,437,2393,420,2397,400,2397,325,2395,305,2389,291,2380,279,2367,270,2334,256,2294,243,2240,231,2146,221,1887,204,1398,185"/>
-<area shape="rect" href="aa64cpu_8h.html" title=" " alt="" coords="1358,313,1511,339"/>
-<area shape="poly" title=" " alt="" coords="1362,190,1388,211,1412,239,1426,269,1434,299,1428,300,1421,271,1407,241,1384,215,1359,194"/>
-<area shape="rect" href="kmalloc_8h.html" title=" " alt="" coords="1121,313,1236,339"/>
-<area shape="poly" title=" " alt="" coords="1331,194,1204,306,1200,302,1327,190"/>
-<area shape="rect" href="__null_8h.html" title=" " alt="" coords="1978,467,2043,493"/>
-<area shape="poly" title=" " alt="" coords="1398,178,1457,182,1527,192,1601,209,1672,238,1704,261,1724,286,1743,311,1773,336,1809,353,1840,360,1872,368,1909,384,1956,419,1993,455,1989,459,1953,423,1907,389,1870,373,1839,366,1808,358,1771,341,1740,315,1720,289,1701,265,1669,242,1600,215,1526,197,1457,188,1398,184"/>
-<area shape="rect" href="aa64lowlevel_8h.html" title=" " alt="" coords="1473,240,1658,265"/>
-<area shape="poly" title=" " alt="" coords="1379,189,1517,233,1516,238,1378,195"/>
-<area shape="rect" href="build__bug_8h.html" title=" " alt="" coords="2128,240,2261,265"/>
-<area shape="poly" title=" " alt="" coords="1398,181,1699,200,1903,217,2114,237,2114,243,1903,222,1699,206,1398,186"/>
-<area shape="rect" href="compiler_8h.html" title=" " alt="" coords="2158,313,2285,339"/>
-<area shape="poly" title=" " alt="" coords="1398,179,1898,198,2152,216,2236,226,2262,232,2275,238,2283,256,2278,274,2265,291,2250,307,2246,303,2261,288,2273,272,2277,256,2271,242,2260,237,2235,231,2151,221,1898,204,1398,185"/>
-<area shape="rect" href="minmax_8h.html" title=" " alt="" coords="1979,240,2103,265"/>
-<area shape="poly" title=" " alt="" coords="1398,183,1642,204,1960,237,1966,238,1966,243,1960,243,1642,210,1398,188"/>
-<area shape="poly" title=" " alt="" coords="1287,185,854,203,552,220,243,243,214,245,214,240,242,237,552,215,854,198,1287,180"/>
-<area shape="rect" href="sprintf_8h.html" title=" " alt="" coords="401,240,511,265"/>
-<area shape="poly" title=" " alt="" coords="1287,185,968,203,750,220,525,242,525,237,750,214,968,198,1287,180"/>
-<area shape="rect" href="bitmap_8h.html" title=" " alt="" coords="535,240,651,265"/>
-<area shape="poly" title=" " alt="" coords="1287,187,1022,207,665,242,665,237,1021,202,1287,181"/>
-<area shape="poly" title=" " alt="" coords="1399,179,1514,184,1656,194,1792,211,1847,223,1888,238,1934,267,1974,304,2007,342,2030,374,2026,377,2003,345,1970,308,1931,271,1886,242,1845,228,1791,217,1656,200,1514,190,1398,185"/>
-<area shape="poly" title=" " alt="" coords="1398,180,1822,201,2419,237,2475,242,2474,247,2418,243,1821,206,1398,186"/>
-<area shape="rect" href="printk_8h.html" title=" " alt="" coords="1289,240,1397,265"/>
-<area shape="poly" title=" " alt="" coords="1345,192,1345,226,1340,226,1340,192"/>
-<area shape="rect" href="linux_2timer_8h.html" title=" " alt="" coords="953,313,1057,339"/>
-<area shape="poly" title=" " alt="" coords="1287,185,1239,190,1184,200,1127,217,1075,242,1043,271,1020,303,1016,300,1039,267,1072,238,1125,212,1183,195,1238,185,1287,180"/>
-<area shape="rect" href="workqueue_8h.html" title=" " alt="" coords="867,240,1010,265"/>
-<area shape="poly" title=" " alt="" coords="1287,193,1017,240,1016,235,1286,188"/>
-<area shape="rect" href="ch9_8h.html" title=" " alt="" coords="1784,313,1904,339"/>
-<area shape="poly" title=" " alt="" coords="1398,180,1521,187,1668,198,1798,215,1843,225,1867,238,1875,254,1875,271,1862,303,1857,301,1870,270,1870,255,1863,242,1841,230,1797,220,1668,203,1521,192,1398,186"/>
-<area shape="rect" href="otg_8h.html" title=" " alt="" coords="1734,240,1853,265"/>
-<area shape="poly" title=" " alt="" coords="1399,187,1721,237,1720,243,1398,192"/>
-<area shape="rect" href="autoconf_8h.html" title=" " alt="" coords="1086,240,1213,265"/>
-<area shape="poly" title=" " alt="" coords="1313,195,1194,238,1193,233,1311,190"/>
-<area shape="rect" href="kstrtox_8h.html" title=" " alt="" coords="727,240,843,265"/>
-<area shape="poly" title=" " alt="" coords="1288,189,1101,211,857,242,857,237,1100,206,1287,184"/>
-<area shape="poly" title=" " alt="" coords="1410,341,1386,355,1364,372,1351,391,1351,401,1355,410,1382,434,1424,457,1477,478,1537,497,1661,528,1763,548,1762,554,1660,533,1535,502,1475,483,1422,462,1379,439,1351,414,1346,402,1346,390,1360,368,1383,350,1408,336"/>
-<area shape="rect" title=" " alt="" coords="1454,387,1530,412"/>
-<area shape="poly" title=" " alt="" coords="1446,337,1476,374,1472,378,1442,341"/>
-<area shape="rect" title=" " alt="" coords="1365,387,1429,412"/>
-<area shape="poly" title=" " alt="" coords="1431,340,1412,376,1407,373,1426,338"/>
-<area shape="poly" title=" " alt="" coords="1179,339,1174,371,1173,414,1182,460,1192,480,1206,498,1235,511,1289,522,1447,539,1623,550,1763,555,1763,561,1623,555,1447,544,1289,527,1233,516,1202,502,1187,483,1177,462,1168,415,1169,371,1174,338"/>
-<area shape="poly" title=" " alt="" coords="1230,336,1441,384,1440,389,1228,341"/>
-<area shape="poly" title=" " alt="" coords="1562,267,1526,340,1507,376,1503,373,1522,337,1557,264"/>
-<area shape="poly" title=" " alt="" coords="2202,265,2215,300,2210,302,2197,267"/>
-<area shape="poly" title=" " alt="" coords="183,237,212,239,222,244,227,253,224,260,217,265,197,269,196,264,215,260,220,257,221,253,219,247,211,244,183,243"/>
-<area shape="rect" href="__print_8h.html" title=" " alt="" coords="433,313,532,339"/>
-<area shape="poly" title=" " alt="" coords="463,265,476,300,471,302,458,267"/>
-<area shape="rect" title=" " alt="" coords="445,387,520,412"/>
-<area shape="poly" title=" " alt="" coords="485,339,485,373,480,373,480,339"/>
-<area shape="poly" title=" " alt="" coords="651,241,682,237,1014,204,1273,183,1274,189,1014,210,683,243,652,247"/>
-<area shape="poly" title=" " alt="" coords="2040,413,2023,455,2018,453,2035,411"/>
-<area shape="poly" title=" " alt="" coords="2075,384,2101,385,2111,390,2115,400,2107,411,2089,415,2088,410,2104,407,2109,399,2107,394,2100,390,2075,389"/>
-<area shape="rect" href="export_8h.html" title=" " alt="" coords="2488,313,2600,339"/>
-<area shape="poly" title=" " alt="" coords="2550,266,2548,300,2543,300,2545,266"/>
-<area shape="rect" href="init_8h.html" title=" " alt="" coords="2624,313,2715,339"/>
-<area shape="poly" title=" " alt="" coords="2569,263,2639,304,2637,309,2566,268"/>
-<area shape="rect" href="uart_8h.html" title=" " alt="" coords="1593,313,1703,339"/>
-<area shape="poly" title=" " alt="" coords="1392,263,1586,308,1585,313,1391,268"/>
-<area shape="rect" href="aucon_8h.html" title=" " alt="" coords="1261,313,1334,339"/>
-<area shape="poly" title=" " alt="" coords="1337,267,1314,303,1310,300,1333,264"/>
-<area shape="poly" title=" " alt="" coords="1704,335,1815,359,1861,372,1886,385,1896,405,1899,426,1896,447,1887,469,1863,508,1836,540,1832,536,1858,505,1883,466,1890,446,1894,426,1891,406,1882,389,1859,377,1814,364,1703,340"/>
-<area shape="poly" title=" " alt="" coords="1624,341,1531,383,1529,378,1622,336"/>
-<area shape="rect" href="aa64hcode_8h.html" title=" " alt="" coords="1766,387,1871,412"/>
-<area shape="poly" title=" " alt="" coords="1676,336,1779,379,1777,384,1674,341"/>
-<area shape="rect" href="imx8mp_8h.html" title=" " alt="" coords="1554,387,1742,412"/>
-<area shape="poly" title=" " alt="" coords="1651,339,1651,373,1645,373,1645,339"/>
-<area shape="rect" href="imx8mp__uart_8h.html" title=" " alt="" coords="1628,460,1804,500"/>
-<area shape="poly" title=" " alt="" coords="1660,410,1693,448,1689,451,1656,414"/>
-<area shape="poly" title=" " alt="" coords="1741,498,1789,537,1786,541,1738,502"/>
-<area shape="rect" href="BaseHdr_2aurora_8h.html" title=" " alt="" coords="1214,387,1290,412"/>
-<area shape="poly" title=" " alt="" coords="1292,340,1269,377,1264,374,1288,338"/>
-<area shape="rect" href="BaseHdr_2stdint_8h.html" title=" " alt="" coords="1217,467,1287,493"/>
-<area shape="poly" title=" " alt="" coords="1255,412,1255,453,1249,453,1249,412"/>
-<area shape="poly" title=" " alt="" coords="952,264,987,301,983,305,948,267"/>
-<area shape="poly" title=" " alt="" coords="1877,336,1998,379,1996,384,1875,341"/>
-<area shape="poly" title=" " alt="" coords="1804,264,1830,301,1826,304,1800,267"/>
-<area shape="rect" title=" " alt="" coords="693,387,776,412"/>
-<area shape="poly" title=" " alt="" coords="784,267,746,375,741,373,779,265"/>
-<area shape="rect" href="BaseHdr_2linux_2errno_8h.html" title=" " alt="" coords="305,313,409,339"/>
-<area shape="poly" title=" " alt="" coords="728,266,423,316,422,310,727,261"/>
-<area shape="rect" href="BaseHdr_2linux_2types_8h.html" title=" " alt="" coords="636,313,743,339"/>
-<area shape="poly" title=" " alt="" coords="771,268,718,307,715,303,768,263"/>
-<area shape="rect" title=" " alt="" coords="818,313,889,339"/>
-<area shape="poly" title=" " alt="" coords="798,264,835,301,831,305,795,268"/>
-<area shape="poly" title=" " alt="" coords="355,313,362,275,371,255,386,238,406,228,437,220,527,206,644,196,779,188,1058,180,1274,178,1274,183,1058,185,780,193,645,201,527,211,438,225,408,233,390,242,376,258,367,277,360,314"/>
-<area shape="rect" href="err_8h.html" title=" " alt="" coords="218,387,305,412"/>
-<area shape="poly" title=" " alt="" coords="343,341,290,380,287,376,340,337"/>
-<area shape="poly" title=" " alt="" coords="262,386,272,351,291,312,320,268,337,252,363,238,418,224,511,213,771,196,1054,185,1273,179,1274,185,1055,190,771,201,511,218,418,229,365,242,341,256,324,271,296,315,277,353,267,387"/>
-<area shape="poly" title=" " alt="" coords="250,414,198,460,195,456,247,410"/>
-<area shape="poly" title=" " alt="" coords="215,481,1763,554,1763,560,215,486"/>
-<area shape="poly" title=" " alt="" coords="163,495,114,540,110,537,159,491"/>
-<area shape="poly" title=" " alt="" coords="686,313,691,276,699,255,713,238,744,225,798,214,952,198,1127,187,1274,180,1274,186,1128,192,953,203,799,220,745,230,716,242,704,258,696,277,692,314"/>
-<area shape="poly" title=" " alt="" coords="699,338,722,374,718,377,695,340"/>
-<area shape="poly" title=" " alt="" coords="1172,116,1298,160,1296,165,1171,121"/>
-<area shape="poly" title=" " alt="" coords="1402,121,1365,159,1361,155,1399,117"/>
-<area shape="poly" title=" " alt="" coords="1287,117,1324,155,1320,159,1283,121"/>
-<area shape="poly" title=" " alt="" coords="2784,341,2734,374,2658,419,2567,466,2470,503,2416,515,2345,525,2172,542,1861,560,1861,555,2172,537,2344,520,2415,509,2469,497,2565,461,2656,415,2731,370,2781,337"/>
-<area shape="poly" title=" " alt="" coords="2739,340,2727,341,2548,355,2396,361,2137,359,2011,358,1876,361,1723,370,1544,390,1543,384,1723,365,1876,355,2011,353,2137,354,2396,356,2548,350,2726,336,2739,335"/>
-<area shape="rect" title=" " alt="" coords="2761,387,2836,412"/>
-<area shape="poly" title=" " alt="" coords="2801,339,2801,373,2796,373,2796,339"/>
-<area shape="poly" title=" " alt="" coords="509,190,454,200,407,215,391,224,382,235,382,248,390,263,420,277,480,290,623,313,622,319,479,296,418,282,386,267,376,249,378,234,388,220,405,210,452,194,508,185"/>
+<area shape="rect" title=" " alt="" coords="1269,5,1453,45"/>
+<area shape="rect" title=" " alt="" coords="1517,167,1587,192"/>
+<area shape="poly" title=" " alt="" coords="1439,43,1482,63,1521,92,1540,121,1550,153,1545,154,1535,124,1517,95,1479,67,1437,48"/>
+<area shape="rect" href="BaseHdr_2linux_2stddef_8h.html" title=" " alt="" coords="332,167,407,192"/>
+<area shape="poly" title=" " alt="" coords="1269,43,907,96,421,172,420,167,906,91,1269,37"/>
+<area shape="rect" title=" " alt="" coords="1087,621,1198,647"/>
+<area shape="poly" title=" " alt="" coords="1311,48,1280,67,1256,95,1237,138,1231,176,1234,211,1243,245,1264,320,1271,363,1271,412,1267,498,1260,534,1238,575,1214,600,1186,617,1183,613,1211,595,1234,572,1255,532,1262,497,1265,412,1266,363,1259,321,1237,247,1229,212,1226,175,1232,136,1251,92,1276,63,1308,43"/>
+<area shape="rect" href="scatterlist_8h.html" title=" " alt="" coords="1439,387,1574,412"/>
+<area shape="poly" title=" " alt="" coords="1416,43,1449,63,1477,92,1487,115,1495,147,1505,226,1510,373,1504,373,1499,227,1490,148,1482,117,1472,95,1446,67,1413,48"/>
+<area shape="rect" href="BaseHdr_2linux_2string_8h.html" title=" " alt="" coords="73,93,180,119"/>
+<area shape="poly" title=" " alt="" coords="1269,33,819,55,524,73,224,96,194,99,193,94,224,91,523,68,819,49,1269,28"/>
+<area shape="rect" href="completion_8h.html" title=" " alt="" coords="919,93,1062,119"/>
+<area shape="poly" title=" " alt="" coords="1273,48,1059,93,1057,88,1272,43"/>
+<area shape="rect" href="BaseHdr_2linux_2list_8h.html" title=" " alt="" coords="1773,240,1864,265"/>
+<area shape="poly" title=" " alt="" coords="1454,27,1614,34,1798,46,1957,65,2012,77,2043,91,2062,116,2071,141,2068,167,2053,194,2025,213,1980,228,1878,247,1877,242,1979,223,2022,208,2049,190,2063,165,2065,141,2058,118,2040,95,2011,82,1956,70,1798,51,1614,39,1453,32"/>
+<area shape="rect" href="pm_8h.html" title=" " alt="" coords="1372,93,1463,119"/>
+<area shape="poly" title=" " alt="" coords="1377,44,1403,80,1399,84,1373,47"/>
+<area shape="rect" href="idr_8h.html" title=" " alt="" coords="1170,387,1257,412"/>
+<area shape="poly" title=" " alt="" coords="1289,48,1248,67,1211,95,1195,115,1185,132,1181,152,1180,178,1180,254,1183,287,1189,319,1206,373,1201,375,1184,320,1177,287,1175,254,1175,178,1176,152,1180,131,1190,112,1207,91,1245,63,1287,43"/>
+<area shape="rect" href="module_8h.html" title=" " alt="" coords="1589,93,1707,119"/>
+<area shape="poly" title=" " alt="" coords="1431,43,1594,87,1592,92,1429,48"/>
+<area shape="rect" href="fs_8h.html" title=" " alt="" coords="1265,93,1348,119"/>
+<area shape="poly" title=" " alt="" coords="1350,47,1325,84,1320,80,1346,44"/>
+<area shape="rect" href="driver_8h.html" title=" " alt="" coords="1731,93,1885,119"/>
+<area shape="poly" title=" " alt="" coords="1454,40,1730,88,1729,94,1453,45"/>
+<area shape="rect" href="Drivers_2virtio_8h.html" title=" " alt="" coords="1910,93,2029,119"/>
+<area shape="poly" title=" " alt="" coords="1454,35,1897,91,1896,96,1453,40"/>
+<area shape="rect" href="uapi_2linux_2virtio__config_8h.html" title=" " alt="" coords="162,467,345,493"/>
+<area shape="poly" title=" " alt="" coords="1269,32,996,45,827,56,656,71,497,91,366,115,315,129,277,145,253,161,247,170,245,178,245,327,248,396,253,454,248,454,243,396,240,327,240,178,242,167,249,158,275,140,314,124,365,110,497,85,655,66,827,51,996,39,1269,27"/>
+<area shape="rect" href="BaseHdr_2uapi_2linux_2stddef_8h.html" title=" " alt="" coords="281,240,423,265"/>
+<area shape="poly" title=" " alt="" coords="369,193,361,228,355,226,364,192"/>
+<area shape="poly" title=" " alt="" coords="1508,413,1503,445,1491,489,1470,536,1455,557,1436,576,1397,594,1339,609,1212,629,1211,623,1338,604,1395,589,1433,571,1450,554,1465,533,1486,487,1498,444,1503,412"/>
+<area shape="poly" title=" " alt="" coords="166,116,320,161,318,166,165,121"/>
+<area shape="poly" title=" " alt="" coords="163,91,192,92,202,97,207,106,204,113,197,118,177,122,176,117,195,113,200,110,201,106,199,101,191,97,163,96"/>
+<area shape="rect" title=" " alt="" coords="88,621,171,647"/>
+<area shape="poly" title=" " alt="" coords="108,121,78,142,45,171,19,209,11,229,8,252,8,481,10,502,17,522,40,558,70,588,100,611,97,616,67,592,36,562,12,524,5,503,3,481,3,251,6,228,14,206,41,168,75,138,105,117"/>
+<area shape="rect" href="string__choices_8h.html" title=" " alt="" coords="43,240,205,265"/>
+<area shape="poly" title=" " alt="" coords="129,119,127,226,122,226,124,119"/>
+<area shape="rect" href="BaseHdr_2linux_2types_8h.html" title=" " alt="" coords="219,548,325,573"/>
+<area shape="poly" title=" " alt="" coords="124,266,118,308,116,369,118,402,124,436,135,469,151,498,178,524,211,541,208,545,175,528,147,502,130,471,119,438,113,403,110,369,113,307,119,265"/>
+<area shape="poly" title=" " alt="" coords="326,566,364,571,766,605,1074,626,1073,631,766,610,364,576,325,572"/>
+<area shape="poly" title=" " alt="" coords="250,576,166,617,164,613,248,571"/>
+<area shape="poly" title=" " alt="" coords="945,121,798,163,705,193,611,228,524,267,452,309,424,331,403,353,390,376,385,398,385,481,391,514,405,536,429,554,461,571,511,589,579,603,661,614,750,621,929,629,1074,631,1074,636,929,634,749,627,660,619,579,608,510,594,459,576,426,558,402,540,386,516,380,482,380,398,385,374,399,350,421,327,449,305,522,262,609,223,703,188,796,158,944,116"/>
+<area shape="rect" href="wait_8h.html" title=" " alt="" coords="941,167,1040,192"/>
+<area shape="poly" title=" " alt="" coords="993,119,993,153,988,153,988,119"/>
+<area shape="poly" title=" " alt="" coords="942,192,805,219,721,240,637,264,559,293,495,325,470,343,452,361,440,379,436,398,436,481,440,513,453,535,475,553,504,571,550,589,613,603,688,613,770,621,937,629,1074,631,1074,636,937,634,770,626,687,619,612,608,548,594,501,576,471,558,449,539,435,515,431,482,431,398,435,377,447,357,467,338,492,321,557,288,635,259,720,235,804,214,941,186"/>
+<area shape="poly" title=" " alt="" coords="1041,182,1760,244,1760,249,1040,188"/>
+<area shape="rect" href="linux_2spinlock_8h.html" title=" " alt="" coords="1014,313,1138,339"/>
+<area shape="poly" title=" " alt="" coords="1008,190,1030,211,1052,239,1066,269,1074,299,1069,301,1061,271,1047,241,1026,215,1004,194"/>
+<area shape="rect" href="BaseHdr_2linux_2poll_8h.html" title=" " alt="" coords="943,240,1038,265"/>
+<area shape="poly" title=" " alt="" coords="993,192,993,226,988,226,988,192"/>
+<area shape="rect" href="linux_2sched_8h.html" title=" " alt="" coords="811,240,919,265"/>
+<area shape="poly" title=" " alt="" coords="972,194,899,235,896,231,969,190"/>
+<area shape="poly" title=" " alt="" coords="1851,237,1877,239,1887,244,1891,253,1883,265,1865,269,1864,264,1880,260,1885,252,1883,247,1876,244,1851,243"/>
+<area shape="rect" href="__null_8h.html" title=" " alt="" coords="1786,313,1851,339"/>
+<area shape="poly" title=" " alt="" coords="1821,266,1821,300,1816,300,1816,266"/>
+<area shape="poly" title=" " alt="" coords="1085,338,1106,386,1132,465,1145,548,1147,607,1142,608,1140,548,1127,467,1102,388,1080,340"/>
+<area shape="rect" href="cleanup_8h.html" title=" " alt="" coords="971,387,1093,412"/>
+<area shape="poly" title=" " alt="" coords="1071,340,1049,376,1044,374,1066,338"/>
+<area shape="poly" title=" " alt="" coords="812,265,716,285,609,314,561,332,522,353,496,375,489,386,487,398,487,481,490,512,500,534,517,553,543,571,584,589,642,603,712,614,788,621,944,629,1074,631,1073,636,944,634,788,626,711,619,641,608,583,594,540,576,513,557,495,537,485,513,481,481,481,398,484,384,492,371,519,348,559,327,607,309,715,279,811,260"/>
+<area shape="poly" title=" " alt="" coords="900,263,1030,306,1028,311,898,268"/>
+<area shape="poly" title=" " alt="" coords="886,263,952,311,1015,374,1011,378,949,315,883,268"/>
+<area shape="rect" href="lockdep_8h.html" title=" " alt="" coords="529,387,650,412"/>
+<area shape="poly" title=" " alt="" coords="811,258,769,262,722,272,675,289,632,315,611,343,598,374,593,372,606,340,629,311,672,285,720,267,768,257,811,252"/>
+<area shape="rect" href="nodemask__types_8h.html" title=" " alt="" coords="643,313,824,339"/>
+<area shape="poly" title=" " alt="" coords="845,268,768,309,766,304,843,263"/>
+<area shape="rect" href="pid_8h.html" title=" " alt="" coords="848,313,939,339"/>
+<area shape="poly" title=" " alt="" coords="872,265,886,300,881,302,867,267"/>
+<area shape="poly" title=" " alt="" coords="584,413,567,445,551,487,546,510,546,532,551,553,562,571,587,584,634,595,775,612,936,622,1074,628,1073,633,936,628,774,617,633,600,585,589,558,575,546,555,540,533,541,510,545,486,562,442,580,411"/>
+<area shape="rect" href="bitops_8h.html" title=" " alt="" coords="834,387,945,412"/>
+<area shape="poly" title=" " alt="" coords="759,336,852,378,850,383,757,341"/>
+<area shape="poly" title=" " alt="" coords="921,410,965,430,1019,459,1073,498,1098,521,1120,547,1135,577,1142,607,1137,608,1130,579,1115,549,1094,525,1070,502,1016,464,963,434,919,415"/>
+<area shape="rect" href="BaseHdr_2linux_2limits_8h.html" title=" " alt="" coords="854,467,925,493"/>
+<area shape="poly" title=" " alt="" coords="892,412,892,453,887,453,887,412"/>
+<area shape="rect" href="linux_2bug_8h.html" title=" " alt="" coords="1355,467,1450,493"/>
+<area shape="poly" title=" " alt="" coords="945,407,959,409,1342,467,1341,472,958,415,945,412"/>
+<area shape="rect" href="uapi_2linux_2byteorder_2little__endian_8h.html" title=" " alt="" coords="625,460,778,500"/>
+<area shape="poly" title=" " alt="" coords="863,414,760,457,758,452,861,410"/>
+<area shape="poly" title=" " alt="" coords="854,491,790,503,541,535,339,556,338,551,540,530,789,497,853,486"/>
+<area shape="rect" href="BaseHdr_2uapi_2linux_2limits_8h.html" title=" " alt="" coords="967,548,1105,573"/>
+<area shape="poly" title=" " alt="" coords="912,490,1003,539,1001,544,910,495"/>
+<area shape="rect" href="BaseHdr_2vdso_2limits_8h.html" title=" " alt="" coords="836,548,943,573"/>
+<area shape="poly" title=" " alt="" coords="892,493,892,534,887,534,887,493"/>
+<area shape="rect" href="asm_2bug_8h.html" title=" " alt="" coords="1332,548,1423,573"/>
+<area shape="poly" title=" " alt="" coords="1401,494,1388,536,1383,534,1396,492"/>
+<area shape="rect" href="compiler_8h.html" title=" " alt="" coords="1474,621,1601,647"/>
+<area shape="poly" title=" " alt="" coords="1415,491,1520,609,1516,613,1411,494"/>
+<area shape="rect" href="build__bug_8h.html" title=" " alt="" coords="1548,548,1681,573"/>
+<area shape="poly" title=" " alt="" coords="1434,490,1572,541,1570,546,1433,495"/>
+<area shape="poly" title=" " alt="" coords="1340,576,1194,620,1193,615,1339,571"/>
+<area shape="rect" href="compiler__types_8h.html" title=" " alt="" coords="1452,695,1623,720"/>
+<area shape="poly" title=" " alt="" coords="1540,647,1540,681,1535,681,1535,647"/>
+<area shape="rect" href="compiler-context-analysis_8h.html" title=" " alt="" coords="1361,768,1530,808"/>
+<area shape="poly" title=" " alt="" coords="1525,722,1480,761,1476,757,1522,718"/>
+<area shape="rect" href="percpu__types_8h.html" title=" " alt="" coords="1554,775,1707,801"/>
+<area shape="poly" title=" " alt="" coords="1553,718,1608,764,1605,768,1549,722"/>
+<area shape="poly" title=" " alt="" coords="1604,575,1562,614,1558,610,1600,571"/>
+<area shape="poly" title=" " alt="" coords="625,498,340,550,339,545,624,493"/>
+<area shape="rect" title=" " alt="" coords="573,548,683,573"/>
+<area shape="poly" title=" " alt="" coords="686,502,650,540,646,536,682,498"/>
+<area shape="rect" title=" " alt="" coords="708,548,812,573"/>
+<area shape="poly" title=" " alt="" coords="718,499,745,535,741,538,713,502"/>
+<area shape="poly" title=" " alt="" coords="1219,412,1225,441,1229,483,1227,529,1214,574,1198,598,1177,616,1174,612,1194,594,1210,572,1222,528,1224,483,1220,442,1214,413"/>
+<area shape="rect" href="export_8h.html" title=" " alt="" coords="1612,167,1724,192"/>
+<area shape="poly" title=" " alt="" coords="1654,118,1664,153,1659,154,1649,120"/>
+<area shape="rect" href="init_8h.html" title=" " alt="" coords="1748,167,1839,192"/>
+<area shape="poly" title=" " alt="" coords="1673,116,1759,158,1756,163,1670,121"/>
+<area shape="poly" title=" " alt="" coords="1347,116,1504,162,1503,167,1345,121"/>
+<area shape="poly" title=" " alt="" coords="1265,113,421,177,420,171,1265,108"/>
+<area shape="poly" title=" " alt="" coords="1910,119,1601,169,1600,164,1909,114"/>
+<area shape="rect" title=" " alt="" coords="1863,167,1937,192"/>
+<area shape="poly" title=" " alt="" coords="1960,121,1923,159,1919,155,1956,117"/>
+<area shape="rect" title=" " alt="" coords="1962,167,2038,192"/>
+<area shape="poly" title=" " alt="" coords="1977,118,1992,153,1987,155,1972,120"/>
+<area shape="poly" title=" " alt="" coords="259,492,269,534,263,535,253,493"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -237,131 +221,15 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="linux_2virtio_8h__dep__incl.png" border="0" usemap="#aXenevaOS_2BaseHdr_2linux_2virtio_8hdep" alt=""/></div>
 <map name="aXenevaOS_2BaseHdr_2linux_2virtio_8hdep" id="aXenevaOS_2BaseHdr_2linux_2virtio_8hdep">
-<area shape="rect" title=" " alt="" coords="3036,5,3220,45"/>
-<area shape="rect" href="kernel_8h.html" title=" " alt="" coords="2907,93,3091,133"/>
-<area shape="poly" title=" " alt="" coords="3082,55,3021,96,3018,91,3079,50"/>
-<area shape="rect" href="linux_2virtio__config_8h.html" title=" " alt="" coords="3216,93,3400,133"/>
-<area shape="poly" title=" " alt="" coords="3181,49,3270,91,3267,96,3178,54"/>
-<area shape="rect" href="virtio__rng_8h.html" title=" " alt="" coords="3424,93,3608,133"/>
-<area shape="poly" title=" " alt="" coords="3227,46,3432,91,3430,96,3226,51"/>
-<area shape="poly" title=" " alt="" coords="3045,84,3105,43,3108,48,3048,88"/>
-<area shape="rect" href="barrier_8h.html" title=" " alt="" coords="6070,181,6250,221"/>
-<area shape="poly" title=" " alt="" coords="3104,130,3110,131,3343,150,3557,162,3754,169,3937,171,4272,165,4584,152,4895,139,5230,134,5413,137,5610,145,5824,158,6058,179,6070,180,6070,185,6057,184,5823,164,5610,150,5413,142,5230,139,4896,144,4584,157,4272,170,3937,176,3754,174,3557,167,3343,155,3109,136,3104,135"/>
-<area shape="rect" href="asm_2bug_8h.html" title=" " alt="" coords="6326,181,6506,221"/>
-<area shape="poly" title=" " alt="" coords="3104,130,3110,131,3363,151,3595,164,3809,172,4007,174,4370,168,4708,154,5046,140,5409,134,5607,137,5821,144,6053,158,6307,179,6326,181,6325,186,6306,184,6053,163,5821,150,5607,142,5409,140,5046,145,4708,159,4370,174,4007,180,3809,177,3595,170,3363,156,3109,136,3104,135"/>
-<area shape="rect" href="asm_2io_8h.html" title=" " alt="" coords="2416,189,2624,214"/>
-<area shape="poly" title=" " alt="" coords="2893,136,2584,191,2583,186,2892,131"/>
-<area shape="rect" href="linux_2io_8h.html" title=" " alt="" coords="2414,277,2626,302"/>
-<area shape="poly" title=" " alt="" coords="2893,118,2703,123,2484,133,2382,142,2296,153,2231,167,2210,175,2198,183,2192,192,2190,201,2198,219,2228,233,2289,248,2439,274,2438,279,2288,254,2227,239,2194,223,2185,201,2187,190,2194,179,2208,170,2230,162,2295,148,2382,137,2484,128,2703,117,2893,113"/>
-<area shape="rect" href="bitmap_8h.html" title=" " alt="" coords="1016,181,1200,221"/>
-<area shape="poly" title=" " alt="" coords="2893,119,2046,141,1557,160,1354,171,1200,184,1200,184,1199,179,1200,179,1354,166,1557,154,2045,135,2893,114"/>
-<area shape="rect" href="bitops_8h.html" title=" " alt="" coords="1224,181,1408,221"/>
-<area shape="poly" title=" " alt="" coords="2893,117,2633,119,2268,128,1847,148,1632,164,1420,184,1409,185,1408,180,1420,179,1631,158,1847,142,2268,122,2633,113,2893,112"/>
-<area shape="rect" href="linux_2cache_8h.html" title=" " alt="" coords="1899,181,2083,221"/>
-<area shape="poly" title=" " alt="" coords="2892,122,2541,143,2322,161,2102,184,2083,186,2083,181,2101,179,2321,156,2540,138,2892,117"/>
-<area shape="rect" href="dma-mapping_8h.html" title=" " alt="" coords="2181,269,2365,309"/>
-<area shape="poly" title=" " alt="" coords="2893,118,2700,122,2477,133,2373,141,2285,152,2219,166,2197,175,2185,183,2178,194,2177,204,2189,227,2212,248,2240,267,2237,271,2209,253,2184,230,2172,205,2173,192,2181,179,2195,170,2217,161,2284,147,2373,136,2477,128,2700,117,2893,113"/>
-<area shape="rect" href="completion_8h.html" title=" " alt="" coords="5,181,189,221"/>
-<area shape="poly" title=" " alt="" coords="2893,119,1473,145,675,164,382,174,208,184,190,186,189,181,208,179,381,169,674,159,1473,139,2893,114"/>
-<area shape="rect" href="delay_8h.html" title=" " alt="" coords="2208,181,2392,221"/>
-<area shape="poly" title=" " alt="" coords="2893,127,2668,151,2404,184,2393,186,2392,180,2404,179,2667,145,2893,122"/>
-<area shape="rect" href="device_8h.html" title=" " alt="" coords="2715,269,2899,309"/>
-<area shape="poly" title=" " alt="" coords="2953,143,2896,183,2854,229,2822,271,2817,268,2850,225,2893,179,2950,138"/>
-<area shape="rect" href="err_8h.html" title=" " alt="" coords="2907,181,3091,221"/>
-<area shape="poly" title=" " alt="" coords="3001,147,3001,181,2996,181,2996,147"/>
-<area shape="rect" href="BaseHdr_2linux_2errno_8h.html" title=" " alt="" coords="4551,269,4735,309"/>
-<area shape="poly" title=" " alt="" coords="3104,130,3109,131,3630,133,4696,134,5261,138,5756,146,6113,159,6218,168,6249,173,6264,179,6272,190,6275,201,6272,213,6264,223,6241,234,6196,243,6049,258,5845,269,5605,277,5108,287,4735,290,4735,285,5108,282,5605,272,5844,264,6049,252,6195,237,6240,229,6261,219,6267,210,6269,201,6267,192,6261,183,6248,178,6218,173,6113,164,5756,151,5261,143,4696,140,3630,138,3109,136,3104,135"/>
-<area shape="rect" href="gfp_8h.html" title=" " alt="" coords="3115,181,3299,221"/>
-<area shape="poly" title=" " alt="" coords="3058,136,3162,179,3160,184,3056,141"/>
-<area shape="rect" href="hashtable_8h.html" title=" " alt="" coords="3323,181,3507,221"/>
-<area shape="poly" title=" " alt="" coords="3104,134,3324,179,3323,184,3103,139"/>
-<area shape="rect" href="hw__random_8h.html" title=" " alt="" coords="3531,181,3715,221"/>
-<area shape="poly" title=" " alt="" coords="3105,130,3110,131,3314,154,3519,179,3531,180,3530,186,3518,184,3314,160,3109,136,3104,135"/>
-<area shape="rect" href="idr_8h.html" title=" " alt="" coords="6531,181,6715,221"/>
-<area shape="poly" title=" " alt="" coords="3104,130,3110,131,3264,142,3442,149,3854,157,4321,157,4814,153,5307,150,5774,150,6187,159,6365,167,6519,179,6531,180,6530,185,6518,184,6364,172,6186,164,5774,156,5307,155,4814,159,4321,162,3854,162,3441,155,3264,147,3109,136,3104,135"/>
-<area shape="rect" href="interrupt_8h.html" title=" " alt="" coords="939,269,1123,309"/>
-<area shape="poly" title=" " alt="" coords="2893,119,2430,127,1808,141,1256,160,1078,172,1027,178,1006,183,997,202,999,225,1007,248,1019,268,1015,270,1003,250,993,226,992,201,1002,179,1026,172,1078,166,1256,155,1808,136,2430,122,2893,114"/>
-<area shape="rect" href="ioport_8h.html" title=" " alt="" coords="3739,181,3923,221"/>
-<area shape="poly" title=" " alt="" coords="3105,130,3110,131,3283,147,3418,154,3554,161,3727,179,3739,180,3738,186,3726,184,3553,166,3418,159,3282,153,3109,136,3104,135"/>
-<area shape="rect" href="kfifo_8h.html" title=" " alt="" coords="3947,181,4131,221"/>
-<area shape="poly" title=" " alt="" coords="3105,130,3110,131,3235,143,3341,150,3522,154,3703,159,3810,166,3935,179,3947,180,3946,185,3934,184,3809,171,3703,164,3522,159,3341,155,3234,148,3109,136,3104,135"/>
-<area shape="rect" href="ktime_8h.html" title=" " alt="" coords="4155,181,4339,221"/>
-<area shape="poly" title=" " alt="" coords="3105,130,3110,131,3266,145,3399,152,3626,154,3853,156,3986,164,4143,179,4155,180,4154,185,4142,184,3986,169,3853,162,3626,159,3399,157,3266,150,3109,136,3104,135"/>
-<area shape="rect" href="llist_8h.html" title=" " alt="" coords="4363,181,4547,221"/>
-<area shape="poly" title=" " alt="" coords="3105,130,3110,131,3298,147,3458,154,3730,154,3861,152,4002,154,4162,162,4351,179,4363,180,4362,185,4350,184,4162,167,4002,159,3861,158,3730,159,3458,159,3298,152,3109,136,3104,135"/>
-<area shape="rect" href="lockdep_8h.html" title=" " alt="" coords="707,181,891,221"/>
-<area shape="poly" title=" " alt="" coords="2893,119,1909,139,1332,158,1092,170,910,184,891,186,891,181,909,179,1091,165,1332,153,1909,133,2892,113"/>
-<area shape="rect" href="linux_2mutex_8h.html" title=" " alt="" coords="731,269,915,309"/>
-<area shape="poly" title=" " alt="" coords="2893,118,2458,121,1864,130,1570,138,1309,150,1108,165,1037,174,990,184,947,201,908,225,845,271,842,267,905,220,945,197,989,179,1036,169,1107,160,1309,145,1569,133,1864,125,2458,115,2893,112"/>
-<area shape="rect" href="mm_8h.html" title=" " alt="" coords="4571,189,4797,214"/>
-<area shape="poly" title=" " alt="" coords="3105,130,3110,131,3330,149,3516,157,3680,159,3834,157,3987,155,4152,156,4339,163,4559,179,4618,186,4617,191,4558,184,4338,168,4152,161,3987,160,3834,162,3680,164,3516,162,3329,154,3109,136,3104,135"/>
-<area shape="rect" href="nospec_8h.html" title=" " alt="" coords="4821,181,5005,221"/>
-<area shape="poly" title=" " alt="" coords="3104,130,3110,131,3368,151,3587,158,3780,158,3959,153,4139,149,4332,149,4551,157,4810,179,4821,180,4821,185,4809,184,4551,163,4332,154,4139,154,3960,159,3780,163,3587,164,3367,156,3109,136,3104,135"/>
-<area shape="rect" href="pm__runtime_8h.html" title=" " alt="" coords="5029,181,5213,221"/>
-<area shape="poly" title=" " alt="" coords="3104,130,3110,131,3399,153,3645,160,3862,159,4063,153,4265,147,4482,146,4728,155,5018,179,5029,180,5029,185,5017,184,4728,161,4482,152,4265,153,4064,158,3862,164,3645,166,3399,158,3109,136,3104,135"/>
-<area shape="rect" href="proc__fs_8h.html" title=" " alt="" coords="1715,269,1899,309"/>
-<area shape="poly" title=" " alt="" coords="2893,119,2638,124,2325,135,2044,155,1945,168,1910,175,1888,184,1864,202,1844,225,1817,270,1812,268,1839,221,1860,198,1885,179,1909,170,1944,163,2044,149,2324,130,2638,119,2893,113"/>
-<area shape="rect" href="rwsem_8h.html" title=" " alt="" coords="5237,181,5421,221"/>
-<area shape="poly" title=" " alt="" coords="3104,130,3110,131,3431,154,3703,163,3944,160,4167,153,4391,146,4632,144,4904,153,5226,179,5237,180,5237,185,5225,184,4904,159,4631,149,4391,151,4168,158,3944,166,3703,168,3431,160,3109,136,3104,135"/>
-<area shape="rect" href="scatterlist_8h.html" title=" " alt="" coords="6739,181,6923,221"/>
-<area shape="poly" title=" " alt="" coords="3105,126,3160,131,3508,144,3940,149,4944,145,5460,144,5948,146,6379,157,6565,166,6727,179,6739,180,6738,185,6726,184,6565,172,6379,162,5948,152,5460,149,4944,151,3940,154,3508,150,3160,136,3104,131"/>
-<area shape="rect" href="linux_2sched_8h.html" title=" " alt="" coords="472,269,656,309"/>
-<area shape="poly" title=" " alt="" coords="2893,119,2379,125,1668,139,1020,158,801,170,732,177,696,184,661,201,629,224,582,271,578,267,626,220,658,197,694,179,731,172,801,165,1020,153,1668,133,2378,120,2892,113"/>
-<area shape="rect" href="wait_8h.html" title=" " alt="" coords="368,357,552,397"/>
-<area shape="poly" title=" " alt="" coords="2893,118,2365,124,1619,136,911,156,653,169,500,184,423,193,359,200,331,208,304,221,279,241,254,271,246,288,248,302,256,315,271,327,316,346,369,360,367,365,314,352,269,332,252,319,243,304,241,287,250,268,275,237,302,216,329,203,358,195,422,188,500,179,652,163,911,150,1618,131,2365,119,2893,113"/>
-<area shape="rect" href="seq__file_8h.html" title=" " alt="" coords="1640,181,1824,221"/>
-<area shape="poly" title=" " alt="" coords="2893,120,2436,137,2141,156,1843,184,1825,186,1824,181,1842,179,2141,151,2436,132,2893,114"/>
-<area shape="rect" href="slab_8h.html" title=" " alt="" coords="5445,181,5629,221"/>
-<area shape="poly" title=" " alt="" coords="3104,130,3110,131,3294,146,3462,156,3762,165,4026,161,4271,153,4517,144,4781,142,5081,151,5249,162,5434,179,5445,180,5445,185,5433,184,5249,168,5080,157,4781,147,4517,149,4272,158,4026,167,3762,170,3462,162,3293,151,3109,136,3104,135"/>
-<area shape="rect" href="linux_2spinlock_8h.html" title=" " alt="" coords="264,269,448,309"/>
-<area shape="poly" title=" " alt="" coords="2893,118,2389,124,1682,135,1015,155,771,168,627,184,561,202,496,225,393,272,391,267,494,220,559,196,626,179,770,163,1014,150,1682,130,2389,118,2893,113"/>
-<area shape="rect" href="splice_8h.html" title=" " alt="" coords="5653,181,5837,221"/>
-<area shape="poly" title=" " alt="" coords="3104,130,3110,131,3310,147,3494,158,3820,167,4108,163,4375,152,4643,143,4931,139,5257,149,5441,161,5642,179,5653,180,5653,185,5641,184,5440,166,5257,155,4931,145,4644,148,4376,158,4108,168,3820,172,3494,164,3310,153,3109,136,3104,135"/>
-<area shape="rect" href="sysfs_8h.html" title=" " alt="" coords="2648,181,2832,221"/>
-<area shape="poly" title=" " alt="" coords="2930,140,2797,184,2796,179,2928,135"/>
-<area shape="rect" href="linux_2termios_8h.html" title=" " alt="" coords="1432,181,1616,221"/>
-<area shape="poly" title=" " alt="" coords="2893,118,2664,122,2350,132,1992,151,1808,166,1628,184,1617,185,1616,180,1628,179,1808,161,1991,146,2350,126,2664,116,2893,113"/>
-<area shape="rect" href="BaseHdr_2linux_2types_8h.html" title=" " alt="" coords="5861,181,6045,221"/>
-<area shape="poly" title=" " alt="" coords="3104,130,3110,131,3327,148,3526,160,3709,167,3879,169,4190,164,4479,152,4769,141,5080,137,5250,140,5433,147,5632,160,5850,179,5861,180,5861,185,5849,184,5632,165,5433,152,5250,145,5080,142,4770,146,4480,158,4190,169,3879,174,3709,172,3525,165,3326,154,3109,136,3104,135"/>
-<area shape="rect" href="linux_2bug_8h.html" title=" " alt="" coords="6324,269,6508,309"/>
-<area shape="poly" title=" " alt="" coords="6419,235,6419,269,6413,269,6413,235"/>
-<area shape="poly" title=" " alt="" coords="2514,227,2516,276,2511,276,2509,227"/>
-<area shape="poly" title=" " alt="" coords="2526,263,2524,214,2529,214,2531,263"/>
-<area shape="poly" title=" " alt="" coords="1213,180,1224,179,1378,166,1582,154,2071,135,2906,114,2906,119,2071,141,1583,160,1379,171,1224,184,1214,185"/>
-<area shape="rect" href="nodemask_8h.html" title=" " alt="" coords="1183,357,1367,397"/>
-<area shape="poly" title=" " alt="" coords="1137,229,1258,355,1255,359,1134,233"/>
-<area shape="rect" href="mmzone_8h.html" title=" " alt="" coords="1183,445,1367,485"/>
-<area shape="poly" title=" " alt="" coords="1277,411,1277,445,1272,445,1272,411"/>
-<area shape="poly" title=" " alt="" coords="1396,225,1424,243,1446,268,1452,289,1447,310,1436,334,1423,356,1388,394,1349,425,1313,447,1311,443,1346,420,1384,390,1418,353,1432,331,1441,308,1447,289,1442,271,1421,247,1393,229"/>
-<area shape="rect" href="nodemask__types_8h.html" title=" " alt="" coords="1248,269,1432,309"/>
-<area shape="poly" title=" " alt="" coords="1328,234,1337,268,1332,270,1322,235"/>
-<area shape="rect" href="serial__core_8h.html" title=" " alt="" coords="731,357,915,397"/>
-<area shape="poly" title=" " alt="" coords="1281,231,1215,273,1136,312,1080,331,1022,346,915,367,914,362,1021,341,1078,326,1134,307,1212,268,1278,227"/>
-<area shape="rect" href="tty__driver_8h.html" title=" " alt="" coords="1507,269,1691,309"/>
-<area shape="poly" title=" " alt="" coords="1392,223,1538,267,1536,272,1390,228"/>
-<area shape="poly" title=" " alt="" coords="1319,322,1291,359,1287,355,1315,319"/>
-<area shape="poly" title=" " alt="" coords="1978,235,1951,275,1933,295,1912,312,1845,350,1774,381,1700,407,1625,426,1484,452,1367,463,1367,458,1483,447,1624,421,1698,402,1772,376,1843,345,1909,307,1929,291,1946,272,1973,232"/>
-<area shape="rect" href="debug__locks_8h.html" title=" " alt="" coords="1973,269,2157,309"/>
-<area shape="poly" title=" " alt="" coords="2018,230,2051,267,2047,271,2014,234"/>
-<area shape="poly" title=" " alt="" coords="2067,223,2212,267,2211,272,2065,228"/>
-<area shape="poly" title=" " alt="" coords="203,179,208,179,633,137,1067,104,1494,78,1902,58,2597,34,3036,25,3036,30,2597,39,1902,63,1495,83,1067,109,633,142,208,184,203,185"/>
-<area shape="poly" title=" " alt="" coords="3105,219,3317,239,3531,255,3947,275,4302,284,4550,286,4550,291,4302,289,3946,280,3531,260,3316,244,3104,224"/>
-<area shape="poly" title=" " alt="" coords="6517,185,5898,181,4773,178,4189,173,3680,165,3315,153,3207,145,3159,136,3141,116,3131,92,3125,46,3130,45,3136,90,3146,113,3161,131,3207,140,3315,148,3680,160,4189,168,4773,172,5898,176,6517,179"/>
-<area shape="poly" title=" " alt="" coords="973,317,869,360,867,355,971,312"/>
-<area shape="poly" title=" " alt="" coords="755,231,736,249,721,270,715,290,721,308,744,335,775,355,772,360,741,339,716,311,710,290,716,268,732,245,752,227"/>
-<area shape="poly" title=" " alt="" coords="810,234,820,268,815,270,805,235"/>
-<area shape="poly" title=" " alt="" coords="825,323,825,357,820,357,820,323"/>
-<area shape="poly" title=" " alt="" coords="6725,185,6078,179,4900,173,3754,161,3369,150,3254,144,3203,136,3178,117,3158,93,3133,47,3137,44,3162,90,3182,113,3205,131,3255,138,3369,145,3754,156,4900,168,6078,174,6725,179"/>
-<area shape="poly" title=" " alt="" coords="635,311,767,355,765,360,633,316"/>
-<area shape="poly" title=" " alt="" coords="532,320,485,359,481,355,529,316"/>
-<area shape="poly" title=" " alt="" coords="566,387,1183,452,1182,457,566,392"/>
-<area shape="poly" title=" " alt="" coords="1692,231,1630,271,1627,267,1690,227"/>
-<area shape="poly" title=" " alt="" coords="1760,230,1792,267,1788,271,1756,234"/>
-<area shape="poly" title=" " alt="" coords="429,311,587,359,719,395,844,417,970,434,1183,455,1182,460,969,439,843,422,718,400,585,364,428,316"/>
-<area shape="poly" title=" " alt="" coords="462,307,731,357,730,362,461,313"/>
-<area shape="poly" title=" " alt="" coords="391,316,439,355,435,359,388,320"/>
-<area shape="poly" title=" " alt="" coords="2765,231,2794,267,2790,271,2761,234"/>
-<area shape="poly" title=" " alt="" coords="1552,230,1584,267,1580,271,1548,234"/>
+<area shape="rect" title=" " alt="" coords="317,5,501,45"/>
+<area shape="rect" href="linux_2kernel_8h.html" title=" " alt="" coords="5,93,189,133"/>
+<area shape="poly" title=" " alt="" coords="328,52,166,96,165,91,327,46"/>
+<area shape="rect" href="linux_2virtio__config_8h.html" title=" " alt="" coords="213,93,397,133"/>
+<area shape="poly" title=" " alt="" coords="377,56,330,95,327,91,374,52"/>
+<area shape="rect" href="virtio__dma__buf_8h.html" title=" " alt="" coords="421,93,605,133"/>
+<area shape="poly" title=" " alt="" coords="445,52,492,91,489,95,441,56"/>
+<area shape="rect" href="virtio__rng_8h.html" title=" " alt="" coords="629,93,813,133"/>
+<area shape="poly" title=" " alt="" coords="492,46,654,91,652,96,490,52"/>
 </map>
 </div>
 </div>
@@ -376,8 +244,6 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvirtio__device__id.html">virtio_device_id</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvirtio__device.html">virtio_device</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdevice__driver.html">device_driver</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvirtio__driver.html">virtio_driver</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -413,31 +279,39 @@ Functions</h2></td></tr>
 <tr class="separator:a6e8160169923960945a8896eb424ece7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c248d1c51ba4106f8269fb4648f0844" id="r_a9c248d1c51ba4106f8269fb4648f0844"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linux_2virtio_8h.html#a9c248d1c51ba4106f8269fb4648f0844">virtio_poll_vqs</a> (void)</td></tr>
 <tr class="separator:a9c248d1c51ba4106f8269fb4648f0844"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34b8df2de2e7be2504f7420d54d77cff" id="r_a34b8df2de2e7be2504f7420d54d77cff"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structvirtqueue.html">virtqueue</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linux_2virtio_8h.html#a34b8df2de2e7be2504f7420d54d77cff">virtio_find_single_vq</a> (struct <a class="el" href="structvirtio__device.html">virtio_device</a> *vdev, void(*cb)(struct <a class="el" href="structvirtqueue.html">virtqueue</a> *vq), const char *<a class="el" href="kobject_8h.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>)</td></tr>
+<tr class="memitem:a4cd848a3764924f7725efabf2f17ae08" id="r_a4cd848a3764924f7725efabf2f17ae08"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linux_2virtio_8h.html#a4cd848a3764924f7725efabf2f17ae08">virtio_poll_input_vqs</a> (void)</td></tr>
+<tr class="separator:a4cd848a3764924f7725efabf2f17ae08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34b8df2de2e7be2504f7420d54d77cff" id="r_a34b8df2de2e7be2504f7420d54d77cff"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structvirtqueue.html">virtqueue</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linux_2virtio_8h.html#a34b8df2de2e7be2504f7420d54d77cff">virtio_find_single_vq</a> (struct <a class="el" href="structvirtio__device.html">virtio_device</a> *vdev, void(*cb)(struct <a class="el" href="structvirtqueue.html">virtqueue</a> *vq), const char *<a class="el" href="drm__crtc_8h.html#aed88e009d7772dfc9026cb1f5492b458">name</a>)</td></tr>
 <tr class="separator:a34b8df2de2e7be2504f7420d54d77cff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af53f15521f321b108ecadedbfef2aa9f" id="r_af53f15521f321b108ecadedbfef2aa9f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linux_2virtio_8h.html#af53f15521f321b108ecadedbfef2aa9f">virtio_device_ready</a> (struct <a class="el" href="structvirtio__device.html">virtio_device</a> *vdev)</td></tr>
 <tr class="separator:af53f15521f321b108ecadedbfef2aa9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64b9178b103bafe31090f23b421d870c" id="r_a64b9178b103bafe31090f23b421d870c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linux_2virtio_8h.html#a64b9178b103bafe31090f23b421d870c">virtio_reset_device</a> (struct <a class="el" href="structvirtio__device.html">virtio_device</a> *dev)</td></tr>
+<tr class="memitem:a64b9178b103bafe31090f23b421d870c" id="r_a64b9178b103bafe31090f23b421d870c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linux_2virtio_8h.html#a64b9178b103bafe31090f23b421d870c">virtio_reset_device</a> (struct <a class="el" href="structvirtio__device.html">virtio_device</a> *<a class="el" href="drm__print_8h.html#a1572ef5e3355461e391f0d510070cd36">dev</a>)</td></tr>
 <tr class="separator:a64b9178b103bafe31090f23b421d870c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a0d8ecf5c733638b223aec99e4baf79" id="r_a8a0d8ecf5c733638b223aec99e4baf79"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linux_2virtio_8h.html#a8a0d8ecf5c733638b223aec99e4baf79">virtio_rng_detect</a> (void)</td></tr>
 <tr class="separator:a8a0d8ecf5c733638b223aec99e4baf79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68fa2b9bdc8fe5cd45b049918e3ad2cf" id="r_a68fa2b9bdc8fe5cd45b049918e3ad2cf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linux_2virtio_8h.html#a68fa2b9bdc8fe5cd45b049918e3ad2cf">virtio_input_detect</a> (void)</td></tr>
+<tr class="separator:a68fa2b9bdc8fe5cd45b049918e3ad2cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f13ca23e2f1efbbb44d5da8bf48b779" id="r_a3f13ca23e2f1efbbb44d5da8bf48b779"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linux_2virtio_8h.html#a3f13ca23e2f1efbbb44d5da8bf48b779">virtio_find_vqs</a> (struct <a class="el" href="structvirtio__device.html">virtio_device</a> *vdev, unsigned nvqs, struct <a class="el" href="structvirtqueue.html">virtqueue</a> **vqs, struct <a class="el" href="structvirtqueue__info.html">virtqueue_info</a> *vqs_info, void *desc)</td></tr>
 <tr class="separator:a3f13ca23e2f1efbbb44d5da8bf48b779"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a675ab586659c15a4b5155ecb94ba0246" id="r_a675ab586659c15a4b5155ecb94ba0246"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linux_2virtio_8h.html#a675ab586659c15a4b5155ecb94ba0246">virtio_del_vqs</a> (struct <a class="el" href="structvirtio__device.html">virtio_device</a> *vdev)</td></tr>
 <tr class="separator:a675ab586659c15a4b5155ecb94ba0246"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:accc1eae346d2f70f33aeb9c887837738" id="r_accc1eae346d2f70f33aeb9c887837738"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linux_2virtio_8h.html#accc1eae346d2f70f33aeb9c887837738">virtqueue_add_inbuf</a> (struct <a class="el" href="structvirtqueue.html">virtqueue</a> *vq, struct <a class="el" href="structscatterlist.html">scatterlist</a> *sg, unsigned int num_in, void *<a class="el" href="sndproxy_8c.html#abe222f6d3581e7920dcad5306cc906a8">data</a>, <a class="el" href="kernel_8h.html#a99dcacb83509949e516cf6ae0367ff73">gfp_t</a> gfp)</td></tr>
+<tr class="memitem:accc1eae346d2f70f33aeb9c887837738" id="r_accc1eae346d2f70f33aeb9c887837738"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linux_2virtio_8h.html#accc1eae346d2f70f33aeb9c887837738">virtqueue_add_inbuf</a> (struct <a class="el" href="structvirtqueue.html">virtqueue</a> *vq, struct <a class="el" href="structscatterlist.html">scatterlist</a> *sg, unsigned int num_in, void *<a class="el" href="kthread_8h.html#a735984d41155bc1032e09bece8f8d66d">data</a>, <a class="el" href="linux_2kernel_8h.html#a99dcacb83509949e516cf6ae0367ff73">gfp_t</a> gfp)</td></tr>
 <tr class="separator:accc1eae346d2f70f33aeb9c887837738"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68a544dafb2666d4d1fc5fca9b806a88" id="r_a68a544dafb2666d4d1fc5fca9b806a88"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linux_2virtio_8h.html#a68a544dafb2666d4d1fc5fca9b806a88">virtqueue_add_sgs</a> (struct <a class="el" href="structvirtqueue.html">virtqueue</a> *vq, struct <a class="el" href="structscatterlist.html">scatterlist</a> sg[], unsigned int out_cnt, unsigned int in_cnt, void *<a class="el" href="sndproxy_8c.html#abe222f6d3581e7920dcad5306cc906a8">data</a>, void *ctx)</td></tr>
-<tr class="separator:a68a544dafb2666d4d1fc5fca9b806a88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a353aa53799dcf2fd32bb2d9d5807c53f" id="r_a353aa53799dcf2fd32bb2d9d5807c53f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linux_2virtio_8h.html#a353aa53799dcf2fd32bb2d9d5807c53f">virtqueue_add_inbuf_cache_clean</a> (struct <a class="el" href="structvirtqueue.html">virtqueue</a> *vq, struct <a class="el" href="structscatterlist.html">scatterlist</a> *sg, unsigned int num_in, void *<a class="el" href="kthread_8h.html#a735984d41155bc1032e09bece8f8d66d">data</a>, <a class="el" href="linux_2kernel_8h.html#a99dcacb83509949e516cf6ae0367ff73">gfp_t</a> gfp)</td></tr>
+<tr class="separator:a353aa53799dcf2fd32bb2d9d5807c53f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ef6dac721a009428e9a6923c6c612a7" id="r_a2ef6dac721a009428e9a6923c6c612a7"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linux_2virtio_8h.html#a2ef6dac721a009428e9a6923c6c612a7">virtqueue_get_vring_size</a> (const struct <a class="el" href="structvirtqueue.html">virtqueue</a> *vq)</td></tr>
+<tr class="separator:a2ef6dac721a009428e9a6923c6c612a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a3b471c40cadf9cf97931c24788035c" id="r_a7a3b471c40cadf9cf97931c24788035c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linux_2virtio_8h.html#a7a3b471c40cadf9cf97931c24788035c">virtqueue_add_sgs</a> (struct <a class="el" href="structvirtqueue.html">virtqueue</a> *vq, struct <a class="el" href="structscatterlist.html">scatterlist</a> *sgs[], unsigned int out_cnt, unsigned int in_cnt, void *<a class="el" href="kthread_8h.html#a735984d41155bc1032e09bece8f8d66d">data</a>, <a class="el" href="linux_2kernel_8h.html#a99dcacb83509949e516cf6ae0367ff73">gfp_t</a> gfp)</td></tr>
+<tr class="separator:a7a3b471c40cadf9cf97931c24788035c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a97b1a7c58e36a1dde51ba06a466e5e78" id="r_a97b1a7c58e36a1dde51ba06a466e5e78"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linux_2virtio_8h.html#a97b1a7c58e36a1dde51ba06a466e5e78">virtqueue_kick</a> (struct <a class="el" href="structvirtqueue.html">virtqueue</a> *vq)</td></tr>
 <tr class="separator:a97b1a7c58e36a1dde51ba06a466e5e78"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4d9cd078c8fd55e2f9c6a40659b1ab5" id="r_ae4d9cd078c8fd55e2f9c6a40659b1ab5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linux_2virtio_8h.html#ae4d9cd078c8fd55e2f9c6a40659b1ab5">virtqueue_kick_prepare</a> (struct <a class="el" href="structvirtqueue.html">virtqueue</a> *vq)</td></tr>
 <tr class="separator:ae4d9cd078c8fd55e2f9c6a40659b1ab5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85d72bdae8ee8a6b4032d2900f684da1" id="r_a85d72bdae8ee8a6b4032d2900f684da1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linux_2virtio_8h.html#a85d72bdae8ee8a6b4032d2900f684da1">virtqueue_notify</a> (struct <a class="el" href="structvirtqueue.html">virtqueue</a> *vq)</td></tr>
 <tr class="separator:a85d72bdae8ee8a6b4032d2900f684da1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af04832fef195d45c6346b68bc2f6e630" id="r_af04832fef195d45c6346b68bc2f6e630"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linux_2virtio_8h.html#af04832fef195d45c6346b68bc2f6e630">virtqueue_get_buf</a> (struct <a class="el" href="structvirtqueue.html">virtqueue</a> *vq, unsigned int *<a class="el" href="codec__8859_8c.html#a7360b55975153b822efc5217b7734e6a">len</a>)</td></tr>
+<tr class="memitem:af04832fef195d45c6346b68bc2f6e630" id="r_af04832fef195d45c6346b68bc2f6e630"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linux_2virtio_8h.html#af04832fef195d45c6346b68bc2f6e630">virtqueue_get_buf</a> (struct <a class="el" href="structvirtqueue.html">virtqueue</a> *vq, unsigned int *<a class="el" href="initial_8c.html#a7360b55975153b822efc5217b7734e6a">len</a>)</td></tr>
 <tr class="separator:af04832fef195d45c6346b68bc2f6e630"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a875c9d882fca0a402f48ebbc5facc3" id="r_a9a875c9d882fca0a402f48ebbc5facc3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linux_2virtio_8h.html#a9a875c9d882fca0a402f48ebbc5facc3">virtqueue_add_outbuf</a> (struct <a class="el" href="structvirtqueue.html">virtqueue</a> *vq, struct <a class="el" href="structscatterlist.html">scatterlist</a> sg[], unsigned int num, void *<a class="el" href="sndproxy_8c.html#abe222f6d3581e7920dcad5306cc906a8">data</a>, <a class="el" href="kernel_8h.html#a99dcacb83509949e516cf6ae0367ff73">gfp_t</a> gfp)</td></tr>
+<tr class="memitem:a9a875c9d882fca0a402f48ebbc5facc3" id="r_a9a875c9d882fca0a402f48ebbc5facc3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linux_2virtio_8h.html#a9a875c9d882fca0a402f48ebbc5facc3">virtqueue_add_outbuf</a> (struct <a class="el" href="structvirtqueue.html">virtqueue</a> *vq, struct <a class="el" href="structscatterlist.html">scatterlist</a> sg[], unsigned int num, void *<a class="el" href="kthread_8h.html#a735984d41155bc1032e09bece8f8d66d">data</a>, <a class="el" href="linux_2kernel_8h.html#a99dcacb83509949e516cf6ae0367ff73">gfp_t</a> gfp)</td></tr>
 <tr class="separator:a9a875c9d882fca0a402f48ebbc5facc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6ce2767400e2490f1b32ad627e96cad" id="r_aa6ce2767400e2490f1b32ad627e96cad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linux_2virtio_8h.html#aa6ce2767400e2490f1b32ad627e96cad">virtqueue_disable_cb</a> (struct <a class="el" href="structvirtqueue.html">virtqueue</a> *vq)</td></tr>
 <tr class="separator:aa6ce2767400e2490f1b32ad627e96cad"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -447,7 +321,7 @@ Functions</h2></td></tr>
 <tr class="separator:ac6d55460d47b10b492d1dd4ba4fa0300"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ea031a7b3008b755b573c315ff72b9f" id="r_a4ea031a7b3008b755b573c315ff72b9f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linux_2virtio_8h.html#a4ea031a7b3008b755b573c315ff72b9f">virtqueue_is_broken</a> (const struct <a class="el" href="structvirtqueue.html">virtqueue</a> *vq)</td></tr>
 <tr class="separator:a4ea031a7b3008b755b573c315ff72b9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41dab65aae9889cea42f8cd318433e78" id="r_a41dab65aae9889cea42f8cd318433e78"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linux_2virtio_8h.html#a41dab65aae9889cea42f8cd318433e78">virtio_break_device</a> (struct <a class="el" href="structvirtio__device.html">virtio_device</a> *dev)</td></tr>
+<tr class="memitem:a41dab65aae9889cea42f8cd318433e78" id="r_a41dab65aae9889cea42f8cd318433e78"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linux_2virtio_8h.html#a41dab65aae9889cea42f8cd318433e78">virtio_break_device</a> (struct <a class="el" href="structvirtio__device.html">virtio_device</a> *<a class="el" href="drm__print_8h.html#a1572ef5e3355461e391f0d510070cd36">dev</a>)</td></tr>
 <tr class="separator:a41dab65aae9889cea42f8cd318433e78"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3954c6af91578fa1fdb4e4988e71c50d" id="r_a3954c6af91578fa1fdb4e4988e71c50d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linux_2virtio_8h.html#a3954c6af91578fa1fdb4e4988e71c50d">virtio_device_register</a> (struct <a class="el" href="structvirtio__device.html">virtio_device</a> *vdev, struct <a class="el" href="structVirtioPCIDevice.html">VirtioPCIDevice</a> *au_dev, int dev_index)</td></tr>
 <tr class="separator:a3954c6af91578fa1fdb4e4988e71c50d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -518,10 +392,10 @@ Functions</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line">    <span class="keywordflow">do</span> {                                \</div>
 <div class="line">        memcpy((ptr),                       \</div>
 <div class="line">               (<span class="keywordtype">char</span>*)(vdev)-&gt;config-&gt;device_config_base +  \</div>
-<div class="line">                   <a class="code hl_define" href="kernel_8h.html#afd049f7ad59dbe455f460807475c2841">offsetof</a>(type, field),           \</div>
+<div class="line">                   <a class="code hl_define" href="linux_2kernel_8h.html#afd049f7ad59dbe455f460807475c2841">offsetof</a>(type, field),           \</div>
 <div class="line">               <span class="keyword">sizeof</span>(*(ptr)));                 \</div>
 <div class="line">    } <span class="keywordflow">while</span> (0)</div>
-<div class="ttc" id="akernel_8h_html_afd049f7ad59dbe455f460807475c2841"><div class="ttname"><a href="kernel_8h.html#afd049f7ad59dbe455f460807475c2841">offsetof</a></div><div class="ttdeci">#define offsetof(type, member)</div><div class="ttdef"><b>Definition</b> kernel.h:123</div></div>
+<div class="ttc" id="alinux_2kernel_8h_html_afd049f7ad59dbe455f460807475c2841"><div class="ttname"><a href="linux_2kernel_8h.html#afd049f7ad59dbe455f460807475c2841">offsetof</a></div><div class="ttdeci">#define offsetof(type, member)</div><div class="ttdef"><b>Definition</b> kernel.h:177</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -828,6 +702,42 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a68fa2b9bdc8fe5cd45b049918e3ad2cf" name="a68fa2b9bdc8fe5cd45b049918e3ad2cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68fa2b9bdc8fe5cd45b049918e3ad2cf">&#9670;&#160;</a></span>virtio_input_detect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int virtio_input_detect </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4cd848a3764924f7725efabf2f17ae08" name="a4cd848a3764924f7725efabf2f17ae08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cd848a3764924f7725efabf2f17ae08">&#9670;&#160;</a></span>virtio_poll_input_vqs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void virtio_poll_input_vqs </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a9c248d1c51ba4106f8269fb4648f0844" name="a9c248d1c51ba4106f8269fb4648f0844"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9c248d1c51ba4106f8269fb4648f0844">&#9670;&#160;</a></span>virtio_poll_vqs()</h2>
 
@@ -915,7 +825,53 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="kernel_8h.html#a99dcacb83509949e516cf6ae0367ff73">gfp_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="linux_2kernel_8h.html#a99dcacb83509949e516cf6ae0367ff73">gfp_t</a>&#160;</td>
+          <td class="paramname"><em>gfp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a353aa53799dcf2fd32bb2d9d5807c53f" name="a353aa53799dcf2fd32bb2d9d5807c53f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a353aa53799dcf2fd32bb2d9d5807c53f">&#9670;&#160;</a></span>virtqueue_add_inbuf_cache_clean()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int virtqueue_add_inbuf_cache_clean </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structvirtqueue.html">virtqueue</a> *&#160;</td>
+          <td class="paramname"><em>vq</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structscatterlist.html">scatterlist</a> *&#160;</td>
+          <td class="paramname"><em>sg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>num_in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="linux_2kernel_8h.html#a99dcacb83509949e516cf6ae0367ff73">gfp_t</a>&#160;</td>
           <td class="paramname"><em>gfp</em>&#160;</td>
         </tr>
         <tr>
@@ -961,7 +917,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="kernel_8h.html#a99dcacb83509949e516cf6ae0367ff73">gfp_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="linux_2kernel_8h.html#a99dcacb83509949e516cf6ae0367ff73">gfp_t</a>&#160;</td>
           <td class="paramname"><em>gfp</em>&#160;</td>
         </tr>
         <tr>
@@ -974,8 +930,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a68a544dafb2666d4d1fc5fca9b806a88" name="a68a544dafb2666d4d1fc5fca9b806a88"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a68a544dafb2666d4d1fc5fca9b806a88">&#9670;&#160;</a></span>virtqueue_add_sgs()</h2>
+<a id="a7a3b471c40cadf9cf97931c24788035c" name="a7a3b471c40cadf9cf97931c24788035c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a3b471c40cadf9cf97931c24788035c">&#9670;&#160;</a></span>virtqueue_add_sgs()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -989,8 +945,8 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct <a class="el" href="structscatterlist.html">scatterlist</a>&#160;</td>
-          <td class="paramname"><em>sg</em>[], </td>
+          <td class="paramtype">struct <a class="el" href="structscatterlist.html">scatterlist</a> *&#160;</td>
+          <td class="paramname"><em>sgs</em>[], </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1013,8 +969,8 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>ctx</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="linux_2kernel_8h.html#a99dcacb83509949e516cf6ae0367ff73">gfp_t</a>&#160;</td>
+          <td class="paramname"><em>gfp</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1102,6 +1058,24 @@ Functions</h2></td></tr>
           <td></td>
           <td>)</td>
           <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2ef6dac721a009428e9a6923c6c612a7" name="a2ef6dac721a009428e9a6923c6c612a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ef6dac721a009428e9a6923c6c612a7">&#9670;&#160;</a></span>virtqueue_get_vring_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int virtqueue_get_vring_size </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structvirtqueue.html">virtqueue</a> *&#160;</td>
+          <td class="paramname"><em>vq</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">

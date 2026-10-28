@@ -86,11 +86,11 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a72efd7e41e2270623b4514f793129b0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b9e77cb1f193dcb8ee67e8f65707e4e" id="r_a8b9e77cb1f193dcb8ee67e8f65707e4e"><td class="memItemLeft" align="right" valign="top">struct tty_device *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structconsole.html#a8b9e77cb1f193dcb8ee67e8f65707e4e">device</a> )(struct <a class="el" href="structconsole.html">console</a> *con, int *<a class="el" href="structconsole.html#abd48018344c4cbfab03df68bbc6d15f7">index</a>)</td></tr>
 <tr class="separator:a8b9e77cb1f193dcb8ee67e8f65707e4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61ca708438f432cccb5c195060c27574" id="r_a61ca708438f432cccb5c195060c27574"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structconsole.html#a61ca708438f432cccb5c195060c27574">setup</a> )(struct <a class="el" href="structconsole.html">console</a> *con, char *<a class="el" href="m__menu_8c.html#aaaada5eefb2d5609f08676feda4171cda5eb3f84958aa2200df58a6af276027eb">options</a>)</td></tr>
+<tr class="memitem:a61ca708438f432cccb5c195060c27574" id="r_a61ca708438f432cccb5c195060c27574"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structconsole.html#a61ca708438f432cccb5c195060c27574">setup</a> )(struct <a class="el" href="structconsole.html">console</a> *con, char *<a class="el" href="m__menu_8c.html#a2e45e0649e864ecd3eacd19b09ec981aa5eb3f84958aa2200df58a6af276027eb">options</a>)</td></tr>
 <tr class="separator:a61ca708438f432cccb5c195060c27574"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28ec25d4077da3039d4f8fa0992533a2" id="r_a28ec25d4077da3039d4f8fa0992533a2"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structconsole.html#a28ec25d4077da3039d4f8fa0992533a2">exit</a> )(struct <a class="el" href="structconsole.html">console</a> *con)</td></tr>
 <tr class="separator:a28ec25d4077da3039d4f8fa0992533a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9dbabafc6b24a67f56cd5785c74bb285" id="r_a9dbabafc6b24a67f56cd5785c74bb285"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structconsole.html#a9dbabafc6b24a67f56cd5785c74bb285">match</a> )(struct <a class="el" href="structconsole.html">console</a> *con, struct <a class="el" href="structdevice.html">device</a> **dev, int idx)</td></tr>
+<tr class="memitem:a9dbabafc6b24a67f56cd5785c74bb285" id="r_a9dbabafc6b24a67f56cd5785c74bb285"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structconsole.html#a9dbabafc6b24a67f56cd5785c74bb285">match</a> )(struct <a class="el" href="structconsole.html">console</a> *con, struct <a class="el" href="structdevice.html">device</a> **<a class="el" href="drm__print_8h.html#a1572ef5e3355461e391f0d510070cd36">dev</a>, int idx)</td></tr>
 <tr class="separator:a9dbabafc6b24a67f56cd5785c74bb285"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6141349e37c11ef59476c8e0e241733" id="r_ac6141349e37c11ef59476c8e0e241733"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structconsole.html#ac6141349e37c11ef59476c8e0e241733">cleanup</a> )(struct <a class="el" href="structconsole.html">console</a> *con)</td></tr>
 <tr class="separator:ac6141349e37c11ef59476c8e0e241733"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -227,7 +227,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int(* console::match) (struct <a class="el" href="structconsole.html">console</a> *con, struct <a class="el" href="structdevice.html">device</a> **dev, int idx)</td>
+          <td class="memname">int(* console::match) (struct <a class="el" href="structconsole.html">console</a> *con, struct <a class="el" href="structdevice.html">device</a> **<a class="el" href="drm__print_8h.html#a1572ef5e3355461e391f0d510070cd36">dev</a>, int idx)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -269,7 +269,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int(* console::setup) (struct <a class="el" href="structconsole.html">console</a> *con, char *<a class="el" href="m__menu_8c.html#aaaada5eefb2d5609f08676feda4171cda5eb3f84958aa2200df58a6af276027eb">options</a>)</td>
+          <td class="memname">int(* console::setup) (struct <a class="el" href="structconsole.html">console</a> *con, char *<a class="el" href="m__menu_8c.html#a2e45e0649e864ecd3eacd19b09ec981aa5eb3f84958aa2200df58a6af276027eb">options</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">

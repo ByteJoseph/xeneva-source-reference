@@ -124,9 +124,9 @@ Macros</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader">SECTION: Common types</h2></td></tr>
 <tr><td class="ititle" colspan="2"><p>Various common types used throughout MPS. </p>
 </td></tr>
-<tr class="memitem:a78c9df6265a213ca1ced686881793a6d" id="r_a78c9df6265a213ca1ced686881793a6d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mps__common_8h.html#a78c9df6265a213ca1ced686881793a6d">MBEDTLS_MPS_STORED_SIZE_MAX</a>&#160;&#160;&#160;(<a class="el" href="BootAA64_2xnldr_8h.html#a3c75bb398badb69c7577b21486f9963f">SIZE_MAX</a>)</td></tr>
+<tr class="memitem:a78c9df6265a213ca1ced686881793a6d" id="r_a78c9df6265a213ca1ced686881793a6d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mps__common_8h.html#a78c9df6265a213ca1ced686881793a6d">MBEDTLS_MPS_STORED_SIZE_MAX</a>&#160;&#160;&#160;(<a class="el" href="BaseHdr_2linux_2limits_8h.html#a3c75bb398badb69c7577b21486f9963f">SIZE_MAX</a>)</td></tr>
 <tr class="separator:a78c9df6265a213ca1ced686881793a6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15d6394758b425eb1af2c431d576fa1c" id="r_a15d6394758b425eb1af2c431d576fa1c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mps__common_8h.html#a15d6394758b425eb1af2c431d576fa1c">MBEDTLS_MPS_SIZE_MAX</a>&#160;&#160;&#160;(<a class="el" href="BootAA64_2xnldr_8h.html#a3c75bb398badb69c7577b21486f9963f">SIZE_MAX</a>)</td></tr>
+<tr class="memitem:a15d6394758b425eb1af2c431d576fa1c" id="r_a15d6394758b425eb1af2c431d576fa1c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mps__common_8h.html#a15d6394758b425eb1af2c431d576fa1c">MBEDTLS_MPS_SIZE_MAX</a>&#160;&#160;&#160;(<a class="el" href="BaseHdr_2linux_2limits_8h.html#a3c75bb398badb69c7577b21486f9963f">SIZE_MAX</a>)</td></tr>
 <tr class="separator:a15d6394758b425eb1af2c431d576fa1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9560953cd48023d3eea635d84e91e57a" id="r_a9560953cd48023d3eea635d84e91e57a"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mps__common_8h.html#a9560953cd48023d3eea635d84e91e57a">mbedtls_mps_stored_size_t</a></td></tr>
 <tr class="memdesc:a9560953cd48023d3eea635d84e91e57a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The type of buffer sizes and offsets used in MPS structures.  <br /></td></tr>
@@ -201,7 +201,7 @@ Macros</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define MBEDTLS_MPS_SIZE_MAX&#160;&#160;&#160;(<a class="el" href="BootAA64_2xnldr_8h.html#a3c75bb398badb69c7577b21486f9963f">SIZE_MAX</a>)</td>
+          <td class="memname">#define MBEDTLS_MPS_SIZE_MAX&#160;&#160;&#160;(<a class="el" href="BaseHdr_2linux_2limits_8h.html#a3c75bb398badb69c7577b21486f9963f">SIZE_MAX</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -272,7 +272,7 @@ Macros</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define MBEDTLS_MPS_STORED_SIZE_MAX&#160;&#160;&#160;(<a class="el" href="BootAA64_2xnldr_8h.html#a3c75bb398badb69c7577b21486f9963f">SIZE_MAX</a>)</td>
+          <td class="memname">#define MBEDTLS_MPS_STORED_SIZE_MAX&#160;&#160;&#160;(<a class="el" href="BaseHdr_2linux_2limits_8h.html#a3c75bb398badb69c7577b21486f9963f">SIZE_MAX</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -293,7 +293,7 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The type of buffer sizes and offsets used in the MPS API and implementation. </p>
-<p>This must be at least as wide as ::mbedtls_stored_size_t but may be chosen to be strictly larger if more suitable for the target architecture.</p>
+<p>This must be at least as wide as mbedtls_stored_size_t but may be chosen to be strictly larger if more suitable for the target architecture.</p>
 <p>For example, in a test build for ARM Thumb, using uint_fast16_t instead of uint16_t reduced the code size from 1060 Byte to 962 Byte, so almost 10%. </p>
 
 </div>

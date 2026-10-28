@@ -73,96 +73,267 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><dl class="reflist">
+<dt>Member <a class="el" href="attr_8c.html#acbf138c4a38a97f78e5ad02721ba5a16">_dom_attr_finalise</a>  (<a class="el" href="structdom__attr.html">dom_attr</a> *attr)</dt>
+<dd><a class="anchor" id="_todo000052"></a>destroy schema type info  </dd>
+<dt>Member <a class="el" href="element_8c.html#a14c7cf1bc998a873d3513a090653f9f9">_dom_element_finalise</a>  (struct <a class="el" href="structdom__element.html">dom_element</a> *ele)</dt>
+<dd><a class="anchor" id="_todo000053"></a>destroy schema type info  </dd>
+<dt>Member <a class="el" href="element_8c.html#a9f577cc3d8397370cd6ae7f88fa73634">_dom_element_get_elements_by_tag_name_ns</a>  (struct <a class="el" href="structdom__element.html">dom_element</a> *element, <a class="el" href="structdom__string.html">dom_string</a> *namespace, <a class="el" href="structdom__string.html">dom_string</a> *localname, struct <a class="el" href="structdom__nodelist.html">dom_nodelist</a> **result)</dt>
+<dd><a class="anchor" id="_todo000054"></a>ensure XML feature is supported  </dd>
+<dt>Member <a class="el" href="html__element_8c.html#aeef107be4013f0c078bdfeda144216cf">_dom_html_element_get_elements_by_tag_name_ns</a>  (struct <a class="el" href="structdom__element.html">dom_element</a> *element, <a class="el" href="structdom__string.html">dom_string</a> *namespace, <a class="el" href="structdom__string.html">dom_string</a> *localname, struct <a class="el" href="structdom__nodelist.html">dom_nodelist</a> **result)</dt>
+<dd><a class="anchor" id="_todo000061"></a>ensure XML feature is supported  </dd>
+<dt>Member <a class="el" href="html__input__element_8c.html#ab23d447a2ca2953f94d9b2d60248bf1b">_dom_html_input_element_parse_attribute</a>  (<a class="el" href="structdom__element.html">dom_element</a> *ele, <a class="el" href="structdom__string.html">dom_string</a> *name, <a class="el" href="structdom__string.html">dom_string</a> *value, <a class="el" href="structdom__string.html">dom_string</a> **parsed)</dt>
+<dd><a class="anchor" id="_todo000062"></a>Find some way to do the equiv for default_checked to be false instead of true. Some end-tag hook in the binding perhaps?  </dd>
+<dt>Member <a class="el" href="html__option__element_8c.html#aa42a9513fccb0e05e83c5a1445180b93">_dom_html_option_element_parse_attribute</a>  (<a class="el" href="structdom__element.html">dom_element</a> *ele, <a class="el" href="structdom__string.html">dom_string</a> *name, <a class="el" href="structdom__string.html">dom_string</a> *value, <a class="el" href="structdom__string.html">dom_string</a> **parsed)</dt>
+<dd><a class="anchor" id="_todo000064"></a>Find some way to do the equiv for default_selected to be false instead of true. Some end-tag hook in the binding perhaps?  </dd>
+<dt>Member <a class="el" href="node_8c.html#a84e42cc0eea9ee4bc61eb5b309da6ae0">_dom_node_clone_node</a>  (<a class="el" href="structdom__node__internal.html">dom_node_internal</a> *node, bool deep, <a class="el" href="structdom__node__internal.html">dom_node_internal</a> **result)</dt>
+<dd><a class="anchor" id="_todo000059"></a>work out what happens when cloning Document, DocumentType, Entity and Notation nodes. </dd>
+<dt>Member <a class="el" href="node_8c.html#a9d51328744363dcc0ab31322499486c2">_dom_node_insert_before</a>  (<a class="el" href="structdom__node__internal.html">dom_node_internal</a> *node, <a class="el" href="structdom__node__internal.html">dom_node_internal</a> *new_child, <a class="el" href="structdom__node__internal.html">dom_node_internal</a> *ref_child, <a class="el" href="structdom__node__internal.html">dom_node_internal</a> **result)</dt>
+<dd><a class="anchor" id="_todo000058"></a>Is it correct to return DocumentFragments?  </dd>
+<dt>Member <a class="el" href="node_8c.html#a7cae58600d39f7d5eeca9fb357fba1d4">_dom_node_set_prefix</a>  (<a class="el" href="structdom__node__internal.html">dom_node_internal</a> *node, <a class="el" href="structdom__string.html">dom_string</a> *prefix)</dt>
+<dd><a class="anchor" id="_todo000060"></a>validate prefix  </dd>
 <dt>Member <a class="el" href="pcie_8c.html#a55c8b5d6af4ffd1f54d64a48adb7e104">AuPCIEAllocMSI</a>  (uint64_t device, size_t vector, int bus, int dev, int func)</dt>
-<dd><a class="anchor" id="_todo000001"></a>&ndash; MSIX not implemented yet  </dd>
+<dd><a class="anchor" id="_todo000002"></a>&ndash; MSIX not implemented yet  </dd>
 <dt>Member <a class="el" href="select_2properties_2azimuth_8c.html#aebe94346fc1a7614bb4080b28b9bec7f">css__cascade_azimuth</a>  (uint32_t opv, <a class="el" href="structcss__style.html">css_style</a> *style, <a class="el" href="structcss__select__state.html">css_select_state</a> *state)</dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000006"></a>azimuth values </p>
-<p class="interdd"><a class="anchor" id="_todo000008"></a>set computed azimuth </p>
-<p class="enddd"><a class="anchor" id="_todo000007"></a>azimuth behind  </p>
+<dd><p class="startdd"><a class="anchor" id="_todo000007"></a>azimuth values </p>
+<p class="interdd"><a class="anchor" id="_todo000008"></a>azimuth behind </p>
+<p class="enddd"><a class="anchor" id="_todo000009"></a>set computed azimuth  </p>
 </dd>
 <dt>Member <a class="el" href="helpers_8c.html#a3ae920f9f85cd44add1acccf8afaee91">css__cascade_break_after_before_inside</a>  (uint32_t opv, <a class="el" href="structcss__style.html">css_style</a> *style, <a class="el" href="structcss__select__state.html">css_select_state</a> *state, <a class="el" href="libcss_2include_2libcss_2errors_8h.html#a387614d49cf7f5377cbf93f9f411a782">css_error(*fun)</a>(<a class="el" href="structcss__computed__style.html">css_computed_style</a> *, uint8_t))</dt>
-<dd><a class="anchor" id="_todo000019"></a>lose fun != NULL  </dd>
+<dd><a class="anchor" id="_todo000020"></a>lose fun != NULL  </dd>
 <dt>Member <a class="el" href="cue__after_8c.html#a59cec61c1c743fadc74107a4576d3cb4">css__cascade_cue_after</a>  (uint32_t opv, <a class="el" href="structcss__style.html">css_style</a> *style, <a class="el" href="structcss__select__state.html">css_select_state</a> *state)</dt>
-<dd><a class="anchor" id="_todo000009"></a>cue-after  </dd>
+<dd><a class="anchor" id="_todo000010"></a>cue-after  </dd>
 <dt>Member <a class="el" href="cue__before_8c.html#aceb56b3a08d28505f1a7478a2dd95d6e">css__cascade_cue_before</a>  (uint32_t opv, <a class="el" href="structcss__style.html">css_style</a> *style, <a class="el" href="structcss__select__state.html">css_select_state</a> *state)</dt>
-<dd><a class="anchor" id="_todo000010"></a>cue-before  </dd>
+<dd><a class="anchor" id="_todo000011"></a>cue-before  </dd>
 <dt>Member <a class="el" href="select_2properties_2elevation_8c.html#ab6e2ee95dcdd8f595f0c9fe0b86c15cb">css__cascade_elevation</a>  (uint32_t opv, <a class="el" href="structcss__style.html">css_style</a> *style, <a class="el" href="structcss__select__state.html">css_select_state</a> *state)</dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000012"></a>set computed elevation </p>
-<p class="enddd"><a class="anchor" id="_todo000011"></a>convert to public values  </p>
+<dd><p class="startdd"><a class="anchor" id="_todo000013"></a>set computed elevation </p>
+<p class="enddd"><a class="anchor" id="_todo000012"></a>convert to public values  </p>
 </dd>
 <dt>Member <a class="el" href="select_2properties_2font__family_8c.html#a851e48a52f0b1c321f8a4bf1c0a97ddb">css__cascade_font_family</a>  (uint32_t opv, <a class="el" href="structcss__style.html">css_style</a> *style, <a class="el" href="structcss__select__state.html">css_select_state</a> *state)</dt>
-<dd><a class="anchor" id="_todo000013"></a>Do this at bytecode generation time?  </dd>
+<dd><a class="anchor" id="_todo000014"></a>Do this at bytecode generation time?  </dd>
 <dt>Member <a class="el" href="helpers_8c.html#a03353ab7af2b8657ee7ce07931ac6a43">css__cascade_length</a>  (uint32_t opv, <a class="el" href="structcss__style.html">css_style</a> *style, <a class="el" href="structcss__select__state.html">css_select_state</a> *state, <a class="el" href="libcss_2include_2libcss_2errors_8h.html#a387614d49cf7f5377cbf93f9f411a782">css_error(*fun)</a>(<a class="el" href="structcss__computed__style.html">css_computed_style</a> *, uint8_t, css_fixed, css_unit))</dt>
-<dd><a class="anchor" id="_todo000015"></a>lose fun != NULL once all properties have set routines  </dd>
+<dd><a class="anchor" id="_todo000016"></a>lose fun != NULL once all properties have set routines  </dd>
 <dt>Member <a class="el" href="helpers_8c.html#a00f57513c7609bc0989f86de12275e88">css__cascade_number</a>  (uint32_t opv, <a class="el" href="structcss__style.html">css_style</a> *style, <a class="el" href="structcss__select__state.html">css_select_state</a> *state, <a class="el" href="libcss_2include_2libcss_2errors_8h.html#a387614d49cf7f5377cbf93f9f411a782">css_error(*fun)</a>(<a class="el" href="structcss__computed__style.html">css_computed_style</a> *, uint8_t, css_fixed))</dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000016"></a>values </p>
-<p class="enddd"><a class="anchor" id="_todo000017"></a>lose fun != NULL once all properties have set routines  </p>
+<dd><p class="startdd"><a class="anchor" id="_todo000017"></a>values </p>
+<p class="enddd"><a class="anchor" id="_todo000018"></a>lose fun != NULL once all properties have set routines  </p>
 </dd>
 <dt>Member <a class="el" href="helpers_8c.html#ad7380409a380c7b4b1ac678ebd6b4740">css__cascade_page_break_after_before_inside</a>  (uint32_t opv, <a class="el" href="structcss__style.html">css_style</a> *style, <a class="el" href="structcss__select__state.html">css_select_state</a> *state, <a class="el" href="libcss_2include_2libcss_2errors_8h.html#a387614d49cf7f5377cbf93f9f411a782">css_error(*fun)</a>(<a class="el" href="structcss__computed__style.html">css_computed_style</a> *, uint8_t))</dt>
-<dd><a class="anchor" id="_todo000018"></a>lose fun != NULL  </dd>
+<dd><a class="anchor" id="_todo000019"></a>lose fun != NULL  </dd>
 <dt>Member <a class="el" href="pause__after_8c.html#a0b9f107d28acb8659141bc1db258277f">css__cascade_pause_after</a>  (uint32_t opv, <a class="el" href="structcss__style.html">css_style</a> *style, <a class="el" href="structcss__select__state.html">css_select_state</a> *state)</dt>
-<dd><a class="anchor" id="_todo000020"></a>pause-after  </dd>
+<dd><a class="anchor" id="_todo000021"></a>pause-after  </dd>
 <dt>Member <a class="el" href="pause__before_8c.html#a079cbd766ba8a51e9bfc170463af68a8">css__cascade_pause_before</a>  (uint32_t opv, <a class="el" href="structcss__style.html">css_style</a> *style, <a class="el" href="structcss__select__state.html">css_select_state</a> *state)</dt>
-<dd><a class="anchor" id="_todo000021"></a>pause-before  </dd>
+<dd><a class="anchor" id="_todo000022"></a>pause-before  </dd>
 <dt>Member <a class="el" href="pitch_8c.html#af0ddb632166b3b2b3af17249efe39004">css__cascade_pitch</a>  (uint32_t opv, <a class="el" href="structcss__style.html">css_style</a> *style, <a class="el" href="structcss__select__state.html">css_select_state</a> *state)</dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000022"></a>convert to public values </p>
-<p class="enddd"><a class="anchor" id="_todo000023"></a>pitch  </p>
+<dd><p class="startdd"><a class="anchor" id="_todo000023"></a>convert to public values </p>
+<p class="enddd"><a class="anchor" id="_todo000024"></a>pitch  </p>
 </dd>
 <dt>Member <a class="el" href="pitch__range_8c.html#a5e5b9cedcdf7a57c557f9745649d01aa">css__cascade_pitch_range</a>  (uint32_t opv, <a class="el" href="structcss__style.html">css_style</a> *style, <a class="el" href="structcss__select__state.html">css_select_state</a> *state)</dt>
-<dd><a class="anchor" id="_todo000024"></a>pitch-range  </dd>
+<dd><a class="anchor" id="_todo000025"></a>pitch-range  </dd>
 <dt>Member <a class="el" href="select_2properties_2play__during_8c.html#afb19899776b09405583c2c11a38cfc43">css__cascade_play_during</a>  (uint32_t opv, <a class="el" href="structcss__style.html">css_style</a> *style, <a class="el" href="structcss__select__state.html">css_select_state</a> *state)</dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000025"></a>convert to public values </p>
-<p class="interdd"><a class="anchor" id="_todo000026"></a>mix &amp; repeat </p>
-<p class="enddd"><a class="anchor" id="_todo000027"></a>play-during  </p>
+<dd><p class="startdd"><a class="anchor" id="_todo000026"></a>convert to public values </p>
+<p class="interdd"><a class="anchor" id="_todo000027"></a>mix &amp; repeat </p>
+<p class="enddd"><a class="anchor" id="_todo000028"></a>play-during  </p>
 </dd>
 <dt>Member <a class="el" href="richness_8c.html#a32eec1e7be188e687a4089addc9d20cd">css__cascade_richness</a>  (uint32_t opv, <a class="el" href="structcss__style.html">css_style</a> *style, <a class="el" href="structcss__select__state.html">css_select_state</a> *state)</dt>
-<dd><a class="anchor" id="_todo000028"></a>richness  </dd>
+<dd><a class="anchor" id="_todo000029"></a>richness  </dd>
 <dt>Member <a class="el" href="speak_8c.html#a5827ca9aec2eff3bfb2afc63610ecf07">css__cascade_speak</a>  (uint32_t opv, <a class="el" href="structcss__style.html">css_style</a> *style, <a class="el" href="structcss__select__state.html">css_select_state</a> *state)</dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000030"></a>speak </p>
-<p class="enddd"><a class="anchor" id="_todo000029"></a>convert to public values  </p>
+<dd><p class="startdd"><a class="anchor" id="_todo000030"></a>convert to public values </p>
+<p class="enddd"><a class="anchor" id="_todo000031"></a>speak  </p>
 </dd>
 <dt>Member <a class="el" href="speak__header_8c.html#a077072947613232ae0e5c40d0602c8df">css__cascade_speak_header</a>  (uint32_t opv, <a class="el" href="structcss__style.html">css_style</a> *style, <a class="el" href="structcss__select__state.html">css_select_state</a> *state)</dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000031"></a>convert to public values </p>
-<p class="enddd"><a class="anchor" id="_todo000032"></a>speak-header  </p>
+<dd><p class="startdd"><a class="anchor" id="_todo000032"></a>convert to public values </p>
+<p class="enddd"><a class="anchor" id="_todo000033"></a>speak-header  </p>
 </dd>
 <dt>Member <a class="el" href="speak__numeral_8c.html#af192ae9c06d607f8b7cdfe4cd78da788">css__cascade_speak_numeral</a>  (uint32_t opv, <a class="el" href="structcss__style.html">css_style</a> *style, <a class="el" href="structcss__select__state.html">css_select_state</a> *state)</dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000033"></a>convert to public values </p>
-<p class="enddd"><a class="anchor" id="_todo000034"></a>speak-numeral  </p>
+<dd><p class="startdd"><a class="anchor" id="_todo000034"></a>convert to public values </p>
+<p class="enddd"><a class="anchor" id="_todo000035"></a>speak-numeral  </p>
 </dd>
 <dt>Member <a class="el" href="speak__punctuation_8c.html#aed373869e0b80dea7d021879859b8bde">css__cascade_speak_punctuation</a>  (uint32_t opv, <a class="el" href="structcss__style.html">css_style</a> *style, <a class="el" href="structcss__select__state.html">css_select_state</a> *state)</dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000035"></a>convert to public values </p>
-<p class="enddd"><a class="anchor" id="_todo000036"></a>speak-punctuation  </p>
+<dd><p class="startdd"><a class="anchor" id="_todo000037"></a>speak-punctuation </p>
+<p class="enddd"><a class="anchor" id="_todo000036"></a>convert to public values  </p>
 </dd>
 <dt>Member <a class="el" href="speech__rate_8c.html#a5b7ef813e1878ffadbe168050ed35e44">css__cascade_speech_rate</a>  (uint32_t opv, <a class="el" href="structcss__style.html">css_style</a> *style, <a class="el" href="structcss__select__state.html">css_select_state</a> *state)</dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000037"></a>convert to public values </p>
-<p class="enddd"><a class="anchor" id="_todo000038"></a>speech-rate  </p>
+<dd><p class="startdd"><a class="anchor" id="_todo000038"></a>convert to public values </p>
+<p class="enddd"><a class="anchor" id="_todo000039"></a>speech-rate  </p>
 </dd>
 <dt>Member <a class="el" href="stress_8c.html#a05ff402f9bd7ad4ef8248dbd8afcb37e">css__cascade_stress</a>  (uint32_t opv, <a class="el" href="structcss__style.html">css_style</a> *style, <a class="el" href="structcss__select__state.html">css_select_state</a> *state)</dt>
-<dd><a class="anchor" id="_todo000039"></a>stress  </dd>
+<dd><a class="anchor" id="_todo000040"></a>stress  </dd>
 <dt>Member <a class="el" href="helpers_8c.html#a8b47d2d500287caf9526f6328041983e">css__cascade_uri_none</a>  (uint32_t opv, <a class="el" href="structcss__style.html">css_style</a> *style, <a class="el" href="structcss__select__state.html">css_select_state</a> *state, <a class="el" href="libcss_2include_2libcss_2errors_8h.html#a387614d49cf7f5377cbf93f9f411a782">css_error(*fun)</a>(<a class="el" href="structcss__computed__style.html">css_computed_style</a> *, uint8_t, lwc_string *))</dt>
-<dd><a class="anchor" id="_todo000014"></a>lose fun != NULL once all properties have set routines  </dd>
+<dd><a class="anchor" id="_todo000015"></a>lose fun != NULL once all properties have set routines  </dd>
 <dt>Member <a class="el" href="select_2properties_2voice__family_8c.html#ae4ab56b7f94cbaa349fde5378dbd25f6">css__cascade_voice_family</a>  (uint32_t opv, <a class="el" href="structcss__style.html">css_style</a> *style, <a class="el" href="structcss__select__state.html">css_select_state</a> *state)</dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000041"></a>voice-family </p>
-<p class="enddd"><a class="anchor" id="_todo000040"></a>Do this at bytecode generation time?  </p>
+<dd><p class="startdd"><a class="anchor" id="_todo000042"></a>voice-family </p>
+<p class="enddd"><a class="anchor" id="_todo000041"></a>Do this at bytecode generation time?  </p>
 </dd>
 <dt>Member <a class="el" href="volume_8c.html#aa290ddf8e65bf6fccfa38af493915370">css__cascade_volume</a>  (uint32_t opv, <a class="el" href="structcss__style.html">css_style</a> *style, <a class="el" href="structcss__select__state.html">css_select_state</a> *state)</dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000042"></a>convert to public values </p>
-<p class="enddd"><a class="anchor" id="_todo000043"></a>volume  </p>
+<dd><p class="startdd"><a class="anchor" id="_todo000044"></a>volume </p>
+<p class="enddd"><a class="anchor" id="_todo000043"></a>convert to public values  </p>
 </dd>
 <dt>Member <a class="el" href="stylesheet_8c.html#a02b2ac14812f9c70dd410aec44d58547">css__stylesheet_add_rule</a>  (<a class="el" href="structcss__stylesheet.html">css_stylesheet</a> *sheet, <a class="el" href="structcss__rule.html">css_rule</a> *rule, <a class="el" href="structcss__rule.html">css_rule</a> *parent)</dt>
-<dd><a class="anchor" id="_todo000048"></a>needs to trigger some event announcing styles have changed  </dd>
-<dt>Member <a class="el" href="stylesheet_8c.html#a9748eee28be36d3e20f50963ed20a30a">css__stylesheet_remove_rule</a>  (<a class="el" href="structcss__stylesheet.html">css_stylesheet</a> *sheet, <a class="el" href="structcss__rule.html">css_rule</a> *rule)</dt>
 <dd><a class="anchor" id="_todo000049"></a>needs to trigger some event announcing styles have changed  </dd>
+<dt>Member <a class="el" href="stylesheet_8c.html#a9748eee28be36d3e20f50963ed20a30a">css__stylesheet_remove_rule</a>  (<a class="el" href="structcss__stylesheet.html">css_stylesheet</a> *sheet, <a class="el" href="structcss__rule.html">css_rule</a> *rule)</dt>
+<dd><a class="anchor" id="_todo000050"></a>needs to trigger some event announcing styles have changed  </dd>
 <dt>Member <a class="el" href="stylesheet_8c.html#abe9129043fb617e8a944ed32cbb896be">css__stylesheet_rule_set_page_selector</a>  (<a class="el" href="structcss__stylesheet.html">css_stylesheet</a> *sheet, <a class="el" href="structcss__rule.html">css_rule</a> *rule, <a class="el" href="structcss__selector.html">css_selector</a> *selector)</dt>
-<dd><a class="anchor" id="_todo000047"></a>validate selector  </dd>
+<dd><a class="anchor" id="_todo000048"></a>validate selector  </dd>
 <dt>Member <a class="el" href="stylesheet_8c.html#a53fc5db48bc2dc25465e5dc9e62b72bd">css__stylesheet_selector_append_specific</a>  (<a class="el" href="structcss__stylesheet.html">css_stylesheet</a> *sheet, <a class="el" href="structcss__selector.html">css_selector</a> **parent, const <a class="el" href="structcss__selector__detail.html">css_selector_detail</a> *detail)</dt>
-<dd><a class="anchor" id="_todo000046"></a>this may want optimising &ndash; counting blocks is O(n) In practice, however, n isn't likely to be large, so may be fine  </dd>
+<dd><a class="anchor" id="_todo000047"></a>this may want optimising &ndash; counting blocks is O(n) In practice, however, n isn't likely to be large, so may be fine  </dd>
 <dt>Member <a class="el" href="computed_8c.html#a6048d61dea87bb824ac0a6d8c8dced1b">css_computed_left</a>  (const <a class="el" href="structcss__computed__style.html">css_computed_style</a> *style, css_fixed *length, css_unit *unit)</dt>
-<dd><a class="anchor" id="_todo000005"></a>Consider containing block's direction if overconstrained  </dd>
+<dd><a class="anchor" id="_todo000006"></a>Consider containing block's direction if overconstrained  </dd>
 <dt>Member <a class="el" href="computed_8c.html#a3c07dec7c321641a8c5bd0f81139b7a4">css_computed_right</a>  (const <a class="el" href="structcss__computed__style.html">css_computed_style</a> *style, css_fixed *length, css_unit *unit)</dt>
-<dd><a class="anchor" id="_todo000004"></a>Consider containing block's direction if overconstrained  </dd>
+<dd><a class="anchor" id="_todo000005"></a>Consider containing block's direction if overconstrained  </dd>
 <dt>Member <a class="el" href="stylesheet_8c.html#ae48ddf7c934a3cdfea5184dea1cba2f2">css_stylesheet_set_disabled</a>  (<a class="el" href="structcss__stylesheet.html">css_stylesheet</a> *sheet, bool disabled)</dt>
-<dd><a class="anchor" id="_todo000045"></a>needs to trigger some event announcing styles have changed </dd>
+<dd><a class="anchor" id="_todo000046"></a>needs to trigger some event announcing styles have changed  </dd>
+<dt>Member <a class="el" href="html__input__element_8c.html#af183e8904380f48fcae575068cead80f">dom_html_input_element_blur</a>  (<a class="el" href="structdom__html__input__element.html">dom_html_input_element</a> *ele)</dt>
+<dd><a class="anchor" id="_todo000063"></a>Is this event (a) default (b) bubbling and (c) cancelable?  </dd>
+<dt>Member <a class="el" href="html__select__element_8c.html#a4fa1aa3ad388d420c350023b5c8ef6b4">dom_html_select_element_blur</a>  (struct <a class="el" href="structdom__html__select__element.html">dom_html_select_element</a> *ele)</dt>
+<dd><a class="anchor" id="_todo000065"></a>Is this event (a) default (b) bubbling and (c) cancelable?  </dd>
+<dt>Member <a class="el" href="html__select__element_8c.html#a3cf0d51114a9875c9ebec9b228f519bf">dom_html_select_element_focus</a>  (struct <a class="el" href="structdom__html__select__element.html">dom_html_select_element</a> *ele)</dt>
+<dd><a class="anchor" id="_todo000066"></a>Is this event (a) default (b) bubbling and (c) cancelable?  </dd>
+<dt>Member <a class="el" href="structdrm__sarea.html#a89ed0ff583f17e4823cd26d1c09c164e">drm_sarea::drawable_lock</a>  </dt>
+<dd><a class="anchor" id="_todo000001"></a>Use readers/writer lock for <a class="el" href="structdrm__sarea.html#a89ed0ff583f17e4823cd26d1c09c164e">drm_sarea::drawable_lock</a>  </dd>
+<dt>Member <a class="el" href="treebuilder_8c.html#ac15ed0c8f1e86218051a42efd4bf4217">element_stack_pop</a>  (<a class="el" href="structhubbub__treebuilder.html">hubbub_treebuilder</a> *treebuilder, hubbub_ns *ns, element_type *type, void **node)</dt>
+<dd><p class="startdd"><a class="anchor" id="_todo000213"></a>reduce allocated stack size once there's enough free </p>
+<p class="enddd"><a class="anchor" id="_todo000212"></a>Can we optimise this? (i.e. by not traversing the entire list)  </p>
+</dd>
+<dt><a class="el" href="structFile.html">File</a> <a class="el" href="gif_8c.html">gif.c</a>  </dt>
+<dd><a class="anchor" id="_todo000214"></a>Plain text and comment extensions should be implemented.  </dd>
+<dt>Member <a class="el" href="modes_8h.html#a8a2dc605635f499bc5a4c199f6f98c7c">handle_after_after_body</a>  (<a class="el" href="structhubbub__treebuilder.html">hubbub_treebuilder</a> *treebuilder, const <a class="el" href="structhubbub__token.html">hubbub_token</a> *token)</dt>
+<dd><p class="startdd"><a class="anchor" id="_todo000086"></a>parse error </p>
+<p class="enddd"><a class="anchor" id="_todo000087"></a>parse error  </p>
+</dd>
+<dt>Member <a class="el" href="modes_8h.html#a4ea50c5daa044e3795c7b3f2692edc42">handle_after_after_frameset</a>  (<a class="el" href="structhubbub__treebuilder.html">hubbub_treebuilder</a> *treebuilder, const <a class="el" href="structhubbub__token.html">hubbub_token</a> *token)</dt>
+<dd><p class="startdd"><a class="anchor" id="_todo000088"></a>parse error </p>
+<p class="enddd"><a class="anchor" id="_todo000089"></a>parse error  </p>
+</dd>
+<dt>Member <a class="el" href="modes_8h.html#a662a7f1a8b788ead0c750bec8776d2f2">handle_after_body</a>  (<a class="el" href="structhubbub__treebuilder.html">hubbub_treebuilder</a> *treebuilder, const <a class="el" href="structhubbub__token.html">hubbub_token</a> *token)</dt>
+<dd><p class="startdd"><a class="anchor" id="_todo000090"></a>parse error </p>
+<p class="interdd"><a class="anchor" id="_todo000091"></a>parse error </p>
+<p class="interdd"><a class="anchor" id="_todo000094"></a>parse error </p>
+<p class="interdd"><a class="anchor" id="_todo000093"></a>parse error </p>
+<p class="enddd"><a class="anchor" id="_todo000092"></a>fragment case  </p>
+</dd>
+<dt>Member <a class="el" href="modes_8h.html#ac70eca1e6ba51365da84288958c51fa3">handle_after_frameset</a>  (<a class="el" href="structhubbub__treebuilder.html">hubbub_treebuilder</a> *treebuilder, const <a class="el" href="structhubbub__token.html">hubbub_token</a> *token)</dt>
+<dd><p class="startdd"><a class="anchor" id="_todo000100"></a>parse error </p>
+<p class="interdd"><a class="anchor" id="_todo000099"></a>parse error </p>
+<p class="interdd"><a class="anchor" id="_todo000098"></a>fragment case </p>
+<p class="interdd"><a class="anchor" id="_todo000097"></a>parse error </p>
+<p class="interdd"><a class="anchor" id="_todo000096"></a>parse error </p>
+<p class="enddd"><a class="anchor" id="_todo000095"></a>parse error  </p>
+</dd>
+<dt>Member <a class="el" href="modes_8h.html#a4d082ac5c73583e8a71feb7d04d822bd">handle_after_head</a>  (<a class="el" href="structhubbub__treebuilder.html">hubbub_treebuilder</a> *treebuilder, const <a class="el" href="structhubbub__token.html">hubbub_token</a> *token)</dt>
+<dd><p class="startdd"><a class="anchor" id="_todo000104"></a>parse error </p>
+<p class="interdd"><a class="anchor" id="_todo000103"></a>parse error </p>
+<p class="interdd"><a class="anchor" id="_todo000102"></a>parse error </p>
+<p class="enddd"><a class="anchor" id="_todo000101"></a>parse error  </p>
+</dd>
+<dt>Member <a class="el" href="modes_8h.html#a8839aaf90ba687ff433696e475e9382b">handle_before_head</a>  (<a class="el" href="structhubbub__treebuilder.html">hubbub_treebuilder</a> *treebuilder, const <a class="el" href="structhubbub__token.html">hubbub_token</a> *token)</dt>
+<dd><p class="startdd"><a class="anchor" id="_todo000106"></a>parse error </p>
+<p class="enddd"><a class="anchor" id="_todo000105"></a>parse error  </p>
+</dd>
+<dt>Member <a class="el" href="modes_8h.html#a4fe22f6fab43afeb64b79eb39c67f425">handle_before_html</a>  (<a class="el" href="structhubbub__treebuilder.html">hubbub_treebuilder</a> *treebuilder, const <a class="el" href="structhubbub__token.html">hubbub_token</a> *token)</dt>
+<dd><p class="startdd"><a class="anchor" id="_todo000108"></a>cache selection algorithm </p>
+<p class="enddd"><a class="anchor" id="_todo000107"></a>parse error  </p>
+</dd>
+<dt>Member <a class="el" href="modes_8h.html#a2284d9772a4319b44d8024be929b9b46">handle_generic_rcdata</a>  (<a class="el" href="structhubbub__treebuilder.html">hubbub_treebuilder</a> *treebuilder, const <a class="el" href="structhubbub__token.html">hubbub_token</a> *token)</dt>
+<dd><p class="startdd"><a class="anchor" id="_todo000110"></a>parse error </p>
+<p class="interdd"><a class="anchor" id="_todo000111"></a>if the current node's a script, mark it as already executed </p>
+<p class="enddd"><a class="anchor" id="_todo000112"></a>parse error  </p>
+</dd>
+<dt>Member <a class="el" href="modes_8h.html#a8bb6f6ed031268b72475b5385426496b">handle_in_body</a>  (<a class="el" href="structhubbub__treebuilder.html">hubbub_treebuilder</a> *treebuilder, const <a class="el" href="structhubbub__token.html">hubbub_token</a> *token)</dt>
+<dd><p class="startdd"><a class="anchor" id="_todo000114"></a>parse error </p>
+<p class="enddd"><a class="anchor" id="_todo000113"></a>parse error  </p>
+</dd>
+<dt>Member <a class="el" href="modes_8h.html#adb699ab3950c4762e11565d97d63da3a">handle_in_caption</a>  (<a class="el" href="structhubbub__treebuilder.html">hubbub_treebuilder</a> *treebuilder, const <a class="el" href="structhubbub__token.html">hubbub_token</a> *token)</dt>
+<dd><p class="startdd"><a class="anchor" id="_todo000150"></a>parse error </p>
+<p class="interdd"><a class="anchor" id="_todo000151"></a>parse error if type == TABLE </p>
+<p class="interdd"><a class="anchor" id="_todo000152"></a>parse error </p>
+<p class="interdd"><a class="anchor" id="_todo000153"></a>fragment case </p>
+<p class="enddd"><a class="anchor" id="_todo000154"></a>parse error  </p>
+</dd>
+<dt>Member <a class="el" href="modes_8h.html#a9c11b088c56db31c834e3089281993cb">handle_in_cell</a>  (<a class="el" href="structhubbub__treebuilder.html">hubbub_treebuilder</a> *treebuilder, const <a class="el" href="structhubbub__token.html">hubbub_token</a> *token)</dt>
+<dd><p class="startdd"><a class="anchor" id="_todo000158"></a>parse error </p>
+<p class="interdd"><a class="anchor" id="_todo000156"></a>fragment case </p>
+<p class="interdd"><a class="anchor" id="_todo000160"></a>parse error </p>
+<p class="interdd"><a class="anchor" id="_todo000159"></a>parse error </p>
+<p class="enddd"><a class="anchor" id="_todo000157"></a>parse error  </p>
+</dd>
+<dt>Member <a class="el" href="modes_8h.html#aef8f3ccba88ef1adc96974d241a576bf">handle_in_column_group</a>  (<a class="el" href="structhubbub__treebuilder.html">hubbub_treebuilder</a> *treebuilder, const <a class="el" href="structhubbub__token.html">hubbub_token</a> *token)</dt>
+<dd><p class="startdd"><a class="anchor" id="_todo000164"></a>parse error </p>
+<p class="interdd"><a class="anchor" id="_todo000165"></a>fragment case </p>
+<p class="interdd"><a class="anchor" id="_todo000163"></a>fragment case </p>
+<p class="interdd"><a class="anchor" id="_todo000162"></a>ack sc flag </p>
+<p class="enddd"><a class="anchor" id="_todo000161"></a>parse error  </p>
+</dd>
+<dt>Member <a class="el" href="modes_8h.html#a39765cd29cb58247846e1c519e94928a">handle_in_foreign_content</a>  (<a class="el" href="structhubbub__treebuilder.html">hubbub_treebuilder</a> *treebuilder, const <a class="el" href="structhubbub__token.html">hubbub_token</a> *token)</dt>
+<dd><p class="startdd"><a class="anchor" id="_todo000167"></a>parse error </p>
+<p class="enddd"><a class="anchor" id="_todo000168"></a>ack sc flag  </p>
+</dd>
+<dt>Member <a class="el" href="modes_8h.html#ae11d9740320074243be2f37f0d34413d">handle_in_frameset</a>  (<a class="el" href="structhubbub__treebuilder.html">hubbub_treebuilder</a> *treebuilder, const <a class="el" href="structhubbub__token.html">hubbub_token</a> *token)</dt>
+<dd><p class="startdd"><a class="anchor" id="_todo000171"></a>ack sc flag </p>
+<p class="interdd"><a class="anchor" id="_todo000174"></a>parse error </p>
+<p class="interdd"><a class="anchor" id="_todo000170"></a>parse error </p>
+<p class="interdd"><a class="anchor" id="_todo000172"></a>parse error </p>
+<p class="interdd"><a class="anchor" id="_todo000169"></a>parse error </p>
+<p class="interdd"><a class="anchor" id="_todo000175"></a>parse error </p>
+<p class="enddd"><a class="anchor" id="_todo000173"></a>parse error  </p>
+</dd>
+<dt>Member <a class="el" href="modes_8h.html#a28dce028e6b6aad5e38564aa2906a196">handle_in_head</a>  (<a class="el" href="structhubbub__treebuilder.html">hubbub_treebuilder</a> *treebuilder, const <a class="el" href="structhubbub__token.html">hubbub_token</a> *token)</dt>
+<dd><p class="startdd"><a class="anchor" id="_todo000180"></a>parse error </p>
+<p class="interdd"><a class="anchor" id="_todo000181"></a>parse error </p>
+<p class="interdd"><a class="anchor" id="_todo000177"></a>parse error </p>
+<p class="interdd"><a class="anchor" id="_todo000178"></a>ack sc flag </p>
+<p class="enddd"><a class="anchor" id="_todo000179"></a>need to ensure that the client callback sets the parser-inserted/already-executed script flags.  </p>
+</dd>
+<dt>Member <a class="el" href="modes_8h.html#aea265c193d637790ea8698f94a002758">handle_in_head_noscript</a>  (<a class="el" href="structhubbub__treebuilder.html">hubbub_treebuilder</a> *treebuilder, const <a class="el" href="structhubbub__token.html">hubbub_token</a> *token)</dt>
+<dd><p class="startdd"><a class="anchor" id="_todo000182"></a>parse error </p>
+<p class="interdd"><a class="anchor" id="_todo000183"></a>parse error </p>
+<p class="interdd"><a class="anchor" id="_todo000184"></a>parse error </p>
+<p class="interdd"><a class="anchor" id="_todo000185"></a>parse error </p>
+<p class="interdd"><a class="anchor" id="_todo000186"></a>parse error </p>
+<p class="enddd"><a class="anchor" id="_todo000187"></a>parse error  </p>
+</dd>
+<dt>Member <a class="el" href="modes_8h.html#abf15007b6407c5c0989907c48f35cc21">handle_in_row</a>  (<a class="el" href="structhubbub__treebuilder.html">hubbub_treebuilder</a> *treebuilder, const <a class="el" href="structhubbub__token.html">hubbub_token</a> *token)</dt>
+<dd><a class="anchor" id="_todo000189"></a>parse error  </dd>
+<dt>Member <a class="el" href="modes_8h.html#a52a2ef7b0f933da72ac9a59ac2d2ff21">handle_in_select</a>  (<a class="el" href="structhubbub__treebuilder.html">hubbub_treebuilder</a> *treebuilder, const <a class="el" href="structhubbub__token.html">hubbub_token</a> *token)</dt>
+<dd><p class="startdd"><a class="anchor" id="_todo000190"></a>parse error </p>
+<p class="interdd"><a class="anchor" id="_todo000195"></a>parse error </p>
+<p class="interdd"><a class="anchor" id="_todo000194"></a>parse error </p>
+<p class="interdd"><a class="anchor" id="_todo000193"></a>parse error </p>
+<p class="interdd"><a class="anchor" id="_todo000192"></a>parse error </p>
+<p class="enddd"><a class="anchor" id="_todo000191"></a>parse error  </p>
+</dd>
+<dt>Member <a class="el" href="modes_8h.html#a86b9fedee5421ffcfce824499cc0cee3">handle_in_select_in_table</a>  (<a class="el" href="structhubbub__treebuilder.html">hubbub_treebuilder</a> *treebuilder, const <a class="el" href="structhubbub__token.html">hubbub_token</a> *token)</dt>
+<dd><p class="startdd"><a class="anchor" id="_todo000196"></a>parse error </p>
+<p class="enddd"><a class="anchor" id="_todo000197"></a>fragment case  </p>
+</dd>
+<dt>Member <a class="el" href="modes_8h.html#a39273c855d6b1f14e5986da2fc097f2a">handle_in_table</a>  (<a class="el" href="structhubbub__treebuilder.html">hubbub_treebuilder</a> *treebuilder, const <a class="el" href="structhubbub__token.html">hubbub_token</a> *token)</dt>
+<dd><p class="startdd"><a class="anchor" id="_todo000201"></a>fragment case </p>
+<p class="interdd"><a class="anchor" id="_todo000202"></a>parse error </p>
+<p class="interdd"><a class="anchor" id="_todo000203"></a>parse error </p>
+<p class="interdd"><a class="anchor" id="_todo000200"></a>parse error </p>
+<p class="enddd"><a class="anchor" id="_todo000199"></a>parse error  </p>
+</dd>
+<dt>Member <a class="el" href="modes_8h.html#a125147e0f8f8f0255866380d63adf578">handle_in_table_body</a>  (<a class="el" href="structhubbub__treebuilder.html">hubbub_treebuilder</a> *treebuilder, const <a class="el" href="structhubbub__token.html">hubbub_token</a> *token)</dt>
+<dd><p class="startdd"><a class="anchor" id="_todo000205"></a>parse error </p>
+<p class="interdd"><a class="anchor" id="_todo000206"></a>parse error </p>
+<p class="enddd"><a class="anchor" id="_todo000207"></a>parse error  </p>
+</dd>
+<dt>Member <a class="el" href="modes_8h.html#abdb69d0db9b50f7992eb839b0e3e0164">handle_initial</a>  (<a class="el" href="structhubbub__treebuilder.html">hubbub_treebuilder</a> *treebuilder, const <a class="el" href="structhubbub__token.html">hubbub_token</a> *token)</dt>
+<dd><p class="startdd"><a class="anchor" id="_todo000208"></a>parse error </p>
+<p class="interdd"><a class="anchor" id="_todo000210"></a>parse error </p>
+<p class="enddd"><a class="anchor" id="_todo000209"></a>parse error  </p>
+</dd>
+<dt>Member <a class="el" href="libhubbub_2src_2charset_2detect_8h.html#a6e9c591b6a5e49ad7df18586b6e508a3">hubbub_charset_extract</a>  (const uint8_t *data, size_t len, uint16_t *mibenum, uint32_t *source)</dt>
+<dd><p class="startdd"><a class="anchor" id="_todo000067"></a>We probably want to wait for ~512 bytes of data / 500ms here </p>
+<p class="enddd"><a class="anchor" id="_todo000068"></a>Charset autodetection  </p>
+</dd>
+<dt>Member <a class="el" href="element-type_8h.html#a1c66260caf993024c96c0db098f18088a0f90de4d94720fdd5156fd7e7c3b0c9b">LABEL</a>  </dt>
+<dd><a class="anchor" id="_todo000109"></a>Enumerate phrasing elements  </dd>
+<dt>Member <a class="el" href="treebuilder_8c.html#a1302e0d93a0ffb1005fc4028af83f7e6">reset_insertion_mode</a>  (<a class="el" href="structhubbub__treebuilder.html">hubbub_treebuilder</a> *treebuilder)</dt>
+<dd><a class="anchor" id="_todo000211"></a>fragment parsing algorithm  </dd>
+<dt>Member <a class="el" href="tokeniser_8c.html#afead8770d078a06877a3e71c7c14f635">START_BUF</a>  (str, cptr, length)</dt>
+<dd><p class="startdd"><a class="anchor" id="_todo000069"></a>make some of these inline functions (type-safety) </p>
+<p class="interdd"></p>
+<p class="enddd">document them properly here </p>
+</dd>
 </dl>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->

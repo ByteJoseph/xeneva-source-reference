@@ -98,9 +98,9 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="keyword">typedef</span> <span class="keyword">struct </span>_buddy_block_ {</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    _buddy_block_ *next;</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    _buddy_block_ *prev;</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keywordtype">void</span>* head;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keywordtype">void</span>* <a class="code hl_typedef" href="list__sort_8h.html#ad05937a2e036331cdbc2eb49fed582bf">head</a>;</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <a class="code hl_typedef" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> buddy_magic;</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <a class="code hl_typedef" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> size;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <a class="code hl_typedef" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> <a class="code hl_variable" href="drm__bridge_8h.html#a854352f53b148adc24983a58a1866d66">size</a>;</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>}BuddyBlock;</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="preprocessor">#pragma pack(pop)</span></div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
@@ -118,13 +118,13 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment">* AuBuddyGetLevel -- Return the buddy level by its size</span></div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment">* @param size -- required size</span></div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment">*/</span></div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="keyword">extern</span> <span class="keywordtype">size_t</span> AuBuddyGetLevel(<span class="keywordtype">size_t</span> size);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="keyword">extern</span> <span class="keywordtype">size_t</span> AuBuddyGetLevel(<span class="keywordtype">size_t</span> <a class="code hl_variable" href="drm__bridge_8h.html#a854352f53b148adc24983a58a1866d66">size</a>);</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment">/*</span></div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment">* __AuBuddyAlloc -- allocates a memory from given level</span></div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment">* @param level -- level to check</span></div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="comment">*/</span></div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="keyword">extern</span> <span class="keywordtype">void</span>* __AuBuddyAlloc(<span class="keywordtype">size_t</span> level);</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="keyword">extern</span> <span class="keywordtype">void</span>* __AuBuddyAlloc(<span class="keywordtype">size_t</span> <a class="code hl_variable" href="drm__print_8h.html#a4d8634ba374002ecc7800ee7e88b959f">level</a>);</div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="comment">/*</span></div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="comment">* AuBuddyAlloc -- Allocate some memory</span></div>
@@ -143,6 +143,9 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aacefiex_8h_html_a435d1572bf3f880d55459d9805097f62"><div class="ttname"><a href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></div><div class="ttdeci">unsigned int uint32_t</div><div class="ttdef"><b>Definition</b> acefiex.h:163</div></div>
+<div class="ttc" id="adrm__bridge_8h_html_a854352f53b148adc24983a58a1866d66"><div class="ttname"><a href="drm__bridge_8h.html#a854352f53b148adc24983a58a1866d66">size</a></div><div class="ttdeci">size_t size</div><div class="ttdef"><b>Definition</b> drm_bridge.h:1299</div></div>
+<div class="ttc" id="adrm__print_8h_html_a4d8634ba374002ecc7800ee7e88b959f"><div class="ttname"><a href="drm__print_8h.html#a4d8634ba374002ecc7800ee7e88b959f">level</a></div><div class="ttdeci">const char * level</div><div class="ttdef"><b>Definition</b> drm_print.h:515</div></div>
+<div class="ttc" id="alist__sort_8h_html_ad05937a2e036331cdbc2eb49fed582bf"><div class="ttname"><a href="list__sort_8h.html#ad05937a2e036331cdbc2eb49fed582bf">head</a></div><div class="ttdeci">int const struct list_head const struct list_head struct list_head * head</div><div class="ttdef"><b>Definition</b> list_sort.h:13</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

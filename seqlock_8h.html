@@ -84,147 +84,73 @@ $(function() {
 <code>#include &lt;<a class="el" href="kcsan-checks_8h_source.html">linux/kcsan-checks.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="lockdep_8h_source.html">linux/lockdep.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="linux_2mutex_8h_source.html">linux/mutex.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="preempt_8h_source.html">linux/preempt.h</a>&gt;</code><br />
-<code>#include &lt;linux/seqlock_types.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="linux_2preempt_8h_source.html">linux/preempt.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="seqlock__types_8h_source.html">linux/seqlock_types.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="linux_2spinlock_8h_source.html">linux/spinlock.h</a>&gt;</code><br />
-<code>#include &lt;asm/processor.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="processor_8h_source.html">asm/processor.h</a>&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for seqlock.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="seqlock_8h__incl.png" border="0" usemap="#aXenevaOS_2BaseHdr_2linux_2seqlock_8h" alt=""/></div>
 <map name="aXenevaOS_2BaseHdr_2linux_2seqlock_8h" id="aXenevaOS_2BaseHdr_2linux_2seqlock_8h">
-<area shape="rect" title=" " alt="" coords="2071,5,2255,45"/>
-<area shape="rect" href="compiler_8h.html" title=" " alt="" coords="2100,387,2227,412"/>
-<area shape="poly" title=" " alt="" coords="2166,46,2166,178,2166,254,2166,373,2161,373,2161,254,2161,178,2161,46"/>
-<area shape="rect" href="cleanup_8h.html" title=" " alt="" coords="1993,167,2115,192"/>
-<area shape="poly" title=" " alt="" coords="2152,47,2072,157,2068,154,2147,44"/>
-<area shape="rect" href="kcsan-checks_8h.html" title=" " alt="" coords="2201,93,2360,119"/>
-<area shape="poly" title=" " alt="" coords="2193,43,2254,84,2251,88,2190,48"/>
-<area shape="rect" href="lockdep_8h.html" title=" " alt="" coords="1712,167,1833,192"/>
-<area shape="poly" title=" " alt="" coords="2071,36,1996,44,1918,57,1850,74,1824,84,1805,95,1794,108,1786,122,1778,153,1773,152,1782,120,1790,105,1802,91,1821,79,1848,69,1917,51,1995,39,2071,31"/>
-<area shape="rect" href="linux_2mutex_8h.html" title=" " alt="" coords="1815,93,1927,119"/>
-<area shape="poly" title=" " alt="" coords="2094,48,1928,92,1927,87,2093,43"/>
-<area shape="rect" href="preempt_8h.html" title=" " alt="" coords="2571,93,2697,119"/>
-<area shape="poly" title=" " alt="" coords="2256,39,2558,89,2557,95,2255,45"/>
-<area shape="rect" title=" " alt="" coords="2385,93,2547,119"/>
-<area shape="poly" title=" " alt="" coords="2236,43,2409,87,2408,92,2235,48"/>
-<area shape="rect" href="linux_2spinlock_8h.html" title=" " alt="" coords="1951,93,2075,119"/>
-<area shape="poly" title=" " alt="" coords="2128,48,2049,89,2046,84,2126,43"/>
-<area shape="rect" title=" " alt="" coords="2721,93,2849,119"/>
-<area shape="poly" title=" " alt="" coords="2256,35,2707,90,2707,96,2255,40"/>
-<area shape="rect" href="compiler__attributes_8h.html" title=" " alt="" coords="2201,167,2398,192"/>
-<area shape="poly" title=" " alt="" coords="2286,118,2295,153,2290,154,2281,120"/>
-<area shape="rect" href="BaseHdr_2linux_2types_8h.html" title=" " alt="" coords="2422,167,2529,192"/>
-<area shape="poly" title=" " alt="" coords="2313,116,2432,159,2430,164,2311,121"/>
-<area shape="rect" href="kernel_8h.html" title=" " alt="" coords="1481,240,1592,265"/>
-<area shape="poly" title=" " alt="" coords="2422,193,2410,195,2180,218,1952,235,1606,252,1606,246,1951,229,2179,213,2410,189,2422,188"/>
-<area shape="rect" title=" " alt="" coords="2437,387,2519,412"/>
-<area shape="poly" title=" " alt="" coords="2478,192,2480,372,2475,372,2473,192"/>
-<area shape="poly" title=" " alt="" coords="1592,257,1721,276,1797,291,1872,311,1902,323,1931,336,2016,362,2096,381,2094,386,2015,367,1929,341,1900,328,1870,316,1796,297,1720,281,1592,262"/>
-<area shape="rect" title=" " alt="" coords="799,460,869,485"/>
-<area shape="poly" title=" " alt="" coords="1481,260,1260,280,1145,296,1063,316,1020,339,965,376,861,453,858,449,962,372,1018,334,1061,311,1144,291,1259,275,1481,255"/>
-<area shape="rect" href="aa64cpu_8h.html" title=" " alt="" coords="239,387,392,412"/>
-<area shape="poly" title=" " alt="" coords="1481,257,1236,261,899,271,583,289,469,301,403,316,382,328,363,344,333,377,329,373,359,340,379,324,401,311,468,296,582,284,898,266,1236,256,1481,252"/>
-<area shape="rect" href="kmalloc_8h.html" title=" " alt="" coords="777,387,891,412"/>
-<area shape="poly" title=" " alt="" coords="1481,259,1358,265,1205,276,1057,292,997,303,952,316,925,329,900,345,858,379,854,375,896,341,923,324,950,311,996,298,1056,287,1204,270,1358,259,1481,253"/>
-<area shape="rect" href="__null_8h.html" title=" " alt="" coords="2039,533,2104,559"/>
-<area shape="poly" title=" " alt="" coords="1592,252,1748,259,1846,266,1948,278,2045,295,2132,318,2168,332,2199,347,2224,365,2242,385,2250,409,2247,432,2235,453,2217,473,2167,506,2116,531,2114,526,2165,501,2213,469,2231,450,2242,430,2245,410,2237,388,2221,369,2197,352,2166,336,2130,323,2044,300,1947,283,1846,272,1748,264,1592,257"/>
-<area shape="rect" href="aa64lowlevel_8h.html" title=" " alt="" coords="153,313,339,339"/>
-<area shape="poly" title=" " alt="" coords="1481,258,1018,277,692,294,358,316,353,316,352,311,358,311,692,289,1018,272,1481,253"/>
-<area shape="rect" href="build__bug_8h.html" title=" " alt="" coords="1942,313,2075,339"/>
-<area shape="poly" title=" " alt="" coords="1593,260,1929,310,1928,315,1592,265"/>
-<area shape="rect" href="minmax_8h.html" title=" " alt="" coords="5,313,129,339"/>
-<area shape="poly" title=" " alt="" coords="1481,257,1268,259,940,268,549,285,345,299,144,316,143,311,344,293,549,280,940,262,1268,254,1481,251"/>
-<area shape="rect" href="BaseHdr_2linux_2string_8h.html" title=" " alt="" coords="1110,387,1217,412"/>
-<area shape="poly" title=" " alt="" coords="1484,268,1407,288,1323,316,1253,349,1195,382,1192,377,1251,344,1321,311,1405,283,1482,263"/>
-<area shape="rect" href="sprintf_8h.html" title=" " alt="" coords="2201,313,2312,339"/>
-<area shape="poly" title=" " alt="" coords="1593,257,2188,315,2187,321,1592,262"/>
-<area shape="rect" href="bitmap_8h.html" title=" " alt="" coords="415,313,531,339"/>
-<area shape="poly" title=" " alt="" coords="1481,258,1090,273,821,290,545,314,544,309,820,284,1090,268,1481,253"/>
-<area shape="rect" href="BaseHdr_2linux_2list_8h.html" title=" " alt="" coords="1665,460,1755,485"/>
-<area shape="poly" title=" " alt="" coords="1575,263,1761,323,1849,357,1880,372,1896,385,1904,404,1901,420,1889,433,1870,444,1822,459,1770,468,1769,463,1821,454,1868,439,1885,429,1896,417,1899,404,1892,388,1877,377,1847,362,1759,328,1574,268"/>
-<area shape="rect" href="module_8h.html" title=" " alt="" coords="1957,387,2076,412"/>
-<area shape="poly" title=" " alt="" coords="1593,259,1700,279,1823,311,1896,340,1981,378,1979,383,1894,345,1821,316,1699,284,1592,265"/>
-<area shape="rect" href="printk_8h.html" title=" " alt="" coords="555,313,663,339"/>
-<area shape="poly" title=" " alt="" coords="1481,259,1143,277,915,294,682,316,677,317,676,311,682,311,914,288,1143,272,1481,254"/>
-<area shape="rect" href="linux_2timer_8h.html" title=" " alt="" coords="649,387,753,412"/>
-<area shape="poly" title=" " alt="" coords="1481,257,1298,261,1061,270,846,287,770,300,745,308,729,315,718,327,711,342,704,374,699,373,706,340,714,324,726,311,743,303,769,295,845,282,1061,265,1298,255,1481,252"/>
-<area shape="rect" href="workqueue_8h.html" title=" " alt="" coords="739,313,881,339"/>
-<area shape="poly" title=" " alt="" coords="1482,261,1230,283,901,316,896,317,895,311,900,311,1230,278,1481,256"/>
-<area shape="rect" href="ch9_8h.html" title=" " alt="" coords="966,387,1086,412"/>
-<area shape="poly" title=" " alt="" coords="1481,259,1387,265,1276,276,1171,293,1130,303,1099,316,1081,328,1066,344,1041,376,1037,373,1062,340,1078,324,1097,311,1128,298,1170,288,1275,271,1387,260,1481,254"/>
-<area shape="rect" href="otg_8h.html" title=" " alt="" coords="1109,313,1228,339"/>
-<area shape="poly" title=" " alt="" coords="1482,267,1242,313,1241,308,1481,262"/>
-<area shape="rect" href="linux_2virtio_8h.html" title=" " alt="" coords="1485,313,1589,339"/>
-<area shape="poly" title=" " alt="" coords="1532,266,1531,300,1525,300,1527,266"/>
-<area shape="rect" href="autoconf_8h.html" title=" " alt="" coords="1333,313,1460,339"/>
-<area shape="poly" title=" " alt="" coords="1515,268,1433,309,1430,305,1513,263"/>
-<area shape="rect" href="kstrtox_8h.html" title=" " alt="" coords="2336,313,2452,339"/>
-<area shape="poly" title=" " alt="" coords="1592,254,1899,272,2108,289,2323,311,2322,316,2107,294,1899,277,1592,259"/>
-<area shape="poly" title=" " alt="" coords="393,409,785,462,785,467,392,414"/>
-<area shape="rect" title=" " alt="" coords="452,460,528,485"/>
-<area shape="poly" title=" " alt="" coords="344,410,450,452,448,457,342,414"/>
-<area shape="rect" title=" " alt="" coords="283,460,347,485"/>
-<area shape="poly" title=" " alt="" coords="318,412,318,446,313,446,313,412"/>
-<area shape="poly" title=" " alt="" coords="837,412,837,446,831,446,831,412"/>
-<area shape="poly" title=" " alt="" coords="779,415,542,463,541,458,778,409"/>
-<area shape="poly" title=" " alt="" coords="240,340,224,375,222,394,228,410,241,421,261,431,317,447,380,458,439,465,438,470,379,463,315,452,260,436,238,426,224,414,216,394,219,373,235,338"/>
-<area shape="poly" title=" " alt="" coords="2035,336,2127,378,2125,383,2032,341"/>
-<area shape="poly" title=" " alt="" coords="1200,384,1229,385,1239,390,1243,399,1241,407,1234,412,1214,415,1213,410,1232,407,1236,403,1238,399,1235,394,1227,390,1199,389"/>
-<area shape="rect" href="__print_8h.html" title=" " alt="" coords="2302,387,2401,412"/>
-<area shape="poly" title=" " alt="" coords="2273,337,2326,376,2323,380,2270,341"/>
-<area shape="poly" title=" " alt="" coords="531,314,554,311,818,286,1079,269,1468,253,1468,259,1079,275,819,292,554,316,531,319"/>
-<area shape="poly" title=" " alt="" coords="1756,480,2026,533,2025,538,1755,485"/>
-<area shape="poly" title=" " alt="" coords="1743,457,1769,459,1778,464,1782,473,1774,485,1756,489,1755,484,1771,480,1777,472,1774,467,1767,464,1742,463"/>
-<area shape="rect" href="export_8h.html" title=" " alt="" coords="2625,460,2737,485"/>
-<area shape="poly" title=" " alt="" coords="2077,408,2089,409,2379,442,2611,463,2611,468,2379,447,2088,415,2076,413"/>
-<area shape="rect" href="init_8h.html" title=" " alt="" coords="1971,460,2062,485"/>
-<area shape="poly" title=" " alt="" coords="2019,412,2019,446,2014,446,2014,412"/>
-<area shape="rect" href="uart_8h.html" title=" " alt="" coords="513,387,624,412"/>
-<area shape="poly" title=" " alt="" coords="604,340,584,376,580,373,600,338"/>
-<area shape="rect" href="aucon_8h.html" title=" " alt="" coords="416,387,489,412"/>
-<area shape="poly" title=" " alt="" coords="585,341,492,383,490,378,583,336"/>
-<area shape="poly" title=" " alt="" coords="612,409,786,456,784,461,611,415"/>
-<area shape="poly" title=" " alt="" coords="558,414,515,453,511,449,554,410"/>
-<area shape="poly" title=" " alt="" coords="794,341,732,381,729,377,791,336"/>
-<area shape="poly" title=" " alt="" coords="1086,408,1098,409,1410,443,1651,464,1651,469,1409,448,1098,415,1086,413"/>
-<area shape="poly" title=" " alt="" coords="1147,341,1063,383,1060,378,1145,336"/>
-<area shape="poly" title=" " alt="" coords="1541,313,1543,279,1548,279,1546,313"/>
-<area shape="poly" title=" " alt="" coords="1511,341,1403,389,1378,403,1352,415,1288,431,1221,445,1090,462,972,471,883,474,883,469,972,466,1089,457,1220,439,1286,426,1350,409,1376,398,1401,384,1509,336"/>
-<area shape="poly" title=" " alt="" coords="1485,340,1231,388,1230,383,1484,335"/>
-<area shape="poly" title=" " alt="" coords="1541,338,1549,373,1558,393,1571,410,1589,426,1609,438,1652,456,1650,461,1607,443,1585,430,1567,414,1553,396,1544,375,1535,339"/>
-<area shape="poly" title=" " alt="" coords="1589,332,1944,385,1943,390,1589,338"/>
-<area shape="rect" href="BaseHdr_2linux_2stddef_8h.html" title=" " alt="" coords="1265,387,1339,412"/>
-<area shape="poly" title=" " alt="" coords="1500,341,1353,385,1352,380,1498,336"/>
-<area shape="rect" href="scatterlist_8h.html" title=" " alt="" coords="1580,387,1715,412"/>
-<area shape="poly" title=" " alt="" coords="1556,336,1619,377,1616,381,1553,341"/>
-<area shape="rect" href="completion_8h.html" title=" " alt="" coords="1739,387,1881,412"/>
-<area shape="poly" title=" " alt="" coords="1581,336,1753,381,1752,386,1580,341"/>
-<area shape="rect" href="pm_8h.html" title=" " alt="" coords="1414,387,1505,412"/>
-<area shape="poly" title=" " alt="" coords="1526,341,1484,379,1480,375,1522,337"/>
-<area shape="poly" title=" " alt="" coords="1640,388,1623,354,1599,315,1560,276,1564,272,1603,312,1628,351,1645,385"/>
-<area shape="poly" title=" " alt="" coords="1787,389,1569,274,1572,269,1790,384"/>
-<area shape="poly" title=" " alt="" coords="2398,312,2460,203,2464,206,2403,314"/>
-<area shape="poly" title=" " alt="" coords="2409,337,2455,375,2452,380,2406,341"/>
-<area shape="poly" title=" " alt="" coords="1736,195,1589,239,1587,233,1734,189"/>
-<area shape="poly" title=" " alt="" coords="1902,116,2012,159,2010,164,1900,121"/>
-<area shape="poly" title=" " alt="" coords="1874,120,1869,156,1861,177,1848,194,1830,205,1806,215,1744,231,1673,242,1606,249,1606,244,1672,237,1743,226,1804,210,1828,201,1844,190,1856,174,1864,155,1869,119"/>
-<area shape="poly" title=" " alt="" coords="1857,121,1801,161,1798,156,1854,117"/>
-<area shape="poly" title=" " alt="" coords="2572,120,2560,121,2128,173,2128,167,2559,116,2571,114"/>
-<area shape="poly" title=" " alt="" coords="2610,121,2515,163,2513,159,2607,116"/>
-<area shape="rect" href="linkage_8h.html" title=" " alt="" coords="2642,167,2759,192"/>
-<area shape="poly" title=" " alt="" coords="2647,117,2682,155,2679,158,2643,121"/>
-<area shape="rect" title=" " alt="" coords="2784,167,2905,192"/>
-<area shape="poly" title=" " alt="" coords="2669,116,2799,160,2797,165,2667,121"/>
-<area shape="poly" title=" " alt="" coords="2760,188,2901,215,2960,228,2988,238,3000,258,3006,277,3005,295,2999,313,2974,346,2934,376,2886,402,2834,425,2737,459,2735,453,2832,420,2883,398,2931,371,2970,342,2995,311,3000,294,3001,277,2996,260,2984,242,2958,233,2900,220,2759,194"/>
-<area shape="rect" href="compiler__types_8h.html" title=" " alt="" coords="2519,240,2690,265"/>
-<area shape="poly" title=" " alt="" coords="2687,194,2633,234,2630,229,2684,190"/>
-<area shape="rect" title=" " alt="" coords="2715,240,2836,265"/>
-<area shape="poly" title=" " alt="" coords="2714,190,2755,229,2751,232,2711,194"/>
-<area shape="rect" title=" " alt="" coords="2860,240,2973,265"/>
-<area shape="poly" title=" " alt="" coords="2736,189,2870,233,2868,238,2735,195"/>
-<area shape="poly" title=" " alt="" coords="2022,118,2043,153,2038,156,2017,120"/>
-<area shape="poly" title=" " alt="" coords="1999,121,1945,158,1910,178,1872,194,1803,216,1732,232,1606,249,1606,244,1731,226,1802,211,1870,190,1907,173,1943,153,1996,116"/>
+<area shape="rect" title=" " alt="" coords="766,5,950,45"/>
+<area shape="rect" href="compiler_8h.html" title=" " alt="" coords="129,93,256,119"/>
+<area shape="poly" title=" " alt="" coords="766,40,286,96,270,98,270,93,286,91,766,35"/>
+<area shape="rect" href="cleanup_8h.html" title=" " alt="" coords="764,321,885,346"/>
+<area shape="poly" title=" " alt="" coords="766,38,602,61,513,80,431,104,363,135,338,152,319,171,309,191,306,213,314,237,332,263,351,274,389,284,502,302,633,316,751,325,750,330,633,321,501,307,388,289,350,279,328,267,309,240,301,214,304,190,315,168,335,148,361,130,429,99,512,75,601,56,765,32"/>
+<area shape="rect" href="kcsan-checks_8h.html" title=" " alt="" coords="964,93,1123,119"/>
+<area shape="poly" title=" " alt="" coords="903,43,1005,85,1003,90,901,48"/>
+<area shape="rect" href="lockdep_8h.html" title=" " alt="" coords="1560,167,1681,192"/>
+<area shape="poly" title=" " alt="" coords="950,28,1241,50,1387,67,1447,78,1492,91,1541,118,1596,156,1593,161,1538,123,1490,96,1446,84,1386,73,1240,55,950,34"/>
+<area shape="rect" href="linux_2mutex_8h.html" title=" " alt="" coords="1367,93,1479,119"/>
+<area shape="poly" title=" " alt="" coords="950,37,1354,92,1353,98,950,42"/>
+<area shape="rect" href="linux_2preempt_8h.html" title=" " alt="" coords="575,93,701,119"/>
+<area shape="poly" title=" " alt="" coords="806,48,684,91,682,86,804,43"/>
+<area shape="rect" href="seqlock__types_8h.html" title=" " alt="" coords="777,93,939,119"/>
+<area shape="poly" title=" " alt="" coords="861,46,861,79,855,79,855,46"/>
+<area shape="rect" href="linux_2spinlock_8h.html" title=" " alt="" coords="813,240,937,265"/>
+<area shape="poly" title=" " alt="" coords="817,48,789,68,767,95,755,121,751,143,754,165,766,191,789,215,819,233,817,237,786,220,761,193,749,167,745,143,750,119,762,92,785,64,814,43"/>
+<area shape="rect" href="processor_8h.html" title=" " alt="" coords="1554,93,1682,119"/>
+<area shape="poly" title=" " alt="" coords="950,32,1214,56,1536,91,1541,91,1540,97,1535,96,1213,62,950,37"/>
+<area shape="rect" href="compiler__types_8h.html" title=" " alt="" coords="97,240,267,265"/>
+<area shape="poly" title=" " alt="" coords="194,119,187,226,181,226,189,119"/>
+<area shape="rect" href="compiler-context-analysis_8h.html" title=" " alt="" coords="5,313,175,353"/>
+<area shape="poly" title=" " alt="" coords="170,268,124,306,121,302,167,263"/>
+<area shape="rect" href="percpu__types_8h.html" title=" " alt="" coords="199,321,352,346"/>
+<area shape="poly" title=" " alt="" coords="197,263,253,310,249,314,194,268"/>
+<area shape="rect" href="compiler__attributes_8h.html" title=" " alt="" coords="1098,167,1295,192"/>
+<area shape="poly" title=" " alt="" coords="1069,116,1160,158,1158,163,1067,121"/>
+<area shape="rect" href="BaseHdr_2linux_2types_8h.html" title=" " alt="" coords="967,167,1074,192"/>
+<area shape="poly" title=" " alt="" coords="1042,120,1031,154,1026,153,1037,118"/>
+<area shape="rect" title=" " alt="" coords="1285,321,1396,346"/>
+<area shape="poly" title=" " alt="" coords="1043,190,1186,263,1301,313,1298,318,1184,268,1040,194"/>
+<area shape="rect" title=" " alt="" coords="1197,240,1279,265"/>
+<area shape="poly" title=" " alt="" coords="1056,189,1191,233,1189,238,1055,195"/>
+<area shape="poly" title=" " alt="" coords="1615,194,1586,230,1565,250,1542,268,1510,285,1476,300,1410,321,1409,315,1474,295,1508,280,1539,263,1562,246,1582,226,1611,191"/>
+<area shape="poly" title=" " alt="" coords="1434,118,1451,153,1454,173,1448,193,1433,214,1416,230,1382,247,1292,268,1187,294,1080,312,981,324,900,331,899,326,981,319,1080,307,1186,289,1291,263,1380,242,1413,225,1429,211,1444,191,1449,173,1446,154,1430,120"/>
+<area shape="poly" title=" " alt="" coords="1446,117,1471,137,1492,165,1503,193,1508,217,1505,241,1492,267,1476,286,1456,301,1411,321,1408,316,1453,297,1472,282,1488,264,1500,239,1503,217,1498,195,1488,168,1467,141,1442,121"/>
+<area shape="poly" title=" " alt="" coords="1456,116,1576,159,1575,164,1454,121"/>
+<area shape="rect" href="atomic_8h.html" title=" " alt="" coords="1319,167,1434,192"/>
+<area shape="poly" title=" " alt="" coords="1418,120,1394,157,1390,154,1413,118"/>
+<area shape="poly" title=" " alt="" coords="1356,194,1274,236,1272,231,1353,190"/>
+<area shape="poly" title=" " alt="" coords="650,117,752,238,809,308,805,311,748,242,646,121"/>
+<area shape="poly" title=" " alt="" coords="700,116,954,163,953,168,699,121"/>
+<area shape="rect" href="linux_2linkage_8h.html" title=" " alt="" coords="518,167,635,192"/>
+<area shape="poly" title=" " alt="" coords="630,121,598,158,594,154,626,117"/>
+<area shape="rect" href="asm_2preempt_8h.html" title=" " alt="" coords="372,167,493,192"/>
+<area shape="poly" title=" " alt="" coords="606,121,480,165,478,160,604,116"/>
+<area shape="poly" title=" " alt="" coords="518,194,259,240,258,235,517,189"/>
+<area shape="rect" href="stringify_8h.html" title=" " alt="" coords="480,240,601,265"/>
+<area shape="poly" title=" " alt="" coords="573,194,555,229,550,226,568,191"/>
+<area shape="rect" href="export_8h.html" title=" " alt="" coords="626,240,738,265"/>
+<area shape="poly" title=" " alt="" coords="595,190,655,230,652,235,592,194"/>
+<area shape="rect" href="asm_2linkage_8h.html" title=" " alt="" coords="343,240,456,265"/>
+<area shape="poly" title=" " alt="" coords="549,194,442,237,440,232,547,190"/>
+<area shape="rect" href="spinlock__types_8h.html" title=" " alt="" coords="776,167,943,192"/>
+<area shape="poly" title=" " alt="" coords="861,119,862,153,856,153,856,119"/>
+<area shape="poly" title=" " alt="" coords="865,192,872,226,867,227,859,193"/>
+<area shape="poly" title=" " alt="" coords="870,267,842,310,837,308,866,264"/>
+<area shape="poly" title=" " alt="" coords="938,262,1272,318,1271,323,937,267"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -232,9 +158,29 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="seqlock_8h__dep__incl.png" border="0" usemap="#aXenevaOS_2BaseHdr_2linux_2seqlock_8hdep" alt=""/></div>
 <map name="aXenevaOS_2BaseHdr_2linux_2seqlock_8hdep" id="aXenevaOS_2BaseHdr_2linux_2seqlock_8hdep">
-<area shape="rect" title=" " alt="" coords="5,5,189,45"/>
-<area shape="rect" href="mmzone_8h.html" title=" " alt="" coords="5,93,189,133"/>
-<area shape="poly" title=" " alt="" coords="100,59,100,93,95,93,95,59"/>
+<area shape="rect" title=" " alt="" coords="578,5,762,45"/>
+<area shape="rect" href="drm__vblank_8h.html" title=" " alt="" coords="375,93,554,133"/>
+<area shape="poly" title=" " alt="" coords="613,53,511,96,509,91,611,48"/>
+<area shape="rect" href="dma-resv_8h.html" title=" " alt="" coords="578,93,762,133"/>
+<area shape="poly" title=" " alt="" coords="673,59,673,93,667,93,667,59"/>
+<area shape="rect" href="mmzone_8h.html" title=" " alt="" coords="786,93,970,133"/>
+<area shape="poly" title=" " alt="" coords="729,48,833,91,831,96,727,53"/>
+<area shape="rect" href="drm__gem_8h.html" title=" " alt="" coords="502,181,681,221"/>
+<area shape="poly" title=" " alt="" coords="645,145,611,183,607,179,641,142"/>
+<area shape="rect" href="drm__gpuvm_8h.html" title=" " alt="" coords="693,269,871,309"/>
+<area shape="poly" title=" " alt="" coords="692,144,772,268,768,271,687,147"/>
+<area shape="rect" href="drm__gem__dma__helper_8h.html" title=" " alt="" coords="5,269,188,309"/>
+<area shape="poly" title=" " alt="" coords="489,223,201,272,189,274,188,269,200,267,488,217"/>
+<area shape="rect" href="drm__gem__shmem__helper_8h.html" title=" " alt="" coords="213,269,415,309"/>
+<area shape="poly" title=" " alt="" coords="518,228,376,272,374,267,517,223"/>
+<area shape="rect" href="drm__gem__ttm__helper_8h.html" title=" " alt="" coords="439,269,618,309"/>
+<area shape="poly" title=" " alt="" coords="571,234,545,271,540,268,567,231"/>
+<area shape="rect" href="drm__gem__vram__helper_8h.html" title=" " alt="" coords="457,357,645,397"/>
+<area shape="poly" title=" " alt="" coords="617,232,635,269,637,290,632,310,612,338,587,359,583,355,608,335,628,308,632,290,629,270,612,234"/>
+<area shape="poly" title=" " alt="" coords="647,225,741,267,739,272,645,229"/>
+<area shape="poly" title=" " alt="" coords="540,322,549,356,544,358,535,323"/>
+<area shape="rect" href="drm__debugfs_8h.html" title=" " alt="" coords="693,357,871,397"/>
+<area shape="poly" title=" " alt="" coords="785,323,785,357,779,357,779,323"/>
 </map>
 </div>
 </div>
@@ -257,17 +203,17 @@ Macros</h2></td></tr>
 <tr class="separator:ab942a446cda3a19bc04a37ceb88141ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd7b40bec3fdee41ffaca5530223c8b6" id="r_acd7b40bec3fdee41ffaca5530223c8b6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="seqlock_8h.html#acd7b40bec3fdee41ffaca5530223c8b6">seqcount_lockdep_reader_access</a>(x)</td></tr>
 <tr class="separator:acd7b40bec3fdee41ffaca5530223c8b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a48b3ab731b1db406397d5090e6a3b266" id="r_a48b3ab731b1db406397d5090e6a3b266"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="seqlock_8h.html#a48b3ab731b1db406397d5090e6a3b266">class_seqlock_init_constructor</a>(_T)&#160;&#160;&#160;WITH_LOCK_GUARD_1_ATTRS(<a class="el" href="seqlock_8h.html#a6d4fe64a08372b208f0e138a7dce73fc">seqlock_init</a>, _T)</td></tr>
+<tr class="memitem:a48b3ab731b1db406397d5090e6a3b266" id="r_a48b3ab731b1db406397d5090e6a3b266"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="seqlock_8h.html#a48b3ab731b1db406397d5090e6a3b266">class_seqlock_init_constructor</a>(_T)&#160;&#160;&#160;<a class="el" href="cleanup_8h.html#a76ff8f8cf02e483be1cc57cf9cafcc36">WITH_LOCK_GUARD_1_ATTRS</a>(<a class="el" href="seqlock_8h.html#a6d4fe64a08372b208f0e138a7dce73fc">seqlock_init</a>, _T)</td></tr>
 <tr class="separator:a48b3ab731b1db406397d5090e6a3b266"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">: Name of the seqcount_t instance</h2></td></tr>
 <tr><td class="ititle" colspan="2"><p><a class="el" href="seqlock_8h.html#aec4f557bec8fb596f1d37d38c7e96596">SEQCNT_ZERO()</a> - static initializer for seqcount_t </p>
 </td></tr>
-<tr class="memitem:aec4f557bec8fb596f1d37d38c7e96596" id="r_aec4f557bec8fb596f1d37d38c7e96596"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="seqlock_8h.html#aec4f557bec8fb596f1d37d38c7e96596">SEQCNT_ZERO</a>(<a class="el" href="kobject_8h.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>)&#160;&#160;&#160;{ .sequence = 0, <a class="el" href="seqlock_8h.html#a98fac57b7159ba88a730cfd79b6caca4">SEQCOUNT_DEP_MAP_INIT</a>(<a class="el" href="kobject_8h.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>) }</td></tr>
+<tr class="memitem:aec4f557bec8fb596f1d37d38c7e96596" id="r_aec4f557bec8fb596f1d37d38c7e96596"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="seqlock_8h.html#aec4f557bec8fb596f1d37d38c7e96596">SEQCNT_ZERO</a>(<a class="el" href="drm__crtc_8h.html#aed88e009d7772dfc9026cb1f5492b458">name</a>)&#160;&#160;&#160;{ .sequence = 0, <a class="el" href="seqlock_8h.html#a98fac57b7159ba88a730cfd79b6caca4">SEQCOUNT_DEP_MAP_INIT</a>(<a class="el" href="drm__crtc_8h.html#aed88e009d7772dfc9026cb1f5492b458">name</a>) }</td></tr>
 <tr class="separator:aec4f557bec8fb596f1d37d38c7e96596"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a882139d908b34f99af2745a94ea14de7" id="r_a882139d908b34f99af2745a94ea14de7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="seqlock_8h.html#a882139d908b34f99af2745a94ea14de7">seqcount_LOCKNAME_init</a>(s,  _lock,  lockname)</td></tr>
 <tr class="separator:a882139d908b34f99af2745a94ea14de7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a719d78f3dc5fc7d13738409a660ebb38" id="r_a719d78f3dc5fc7d13738409a660ebb38"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="seqlock_8h.html#a719d78f3dc5fc7d13738409a660ebb38">seqcount_raw_spinlock_init</a>(s,  lock)&#160;&#160;&#160;<a class="el" href="seqlock_8h.html#a882139d908b34f99af2745a94ea14de7">seqcount_LOCKNAME_init</a>(s, lock, raw_spinlock)</td></tr>
+<tr class="memitem:a719d78f3dc5fc7d13738409a660ebb38" id="r_a719d78f3dc5fc7d13738409a660ebb38"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="seqlock_8h.html#a719d78f3dc5fc7d13738409a660ebb38">seqcount_raw_spinlock_init</a>(s,  lock)&#160;&#160;&#160;<a class="el" href="seqlock_8h.html#a882139d908b34f99af2745a94ea14de7">seqcount_LOCKNAME_init</a>(s, lock, <a class="el" href="structraw__spinlock.html">raw_spinlock</a>)</td></tr>
 <tr class="separator:a719d78f3dc5fc7d13738409a660ebb38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8e6bf7d6e9c76b632be498aebfbe439" id="r_af8e6bf7d6e9c76b632be498aebfbe439"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="seqlock_8h.html#af8e6bf7d6e9c76b632be498aebfbe439">seqcount_spinlock_init</a>(s,  lock)&#160;&#160;&#160;<a class="el" href="seqlock_8h.html#a882139d908b34f99af2745a94ea14de7">seqcount_LOCKNAME_init</a>(s, lock, spinlock)</td></tr>
 <tr class="separator:af8e6bf7d6e9c76b632be498aebfbe439"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -275,23 +221,23 @@ Macros</h2></td></tr>
 <tr class="separator:abacaa4a74d1bdf973519f3f1231b1708"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a80fa8d1647a1f521c8916e8d26f55f37" id="r_a80fa8d1647a1f521c8916e8d26f55f37"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="seqlock_8h.html#a80fa8d1647a1f521c8916e8d26f55f37">seqcount_mutex_init</a>(s,  lock)&#160;&#160;&#160;<a class="el" href="seqlock_8h.html#a882139d908b34f99af2745a94ea14de7">seqcount_LOCKNAME_init</a>(s, lock, <a class="el" href="structmutex.html">mutex</a>)</td></tr>
 <tr class="separator:a80fa8d1647a1f521c8916e8d26f55f37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d1ed31090bbe6dc5cd6da935b57d24a" id="r_a1d1ed31090bbe6dc5cd6da935b57d24a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="seqlock_8h.html#a1d1ed31090bbe6dc5cd6da935b57d24a">SEQCOUNT_LOCKNAME</a>(lockname,  locktype,  <a class="el" href="preempt_8h.html#a52c6f862b2844e7bcc7c6343940d26e2">preemptible</a>,  lockbase)</td></tr>
+<tr class="memitem:a1d1ed31090bbe6dc5cd6da935b57d24a" id="r_a1d1ed31090bbe6dc5cd6da935b57d24a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="seqlock_8h.html#a1d1ed31090bbe6dc5cd6da935b57d24a">SEQCOUNT_LOCKNAME</a>(lockname,  locktype,  <a class="el" href="linux_2preempt_8h.html#a52c6f862b2844e7bcc7c6343940d26e2">preemptible</a>,  lockbase)</td></tr>
 <tr class="separator:a1d1ed31090bbe6dc5cd6da935b57d24a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af3110e07e5c432554d13d262b4cc44bd" id="r_af3110e07e5c432554d13d262b4cc44bd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="seqlock_8h.html#af3110e07e5c432554d13d262b4cc44bd">__SEQ_RT</a>&#160;&#160;&#160;<a class="el" href="kernel_8h.html#a531c4f08aa1262295102e1987746e8f7">IS_ENABLED</a>(CONFIG_PREEMPT_RT)</td></tr>
+<tr class="memitem:af3110e07e5c432554d13d262b4cc44bd" id="r_af3110e07e5c432554d13d262b4cc44bd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="seqlock_8h.html#af3110e07e5c432554d13d262b4cc44bd">__SEQ_RT</a>&#160;&#160;&#160;<a class="el" href="kconfig_8h.html#a2e3f1f46acb8ff1339122bf2bc09d30c">IS_ENABLED</a>(CONFIG_PREEMPT_RT)</td></tr>
 <tr class="separator:af3110e07e5c432554d13d262b4cc44bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5007eda4290b8b7d42bda032ce30c12d" id="r_a5007eda4290b8b7d42bda032ce30c12d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="seqlock_8h.html#a5007eda4290b8b7d42bda032ce30c12d">SEQCOUNT_LOCKNAME_ZERO</a>(seq_name,  assoc_lock)</td></tr>
 <tr class="separator:a5007eda4290b8b7d42bda032ce30c12d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe065a6cb689d3f6f84049d1baea39b8" id="r_afe065a6cb689d3f6f84049d1baea39b8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="seqlock_8h.html#afe065a6cb689d3f6f84049d1baea39b8">SEQCNT_RAW_SPINLOCK_ZERO</a>(<a class="el" href="kobject_8h.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>,  lock)&#160;&#160;&#160;<a class="el" href="seqlock_8h.html#a5007eda4290b8b7d42bda032ce30c12d">SEQCOUNT_LOCKNAME_ZERO</a>(<a class="el" href="kobject_8h.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, lock)</td></tr>
+<tr class="memitem:afe065a6cb689d3f6f84049d1baea39b8" id="r_afe065a6cb689d3f6f84049d1baea39b8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="seqlock_8h.html#afe065a6cb689d3f6f84049d1baea39b8">SEQCNT_RAW_SPINLOCK_ZERO</a>(<a class="el" href="drm__crtc_8h.html#aed88e009d7772dfc9026cb1f5492b458">name</a>,  lock)&#160;&#160;&#160;<a class="el" href="seqlock_8h.html#a5007eda4290b8b7d42bda032ce30c12d">SEQCOUNT_LOCKNAME_ZERO</a>(<a class="el" href="drm__crtc_8h.html#aed88e009d7772dfc9026cb1f5492b458">name</a>, lock)</td></tr>
 <tr class="separator:afe065a6cb689d3f6f84049d1baea39b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5190533d3cb0ee5493163b05a484d6cb" id="r_a5190533d3cb0ee5493163b05a484d6cb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="seqlock_8h.html#a5190533d3cb0ee5493163b05a484d6cb">SEQCNT_SPINLOCK_ZERO</a>(<a class="el" href="kobject_8h.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>,  lock)&#160;&#160;&#160;<a class="el" href="seqlock_8h.html#a5007eda4290b8b7d42bda032ce30c12d">SEQCOUNT_LOCKNAME_ZERO</a>(<a class="el" href="kobject_8h.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, lock)</td></tr>
+<tr class="memitem:a5190533d3cb0ee5493163b05a484d6cb" id="r_a5190533d3cb0ee5493163b05a484d6cb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="seqlock_8h.html#a5190533d3cb0ee5493163b05a484d6cb">SEQCNT_SPINLOCK_ZERO</a>(<a class="el" href="drm__crtc_8h.html#aed88e009d7772dfc9026cb1f5492b458">name</a>,  lock)&#160;&#160;&#160;<a class="el" href="seqlock_8h.html#a5007eda4290b8b7d42bda032ce30c12d">SEQCOUNT_LOCKNAME_ZERO</a>(<a class="el" href="drm__crtc_8h.html#aed88e009d7772dfc9026cb1f5492b458">name</a>, lock)</td></tr>
 <tr class="separator:a5190533d3cb0ee5493163b05a484d6cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd4c4089ba67dfdd4f305b4eafa5eaee" id="r_afd4c4089ba67dfdd4f305b4eafa5eaee"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="seqlock_8h.html#afd4c4089ba67dfdd4f305b4eafa5eaee">SEQCNT_RWLOCK_ZERO</a>(<a class="el" href="kobject_8h.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>,  lock)&#160;&#160;&#160;<a class="el" href="seqlock_8h.html#a5007eda4290b8b7d42bda032ce30c12d">SEQCOUNT_LOCKNAME_ZERO</a>(<a class="el" href="kobject_8h.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, lock)</td></tr>
+<tr class="memitem:afd4c4089ba67dfdd4f305b4eafa5eaee" id="r_afd4c4089ba67dfdd4f305b4eafa5eaee"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="seqlock_8h.html#afd4c4089ba67dfdd4f305b4eafa5eaee">SEQCNT_RWLOCK_ZERO</a>(<a class="el" href="drm__crtc_8h.html#aed88e009d7772dfc9026cb1f5492b458">name</a>,  lock)&#160;&#160;&#160;<a class="el" href="seqlock_8h.html#a5007eda4290b8b7d42bda032ce30c12d">SEQCOUNT_LOCKNAME_ZERO</a>(<a class="el" href="drm__crtc_8h.html#aed88e009d7772dfc9026cb1f5492b458">name</a>, lock)</td></tr>
 <tr class="separator:afd4c4089ba67dfdd4f305b4eafa5eaee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a122fcf73789de2ecada27328de59696f" id="r_a122fcf73789de2ecada27328de59696f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="seqlock_8h.html#a122fcf73789de2ecada27328de59696f">SEQCNT_MUTEX_ZERO</a>(<a class="el" href="kobject_8h.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>,  lock)&#160;&#160;&#160;<a class="el" href="seqlock_8h.html#a5007eda4290b8b7d42bda032ce30c12d">SEQCOUNT_LOCKNAME_ZERO</a>(<a class="el" href="kobject_8h.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, lock)</td></tr>
+<tr class="memitem:a122fcf73789de2ecada27328de59696f" id="r_a122fcf73789de2ecada27328de59696f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="seqlock_8h.html#a122fcf73789de2ecada27328de59696f">SEQCNT_MUTEX_ZERO</a>(<a class="el" href="drm__crtc_8h.html#aed88e009d7772dfc9026cb1f5492b458">name</a>,  lock)&#160;&#160;&#160;<a class="el" href="seqlock_8h.html#a5007eda4290b8b7d42bda032ce30c12d">SEQCOUNT_LOCKNAME_ZERO</a>(<a class="el" href="drm__crtc_8h.html#aed88e009d7772dfc9026cb1f5492b458">name</a>, lock)</td></tr>
 <tr class="separator:a122fcf73789de2ecada27328de59696f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2dc9a78a77b0edae4afbf3d7779b85b" id="r_af2dc9a78a77b0edae4afbf3d7779b85b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="seqlock_8h.html#af2dc9a78a77b0edae4afbf3d7779b85b">SEQCNT_WW_MUTEX_ZERO</a>(<a class="el" href="kobject_8h.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>,  lock)&#160;&#160;&#160;<a class="el" href="seqlock_8h.html#a5007eda4290b8b7d42bda032ce30c12d">SEQCOUNT_LOCKNAME_ZERO</a>(<a class="el" href="kobject_8h.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, lock)</td></tr>
+<tr class="memitem:af2dc9a78a77b0edae4afbf3d7779b85b" id="r_af2dc9a78a77b0edae4afbf3d7779b85b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="seqlock_8h.html#af2dc9a78a77b0edae4afbf3d7779b85b">SEQCNT_WW_MUTEX_ZERO</a>(<a class="el" href="drm__crtc_8h.html#aed88e009d7772dfc9026cb1f5492b458">name</a>,  lock)&#160;&#160;&#160;<a class="el" href="seqlock_8h.html#a5007eda4290b8b7d42bda032ce30c12d">SEQCOUNT_LOCKNAME_ZERO</a>(<a class="el" href="drm__crtc_8h.html#aed88e009d7772dfc9026cb1f5492b458">name</a>, lock)</td></tr>
 <tr class="separator:af2dc9a78a77b0edae4afbf3d7779b85b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abed70e508b6479ff1308d31638b76d00" id="r_abed70e508b6479ff1308d31638b76d00"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="seqlock_8h.html#abed70e508b6479ff1308d31638b76d00">__seqprop_case</a>(s,  lockname,  prop)&#160;&#160;&#160;	seqcount_##lockname##_t: __seqprop_##lockname##_##prop</td></tr>
+<tr class="memitem:abed70e508b6479ff1308d31638b76d00" id="r_abed70e508b6479ff1308d31638b76d00"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="seqlock_8h.html#abed70e508b6479ff1308d31638b76d00">__seqprop_case</a>(s,  lockname,  prop)&#160;&#160;&#160;	seqcount_##lockname##_t: __seqprop_##lockname##<a class="el" href="libunicode_8c.html#ae4dfd7b0d66121016d6466d2ff10e8ba">_</a>##prop</td></tr>
 <tr class="separator:abed70e508b6479ff1308d31638b76d00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3da3b5521de3c34cc6025270c7686e3d" id="r_a3da3b5521de3c34cc6025270c7686e3d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="seqlock_8h.html#a3da3b5521de3c34cc6025270c7686e3d">__seqprop</a>(s,  prop)</td></tr>
 <tr class="separator:a3da3b5521de3c34cc6025270c7686e3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -301,7 +247,7 @@ Macros</h2></td></tr>
 <tr class="separator:a3fff5e449404c6de4b8367803c6cda4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7764e809fb1ebca023c71354f88b0d08" id="r_a7764e809fb1ebca023c71354f88b0d08"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="seqlock_8h.html#a7764e809fb1ebca023c71354f88b0d08">seqprop_sequence</a>(s)&#160;&#160;&#160;<a class="el" href="seqlock_8h.html#a3da3b5521de3c34cc6025270c7686e3d">__seqprop</a>(s, sequence)(s)</td></tr>
 <tr class="separator:a7764e809fb1ebca023c71354f88b0d08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1df0e89a66efe2cb9470df033266426" id="r_ae1df0e89a66efe2cb9470df033266426"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="seqlock_8h.html#ae1df0e89a66efe2cb9470df033266426">seqprop_preemptible</a>(s)&#160;&#160;&#160;<a class="el" href="seqlock_8h.html#a3da3b5521de3c34cc6025270c7686e3d">__seqprop</a>(s, <a class="el" href="preempt_8h.html#a52c6f862b2844e7bcc7c6343940d26e2">preemptible</a>)(s)</td></tr>
+<tr class="memitem:ae1df0e89a66efe2cb9470df033266426" id="r_ae1df0e89a66efe2cb9470df033266426"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="seqlock_8h.html#ae1df0e89a66efe2cb9470df033266426">seqprop_preemptible</a>(s)&#160;&#160;&#160;<a class="el" href="seqlock_8h.html#a3da3b5521de3c34cc6025270c7686e3d">__seqprop</a>(s, <a class="el" href="linux_2preempt_8h.html#a52c6f862b2844e7bcc7c6343940d26e2">preemptible</a>)(s)</td></tr>
 <tr class="separator:ae1df0e89a66efe2cb9470df033266426"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a86021c614cf8aef5741f1d25ce8e80ac" id="r_a86021c614cf8aef5741f1d25ce8e80ac"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="seqlock_8h.html#a86021c614cf8aef5741f1d25ce8e80ac">seqprop_assert</a>(s)&#160;&#160;&#160;<a class="el" href="seqlock_8h.html#a3da3b5521de3c34cc6025270c7686e3d">__seqprop</a>(s, <a class="el" href="Drivers_2USB_2dwc2-uspi_2uspi_2assert_8h.html#a53022762464514790477ba81ce0ab36a">assert</a>)(s)</td></tr>
 <tr class="separator:a86021c614cf8aef5741f1d25ce8e80ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -337,17 +283,17 @@ Macros</h2></td></tr>
 <tr class="separator:a886a7ef7b446ac8fc497b8dabddb20b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e5c2b7dd233cb6422f41abb33566643" id="r_a2e5c2b7dd233cb6422f41abb33566643"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="seqlock_8h.html#a2e5c2b7dd233cb6422f41abb33566643">SEQCNT_LATCH_ZERO</a>(seq_name)</td></tr>
 <tr class="separator:a2e5c2b7dd233cb6422f41abb33566643"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e61a15c06688130c3e84e694f8384fe" id="r_a3e61a15c06688130c3e84e694f8384fe"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="seqlock_8h.html#a3e61a15c06688130c3e84e694f8384fe">seqcount_latch_init</a>(s)&#160;&#160;&#160;<a class="el" href="seqlock_8h.html#ab942a446cda3a19bc04a37ceb88141ca">seqcount_init</a>(&amp;(s)-&gt;seqcount)</td></tr>
+<tr class="memitem:a3e61a15c06688130c3e84e694f8384fe" id="r_a3e61a15c06688130c3e84e694f8384fe"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="seqlock_8h.html#a3e61a15c06688130c3e84e694f8384fe">seqcount_latch_init</a>(s)&#160;&#160;&#160;<a class="el" href="seqlock_8h.html#ab942a446cda3a19bc04a37ceb88141ca">seqcount_init</a>(&amp;(s)-&gt;<a class="el" href="structseqcount.html">seqcount</a>)</td></tr>
 <tr class="separator:a3e61a15c06688130c3e84e694f8384fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9aea083ccb816a41efaf2911b84ef14c" id="r_a9aea083ccb816a41efaf2911b84ef14c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="seqlock_8h.html#a9aea083ccb816a41efaf2911b84ef14c">__SEQLOCK_UNLOCKED</a>(lockname)</td></tr>
 <tr class="separator:a9aea083ccb816a41efaf2911b84ef14c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d4fe64a08372b208f0e138a7dce73fc" id="r_a6d4fe64a08372b208f0e138a7dce73fc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="seqlock_8h.html#a6d4fe64a08372b208f0e138a7dce73fc">seqlock_init</a>(sl)</td></tr>
 <tr class="separator:a6d4fe64a08372b208f0e138a7dce73fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a838cf2b8d7de44e7eaad44f5dcfb1f18" id="r_a838cf2b8d7de44e7eaad44f5dcfb1f18"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="seqlock_8h.html#a838cf2b8d7de44e7eaad44f5dcfb1f18">DEFINE_SEQLOCK</a>(sl)&#160;&#160;&#160;		seqlock_t sl = <a class="el" href="seqlock_8h.html#a9aea083ccb816a41efaf2911b84ef14c">__SEQLOCK_UNLOCKED</a>(sl)</td></tr>
+<tr class="memitem:a838cf2b8d7de44e7eaad44f5dcfb1f18" id="r_a838cf2b8d7de44e7eaad44f5dcfb1f18"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="seqlock_8h.html#a838cf2b8d7de44e7eaad44f5dcfb1f18">DEFINE_SEQLOCK</a>(sl)&#160;&#160;&#160;		<a class="el" href="seqlock__types_8h.html#ade565126772ae3199a98615ed8e1533b">seqlock_t</a> sl = <a class="el" href="seqlock_8h.html#a9aea083ccb816a41efaf2911b84ef14c">__SEQLOCK_UNLOCKED</a>(sl)</td></tr>
 <tr class="separator:a838cf2b8d7de44e7eaad44f5dcfb1f18"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38b1f33a53eb951903a7c54d73168961" id="r_a38b1f33a53eb951903a7c54d73168961"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="seqlock_8h.html#a38b1f33a53eb951903a7c54d73168961">write_seqlock_irqsave</a>(lock,  <a class="el" href="Drivers_2virtio_8h.html#aa2585d779da0ab21273a8d92de9a0ebe">flags</a>)&#160;&#160;&#160;	do { <a class="el" href="Drivers_2virtio_8h.html#aa2585d779da0ab21273a8d92de9a0ebe">flags</a> = __write_seqlock_irqsave(lock); } while (0)</td></tr>
+<tr class="memitem:a38b1f33a53eb951903a7c54d73168961" id="r_a38b1f33a53eb951903a7c54d73168961"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="seqlock_8h.html#a38b1f33a53eb951903a7c54d73168961">write_seqlock_irqsave</a>(lock,  <a class="el" href="Drivers_2virtio_8h.html#a04a0bd666e371f3fab92b8d0ef5dbdb0">flags</a>)&#160;&#160;&#160;	do { <a class="el" href="Drivers_2virtio_8h.html#a04a0bd666e371f3fab92b8d0ef5dbdb0">flags</a> = __write_seqlock_irqsave(lock); } while (0)</td></tr>
 <tr class="separator:a38b1f33a53eb951903a7c54d73168961"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab62b11a0455877d4e2da68a37d6687a8" id="r_ab62b11a0455877d4e2da68a37d6687a8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="seqlock_8h.html#ab62b11a0455877d4e2da68a37d6687a8">read_seqlock_excl_irqsave</a>(lock,  <a class="el" href="Drivers_2virtio_8h.html#aa2585d779da0ab21273a8d92de9a0ebe">flags</a>)&#160;&#160;&#160;	do { <a class="el" href="Drivers_2virtio_8h.html#aa2585d779da0ab21273a8d92de9a0ebe">flags</a> = __read_seqlock_excl_irqsave(lock); } while (0)</td></tr>
+<tr class="memitem:ab62b11a0455877d4e2da68a37d6687a8" id="r_ab62b11a0455877d4e2da68a37d6687a8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="seqlock_8h.html#ab62b11a0455877d4e2da68a37d6687a8">read_seqlock_excl_irqsave</a>(lock,  <a class="el" href="Drivers_2virtio_8h.html#a04a0bd666e371f3fab92b8d0ef5dbdb0">flags</a>)&#160;&#160;&#160;	do { <a class="el" href="Drivers_2virtio_8h.html#a04a0bd666e371f3fab92b8d0ef5dbdb0">flags</a> = __read_seqlock_excl_irqsave(lock); } while (0)</td></tr>
 <tr class="separator:ab62b11a0455877d4e2da68a37d6687a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b4ed540dccc46c0ed82bc3b85156435" id="r_a8b4ed540dccc46c0ed82bc3b85156435"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="seqlock_8h.html#a8b4ed540dccc46c0ed82bc3b85156435">__scoped_seqlock_read</a>(_seqlock,  _target,  _s)</td></tr>
 <tr class="separator:a8b4ed540dccc46c0ed82bc3b85156435"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -389,7 +335,7 @@ Macros</h2></td></tr>
 <div class="line">    kcsan_atomic_next(<a class="code hl_define" href="seqlock_8h.html#a7433762214409c8e0e6d64762878cfb8">KCSAN_SEQLOCK_REGION_MAX</a>);            \</div>
 <div class="line">    __seq;                              \</div>
 <div class="line">})</div>
-<div class="ttc" id="acompiler_8h_html_ac6c45889010c1bd68631771b64f18101"><div class="ttname"><a href="compiler_8h.html#ac6c45889010c1bd68631771b64f18101">unlikely</a></div><div class="ttdeci">#define unlikely(x)</div><div class="ttdef"><b>Definition</b> compiler.h:13</div></div>
+<div class="ttc" id="acompiler_8h_html_ac6c45889010c1bd68631771b64f18101"><div class="ttname"><a href="compiler_8h.html#ac6c45889010c1bd68631771b64f18101">unlikely</a></div><div class="ttdeci">#define unlikely(x)</div><div class="ttdef"><b>Definition</b> compiler.h:30</div></div>
 <div class="ttc" id="aseqlock_8h_html_a7433762214409c8e0e6d64762878cfb8"><div class="ttname"><a href="seqlock_8h.html#a7433762214409c8e0e6d64762878cfb8">KCSAN_SEQLOCK_REGION_MAX</a></div><div class="ttdeci">#define KCSAN_SEQLOCK_REGION_MAX</div><div class="ttdef"><b>Definition</b> seqlock.h:40</div></div>
 <div class="ttc" id="aseqlock_8h_html_a7764e809fb1ebca023c71354f88b0d08"><div class="ttname"><a href="seqlock_8h.html#a7764e809fb1ebca023c71354f88b0d08">seqprop_sequence</a></div><div class="ttdeci">#define seqprop_sequence(s)</div><div class="ttdef"><b>Definition</b> seqlock.h:259</div></div>
 </div><!-- fragment --><p><a class="el" href="seqlock_8h.html#a98442dad3f635e820eb34c3014839620">__read_seqcount_begin()</a> - begin a seqcount_t read section @s: Pointer to seqcount_t or any of the seqcount_LOCKNAME_t variants</p>
@@ -423,7 +369,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p><a class="el" href="seqlock_8h.html#a8162047f032a38727236b4353d98330c">__read_seqcount_retry()</a> - end a seqcount_t read section w/o barrier @s: Pointer to seqcount_t or any of the seqcount_LOCKNAME_t variants @start: count, from <a class="el" href="seqlock_8h.html#afb9ab9feb59fb42b7407e218e60e583e">read_seqcount_begin()</a></p>
-<p>__read_seqcount_retry is like read_seqcount_retry, but has no <a class="el" href="kernel_8h.html#a9b849177daf3d9558280d4af104d7f46">smp_rmb()</a> barrier. Callers should ensure that <a class="el" href="kernel_8h.html#a9b849177daf3d9558280d4af104d7f46">smp_rmb()</a> or equivalent ordering is provided before actually loading any of the variables that are to be protected in this critical section.</p>
+<p>__read_seqcount_retry is like read_seqcount_retry, but has no <a class="el" href="linux_2kernel_8h.html#a9b849177daf3d9558280d4af104d7f46">smp_rmb()</a> barrier. Callers should ensure that <a class="el" href="linux_2kernel_8h.html#a9b849177daf3d9558280d4af104d7f46">smp_rmb()</a> or equivalent ordering is provided before actually loading any of the variables that are to be protected in this critical section.</p>
 <p>Use carefully, only in critical code, and comment how the barrier is provided.</p>
 <p>Return: true if a read section retry is required, else false </p>
 
@@ -466,7 +412,7 @@ Macros</h2></td></tr>
 <div class="line">        (<span class="keyword">struct </span><a class="code hl_struct" href="structss__tmp.html">ss_tmp</a> *)_seqlock;              \</div>
 <div class="line">         _s.state != <a class="code hl_enumvalue" href="seqlock_8h.html#ae9e3c4cf092b258437886f1a67f5f0c0a7ebc26add4986d9c9c049705d240d77c">ss_done</a>;                   \</div>
 <div class="line">         __scoped_seqlock_next(&amp;_s, _seqlock, _target))</div>
-<div class="ttc" id="acleanup_8h_html_a6af62b704e74d26d45077207069ca61d"><div class="ttname"><a href="cleanup_8h.html#a6af62b704e74d26d45077207069ca61d">__cleanup</a></div><div class="ttdeci">#define __cleanup(fn)</div><div class="ttdef"><b>Definition</b> cleanup.h:60</div></div>
+<div class="ttc" id="acleanup_8h_html_a6af62b704e74d26d45077207069ca61d"><div class="ttname"><a href="cleanup_8h.html#a6af62b704e74d26d45077207069ca61d">__cleanup</a></div><div class="ttdeci">#define __cleanup(fn)</div><div class="ttdef"><b>Definition</b> cleanup.h:71</div></div>
 <div class="ttc" id="aseqlock_8h_html_ae9e3c4cf092b258437886f1a67f5f0c0a7ebc26add4986d9c9c049705d240d77c"><div class="ttname"><a href="seqlock_8h.html#ae9e3c4cf092b258437886f1a67f5f0c0a7ebc26add4986d9c9c049705d240d77c">ss_done</a></div><div class="ttdeci">@ ss_done</div><div class="ttdef"><b>Definition</b> seqlock.h:1232</div></div>
 <div class="ttc" id="aseqlock_8h_html_ae9e3c4cf092b258437886f1a67f5f0c0ab67b351164cfc4a01ef52bb6b1154263"><div class="ttname"><a href="seqlock_8h.html#ae9e3c4cf092b258437886f1a67f5f0c0ab67b351164cfc4a01ef52bb6b1154263">ss_lockless</a></div><div class="ttdeci">@ ss_lockless</div><div class="ttdef"><b>Definition</b> seqlock.h:1235</div></div>
 <div class="ttc" id="astructss__tmp_html"><div class="ttname"><a href="structss__tmp.html">ss_tmp</a></div><div class="ttdef"><b>Definition</b> seqlock.h:1238</div></div>
@@ -481,7 +427,7 @@ Macros</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define __SEQ_RT&#160;&#160;&#160;<a class="el" href="kernel_8h.html#a531c4f08aa1262295102e1987746e8f7">IS_ENABLED</a>(CONFIG_PREEMPT_RT)</td>
+          <td class="memname">#define __SEQ_RT&#160;&#160;&#160;<a class="el" href="kconfig_8h.html#a2e3f1f46acb8ff1339122bf2bc09d30c">IS_ENABLED</a>(CONFIG_PREEMPT_RT)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -505,8 +451,9 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">    {                               \</div>
 <div class="line">        .seqcount = <a class="code hl_define" href="seqlock_8h.html#a5190533d3cb0ee5493163b05a484d6cb">SEQCNT_SPINLOCK_ZERO</a>(lockname, &amp;(lockname).lock), \</div>
-<div class="line">        .lock = __SPIN_LOCK_UNLOCKED(lockname)          \</div>
+<div class="line">        .lock = <a class="code hl_define" href="linux_2spinlock_8h.html#ab984dd2643420177a4f2a42064a553aa">__SPIN_LOCK_UNLOCKED</a>(lockname)          \</div>
 <div class="line">    }</div>
+<div class="ttc" id="alinux_2spinlock_8h_html_ab984dd2643420177a4f2a42064a553aa"><div class="ttname"><a href="linux_2spinlock_8h.html#ab984dd2643420177a4f2a42064a553aa">__SPIN_LOCK_UNLOCKED</a></div><div class="ttdeci">#define __SPIN_LOCK_UNLOCKED(lockname)</div><div class="ttdef"><b>Definition</b> spinlock.h:129</div></div>
 <div class="ttc" id="aseqlock_8h_html_a5190533d3cb0ee5493163b05a484d6cb"><div class="ttname"><a href="seqlock_8h.html#a5190533d3cb0ee5493163b05a484d6cb">SEQCNT_SPINLOCK_ZERO</a></div><div class="ttdeci">#define SEQCNT_SPINLOCK_ZERO(name, lock)</div><div class="ttdef"><b>Definition</b> seqlock.h:242</div></div>
 </div><!-- fragment -->
 </div>
@@ -537,13 +484,15 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">    _Generic(*(s),              \</div>
-<div class="line">    seqcount_t:     __seqprop_##prop,           \</div>
-<div class="line">    <a class="code hl_define" href="seqlock_8h.html#abed70e508b6479ff1308d31638b76d00">__seqprop_case</a>((s), raw_spinlock,   prop),          \</div>
+<div class="line">    <a class="code hl_struct" href="structseqcount.html">seqcount_t</a>:     __seqprop_##prop,           \</div>
+<div class="line">    <a class="code hl_define" href="seqlock_8h.html#abed70e508b6479ff1308d31638b76d00">__seqprop_case</a>((s), <a class="code hl_struct" href="structraw__spinlock.html">raw_spinlock</a>,   prop),          \</div>
 <div class="line">    <a class="code hl_define" href="seqlock_8h.html#abed70e508b6479ff1308d31638b76d00">__seqprop_case</a>((s), spinlock,   prop),          \</div>
 <div class="line">    <a class="code hl_define" href="seqlock_8h.html#abed70e508b6479ff1308d31638b76d00">__seqprop_case</a>((s), rwlock,     prop),          \</div>
 <div class="line">    <a class="code hl_define" href="seqlock_8h.html#abed70e508b6479ff1308d31638b76d00">__seqprop_case</a>((s), <a class="code hl_struct" href="structmutex.html">mutex</a>,      prop))</div>
 <div class="ttc" id="aseqlock_8h_html_abed70e508b6479ff1308d31638b76d00"><div class="ttname"><a href="seqlock_8h.html#abed70e508b6479ff1308d31638b76d00">__seqprop_case</a></div><div class="ttdeci">#define __seqprop_case(s, lockname, prop)</div><div class="ttdef"><b>Definition</b> seqlock.h:247</div></div>
-<div class="ttc" id="astructmutex_html"><div class="ttname"><a href="structmutex.html">mutex</a></div><div class="ttdef"><b>Definition</b> mutex.h:49</div></div>
+<div class="ttc" id="astructmutex_html"><div class="ttname"><a href="structmutex.html">mutex</a></div><div class="ttdef"><b>Definition</b> mutex.h:59</div></div>
+<div class="ttc" id="astructraw__spinlock_html"><div class="ttname"><a href="structraw__spinlock.html">raw_spinlock</a></div><div class="ttdef"><b>Definition</b> spinlock.h:210</div></div>
+<div class="ttc" id="astructseqcount_html"><div class="ttname"><a href="structseqcount.html">seqcount</a></div><div class="ttdef"><b>Definition</b> seqlock_types.h:49</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -574,7 +523,7 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;	seqcount_##lockname##_t: __seqprop_##lockname##_##prop</td>
+          <td></td><td>&#160;&#160;&#160;	seqcount_##lockname##_t: __seqprop_##lockname##<a class="el" href="libunicode_8c.html#ae4dfd7b0d66121016d6466d2ff10e8ba">_</a>##prop</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -592,7 +541,7 @@ Macros</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">_T</td><td>)</td>
-          <td>&#160;&#160;&#160;WITH_LOCK_GUARD_1_ATTRS(<a class="el" href="seqlock_8h.html#a6d4fe64a08372b208f0e138a7dce73fc">seqlock_init</a>, _T)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="cleanup_8h.html#a76ff8f8cf02e483be1cc57cf9cafcc36">WITH_LOCK_GUARD_1_ATTRS</a>(<a class="el" href="seqlock_8h.html#a6d4fe64a08372b208f0e138a7dce73fc">seqlock_init</a>, _T)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -610,7 +559,7 @@ Macros</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">sl</td><td>)</td>
-          <td>&#160;&#160;&#160;		seqlock_t sl = <a class="el" href="seqlock_8h.html#a9aea083ccb816a41efaf2911b84ef14c">__SEQLOCK_UNLOCKED</a>(sl)</td>
+          <td>&#160;&#160;&#160;		<a class="el" href="seqlock__types_8h.html#ade565126772ae3199a98615ed8e1533b">seqlock_t</a> sl = <a class="el" href="seqlock_8h.html#a9aea083ccb816a41efaf2911b84ef14c">__SEQLOCK_UNLOCKED</a>(sl)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -770,9 +719,9 @@ Macros</h2></td></tr>
 <p>x = X; y = Y;</p>
 <p>} while (<a class="el" href="seqlock_8h.html#a406555d770c26cf0f006e64284d8a0e0">read_seqcount_retry(&amp;seq, s)</a>);</p>
 <p>BUG_ON(!x &amp;&amp; !y); }</p>
-<p>void <a class="el" href="acwin_8h.html#ac40a1eaac5f8dbc1eef9b944d494770c">write(void)</a> { <a class="el" href="kernel_8h.html#ac4c031231735bffd8004fc5debf5ef18">WRITE_ONCE(Y, true)</a>;</p>
+<p>void <a class="el" href="acwin_8h.html#ac40a1eaac5f8dbc1eef9b944d494770c">write(void)</a> { <a class="el" href="linux_2kernel_8h.html#ac4c031231735bffd8004fc5debf5ef18">WRITE_ONCE(Y, true)</a>;</p>
 <p><a class="el" href="seqlock_8h.html#aac55a5803a42ab1cac4add9aeeae7409">raw_write_seqcount_barrier(seq)</a>;</p>
-<p><a class="el" href="kernel_8h.html#ac4c031231735bffd8004fc5debf5ef18">WRITE_ONCE(X, false)</a>; } </p>
+<p><a class="el" href="linux_2kernel_8h.html#ac4c031231735bffd8004fc5debf5ef18">WRITE_ONCE(X, false)</a>; } </p>
 
 </div>
 </div>
@@ -902,12 +851,12 @@ Macros</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="Drivers_2virtio_8h.html#aa2585d779da0ab21273a8d92de9a0ebe">flags</a>&#160;</td>
+          <td class="paramname"><a class="el" href="Drivers_2virtio_8h.html#a04a0bd666e371f3fab92b8d0ef5dbdb0">flags</a>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;	do { <a class="el" href="Drivers_2virtio_8h.html#aa2585d779da0ab21273a8d92de9a0ebe">flags</a> = __read_seqlock_excl_irqsave(lock); } while (0)</td>
+          <td></td><td>&#160;&#160;&#160;	do { <a class="el" href="Drivers_2virtio_8h.html#a04a0bd666e371f3fab92b8d0ef5dbdb0">flags</a> = __read_seqlock_excl_irqsave(lock); } while (0)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -982,7 +931,7 @@ Macros</h2></td></tr>
           <td class="memname">#define SEQCNT_MUTEX_ZERO</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="kobject_8h.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, </td>
+          <td class="paramname"><a class="el" href="drm__crtc_8h.html#aed88e009d7772dfc9026cb1f5492b458">name</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -993,7 +942,7 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="seqlock_8h.html#a5007eda4290b8b7d42bda032ce30c12d">SEQCOUNT_LOCKNAME_ZERO</a>(<a class="el" href="kobject_8h.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, lock)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="seqlock_8h.html#a5007eda4290b8b7d42bda032ce30c12d">SEQCOUNT_LOCKNAME_ZERO</a>(<a class="el" href="drm__crtc_8h.html#aed88e009d7772dfc9026cb1f5492b458">name</a>, lock)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1010,7 +959,7 @@ Macros</h2></td></tr>
           <td class="memname">#define SEQCNT_RAW_SPINLOCK_ZERO</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="kobject_8h.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, </td>
+          <td class="paramname"><a class="el" href="drm__crtc_8h.html#aed88e009d7772dfc9026cb1f5492b458">name</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1021,7 +970,7 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="seqlock_8h.html#a5007eda4290b8b7d42bda032ce30c12d">SEQCOUNT_LOCKNAME_ZERO</a>(<a class="el" href="kobject_8h.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, lock)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="seqlock_8h.html#a5007eda4290b8b7d42bda032ce30c12d">SEQCOUNT_LOCKNAME_ZERO</a>(<a class="el" href="drm__crtc_8h.html#aed88e009d7772dfc9026cb1f5492b458">name</a>, lock)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1038,7 +987,7 @@ Macros</h2></td></tr>
           <td class="memname">#define SEQCNT_RWLOCK_ZERO</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="kobject_8h.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, </td>
+          <td class="paramname"><a class="el" href="drm__crtc_8h.html#aed88e009d7772dfc9026cb1f5492b458">name</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1049,7 +998,7 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="seqlock_8h.html#a5007eda4290b8b7d42bda032ce30c12d">SEQCOUNT_LOCKNAME_ZERO</a>(<a class="el" href="kobject_8h.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, lock)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="seqlock_8h.html#a5007eda4290b8b7d42bda032ce30c12d">SEQCOUNT_LOCKNAME_ZERO</a>(<a class="el" href="drm__crtc_8h.html#aed88e009d7772dfc9026cb1f5492b458">name</a>, lock)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1066,7 +1015,7 @@ Macros</h2></td></tr>
           <td class="memname">#define SEQCNT_SPINLOCK_ZERO</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="kobject_8h.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, </td>
+          <td class="paramname"><a class="el" href="drm__crtc_8h.html#aed88e009d7772dfc9026cb1f5492b458">name</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1077,7 +1026,7 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="seqlock_8h.html#a5007eda4290b8b7d42bda032ce30c12d">SEQCOUNT_LOCKNAME_ZERO</a>(<a class="el" href="kobject_8h.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, lock)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="seqlock_8h.html#a5007eda4290b8b7d42bda032ce30c12d">SEQCOUNT_LOCKNAME_ZERO</a>(<a class="el" href="drm__crtc_8h.html#aed88e009d7772dfc9026cb1f5492b458">name</a>, lock)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1094,7 +1043,7 @@ Macros</h2></td></tr>
           <td class="memname">#define SEQCNT_WW_MUTEX_ZERO</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="kobject_8h.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, </td>
+          <td class="paramname"><a class="el" href="drm__crtc_8h.html#aed88e009d7772dfc9026cb1f5492b458">name</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1105,7 +1054,7 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="seqlock_8h.html#a5007eda4290b8b7d42bda032ce30c12d">SEQCOUNT_LOCKNAME_ZERO</a>(<a class="el" href="kobject_8h.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, lock)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="seqlock_8h.html#a5007eda4290b8b7d42bda032ce30c12d">SEQCOUNT_LOCKNAME_ZERO</a>(<a class="el" href="drm__crtc_8h.html#aed88e009d7772dfc9026cb1f5492b458">name</a>, lock)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1122,8 +1071,8 @@ Macros</h2></td></tr>
           <td class="memname">#define SEQCNT_ZERO</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="kobject_8h.html#a8f8f80d37794cde9472343e4487ba3eb">name</a></td><td>)</td>
-          <td>&#160;&#160;&#160;{ .sequence = 0, <a class="el" href="seqlock_8h.html#a98fac57b7159ba88a730cfd79b6caca4">SEQCOUNT_DEP_MAP_INIT</a>(<a class="el" href="kobject_8h.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>) }</td>
+          <td class="paramname"><a class="el" href="drm__crtc_8h.html#aed88e009d7772dfc9026cb1f5492b458">name</a></td><td>)</td>
+          <td>&#160;&#160;&#160;{ .sequence = 0, <a class="el" href="seqlock_8h.html#a98fac57b7159ba88a730cfd79b6caca4">SEQCOUNT_DEP_MAP_INIT</a>(<a class="el" href="drm__crtc_8h.html#aed88e009d7772dfc9026cb1f5492b458">name</a>) }</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1177,7 +1126,7 @@ Macros</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">s</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="seqlock_8h.html#ab942a446cda3a19bc04a37ceb88141ca">seqcount_init</a>(&amp;(s)-&gt;seqcount)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="seqlock_8h.html#ab942a446cda3a19bc04a37ceb88141ca">seqcount_init</a>(&amp;(s)-&gt;<a class="el" href="structseqcount.html">seqcount</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1225,7 +1174,7 @@ Macros</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="preempt_8h.html#a52c6f862b2844e7bcc7c6343940d26e2">preemptible</a>, </td>
+          <td class="paramname"><a class="el" href="linux_2preempt_8h.html#a52c6f862b2844e7bcc7c6343940d26e2">preemptible</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1363,7 +1312,7 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="seqlock_8h.html#a882139d908b34f99af2745a94ea14de7">seqcount_LOCKNAME_init</a>(s, lock, raw_spinlock)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="seqlock_8h.html#a882139d908b34f99af2745a94ea14de7">seqcount_LOCKNAME_init</a>(s, lock, <a class="el" href="structraw__spinlock.html">raw_spinlock</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1443,7 +1392,7 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">    <span class="keywordflow">do</span> {                                \</div>
 <div class="line">        spin_lock_init(&amp;(sl)-&gt;lock);                \</div>
-<div class="line">        seqcount_spinlock_init(&amp;(sl)-&gt;seqcount, &amp;(sl)-&gt;lock);   \</div>
+<div class="line">        seqcount_spinlock_init(&amp;(sl)-&gt;<a class="code hl_struct" href="structseqcount.html">seqcount</a>, &amp;(sl)-&gt;lock);   \</div>
 <div class="line">    } <span class="keywordflow">while</span> (0)</div>
 </div><!-- fragment --><p><a class="el" href="seqlock_8h.html#a6d4fe64a08372b208f0e138a7dce73fc">seqlock_init()</a> - dynamic initializer for seqlock_t @sl: Pointer to the seqlock_t instance </p>
 
@@ -1496,7 +1445,7 @@ Macros</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">s</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="seqlock_8h.html#a3da3b5521de3c34cc6025270c7686e3d">__seqprop</a>(s, <a class="el" href="preempt_8h.html#a52c6f862b2844e7bcc7c6343940d26e2">preemptible</a>)(s)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="seqlock_8h.html#a3da3b5521de3c34cc6025270c7686e3d">__seqprop</a>(s, <a class="el" href="linux_2preempt_8h.html#a52c6f862b2844e7bcc7c6343940d26e2">preemptible</a>)(s)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1667,12 +1616,12 @@ Macros</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="Drivers_2virtio_8h.html#aa2585d779da0ab21273a8d92de9a0ebe">flags</a>&#160;</td>
+          <td class="paramname"><a class="el" href="Drivers_2virtio_8h.html#a04a0bd666e371f3fab92b8d0ef5dbdb0">flags</a>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;	do { <a class="el" href="Drivers_2virtio_8h.html#aa2585d779da0ab21273a8d92de9a0ebe">flags</a> = __write_seqlock_irqsave(lock); } while (0)</td>
+          <td></td><td>&#160;&#160;&#160;	do { <a class="el" href="Drivers_2virtio_8h.html#a04a0bd666e371f3fab92b8d0ef5dbdb0">flags</a> = __write_seqlock_irqsave(lock); } while (0)</td>
         </tr>
       </table>
 </div><div class="memdoc">

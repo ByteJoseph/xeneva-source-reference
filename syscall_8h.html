@@ -259,7 +259,11 @@ Macros</h2></td></tr>
 <tr class="separator:a6975fcc7f596c8ddb4b0d6ef9d6ec27c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8bd171f4a8534a5f05b7cd67e120266f" id="r_a8bd171f4a8534a5f05b7cd67e120266f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="syscall_8h.html#a8bd171f4a8534a5f05b7cd67e120266f">SYS_THREAD_WAIT_FOR_TERMINATION</a>&#160;&#160;&#160;81</td></tr>
 <tr class="separator:a8bd171f4a8534a5f05b7cd67e120266f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41c5f358c4eedfef0a0b10a56dec8a68" id="r_a41c5f358c4eedfef0a0b10a56dec8a68"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="syscall_8h.html#a41c5f358c4eedfef0a0b10a56dec8a68">SYS_MAX_SYSCALL</a>&#160;&#160;&#160;82</td></tr>
+<tr class="memitem:a39edce5f189e3238a528922cd264edae" id="r_a39edce5f189e3238a528922cd264edae"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="syscall_8h.html#a39edce5f189e3238a528922cd264edae">SYS_KERNEL_UNAME</a>&#160;&#160;&#160;82</td></tr>
+<tr class="separator:a39edce5f189e3238a528922cd264edae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad842555786dbbaf910172d0924ec812e" id="r_ad842555786dbbaf910172d0924ec812e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="syscall_8h.html#ad842555786dbbaf910172d0924ec812e">SYS_FILE_POLL</a>&#160;&#160;&#160;83</td></tr>
+<tr class="separator:ad842555786dbbaf910172d0924ec812e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41c5f358c4eedfef0a0b10a56dec8a68" id="r_a41c5f358c4eedfef0a0b10a56dec8a68"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="syscall_8h.html#a41c5f358c4eedfef0a0b10a56dec8a68">SYS_MAX_SYSCALL</a>&#160;&#160;&#160;84</td></tr>
 <tr class="separator:a41c5f358c4eedfef0a0b10a56dec8a68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21142a073ef796166646d29d7e0fcb26" id="r_a21142a073ef796166646d29d7e0fcb26"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="syscall_8h.html#a21142a073ef796166646d29d7e0fcb26">AURORA_MAX_SYSCALL</a>&#160;&#160;&#160;<a class="el" href="syscall_8h.html#a41c5f358c4eedfef0a0b10a56dec8a68">SYS_MAX_SYSCALL</a></td></tr>
 <tr class="separator:a21142a073ef796166646d29d7e0fcb26"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -539,6 +543,20 @@ Macros</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define SYS_FILE_IO_CONTROL&#160;&#160;&#160;21</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad842555786dbbaf910172d0924ec812e" name="ad842555786dbbaf910172d0924ec812e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad842555786dbbaf910172d0924ec812e">&#9670;&#160;</a></span>SYS_FILE_POLL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SYS_FILE_POLL&#160;&#160;&#160;83</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -825,6 +843,20 @@ Macros</h2></td></tr>
 
 </div>
 </div>
+<a id="a39edce5f189e3238a528922cd264edae" name="a39edce5f189e3238a528922cd264edae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39edce5f189e3238a528922cd264edae">&#9670;&#160;</a></span>SYS_KERNEL_UNAME</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SYS_KERNEL_UNAME&#160;&#160;&#160;82</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a41c5f358c4eedfef0a0b10a56dec8a68" name="a41c5f358c4eedfef0a0b10a56dec8a68"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a41c5f358c4eedfef0a0b10a56dec8a68">&#9670;&#160;</a></span>SYS_MAX_SYSCALL</h2>
 
@@ -832,7 +864,7 @@ Macros</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define SYS_MAX_SYSCALL&#160;&#160;&#160;82</td>
+          <td class="memname">#define SYS_MAX_SYSCALL&#160;&#160;&#160;84</td>
         </tr>
       </table>
 </div><div class="memdoc">

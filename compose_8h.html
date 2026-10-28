@@ -151,11 +151,13 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="compose_8h__dep__incl.png" border="0" usemap="#aXenevaOS_2Process_2DeodhaiXR_2compose_8hdep" alt=""/></div>
 <map name="aXenevaOS_2Process_2DeodhaiXR_2compose_8hdep" id="aXenevaOS_2Process_2DeodhaiXR_2compose_8hdep">
-<area shape="rect" title=" " alt="" coords="117,5,319,45"/>
+<area shape="rect" title=" " alt="" coords="231,5,432,45"/>
 <area shape="rect" href="compose_8cpp.html" title=" " alt="" coords="5,93,207,133"/>
-<area shape="poly" title=" " alt="" coords="184,56,132,95,129,91,180,52"/>
-<area shape="rect" href="Process_2DeodhaiXR_2main_8cpp.html" title=" " alt="" coords="231,93,432,133"/>
-<area shape="poly" title=" " alt="" coords="255,52,308,91,305,95,252,56"/>
+<area shape="poly" title=" " alt="" coords="270,53,156,96,154,91,268,48"/>
+<area shape="rect" href="compose3d_8cpp.html" title=" " alt="" coords="231,93,432,133"/>
+<area shape="poly" title=" " alt="" coords="334,59,334,93,329,93,329,59"/>
+<area shape="rect" href="Process_2DeodhaiXR_2main_8cpp.html" title=" " alt="" coords="456,93,657,133"/>
+<area shape="poly" title=" " alt="" coords="395,48,508,91,506,96,393,53"/>
 </map>
 </div>
 </div>
@@ -441,6 +443,10 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+<p>if ((info-&gt;x - SHADOW_SIZE) &lt;= 0) { info-&gt;x = 5 + SHADOW_SIZE; winx = info-&gt;x; glass_invalidate(win); }</p>
+<p>if ((info-&gt;y - SHADOW_SIZE) &lt;= 0) { info-&gt;y = 5 + SHADOW_SIZE; winy = info-&gt;y; glass_invalidate(win); }</p>
+<p>if ((info-&gt;x + 24) &gt;= (int)canvas-&gt;screenWidth) info-&gt;x = canvas-&gt;screenWidth - 24;</p>
+<p>if ((info-&gt;y + 24) &gt;= (int)canvas-&gt;screenHeight) info-&gt;y = canvas-&gt;screenHeight - 24;</p>
 
 </div>
 </div>

@@ -96,17 +96,17 @@ Include dependency graph for kdev_t.h:</div>
 Macros</h2></td></tr>
 <tr class="memitem:a1bb13551810bc2b396457d93b97246ed" id="r_a1bb13551810bc2b396457d93b97246ed"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linux_2kdev__t_8h.html#a1bb13551810bc2b396457d93b97246ed">MINORBITS</a>&#160;&#160;&#160;20</td></tr>
 <tr class="separator:a1bb13551810bc2b396457d93b97246ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3be8aa91a2b21c7f29879c15e67bacd" id="r_ae3be8aa91a2b21c7f29879c15e67bacd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linux_2kdev__t_8h.html#ae3be8aa91a2b21c7f29879c15e67bacd">MINORMASK</a>&#160;&#160;&#160;((1U &lt;&lt; <a class="el" href="linux_2kdev__t_8h.html#a1bb13551810bc2b396457d93b97246ed">MINORBITS</a>) - 1)</td></tr>
+<tr class="memitem:ae3be8aa91a2b21c7f29879c15e67bacd" id="r_ae3be8aa91a2b21c7f29879c15e67bacd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linux_2kdev__t_8h.html#ae3be8aa91a2b21c7f29879c15e67bacd">MINORMASK</a>&#160;&#160;&#160;((1<a class="el" href="libunicode_8c.html#affc9cbf86b78292bdb405361761c47f5">U</a> &lt;&lt; <a class="el" href="linux_2kdev__t_8h.html#a1bb13551810bc2b396457d93b97246ed">MINORBITS</a>) - 1)</td></tr>
 <tr class="separator:ae3be8aa91a2b21c7f29879c15e67bacd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2effd79e7a35b38381c15535321014e5" id="r_a2effd79e7a35b38381c15535321014e5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linux_2kdev__t_8h.html#a2effd79e7a35b38381c15535321014e5">MAJOR</a>(dev)&#160;&#160;&#160;((unsigned int) ((dev) &gt;&gt; <a class="el" href="linux_2kdev__t_8h.html#a1bb13551810bc2b396457d93b97246ed">MINORBITS</a>))</td></tr>
+<tr class="memitem:a2effd79e7a35b38381c15535321014e5" id="r_a2effd79e7a35b38381c15535321014e5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linux_2kdev__t_8h.html#a2effd79e7a35b38381c15535321014e5">MAJOR</a>(<a class="el" href="drm__print_8h.html#a1572ef5e3355461e391f0d510070cd36">dev</a>)&#160;&#160;&#160;((unsigned int) ((<a class="el" href="drm__print_8h.html#a1572ef5e3355461e391f0d510070cd36">dev</a>) &gt;&gt; <a class="el" href="linux_2kdev__t_8h.html#a1bb13551810bc2b396457d93b97246ed">MINORBITS</a>))</td></tr>
 <tr class="separator:a2effd79e7a35b38381c15535321014e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5a526a2f9942503094cb044bf9343e9" id="r_ac5a526a2f9942503094cb044bf9343e9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linux_2kdev__t_8h.html#ac5a526a2f9942503094cb044bf9343e9">MINOR</a>(dev)&#160;&#160;&#160;((unsigned int) ((dev) &amp; <a class="el" href="linux_2kdev__t_8h.html#ae3be8aa91a2b21c7f29879c15e67bacd">MINORMASK</a>))</td></tr>
+<tr class="memitem:ac5a526a2f9942503094cb044bf9343e9" id="r_ac5a526a2f9942503094cb044bf9343e9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linux_2kdev__t_8h.html#ac5a526a2f9942503094cb044bf9343e9">MINOR</a>(<a class="el" href="drm__print_8h.html#a1572ef5e3355461e391f0d510070cd36">dev</a>)&#160;&#160;&#160;((unsigned int) ((<a class="el" href="drm__print_8h.html#a1572ef5e3355461e391f0d510070cd36">dev</a>) &amp; <a class="el" href="linux_2kdev__t_8h.html#ae3be8aa91a2b21c7f29879c15e67bacd">MINORMASK</a>))</td></tr>
 <tr class="separator:ac5a526a2f9942503094cb044bf9343e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a866a4cfc8b3ccfed4272fdfacec58e5a" id="r_a866a4cfc8b3ccfed4272fdfacec58e5a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linux_2kdev__t_8h.html#a866a4cfc8b3ccfed4272fdfacec58e5a">MKDEV</a>(ma,  mi)&#160;&#160;&#160;(((ma) &lt;&lt; <a class="el" href="linux_2kdev__t_8h.html#a1bb13551810bc2b396457d93b97246ed">MINORBITS</a>) | (mi))</td></tr>
 <tr class="separator:a866a4cfc8b3ccfed4272fdfacec58e5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae58524dc680629d06e43e02425e1fdea" id="r_ae58524dc680629d06e43e02425e1fdea"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linux_2kdev__t_8h.html#ae58524dc680629d06e43e02425e1fdea">print_dev_t</a>(buffer,  dev)&#160;&#160;&#160;	<a class="el" href="sprintf_8h.html#a5998f60c4f4af322b36debdbd11d7917">sprintf</a>((buffer), &quot;%u:%u\n&quot;, <a class="el" href="fs_8h.html#a2effd79e7a35b38381c15535321014e5">MAJOR</a>(dev), <a class="el" href="fs_8h.html#ac5a526a2f9942503094cb044bf9343e9">MINOR</a>(dev))</td></tr>
+<tr class="memitem:ae58524dc680629d06e43e02425e1fdea" id="r_ae58524dc680629d06e43e02425e1fdea"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linux_2kdev__t_8h.html#ae58524dc680629d06e43e02425e1fdea">print_dev_t</a>(buffer,  <a class="el" href="drm__print_8h.html#a1572ef5e3355461e391f0d510070cd36">dev</a>)&#160;&#160;&#160;	<a class="el" href="sprintf_8h.html#a5998f60c4f4af322b36debdbd11d7917">sprintf</a>((buffer), &quot;%u:%u\n&quot;, <a class="el" href="fs_8h.html#a2effd79e7a35b38381c15535321014e5">MAJOR</a>(<a class="el" href="drm__print_8h.html#a1572ef5e3355461e391f0d510070cd36">dev</a>), <a class="el" href="fs_8h.html#ac5a526a2f9942503094cb044bf9343e9">MINOR</a>(<a class="el" href="drm__print_8h.html#a1572ef5e3355461e391f0d510070cd36">dev</a>))</td></tr>
 <tr class="separator:ae58524dc680629d06e43e02425e1fdea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4f584ded528826a42f3a5e57a7e8087" id="r_ac4f584ded528826a42f3a5e57a7e8087"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linux_2kdev__t_8h.html#ac4f584ded528826a42f3a5e57a7e8087">format_dev_t</a>(buffer,  dev)</td></tr>
+<tr class="memitem:ac4f584ded528826a42f3a5e57a7e8087" id="r_ac4f584ded528826a42f3a5e57a7e8087"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linux_2kdev__t_8h.html#ac4f584ded528826a42f3a5e57a7e8087">format_dev_t</a>(buffer,  <a class="el" href="drm__print_8h.html#a1572ef5e3355461e391f0d510070cd36">dev</a>)</td></tr>
 <tr class="separator:ac4f584ded528826a42f3a5e57a7e8087"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
@@ -126,7 +126,7 @@ Macros</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">dev&#160;</td>
+          <td class="paramname"><a class="el" href="drm__print_8h.html#a1572ef5e3355461e391f0d510070cd36">dev</a>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -136,9 +136,10 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">    ({                              \</div>
-<div class="line">        sprintf(buffer, <span class="stringliteral">&quot;%u:%u&quot;</span>, <a class="code hl_define" href="linux_2kdev__t_8h.html#a2effd79e7a35b38381c15535321014e5">MAJOR</a>(dev), <a class="code hl_define" href="linux_2kdev__t_8h.html#ac5a526a2f9942503094cb044bf9343e9">MINOR</a>(dev));   \</div>
+<div class="line">        sprintf(buffer, <span class="stringliteral">&quot;%u:%u&quot;</span>, <a class="code hl_define" href="linux_2kdev__t_8h.html#a2effd79e7a35b38381c15535321014e5">MAJOR</a>(<a class="code hl_variable" href="drm__print_8h.html#a1572ef5e3355461e391f0d510070cd36">dev</a>), <a class="code hl_define" href="linux_2kdev__t_8h.html#ac5a526a2f9942503094cb044bf9343e9">MINOR</a>(<a class="code hl_variable" href="drm__print_8h.html#a1572ef5e3355461e391f0d510070cd36">dev</a>));   \</div>
 <div class="line">        buffer;                         \</div>
 <div class="line">    })</div>
+<div class="ttc" id="adrm__print_8h_html_a1572ef5e3355461e391f0d510070cd36"><div class="ttname"><a href="drm__print_8h.html#a1572ef5e3355461e391f0d510070cd36">dev</a></div><div class="ttdeci">const struct device * dev</div><div class="ttdef"><b>Definition</b> drm_print.h:519</div></div>
 <div class="ttc" id="alinux_2kdev__t_8h_html_a2effd79e7a35b38381c15535321014e5"><div class="ttname"><a href="linux_2kdev__t_8h.html#a2effd79e7a35b38381c15535321014e5">MAJOR</a></div><div class="ttdeci">#define MAJOR(dev)</div><div class="ttdef"><b>Definition</b> kdev_t.h:10</div></div>
 <div class="ttc" id="alinux_2kdev__t_8h_html_ac5a526a2f9942503094cb044bf9343e9"><div class="ttname"><a href="linux_2kdev__t_8h.html#ac5a526a2f9942503094cb044bf9343e9">MINOR</a></div><div class="ttdeci">#define MINOR(dev)</div><div class="ttdef"><b>Definition</b> kdev_t.h:11</div></div>
 </div><!-- fragment -->
@@ -154,8 +155,8 @@ Macros</h2></td></tr>
           <td class="memname">#define MAJOR</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">dev</td><td>)</td>
-          <td>&#160;&#160;&#160;((unsigned int) ((dev) &gt;&gt; <a class="el" href="linux_2kdev__t_8h.html#a1bb13551810bc2b396457d93b97246ed">MINORBITS</a>))</td>
+          <td class="paramname"><a class="el" href="drm__print_8h.html#a1572ef5e3355461e391f0d510070cd36">dev</a></td><td>)</td>
+          <td>&#160;&#160;&#160;((unsigned int) ((<a class="el" href="drm__print_8h.html#a1572ef5e3355461e391f0d510070cd36">dev</a>) &gt;&gt; <a class="el" href="linux_2kdev__t_8h.html#a1bb13551810bc2b396457d93b97246ed">MINORBITS</a>))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -172,8 +173,8 @@ Macros</h2></td></tr>
           <td class="memname">#define MINOR</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">dev</td><td>)</td>
-          <td>&#160;&#160;&#160;((unsigned int) ((dev) &amp; <a class="el" href="linux_2kdev__t_8h.html#ae3be8aa91a2b21c7f29879c15e67bacd">MINORMASK</a>))</td>
+          <td class="paramname"><a class="el" href="drm__print_8h.html#a1572ef5e3355461e391f0d510070cd36">dev</a></td><td>)</td>
+          <td>&#160;&#160;&#160;((unsigned int) ((<a class="el" href="drm__print_8h.html#a1572ef5e3355461e391f0d510070cd36">dev</a>) &amp; <a class="el" href="linux_2kdev__t_8h.html#ae3be8aa91a2b21c7f29879c15e67bacd">MINORMASK</a>))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -201,7 +202,7 @@ Macros</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define MINORMASK&#160;&#160;&#160;((1U &lt;&lt; <a class="el" href="linux_2kdev__t_8h.html#a1bb13551810bc2b396457d93b97246ed">MINORBITS</a>) - 1)</td>
+          <td class="memname">#define MINORMASK&#160;&#160;&#160;((1<a class="el" href="libunicode_8c.html#affc9cbf86b78292bdb405361761c47f5">U</a> &lt;&lt; <a class="el" href="linux_2kdev__t_8h.html#a1bb13551810bc2b396457d93b97246ed">MINORBITS</a>) - 1)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -252,12 +253,12 @@ Macros</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">dev&#160;</td>
+          <td class="paramname"><a class="el" href="drm__print_8h.html#a1572ef5e3355461e391f0d510070cd36">dev</a>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;	<a class="el" href="sprintf_8h.html#a5998f60c4f4af322b36debdbd11d7917">sprintf</a>((buffer), &quot;%u:%u\n&quot;, <a class="el" href="fs_8h.html#a2effd79e7a35b38381c15535321014e5">MAJOR</a>(dev), <a class="el" href="fs_8h.html#ac5a526a2f9942503094cb044bf9343e9">MINOR</a>(dev))</td>
+          <td></td><td>&#160;&#160;&#160;	<a class="el" href="sprintf_8h.html#a5998f60c4f4af322b36debdbd11d7917">sprintf</a>((buffer), &quot;%u:%u\n&quot;, <a class="el" href="fs_8h.html#a2effd79e7a35b38381c15535321014e5">MAJOR</a>(<a class="el" href="drm__print_8h.html#a1572ef5e3355461e391f0d510070cd36">dev</a>), <a class="el" href="fs_8h.html#ac5a526a2f9942503094cb044bf9343e9">MINOR</a>(<a class="el" href="drm__print_8h.html#a1572ef5e3355461e391f0d510070cd36">dev</a>))</td>
         </tr>
       </table>
 </div><div class="memdoc">

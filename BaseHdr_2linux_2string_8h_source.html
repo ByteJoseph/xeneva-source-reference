@@ -96,12 +96,224 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment"> * tty_buffer.c&#39;s use is exactly memcpy() into char_buf_ptr(), memset() over</span></div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment"> * the flags byte for a run of same-flagged characters, and the zeroing of</span></div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment"> * consumed bytes in receive_buf() so a buffer can be handed on.</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &lt;<a class="code" href="LittleBoot_2string_8h.html">string.h</a>&gt;</span>     <span class="comment">/* native memcpy/memset/memcmp/strlen */</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#endif </span><span class="comment">/* __LINUX_STRING_H__ */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="aLittleBoot_2string_8h_html"><div class="ttname"><a href="LittleBoot_2string_8h.html">string.h</a></div></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> * The DRM/KMS stage then made this header carry real content, all of it for</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment"> * callers that reach no other string header:</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment"> *   - strnchr, str_has_prefix, mem_is_zero and strtomem_pad, which mainline</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment"> *     keeps here. drm_modes.c parses the video= command line with the first</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment"> *     two, drm_edid.c asks whether a 128-byte block is all zero, and</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment"> *     drm_connector.c:614-615 copies an HDMI vendor/product string into a</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment"> *     fixed-width, possibly non-NUL-terminated field.</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment"> *   - str_yes_no, re-exported from &lt;linux/string_choices.h&gt; rather than</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment"> *     copied. drm_edid.c:6319 prints an HDMI capability as yes/no and</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment"> *     includes neither that header nor &lt;linux/string_helpers.h&gt;, its other</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment"> *     carrier in this tree. Copying the body would collide with the header</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment"> *     in the files that do include it -- two static definitions of the same</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment"> *     name in one translation unit is not a warning.</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment"> *   - strscpy_pad and scnprintf as declarations only, with bodies in</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment"> *     DCL/linux_math_shim.c. Both need something this header cannot supply:</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment"> *     strscpy_pad&#39;s error return is -E2BIG, which kernel.h:281 defines</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment"> *     *after* it includes this file at :121, so an inline here cannot be</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment"> *     parsed in every kernel.h-initiated chain; scnprintf must reach</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment"> *     _vsnprintf&#39;s va_list plumbing (&lt;Log/_print.h&gt;, KernelAA64&#39;s own</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment"> *     header). A declaration is all the call sites need either way.</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="preprocessor">#include &lt;<a class="code" href="Ports_2CssLibs_2libhubbub_2src_2utils_2string_8h.html">string.h</a>&gt;</span>     <span class="comment">/* native memcpy/memset/memcmp/strlen */</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="preprocessor">#include &lt;<a class="code" href="Libs_2XEClib_2includes_2stddef_8h.html">stddef.h</a>&gt;</span>     <span class="comment">/* size_t; ssize_t for strscpy_pad */</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">#include &lt;stdbool.h&gt;</span>        <span class="comment">/* bool, for mem_is_zero */</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="preprocessor">#include &lt;<a class="code" href="string__choices_8h.html">linux/string_choices.h</a>&gt;</span>   <span class="comment">/* str_yes_no */</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment"> * strreplace(str, old, new) -- swap every `old` character in `str` for `new`</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment"> * and hand the same pointer back.  mainline declares it here (:282) although</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment"> * the body lives in lib/string_helpers.c:985, and the declaration is load</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment"> * bearing: string_helpers.c:747 calls it, and with no prototype in scope the</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment"> * call is implicitly `int strreplace()`, which clang then rejects as</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment"> * &quot;conflicting types&quot; when it reaches the real definition 240 lines later.</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="BaseHdr_2linux_2string_8h.html#ae166f169c86b8050349e5aa61fa8f97a">   55</a></span><span class="keywordtype">char</span> *<a class="code hl_function" href="BaseHdr_2linux_2string_8h.html#ae166f169c86b8050349e5aa61fa8f97a">strreplace</a>(<span class="keywordtype">char</span> *str, <span class="keywordtype">char</span> old, <span class="keywordtype">char</span> <span class="keyword">new</span>);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment"> * strnchr(s, count, c) -- strchr() bounded to `count` bytes.</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="comment"> * The difference from strchr() is the whole reason drm_modes.c uses it</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment"> * (drm_modes.c:2302, :2390, :2392, :2396): the string being searched is a</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment"> * slice of a larger command-line buffer -- the connector name before the</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment"> * &#39;:&#39; or &#39;-&#39; or &#39;@&#39; separators -- and it is *not* NUL-terminated at the</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment"> * point the caller cares about. `name_end`/`options_off` are how long that</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment"> * slice is. A plain strchr() would run past the slice into the rest of the</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment"> * option string and report the separator belonging to a later field, so</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment"> * `video=HDMI-A-1:1280x720@60` would be read as a name that itself contains</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment"> * &#39;@&#39;. mainline&#39;s body is this loop in lib/string.c; count is decremented</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment"> * before the NUL test so `count == 0` answers NULL rather than reading s.</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">char</span> *strnchr(<span class="keyword">const</span> <span class="keywordtype">char</span> *s, <span class="keywordtype">size_t</span> count, <span class="keywordtype">int</span> c)</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>{</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keywordflow">for</span> (; count-- &amp;&amp; *s != <span class="charliteral">&#39;\0&#39;</span>; ++s)</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        <span class="keywordflow">if</span> (*s == (<span class="keywordtype">char</span>)c)</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            <span class="keywordflow">return</span> (<span class="keywordtype">char</span> *)s;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="keywordflow">return</span> <a class="code hl_define" href="actypes_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>}</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="comment"> * str_has_prefix(str, prefix) -- strlen(prefix) if str starts with prefix,</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="comment"> * else 0.</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="comment"> * The return has to be the *length*, not a boolean, for the one call site:</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="comment"> * drm_modes.c:2318 matches a command-line name against each named mode with</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="comment"> *     ret = str_has_prefix(name, mode-&gt;name);</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="comment"> *     if (ret != name_end)</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="comment"> *             continue;</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="comment"> * where `name` is the unbounded slice and `name_end` its measured length, so</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="comment"> * the comparison is &quot;starts with mode-&gt;name *and* is exactly that long&quot;. A</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="comment"> * strncmp-style 0/1 answer would compare `1 != name_end` and every named</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="comment"> * mode would be rejected except a one-character one. strncmp is bounded by</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="comment"> * len, so a short `str` (NUL before len) also answers 0, as mainline</span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="comment"> * documents.</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">size_t</span> str_has_prefix(<span class="keyword">const</span> <span class="keywordtype">char</span> *str, <span class="keyword">const</span> <span class="keywordtype">char</span> *prefix)</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>{</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    <span class="keywordtype">size_t</span> <a class="code hl_variable" href="initial_8c.html#a7360b55975153b822efc5217b7734e6a">len</a> = <a class="code hl_function" href="kernel__exports_8c.html#a61b061ac296a1729e7aec71368beac31">strlen</a>(prefix);</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="acclib_8h.html#a8a121cb78dcc72ec7b904da798e495df">strncmp</a>(str, prefix, <a class="code hl_variable" href="initial_8c.html#a7360b55975153b822efc5217b7734e6a">len</a>) == 0 ? <a class="code hl_variable" href="initial_8c.html#a7360b55975153b822efc5217b7734e6a">len</a> : 0;</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>}</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="comment"> * mem_is_zero(s, n) -- every one of the first n bytes is zero.</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="comment"> * Only caller: edid_block_is_zero() at drm_edid.c:1857, which answers</span></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="comment"> * whether an EDID block is a blank/absent one (`mem_is_zero(edid,</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="comment"> * EDID_LENGTH)`). mainline implements it over memchr_inv(); DCL has no</span></div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="comment"> * memchr_inv and the block is 128 bytes on a cold path, so the plain byte</span></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="comment"> * loop is the same answer without a new lib helper. The void* is walked as</span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="comment"> * unsigned char* deliberately: the EDID buffer&#39;s alignment is not known to</span></div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span><span class="comment"> * this header and a word-wide read would be a fault risk for no gain.</span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">bool</span> mem_is_zero(<span class="keyword">const</span> <span class="keywordtype">void</span> *s, <span class="keywordtype">size_t</span> n)</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>{</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *p = (<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *)s;</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    <span class="keywordtype">size_t</span> i;</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    <span class="keywordflow">for</span> (i = 0; i &lt; n; i++)</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>        <span class="keywordflow">if</span> (p[i])</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>}</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span><span class="comment"> * strtomem_pad(dest, src, pad) -- copy the NUL-terminated `src` into the</span></div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span><span class="comment"> * fixed-width array `dest`, filling whatever is left with `pad`.</span></div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span><span class="comment"> * drm_connector.c:614-615 is the call:</span></div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span><span class="comment"> *     strtomem_pad(connector-&gt;hdmi.vendor, vendor, 0);</span></div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span><span class="comment"> *     strtomem_pad(connector-&gt;hdmi.product, product, 0);</span></div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span><span class="comment"> * where the fields are `unsigned char vendor[DRM_CONNECTOR_HDMI_VENDOR_LEN]</span></div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span><span class="comment"> * __nonstring` (drm_connector.h:1933) -- HDMI 2.1 wants them fixed-width with</span></div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span><span class="comment"> * no NUL, and a bytes-typed readout must see the padding rather than</span></div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span><span class="comment"> * whatever the struct held before. The source strings come from userspace</span></div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span><span class="comment"> * through the connector init path and are not guaranteed to be shorter than</span></div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span><span class="comment"> * the field, so the copy must stop at sizeof(dest) without reading the</span></div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span><span class="comment"> * source past it -- the loop below reads src[i] only while i &lt; dest_len,</span></div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span><span class="comment"> * which is strnlen(src, dest_len)&#39;s guarantee without needing a strnlen DCL</span></div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span><span class="comment"> * does not carry.</span></div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span><span class="comment"> * The helper is a real inline and the macro supplies sizeof(dest) and the</span></div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span><span class="comment"> * compile-time array check: dest is an array, not a pointer, and the size is</span></div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span><span class="comment"> * not an argument (same contract as mainline&#39;s strtomem_pad).</span></div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span><span class="comment"> * __must_be_array(dest) is the check -- its _Static_assert stops the build</span></div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span><span class="comment"> * for a pointer, where sizeof would silently be the pointer&#39;s size and the</span></div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span><span class="comment"> * copy would truncate -- but its *value* is not part of the length here.</span></div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span><span class="comment"> * mainline adds it (it folds to 0 on GNU/Linux), and on this target it does</span></div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span><span class="comment"> * not: aarch64-unknown-windows gives an empty struct -- the shape</span></div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span><span class="comment"> * __BUILD_BUG_ON_ZERO_MSG folds to -- size 4, so</span></div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span><span class="comment"> * `sizeof(dest) + __must_be_array(dest)` made every copy run 4 bytes past</span></div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span><span class="comment"> * the field until the check was split onto its own line. The do/while is</span></div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span><span class="comment"> * mainline&#39;s shape too; both call sites are statements.</span></div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> __dcl_strtomem_pad(<span class="keywordtype">void</span> *dest, <span class="keywordtype">size_t</span> dest_len,</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>                      <span class="keyword">const</span> <span class="keywordtype">char</span> *src, <span class="keywordtype">char</span> pad)</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>{</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *<a class="code hl_define" href="libunicode_8c.html#a2530554172d8629149ec56816eeaa947">d</a> = (<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *)dest;</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>    <span class="keywordtype">size_t</span> i = 0;</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span> </div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>    <span class="keywordflow">while</span> (i &lt; dest_len &amp;&amp; src[i] != <span class="charliteral">&#39;\0&#39;</span>) {</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>        <a class="code hl_define" href="libunicode_8c.html#a2530554172d8629149ec56816eeaa947">d</a>[i] = (<span class="keywordtype">unsigned</span> char)src[i];</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>        i++;</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>    }</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>    <span class="keywordflow">while</span> (i &lt; dest_len)</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>        <a class="code hl_define" href="libunicode_8c.html#a2530554172d8629149ec56816eeaa947">d</a>[i++] = (<span class="keywordtype">unsigned</span> char)pad;</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>}</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span> </div>
+<div class="foldopen" id="foldopen00172" data-start="" data-end="">
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno"><a class="line" href="BaseHdr_2linux_2string_8h.html#ac143a594bf09e5e03e7606cd304ccf38">  172</a></span><span class="preprocessor">#define strtomem_pad(dest, src, pad) do {               \</span></div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span><span class="preprocessor">    (void)__must_be_array(dest);                    \</span></div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span><span class="preprocessor">    __dcl_strtomem_pad((dest), sizeof(dest), (src), (pad));     \</span></div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span><span class="preprocessor">} while (0)</span></div>
+</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span> </div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span><span class="comment"> * strscpy_pad(dest, src, count) -- bounded copy, NUL-terminated, with the</span></div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span><span class="comment"> * remainder of the destination zero-filled; returns the number of characters</span></div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span><span class="comment"> * copied (excluding the NUL), or -E2BIG if count was 0 or the copy was</span></div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span><span class="comment"> * truncated.</span></div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span><span class="comment"> * All five callers (drm_property.c:131, :424, :477 and drm_modes.c:2622,</span></div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span><span class="comment"> * :2663) copy into a fixed 32-byte name field, several of them from a</span></div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span><span class="comment"> * userspace-provided struct that may carry no NUL at all within the field;</span></div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span><span class="comment"> * the zero-fill is what makes the kernel-side copy well-defined for the</span></div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span><span class="comment"> * strcmp()s and printf(&quot;%s&quot;)s that follow, and the bounded read is what</span></div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span><span class="comment"> * keeps a missing terminator from walking off the ioctl buffer. The body</span></div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span><span class="comment"> * lives in DCL/linux_math_shim.c beside the other real functions -- a</span></div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span><span class="comment"> * header inline would need -E2BIG, which is not defined until kernel.h:281,</span></div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span><span class="comment"> * after this header is parsed at kernel.h:121.</span></div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno"><a class="line" href="BaseHdr_2linux_2string_8h.html#afff05995f3cd02648f77c652b82047ed">  193</a></span><a class="code hl_typedef" href="BaseHdr_2stddef_8h.html#aa9e017f700fef59e03bf6d5bc2e59a7e">ssize_t</a> <a class="code hl_function" href="BaseHdr_2linux_2string_8h.html#afff05995f3cd02648f77c652b82047ed">strscpy_pad</a>(<span class="keywordtype">char</span> *dest, <span class="keyword">const</span> <span class="keywordtype">char</span> *src, <span class="keywordtype">size_t</span> count);</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span> </div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span><span class="comment"> * scnprintf(buf, size, fmt, ...) -- vsnprintf that returns what it actually</span></div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span><span class="comment"> * wrote, clamped to size - 1 when the output did not fit.</span></div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span><span class="comment"> * Called from drm_dev_wedged_event() (drm_drv.c:572 and :579) to build the</span></div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span><span class="comment"> * &quot;WEDGED=&lt;recovery&gt;,...&quot; uevent string: the second call appends at</span></div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span><span class="comment"> * event_string + len and the return is added to len, then the trailing comma</span></div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span><span class="comment"> * is chopped with `event_string[len - 1] = &#39;\0&#39;`. That arithmetic only works</span></div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span><span class="comment"> * if len never counts characters that were not written -- snprintf&#39;s</span></div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span><span class="comment"> * would-have-written return would push len past the buffer and the chop</span></div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span><span class="comment"> * would land on the wrong byte. The clamped return is the entire difference</span></div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span><span class="comment"> * between scnprintf and snprintf, and it is why this cannot just be</span></div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span><span class="comment"> * sprintf.h&#39;s `#define snprintf _snprintf`.</span></div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span><span class="comment"> * The body is in DCL/linux_math_shim.c: it wraps _vsnprintf</span></div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span><span class="comment"> * (&lt;Log/_print.h&gt;), whose va_list plumbing a BaseHdr header should not pull</span></div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span><span class="comment"> * into every translation unit. __printf(3, 4) is mainline&#39;s annotation and</span></div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span><span class="comment"> * is kept so the two call sites&#39; arguments are checked against the format.</span></div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno"><a class="line" href="BaseHdr_2linux_2string_8h.html#a78a2e29696b2e5faf51e6a848f293378">  214</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="BaseHdr_2linux_2string_8h.html#a78a2e29696b2e5faf51e6a848f293378">scnprintf</a>(<span class="keywordtype">char</span> *buf, <span class="keywordtype">size_t</span> <a class="code hl_variable" href="drm__bridge_8h.html#a854352f53b148adc24983a58a1866d66">size</a>, <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_variable" href="drm__file_8h.html#a6c7e3fabe8f433618918504e845c8e99">fmt</a>, ...) <a class="code hl_define" href="compiler_8h.html#a6db4738ceee3846028b7accdf6c39949">__printf</a>(3, 4);</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span> </div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span><span class="preprocessor">#endif </span><span class="comment">/* __LINUX_STRING_H__ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="aBaseHdr_2linux_2string_8h_html_a78a2e29696b2e5faf51e6a848f293378"><div class="ttname"><a href="BaseHdr_2linux_2string_8h.html#a78a2e29696b2e5faf51e6a848f293378">scnprintf</a></div><div class="ttdeci">int scnprintf(char *buf, size_t size, const char *fmt,...) __printf(3</div></div>
+<div class="ttc" id="aBaseHdr_2linux_2string_8h_html_ae166f169c86b8050349e5aa61fa8f97a"><div class="ttname"><a href="BaseHdr_2linux_2string_8h.html#ae166f169c86b8050349e5aa61fa8f97a">strreplace</a></div><div class="ttdeci">char * strreplace(char *str, char old, char new)</div></div>
+<div class="ttc" id="aBaseHdr_2linux_2string_8h_html_afff05995f3cd02648f77c652b82047ed"><div class="ttname"><a href="BaseHdr_2linux_2string_8h.html#afff05995f3cd02648f77c652b82047ed">strscpy_pad</a></div><div class="ttdeci">ssize_t strscpy_pad(char *dest, const char *src, size_t count)</div></div>
+<div class="ttc" id="aBaseHdr_2stddef_8h_html_aa9e017f700fef59e03bf6d5bc2e59a7e"><div class="ttname"><a href="BaseHdr_2stddef_8h.html#aa9e017f700fef59e03bf6d5bc2e59a7e">ssize_t</a></div><div class="ttdeci">int64_t ssize_t</div><div class="ttdef"><b>Definition</b> stddef.h:38</div></div>
+<div class="ttc" id="aLibs_2XEClib_2includes_2stddef_8h_html"><div class="ttname"><a href="Libs_2XEClib_2includes_2stddef_8h.html">stddef.h</a></div></div>
+<div class="ttc" id="aPorts_2CssLibs_2libhubbub_2src_2utils_2string_8h_html"><div class="ttname"><a href="Ports_2CssLibs_2libhubbub_2src_2utils_2string_8h.html">string.h</a></div></div>
+<div class="ttc" id="aacclib_8h_html_a8a121cb78dcc72ec7b904da798e495df"><div class="ttname"><a href="acclib_8h.html#a8a121cb78dcc72ec7b904da798e495df">strncmp</a></div><div class="ttdeci">int strncmp(const char *String1, const char *String2, ACPI_SIZE Count)</div><div class="ttdef"><b>Definition</b> utclib.c:644</div></div>
+<div class="ttc" id="aactypes_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="actypes_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition</b> actypes.h:561</div></div>
+<div class="ttc" id="acompiler_8h_html_a6db4738ceee3846028b7accdf6c39949"><div class="ttname"><a href="compiler_8h.html#a6db4738ceee3846028b7accdf6c39949">__printf</a></div><div class="ttdeci">#define __printf(fmt_idx, arg_idx)</div><div class="ttdef"><b>Definition</b> compiler.h:144</div></div>
+<div class="ttc" id="adrm__bridge_8h_html_a854352f53b148adc24983a58a1866d66"><div class="ttname"><a href="drm__bridge_8h.html#a854352f53b148adc24983a58a1866d66">size</a></div><div class="ttdeci">size_t size</div><div class="ttdef"><b>Definition</b> drm_bridge.h:1299</div></div>
+<div class="ttc" id="adrm__file_8h_html_a6c7e3fabe8f433618918504e845c8e99"><div class="ttname"><a href="drm__file_8h.html#a6c7e3fabe8f433618918504e845c8e99">fmt</a></div><div class="ttdeci">const char * fmt</div><div class="ttdef"><b>Definition</b> drm_file.h:466</div></div>
+<div class="ttc" id="ainitial_8c_html_a7360b55975153b822efc5217b7734e6a"><div class="ttname"><a href="initial_8c.html#a7360b55975153b822efc5217b7734e6a">len</a></div><div class="ttdeci">size_t len</div><div class="ttdef"><b>Definition</b> initial.c:23</div></div>
+<div class="ttc" id="akernel__exports_8c_html_a61b061ac296a1729e7aec71368beac31"><div class="ttname"><a href="kernel__exports_8c.html#a61b061ac296a1729e7aec71368beac31">strlen</a></div><div class="ttdeci">void strlen(void)</div></div>
+<div class="ttc" id="alibunicode_8c_html_a2530554172d8629149ec56816eeaa947"><div class="ttname"><a href="libunicode_8c.html#a2530554172d8629149ec56816eeaa947">d</a></div><div class="ttdeci">#define d</div><div class="ttdef"><b>Definition</b> libunicode.c:1833</div></div>
+<div class="ttc" id="astring__choices_8h_html"><div class="ttname"><a href="string__choices_8h.html">string_choices.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -105,7 +105,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment"> * does does not have to add a header to compile.</span></div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#include &lt;<a class="code" href="kernel_8h.html">linux/kernel.h</a>&gt;</span>   <span class="comment">/* udelay, mdelay, msleep */</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#include &lt;linux/kernel.h&gt;</span>   <span class="comment">/* udelay, mdelay, msleep */</span></div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="delay_8h.html#aa8f1725f7808d54daf197e87bdae12d6">   27</a></span><span class="preprocessor">#define ndelay(ns) udelay(((unsigned long)(ns) + 999UL) / 1000UL)</span></div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
@@ -119,7 +119,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> usleep_range(<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <a class="code hl_define" href="minmax_8h.html#ac6afabdc09a49a433ee19d8a9486056d">min</a>, <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <a class="code hl_define" href="minmax_8h.html#affe776513b24d84b39af8ab0930fef7f">max</a>) {</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    (void)<a class="code hl_define" href="minmax_8h.html#affe776513b24d84b39af8ab0930fef7f">max</a>;</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <a class="code hl_define" href="kernel_8h.html#a84b5bf7ed1d3df07f4b011f169d5b174">udelay</a>((<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>)<a class="code hl_define" href="minmax_8h.html#ac6afabdc09a49a433ee19d8a9486056d">min</a>);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <a class="code hl_define" href="linux_2kernel_8h.html#a84b5bf7ed1d3df07f4b011f169d5b174">udelay</a>((<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>)<a class="code hl_define" href="minmax_8h.html#ac6afabdc09a49a433ee19d8a9486056d">min</a>);</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>}</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment">/*</span></div>
@@ -128,14 +128,13 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment"> * than pretending a wait was cut short.</span></div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> msleep_interruptible(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> ms) {</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <a class="code hl_define" href="kernel_8h.html#a86d9cd1dae45741ebdffa3f02aa62a0f">mdelay</a>(ms);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <a class="code hl_define" href="linux_2kernel_8h.html#a86d9cd1dae45741ebdffa3f02aa62a0f">mdelay</a>(ms);</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>}</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="preprocessor">#endif </span><span class="comment">/* __LINUX_DELAY_H__ */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="akernel_8h_html"><div class="ttname"><a href="kernel_8h.html">kernel.h</a></div></div>
-<div class="ttc" id="akernel_8h_html_a84b5bf7ed1d3df07f4b011f169d5b174"><div class="ttname"><a href="kernel_8h.html#a84b5bf7ed1d3df07f4b011f169d5b174">udelay</a></div><div class="ttdeci">#define udelay(us)</div><div class="ttdef"><b>Definition</b> kernel.h:107</div></div>
-<div class="ttc" id="akernel_8h_html_a86d9cd1dae45741ebdffa3f02aa62a0f"><div class="ttname"><a href="kernel_8h.html#a86d9cd1dae45741ebdffa3f02aa62a0f">mdelay</a></div><div class="ttdeci">#define mdelay(ms)</div><div class="ttdef"><b>Definition</b> kernel.h:108</div></div>
+<div class="ttc" id="alinux_2kernel_8h_html_a84b5bf7ed1d3df07f4b011f169d5b174"><div class="ttname"><a href="linux_2kernel_8h.html#a84b5bf7ed1d3df07f4b011f169d5b174">udelay</a></div><div class="ttdeci">#define udelay(us)</div><div class="ttdef"><b>Definition</b> kernel.h:134</div></div>
+<div class="ttc" id="alinux_2kernel_8h_html_a86d9cd1dae45741ebdffa3f02aa62a0f"><div class="ttname"><a href="linux_2kernel_8h.html#a86d9cd1dae45741ebdffa3f02aa62a0f">mdelay</a></div><div class="ttdeci">#define mdelay(ms)</div><div class="ttdef"><b>Definition</b> kernel.h:135</div></div>
 <div class="ttc" id="aminmax_8h_html_ac6afabdc09a49a433ee19d8a9486056d"><div class="ttname"><a href="minmax_8h.html#ac6afabdc09a49a433ee19d8a9486056d">min</a></div><div class="ttdeci">#define min(a, b)</div><div class="ttdef"><b>Definition</b> minmax.h:24</div></div>
 <div class="ttc" id="aminmax_8h_html_affe776513b24d84b39af8ab0930fef7f"><div class="ttname"><a href="minmax_8h.html#affe776513b24d84b39af8ab0930fef7f">max</a></div><div class="ttdeci">#define max(a, b)</div><div class="ttdef"><b>Definition</b> minmax.h:28</div></div>
 </div><!-- fragment --></div><!-- contents -->

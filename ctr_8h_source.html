@@ -92,8 +92,8 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="comment">// The 32-bit version seems to perform about the same as a 64-bit version</span></div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="comment">// on 64-bit architectures, so no need to define a 64-bit version.</span></div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 3;; i--) {</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        <a class="code hl_typedef" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> x = <a class="code hl_define" href="alignment_8h.html#ad1e767c2a96221587cdb898b03058763">MBEDTLS_GET_UINT32_BE</a>(n, i &lt;&lt; 2);</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        x += 1;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        <a class="code hl_typedef" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> <a class="code hl_variable" href="layout_8c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> = <a class="code hl_define" href="alignment_8h.html#ad1e767c2a96221587cdb898b03058763">MBEDTLS_GET_UINT32_BE</a>(n, i &lt;&lt; 2);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <a class="code hl_variable" href="layout_8c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> += 1;</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        <a class="code hl_define" href="alignment_8h.html#a5c3e546ffc29f7aac618062cf02a4fb0">MBEDTLS_PUT_UINT32_BE</a>(x, n, i &lt;&lt; 2);</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        <span class="keywordflow">if</span> (x != 0 || i == 0) {</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>            <span class="keywordflow">break</span>;</div>
@@ -107,6 +107,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="ttc" id="aalignment_8h_html_a5c3e546ffc29f7aac618062cf02a4fb0"><div class="ttname"><a href="alignment_8h.html#a5c3e546ffc29f7aac618062cf02a4fb0">MBEDTLS_PUT_UINT32_BE</a></div><div class="ttdeci">#define MBEDTLS_PUT_UINT32_BE(n, data, offset)</div><div class="ttdef"><b>Definition</b> alignment.h:427</div></div>
 <div class="ttc" id="aalignment_8h_html_ad1e767c2a96221587cdb898b03058763"><div class="ttname"><a href="alignment_8h.html#ad1e767c2a96221587cdb898b03058763">MBEDTLS_GET_UINT32_BE</a></div><div class="ttdeci">#define MBEDTLS_GET_UINT32_BE(data, offset)</div><div class="ttdef"><b>Definition</b> alignment.h:412</div></div>
 <div class="ttc" id="acommon_8h_html"><div class="ttname"><a href="common_8h.html">common.h</a></div><div class="ttdoc">Utility macros for internal use in the library.</div></div>
+<div class="ttc" id="alayout_8c_html_a6150e0515f7202e2fb518f7206ed97dc"><div class="ttname"><a href="layout_8c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a></div><div class="ttdeci">int x</div><div class="ttdef"><b>Definition</b> layout.c:118</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

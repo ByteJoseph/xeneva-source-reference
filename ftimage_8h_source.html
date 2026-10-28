@@ -991,7 +991,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00888" name="l00888"></a><span class="lineno">  888</span><span class="comment">   *   background bitmap, and even perform translucency.</span></div>
 <div class="line"><a id="l00889" name="l00889"></a><span class="lineno">  889</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00890" name="l00890"></a><span class="lineno"><a class="line" href="ftimage_8h.html#abae5f0d92287252b367d3e8210ec4e3a">  890</a></span>  <span class="keyword">typedef</span> void</div>
-<div class="line"><a id="l00891" name="l00891"></a><span class="lineno">  891</span>  (*<a class="code hl_typedef" href="ftimage_8h.html#abae5f0d92287252b367d3e8210ec4e3a">FT_SpanFunc</a>)( <span class="keywordtype">int</span>             y,</div>
+<div class="line"><a id="l00891" name="l00891"></a><span class="lineno">  891</span>  (*<a class="code hl_typedef" href="ftimage_8h.html#abae5f0d92287252b367d3e8210ec4e3a">FT_SpanFunc</a>)( <span class="keywordtype">int</span>             <a class="code hl_variable" href="layout_8c.html#a0a2f84ed7838f07779ae24c5a9086d33">y</a>,</div>
 <div class="line"><a id="l00892" name="l00892"></a><span class="lineno">  892</span>                  <span class="keywordtype">int</span>             count,</div>
 <div class="line"><a id="l00893" name="l00893"></a><span class="lineno">  893</span>                  <span class="keyword">const</span> <a class="code hl_struct" href="structFT__Span__.html">FT_Span</a>*  spans,</div>
 <div class="line"><a id="l00894" name="l00894"></a><span class="lineno">  894</span>                  <span class="keywordtype">void</span>*           user );</div>
@@ -1008,8 +1008,8 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00905" name="l00905"></a><span class="lineno">  905</span><span class="comment">   *   Deprecated, unimplemented.</span></div>
 <div class="line"><a id="l00906" name="l00906"></a><span class="lineno">  906</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00907" name="l00907"></a><span class="lineno"><a class="line" href="ftimage_8h.html#a2ac5897dab423a944f4457a3131061e4">  907</a></span>  <span class="keyword">typedef</span> int</div>
-<div class="line"><a id="l00908" name="l00908"></a><span class="lineno">  908</span>  (*<a class="code hl_typedef" href="ftimage_8h.html#a2ac5897dab423a944f4457a3131061e4">FT_Raster_BitTest_Func</a>)( <span class="keywordtype">int</span>    y,</div>
-<div class="line"><a id="l00909" name="l00909"></a><span class="lineno">  909</span>                             <span class="keywordtype">int</span>    x,</div>
+<div class="line"><a id="l00908" name="l00908"></a><span class="lineno">  908</span>  (*<a class="code hl_typedef" href="ftimage_8h.html#a2ac5897dab423a944f4457a3131061e4">FT_Raster_BitTest_Func</a>)( <span class="keywordtype">int</span>    <a class="code hl_variable" href="layout_8c.html#a0a2f84ed7838f07779ae24c5a9086d33">y</a>,</div>
+<div class="line"><a id="l00909" name="l00909"></a><span class="lineno">  909</span>                             <span class="keywordtype">int</span>    <a class="code hl_variable" href="layout_8c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>,</div>
 <div class="line"><a id="l00910" name="l00910"></a><span class="lineno">  910</span>                             <span class="keywordtype">void</span>*  user );</div>
 <div class="line"><a id="l00911" name="l00911"></a><span class="lineno">  911</span> </div>
 <div class="line"><a id="l00912" name="l00912"></a><span class="lineno">  912</span> </div>
@@ -1022,8 +1022,8 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00919" name="l00919"></a><span class="lineno">  919</span><span class="comment">   *   Deprecated, unimplemented.</span></div>
 <div class="line"><a id="l00920" name="l00920"></a><span class="lineno">  920</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00921" name="l00921"></a><span class="lineno"><a class="line" href="ftimage_8h.html#a715e9f91407a9758dbefb6dd6549fe35">  921</a></span>  <span class="keyword">typedef</span> void</div>
-<div class="line"><a id="l00922" name="l00922"></a><span class="lineno">  922</span>  (*<a class="code hl_typedef" href="ftimage_8h.html#a715e9f91407a9758dbefb6dd6549fe35">FT_Raster_BitSet_Func</a>)( <span class="keywordtype">int</span>    y,</div>
-<div class="line"><a id="l00923" name="l00923"></a><span class="lineno">  923</span>                            <span class="keywordtype">int</span>    x,</div>
+<div class="line"><a id="l00922" name="l00922"></a><span class="lineno">  922</span>  (*<a class="code hl_typedef" href="ftimage_8h.html#a715e9f91407a9758dbefb6dd6549fe35">FT_Raster_BitSet_Func</a>)( <span class="keywordtype">int</span>    <a class="code hl_variable" href="layout_8c.html#a0a2f84ed7838f07779ae24c5a9086d33">y</a>,</div>
+<div class="line"><a id="l00923" name="l00923"></a><span class="lineno">  923</span>                            <span class="keywordtype">int</span>    <a class="code hl_variable" href="layout_8c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>,</div>
 <div class="line"><a id="l00924" name="l00924"></a><span class="lineno">  924</span>                            <span class="keywordtype">void</span>*  user );</div>
 <div class="line"><a id="l00925" name="l00925"></a><span class="lineno">  925</span> </div>
 <div class="line"><a id="l00926" name="l00926"></a><span class="lineno">  926</span> </div>
@@ -1250,8 +1250,8 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l01145" name="l01145"></a><span class="lineno"> 1145</span><span class="comment">   */</span></div>
 <div class="line"><a id="l01146" name="l01146"></a><span class="lineno"><a class="line" href="ftimage_8h.html#a959011dc7420bae5989460bfd0727bd1"> 1146</a></span>  <span class="keyword">typedef</span> int</div>
 <div class="line"><a id="l01147" name="l01147"></a><span class="lineno"> 1147</span>  (*<a class="code hl_typedef" href="ftimage_8h.html#a959011dc7420bae5989460bfd0727bd1">FT_Raster_SetModeFunc</a>)( <a class="code hl_typedef" href="ftimage_8h.html#a6774d2eb4bf030daf319aa6b56347431">FT_Raster</a>      raster,</div>
-<div class="line"><a id="l01148" name="l01148"></a><span class="lineno"> 1148</span>                            <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span>  <a class="code hl_variable" href="d__mode_8c.html#a07bb4e8cdc92d8c8e99069d0e29cb370">mode</a>,</div>
-<div class="line"><a id="l01149" name="l01149"></a><span class="lineno"> 1149</span>                            <span class="keywordtype">void</span>*          args );</div>
+<div class="line"><a id="l01148" name="l01148"></a><span class="lineno"> 1148</span>                            <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span>  <a class="code hl_define" href="treebuilder_8c.html#a2aa8bc6e431cc1e0cc602ac69a419095">mode</a>,</div>
+<div class="line"><a id="l01149" name="l01149"></a><span class="lineno"> 1149</span>                            <span class="keywordtype">void</span>*          <a class="code hl_variable" href="seq__buf_8h.html#aa32248a496cdd71e49e619f9c8be5258">args</a> );</div>
 <div class="line"><a id="l01150" name="l01150"></a><span class="lineno"> 1150</span> </div>
 <div class="line"><a id="l01151" name="l01151"></a><span class="lineno"><a class="line" href="ftimage_8h.html#ad86623a6850838c7fec54f4f622c2744"> 1151</a></span><span class="preprocessor">#define FT_Raster_Set_Mode_Func  FT_Raster_SetModeFunc</span></div>
 <div class="line"><a id="l01152" name="l01152"></a><span class="lineno"> 1152</span> </div>
@@ -1345,7 +1345,6 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l01238" name="l01238"></a><span class="lineno"> 1238</span><span class="comment">/* Local Variables: */</span></div>
 <div class="line"><a id="l01239" name="l01239"></a><span class="lineno"> 1239</span><span class="comment">/* coding: utf-8    */</span></div>
 <div class="line"><a id="l01240" name="l01240"></a><span class="lineno"> 1240</span><span class="comment">/* End:             */</span></div>
-<div class="ttc" id="ad__mode_8c_html_a07bb4e8cdc92d8c8e99069d0e29cb370"><div class="ttname"><a href="d__mode_8c.html#a07bb4e8cdc92d8c8e99069d0e29cb370">mode</a></div><div class="ttdeci">GameMode_t mode</div><div class="ttdef"><b>Definition</b> d_mode.c:29</div></div>
 <div class="ttc" id="aft2build_8h_html"><div class="ttname"><a href="ft2build_8h.html">ft2build.h</a></div></div>
 <div class="ttc" id="aftheader_8h_html_a2ebbdbbee7f9bfa8b6b86790de7e9963"><div class="ttname"><a href="ftheader_8h.html#a2ebbdbbee7f9bfa8b6b86790de7e9963">FT_END_HEADER</a></div><div class="ttdeci">#define FT_END_HEADER</div><div class="ttdef"><b>Definition</b> ftheader.h:54</div></div>
 <div class="ttc" id="aftheader_8h_html_a72ee5814b3ae378ebb7fd3a8e3ddec14"><div class="ttname"><a href="ftheader_8h.html#a72ee5814b3ae378ebb7fd3a8e3ddec14">FT_BEGIN_HEADER</a></div><div class="ttdeci">#define FT_BEGIN_HEADER</div><div class="ttdef"><b>Definition</b> ftheader.h:36</div></div>
@@ -1385,6 +1384,9 @@ $(document).ready(function() { init_codefold(0); });
 <div class="ttc" id="aftimage_8h_html_adb1c27eedf361dcd3d331fa266a466af"><div class="ttname"><a href="ftimage_8h.html#adb1c27eedf361dcd3d331fa266a466af">FT_Outline_MoveToFunc</a></div><div class="ttdeci">int(* FT_Outline_MoveToFunc)(const FT_Vector *to, void *user)</div><div class="ttdef"><b>Definition</b> ftimage.h:501</div></div>
 <div class="ttc" id="aftimage_8h_html_ae5de8c9dd920eccd7ef91a7a4c0f1645"><div class="ttname"><a href="ftimage_8h.html#ae5de8c9dd920eccd7ef91a7a4c0f1645">FT_Outline_Funcs</a></div><div class="ttdeci">struct FT_Outline_Funcs_ FT_Outline_Funcs</div></div>
 <div class="ttc" id="aftimage_8h_html_af5f230f4b253d4c7715fd2e595614c90"><div class="ttname"><a href="ftimage_8h.html#af5f230f4b253d4c7715fd2e595614c90">FT_Pos</a></div><div class="ttdeci">FT_BEGIN_HEADER typedef signed long FT_Pos</div><div class="ttdef"><b>Definition</b> ftimage.h:58</div></div>
+<div class="ttc" id="alayout_8c_html_a0a2f84ed7838f07779ae24c5a9086d33"><div class="ttname"><a href="layout_8c.html#a0a2f84ed7838f07779ae24c5a9086d33">y</a></div><div class="ttdeci">int y</div><div class="ttdef"><b>Definition</b> layout.c:118</div></div>
+<div class="ttc" id="alayout_8c_html_a6150e0515f7202e2fb518f7206ed97dc"><div class="ttname"><a href="layout_8c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a></div><div class="ttdeci">int x</div><div class="ttdef"><b>Definition</b> layout.c:118</div></div>
+<div class="ttc" id="aseq__buf_8h_html_aa32248a496cdd71e49e619f9c8be5258"><div class="ttname"><a href="seq__buf_8h.html#aa32248a496cdd71e49e619f9c8be5258">args</a></div><div class="ttdeci">const char const char va_list args</div><div class="ttdef"><b>Definition</b> seq_buf.h:182</div></div>
 <div class="ttc" id="astructFT__BBox___html"><div class="ttname"><a href="structFT__BBox__.html">FT_BBox_</a></div><div class="ttdef"><b>Definition</b> ftimage.h:120</div></div>
 <div class="ttc" id="astructFT__BBox___html_a1f2a5d0565d496c1d41e43d018f45add"><div class="ttname"><a href="structFT__BBox__.html#a1f2a5d0565d496c1d41e43d018f45add">FT_BBox_::xMin</a></div><div class="ttdeci">FT_Pos xMin</div><div class="ttdef"><b>Definition</b> ftimage.h:121</div></div>
 <div class="ttc" id="astructFT__BBox___html_a77084921589f386a8a593ae1f25b1569"><div class="ttname"><a href="structFT__BBox__.html#a77084921589f386a8a593ae1f25b1569">FT_BBox_::yMax</a></div><div class="ttdeci">FT_Pos yMax</div><div class="ttdef"><b>Definition</b> ftimage.h:122</div></div>
@@ -1437,6 +1439,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="ttc" id="astructFT__Vector___html"><div class="ttname"><a href="structFT__Vector__.html">FT_Vector_</a></div><div class="ttdef"><b>Definition</b> ftimage.h:77</div></div>
 <div class="ttc" id="astructFT__Vector___html_a941e818e6dfca06409cddff4f325f74c"><div class="ttname"><a href="structFT__Vector__.html#a941e818e6dfca06409cddff4f325f74c">FT_Vector_::x</a></div><div class="ttdeci">FT_Pos x</div><div class="ttdef"><b>Definition</b> ftimage.h:78</div></div>
 <div class="ttc" id="astructFT__Vector___html_ac3246ed214e880047ec74eeb15f8b973"><div class="ttname"><a href="structFT__Vector__.html#ac3246ed214e880047ec74eeb15f8b973">FT_Vector_::y</a></div><div class="ttdeci">FT_Pos y</div><div class="ttdef"><b>Definition</b> ftimage.h:79</div></div>
+<div class="ttc" id="atreebuilder_8c_html_a2aa8bc6e431cc1e0cc602ac69a419095"><div class="ttname"><a href="treebuilder_8c.html#a2aa8bc6e431cc1e0cc602ac69a419095">mode</a></div><div class="ttdeci">#define mode(x)</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

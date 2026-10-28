@@ -215,9 +215,9 @@ Macros</h2></td></tr>
 <tr class="separator:a53abfe95d756ad62196d9c500f9ed97e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a993df4f8145721dd5c6ec76f34bde8b1" id="r_a993df4f8145721dd5c6ec76f34bde8b1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PiMultiPhase_8h.html#a993df4f8145721dd5c6ec76f34bde8b1">EFI_NOT_AVAILABLE_YET</a>&#160;&#160;&#160;<a class="el" href="PiMultiPhase_8h.html#a7fe20434cf15865a0dbb275e21b918f6">DXE_ERROR</a> (2)</td></tr>
 <tr class="separator:a993df4f8145721dd5c6ec76f34bde8b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7d068765ee6804d6700e6450540eed6" id="r_ad7d068765ee6804d6700e6450540eed6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PiMultiPhase_8h.html#ad7d068765ee6804d6700e6450540eed6">PI_ENCODE_WARNING</a>(a)&#160;&#160;&#160;((<a class="el" href="AArch64_2ProcessorBind_8h.html#a2137fc5695cbd81598a4dba1ac6fab31">MAX_BIT</a> &gt;&gt; 2) | (a))</td></tr>
+<tr class="memitem:ad7d068765ee6804d6700e6450540eed6" id="r_ad7d068765ee6804d6700e6450540eed6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PiMultiPhase_8h.html#ad7d068765ee6804d6700e6450540eed6">PI_ENCODE_WARNING</a>(<a class="el" href="Process_2NetSurf_2main_8cpp.html#a81e02a278aaeae99b5dbef355ee6dd2f">a</a>)&#160;&#160;&#160;((<a class="el" href="AArch64_2ProcessorBind_8h.html#a2137fc5695cbd81598a4dba1ac6fab31">MAX_BIT</a> &gt;&gt; 2) | (<a class="el" href="Process_2NetSurf_2main_8cpp.html#a81e02a278aaeae99b5dbef355ee6dd2f">a</a>))</td></tr>
 <tr class="separator:ad7d068765ee6804d6700e6450540eed6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af827488dc5d9bd1bdab04fd021d9b70e" id="r_af827488dc5d9bd1bdab04fd021d9b70e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PiMultiPhase_8h.html#af827488dc5d9bd1bdab04fd021d9b70e">PI_ENCODE_ERROR</a>(a)&#160;&#160;&#160;(<a class="el" href="AArch64_2ProcessorBind_8h.html#a2137fc5695cbd81598a4dba1ac6fab31">MAX_BIT</a> | (<a class="el" href="AArch64_2ProcessorBind_8h.html#a2137fc5695cbd81598a4dba1ac6fab31">MAX_BIT</a> &gt;&gt; 2) | (a))</td></tr>
+<tr class="memitem:af827488dc5d9bd1bdab04fd021d9b70e" id="r_af827488dc5d9bd1bdab04fd021d9b70e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PiMultiPhase_8h.html#af827488dc5d9bd1bdab04fd021d9b70e">PI_ENCODE_ERROR</a>(<a class="el" href="Process_2NetSurf_2main_8cpp.html#a81e02a278aaeae99b5dbef355ee6dd2f">a</a>)&#160;&#160;&#160;(<a class="el" href="AArch64_2ProcessorBind_8h.html#a2137fc5695cbd81598a4dba1ac6fab31">MAX_BIT</a> | (<a class="el" href="AArch64_2ProcessorBind_8h.html#a2137fc5695cbd81598a4dba1ac6fab31">MAX_BIT</a> &gt;&gt; 2) | (<a class="el" href="Process_2NetSurf_2main_8cpp.html#a81e02a278aaeae99b5dbef355ee6dd2f">a</a>))</td></tr>
 <tr class="separator:af827488dc5d9bd1bdab04fd021d9b70e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07307b51fd68082027ae085db846dcf6" id="r_a07307b51fd68082027ae085db846dcf6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PiMultiPhase_8h.html#a07307b51fd68082027ae085db846dcf6">EFI_INTERRUPT_PENDING</a>&#160;&#160;&#160;<a class="el" href="PiMultiPhase_8h.html#af827488dc5d9bd1bdab04fd021d9b70e">PI_ENCODE_ERROR</a> (0)</td></tr>
 <tr class="separator:a07307b51fd68082027ae085db846dcf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -608,8 +608,8 @@ Enumerations</h2></td></tr>
           <td class="memname">#define PI_ENCODE_ERROR</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">a</td><td>)</td>
-          <td>&#160;&#160;&#160;(<a class="el" href="AArch64_2ProcessorBind_8h.html#a2137fc5695cbd81598a4dba1ac6fab31">MAX_BIT</a> | (<a class="el" href="AArch64_2ProcessorBind_8h.html#a2137fc5695cbd81598a4dba1ac6fab31">MAX_BIT</a> &gt;&gt; 2) | (a))</td>
+          <td class="paramname"><a class="el" href="Process_2NetSurf_2main_8cpp.html#a81e02a278aaeae99b5dbef355ee6dd2f">a</a></td><td>)</td>
+          <td>&#160;&#160;&#160;(<a class="el" href="AArch64_2ProcessorBind_8h.html#a2137fc5695cbd81598a4dba1ac6fab31">MAX_BIT</a> | (<a class="el" href="AArch64_2ProcessorBind_8h.html#a2137fc5695cbd81598a4dba1ac6fab31">MAX_BIT</a> &gt;&gt; 2) | (<a class="el" href="Process_2NetSurf_2main_8cpp.html#a81e02a278aaeae99b5dbef355ee6dd2f">a</a>))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -627,8 +627,8 @@ Enumerations</h2></td></tr>
           <td class="memname">#define PI_ENCODE_WARNING</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">a</td><td>)</td>
-          <td>&#160;&#160;&#160;((<a class="el" href="AArch64_2ProcessorBind_8h.html#a2137fc5695cbd81598a4dba1ac6fab31">MAX_BIT</a> &gt;&gt; 2) | (a))</td>
+          <td class="paramname"><a class="el" href="Process_2NetSurf_2main_8cpp.html#a81e02a278aaeae99b5dbef355ee6dd2f">a</a></td><td>)</td>
+          <td>&#160;&#160;&#160;((<a class="el" href="AArch64_2ProcessorBind_8h.html#a2137fc5695cbd81598a4dba1ac6fab31">MAX_BIT</a> &gt;&gt; 2) | (<a class="el" href="Process_2NetSurf_2main_8cpp.html#a81e02a278aaeae99b5dbef355ee6dd2f">a</a>))</td>
         </tr>
       </table>
 </div><div class="memdoc">

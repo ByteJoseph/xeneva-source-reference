@@ -110,7 +110,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment"> * mainline&#39;s call sites pass different numbers of them.</span></div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#include &lt;<a class="code" href="kernel_8h.html">linux/kernel.h</a>&gt;</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#include &lt;linux/kernel.h&gt;</span></div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="lockdep_8h.html#afa62187a0f752e2a9528043afca97954">   32</a></span><span class="preprocessor">#define lockdep_set_class(lock, key)        do { (void)(lock); (void)(key); } while (0)</span></div>
 <div class="foldopen" id="foldopen00033" data-start="" data-end="">
@@ -120,79 +120,154 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="lockdep_8h.html#aca37b08214f5807922f3250cbc478c8a">   35</a></span><span class="preprocessor">#define lockdep_set_subclass(lock, sub)     do { (void)(lock); (void)(sub); } while (0)</span></div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="lockdep_8h.html#a1a552a63c628fdc7acbdd4e8f2383d09">   36</a></span><span class="preprocessor">#define lockdep_set_novalidate_class(lock)  do { (void)(lock); } while (0)</span></div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="foldopen" id="foldopen00038" data-start="" data-end="">
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="lockdep_8h.html#a8c3b97df4325e0806e08efac4bde627a">   38</a></span><span class="preprocessor">#define lockdep_init_map(lock, name, key, sub)  \</span></div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">    do { (void)(lock); (void)(name); (void)(key); (void)(sub); } while (0)</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment"> * The `lock` argument is dropped rather than evaluated, which is what</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment"> * mainline&#39;s own !CONFIG_LOCKDEP arm does (lockdep.h:349, `do { (void)(name);</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment"> * (void)(key); } while (0)`).  The difference matters because mainline&#39;s</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment"> * seqlock.h is a byte-port here and its __seqcount_init() (:48) and</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment"> * do_write_seqcount_begin_nested() (:478) both address `&amp;s-&gt;dep_map` -- a</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment"> * member seqcount_t only has when CONFIG_DEBUG_LOCK_ALLOC is on, which it is</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment"> * not.  Evaluating the first parameter type-checked that member access and</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment"> * turned every dma-resv.c inclusion into &quot;no member named &#39;dep_map&#39; in</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment"> * &#39;struct seqcount&#39;&quot;.  A macro parameter that never appears in its</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment"> * replacement list is not expanded at all, so the expression never reaches C.</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment"> * mainline evaluates name and key and so does this: both are live parameters</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment"> * of __seqcount_init(), so the (void) casts also keep them from warning.</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment"> * seqcount_acquire/seqcount_release are mainline&#39;s own two-step names</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment"> * (lockdep.h:528/:530), spelled the same way as the rwsem quartet below for</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment"> * the same reason -- the lockdep_map they would take does not exist here.</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment"> */</span></div>
+<div class="foldopen" id="foldopen00057" data-start="" data-end="">
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="lockdep_8h.html#a8c3b97df4325e0806e08efac4bde627a">   57</a></span><span class="preprocessor">#define lockdep_init_map(lock, name, key, sub)      \</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="preprocessor">    do { (void)(name); (void)(key); } while (0)</span></div>
 </div>
-<div class="foldopen" id="foldopen00040" data-start="" data-end="">
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="lockdep_8h.html#a856e348227316464513ee5b194a9c173">   40</a></span><span class="preprocessor">#define lockdep_init_map_type(lock, name, key, sub, ...)        \</span></div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">    do { (void)(lock); (void)(name); (void)(key); (void)(sub); } while (0)</span></div>
+<div class="foldopen" id="foldopen00059" data-start="" data-end="">
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="lockdep_8h.html#a856e348227316464513ee5b194a9c173">   59</a></span><span class="preprocessor">#define lockdep_init_map_type(lock, name, key, sub, ...)        \</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="preprocessor">    do { (void)(name); (void)(key); } while (0)</span></div>
 </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="lockdep_8h.html#a93961ca9306ba4a662ce73cff994c682">   43</a></span><span class="preprocessor">#define lockdep_match_class(lock, key)      (1)</span></div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="lockdep_8h.html#ad17ecc1fd944cf699e0452f893397d52">   44</a></span><span class="preprocessor">#define lockdep_match_name(lock, name)      (1)</span></div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="foldopen" id="foldopen00046" data-start="" data-end="">
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="lockdep_8h.html#a7a87bd2ee95f85dc2ff42925008db673">   46</a></span><span class="preprocessor">#define lockdep_rcu_suspicious(file, line, s)               \</span></div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="preprocessor">    do { (void)(file); (void)(line); (void)(s); } while (0)</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="lockdep_8h.html#afb033c96a43f84dfb22be7e5a0844d91">   62</a></span><span class="preprocessor">#define seqcount_acquire(l, s, t, i)        do {} while (0)</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="lockdep_8h.html#afe50f3655066c1879744d48231cbd80c">   63</a></span><span class="preprocessor">#define seqcount_release(l, i)          do {} while (0)</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="lockdep_8h.html#a93961ca9306ba4a662ce73cff994c682">   65</a></span><span class="preprocessor">#define lockdep_match_class(lock, key)      (1)</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="lockdep_8h.html#ad17ecc1fd944cf699e0452f893397d52">   66</a></span><span class="preprocessor">#define lockdep_match_name(lock, name)      (1)</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="foldopen" id="foldopen00068" data-start="" data-end="">
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="lockdep_8h.html#a7a87bd2ee95f85dc2ff42925008db673">   68</a></span><span class="preprocessor">#define lockdep_rcu_suspicious(file, line, s)               \</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="preprocessor">    do { (void)(file); (void)(line); (void)(s); } while (0)</span></div>
 </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="lockdep_8h.html#a97d6423875bf4db75eb3597342b31d4e">   49</a></span><span class="preprocessor">#define lockdep_assert_held(l)          do { (void)(l); } while (0)</span></div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="lockdep_8h.html#aac8735d3a76ab242cfdb4d161c6fa3d7">   50</a></span><span class="preprocessor">#define lockdep_assert_held_write(l)        do { (void)(l); } while (0)</span></div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="lockdep_8h.html#a069fe352361f4524ea9272af7006d8f6">   51</a></span><span class="preprocessor">#define lockdep_assert_not_held(l)      do { (void)(l); } while (0)</span></div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="lockdep_8h.html#a5f4bb554e8e1083a3cfd179bc4b824e8">   52</a></span><span class="preprocessor">#define lockdep_assert_irqs_disabled()      do {} while (0)</span></div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="lockdep_8h.html#a999e6ca9ab2ee7b77cab4d647ce32cd5">   53</a></span><span class="preprocessor">#define lockdep_assert_irqs_enabled()       do {} while (0)</span></div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="lockdep_8h.html#ae982044a92f51164ed83011bf42ab818">   54</a></span><span class="preprocessor">#define lockdep_assert_in_rcu()         do {} while (0)</span></div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment"> * The rwsem acquire/release quartet -- tty_ldsem.c:300-310, which brackets</span></div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment"> * every ldsem_up/_down with them:</span></div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="comment"> *     rwsem_acquire_read(&amp;sem-&gt;dep_map, subclass, 0, _RET_IP_);</span></div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment"> *     count = atomic_long_add_return(LDSEM_READ_BIAS, &amp;sem-&gt;count);</span></div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment"> *     ...</span></div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment"> *     rwsem_release(&amp;sem-&gt;dep_map, _RET_IP_);</span></div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment"> * mainline&#39;s versions are real when CONFIG_LOCKDEP and CONFIG_PROVE_LOCKING</span></div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment"> * are on and no-ops otherwise, so this is the arm every non-debug build</span></div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment"> * already takes.  What is *not* borrowed is mainline&#39;s `(void)(l)` argument</span></div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment"> * handling: these four take a `struct lockdep_map *` that struct ld_semaphore</span></div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment"> * does not carry (tty_ldisc.h), and evaluating it would mean adding a member</span></div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment"> * whose only purpose is to be addressed and forgotten.  Dropping the</span></div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="comment"> * parameter instead means the expression never reaches C at all -- a macro</span></div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="comment"> * parameter that does not appear in the replacement list is not expanded --</span></div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="comment"> * which also leaves _RET_IP_ (a lockdep return-address macro) as a bare</span></div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="comment"> * identifier that never has to be defined.</span></div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="comment"> * Argument order is mainline&#39;s: lockdep_map, subclass[, read], ip.</span></div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="lockdep_8h.html#af919a2bfa4137d91cafb3fd76a74ca00">   78</a></span><span class="preprocessor">#define rwsem_acquire(l, s, t, i)       do {} while (0)</span></div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="lockdep_8h.html#a151cef31cb7b148f899ac6a2a27993f5">   79</a></span><span class="preprocessor">#define rwsem_acquire_read(l, s, t, i)      do {} while (0)</span></div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="lockdep_8h.html#a175c12589ba9ed82b0954a1179c68e2e">   80</a></span><span class="preprocessor">#define rwsem_release(l, i)         do {} while (0)</span></div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="lockdep_8h.html#a04d150d1bc2138cff8018f4d1c716e71">   81</a></span><span class="preprocessor">#define lock_contended(l, i)            do {} while (0)</span></div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="lockdep_8h.html#a72ac83fe308387d660c02bf15ed9edd9">   82</a></span><span class="preprocessor">#define lock_acquired(l, i)         do {} while (0)</span></div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="structlock__class__key.html">   84</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structlock__class__key.html">lock_class_key</a> { };</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="structlockdep__map.html">   85</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structlockdep__map.html">lockdep_map</a> { };</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="comment"> * lockdep_assert_held_once -- the one assertion the tty/serial headers use</span></div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="comment"> * that this header did not have (8250.h:200, 8250_port.c:555, and every</span></div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="comment"> * uart_port_lock* wrapper in serial_core.h reach for it).</span></div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="comment"> * mainline&#39;s is a real test that fires once per site when the lock is not</span></div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="comment"> * held; DCL runs no lockdep, so it is the same no-op as</span></div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="comment"> * lockdep_assert_held() directly above.  The distinction that survives is</span></div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="comment"> * arity: these are macros taking an lvalue, and the `(void)(l)` evaluates the</span></div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="comment"> * argument so `-Wunused-but-set-variable` does not fire on a lock that is</span></div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="comment"> * only ever asserted about.</span></div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="lockdep_8h.html#abfc4c92c31d7b263c05bff8feb6590b4">  100</a></span><span class="preprocessor">#define lockdep_assert_held_once(l)     do { (void)(l); } while (0)</span></div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="preprocessor">#endif </span><span class="comment">/* __LINUX_LOCKDEP_H__ */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="akernel_8h_html"><div class="ttname"><a href="kernel_8h.html">kernel.h</a></div></div>
-<div class="ttc" id="astructlock__class__key_html"><div class="ttname"><a href="structlock__class__key.html">lock_class_key</a></div><div class="ttdef"><b>Definition</b> lockdep.h:84</div></div>
-<div class="ttc" id="astructlockdep__map_html"><div class="ttname"><a href="structlockdep__map.html">lockdep_map</a></div><div class="ttdef"><b>Definition</b> lockdep.h:85</div></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="lockdep_8h.html#a97d6423875bf4db75eb3597342b31d4e">   71</a></span><span class="preprocessor">#define lockdep_assert_held(l)          do { (void)(l); } while (0)</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="lockdep_8h.html#aac8735d3a76ab242cfdb4d161c6fa3d7">   72</a></span><span class="preprocessor">#define lockdep_assert_held_write(l)        do { (void)(l); } while (0)</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="lockdep_8h.html#a069fe352361f4524ea9272af7006d8f6">   73</a></span><span class="preprocessor">#define lockdep_assert_not_held(l)      do { (void)(l); } while (0)</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="lockdep_8h.html#a5f4bb554e8e1083a3cfd179bc4b824e8">   74</a></span><span class="preprocessor">#define lockdep_assert_irqs_disabled()      do {} while (0)</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="lockdep_8h.html#a999e6ca9ab2ee7b77cab4d647ce32cd5">   75</a></span><span class="preprocessor">#define lockdep_assert_irqs_enabled()       do {} while (0)</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="lockdep_8h.html#ae982044a92f51164ed83011bf42ab818">   76</a></span><span class="preprocessor">#define lockdep_assert_in_rcu()         do {} while (0)</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="lockdep_8h.html#a3e079a6272d1cb7151b34c46feabf220">   77</a></span><span class="preprocessor">#define lockdep_assert_preemption_disabled()    do {} while (0)</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="comment"> * The three names the drm core adds to that family.  drm_auth.c:66 is the</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="comment"> * interesting one:</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="comment"> *     lockdep_assert_once(lockdep_is_held(&amp;fpriv-&gt;master_lookup_lock) ||</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="comment"> *                         lockdep_is_held(&amp;dev-&gt;master_mutex));</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="comment"> * and drm_syncobj.c:385/:1020 hand lockdep_is_held() to</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="comment"> * rcu_dereference_protected()&#39;s condition slot.  mainline answers &quot;does this</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="comment"> * task hold this lock&quot; out of the held-lock graph it maintains while running</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="comment"> * (lockdep.h:252); DCL has no graph and its locks are no-ops, so nothing is</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="comment"> * ever held and no order can be violated -- `1` is the answer that makes</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="comment"> * every one of these assertions pass, which is what an assertion that can</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="comment"> * only fail with lockdep is supposed to do.  The RCU condition is a hint</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="comment"> * DCL&#39;s rcu_dereference_protected() drops anyway (rcupdate.h).</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="comment"> * lockdep_assert_once() *does* evaluate its argument, unlike its neighbours</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="comment"> * above that take no value and unlike mainline&#39;s !CONFIG_LOCKDEP form</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="comment"> * (`do { } while (0)`, lockdep.h:390): the argument is the expression under</span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="comment"> * assertion, and evaluating it is what keeps the lock it names used -- the</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="comment"> * same reason lockdep_set_subclass() above evaluates its arguments.  The</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="comment"> * compiler then folds it away, since lockdep_is_held() is the constant 1.</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="comment"> * A macro rather than an extern declaration (which is what upstream&#39;s</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><span class="comment"> * !CONFIG_LOCKDEP build uses) follows lockdep_match_class() above, and both</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="comment"> * files that reference it reach this header, so no definition is needed.</span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno"><a class="line" href="lockdep_8h.html#aacd71d6a17c0e88f1c75a649734d7e94">  105</a></span><span class="preprocessor">#define lockdep_is_held(lock)           (1)</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno"><a class="line" href="lockdep_8h.html#ae503e291afd1d0e94ffc0f4c911747a7">  106</a></span><span class="preprocessor">#define lockdep_assert_once(cond)       do { (void)(cond); } while (0)</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno"><a class="line" href="lockdep_8h.html#a095e5c2443fd846f8948c1b825849555">  107</a></span><span class="preprocessor">#define lockdep_assert_none_held_once()     do {} while (0)</span></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="comment"> * The rwsem acquire/release quartet -- tty_ldsem.c:300-310, which brackets</span></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="comment"> * every ldsem_up/_down with them:</span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span><span class="comment"> *     rwsem_acquire_read(&amp;sem-&gt;dep_map, subclass, 0, _RET_IP_);</span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span><span class="comment"> *     count = atomic_long_add_return(LDSEM_READ_BIAS, &amp;sem-&gt;count);</span></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><span class="comment"> *     ...</span></div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="comment"> *     rwsem_release(&amp;sem-&gt;dep_map, _RET_IP_);</span></div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span><span class="comment"> * mainline&#39;s versions are real when CONFIG_LOCKDEP and CONFIG_PROVE_LOCKING</span></div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span><span class="comment"> * are on and no-ops otherwise, so this is the arm every non-debug build</span></div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="comment"> * already takes.  What is *not* borrowed is mainline&#39;s `(void)(l)` argument</span></div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span><span class="comment"> * handling: these four take a `struct lockdep_map *` that struct ld_semaphore</span></div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span><span class="comment"> * does not carry (tty_ldisc.h), and evaluating it would mean adding a member</span></div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span><span class="comment"> * whose only purpose is to be addressed and forgotten.  Dropping the</span></div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span><span class="comment"> * parameter instead means the expression never reaches C at all -- a macro</span></div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span><span class="comment"> * parameter that does not appear in the replacement list is not expanded --</span></div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span><span class="comment"> * which also leaves _RET_IP_ (a lockdep return-address macro) as a bare</span></div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span><span class="comment"> * identifier that never has to be defined.</span></div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span><span class="comment"> * Argument order is mainline&#39;s: lockdep_map, subclass[, read], ip.</span></div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno"><a class="line" href="lockdep_8h.html#af919a2bfa4137d91cafb3fd76a74ca00">  131</a></span><span class="preprocessor">#define rwsem_acquire(l, s, t, i)       do {} while (0)</span></div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno"><a class="line" href="lockdep_8h.html#a151cef31cb7b148f899ac6a2a27993f5">  132</a></span><span class="preprocessor">#define rwsem_acquire_read(l, s, t, i)      do {} while (0)</span></div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno"><a class="line" href="lockdep_8h.html#a175c12589ba9ed82b0954a1179c68e2e">  133</a></span><span class="preprocessor">#define rwsem_release(l, i)         do {} while (0)</span></div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno"><a class="line" href="lockdep_8h.html#a04d150d1bc2138cff8018f4d1c716e71">  134</a></span><span class="preprocessor">#define lock_contended(l, i)            do {} while (0)</span></div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno"><a class="line" href="lockdep_8h.html#a72ac83fe308387d660c02bf15ed9edd9">  135</a></span><span class="preprocessor">#define lock_acquired(l, i)         do {} while (0)</span></div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span><span class="comment"> * lock_acquire_shared_recursive() / lock_release() -- the two lockdep calls</span></div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span><span class="comment"> * drm_connector.c makes around the connector list iterator, at :1054 and</span></div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span><span class="comment"> * :1135. Same spelling as the five above, same argument-dropping reason, but</span></div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span><span class="comment"> * here it is load-bearing rather than tidy.</span></div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span><span class="comment"> * The second argument of the first call and the first of the second is</span></div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span><span class="comment"> * `&amp;connector_list_iter_dep_map`, and mainline only *defines* that object</span></div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span><span class="comment"> * inside `#ifdef CONFIG_LOCKDEP` (drm_connector.c:1032-1036). The two call</span></div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span><span class="comment"> * sites are not under that ifdef. They still compile in mainline because</span></div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span><span class="comment"> * mainline&#39;s no-op spelling of these macros discards its arguments before</span></div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span><span class="comment"> * they reach C, so the address of an object that was never declared is</span></div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span><span class="comment"> * parsed and then thrown away.</span></div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span><span class="comment"> * That is exactly what dropping the parameter does here, and it is why the</span></div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span><span class="comment"> * macros must not be written `(void)(l)`: evaluating the argument would</span></div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span><span class="comment"> * require a declaration, the declaration lives behind an ifdef that is off,</span></div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span><span class="comment"> * and the only ways out would be editing the vendored .c or unguarding a</span></div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span><span class="comment"> * lockdep object this kernel does not run.</span></div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno"><a class="line" href="lockdep_8h.html#a8e19fce2d3087a1da7e5f7132fe2f6a0">  157</a></span><span class="preprocessor">#define lock_acquire_shared_recursive(l, s, r, n, i)    do {} while (0)</span></div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno"><a class="line" href="lockdep_8h.html#a0211633a79530198bc9df6682680cda9">  158</a></span><span class="preprocessor">#define lock_release(l, i)              do {} while (0)</span></div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span> </div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno"><a class="line" href="structlock__class__key.html">  160</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structlock__class__key.html">lock_class_key</a> { };</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno"><a class="line" href="structlockdep__map.html">  161</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structlockdep__map.html">lockdep_map</a> { };</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span> </div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span> </div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span><span class="comment"> * lockdep_assert_held_once -- the one assertion the tty/serial headers use</span></div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span><span class="comment"> * that this header did not have (8250.h:200, 8250_port.c:555, and every</span></div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span><span class="comment"> * uart_port_lock* wrapper in serial_core.h reach for it).</span></div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span><span class="comment"> * mainline&#39;s is a real test that fires once per site when the lock is not</span></div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span><span class="comment"> * held; DCL runs no lockdep, so it is the same no-op as</span></div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span><span class="comment"> * lockdep_assert_held() directly above.  The distinction that survives is</span></div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span><span class="comment"> * arity: these are macros taking an lvalue, and the `(void)(l)` evaluates the</span></div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span><span class="comment"> * argument so `-Wunused-but-set-variable` does not fire on a lock that is</span></div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span><span class="comment"> * only ever asserted about.</span></div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno"><a class="line" href="lockdep_8h.html#abfc4c92c31d7b263c05bff8feb6590b4">  176</a></span><span class="preprocessor">#define lockdep_assert_held_once(l)     do { (void)(l); } while (0)</span></div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span><span class="preprocessor">#endif </span><span class="comment">/* __LINUX_LOCKDEP_H__ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="astructlock__class__key_html"><div class="ttname"><a href="structlock__class__key.html">lock_class_key</a></div><div class="ttdef"><b>Definition</b> lockdep.h:160</div></div>
+<div class="ttc" id="astructlockdep__map_html"><div class="ttname"><a href="structlockdep__map.html">lockdep_map</a></div><div class="ttdef"><b>Definition</b> lockdep.h:161</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

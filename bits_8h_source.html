@@ -81,16 +81,64 @@ $(document).ready(function() { init_codefold(0); });
   <div class="headertitle"><div class="title">bits.h</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="bits_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef __DCL_STUB_BaseHdr_linux_bits_h__</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define __DCL_STUB_BaseHdr_linux_bits_h__</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> * linux/bits.h -- created by mkh.sh while porting 8250_port.c.</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment"> * Empty on purpose: it exists so the compiler can get past the</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"> * include and report the NEXT problem. The real content is whatever</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment"> * the errors demand -- see DCL_TODO.md, stage 3.</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#endif </span><span class="comment">/* __DCL_STUB_BaseHdr_linux_bits_h__ */</span><span class="preprocessor"></span></div>
+<a href="bits_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef __LINUX_BITS_H__</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define __LINUX_BITS_H__</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> * DCL &lt;linux/bits.h&gt; -- the mask macros mainline gets from</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment"> * &lt;uapi/linux/bits.h&gt; and &lt;vdso/bits.h&gt;.</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment"> * __GENMASK was missing from the whole tree, and a missing *macro* does not</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment"> * stay a parse error here: `__GENMASK(15, 0)` compiles as an implicit call</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment"> * to a function of that name, so drm_mode.h&#39;s colour macros</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment"> * (DRM_ARGB64_PREP and friends, :1546-1594) produced an undefined symbol</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment"> * called __GENMASK in every object that expanded them --</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment"> * drm_atomic_state_helper.o:78, drm_blend.o and vkms_composer.o.</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment"> * This header is the only place it can go: drm_mode.h:14 includes</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"> * &lt;linux/bits.h&gt; itself, and DCL has no uapi/linux/bits.h for it to reach</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> * first. The BITS_PER_LONG fallback below is the same one bitops.h carries</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment"> * and the spellings have to agree token for token, because the include order</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment"> * decides which wins (drm_mode.h leads with this header, kernel.h leads with</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment"> * bitops.h) and a mismatch would be a -Wmacro-redefined on every drm file.</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment"> * DMA_BIT_MASK is here for the same reachability reason rather than for</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment"> * affinity. Its mainline home is &lt;linux/dma-mapping.h&gt;, which DCL keeps for</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment"> * declarations only, while vkms_drv.c:188 --</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment"> * `dma_coerce_mask_and_coherent(dev, DMA_BIT_MASK(64))` -- has this header</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment"> * in its include chain through the drm_fourcc.h path. Written</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment"> * self-contained (not over GENMASK_ULL, which kernel.h owns and which may</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment"> * not have been parsed yet) but with mainline&#39;s answer: all-ones at 64 bits</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment"> * and (1&lt;&lt;n)-1 below, so the ternary is what keeps the shift defined.</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment"> *   upstream  uapi/linux/bits.h (__GENMASK), dma-mapping.h:118</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment"> *             (DMA_BIT_MASK = GENMASK_ULL((n) - 1, 0))</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#ifndef BITS_PER_LONG</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment">/* 32 -- this target is LLP64, see the long note in &lt;linux/kernel.h&gt;. */</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="bits_8h.html#a2f660aa23a5dbc0f4b8df48b4302b8c3">   37</a></span><span class="preprocessor">#define BITS_PER_LONG 32</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#ifndef __GENMASK</span></div>
+<div class="foldopen" id="foldopen00041" data-start="" data-end="">
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="bits_8h.html#a0fe48daf90b2b283fb5cff9a32625867">   41</a></span><span class="preprocessor">#define __GENMASK(h, l) \</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="preprocessor">    (((~0UL) &lt;&lt; (l)) &amp; (~0UL &gt;&gt; (BITS_PER_LONG - 1 - (h))))</span></div>
+</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="preprocessor">#ifndef __GENMASK_ULL</span></div>
+<div class="foldopen" id="foldopen00046" data-start="" data-end="">
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="bits_8h.html#ab4363d5d7c2e09037cb102a2f3bdbdc1">   46</a></span><span class="preprocessor">#define __GENMASK_ULL(h, l) \</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="preprocessor">    (((~0ULL) &lt;&lt; (l)) &amp; (~0ULL &gt;&gt; (63 - (h))))</span></div>
+</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="preprocessor">#ifndef DMA_BIT_MASK</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="bits_8h.html#a046880fe7f8350a75d9fde1a430722bc">   51</a></span><span class="preprocessor">#define DMA_BIT_MASK(n) (((n) == 64) ? ~0ULL : ((1ULL &lt;&lt; (n)) - 1))</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="preprocessor">#endif </span><span class="comment">/* __LINUX_BITS_H__ */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -85,33 +85,162 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define __LINUX_MATH64_H__</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> * DCL &lt;linux/math64.h&gt; -- 64-bit division helpers.</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> * DCL &lt;linux/math64.h&gt; -- 64-bit division and 32x32-&gt;64 multiplication.</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"> * One caller, serial_core.c:451:</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment"> *     temp *= NSEC_PER_SEC;</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment"> *     port-&gt;frame_time = (unsigned int)DIV64_U64_ROUND_UP(temp, baud);</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment"> * which turns a bit time into the nanoseconds a whole frame takes, rounded</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment"> * *up* because a frame time that rounds down would make uart_poll_timeout()</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment"> * wake before the last stop bit had left the wire -- the caller then polls</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment"> * once more and, on a slow line, can poll forever.  Rounding up is the safe</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"> * direction and it is what upstream&#39;s div64_u64() does behind this macro.</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"> * Every body below is the generic C answer (`/`, `%`, `(u64)a * b`) rather</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment"> * than an arch-specific routine, and that is the correct answer here rather</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment"> * than a simplification: this target is aarch64, which has a hardware 64-bit</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment"> * divider and a 32x32-&gt;64 multiplier (umulh), so each of these compiles to</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment"> * one instruction pair with no libgcc call -- the exact problem upstream&#39;s</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment"> * per-arch split (lib/div64.c and the per-arch lib directories) exists to</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment"> * avoid on 32-bit CPUs that trap or soft-divide. Matching mainline&#39;s</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment"> * *answers* is all that is owed, and for truncating integer division the</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment"> * hardware and the reference agree bit for bit, including the signed</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"> * forms&#39; round-toward-zero.</span></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment"> * Written as arithmetic rather than behind div64_u64(): mainline needs the</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment"> * helper because 32-bit architectures have no 64x64 divider and must not take</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment"> * a divide fault, while aarch64 has a hardware udiv instruction and plain</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment"> * `/` compiles to it -- no libgcc call, no soft-divide.  div64_u64() is</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment"> * defined as the same expression so a later port that spells it out gets the</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment"> * identical answer.</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment"> *   upstream  include/linux/math64.h  (mainline v7.2)</span></div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="math64_8h.html#abf47d26aca6efe1342ea9b8bfbcd0af8">   28</a></span><span class="preprocessor">#define div64_u64(a, b)         ((u64)(a) / (u64)(b))</span></div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="math64_8h.html#aa3804e6d1965c8786fbd6a2f61ac55df">   29</a></span><span class="preprocessor">#define DIV64_U64_ROUND_UP(n, d)    (div64_u64((u64)(n) + (u64)(d) - 1, (d)))</span></div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#endif </span><span class="comment">/* __LINUX_MATH64_H__ */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment"> * include &lt;linux/types.h&gt; supplies u64/s64/u32/s32 (kernel.h&#39;s typedefs) so</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment"> * the prototypes read like mainline&#39;s. The include is safe in either</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment"> * direction: types.h&#39;s own kernel.h include is behind kernel.h&#39;s include</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment"> * guard, which any caller of this header has already set, and asm/div64.h</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment"> * has pulled types.h in before its bottom include of this file.</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment"> * Not every consumer names this header. drm_mm.c, drm_file.c, drm_rect.c,</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment"> * drm_format_helper.c and drm_fourcc.c reach it only through</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment"> * &lt;asm/div64.h&gt;, which includes it at the bottom -- see the bridge note</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment"> * there. That is why the helpers must be inline here and not in a DCL shim:</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment"> * a definition the caller cannot see is not a definition.</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment"> *   upstream  include/linux/math64.h  (mainline v7.2)</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#include &lt;<a class="code" href="BaseHdr_2linux_2types_8h.html">linux/types.h</a>&gt;</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment"> * div64_u64 / DIV64_U64_ROUND_UP -- the one pair this header carried for the</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment"> * tty/serial stage, kept because serial_core.c:451 still uses it:</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment"> *     temp *= NSEC_PER_SEC;</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment"> *     port-&gt;frame_time = (unsigned int)DIV64_U64_ROUND_UP(temp, baud);</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment"> * which turns a bit time into the nanoseconds a whole frame takes, rounded</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment"> * *up* because a frame time that rounds down would make uart_poll_timeout()</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment"> * wake before the last stop bit had left the wire -- the caller then polls</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment"> * once more and, on a slow line, can poll forever.  Rounding up is the safe</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment"> * direction and it is what upstream&#39;s div64_u64() does behind this macro.</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment"> * Written as a macro rather than an inline for the same reachability reason</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment"> * as the rest, just at an earlier stage: serial_core.c happened to include</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment"> * the header, and a plain expression cannot disagree with itself.</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="math64_8h.html#abf47d26aca6efe1342ea9b8bfbcd0af8">   51</a></span><span class="preprocessor">#define div64_u64(a, b)         ((u64)(a) / (u64)(b))</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="math64_8h.html#aa3804e6d1965c8786fbd6a2f61ac55df">   52</a></span><span class="preprocessor">#define DIV64_U64_ROUND_UP(n, d)    (div64_u64((u64)(n) + (u64)(d) - 1, (d)))</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment"> * div64_u64_rem -- 64/64 divide, remainder through the out parameter.</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment"> * The two callers, drm_mm.c:575 and :792, use only the remainder: each</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment"> * adjusts an alignment up to the next multiple of `alignment` when</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment"> * `alignment` is not a power of two (a power of two goes through the</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="comment"> * remainder_mask fast path beside the call). Getting this wrong does not</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment"> * fault -- it places a node at a misaligned start, and only the</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment"> * alignment-aware users of drm_mm (address-space VA allocation with a</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment"> * non-power-of-two guard) would ever see it.</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="keyword">static</span> <span class="keyword">inline</span> <a class="code hl_typedef" href="linux_2kernel_8h.html#a3f7e2bcbb0b4c338f3c4f6c937cd4234">u64</a> div64_u64_rem(<a class="code hl_typedef" href="linux_2kernel_8h.html#a3f7e2bcbb0b4c338f3c4f6c937cd4234">u64</a> dividend, <a class="code hl_typedef" href="linux_2kernel_8h.html#a3f7e2bcbb0b4c338f3c4f6c937cd4234">u64</a> divisor, <a class="code hl_typedef" href="linux_2kernel_8h.html#a3f7e2bcbb0b4c338f3c4f6c937cd4234">u64</a> *remainder)</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>{</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    *remainder = dividend % divisor;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="keywordflow">return</span> dividend / divisor;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>}</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="comment"> * div64_s64 -- signed 64/64 divide.</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="comment"> * Reached from &lt;drm/drm_fixed.h&gt;, whose fixed-point arithmetic is compiled</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="comment"> * into vkms_composer.o and vkms_formats.o. drm_fixed.h:166 divides one</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="comment"> * fixed-point value by another and :215-227 computes a per-step tolerance</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="comment"> * for the blend matrices; both compare the result against zero or against a</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="comment"> * tolerance, so a divide that did not follow the operands&#39; sign would flip a</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="comment"> * blend decision rather than merely lose a fraction.</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="keyword">static</span> <span class="keyword">inline</span> <a class="code hl_typedef" href="linux_2kernel_8h.html#a350c6fc928e3bdc6c6486268ac8fb269">s64</a> div64_s64(<a class="code hl_typedef" href="linux_2kernel_8h.html#a350c6fc928e3bdc6c6486268ac8fb269">s64</a> dividend, <a class="code hl_typedef" href="linux_2kernel_8h.html#a350c6fc928e3bdc6c6486268ac8fb269">s64</a> divisor)</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>{</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="keywordflow">return</span> dividend / divisor;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>}</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="comment"> * div_u64 -- unsigned 64/32 divide.</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="comment"> * drm_file.c:857 steps a byte count down by SZ_1K for fdinfo units</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="comment"> * (`sz = div_u64(sz, SZ_1K)`) and drm_vblank.c:659-660 turns</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="comment"> * pixels * 1000000 into a line/frame duration in nanoseconds</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="comment"> * (`div_u64((u64) mode-&gt;crtc_htotal * 1000000, dotclock)`). The 64-bit</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="comment"> * dividend is the reason the name exists: a plain division by a 32-bit</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="comment"> * value would still be a 64-bit operation, but the explicit u32 parameter</span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="comment"> * is what tells a 32-bit compiler it may use the cheap path.</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="keyword">static</span> <span class="keyword">inline</span> <a class="code hl_typedef" href="linux_2kernel_8h.html#a3f7e2bcbb0b4c338f3c4f6c937cd4234">u64</a> div_u64(<a class="code hl_typedef" href="linux_2kernel_8h.html#a3f7e2bcbb0b4c338f3c4f6c937cd4234">u64</a> dividend, <a class="code hl_typedef" href="linux_2kernel_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> divisor)</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>{</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    <span class="keywordflow">return</span> dividend / divisor;</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>}</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="comment"> * div_s64 -- signed 64/32 divide.</span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="comment"> * One caller, drm_vblank.c:807: the elapsed-time delta between the queried</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="comment"> * scanout position and the start of the display scanline is computed as</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="comment"> * `1000000LL * (vpos * mode-&gt;crtc_htotal + hpos)`, which is negative when</span></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="comment"> * the query lands before the first line has been scanned. That negative has</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="comment"> * to stay negative -- it is added to a raw timestamp -- so the unsigned form</span></div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="comment"> * would be a silent timestamp jump of almost 2^64 nanoseconds.</span></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="keyword">static</span> <span class="keyword">inline</span> <a class="code hl_typedef" href="linux_2kernel_8h.html#a350c6fc928e3bdc6c6486268ac8fb269">s64</a> div_s64(<a class="code hl_typedef" href="linux_2kernel_8h.html#a350c6fc928e3bdc6c6486268ac8fb269">s64</a> dividend, <a class="code hl_typedef" href="linux_2kernel_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a> divisor)</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>{</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    <span class="keywordflow">return</span> dividend / divisor;</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>}</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span><span class="comment"> * mul_u32_u32 -- unsigned 32x32 -&gt; 64 multiply.</span></div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="comment"> * Both callers multiply quantities that legitimately exceed 32 bits:</span></div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span><span class="comment"> * drm_rect.c:65 scales a clipped source rectangle by the destination</span></div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span><span class="comment"> * extent, and drm_modes.c:1307 computes a fixed-point refresh rate</span></div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span><span class="comment"> * (`mul_u32_u32(num, 1000)` where num already sits in the fixed-point</span></div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span><span class="comment"> * domain). Without the widening cast the product would wrap at 2^32 and the</span></div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span><span class="comment"> * scaled rectangle/rate would be wrong by a multiple of 2^32 -- the</span></div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span><span class="comment"> * truncation would be invisible until a large mode was used.</span></div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span><span class="keyword">static</span> <span class="keyword">inline</span> <a class="code hl_typedef" href="linux_2kernel_8h.html#a3f7e2bcbb0b4c338f3c4f6c937cd4234">u64</a> mul_u32_u32(<a class="code hl_typedef" href="linux_2kernel_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> <a class="code hl_variable" href="Process_2NetSurf_2main_8cpp.html#a81e02a278aaeae99b5dbef355ee6dd2f">a</a>, <a class="code hl_typedef" href="linux_2kernel_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> <a class="code hl_variable" href="Process_2NetSurf_2main_8cpp.html#a9dc54a811b75d3d05d3deff10980ca7e">b</a>)</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>{</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    <span class="keywordflow">return</span> (<a class="code hl_typedef" href="linux_2kernel_8h.html#a3f7e2bcbb0b4c338f3c4f6c937cd4234">u64</a>)<a class="code hl_variable" href="Process_2NetSurf_2main_8cpp.html#a81e02a278aaeae99b5dbef355ee6dd2f">a</a> * <a class="code hl_variable" href="Process_2NetSurf_2main_8cpp.html#a9dc54a811b75d3d05d3deff10980ca7e">b</a>;</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>}</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span><span class="comment"> * KHZ2PICOS -- a frequency in kHz as picoseconds, `(1000000000UL/(a))`.</span></div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span><span class="comment"> * Upstream&#39;s home is &lt;uapi/linux/fb.h&gt;:241; DCL&#39;s &lt;linux/fb.h&gt; is a stub</span></div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span><span class="comment"> * kept only so the include resolves -- drm_modes.c:35 includes it with the</span></div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span><span class="comment"> * comment &quot;for KHZ2PICOS()&quot; and gets nothing from it. The macro is placed</span></div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span><span class="comment"> * here instead because this header (through the asm/div64.h bridge) is</span></div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span><span class="comment"> * reached by both comparers: drm_edid.c:4409-4410 and :4511-4512 match an</span></div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span><span class="comment"> * EDID mode against CEA mode clocks, drm_modes.c:1495 compares two</span></div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span><span class="comment"> * drm_display_modes. All of them compare `mode-&gt;clock` (kHz, an int) after</span></div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span><span class="comment"> * scaling to picoseconds, which is how KHz becomes comparable with EDID&#39;s</span></div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span><span class="comment"> * kHz-with-decimals without floating point. 1000000000UL fits unsigned long</span></div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span><span class="comment"> * on this LLP64 target (32 bits) with room to spare, and `a` is a mode clock</span></div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span><span class="comment"> * in kHz, so the only input that would fault is zero -- which no parsed</span></div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span><span class="comment"> * display mode carries.</span></div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span><span class="preprocessor">#ifndef KHZ2PICOS</span></div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno"><a class="line" href="math64_8h.html#a2994b8668caa9afeeadcc8737d2e63f2">  150</a></span><span class="preprocessor">#define KHZ2PICOS(a)            (1000000000UL / (a))</span></div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span> </div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span><span class="preprocessor">#endif </span><span class="comment">/* __LINUX_MATH64_H__ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="aBaseHdr_2linux_2types_8h_html"><div class="ttname"><a href="BaseHdr_2linux_2types_8h.html">types.h</a></div></div>
+<div class="ttc" id="aProcess_2NetSurf_2main_8cpp_html_a81e02a278aaeae99b5dbef355ee6dd2f"><div class="ttname"><a href="Process_2NetSurf_2main_8cpp.html#a81e02a278aaeae99b5dbef355ee6dd2f">a</a></div><div class="ttdeci">size_t a</div><div class="ttdef"><b>Definition</b> main.cpp:156</div></div>
+<div class="ttc" id="aProcess_2NetSurf_2main_8cpp_html_a9dc54a811b75d3d05d3deff10980ca7e"><div class="ttname"><a href="Process_2NetSurf_2main_8cpp.html#a9dc54a811b75d3d05d3deff10980ca7e">b</a></div><div class="ttdeci">size_t b</div><div class="ttdef"><b>Definition</b> main.cpp:156</div></div>
+<div class="ttc" id="alinux_2kernel_8h_html_a350c6fc928e3bdc6c6486268ac8fb269"><div class="ttname"><a href="linux_2kernel_8h.html#a350c6fc928e3bdc6c6486268ac8fb269">s64</a></div><div class="ttdeci">int64_t s64</div><div class="ttdef"><b>Definition</b> kernel.h:21</div></div>
+<div class="ttc" id="alinux_2kernel_8h_html_a3f7e2bcbb0b4c338f3c4f6c937cd4234"><div class="ttname"><a href="linux_2kernel_8h.html#a3f7e2bcbb0b4c338f3c4f6c937cd4234">u64</a></div><div class="ttdeci">uint64_t u64</div><div class="ttdef"><b>Definition</b> kernel.h:17</div></div>
+<div class="ttc" id="alinux_2kernel_8h_html_ae9b1af5c037e57a98884758875d3a7c4"><div class="ttname"><a href="linux_2kernel_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a></div><div class="ttdeci">int32_t s32</div><div class="ttdef"><b>Definition</b> kernel.h:20</div></div>
+<div class="ttc" id="alinux_2kernel_8h_html_afaa62991928fb9fb18ff0db62a040aba"><div class="ttname"><a href="linux_2kernel_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a></div><div class="ttdeci">uint32_t u32</div><div class="ttdef"><b>Definition</b> kernel.h:16</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

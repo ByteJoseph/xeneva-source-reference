@@ -131,7 +131,7 @@ Macros</h2></td></tr>
 Typedefs</h2></td></tr>
 <tr class="memitem:aac25aef9defe336f873f4f08b398a8dd" id="r_aac25aef9defe336f873f4f08b398a8dd"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct__aucon__.html">_aucon_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aucon_8h.html#aac25aef9defe336f873f4f08b398a8dd">AuConsole</a></td></tr>
 <tr class="separator:aac25aef9defe336f873f4f08b398a8dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc70ba7fc48cf31d7796f111aba0938a" id="r_afc70ba7fc48cf31d7796f111aba0938a"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aucon_8h.html#afc70ba7fc48cf31d7796f111aba0938a">AuConsolePresentFn</a>) (<a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> *src, <a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> src_pitch, int x, int y, int w, int h)</td></tr>
+<tr class="memitem:afc70ba7fc48cf31d7796f111aba0938a" id="r_afc70ba7fc48cf31d7796f111aba0938a"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aucon_8h.html#afc70ba7fc48cf31d7796f111aba0938a">AuConsolePresentFn</a>) (<a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> *src, <a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> src_pitch, int x, int y, int w, int <a class="el" href="layout_8c.html#a16611451551e3d15916bae723c3f59f7">h</a>)</td></tr>
 <tr class="separator:afc70ba7fc48cf31d7796f111aba0938a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
@@ -164,6 +164,9 @@ Functions</h2></td></tr>
 <tr class="separator:aca6ffae334e5294de4aaa861bb05938c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac598315755aaea09795f8f3886dcd32d" id="r_ac598315755aaea09795f8f3886dcd32d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aucon_8h.html#ac598315755aaea09795f8f3886dcd32d">AuConsoleSetPresentHook</a> (<a class="el" href="aucon_8h.html#afc70ba7fc48cf31d7796f111aba0938a">AuConsolePresentFn</a> <a class="el" href="audrv_8c.html#aea8e2a19f1f3b20aa70f643b755d1b4a">fn</a>)</td></tr>
 <tr class="separator:ac598315755aaea09795f8f3886dcd32d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a650263d9c499080d498232ae4723097d" id="r_a650263d9c499080d498232ae4723097d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aucon_8h.html#a650263d9c499080d498232ae4723097d">AuConsolePresentRect</a> (int x, int y, int w, int <a class="el" href="layout_8c.html#a16611451551e3d15916bae723c3f59f7">h</a>)</td></tr>
+<tr class="memdesc:a650263d9c499080d498232ae4723097d"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuConsolePresentRect &ndash; hand an explicit damage rectangle to the scanout mirror installed by AuConsoleSetPresentHook.  <br /></td></tr>
+<tr class="separator:a650263d9c499080d498232ae4723097d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f6d8705a1f72010834c0258b722c84d" id="r_a1f6d8705a1f72010834c0258b722c84d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aucon_8h.html#a1f6d8705a1f72010834c0258b722c84d">AuConsoleGetScreenWidth</a> ()</td></tr>
 <tr class="memdesc:a1f6d8705a1f72010834c0258b722c84d"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuConsoleGetScreenWidth &ndash; return the screen width.  <br /></td></tr>
 <tr class="separator:a1f6d8705a1f72010834c0258b722c84d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -358,7 +361,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void(* AuConsolePresentFn) (<a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> *src, <a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> src_pitch, int x, int y, int w, int h)</td>
+          <td class="memname">typedef void(* AuConsolePresentFn) (<a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> *src, <a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> src_pitch, int x, int y, int w, int <a class="el" href="layout_8c.html#a16611451551e3d15916bae723c3f59f7">h</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -444,7 +447,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>AuConsoleGetScreenWidth &ndash; return the screen width. </p>
-<dl class="section return"><dt>Returns</dt><dd>return screen width The only caller is the tablet driver: report the desktop size the compositor draws at, not the firmware GOP console size, so absolute pointer input spans the whole desktop at any resolution. &ndash;axiss </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>return screen width The only caller is the tablet driver: report the desktop size the compositor draws at, not the firmware GOP console size, so absolute pointer input spans the whole desktop at any resolution. Falls back to the real console geometry while no driver backs a manual override, same value SCREEN_GETWIDTH hands out. &ndash;axiss </dd></dl>
 
 </div>
 </div>
@@ -523,6 +526,49 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a650263d9c499080d498232ae4723097d" name="a650263d9c499080d498232ae4723097d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a650263d9c499080d498232ae4723097d">&#9670;&#160;</a></span>AuConsolePresentRect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AuConsolePresentRect </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>h</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>AuConsolePresentRect &ndash; hand an explicit damage rectangle to the scanout mirror installed by AuConsoleSetPresentHook. </p>
+<p>The text console marks its own damage and flushes through AuConsoleFlushMirror(); this entry is for userspace, which paints into the mapped framebuffer directly and has no way to say "this much changed" other than SCREEN_UPDATE. Unlike the text mirror it is deliberately not gated on display_owned: the request comes from the process that owns the display, and muzzling it would leave the scanout frozen on its last text frame once the compositor takes over. </p>
 
 </div>
 </div>

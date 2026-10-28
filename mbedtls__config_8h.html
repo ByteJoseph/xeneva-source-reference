@@ -952,7 +952,7 @@ Above, "GCC" includes compatible compilers such as Clang. The limitations on tar
       </table>
 </div><div class="memdoc">
 <p>Enable the CMAC (Cipher-based Message Authentication Code) mode for block ciphers.</p>
-<dl class="section note"><dt>Note</dt><dd>When #MBEDTLS_CMAC_ALT is active, meaning that the underlying implementation of the CMAC algorithm is provided by an alternate implementation, that alternate implementation may opt to not support AES-192 or 3DES as underlying block ciphers for the CMAC operation.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>When MBEDTLS_CMAC_ALT is active, meaning that the underlying implementation of the CMAC algorithm is provided by an alternate implementation, that alternate implementation may opt to not support AES-192 or 3DES as underlying block ciphers for the CMAC operation.</dd></dl>
 <p>Module: <a class="el" href="cmac_8c.html" title="NIST SP800-38B compliant CMAC implementation for AES and 3DES.">library/cmac.c</a></p>
 <p>Requires: MBEDTLS_CIPHER_C, MBEDTLS_AES_C or MBEDTLS_DES_C </p>
 
@@ -1479,7 +1479,7 @@ To achieve a 256-bit security strength with CTR_DRBG, you must use AES-256 <em>a
 </div><div class="memdoc">
 <p>System has time.h, <a class="el" href="Libs_2XEClib_2includes_2time_8h.html#aba788d7b1e295a3b2d8b39f57b59d7d3">time()</a>, and an implementation for mbedtls_platform_gmtime_r() (see below). The time needs to be correct (not necessarily very accurate, but at least the date should be correct). This is used to verify the validity period of X.509 certificates.</p>
 <p>Comment if your system does not have a correct clock.</p>
-<dl class="section note"><dt>Note</dt><dd>mbedtls_platform_gmtime_r() is an abstraction in <a class="el" href="platform__util_8h.html" title="Common and shared functions used by multiple modules in the Mbed TLS library.">platform_util.h</a> that behaves similarly to the gmtime_r() function from the C standard. Refer to the documentation for mbedtls_platform_gmtime_r() for more information.</dd>
+<dl class="section note"><dt>Note</dt><dd>mbedtls_platform_gmtime_r() is an abstraction in <a class="el" href="platform__util_8h.html" title="Common and shared functions used by multiple modules in the Mbed TLS library.">platform_util.h</a> that behaves similarly to the <a class="el" href="quickjs_2port_2port_8c.html#af462996145389e4a6bd429e1a20e4f69">gmtime_r()</a> function from the C standard. Refer to the documentation for mbedtls_platform_gmtime_r() for more information.</dd>
 <dd>
 It is possible to configure an implementation for mbedtls_platform_gmtime_r() at compile-time by using the macro MBEDTLS_PLATFORM_GMTIME_R_ALT. </dd></dl>
 
@@ -2059,7 +2059,7 @@ See also our Knowledge Base article about porting to a new environment: <a href=
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Enable the platform abstraction layer that allows you to re-assign functions like <a class="el" href="stdlib_8h.html#a9b24d5b3c4fe645dbf55be0a8b928c1a">calloc()</a>, <a class="el" href="uspios_8c.html#a4f98ff4502b9d7ebedf752c1a7721441">free()</a>, <a class="el" href="acwin_8h.html#aa367b75c5aed883fef5befbdf04835a4">snprintf()</a>, <a class="el" href="BaseHdr_2stdio_8h.html#a6e835c0222425ccaf729bf308ea705a4">printf()</a>, <a class="el" href="Libs_2XEClib_2includes_2stdio_8h.html#a99a42da6122a2eb90d2deb6b288b6b86">fprintf()</a>, <a class="el" href="test__module_8c.html#aaf98ef7cdde3a0dfb2e49919de3298b1">exit()</a>.</p>
+<p>Enable the platform abstraction layer that allows you to re-assign functions like <a class="el" href="stdlib_8h.html#a9b24d5b3c4fe645dbf55be0a8b928c1a">calloc()</a>, <a class="el" href="quickjs_8c.html#a9d4b5df3530d1bc733070a4669ba6ebc">free()</a>, <a class="el" href="acwin_8h.html#aa367b75c5aed883fef5befbdf04835a4">snprintf()</a>, <a class="el" href="BaseHdr_2stdio_8h.html#a6e835c0222425ccaf729bf308ea705a4">printf()</a>, <a class="el" href="Libs_2XEClib_2includes_2stdio_8h.html#a99a42da6122a2eb90d2deb6b288b6b86">fprintf()</a>, <a class="el" href="test__module_8c.html#aaf98ef7cdde3a0dfb2e49919de3298b1">exit()</a>.</p>
 <p>Enabling MBEDTLS_PLATFORM_C enables to use of MBEDTLS_PLATFORM_XXX_ALT or MBEDTLS_PLATFORM_XXX_MACRO directives, allowing the functions mentioned above to be specified at runtime or compile time respectively.</p>
 <dl class="section note"><dt>Note</dt><dd>This abstraction layer must be enabled on Windows (including MSYS2) as other modules rely on it for a fixed snprintf implementation.</dd></dl>
 <p>Module: <a class="el" href="platform_8c.html">library/platform.c</a> Caller: Most other .c files</p>
@@ -2095,7 +2095,7 @@ See also our Knowledge Base article about porting to a new environment: <a href=
       </table>
 </div><div class="memdoc">
 <p>Enable the Platform Security Architecture (PSA) cryptography API.</p>
-<dl class="section note"><dt>Note</dt><dd>In multithreaded applications, you must enable #MBEDTLS_THREADING_C, unless only one thread ever calls <code>psa_xxx()</code> functions. That includes indirect calls, such as:<ul>
+<dl class="section note"><dt>Note</dt><dd>In multithreaded applications, you must enable MBEDTLS_THREADING_C, unless only one thread ever calls <code>psa_xxx()</code> functions. That includes indirect calls, such as:<ul>
 <li>performing a TLS handshake if support for TLS 1.3 is enabled;</li>
 <li>using a TLS 1.3 connection;</li>
 <li>indirect calls from PK, X.509 or SSL functions when <a class="el" href="xeneva__mbedtls__config_8h.html#a70fd7b97d5f11170546583f2095942a6">MBEDTLS_USE_PSA_CRYPTO</a> is enabled;</li>
@@ -2657,7 +2657,7 @@ This option is required if MBEDTLS_SSL_PROTO_TLS1_3 is set.</dd></dl>
 <dd>
 Cryptographic operations performed indirectly via another module (X.509, PK) or by code shared with TLS 1.2 (record protection, running handshake hash) only use PSA crypto if <a class="el" href="xeneva__mbedtls__config_8h.html#a70fd7b97d5f11170546583f2095942a6">MBEDTLS_USE_PSA_CRYPTO</a> is enabled.</dd>
 <dd>
-In multithreaded applications, you must also enable #MBEDTLS_THREADING_C, even if individual TLS contexts are not shared between threads, unless only one thread ever calls TLS functions.</dd></dl>
+In multithreaded applications, you must also enable MBEDTLS_THREADING_C, even if individual TLS contexts are not shared between threads, unless only one thread ever calls TLS functions.</dd></dl>
 <p>Uncomment this macro to enable the support for TLS 1.3. </p>
 
 </div>
