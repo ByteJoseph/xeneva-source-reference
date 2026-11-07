@@ -308,9 +308,9 @@ Macros</h2></td></tr>
 <tr class="separator:a04915fef0eb040ec7a1d861d3d7c6a86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa172884d9364945ab2a7a6315134c29d" id="r_aa172884d9364945ab2a7a6315134c29d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linux_2sched_8h.html#aa172884d9364945ab2a7a6315134c29d">__set_current_state</a>(s)&#160;&#160;&#160;do { (void)(s); } while (0)</td></tr>
 <tr class="separator:aa172884d9364945ab2a7a6315134c29d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a593702793d3ac4a564837e25301a8238" id="r_a593702793d3ac4a564837e25301a8238"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linux_2sched_8h.html#a593702793d3ac4a564837e25301a8238">set_task_state</a>(<a class="el" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a>,  s)&#160;&#160;&#160;do { (void)(<a class="el" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a>); (void)(s); } while (0)</td></tr>
+<tr class="memitem:a593702793d3ac4a564837e25301a8238" id="r_a593702793d3ac4a564837e25301a8238"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linux_2sched_8h.html#a593702793d3ac4a564837e25301a8238">set_task_state</a>(t,  s)&#160;&#160;&#160;do { (void)(t); (void)(s); } while (0)</td></tr>
 <tr class="separator:a593702793d3ac4a564837e25301a8238"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b9894f49fbcb559883814f55e4a336a" id="r_a3b9894f49fbcb559883814f55e4a336a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linux_2sched_8h.html#a3b9894f49fbcb559883814f55e4a336a">__set_task_state</a>(<a class="el" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a>,  s)&#160;&#160;&#160;do { (void)(<a class="el" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a>); (void)(s); } while (0)</td></tr>
+<tr class="memitem:a3b9894f49fbcb559883814f55e4a336a" id="r_a3b9894f49fbcb559883814f55e4a336a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linux_2sched_8h.html#a3b9894f49fbcb559883814f55e4a336a">__set_task_state</a>(t,  s)&#160;&#160;&#160;do { (void)(t); (void)(s); } while (0)</td></tr>
 <tr class="separator:a3b9894f49fbcb559883814f55e4a336a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5fe583172f8544fd71dacb67a8e46bbf" id="r_a5fe583172f8544fd71dacb67a8e46bbf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linux_2sched_8h.html#a5fe583172f8544fd71dacb67a8e46bbf">cond_resched</a>()&#160;&#160;&#160;((void)0)</td></tr>
 <tr class="separator:a5fe583172f8544fd71dacb67a8e46bbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -371,7 +371,7 @@ Functions</h2></td></tr>
           <td class="memname">#define __set_task_state</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a>, </td>
+          <td class="paramname">t, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -382,7 +382,7 @@ Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;do { (void)(<a class="el" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a>); (void)(s); } while (0)</td>
+          <td></td><td>&#160;&#160;&#160;do { (void)(t); (void)(s); } while (0)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -490,7 +490,7 @@ Functions</h2></td></tr>
           <td class="memname">#define set_task_state</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a>, </td>
+          <td class="paramname">t, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -501,7 +501,7 @@ Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;do { (void)(<a class="el" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a>); (void)(s); } while (0)</td>
+          <td></td><td>&#160;&#160;&#160;do { (void)(t); (void)(s); } while (0)</td>
         </tr>
       </table>
 </div><div class="memdoc">

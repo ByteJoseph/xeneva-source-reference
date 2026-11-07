@@ -165,7 +165,7 @@ Functions</h2></td></tr>
 <tr class="memitem:a025c81c7705c5afac4c405aae96b9a4f" id="r_a025c81c7705c5afac4c405aae96b9a4f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ipc_2auipc_8h.html#a025c81c7705c5afac4c405aae96b9a4f">AuIpcProcessGone</a> (<a class="el" href="process_8h.html#af7383c550ee680158b77cf18ef1d275a">AuProcess</a> *proc)</td></tr>
 <tr class="memdesc:a025c81c7705c5afac4c405aae96b9a4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuIpcProcessGone &ndash; a process is being reaped: tear down its endpoints (failing every call waiting on them) and cancel the calls it had in flight.  <br /></td></tr>
 <tr class="separator:a025c81c7705c5afac4c405aae96b9a4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1573f6112ed3eafd92861904363f162e" id="r_a1573f6112ed3eafd92861904363f162e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ipc_2auipc_8h.html#a1573f6112ed3eafd92861904363f162e">AuIpcKCallBegin</a> (const char *<a class="el" href="drm__crtc_8h.html#aed88e009d7772dfc9026cb1f5492b458">name</a>, int pid, int uid, int gid, const void *req, <a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> <a class="el" href="initial_8c.html#a7360b55975153b822efc5217b7734e6a">len</a>, <a class="el" href="acefiex_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> *call_id)</td></tr>
+<tr class="memitem:a1573f6112ed3eafd92861904363f162e" id="r_a1573f6112ed3eafd92861904363f162e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ipc_2auipc_8h.html#a1573f6112ed3eafd92861904363f162e">AuIpcKCallBegin</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *<a class="el" href="drm__crtc_8h.html#aed88e009d7772dfc9026cb1f5492b458">name</a>, int pid, int uid, int gid, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> void *req, <a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> <a class="el" href="initial_8c.html#a7360b55975153b822efc5217b7734e6a">len</a>, <a class="el" href="acefiex_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> *call_id)</td></tr>
 <tr class="separator:a1573f6112ed3eafd92861904363f162e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7bd03d56dfe0acd74b5c962e17e5970" id="r_af7bd03d56dfe0acd74b5c962e17e5970"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ipc_2auipc_8h.html#af7bd03d56dfe0acd74b5c962e17e5970">AuIpcKCallPoll</a> (<a class="el" href="acefiex_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> call_id, void *<a class="el" href="Process_2wifictl_2main_8cpp.html#a50fe33eaae68b43814656f241a6ac907">out</a>, <a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> cap, <a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> *outlen, <a class="el" href="acefiex_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> *server_status)</td></tr>
 <tr class="separator:af7bd03d56dfe0acd74b5c962e17e5970"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -239,7 +239,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">int AuIpcKCallBegin </td>
           <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
           <td class="paramname"><em>name</em>, </td>
         </tr>
         <tr>
@@ -263,7 +263,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const void *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> void *&#160;</td>
           <td class="paramname"><em>req</em>, </td>
         </tr>
         <tr>

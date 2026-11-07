@@ -303,7 +303,7 @@ Macros</h2></td></tr>
 <tr class="separator:a7ad7e4b0d387791eb45fcb71e1165d97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74b916c4fa69b3c0f1728b06e8841c6a" id="r_a74b916c4fa69b3c0f1728b06e8841c6a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libwapcaplet_8h.html#a74b916c4fa69b3c0f1728b06e8841c6a">lwc__assert_and_expr</a>(str,  expr)&#160;&#160;&#160;(expr)</td></tr>
 <tr class="separator:a74b916c4fa69b3c0f1728b06e8841c6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03644814ed884b2052387b179cfc506c" id="r_a03644814ed884b2052387b179cfc506c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libwapcaplet_8h.html#a03644814ed884b2052387b179cfc506c">lwc_string_data</a>(str)&#160;&#160;&#160;<a class="el" href="libwapcaplet_8h.html#a74b916c4fa69b3c0f1728b06e8841c6a">lwc__assert_and_expr</a>(str, (const char *)((str)+1))</td></tr>
+<tr class="memitem:a03644814ed884b2052387b179cfc506c" id="r_a03644814ed884b2052387b179cfc506c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libwapcaplet_8h.html#a03644814ed884b2052387b179cfc506c">lwc_string_data</a>(str)&#160;&#160;&#160;<a class="el" href="libwapcaplet_8h.html#a74b916c4fa69b3c0f1728b06e8841c6a">lwc__assert_and_expr</a>(str, (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *)((str)+1))</td></tr>
 <tr class="separator:a03644814ed884b2052387b179cfc506c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a144b4e706c2dfda9fd96879dcf469450" id="r_a144b4e706c2dfda9fd96879dcf469450"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libwapcaplet_8h.html#a144b4e706c2dfda9fd96879dcf469450">lwc_string_length</a>(str)&#160;&#160;&#160;<a class="el" href="libwapcaplet_8h.html#a74b916c4fa69b3c0f1728b06e8841c6a">lwc__assert_and_expr</a>(str, (str)-&gt;<a class="el" href="initial_8c.html#a7360b55975153b822efc5217b7734e6a">len</a>)</td></tr>
 <tr class="separator:a144b4e706c2dfda9fd96879dcf469450"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -333,7 +333,7 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a20a90b047542003b854fea30ae51c424" id="r_a20a90b047542003b854fea30ae51c424"><td class="memItemLeft" align="right" valign="top"><a class="el" href="libwapcaplet_8h.html#aa023b6967f68a6a21b78b40719985ba0">lwc_error</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libwapcaplet_8h.html#a20a90b047542003b854fea30ae51c424">lwc_intern_string</a> (const char *s, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> slen, <a class="el" href="libwapcaplet_8h.html#a5dda53db189bd16970cf7019380d0dfc">lwc_string</a> **ret)</td></tr>
+<tr class="memitem:a20a90b047542003b854fea30ae51c424" id="r_a20a90b047542003b854fea30ae51c424"><td class="memItemLeft" align="right" valign="top"><a class="el" href="libwapcaplet_8h.html#aa023b6967f68a6a21b78b40719985ba0">lwc_error</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libwapcaplet_8h.html#a20a90b047542003b854fea30ae51c424">lwc_intern_string</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *s, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> slen, <a class="el" href="libwapcaplet_8h.html#a5dda53db189bd16970cf7019380d0dfc">lwc_string</a> **ret)</td></tr>
 <tr class="separator:a20a90b047542003b854fea30ae51c424"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f94cc75894785681118776e5193f700" id="r_a1f94cc75894785681118776e5193f700"><td class="memItemLeft" align="right" valign="top"><a class="el" href="libwapcaplet_8h.html#aa023b6967f68a6a21b78b40719985ba0">lwc_error</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libwapcaplet_8h.html#a1f94cc75894785681118776e5193f700">lwc_intern_substring</a> (<a class="el" href="libwapcaplet_8h.html#a5dda53db189bd16970cf7019380d0dfc">lwc_string</a> *str, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> ssoffset, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> sslen, <a class="el" href="libwapcaplet_8h.html#a5dda53db189bd16970cf7019380d0dfc">lwc_string</a> **ret)</td></tr>
 <tr class="separator:a1f94cc75894785681118776e5193f700"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -386,7 +386,7 @@ Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">str</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="libwapcaplet_8h.html#a74b916c4fa69b3c0f1728b06e8841c6a">lwc__assert_and_expr</a>(str, (const char *)((str)+1))</td>
+          <td>&#160;&#160;&#160;<a class="el" href="libwapcaplet_8h.html#a74b916c4fa69b3c0f1728b06e8841c6a">lwc__assert_and_expr</a>(str, (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *)((str)+1))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -696,7 +696,7 @@ You may not rely on the NULL termination of the strings in future. Any code rely
         <tr>
           <td class="memname"><a class="el" href="libwapcaplet_8h.html#aa023b6967f68a6a21b78b40719985ba0">lwc_error</a> lwc_intern_string </td>
           <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
           <td class="paramname"><em>s</em>, </td>
         </tr>
         <tr>

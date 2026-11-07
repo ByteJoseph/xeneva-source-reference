@@ -280,7 +280,7 @@ Macros</h2></td></tr>
 <tr><td colspan="2"><div class="groupHeader">of the same token context</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p>lock class @ctx. This is helpful where multiple related token contexts are declared, to allow using the same underlying type (<code>__ctx_lock_@ctx</code>) as function arguments. </p>
 </div></td></tr>
-<tr class="memitem:ab304c182ffd4e5e9e96d14a275470be1" id="r_ab304c182ffd4e5e9e96d14a275470be1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compiler-context-analysis_8h.html#ab304c182ffd4e5e9e96d14a275470be1">token_context_lock_instance</a>(ctx,  <a class="el" href="drm__crtc_8h.html#aed88e009d7772dfc9026cb1f5492b458">name</a>)&#160;&#160;&#160;	extern const struct __ctx_lock_##ctx *<a class="el" href="drm__crtc_8h.html#aed88e009d7772dfc9026cb1f5492b458">name</a></td></tr>
+<tr class="memitem:ab304c182ffd4e5e9e96d14a275470be1" id="r_ab304c182ffd4e5e9e96d14a275470be1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compiler-context-analysis_8h.html#ab304c182ffd4e5e9e96d14a275470be1">token_context_lock_instance</a>(ctx,  <a class="el" href="drm__crtc_8h.html#aed88e009d7772dfc9026cb1f5492b458">name</a>)&#160;&#160;&#160;	extern <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct __ctx_lock_##ctx *<a class="el" href="drm__crtc_8h.html#aed88e009d7772dfc9026cb1f5492b458">name</a></td></tr>
 <tr class="separator:ab304c182ffd4e5e9e96d14a275470be1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a696b2b20d3bf2e7e8135111a640527a2" id="r_a696b2b20d3bf2e7e8135111a640527a2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compiler-context-analysis_8h.html#a696b2b20d3bf2e7e8135111a640527a2">__must_hold</a>(...)&#160;&#160;&#160;<a class="el" href="compiler-context-analysis_8h.html#aafbec854027920c40690cdf261c75113">__requires_ctx_lock</a>(__VA_ARGS__)</td></tr>
 <tr class="separator:a696b2b20d3bf2e7e8135111a640527a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1757,7 +1757,7 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;	extern const struct __ctx_lock_##ctx *<a class="el" href="drm__crtc_8h.html#aed88e009d7772dfc9026cb1f5492b458">name</a></td>
+          <td></td><td>&#160;&#160;&#160;	extern <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct __ctx_lock_##ctx *<a class="el" href="drm__crtc_8h.html#aed88e009d7772dfc9026cb1f5492b458">name</a></td>
         </tr>
       </table>
 </div><div class="memdoc">

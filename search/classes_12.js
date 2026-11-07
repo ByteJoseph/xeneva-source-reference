@@ -25,12 +25,11 @@ var searchData=
   ['reparsestate_22',['REParseState',['../structREParseState.html',1,'']]],
   ['reportitem_23',['ReportItem',['../structReportItem.html',1,'']]],
   ['reportstate_24',['ReportState',['../structReportState.html',1,'']]],
-  ['resampler_25',['Resampler',['../structResampler.html',1,'']]],
-  ['residual_5ft_26',['residual_t',['../structresidual__t.html',1,'']]],
-  ['resource_27',['resource',['../structresource.html',1,'']]],
-  ['restring_28',['REString',['../structREString.html',1,'']]],
-  ['restringlist_29',['REStringList',['../structREStringList.html',1,'']]],
-  ['revert_5fdata_30',['revert_data',['../structrevert__data.html',1,'']]],
-  ['ring_31',['Ring',['../structRing.html',1,'']]],
-  ['rw_5fsemaphore_32',['rw_semaphore',['../structrw__semaphore.html',1,'']]]
+  ['residual_5ft_25',['residual_t',['../structresidual__t.html',1,'']]],
+  ['resource_26',['resource',['../structresource.html',1,'']]],
+  ['restring_27',['REString',['../structREString.html',1,'']]],
+  ['restringlist_28',['REStringList',['../structREStringList.html',1,'']]],
+  ['revert_5fdata_29',['revert_data',['../structrevert__data.html',1,'']]],
+  ['ring_30',['Ring',['../structRing.html',1,'']]],
+  ['rw_5fsemaphore_31',['rw_semaphore',['../structrw__semaphore.html',1,'']]]
 ];

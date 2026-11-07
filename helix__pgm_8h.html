@@ -112,7 +112,7 @@ This graph shows which files directly or indirectly include this file:</div>
 <area shape="poly" title=" " alt="" coords="2181,311,2308,355,2307,360,2180,316"/>
 <area shape="rect" href="filefmt_8c.html" title=" " alt="" coords="2499,357,2724,397"/>
 <area shape="poly" title=" " alt="" coords="2236,309,2503,355,2502,360,2235,314"/>
-<area shape="rect" href="huffman_8c.html" title=" " alt="" coords="2748,357,2973,397"/>
+<area shape="rect" href="Process_2VideoPlayer_2libhelix-aac_2huffman_8c.html" title=" " alt="" coords="2748,357,2973,397"/>
 <area shape="poly" title=" " alt="" coords="2240,300,2471,324,2736,355,2748,356,2748,362,2735,360,2470,329,2239,305"/>
 <area shape="rect" href="hufftabs_8c.html" title=" " alt="" coords="2997,357,3223,397"/>
 <area shape="poly" title=" " alt="" coords="2239,295,2576,317,2781,334,2985,355,2998,356,2997,361,2984,360,2780,339,2576,323,2239,300"/>
@@ -159,9 +159,9 @@ This graph shows which files directly or indirectly include this file:</div>
 Macros</h2></td></tr>
 <tr class="memitem:ac069a2ff808011a129bf6b820a16c17e" id="r_ac069a2ff808011a129bf6b820a16c17e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="helix__pgm_8h.html#ac069a2ff808011a129bf6b820a16c17e">PROGMEM</a></td></tr>
 <tr class="separator:ac069a2ff808011a129bf6b820a16c17e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a48c60b057902adf805797f183286728d" id="r_a48c60b057902adf805797f183286728d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="helix__pgm_8h.html#a48c60b057902adf805797f183286728d">pgm_read_byte</a>(addr)&#160;&#160;&#160;(*(const unsigned char *)(addr))</td></tr>
+<tr class="memitem:a48c60b057902adf805797f183286728d" id="r_a48c60b057902adf805797f183286728d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="helix__pgm_8h.html#a48c60b057902adf805797f183286728d">pgm_read_byte</a>(addr)&#160;&#160;&#160;(*(<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *)(addr))</td></tr>
 <tr class="separator:a48c60b057902adf805797f183286728d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a910fb5f01313d339d3b835d45e1e5ad0" id="r_a910fb5f01313d339d3b835d45e1e5ad0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="helix__pgm_8h.html#a910fb5f01313d339d3b835d45e1e5ad0">pgm_read_word</a>(addr)&#160;&#160;&#160;(*(const unsigned short *)(addr))</td></tr>
+<tr class="memitem:a910fb5f01313d339d3b835d45e1e5ad0" id="r_a910fb5f01313d339d3b835d45e1e5ad0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="helix__pgm_8h.html#a910fb5f01313d339d3b835d45e1e5ad0">pgm_read_word</a>(addr)&#160;&#160;&#160;(*(<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned short *)(addr))</td></tr>
 <tr class="separator:a910fb5f01313d339d3b835d45e1e5ad0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
@@ -176,7 +176,7 @@ Macros</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">addr</td><td>)</td>
-          <td>&#160;&#160;&#160;(*(const unsigned char *)(addr))</td>
+          <td>&#160;&#160;&#160;(*(<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *)(addr))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -194,7 +194,7 @@ Macros</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">addr</td><td>)</td>
-          <td>&#160;&#160;&#160;(*(const unsigned short *)(addr))</td>
+          <td>&#160;&#160;&#160;(*(<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned short *)(addr))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -208,7 +208,7 @@ Macros</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="coder_8h.html#adb9b41df1e1f9e21aad966cb745d5b1a">HuffInfo</a> <a class="el" href="coder_8h.html#ac4dc44b5799ca3c0c4c5667c6eade115">huffTabScaleFactInfo</a> PROGMEM</td>
+          <td class="memname"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="coder_8h.html#adb9b41df1e1f9e21aad966cb745d5b1a">HuffInfo</a> <a class="el" href="coder_8h.html#ac4dc44b5799ca3c0c4c5667c6eade115">huffTabScaleFactInfo</a> PROGMEM</td>
         </tr>
       </table>
 </div><div class="memdoc">

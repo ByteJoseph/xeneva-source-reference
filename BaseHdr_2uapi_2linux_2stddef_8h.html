@@ -222,9 +222,9 @@ Macros</h2></td></tr>
 <tr class="separator:a6034e8cd4bcd5bacfd060abd01bbd8a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06a762b2908330e659fb0f0c07ee6fcc" id="r_a06a762b2908330e659fb0f0c07ee6fcc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BaseHdr_2uapi_2linux_2stddef_8h.html#a06a762b2908330e659fb0f0c07ee6fcc">__struct_group_tag</a>(TAG)&#160;&#160;&#160;TAG</td></tr>
 <tr class="separator:a06a762b2908330e659fb0f0c07ee6fcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae51dc404c7db02fba4b025c927c283e" id="r_aae51dc404c7db02fba4b025c927c283e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BaseHdr_2uapi_2linux_2stddef_8h.html#aae51dc404c7db02fba4b025c927c283e">__struct_group</a>(TAG,  NAME,  ATTRS,  MEMBERS...)</td></tr>
+<tr class="memitem:aae51dc404c7db02fba4b025c927c283e" id="r_aae51dc404c7db02fba4b025c927c283e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BaseHdr_2uapi_2linux_2stddef_8h.html#aae51dc404c7db02fba4b025c927c283e">__struct_group</a>(TAG,  <a class="el" href="inflate_8h.html#a164ea0159d5f0b5f12a646f25f99eceaa67bc2ced260a8e43805d2480a785d312">NAME</a>,  ATTRS,  MEMBERS...)</td></tr>
 <tr class="separator:aae51dc404c7db02fba4b025c927c283e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a075272e7126759931bd67c7eb63596f9" id="r_a075272e7126759931bd67c7eb63596f9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BaseHdr_2uapi_2linux_2stddef_8h.html#a075272e7126759931bd67c7eb63596f9">__DECLARE_FLEX_ARRAY</a>(TYPE,  NAME)</td></tr>
+<tr class="memitem:a075272e7126759931bd67c7eb63596f9" id="r_a075272e7126759931bd67c7eb63596f9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BaseHdr_2uapi_2linux_2stddef_8h.html#a075272e7126759931bd67c7eb63596f9">__DECLARE_FLEX_ARRAY</a>(<a class="el" href="inflate_8h.html#a164ea0159d5f0b5f12a646f25f99eceaab47ea8bb955afd0adc0ef98517dd6084">TYPE</a>,  <a class="el" href="inflate_8h.html#a164ea0159d5f0b5f12a646f25f99eceaa67bc2ced260a8e43805d2480a785d312">NAME</a>)</td></tr>
 <tr class="separator:a075272e7126759931bd67c7eb63596f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aafe09fc39a2ea394994268c8f939f5d3" id="r_aafe09fc39a2ea394994268c8f939f5d3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BaseHdr_2uapi_2linux_2stddef_8h.html#aafe09fc39a2ea394994268c8f939f5d3">__counted_by</a>(m)</td></tr>
 <tr class="separator:aafe09fc39a2ea394994268c8f939f5d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -334,13 +334,13 @@ Macros</h2></td></tr>
           <td class="memname">#define __DECLARE_FLEX_ARRAY</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">TYPE, </td>
+          <td class="paramname"><a class="el" href="inflate_8h.html#a164ea0159d5f0b5f12a646f25f99eceaab47ea8bb955afd0adc0ef98517dd6084">TYPE</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">NAME&#160;</td>
+          <td class="paramname"><a class="el" href="inflate_8h.html#a164ea0159d5f0b5f12a646f25f99eceaa67bc2ced260a8e43805d2480a785d312">NAME</a>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -350,9 +350,11 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">    <span class="keyword">struct </span>{ \</div>
-<div class="line">        <span class="keyword">struct </span>{ } __empty_ ## NAME; \</div>
-<div class="line">        TYPE NAME[]; \</div>
+<div class="line">        <span class="keyword">struct </span>{ } __empty_ ## <a class="code hl_enumvalue" href="inflate_8h.html#a164ea0159d5f0b5f12a646f25f99eceaa67bc2ced260a8e43805d2480a785d312">NAME</a>; \</div>
+<div class="line">        <a class="code hl_enumvalue" href="inflate_8h.html#a164ea0159d5f0b5f12a646f25f99eceaab47ea8bb955afd0adc0ef98517dd6084">TYPE</a> <a class="code hl_enumvalue" href="inflate_8h.html#a164ea0159d5f0b5f12a646f25f99eceaa67bc2ced260a8e43805d2480a785d312">NAME</a>[]; \</div>
 <div class="line">    }</div>
+<div class="ttc" id="ainflate_8h_html_a164ea0159d5f0b5f12a646f25f99eceaa67bc2ced260a8e43805d2480a785d312"><div class="ttname"><a href="inflate_8h.html#a164ea0159d5f0b5f12a646f25f99eceaa67bc2ced260a8e43805d2480a785d312">NAME</a></div><div class="ttdeci">@ NAME</div><div class="ttdef"><b>Definition</b> inflate.h:27</div></div>
+<div class="ttc" id="ainflate_8h_html_a164ea0159d5f0b5f12a646f25f99eceaab47ea8bb955afd0adc0ef98517dd6084"><div class="ttname"><a href="inflate_8h.html#a164ea0159d5f0b5f12a646f25f99eceaab47ea8bb955afd0adc0ef98517dd6084">TYPE</a></div><div class="ttdeci">@ TYPE</div><div class="ttdef"><b>Definition</b> inflate.h:32</div></div>
 </div><!-- fragment --><p><a class="el" href="BaseHdr_2uapi_2linux_2stddef_8h.html#a075272e7126759931bd67c7eb63596f9">__DECLARE_FLEX_ARRAY()</a> - Declare a flexible array usable in a union</p>
 <p>@TYPE: The type of each flexible array element @NAME: The name of the flexible array member</p>
 <p>In order to have a flexible array member in a union or alone in a struct, it needs to be wrapped in an anonymous struct with at least 1 named member, but that member can be empty. </p>
@@ -389,7 +391,7 @@ Macros</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">NAME, </td>
+          <td class="paramname"><a class="el" href="inflate_8h.html#a164ea0159d5f0b5f12a646f25f99eceaa67bc2ced260a8e43805d2480a785d312">NAME</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -412,7 +414,7 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">    <span class="keyword">union </span>{ \</div>
 <div class="line">        <span class="keyword">struct </span>{ MEMBERS } ATTRS; \</div>
-<div class="line">        <span class="keyword">struct </span>__struct_group_tag(TAG) { MEMBERS } ATTRS NAME; \</div>
+<div class="line">        <span class="keyword">struct </span>__struct_group_tag(TAG) { MEMBERS } ATTRS <a class="code hl_enumvalue" href="inflate_8h.html#a164ea0159d5f0b5f12a646f25f99eceaa67bc2ced260a8e43805d2480a785d312">NAME</a>; \</div>
 <div class="line">    } ATTRS</div>
 </div><!-- fragment --><p><a class="el" href="BaseHdr_2uapi_2linux_2stddef_8h.html#aae51dc404c7db02fba4b025c927c283e">__struct_group()</a> - Create a mirrored named and anonyomous struct</p>
 <p>@TAG: The tag name for the named sub-struct (usually empty) @NAME: The identifier name of the mirrored sub-struct @ATTRS: Any struct attributes (usually empty) @MEMBERS: The member declarations for the mirrored structs</p>

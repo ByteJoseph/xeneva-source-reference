@@ -93,113 +93,143 @@ $(function() {
 <code>#include &lt;<a class="el" href="aa64lowlevel_8h_source.html">Hal/AA64/aa64lowlevel.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="mmfile_8h_source.html">Mm/mmfile.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="sysserv_8h_source.html">Serv/sysserv.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="bordoisila__ptr_8h_source.html">bordoisila_ptr.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="process_8h_source.html">process.h</a>&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for vfs.c:</div>
 <div class="dyncontent">
 <div class="center"><img src="vfs_8c__incl.png" border="0" usemap="#aXenevaOS_2KernelAA64_2Fs_2vfs_8c" alt=""/></div>
 <map name="aXenevaOS_2KernelAA64_2Fs_2vfs_8c" id="aXenevaOS_2KernelAA64_2Fs_2vfs_8c">
-<area shape="rect" title=" " alt="" coords="1315,5,1483,45"/>
-<area shape="rect" href="vfs_8h.html" title=" " alt="" coords="1047,240,1120,265"/>
-<area shape="poly" title=" " alt="" coords="1394,47,1378,79,1354,119,1323,159,1285,194,1248,215,1209,231,1134,248,1133,243,1207,226,1246,211,1282,190,1319,156,1350,116,1373,76,1389,44"/>
-<area shape="rect" href="devfs_8h.html" title=" " alt="" coords="1153,167,1272,192"/>
-<area shape="poly" title=" " alt="" coords="1365,48,1329,69,1293,95,1260,127,1233,157,1229,154,1256,123,1290,91,1326,65,1362,43"/>
-<area shape="rect" href="__null_8h.html" title=" " alt="" coords="1752,93,1817,119"/>
-<area shape="poly" title=" " alt="" coords="1484,41,1733,91,1739,92,1738,97,1732,96,1483,46"/>
-<area shape="rect" href="aucon_8h.html" title=" " alt="" coords="1841,93,1915,119"/>
-<area shape="poly" title=" " alt="" coords="1484,35,1640,58,1828,90,1827,96,1639,63,1483,40"/>
-<area shape="rect" href="kmalloc_8h.html" title=" " alt="" coords="1286,541,1401,566"/>
-<area shape="poly" title=" " alt="" coords="1413,45,1441,98,1454,131,1465,166,1472,216,1466,266,1444,344,1415,419,1359,530,1354,528,1410,417,1439,343,1461,265,1467,216,1459,167,1449,133,1436,100,1409,47"/>
-<area shape="rect" href="uart_8h.html" title=" " alt="" coords="173,387,284,412"/>
-<area shape="poly" title=" " alt="" coords="1315,32,1044,44,875,56,702,71,542,90,409,115,357,129,318,144,294,161,288,170,286,178,286,254,282,289,272,322,246,376,241,374,267,320,277,288,281,254,281,178,283,167,290,157,316,140,355,124,407,110,541,85,701,65,874,50,1044,39,1315,27"/>
-<area shape="rect" href="vdisk_8h.html" title=" " alt="" coords="570,167,658,192"/>
-<area shape="poly" title=" " alt="" coords="1316,45,1043,96,672,169,671,164,1041,91,1315,39"/>
-<area shape="rect" title=" " alt="" coords="1939,93,2009,119"/>
-<area shape="poly" title=" " alt="" coords="1484,32,1682,54,1926,91,1925,96,1681,59,1483,37"/>
-<area shape="rect" href="postbox_8h.html" title=" " alt="" coords="914,167,1023,192"/>
-<area shape="poly" title=" " alt="" coords="1346,48,1210,96,1015,165,1013,160,1208,91,1345,43"/>
-<area shape="rect" href="pipe_8h.html" title=" " alt="" coords="1048,167,1129,192"/>
-<area shape="poly" title=" " alt="" coords="1361,48,1262,96,1125,163,1123,158,1259,91,1359,43"/>
-<area shape="rect" href="rpi3bp_8h.html" title=" " alt="" coords="2033,93,2200,119"/>
-<area shape="poly" title=" " alt="" coords="1484,33,2020,90,2019,96,1483,38"/>
-<area shape="rect" href="aa64lowlevel_8h.html" title=" " alt="" coords="1692,387,1877,412"/>
-<area shape="poly" title=" " alt="" coords="1484,41,1569,62,1659,91,1739,121,1782,141,1798,153,1810,165,1822,192,1828,220,1829,249,1827,278,1814,332,1799,375,1794,373,1809,331,1822,278,1824,249,1823,221,1817,193,1805,168,1795,157,1779,146,1737,125,1657,96,1568,68,1483,46"/>
-<area shape="rect" href="mmfile_8h.html" title=" " alt="" coords="781,167,890,192"/>
-<area shape="poly" title=" " alt="" coords="1324,48,1139,96,889,165,887,160,1137,91,1323,43"/>
-<area shape="rect" href="sysserv_8h.html" title=" " alt="" coords="1529,93,1645,119"/>
-<area shape="poly" title=" " alt="" coords="1445,43,1548,85,1546,90,1443,48"/>
-<area shape="rect" title=" " alt="" coords="680,621,751,647"/>
-<area shape="poly" title=" " alt="" coords="1047,263,956,282,847,312,797,330,755,351,728,374,721,386,718,398,718,474,718,607,713,607,713,474,713,398,716,384,724,371,752,347,794,325,845,307,955,276,1046,258"/>
-<area shape="rect" title=" " alt="" coords="1207,313,1261,339"/>
-<area shape="poly" title=" " alt="" coords="1109,263,1198,305,1196,310,1106,268"/>
-<area shape="rect" title=" " alt="" coords="1425,621,1501,647"/>
-<area shape="poly" title=" " alt="" coords="1099,263,1196,336,1238,363,1278,384,1348,416,1379,434,1408,457,1435,489,1459,532,1469,571,1469,608,1464,608,1464,572,1454,534,1430,492,1404,461,1376,438,1345,421,1275,388,1235,368,1192,341,1096,268"/>
-<area shape="rect" href="group_8h.html" title=" " alt="" coords="804,460,909,485"/>
-<area shape="poly" title=" " alt="" coords="1047,261,938,280,888,296,869,305,857,315,843,346,839,382,843,417,851,446,845,448,838,418,834,382,838,345,853,312,866,300,886,291,937,275,1046,256"/>
-<area shape="rect" href="user_8h.html" title=" " alt="" coords="1036,313,1131,339"/>
-<area shape="poly" title=" " alt="" coords="1086,266,1086,300,1081,300,1081,266"/>
-<area shape="rect" href="BaseHdr_2Sync_2poll_8h.html" title=" " alt="" coords="867,313,961,339"/>
-<area shape="poly" title=" " alt="" coords="1057,268,955,310,953,305,1055,263"/>
-<area shape="poly" title=" " alt="" coords="848,487,737,612,733,609,845,484"/>
-<area shape="poly" title=" " alt="" coords="921,338,928,366,935,403,935,446,923,487,895,519,849,555,749,617,746,612,846,550,892,515,918,484,929,445,929,404,923,367,915,340"/>
-<area shape="rect" href="waitq_8h.html" title=" " alt="" coords="1044,387,1149,412"/>
-<area shape="poly" title=" " alt="" coords="944,336,1055,379,1053,384,942,341"/>
-<area shape="rect" href="Hal_2AA64_2sched_8h.html" title=" " alt="" coords="1035,460,1171,485"/>
-<area shape="poly" title=" " alt="" coords="931,337,1079,450,1076,454,928,341"/>
-<area shape="poly" title=" " alt="" coords="1084,414,1025,462,887,576,825,604,765,623,763,618,823,599,885,571,1022,458,1081,410"/>
-<area shape="rect" href="aa64cpu_8h.html" title=" " alt="" coords="1108,541,1261,566"/>
-<area shape="poly" title=" " alt="" coords="1127,410,1159,429,1174,443,1186,459,1192,476,1195,494,1193,527,1188,527,1189,494,1187,477,1181,461,1170,446,1156,433,1125,414"/>
-<area shape="poly" title=" " alt="" coords="1100,412,1104,446,1098,447,1095,413"/>
-<area shape="poly" title=" " alt="" coords="1128,569,1089,576,765,628,764,623,1088,571,1127,563"/>
-<area shape="poly" title=" " alt="" coords="1226,563,1413,616,1411,621,1224,569"/>
-<area shape="rect" title=" " alt="" coords="1153,621,1217,647"/>
-<area shape="poly" title=" " alt="" coords="1187,566,1187,607,1182,607,1182,566"/>
-<area shape="poly" title=" " alt="" coords="1084,488,1002,536,971,557,938,576,847,607,765,626,764,621,846,602,936,571,968,553,999,531,1082,483"/>
-<area shape="poly" title=" " alt="" coords="1117,484,1165,529,1161,533,1113,487"/>
-<area shape="poly" title=" " alt="" coords="1193,194,1118,235,1116,231,1191,190"/>
-<area shape="poly" title=" " alt="" coords="1168,195,1023,234,839,289,753,319,682,348,634,376,621,388,617,399,617,474,624,515,644,553,668,585,693,610,689,614,664,588,639,555,619,517,611,474,611,397,616,385,630,372,680,344,752,314,838,284,1022,228,1167,189"/>
-<area shape="poly" title=" " alt="" coords="1229,190,1283,238,1358,316,1396,364,1432,417,1461,473,1483,533,1486,553,1485,573,1476,609,1471,607,1480,572,1481,553,1478,534,1457,475,1427,419,1392,367,1354,319,1279,242,1225,194"/>
-<area shape="rect" href="BaseHdr_2aurora_8h.html" title=" " alt="" coords="1871,167,1947,192"/>
-<area shape="poly" title=" " alt="" coords="1886,118,1901,153,1896,155,1881,120"/>
-<area shape="rect" href="BaseHdr_2stdint_8h.html" title=" " alt="" coords="1873,240,1944,265"/>
-<area shape="poly" title=" " alt="" coords="1911,192,1911,226,1906,226,1906,192"/>
-<area shape="poly" title=" " alt="" coords="1305,569,1273,576,1129,598,985,615,764,633,764,627,985,610,1128,593,1272,571,1304,563"/>
-<area shape="poly" title=" " alt="" coords="1362,564,1435,611,1432,616,1360,568"/>
-<area shape="poly" title=" " alt="" coords="258,410,296,430,336,458,360,489,373,518,387,546,398,559,414,571,460,589,527,605,667,625,666,630,526,610,458,595,411,576,395,562,383,549,369,521,356,492,332,462,294,434,255,414"/>
-<area shape="poly" title=" " alt="" coords="283,409,624,480,1096,571,1412,622,1411,628,1095,576,623,485,282,415"/>
+<area shape="rect" title=" " alt="" coords="1182,5,1350,45"/>
+<area shape="rect" href="vfs_8h.html" title=" " alt="" coords="996,240,1069,265"/>
+<area shape="poly" title=" " alt="" coords="1277,44,1289,76,1297,115,1296,156,1291,176,1280,194,1267,205,1248,215,1196,230,1083,249,1083,244,1195,225,1246,210,1264,200,1276,190,1286,174,1291,155,1292,115,1283,77,1272,46"/>
+<area shape="rect" href="devfs_8h.html" title=" " alt="" coords="1341,167,1460,192"/>
+<area shape="poly" title=" " alt="" coords="1285,44,1383,154,1379,158,1281,48"/>
+<area shape="rect" href="__null_8h.html" title=" " alt="" coords="812,93,877,119"/>
+<area shape="poly" title=" " alt="" coords="1182,44,897,96,891,97,890,92,896,91,1181,38"/>
+<area shape="rect" href="aucon_8h.html" title=" " alt="" coords="2112,93,2185,119"/>
+<area shape="poly" title=" " alt="" coords="1351,31,2041,91,2099,97,2098,102,2040,96,1350,36"/>
+<area shape="rect" href="kmalloc_8h.html" title=" " alt="" coords="1427,541,1542,566"/>
+<area shape="poly" title=" " alt="" coords="1351,31,1415,39,1481,51,1538,68,1559,79,1573,92,1591,118,1604,147,1612,177,1615,208,1612,272,1597,335,1575,396,1549,451,1503,530,1498,528,1544,448,1570,394,1592,334,1606,271,1610,208,1606,178,1599,149,1587,121,1569,95,1556,84,1536,73,1480,56,1415,44,1350,36"/>
+<area shape="rect" href="uart_8h.html" title=" " alt="" coords="305,387,416,412"/>
+<area shape="poly" title=" " alt="" coords="1182,35,964,53,699,83,576,103,475,126,437,138,407,151,389,165,383,179,383,254,378,319,369,374,364,373,373,318,378,254,378,177,385,162,405,147,435,133,474,121,575,98,698,78,963,48,1182,30"/>
+<area shape="rect" href="vdisk_8h.html" title=" " alt="" coords="437,167,525,192"/>
+<area shape="poly" title=" " alt="" coords="1182,38,1006,61,801,96,654,131,532,165,531,160,653,126,800,91,1005,56,1182,33"/>
+<area shape="rect" title=" " alt="" coords="1195,93,1265,119"/>
+<area shape="poly" title=" " alt="" coords="1260,47,1244,82,1239,79,1255,44"/>
+<area shape="rect" href="postbox_8h.html" title=" " alt="" coords="549,167,658,192"/>
+<area shape="poly" title=" " alt="" coords="1182,39,1063,59,998,75,935,96,913,108,891,121,803,142,672,168,671,162,802,137,889,116,911,104,933,91,997,70,1062,54,1181,33"/>
+<area shape="rect" href="pipe_8h.html" title=" " alt="" coords="867,167,948,192"/>
+<area shape="poly" title=" " alt="" coords="1186,48,1116,68,1044,96,985,128,935,161,932,156,982,123,1042,91,1114,63,1184,43"/>
+<area shape="rect" href="rpi3bp_8h.html" title=" " alt="" coords="1392,93,1559,119"/>
+<area shape="poly" title=" " alt="" coords="1317,43,1433,86,1431,91,1315,48"/>
+<area shape="rect" href="aa64lowlevel_8h.html" title=" " alt="" coords="2005,387,2191,412"/>
+<area shape="poly" title=" " alt="" coords="1350,26,1514,36,1609,45,1703,59,1788,79,1859,104,1886,119,1907,137,1920,156,1925,178,1925,254,1928,277,1937,298,1950,316,1968,333,2008,360,2050,379,2048,384,2006,365,1964,337,1946,320,1932,300,1923,278,1919,254,1919,178,1915,158,1903,140,1883,124,1856,109,1787,84,1702,65,1608,51,1514,41,1350,31"/>
+<area shape="rect" href="mmfile_8h.html" title=" " alt="" coords="682,167,791,192"/>
+<area shape="poly" title=" " alt="" coords="1182,45,1089,67,991,96,935,121,794,166,792,161,933,116,989,91,1088,62,1181,40"/>
+<area shape="rect" href="sysserv_8h.html" title=" " alt="" coords="1055,93,1171,119"/>
+<area shape="poly" title=" " alt="" coords="1230,48,1148,89,1146,85,1228,43"/>
+<area shape="rect" href="bordoisila__ptr_8h.html" title=" " alt="" coords="2010,240,2133,265"/>
+<area shape="poly" title=" " alt="" coords="1350,24,1495,28,1667,38,1752,47,1829,58,1894,73,1942,91,1983,120,2017,157,2043,195,2062,227,2057,229,2039,197,2013,160,1979,124,1939,96,1892,78,1828,63,1751,52,1667,44,1495,33,1350,30"/>
+<area shape="rect" href="process_8h.html" title=" " alt="" coords="1653,167,1737,192"/>
+<area shape="poly" title=" " alt="" coords="1350,25,1412,31,1481,42,1552,62,1619,91,1656,120,1683,153,1679,157,1652,124,1617,96,1551,67,1480,47,1411,36,1350,30"/>
+<area shape="rect" title=" " alt="" coords="847,621,917,647"/>
+<area shape="poly" title=" " alt="" coords="1015,268,989,288,966,315,945,353,928,393,904,476,891,552,886,608,881,607,886,551,899,475,923,391,940,350,961,312,985,284,1012,264"/>
+<area shape="rect" title=" " alt="" coords="845,313,900,339"/>
+<area shape="poly" title=" " alt="" coords="1008,268,912,310,910,305,1006,263"/>
+<area shape="rect" title=" " alt="" coords="1829,621,1905,647"/>
+<area shape="poly" title=" " alt="" coords="1062,263,1178,311,1236,336,1301,354,1385,371,1581,407,1679,430,1767,457,1839,490,1867,510,1888,532,1896,551,1896,572,1884,610,1879,608,1891,571,1891,552,1884,535,1864,514,1837,495,1765,462,1677,435,1580,413,1384,376,1300,359,1234,341,1176,316,1060,268"/>
+<area shape="rect" href="group_8h.html" title=" " alt="" coords="1247,313,1352,339"/>
+<area shape="poly" title=" " alt="" coords="1070,261,1244,307,1243,312,1069,266"/>
+<area shape="rect" href="user_8h.html" title=" " alt="" coords="1688,313,1783,339"/>
+<area shape="poly" title=" " alt="" coords="1070,256,1133,263,1674,316,1673,322,1132,268,1069,261"/>
+<area shape="rect" href="BaseHdr_2Sync_2poll_8h.html" title=" " alt="" coords="975,313,1069,339"/>
+<area shape="poly" title=" " alt="" coords="1034,266,1028,300,1023,299,1028,265"/>
+<area shape="poly" title=" " alt="" coords="1294,340,1264,385,1214,449,1148,517,1110,549,1070,576,1035,593,999,607,931,626,930,621,997,602,1033,588,1067,571,1107,544,1144,513,1210,445,1260,382,1290,337"/>
+<area shape="poly" title=" " alt="" coords="1019,340,895,610,890,608,1014,338"/>
+<area shape="rect" href="waitq_8h.html" title=" " alt="" coords="1051,387,1156,412"/>
+<area shape="poly" title=" " alt="" coords="1037,337,1082,376,1078,380,1033,341"/>
+<area shape="rect" href="Hal_2AA64_2sched_8h.html" title=" " alt="" coords="995,460,1131,485"/>
+<area shape="poly" title=" " alt="" coords="1026,338,1042,411,1055,446,1050,448,1037,413,1021,340"/>
+<area shape="poly" title=" " alt="" coords="1118,411,1144,445,1150,466,1146,487,1131,504,1109,522,1050,558,923,618,921,614,1047,553,1106,517,1128,500,1141,484,1145,466,1139,447,1114,414"/>
+<area shape="rect" href="aa64cpu_8h.html" title=" " alt="" coords="1199,541,1352,566"/>
+<area shape="poly" title=" " alt="" coords="1123,410,1189,458,1227,494,1259,529,1255,532,1223,498,1186,462,1120,414"/>
+<area shape="poly" title=" " alt="" coords="1099,414,1079,449,1074,447,1094,411"/>
+<area shape="poly" title=" " alt="" coords="1219,569,931,626,930,620,1218,563"/>
+<area shape="poly" title=" " alt="" coords="1353,562,1416,571,1816,623,1815,629,1415,576,1352,568"/>
+<area shape="rect" title=" " alt="" coords="1243,621,1307,647"/>
+<area shape="poly" title=" " alt="" coords="1278,566,1278,607,1273,607,1273,566"/>
+<area shape="poly" title=" " alt="" coords="1050,488,992,535,906,613,903,609,988,531,1047,483"/>
+<area shape="poly" title=" " alt="" coords="1095,483,1233,534,1231,539,1093,488"/>
+<area shape="poly" title=" " alt="" coords="1342,195,1083,244,1082,239,1341,189"/>
+<area shape="poly" title=" " alt="" coords="1403,193,1395,258,1385,300,1367,340,1314,422,1263,480,1200,527,1115,576,1069,597,1020,612,932,630,931,625,1018,607,1067,592,1113,571,1197,522,1259,476,1310,419,1362,337,1379,298,1390,257,1398,192"/>
+<area shape="poly" title=" " alt="" coords="1421,190,1530,254,1678,336,1749,369,1806,390,1862,415,1926,458,1960,484,1987,510,1995,524,1999,540,1998,557,1990,575,1976,592,1958,605,1919,623,1917,619,1955,601,1972,588,1985,572,1993,555,1994,540,1990,526,1982,513,1956,488,1923,462,1859,420,1804,395,1746,374,1675,341,1527,258,1418,195"/>
+<area shape="rect" href="BaseHdr_2aurora_8h.html" title=" " alt="" coords="2212,313,2288,339"/>
+<area shape="poly" title=" " alt="" coords="2159,118,2191,169,2227,239,2247,299,2242,300,2222,241,2186,172,2154,120"/>
+<area shape="rect" href="BaseHdr_2stdint_8h.html" title=" " alt="" coords="2215,387,2285,412"/>
+<area shape="poly" title=" " alt="" coords="2253,339,2253,373,2247,373,2247,339"/>
+<area shape="poly" title=" " alt="" coords="1443,569,1409,576,1274,597,1140,613,931,632,931,627,1139,608,1273,592,1408,571,1442,563"/>
+<area shape="poly" title=" " alt="" coords="1526,563,1555,571,1696,600,1816,622,1815,627,1695,605,1553,576,1524,569"/>
+<area shape="poly" title=" " alt="" coords="365,412,372,446,388,484,410,515,430,537,455,554,488,571,533,589,580,603,675,621,763,629,833,631,833,637,762,635,674,626,579,608,531,594,486,576,452,558,427,541,406,518,384,487,367,447,359,413"/>
+<area shape="poly" title=" " alt="" coords="406,409,730,485,956,531,1188,571,1368,593,1547,610,1816,628,1816,633,1546,615,1368,599,1187,576,955,536,729,490,405,415"/>
 <area shape="rect" href="aa64hcode_8h.html" title=" " alt="" coords="5,460,111,485"/>
-<area shape="poly" title=" " alt="" coords="202,414,99,457,97,452,200,410"/>
+<area shape="poly" title=" " alt="" coords="313,415,121,459,120,454,311,409"/>
 <area shape="rect" href="imx8mp_8h.html" title=" " alt="" coords="135,460,323,485"/>
-<area shape="poly" title=" " alt="" coords="231,412,231,446,226,446,226,412"/>
+<area shape="poly" title=" " alt="" coords="341,414,263,456,261,451,338,410"/>
 <area shape="rect" href="imx8mp__uart_8h.html" title=" " alt="" coords="145,533,321,573"/>
 <area shape="poly" title=" " alt="" coords="232,485,234,520,228,520,227,486"/>
-<area shape="poly" title=" " alt="" coords="321,567,342,571,667,622,666,628,342,576,321,572"/>
-<area shape="poly" title=" " alt="" coords="659,185,1033,241,1032,246,658,190"/>
-<area shape="poly" title=" " alt="" coords="575,195,533,213,513,226,496,242,480,262,470,279,466,299,465,325,465,474,465,504,468,528,477,549,496,571,535,598,579,616,625,626,666,630,666,635,624,631,578,621,532,603,492,575,473,552,463,530,460,505,459,474,459,325,461,298,465,277,475,259,492,238,510,222,531,208,573,190"/>
-<area shape="poly" title=" " alt="" coords="649,190,792,239,974,311,1024,336,1093,359,1124,369,1162,384,1299,443,1354,476,1415,532,1441,570,1458,607,1453,609,1436,572,1411,535,1351,480,1296,447,1160,389,1122,374,1091,365,1022,341,972,316,790,244,648,195"/>
-<area shape="rect" href="__FsGUIDs_8h.html" title=" " alt="" coords="308,387,424,412"/>
-<area shape="poly" title=" " alt="" coords="570,189,507,207,474,222,445,242,418,273,398,308,374,374,369,372,393,306,414,270,442,238,471,217,505,202,569,184"/>
-<area shape="poly" title=" " alt="" coords="372,411,403,497,424,542,445,571,484,590,542,605,667,625,666,630,541,610,482,595,442,575,420,545,398,499,367,413"/>
-<area shape="poly" title=" " alt="" coords="988,190,1054,230,1052,235,986,194"/>
-<area shape="poly" title=" " alt="" coords="924,195,848,217,763,248,725,266,695,285,675,305,667,325,667,474,671,511,681,548,705,608,700,610,676,550,666,512,662,474,662,324,670,302,691,281,723,262,761,243,846,212,922,190"/>
-<area shape="poly" title=" " alt="" coords="1090,193,1088,227,1083,226,1085,192"/>
-<area shape="poly" title=" " alt="" coords="1048,192,1036,195,940,206,864,209,789,217,747,226,697,243,649,256,606,268,590,276,577,287,569,303,566,325,566,474,567,504,571,527,580,548,597,571,630,598,668,616,666,621,627,603,593,575,575,551,565,529,561,504,561,474,561,324,564,301,573,284,587,271,604,263,647,251,696,237,745,221,788,211,863,204,939,201,1035,189,1047,187"/>
-<area shape="poly" title=" " alt="" coords="1102,191,1214,301,1211,305,1099,194"/>
-<area shape="poly" title=" " alt="" coords="1778,414,1713,488,1664,534,1610,576,1563,601,1515,620,1514,615,1560,596,1607,571,1661,530,1709,484,1774,411"/>
-<area shape="poly" title=" " alt="" coords="876,189,1034,235,1033,240,874,195"/>
-<area shape="poly" title=" " alt="" coords="781,188,648,207,587,223,563,232,546,242,529,260,520,278,516,298,515,325,515,474,516,504,519,528,528,549,547,571,573,593,604,608,667,625,666,630,602,613,571,597,543,575,524,552,514,529,510,505,510,474,510,325,511,298,515,276,525,257,543,238,561,227,585,217,647,202,780,183"/>
-<area shape="poly" title=" " alt="" coords="1583,120,1558,176,1547,213,1542,251,1542,327,1539,365,1531,395,1517,420,1499,439,1476,453,1450,463,1390,476,1246,491,1170,506,1133,519,1097,536,1069,556,1057,566,1039,576,966,600,892,617,822,627,765,633,764,627,821,622,891,612,965,595,1037,571,1054,562,1066,552,1094,531,1131,514,1169,501,1245,486,1389,471,1449,458,1474,448,1495,435,1513,417,1526,393,1534,364,1537,327,1537,251,1541,212,1553,174,1578,118"/>
-<area shape="poly" title=" " alt="" coords="1590,119,1593,251,1593,474,1590,497,1583,519,1558,559,1526,591,1495,616,1492,612,1522,587,1554,555,1578,517,1585,496,1587,474,1587,251,1585,119"/>
-<area shape="rect" title=" " alt="" coords="1627,167,1702,192"/>
-<area shape="poly" title=" " alt="" coords="1602,117,1644,155,1640,159,1598,121"/>
-<area shape="rect" title=" " alt="" coords="1727,167,1795,192"/>
-<area shape="poly" title=" " alt="" coords="1616,116,1721,159,1719,164,1614,121"/>
-<area shape="rect" href="BaseHdr_2Net_2socket_8h.html" title=" " alt="" coords="1348,167,1451,192"/>
-<area shape="poly" title=" " alt="" coords="1558,121,1444,164,1442,159,1556,116"/>
-<area shape="poly" title=" " alt="" coords="1349,195,1134,243,1133,238,1348,189"/>
-<area shape="poly" title=" " alt="" coords="1395,193,1301,342,1238,430,1210,464,1185,487,1151,507,1120,516,1089,522,1053,536,1021,556,988,576,930,596,869,611,765,630,764,625,868,606,928,591,986,571,1018,552,1050,531,1088,517,1119,511,1149,502,1182,483,1206,460,1234,426,1296,339,1390,191"/>
-<area shape="poly" title=" " alt="" coords="1361,195,1318,213,1277,242,1257,270,1244,301,1239,299,1252,268,1273,238,1315,209,1358,190"/>
-<area shape="rect" title=" " alt="" coords="1382,240,1451,265"/>
-<area shape="poly" title=" " alt="" coords="1405,192,1413,226,1408,228,1400,193"/>
+<area shape="poly" title=" " alt="" coords="321,568,342,571,620,604,833,626,833,631,619,610,342,576,321,573"/>
+<area shape="poly" title=" " alt="" coords="526,187,537,189,787,223,983,244,982,249,786,229,536,195,525,193"/>
+<area shape="poly" title=" " alt="" coords="493,190,511,213,532,245,548,283,555,324,555,474,559,506,569,530,586,550,613,571,639,587,667,600,726,618,783,627,833,631,833,636,783,633,724,623,665,605,636,592,610,576,583,554,564,533,553,508,550,474,550,325,543,285,527,248,507,216,489,194"/>
+<area shape="poly" title=" " alt="" coords="525,187,808,248,1081,311,1464,417,1720,491,1844,531,1856,549,1864,569,1870,607,1865,608,1859,570,1852,551,1840,535,1719,496,1463,422,1080,316,807,254,524,193"/>
+<area shape="rect" href="__FsGUIDs_8h.html" title=" " alt="" coords="399,460,515,485"/>
+<area shape="poly" title=" " alt="" coords="482,192,461,446,456,446,477,192"/>
+<area shape="poly" title=" " alt="" coords="464,484,491,528,511,552,535,571,559,581,590,591,671,607,833,626,832,631,670,612,589,596,557,586,533,576,507,555,486,531,460,487"/>
+<area shape="poly" title=" " alt="" coords="659,187,670,189,983,241,982,246,670,195,658,193"/>
+<area shape="poly" title=" " alt="" coords="606,192,606,325,606,474,608,506,617,529,632,550,656,571,698,597,745,614,792,624,833,629,833,634,791,629,743,619,696,602,652,575,628,553,612,532,603,507,601,474,601,325,601,192"/>
+<area shape="poly" title=" " alt="" coords="929,190,1002,231,999,235,926,194"/>
+<area shape="poly" title=" " alt="" coords="880,194,843,214,802,243,785,260,771,280,761,301,758,325,758,474,759,504,763,527,773,548,789,572,814,595,842,613,839,617,811,599,785,575,768,550,758,528,754,504,753,474,753,324,756,300,766,277,781,257,799,238,840,209,878,190"/>
+<area shape="poly" title=" " alt="" coords="907,193,881,301,876,299,902,192"/>
+<area shape="poly" title=" " alt="" coords="2104,412,2111,443,2116,486,2111,533,2103,555,2091,575,2063,594,2018,609,1919,628,1918,623,2017,604,2060,589,2087,571,2098,553,2106,532,2110,486,2106,444,2099,413"/>
+<area shape="poly" title=" " alt="" coords="785,189,984,237,982,242,784,195"/>
+<area shape="poly" title=" " alt="" coords="726,194,706,216,683,247,664,284,657,325,657,474,657,504,660,528,669,549,688,571,721,596,759,612,798,622,833,628,833,633,797,627,757,617,718,600,684,575,665,552,655,530,652,505,651,474,651,324,659,283,678,245,702,213,723,190"/>
+<area shape="poly" title=" " alt="" coords="1055,115,959,133,906,148,856,169,797,199,749,228,732,245,718,266,710,292,707,325,707,474,710,505,720,528,735,548,758,571,795,598,835,616,833,621,792,602,755,575,731,552,715,531,705,506,702,474,702,325,705,291,714,264,727,242,746,224,794,194,854,164,905,143,958,127,1054,110"/>
+<area shape="poly" title=" " alt="" coords="1171,114,1474,164,1539,202,1583,241,1624,285,1678,337,1715,365,1750,386,1811,420,1839,439,1865,462,1889,492,1911,532,1915,553,1911,575,1890,612,1885,609,1906,573,1910,553,1906,534,1884,495,1861,465,1836,443,1809,425,1747,391,1712,369,1675,341,1620,288,1579,245,1536,206,1472,169,1171,119"/>
+<area shape="rect" title=" " alt="" coords="1191,167,1266,192"/>
+<area shape="poly" title=" " alt="" coords="1133,116,1199,157,1197,162,1130,121"/>
+<area shape="rect" title=" " alt="" coords="1099,167,1167,192"/>
+<area shape="poly" title=" " alt="" coords="1119,118,1128,153,1123,154,1113,120"/>
+<area shape="rect" href="BaseHdr_2Net_2socket_8h.html" title=" " alt="" coords="972,167,1075,192"/>
+<area shape="poly" title=" " alt="" coords="1100,121,1050,160,1047,156,1097,117"/>
+<area shape="poly" title=" " alt="" coords="1028,192,1032,226,1027,227,1022,193"/>
+<area shape="poly" title=" " alt="" coords="992,194,953,212,909,237,868,272,850,292,836,314,822,353,817,394,818,436,825,477,848,552,872,608,867,610,843,554,820,479,813,437,812,394,817,352,832,312,846,289,864,268,906,233,951,207,990,190"/>
+<area shape="poly" title=" " alt="" coords="1013,194,896,306,893,302,1009,191"/>
+<area shape="poly" title=" " alt="" coords="1041,190,1064,211,1084,239,1097,274,1104,310,1107,373,1102,373,1099,311,1092,275,1080,241,1060,215,1038,194"/>
+<area shape="rect" title=" " alt="" coords="1145,240,1214,265"/>
+<area shape="poly" title=" " alt="" coords="1049,190,1142,232,1140,237,1047,194"/>
+<area shape="poly" title=" " alt="" coords="2101,263,2209,306,2207,311,2099,268"/>
+<area shape="poly" title=" " alt="" coords="2088,264,2227,376,2223,380,2084,268"/>
+<area shape="rect" href="BaseHdr_2Mm_2vmmngr_8h.html" title=" " alt="" coords="1713,541,1830,566"/>
+<area shape="poly" title=" " alt="" coords="2061,268,1795,532,1791,528,2058,264"/>
+<area shape="poly" title=" " alt="" coords="1734,569,1701,576,1539,594,1317,611,931,633,931,628,1317,606,1539,589,1700,571,1733,563"/>
+<area shape="poly" title=" " alt="" coords="1787,564,1844,611,1841,615,1784,568"/>
+<area shape="poly" title=" " alt="" coords="1654,188,1133,243,1083,248,1083,243,1132,237,1653,182"/>
+<area shape="poly" title=" " alt="" coords="1665,195,1344,311,1342,306,1663,190"/>
+<area shape="poly" title=" " alt="" coords="1701,192,1731,299,1726,301,1696,193"/>
+<area shape="poly" title=" " alt="" coords="1737,189,1887,237,2073,313,2215,378,2213,383,2070,318,1885,243,1735,195"/>
+<area shape="rect" href="Cap_2capability_8h.html" title=" " alt="" coords="1749,240,1874,265"/>
+<area shape="poly" title=" " alt="" coords="1715,190,1782,230,1779,235,1713,194"/>
+<area shape="rect" href="Sync_2spinlock_8h.html" title=" " alt="" coords="1566,541,1689,566"/>
+<area shape="poly" title=" " alt="" coords="1696,193,1634,528,1629,527,1691,192"/>
+<area shape="rect" href="BaseHdr_2list_8h.html" title=" " alt="" coords="2157,240,2212,265"/>
+<area shape="poly" title=" " alt="" coords="1738,182,1912,200,2026,216,2145,238,2144,243,2025,222,1911,206,1738,187"/>
+<area shape="poly" title=" " alt="" coords="1815,266,1813,301,1807,322,1798,340,1755,388,1712,421,1668,442,1623,457,1527,484,1474,504,1417,536,1393,557,1382,567,1366,576,1329,587,1280,598,1159,614,931,633,931,627,1158,609,1279,592,1327,582,1364,571,1379,562,1389,553,1414,531,1472,499,1525,478,1622,452,1666,438,1709,417,1751,385,1793,337,1802,320,1807,300,1810,266"/>
+<area shape="poly" title=" " alt="" coords="1826,264,1905,337,1975,396,2017,433,2040,459,2053,491,2059,518,2056,546,2040,575,2015,599,1984,616,1951,627,1920,633,1919,627,1950,622,1982,611,2012,595,2036,572,2051,544,2054,519,2048,492,2036,461,2014,437,1971,400,1902,341,1822,268"/>
+<area shape="poly" title=" " alt="" coords="1801,267,1760,306,1756,302,1797,263"/>
+<area shape="poly" title=" " alt="" coords="1588,569,1554,576,1375,601,1198,618,931,634,931,628,1197,613,1374,596,1554,571,1587,563"/>
+<area shape="poly" title=" " alt="" coords="1663,563,1820,615,1819,620,1661,569"/>
+<area shape="poly" title=" " alt="" coords="2197,264,2232,301,2228,305,2193,267"/>
+<area shape="poly" title=" " alt="" coords="2188,265,2192,299,2203,338,2215,357,2230,375,2226,378,2211,361,2198,340,2186,300,2182,266"/>
 </map>
 </div>
 </div><table class="memberdecls">
@@ -217,6 +247,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a6bb7c22bb708eaa7704930c387c3a419" id="r_a6bb7c22bb708eaa7704930c387c3a419"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8c.html#a6bb7c22bb708eaa7704930c387c3a419">AuVFSAddFileSystem</a> (<a class="el" href="devclip_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *<a class="el" href="kthread_8h.html#af3fd9d829538e36331bf4a6fe7e6b7bc">node</a>)</td></tr>
 <tr class="memdesc:a6bb7c22bb708eaa7704930c387c3a419"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuVFSAddFileSystem &ndash; adds a file system to the vfs list.  <br /></td></tr>
 <tr class="separator:a6bb7c22bb708eaa7704930c387c3a419"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0d1f986061b86265943b34863caebfe" id="r_ab0d1f986061b86265943b34863caebfe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8c.html#ab0d1f986061b86265943b34863caebfe">AuVFSRemoveFileSystem</a> (<a class="el" href="devclip_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *<a class="el" href="kthread_8h.html#af3fd9d829538e36331bf4a6fe7e6b7bc">node</a>)</td></tr>
+<tr class="memdesc:ab0d1f986061b86265943b34863caebfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuVFSRemoveFileSystem &ndash; detaches a file system from the VFS list without freeing it.  <br /></td></tr>
+<tr class="separator:ab0d1f986061b86265943b34863caebfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f6bf7cd51733fea1d296f0397f2984a" id="r_a6f6bf7cd51733fea1d296f0397f2984a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8c.html#a6f6bf7cd51733fea1d296f0397f2984a">AuVFSRegisterRoot</a> (<a class="el" href="devclip_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *fs)</td></tr>
 <tr class="memdesc:a6f6bf7cd51733fea1d296f0397f2984a"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuVFSRegisterRoot &ndash; register the root file system.  <br /></td></tr>
 <tr class="separator:a6f6bf7cd51733fea1d296f0397f2984a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -225,7 +258,7 @@ Functions</h2></td></tr>
 <tr class="memitem:a1e296cb55fe122a62b9f98ea5229584e" id="r_a1e296cb55fe122a62b9f98ea5229584e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> <a class="el" href="devclip_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8c.html#a1e296cb55fe122a62b9f98ea5229584e">AuVFSOpen</a> (char *<a class="el" href="structpath.html">path</a>)</td></tr>
 <tr class="memdesc:a1e296cb55fe122a62b9f98ea5229584e"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuVFSOpen &ndash; Opens a file.  <br /></td></tr>
 <tr class="separator:a1e296cb55fe122a62b9f98ea5229584e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab691633016d2d8b79fc522574d5477db" id="r_ab691633016d2d8b79fc522574d5477db"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8c.html#ab691633016d2d8b79fc522574d5477db">AuVFSNodeIOControl</a> (<a class="el" href="devclip_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *<a class="el" href="kthread_8h.html#af3fd9d829538e36331bf4a6fe7e6b7bc">node</a>, int code, void *<a class="el" href="unionarg.html">arg</a>)</td></tr>
+<tr class="memitem:ab691633016d2d8b79fc522574d5477db" id="r_ab691633016d2d8b79fc522574d5477db"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8c.html#ab691633016d2d8b79fc522574d5477db">AuVFSNodeIOControl</a> (<a class="el" href="devclip_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *<a class="el" href="kthread_8h.html#af3fd9d829538e36331bf4a6fe7e6b7bc">node</a>, int <a class="el" href="structcode.html">code</a>, void *<a class="el" href="unionarg.html">arg</a>)</td></tr>
 <tr class="memdesc:ab691633016d2d8b79fc522574d5477db"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuVFSNodeIOControl &ndash; Calls node's iocontrol pointer.  <br /></td></tr>
 <tr class="separator:ab691633016d2d8b79fc522574d5477db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1174e467e751b00de01ad875dfc2d036" id="r_a1174e467e751b00de01ad875dfc2d036"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8c.html#a1174e467e751b00de01ad875dfc2d036">AuVFSNodeRead</a> (<a class="el" href="devclip_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *<a class="el" href="kthread_8h.html#af3fd9d829538e36331bf4a6fe7e6b7bc">node</a>, <a class="el" href="devclip_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *<a class="el" href="structfile.html">file</a>, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> *buffer, <a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> length)</td></tr>
@@ -252,9 +285,6 @@ Functions</h2></td></tr>
 <tr class="memitem:aba7e7646e79c6755643717ad456a12a5" id="r_aba7e7646e79c6755643717ad456a12a5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8c.html#aba7e7646e79c6755643717ad456a12a5">AuVFSNodeClose</a> (<a class="el" href="devclip_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *<a class="el" href="kthread_8h.html#af3fd9d829538e36331bf4a6fe7e6b7bc">node</a>, <a class="el" href="devclip_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *<a class="el" href="structfile.html">file</a>)</td></tr>
 <tr class="memdesc:aba7e7646e79c6755643717ad456a12a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuVFSNodeClose &ndash; close a file system or file.  <br /></td></tr>
 <tr class="separator:aba7e7646e79c6755643717ad456a12a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0d1f986061b86265943b34863caebfe" id="r_ab0d1f986061b86265943b34863caebfe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8c.html#ab0d1f986061b86265943b34863caebfe">AuVFSRemoveFileSystem</a> (<a class="el" href="devclip_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *<a class="el" href="kthread_8h.html#af3fd9d829538e36331bf4a6fe7e6b7bc">node</a>)</td></tr>
-<tr class="memdesc:ab0d1f986061b86265943b34863caebfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuVFSRemoveFileSystem &ndash; removes a file system.  <br /></td></tr>
-<tr class="separator:ab0d1f986061b86265943b34863caebfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d32e8f4e6304f96666b397e2dff4918" id="r_a9d32e8f4e6304f96666b397e2dff4918"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8c.html#a9d32e8f4e6304f96666b397e2dff4918">AuVFSGetBlockFor</a> (<a class="el" href="devclip_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *<a class="el" href="kthread_8h.html#af3fd9d829538e36331bf4a6fe7e6b7bc">node</a>, <a class="el" href="devclip_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *<a class="el" href="structfile.html">file</a>, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> <a class="el" href="drm__bridge_8h.html#ad5b30797981ed10bc3571a689a73eeac">offset</a>)</td></tr>
 <tr class="memdesc:a9d32e8f4e6304f96666b397e2dff4918"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuVFSGetBlockFor &ndash; returns a block number for certain byte offset of file.  <br /></td></tr>
 <tr class="separator:a9d32e8f4e6304f96666b397e2dff4918"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -264,6 +294,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a546b7ab0cb402d48ba679b9b052ead25" id="r_a546b7ab0cb402d48ba679b9b052ead25"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8c.html#a546b7ab0cb402d48ba679b9b052ead25">AuVFSPoll</a> (<a class="el" href="devclip_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *<a class="el" href="structfile.html">file</a>, <a class="el" href="structAuPollTable.html">AuPollTable</a> *<a class="el" href="structpt.html">pt</a>)</td></tr>
 <tr class="memdesc:a546b7ab0cb402d48ba679b9b052ead25"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuVFSPoll &ndash; poll callback interface.  <br /></td></tr>
 <tr class="separator:a546b7ab0cb402d48ba679b9b052ead25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefcbfcc012cd27717629b5aae162ed7b" id="r_aefcbfcc012cd27717629b5aae162ed7b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8c.html#aefcbfcc012cd27717629b5aae162ed7b">AuVFSOwnFsys</a> (char *<a class="el" href="structpath.html">path</a>, <a class="el" href="user_8h.html#a158f59266d68ec49f2d89bac773e70ee">UID_NUM</a> uid, <a class="el" href="group_8h.html#a487dd0aecde7b311f15a556b1c2a3733">GID_NUM</a> gid)</td></tr>
+<tr class="memdesc:aefcbfcc012cd27717629b5aae162ed7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuVFSOwnFsys &ndash; give the capability to root process, to own the file system for specific user id and group id.  <br /></td></tr>
+<tr class="separator:aefcbfcc012cd27717629b5aae162ed7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -733,6 +766,53 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="aefcbfcc012cd27717629b5aae162ed7b" name="aefcbfcc012cd27717629b5aae162ed7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefcbfcc012cd27717629b5aae162ed7b">&#9670;&#160;</a></span>AuVFSOwnFsys()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> int AuVFSOwnFsys </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="user_8h.html#a158f59266d68ec49f2d89bac773e70ee">UID_NUM</a>&#160;</td>
+          <td class="paramname"><em>uid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group_8h.html#a487dd0aecde7b311f15a556b1c2a3733">GID_NUM</a>&#160;</td>
+          <td class="paramname"><em>gid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>AuVFSOwnFsys &ndash; give the capability to root process, to own the file system for specific user id and group id. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>&ndash; file system path </td></tr>
+    <tr><td class="paramname">uid</td><td>&ndash; User ID value </td></tr>
+    <tr><td class="paramname">gid</td><td>&ndash; Group ID value </td></tr>
+  </table>
+  </dd>
+</dl>
+<p>should also check process capabilities , but skipping for now</p>
+<p>check if the setting process is root than only proceed</p>
+<p>also should check the effective user id, if user account got a priviledge mode</p>
+
+</div>
+</div>
 <a id="a546b7ab0cb402d48ba679b9b052ead25" name="a546b7ab0cb402d48ba679b9b052ead25"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a546b7ab0cb402d48ba679b9b052ead25">&#9670;&#160;</a></span>AuVFSPoll()</h2>
 
@@ -889,13 +969,15 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>AuVFSRemoveFileSystem &ndash; removes a file system. </p>
+<p>AuVFSRemoveFileSystem &ndash; detaches a file system from the VFS list without freeing it. </p>
+<p>AuVFSRemoveFileSystem &ndash; detaches a file system from the VFS list without freeing the node. Used by unmount and surprise unplug, where the filesystem may still be referenced by open files.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">node</td><td>&ndash; file system node to remove </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, -1 when the node is not in the list </dd></dl>
 
 </div>
 </div>

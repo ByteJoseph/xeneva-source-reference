@@ -193,7 +193,7 @@ Public Attributes</h2></td></tr>
 <tr class="separator:ac7665fb78eaefd77a33219d0006935db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2376677d4a3658e4ca51a598b3791238" id="r_a2376677d4a3658e4ca51a598b3791238"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtty__operations.html#a2376677d4a3658e4ca51a598b3791238">cleanup</a> )(struct <a class="el" href="structtty__struct.html">tty_struct</a> *tty)</td></tr>
 <tr class="separator:a2376677d4a3658e4ca51a598b3791238"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a379a6d7a0b95de8ed53b73787320b95a" id="r_a379a6d7a0b95de8ed53b73787320b95a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2stddef_8h.html#aa9e017f700fef59e03bf6d5bc2e59a7e">ssize_t</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtty__operations.html#a379a6d7a0b95de8ed53b73787320b95a">write</a> )(struct <a class="el" href="structtty__struct.html">tty_struct</a> *tty, const <a class="el" href="linux_2kernel_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *buf, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> count)</td></tr>
+<tr class="memitem:a379a6d7a0b95de8ed53b73787320b95a" id="r_a379a6d7a0b95de8ed53b73787320b95a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2stddef_8h.html#aa9e017f700fef59e03bf6d5bc2e59a7e">ssize_t</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtty__operations.html#a379a6d7a0b95de8ed53b73787320b95a">write</a> )(struct <a class="el" href="structtty__struct.html">tty_struct</a> *tty, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="linux_2kernel_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *buf, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> count)</td></tr>
 <tr class="separator:a379a6d7a0b95de8ed53b73787320b95a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af64a966d768b949b5a8c6c55d2711aee" id="r_af64a966d768b949b5a8c6c55d2711aee"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtty__operations.html#af64a966d768b949b5a8c6c55d2711aee">put_char</a> )(struct <a class="el" href="structtty__struct.html">tty_struct</a> *tty, <a class="el" href="linux_2kernel_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> ch)</td></tr>
 <tr class="separator:af64a966d768b949b5a8c6c55d2711aee"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -207,7 +207,7 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a9f9c120db7f3b9928f9d0119181dc046"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a520bb600a2d8930163ce5734d55db248" id="r_a520bb600a2d8930163ce5734d55db248"><td class="memItemLeft" align="right" valign="top">long(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtty__operations.html#a520bb600a2d8930163ce5734d55db248">compat_ioctl</a> )(struct <a class="el" href="structtty__struct.html">tty_struct</a> *tty, unsigned int cmd, unsigned long <a class="el" href="unionarg.html">arg</a>)</td></tr>
 <tr class="separator:a520bb600a2d8930163ce5734d55db248"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e9ddb932eab3029d3c75c78a7d2bb9c" id="r_a1e9ddb932eab3029d3c75c78a7d2bb9c"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtty__operations.html#a1e9ddb932eab3029d3c75c78a7d2bb9c">set_termios</a> )(struct <a class="el" href="structtty__struct.html">tty_struct</a> *tty, const struct <a class="el" href="structktermios.html">ktermios</a> *old)</td></tr>
+<tr class="memitem:a1e9ddb932eab3029d3c75c78a7d2bb9c" id="r_a1e9ddb932eab3029d3c75c78a7d2bb9c"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtty__operations.html#a1e9ddb932eab3029d3c75c78a7d2bb9c">set_termios</a> )(struct <a class="el" href="structtty__struct.html">tty_struct</a> *tty, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct <a class="el" href="structktermios.html">ktermios</a> *old)</td></tr>
 <tr class="separator:a1e9ddb932eab3029d3c75c78a7d2bb9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a176770af0eec8cc5ef6c288b2abedaa2" id="r_a176770af0eec8cc5ef6c288b2abedaa2"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtty__operations.html#a176770af0eec8cc5ef6c288b2abedaa2">throttle</a> )(struct <a class="el" href="structtty__struct.html">tty_struct</a> *tty)</td></tr>
 <tr class="separator:a176770af0eec8cc5ef6c288b2abedaa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -564,7 +564,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void(* tty_operations::set_termios) (struct <a class="el" href="structtty__struct.html">tty_struct</a> *tty, const struct <a class="el" href="structktermios.html">ktermios</a> *old)</td>
+          <td class="memname">void(* tty_operations::set_termios) (struct <a class="el" href="structtty__struct.html">tty_struct</a> *tty, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct <a class="el" href="structktermios.html">ktermios</a> *old)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -704,7 +704,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="BaseHdr_2stddef_8h.html#aa9e017f700fef59e03bf6d5bc2e59a7e">ssize_t</a>(* tty_operations::write) (struct <a class="el" href="structtty__struct.html">tty_struct</a> *tty, const <a class="el" href="linux_2kernel_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *buf, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> count)</td>
+          <td class="memname"><a class="el" href="BaseHdr_2stddef_8h.html#aa9e017f700fef59e03bf6d5bc2e59a7e">ssize_t</a>(* tty_operations::write) (struct <a class="el" href="structtty__struct.html">tty_struct</a> *tty, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="linux_2kernel_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *buf, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> count)</td>
         </tr>
       </table>
 </div><div class="memdoc">

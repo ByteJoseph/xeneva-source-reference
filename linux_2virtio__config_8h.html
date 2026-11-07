@@ -370,10 +370,11 @@ Macros</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line">    <span class="keywordflow">do</span> {                                \</div>
 <div class="line">        typeof(((structname*)0)-&gt;member) _dcl_cw =      \</div>
 <div class="line">            (typeof(((structname*)0)-&gt;member))(*(ptr)); \</div>
-<div class="line">        (vdev)-&gt;config-&gt;set((vdev), <a class="code hl_define" href="linux_2kernel_8h.html#afd049f7ad59dbe455f460807475c2841">offsetof</a>(structname, member), \</div>
+<div class="line">        (vdev)-&gt;<a class="code hl_struct" href="structconfig__s.html">config</a>-&gt;set((vdev), <a class="code hl_define" href="linux_2kernel_8h.html#afd049f7ad59dbe455f460807475c2841">offsetof</a>(structname, member), \</div>
 <div class="line">                    &amp;_dcl_cw, <span class="keyword">sizeof</span>(_dcl_cw));     \</div>
 <div class="line">    } <span class="keywordflow">while</span> (0)</div>
 <div class="ttc" id="alinux_2kernel_8h_html_afd049f7ad59dbe455f460807475c2841"><div class="ttname"><a href="linux_2kernel_8h.html#afd049f7ad59dbe455f460807475c2841">offsetof</a></div><div class="ttdeci">#define offsetof(type, member)</div><div class="ttdef"><b>Definition</b> kernel.h:177</div></div>
+<div class="ttc" id="astructconfig__s_html"><div class="ttname"><a href="structconfig__s.html">config_s</a></div><div class="ttdef"><b>Definition</b> deflate.c:98</div></div>
 </div><!-- fragment -->
 </div>
 </div>

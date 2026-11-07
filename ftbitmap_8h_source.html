@@ -194,7 +194,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>  <a class="code hl_define" href="ftconfig_8h.html#abb1f0cb171117bb94f204d09e6a89a6e">FT_EXPORT</a>( <a class="code hl_typedef" href="fttypes_8h.html#a64c8060bdb3d6eec844a1bf670e06bdd">FT_Error</a> )</div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno"><a class="line" href="ftbitmap_8h.html#aa139914a4cf59cdb61ee4675f11ee940">  113</a></span>  <a class="code hl_function" href="ftbitmap_8h.html#aa139914a4cf59cdb61ee4675f11ee940">FT_Bitmap_Copy</a>( <a class="code hl_struct" href="structFT__LibraryRec__.html">FT_Library</a>        library,</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>                  const <a class="code hl_struct" href="structFT__Bitmap__.html">FT_Bitmap</a>  *source,</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>                  <a class="code hl_define" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="code hl_struct" href="structFT__Bitmap__.html">FT_Bitmap</a>  *source,</div>
 <div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>                  <a class="code hl_struct" href="structFT__Bitmap__.html">FT_Bitmap</a>        *target );</div>
 <div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
@@ -286,7 +286,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>  <a class="code hl_define" href="ftconfig_8h.html#abb1f0cb171117bb94f204d09e6a89a6e">FT_EXPORT</a>( <a class="code hl_typedef" href="fttypes_8h.html#a64c8060bdb3d6eec844a1bf670e06bdd">FT_Error</a> )</div>
 <div class="line"><a id="l00205" name="l00205"></a><span class="lineno"><a class="line" href="ftbitmap_8h.html#a68913634b7221aa1eafddeeff7c19f27">  205</a></span>  <a class="code hl_function" href="ftbitmap_8h.html#a68913634b7221aa1eafddeeff7c19f27">FT_Bitmap_Convert</a>( <a class="code hl_struct" href="structFT__LibraryRec__.html">FT_Library</a>        library,</div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>                     const <a class="code hl_struct" href="structFT__Bitmap__.html">FT_Bitmap</a>  *source,</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>                     <a class="code hl_define" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="code hl_struct" href="structFT__Bitmap__.html">FT_Bitmap</a>  *source,</div>
 <div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>                     <a class="code hl_struct" href="structFT__Bitmap__.html">FT_Bitmap</a>        *target,</div>
 <div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>                     <a class="code hl_typedef" href="fttypes_8h.html#af90e5fb0d07e21be9fe6faa33f02484c">FT_Int</a>            alignment );</div>
 <div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span> </div>
@@ -346,8 +346,8 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>  <a class="code hl_define" href="ftconfig_8h.html#abb1f0cb171117bb94f204d09e6a89a6e">FT_EXPORT</a>( <a class="code hl_typedef" href="fttypes_8h.html#a64c8060bdb3d6eec844a1bf670e06bdd">FT_Error</a> )</div>
 <div class="line"><a id="l00265" name="l00265"></a><span class="lineno"><a class="line" href="ftbitmap_8h.html#a26fedb4ff5f98f976860e790b9eb8042">  265</a></span>  <a class="code hl_function" href="ftbitmap_8h.html#a26fedb4ff5f98f976860e790b9eb8042">FT_Bitmap_Blend</a>( <a class="code hl_struct" href="structFT__LibraryRec__.html">FT_Library</a>         library,</div>
-<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>                   const <a class="code hl_struct" href="structFT__Bitmap__.html">FT_Bitmap</a>*   source,</div>
-<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>                   const <a class="code hl_struct" href="structFT__Vector__.html">FT_Vector</a>    source_offset,</div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>                   <a class="code hl_define" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="code hl_struct" href="structFT__Bitmap__.html">FT_Bitmap</a>*   source,</div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>                   <a class="code hl_define" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="code hl_struct" href="structFT__Vector__.html">FT_Vector</a>    source_offset,</div>
 <div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>                   <a class="code hl_struct" href="structFT__Bitmap__.html">FT_Bitmap</a>*         target,</div>
 <div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>                   <a class="code hl_struct" href="structFT__Vector__.html">FT_Vector</a>         *atarget_offset,</div>
 <div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>                   <a class="code hl_typedef" href="ftcolor_8h.html#a2dfafc33e5e9d6af4961a0e9c687e250">FT_Color</a>           <a class="code hl_struct" href="structcolor.html">color</a> );</div>
@@ -432,6 +432,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="ttc" id="astructFT__LibraryRec___html"><div class="ttname"><a href="structFT__LibraryRec__.html">FT_LibraryRec_</a></div><div class="ttdef"><b>Definition</b> ftobjs.h:896</div></div>
 <div class="ttc" id="astructFT__Vector___html"><div class="ttname"><a href="structFT__Vector__.html">FT_Vector_</a></div><div class="ttdef"><b>Definition</b> ftimage.h:77</div></div>
 <div class="ttc" id="astructcolor_html"><div class="ttname"><a href="structcolor.html">color</a></div><div class="ttdef"><b>Definition</b> i_video.h:141</div></div>
+<div class="ttc" id="azconf_8h_html_a2c212835823e3c54a8ab6d95c652660e"><div class="ttname"><a href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a></div><div class="ttdeci">#define const</div><div class="ttdef"><b>Definition</b> zconf.h:233</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

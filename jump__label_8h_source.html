@@ -196,7 +196,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="preprocessor">#ifdef CONFIG_HAVE_ARCH_JUMP_LABEL_RELATIVE</span></div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="keyword">struct </span>jump_entry {</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    <a class="code hl_typedef" href="linux_2kernel_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a> code;</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    <a class="code hl_typedef" href="linux_2kernel_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a> <a class="code hl_struct" href="structcode.html">code</a>;</div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    <a class="code hl_typedef" href="linux_2kernel_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a> target;</div>
 <div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    <span class="keywordtype">long</span> key;   <span class="comment">// key may be far away from the core kernel under KASLR</span></div>
 <div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>};</div>
@@ -671,6 +671,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="ttc" id="alittleboot_8c_html_af4f810c521bcfd87215d3007005a8325"><div class="ttname"><a href="littleboot_8c.html#af4f810c521bcfd87215d3007005a8325">end</a></div><div class="ttdeci">char end[]</div></div>
 <div class="ttc" id="aprocess_8h_html_a12532d9e7797b0d9089521c02528e113"><div class="ttname"><a href="process_8h.html#a12532d9e7797b0d9089521c02528e113">entry</a></div><div class="ttdeci">void(* entry)(void *)</div><div class="ttdef"><b>Definition</b> process.h:101</div></div>
 <div class="ttc" id="astructatomic__t_html"><div class="ttname"><a href="structatomic__t.html">atomic_t</a></div><div class="ttdef"><b>Definition</b> atomic.h:31</div></div>
+<div class="ttc" id="astructcode_html"><div class="ttname"><a href="structcode.html">code</a></div><div class="ttdef"><b>Definition</b> inftrees.h:24</div></div>
 <div class="ttc" id="astructstatic__key__false_html"><div class="ttname"><a href="structstatic__key__false.html">static_key_false</a></div><div class="ttdef"><b>Definition</b> jump_label.h:355</div></div>
 <div class="ttc" id="astructstatic__key__false_html_a09ed9f4b385ed4d03c9d0e64299bf19d"><div class="ttname"><a href="structstatic__key__false.html#a09ed9f4b385ed4d03c9d0e64299bf19d">static_key_false::key</a></div><div class="ttdeci">struct static_key key</div><div class="ttdef"><b>Definition</b> jump_label.h:356</div></div>
 <div class="ttc" id="astructstatic__key_html"><div class="ttname"><a href="structstatic__key.html">static_key</a></div><div class="ttdef"><b>Definition</b> jump_label.h:86</div></div>

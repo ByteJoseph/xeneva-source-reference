@@ -373,13 +373,13 @@ Macros</h2></td></tr>
 <tr class="separator:a69adbb04706c6582e5fae049d44db527"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0502798b741fd162439fbc9a943c004f" id="r_a0502798b741fd162439fbc9a943c004f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actypes_8h.html#a0502798b741fd162439fbc9a943c004f">ACPI_ARRAY_LENGTH</a>(x)&#160;&#160;&#160;(sizeof(x) / sizeof((x)[0]))</td></tr>
 <tr class="separator:a0502798b741fd162439fbc9a943c004f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8af9db586778d3e290de0bec9adc74b2" id="r_a8af9db586778d3e290de0bec9adc74b2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actypes_8h.html#a8af9db586778d3e290de0bec9adc74b2">ACPI_CAST_PTR</a>(<a class="el" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a>,  p)&#160;&#160;&#160;((<a class="el" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a> *) (<a class="el" href="actypes_8h.html#afc5921e5ff8a980f51421c0045d8e241">ACPI_UINTPTR_T</a>) (p))</td></tr>
+<tr class="memitem:a8af9db586778d3e290de0bec9adc74b2" id="r_a8af9db586778d3e290de0bec9adc74b2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actypes_8h.html#a8af9db586778d3e290de0bec9adc74b2">ACPI_CAST_PTR</a>(t,  p)&#160;&#160;&#160;((t *) (<a class="el" href="actypes_8h.html#afc5921e5ff8a980f51421c0045d8e241">ACPI_UINTPTR_T</a>) (p))</td></tr>
 <tr class="separator:a8af9db586778d3e290de0bec9adc74b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a207538ff87a7e4b281c49fe8ef1cd55e" id="r_a207538ff87a7e4b281c49fe8ef1cd55e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actypes_8h.html#a207538ff87a7e4b281c49fe8ef1cd55e">ACPI_CAST_INDIRECT_PTR</a>(<a class="el" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a>,  p)&#160;&#160;&#160;((<a class="el" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a> **) (<a class="el" href="actypes_8h.html#afc5921e5ff8a980f51421c0045d8e241">ACPI_UINTPTR_T</a>) (p))</td></tr>
+<tr class="memitem:a207538ff87a7e4b281c49fe8ef1cd55e" id="r_a207538ff87a7e4b281c49fe8ef1cd55e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actypes_8h.html#a207538ff87a7e4b281c49fe8ef1cd55e">ACPI_CAST_INDIRECT_PTR</a>(t,  p)&#160;&#160;&#160;((t **) (<a class="el" href="actypes_8h.html#afc5921e5ff8a980f51421c0045d8e241">ACPI_UINTPTR_T</a>) (p))</td></tr>
 <tr class="separator:a207538ff87a7e4b281c49fe8ef1cd55e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a765c9c2be00444bd824b8cc4e79ff87e" id="r_a765c9c2be00444bd824b8cc4e79ff87e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actypes_8h.html#a765c9c2be00444bd824b8cc4e79ff87e">ACPI_ADD_PTR</a>(<a class="el" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a>,  <a class="el" href="Process_2NetSurf_2main_8cpp.html#a81e02a278aaeae99b5dbef355ee6dd2f">a</a>,  <a class="el" href="Process_2NetSurf_2main_8cpp.html#a9dc54a811b75d3d05d3deff10980ca7e">b</a>)&#160;&#160;&#160;<a class="el" href="actypes_8h.html#a8af9db586778d3e290de0bec9adc74b2">ACPI_CAST_PTR</a> (<a class="el" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a>, (<a class="el" href="actypes_8h.html#a8af9db586778d3e290de0bec9adc74b2">ACPI_CAST_PTR</a> (<a class="el" href="actypes_8h.html#ab27e9918b538ce9d8ca692479b375b6a">UINT8</a>, (<a class="el" href="Process_2NetSurf_2main_8cpp.html#a81e02a278aaeae99b5dbef355ee6dd2f">a</a>)) + (ACPI_SIZE)(<a class="el" href="Process_2NetSurf_2main_8cpp.html#a9dc54a811b75d3d05d3deff10980ca7e">b</a>)))</td></tr>
+<tr class="memitem:a765c9c2be00444bd824b8cc4e79ff87e" id="r_a765c9c2be00444bd824b8cc4e79ff87e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actypes_8h.html#a765c9c2be00444bd824b8cc4e79ff87e">ACPI_ADD_PTR</a>(t,  <a class="el" href="Process_2NetSurf_2main_8cpp.html#a81e02a278aaeae99b5dbef355ee6dd2f">a</a>,  <a class="el" href="Process_2NetSurf_2main_8cpp.html#a9dc54a811b75d3d05d3deff10980ca7e">b</a>)&#160;&#160;&#160;<a class="el" href="actypes_8h.html#a8af9db586778d3e290de0bec9adc74b2">ACPI_CAST_PTR</a> (t, (<a class="el" href="actypes_8h.html#a8af9db586778d3e290de0bec9adc74b2">ACPI_CAST_PTR</a> (<a class="el" href="actypes_8h.html#ab27e9918b538ce9d8ca692479b375b6a">UINT8</a>, (<a class="el" href="Process_2NetSurf_2main_8cpp.html#a81e02a278aaeae99b5dbef355ee6dd2f">a</a>)) + (ACPI_SIZE)(<a class="el" href="Process_2NetSurf_2main_8cpp.html#a9dc54a811b75d3d05d3deff10980ca7e">b</a>)))</td></tr>
 <tr class="separator:a765c9c2be00444bd824b8cc4e79ff87e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a214810f25c3824fa017a79e33deb0008" id="r_a214810f25c3824fa017a79e33deb0008"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actypes_8h.html#a214810f25c3824fa017a79e33deb0008">ACPI_SUB_PTR</a>(<a class="el" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a>,  <a class="el" href="Process_2NetSurf_2main_8cpp.html#a81e02a278aaeae99b5dbef355ee6dd2f">a</a>,  <a class="el" href="Process_2NetSurf_2main_8cpp.html#a9dc54a811b75d3d05d3deff10980ca7e">b</a>)&#160;&#160;&#160;<a class="el" href="actypes_8h.html#a8af9db586778d3e290de0bec9adc74b2">ACPI_CAST_PTR</a> (<a class="el" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a>, (<a class="el" href="actypes_8h.html#a8af9db586778d3e290de0bec9adc74b2">ACPI_CAST_PTR</a> (<a class="el" href="actypes_8h.html#ab27e9918b538ce9d8ca692479b375b6a">UINT8</a>, (<a class="el" href="Process_2NetSurf_2main_8cpp.html#a81e02a278aaeae99b5dbef355ee6dd2f">a</a>)) - (ACPI_SIZE)(<a class="el" href="Process_2NetSurf_2main_8cpp.html#a9dc54a811b75d3d05d3deff10980ca7e">b</a>)))</td></tr>
+<tr class="memitem:a214810f25c3824fa017a79e33deb0008" id="r_a214810f25c3824fa017a79e33deb0008"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actypes_8h.html#a214810f25c3824fa017a79e33deb0008">ACPI_SUB_PTR</a>(t,  <a class="el" href="Process_2NetSurf_2main_8cpp.html#a81e02a278aaeae99b5dbef355ee6dd2f">a</a>,  <a class="el" href="Process_2NetSurf_2main_8cpp.html#a9dc54a811b75d3d05d3deff10980ca7e">b</a>)&#160;&#160;&#160;<a class="el" href="actypes_8h.html#a8af9db586778d3e290de0bec9adc74b2">ACPI_CAST_PTR</a> (t, (<a class="el" href="actypes_8h.html#a8af9db586778d3e290de0bec9adc74b2">ACPI_CAST_PTR</a> (<a class="el" href="actypes_8h.html#ab27e9918b538ce9d8ca692479b375b6a">UINT8</a>, (<a class="el" href="Process_2NetSurf_2main_8cpp.html#a81e02a278aaeae99b5dbef355ee6dd2f">a</a>)) - (ACPI_SIZE)(<a class="el" href="Process_2NetSurf_2main_8cpp.html#a9dc54a811b75d3d05d3deff10980ca7e">b</a>)))</td></tr>
 <tr class="separator:a214810f25c3824fa017a79e33deb0008"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd9b0dd896d35e9e25fa13a7d328055a" id="r_abd9b0dd896d35e9e25fa13a7d328055a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actypes_8h.html#abd9b0dd896d35e9e25fa13a7d328055a">ACPI_PTR_DIFF</a>(<a class="el" href="Process_2NetSurf_2main_8cpp.html#a81e02a278aaeae99b5dbef355ee6dd2f">a</a>,  <a class="el" href="Process_2NetSurf_2main_8cpp.html#a9dc54a811b75d3d05d3deff10980ca7e">b</a>)&#160;&#160;&#160;((ACPI_SIZE) (<a class="el" href="actypes_8h.html#a8af9db586778d3e290de0bec9adc74b2">ACPI_CAST_PTR</a> (<a class="el" href="actypes_8h.html#ab27e9918b538ce9d8ca692479b375b6a">UINT8</a>, (<a class="el" href="Process_2NetSurf_2main_8cpp.html#a81e02a278aaeae99b5dbef355ee6dd2f">a</a>)) - <a class="el" href="actypes_8h.html#a8af9db586778d3e290de0bec9adc74b2">ACPI_CAST_PTR</a> (<a class="el" href="actypes_8h.html#ab27e9918b538ce9d8ca692479b375b6a">UINT8</a>, (<a class="el" href="Process_2NetSurf_2main_8cpp.html#a9dc54a811b75d3d05d3deff10980ca7e">b</a>))))</td></tr>
 <tr class="separator:abd9b0dd896d35e9e25fa13a7d328055a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -525,7 +525,7 @@ Macros</h2></td></tr>
 <tr class="separator:a83398f0cf51d8d0544986aa3851b1ede"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a291ac22f5d9b4f49932ea4fc77c26d27" id="r_a291ac22f5d9b4f49932ea4fc77c26d27"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actypes_8h.html#a291ac22f5d9b4f49932ea4fc77c26d27">ACPI_TYPE_EVENT</a>&#160;&#160;&#160;0x07</td></tr>
 <tr class="separator:a291ac22f5d9b4f49932ea4fc77c26d27"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae37913d61f46c242d4db07223f46ebaf" id="r_ae37913d61f46c242d4db07223f46ebaf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actypes_8h.html#ae37913d61f46c242d4db07223f46ebaf">ACPI_TYPE_METHOD</a>&#160;&#160;&#160;0x08  /* <a class="el" href="acpixf_8h.html#a5e6f9eb1e980275f44f308f43bff476e">Name</a>, ByteConst, multiple Code */</td></tr>
+<tr class="memitem:ae37913d61f46c242d4db07223f46ebaf" id="r_ae37913d61f46c242d4db07223f46ebaf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actypes_8h.html#ae37913d61f46c242d4db07223f46ebaf">ACPI_TYPE_METHOD</a>&#160;&#160;&#160;0x08  /* <a class="el" href="acpixf_8h.html#a5e6f9eb1e980275f44f308f43bff476e">Name</a>, ByteConst, multiple <a class="el" href="deflate_8h.html#a068e76e6034d06450385bc98b69ea53e">Code</a> */</td></tr>
 <tr class="separator:ae37913d61f46c242d4db07223f46ebaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42872828bbf4e467e46ed65d457ea93c" id="r_a42872828bbf4e467e46ed65d457ea93c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actypes_8h.html#a42872828bbf4e467e46ed65d457ea93c">ACPI_TYPE_MUTEX</a>&#160;&#160;&#160;0x09</td></tr>
 <tr class="separator:a42872828bbf4e467e46ed65d457ea93c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1074,7 +1074,7 @@ Enumerations</h2></td></tr>
           <td class="memname">#define ACPI_ADD_PTR</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a>, </td>
+          <td class="paramname">t, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1091,7 +1091,7 @@ Enumerations</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="actypes_8h.html#a8af9db586778d3e290de0bec9adc74b2">ACPI_CAST_PTR</a> (<a class="el" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a>, (<a class="el" href="actypes_8h.html#a8af9db586778d3e290de0bec9adc74b2">ACPI_CAST_PTR</a> (<a class="el" href="actypes_8h.html#ab27e9918b538ce9d8ca692479b375b6a">UINT8</a>, (<a class="el" href="Process_2NetSurf_2main_8cpp.html#a81e02a278aaeae99b5dbef355ee6dd2f">a</a>)) + (ACPI_SIZE)(<a class="el" href="Process_2NetSurf_2main_8cpp.html#a9dc54a811b75d3d05d3deff10980ca7e">b</a>)))</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="actypes_8h.html#a8af9db586778d3e290de0bec9adc74b2">ACPI_CAST_PTR</a> (t, (<a class="el" href="actypes_8h.html#a8af9db586778d3e290de0bec9adc74b2">ACPI_CAST_PTR</a> (<a class="el" href="actypes_8h.html#ab27e9918b538ce9d8ca692479b375b6a">UINT8</a>, (<a class="el" href="Process_2NetSurf_2main_8cpp.html#a81e02a278aaeae99b5dbef355ee6dd2f">a</a>)) + (ACPI_SIZE)(<a class="el" href="Process_2NetSurf_2main_8cpp.html#a9dc54a811b75d3d05d3deff10980ca7e">b</a>)))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1736,7 +1736,7 @@ Enumerations</h2></td></tr>
           <td class="memname">#define ACPI_CAST_INDIRECT_PTR</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a>, </td>
+          <td class="paramname">t, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1747,7 +1747,7 @@ Enumerations</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;((<a class="el" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a> **) (<a class="el" href="actypes_8h.html#afc5921e5ff8a980f51421c0045d8e241">ACPI_UINTPTR_T</a>) (p))</td>
+          <td></td><td>&#160;&#160;&#160;((t **) (<a class="el" href="actypes_8h.html#afc5921e5ff8a980f51421c0045d8e241">ACPI_UINTPTR_T</a>) (p))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1764,7 +1764,7 @@ Enumerations</h2></td></tr>
           <td class="memname">#define ACPI_CAST_PTR</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a>, </td>
+          <td class="paramname">t, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1775,7 +1775,7 @@ Enumerations</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;((<a class="el" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a> *) (<a class="el" href="actypes_8h.html#afc5921e5ff8a980f51421c0045d8e241">ACPI_UINTPTR_T</a>) (p))</td>
+          <td></td><td>&#160;&#160;&#160;((t *) (<a class="el" href="actypes_8h.html#afc5921e5ff8a980f51421c0045d8e241">ACPI_UINTPTR_T</a>) (p))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -4848,7 +4848,7 @@ Enumerations</h2></td></tr>
           <td class="memname">#define ACPI_SUB_PTR</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a>, </td>
+          <td class="paramname">t, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -4865,7 +4865,7 @@ Enumerations</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="actypes_8h.html#a8af9db586778d3e290de0bec9adc74b2">ACPI_CAST_PTR</a> (<a class="el" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a>, (<a class="el" href="actypes_8h.html#a8af9db586778d3e290de0bec9adc74b2">ACPI_CAST_PTR</a> (<a class="el" href="actypes_8h.html#ab27e9918b538ce9d8ca692479b375b6a">UINT8</a>, (<a class="el" href="Process_2NetSurf_2main_8cpp.html#a81e02a278aaeae99b5dbef355ee6dd2f">a</a>)) - (ACPI_SIZE)(<a class="el" href="Process_2NetSurf_2main_8cpp.html#a9dc54a811b75d3d05d3deff10980ca7e">b</a>)))</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="actypes_8h.html#a8af9db586778d3e290de0bec9adc74b2">ACPI_CAST_PTR</a> (t, (<a class="el" href="actypes_8h.html#a8af9db586778d3e290de0bec9adc74b2">ACPI_CAST_PTR</a> (<a class="el" href="actypes_8h.html#ab27e9918b538ce9d8ca692479b375b6a">UINT8</a>, (<a class="el" href="Process_2NetSurf_2main_8cpp.html#a81e02a278aaeae99b5dbef355ee6dd2f">a</a>)) - (ACPI_SIZE)(<a class="el" href="Process_2NetSurf_2main_8cpp.html#a9dc54a811b75d3d05d3deff10980ca7e">b</a>)))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -5475,7 +5475,7 @@ Enumerations</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define ACPI_TYPE_METHOD&#160;&#160;&#160;0x08  /* <a class="el" href="acpixf_8h.html#a5e6f9eb1e980275f44f308f43bff476e">Name</a>, ByteConst, multiple Code */</td>
+          <td class="memname">#define ACPI_TYPE_METHOD&#160;&#160;&#160;0x08  /* <a class="el" href="acpixf_8h.html#a5e6f9eb1e980275f44f308f43bff476e">Name</a>, ByteConst, multiple <a class="el" href="deflate_8h.html#a068e76e6034d06450385bc98b69ea53e">Code</a> */</td>
         </tr>
       </table>
 </div><div class="memdoc">

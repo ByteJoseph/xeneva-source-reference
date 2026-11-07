@@ -212,11 +212,11 @@ Macros</h2></td></tr>
 <tr class="separator:a75ec85c08eb00826e1fc1abb4129ba96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae5d7f9346330c06d2ee8a3629ad0a206" id="r_ae5d7f9346330c06d2ee8a3629ad0a206"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="overflow_8h.html#ae5d7f9346330c06d2ee8a3629ad0a206">__type_max</a>(T)&#160;&#160;&#160;((T)((<a class="el" href="overflow_8h.html#a75ec85c08eb00826e1fc1abb4129ba96">__type_half_max</a>(T) - 1) + <a class="el" href="overflow_8h.html#a75ec85c08eb00826e1fc1abb4129ba96">__type_half_max</a>(T)))</td></tr>
 <tr class="separator:ae5d7f9346330c06d2ee8a3629ad0a206"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3e684e4ab33c688d703b3f448e66b88" id="r_ab3e684e4ab33c688d703b3f448e66b88"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="overflow_8h.html#ab3e684e4ab33c688d703b3f448e66b88">type_max</a>(<a class="el" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a>)&#160;&#160;&#160;<a class="el" href="overflow_8h.html#ae5d7f9346330c06d2ee8a3629ad0a206">__type_max</a>(typeof(<a class="el" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a>))</td></tr>
+<tr class="memitem:ab3e684e4ab33c688d703b3f448e66b88" id="r_ab3e684e4ab33c688d703b3f448e66b88"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="overflow_8h.html#ab3e684e4ab33c688d703b3f448e66b88">type_max</a>(t)&#160;&#160;&#160;<a class="el" href="overflow_8h.html#ae5d7f9346330c06d2ee8a3629ad0a206">__type_max</a>(typeof(t))</td></tr>
 <tr class="separator:ab3e684e4ab33c688d703b3f448e66b88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a12536b755519993f9f641e29b02b5c03" id="r_a12536b755519993f9f641e29b02b5c03"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="overflow_8h.html#a12536b755519993f9f641e29b02b5c03">__type_min</a>(T)&#160;&#160;&#160;((T)((T)-<a class="el" href="overflow_8h.html#ab3e684e4ab33c688d703b3f448e66b88">type_max</a>(T)-(T)1))</td></tr>
 <tr class="separator:a12536b755519993f9f641e29b02b5c03"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac71e8d6450743db37265816aa1ec784e" id="r_ac71e8d6450743db37265816aa1ec784e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="overflow_8h.html#ac71e8d6450743db37265816aa1ec784e">type_min</a>(<a class="el" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a>)&#160;&#160;&#160;<a class="el" href="overflow_8h.html#a12536b755519993f9f641e29b02b5c03">__type_min</a>(typeof(<a class="el" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a>))</td></tr>
+<tr class="memitem:ac71e8d6450743db37265816aa1ec784e" id="r_ac71e8d6450743db37265816aa1ec784e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="overflow_8h.html#ac71e8d6450743db37265816aa1ec784e">type_min</a>(t)&#160;&#160;&#160;<a class="el" href="overflow_8h.html#a12536b755519993f9f641e29b02b5c03">__type_min</a>(typeof(t))</td></tr>
 <tr class="separator:ac71e8d6450743db37265816aa1ec784e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa44da1ec52915b210570a3efed198ce6" id="r_aa44da1ec52915b210570a3efed198ce6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="overflow_8h.html#aa44da1ec52915b210570a3efed198ce6">check_add_overflow</a>(<a class="el" href="Process_2NetSurf_2main_8cpp.html#a81e02a278aaeae99b5dbef355ee6dd2f">a</a>,  <a class="el" href="Process_2NetSurf_2main_8cpp.html#a9dc54a811b75d3d05d3deff10980ca7e">b</a>,  <a class="el" href="libunicode_8c.html#a2530554172d8629149ec56816eeaa947">d</a>)&#160;&#160;&#160;	__must_check_overflow(__builtin_add_overflow(<a class="el" href="Process_2NetSurf_2main_8cpp.html#a81e02a278aaeae99b5dbef355ee6dd2f">a</a>, <a class="el" href="Process_2NetSurf_2main_8cpp.html#a9dc54a811b75d3d05d3deff10980ca7e">b</a>, <a class="el" href="libunicode_8c.html#a2530554172d8629149ec56816eeaa947">d</a>))</td></tr>
 <tr class="separator:aa44da1ec52915b210570a3efed198ce6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -281,7 +281,7 @@ Macros</h2></td></tr>
 </div></td></tr>
 <tr class="memitem:adf4bab78d0da8fb25dd1de019f07adce" id="r_adf4bab78d0da8fb25dd1de019f07adce"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="overflow_8h.html#adf4bab78d0da8fb25dd1de019f07adce">DEFINE_RAW_FLEX</a>(type,  <a class="el" href="drm__crtc_8h.html#aed88e009d7772dfc9026cb1f5492b458">name</a>,  member,  count)&#160;&#160;&#160;	<a class="el" href="overflow_8h.html#a5f5592f233fe6d1c1e9f93c4f3a84eb9">__DEFINE_FLEX</a>(type, <a class="el" href="drm__crtc_8h.html#aed88e009d7772dfc9026cb1f5492b458">name</a>, member, count, = { })</td></tr>
 <tr class="separator:adf4bab78d0da8fb25dd1de019f07adce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d9882b384f18b883f7044740b59d12c" id="r_a4d9882b384f18b883f7044740b59d12c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="overflow_8h.html#a4d9882b384f18b883f7044740b59d12c">DEFINE_FLEX</a>(TYPE,  NAME,  MEMBER,  <a class="el" href="propstrings_8h.html#ad12132bb9a678532f1ab9d50c99c03b9a7b5e9804203d4b1300aad76e5f9a3302">COUNTER</a>,  COUNT)&#160;&#160;&#160;	<a class="el" href="overflow_8h.html#afaa699acffeee47e8408543c9e78a39a">_DEFINE_FLEX</a>(TYPE, NAME, MEMBER, COUNT, = { .<a class="el" href="propstrings_8h.html#ad12132bb9a678532f1ab9d50c99c03b9a7b5e9804203d4b1300aad76e5f9a3302">COUNTER</a> = COUNT, })</td></tr>
+<tr class="memitem:a4d9882b384f18b883f7044740b59d12c" id="r_a4d9882b384f18b883f7044740b59d12c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="overflow_8h.html#a4d9882b384f18b883f7044740b59d12c">DEFINE_FLEX</a>(<a class="el" href="inflate_8h.html#a164ea0159d5f0b5f12a646f25f99eceaab47ea8bb955afd0adc0ef98517dd6084">TYPE</a>,  <a class="el" href="inflate_8h.html#a164ea0159d5f0b5f12a646f25f99eceaa67bc2ced260a8e43805d2480a785d312">NAME</a>,  MEMBER,  <a class="el" href="propstrings_8h.html#a643bc910afd198def02640b2fbd4f8c6a7b5e9804203d4b1300aad76e5f9a3302">COUNTER</a>,  COUNT)&#160;&#160;&#160;	<a class="el" href="overflow_8h.html#afaa699acffeee47e8408543c9e78a39a">_DEFINE_FLEX</a>(<a class="el" href="inflate_8h.html#a164ea0159d5f0b5f12a646f25f99eceaab47ea8bb955afd0adc0ef98517dd6084">TYPE</a>, <a class="el" href="inflate_8h.html#a164ea0159d5f0b5f12a646f25f99eceaa67bc2ced260a8e43805d2480a785d312">NAME</a>, MEMBER, COUNT, = { .<a class="el" href="propstrings_8h.html#a643bc910afd198def02640b2fbd4f8c6a7b5e9804203d4b1300aad76e5f9a3302">COUNTER</a> = COUNT, })</td></tr>
 <tr class="separator:a4d9882b384f18b883f7044740b59d12c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">: Name for a variable defined in DEFINE_RAW_FLEX()/DEFINE_FLEX().</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p><a class="el" href="overflow_8h.html#a29611b9b64e58b47112bc4378a2e21b6">STACK_FLEX_ARRAY_SIZE()</a> - helper macro for <a class="el" href="overflow_8h.html#a4d9882b384f18b883f7044740b59d12c">DEFINE_FLEX()</a> family. Returns the number of elements in @array.</p>
@@ -291,7 +291,7 @@ Macros</h2></td></tr>
 <tr class="separator:a29611b9b64e58b47112bc4378a2e21b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afaf5329e01a926b9f980f784c752957d" id="r_afaf5329e01a926b9f980f784c752957d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="overflow_8h.html#afaf5329e01a926b9f980f784c752957d">typeof_flex_counter</a>(FAM)</td></tr>
 <tr class="separator:afaf5329e01a926b9f980f784c752957d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab56b2e0d092b83bf32f20168d1b0c205" id="r_ab56b2e0d092b83bf32f20168d1b0c205"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="overflow_8h.html#ab56b2e0d092b83bf32f20168d1b0c205">overflows_flex_counter_type</a>(TYPE,  FAM,  COUNT)&#160;&#160;&#160;	(<a class="el" href="overflow_8h.html#a4d1bf7bbf6888838eb73653690116e3b">overflows_type</a>(COUNT, <a class="el" href="overflow_8h.html#afaf5329e01a926b9f980f784c752957d">typeof_flex_counter</a>(((TYPE *)<a class="el" href="actypes_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)-&gt;FAM)))</td></tr>
+<tr class="memitem:ab56b2e0d092b83bf32f20168d1b0c205" id="r_ab56b2e0d092b83bf32f20168d1b0c205"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="overflow_8h.html#ab56b2e0d092b83bf32f20168d1b0c205">overflows_flex_counter_type</a>(<a class="el" href="inflate_8h.html#a164ea0159d5f0b5f12a646f25f99eceaab47ea8bb955afd0adc0ef98517dd6084">TYPE</a>,  FAM,  COUNT)&#160;&#160;&#160;	(<a class="el" href="overflow_8h.html#a4d1bf7bbf6888838eb73653690116e3b">overflows_type</a>(COUNT, <a class="el" href="overflow_8h.html#afaf5329e01a926b9f980f784c752957d">typeof_flex_counter</a>(((<a class="el" href="inflate_8h.html#a164ea0159d5f0b5f12a646f25f99eceaab47ea8bb955afd0adc0ef98517dd6084">TYPE</a> *)<a class="el" href="actypes_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)-&gt;FAM)))</td></tr>
 <tr class="separator:ab56b2e0d092b83bf32f20168d1b0c205"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff2b9dc9ef29189f90485e7c63b17047" id="r_aff2b9dc9ef29189f90485e7c63b17047"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="overflow_8h.html#aff2b9dc9ef29189f90485e7c63b17047">__set_flex_counter</a>(FAM,  COUNT)</td></tr>
 <tr class="separator:aff2b9dc9ef29189f90485e7c63b17047"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -843,13 +843,13 @@ Macros</h2></td></tr>
           <td class="memname">#define DEFINE_FLEX</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">TYPE, </td>
+          <td class="paramname"><a class="el" href="inflate_8h.html#a164ea0159d5f0b5f12a646f25f99eceaab47ea8bb955afd0adc0ef98517dd6084">TYPE</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">NAME, </td>
+          <td class="paramname"><a class="el" href="inflate_8h.html#a164ea0159d5f0b5f12a646f25f99eceaa67bc2ced260a8e43805d2480a785d312">NAME</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -861,7 +861,7 @@ Macros</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="propstrings_8h.html#ad12132bb9a678532f1ab9d50c99c03b9a7b5e9804203d4b1300aad76e5f9a3302">COUNTER</a>, </td>
+          <td class="paramname"><a class="el" href="propstrings_8h.html#a643bc910afd198def02640b2fbd4f8c6a7b5e9804203d4b1300aad76e5f9a3302">COUNTER</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -872,7 +872,7 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;	<a class="el" href="overflow_8h.html#afaa699acffeee47e8408543c9e78a39a">_DEFINE_FLEX</a>(TYPE, NAME, MEMBER, COUNT, = { .<a class="el" href="propstrings_8h.html#ad12132bb9a678532f1ab9d50c99c03b9a7b5e9804203d4b1300aad76e5f9a3302">COUNTER</a> = COUNT, })</td>
+          <td></td><td>&#160;&#160;&#160;	<a class="el" href="overflow_8h.html#afaa699acffeee47e8408543c9e78a39a">_DEFINE_FLEX</a>(<a class="el" href="inflate_8h.html#a164ea0159d5f0b5f12a646f25f99eceaab47ea8bb955afd0adc0ef98517dd6084">TYPE</a>, <a class="el" href="inflate_8h.html#a164ea0159d5f0b5f12a646f25f99eceaa67bc2ced260a8e43805d2480a785d312">NAME</a>, MEMBER, COUNT, = { .<a class="el" href="propstrings_8h.html#a643bc910afd198def02640b2fbd4f8c6a7b5e9804203d4b1300aad76e5f9a3302">COUNTER</a> = COUNT, })</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -970,7 +970,7 @@ Macros</h2></td></tr>
           <td class="memname">#define overflows_flex_counter_type</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">TYPE, </td>
+          <td class="paramname"><a class="el" href="inflate_8h.html#a164ea0159d5f0b5f12a646f25f99eceaab47ea8bb955afd0adc0ef98517dd6084">TYPE</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -987,7 +987,7 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;	(<a class="el" href="overflow_8h.html#a4d1bf7bbf6888838eb73653690116e3b">overflows_type</a>(COUNT, <a class="el" href="overflow_8h.html#afaf5329e01a926b9f980f784c752957d">typeof_flex_counter</a>(((TYPE *)<a class="el" href="actypes_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)-&gt;FAM)))</td>
+          <td></td><td>&#160;&#160;&#160;	(<a class="el" href="overflow_8h.html#a4d1bf7bbf6888838eb73653690116e3b">overflows_type</a>(COUNT, <a class="el" href="overflow_8h.html#afaf5329e01a926b9f980f784c752957d">typeof_flex_counter</a>(((<a class="el" href="inflate_8h.html#a164ea0159d5f0b5f12a646f25f99eceaab47ea8bb955afd0adc0ef98517dd6084">TYPE</a> *)<a class="el" href="actypes_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)-&gt;FAM)))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1361,8 +1361,8 @@ Macros</h2></td></tr>
           <td class="memname">#define type_max</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a></td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="overflow_8h.html#ae5d7f9346330c06d2ee8a3629ad0a206">__type_max</a>(typeof(<a class="el" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a>))</td>
+          <td class="paramname">t</td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="overflow_8h.html#ae5d7f9346330c06d2ee8a3629ad0a206">__type_max</a>(typeof(t))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1379,8 +1379,8 @@ Macros</h2></td></tr>
           <td class="memname">#define type_min</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a></td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="overflow_8h.html#a12536b755519993f9f641e29b02b5c03">__type_min</a>(typeof(<a class="el" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a>))</td>
+          <td class="paramname">t</td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="overflow_8h.html#a12536b755519993f9f641e29b02b5c03">__type_min</a>(typeof(t))</td>
         </tr>
       </table>
 </div><div class="memdoc">

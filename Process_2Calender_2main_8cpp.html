@@ -74,8 +74,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">main.cpp File Reference</div></div>
@@ -88,12 +87,15 @@ $(function() {
 <code>#include &lt;<a class="el" href="__kefile_8h_source.html">sys/_kefile.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="iocodes_8h_source.html">sys/iocodes.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="__ketime_8h_source.html">sys/_ketime.h</a>&gt;</code><br />
-<code>#include &lt;time.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="chitralekha_8h_source.html">chitralekha.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="base_8h_source.html">widgets/base.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="Libs_2Chitralekha_2widgets_2button_8h_source.html">widgets/button.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="keycode_8h_source.html">keycode.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="button_8h_source.html">widgets/button.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="Libs_2Chitralekha_2widgets_2window_8h_source.html">widgets/window.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="gmstyle_8h_source.html">widgets/gmstyle.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="keycode_8h_source.html">keycode.h</a>&gt;</code><br />
+<code>#include &lt;font.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="calevt_8h_source.html">calevt.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="livetile_8h_source.html">livetile.h</a>&gt;</code><br />
 <code>#include &lt;string.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="stdlib_8h_source.html">stdlib.h</a>&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
@@ -101,139 +103,199 @@ Include dependency graph for main.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="Process_2Calender_2main_8cpp__incl.png" border="0" usemap="#aXenevaOS_2Process_2Calender_2main_8cpp" alt=""/></div>
 <map name="aXenevaOS_2Process_2Calender_2main_8cpp" id="aXenevaOS_2Process_2Calender_2main_8cpp">
-<area shape="rect" title=" " alt="" coords="585,5,790,45"/>
-<area shape="rect" title=" " alt="" coords="369,607,440,632"/>
-<area shape="poly" title=" " alt="" coords="585,32,479,37,365,49,264,67,225,80,197,95,178,113,168,131,163,151,162,178,162,474,167,504,182,530,204,552,232,569,295,595,356,609,355,614,294,600,229,574,201,556,178,533,162,506,157,474,157,178,158,151,163,129,174,110,194,91,223,75,263,62,364,43,479,32,584,26"/>
-<area shape="rect" href="__xeneva_8h.html" title=" " alt="" coords="1266,607,1354,632"/>
-<area shape="poly" title=" " alt="" coords="790,26,954,31,1147,43,1328,62,1402,75,1457,91,1500,105,1536,118,1550,128,1562,140,1569,157,1571,178,1571,474,1566,506,1550,534,1527,556,1498,575,1432,600,1369,614,1368,609,1431,595,1496,570,1524,552,1546,531,1561,505,1566,474,1566,178,1564,158,1557,143,1547,132,1533,123,1498,110,1456,96,1401,80,1327,67,1146,48,954,37,790,31"/>
-<area shape="rect" title=" " alt="" coords="207,93,274,119"/>
-<area shape="poly" title=" " alt="" coords="585,45,293,96,288,97,287,92,292,91,584,40"/>
+<area shape="rect" title=" " alt="" coords="1281,5,1486,45"/>
+<area shape="rect" title=" " alt="" coords="703,607,773,632"/>
+<area shape="poly" title=" " alt="" coords="1280,28,1087,33,977,41,867,54,768,73,687,100,657,116,633,135,619,155,614,178,614,401,617,431,625,460,652,515,686,561,718,595,714,599,682,564,648,517,620,462,612,432,609,401,609,178,614,153,630,131,654,112,685,95,767,68,867,49,976,36,1087,28,1280,23"/>
+<area shape="rect" href="__xeneva_8h.html" title=" " alt="" coords="1773,607,1861,632"/>
+<area shape="poly" title=" " alt="" coords="1486,26,1658,35,1754,45,1849,59,1935,78,2004,103,2032,119,2052,136,2065,156,2070,178,2070,474,2065,506,2050,532,2027,555,2000,573,1936,599,1875,613,1874,608,1935,594,1997,568,2024,551,2045,529,2060,504,2065,474,2065,178,2060,158,2048,140,2029,123,2002,108,1933,83,1848,64,1754,50,1657,40,1486,31"/>
+<area shape="rect" title=" " alt="" coords="2243,93,2310,119"/>
+<area shape="poly" title=" " alt="" coords="1486,28,1816,47,2020,65,2225,91,2230,92,2229,97,2224,96,2020,71,1816,52,1486,33"/>
 <area shape="rect" href="__keproc_8h.html" title=" " alt="" coords="11,533,121,559"/>
-<area shape="poly" title=" " alt="" coords="584,31,467,37,338,48,221,67,176,80,142,96,118,112,102,129,93,150,90,178,90,401,85,466,75,520,69,519,79,465,85,401,85,178,88,149,98,126,115,108,139,91,174,75,220,62,337,43,467,32,584,26"/>
-<area shape="rect" href="__kefile_8h.html" title=" " alt="" coords="1169,533,1272,559"/>
-<area shape="poly" title=" " alt="" coords="790,25,971,32,1073,41,1173,55,1264,74,1339,100,1368,116,1390,134,1404,155,1409,178,1409,254,1407,294,1400,327,1390,355,1377,380,1340,429,1292,487,1272,509,1250,527,1247,523,1268,505,1288,484,1336,425,1372,377,1386,353,1395,325,1401,293,1403,254,1403,178,1399,157,1386,138,1365,120,1337,105,1263,79,1172,60,1072,46,970,38,790,30"/>
-<area shape="rect" href="iocodes_8h.html" title=" " alt="" coords="411,93,521,119"/>
-<area shape="poly" title=" " alt="" coords="635,48,512,91,511,86,633,43"/>
-<area shape="rect" href="__ketime_8h.html" title=" " alt="" coords="349,533,461,559"/>
-<area shape="poly" title=" " alt="" coords="585,35,536,43,484,55,433,72,385,96,356,113,333,129,319,149,314,178,314,400,321,437,338,470,360,499,382,522,378,526,356,503,333,473,316,439,309,401,309,178,314,146,330,125,353,108,382,91,431,67,483,50,535,38,584,30"/>
-<area shape="rect" title=" " alt="" coords="655,93,719,119"/>
-<area shape="poly" title=" " alt="" coords="690,46,690,79,685,79,685,46"/>
-<area shape="rect" href="chitralekha_8h.html" title=" " alt="" coords="749,533,855,559"/>
-<area shape="poly" title=" " alt="" coords="666,48,601,108,564,150,529,197,500,249,481,303,477,330,477,357,481,384,491,411,507,438,525,455,578,483,646,506,736,528,735,533,645,511,576,488,522,459,503,441,486,413,476,386,472,358,472,330,476,302,495,247,524,195,560,147,597,104,662,44"/>
-<area shape="rect" href="base_8h.html" title=" " alt="" coords="735,240,855,265"/>
-<area shape="poly" title=" " alt="" coords="585,29,505,35,435,50,409,62,394,76,390,94,400,117,431,152,468,180,509,202,553,219,642,240,722,248,721,253,641,245,552,224,507,207,465,184,427,156,396,120,385,95,389,74,406,57,433,45,505,30,584,24"/>
-<area shape="rect" href="Libs_2Chitralekha_2widgets_2button_8h.html" title=" " alt="" coords="769,93,899,119"/>
-<area shape="poly" title=" " alt="" coords="724,43,802,84,799,89,721,48"/>
-<area shape="rect" href="Libs_2Chitralekha_2widgets_2window_8h.html" title=" " alt="" coords="929,167,1011,192"/>
-<area shape="poly" title=" " alt="" coords="791,40,854,59,884,74,913,91,942,121,961,152,957,155,937,124,910,95,882,78,852,64,790,45"/>
-<area shape="rect" href="keycode_8h.html" title=" " alt="" coords="1443,167,1531,192"/>
-<area shape="poly" title=" " alt="" coords="790,23,949,25,1134,35,1224,43,1306,55,1375,71,1426,91,1443,104,1458,120,1479,152,1474,155,1454,123,1440,108,1423,96,1373,76,1305,60,1224,48,1134,40,949,31,790,28"/>
-<area shape="rect" title=" " alt="" coords="1607,93,1677,119"/>
-<area shape="poly" title=" " alt="" coords="790,27,1144,46,1365,65,1588,91,1593,91,1592,97,1587,96,1365,70,1144,52,790,33"/>
-<area shape="rect" href="stdlib_8h.html" title=" " alt="" coords="1680,460,1751,485"/>
-<area shape="poly" title=" " alt="" coords="790,24,1023,28,1305,37,1439,46,1555,57,1642,72,1672,81,1692,91,1709,110,1717,130,1718,178,1718,327,1718,446,1713,446,1713,327,1713,178,1712,131,1705,113,1688,95,1670,86,1641,77,1554,63,1438,51,1305,43,1023,33,790,30"/>
-<area shape="rect" href="Libs_2XEClib_2includes_2stdint_8h.html" title=" " alt="" coords="1527,680,1597,705"/>
-<area shape="poly" title=" " alt="" coords="1351,629,1514,675,1512,680,1350,635"/>
-<area shape="rect" href="size__t_8h.html" title=" " alt="" coords="1526,753,1598,779"/>
-<area shape="poly" title=" " alt="" coords="1565,706,1565,740,1559,740,1559,706"/>
-<area shape="poly" title=" " alt="" coords="121,556,356,605,355,610,120,561"/>
-<area shape="poly" title=" " alt="" coords="122,548,1252,612,1252,617,121,553"/>
+<area shape="poly" title=" " alt="" coords="1280,29,1046,32,750,42,602,50,464,62,347,77,259,96,205,108,158,118,140,126,126,138,117,154,114,178,114,401,111,435,102,468,81,522,76,520,97,466,105,434,109,401,109,178,112,153,122,134,137,122,157,113,204,102,257,91,346,72,464,56,601,45,750,36,1046,27,1280,24"/>
+<area shape="rect" href="__kefile_8h.html" title=" " alt="" coords="292,533,395,559"/>
+<area shape="poly" title=" " alt="" coords="1280,32,1100,40,884,52,679,71,594,82,531,96,470,107,416,115,394,123,378,134,367,152,363,178,363,401,359,466,351,520,346,519,354,465,358,401,358,178,362,150,374,131,392,118,414,110,469,102,529,91,594,77,678,65,884,47,1100,34,1280,27"/>
+<area shape="rect" href="iocodes_8h.html" title=" " alt="" coords="2335,93,2445,119"/>
+<area shape="poly" title=" " alt="" coords="1486,28,1851,49,2083,67,2321,91,2321,96,2083,72,1850,54,1486,33"/>
+<area shape="rect" href="__ketime_8h.html" title=" " alt="" coords="801,533,913,559"/>
+<area shape="poly" title=" " alt="" coords="1281,36,1139,50,1061,62,986,77,919,96,865,119,845,132,829,147,820,162,817,178,817,401,820,433,827,466,847,520,842,522,822,467,814,434,811,401,811,178,815,160,825,143,841,128,863,115,917,91,985,72,1060,57,1138,45,1280,30"/>
+<area shape="rect" href="chitralekha_8h.html" title=" " alt="" coords="1374,533,1481,559"/>
+<area shape="poly" title=" " alt="" coords="1392,45,1406,104,1414,178,1414,254,1419,405,1428,519,1422,520,1414,405,1409,254,1409,178,1401,105,1387,46"/>
+<area shape="rect" href="base_8h.html" title=" " alt="" coords="943,240,1063,265"/>
+<area shape="poly" title=" " alt="" coords="1353,48,1036,235,1033,231,1350,43"/>
+<area shape="rect" href="button_8h.html" title=" " alt="" coords="1449,93,1579,119"/>
+<area shape="poly" title=" " alt="" coords="1416,43,1484,84,1482,88,1414,48"/>
+<area shape="rect" href="Libs_2Chitralekha_2widgets_2window_8h.html" title=" " alt="" coords="1522,167,1605,192"/>
+<area shape="poly" title=" " alt="" coords="1487,32,1517,40,1546,52,1572,69,1594,92,1600,108,1598,125,1584,156,1579,154,1593,124,1595,109,1589,95,1568,73,1543,57,1515,45,1486,37"/>
+<area shape="rect" href="gmstyle_8h.html" title=" " alt="" coords="1231,240,1373,265"/>
+<area shape="poly" title=" " alt="" coords="1379,46,1313,228,1308,226,1374,45"/>
+<area shape="rect" href="keycode_8h.html" title=" " alt="" coords="2105,167,2193,192"/>
+<area shape="poly" title=" " alt="" coords="1486,24,1638,27,1812,36,1897,45,1974,57,2039,72,2087,91,2105,104,2119,120,2140,152,2136,155,2115,123,2101,108,2085,96,2038,77,1973,62,1897,50,1812,42,1637,32,1486,29"/>
+<area shape="rect" title=" " alt="" coords="2469,93,2529,119"/>
+<area shape="poly" title=" " alt="" coords="1486,23,1667,26,1907,35,2179,55,2319,71,2456,91,2455,96,2318,76,2178,61,1907,40,1667,31,1486,29"/>
+<area shape="rect" href="calevt_8h.html" title=" " alt="" coords="398,460,473,485"/>
+<area shape="poly" title=" " alt="" coords="1280,30,1112,34,913,44,725,64,650,78,594,96,557,110,527,125,508,146,503,160,501,178,501,328,496,363,484,396,454,450,450,447,480,394,491,361,495,327,495,178,497,158,503,143,524,121,555,106,592,91,649,73,725,59,912,39,1112,29,1280,25"/>
+<area shape="rect" title=" " alt="" coords="197,533,268,559"/>
+<area shape="poly" title=" " alt="" coords="1280,32,1053,40,777,53,532,72,444,83,394,96,361,111,335,126,319,147,313,178,313,401,311,426,306,446,286,487,257,525,252,522,281,484,301,444,306,425,307,401,307,178,314,145,332,122,358,106,392,91,443,78,531,66,777,48,1052,35,1280,27"/>
+<area shape="rect" href="livetile_8h.html" title=" " alt="" coords="193,460,272,485"/>
+<area shape="poly" title=" " alt="" coords="1280,30,1029,34,721,44,573,53,445,64,347,78,314,86,293,96,271,112,258,130,251,151,249,178,249,327,245,392,239,447,234,446,240,392,243,327,243,178,245,149,253,127,267,108,290,91,312,81,346,73,444,59,573,47,720,39,1029,29,1280,25"/>
+<area shape="rect" href="stdlib_8h.html" title=" " alt="" coords="2215,460,2285,485"/>
+<area shape="poly" title=" " alt="" coords="1486,26,1643,31,1826,42,1997,61,2067,75,2119,91,2170,118,2190,133,2206,151,2218,171,2226,194,2233,251,2233,327,2238,392,2247,446,2242,447,2232,392,2227,327,2227,251,2221,196,2213,173,2202,154,2187,137,2168,122,2117,96,2065,80,1996,67,1825,48,1643,36,1486,31"/>
+<area shape="rect" href="Libs_2XEClib_2includes_2stdint_8h.html" title=" " alt="" coords="2055,680,2125,705"/>
+<area shape="poly" title=" " alt="" coords="1861,629,2042,676,2041,681,1860,635"/>
+<area shape="rect" href="size__t_8h.html" title=" " alt="" coords="2054,753,2126,779"/>
+<area shape="poly" title=" " alt="" coords="2093,706,2093,740,2087,740,2087,706"/>
+<area shape="poly" title=" " alt="" coords="122,553,141,556,453,590,689,611,689,617,453,595,140,561,121,559"/>
+<area shape="poly" title=" " alt="" coords="122,551,185,556,661,582,1123,599,1759,614,1759,620,1123,604,660,587,184,561,121,556"/>
 <area shape="rect" href="__kesignal_8h.html" title=" " alt="" coords="5,607,127,632"/>
 <area shape="poly" title=" " alt="" coords="69,559,69,593,63,593,63,559"/>
-<area shape="poly" title=" " alt="" coords="1170,555,1100,561,454,617,453,611,1099,556,1169,550"/>
-<area shape="poly" title=" " alt="" coords="1237,557,1286,596,1283,600,1233,561"/>
-<area shape="poly" title=" " alt="" coords="407,559,407,593,402,593,402,559"/>
-<area shape="poly" title=" " alt="" coords="461,550,524,556,1252,611,1252,617,523,561,461,556"/>
-<area shape="poly" title=" " alt="" coords="749,559,454,612,453,607,748,554"/>
-<area shape="poly" title=" " alt="" coords="856,552,1253,607,1252,613,855,557"/>
-<area shape="poly" title=" " alt="" coords="735,260,602,273,524,283,446,297,375,316,316,339,294,352,277,366,267,382,263,398,263,474,266,495,274,515,300,550,334,578,368,598,366,603,331,582,296,553,269,517,261,496,258,474,258,398,262,379,273,363,291,348,314,334,373,311,445,292,523,278,602,267,735,255"/>
-<area shape="poly" title=" " alt="" coords="856,259,952,277,1010,293,1071,314,1132,340,1190,372,1245,411,1292,458,1310,491,1318,528,1320,563,1317,593,1312,593,1314,563,1313,528,1305,493,1288,462,1241,415,1188,377,1129,345,1069,319,1008,298,951,283,855,264"/>
-<area shape="rect" href="__keipcpostbox_8h.html" title=" " alt="" coords="527,313,680,339"/>
-<area shape="poly" title=" " alt="" coords="765,268,649,311,647,306,764,263"/>
-<area shape="rect" href="Libs_2Chitralekha_2font_8h.html" title=" " alt="" coords="759,313,831,339"/>
-<area shape="poly" title=" " alt="" coords="798,266,798,300,793,300,793,266"/>
-<area shape="poly" title=" " alt="" coords="552,341,498,360,471,373,446,389,406,421,378,451,358,486,339,534,336,546,339,558,354,579,374,597,371,601,350,583,334,560,331,546,334,533,353,484,374,448,402,417,443,385,469,368,496,355,550,336"/>
-<area shape="poly" title=" " alt="" coords="760,335,602,358,528,374,503,381,490,389,477,409,472,428,473,448,477,468,485,511,484,535,475,560,458,583,438,601,434,597,454,579,470,557,479,533,480,511,472,469,468,448,467,428,472,406,487,385,501,377,527,369,601,353,759,329"/>
-<area shape="poly" title=" " alt="" coords="823,336,860,356,896,385,916,409,929,432,944,477,961,518,977,538,999,556,1045,575,1112,590,1253,610,1252,615,1111,595,1043,580,997,561,973,542,957,521,939,479,924,435,911,412,892,389,857,361,821,341"/>
-<area shape="poly" title=" " alt="" coords="786,341,770,361,757,387,753,423,760,460,773,493,788,520,784,523,768,495,755,461,747,424,751,386,765,359,782,337"/>
-<area shape="rect" href="__keftmngr_8h.html" title=" " alt="" coords="1153,460,1277,485"/>
-<area shape="poly" title=" " alt="" coords="832,328,948,345,1018,361,1087,384,1145,416,1193,449,1189,454,1143,420,1085,389,1017,366,947,350,831,333"/>
-<area shape="rect" href="ftglyph_8h.html" title=" " alt="" coords="501,387,639,412"/>
-<area shape="poly" title=" " alt="" coords="760,341,620,385,619,380,758,336"/>
-<area shape="rect" href="ft2build_8h.html" title=" " alt="" coords="589,460,671,485"/>
-<area shape="poly" title=" " alt="" coords="778,341,745,362,710,389,678,420,650,451,646,447,674,417,707,385,742,358,775,336"/>
-<area shape="rect" href="draw_8h.html" title=" " alt="" coords="1008,387,1073,412"/>
-<area shape="poly" title=" " alt="" coords="832,335,995,382,994,387,831,340"/>
-<area shape="rect" href="stb__truetype_8h.html" title=" " alt="" coords="765,387,881,412"/>
-<area shape="poly" title=" " alt="" coords="802,338,816,373,811,375,797,340"/>
-<area shape="poly" title=" " alt="" coords="1235,483,1262,504,1287,532,1301,562,1309,592,1304,594,1296,564,1282,535,1258,508,1232,488"/>
-<area shape="poly" title=" " alt="" coords="582,411,614,448,609,451,578,414"/>
-<area shape="rect" href="ftheader_8h.html" title=" " alt="" coords="535,533,725,559"/>
-<area shape="poly" title=" " alt="" coords="633,486,633,520,627,520,627,486"/>
-<area shape="poly" title=" " alt="" coords="1049,411,1089,479,1121,520,1160,557,1206,583,1254,601,1252,606,1203,588,1156,561,1117,524,1085,482,1044,414"/>
-<area shape="poly" title=" " alt="" coords="1023,414,834,528,831,524,1020,410"/>
-<area shape="rect" href="color_8h.html" title=" " alt="" coords="961,460,1027,485"/>
-<area shape="poly" title=" " alt="" coords="1035,414,1011,450,1007,447,1031,411"/>
-<area shape="poly" title=" " alt="" coords="983,487,935,525,903,545,868,561,813,579,755,593,640,612,535,620,454,622,454,616,535,614,639,606,754,588,811,574,866,556,900,540,932,520,980,483"/>
-<area shape="poly" title=" " alt="" coords="997,485,1002,521,1010,541,1022,557,1038,567,1061,576,1122,592,1253,610,1252,616,1121,597,1060,581,1036,572,1019,561,1005,543,997,523,992,486"/>
-<area shape="poly" title=" " alt="" coords="964,488,847,531,845,526,962,483"/>
-<area shape="poly" title=" " alt="" coords="900,104,994,110,1050,118,1109,130,1169,147,1227,170,1282,200,1332,238,1369,275,1399,312,1423,350,1438,388,1445,428,1443,470,1431,513,1410,560,1387,586,1359,603,1356,599,1384,582,1405,557,1426,512,1438,469,1440,428,1433,389,1418,352,1395,315,1365,279,1328,242,1280,204,1225,175,1167,152,1108,135,1049,123,993,115,899,109"/>
-<area shape="poly" title=" " alt="" coords="833,120,805,227,799,226,828,118"/>
-<area shape="poly" title=" " alt="" coords="857,116,937,158,935,163,855,121"/>
-<area shape="poly" title=" " alt="" coords="929,186,750,203,632,219,510,241,396,269,346,286,301,305,264,325,236,348,219,372,213,398,213,474,216,499,227,521,243,541,263,558,310,585,357,603,355,608,308,590,260,562,239,544,222,524,211,500,207,474,207,398,214,370,232,344,261,321,299,300,344,281,395,264,509,236,631,214,749,198,928,181"/>
-<area shape="poly" title=" " alt="" coords="970,193,945,286,924,350,896,413,859,475,822,524,818,521,855,472,892,411,919,348,940,284,965,192"/>
-<area shape="poly" title=" " alt="" coords="943,194,838,237,836,232,941,190"/>
-<area shape="poly" title=" " alt="" coords="976,192,1035,372,1030,374,971,193"/>
-<area shape="poly" title=" " alt="" coords="982,191,1006,222,1037,269,1067,325,1089,386,1092,400,1088,413,1067,438,1040,456,1037,452,1064,434,1084,411,1086,400,1083,387,1062,327,1032,271,1002,225,978,194"/>
-<area shape="rect" href="Libs_2Chitralekha_2widgets_2list_8h.html" title=" " alt="" coords="1032,533,1087,559"/>
-<area shape="poly" title=" " alt="" coords="989,190,1016,211,1043,238,1071,275,1089,306,1100,341,1109,386,1109,424,1101,462,1076,522,1071,520,1096,460,1104,424,1103,387,1095,342,1084,309,1066,278,1039,242,1012,215,986,194"/>
-<area shape="rect" href="setjmp_8h.html" title=" " alt="" coords="1239,240,1317,265"/>
-<area shape="poly" title=" " alt="" coords="1012,188,1226,237,1225,242,1011,193"/>
-<area shape="poly" title=" " alt="" coords="1032,553,454,615,453,610,1031,548"/>
-<area shape="poly" title=" " alt="" coords="1088,553,1257,600,1256,605,1086,558"/>
-<area shape="poly" title=" " alt="" coords="1289,264,1339,343,1367,399,1387,459,1398,510,1397,533,1387,560,1369,584,1347,602,1344,597,1366,580,1382,557,1392,532,1393,511,1382,461,1362,401,1334,345,1284,267"/>
-<area shape="poly" title=" " alt="" coords="1494,191,1510,248,1518,286,1521,325,1521,474,1520,501,1515,522,1505,541,1488,561,1461,581,1430,596,1368,614,1367,609,1428,591,1458,577,1484,557,1501,538,1510,520,1514,500,1515,474,1515,325,1512,286,1505,249,1489,193"/>
-<area shape="poly" title=" " alt="" coords="1703,488,1655,524,1623,544,1588,561,1531,581,1473,597,1368,615,1367,609,1471,591,1530,576,1586,556,1620,539,1652,520,1700,483"/>
-<area shape="rect" href="Libs_2XEClib_2includes_2stddef_8h.html" title=" " alt="" coords="1786,607,1861,632"/>
-<area shape="poly" title=" " alt="" coords="1731,483,1754,505,1777,532,1814,593,1810,595,1773,535,1750,509,1727,487"/>
-<area shape="rect" href="__xeprint_8h.html" title=" " alt="" coords="1657,533,1744,559"/>
-<area shape="poly" title=" " alt="" coords="1716,486,1708,520,1703,519,1710,485"/>
-<area shape="rect" href="Libs_2XEClib_2includes_2stdarg_8h.html" title=" " alt="" coords="1671,607,1746,632"/>
-<area shape="poly" title=" " alt="" coords="1730,484,1754,517,1761,538,1759,559,1748,580,1734,598,1730,595,1744,577,1754,558,1756,538,1749,519,1726,487"/>
-<area shape="poly" title=" " alt="" coords="1787,633,1611,681,1610,676,1785,628"/>
-<area shape="poly" title=" " alt="" coords="1657,558,1369,610,1368,605,1657,553"/>
-<area shape="poly" title=" " alt="" coords="1705,559,1709,593,1703,593,1699,559"/>
+<area shape="poly" title=" " alt="" coords="395,554,689,607,689,612,394,559"/>
+<area shape="poly" title=" " alt="" coords="395,550,458,556,847,580,1227,597,1759,614,1759,619,1227,602,847,585,458,561,395,556"/>
+<area shape="rect" title=" " alt="" coords="295,607,391,632"/>
+<area shape="poly" title=" " alt="" coords="346,559,346,593,341,593,341,559"/>
+<area shape="poly" title=" " alt="" coords="839,561,771,602,768,597,836,556"/>
+<area shape="poly" title=" " alt="" coords="913,549,1759,611,1758,616,913,554"/>
+<area shape="poly" title=" " alt="" coords="1374,555,787,616,787,610,1374,550"/>
+<area shape="poly" title=" " alt="" coords="1482,554,1760,605,1759,610,1481,560"/>
+<area shape="poly" title=" " alt="" coords="943,264,830,284,780,298,746,315,729,334,720,351,716,372,715,398,715,474,722,539,734,593,728,594,716,540,710,474,710,398,711,371,715,350,725,331,743,311,778,293,829,279,943,259"/>
+<area shape="poly" title=" " alt="" coords="1064,256,1266,273,1528,302,1655,320,1765,340,1848,361,1875,373,1892,385,1907,411,1912,439,1909,469,1899,499,1870,554,1838,597,1834,594,1865,552,1894,497,1904,468,1907,439,1902,413,1888,388,1873,377,1846,366,1764,345,1654,325,1527,307,1265,279,1063,261"/>
+<area shape="rect" href="__keipcpostbox_8h.html" title=" " alt="" coords="471,533,624,559"/>
+<area shape="poly" title=" " alt="" coords="944,262,805,282,740,297,695,316,669,337,644,363,605,420,576,476,558,521,553,519,571,474,600,417,640,359,665,333,693,311,738,292,804,277,943,257"/>
+<area shape="rect" href="Libs_2Chitralekha_2font_8h.html" title=" " alt="" coords="1194,313,1266,339"/>
+<area shape="poly" title=" " alt="" coords="1041,263,1181,307,1180,312,1039,268"/>
+<area shape="poly" title=" " alt="" coords="579,556,695,599,693,604,577,561"/>
+<area shape="poly" title=" " alt="" coords="1194,333,1074,352,1016,368,995,378,981,388,969,409,966,430,970,451,976,472,983,493,987,515,984,538,971,560,958,571,940,580,893,595,787,615,786,610,891,590,938,575,955,566,967,557,979,536,981,515,978,494,971,473,965,452,961,430,964,408,977,385,992,373,1015,363,1073,346,1193,328"/>
+<area shape="poly" title=" " alt="" coords="1266,328,1389,346,1464,362,1539,384,1611,414,1676,458,1715,491,1750,529,1803,594,1799,597,1746,532,1711,495,1672,462,1608,419,1537,389,1463,367,1388,351,1266,333"/>
+<area shape="poly" title=" " alt="" coords="1247,337,1272,358,1297,385,1315,412,1326,435,1337,458,1355,484,1377,505,1400,523,1396,527,1373,509,1351,487,1332,461,1321,438,1311,415,1293,388,1268,362,1244,341"/>
+<area shape="rect" href="__keftmngr_8h.html" title=" " alt="" coords="1753,387,1877,412"/>
+<area shape="poly" title=" " alt="" coords="1266,329,1734,384,1740,385,1740,390,1734,389,1266,334"/>
+<area shape="rect" href="ftglyph_8h.html" title=" " alt="" coords="1003,387,1142,412"/>
+<area shape="poly" title=" " alt="" coords="1206,341,1112,383,1110,379,1204,336"/>
+<area shape="rect" href="ft2build_8h.html" title=" " alt="" coords="1031,460,1114,485"/>
+<area shape="poly" title=" " alt="" coords="1194,334,1080,352,1026,368,1006,378,993,388,989,397,988,405,997,422,1015,438,1037,451,1034,456,1012,442,993,425,983,406,984,395,989,385,1003,373,1024,363,1078,347,1193,328"/>
+<area shape="rect" href="draw_8h.html" title=" " alt="" coords="1460,387,1525,412"/>
+<area shape="poly" title=" " alt="" coords="1267,335,1448,383,1446,388,1266,340"/>
+<area shape="rect" href="stb__truetype_8h.html" title=" " alt="" coords="1167,387,1283,412"/>
+<area shape="poly" title=" " alt="" coords="1232,339,1229,373,1224,373,1226,339"/>
+<area shape="poly" title=" " alt="" coords="1818,412,1819,592,1814,592,1813,412"/>
+<area shape="poly" title=" " alt="" coords="1075,412,1075,446,1070,446,1070,412"/>
+<area shape="rect" href="ftheader_8h.html" title=" " alt="" coords="1038,533,1227,559"/>
+<area shape="poly" title=" " alt="" coords="1085,484,1116,521,1112,525,1081,487"/>
+<area shape="poly" title=" " alt="" coords="1527,408,1582,428,1641,458,1674,482,1698,504,1749,557,1794,596,1791,600,1746,561,1694,508,1671,486,1638,462,1579,433,1525,413"/>
+<area shape="poly" title=" " alt="" coords="1490,414,1441,522,1436,520,1485,411"/>
+<area shape="rect" href="color_8h.html" title=" " alt="" coords="1561,460,1627,485"/>
+<area shape="poly" title=" " alt="" coords="1510,410,1568,450,1565,454,1507,414"/>
+<area shape="poly" title=" " alt="" coords="1586,488,1549,525,1523,545,1494,561,1432,579,1349,593,1147,610,941,619,787,621,787,615,941,613,1147,605,1349,587,1431,574,1492,556,1520,541,1545,521,1582,484"/>
+<area shape="poly" title=" " alt="" coords="1608,483,1647,518,1698,556,1778,599,1775,603,1695,561,1643,522,1604,487"/>
+<area shape="poly" title=" " alt="" coords="1568,488,1468,530,1466,525,1566,483"/>
+<area shape="poly" title=" " alt="" coords="1580,110,1706,124,1850,150,1915,169,1969,191,1990,204,2006,218,2016,234,2019,251,2019,474,2016,500,2005,523,1989,543,1969,560,1922,587,1875,606,1873,601,1920,583,1966,556,1985,539,2000,520,2010,498,2014,474,2014,252,2011,236,2001,222,1986,208,1966,196,1913,174,1849,155,1705,129,1579,115"/>
+<area shape="poly" title=" " alt="" coords="1474,121,1058,239,1056,234,1473,116"/>
+<area shape="poly" title=" " alt="" coords="1524,117,1550,154,1545,157,1520,121"/>
+<area shape="poly" title=" " alt="" coords="1522,188,1387,208,1303,224,1220,243,1105,264,953,291,881,310,821,334,798,348,781,363,770,380,766,398,766,474,760,540,748,594,742,593,754,539,761,474,761,398,765,378,777,360,795,344,819,329,879,305,952,286,1104,258,1219,237,1302,218,1386,203,1521,183"/>
+<area shape="poly" title=" " alt="" coords="1567,192,1569,230,1567,286,1559,350,1540,413,1522,447,1499,478,1453,526,1450,522,1495,475,1518,444,1536,411,1554,349,1562,286,1563,230,1562,192"/>
+<area shape="poly" title=" " alt="" coords="1522,188,1082,243,1077,243,1077,238,1082,237,1521,183"/>
+<area shape="poly" title=" " alt="" coords="1562,193,1503,374,1498,372,1557,192"/>
+<area shape="poly" title=" " alt="" coords="1571,192,1585,239,1592,297,1596,355,1597,446,1592,446,1591,355,1587,298,1579,241,1565,193"/>
+<area shape="rect" href="Libs_2Chitralekha_2widgets_2list_8h.html" title=" " alt="" coords="1572,533,1627,559"/>
+<area shape="poly" title=" " alt="" coords="1581,190,1606,212,1635,243,1658,281,1665,302,1667,325,1667,401,1663,436,1650,470,1619,524,1615,521,1646,468,1657,435,1662,400,1662,325,1660,304,1653,283,1630,246,1603,216,1577,194"/>
+<area shape="rect" href="setjmp_8h.html" title=" " alt="" coords="1801,313,1880,339"/>
+<area shape="poly" title=" " alt="" coords="1588,190,1685,238,1809,304,1807,309,1682,242,1586,194"/>
+<area shape="poly" title=" " alt="" coords="1572,557,1548,561,1326,587,1108,605,787,619,787,614,1107,599,1326,582,1547,556,1571,551"/>
+<area shape="poly" title=" " alt="" coords="1628,554,1769,600,1768,605,1626,559"/>
+<area shape="poly" title=" " alt="" coords="1875,336,1909,355,1924,369,1936,385,1958,432,1965,473,1959,515,1936,560,1924,575,1909,588,1875,606,1873,601,1906,584,1920,572,1932,557,1954,513,1960,473,1953,433,1932,388,1920,372,1906,360,1872,341"/>
+<area shape="poly" title=" " alt="" coords="1231,264,1165,277,1092,301,1056,317,1021,337,989,361,961,388,948,410,943,431,945,473,948,516,941,538,927,560,896,586,860,602,822,613,788,618,787,613,821,608,858,597,893,581,923,557,937,536,942,515,940,473,937,430,943,408,957,385,986,356,1018,332,1053,312,1090,296,1164,272,1230,259"/>
+<area shape="poly" title=" " alt="" coords="1309,264,1419,520,1415,522,1304,266"/>
+<area shape="poly" title=" " alt="" coords="1292,268,1253,306,1250,302,1288,264"/>
+<area shape="poly" title=" " alt="" coords="1319,264,1468,376,1465,380,1316,268"/>
+<area shape="poly" title=" " alt="" coords="2147,193,2131,249,2124,286,2121,325,2121,474,2120,501,2116,522,2106,542,2088,561,2050,580,1995,595,1874,614,1874,609,1994,590,2048,575,2084,557,2102,538,2111,521,2115,500,2115,474,2115,325,2118,286,2126,248,2142,191"/>
+<area shape="poly" title=" " alt="" coords="438,485,441,521,448,540,460,557,476,567,499,577,560,593,689,611,688,616,558,598,497,582,473,572,456,561,443,543,436,522,432,486"/>
+<area shape="poly" title=" " alt="" coords="422,487,371,527,367,523,419,483"/>
+<area shape="poly" title=" " alt="" coords="473,478,788,530,787,536,472,483"/>
+<area shape="poly" title=" " alt="" coords="404,488,279,531,277,526,402,483"/>
+<area shape="poly" title=" " alt="" coords="220,487,203,503,188,521,181,540,182,549,186,557,212,569,260,580,401,597,561,608,689,614,689,619,560,613,401,602,259,585,210,574,183,561,177,551,176,540,183,519,199,499,216,483"/>
+<area shape="poly" title=" " alt="" coords="207,488,107,530,105,525,205,483"/>
+<area shape="poly" title=" " alt="" coords="252,483,315,523,312,528,249,488"/>
+<area shape="poly" title=" " alt="" coords="273,480,484,528,482,533,272,486"/>
+<area shape="poly" title=" " alt="" coords="235,486,235,520,230,520,230,486"/>
+<area shape="poly" title=" " alt="" coords="2240,487,2198,524,2169,544,2138,561,2069,585,1998,602,1931,612,1875,618,1874,613,1931,607,1997,597,2068,580,2136,556,2166,540,2194,520,2237,483"/>
+<area shape="rect" href="Libs_2XEClib_2includes_2stddef_8h.html" title=" " alt="" coords="2335,607,2410,632"/>
+<area shape="poly" title=" " alt="" coords="2270,483,2298,504,2327,532,2348,562,2364,593,2360,595,2344,565,2323,535,2295,508,2267,488"/>
+<area shape="rect" href="__xeprint_8h.html" title=" " alt="" coords="2207,533,2293,559"/>
+<area shape="poly" title=" " alt="" coords="2253,486,2253,520,2247,520,2247,486"/>
+<area shape="rect" href="Libs_2XEClib_2includes_2stdarg_8h.html" title=" " alt="" coords="2221,607,2295,632"/>
+<area shape="poly" title=" " alt="" coords="2268,484,2290,504,2308,532,2311,551,2306,569,2284,599,2280,596,2301,566,2306,550,2304,534,2286,508,2264,487"/>
+<area shape="poly" title=" " alt="" coords="2336,633,2139,682,2138,677,2334,627"/>
+<area shape="poly" title=" " alt="" coords="2207,558,2188,561,1875,612,1874,606,2187,556,2206,553"/>
+<area shape="poly" title=" " alt="" coords="2254,559,2258,593,2253,593,2249,559"/>
 </map>
 </div>
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__datebox__.html">_datebox_</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:a9275d77c47ecf96845492924b9bfc320" id="r_a9275d77c47ecf96845492924b9bfc320"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct__datebox__.html">_datebox_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Process_2Calender_2main_8cpp.html#a9275d77c47ecf96845492924b9bfc320">DateBox</a></td></tr>
-<tr class="separator:a9275d77c47ecf96845492924b9bfc320"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a23f7b870356588ddfcc49a1c364cba5e" id="r_a23f7b870356588ddfcc49a1c364cba5e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Process_2Calender_2main_8cpp.html#a23f7b870356588ddfcc49a1c364cba5e">WIN_W</a>&#160;&#160;&#160;640</td></tr>
+<tr class="separator:a23f7b870356588ddfcc49a1c364cba5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae893136b52eb3d95f3a310c3900ae42b" id="r_ae893136b52eb3d95f3a310c3900ae42b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Process_2Calender_2main_8cpp.html#ae893136b52eb3d95f3a310c3900ae42b">WIN_H</a>&#160;&#160;&#160;420</td></tr>
+<tr class="separator:ae893136b52eb3d95f3a310c3900ae42b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0cee92dec0a54dad52eec38fd9a2466" id="r_af0cee92dec0a54dad52eec38fd9a2466"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Process_2Calender_2main_8cpp.html#af0cee92dec0a54dad52eec38fd9a2466">GRID_X</a>&#160;&#160;&#160;18</td></tr>
+<tr class="separator:af0cee92dec0a54dad52eec38fd9a2466"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8c6cf1074fa26eb4554030f04ee57d1" id="r_ad8c6cf1074fa26eb4554030f04ee57d1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Process_2Calender_2main_8cpp.html#ad8c6cf1074fa26eb4554030f04ee57d1">GRID_Y</a>&#160;&#160;&#160;96 /* weekday row */</td></tr>
+<tr class="separator:ad8c6cf1074fa26eb4554030f04ee57d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62e411b54d9f4d5512576d69c1831ee9" id="r_a62e411b54d9f4d5512576d69c1831ee9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Process_2Calender_2main_8cpp.html#a62e411b54d9f4d5512576d69c1831ee9">CELL_W</a>&#160;&#160;&#160;50</td></tr>
+<tr class="separator:a62e411b54d9f4d5512576d69c1831ee9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36e1292dd9af86d5b74a92b4a1bad9ba" id="r_a36e1292dd9af86d5b74a92b4a1bad9ba"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Process_2Calender_2main_8cpp.html#a36e1292dd9af86d5b74a92b4a1bad9ba">CELL_H</a>&#160;&#160;&#160;42</td></tr>
+<tr class="separator:a36e1292dd9af86d5b74a92b4a1bad9ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a912c39000f2b00ce0be575b8abb31548" id="r_a912c39000f2b00ce0be575b8abb31548"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Process_2Calender_2main_8cpp.html#a912c39000f2b00ce0be575b8abb31548">CELLS_Y</a>&#160;&#160;&#160;(<a class="el" href="Process_2Calender_2main_8cpp.html#ad8c6cf1074fa26eb4554030f04ee57d1">GRID_Y</a> + 22)</td></tr>
+<tr class="separator:a912c39000f2b00ce0be575b8abb31548"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab94d6faed0a3fa8da4e5cdd037955139" id="r_ab94d6faed0a3fa8da4e5cdd037955139"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Process_2Calender_2main_8cpp.html#ab94d6faed0a3fa8da4e5cdd037955139">GRID_W</a>&#160;&#160;&#160;(<a class="el" href="Process_2Calender_2main_8cpp.html#a62e411b54d9f4d5512576d69c1831ee9">CELL_W</a> * 7)</td></tr>
+<tr class="separator:ab94d6faed0a3fa8da4e5cdd037955139"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcb80e765677817322ab019e3a10f540" id="r_adcb80e765677817322ab019e3a10f540"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Process_2Calender_2main_8cpp.html#adcb80e765677817322ab019e3a10f540">GRID_H</a>&#160;&#160;&#160;(22 + <a class="el" href="Process_2Calender_2main_8cpp.html#a36e1292dd9af86d5b74a92b4a1bad9ba">CELL_H</a> * 6)</td></tr>
+<tr class="separator:adcb80e765677817322ab019e3a10f540"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b92bccb93e9247a389e875ca4c681b8" id="r_a5b92bccb93e9247a389e875ca4c681b8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Process_2Calender_2main_8cpp.html#a5b92bccb93e9247a389e875ca4c681b8">PANEL_X</a>&#160;&#160;&#160;392</td></tr>
+<tr class="separator:a5b92bccb93e9247a389e875ca4c681b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55fa872cddbb2f9104301cd565f60f14" id="r_a55fa872cddbb2f9104301cd565f60f14"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Process_2Calender_2main_8cpp.html#a55fa872cddbb2f9104301cd565f60f14">PANEL_W</a>&#160;&#160;&#160;230</td></tr>
+<tr class="separator:a55fa872cddbb2f9104301cd565f60f14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2aa4fe82838e0baa2bf6bcf270b51ee" id="r_af2aa4fe82838e0baa2bf6bcf270b51ee"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Process_2Calender_2main_8cpp.html#af2aa4fe82838e0baa2bf6bcf270b51ee">LIST_Y</a>&#160;&#160;&#160;108</td></tr>
+<tr class="separator:af2aa4fe82838e0baa2bf6bcf270b51ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff5bd921faea144bda420627350e0b5c" id="r_aff5bd921faea144bda420627350e0b5c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Process_2Calender_2main_8cpp.html#aff5bd921faea144bda420627350e0b5c">ROW_H</a>&#160;&#160;&#160;34</td></tr>
+<tr class="separator:aff5bd921faea144bda420627350e0b5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a860bedbecad97172b4e7b1baa42bc257" id="r_a860bedbecad97172b4e7b1baa42bc257"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Process_2Calender_2main_8cpp.html#a860bedbecad97172b4e7b1baa42bc257">LIST_ROWS</a>&#160;&#160;&#160;6</td></tr>
+<tr class="separator:a860bedbecad97172b4e7b1baa42bc257"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6381825ddcaef499d49dc4bd06aa4d3" id="r_af6381825ddcaef499d49dc4bd06aa4d3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Process_2Calender_2main_8cpp.html#af6381825ddcaef499d49dc4bd06aa4d3">LIST_H</a>&#160;&#160;&#160;(<a class="el" href="Process_2Calender_2main_8cpp.html#aff5bd921faea144bda420627350e0b5c">ROW_H</a> * <a class="el" href="Process_2Calender_2main_8cpp.html#a860bedbecad97172b4e7b1baa42bc257">LIST_ROWS</a>)</td></tr>
+<tr class="separator:af6381825ddcaef499d49dc4bd06aa4d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a559af0e5a7ad6c1693c0387eefde89bf" id="r_a559af0e5a7ad6c1693c0387eefde89bf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Process_2Calender_2main_8cpp.html#a559af0e5a7ad6c1693c0387eefde89bf">HEAD_SIZE</a>&#160;&#160;&#160;20 /* Roboto Light, never resized */</td></tr>
+<tr class="separator:a559af0e5a7ad6c1693c0387eefde89bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92f3d9cde3dd8715753be8bcc772cbdd" id="r_a92f3d9cde3dd8715753be8bcc772cbdd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Process_2Calender_2main_8cpp.html#a92f3d9cde3dd8715753be8bcc772cbdd">HEAD_W</a>&#160;&#160;&#160;(<a class="el" href="Process_2Calender_2main_8cpp.html#ab94d6faed0a3fa8da4e5cdd037955139">GRID_W</a> - 100) /* month <a class="el" href="d__main_8c.html#a6253ff71cb58d4a7e5d5ee6cf0ab8c50">title</a> area, left of the &lt; &gt; today buttons */</td></tr>
+<tr class="separator:a92f3d9cde3dd8715753be8bcc772cbdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acff73f418e1794263ce5c385ba76ff62" id="r_acff73f418e1794263ce5c385ba76ff62"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Process_2Calender_2main_8cpp.html#acff73f418e1794263ce5c385ba76ff62">TITLE_FIELD_MAX</a>&#160;&#160;&#160;<a class="el" href="calevt_8h.html#ab906ce2b5d92d700dc3914c56e2cc4a4">CALEVT_TITLE_MAX</a></td></tr>
+<tr class="separator:acff73f418e1794263ce5c385ba76ff62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8e37a471b79124a16ef5c012ded59a1" id="r_ad8e37a471b79124a16ef5c012ded59a1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Process_2Calender_2main_8cpp.html#ad8e37a471b79124a16ef5c012ded59a1">SC_ESC</a>&#160;&#160;&#160;0x01</td></tr>
+<tr class="separator:ad8e37a471b79124a16ef5c012ded59a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba9467d58765789a16f6d03c593ce884" id="r_aba9467d58765789a16f6d03c593ce884"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Process_2Calender_2main_8cpp.html#aba9467d58765789a16f6d03c593ce884">SC_BACKSPACE</a>&#160;&#160;&#160;0x0E</td></tr>
+<tr class="separator:aba9467d58765789a16f6d03c593ce884"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e19aa614c3f58b8009d93fca3fbfe3f" id="r_a6e19aa614c3f58b8009d93fca3fbfe3f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Process_2Calender_2main_8cpp.html#a6e19aa614c3f58b8009d93fca3fbfe3f">SC_TAB</a>&#160;&#160;&#160;0x0F</td></tr>
+<tr class="separator:a6e19aa614c3f58b8009d93fca3fbfe3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4d0387bfe4d331d36d8317ab0cc5e2f" id="r_aa4d0387bfe4d331d36d8317ab0cc5e2f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Process_2Calender_2main_8cpp.html#aa4d0387bfe4d331d36d8317ab0cc5e2f">SC_ENTER</a>&#160;&#160;&#160;0x1C</td></tr>
+<tr class="separator:aa4d0387bfe4d331d36d8317ab0cc5e2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85f480084f43bf990803299aa01fb63d" id="r_a85f480084f43bf990803299aa01fb63d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Process_2Calender_2main_8cpp.html#a85f480084f43bf990803299aa01fb63d">SC_CAPS</a>&#160;&#160;&#160;0x3A</td></tr>
+<tr class="separator:a85f480084f43bf990803299aa01fb63d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab02b01a9a757e6118e64922024845418" id="r_ab02b01a9a757e6118e64922024845418"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Process_2Calender_2main_8cpp.html#ab02b01a9a757e6118e64922024845418">SC_HOME</a>&#160;&#160;&#160;0x47</td></tr>
+<tr class="separator:ab02b01a9a757e6118e64922024845418"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5fa115176fe95f3861d0265948e35c2" id="r_ae5fa115176fe95f3861d0265948e35c2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Process_2Calender_2main_8cpp.html#ae5fa115176fe95f3861d0265948e35c2">SC_UP</a>&#160;&#160;&#160;0x48</td></tr>
+<tr class="separator:ae5fa115176fe95f3861d0265948e35c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ab3adc6b968cc5e06f85ae407596304" id="r_a5ab3adc6b968cc5e06f85ae407596304"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Process_2Calender_2main_8cpp.html#a5ab3adc6b968cc5e06f85ae407596304">SC_PGUP</a>&#160;&#160;&#160;0x49</td></tr>
+<tr class="separator:a5ab3adc6b968cc5e06f85ae407596304"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34cfff7c516f80d94a3d261adf8e919e" id="r_a34cfff7c516f80d94a3d261adf8e919e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Process_2Calender_2main_8cpp.html#a34cfff7c516f80d94a3d261adf8e919e">SC_LEFT</a>&#160;&#160;&#160;0x4B</td></tr>
+<tr class="separator:a34cfff7c516f80d94a3d261adf8e919e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83b276b98f857e8fb57215ed27189ed0" id="r_a83b276b98f857e8fb57215ed27189ed0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Process_2Calender_2main_8cpp.html#a83b276b98f857e8fb57215ed27189ed0">SC_RIGHT</a>&#160;&#160;&#160;0x4D</td></tr>
+<tr class="separator:a83b276b98f857e8fb57215ed27189ed0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af63946342f3129c9f110be7b3a72a2bb" id="r_af63946342f3129c9f110be7b3a72a2bb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Process_2Calender_2main_8cpp.html#af63946342f3129c9f110be7b3a72a2bb">SC_DOWN</a>&#160;&#160;&#160;0x50</td></tr>
+<tr class="separator:af63946342f3129c9f110be7b3a72a2bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa123ca6ad8876c18eaa0fe25990a3908" id="r_aa123ca6ad8876c18eaa0fe25990a3908"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Process_2Calender_2main_8cpp.html#aa123ca6ad8876c18eaa0fe25990a3908">SC_PGDN</a>&#160;&#160;&#160;0x51</td></tr>
+<tr class="separator:aa123ca6ad8876c18eaa0fe25990a3908"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f6a11e20ce2581fe2140c23fff3c234" id="r_a7f6a11e20ce2581fe2140c23fff3c234"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Process_2Calender_2main_8cpp.html#a7f6a11e20ce2581fe2140c23fff3c234">SC_DEL</a>&#160;&#160;&#160;0x53</td></tr>
+<tr class="separator:a7f6a11e20ce2581fe2140c23fff3c234"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a578c7c045e73f011de4a69f7cd551e55" id="r_a578c7c045e73f011de4a69f7cd551e55"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Process_2Calender_2main_8cpp.html#a578c7c045e73f011de4a69f7cd551e55">CalenderRepaint</a> (int year, int month, int num_days)</td></tr>
-<tr class="separator:a578c7c045e73f011de4a69f7cd551e55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a96926cb98af61fc33768e4620f6d29e7" id="r_a96926cb98af61fc33768e4620f6d29e7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Process_2Calender_2main_8cpp.html#a96926cb98af61fc33768e4620f6d29e7">CalenderHandleKeys</a> (int c)</td></tr>
-<tr class="separator:a96926cb98af61fc33768e4620f6d29e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a358e2ebead754c259d193b6044186005" id="r_a358e2ebead754c259d193b6044186005"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Process_2Calender_2main_8cpp.html#a358e2ebead754c259d193b6044186005">WindowHandleMessage</a> (<a class="el" href="postbox_8h.html#ac84a77c618106d5d8e95f2a83a55b2d9">PostEvent</a> *e)</td></tr>
-<tr class="separator:a358e2ebead754c259d193b6044186005"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3b6b5f4af38c296a90bf723a7ad285c" id="r_ae3b6b5f4af38c296a90bf723a7ad285c"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Process_2Calender_2main_8cpp.html#ae3b6b5f4af38c296a90bf723a7ad285c">GetDayText</a> (int day)</td></tr>
-<tr class="separator:ae3b6b5f4af38c296a90bf723a7ad285c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0cea8a12ce56580cbe848b6a3b25109c" id="r_a0cea8a12ce56580cbe848b6a3b25109c"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Process_2Calender_2main_8cpp.html#a0cea8a12ce56580cbe848b6a3b25109c">GetMonthText</a> (int month)</td></tr>
-<tr class="separator:a0cea8a12ce56580cbe848b6a3b25109c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7f4b8fdca66d7d67a1fb2d2a18db50f" id="r_ab7f4b8fdca66d7d67a1fb2d2a18db50f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Process_2Calender_2main_8cpp.html#ab7f4b8fdca66d7d67a1fb2d2a18db50f">isLeapYear</a> (int year)</td></tr>
-<tr class="separator:ab7f4b8fdca66d7d67a1fb2d2a18db50f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7684b1b2118d45821e2c7172b1402591" id="r_a7684b1b2118d45821e2c7172b1402591"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Process_2Calender_2main_8cpp.html#a7684b1b2118d45821e2c7172b1402591">GetDayOfWeek</a> (<a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> day, <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> month, <a class="el" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> year)</td></tr>
-<tr class="separator:a7684b1b2118d45821e2c7172b1402591"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21a0abbb84d6b2bce39246981ea52b88" id="r_a21a0abbb84d6b2bce39246981ea52b88"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Process_2Calender_2main_8cpp.html#a21a0abbb84d6b2bce39246981ea52b88">CalenderGetYMD</a> (<a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> *year, <a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> *month, <a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> *day, <a class="el" href="acefiex_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> tz_offset)</td></tr>
-<tr class="separator:a21a0abbb84d6b2bce39246981ea52b88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ddf1224851353fc92bfbff6f499fa97" id="r_a0ddf1224851353fc92bfbff6f499fa97"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Process_2Calender_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">main</a> (int argc, char *argv[])</td></tr>
 <tr class="separator:a0ddf1224851353fc92bfbff6f499fa97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -243,224 +305,451 @@ Variables</h2></td></tr>
 <tr class="separator:a52ccef6b298156befe813c64d6c12d94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a664035ef3a7fbe33e0580c90aabed1" id="r_a4a664035ef3a7fbe33e0580c90aabed1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Libs_2Chitralekha_2widgets_2window_8h.html#a2f9fc029ae6c22f6c7976c00f97be497">ChWindow</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Process_2Calender_2main_8cpp.html#a4a664035ef3a7fbe33e0580c90aabed1">mainWin</a></td></tr>
 <tr class="separator:a4a664035ef3a7fbe33e0580c90aabed1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa86b849b4cc338195d0e94b84031aa10" id="r_aa86b849b4cc338195d0e94b84031aa10"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Process_2Calender_2main_8cpp.html#aa86b849b4cc338195d0e94b84031aa10">calenderBuffer</a></td></tr>
-<tr class="separator:aa86b849b4cc338195d0e94b84031aa10"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a179afac640fc060edfeed0e5dd76b49b" id="r_a179afac640fc060edfeed0e5dd76b49b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Process_2Calender_2main_8cpp.html#a179afac640fc060edfeed0e5dd76b49b">box_width</a></td></tr>
-<tr class="separator:a179afac640fc060edfeed0e5dd76b49b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8d8089ad2e37fd110e55abde2e16557" id="r_ad8d8089ad2e37fd110e55abde2e16557"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Process_2Calender_2main_8cpp.html#ad8d8089ad2e37fd110e55abde2e16557">box_height</a></td></tr>
-<tr class="separator:ad8d8089ad2e37fd110e55abde2e16557"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad84127705dd4df029ba6392fcec2f07e" id="r_ad84127705dd4df029ba6392fcec2f07e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Process_2Calender_2main_8cpp.html#ad84127705dd4df029ba6392fcec2f07e">daycode</a></td></tr>
-<tr class="separator:ad84127705dd4df029ba6392fcec2f07e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1bbad0326300866b1961f628acaf4f4b" id="r_a1bbad0326300866b1961f628acaf4f4b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Libs_2Chitralekha_2font_8h.html#af33f208a971aea089f934992caf9590c">ChFont</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Process_2Calender_2main_8cpp.html#a1bbad0326300866b1961f628acaf4f4b">monthText</a></td></tr>
-<tr class="separator:a1bbad0326300866b1961f628acaf4f4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b9f2c8eed2b49ee91dd608d9a0ec4bd" id="r_a5b9f2c8eed2b49ee91dd608d9a0ec4bd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="__ketime_8h.html#a5f68fb61349fb14b06214e4a3417c8da">XETime</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a></td></tr>
-<tr class="separator:a5b9f2c8eed2b49ee91dd608d9a0ec4bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae53c0627c9cf201607ea0ef70aed5db" id="r_aae53c0627c9cf201607ea0ef70aed5db"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Process_2Calender_2main_8cpp.html#aae53c0627c9cf201607ea0ef70aed5db">current_year</a></td></tr>
-<tr class="separator:aae53c0627c9cf201607ea0ef70aed5db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a96108094e42ebcb61b722d1398d24391" id="r_a96108094e42ebcb61b722d1398d24391"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Process_2Calender_2main_8cpp.html#a96108094e42ebcb61b722d1398d24391">current_month</a></td></tr>
-<tr class="separator:a96108094e42ebcb61b722d1398d24391"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afbde50c5d9c2673e61a654d762b39aa1" id="r_afbde50c5d9c2673e61a654d762b39aa1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Process_2Calender_2main_8cpp.html#afbde50c5d9c2673e61a654d762b39aa1">current_day</a></td></tr>
-<tr class="separator:afbde50c5d9c2673e61a654d762b39aa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb7a5fa5e4ed1e40440c1eaf4cbc06c1" id="r_aeb7a5fa5e4ed1e40440c1eaf4cbc06c1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Process_2Calender_2main_8cpp.html#aeb7a5fa5e4ed1e40440c1eaf4cbc06c1">days_in_month</a> [] = {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31}</td></tr>
-<tr class="separator:aeb7a5fa5e4ed1e40440c1eaf4cbc06c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Typedef Documentation</h2>
-<a id="a9275d77c47ecf96845492924b9bfc320" name="a9275d77c47ecf96845492924b9bfc320"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9275d77c47ecf96845492924b9bfc320">&#9670;&#160;</a></span>DateBox</h2>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a36e1292dd9af86d5b74a92b4a1bad9ba" name="a36e1292dd9af86d5b74a92b4a1bad9ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36e1292dd9af86d5b74a92b4a1bad9ba">&#9670;&#160;</a></span>CELL_H</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef struct <a class="el" href="struct__datebox__.html">_datebox_</a> <a class="el" href="Process_2Calender_2main_8cpp.html#a9275d77c47ecf96845492924b9bfc320">DateBox</a></td>
+          <td class="memname">#define CELL_H&#160;&#160;&#160;42</td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a62e411b54d9f4d5512576d69c1831ee9" name="a62e411b54d9f4d5512576d69c1831ee9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62e411b54d9f4d5512576d69c1831ee9">&#9670;&#160;</a></span>CELL_W</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CELL_W&#160;&#160;&#160;50</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a912c39000f2b00ce0be575b8abb31548" name="a912c39000f2b00ce0be575b8abb31548"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a912c39000f2b00ce0be575b8abb31548">&#9670;&#160;</a></span>CELLS_Y</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CELLS_Y&#160;&#160;&#160;(<a class="el" href="Process_2Calender_2main_8cpp.html#ad8c6cf1074fa26eb4554030f04ee57d1">GRID_Y</a> + 22)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adcb80e765677817322ab019e3a10f540" name="adcb80e765677817322ab019e3a10f540"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adcb80e765677817322ab019e3a10f540">&#9670;&#160;</a></span>GRID_H</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GRID_H&#160;&#160;&#160;(22 + <a class="el" href="Process_2Calender_2main_8cpp.html#a36e1292dd9af86d5b74a92b4a1bad9ba">CELL_H</a> * 6)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab94d6faed0a3fa8da4e5cdd037955139" name="ab94d6faed0a3fa8da4e5cdd037955139"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab94d6faed0a3fa8da4e5cdd037955139">&#9670;&#160;</a></span>GRID_W</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GRID_W&#160;&#160;&#160;(<a class="el" href="Process_2Calender_2main_8cpp.html#a62e411b54d9f4d5512576d69c1831ee9">CELL_W</a> * 7)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af0cee92dec0a54dad52eec38fd9a2466" name="af0cee92dec0a54dad52eec38fd9a2466"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0cee92dec0a54dad52eec38fd9a2466">&#9670;&#160;</a></span>GRID_X</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GRID_X&#160;&#160;&#160;18</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad8c6cf1074fa26eb4554030f04ee57d1" name="ad8c6cf1074fa26eb4554030f04ee57d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8c6cf1074fa26eb4554030f04ee57d1">&#9670;&#160;</a></span>GRID_Y</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GRID_Y&#160;&#160;&#160;96 /* weekday row */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a559af0e5a7ad6c1693c0387eefde89bf" name="a559af0e5a7ad6c1693c0387eefde89bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a559af0e5a7ad6c1693c0387eefde89bf">&#9670;&#160;</a></span>HEAD_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HEAD_SIZE&#160;&#160;&#160;20 /* Roboto Light, never resized */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a92f3d9cde3dd8715753be8bcc772cbdd" name="a92f3d9cde3dd8715753be8bcc772cbdd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92f3d9cde3dd8715753be8bcc772cbdd">&#9670;&#160;</a></span>HEAD_W</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HEAD_W&#160;&#160;&#160;(<a class="el" href="Process_2Calender_2main_8cpp.html#ab94d6faed0a3fa8da4e5cdd037955139">GRID_W</a> - 100) /* month <a class="el" href="d__main_8c.html#a6253ff71cb58d4a7e5d5ee6cf0ab8c50">title</a> area, left of the &lt; &gt; today buttons */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af6381825ddcaef499d49dc4bd06aa4d3" name="af6381825ddcaef499d49dc4bd06aa4d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6381825ddcaef499d49dc4bd06aa4d3">&#9670;&#160;</a></span>LIST_H</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LIST_H&#160;&#160;&#160;(<a class="el" href="Process_2Calender_2main_8cpp.html#aff5bd921faea144bda420627350e0b5c">ROW_H</a> * <a class="el" href="Process_2Calender_2main_8cpp.html#a860bedbecad97172b4e7b1baa42bc257">LIST_ROWS</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a860bedbecad97172b4e7b1baa42bc257" name="a860bedbecad97172b4e7b1baa42bc257"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a860bedbecad97172b4e7b1baa42bc257">&#9670;&#160;</a></span>LIST_ROWS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LIST_ROWS&#160;&#160;&#160;6</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af2aa4fe82838e0baa2bf6bcf270b51ee" name="af2aa4fe82838e0baa2bf6bcf270b51ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2aa4fe82838e0baa2bf6bcf270b51ee">&#9670;&#160;</a></span>LIST_Y</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LIST_Y&#160;&#160;&#160;108</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a55fa872cddbb2f9104301cd565f60f14" name="a55fa872cddbb2f9104301cd565f60f14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55fa872cddbb2f9104301cd565f60f14">&#9670;&#160;</a></span>PANEL_W</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PANEL_W&#160;&#160;&#160;230</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5b92bccb93e9247a389e875ca4c681b8" name="a5b92bccb93e9247a389e875ca4c681b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b92bccb93e9247a389e875ca4c681b8">&#9670;&#160;</a></span>PANEL_X</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PANEL_X&#160;&#160;&#160;392</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aff5bd921faea144bda420627350e0b5c" name="aff5bd921faea144bda420627350e0b5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff5bd921faea144bda420627350e0b5c">&#9670;&#160;</a></span>ROW_H</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ROW_H&#160;&#160;&#160;34</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aba9467d58765789a16f6d03c593ce884" name="aba9467d58765789a16f6d03c593ce884"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba9467d58765789a16f6d03c593ce884">&#9670;&#160;</a></span>SC_BACKSPACE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SC_BACKSPACE&#160;&#160;&#160;0x0E</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a85f480084f43bf990803299aa01fb63d" name="a85f480084f43bf990803299aa01fb63d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85f480084f43bf990803299aa01fb63d">&#9670;&#160;</a></span>SC_CAPS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SC_CAPS&#160;&#160;&#160;0x3A</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7f6a11e20ce2581fe2140c23fff3c234" name="a7f6a11e20ce2581fe2140c23fff3c234"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f6a11e20ce2581fe2140c23fff3c234">&#9670;&#160;</a></span>SC_DEL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SC_DEL&#160;&#160;&#160;0x53</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af63946342f3129c9f110be7b3a72a2bb" name="af63946342f3129c9f110be7b3a72a2bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af63946342f3129c9f110be7b3a72a2bb">&#9670;&#160;</a></span>SC_DOWN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SC_DOWN&#160;&#160;&#160;0x50</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa4d0387bfe4d331d36d8317ab0cc5e2f" name="aa4d0387bfe4d331d36d8317ab0cc5e2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4d0387bfe4d331d36d8317ab0cc5e2f">&#9670;&#160;</a></span>SC_ENTER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SC_ENTER&#160;&#160;&#160;0x1C</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad8e37a471b79124a16ef5c012ded59a1" name="ad8e37a471b79124a16ef5c012ded59a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8e37a471b79124a16ef5c012ded59a1">&#9670;&#160;</a></span>SC_ESC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SC_ESC&#160;&#160;&#160;0x01</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab02b01a9a757e6118e64922024845418" name="ab02b01a9a757e6118e64922024845418"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab02b01a9a757e6118e64922024845418">&#9670;&#160;</a></span>SC_HOME</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SC_HOME&#160;&#160;&#160;0x47</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a34cfff7c516f80d94a3d261adf8e919e" name="a34cfff7c516f80d94a3d261adf8e919e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34cfff7c516f80d94a3d261adf8e919e">&#9670;&#160;</a></span>SC_LEFT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SC_LEFT&#160;&#160;&#160;0x4B</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa123ca6ad8876c18eaa0fe25990a3908" name="aa123ca6ad8876c18eaa0fe25990a3908"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa123ca6ad8876c18eaa0fe25990a3908">&#9670;&#160;</a></span>SC_PGDN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SC_PGDN&#160;&#160;&#160;0x51</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5ab3adc6b968cc5e06f85ae407596304" name="a5ab3adc6b968cc5e06f85ae407596304"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ab3adc6b968cc5e06f85ae407596304">&#9670;&#160;</a></span>SC_PGUP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SC_PGUP&#160;&#160;&#160;0x49</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a83b276b98f857e8fb57215ed27189ed0" name="a83b276b98f857e8fb57215ed27189ed0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83b276b98f857e8fb57215ed27189ed0">&#9670;&#160;</a></span>SC_RIGHT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SC_RIGHT&#160;&#160;&#160;0x4D</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6e19aa614c3f58b8009d93fca3fbfe3f" name="a6e19aa614c3f58b8009d93fca3fbfe3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e19aa614c3f58b8009d93fca3fbfe3f">&#9670;&#160;</a></span>SC_TAB</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SC_TAB&#160;&#160;&#160;0x0F</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae5fa115176fe95f3861d0265948e35c2" name="ae5fa115176fe95f3861d0265948e35c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5fa115176fe95f3861d0265948e35c2">&#9670;&#160;</a></span>SC_UP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SC_UP&#160;&#160;&#160;0x48</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acff73f418e1794263ce5c385ba76ff62" name="acff73f418e1794263ce5c385ba76ff62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acff73f418e1794263ce5c385ba76ff62">&#9670;&#160;</a></span>TITLE_FIELD_MAX</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TITLE_FIELD_MAX&#160;&#160;&#160;<a class="el" href="calevt_8h.html#ab906ce2b5d92d700dc3914c56e2cc4a4">CALEVT_TITLE_MAX</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae893136b52eb3d95f3a310c3900ae42b" name="ae893136b52eb3d95f3a310c3900ae42b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae893136b52eb3d95f3a310c3900ae42b">&#9670;&#160;</a></span>WIN_H</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WIN_H&#160;&#160;&#160;420</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a23f7b870356588ddfcc49a1c364cba5e" name="a23f7b870356588ddfcc49a1c364cba5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23f7b870356588ddfcc49a1c364cba5e">&#9670;&#160;</a></span>WIN_W</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WIN_W&#160;&#160;&#160;640</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>BSD 2-Clause License</p>
+<p>Copyright (c) 2022-2026, Manas Kamal Choudhury All rights reserved.</p>
+<p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
+<ol type="1">
+<li>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</li>
+<li>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</li>
+</ol>
+<p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. </p>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a21a0abbb84d6b2bce39246981ea52b88" name="a21a0abbb84d6b2bce39246981ea52b88"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a21a0abbb84d6b2bce39246981ea52b88">&#9670;&#160;</a></span>CalenderGetYMD()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void CalenderGetYMD </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> *&#160;</td>
-          <td class="paramname"><em>year</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> *&#160;</td>
-          <td class="paramname"><em>month</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> *&#160;</td>
-          <td class="paramname"><em>day</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="acefiex_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td>
-          <td class="paramname"><em>tz_offset</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a96926cb98af61fc33768e4620f6d29e7" name="a96926cb98af61fc33768e4620f6d29e7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a96926cb98af61fc33768e4620f6d29e7">&#9670;&#160;</a></span>CalenderHandleKeys()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void CalenderHandleKeys </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>c</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a578c7c045e73f011de4a69f7cd551e55" name="a578c7c045e73f011de4a69f7cd551e55"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a578c7c045e73f011de4a69f7cd551e55">&#9670;&#160;</a></span>CalenderRepaint()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void CalenderRepaint </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>year</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>month</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>num_days</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a7684b1b2118d45821e2c7172b1402591" name="a7684b1b2118d45821e2c7172b1402591"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7684b1b2118d45821e2c7172b1402591">&#9670;&#160;</a></span>GetDayOfWeek()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> GetDayOfWeek </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
-          <td class="paramname"><em>day</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
-          <td class="paramname"><em>month</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a>&#160;</td>
-          <td class="paramname"><em>year</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Zeller's Congruence algorithm</p>
-
-</div>
-</div>
-<a id="ae3b6b5f4af38c296a90bf723a7ad285c" name="ae3b6b5f4af38c296a90bf723a7ad285c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae3b6b5f4af38c296a90bf723a7ad285c">&#9670;&#160;</a></span>GetDayText()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">char * GetDayText </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>day</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a0cea8a12ce56580cbe848b6a3b25109c" name="a0cea8a12ce56580cbe848b6a3b25109c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0cea8a12ce56580cbe848b6a3b25109c">&#9670;&#160;</a></span>GetMonthText()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">char * GetMonthText </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>month</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ab7f4b8fdca66d7d67a1fb2d2a18db50f" name="ab7f4b8fdca66d7d67a1fb2d2a18db50f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab7f4b8fdca66d7d67a1fb2d2a18db50f">&#9670;&#160;</a></span>isLeapYear()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="BaseHdr_2stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> isLeapYear </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>year</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a0ddf1224851353fc92bfbff6f499fa97" name="a0ddf1224851353fc92bfbff6f499fa97"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0ddf1224851353fc92bfbff6f499fa97">&#9670;&#160;</a></span>main()</h2>
 
@@ -489,24 +778,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a358e2ebead754c259d193b6044186005" name="a358e2ebead754c259d193b6044186005"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a358e2ebead754c259d193b6044186005">&#9670;&#160;</a></span>WindowHandleMessage()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void WindowHandleMessage </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="postbox_8h.html#ac84a77c618106d5d8e95f2a83a55b2d9">PostEvent</a> *&#160;</td>
-          <td class="paramname"><em>e</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Variable Documentation</h2>
 <a id="a52ccef6b298156befe813c64d6c12d94" name="a52ccef6b298156befe813c64d6c12d94"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a52ccef6b298156befe813c64d6c12d94">&#9670;&#160;</a></span>app</h2>
@@ -516,126 +787,6 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="base_8h.html#aac8858d9d880bf6a4b394f6f71e4694e">ChitralekhaApp</a>* app</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>BSD 2-Clause License</p>
-<p>Copyright (c) 2024, Manas Kamal Choudhury All rights reserved.</p>
-<p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
-<ol type="1">
-<li>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</li>
-<li>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</li>
-</ol>
-<p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. </p>
-
-</div>
-</div>
-<a id="ad8d8089ad2e37fd110e55abde2e16557" name="ad8d8089ad2e37fd110e55abde2e16557"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad8d8089ad2e37fd110e55abde2e16557">&#9670;&#160;</a></span>box_height</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int box_height</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a179afac640fc060edfeed0e5dd76b49b" name="a179afac640fc060edfeed0e5dd76b49b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a179afac640fc060edfeed0e5dd76b49b">&#9670;&#160;</a></span>box_width</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int box_width</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aa86b849b4cc338195d0e94b84031aa10" name="aa86b849b4cc338195d0e94b84031aa10"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa86b849b4cc338195d0e94b84031aa10">&#9670;&#160;</a></span>calenderBuffer</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>* calenderBuffer</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="afbde50c5d9c2673e61a654d762b39aa1" name="afbde50c5d9c2673e61a654d762b39aa1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afbde50c5d9c2673e61a654d762b39aa1">&#9670;&#160;</a></span>current_day</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int current_day</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a96108094e42ebcb61b722d1398d24391" name="a96108094e42ebcb61b722d1398d24391"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a96108094e42ebcb61b722d1398d24391">&#9670;&#160;</a></span>current_month</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int current_month</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aae53c0627c9cf201607ea0ef70aed5db" name="aae53c0627c9cf201607ea0ef70aed5db"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aae53c0627c9cf201607ea0ef70aed5db">&#9670;&#160;</a></span>current_year</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int current_year</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad84127705dd4df029ba6392fcec2f07e" name="ad84127705dd4df029ba6392fcec2f07e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad84127705dd4df029ba6392fcec2f07e">&#9670;&#160;</a></span>daycode</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int daycode</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aeb7a5fa5e4ed1e40440c1eaf4cbc06c1" name="aeb7a5fa5e4ed1e40440c1eaf4cbc06c1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeb7a5fa5e4ed1e40440c1eaf4cbc06c1">&#9670;&#160;</a></span>days_in_month</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int days_in_month[] = {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31}</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -650,34 +801,6 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="Libs_2Chitralekha_2widgets_2window_8h.html#a2f9fc029ae6c22f6c7976c00f97be497">ChWindow</a>* mainWin</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a1bbad0326300866b1961f628acaf4f4b" name="a1bbad0326300866b1961f628acaf4f4b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1bbad0326300866b1961f628acaf4f4b">&#9670;&#160;</a></span>monthText</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="Libs_2Chitralekha_2font_8h.html#af33f208a971aea089f934992caf9590c">ChFont</a>* monthText</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a5b9f2c8eed2b49ee91dd608d9a0ec4bd" name="a5b9f2c8eed2b49ee91dd608d9a0ec4bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">&#9670;&#160;</a></span>t</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="__ketime_8h.html#a5f68fb61349fb14b06214e4a3417c8da">XETime</a> t</td>
         </tr>
       </table>
 </div><div class="memdoc">

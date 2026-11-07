@@ -141,7 +141,7 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a329ccf76a01d5e59b14aaaf41e0f04b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3e9e27f10ac0c4bfc029a3f71654841" id="r_ad3e9e27f10ac0c4bfc029a3f71654841"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdrm__gem__object__funcs.html#ad3e9e27f10ac0c4bfc029a3f71654841">close</a> )(struct <a class="el" href="structdrm__gem__object.html">drm_gem_object</a> *obj, struct <a class="el" href="structdrm__file.html">drm_file</a> *<a class="el" href="structfile.html">file</a>)</td></tr>
 <tr class="separator:ad3e9e27f10ac0c4bfc029a3f71654841"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a505bc9fc4bb5523b66533725cf5dbdb9" id="r_a505bc9fc4bb5523b66533725cf5dbdb9"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdrm__gem__object__funcs.html#a505bc9fc4bb5523b66533725cf5dbdb9">print_info</a> )(struct <a class="el" href="structdrm__printer.html">drm_printer</a> *p, unsigned int indent, const struct <a class="el" href="structdrm__gem__object.html">drm_gem_object</a> *obj)</td></tr>
+<tr class="memitem:a505bc9fc4bb5523b66533725cf5dbdb9" id="r_a505bc9fc4bb5523b66533725cf5dbdb9"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdrm__gem__object__funcs.html#a505bc9fc4bb5523b66533725cf5dbdb9">print_info</a> )(struct <a class="el" href="structdrm__printer.html">drm_printer</a> *p, unsigned int indent, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct <a class="el" href="structdrm__gem__object.html">drm_gem_object</a> *obj)</td></tr>
 <tr class="separator:a505bc9fc4bb5523b66533725cf5dbdb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3debc83ffd47d065725ff24baf79d426" id="r_a3debc83ffd47d065725ff24baf79d426"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structdma__buf.html">dma_buf</a> *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdrm__gem__object__funcs.html#a3debc83ffd47d065725ff24baf79d426">export</a> )(struct <a class="el" href="structdrm__gem__object.html">drm_gem_object</a> *obj, int <a class="el" href="Drivers_2virtio_8h.html#a04a0bd666e371f3fab92b8d0ef5dbdb0">flags</a>)</td></tr>
 <tr class="separator:a3debc83ffd47d065725ff24baf79d426"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -163,7 +163,7 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a6953f1d136c4716b3d7d66ce03a53c70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aabef0f811d536097ea69430fc97948db" id="r_aabef0f811d536097ea69430fc97948db"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdrm__gem__object__funcs.html#aabef0f811d536097ea69430fc97948db">rss</a> )(struct <a class="el" href="structdrm__gem__object.html">drm_gem_object</a> *obj)</td></tr>
 <tr class="separator:aabef0f811d536097ea69430fc97948db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab93d6ab7e9f21f9101f6bcea0b375f09" id="r_ab93d6ab7e9f21f9101f6bcea0b375f09"><td class="memItemLeft" align="right" valign="top">const struct <a class="el" href="structvm__operations__struct.html">vm_operations_struct</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdrm__gem__object__funcs.html#ab93d6ab7e9f21f9101f6bcea0b375f09">vm_ops</a></td></tr>
+<tr class="memitem:ab93d6ab7e9f21f9101f6bcea0b375f09" id="r_ab93d6ab7e9f21f9101f6bcea0b375f09"><td class="memItemLeft" align="right" valign="top"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct <a class="el" href="structvm__operations__struct.html">vm_operations_struct</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdrm__gem__object__funcs.html#ab93d6ab7e9f21f9101f6bcea0b375f09">vm_ops</a></td></tr>
 <tr class="separator:ab93d6ab7e9f21f9101f6bcea0b375f09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -313,7 +313,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void(* drm_gem_object_funcs::print_info) (struct <a class="el" href="structdrm__printer.html">drm_printer</a> *p, unsigned int indent, const struct <a class="el" href="structdrm__gem__object.html">drm_gem_object</a> *obj)</td>
+          <td class="memname">void(* drm_gem_object_funcs::print_info) (struct <a class="el" href="structdrm__printer.html">drm_printer</a> *p, unsigned int indent, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct <a class="el" href="structdrm__gem__object.html">drm_gem_object</a> *obj)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -383,7 +383,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const struct <a class="el" href="structvm__operations__struct.html">vm_operations_struct</a>* drm_gem_object_funcs::vm_ops</td>
+          <td class="memname"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct <a class="el" href="structvm__operations__struct.html">vm_operations_struct</a>* drm_gem_object_funcs::vm_ops</td>
         </tr>
       </table>
 </div><div class="memdoc">

@@ -142,6 +142,14 @@ Include dependency graph for vmmngr.c:</div>
 Macros</h2></td></tr>
 <tr class="memitem:ad8d302ef0271f8bb5e6da98deb51f44b" id="r_ad8d302ef0271f8bb5e6da98deb51f44b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="KernelAA64_2Mm_2vmmngr_8c.html#ad8d302ef0271f8bb5e6da98deb51f44b">VMM_PHYS_MASK</a>&#160;&#160;&#160;0x0000FFFFFFFFF000ULL</td></tr>
 <tr class="separator:ad8d302ef0271f8bb5e6da98deb51f44b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c4c1b676bbb52e26289ab5acf9ae17c" id="r_a6c4c1b676bbb52e26289ab5acf9ae17c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="KernelAA64_2Mm_2vmmngr_8c.html#a6c4c1b676bbb52e26289ab5acf9ae17c">PTE_APT_NOUSER</a>&#160;&#160;&#160;(1<a class="el" href="vdso_2const_8h.html#ae7289206560e57188eb393096c91e575">ULL</a> &lt;&lt; 61)</td></tr>
+<tr class="separator:a6c4c1b676bbb52e26289ab5acf9ae17c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00c6b8de095261c8be921f7f571abe55" id="r_a00c6b8de095261c8be921f7f571abe55"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="KernelAA64_2Mm_2vmmngr_8c.html#a00c6b8de095261c8be921f7f571abe55">PTE_APT_RO</a>&#160;&#160;&#160;(1<a class="el" href="vdso_2const_8h.html#ae7289206560e57188eb393096c91e575">ULL</a> &lt;&lt; 62)</td></tr>
+<tr class="separator:a00c6b8de095261c8be921f7f571abe55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa298e5b8620efb26f83a9123b01cf39b" id="r_aa298e5b8620efb26f83a9123b01cf39b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="KernelAA64_2Mm_2vmmngr_8c.html#aa298e5b8620efb26f83a9123b01cf39b">PTE_AP_USER</a>&#160;&#160;&#160;(1<a class="el" href="vdso_2const_8h.html#ae7289206560e57188eb393096c91e575">ULL</a> &lt;&lt; 6)</td></tr>
+<tr class="separator:aa298e5b8620efb26f83a9123b01cf39b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a967e8c8aedbc98a2dede3c08872637ef" id="r_a967e8c8aedbc98a2dede3c08872637ef"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="KernelAA64_2Mm_2vmmngr_8c.html#a967e8c8aedbc98a2dede3c08872637ef">PTE_AP_RO</a>&#160;&#160;&#160;(1<a class="el" href="vdso_2const_8h.html#ae7289206560e57188eb393096c91e575">ULL</a> &lt;&lt; 7)</td></tr>
+<tr class="separator:a967e8c8aedbc98a2dede3c08872637ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -187,6 +195,9 @@ Functions</h2></td></tr>
 <tr class="separator:a6810967631742244b813c3acf52b94e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d90d2a075e51c9ac94125be430514bd" id="r_a3d90d2a075e51c9ac94125be430514bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="KernelAA64_2Mm_2vmmngr_8c.html#a3d90d2a075e51c9ac94125be430514bd">AuVmmngrBootFree</a> ()</td></tr>
 <tr class="separator:a3d90d2a075e51c9ac94125be430514bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a569aba7b3b2cef6f85d5921d68f302" id="r_a7a569aba7b3b2cef6f85d5921d68f302"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="KernelAA64_2Mm_2vmmngr_8c.html#a7a569aba7b3b2cef6f85d5921d68f302">AuVmmngrUserWalk</a> (<a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> <a class="el" href="drm__print_8h.html#a9066b1d6817bdc657eeb9226ee55889e">va</a>, <a class="el" href="BaseHdr_2stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> <a class="el" href="acwin_8h.html#ac40a1eaac5f8dbc1eef9b944d494770c">write</a>, <a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> *span)</td></tr>
+<tr class="memdesc:a7a569aba7b3b2cef6f85d5921d68f302"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuVMmngrUserWalk &ndash; user memory pte check function.  <br /></td></tr>
+<tr class="separator:a7a569aba7b3b2cef6f85d5921d68f302"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -207,6 +218,62 @@ Variables</h2></td></tr>
 </ol>
 <p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a967e8c8aedbc98a2dede3c08872637ef" name="a967e8c8aedbc98a2dede3c08872637ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a967e8c8aedbc98a2dede3c08872637ef">&#9670;&#160;</a></span>PTE_AP_RO</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PTE_AP_RO&#160;&#160;&#160;(1<a class="el" href="vdso_2const_8h.html#ae7289206560e57188eb393096c91e575">ULL</a> &lt;&lt; 7)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa298e5b8620efb26f83a9123b01cf39b" name="aa298e5b8620efb26f83a9123b01cf39b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa298e5b8620efb26f83a9123b01cf39b">&#9670;&#160;</a></span>PTE_AP_USER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PTE_AP_USER&#160;&#160;&#160;(1<a class="el" href="vdso_2const_8h.html#ae7289206560e57188eb393096c91e575">ULL</a> &lt;&lt; 6)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6c4c1b676bbb52e26289ab5acf9ae17c" name="a6c4c1b676bbb52e26289ab5acf9ae17c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c4c1b676bbb52e26289ab5acf9ae17c">&#9670;&#160;</a></span>PTE_APT_NOUSER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PTE_APT_NOUSER&#160;&#160;&#160;(1<a class="el" href="vdso_2const_8h.html#ae7289206560e57188eb393096c91e575">ULL</a> &lt;&lt; 61)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a00c6b8de095261c8be921f7f571abe55" name="a00c6b8de095261c8be921f7f571abe55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00c6b8de095261c8be921f7f571abe55">&#9670;&#160;</a></span>PTE_APT_RO</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PTE_APT_RO&#160;&#160;&#160;(1<a class="el" href="vdso_2const_8h.html#ae7289206560e57188eb393096c91e575">ULL</a> &lt;&lt; 62)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ad8d302ef0271f8bb5e6da98deb51f44b" name="ad8d302ef0271f8bb5e6da98deb51f44b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad8d302ef0271f8bb5e6da98deb51f44b">&#9670;&#160;</a></span>VMM_PHYS_MASK</h2>
 
@@ -730,6 +797,50 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>AuVmmngrInitialize &ndash; initialize the virtual memory manager. </p>
+
+</div>
+</div>
+<a id="a7a569aba7b3b2cef6f85d5921d68f302" name="a7a569aba7b3b2cef6f85d5921d68f302"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a569aba7b3b2cef6f85d5921d68f302">&#9670;&#160;</a></span>AuVmmngrUserWalk()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="BaseHdr_2stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> AuVmmngrUserWalk </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>&#160;</td>
+          <td class="paramname"><em>va</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="BaseHdr_2stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td>
+          <td class="paramname"><em>write</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> *&#160;</td>
+          <td class="paramname"><em>span</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>AuVMmngrUserWalk &ndash; user memory pte check function. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">va</td><td>&ndash; virtual address </td></tr>
+    <tr><td class="paramname">write</td><td>&ndash; write bit </td></tr>
+    <tr><td class="paramname">span</td><td>&ndash; bytes from va to the end of mappings </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

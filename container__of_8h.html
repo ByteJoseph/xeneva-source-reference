@@ -320,10 +320,11 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">    _Generic(ptr,                           \</div>
-<div class="line">        <span class="keyword">const</span> typeof(*(ptr)) *: ((const type *)<a class="code hl_define" href="container__of_8h.html#af8c317a42292b61c93aae91e59118a46">container_of</a>(ptr, type, member)),\</div>
+<div class="line">        <span class="keyword">const</span> typeof(*(ptr)) *: ((<a class="code hl_define" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> type *)<a class="code hl_define" href="container__of_8h.html#af8c317a42292b61c93aae91e59118a46">container_of</a>(ptr, type, member)),\</div>
 <div class="line">        default: ((type *)<a class="code hl_define" href="container__of_8h.html#af8c317a42292b61c93aae91e59118a46">container_of</a>(ptr, type, member))  \</div>
 <div class="line">    )</div>
 <div class="ttc" id="acontainer__of_8h_html_af8c317a42292b61c93aae91e59118a46"><div class="ttname"><a href="container__of_8h.html#af8c317a42292b61c93aae91e59118a46">container_of</a></div><div class="ttdeci">#define container_of(ptr, type, member)</div><div class="ttdef"><b>Definition</b> container_of.h:19</div></div>
+<div class="ttc" id="azconf_8h_html_a2c212835823e3c54a8ab6d95c652660e"><div class="ttname"><a href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a></div><div class="ttdeci">#define const</div><div class="ttdef"><b>Definition</b> zconf.h:233</div></div>
 </div><!-- fragment --><p>container_of_const - cast a member of a structure out to the containing structure and preserve the const-ness of the pointer @ptr: the pointer to the member @type: the type of the container struct this is embedded in. @member: the name of the member within the struct.</p>
 <p>Always prefer <a class="el" href="container__of_8h.html#acf0563415325ab85bd921625d16e8b27">container_of_const()</a> instead of <a class="el" href="container__of_8h.html#af8c317a42292b61c93aae91e59118a46">container_of()</a> in new code. </p>
 

@@ -190,6 +190,8 @@ Macros</h2></td></tr>
 <tr class="separator:ae617d4fcb6b7591d37f4d669e4b633dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d8dcefd8e95b10d757d1fd92623b283" id="r_a8d8dcefd8e95b10d757d1fd92623b283"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xeneva__mbedtls__config_8h.html#a8d8dcefd8e95b10d757d1fd92623b283">MBEDTLS_SSL_ALPN</a></td></tr>
 <tr class="separator:a8d8dcefd8e95b10d757d1fd92623b283"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6751e31291b388713f5b611a9694d4e7" id="r_a6751e31291b388713f5b611a9694d4e7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xeneva__mbedtls__config_8h.html#a6751e31291b388713f5b611a9694d4e7">MBEDTLS_SSL_SESSION_TICKETS</a></td></tr>
+<tr class="separator:a6751e31291b388713f5b611a9694d4e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab69f58bd04df63c09ffaa435baa47bf7" id="r_ab69f58bd04df63c09ffaa435baa47bf7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xeneva__mbedtls__config_8h.html#ab69f58bd04df63c09ffaa435baa47bf7">MBEDTLS_SSL_SERVER_NAME_INDICATION</a></td></tr>
 <tr class="separator:ab69f58bd04df63c09ffaa435baa47bf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a323959c9c447de38e9db7cd7ed733e75" id="r_a323959c9c447de38e9db7cd7ed733e75"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xeneva__mbedtls__config_8h.html#a323959c9c447de38e9db7cd7ed733e75">MBEDTLS_KEY_EXCHANGE_ECDHE_RSA_ENABLED</a></td></tr>
@@ -762,7 +764,7 @@ Macros</h2></td></tr>
 </ul>
 </li>
 </ul>
-<p>Defining MBEDTLS_PLATFORM_CALLOC_MACRO and <a class="el" href="platform_8h.html#a9e7b93e4a92624d51bc7cbdc04723a05">MBEDTLS_PLATFORM_STD_CALLOC</a> at the same time is not possible. MBEDTLS_PLATFORM_CALLOC_MACRO and MBEDTLS_PLATFORM_FREE_MACRO must both be defined or undefined at the same time. <a class="el" href="platform_8h.html#a9e7b93e4a92624d51bc7cbdc04723a05">MBEDTLS_PLATFORM_STD_CALLOC</a> and <a class="el" href="platform_8h.html#a2abc88498566e351dc97660f5aecf46c">MBEDTLS_PLATFORM_STD_FREE</a> do not have to be defined at the same time, as, if they are used, dynamic setup of these functions is possible. See the tree above to see how are they handled in all cases. An uninitialized <a class="el" href="platform_8h.html#a9e7b93e4a92624d51bc7cbdc04723a05">MBEDTLS_PLATFORM_STD_CALLOC</a> always fails, returning a null pointer. An uninitialized <a class="el" href="platform_8h.html#a2abc88498566e351dc97660f5aecf46c">MBEDTLS_PLATFORM_STD_FREE</a> does not do anything.</p>
+<p>Defining MBEDTLS_PLATFORM_CALLOC_MACRO and <a class="el" href="mbedtls_2include_2mbedtls_2platform_8h.html#a9e7b93e4a92624d51bc7cbdc04723a05">MBEDTLS_PLATFORM_STD_CALLOC</a> at the same time is not possible. MBEDTLS_PLATFORM_CALLOC_MACRO and MBEDTLS_PLATFORM_FREE_MACRO must both be defined or undefined at the same time. <a class="el" href="mbedtls_2include_2mbedtls_2platform_8h.html#a9e7b93e4a92624d51bc7cbdc04723a05">MBEDTLS_PLATFORM_STD_CALLOC</a> and <a class="el" href="mbedtls_2include_2mbedtls_2platform_8h.html#a2abc88498566e351dc97660f5aecf46c">MBEDTLS_PLATFORM_STD_FREE</a> do not have to be defined at the same time, as, if they are used, dynamic setup of these functions is possible. See the tree above to see how are they handled in all cases. An uninitialized <a class="el" href="mbedtls_2include_2mbedtls_2platform_8h.html#a9e7b93e4a92624d51bc7cbdc04723a05">MBEDTLS_PLATFORM_STD_CALLOC</a> always fails, returning a null pointer. An uninitialized <a class="el" href="mbedtls_2include_2mbedtls_2platform_8h.html#a2abc88498566e351dc97660f5aecf46c">MBEDTLS_PLATFORM_STD_FREE</a> does not do anything.</p>
 <p>Requires: MBEDTLS_PLATFORM_C</p>
 <p>Enable this layer to allow use of alternative memory allocators. </p>
 
@@ -963,6 +965,20 @@ Macros</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define MBEDTLS_SSL_SERVER_NAME_INDICATION</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6751e31291b388713f5b611a9694d4e7" name="a6751e31291b388713f5b611a9694d4e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6751e31291b388713f5b611a9694d4e7">&#9670;&#160;</a></span>MBEDTLS_SSL_SESSION_TICKETS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MBEDTLS_SSL_SESSION_TICKETS</td>
         </tr>
       </table>
 </div><div class="memdoc">

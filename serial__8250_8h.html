@@ -283,7 +283,7 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:abcba33246c3e4efb6bd55b534f92acfa" id="r_abcba33246c3e4efb6bd55b534f92acfa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="serial__8250_8h.html#abcba33246c3e4efb6bd55b534f92acfa">serial8250_register_8250_port</a> (const struct <a class="el" href="structuart__8250__port.html">uart_8250_port</a> *)</td></tr>
+<tr class="memitem:abcba33246c3e4efb6bd55b534f92acfa" id="r_abcba33246c3e4efb6bd55b534f92acfa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="serial__8250_8h.html#abcba33246c3e4efb6bd55b534f92acfa">serial8250_register_8250_port</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct <a class="el" href="structuart__8250__port.html">uart_8250_port</a> *)</td></tr>
 <tr class="separator:abcba33246c3e4efb6bd55b534f92acfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad16a12d980e707c10d25cb86e0b8a159" id="r_ad16a12d980e707c10d25cb86e0b8a159"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="serial__8250_8h.html#ad16a12d980e707c10d25cb86e0b8a159">serial8250_unregister_port</a> (int line)</td></tr>
 <tr class="separator:ad16a12d980e707c10d25cb86e0b8a159"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -293,11 +293,11 @@ Functions</h2></td></tr>
 <tr class="separator:a1234792b5d7171da7221fa39023b4b82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af80e4a19c43777f87d703617c0f36d69" id="r_af80e4a19c43777f87d703617c0f36d69"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="serial__8250_8h.html#af80e4a19c43777f87d703617c0f36d69">early_serial_setup</a> (struct <a class="el" href="structuart__port.html">uart_port</a> *port)</td></tr>
 <tr class="separator:af80e4a19c43777f87d703617c0f36d69"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47ce17e1b568cf2d0774fc11002589a3" id="r_a47ce17e1b568cf2d0774fc11002589a3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="serial__8250_8h.html#a47ce17e1b568cf2d0774fc11002589a3">early_serial8250_setup</a> (struct <a class="el" href="structearlycon__device.html">earlycon_device</a> *<a class="el" href="structdevice.html">device</a>, const char *<a class="el" href="m__menu_8c.html#a2e45e0649e864ecd3eacd19b09ec981aa5eb3f84958aa2200df58a6af276027eb">options</a>)</td></tr>
+<tr class="memitem:a47ce17e1b568cf2d0774fc11002589a3" id="r_a47ce17e1b568cf2d0774fc11002589a3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="serial__8250_8h.html#a47ce17e1b568cf2d0774fc11002589a3">early_serial8250_setup</a> (struct <a class="el" href="structearlycon__device.html">earlycon_device</a> *<a class="el" href="structdevice.html">device</a>, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *<a class="el" href="m__menu_8c.html#a0e758c3718bec19c1b4ae9e612324fc8a5eb3f84958aa2200df58a6af276027eb">options</a>)</td></tr>
 <tr class="separator:a47ce17e1b568cf2d0774fc11002589a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd01a40858d6a1319ba666989b4d5a29" id="r_abd01a40858d6a1319ba666989b4d5a29"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="serial__8250_8h.html#abd01a40858d6a1319ba666989b4d5a29">serial8250_update_uartclk</a> (struct <a class="el" href="structuart__port.html">uart_port</a> *port, unsigned int uartclk)</td></tr>
 <tr class="separator:abd01a40858d6a1319ba666989b4d5a29"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab548f42ee72b392f8ac479df26bd1a7f" id="r_ab548f42ee72b392f8ac479df26bd1a7f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="serial__8250_8h.html#ab548f42ee72b392f8ac479df26bd1a7f">serial8250_do_set_termios</a> (struct <a class="el" href="structuart__port.html">uart_port</a> *port, struct <a class="el" href="structktermios.html">ktermios</a> *<a class="el" href="structtermios.html">termios</a>, const struct <a class="el" href="structktermios.html">ktermios</a> *old)</td></tr>
+<tr class="memitem:ab548f42ee72b392f8ac479df26bd1a7f" id="r_ab548f42ee72b392f8ac479df26bd1a7f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="serial__8250_8h.html#ab548f42ee72b392f8ac479df26bd1a7f">serial8250_do_set_termios</a> (struct <a class="el" href="structuart__port.html">uart_port</a> *port, struct <a class="el" href="structktermios.html">ktermios</a> *<a class="el" href="structtermios.html">termios</a>, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct <a class="el" href="structktermios.html">ktermios</a> *old)</td></tr>
 <tr class="separator:ab548f42ee72b392f8ac479df26bd1a7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74f0328519590b5a7142596e47c28907" id="r_a74f0328519590b5a7142596e47c28907"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="serial__8250_8h.html#a74f0328519590b5a7142596e47c28907">serial8250_do_set_ldisc</a> (struct <a class="el" href="structuart__port.html">uart_port</a> *port, struct <a class="el" href="structktermios.html">ktermios</a> *<a class="el" href="structtermios.html">termios</a>)</td></tr>
 <tr class="separator:a74f0328519590b5a7142596e47c28907"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -331,9 +331,9 @@ Functions</h2></td></tr>
 <tr class="separator:a051bb6b45d4c87917fdc7186dd05ac29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09e5d3d09a656b0fd9ae246410621e0e" id="r_a09e5d3d09a656b0fd9ae246410621e0e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="serial__8250_8h.html#a09e5d3d09a656b0fd9ae246410621e0e">serial8250_set_defaults</a> (struct <a class="el" href="structuart__8250__port.html">uart_8250_port</a> *<a class="el" href="p__spec_8h.html#ad46c72f353ae5de7b983ff417b0df959aebc281bf093563220c2270ba57dedfce">up</a>)</td></tr>
 <tr class="separator:a09e5d3d09a656b0fd9ae246410621e0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1746d921e68a4b59f1b09ffb581df82" id="r_af1746d921e68a4b59f1b09ffb581df82"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="serial__8250_8h.html#af1746d921e68a4b59f1b09ffb581df82">serial8250_console_write</a> (struct <a class="el" href="structuart__8250__port.html">uart_8250_port</a> *<a class="el" href="p__spec_8h.html#ad46c72f353ae5de7b983ff417b0df959aebc281bf093563220c2270ba57dedfce">up</a>, const char *s, unsigned int count)</td></tr>
+<tr class="memitem:af1746d921e68a4b59f1b09ffb581df82" id="r_af1746d921e68a4b59f1b09ffb581df82"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="serial__8250_8h.html#af1746d921e68a4b59f1b09ffb581df82">serial8250_console_write</a> (struct <a class="el" href="structuart__8250__port.html">uart_8250_port</a> *<a class="el" href="p__spec_8h.html#ad46c72f353ae5de7b983ff417b0df959aebc281bf093563220c2270ba57dedfce">up</a>, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *s, unsigned int count)</td></tr>
 <tr class="separator:af1746d921e68a4b59f1b09ffb581df82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0720b76c7b0292a10cd244cd7acb5a0" id="r_af0720b76c7b0292a10cd244cd7acb5a0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="serial__8250_8h.html#af0720b76c7b0292a10cd244cd7acb5a0">serial8250_console_setup</a> (struct <a class="el" href="structuart__port.html">uart_port</a> *port, char *<a class="el" href="m__menu_8c.html#a2e45e0649e864ecd3eacd19b09ec981aa5eb3f84958aa2200df58a6af276027eb">options</a>, <a class="el" href="BaseHdr_2stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> probe)</td></tr>
+<tr class="memitem:af0720b76c7b0292a10cd244cd7acb5a0" id="r_af0720b76c7b0292a10cd244cd7acb5a0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="serial__8250_8h.html#af0720b76c7b0292a10cd244cd7acb5a0">serial8250_console_setup</a> (struct <a class="el" href="structuart__port.html">uart_port</a> *port, char *<a class="el" href="m__menu_8c.html#a0e758c3718bec19c1b4ae9e612324fc8a5eb3f84958aa2200df58a6af276027eb">options</a>, <a class="el" href="BaseHdr_2stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> probe)</td></tr>
 <tr class="separator:af0720b76c7b0292a10cd244cd7acb5a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0fe38c53d5e081f9ac09c5e7f438d25d" id="r_a0fe38c53d5e081f9ac09c5e7f438d25d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="serial__8250_8h.html#a0fe38c53d5e081f9ac09c5e7f438d25d">serial8250_console_exit</a> (struct <a class="el" href="structuart__port.html">uart_port</a> *port)</td></tr>
 <tr class="separator:a0fe38c53d5e081f9ac09c5e7f438d25d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -427,7 +427,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
           <td class="paramname"><em>options</em>&#160;</td>
         </tr>
         <tr>
@@ -543,7 +543,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
           <td class="paramname"><em>s</em>, </td>
         </tr>
         <tr>
@@ -725,7 +725,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const struct <a class="el" href="structktermios.html">ktermios</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct <a class="el" href="structktermios.html">ktermios</a> *&#160;</td>
           <td class="paramname"><em>old</em>&#160;</td>
         </tr>
         <tr>
@@ -903,7 +903,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">int serial8250_register_8250_port </td>
           <td>(</td>
-          <td class="paramtype">const struct <a class="el" href="structuart__8250__port.html">uart_8250_port</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct <a class="el" href="structuart__8250__port.html">uart_8250_port</a> *&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>

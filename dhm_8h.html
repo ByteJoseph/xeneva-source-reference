@@ -214,16 +214,16 @@ Functions</h2></td></tr>
 <tr class="memitem:abf5ead59678b6ca8892b3c052452f5ac" id="r_abf5ead59678b6ca8892b3c052452f5ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dhm_8h.html#abf5ead59678b6ca8892b3c052452f5ac">mbedtls_dhm_init</a> (<a class="el" href="structmbedtls__dhm__context.html">mbedtls_dhm_context</a> *ctx)</td></tr>
 <tr class="memdesc:abf5ead59678b6ca8892b3c052452f5ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function initializes the DHM context.  <br /></td></tr>
 <tr class="separator:abf5ead59678b6ca8892b3c052452f5ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5348c82e9f13a7583aa9f17b5e841343" id="r_a5348c82e9f13a7583aa9f17b5e841343"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dhm_8h.html#a5348c82e9f13a7583aa9f17b5e841343">mbedtls_dhm_read_params</a> (<a class="el" href="structmbedtls__dhm__context.html">mbedtls_dhm_context</a> *ctx, unsigned char **p, const unsigned char *<a class="el" href="littleboot_8c.html#af4f810c521bcfd87215d3007005a8325">end</a>)</td></tr>
+<tr class="memitem:a5348c82e9f13a7583aa9f17b5e841343" id="r_a5348c82e9f13a7583aa9f17b5e841343"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dhm_8h.html#a5348c82e9f13a7583aa9f17b5e841343">mbedtls_dhm_read_params</a> (<a class="el" href="structmbedtls__dhm__context.html">mbedtls_dhm_context</a> *ctx, unsigned char **p, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *<a class="el" href="littleboot_8c.html#af4f810c521bcfd87215d3007005a8325">end</a>)</td></tr>
 <tr class="memdesc:a5348c82e9f13a7583aa9f17b5e841343"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function parses the DHM parameters in a TLS ServerKeyExchange handshake message (DHM modulus, generator, and public key).  <br /></td></tr>
 <tr class="separator:a5348c82e9f13a7583aa9f17b5e841343"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c98cc5f5233332b2909a4b92a6b5c91" id="r_a0c98cc5f5233332b2909a4b92a6b5c91"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dhm_8h.html#a0c98cc5f5233332b2909a4b92a6b5c91">mbedtls_dhm_make_params</a> (<a class="el" href="structmbedtls__dhm__context.html">mbedtls_dhm_context</a> *ctx, int x_size, unsigned char *output, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> *olen, <a class="el" href="platform__util_8h.html#a944c0e7be86065ffefa4fb073f25b43e">mbedtls_f_rng_t</a> *f_rng, void *p_rng)</td></tr>
 <tr class="memdesc:a0c98cc5f5233332b2909a4b92a6b5c91"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function generates a DHM key pair and exports its public part together with the DHM parameters in the format used in a TLS ServerKeyExchange handshake message.  <br /></td></tr>
 <tr class="separator:a0c98cc5f5233332b2909a4b92a6b5c91"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a22c7cbb569bdc1d58f8c160ded54b318" id="r_a22c7cbb569bdc1d58f8c160ded54b318"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dhm_8h.html#a22c7cbb569bdc1d58f8c160ded54b318">mbedtls_dhm_set_group</a> (<a class="el" href="structmbedtls__dhm__context.html">mbedtls_dhm_context</a> *ctx, const <a class="el" href="structmbedtls__mpi.html">mbedtls_mpi</a> *<a class="el" href="element-type_8h.html#a1c66260caf993024c96c0db098f18088a82f05f38f6a17b117cdd2b83227912c6">P</a>, const <a class="el" href="structmbedtls__mpi.html">mbedtls_mpi</a> *G)</td></tr>
+<tr class="memitem:a22c7cbb569bdc1d58f8c160ded54b318" id="r_a22c7cbb569bdc1d58f8c160ded54b318"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dhm_8h.html#a22c7cbb569bdc1d58f8c160ded54b318">mbedtls_dhm_set_group</a> (<a class="el" href="structmbedtls__dhm__context.html">mbedtls_dhm_context</a> *ctx, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="structmbedtls__mpi.html">mbedtls_mpi</a> *<a class="el" href="element-type_8h.html#a1c66260caf993024c96c0db098f18088a82f05f38f6a17b117cdd2b83227912c6">P</a>, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="structmbedtls__mpi.html">mbedtls_mpi</a> *G)</td></tr>
 <tr class="memdesc:a22c7cbb569bdc1d58f8c160ded54b318"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function sets the prime modulus and generator.  <br /></td></tr>
 <tr class="separator:a22c7cbb569bdc1d58f8c160ded54b318"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1fe799e776fd0f27eb4080248e547f3d" id="r_a1fe799e776fd0f27eb4080248e547f3d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dhm_8h.html#a1fe799e776fd0f27eb4080248e547f3d">mbedtls_dhm_read_public</a> (<a class="el" href="structmbedtls__dhm__context.html">mbedtls_dhm_context</a> *ctx, const unsigned char *<a class="el" href="virtiokbd_8c.html#ac7ea4a68c5710086113a183d16feaf8d">input</a>, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> ilen)</td></tr>
+<tr class="memitem:a1fe799e776fd0f27eb4080248e547f3d" id="r_a1fe799e776fd0f27eb4080248e547f3d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dhm_8h.html#a1fe799e776fd0f27eb4080248e547f3d">mbedtls_dhm_read_public</a> (<a class="el" href="structmbedtls__dhm__context.html">mbedtls_dhm_context</a> *ctx, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *<a class="el" href="virtiokbd_8c.html#ac7ea4a68c5710086113a183d16feaf8d">input</a>, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> ilen)</td></tr>
 <tr class="memdesc:a1fe799e776fd0f27eb4080248e547f3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function imports the raw public value of the peer.  <br /></td></tr>
 <tr class="separator:a1fe799e776fd0f27eb4080248e547f3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a115f7361735c9e6c57a4d8aebc16cf" id="r_a3a115f7361735c9e6c57a4d8aebc16cf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dhm_8h.html#a3a115f7361735c9e6c57a4d8aebc16cf">mbedtls_dhm_make_public</a> (<a class="el" href="structmbedtls__dhm__context.html">mbedtls_dhm_context</a> *ctx, int x_size, unsigned char *output, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> olen, <a class="el" href="platform__util_8h.html#a944c0e7be86065ffefa4fb073f25b43e">mbedtls_f_rng_t</a> *f_rng, void *p_rng)</td></tr>
@@ -232,13 +232,13 @@ Functions</h2></td></tr>
 <tr class="memitem:a3ab98dcba026561d3ed89ba2c7d0a5d2" id="r_a3ab98dcba026561d3ed89ba2c7d0a5d2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dhm_8h.html#a3ab98dcba026561d3ed89ba2c7d0a5d2">mbedtls_dhm_calc_secret</a> (<a class="el" href="structmbedtls__dhm__context.html">mbedtls_dhm_context</a> *ctx, unsigned char *output, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> output_size, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> *olen, <a class="el" href="platform__util_8h.html#a944c0e7be86065ffefa4fb073f25b43e">mbedtls_f_rng_t</a> *f_rng, void *p_rng)</td></tr>
 <tr class="memdesc:a3ab98dcba026561d3ed89ba2c7d0a5d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function derives and exports the shared secret <code></code>(G^Y)^X mod <code>P</code>.  <br /></td></tr>
 <tr class="separator:a3ab98dcba026561d3ed89ba2c7d0a5d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8e1a73120f6b5bb896be4399ee9b644" id="r_af8e1a73120f6b5bb896be4399ee9b644"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dhm_8h.html#af8e1a73120f6b5bb896be4399ee9b644">mbedtls_dhm_get_bitlen</a> (const <a class="el" href="structmbedtls__dhm__context.html">mbedtls_dhm_context</a> *ctx)</td></tr>
+<tr class="memitem:af8e1a73120f6b5bb896be4399ee9b644" id="r_af8e1a73120f6b5bb896be4399ee9b644"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dhm_8h.html#af8e1a73120f6b5bb896be4399ee9b644">mbedtls_dhm_get_bitlen</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="structmbedtls__dhm__context.html">mbedtls_dhm_context</a> *ctx)</td></tr>
 <tr class="memdesc:af8e1a73120f6b5bb896be4399ee9b644"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function returns the size of the prime modulus in bits.  <br /></td></tr>
 <tr class="separator:af8e1a73120f6b5bb896be4399ee9b644"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3a14df0da2c9cf259e8523c4645f71a" id="r_ab3a14df0da2c9cf259e8523c4645f71a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dhm_8h.html#ab3a14df0da2c9cf259e8523c4645f71a">mbedtls_dhm_get_len</a> (const <a class="el" href="structmbedtls__dhm__context.html">mbedtls_dhm_context</a> *ctx)</td></tr>
+<tr class="memitem:ab3a14df0da2c9cf259e8523c4645f71a" id="r_ab3a14df0da2c9cf259e8523c4645f71a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dhm_8h.html#ab3a14df0da2c9cf259e8523c4645f71a">mbedtls_dhm_get_len</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="structmbedtls__dhm__context.html">mbedtls_dhm_context</a> *ctx)</td></tr>
 <tr class="memdesc:ab3a14df0da2c9cf259e8523c4645f71a"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function returns the size of the prime modulus in bytes.  <br /></td></tr>
 <tr class="separator:ab3a14df0da2c9cf259e8523c4645f71a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade58406187b2bdd4be44cbac567207a8" id="r_ade58406187b2bdd4be44cbac567207a8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dhm_8h.html#ade58406187b2bdd4be44cbac567207a8">mbedtls_dhm_get_value</a> (const <a class="el" href="structmbedtls__dhm__context.html">mbedtls_dhm_context</a> *ctx, <a class="el" href="dhm_8h.html#a390e58cd77c038e702bd4c46c2115e6f">mbedtls_dhm_parameter</a> param, <a class="el" href="structmbedtls__mpi.html">mbedtls_mpi</a> *dest)</td></tr>
+<tr class="memitem:ade58406187b2bdd4be44cbac567207a8" id="r_ade58406187b2bdd4be44cbac567207a8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dhm_8h.html#ade58406187b2bdd4be44cbac567207a8">mbedtls_dhm_get_value</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="structmbedtls__dhm__context.html">mbedtls_dhm_context</a> *ctx, <a class="el" href="dhm_8h.html#a390e58cd77c038e702bd4c46c2115e6f">mbedtls_dhm_parameter</a> param, <a class="el" href="structmbedtls__mpi.html">mbedtls_mpi</a> *dest)</td></tr>
 <tr class="memdesc:ade58406187b2bdd4be44cbac567207a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function copies a parameter of a DHM key.  <br /></td></tr>
 <tr class="separator:ade58406187b2bdd4be44cbac567207a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a092d039d88063538f67aaf9cf45d1d30" id="r_a092d039d88063538f67aaf9cf45d1d30"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dhm_8h.html#a092d039d88063538f67aaf9cf45d1d30">mbedtls_dhm_free</a> (<a class="el" href="structmbedtls__dhm__context.html">mbedtls_dhm_context</a> *ctx)</td></tr>
@@ -802,7 +802,7 @@ An <code>MBEDTLS_ERR_DHM_XXX</code> error code on failure. </dd></dl>
         <tr>
           <td class="memname"><a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> mbedtls_dhm_get_bitlen </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structmbedtls__dhm__context.html">mbedtls_dhm_context</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="structmbedtls__dhm__context.html">mbedtls_dhm_context</a> *&#160;</td>
           <td class="paramname"><em>ctx</em></td><td>)</td>
           <td></td>
         </tr>
@@ -829,7 +829,7 @@ An <code>MBEDTLS_ERR_DHM_XXX</code> error code on failure. </dd></dl>
         <tr>
           <td class="memname"><a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> mbedtls_dhm_get_len </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structmbedtls__dhm__context.html">mbedtls_dhm_context</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="structmbedtls__dhm__context.html">mbedtls_dhm_context</a> *&#160;</td>
           <td class="paramname"><em>ctx</em></td><td>)</td>
           <td></td>
         </tr>
@@ -856,7 +856,7 @@ An <code>MBEDTLS_ERR_DHM_XXX</code> error code on failure. </dd></dl>
         <tr>
           <td class="memname">int mbedtls_dhm_get_value </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structmbedtls__dhm__context.html">mbedtls_dhm_context</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="structmbedtls__dhm__context.html">mbedtls_dhm_context</a> *&#160;</td>
           <td class="paramname"><em>ctx</em>, </td>
         </tr>
         <tr>
@@ -1083,7 +1083,7 @@ An <code>MBEDTLS_ERR_DHM_XXX</code> error code on failure. </dd></dl>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *&#160;</td>
           <td class="paramname"><em>end</em>&#160;</td>
         </tr>
         <tr>
@@ -1125,7 +1125,7 @@ An <code>MBEDTLS_ERR_DHM_XXX</code> error code on failure. </dd></dl>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *&#160;</td>
           <td class="paramname"><em>input</em>, </td>
         </tr>
         <tr>
@@ -1173,13 +1173,13 @@ An <code>MBEDTLS_ERR_DHM_XXX</code> error code on failure. </dd></dl>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structmbedtls__mpi.html">mbedtls_mpi</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="structmbedtls__mpi.html">mbedtls_mpi</a> *&#160;</td>
           <td class="paramname"><em>P</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structmbedtls__mpi.html">mbedtls_mpi</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="structmbedtls__mpi.html">mbedtls_mpi</a> *&#160;</td>
           <td class="paramname"><em>G</em>&#160;</td>
         </tr>
         <tr>

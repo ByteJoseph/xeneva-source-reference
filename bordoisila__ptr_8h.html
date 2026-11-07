@@ -105,13 +105,19 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="bordoisila__ptr_8h__dep__incl.png" border="0" usemap="#aXenevaOS_2BaseHdr_2bordoisila__ptr_8hdep" alt=""/></div>
 <map name="aXenevaOS_2BaseHdr_2bordoisila__ptr_8hdep" id="aXenevaOS_2BaseHdr_2bordoisila__ptr_8hdep">
-<area shape="rect" title=" " alt="" coords="173,5,389,45"/>
-<area shape="rect" href="systable_8c.html" title=" " alt="" coords="5,93,173,133"/>
-<area shape="poly" title=" " alt="" coords="228,53,132,96,130,91,226,49"/>
-<area shape="rect" href="fileserv_8c.html" title=" " alt="" coords="197,93,365,133"/>
-<area shape="poly" title=" " alt="" coords="284,59,284,93,279,93,279,59"/>
-<area shape="rect" href="poll_8c.html" title=" " alt="" coords="389,93,557,133"/>
-<area shape="poly" title=" " alt="" coords="337,49,432,91,430,96,335,53"/>
+<area shape="rect" title=" " alt="" coords="461,5,677,45"/>
+<area shape="rect" href="vfs_8c.html" title=" " alt="" coords="5,93,173,133"/>
+<area shape="poly" title=" " alt="" coords="448,50,186,96,174,98,173,93,185,91,447,44"/>
+<area shape="rect" href="systable_8c.html" title=" " alt="" coords="197,93,365,133"/>
+<area shape="poly" title=" " alt="" coords="494,52,345,96,344,91,492,47"/>
+<area shape="rect" href="netserv_8c.html" title=" " alt="" coords="389,93,557,133"/>
+<area shape="poly" title=" " alt="" coords="539,57,496,95,493,91,536,53"/>
+<area shape="rect" href="fileserv_8c.html" title=" " alt="" coords="581,93,749,133"/>
+<area shape="poly" title=" " alt="" coords="603,53,646,91,642,95,599,57"/>
+<area shape="rect" href="poll_8c.html" title=" " alt="" coords="773,93,941,133"/>
+<area shape="poly" title=" " alt="" coords="647,47,795,91,794,96,645,52"/>
+<area shape="rect" href="fixup_8c.html" title=" " alt="" coords="965,93,1133,133"/>
+<area shape="poly" title=" " alt="" coords="691,44,954,91,966,93,965,98,953,96,690,50"/>
 </map>
 </div>
 </div>
@@ -210,7 +216,7 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">    ({                                                                                             \</div>
 <div class="line">        <a class="code hl_typedef" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> _h = (<a class="code hl_typedef" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>)(<a class="code hl_typedef" href="BaseHdr_2stdint_8h.html#a728e973c799f206f0151c8a3bd1e5699">uintptr_t</a>)(p);                                                    \</div>
-<div class="line">        __BORDOISILA_PTR_OK(_h) &amp;&amp;                                                                 \</div>
+<div class="line">        __BORDOISILA_PTR_VALIDATE(_h) &amp;&amp;                                                           \</div>
 <div class="line">            _h &gt;= <a class="code hl_define" href="bordoisila__ptr_8h.html#a6f87f75df0046ea5af11ca3ebe1ef363">__BORDOISILA_PTR_HEAP_BASE</a>&amp;&amp; _h &lt; <a class="code hl_define" href="bordoisila__ptr_8h.html#ab0f99e0ea61948bdc04be447f26a9dd0">__BORDOISILA_PTR_HEAP_END</a>;                     \</div>
 <div class="line">    })</div>
 <div class="ttc" id="aBaseHdr_2stdint_8h_html_a728e973c799f206f0151c8a3bd1e5699"><div class="ttname"><a href="BaseHdr_2stdint_8h.html#a728e973c799f206f0151c8a3bd1e5699">uintptr_t</a></div><div class="ttdeci">unsigned int uintptr_t</div><div class="ttdef"><b>Definition</b> stdint.h:94</div></div>
@@ -262,9 +268,9 @@ Macros</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line">    ({                                                                                             \</div>
 <div class="line">        <a class="code hl_typedef" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> _k = (<a class="code hl_typedef" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>)(<a class="code hl_typedef" href="BaseHdr_2stdint_8h.html#a728e973c799f206f0151c8a3bd1e5699">uintptr_t</a>)(p);                                                    \</div>
 <div class="line">        __BORDOISILA_HEAP_PTR_VALIDATE(_k) || <a class="code hl_define" href="bordoisila__ptr_8h.html#a93a3fbf88bc8f157827c35a94d85c26a">__BORDOISILA_PHYS_PTR_VALIDATE</a>(_k) ||                \</div>
-<div class="line">            __BORDOISILA_KIMG_PTR_VALIDATE(_k);                                                    \</div>
+<div class="line">            __BORDOISILA_KE_IMAGE_PTR_VALIDATE(_k);                                                \</div>
 <div class="line">    })</div>
-<div class="ttc" id="abordoisila__ptr_8h_html_a93a3fbf88bc8f157827c35a94d85c26a"><div class="ttname"><a href="bordoisila__ptr_8h.html#a93a3fbf88bc8f157827c35a94d85c26a">__BORDOISILA_PHYS_PTR_VALIDATE</a></div><div class="ttdeci">#define __BORDOISILA_PHYS_PTR_VALIDATE(p)</div><div class="ttdef"><b>Definition</b> bordoisila_ptr.h:97</div></div>
+<div class="ttc" id="abordoisila__ptr_8h_html_a93a3fbf88bc8f157827c35a94d85c26a"><div class="ttname"><a href="bordoisila__ptr_8h.html#a93a3fbf88bc8f157827c35a94d85c26a">__BORDOISILA_PHYS_PTR_VALIDATE</a></div><div class="ttdeci">#define __BORDOISILA_PHYS_PTR_VALIDATE(p)</div><div class="ttdef"><b>Definition</b> bordoisila_ptr.h:98</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -480,10 +486,11 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">    ({                                                                                             \</div>
 <div class="line">        <a class="code hl_typedef" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a> _v = (<a class="code hl_typedef" href="acefiex_8h.html#ace97e810e06af5096bfe72ee3e7c5316">uint64_t</a>)(<a class="code hl_typedef" href="BaseHdr_2stdint_8h.html#a728e973c799f206f0151c8a3bd1e5699">uintptr_t</a>)(p);                                                    \</div>
-<div class="line">        (_v &gt;= <a class="code hl_define" href="bordoisila__ptr_8h.html#ab825be507241e875fd0a4ce47471133a">__BORDOISILA_PTR_MIN</a>) &amp;&amp; !<a class="code hl_define" href="bordoisila__ptr_8h.html#a0e90f385bac16fdf4b56dce2d92709eb">__BORDOISILA_PTR_REPEATED_BYTE</a>(_v) &amp;&amp;                     \</div>
-<div class="line">            !<a class="code hl_define" href="bordoisila__ptr_8h.html#a06299cf8e0f1eb326063a1dbb3aecc99">__BORDOISILA_PTR_REPEATED_WORD</a>(_v) &amp;&amp; !<a class="code hl_define" href="bordoisila__ptr_8h.html#af2dfb2d59c898eec443e61b451cd3f6c">__BORDOISILA_PTR_POISONED</a>(_v) &amp;&amp;               \</div>
-<div class="line">            ((_v &lt;= <a class="code hl_define" href="bordoisila__ptr_8h.html#a7b8bdba0a7e173a1527932a0a678eda4">__BORDOISILA_PTR_USER_MAX</a>) ||                                                  \</div>
-<div class="line">             (_v &gt;= <a class="code hl_define" href="bordoisila__ptr_8h.html#a40bcbc5c7b0c4e79fd4e8ebac6c545d5">__BORDOISILA_PTR_KERN_MIN</a> &amp;&amp; _v &lt;= <a class="code hl_define" href="bordoisila__ptr_8h.html#a196687a33bd7dfc5363cc95af593a6b3">__BORDOISILA_PTR_KERN_MAX</a>));                \</div>
+<div class="line">        <span class="keywordtype">int</span> _user = (_v &gt;= <a class="code hl_define" href="bordoisila__ptr_8h.html#ab825be507241e875fd0a4ce47471133a">__BORDOISILA_PTR_MIN</a> &amp;&amp; _v &lt;= <a class="code hl_define" href="bordoisila__ptr_8h.html#a7b8bdba0a7e173a1527932a0a678eda4">__BORDOISILA_PTR_USER_MAX</a>);               \</div>
+<div class="line">        <span class="keywordtype">int</span> _kern = (_v &gt;= <a class="code hl_define" href="bordoisila__ptr_8h.html#a40bcbc5c7b0c4e79fd4e8ebac6c545d5">__BORDOISILA_PTR_KERN_MIN</a> &amp;&amp; _v &lt;= <a class="code hl_define" href="bordoisila__ptr_8h.html#a196687a33bd7dfc5363cc95af593a6b3">__BORDOISILA_PTR_KERN_MAX</a>);          \</div>
+<div class="line">        <span class="comment">/* Heap 0x3000000030 has equal halves; repeated-word is a kernel-pointer test. */</span>          \</div>
+<div class="line">        (_user || _kern) &amp;&amp; !<a class="code hl_define" href="bordoisila__ptr_8h.html#a0e90f385bac16fdf4b56dce2d92709eb">__BORDOISILA_PTR_REPEATED_BYTE</a>(_v) &amp;&amp;                                 \</div>
+<div class="line">            !<a class="code hl_define" href="bordoisila__ptr_8h.html#af2dfb2d59c898eec443e61b451cd3f6c">__BORDOISILA_PTR_POISONED</a>(_v) &amp;&amp; (_user || !<a class="code hl_define" href="bordoisila__ptr_8h.html#a06299cf8e0f1eb326063a1dbb3aecc99">__BORDOISILA_PTR_REPEATED_WORD</a>(_v));      \</div>
 <div class="line">    })</div>
 <div class="ttc" id="abordoisila__ptr_8h_html_a06299cf8e0f1eb326063a1dbb3aecc99"><div class="ttname"><a href="bordoisila__ptr_8h.html#a06299cf8e0f1eb326063a1dbb3aecc99">__BORDOISILA_PTR_REPEATED_WORD</a></div><div class="ttdeci">#define __BORDOISILA_PTR_REPEATED_WORD(v)</div><div class="ttdef"><b>Definition</b> bordoisila_ptr.h:72</div></div>
 <div class="ttc" id="abordoisila__ptr_8h_html_a0e90f385bac16fdf4b56dce2d92709eb"><div class="ttname"><a href="bordoisila__ptr_8h.html#a0e90f385bac16fdf4b56dce2d92709eb">__BORDOISILA_PTR_REPEATED_BYTE</a></div><div class="ttdeci">#define __BORDOISILA_PTR_REPEATED_BYTE(v)</div><div class="ttdef"><b>Definition</b> bordoisila_ptr.h:69</div></div>

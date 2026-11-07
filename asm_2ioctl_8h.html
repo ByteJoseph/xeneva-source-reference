@@ -209,7 +209,7 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a32e7e4d496052417470b4dc996ff30cf" id="r_a32e7e4d496052417470b4dc996ff30cf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="asm_2ioctl_8h.html#a32e7e4d496052417470b4dc996ff30cf">_IOC_TYPECHECK</a>(<a class="el" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a>)</td></tr>
+<tr class="memitem:a32e7e4d496052417470b4dc996ff30cf" id="r_a32e7e4d496052417470b4dc996ff30cf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="asm_2ioctl_8h.html#a32e7e4d496052417470b4dc996ff30cf">_IOC_TYPECHECK</a>(t)</td></tr>
 <tr class="separator:a32e7e4d496052417470b4dc996ff30cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
@@ -228,15 +228,14 @@ Variables</h2></td></tr>
           <td class="memname">#define _IOC_TYPECHECK</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a></td><td>)</td>
+          <td class="paramname">t</td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">    ((<span class="keyword">sizeof</span>(<a class="code hl_variable" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a>) == <span class="keyword">sizeof</span>(<a class="code hl_variable" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a>[1]) &amp;&amp; \</div>
-<div class="line">      sizeof(<a class="code hl_variable" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a>) &lt; (1 &lt;&lt; <a class="code hl_define" href="linux_2ioctl_8h.html#a44931059444412b7496d7e2c3eda8a64">_IOC_SIZEBITS</a>)) ? \</div>
-<div class="line">      sizeof(<a class="code hl_variable" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a>) : <a class="code hl_variable" href="asm_2ioctl_8h.html#a0e82deb3826ae7e9f0adf00e3616c57d">__invalid_size_argument_for_IOC</a>)</div>
-<div class="ttc" id="aProcess_2Calender_2main_8cpp_html_a5b9f2c8eed2b49ee91dd608d9a0ec4bd"><div class="ttname"><a href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a></div><div class="ttdeci">XETime t</div><div class="ttdef"><b>Definition</b> main.cpp:53</div></div>
+<b>Value:</b><div class="fragment"><div class="line">    ((<span class="keyword">sizeof</span>(t) == <span class="keyword">sizeof</span>(t[1]) &amp;&amp; \</div>
+<div class="line">      sizeof(t) &lt; (1 &lt;&lt; <a class="code hl_define" href="linux_2ioctl_8h.html#a44931059444412b7496d7e2c3eda8a64">_IOC_SIZEBITS</a>)) ? \</div>
+<div class="line">      sizeof(t) : <a class="code hl_variable" href="asm_2ioctl_8h.html#a0e82deb3826ae7e9f0adf00e3616c57d">__invalid_size_argument_for_IOC</a>)</div>
 <div class="ttc" id="aasm_2ioctl_8h_html_a0e82deb3826ae7e9f0adf00e3616c57d"><div class="ttname"><a href="asm_2ioctl_8h.html#a0e82deb3826ae7e9f0adf00e3616c57d">__invalid_size_argument_for_IOC</a></div><div class="ttdeci">unsigned int __invalid_size_argument_for_IOC</div></div>
 <div class="ttc" id="alinux_2ioctl_8h_html_a44931059444412b7496d7e2c3eda8a64"><div class="ttname"><a href="linux_2ioctl_8h.html#a44931059444412b7496d7e2c3eda8a64">_IOC_SIZEBITS</a></div><div class="ttdeci">#define _IOC_SIZEBITS</div><div class="ttdef"><b>Definition</b> ioctl.h:33</div></div>
 </div><!-- fragment -->

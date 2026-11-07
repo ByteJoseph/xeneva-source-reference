@@ -217,7 +217,7 @@ Functions</h2></td></tr>
 <tr class="memitem:a81765f6cdf4e5111bcb9f4324f3234cb" id="r_a81765f6cdf4e5111bcb9f4324f3234cb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entropy_8h.html#a81765f6cdf4e5111bcb9f4324f3234cb">mbedtls_entropy_func</a> (void *<a class="el" href="kthread_8h.html#a735984d41155bc1032e09bece8f8d66d">data</a>, unsigned char *output, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> <a class="el" href="initial_8c.html#a7360b55975153b822efc5217b7734e6a">len</a>)</td></tr>
 <tr class="memdesc:a81765f6cdf4e5111bcb9f4324f3234cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve entropy from the accumulator (Maximum length: MBEDTLS_ENTROPY_BLOCK_SIZE) (Thread-safe if MBEDTLS_THREADING_C is enabled)  <br /></td></tr>
 <tr class="separator:a81765f6cdf4e5111bcb9f4324f3234cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa79492f288cc3202ea455564be855d64" id="r_aa79492f288cc3202ea455564be855d64"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entropy_8h.html#aa79492f288cc3202ea455564be855d64">mbedtls_entropy_update_manual</a> (<a class="el" href="structmbedtls__entropy__context.html">mbedtls_entropy_context</a> *ctx, const unsigned char *<a class="el" href="kthread_8h.html#a735984d41155bc1032e09bece8f8d66d">data</a>, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> <a class="el" href="initial_8c.html#a7360b55975153b822efc5217b7734e6a">len</a>)</td></tr>
+<tr class="memitem:aa79492f288cc3202ea455564be855d64" id="r_aa79492f288cc3202ea455564be855d64"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entropy_8h.html#aa79492f288cc3202ea455564be855d64">mbedtls_entropy_update_manual</a> (<a class="el" href="structmbedtls__entropy__context.html">mbedtls_entropy_context</a> *ctx, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *<a class="el" href="kthread_8h.html#a735984d41155bc1032e09bece8f8d66d">data</a>, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> <a class="el" href="initial_8c.html#a7360b55975153b822efc5217b7734e6a">len</a>)</td></tr>
 <tr class="memdesc:aa79492f288cc3202ea455564be855d64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add data to the accumulator manually (Thread-safe if MBEDTLS_THREADING_C is enabled)  <br /></td></tr>
 <tr class="separator:aa79492f288cc3202ea455564be855d64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -648,7 +648,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *&#160;</td>
           <td class="paramname"><em>data</em>, </td>
         </tr>
         <tr>

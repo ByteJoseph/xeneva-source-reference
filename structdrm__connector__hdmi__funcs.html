@@ -90,9 +90,9 @@ Collaboration diagram for drm_connector_hdmi_funcs:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:af3d20709db36503f7363fbb0f9a3c005" id="r_af3d20709db36503f7363fbb0f9a3c005"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="drm__modes_8h.html#acf2b6e3dbe61bf4a1b23015a8b03c093">drm_mode_status</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdrm__connector__hdmi__funcs.html#af3d20709db36503f7363fbb0f9a3c005">tmds_char_rate_valid</a> )(const struct <a class="el" href="structdrm__connector.html">drm_connector</a> *connector, const struct <a class="el" href="structdrm__display__mode.html">drm_display_mode</a> *<a class="el" href="treebuilder_8c.html#a2aa8bc6e431cc1e0cc602ac69a419095">mode</a>, unsigned long long tmds_rate)</td></tr>
+<tr class="memitem:af3d20709db36503f7363fbb0f9a3c005" id="r_af3d20709db36503f7363fbb0f9a3c005"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="drm__modes_8h.html#acf2b6e3dbe61bf4a1b23015a8b03c093">drm_mode_status</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdrm__connector__hdmi__funcs.html#af3d20709db36503f7363fbb0f9a3c005">tmds_char_rate_valid</a> )(<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct <a class="el" href="structdrm__connector.html">drm_connector</a> *connector, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct <a class="el" href="structdrm__display__mode.html">drm_display_mode</a> *<a class="el" href="treebuilder_8c.html#a2aa8bc6e431cc1e0cc602ac69a419095">mode</a>, unsigned long long tmds_rate)</td></tr>
 <tr class="separator:af3d20709db36503f7363fbb0f9a3c005"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21a322b038f524e0ef7162eab0f39dce" id="r_a21a322b038f524e0ef7162eab0f39dce"><td class="memItemLeft" align="right" valign="top">const struct drm_edid *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdrm__connector__hdmi__funcs.html#a21a322b038f524e0ef7162eab0f39dce">read_edid</a> )(struct <a class="el" href="structdrm__connector.html">drm_connector</a> *connector)</td></tr>
+<tr class="memitem:a21a322b038f524e0ef7162eab0f39dce" id="r_a21a322b038f524e0ef7162eab0f39dce"><td class="memItemLeft" align="right" valign="top"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct drm_edid *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdrm__connector__hdmi__funcs.html#a21a322b038f524e0ef7162eab0f39dce">read_edid</a> )(struct <a class="el" href="structdrm__connector.html">drm_connector</a> *connector)</td></tr>
 <tr class="separator:a21a322b038f524e0ef7162eab0f39dce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3f5a3c1b4f219cfed77d3299b9125a3" id="r_ab3f5a3c1b4f219cfed77d3299b9125a3"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structdrm__connector__infoframe__funcs.html">drm_connector_infoframe_funcs</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdrm__connector__hdmi__funcs.html#ab3f5a3c1b4f219cfed77d3299b9125a3">avi</a></td></tr>
 <tr class="separator:ab3f5a3c1b4f219cfed77d3299b9125a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -179,7 +179,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const struct drm_edid *(* drm_connector_hdmi_funcs::read_edid) (struct <a class="el" href="structdrm__connector.html">drm_connector</a> *connector)</td>
+          <td class="memname"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct drm_edid *(* drm_connector_hdmi_funcs::read_edid) (struct <a class="el" href="structdrm__connector.html">drm_connector</a> *connector)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -213,7 +213,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="drm__modes_8h.html#acf2b6e3dbe61bf4a1b23015a8b03c093">drm_mode_status</a>(* drm_connector_hdmi_funcs::tmds_char_rate_valid) (const struct <a class="el" href="structdrm__connector.html">drm_connector</a> *connector, const struct <a class="el" href="structdrm__display__mode.html">drm_display_mode</a> *<a class="el" href="treebuilder_8c.html#a2aa8bc6e431cc1e0cc602ac69a419095">mode</a>, unsigned long long tmds_rate)</td>
+          <td class="memname">enum <a class="el" href="drm__modes_8h.html#acf2b6e3dbe61bf4a1b23015a8b03c093">drm_mode_status</a>(* drm_connector_hdmi_funcs::tmds_char_rate_valid) (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct <a class="el" href="structdrm__connector.html">drm_connector</a> *connector, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct <a class="el" href="structdrm__display__mode.html">drm_display_mode</a> *<a class="el" href="treebuilder_8c.html#a2aa8bc6e431cc1e0cc602ac69a419095">mode</a>, unsigned long long tmds_rate)</td>
         </tr>
       </table>
 </div><div class="memdoc">

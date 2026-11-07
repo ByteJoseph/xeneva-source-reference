@@ -202,7 +202,7 @@ Macros</h2></td></tr>
 <tr class="separator:a2db525e3439ef8e5b1d6840782f00e5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d72ab0d3317d3767fe31c4580ff64a4" id="r_a2d72ab0d3317d3767fe31c4580ff64a4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="acexcep_8h.html#a2d72ab0d3317d3767fe31c4580ff64a4">AE_CODE_ACPI_TABLES</a>&#160;&#160;&#160;0x2000 /* ACPI tables */</td></tr>
 <tr class="separator:a2d72ab0d3317d3767fe31c4580ff64a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4eeb08718c718330c9e6b2f15cf52c8c" id="r_a4eeb08718c718330c9e6b2f15cf52c8c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="acexcep_8h.html#a4eeb08718c718330c9e6b2f15cf52c8c">AE_CODE_AML</a>&#160;&#160;&#160;0x3000 /* From executing AML code */</td></tr>
+<tr class="memitem:a4eeb08718c718330c9e6b2f15cf52c8c" id="r_a4eeb08718c718330c9e6b2f15cf52c8c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="acexcep_8h.html#a4eeb08718c718330c9e6b2f15cf52c8c">AE_CODE_AML</a>&#160;&#160;&#160;0x3000 /* From executing AML <a class="el" href="structcode.html">code</a> */</td></tr>
 <tr class="separator:a4eeb08718c718330c9e6b2f15cf52c8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57736115b860d863a393df2522b2c7dc" id="r_a57736115b860d863a393df2522b2c7dc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="acexcep_8h.html#a57736115b860d863a393df2522b2c7dc">AE_CODE_CONTROL</a>&#160;&#160;&#160;0x4000 /* Internal control codes */</td></tr>
 <tr class="separator:a57736115b860d863a393df2522b2c7dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -210,15 +210,15 @@ Macros</h2></td></tr>
 <tr class="separator:a7d8e711b0863c5d9359526da52364840"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab167a8cdcb4c69ab7d931007e4176063" id="r_ab167a8cdcb4c69ab7d931007e4176063"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="acexcep_8h.html#ab167a8cdcb4c69ab7d931007e4176063">AE_CODE_MASK</a>&#160;&#160;&#160;0xF000</td></tr>
 <tr class="separator:ab167a8cdcb4c69ab7d931007e4176063"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8cad7efa931063e2df81b96e6dd4b793" id="r_a8cad7efa931063e2df81b96e6dd4b793"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="acexcep_8h.html#a8cad7efa931063e2df81b96e6dd4b793">EXCEP_ENV</a>(code)&#160;&#160;&#160;((<a class="el" href="actypes_8h.html#a9c335cb71b6a3ba18516e73f4d7030a2">ACPI_STATUS</a>) (code | <a class="el" href="acexcep_8h.html#a9126d894f33c2d5021e51b615f7be328">AE_CODE_ENVIRONMENTAL</a>))</td></tr>
+<tr class="memitem:a8cad7efa931063e2df81b96e6dd4b793" id="r_a8cad7efa931063e2df81b96e6dd4b793"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="acexcep_8h.html#a8cad7efa931063e2df81b96e6dd4b793">EXCEP_ENV</a>(<a class="el" href="structcode.html">code</a>)&#160;&#160;&#160;((<a class="el" href="actypes_8h.html#a9c335cb71b6a3ba18516e73f4d7030a2">ACPI_STATUS</a>) (<a class="el" href="structcode.html">code</a> | <a class="el" href="acexcep_8h.html#a9126d894f33c2d5021e51b615f7be328">AE_CODE_ENVIRONMENTAL</a>))</td></tr>
 <tr class="separator:a8cad7efa931063e2df81b96e6dd4b793"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a553254e8ccd0f1d08b79975dfa2fa2f1" id="r_a553254e8ccd0f1d08b79975dfa2fa2f1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="acexcep_8h.html#a553254e8ccd0f1d08b79975dfa2fa2f1">EXCEP_PGM</a>(code)&#160;&#160;&#160;((<a class="el" href="actypes_8h.html#a9c335cb71b6a3ba18516e73f4d7030a2">ACPI_STATUS</a>) (code | <a class="el" href="acexcep_8h.html#a2db525e3439ef8e5b1d6840782f00e5d">AE_CODE_PROGRAMMER</a>))</td></tr>
+<tr class="memitem:a553254e8ccd0f1d08b79975dfa2fa2f1" id="r_a553254e8ccd0f1d08b79975dfa2fa2f1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="acexcep_8h.html#a553254e8ccd0f1d08b79975dfa2fa2f1">EXCEP_PGM</a>(<a class="el" href="structcode.html">code</a>)&#160;&#160;&#160;((<a class="el" href="actypes_8h.html#a9c335cb71b6a3ba18516e73f4d7030a2">ACPI_STATUS</a>) (<a class="el" href="structcode.html">code</a> | <a class="el" href="acexcep_8h.html#a2db525e3439ef8e5b1d6840782f00e5d">AE_CODE_PROGRAMMER</a>))</td></tr>
 <tr class="separator:a553254e8ccd0f1d08b79975dfa2fa2f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad9e981a909db1869495b78a6aa410a6" id="r_aad9e981a909db1869495b78a6aa410a6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="acexcep_8h.html#aad9e981a909db1869495b78a6aa410a6">EXCEP_TBL</a>(code)&#160;&#160;&#160;((<a class="el" href="actypes_8h.html#a9c335cb71b6a3ba18516e73f4d7030a2">ACPI_STATUS</a>) (code | <a class="el" href="acexcep_8h.html#a2d72ab0d3317d3767fe31c4580ff64a4">AE_CODE_ACPI_TABLES</a>))</td></tr>
+<tr class="memitem:aad9e981a909db1869495b78a6aa410a6" id="r_aad9e981a909db1869495b78a6aa410a6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="acexcep_8h.html#aad9e981a909db1869495b78a6aa410a6">EXCEP_TBL</a>(<a class="el" href="structcode.html">code</a>)&#160;&#160;&#160;((<a class="el" href="actypes_8h.html#a9c335cb71b6a3ba18516e73f4d7030a2">ACPI_STATUS</a>) (<a class="el" href="structcode.html">code</a> | <a class="el" href="acexcep_8h.html#a2d72ab0d3317d3767fe31c4580ff64a4">AE_CODE_ACPI_TABLES</a>))</td></tr>
 <tr class="separator:aad9e981a909db1869495b78a6aa410a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec9d5a9da450101461ef44f6fe14097c" id="r_aec9d5a9da450101461ef44f6fe14097c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="acexcep_8h.html#aec9d5a9da450101461ef44f6fe14097c">EXCEP_AML</a>(code)&#160;&#160;&#160;((<a class="el" href="actypes_8h.html#a9c335cb71b6a3ba18516e73f4d7030a2">ACPI_STATUS</a>) (code | <a class="el" href="acexcep_8h.html#a4eeb08718c718330c9e6b2f15cf52c8c">AE_CODE_AML</a>))</td></tr>
+<tr class="memitem:aec9d5a9da450101461ef44f6fe14097c" id="r_aec9d5a9da450101461ef44f6fe14097c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="acexcep_8h.html#aec9d5a9da450101461ef44f6fe14097c">EXCEP_AML</a>(<a class="el" href="structcode.html">code</a>)&#160;&#160;&#160;((<a class="el" href="actypes_8h.html#a9c335cb71b6a3ba18516e73f4d7030a2">ACPI_STATUS</a>) (<a class="el" href="structcode.html">code</a> | <a class="el" href="acexcep_8h.html#a4eeb08718c718330c9e6b2f15cf52c8c">AE_CODE_AML</a>))</td></tr>
 <tr class="separator:aec9d5a9da450101461ef44f6fe14097c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afbc02d150e0d8f30fd26cfe46c531402" id="r_afbc02d150e0d8f30fd26cfe46c531402"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="acexcep_8h.html#afbc02d150e0d8f30fd26cfe46c531402">EXCEP_CTL</a>(code)&#160;&#160;&#160;((<a class="el" href="actypes_8h.html#a9c335cb71b6a3ba18516e73f4d7030a2">ACPI_STATUS</a>) (code | <a class="el" href="acexcep_8h.html#a57736115b860d863a393df2522b2c7dc">AE_CODE_CONTROL</a>))</td></tr>
+<tr class="memitem:afbc02d150e0d8f30fd26cfe46c531402" id="r_afbc02d150e0d8f30fd26cfe46c531402"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="acexcep_8h.html#afbc02d150e0d8f30fd26cfe46c531402">EXCEP_CTL</a>(<a class="el" href="structcode.html">code</a>)&#160;&#160;&#160;((<a class="el" href="actypes_8h.html#a9c335cb71b6a3ba18516e73f4d7030a2">ACPI_STATUS</a>) (<a class="el" href="structcode.html">code</a> | <a class="el" href="acexcep_8h.html#a57736115b860d863a393df2522b2c7dc">AE_CODE_CONTROL</a>))</td></tr>
 <tr class="separator:afbc02d150e0d8f30fd26cfe46c531402"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abbac3ebbc9de680736591c9b0a709c5f" id="r_abbac3ebbc9de680736591c9b0a709c5f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="acexcep_8h.html#abbac3ebbc9de680736591c9b0a709c5f">EXCEP_TXT</a>(<a class="el" href="acpixf_8h.html#a5e6f9eb1e980275f44f308f43bff476e">Name</a>,  Description)&#160;&#160;&#160;{<a class="el" href="acpixf_8h.html#a5e6f9eb1e980275f44f308f43bff476e">Name</a>}</td></tr>
 <tr class="separator:abbac3ebbc9de680736591c9b0a709c5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1368,7 +1368,7 @@ Typedefs</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define AE_CODE_AML&#160;&#160;&#160;0x3000 /* From executing AML code */</td>
+          <td class="memname">#define AE_CODE_AML&#160;&#160;&#160;0x3000 /* From executing AML <a class="el" href="structcode.html">code</a> */</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2141,8 +2141,8 @@ Typedefs</h2></td></tr>
           <td class="memname">#define EXCEP_AML</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">code</td><td>)</td>
-          <td>&#160;&#160;&#160;((<a class="el" href="actypes_8h.html#a9c335cb71b6a3ba18516e73f4d7030a2">ACPI_STATUS</a>) (code | <a class="el" href="acexcep_8h.html#a4eeb08718c718330c9e6b2f15cf52c8c">AE_CODE_AML</a>))</td>
+          <td class="paramname"><a class="el" href="structcode.html">code</a></td><td>)</td>
+          <td>&#160;&#160;&#160;((<a class="el" href="actypes_8h.html#a9c335cb71b6a3ba18516e73f4d7030a2">ACPI_STATUS</a>) (<a class="el" href="structcode.html">code</a> | <a class="el" href="acexcep_8h.html#a4eeb08718c718330c9e6b2f15cf52c8c">AE_CODE_AML</a>))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2159,8 +2159,8 @@ Typedefs</h2></td></tr>
           <td class="memname">#define EXCEP_CTL</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">code</td><td>)</td>
-          <td>&#160;&#160;&#160;((<a class="el" href="actypes_8h.html#a9c335cb71b6a3ba18516e73f4d7030a2">ACPI_STATUS</a>) (code | <a class="el" href="acexcep_8h.html#a57736115b860d863a393df2522b2c7dc">AE_CODE_CONTROL</a>))</td>
+          <td class="paramname"><a class="el" href="structcode.html">code</a></td><td>)</td>
+          <td>&#160;&#160;&#160;((<a class="el" href="actypes_8h.html#a9c335cb71b6a3ba18516e73f4d7030a2">ACPI_STATUS</a>) (<a class="el" href="structcode.html">code</a> | <a class="el" href="acexcep_8h.html#a57736115b860d863a393df2522b2c7dc">AE_CODE_CONTROL</a>))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2177,8 +2177,8 @@ Typedefs</h2></td></tr>
           <td class="memname">#define EXCEP_ENV</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">code</td><td>)</td>
-          <td>&#160;&#160;&#160;((<a class="el" href="actypes_8h.html#a9c335cb71b6a3ba18516e73f4d7030a2">ACPI_STATUS</a>) (code | <a class="el" href="acexcep_8h.html#a9126d894f33c2d5021e51b615f7be328">AE_CODE_ENVIRONMENTAL</a>))</td>
+          <td class="paramname"><a class="el" href="structcode.html">code</a></td><td>)</td>
+          <td>&#160;&#160;&#160;((<a class="el" href="actypes_8h.html#a9c335cb71b6a3ba18516e73f4d7030a2">ACPI_STATUS</a>) (<a class="el" href="structcode.html">code</a> | <a class="el" href="acexcep_8h.html#a9126d894f33c2d5021e51b615f7be328">AE_CODE_ENVIRONMENTAL</a>))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2195,8 +2195,8 @@ Typedefs</h2></td></tr>
           <td class="memname">#define EXCEP_PGM</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">code</td><td>)</td>
-          <td>&#160;&#160;&#160;((<a class="el" href="actypes_8h.html#a9c335cb71b6a3ba18516e73f4d7030a2">ACPI_STATUS</a>) (code | <a class="el" href="acexcep_8h.html#a2db525e3439ef8e5b1d6840782f00e5d">AE_CODE_PROGRAMMER</a>))</td>
+          <td class="paramname"><a class="el" href="structcode.html">code</a></td><td>)</td>
+          <td>&#160;&#160;&#160;((<a class="el" href="actypes_8h.html#a9c335cb71b6a3ba18516e73f4d7030a2">ACPI_STATUS</a>) (<a class="el" href="structcode.html">code</a> | <a class="el" href="acexcep_8h.html#a2db525e3439ef8e5b1d6840782f00e5d">AE_CODE_PROGRAMMER</a>))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2213,8 +2213,8 @@ Typedefs</h2></td></tr>
           <td class="memname">#define EXCEP_TBL</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">code</td><td>)</td>
-          <td>&#160;&#160;&#160;((<a class="el" href="actypes_8h.html#a9c335cb71b6a3ba18516e73f4d7030a2">ACPI_STATUS</a>) (code | <a class="el" href="acexcep_8h.html#a2d72ab0d3317d3767fe31c4580ff64a4">AE_CODE_ACPI_TABLES</a>))</td>
+          <td class="paramname"><a class="el" href="structcode.html">code</a></td><td>)</td>
+          <td>&#160;&#160;&#160;((<a class="el" href="actypes_8h.html#a9c335cb71b6a3ba18516e73f4d7030a2">ACPI_STATUS</a>) (<a class="el" href="structcode.html">code</a> | <a class="el" href="acexcep_8h.html#a2d72ab0d3317d3767fe31c4580ff64a4">AE_CODE_ACPI_TABLES</a>))</td>
         </tr>
       </table>
 </div><div class="memdoc">

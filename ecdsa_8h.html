@@ -265,34 +265,34 @@ Functions</h2></td></tr>
 <tr class="memitem:ab994434cd9bdfdef8353571c8a6fcbc1" id="r_ab994434cd9bdfdef8353571c8a6fcbc1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ecdsa_8h.html#ab994434cd9bdfdef8353571c8a6fcbc1">mbedtls_ecdsa_can_do</a> (<a class="el" href="ecp_8h.html#af79e530ea8f8416480f805baa20b1a2d">mbedtls_ecp_group_id</a> gid)</td></tr>
 <tr class="memdesc:ab994434cd9bdfdef8353571c8a6fcbc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function checks whether a given group can be used for ECDSA.  <br /></td></tr>
 <tr class="separator:ab994434cd9bdfdef8353571c8a6fcbc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a6294f497e635c8b336fd6151c9821e" id="r_a4a6294f497e635c8b336fd6151c9821e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ecdsa_8h.html#a4a6294f497e635c8b336fd6151c9821e">mbedtls_ecdsa_sign</a> (<a class="el" href="structmbedtls__ecp__group.html">mbedtls_ecp_group</a> *grp, <a class="el" href="structmbedtls__mpi.html">mbedtls_mpi</a> *r, <a class="el" href="structmbedtls__mpi.html">mbedtls_mpi</a> *s, const <a class="el" href="structmbedtls__mpi.html">mbedtls_mpi</a> *<a class="el" href="libunicode_8c.html#a2530554172d8629149ec56816eeaa947">d</a>, const unsigned char *buf, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> blen, <a class="el" href="platform__util_8h.html#a944c0e7be86065ffefa4fb073f25b43e">mbedtls_f_rng_t</a> *f_rng, void *p_rng)</td></tr>
+<tr class="memitem:a4a6294f497e635c8b336fd6151c9821e" id="r_a4a6294f497e635c8b336fd6151c9821e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ecdsa_8h.html#a4a6294f497e635c8b336fd6151c9821e">mbedtls_ecdsa_sign</a> (<a class="el" href="structmbedtls__ecp__group.html">mbedtls_ecp_group</a> *grp, <a class="el" href="structmbedtls__mpi.html">mbedtls_mpi</a> *r, <a class="el" href="structmbedtls__mpi.html">mbedtls_mpi</a> *s, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="structmbedtls__mpi.html">mbedtls_mpi</a> *<a class="el" href="libunicode_8c.html#a2530554172d8629149ec56816eeaa947">d</a>, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *buf, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> blen, <a class="el" href="platform__util_8h.html#a944c0e7be86065ffefa4fb073f25b43e">mbedtls_f_rng_t</a> *f_rng, void *p_rng)</td></tr>
 <tr class="memdesc:a4a6294f497e635c8b336fd6151c9821e"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function computes the ECDSA signature of a previously-hashed message.  <br /></td></tr>
 <tr class="separator:a4a6294f497e635c8b336fd6151c9821e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e6a22dfef9ce2f931282d7d2f420367" id="r_a5e6a22dfef9ce2f931282d7d2f420367"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ecdsa_8h.html#a5e6a22dfef9ce2f931282d7d2f420367">mbedtls_ecdsa_sign_restartable</a> (<a class="el" href="structmbedtls__ecp__group.html">mbedtls_ecp_group</a> *grp, <a class="el" href="structmbedtls__mpi.html">mbedtls_mpi</a> *r, <a class="el" href="structmbedtls__mpi.html">mbedtls_mpi</a> *s, const <a class="el" href="structmbedtls__mpi.html">mbedtls_mpi</a> *<a class="el" href="libunicode_8c.html#a2530554172d8629149ec56816eeaa947">d</a>, const unsigned char *buf, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> blen, <a class="el" href="platform__util_8h.html#a944c0e7be86065ffefa4fb073f25b43e">mbedtls_f_rng_t</a> *f_rng, void *p_rng, <a class="el" href="platform__util_8h.html#a944c0e7be86065ffefa4fb073f25b43e">mbedtls_f_rng_t</a> *f_rng_blind, void *p_rng_blind, <a class="el" href="ecdsa_8h.html#ac728f82990e3d0a12bab38932267e6b8">mbedtls_ecdsa_restart_ctx</a> *rs_ctx)</td></tr>
+<tr class="memitem:a5e6a22dfef9ce2f931282d7d2f420367" id="r_a5e6a22dfef9ce2f931282d7d2f420367"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ecdsa_8h.html#a5e6a22dfef9ce2f931282d7d2f420367">mbedtls_ecdsa_sign_restartable</a> (<a class="el" href="structmbedtls__ecp__group.html">mbedtls_ecp_group</a> *grp, <a class="el" href="structmbedtls__mpi.html">mbedtls_mpi</a> *r, <a class="el" href="structmbedtls__mpi.html">mbedtls_mpi</a> *s, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="structmbedtls__mpi.html">mbedtls_mpi</a> *<a class="el" href="libunicode_8c.html#a2530554172d8629149ec56816eeaa947">d</a>, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *buf, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> blen, <a class="el" href="platform__util_8h.html#a944c0e7be86065ffefa4fb073f25b43e">mbedtls_f_rng_t</a> *f_rng, void *p_rng, <a class="el" href="platform__util_8h.html#a944c0e7be86065ffefa4fb073f25b43e">mbedtls_f_rng_t</a> *f_rng_blind, void *p_rng_blind, <a class="el" href="ecdsa_8h.html#ac728f82990e3d0a12bab38932267e6b8">mbedtls_ecdsa_restart_ctx</a> *rs_ctx)</td></tr>
 <tr class="memdesc:a5e6a22dfef9ce2f931282d7d2f420367"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function computes the ECDSA signature of a previously-hashed message, in a restartable way.  <br /></td></tr>
 <tr class="separator:a5e6a22dfef9ce2f931282d7d2f420367"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2292032f359fda59a7fd14911cc56f38" id="r_a2292032f359fda59a7fd14911cc56f38"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ecdsa_8h.html#a2292032f359fda59a7fd14911cc56f38">mbedtls_ecdsa_verify</a> (<a class="el" href="structmbedtls__ecp__group.html">mbedtls_ecp_group</a> *grp, const unsigned char *buf, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> blen, const <a class="el" href="structmbedtls__ecp__point.html">mbedtls_ecp_point</a> *Q, const <a class="el" href="structmbedtls__mpi.html">mbedtls_mpi</a> *r, const <a class="el" href="structmbedtls__mpi.html">mbedtls_mpi</a> *s)</td></tr>
+<tr class="memitem:a2292032f359fda59a7fd14911cc56f38" id="r_a2292032f359fda59a7fd14911cc56f38"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ecdsa_8h.html#a2292032f359fda59a7fd14911cc56f38">mbedtls_ecdsa_verify</a> (<a class="el" href="structmbedtls__ecp__group.html">mbedtls_ecp_group</a> *grp, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *buf, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> blen, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="structmbedtls__ecp__point.html">mbedtls_ecp_point</a> *Q, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="structmbedtls__mpi.html">mbedtls_mpi</a> *r, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="structmbedtls__mpi.html">mbedtls_mpi</a> *s)</td></tr>
 <tr class="memdesc:a2292032f359fda59a7fd14911cc56f38"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function verifies the ECDSA signature of a previously-hashed message.  <br /></td></tr>
 <tr class="separator:a2292032f359fda59a7fd14911cc56f38"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d4384c2808f26d6b1dfcc9de80629ea" id="r_a6d4384c2808f26d6b1dfcc9de80629ea"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ecdsa_8h.html#a6d4384c2808f26d6b1dfcc9de80629ea">mbedtls_ecdsa_verify_restartable</a> (<a class="el" href="structmbedtls__ecp__group.html">mbedtls_ecp_group</a> *grp, const unsigned char *buf, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> blen, const <a class="el" href="structmbedtls__ecp__point.html">mbedtls_ecp_point</a> *Q, const <a class="el" href="structmbedtls__mpi.html">mbedtls_mpi</a> *r, const <a class="el" href="structmbedtls__mpi.html">mbedtls_mpi</a> *s, <a class="el" href="ecdsa_8h.html#ac728f82990e3d0a12bab38932267e6b8">mbedtls_ecdsa_restart_ctx</a> *rs_ctx)</td></tr>
+<tr class="memitem:a6d4384c2808f26d6b1dfcc9de80629ea" id="r_a6d4384c2808f26d6b1dfcc9de80629ea"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ecdsa_8h.html#a6d4384c2808f26d6b1dfcc9de80629ea">mbedtls_ecdsa_verify_restartable</a> (<a class="el" href="structmbedtls__ecp__group.html">mbedtls_ecp_group</a> *grp, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *buf, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> blen, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="structmbedtls__ecp__point.html">mbedtls_ecp_point</a> *Q, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="structmbedtls__mpi.html">mbedtls_mpi</a> *r, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="structmbedtls__mpi.html">mbedtls_mpi</a> *s, <a class="el" href="ecdsa_8h.html#ac728f82990e3d0a12bab38932267e6b8">mbedtls_ecdsa_restart_ctx</a> *rs_ctx)</td></tr>
 <tr class="memdesc:a6d4384c2808f26d6b1dfcc9de80629ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function verifies the ECDSA signature of a previously-hashed message, in a restartable manner.  <br /></td></tr>
 <tr class="separator:a6d4384c2808f26d6b1dfcc9de80629ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad460d72cee62ca164fce1bbfd5756d4f" id="r_ad460d72cee62ca164fce1bbfd5756d4f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ecdsa_8h.html#ad460d72cee62ca164fce1bbfd5756d4f">mbedtls_ecdsa_write_signature</a> (<a class="el" href="ecdsa_8h.html#a86ad4c743272c83310c20585ec7a182f">mbedtls_ecdsa_context</a> *ctx, <a class="el" href="md_8h.html#a219313cb40503ec3e34a857ab98b2296">mbedtls_md_type_t</a> md_alg, const unsigned char *hash, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> hlen, unsigned char *sig, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> sig_size, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> *slen, <a class="el" href="platform__util_8h.html#a944c0e7be86065ffefa4fb073f25b43e">mbedtls_f_rng_t</a> *f_rng, void *p_rng)</td></tr>
+<tr class="memitem:ad460d72cee62ca164fce1bbfd5756d4f" id="r_ad460d72cee62ca164fce1bbfd5756d4f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ecdsa_8h.html#ad460d72cee62ca164fce1bbfd5756d4f">mbedtls_ecdsa_write_signature</a> (<a class="el" href="ecdsa_8h.html#a86ad4c743272c83310c20585ec7a182f">mbedtls_ecdsa_context</a> *ctx, <a class="el" href="md_8h.html#a219313cb40503ec3e34a857ab98b2296">mbedtls_md_type_t</a> md_alg, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *hash, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> hlen, unsigned char *sig, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> sig_size, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> *slen, <a class="el" href="platform__util_8h.html#a944c0e7be86065ffefa4fb073f25b43e">mbedtls_f_rng_t</a> *f_rng, void *p_rng)</td></tr>
 <tr class="memdesc:ad460d72cee62ca164fce1bbfd5756d4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function computes the ECDSA signature and writes it to a buffer, serialized as defined in <em>RFC-4492: Elliptic Curve Cryptography (ECC) Cipher Suites for Transport Layer Security (TLS)</em>.  <br /></td></tr>
 <tr class="separator:ad460d72cee62ca164fce1bbfd5756d4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afdcf3d6195b21db86a63f7fe7629c21c" id="r_afdcf3d6195b21db86a63f7fe7629c21c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ecdsa_8h.html#afdcf3d6195b21db86a63f7fe7629c21c">mbedtls_ecdsa_write_signature_restartable</a> (<a class="el" href="ecdsa_8h.html#a86ad4c743272c83310c20585ec7a182f">mbedtls_ecdsa_context</a> *ctx, <a class="el" href="md_8h.html#a219313cb40503ec3e34a857ab98b2296">mbedtls_md_type_t</a> md_alg, const unsigned char *hash, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> hlen, unsigned char *sig, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> sig_size, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> *slen, <a class="el" href="platform__util_8h.html#a944c0e7be86065ffefa4fb073f25b43e">mbedtls_f_rng_t</a> *f_rng, void *p_rng, <a class="el" href="ecdsa_8h.html#ac728f82990e3d0a12bab38932267e6b8">mbedtls_ecdsa_restart_ctx</a> *rs_ctx)</td></tr>
+<tr class="memitem:afdcf3d6195b21db86a63f7fe7629c21c" id="r_afdcf3d6195b21db86a63f7fe7629c21c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ecdsa_8h.html#afdcf3d6195b21db86a63f7fe7629c21c">mbedtls_ecdsa_write_signature_restartable</a> (<a class="el" href="ecdsa_8h.html#a86ad4c743272c83310c20585ec7a182f">mbedtls_ecdsa_context</a> *ctx, <a class="el" href="md_8h.html#a219313cb40503ec3e34a857ab98b2296">mbedtls_md_type_t</a> md_alg, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *hash, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> hlen, unsigned char *sig, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> sig_size, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> *slen, <a class="el" href="platform__util_8h.html#a944c0e7be86065ffefa4fb073f25b43e">mbedtls_f_rng_t</a> *f_rng, void *p_rng, <a class="el" href="ecdsa_8h.html#ac728f82990e3d0a12bab38932267e6b8">mbedtls_ecdsa_restart_ctx</a> *rs_ctx)</td></tr>
 <tr class="memdesc:afdcf3d6195b21db86a63f7fe7629c21c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function computes the ECDSA signature and writes it to a buffer, in a restartable way.  <br /></td></tr>
 <tr class="separator:afdcf3d6195b21db86a63f7fe7629c21c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8085ade3e127118aa615f65cb1d393d5" id="r_a8085ade3e127118aa615f65cb1d393d5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ecdsa_8h.html#a8085ade3e127118aa615f65cb1d393d5">mbedtls_ecdsa_read_signature</a> (<a class="el" href="ecdsa_8h.html#a86ad4c743272c83310c20585ec7a182f">mbedtls_ecdsa_context</a> *ctx, const unsigned char *hash, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> hlen, const unsigned char *sig, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> slen)</td></tr>
+<tr class="memitem:a8085ade3e127118aa615f65cb1d393d5" id="r_a8085ade3e127118aa615f65cb1d393d5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ecdsa_8h.html#a8085ade3e127118aa615f65cb1d393d5">mbedtls_ecdsa_read_signature</a> (<a class="el" href="ecdsa_8h.html#a86ad4c743272c83310c20585ec7a182f">mbedtls_ecdsa_context</a> *ctx, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *hash, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> hlen, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *sig, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> slen)</td></tr>
 <tr class="memdesc:a8085ade3e127118aa615f65cb1d393d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function reads and verifies an ECDSA signature.  <br /></td></tr>
 <tr class="separator:a8085ade3e127118aa615f65cb1d393d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7736c52c95d1f2e8ac31d35faa2cd937" id="r_a7736c52c95d1f2e8ac31d35faa2cd937"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ecdsa_8h.html#a7736c52c95d1f2e8ac31d35faa2cd937">mbedtls_ecdsa_read_signature_restartable</a> (<a class="el" href="ecdsa_8h.html#a86ad4c743272c83310c20585ec7a182f">mbedtls_ecdsa_context</a> *ctx, const unsigned char *hash, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> hlen, const unsigned char *sig, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> slen, <a class="el" href="ecdsa_8h.html#ac728f82990e3d0a12bab38932267e6b8">mbedtls_ecdsa_restart_ctx</a> *rs_ctx)</td></tr>
+<tr class="memitem:a7736c52c95d1f2e8ac31d35faa2cd937" id="r_a7736c52c95d1f2e8ac31d35faa2cd937"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ecdsa_8h.html#a7736c52c95d1f2e8ac31d35faa2cd937">mbedtls_ecdsa_read_signature_restartable</a> (<a class="el" href="ecdsa_8h.html#a86ad4c743272c83310c20585ec7a182f">mbedtls_ecdsa_context</a> *ctx, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *hash, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> hlen, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *sig, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> slen, <a class="el" href="ecdsa_8h.html#ac728f82990e3d0a12bab38932267e6b8">mbedtls_ecdsa_restart_ctx</a> *rs_ctx)</td></tr>
 <tr class="memdesc:a7736c52c95d1f2e8ac31d35faa2cd937"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function reads and verifies an ECDSA signature, in a restartable way.  <br /></td></tr>
 <tr class="separator:a7736c52c95d1f2e8ac31d35faa2cd937"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a457f4b44b403728ea7aaf8e19b83a303" id="r_a457f4b44b403728ea7aaf8e19b83a303"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ecdsa_8h.html#a457f4b44b403728ea7aaf8e19b83a303">mbedtls_ecdsa_genkey</a> (<a class="el" href="ecdsa_8h.html#a86ad4c743272c83310c20585ec7a182f">mbedtls_ecdsa_context</a> *ctx, <a class="el" href="ecp_8h.html#af79e530ea8f8416480f805baa20b1a2d">mbedtls_ecp_group_id</a> gid, <a class="el" href="platform__util_8h.html#a944c0e7be86065ffefa4fb073f25b43e">mbedtls_f_rng_t</a> *f_rng, void *p_rng)</td></tr>
 <tr class="memdesc:a457f4b44b403728ea7aaf8e19b83a303"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function generates an ECDSA keypair on the given curve.  <br /></td></tr>
 <tr class="separator:a457f4b44b403728ea7aaf8e19b83a303"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6de8efd872cfe1bc2ee93b4a5584226c" id="r_a6de8efd872cfe1bc2ee93b4a5584226c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ecdsa_8h.html#a6de8efd872cfe1bc2ee93b4a5584226c">mbedtls_ecdsa_from_keypair</a> (<a class="el" href="ecdsa_8h.html#a86ad4c743272c83310c20585ec7a182f">mbedtls_ecdsa_context</a> *ctx, const <a class="el" href="structmbedtls__ecp__keypair.html">mbedtls_ecp_keypair</a> *key)</td></tr>
+<tr class="memitem:a6de8efd872cfe1bc2ee93b4a5584226c" id="r_a6de8efd872cfe1bc2ee93b4a5584226c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ecdsa_8h.html#a6de8efd872cfe1bc2ee93b4a5584226c">mbedtls_ecdsa_from_keypair</a> (<a class="el" href="ecdsa_8h.html#a86ad4c743272c83310c20585ec7a182f">mbedtls_ecdsa_context</a> *ctx, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="structmbedtls__ecp__keypair.html">mbedtls_ecp_keypair</a> *key)</td></tr>
 <tr class="memdesc:a6de8efd872cfe1bc2ee93b4a5584226c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function sets up an ECDSA context from an EC key pair.  <br /></td></tr>
 <tr class="separator:a6de8efd872cfe1bc2ee93b4a5584226c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca644ee02921388fdc42eb06377f4b62" id="r_aca644ee02921388fdc42eb06377f4b62"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ecdsa_8h.html#aca644ee02921388fdc42eb06377f4b62">mbedtls_ecdsa_init</a> (<a class="el" href="ecdsa_8h.html#a86ad4c743272c83310c20585ec7a182f">mbedtls_ecdsa_context</a> *ctx)</td></tr>
@@ -454,7 +454,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structmbedtls__ecp__keypair.html">mbedtls_ecp_keypair</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="structmbedtls__ecp__keypair.html">mbedtls_ecp_keypair</a> *&#160;</td>
           <td class="paramname"><em>key</em>&#160;</td>
         </tr>
         <tr>
@@ -576,7 +576,7 @@ An <code>MBEDTLS_ERR_ECP_XXX</code> code on failure. </dd></dl>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *&#160;</td>
           <td class="paramname"><em>hash</em>, </td>
         </tr>
         <tr>
@@ -588,7 +588,7 @@ An <code>MBEDTLS_ERR_ECP_XXX</code> code on failure. </dd></dl>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *&#160;</td>
           <td class="paramname"><em>sig</em>, </td>
         </tr>
         <tr>
@@ -643,7 +643,7 @@ An <code>MBEDTLS_ERR_ECP_XXX</code> or <code>MBEDTLS_ERR_MPI_XXX</code> error co
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *&#160;</td>
           <td class="paramname"><em>hash</em>, </td>
         </tr>
         <tr>
@@ -655,7 +655,7 @@ An <code>MBEDTLS_ERR_ECP_XXX</code> or <code>MBEDTLS_ERR_MPI_XXX</code> error co
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *&#160;</td>
           <td class="paramname"><em>sig</em>, </td>
         </tr>
         <tr>
@@ -731,13 +731,13 @@ Another <code>MBEDTLS_ERR_ECP_XXX</code> or <code>MBEDTLS_ERR_MPI_XXX</code> err
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structmbedtls__mpi.html">mbedtls_mpi</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="structmbedtls__mpi.html">mbedtls_mpi</a> *&#160;</td>
           <td class="paramname"><em>d</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *&#160;</td>
           <td class="paramname"><em>buf</em>, </td>
         </tr>
         <tr>
@@ -817,13 +817,13 @@ An <code>MBEDTLS_ERR_ECP_XXX</code> or <code>MBEDTLS_MPI_XXX</code> error code o
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structmbedtls__mpi.html">mbedtls_mpi</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="structmbedtls__mpi.html">mbedtls_mpi</a> *&#160;</td>
           <td class="paramname"><em>d</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *&#160;</td>
           <td class="paramname"><em>buf</em>, </td>
         </tr>
         <tr>
@@ -916,7 +916,7 @@ Another <code>MBEDTLS_ERR_ECP_XXX</code>, <code>MBEDTLS_ERR_MPI_XXX</code> or <c
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *&#160;</td>
           <td class="paramname"><em>buf</em>, </td>
         </tr>
         <tr>
@@ -928,19 +928,19 @@ Another <code>MBEDTLS_ERR_ECP_XXX</code>, <code>MBEDTLS_ERR_MPI_XXX</code> or <c
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structmbedtls__ecp__point.html">mbedtls_ecp_point</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="structmbedtls__ecp__point.html">mbedtls_ecp_point</a> *&#160;</td>
           <td class="paramname"><em>Q</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structmbedtls__mpi.html">mbedtls_mpi</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="structmbedtls__mpi.html">mbedtls_mpi</a> *&#160;</td>
           <td class="paramname"><em>r</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structmbedtls__mpi.html">mbedtls_mpi</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="structmbedtls__mpi.html">mbedtls_mpi</a> *&#160;</td>
           <td class="paramname"><em>s</em>&#160;</td>
         </tr>
         <tr>
@@ -986,7 +986,7 @@ An <code>MBEDTLS_ERR_ECP_XXX</code> or <code>MBEDTLS_MPI_XXX</code> error code o
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *&#160;</td>
           <td class="paramname"><em>buf</em>, </td>
         </tr>
         <tr>
@@ -998,19 +998,19 @@ An <code>MBEDTLS_ERR_ECP_XXX</code> or <code>MBEDTLS_MPI_XXX</code> error code o
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structmbedtls__ecp__point.html">mbedtls_ecp_point</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="structmbedtls__ecp__point.html">mbedtls_ecp_point</a> *&#160;</td>
           <td class="paramname"><em>Q</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structmbedtls__mpi.html">mbedtls_mpi</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="structmbedtls__mpi.html">mbedtls_mpi</a> *&#160;</td>
           <td class="paramname"><em>r</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structmbedtls__mpi.html">mbedtls_mpi</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="structmbedtls__mpi.html">mbedtls_mpi</a> *&#160;</td>
           <td class="paramname"><em>s</em>, </td>
         </tr>
         <tr>
@@ -1071,7 +1071,7 @@ An <code>MBEDTLS_ERR_ECP_XXX</code> or <code>MBEDTLS_MPI_XXX</code> error code o
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *&#160;</td>
           <td class="paramname"><em>hash</em>, </td>
         </tr>
         <tr>
@@ -1165,7 +1165,7 @@ An <code>MBEDTLS_ERR_ECP_XXX</code>, <code>MBEDTLS_ERR_MPI_XXX</code> or <code>M
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *&#160;</td>
           <td class="paramname"><em>hash</em>, </td>
         </tr>
         <tr>

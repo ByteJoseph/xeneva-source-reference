@@ -310,7 +310,7 @@ Macros</h2></td></tr>
 <tr class="separator:aa0b38ef07d2d15ed0c00b8dc8bd37b9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a551b44efd863c9c2b5c3669ec6320951" id="r_a551b44efd863c9c2b5c3669ec6320951"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compiler__types_8h.html#a551b44efd863c9c2b5c3669ec6320951">__signed_scalar_typeof</a>(x)</td></tr>
 <tr class="separator:a551b44efd863c9c2b5c3669ec6320951"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a952103a3f42959f8aa38146119d5dd16" id="r_a952103a3f42959f8aa38146119d5dd16"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compiler__types_8h.html#a952103a3f42959f8aa38146119d5dd16">__native_word</a>(<a class="el" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a>)</td></tr>
+<tr class="memitem:a952103a3f42959f8aa38146119d5dd16" id="r_a952103a3f42959f8aa38146119d5dd16"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compiler__types_8h.html#a952103a3f42959f8aa38146119d5dd16">__native_word</a>(t)</td></tr>
 <tr class="separator:a952103a3f42959f8aa38146119d5dd16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43cf6496730e5e210e8b9b6f181caaf1" id="r_a43cf6496730e5e210e8b9b6f181caaf1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compiler__types_8h.html#a43cf6496730e5e210e8b9b6f181caaf1">__compiletime_assert</a>(condition,  msg,  prefix,  suffix)&#160;&#160;&#160;((void)(condition))</td></tr>
 <tr class="separator:a43cf6496730e5e210e8b9b6f181caaf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -318,7 +318,7 @@ Macros</h2></td></tr>
 <tr class="separator:a9809424448bbc2aacf125e111d748eca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a523996f631c26d57ba1d7d3211e4a938" id="r_a523996f631c26d57ba1d7d3211e4a938"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compiler__types_8h.html#a523996f631c26d57ba1d7d3211e4a938">compiletime_assert</a>(condition,  msg)&#160;&#160;&#160;	<a class="el" href="compiler__types_8h.html#a9809424448bbc2aacf125e111d748eca">_compiletime_assert</a>(condition, msg, __compiletime_assert_, __COUNTER__)</td></tr>
 <tr class="separator:a523996f631c26d57ba1d7d3211e4a938"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf54037eb50c83810e0e29de25102088" id="r_abf54037eb50c83810e0e29de25102088"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compiler__types_8h.html#abf54037eb50c83810e0e29de25102088">compiletime_assert_atomic_type</a>(<a class="el" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a>)</td></tr>
+<tr class="memitem:abf54037eb50c83810e0e29de25102088" id="r_abf54037eb50c83810e0e29de25102088"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compiler__types_8h.html#abf54037eb50c83810e0e29de25102088">compiletime_assert_atomic_type</a>(t)</td></tr>
 <tr class="separator:abf54037eb50c83810e0e29de25102088"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2748d054d0df92da2194ced90b5914d5" id="r_a2748d054d0df92da2194ced90b5914d5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compiler__types_8h.html#a2748d054d0df92da2194ced90b5914d5">__diag</a>(string)</td></tr>
 <tr class="separator:a2748d054d0df92da2194ced90b5914d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -888,14 +888,13 @@ Macros</h2></td></tr>
           <td class="memname">#define __native_word</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a></td><td>)</td>
+          <td class="paramname">t</td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">    (<span class="keyword">sizeof</span>(<a class="code hl_variable" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a>) == <span class="keyword">sizeof</span>(<span class="keywordtype">char</span>) || <span class="keyword">sizeof</span>(<a class="code hl_variable" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a>) == <span class="keyword">sizeof</span>(<span class="keywordtype">short</span>) || \</div>
-<div class="line">     sizeof(<a class="code hl_variable" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a>) == <span class="keyword">sizeof</span>(int) || <span class="keyword">sizeof</span>(<a class="code hl_variable" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a>) == <span class="keyword">sizeof</span>(long))</div>
-<div class="ttc" id="aProcess_2Calender_2main_8cpp_html_a5b9f2c8eed2b49ee91dd608d9a0ec4bd"><div class="ttname"><a href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a></div><div class="ttdeci">XETime t</div><div class="ttdef"><b>Definition</b> main.cpp:53</div></div>
+<b>Value:</b><div class="fragment"><div class="line">    (<span class="keyword">sizeof</span>(t) == <span class="keyword">sizeof</span>(<span class="keywordtype">char</span>) || <span class="keyword">sizeof</span>(t) == <span class="keyword">sizeof</span>(<span class="keywordtype">short</span>) || \</div>
+<div class="line">     sizeof(t) == <span class="keyword">sizeof</span>(int) || <span class="keyword">sizeof</span>(t) == <span class="keyword">sizeof</span>(long))</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1480,12 +1479,12 @@ Macros</h2></td></tr>
           <td class="memname">#define compiletime_assert_atomic_type</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a></td><td>)</td>
+          <td class="paramname">t</td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">    <a class="code hl_define" href="compiler__types_8h.html#a523996f631c26d57ba1d7d3211e4a938">compiletime_assert</a>(<a class="code hl_define" href="compiler__types_8h.html#a952103a3f42959f8aa38146119d5dd16">__native_word</a>(<a class="code hl_variable" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a>),                \</div>
+<b>Value:</b><div class="fragment"><div class="line">    <a class="code hl_define" href="compiler__types_8h.html#a523996f631c26d57ba1d7d3211e4a938">compiletime_assert</a>(<a class="code hl_define" href="compiler__types_8h.html#a952103a3f42959f8aa38146119d5dd16">__native_word</a>(t),                \</div>
 <div class="line">        <span class="stringliteral">&quot;Need native word sized stores/loads for atomicity.&quot;</span>)</div>
 <div class="ttc" id="acompiler__types_8h_html_a523996f631c26d57ba1d7d3211e4a938"><div class="ttname"><a href="compiler__types_8h.html#a523996f631c26d57ba1d7d3211e4a938">compiletime_assert</a></div><div class="ttdeci">#define compiletime_assert(condition, msg)</div><div class="ttdef"><b>Definition</b> compiler_types.h:701</div></div>
 <div class="ttc" id="acompiler__types_8h_html_a952103a3f42959f8aa38146119d5dd16"><div class="ttname"><a href="compiler__types_8h.html#a952103a3f42959f8aa38146119d5dd16">__native_word</a></div><div class="ttdeci">#define __native_word(t)</div><div class="ttdef"><b>Definition</b> compiler_types.h:662</div></div>

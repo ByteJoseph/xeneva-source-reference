@@ -238,7 +238,7 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ae3f4ebdb329cf65647790b64a50503e6" id="r_ae3f4ebdb329cf65647790b64a50503e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tty__ldisc_8h.html#ae3f4ebdb329cf65647790b64a50503e6">__init_ldsem</a> (struct <a class="el" href="structld__semaphore.html">ld_semaphore</a> *sem, const char *<a class="el" href="drm__crtc_8h.html#aed88e009d7772dfc9026cb1f5492b458">name</a>, struct <a class="el" href="structlock__class__key.html">lock_class_key</a> *key)</td></tr>
+<tr class="memitem:ae3f4ebdb329cf65647790b64a50503e6" id="r_ae3f4ebdb329cf65647790b64a50503e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tty__ldisc_8h.html#ae3f4ebdb329cf65647790b64a50503e6">__init_ldsem</a> (struct <a class="el" href="structld__semaphore.html">ld_semaphore</a> *sem, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *<a class="el" href="drm__crtc_8h.html#aed88e009d7772dfc9026cb1f5492b458">name</a>, struct <a class="el" href="structlock__class__key.html">lock_class_key</a> *key)</td></tr>
 <tr class="separator:ae3f4ebdb329cf65647790b64a50503e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a73e33bb33955da274e568683572f58" id="r_a2a73e33bb33955da274e568683572f58"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tty__ldisc_8h.html#a2a73e33bb33955da274e568683572f58">ldsem_down_read</a> (struct <a class="el" href="structld__semaphore.html">ld_semaphore</a> *sem, long timeout)</td></tr>
 <tr class="separator:a2a73e33bb33955da274e568683572f58"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -264,16 +264,16 @@ Functions</h2></td></tr>
 <tr class="separator:a920a07f989cb09b27a665b5a5207243b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70c61c37d076f59facf869e370afa688" id="r_a70c61c37d076f59facf869e370afa688"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tty__ldisc_8h.html#a70c61c37d076f59facf869e370afa688">tty_ldisc_flush</a> (struct <a class="el" href="structtty__struct.html">tty_struct</a> *tty)</td></tr>
 <tr class="separator:a70c61c37d076f59facf869e370afa688"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d5c616d2832d1293dbe37ed26c4bae1" id="r_a6d5c616d2832d1293dbe37ed26c4bae1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tty__ldisc_8h.html#a6d5c616d2832d1293dbe37ed26c4bae1">tty_register_ldisc</a> (const struct <a class="el" href="structtty__ldisc__ops.html">tty_ldisc_ops</a> *new_ldisc)</td></tr>
+<tr class="memitem:a6d5c616d2832d1293dbe37ed26c4bae1" id="r_a6d5c616d2832d1293dbe37ed26c4bae1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tty__ldisc_8h.html#a6d5c616d2832d1293dbe37ed26c4bae1">tty_register_ldisc</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct <a class="el" href="structtty__ldisc__ops.html">tty_ldisc_ops</a> *new_ldisc)</td></tr>
 <tr class="separator:a6d5c616d2832d1293dbe37ed26c4bae1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a163540c76257698a0245261f4c61b117" id="r_a163540c76257698a0245261f4c61b117"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tty__ldisc_8h.html#a163540c76257698a0245261f4c61b117">tty_unregister_ldisc</a> (const struct <a class="el" href="structtty__ldisc__ops.html">tty_ldisc_ops</a> *ldisc)</td></tr>
+<tr class="memitem:a163540c76257698a0245261f4c61b117" id="r_a163540c76257698a0245261f4c61b117"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tty__ldisc_8h.html#a163540c76257698a0245261f4c61b117">tty_unregister_ldisc</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct <a class="el" href="structtty__ldisc__ops.html">tty_ldisc_ops</a> *ldisc)</td></tr>
 <tr class="separator:a163540c76257698a0245261f4c61b117"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d7e9818089acea6e69c26e85da09f9d" id="r_a9d7e9818089acea6e69c26e85da09f9d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tty__ldisc_8h.html#a9d7e9818089acea6e69c26e85da09f9d">tty_set_ldisc</a> (struct <a class="el" href="structtty__struct.html">tty_struct</a> *tty, int disc)</td></tr>
 <tr class="separator:a9d7e9818089acea6e69c26e85da09f9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a930f2aee85cb70fa973e5f1e7aa75d48" id="r_a930f2aee85cb70fa973e5f1e7aa75d48"><td class="memItemLeft" align="right" valign="top">const struct <a class="el" href="structseq__operations.html">seq_operations</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tty__ldisc_8h.html#a930f2aee85cb70fa973e5f1e7aa75d48">tty_ldiscs_seq_ops</a></td></tr>
+<tr class="memitem:a930f2aee85cb70fa973e5f1e7aa75d48" id="r_a930f2aee85cb70fa973e5f1e7aa75d48"><td class="memItemLeft" align="right" valign="top"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct <a class="el" href="structseq__operations.html">seq_operations</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tty__ldisc_8h.html#a930f2aee85cb70fa973e5f1e7aa75d48">tty_ldiscs_seq_ops</a></td></tr>
 <tr class="separator:a930f2aee85cb70fa973e5f1e7aa75d48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
@@ -403,7 +403,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
           <td class="paramname"><em>name</em>, </td>
         </tr>
         <tr>
@@ -667,7 +667,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">int tty_register_ldisc </td>
           <td>(</td>
-          <td class="paramtype">const struct <a class="el" href="structtty__ldisc__ops.html">tty_ldisc_ops</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct <a class="el" href="structtty__ldisc__ops.html">tty_ldisc_ops</a> *&#160;</td>
           <td class="paramname"><em>new_ldisc</em></td><td>)</td>
           <td></td>
         </tr>
@@ -713,7 +713,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void tty_unregister_ldisc </td>
           <td>(</td>
-          <td class="paramtype">const struct <a class="el" href="structtty__ldisc__ops.html">tty_ldisc_ops</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct <a class="el" href="structtty__ldisc__ops.html">tty_ldisc_ops</a> *&#160;</td>
           <td class="paramname"><em>ldisc</em></td><td>)</td>
           <td></td>
         </tr>
@@ -733,7 +733,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const struct <a class="el" href="structseq__operations.html">seq_operations</a> tty_ldiscs_seq_ops</td>
+          <td class="memname"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct <a class="el" href="structseq__operations.html">seq_operations</a> tty_ldiscs_seq_ops</td>
         </tr>
       </table>
   </td>

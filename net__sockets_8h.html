@@ -347,10 +347,10 @@ Functions</h2></td></tr>
 <tr class="memitem:aed7458e19fc1b4794f3a23aa3df49543" id="r_aed7458e19fc1b4794f3a23aa3df49543"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="net__sockets_8h.html#aed7458e19fc1b4794f3a23aa3df49543">mbedtls_net_init</a> (<a class="el" href="structmbedtls__net__context.html">mbedtls_net_context</a> *ctx)</td></tr>
 <tr class="memdesc:aed7458e19fc1b4794f3a23aa3df49543"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a context Just makes the context ready to be used or freed safely.  <br /></td></tr>
 <tr class="separator:aed7458e19fc1b4794f3a23aa3df49543"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac12c400864a5aad46666828ce2a089a4" id="r_ac12c400864a5aad46666828ce2a089a4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="net__sockets_8h.html#ac12c400864a5aad46666828ce2a089a4">mbedtls_net_connect</a> (<a class="el" href="structmbedtls__net__context.html">mbedtls_net_context</a> *ctx, const char *host, const char *port, int proto)</td></tr>
+<tr class="memitem:ac12c400864a5aad46666828ce2a089a4" id="r_ac12c400864a5aad46666828ce2a089a4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="net__sockets_8h.html#ac12c400864a5aad46666828ce2a089a4">mbedtls_net_connect</a> (<a class="el" href="structmbedtls__net__context.html">mbedtls_net_context</a> *ctx, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *host, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *port, int proto)</td></tr>
 <tr class="memdesc:ac12c400864a5aad46666828ce2a089a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initiate a connection with host:port in the given protocol.  <br /></td></tr>
 <tr class="separator:ac12c400864a5aad46666828ce2a089a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1cb7fc819153c43a2c75c95d0152c75" id="r_aa1cb7fc819153c43a2c75c95d0152c75"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="net__sockets_8h.html#aa1cb7fc819153c43a2c75c95d0152c75">mbedtls_net_bind</a> (<a class="el" href="structmbedtls__net__context.html">mbedtls_net_context</a> *ctx, const char *bind_ip, const char *port, int proto)</td></tr>
+<tr class="memitem:aa1cb7fc819153c43a2c75c95d0152c75" id="r_aa1cb7fc819153c43a2c75c95d0152c75"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="net__sockets_8h.html#aa1cb7fc819153c43a2c75c95d0152c75">mbedtls_net_bind</a> (<a class="el" href="structmbedtls__net__context.html">mbedtls_net_context</a> *ctx, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *bind_ip, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *port, int proto)</td></tr>
 <tr class="memdesc:aa1cb7fc819153c43a2c75c95d0152c75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a receiving socket on bind_ip:port in the chosen protocol. If bind_ip == NULL, all interfaces are bound.  <br /></td></tr>
 <tr class="separator:aa1cb7fc819153c43a2c75c95d0152c75"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14ca8a2d8af16ea53bd1b9a872a39ff8" id="r_a14ca8a2d8af16ea53bd1b9a872a39ff8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="net__sockets_8h.html#a14ca8a2d8af16ea53bd1b9a872a39ff8">mbedtls_net_accept</a> (<a class="el" href="structmbedtls__net__context.html">mbedtls_net_context</a> *bind_ctx, <a class="el" href="structmbedtls__net__context.html">mbedtls_net_context</a> *client_ctx, void *client_ip, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> buf_size, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> *cip_len)</td></tr>
@@ -371,7 +371,7 @@ Functions</h2></td></tr>
 <tr class="memitem:a03af351ec420bbeb5e91357abcfb3663" id="r_a03af351ec420bbeb5e91357abcfb3663"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="net__sockets_8h.html#a03af351ec420bbeb5e91357abcfb3663">mbedtls_net_recv</a> (void *ctx, unsigned char *buf, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> <a class="el" href="initial_8c.html#a7360b55975153b822efc5217b7734e6a">len</a>)</td></tr>
 <tr class="memdesc:a03af351ec420bbeb5e91357abcfb3663"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read at most 'len' characters. If no error occurs, the actual amount read is returned.  <br /></td></tr>
 <tr class="separator:a03af351ec420bbeb5e91357abcfb3663"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4841afd0e14f1fd44b82c3a850961ab7" id="r_a4841afd0e14f1fd44b82c3a850961ab7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="net__sockets_8h.html#a4841afd0e14f1fd44b82c3a850961ab7">mbedtls_net_send</a> (void *ctx, const unsigned char *buf, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> <a class="el" href="initial_8c.html#a7360b55975153b822efc5217b7734e6a">len</a>)</td></tr>
+<tr class="memitem:a4841afd0e14f1fd44b82c3a850961ab7" id="r_a4841afd0e14f1fd44b82c3a850961ab7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="net__sockets_8h.html#a4841afd0e14f1fd44b82c3a850961ab7">mbedtls_net_send</a> (void *ctx, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *buf, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> <a class="el" href="initial_8c.html#a7360b55975153b822efc5217b7734e6a">len</a>)</td></tr>
 <tr class="memdesc:a4841afd0e14f1fd44b82c3a850961ab7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write at most 'len' characters. If no error occurs, the actual amount written is returned.  <br /></td></tr>
 <tr class="separator:a4841afd0e14f1fd44b82c3a850961ab7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a67810154d2328a80b146155d8cdecfd9" id="r_a67810154d2328a80b146155d8cdecfd9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="net__sockets_8h.html#a67810154d2328a80b146155d8cdecfd9">mbedtls_net_recv_timeout</a> (void *ctx, unsigned char *buf, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> <a class="el" href="initial_8c.html#a7360b55975153b822efc5217b7734e6a">len</a>, <a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> timeout)</td></tr>
@@ -756,13 +756,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
           <td class="paramname"><em>bind_ip</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
           <td class="paramname"><em>port</em>, </td>
         </tr>
         <tr>
@@ -836,13 +836,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
           <td class="paramname"><em>host</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
           <td class="paramname"><em>port</em>, </td>
         </tr>
         <tr>
@@ -1091,7 +1091,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *&#160;</td>
           <td class="paramname"><em>buf</em>, </td>
         </tr>
         <tr>

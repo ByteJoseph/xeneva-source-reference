@@ -223,7 +223,7 @@ Typedefs</h2></td></tr>
 <tr class="separator:ae4a81fe76094ed673abc1a018c0516f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74d929b51e6316ca49295da9c375a457" id="r_a74d929b51e6316ca49295da9c375a457"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8h.html#a74d929b51e6316ca49295da9c375a457">close_callback</a>) (struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *<a class="el" href="kthread_8h.html#af3fd9d829538e36331bf4a6fe7e6b7bc">node</a>, struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *<a class="el" href="structfile.html">file</a>)</td></tr>
 <tr class="separator:a74d929b51e6316ca49295da9c375a457"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2047dca70ce230d50d50b93fc3077fe" id="r_af2047dca70ce230d50d50b93fc3077fe"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8h.html#af2047dca70ce230d50d50b93fc3077fe">iocontrol_callback</a>) (struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *<a class="el" href="structfile.html">file</a>, int code, void *<a class="el" href="unionarg.html">arg</a>)</td></tr>
+<tr class="memitem:af2047dca70ce230d50d50b93fc3077fe" id="r_af2047dca70ce230d50d50b93fc3077fe"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8h.html#af2047dca70ce230d50d50b93fc3077fe">iocontrol_callback</a>) (struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *<a class="el" href="structfile.html">file</a>, int <a class="el" href="structcode.html">code</a>, void *<a class="el" href="unionarg.html">arg</a>)</td></tr>
 <tr class="separator:af2047dca70ce230d50d50b93fc3077fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6aa65b91c7c60ff053a996f25b2d08e2" id="r_a6aa65b91c7c60ff053a996f25b2d08e2"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8h.html#a6aa65b91c7c60ff053a996f25b2d08e2">opendir_callback</a>) (struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *fs, char *dirname)</td></tr>
 <tr class="separator:a6aa65b91c7c60ff053a996f25b2d08e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -258,12 +258,15 @@ Functions</h2></td></tr>
 <tr class="memitem:a1e296cb55fe122a62b9f98ea5229584e" id="r_a1e296cb55fe122a62b9f98ea5229584e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> <a class="el" href="devclip_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8h.html#a1e296cb55fe122a62b9f98ea5229584e">AuVFSOpen</a> (char *<a class="el" href="structpath.html">path</a>)</td></tr>
 <tr class="memdesc:a1e296cb55fe122a62b9f98ea5229584e"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuVFSOpen &ndash; Opens a file.  <br /></td></tr>
 <tr class="separator:a1e296cb55fe122a62b9f98ea5229584e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab691633016d2d8b79fc522574d5477db" id="r_ab691633016d2d8b79fc522574d5477db"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8h.html#ab691633016d2d8b79fc522574d5477db">AuVFSNodeIOControl</a> (<a class="el" href="devclip_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *<a class="el" href="kthread_8h.html#af3fd9d829538e36331bf4a6fe7e6b7bc">node</a>, int code, void *<a class="el" href="unionarg.html">arg</a>)</td></tr>
+<tr class="memitem:ab691633016d2d8b79fc522574d5477db" id="r_ab691633016d2d8b79fc522574d5477db"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8h.html#ab691633016d2d8b79fc522574d5477db">AuVFSNodeIOControl</a> (<a class="el" href="devclip_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *<a class="el" href="kthread_8h.html#af3fd9d829538e36331bf4a6fe7e6b7bc">node</a>, int <a class="el" href="structcode.html">code</a>, void *<a class="el" href="unionarg.html">arg</a>)</td></tr>
 <tr class="memdesc:ab691633016d2d8b79fc522574d5477db"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuVFSNodeIOControl &ndash; Calls node's iocontrol pointer.  <br /></td></tr>
 <tr class="separator:ab691633016d2d8b79fc522574d5477db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6bb7c22bb708eaa7704930c387c3a419" id="r_a6bb7c22bb708eaa7704930c387c3a419"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8h.html#a6bb7c22bb708eaa7704930c387c3a419">AuVFSAddFileSystem</a> (<a class="el" href="devclip_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *<a class="el" href="kthread_8h.html#af3fd9d829538e36331bf4a6fe7e6b7bc">node</a>)</td></tr>
 <tr class="memdesc:a6bb7c22bb708eaa7704930c387c3a419"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuVFSAddFileSystem &ndash; adds a file system to the vfs list.  <br /></td></tr>
 <tr class="separator:a6bb7c22bb708eaa7704930c387c3a419"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0d1f986061b86265943b34863caebfe" id="r_ab0d1f986061b86265943b34863caebfe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8h.html#ab0d1f986061b86265943b34863caebfe">AuVFSRemoveFileSystem</a> (<a class="el" href="devclip_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *<a class="el" href="kthread_8h.html#af3fd9d829538e36331bf4a6fe7e6b7bc">node</a>)</td></tr>
+<tr class="memdesc:ab0d1f986061b86265943b34863caebfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuVFSRemoveFileSystem &ndash; detaches a file system from the VFS list without freeing the node. Used by unmount and surprise unplug, where the filesystem may still be referenced by open files.  <br /></td></tr>
+<tr class="separator:ab0d1f986061b86265943b34863caebfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4ab2cb66852c8ab2b034da9a9ee8131" id="r_aa4ab2cb66852c8ab2b034da9a9ee8131"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8h.html#aa4ab2cb66852c8ab2b034da9a9ee8131">AuVFSRegisterRoot</a> (<a class="el" href="devclip_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *fs)</td></tr>
 <tr class="memdesc:aa4ab2cb66852c8ab2b034da9a9ee8131"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuVFSRegisterRoot &ndash; register the root file system.  <br /></td></tr>
 <tr class="separator:aa4ab2cb66852c8ab2b034da9a9ee8131"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -303,6 +306,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a546b7ab0cb402d48ba679b9b052ead25" id="r_a546b7ab0cb402d48ba679b9b052ead25"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8h.html#a546b7ab0cb402d48ba679b9b052ead25">AuVFSPoll</a> (<a class="el" href="devclip_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *<a class="el" href="structfile.html">file</a>, <a class="el" href="structAuPollTable.html">AuPollTable</a> *<a class="el" href="structpt.html">pt</a>)</td></tr>
 <tr class="memdesc:a546b7ab0cb402d48ba679b9b052ead25"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuVFSPoll &ndash; poll callback interface.  <br /></td></tr>
 <tr class="separator:a546b7ab0cb402d48ba679b9b052ead25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefcbfcc012cd27717629b5aae162ed7b" id="r_aefcbfcc012cd27717629b5aae162ed7b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfs_8h.html#aefcbfcc012cd27717629b5aae162ed7b">AuVFSOwnFsys</a> (char *<a class="el" href="structpath.html">path</a>, <a class="el" href="user_8h.html#a158f59266d68ec49f2d89bac773e70ee">UID_NUM</a> uid, <a class="el" href="group_8h.html#a487dd0aecde7b311f15a556b1c2a3733">GID_NUM</a> gid)</td></tr>
+<tr class="memdesc:aefcbfcc012cd27717629b5aae162ed7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuVFSOwnFsys &ndash; give the capability to root process, to own the file system for specific user id and group id.  <br /></td></tr>
+<tr class="separator:aefcbfcc012cd27717629b5aae162ed7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>BSD 2-Clause License</p>
@@ -871,7 +877,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef int(* iocontrol_callback) (struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *<a class="el" href="structfile.html">file</a>, int code, void *<a class="el" href="unionarg.html">arg</a>)</td>
+          <td class="memname">typedef int(* iocontrol_callback) (struct <a class="el" href="struct____VFS__NODE____.html">__VFS_NODE__</a> *<a class="el" href="structfile.html">file</a>, int <a class="el" href="structcode.html">code</a>, void *<a class="el" href="unionarg.html">arg</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1479,6 +1485,53 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="aefcbfcc012cd27717629b5aae162ed7b" name="aefcbfcc012cd27717629b5aae162ed7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefcbfcc012cd27717629b5aae162ed7b">&#9670;&#160;</a></span>AuVFSOwnFsys()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> int AuVFSOwnFsys </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="user_8h.html#a158f59266d68ec49f2d89bac773e70ee">UID_NUM</a>&#160;</td>
+          <td class="paramname"><em>uid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group_8h.html#a487dd0aecde7b311f15a556b1c2a3733">GID_NUM</a>&#160;</td>
+          <td class="paramname"><em>gid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>AuVFSOwnFsys &ndash; give the capability to root process, to own the file system for specific user id and group id. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>&ndash; file system path </td></tr>
+    <tr><td class="paramname">uid</td><td>&ndash; User ID value </td></tr>
+    <tr><td class="paramname">gid</td><td>&ndash; Group ID value </td></tr>
+  </table>
+  </dd>
+</dl>
+<p>should also check process capabilities , but skipping for now</p>
+<p>check if the setting process is root than only proceed</p>
+<p>also should check the effective user id, if user account got a priviledge mode</p>
+
+</div>
+</div>
 <a id="a546b7ab0cb402d48ba679b9b052ead25" name="a546b7ab0cb402d48ba679b9b052ead25"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a546b7ab0cb402d48ba679b9b052ead25">&#9670;&#160;</a></span>AuVFSPoll()</h2>
 
@@ -1640,6 +1693,41 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, -1 on failure </dd></dl>
+
+</div>
+</div>
+<a id="ab0d1f986061b86265943b34863caebfe" name="ab0d1f986061b86265943b34863caebfe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0d1f986061b86265943b34863caebfe">&#9670;&#160;</a></span>AuVFSRemoveFileSystem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568">AU_EXTERN</a> <a class="el" href="BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28">AU_EXPORT</a> int AuVFSRemoveFileSystem </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="devclip_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *&#160;</td>
+          <td class="paramname"><em>node</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>AuVFSRemoveFileSystem &ndash; detaches a file system from the VFS list without freeing the node. Used by unmount and surprise unplug, where the filesystem may still be referenced by open files. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">node</td><td>&ndash; file system node to remove </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, -1 when the node is not in the list</dd></dl>
+<p>AuVFSRemoveFileSystem &ndash; detaches a file system from the VFS list without freeing the node. Used by unmount and surprise unplug, where the filesystem may still be referenced by open files.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">node</td><td>&ndash; file system node to remove </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, -1 when the node is not in the list </dd></dl>
 
 </div>
 </div>

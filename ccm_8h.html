@@ -158,34 +158,34 @@ Functions</h2></td></tr>
 <tr class="memitem:abaeb0629dfac72016fda58a4f7870040" id="r_abaeb0629dfac72016fda58a4f7870040"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ccm_8h.html#abaeb0629dfac72016fda58a4f7870040">mbedtls_ccm_init</a> (<a class="el" href="structmbedtls__ccm__context.html">mbedtls_ccm_context</a> *ctx)</td></tr>
 <tr class="memdesc:abaeb0629dfac72016fda58a4f7870040"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function initializes the specified CCM context, to make references valid, and prepare the context for <a class="el" href="ccm_8h.html#a464d8e724738b4bbd5b415ca0580f1b1" title="This function initializes the CCM context set in the ctx parameter and sets the encryption key.">mbedtls_ccm_setkey()</a> or <a class="el" href="ccm_8h.html#a2bd8130a83c6633a4dfd61b181cdabac" title="This function releases and clears the specified CCM context and underlying cipher sub-context.">mbedtls_ccm_free()</a>.  <br /></td></tr>
 <tr class="separator:abaeb0629dfac72016fda58a4f7870040"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a464d8e724738b4bbd5b415ca0580f1b1" id="r_a464d8e724738b4bbd5b415ca0580f1b1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ccm_8h.html#a464d8e724738b4bbd5b415ca0580f1b1">mbedtls_ccm_setkey</a> (<a class="el" href="structmbedtls__ccm__context.html">mbedtls_ccm_context</a> *ctx, <a class="el" href="cipher_8h.html#af5b069ffd0b2ad31225e42ee4ee29b1b">mbedtls_cipher_id_t</a> cipher, const unsigned char *key, unsigned int keybits)</td></tr>
+<tr class="memitem:a464d8e724738b4bbd5b415ca0580f1b1" id="r_a464d8e724738b4bbd5b415ca0580f1b1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ccm_8h.html#a464d8e724738b4bbd5b415ca0580f1b1">mbedtls_ccm_setkey</a> (<a class="el" href="structmbedtls__ccm__context.html">mbedtls_ccm_context</a> *ctx, <a class="el" href="cipher_8h.html#af5b069ffd0b2ad31225e42ee4ee29b1b">mbedtls_cipher_id_t</a> cipher, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *key, unsigned int keybits)</td></tr>
 <tr class="memdesc:a464d8e724738b4bbd5b415ca0580f1b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function initializes the CCM context set in the <code>ctx</code> parameter and sets the encryption key.  <br /></td></tr>
 <tr class="separator:a464d8e724738b4bbd5b415ca0580f1b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2bd8130a83c6633a4dfd61b181cdabac" id="r_a2bd8130a83c6633a4dfd61b181cdabac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ccm_8h.html#a2bd8130a83c6633a4dfd61b181cdabac">mbedtls_ccm_free</a> (<a class="el" href="structmbedtls__ccm__context.html">mbedtls_ccm_context</a> *ctx)</td></tr>
 <tr class="memdesc:a2bd8130a83c6633a4dfd61b181cdabac"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function releases and clears the specified CCM context and underlying cipher sub-context.  <br /></td></tr>
 <tr class="separator:a2bd8130a83c6633a4dfd61b181cdabac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0daa3a633f53e38434f207b733f8a021" id="r_a0daa3a633f53e38434f207b733f8a021"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ccm_8h.html#a0daa3a633f53e38434f207b733f8a021">mbedtls_ccm_encrypt_and_tag</a> (<a class="el" href="structmbedtls__ccm__context.html">mbedtls_ccm_context</a> *ctx, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> length, const unsigned char *iv, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> iv_len, const unsigned char *ad, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> ad_len, const unsigned char *<a class="el" href="virtiokbd_8c.html#ac7ea4a68c5710086113a183d16feaf8d">input</a>, unsigned char *output, unsigned char *tag, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> tag_len)</td></tr>
+<tr class="memitem:a0daa3a633f53e38434f207b733f8a021" id="r_a0daa3a633f53e38434f207b733f8a021"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ccm_8h.html#a0daa3a633f53e38434f207b733f8a021">mbedtls_ccm_encrypt_and_tag</a> (<a class="el" href="structmbedtls__ccm__context.html">mbedtls_ccm_context</a> *ctx, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> length, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *iv, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> iv_len, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *ad, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> ad_len, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *<a class="el" href="virtiokbd_8c.html#ac7ea4a68c5710086113a183d16feaf8d">input</a>, unsigned char *output, unsigned char *tag, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> tag_len)</td></tr>
 <tr class="memdesc:a0daa3a633f53e38434f207b733f8a021"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function encrypts a buffer using CCM.  <br /></td></tr>
 <tr class="separator:a0daa3a633f53e38434f207b733f8a021"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4def3eeb61067456d8bf985b3ac74423" id="r_a4def3eeb61067456d8bf985b3ac74423"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ccm_8h.html#a4def3eeb61067456d8bf985b3ac74423">mbedtls_ccm_star_encrypt_and_tag</a> (<a class="el" href="structmbedtls__ccm__context.html">mbedtls_ccm_context</a> *ctx, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> length, const unsigned char *iv, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> iv_len, const unsigned char *ad, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> ad_len, const unsigned char *<a class="el" href="virtiokbd_8c.html#ac7ea4a68c5710086113a183d16feaf8d">input</a>, unsigned char *output, unsigned char *tag, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> tag_len)</td></tr>
+<tr class="memitem:a4def3eeb61067456d8bf985b3ac74423" id="r_a4def3eeb61067456d8bf985b3ac74423"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ccm_8h.html#a4def3eeb61067456d8bf985b3ac74423">mbedtls_ccm_star_encrypt_and_tag</a> (<a class="el" href="structmbedtls__ccm__context.html">mbedtls_ccm_context</a> *ctx, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> length, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *iv, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> iv_len, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *ad, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> ad_len, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *<a class="el" href="virtiokbd_8c.html#ac7ea4a68c5710086113a183d16feaf8d">input</a>, unsigned char *output, unsigned char *tag, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> tag_len)</td></tr>
 <tr class="memdesc:a4def3eeb61067456d8bf985b3ac74423"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function encrypts a buffer using CCM*.  <br /></td></tr>
 <tr class="separator:a4def3eeb61067456d8bf985b3ac74423"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0ff3d905bed22ced98cb36768f8a61c" id="r_ad0ff3d905bed22ced98cb36768f8a61c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ccm_8h.html#ad0ff3d905bed22ced98cb36768f8a61c">mbedtls_ccm_auth_decrypt</a> (<a class="el" href="structmbedtls__ccm__context.html">mbedtls_ccm_context</a> *ctx, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> length, const unsigned char *iv, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> iv_len, const unsigned char *ad, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> ad_len, const unsigned char *<a class="el" href="virtiokbd_8c.html#ac7ea4a68c5710086113a183d16feaf8d">input</a>, unsigned char *output, const unsigned char *tag, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> tag_len)</td></tr>
+<tr class="memitem:ad0ff3d905bed22ced98cb36768f8a61c" id="r_ad0ff3d905bed22ced98cb36768f8a61c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ccm_8h.html#ad0ff3d905bed22ced98cb36768f8a61c">mbedtls_ccm_auth_decrypt</a> (<a class="el" href="structmbedtls__ccm__context.html">mbedtls_ccm_context</a> *ctx, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> length, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *iv, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> iv_len, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *ad, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> ad_len, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *<a class="el" href="virtiokbd_8c.html#ac7ea4a68c5710086113a183d16feaf8d">input</a>, unsigned char *output, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *tag, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> tag_len)</td></tr>
 <tr class="memdesc:ad0ff3d905bed22ced98cb36768f8a61c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function performs a CCM authenticated decryption of a buffer.  <br /></td></tr>
 <tr class="separator:ad0ff3d905bed22ced98cb36768f8a61c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c61f2a2da93df527a41088f122dc770" id="r_a3c61f2a2da93df527a41088f122dc770"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ccm_8h.html#a3c61f2a2da93df527a41088f122dc770">mbedtls_ccm_star_auth_decrypt</a> (<a class="el" href="structmbedtls__ccm__context.html">mbedtls_ccm_context</a> *ctx, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> length, const unsigned char *iv, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> iv_len, const unsigned char *ad, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> ad_len, const unsigned char *<a class="el" href="virtiokbd_8c.html#ac7ea4a68c5710086113a183d16feaf8d">input</a>, unsigned char *output, const unsigned char *tag, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> tag_len)</td></tr>
+<tr class="memitem:a3c61f2a2da93df527a41088f122dc770" id="r_a3c61f2a2da93df527a41088f122dc770"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ccm_8h.html#a3c61f2a2da93df527a41088f122dc770">mbedtls_ccm_star_auth_decrypt</a> (<a class="el" href="structmbedtls__ccm__context.html">mbedtls_ccm_context</a> *ctx, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> length, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *iv, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> iv_len, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *ad, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> ad_len, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *<a class="el" href="virtiokbd_8c.html#ac7ea4a68c5710086113a183d16feaf8d">input</a>, unsigned char *output, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *tag, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> tag_len)</td></tr>
 <tr class="memdesc:a3c61f2a2da93df527a41088f122dc770"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function performs a CCM* authenticated decryption of a buffer.  <br /></td></tr>
 <tr class="separator:a3c61f2a2da93df527a41088f122dc770"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a08a32baa1b039e829ba94fc656949a" id="r_a3a08a32baa1b039e829ba94fc656949a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ccm_8h.html#a3a08a32baa1b039e829ba94fc656949a">mbedtls_ccm_starts</a> (<a class="el" href="structmbedtls__ccm__context.html">mbedtls_ccm_context</a> *ctx, int <a class="el" href="treebuilder_8c.html#a2aa8bc6e431cc1e0cc602ac69a419095">mode</a>, const unsigned char *iv, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> iv_len)</td></tr>
+<tr class="memitem:a3a08a32baa1b039e829ba94fc656949a" id="r_a3a08a32baa1b039e829ba94fc656949a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ccm_8h.html#a3a08a32baa1b039e829ba94fc656949a">mbedtls_ccm_starts</a> (<a class="el" href="structmbedtls__ccm__context.html">mbedtls_ccm_context</a> *ctx, int <a class="el" href="treebuilder_8c.html#a2aa8bc6e431cc1e0cc602ac69a419095">mode</a>, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *iv, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> iv_len)</td></tr>
 <tr class="memdesc:a3a08a32baa1b039e829ba94fc656949a"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function starts a CCM encryption or decryption operation.  <br /></td></tr>
 <tr class="separator:a3a08a32baa1b039e829ba94fc656949a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f62d7bbb85c87fa36e0e05146011a24" id="r_a6f62d7bbb85c87fa36e0e05146011a24"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ccm_8h.html#a6f62d7bbb85c87fa36e0e05146011a24">mbedtls_ccm_set_lengths</a> (<a class="el" href="structmbedtls__ccm__context.html">mbedtls_ccm_context</a> *ctx, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> total_ad_len, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> plaintext_len, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> tag_len)</td></tr>
 <tr class="memdesc:a6f62d7bbb85c87fa36e0e05146011a24"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function declares the lengths of the message and additional data for a CCM encryption or decryption operation.  <br /></td></tr>
 <tr class="separator:a6f62d7bbb85c87fa36e0e05146011a24"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae7ccc303a05497aef322ce167965ddde" id="r_ae7ccc303a05497aef322ce167965ddde"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ccm_8h.html#ae7ccc303a05497aef322ce167965ddde">mbedtls_ccm_update_ad</a> (<a class="el" href="structmbedtls__ccm__context.html">mbedtls_ccm_context</a> *ctx, const unsigned char *ad, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> ad_len)</td></tr>
+<tr class="memitem:ae7ccc303a05497aef322ce167965ddde" id="r_ae7ccc303a05497aef322ce167965ddde"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ccm_8h.html#ae7ccc303a05497aef322ce167965ddde">mbedtls_ccm_update_ad</a> (<a class="el" href="structmbedtls__ccm__context.html">mbedtls_ccm_context</a> *ctx, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *ad, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> ad_len)</td></tr>
 <tr class="memdesc:ae7ccc303a05497aef322ce167965ddde"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function feeds an input buffer as associated data (authenticated but not encrypted data) in a CCM encryption or decryption operation.  <br /></td></tr>
 <tr class="separator:ae7ccc303a05497aef322ce167965ddde"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a726f83848c9706c9732524c450983e22" id="r_a726f83848c9706c9732524c450983e22"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ccm_8h.html#a726f83848c9706c9732524c450983e22">mbedtls_ccm_update</a> (<a class="el" href="structmbedtls__ccm__context.html">mbedtls_ccm_context</a> *ctx, const unsigned char *<a class="el" href="virtiokbd_8c.html#ac7ea4a68c5710086113a183d16feaf8d">input</a>, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> input_len, unsigned char *output, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> output_size, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> *output_len)</td></tr>
+<tr class="memitem:a726f83848c9706c9732524c450983e22" id="r_a726f83848c9706c9732524c450983e22"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ccm_8h.html#a726f83848c9706c9732524c450983e22">mbedtls_ccm_update</a> (<a class="el" href="structmbedtls__ccm__context.html">mbedtls_ccm_context</a> *ctx, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *<a class="el" href="virtiokbd_8c.html#ac7ea4a68c5710086113a183d16feaf8d">input</a>, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> input_len, unsigned char *output, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> output_size, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> *output_len)</td></tr>
 <tr class="memdesc:a726f83848c9706c9732524c450983e22"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function feeds an input buffer into an ongoing CCM encryption or decryption operation.  <br /></td></tr>
 <tr class="separator:a726f83848c9706c9732524c450983e22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c34e5498b66a8e11f3b3e8e0501ed50" id="r_a6c34e5498b66a8e11f3b3e8e0501ed50"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ccm_8h.html#a6c34e5498b66a8e11f3b3e8e0501ed50">mbedtls_ccm_finish</a> (<a class="el" href="structmbedtls__ccm__context.html">mbedtls_ccm_context</a> *ctx, unsigned char *tag, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> tag_len)</td></tr>
@@ -332,7 +332,7 @@ Nonce - A unique value that is assigned to the payload and the associated data.<
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *&#160;</td>
           <td class="paramname"><em>iv</em>, </td>
         </tr>
         <tr>
@@ -344,7 +344,7 @@ Nonce - A unique value that is assigned to the payload and the associated data.<
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *&#160;</td>
           <td class="paramname"><em>ad</em>, </td>
         </tr>
         <tr>
@@ -356,7 +356,7 @@ Nonce - A unique value that is assigned to the payload and the associated data.<
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *&#160;</td>
           <td class="paramname"><em>input</em>, </td>
         </tr>
         <tr>
@@ -368,7 +368,7 @@ Nonce - A unique value that is assigned to the payload and the associated data.<
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *&#160;</td>
           <td class="paramname"><em>tag</em>, </td>
         </tr>
         <tr>
@@ -430,7 +430,7 @@ A cipher-specific error code on calculation failure. </dd></dl>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *&#160;</td>
           <td class="paramname"><em>iv</em>, </td>
         </tr>
         <tr>
@@ -442,7 +442,7 @@ A cipher-specific error code on calculation failure. </dd></dl>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *&#160;</td>
           <td class="paramname"><em>ad</em>, </td>
         </tr>
         <tr>
@@ -454,7 +454,7 @@ A cipher-specific error code on calculation failure. </dd></dl>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *&#160;</td>
           <td class="paramname"><em>input</em>, </td>
         </tr>
         <tr>
@@ -684,7 +684,7 @@ A CCM or cipher-specific error code on failure. </dd></dl>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *&#160;</td>
           <td class="paramname"><em>key</em>, </td>
         </tr>
         <tr>
@@ -738,7 +738,7 @@ A CCM or cipher-specific error code on failure. </dd></dl>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *&#160;</td>
           <td class="paramname"><em>iv</em>, </td>
         </tr>
         <tr>
@@ -750,7 +750,7 @@ A CCM or cipher-specific error code on failure. </dd></dl>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *&#160;</td>
           <td class="paramname"><em>ad</em>, </td>
         </tr>
         <tr>
@@ -762,7 +762,7 @@ A CCM or cipher-specific error code on failure. </dd></dl>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *&#160;</td>
           <td class="paramname"><em>input</em>, </td>
         </tr>
         <tr>
@@ -774,7 +774,7 @@ A CCM or cipher-specific error code on failure. </dd></dl>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *&#160;</td>
           <td class="paramname"><em>tag</em>, </td>
         </tr>
         <tr>
@@ -838,7 +838,7 @@ A cipher-specific error code on calculation failure. </dd></dl>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *&#160;</td>
           <td class="paramname"><em>iv</em>, </td>
         </tr>
         <tr>
@@ -850,7 +850,7 @@ A cipher-specific error code on calculation failure. </dd></dl>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *&#160;</td>
           <td class="paramname"><em>ad</em>, </td>
         </tr>
         <tr>
@@ -862,7 +862,7 @@ A cipher-specific error code on calculation failure. </dd></dl>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *&#160;</td>
           <td class="paramname"><em>input</em>, </td>
         </tr>
         <tr>
@@ -938,7 +938,7 @@ A CCM or cipher-specific error code on failure. </dd></dl>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *&#160;</td>
           <td class="paramname"><em>iv</em>, </td>
         </tr>
         <tr>
@@ -988,7 +988,7 @@ A CCM or cipher-specific error code on failure. </dd></dl>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *&#160;</td>
           <td class="paramname"><em>input</em>, </td>
         </tr>
         <tr>
@@ -1066,7 +1066,7 @@ A CCM or cipher-specific error code on failure. </dd></dl>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *&#160;</td>
           <td class="paramname"><em>ad</em>, </td>
         </tr>
         <tr>

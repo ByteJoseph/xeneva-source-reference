@@ -89,10 +89,26 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#include &lt;<a class="code" href="vdisk_8h.html">Fs/vdisk.h</a>&gt;</span></div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#include &lt;<a class="code" href="process_8h.html">process.h</a>&gt;</span></div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="vfsmod_8h.html#a695c6af061a49ccbfd56f2b33b4116b2">   39</a></span><span class="preprocessor">#define VFS_ACCESS_EXEC  0x1 </span><span class="comment">/* x*/</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="vfsmod_8h.html#a8d342aec2c6e3ad24cfba0cb9285e2b3">   40</a></span><span class="preprocessor">#define VFS_ACCESS_WRITE 0x2 </span><span class="comment">/* w */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="vfsmod_8h.html#a178bddb49b78f2d1992fe552fdbec495">   41</a></span><span class="preprocessor">#define VFS_ACCESS_READ  0x4 </span><span class="comment">/* r */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="vfsmod_8h.html#aad7489970f3a9163a4b1587504f61823">   42</a></span><span class="preprocessor">#define VFS_ACCESS_RW    (VFS_ACCESS_READ | VFS_ACCESS_WRITE)</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="keyword">extern</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="vfsmod_8h.html#a4affcd1d7d96cc07cfda5c89a1938cc2">AuVFSCheckAccess</a>(<a class="code hl_struct" href="struct__au__proc__cred__.html">AuProcCredentials</a>* c, <a class="code hl_struct" href="struct____VFS__NODE____.html">AuVFSNode</a>* n, <span class="keywordtype">int</span> want);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="keyword">extern</span> <span class="keywordtype">int</span> <a class="code hl_function" href="vfsmod_8h.html#ac1ddac507877530bf4717ff33fc5da15">AuVFSChmodNode</a>(<a class="code hl_struct" href="struct____VFS__NODE____.html">AuVFSNode</a>* fs, <a class="code hl_struct" href="struct____VFS__NODE____.html">AuVFSNode</a>* <a class="code hl_struct" href="structfile.html">file</a>, <a class="code hl_typedef" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> <a class="code hl_define" href="treebuilder_8c.html#a2aa8bc6e431cc1e0cc602ac69a419095">mode</a>);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aacefiex_8h_html_adf4d876453337156dde61095e1f20223"><div class="ttname"><a href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a></div><div class="ttdeci">unsigned short int uint16_t</div><div class="ttdef"><b>Definition</b> acefiex.h:162</div></div>
 <div class="ttc" id="aprocess_8h_html"><div class="ttname"><a href="process_8h.html">process.h</a></div></div>
+<div class="ttc" id="astruct____VFS__NODE_____html"><div class="ttname"><a href="struct____VFS__NODE____.html">__VFS_NODE__</a></div><div class="ttdef"><b>Definition</b> vfs.h:129</div></div>
+<div class="ttc" id="astruct__au__proc__cred___html"><div class="ttname"><a href="struct__au__proc__cred__.html">_au_proc_cred_</a></div><div class="ttdef"><b>Definition</b> process.h:103</div></div>
+<div class="ttc" id="astructfile_html"><div class="ttname"><a href="structfile.html">file</a></div><div class="ttdef"><b>Definition</b> fs.h:142</div></div>
+<div class="ttc" id="atreebuilder_8c_html_a2aa8bc6e431cc1e0cc602ac69a419095"><div class="ttname"><a href="treebuilder_8c.html#a2aa8bc6e431cc1e0cc602ac69a419095">mode</a></div><div class="ttdeci">#define mode(x)</div></div>
 <div class="ttc" id="avdisk_8h_html"><div class="ttname"><a href="vdisk_8h.html">vdisk.h</a></div></div>
 <div class="ttc" id="avfs_8h_html"><div class="ttname"><a href="vfs_8h.html">vfs.h</a></div></div>
+<div class="ttc" id="avfsmod_8h_html_a4affcd1d7d96cc07cfda5c89a1938cc2"><div class="ttname"><a href="vfsmod_8h.html#a4affcd1d7d96cc07cfda5c89a1938cc2">AuVFSCheckAccess</a></div><div class="ttdeci">bool AuVFSCheckAccess(AuProcCredentials *c, AuVFSNode *n, int want)</div><div class="ttdef"><b>Definition</b> vfsmod.c:36</div></div>
+<div class="ttc" id="avfsmod_8h_html_ac1ddac507877530bf4717ff33fc5da15"><div class="ttname"><a href="vfsmod_8h.html#ac1ddac507877530bf4717ff33fc5da15">AuVFSChmodNode</a></div><div class="ttdeci">int AuVFSChmodNode(AuVFSNode *fs, AuVFSNode *file, uint16_t mode)</div><div class="ttdef"><b>Definition</b> vfsmod.c:49</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

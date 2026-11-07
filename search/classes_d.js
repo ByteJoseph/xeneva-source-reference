@@ -176,9 +176,10 @@ var searchData=
   ['mp4file_173',['Mp4File',['../structMp4File.html',1,'']]],
   ['mpb_5ft_174',['mpb_t',['../structmpb__t.html',1,'']]],
   ['mpoint_5ft_175',['mpoint_t',['../structmpoint__t.html',1,'']]],
-  ['music_5fmodule_5ft_176',['music_module_t',['../structmusic__module__t.html',1,'']]],
-  ['musicinfo_5ft_177',['musicinfo_t',['../structmusicinfo__t.html',1,'']]],
-  ['mutex_178',['mutex',['../structmutex.html',1,'']]],
-  ['mv_5ft_179',['mv_t',['../structmv__t.html',1,'']]],
-  ['mz_5fstream_5fs_180',['mz_stream_s',['../structmz__stream__s.html',1,'']]]
+  ['mscdisk_176',['MscDisk',['../structMscDisk.html',1,'']]],
+  ['music_5fmodule_5ft_177',['music_module_t',['../structmusic__module__t.html',1,'']]],
+  ['musicinfo_5ft_178',['musicinfo_t',['../structmusicinfo__t.html',1,'']]],
+  ['mutex_179',['mutex',['../structmutex.html',1,'']]],
+  ['mv_5ft_180',['mv_t',['../structmv__t.html',1,'']]],
+  ['mz_5fstream_5fs_181',['mz_stream_s',['../structmz__stream__s.html',1,'']]]
 ];

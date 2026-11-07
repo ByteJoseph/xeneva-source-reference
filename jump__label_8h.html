@@ -199,7 +199,7 @@ Macros</h2></td></tr>
 <tr class="separator:ae8254e92b2f37ca7b5c91370c294ef10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4686c9bb94efe34851c4900b6485f64d" id="r_a4686c9bb94efe34851c4900b6485f64d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jump__label_8h.html#a4686c9bb94efe34851c4900b6485f64d">static_branch_unlikely</a>(x)&#160;&#160;&#160;unlikely_notrace(<a class="el" href="jump__label_8h.html#a4ae47acc9b863b88beeb5baaef4a08c3">static_key_enabled</a>(&amp;(x)-&gt;key))</td></tr>
 <tr class="separator:a4686c9bb94efe34851c4900b6485f64d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a967489b2832b731daa6516361b11c620" id="r_a967489b2832b731daa6516361b11c620"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jump__label_8h.html#a967489b2832b731daa6516361b11c620">static_branch_maybe</a>(config,  x)</td></tr>
+<tr class="memitem:a967489b2832b731daa6516361b11c620" id="r_a967489b2832b731daa6516361b11c620"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jump__label_8h.html#a967489b2832b731daa6516361b11c620">static_branch_maybe</a>(<a class="el" href="deflate_8c.html#a2e56afa64412e0b968cb288a6d1278ba">config</a>,  x)</td></tr>
 <tr class="separator:a967489b2832b731daa6516361b11c620"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50ca6de56667fd74b9671d62a0b900ec" id="r_a50ca6de56667fd74b9671d62a0b900ec"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jump__label_8h.html#a50ca6de56667fd74b9671d62a0b900ec">static_branch_inc</a>(x)&#160;&#160;&#160;<a class="el" href="jump__label_8h.html#a8a1f83c2aa924f485642fa2bc2ba221b">static_key_slow_inc</a>(&amp;(x)-&gt;key)</td></tr>
 <tr class="separator:a50ca6de56667fd74b9671d62a0b900ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -790,7 +790,7 @@ Variables</h2></td></tr>
           <td class="memname">#define static_branch_maybe</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">config, </td>
+          <td class="paramname"><a class="el" href="deflate_8c.html#a2e56afa64412e0b968cb288a6d1278ba">config</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -805,11 +805,12 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">    (<a class="code hl_define" href="kconfig_8h.html#a2e3f1f46acb8ff1339122bf2bc09d30c">IS_ENABLED</a>(config) ? <a class="code hl_define" href="jump__label_8h.html#ae8254e92b2f37ca7b5c91370c294ef10">static_branch_likely</a>(x)           \</div>
+<b>Value:</b><div class="fragment"><div class="line">    (<a class="code hl_define" href="kconfig_8h.html#a2e3f1f46acb8ff1339122bf2bc09d30c">IS_ENABLED</a>(<a class="code hl_struct" href="structconfig__s.html">config</a>) ? <a class="code hl_define" href="jump__label_8h.html#ae8254e92b2f37ca7b5c91370c294ef10">static_branch_likely</a>(x)           \</div>
 <div class="line">                : <a class="code hl_define" href="jump__label_8h.html#a4686c9bb94efe34851c4900b6485f64d">static_branch_unlikely</a>(x))</div>
 <div class="ttc" id="ajump__label_8h_html_a4686c9bb94efe34851c4900b6485f64d"><div class="ttname"><a href="jump__label_8h.html#a4686c9bb94efe34851c4900b6485f64d">static_branch_unlikely</a></div><div class="ttdeci">#define static_branch_unlikely(x)</div><div class="ttdef"><b>Definition</b> jump_label.h:501</div></div>
 <div class="ttc" id="ajump__label_8h_html_ae8254e92b2f37ca7b5c91370c294ef10"><div class="ttname"><a href="jump__label_8h.html#ae8254e92b2f37ca7b5c91370c294ef10">static_branch_likely</a></div><div class="ttdeci">#define static_branch_likely(x)</div><div class="ttdef"><b>Definition</b> jump_label.h:500</div></div>
 <div class="ttc" id="akconfig_8h_html_a2e3f1f46acb8ff1339122bf2bc09d30c"><div class="ttname"><a href="kconfig_8h.html#a2e3f1f46acb8ff1339122bf2bc09d30c">IS_ENABLED</a></div><div class="ttdeci">#define IS_ENABLED(option)</div><div class="ttdef"><b>Definition</b> kconfig.h:80</div></div>
+<div class="ttc" id="astructconfig__s_html"><div class="ttname"><a href="structconfig__s.html">config_s</a></div><div class="ttdef"><b>Definition</b> deflate.c:98</div></div>
 </div><!-- fragment -->
 </div>
 </div>

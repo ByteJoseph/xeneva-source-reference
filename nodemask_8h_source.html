@@ -171,7 +171,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="preprocessor">#include &lt;<a class="code" href="threads_8h.html">linux/threads.h</a>&gt;</span></div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="preprocessor">#include &lt;<a class="code" href="bitmap_8h.html">linux/bitmap.h</a>&gt;</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="preprocessor">#include &lt;<a class="code" href="BaseHdr_2linux_2bitmap_8h.html">linux/bitmap.h</a>&gt;</span></div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="preprocessor">#include &lt;<a class="code" href="minmax_8h.html">linux/minmax.h</a>&gt;</span></div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="preprocessor">#include &lt;<a class="code" href="nodemask__types_8h.html">linux/nodemask_types.h</a>&gt;</span></div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="preprocessor">#include &lt;<a class="code" href="random_8h.html">linux/random.h</a>&gt;</span></div>
@@ -221,7 +221,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00142" name="l00142"></a><span class="lineno"><a class="line" href="nodemask_8h.html#a8a0f6fade2c3f6cc5fa9082374c16f21">  142</a></span><span class="preprocessor">#define nodes_clear(dst) __nodes_clear(&amp;(dst), MAX_NUMNODES)</span></div>
 <div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span><span class="keyword">static</span> <a class="code hl_define" href="compiler__attributes_8h.html#a6034e8cd4bcd5bacfd060abd01bbd8a8">__always_inline</a> <span class="keywordtype">void</span> __nodes_clear(<a class="code hl_struct" href="structnodemask__t.html">nodemask_t</a> *dstp, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> nbits)</div>
 <div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>{</div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>    <a class="code hl_define" href="bitmap_8h.html#abd288844dc4668cba01f90a927f48390">bitmap_zero</a>(dstp-&gt;bits, nbits);</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>    <a class="code hl_define" href="BaseHdr_2linux_2bitmap_8h.html#abd288844dc4668cba01f90a927f48390">bitmap_zero</a>(dstp-&gt;bits, nbits);</div>
 <div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>}</div>
 <div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span> </div>
 <div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span><span class="comment">/* No static inline type checking - see Subtlety (1) above. */</span></div>
@@ -233,7 +233,7 @@ $(document).ready(function() { init_codefold(0); });
 </div>
 <div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span><span class="keyword">static</span> <a class="code hl_define" href="compiler__attributes_8h.html#a6034e8cd4bcd5bacfd060abd01bbd8a8">__always_inline</a> <span class="keywordtype">bool</span> __node_test_and_set(<span class="keywordtype">int</span> <a class="code hl_variable" href="kthread_8h.html#af3fd9d829538e36331bf4a6fe7e6b7bc">node</a>, <a class="code hl_struct" href="structnodemask__t.html">nodemask_t</a> *addr)</div>
 <div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>{</div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>    <span class="keywordflow">return</span> <a class="code hl_define" href="bitmap_8h.html#aa946486de3da1066ae81d345200e485d">test_and_set_bit</a>(<a class="code hl_variable" href="kthread_8h.html#af3fd9d829538e36331bf4a6fe7e6b7bc">node</a>, addr-&gt;bits);</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>    <span class="keywordflow">return</span> <a class="code hl_define" href="BaseHdr_2linux_2bitmap_8h.html#aa946486de3da1066ae81d345200e485d">test_and_set_bit</a>(<a class="code hl_variable" href="kthread_8h.html#af3fd9d829538e36331bf4a6fe7e6b7bc">node</a>, addr-&gt;bits);</div>
 <div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>}</div>
 <div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span> </div>
 <div class="foldopen" id="foldopen00158" data-start="" data-end="">
@@ -280,7 +280,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span><span class="keyword">static</span> <a class="code hl_define" href="compiler__attributes_8h.html#a6034e8cd4bcd5bacfd060abd01bbd8a8">__always_inline</a> <span class="keywordtype">void</span> __nodes_copy(<a class="code hl_struct" href="structnodemask__t.html">nodemask_t</a> *dstp,</div>
 <div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>                    <span class="keyword">const</span> <a class="code hl_struct" href="structnodemask__t.html">nodemask_t</a> *srcp, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> nbits)</div>
 <div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>{</div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>    <a class="code hl_define" href="bitmap_8h.html#a39bc465062cd405cfdc24ee6d5778912">bitmap_copy</a>(dstp-&gt;bits, srcp-&gt;bits, nbits);</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>    <a class="code hl_define" href="BaseHdr_2linux_2bitmap_8h.html#a39bc465062cd405cfdc24ee6d5778912">bitmap_copy</a>(dstp-&gt;bits, srcp-&gt;bits, nbits);</div>
 <div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>}</div>
 <div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span> </div>
 <div class="foldopen" id="foldopen00197" data-start="" data-end="">
@@ -661,11 +661,11 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00538" name="l00538"></a><span class="lineno">  538</span> </div>
 <div class="line"><a id="l00539" name="l00539"></a><span class="lineno">  539</span> </div>
 <div class="line"><a id="l00540" name="l00540"></a><span class="lineno">  540</span><span class="preprocessor">#endif </span><span class="comment">/* __LINUX_NODEMASK_H */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="aBaseHdr_2linux_2bitmap_8h_html"><div class="ttname"><a href="BaseHdr_2linux_2bitmap_8h.html">bitmap.h</a></div></div>
+<div class="ttc" id="aBaseHdr_2linux_2bitmap_8h_html_a39bc465062cd405cfdc24ee6d5778912"><div class="ttname"><a href="BaseHdr_2linux_2bitmap_8h.html#a39bc465062cd405cfdc24ee6d5778912">bitmap_copy</a></div><div class="ttdeci">#define bitmap_copy(dst, src, nbits)</div><div class="ttdef"><b>Definition</b> bitmap.h:37</div></div>
+<div class="ttc" id="aBaseHdr_2linux_2bitmap_8h_html_aa946486de3da1066ae81d345200e485d"><div class="ttname"><a href="BaseHdr_2linux_2bitmap_8h.html#aa946486de3da1066ae81d345200e485d">test_and_set_bit</a></div><div class="ttdeci">#define test_and_set_bit(nr, addr)</div><div class="ttdef"><b>Definition</b> bitmap.h:28</div></div>
+<div class="ttc" id="aBaseHdr_2linux_2bitmap_8h_html_abd288844dc4668cba01f90a927f48390"><div class="ttname"><a href="BaseHdr_2linux_2bitmap_8h.html#abd288844dc4668cba01f90a927f48390">bitmap_zero</a></div><div class="ttdeci">#define bitmap_zero(dst, nbits)</div><div class="ttdef"><b>Definition</b> bitmap.h:34</div></div>
 <div class="ttc" id="aactypes_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="actypes_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition</b> actypes.h:561</div></div>
-<div class="ttc" id="abitmap_8h_html"><div class="ttname"><a href="bitmap_8h.html">bitmap.h</a></div></div>
-<div class="ttc" id="abitmap_8h_html_a39bc465062cd405cfdc24ee6d5778912"><div class="ttname"><a href="bitmap_8h.html#a39bc465062cd405cfdc24ee6d5778912">bitmap_copy</a></div><div class="ttdeci">#define bitmap_copy(dst, src, nbits)</div><div class="ttdef"><b>Definition</b> bitmap.h:37</div></div>
-<div class="ttc" id="abitmap_8h_html_aa946486de3da1066ae81d345200e485d"><div class="ttname"><a href="bitmap_8h.html#aa946486de3da1066ae81d345200e485d">test_and_set_bit</a></div><div class="ttdeci">#define test_and_set_bit(nr, addr)</div><div class="ttdef"><b>Definition</b> bitmap.h:28</div></div>
-<div class="ttc" id="abitmap_8h_html_abd288844dc4668cba01f90a927f48390"><div class="ttname"><a href="bitmap_8h.html#abd288844dc4668cba01f90a927f48390">bitmap_zero</a></div><div class="ttdeci">#define bitmap_zero(dst, nbits)</div><div class="ttdef"><b>Definition</b> bitmap.h:34</div></div>
 <div class="ttc" id="abitops_8h_html_a1672a87d9d374137e03703199af7fb94"><div class="ttname"><a href="bitops_8h.html#a1672a87d9d374137e03703199af7fb94">clear_bit</a></div><div class="ttdeci">#define clear_bit(nr, addr)</div><div class="ttdef"><b>Definition</b> bitops.h:136</div></div>
 <div class="ttc" id="abitops_8h_html_aa1092889a966f906260044e4291f4fce"><div class="ttname"><a href="bitops_8h.html#aa1092889a966f906260044e4291f4fce">set_bit</a></div><div class="ttdeci">#define set_bit(nr, addr)</div><div class="ttdef"><b>Definition</b> bitops.h:130</div></div>
 <div class="ttc" id="acompiler_8h_html_ace6f17999da4ea3b93c4227beafcab95"><div class="ttname"><a href="compiler_8h.html#ace6f17999da4ea3b93c4227beafcab95">__user</a></div><div class="ttdeci">#define __user</div><div class="ttdef"><b>Definition</b> compiler.h:63</div></div>

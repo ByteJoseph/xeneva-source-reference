@@ -30,5 +30,7 @@ var searchData=
   ['gud_5fstate_5freq_27',['gud_state_req',['../structgud__state__req.html',1,'']]],
   ['guid_28',['GUID',['../structGUID.html',1,'']]],
   ['guid_5ft_29',['guid_t',['../structguid__t.html',1,'']]],
-  ['gus_5fconfig_5ft_30',['gus_config_t',['../structgus__config__t.html',1,'']]]
+  ['gus_5fconfig_5ft_30',['gus_config_t',['../structgus__config__t.html',1,'']]],
+  ['gz_5fheader_5fs_31',['gz_header_s',['../structgz__header__s.html',1,'']]],
+  ['gzfile_5fs_32',['gzFile_s',['../structgzFile__s.html',1,'']]]
 ];

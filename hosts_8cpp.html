@@ -82,6 +82,7 @@ $(function() {
 <div class="contents">
 <div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
 <code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
 <code>#include &lt;sys/socket.h&gt;</code><br />
 <code>#include &lt;arpa/inet.h&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
@@ -89,15 +90,17 @@ Include dependency graph for hosts.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="hosts_8cpp__incl.png" border="0" usemap="#aXenevaOS_2Libs_2XEClib_2sys_2hosts_8cpp" alt=""/></div>
 <map name="aXenevaOS_2Libs_2XEClib_2sys_2hosts_8cpp" id="aXenevaOS_2Libs_2XEClib_2sys_2hosts_8cpp">
-<area shape="rect" title=" " alt="" coords="107,5,273,45"/>
+<area shape="rect" title=" " alt="" coords="146,5,311,45"/>
 <area shape="rect" title=" " alt="" coords="5,93,76,119"/>
-<area shape="poly" title=" " alt="" coords="155,48,76,89,74,84,153,43"/>
+<area shape="poly" title=" " alt="" coords="185,48,82,90,80,85,183,43"/>
 <area shape="rect" title=" " alt="" coords="100,93,171,119"/>
-<area shape="poly" title=" " alt="" coords="179,47,153,84,149,80,175,44"/>
-<area shape="rect" title=" " alt="" coords="195,93,297,119"/>
-<area shape="poly" title=" " alt="" coords="206,44,232,80,228,84,201,47"/>
-<area shape="rect" title=" " alt="" coords="321,93,413,119"/>
-<area shape="poly" title=" " alt="" coords="234,43,330,85,328,90,231,48"/>
+<area shape="poly" title=" " alt="" coords="208,48,162,86,158,82,204,44"/>
+<area shape="rect" title=" " alt="" coords="195,93,262,119"/>
+<area shape="poly" title=" " alt="" coords="231,46,231,79,226,79,226,46"/>
+<area shape="rect" title=" " alt="" coords="287,93,389,119"/>
+<area shape="poly" title=" " alt="" coords="257,43,312,83,309,87,254,48"/>
+<area shape="rect" title=" " alt="" coords="413,93,505,119"/>
+<area shape="poly" title=" " alt="" coords="285,43,413,86,412,91,283,48"/>
 </map>
 </div>
 </div><table class="memberdecls">
@@ -108,15 +111,33 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a73a7fffd9bfacfde69cad13268b0f225" id="r_a73a7fffd9bfacfde69cad13268b0f225"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hosts_8cpp.html#a73a7fffd9bfacfde69cad13268b0f225">XE_HOSTS_MAX</a>&#160;&#160;&#160;4</td></tr>
+<tr class="memitem:a73a7fffd9bfacfde69cad13268b0f225" id="r_a73a7fffd9bfacfde69cad13268b0f225"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hosts_8cpp.html#a73a7fffd9bfacfde69cad13268b0f225">XE_HOSTS_MAX</a>&#160;&#160;&#160;8</td></tr>
 <tr class="separator:a73a7fffd9bfacfde69cad13268b0f225"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fa7f159c10da6d9e25005be8a524475" id="r_a7fa7f159c10da6d9e25005be8a524475"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hosts_8cpp.html#a7fa7f159c10da6d9e25005be8a524475">XE_HOSTS_FILE_MAX</a>&#160;&#160;&#160;4096</td></tr>
+<tr class="separator:a7fa7f159c10da6d9e25005be8a524475"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a7cbf4b4fdae74ca13d2b2064570a05a4" id="r_a7cbf4b4fdae74ca13d2b2064570a05a4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hosts_8cpp.html#a7cbf4b4fdae74ca13d2b2064570a05a4">xe_hosts_lookup</a> (const char *<a class="el" href="drm__crtc_8h.html#aed88e009d7772dfc9026cb1f5492b458">name</a>, int *out_n, int *out_families, <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> out_addrs[][16], int maxn)</td></tr>
+<tr class="memitem:a7cbf4b4fdae74ca13d2b2064570a05a4" id="r_a7cbf4b4fdae74ca13d2b2064570a05a4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hosts_8cpp.html#a7cbf4b4fdae74ca13d2b2064570a05a4">xe_hosts_lookup</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *<a class="el" href="drm__crtc_8h.html#aed88e009d7772dfc9026cb1f5492b458">name</a>, int *out_n, int *out_families, <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> out_addrs[][16], int maxn)</td></tr>
 <tr class="separator:a7cbf4b4fdae74ca13d2b2064570a05a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22a69ba4c82ea92e638ccff3ddf6e6fa" id="r_a22a69ba4c82ea92e638ccff3ddf6e6fa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hosts_8cpp.html#a22a69ba4c82ea92e638ccff3ddf6e6fa">xe_hosts_reverse</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> void *addr, int family, char *<a class="el" href="Process_2wifictl_2main_8cpp.html#a50fe33eaae68b43814656f241a6ac907">out</a>, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> outsz)</td></tr>
+<tr class="separator:a22a69ba4c82ea92e638ccff3ddf6e6fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a7fa7f159c10da6d9e25005be8a524475" name="a7fa7f159c10da6d9e25005be8a524475"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fa7f159c10da6d9e25005be8a524475">&#9670;&#160;</a></span>XE_HOSTS_FILE_MAX</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define XE_HOSTS_FILE_MAX&#160;&#160;&#160;4096</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a73a7fffd9bfacfde69cad13268b0f225" name="a73a7fffd9bfacfde69cad13268b0f225"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a73a7fffd9bfacfde69cad13268b0f225">&#9670;&#160;</a></span>XE_HOSTS_MAX</h2>
 
@@ -124,7 +145,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define XE_HOSTS_MAX&#160;&#160;&#160;4</td>
+          <td class="memname">#define XE_HOSTS_MAX&#160;&#160;&#160;8</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -149,7 +170,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">int xe_hosts_lookup </td>
           <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
           <td class="paramname"><em>name</em>, </td>
         </tr>
         <tr>
@@ -183,7 +204,48 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>xe_hosts_lookup &ndash; resolve from the static XR/localhost table. </p><dl class="section return"><dt>Returns</dt><dd>1 hit (fills out_*), 0 not special (continue to DNS), -1 .localhost with no entry (fail locally, no upstream) </dd></dl>
+<p>xe_hosts_lookup &ndash; resolve from the static XR/localhost table and /hosts. </p><dl class="section return"><dt>Returns</dt><dd>1 hit (fills out_*), 0 not special (continue to DNS), -1 .localhost with no entry (fail locally, no upstream) </dd></dl>
+
+</div>
+</div>
+<a id="a22a69ba4c82ea92e638ccff3ddf6e6fa" name="a22a69ba4c82ea92e638ccff3ddf6e6fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22a69ba4c82ea92e638ccff3ddf6e6fa">&#9670;&#160;</a></span>xe_hosts_reverse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int xe_hosts_reverse </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> void *&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>family</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>&#160;</td>
+          <td class="paramname"><em>outsz</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>xe_hosts_reverse &ndash; map an address back to a name using the static table and /hosts. Returns 1 on a hit, 0 when the address is unknown. </p>
 
 </div>
 </div>

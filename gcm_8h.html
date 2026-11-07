@@ -170,22 +170,22 @@ Functions</h2></td></tr>
 <tr class="memitem:ac3f60a663c6b01ef6d977ac06aac57df" id="r_ac3f60a663c6b01ef6d977ac06aac57df"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gcm_8h.html#ac3f60a663c6b01ef6d977ac06aac57df">mbedtls_gcm_init</a> (<a class="el" href="structmbedtls__gcm__context.html">mbedtls_gcm_context</a> *ctx)</td></tr>
 <tr class="memdesc:ac3f60a663c6b01ef6d977ac06aac57df"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function initializes the specified GCM context, to make references valid, and prepares the context for <a class="el" href="gcm_8h.html#ae87d2c58882a11976fdc6a30f6f0ae6f" title="This function associates a GCM context with a cipher algorithm and a key.">mbedtls_gcm_setkey()</a> or <a class="el" href="gcm_8h.html#af09c2638d0ff09880517231df34d346f" title="This function clears a GCM context and the underlying cipher sub-context.">mbedtls_gcm_free()</a>.  <br /></td></tr>
 <tr class="separator:ac3f60a663c6b01ef6d977ac06aac57df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae87d2c58882a11976fdc6a30f6f0ae6f" id="r_ae87d2c58882a11976fdc6a30f6f0ae6f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gcm_8h.html#ae87d2c58882a11976fdc6a30f6f0ae6f">mbedtls_gcm_setkey</a> (<a class="el" href="structmbedtls__gcm__context.html">mbedtls_gcm_context</a> *ctx, <a class="el" href="cipher_8h.html#af5b069ffd0b2ad31225e42ee4ee29b1b">mbedtls_cipher_id_t</a> cipher, const unsigned char *key, unsigned int keybits)</td></tr>
+<tr class="memitem:ae87d2c58882a11976fdc6a30f6f0ae6f" id="r_ae87d2c58882a11976fdc6a30f6f0ae6f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gcm_8h.html#ae87d2c58882a11976fdc6a30f6f0ae6f">mbedtls_gcm_setkey</a> (<a class="el" href="structmbedtls__gcm__context.html">mbedtls_gcm_context</a> *ctx, <a class="el" href="cipher_8h.html#af5b069ffd0b2ad31225e42ee4ee29b1b">mbedtls_cipher_id_t</a> cipher, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *key, unsigned int keybits)</td></tr>
 <tr class="memdesc:ae87d2c58882a11976fdc6a30f6f0ae6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function associates a GCM context with a cipher algorithm and a key.  <br /></td></tr>
 <tr class="separator:ae87d2c58882a11976fdc6a30f6f0ae6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ad456f90f60211f72005dc815b808b5" id="r_a3ad456f90f60211f72005dc815b808b5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gcm_8h.html#a3ad456f90f60211f72005dc815b808b5">mbedtls_gcm_crypt_and_tag</a> (<a class="el" href="structmbedtls__gcm__context.html">mbedtls_gcm_context</a> *ctx, int <a class="el" href="treebuilder_8c.html#a2aa8bc6e431cc1e0cc602ac69a419095">mode</a>, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> length, const unsigned char *iv, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> iv_len, const unsigned char *add, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> add_len, const unsigned char *<a class="el" href="virtiokbd_8c.html#ac7ea4a68c5710086113a183d16feaf8d">input</a>, unsigned char *output, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> tag_len, unsigned char *tag)</td></tr>
+<tr class="memitem:a3ad456f90f60211f72005dc815b808b5" id="r_a3ad456f90f60211f72005dc815b808b5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gcm_8h.html#a3ad456f90f60211f72005dc815b808b5">mbedtls_gcm_crypt_and_tag</a> (<a class="el" href="structmbedtls__gcm__context.html">mbedtls_gcm_context</a> *ctx, int <a class="el" href="treebuilder_8c.html#a2aa8bc6e431cc1e0cc602ac69a419095">mode</a>, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> length, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *iv, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> iv_len, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *add, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> add_len, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *<a class="el" href="virtiokbd_8c.html#ac7ea4a68c5710086113a183d16feaf8d">input</a>, unsigned char *output, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> tag_len, unsigned char *tag)</td></tr>
 <tr class="memdesc:a3ad456f90f60211f72005dc815b808b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function performs GCM encryption or decryption of a buffer.  <br /></td></tr>
 <tr class="separator:a3ad456f90f60211f72005dc815b808b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af264b64b26c4720188b530cfccddb4ef" id="r_af264b64b26c4720188b530cfccddb4ef"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gcm_8h.html#af264b64b26c4720188b530cfccddb4ef">mbedtls_gcm_auth_decrypt</a> (<a class="el" href="structmbedtls__gcm__context.html">mbedtls_gcm_context</a> *ctx, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> length, const unsigned char *iv, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> iv_len, const unsigned char *add, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> add_len, const unsigned char *tag, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> tag_len, const unsigned char *<a class="el" href="virtiokbd_8c.html#ac7ea4a68c5710086113a183d16feaf8d">input</a>, unsigned char *output)</td></tr>
+<tr class="memitem:af264b64b26c4720188b530cfccddb4ef" id="r_af264b64b26c4720188b530cfccddb4ef"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gcm_8h.html#af264b64b26c4720188b530cfccddb4ef">mbedtls_gcm_auth_decrypt</a> (<a class="el" href="structmbedtls__gcm__context.html">mbedtls_gcm_context</a> *ctx, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> length, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *iv, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> iv_len, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *add, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> add_len, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *tag, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> tag_len, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *<a class="el" href="virtiokbd_8c.html#ac7ea4a68c5710086113a183d16feaf8d">input</a>, unsigned char *output)</td></tr>
 <tr class="memdesc:af264b64b26c4720188b530cfccddb4ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function performs a GCM authenticated decryption of a buffer.  <br /></td></tr>
 <tr class="separator:af264b64b26c4720188b530cfccddb4ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab4fc445b5f0c8d32d51c550efd19d00a" id="r_ab4fc445b5f0c8d32d51c550efd19d00a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gcm_8h.html#ab4fc445b5f0c8d32d51c550efd19d00a">mbedtls_gcm_starts</a> (<a class="el" href="structmbedtls__gcm__context.html">mbedtls_gcm_context</a> *ctx, int <a class="el" href="treebuilder_8c.html#a2aa8bc6e431cc1e0cc602ac69a419095">mode</a>, const unsigned char *iv, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> iv_len)</td></tr>
+<tr class="memitem:ab4fc445b5f0c8d32d51c550efd19d00a" id="r_ab4fc445b5f0c8d32d51c550efd19d00a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gcm_8h.html#ab4fc445b5f0c8d32d51c550efd19d00a">mbedtls_gcm_starts</a> (<a class="el" href="structmbedtls__gcm__context.html">mbedtls_gcm_context</a> *ctx, int <a class="el" href="treebuilder_8c.html#a2aa8bc6e431cc1e0cc602ac69a419095">mode</a>, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *iv, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> iv_len)</td></tr>
 <tr class="memdesc:ab4fc445b5f0c8d32d51c550efd19d00a"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function starts a GCM encryption or decryption operation.  <br /></td></tr>
 <tr class="separator:ab4fc445b5f0c8d32d51c550efd19d00a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa45cca22fcfad8eca56d5abae689282c" id="r_aa45cca22fcfad8eca56d5abae689282c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gcm_8h.html#aa45cca22fcfad8eca56d5abae689282c">mbedtls_gcm_update_ad</a> (<a class="el" href="structmbedtls__gcm__context.html">mbedtls_gcm_context</a> *ctx, const unsigned char *add, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> add_len)</td></tr>
+<tr class="memitem:aa45cca22fcfad8eca56d5abae689282c" id="r_aa45cca22fcfad8eca56d5abae689282c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gcm_8h.html#aa45cca22fcfad8eca56d5abae689282c">mbedtls_gcm_update_ad</a> (<a class="el" href="structmbedtls__gcm__context.html">mbedtls_gcm_context</a> *ctx, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *add, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> add_len)</td></tr>
 <tr class="memdesc:aa45cca22fcfad8eca56d5abae689282c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function feeds an input buffer as associated data (authenticated but not encrypted data) in a GCM encryption or decryption operation.  <br /></td></tr>
 <tr class="separator:aa45cca22fcfad8eca56d5abae689282c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a26c0bf4fe8227582e93be477e626ec32" id="r_a26c0bf4fe8227582e93be477e626ec32"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gcm_8h.html#a26c0bf4fe8227582e93be477e626ec32">mbedtls_gcm_update</a> (<a class="el" href="structmbedtls__gcm__context.html">mbedtls_gcm_context</a> *ctx, const unsigned char *<a class="el" href="virtiokbd_8c.html#ac7ea4a68c5710086113a183d16feaf8d">input</a>, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> input_length, unsigned char *output, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> output_size, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> *output_length)</td></tr>
+<tr class="memitem:a26c0bf4fe8227582e93be477e626ec32" id="r_a26c0bf4fe8227582e93be477e626ec32"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gcm_8h.html#a26c0bf4fe8227582e93be477e626ec32">mbedtls_gcm_update</a> (<a class="el" href="structmbedtls__gcm__context.html">mbedtls_gcm_context</a> *ctx, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *<a class="el" href="virtiokbd_8c.html#ac7ea4a68c5710086113a183d16feaf8d">input</a>, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> input_length, unsigned char *output, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> output_size, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> *output_length)</td></tr>
 <tr class="memdesc:a26c0bf4fe8227582e93be477e626ec32"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function feeds an input buffer into an ongoing GCM encryption or decryption operation.  <br /></td></tr>
 <tr class="separator:a26c0bf4fe8227582e93be477e626ec32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2deda922efc2119c70d4ab6f5b6dc1de" id="r_a2deda922efc2119c70d4ab6f5b6dc1de"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gcm_8h.html#a2deda922efc2119c70d4ab6f5b6dc1de">mbedtls_gcm_finish</a> (<a class="el" href="structmbedtls__gcm__context.html">mbedtls_gcm_context</a> *ctx, unsigned char *output, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> output_size, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> *output_length, unsigned char *tag, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> tag_len)</td></tr>
@@ -326,7 +326,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *&#160;</td>
           <td class="paramname"><em>iv</em>, </td>
         </tr>
         <tr>
@@ -338,7 +338,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *&#160;</td>
           <td class="paramname"><em>add</em>, </td>
         </tr>
         <tr>
@@ -350,7 +350,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *&#160;</td>
           <td class="paramname"><em>tag</em>, </td>
         </tr>
         <tr>
@@ -362,7 +362,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *&#160;</td>
           <td class="paramname"><em>input</em>, </td>
         </tr>
         <tr>
@@ -431,7 +431,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *&#160;</td>
           <td class="paramname"><em>iv</em>, </td>
         </tr>
         <tr>
@@ -443,7 +443,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *&#160;</td>
           <td class="paramname"><em>add</em>, </td>
         </tr>
         <tr>
@@ -455,7 +455,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *&#160;</td>
           <td class="paramname"><em>input</em>, </td>
         </tr>
         <tr>
@@ -660,7 +660,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *&#160;</td>
           <td class="paramname"><em>key</em>, </td>
         </tr>
         <tr>
@@ -722,7 +722,7 @@ A cipher-specific error code on failure. </dd></dl>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *&#160;</td>
           <td class="paramname"><em>iv</em>, </td>
         </tr>
         <tr>
@@ -768,7 +768,7 @@ A cipher-specific error code on failure. </dd></dl>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *&#160;</td>
           <td class="paramname"><em>input</em>, </td>
         </tr>
         <tr>
@@ -846,7 +846,7 @@ A cipher-specific error code on failure. </dd></dl>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *&#160;</td>
           <td class="paramname"><em>add</em>, </td>
         </tr>
         <tr>

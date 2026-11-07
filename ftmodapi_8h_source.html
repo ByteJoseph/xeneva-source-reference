@@ -357,7 +357,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>  <a class="code hl_define" href="ftconfig_8h.html#abb1f0cb171117bb94f204d09e6a89a6e">FT_EXPORT</a>( <a class="code hl_typedef" href="fttypes_8h.html#a64c8060bdb3d6eec844a1bf670e06bdd">FT_Error</a> )</div>
 <div class="line"><a id="l00274" name="l00274"></a><span class="lineno"><a class="line" href="ftmodapi_8h.html#a537c6119249420ea935f0e61cbee5079">  274</a></span>  <a class="code hl_function" href="ftmodapi_8h.html#a537c6119249420ea935f0e61cbee5079">FT_Add_Module</a>( <a class="code hl_struct" href="structFT__LibraryRec__.html">FT_Library</a>              library,</div>
-<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>                 const <a class="code hl_struct" href="structFT__Module__Class__.html">FT_Module_Class</a>*  clazz );</div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>                 <a class="code hl_define" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="code hl_struct" href="structFT__Module__Class__.html">FT_Module_Class</a>*  clazz );</div>
 <div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span> </div>
 <div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span> </div>
 <div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span><span class="comment">  /**************************************************************************</span></div>
@@ -384,7 +384,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>  <a class="code hl_define" href="ftconfig_8h.html#abb1f0cb171117bb94f204d09e6a89a6e">FT_EXPORT</a>( <a class="code hl_struct" href="structFT__ModuleRec__.html">FT_Module</a> )</div>
 <div class="line"><a id="l00301" name="l00301"></a><span class="lineno"><a class="line" href="ftmodapi_8h.html#a9aae78d37c4eadf2cd3c702ab138d3d1">  301</a></span>  <a class="code hl_function" href="ftmodapi_8h.html#a9aae78d37c4eadf2cd3c702ab138d3d1">FT_Get_Module</a>( <a class="code hl_struct" href="structFT__LibraryRec__.html">FT_Library</a>   library,</div>
-<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>                 const <span class="keywordtype">char</span>*  module_name );</div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>                 <a class="code hl_define" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <span class="keywordtype">char</span>*  module_name );</div>
 <div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span> </div>
 <div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span> </div>
 <div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span><span class="comment">  /**************************************************************************</span></div>
@@ -473,9 +473,9 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span>  <a class="code hl_define" href="ftconfig_8h.html#abb1f0cb171117bb94f204d09e6a89a6e">FT_EXPORT</a>( <a class="code hl_typedef" href="fttypes_8h.html#a64c8060bdb3d6eec844a1bf670e06bdd">FT_Error</a> )</div>
 <div class="line"><a id="l00390" name="l00390"></a><span class="lineno"><a class="line" href="ftmodapi_8h.html#ad4bbd0adde6836cd1794b89a4f88be01">  390</a></span>  <a class="code hl_function" href="ftmodapi_8h.html#ad4bbd0adde6836cd1794b89a4f88be01">FT_Property_Set</a>( <a class="code hl_struct" href="structFT__LibraryRec__.html">FT_Library</a>        library,</div>
-<div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span>                   const <a class="code hl_typedef" href="fttypes_8h.html#a9846214585359eb2ba6bbb0e6de30639">FT_String</a>*  module_name,</div>
-<div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span>                   const <a class="code hl_typedef" href="fttypes_8h.html#a9846214585359eb2ba6bbb0e6de30639">FT_String</a>*  property_name,</div>
-<div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span>                   const <span class="keywordtype">void</span>*       value );</div>
+<div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span>                   <a class="code hl_define" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="code hl_typedef" href="fttypes_8h.html#a9846214585359eb2ba6bbb0e6de30639">FT_String</a>*  module_name,</div>
+<div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span>                   <a class="code hl_define" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="code hl_typedef" href="fttypes_8h.html#a9846214585359eb2ba6bbb0e6de30639">FT_String</a>*  property_name,</div>
+<div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span>                   <a class="code hl_define" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <span class="keywordtype">void</span>*       value );</div>
 <div class="line"><a id="l00394" name="l00394"></a><span class="lineno">  394</span> </div>
 <div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span> </div>
 <div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span><span class="comment">  /**************************************************************************</span></div>
@@ -536,8 +536,8 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00451" name="l00451"></a><span class="lineno">  451</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00452" name="l00452"></a><span class="lineno">  452</span>  <a class="code hl_define" href="ftconfig_8h.html#abb1f0cb171117bb94f204d09e6a89a6e">FT_EXPORT</a>( <a class="code hl_typedef" href="fttypes_8h.html#a64c8060bdb3d6eec844a1bf670e06bdd">FT_Error</a> )</div>
 <div class="line"><a id="l00453" name="l00453"></a><span class="lineno"><a class="line" href="ftmodapi_8h.html#a2111d7b9722c3f52eaa2ea7db39c6c1c">  453</a></span>  <a class="code hl_function" href="ftmodapi_8h.html#a2111d7b9722c3f52eaa2ea7db39c6c1c">FT_Property_Get</a>( <a class="code hl_struct" href="structFT__LibraryRec__.html">FT_Library</a>        library,</div>
-<div class="line"><a id="l00454" name="l00454"></a><span class="lineno">  454</span>                   const <a class="code hl_typedef" href="fttypes_8h.html#a9846214585359eb2ba6bbb0e6de30639">FT_String</a>*  module_name,</div>
-<div class="line"><a id="l00455" name="l00455"></a><span class="lineno">  455</span>                   const <a class="code hl_typedef" href="fttypes_8h.html#a9846214585359eb2ba6bbb0e6de30639">FT_String</a>*  property_name,</div>
+<div class="line"><a id="l00454" name="l00454"></a><span class="lineno">  454</span>                   <a class="code hl_define" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="code hl_typedef" href="fttypes_8h.html#a9846214585359eb2ba6bbb0e6de30639">FT_String</a>*  module_name,</div>
+<div class="line"><a id="l00455" name="l00455"></a><span class="lineno">  455</span>                   <a class="code hl_define" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="code hl_typedef" href="fttypes_8h.html#a9846214585359eb2ba6bbb0e6de30639">FT_String</a>*  property_name,</div>
 <div class="line"><a id="l00456" name="l00456"></a><span class="lineno">  456</span>                   <span class="keywordtype">void</span>*             value );</div>
 <div class="line"><a id="l00457" name="l00457"></a><span class="lineno">  457</span> </div>
 <div class="line"><a id="l00458" name="l00458"></a><span class="lineno">  458</span> </div>
@@ -919,6 +919,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="ttc" id="astructFT__Module__Class___html_ab6e9c780519e24a51144df79692cf339"><div class="ttname"><a href="structFT__Module__Class__.html#ab6e9c780519e24a51144df79692cf339">FT_Module_Class_::module_done</a></div><div class="ttdeci">FT_Module_Destructor module_done</div><div class="ttdef"><b>Definition</b> ftmodapi.h:244</div></div>
 <div class="ttc" id="astructFT__Module__Class___html_af25b9e32b6c91e0c31560efb62886ed7"><div class="ttname"><a href="structFT__Module__Class__.html#af25b9e32b6c91e0c31560efb62886ed7">FT_Module_Class_::module_name</a></div><div class="ttdeci">const FT_String * module_name</div><div class="ttdef"><b>Definition</b> ftmodapi.h:237</div></div>
 <div class="ttc" id="aunionarg_html"><div class="ttname"><a href="unionarg.html">arg</a></div></div>
+<div class="ttc" id="azconf_8h_html_a2c212835823e3c54a8ab6d95c652660e"><div class="ttname"><a href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a></div><div class="ttdeci">#define const</div><div class="ttdef"><b>Definition</b> zconf.h:233</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

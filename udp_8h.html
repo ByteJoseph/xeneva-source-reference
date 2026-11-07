@@ -178,7 +178,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:aadc6419cfc5c54d8839662834266ba82"><td class="mdescLeft">&#160;</td><td class="mdescRight">UDPProtocolGetSockList &ndash; returns the socket list.  <br /></td></tr>
 <tr class="separator:aadc6419cfc5c54d8839662834266ba82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a169bc57ad1e69bc193b18dbd07012357" id="r_a169bc57ad1e69bc193b18dbd07012357"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8h.html#a169bc57ad1e69bc193b18dbd07012357">UDPHandlePacket</a> (char *packet)</td></tr>
-<tr class="memdesc:a169bc57ad1e69bc193b18dbd07012357"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuUDPHandlePacket &ndash; handle incoming packet.  <br /></td></tr>
+<tr class="memdesc:a169bc57ad1e69bc193b18dbd07012357"><td class="mdescLeft">&#160;</td><td class="mdescRight">UDPHandlePacket &ndash; queue one incoming IPv4 datagram for its socket.  <br /></td></tr>
 <tr class="separator:a169bc57ad1e69bc193b18dbd07012357"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a667de748a5235d302dc8fb4cc5bacbf8" id="r_a667de748a5235d302dc8fb4cc5bacbf8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8h.html#a667de748a5235d302dc8fb4cc5bacbf8">UDPHandlePacket6</a> (<a class="el" href="ipv6_8h.html#a20903fd0d87cbd29f3fa56aa9c40c6e7">IPv6Header</a> *ipv6)</td></tr>
 <tr class="separator:a667de748a5235d302dc8fb4cc5bacbf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -256,14 +256,13 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>AuUDPHandlePacket &ndash; handle incoming packet. </p>
+<p>UDPHandlePacket &ndash; queue one incoming IPv4 datagram for its socket. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">packet</td><td>&ndash; pointer to ipv4 packet </td></tr>
+    <tr><td class="paramname">packet</td><td>&ndash; pointer to IPv4 packet </td></tr>
   </table>
   </dd>
 </dl>
-<p>add it to its destination socket</p>
 
 </div>
 </div>

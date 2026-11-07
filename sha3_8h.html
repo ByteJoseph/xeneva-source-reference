@@ -258,19 +258,19 @@ Functions</h2></td></tr>
 <tr class="memitem:a59a5a94e5e9d5590898b667044709768" id="r_a59a5a94e5e9d5590898b667044709768"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sha3_8h.html#a59a5a94e5e9d5590898b667044709768">mbedtls_sha3_free</a> (<a class="el" href="structmbedtls__sha3__context.html">mbedtls_sha3_context</a> *ctx)</td></tr>
 <tr class="memdesc:a59a5a94e5e9d5590898b667044709768"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function clears a SHA-3 context.  <br /></td></tr>
 <tr class="separator:a59a5a94e5e9d5590898b667044709768"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6eb754baf4d1ae0ecd50029ed0f96136" id="r_a6eb754baf4d1ae0ecd50029ed0f96136"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sha3_8h.html#a6eb754baf4d1ae0ecd50029ed0f96136">mbedtls_sha3_clone</a> (<a class="el" href="structmbedtls__sha3__context.html">mbedtls_sha3_context</a> *dst, const <a class="el" href="structmbedtls__sha3__context.html">mbedtls_sha3_context</a> *src)</td></tr>
+<tr class="memitem:a6eb754baf4d1ae0ecd50029ed0f96136" id="r_a6eb754baf4d1ae0ecd50029ed0f96136"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sha3_8h.html#a6eb754baf4d1ae0ecd50029ed0f96136">mbedtls_sha3_clone</a> (<a class="el" href="structmbedtls__sha3__context.html">mbedtls_sha3_context</a> *dst, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="structmbedtls__sha3__context.html">mbedtls_sha3_context</a> *src)</td></tr>
 <tr class="memdesc:a6eb754baf4d1ae0ecd50029ed0f96136"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function clones the state of a SHA-3 context.  <br /></td></tr>
 <tr class="separator:a6eb754baf4d1ae0ecd50029ed0f96136"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:addbbc22d9f51994f04066016aab8db03" id="r_addbbc22d9f51994f04066016aab8db03"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sha3_8h.html#addbbc22d9f51994f04066016aab8db03">mbedtls_sha3_starts</a> (<a class="el" href="structmbedtls__sha3__context.html">mbedtls_sha3_context</a> *ctx, <a class="el" href="sha3_8h.html#aa0cd9a30649255fc92f6efc998848373">mbedtls_sha3_id</a> id)</td></tr>
 <tr class="memdesc:addbbc22d9f51994f04066016aab8db03"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function starts a SHA-3 checksum calculation.  <br /></td></tr>
 <tr class="separator:addbbc22d9f51994f04066016aab8db03"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1d3a02c602bd2257e73e3fa613dd7da" id="r_af1d3a02c602bd2257e73e3fa613dd7da"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sha3_8h.html#af1d3a02c602bd2257e73e3fa613dd7da">mbedtls_sha3_update</a> (<a class="el" href="structmbedtls__sha3__context.html">mbedtls_sha3_context</a> *ctx, const <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *<a class="el" href="virtiokbd_8c.html#ac7ea4a68c5710086113a183d16feaf8d">input</a>, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> ilen)</td></tr>
+<tr class="memitem:af1d3a02c602bd2257e73e3fa613dd7da" id="r_af1d3a02c602bd2257e73e3fa613dd7da"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sha3_8h.html#af1d3a02c602bd2257e73e3fa613dd7da">mbedtls_sha3_update</a> (<a class="el" href="structmbedtls__sha3__context.html">mbedtls_sha3_context</a> *ctx, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *<a class="el" href="virtiokbd_8c.html#ac7ea4a68c5710086113a183d16feaf8d">input</a>, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> ilen)</td></tr>
 <tr class="memdesc:af1d3a02c602bd2257e73e3fa613dd7da"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function feeds an input buffer into an ongoing SHA-3 checksum calculation.  <br /></td></tr>
 <tr class="separator:af1d3a02c602bd2257e73e3fa613dd7da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7c956b1d9b2d587495bd925f1435c3e" id="r_ab7c956b1d9b2d587495bd925f1435c3e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sha3_8h.html#ab7c956b1d9b2d587495bd925f1435c3e">mbedtls_sha3_finish</a> (<a class="el" href="structmbedtls__sha3__context.html">mbedtls_sha3_context</a> *ctx, <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *output, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> olen)</td></tr>
 <tr class="memdesc:ab7c956b1d9b2d587495bd925f1435c3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function finishes the SHA-3 operation, and writes the result to the output buffer.  <br /></td></tr>
 <tr class="separator:ab7c956b1d9b2d587495bd925f1435c3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe152687641398f99ad410adf7a45c43" id="r_abe152687641398f99ad410adf7a45c43"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sha3_8h.html#abe152687641398f99ad410adf7a45c43">mbedtls_sha3</a> (<a class="el" href="sha3_8h.html#aa0cd9a30649255fc92f6efc998848373">mbedtls_sha3_id</a> id, const <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *<a class="el" href="virtiokbd_8c.html#ac7ea4a68c5710086113a183d16feaf8d">input</a>, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> ilen, <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *output, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> olen)</td></tr>
+<tr class="memitem:abe152687641398f99ad410adf7a45c43" id="r_abe152687641398f99ad410adf7a45c43"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sha3_8h.html#abe152687641398f99ad410adf7a45c43">mbedtls_sha3</a> (<a class="el" href="sha3_8h.html#aa0cd9a30649255fc92f6efc998848373">mbedtls_sha3_id</a> id, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *<a class="el" href="virtiokbd_8c.html#ac7ea4a68c5710086113a183d16feaf8d">input</a>, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> ilen, <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *output, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> olen)</td></tr>
 <tr class="memdesc:abe152687641398f99ad410adf7a45c43"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function calculates the SHA-3 checksum of a buffer.  <br /></td></tr>
 <tr class="separator:abe152687641398f99ad410adf7a45c43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -338,7 +338,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
           <td class="paramname"><em>input</em>, </td>
         </tr>
         <tr>
@@ -401,7 +401,7 @@ A negative error code on failure. </dd></dl>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structmbedtls__sha3__context.html">mbedtls_sha3_context</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="structmbedtls__sha3__context.html">mbedtls_sha3_context</a> *&#160;</td>
           <td class="paramname"><em>src</em>&#160;</td>
         </tr>
         <tr>
@@ -577,7 +577,7 @@ A negative error code on failure. </dd></dl>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
           <td class="paramname"><em>input</em>, </td>
         </tr>
         <tr>

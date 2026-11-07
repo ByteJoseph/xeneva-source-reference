@@ -208,7 +208,7 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a9c254f7969369c684d962ad5e4e6220e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00ee0b6f8c7463ac6dc32bbfaa46d43c" id="r_a00ee0b6f8c7463ac6dc32bbfaa46d43c"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structuart__port.html#a00ee0b6f8c7463ac6dc32bbfaa46d43c">serial_out</a> )(struct <a class="el" href="structuart__port.html">uart_port</a> *, unsigned int <a class="el" href="drm__bridge_8h.html#ad5b30797981ed10bc3571a689a73eeac">offset</a>, <a class="el" href="linux_2kernel_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> val)</td></tr>
 <tr class="separator:a00ee0b6f8c7463ac6dc32bbfaa46d43c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aafc2a2a93345ab58ecd4c08ae832b98c" id="r_aafc2a2a93345ab58ecd4c08ae832b98c"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structuart__port.html#aafc2a2a93345ab58ecd4c08ae832b98c">set_termios</a> )(struct <a class="el" href="structuart__port.html">uart_port</a> *, struct <a class="el" href="structktermios.html">ktermios</a> *new, const struct <a class="el" href="structktermios.html">ktermios</a> *old)</td></tr>
+<tr class="memitem:aafc2a2a93345ab58ecd4c08ae832b98c" id="r_aafc2a2a93345ab58ecd4c08ae832b98c"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structuart__port.html#aafc2a2a93345ab58ecd4c08ae832b98c">set_termios</a> )(struct <a class="el" href="structuart__port.html">uart_port</a> *, struct <a class="el" href="structktermios.html">ktermios</a> *new, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct <a class="el" href="structktermios.html">ktermios</a> *old)</td></tr>
 <tr class="separator:aafc2a2a93345ab58ecd4c08ae832b98c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f2ac8aff38e047430c3c3f5b90426ae" id="r_a2f2ac8aff38e047430c3c3f5b90426ae"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structuart__port.html#a2f2ac8aff38e047430c3c3f5b90426ae">set_ldisc</a> )(struct <a class="el" href="structuart__port.html">uart_port</a> *, struct <a class="el" href="structktermios.html">ktermios</a> *)</td></tr>
 <tr class="separator:a2f2ac8aff38e047430c3c3f5b90426ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -282,7 +282,7 @@ Public Attributes</h2></td></tr>
 <tr class="separator:ab7f0acca36f38628d5186942e0734cef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e38092b5639682ae4aa08a0bf108c7f" id="r_a5e38092b5639682ae4aa08a0bf108c7f"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structuart__port.html#a5e38092b5639682ae4aa08a0bf108c7f">type</a></td></tr>
 <tr class="separator:a5e38092b5639682ae4aa08a0bf108c7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58b8b285e9981ef0ce3136282e4a5ceb" id="r_a58b8b285e9981ef0ce3136282e4a5ceb"><td class="memItemLeft" align="right" valign="top">const struct <a class="el" href="structuart__ops.html">uart_ops</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structuart__port.html#a58b8b285e9981ef0ce3136282e4a5ceb">ops</a></td></tr>
+<tr class="memitem:a58b8b285e9981ef0ce3136282e4a5ceb" id="r_a58b8b285e9981ef0ce3136282e4a5ceb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct <a class="el" href="structuart__ops.html">uart_ops</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structuart__port.html#a58b8b285e9981ef0ce3136282e4a5ceb">ops</a></td></tr>
 <tr class="separator:a58b8b285e9981ef0ce3136282e4a5ceb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae077fc6f7fe9713a22e0377d41ca7911" id="r_ae077fc6f7fe9713a22e0377d41ca7911"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structuart__port.html#ae077fc6f7fe9713a22e0377d41ca7911">custom_divisor</a></td></tr>
 <tr class="separator:ae077fc6f7fe9713a22e0377d41ca7911"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -312,11 +312,11 @@ Public Attributes</h2></td></tr>
 <tr class="separator:aba13ba8cf4613ab537cf7d3120353c36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac7ddf0a04f6e5d2646919141d5e3e85" id="r_aac7ddf0a04f6e5d2646919141d5e3e85"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structuart__port.html#aac7ddf0a04f6e5d2646919141d5e3e85">console_reinit</a></td></tr>
 <tr class="separator:aac7ddf0a04f6e5d2646919141d5e3e85"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa02d68f4be6b68ae386318f8dd7b3fe0" id="r_aa02d68f4be6b68ae386318f8dd7b3fe0"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structuart__port.html#aa02d68f4be6b68ae386318f8dd7b3fe0">name</a></td></tr>
+<tr class="memitem:aa02d68f4be6b68ae386318f8dd7b3fe0" id="r_aa02d68f4be6b68ae386318f8dd7b3fe0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structuart__port.html#aa02d68f4be6b68ae386318f8dd7b3fe0">name</a></td></tr>
 <tr class="separator:aa02d68f4be6b68ae386318f8dd7b3fe0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4443d9dbfe3fe4bc24111398be2abc79" id="r_a4443d9dbfe3fe4bc24111398be2abc79"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structattribute__group.html">attribute_group</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structuart__port.html#a4443d9dbfe3fe4bc24111398be2abc79">attr_group</a></td></tr>
 <tr class="separator:a4443d9dbfe3fe4bc24111398be2abc79"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1a573adfff7262af78988da4ca9415e" id="r_aa1a573adfff7262af78988da4ca9415e"><td class="memItemLeft" align="right" valign="top">const struct <a class="el" href="structattribute__group.html">attribute_group</a> **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structuart__port.html#aa1a573adfff7262af78988da4ca9415e">tty_groups</a></td></tr>
+<tr class="memitem:aa1a573adfff7262af78988da4ca9415e" id="r_aa1a573adfff7262af78988da4ca9415e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct <a class="el" href="structattribute__group.html">attribute_group</a> **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structuart__port.html#aa1a573adfff7262af78988da4ca9415e">tty_groups</a></td></tr>
 <tr class="separator:aa1a573adfff7262af78988da4ca9415e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af825184378bbb95f247d338bfc57dea9" id="r_af825184378bbb95f247d338bfc57dea9"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structserial__rs485.html">serial_rs485</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structuart__port.html#af825184378bbb95f247d338bfc57dea9">rs485</a></td></tr>
 <tr class="separator:af825184378bbb95f247d338bfc57dea9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -787,7 +787,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const char* uart_port::name</td>
+          <td class="memname"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char* uart_port::name</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -801,7 +801,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const struct <a class="el" href="structuart__ops.html">uart_ops</a>* uart_port::ops</td>
+          <td class="memname"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct <a class="el" href="structuart__ops.html">uart_ops</a>* uart_port::ops</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1053,7 +1053,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void(* uart_port::set_termios) (struct <a class="el" href="structuart__port.html">uart_port</a> *, struct <a class="el" href="structktermios.html">ktermios</a> *new, const struct <a class="el" href="structktermios.html">ktermios</a> *old)</td>
+          <td class="memname">void(* uart_port::set_termios) (struct <a class="el" href="structuart__port.html">uart_port</a> *, struct <a class="el" href="structktermios.html">ktermios</a> *new, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct <a class="el" href="structktermios.html">ktermios</a> *old)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1193,7 +1193,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const struct <a class="el" href="structattribute__group.html">attribute_group</a>** uart_port::tty_groups</td>
+          <td class="memname"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct <a class="el" href="structattribute__group.html">attribute_group</a>** uart_port::tty_groups</td>
         </tr>
       </table>
 </div><div class="memdoc">

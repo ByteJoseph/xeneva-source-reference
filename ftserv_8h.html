@@ -168,7 +168,7 @@ Macros</h2></td></tr>
 Typedefs</h2></td></tr>
 <tr class="memitem:a76173d362173dd707e5b0672a2188a1d" id="r_a76173d362173dd707e5b0672a2188a1d"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structFT__ServiceDescRec__.html">FT_ServiceDescRec_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ftserv_8h.html#a76173d362173dd707e5b0672a2188a1d">FT_ServiceDescRec</a></td></tr>
 <tr class="separator:a76173d362173dd707e5b0672a2188a1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae9ffc63fa7afa00dd1d69acc5c0f6d71" id="r_ae9ffc63fa7afa00dd1d69acc5c0f6d71"><td class="memItemLeft" align="right" valign="top">typedef const <a class="el" href="ftserv_8h.html#a76173d362173dd707e5b0672a2188a1d">FT_ServiceDescRec</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ftserv_8h.html#ae9ffc63fa7afa00dd1d69acc5c0f6d71">FT_ServiceDesc</a></td></tr>
+<tr class="memitem:ae9ffc63fa7afa00dd1d69acc5c0f6d71" id="r_ae9ffc63fa7afa00dd1d69acc5c0f6d71"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="ftserv_8h.html#a76173d362173dd707e5b0672a2188a1d">FT_ServiceDescRec</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ftserv_8h.html#ae9ffc63fa7afa00dd1d69acc5c0f6d71">FT_ServiceDesc</a></td></tr>
 <tr class="separator:ae9ffc63fa7afa00dd1d69acc5c0f6d71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a66d5ca8edd81f695c4018446f80e5be3" id="r_a66d5ca8edd81f695c4018446f80e5be3"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structFT__ServiceCacheRec__.html">FT_ServiceCacheRec_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ftserv_8h.html#a66d5ca8edd81f695c4018446f80e5be3">FT_ServiceCacheRec</a></td></tr>
 <tr class="separator:a66d5ca8edd81f695c4018446f80e5be3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -177,7 +177,7 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aec9a5aefeef799ff91ad8adf228242ab" id="r_aec9a5aefeef799ff91ad8adf228242ab"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ftserv_8h.html#aec9a5aefeef799ff91ad8adf228242ab">ft_service_list_lookup</a> (<a class="el" href="ftserv_8h.html#ae9ffc63fa7afa00dd1d69acc5c0f6d71">FT_ServiceDesc</a> service_descriptors, const char *service_id)</td></tr>
+<tr class="memitem:aec9a5aefeef799ff91ad8adf228242ab" id="r_aec9a5aefeef799ff91ad8adf228242ab"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ftserv_8h.html#aec9a5aefeef799ff91ad8adf228242ab">ft_service_list_lookup</a> (<a class="el" href="ftserv_8h.html#ae9ffc63fa7afa00dd1d69acc5c0f6d71">FT_ServiceDesc</a> service_descriptors, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *service_id)</td></tr>
 <tr class="separator:aec9a5aefeef799ff91ad8adf228242ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
@@ -199,9 +199,10 @@ Functions</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line">  <span class="keyword">typedef</span> <span class="keyword">struct </span>FT_Service_ ## <a class="code hl_variable" href="drm__crtc_8h.html#aed88e009d7772dfc9026cb1f5492b458">name</a> ## Rec_ \</div>
 <div class="line">    FT_Service_ ## <a class="code hl_variable" href="drm__crtc_8h.html#aed88e009d7772dfc9026cb1f5492b458">name</a> ## Rec ;             \</div>
 <div class="line">  <span class="keyword">typedef</span> <span class="keyword">struct </span>FT_Service_ ## <a class="code hl_variable" href="drm__crtc_8h.html#aed88e009d7772dfc9026cb1f5492b458">name</a> ## Rec_ \</div>
-<div class="line">    const * FT_Service_ ## <a class="code hl_variable" href="drm__crtc_8h.html#aed88e009d7772dfc9026cb1f5492b458">name</a> ;            \</div>
+<div class="line">    <a class="code hl_define" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> * FT_Service_ ## <a class="code hl_variable" href="drm__crtc_8h.html#aed88e009d7772dfc9026cb1f5492b458">name</a> ;            \</div>
 <div class="line">  <span class="keyword">struct </span>FT_Service_ ## <a class="code hl_variable" href="drm__crtc_8h.html#aed88e009d7772dfc9026cb1f5492b458">name</a> ## Rec_</div>
 <div class="ttc" id="adrm__crtc_8h_html_aed88e009d7772dfc9026cb1f5492b458"><div class="ttname"><a href="drm__crtc_8h.html#aed88e009d7772dfc9026cb1f5492b458">name</a></div><div class="ttdeci">struct drm_crtc struct drm_plane struct drm_plane const struct drm_crtc_funcs const char * name</div><div class="ttdef"><b>Definition</b> drm_crtc.h:1242</div></div>
+<div class="ttc" id="azconf_8h_html_a2c212835823e3c54a8ab6d95c652660e"><div class="ttname"><a href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a></div><div class="ttdeci">#define const</div><div class="ttdef"><b>Definition</b> zconf.h:233</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1652,7 +1653,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef const <a class="el" href="ftserv_8h.html#a76173d362173dd707e5b0672a2188a1d">FT_ServiceDescRec</a>* <a class="el" href="ftserv_8h.html#ae9ffc63fa7afa00dd1d69acc5c0f6d71">FT_ServiceDesc</a></td>
+          <td class="memname">typedef <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="ftserv_8h.html#a76173d362173dd707e5b0672a2188a1d">FT_ServiceDescRec</a>* <a class="el" href="ftserv_8h.html#ae9ffc63fa7afa00dd1d69acc5c0f6d71">FT_ServiceDesc</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1689,7 +1690,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
           <td class="paramname"><em>service_id</em>&#160;</td>
         </tr>
         <tr>

@@ -83,16 +83,19 @@ $(function() {
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="__xeneva_8h_source.html">_xeneva.h</a>&gt;</code><br />
 <code>#include &lt;stdint.h&gt;</code><br />
+<code>#include &lt;sys/types.h&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for _kefile.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="__kefile_8h__incl.png" border="0" usemap="#aXenevaOS_2Libs_2XEClib_2includes_2sys_2__kefile_8h" alt=""/></div>
 <map name="aXenevaOS_2Libs_2XEClib_2includes_2sys_2__kefile_8h" id="aXenevaOS_2Libs_2XEClib_2includes_2sys_2__kefile_8h">
-<area shape="rect" title=" " alt="" coords="19,5,184,45"/>
+<area shape="rect" title=" " alt="" coords="71,5,236,45"/>
 <area shape="rect" href="__xeneva_8h.html" title=" " alt="" coords="5,93,93,119"/>
-<area shape="poly" title=" " alt="" coords="91,47,67,83,62,80,87,44"/>
+<area shape="poly" title=" " alt="" coords="130,48,77,87,74,83,127,43"/>
 <area shape="rect" title=" " alt="" coords="118,93,189,119"/>
-<area shape="poly" title=" " alt="" coords="116,44,140,80,136,83,112,47"/>
+<area shape="poly" title=" " alt="" coords="156,46,156,79,151,79,151,46"/>
+<area shape="rect" title=" " alt="" coords="213,93,309,119"/>
+<area shape="poly" title=" " alt="" coords="181,43,235,83,232,87,178,48"/>
 <area shape="rect" href="Libs_2XEClib_2includes_2stdint_8h.html" title=" " alt="" coords="14,167,85,192"/>
 <area shape="poly" title=" " alt="" coords="52,119,52,153,47,153,47,119"/>
 <area shape="rect" href="size__t_8h.html" title=" " alt="" coords="13,240,85,265"/>
@@ -179,7 +182,7 @@ Functions</h2></td></tr>
 <tr class="separator:a8d6d1c5d4d38049308b035a7050bf681"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb747d44f895543f004cf3f23a5bd2bf" id="r_abb747d44f895543f004cf3f23a5bd2bf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="__xeneva_8h.html#a3640283d666d4a8b25a736424ee25866">XE_LIB</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__kefile_8h.html#abb747d44f895543f004cf3f23a5bd2bf">_KeCloseFile</a> (int <a class="el" href="structfd.html">fd</a>)</td></tr>
 <tr class="separator:abb747d44f895543f004cf3f23a5bd2bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1bf6c200c737370e64323c1a72b535ef" id="r_a1bf6c200c737370e64323c1a72b535ef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="__xeneva_8h.html#a3640283d666d4a8b25a736424ee25866">XE_LIB</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__kefile_8h.html#a1bf6c200c737370e64323c1a72b535ef">_KeFileIoControl</a> (int <a class="el" href="structfd.html">fd</a>, int code, void *<a class="el" href="unionarg.html">arg</a>)</td></tr>
+<tr class="memitem:a1bf6c200c737370e64323c1a72b535ef" id="r_a1bf6c200c737370e64323c1a72b535ef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="__xeneva_8h.html#a3640283d666d4a8b25a736424ee25866">XE_LIB</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__kefile_8h.html#a1bf6c200c737370e64323c1a72b535ef">_KeFileIoControl</a> (int <a class="el" href="structfd.html">fd</a>, int <a class="el" href="structcode.html">code</a>, void *<a class="el" href="unionarg.html">arg</a>)</td></tr>
 <tr class="separator:a1bf6c200c737370e64323c1a72b535ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73434d62ef5cfa4e99317d97b52722cc" id="r_a73434d62ef5cfa4e99317d97b52722cc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="__xeneva_8h.html#a3640283d666d4a8b25a736424ee25866">XE_LIB</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__kefile_8h.html#a73434d62ef5cfa4e99317d97b52722cc">_KeFileStat</a> (int <a class="el" href="structfd.html">fd</a>, void *buf)</td></tr>
 <tr class="separator:a73434d62ef5cfa4e99317d97b52722cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -195,6 +198,12 @@ Functions</h2></td></tr>
 <tr class="separator:ab6a971e7efbac55985000a36d5f5554d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d325eceb6376f5d8ceb954ab8f53f95" id="r_a2d325eceb6376f5d8ceb954ab8f53f95"><td class="memItemLeft" align="right" valign="top"><a class="el" href="__xeneva_8h.html#a3640283d666d4a8b25a736424ee25866">XE_LIB</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__kefile_8h.html#a2d325eceb6376f5d8ceb954ab8f53f95">_KeGetStoragePartitionInfo</a> (<a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> diskID, <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> partitionID, void *buffer)</td></tr>
 <tr class="separator:a2d325eceb6376f5d8ceb954ab8f53f95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ec320ff4d21c4725375e95e43e56ec1" id="r_a3ec320ff4d21c4725375e95e43e56ec1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="__xeneva_8h.html#a3640283d666d4a8b25a736424ee25866">XE_LIB</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__kefile_8h.html#a3ec320ff4d21c4725375e95e43e56ec1">_KeMount</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *<a class="el" href="drm__crtc_8h.html#aed88e009d7772dfc9026cb1f5492b458">name</a>)</td></tr>
+<tr class="separator:a3ec320ff4d21c4725375e95e43e56ec1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a582e0eb5c94b5090494aa6257edb5b96" id="r_a582e0eb5c94b5090494aa6257edb5b96"><td class="memItemLeft" align="right" valign="top"><a class="el" href="__xeneva_8h.html#a3640283d666d4a8b25a736424ee25866">XE_LIB</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__kefile_8h.html#a582e0eb5c94b5090494aa6257edb5b96">_KeUnmount</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *<a class="el" href="drm__crtc_8h.html#aed88e009d7772dfc9026cb1f5492b458">name</a>)</td></tr>
+<tr class="separator:a582e0eb5c94b5090494aa6257edb5b96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefc803f7571917d60ec88df2ebbc02ce" id="r_aefc803f7571917d60ec88df2ebbc02ce"><td class="memItemLeft" align="right" valign="top"><a class="el" href="__xeneva_8h.html#a3640283d666d4a8b25a736424ee25866">XE_LIB</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__kefile_8h.html#aefc803f7571917d60ec88df2ebbc02ce">_KeOwnFsys</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *<a class="el" href="structpath.html">path</a>, <a class="el" href="linux_2kernel_8h.html#af2306308627701b66dc6f3babe821ab4">uid_t</a> uid, <a class="el" href="linux_2kernel_8h.html#aa7352f1065fe606194d792e2b292cf83">gid_t</a> gid)</td></tr>
+<tr class="separator:aefc803f7571917d60ec88df2ebbc02ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>BSD 2-Clause License</p>
@@ -718,6 +727,24 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a3ec320ff4d21c4725375e95e43e56ec1" name="a3ec320ff4d21c4725375e95e43e56ec1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ec320ff4d21c4725375e95e43e56ec1">&#9670;&#160;</a></span>_KeMount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="__xeneva_8h.html#a3640283d666d4a8b25a736424ee25866">XE_LIB</a> int _KeMount </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ac0743154cb10fb577c25c15e74b21dbe" name="ac0743154cb10fb577c25c15e74b21dbe"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac0743154cb10fb577c25c15e74b21dbe">&#9670;&#160;</a></span>_KeOpenDir()</h2>
 
@@ -753,6 +780,40 @@ Functions</h2></td></tr>
           <td></td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>mode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aefc803f7571917d60ec88df2ebbc02ce" name="aefc803f7571917d60ec88df2ebbc02ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefc803f7571917d60ec88df2ebbc02ce">&#9670;&#160;</a></span>_KeOwnFsys()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="__xeneva_8h.html#a3640283d666d4a8b25a736424ee25866">XE_LIB</a> int _KeOwnFsys </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="linux_2kernel_8h.html#af2306308627701b66dc6f3babe821ab4">uid_t</a>&#160;</td>
+          <td class="paramname"><em>uid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="linux_2kernel_8h.html#aa7352f1065fe606194d792e2b292cf83">gid_t</a>&#160;</td>
+          <td class="paramname"><em>gid</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -837,6 +898,24 @@ Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">char *&#160;</td>
           <td class="paramname"><em>pathname</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a582e0eb5c94b5090494aa6257edb5b96" name="a582e0eb5c94b5090494aa6257edb5b96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a582e0eb5c94b5090494aa6257edb5b96">&#9670;&#160;</a></span>_KeUnmount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="__xeneva_8h.html#a3640283d666d4a8b25a736424ee25866">XE_LIB</a> int _KeUnmount </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
           <td></td>
         </tr>
       </table>

@@ -251,22 +251,22 @@ Functions</h2></td></tr>
 <tr class="memitem:a126091a4e884966454dca38c97770a24" id="r_a126091a4e884966454dca38c97770a24"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ports_2mbedtls_2include_2mbedtls_2sha1_8h.html#a126091a4e884966454dca38c97770a24">mbedtls_sha1_free</a> (<a class="el" href="structmbedtls__sha1__context.html">mbedtls_sha1_context</a> *ctx)</td></tr>
 <tr class="memdesc:a126091a4e884966454dca38c97770a24"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function clears a SHA-1 context.  <br /></td></tr>
 <tr class="separator:a126091a4e884966454dca38c97770a24"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d06f1cd6dc5b2849d08749eef1975f8" id="r_a1d06f1cd6dc5b2849d08749eef1975f8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ports_2mbedtls_2include_2mbedtls_2sha1_8h.html#a1d06f1cd6dc5b2849d08749eef1975f8">mbedtls_sha1_clone</a> (<a class="el" href="structmbedtls__sha1__context.html">mbedtls_sha1_context</a> *dst, const <a class="el" href="structmbedtls__sha1__context.html">mbedtls_sha1_context</a> *src)</td></tr>
+<tr class="memitem:a1d06f1cd6dc5b2849d08749eef1975f8" id="r_a1d06f1cd6dc5b2849d08749eef1975f8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ports_2mbedtls_2include_2mbedtls_2sha1_8h.html#a1d06f1cd6dc5b2849d08749eef1975f8">mbedtls_sha1_clone</a> (<a class="el" href="structmbedtls__sha1__context.html">mbedtls_sha1_context</a> *dst, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="structmbedtls__sha1__context.html">mbedtls_sha1_context</a> *src)</td></tr>
 <tr class="memdesc:a1d06f1cd6dc5b2849d08749eef1975f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function clones the state of a SHA-1 context.  <br /></td></tr>
 <tr class="separator:a1d06f1cd6dc5b2849d08749eef1975f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac514b3f4625a18e51de6247b685bacff" id="r_ac514b3f4625a18e51de6247b685bacff"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ports_2mbedtls_2include_2mbedtls_2sha1_8h.html#ac514b3f4625a18e51de6247b685bacff">mbedtls_sha1_starts</a> (<a class="el" href="structmbedtls__sha1__context.html">mbedtls_sha1_context</a> *ctx)</td></tr>
 <tr class="memdesc:ac514b3f4625a18e51de6247b685bacff"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function starts a SHA-1 checksum calculation.  <br /></td></tr>
 <tr class="separator:ac514b3f4625a18e51de6247b685bacff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a758d6771c5eb5b06ecc9ff303f4a2ef4" id="r_a758d6771c5eb5b06ecc9ff303f4a2ef4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ports_2mbedtls_2include_2mbedtls_2sha1_8h.html#a758d6771c5eb5b06ecc9ff303f4a2ef4">mbedtls_sha1_update</a> (<a class="el" href="structmbedtls__sha1__context.html">mbedtls_sha1_context</a> *ctx, const unsigned char *<a class="el" href="virtiokbd_8c.html#ac7ea4a68c5710086113a183d16feaf8d">input</a>, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> ilen)</td></tr>
+<tr class="memitem:a758d6771c5eb5b06ecc9ff303f4a2ef4" id="r_a758d6771c5eb5b06ecc9ff303f4a2ef4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ports_2mbedtls_2include_2mbedtls_2sha1_8h.html#a758d6771c5eb5b06ecc9ff303f4a2ef4">mbedtls_sha1_update</a> (<a class="el" href="structmbedtls__sha1__context.html">mbedtls_sha1_context</a> *ctx, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *<a class="el" href="virtiokbd_8c.html#ac7ea4a68c5710086113a183d16feaf8d">input</a>, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> ilen)</td></tr>
 <tr class="memdesc:a758d6771c5eb5b06ecc9ff303f4a2ef4"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function feeds an input buffer into an ongoing SHA-1 checksum calculation.  <br /></td></tr>
 <tr class="separator:a758d6771c5eb5b06ecc9ff303f4a2ef4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe51d24037e77d104abb28ee09052357" id="r_abe51d24037e77d104abb28ee09052357"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ports_2mbedtls_2include_2mbedtls_2sha1_8h.html#abe51d24037e77d104abb28ee09052357">mbedtls_sha1_finish</a> (<a class="el" href="structmbedtls__sha1__context.html">mbedtls_sha1_context</a> *ctx, unsigned char output[20])</td></tr>
 <tr class="memdesc:abe51d24037e77d104abb28ee09052357"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function finishes the SHA-1 operation, and writes the result to the output buffer.  <br /></td></tr>
 <tr class="separator:abe51d24037e77d104abb28ee09052357"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a691c38288ec5d507269f95f7eed2c1e0" id="r_a691c38288ec5d507269f95f7eed2c1e0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ports_2mbedtls_2include_2mbedtls_2sha1_8h.html#a691c38288ec5d507269f95f7eed2c1e0">mbedtls_internal_sha1_process</a> (<a class="el" href="structmbedtls__sha1__context.html">mbedtls_sha1_context</a> *ctx, const unsigned char <a class="el" href="kthread_8h.html#a735984d41155bc1032e09bece8f8d66d">data</a>[64])</td></tr>
+<tr class="memitem:a691c38288ec5d507269f95f7eed2c1e0" id="r_a691c38288ec5d507269f95f7eed2c1e0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ports_2mbedtls_2include_2mbedtls_2sha1_8h.html#a691c38288ec5d507269f95f7eed2c1e0">mbedtls_internal_sha1_process</a> (<a class="el" href="structmbedtls__sha1__context.html">mbedtls_sha1_context</a> *ctx, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char <a class="el" href="kthread_8h.html#a735984d41155bc1032e09bece8f8d66d">data</a>[64])</td></tr>
 <tr class="memdesc:a691c38288ec5d507269f95f7eed2c1e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">SHA-1 process data block (internal use only).  <br /></td></tr>
 <tr class="separator:a691c38288ec5d507269f95f7eed2c1e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa70ce41a571d2a6e4aef6a755fcc7f4a" id="r_aa70ce41a571d2a6e4aef6a755fcc7f4a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ports_2mbedtls_2include_2mbedtls_2sha1_8h.html#aa70ce41a571d2a6e4aef6a755fcc7f4a">mbedtls_sha1</a> (const unsigned char *<a class="el" href="virtiokbd_8c.html#ac7ea4a68c5710086113a183d16feaf8d">input</a>, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> ilen, unsigned char output[20])</td></tr>
+<tr class="memitem:aa70ce41a571d2a6e4aef6a755fcc7f4a" id="r_aa70ce41a571d2a6e4aef6a755fcc7f4a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ports_2mbedtls_2include_2mbedtls_2sha1_8h.html#aa70ce41a571d2a6e4aef6a755fcc7f4a">mbedtls_sha1</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *<a class="el" href="virtiokbd_8c.html#ac7ea4a68c5710086113a183d16feaf8d">input</a>, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> ilen, unsigned char output[20])</td></tr>
 <tr class="memdesc:aa70ce41a571d2a6e4aef6a755fcc7f4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function calculates the SHA-1 checksum of a buffer.  <br /></td></tr>
 <tr class="separator:aa70ce41a571d2a6e4aef6a755fcc7f4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -324,7 +324,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const unsigned char&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char&#160;</td>
           <td class="paramname"><em>data</em>[64]&#160;</td>
         </tr>
         <tr>
@@ -359,7 +359,7 @@ A negative error code on failure. </dd></dl>
         <tr>
           <td class="memname">int mbedtls_sha1 </td>
           <td>(</td>
-          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *&#160;</td>
           <td class="paramname"><em>input</em>, </td>
         </tr>
         <tr>
@@ -418,7 +418,7 @@ A negative error code on failure. </dd></dl>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structmbedtls__sha1__context.html">mbedtls_sha1_context</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="structmbedtls__sha1__context.html">mbedtls_sha1_context</a> *&#160;</td>
           <td class="paramname"><em>src</em>&#160;</td>
         </tr>
         <tr>
@@ -581,7 +581,7 @@ A negative error code on failure. </dd></dl>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *&#160;</td>
           <td class="paramname"><em>input</em>, </td>
         </tr>
         <tr>

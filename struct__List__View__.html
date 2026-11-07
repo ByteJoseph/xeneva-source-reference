@@ -155,6 +155,12 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a465b4ec4149558ac11d0ccc34c8fa3b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae82f2dabcfa609ef42c87335e5c39fb2" id="r_ae82f2dabcfa609ef42c87335e5c39fb2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__List__View__.html#ae82f2dabcfa609ef42c87335e5c39fb2">force_full_redraw</a></td></tr>
 <tr class="separator:ae82f2dabcfa609ef42c87335e5c39fb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33d0779d9cc7485f68aec2b304b155ec" id="r_a33d0779d9cc7485f68aec2b304b155ec"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__List__View__.html#a33d0779d9cc7485f68aec2b304b155ec">onItemAction</a> )(struct <a class="el" href="struct__List__View__.html">_List_View_</a> *lv, int <a class="el" href="Libs_2XEClib_2includes_2string_8h.html#a48b8e98743833e6ce735f3d9f2fb240f">index</a>, <a class="el" href="listview_8h.html#a1dbf0cd1ac1781b555ae710be65ee390">ListItem</a> *<a class="el" href="struct__List__View__.html#a7447e29461f20d9a8a1ac904d458fe79">item</a>)</td></tr>
+<tr class="separator:a33d0779d9cc7485f68aec2b304b155ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89f6744069faa3641c27167eda7d775c" id="r_a89f6744069faa3641c27167eda7d775c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__List__View__.html#a89f6744069faa3641c27167eda7d775c">last_click_tick</a></td></tr>
+<tr class="separator:a89f6744069faa3641c27167eda7d775c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b48f5f193273ae1bad57a1b65e5d94c" id="r_a8b48f5f193273ae1bad57a1b65e5d94c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__List__View__.html#a8b48f5f193273ae1bad57a1b65e5d94c">last_click_row</a></td></tr>
+<tr class="separator:a8b48f5f193273ae1bad57a1b65e5d94c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="a0e6313804656911d4aaa3841b7ec308f" name="a0e6313804656911d4aaa3841b7ec308f"></a>
@@ -361,6 +367,48 @@ Public Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">int _List_View_::itemHeight</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8b48f5f193273ae1bad57a1b65e5d94c" name="a8b48f5f193273ae1bad57a1b65e5d94c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b48f5f193273ae1bad57a1b65e5d94c">&#9670;&#160;</a></span>last_click_row</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int _List_View_::last_click_row</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a89f6744069faa3641c27167eda7d775c" name="a89f6744069faa3641c27167eda7d775c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89f6744069faa3641c27167eda7d775c">&#9670;&#160;</a></span>last_click_tick</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> _List_View_::last_click_tick</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a33d0779d9cc7485f68aec2b304b155ec" name="a33d0779d9cc7485f68aec2b304b155ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33d0779d9cc7485f68aec2b304b155ec">&#9670;&#160;</a></span>onItemAction</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void(* _List_View_::onItemAction) (struct <a class="el" href="struct__List__View__.html">_List_View_</a> *lv, int <a class="el" href="Libs_2XEClib_2includes_2string_8h.html#a48b8e98743833e6ce735f3d9f2fb240f">index</a>, <a class="el" href="listview_8h.html#a1dbf0cd1ac1781b555ae710be65ee390">ListItem</a> *<a class="el" href="struct__List__View__.html#a7447e29461f20d9a8a1ac904d458fe79">item</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">

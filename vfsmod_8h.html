@@ -73,6 +73,9 @@ $(function() {
 </div>
 </div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">vfsmod.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -152,13 +155,180 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="vfsmod_8h__dep__incl.png" border="0" usemap="#aXenevaOS_2BaseHdr_2Fs_2vfsmod_8hdep" alt=""/></div>
 <map name="aXenevaOS_2BaseHdr_2Fs_2vfsmod_8hdep" id="aXenevaOS_2BaseHdr_2Fs_2vfsmod_8hdep">
-<area shape="rect" title=" " alt="" coords="6,5,173,45"/>
+<area shape="rect" title=" " alt="" coords="294,5,461,45"/>
 <area shape="rect" href="vfsmod_8c.html" title=" " alt="" coords="5,93,173,133"/>
-<area shape="poly" title=" " alt="" coords="92,59,92,93,87,93,87,59"/>
+<area shape="poly" title=" " alt="" coords="302,52,153,96,152,91,300,47"/>
+<area shape="rect" href="systable_8c.html" title=" " alt="" coords="197,93,365,133"/>
+<area shape="poly" title=" " alt="" coords="347,57,304,95,301,91,344,53"/>
+<area shape="rect" href="fileserv_8c.html" title=" " alt="" coords="389,93,557,133"/>
+<area shape="poly" title=" " alt="" coords="411,53,454,91,450,95,407,57"/>
+<area shape="rect" href="loader_8c.html" title=" " alt="" coords="581,93,749,133"/>
+<area shape="poly" title=" " alt="" coords="455,47,603,91,602,96,453,52"/>
 </map>
 </div>
 </div>
 <p><a href="vfsmod_8h_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a695c6af061a49ccbfd56f2b33b4116b2" id="r_a695c6af061a49ccbfd56f2b33b4116b2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfsmod_8h.html#a695c6af061a49ccbfd56f2b33b4116b2">VFS_ACCESS_EXEC</a>&#160;&#160;&#160;0x1 /* x*/</td></tr>
+<tr class="separator:a695c6af061a49ccbfd56f2b33b4116b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d342aec2c6e3ad24cfba0cb9285e2b3" id="r_a8d342aec2c6e3ad24cfba0cb9285e2b3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfsmod_8h.html#a8d342aec2c6e3ad24cfba0cb9285e2b3">VFS_ACCESS_WRITE</a>&#160;&#160;&#160;0x2 /* w */</td></tr>
+<tr class="separator:a8d342aec2c6e3ad24cfba0cb9285e2b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a178bddb49b78f2d1992fe552fdbec495" id="r_a178bddb49b78f2d1992fe552fdbec495"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfsmod_8h.html#a178bddb49b78f2d1992fe552fdbec495">VFS_ACCESS_READ</a>&#160;&#160;&#160;0x4 /* r */</td></tr>
+<tr class="separator:a178bddb49b78f2d1992fe552fdbec495"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad7489970f3a9163a4b1587504f61823" id="r_aad7489970f3a9163a4b1587504f61823"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfsmod_8h.html#aad7489970f3a9163a4b1587504f61823">VFS_ACCESS_RW</a>&#160;&#160;&#160;(<a class="el" href="vfsmod_8h.html#a178bddb49b78f2d1992fe552fdbec495">VFS_ACCESS_READ</a> | <a class="el" href="vfsmod_8h.html#a8d342aec2c6e3ad24cfba0cb9285e2b3">VFS_ACCESS_WRITE</a>)</td></tr>
+<tr class="separator:aad7489970f3a9163a4b1587504f61823"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a4affcd1d7d96cc07cfda5c89a1938cc2" id="r_a4affcd1d7d96cc07cfda5c89a1938cc2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfsmod_8h.html#a4affcd1d7d96cc07cfda5c89a1938cc2">AuVFSCheckAccess</a> (<a class="el" href="process_8h.html#acbc5fb691c345803a45de43b7debcd58">AuProcCredentials</a> *c, <a class="el" href="devclip_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *n, int want)</td></tr>
+<tr class="separator:a4affcd1d7d96cc07cfda5c89a1938cc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1ddac507877530bf4717ff33fc5da15" id="r_ac1ddac507877530bf4717ff33fc5da15"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vfsmod_8h.html#ac1ddac507877530bf4717ff33fc5da15">AuVFSChmodNode</a> (<a class="el" href="devclip_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *fs, <a class="el" href="devclip_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *<a class="el" href="structfile.html">file</a>, <a class="el" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a> <a class="el" href="treebuilder_8c.html#a2aa8bc6e431cc1e0cc602ac69a419095">mode</a>)</td></tr>
+<tr class="separator:ac1ddac507877530bf4717ff33fc5da15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a695c6af061a49ccbfd56f2b33b4116b2" name="a695c6af061a49ccbfd56f2b33b4116b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a695c6af061a49ccbfd56f2b33b4116b2">&#9670;&#160;</a></span>VFS_ACCESS_EXEC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define VFS_ACCESS_EXEC&#160;&#160;&#160;0x1 /* x*/</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a178bddb49b78f2d1992fe552fdbec495" name="a178bddb49b78f2d1992fe552fdbec495"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a178bddb49b78f2d1992fe552fdbec495">&#9670;&#160;</a></span>VFS_ACCESS_READ</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define VFS_ACCESS_READ&#160;&#160;&#160;0x4 /* r */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aad7489970f3a9163a4b1587504f61823" name="aad7489970f3a9163a4b1587504f61823"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad7489970f3a9163a4b1587504f61823">&#9670;&#160;</a></span>VFS_ACCESS_RW</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define VFS_ACCESS_RW&#160;&#160;&#160;(<a class="el" href="vfsmod_8h.html#a178bddb49b78f2d1992fe552fdbec495">VFS_ACCESS_READ</a> | <a class="el" href="vfsmod_8h.html#a8d342aec2c6e3ad24cfba0cb9285e2b3">VFS_ACCESS_WRITE</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8d342aec2c6e3ad24cfba0cb9285e2b3" name="a8d342aec2c6e3ad24cfba0cb9285e2b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d342aec2c6e3ad24cfba0cb9285e2b3">&#9670;&#160;</a></span>VFS_ACCESS_WRITE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define VFS_ACCESS_WRITE&#160;&#160;&#160;0x2 /* w */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a4affcd1d7d96cc07cfda5c89a1938cc2" name="a4affcd1d7d96cc07cfda5c89a1938cc2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4affcd1d7d96cc07cfda5c89a1938cc2">&#9670;&#160;</a></span>AuVFSCheckAccess()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="BaseHdr_2stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> AuVFSCheckAccess </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="process_8h.html#acbc5fb691c345803a45de43b7debcd58">AuProcCredentials</a> *&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="devclip_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>want</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac1ddac507877530bf4717ff33fc5da15" name="ac1ddac507877530bf4717ff33fc5da15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1ddac507877530bf4717ff33fc5da15">&#9670;&#160;</a></span>AuVFSChmodNode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int AuVFSChmodNode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="devclip_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *&#160;</td>
+          <td class="paramname"><em>fs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="devclip_8h.html#a5e5aff63d019f11b9e810ff9f2165b57">AuVFSNode</a> *&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="acefiex_8h.html#adf4d876453337156dde61095e1f20223">uint16_t</a>&#160;</td>
+          <td class="paramname"><em>mode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

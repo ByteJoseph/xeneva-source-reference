@@ -198,7 +198,7 @@ Functions</h2></td></tr>
 <tr class="separator:a2e22fd005386f0e92fb1933e40d0dc8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61a6ed6dacdcfa2e54d77ff71c13823b" id="r_a61a6ed6dacdcfa2e54d77ff71c13823b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cred_8c.html#a61a6ed6dacdcfa2e54d77ff71c13823b">AuCredGroupAdd</a> (<a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> category, <a class="el" href="group_8h.html#a487dd0aecde7b311f15a556b1c2a3733">GID_NUM</a> value)</td></tr>
 <tr class="separator:a61a6ed6dacdcfa2e54d77ff71c13823b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a492d3477bbd53d158ba780d07254846e" id="r_a492d3477bbd53d158ba780d07254846e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cred_8c.html#a492d3477bbd53d158ba780d07254846e">AuCredGetGroupCategory</a> (const char *string)</td></tr>
+<tr class="memitem:a492d3477bbd53d158ba780d07254846e" id="r_a492d3477bbd53d158ba780d07254846e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cred_8c.html#a492d3477bbd53d158ba780d07254846e">AuCredGetGroupCategory</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *string)</td></tr>
 <tr class="memdesc:a492d3477bbd53d158ba780d07254846e"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuCredGetGroupCategory &ndash; get a group category number by looking it name.  <br /></td></tr>
 <tr class="separator:a492d3477bbd53d158ba780d07254846e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a334bfffda71c76d4d094831a095b0874" id="r_a334bfffda71c76d4d094831a095b0874"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group_8h.html#a487dd0aecde7b311f15a556b1c2a3733">GID_NUM</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cred_8c.html#a334bfffda71c76d4d094831a095b0874">AuCredGetGroupID</a> (<a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> category)</td></tr>
@@ -484,7 +484,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> AuCredGetGroupCategory </td>
           <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
           <td class="paramname"><em>string</em></td><td>)</td>
           <td></td>
         </tr>
@@ -719,6 +719,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <p>don't allow root process to change it's uid/gid, in Xeneva the root process get process id of one</p>
+<p>suppose a normal user process call setgid, then only its effective gid should change</p>
 
 </div>
 </div>

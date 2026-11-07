@@ -141,10 +141,10 @@ Functions</h2></td></tr>
 <tr class="memitem:a5bdeb84ea3b78d6c916c35ef29d0f5d0" id="r_a5bdeb84ea3b78d6c916c35ef29d0f5d0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="block__cipher__internal_8h.html#a5bdeb84ea3b78d6c916c35ef29d0f5d0">mbedtls_block_cipher_setup</a> (<a class="el" href="structmbedtls__block__cipher__context__t.html">mbedtls_block_cipher_context_t</a> *ctx, <a class="el" href="cipher_8h.html#af5b069ffd0b2ad31225e42ee4ee29b1b">mbedtls_cipher_id_t</a> cipher_id)</td></tr>
 <tr class="memdesc:a5bdeb84ea3b78d6c916c35ef29d0f5d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the block cipher to use with this context. This must be called after mbedtls_block_cipher_init().  <br /></td></tr>
 <tr class="separator:a5bdeb84ea3b78d6c916c35ef29d0f5d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a428f6a1f05a8d6c4854ab77fa5887504" id="r_a428f6a1f05a8d6c4854ab77fa5887504"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="block__cipher__internal_8h.html#a428f6a1f05a8d6c4854ab77fa5887504">mbedtls_block_cipher_setkey</a> (<a class="el" href="structmbedtls__block__cipher__context__t.html">mbedtls_block_cipher_context_t</a> *ctx, const unsigned char *key, unsigned key_bitlen)</td></tr>
+<tr class="memitem:a428f6a1f05a8d6c4854ab77fa5887504" id="r_a428f6a1f05a8d6c4854ab77fa5887504"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="block__cipher__internal_8h.html#a428f6a1f05a8d6c4854ab77fa5887504">mbedtls_block_cipher_setkey</a> (<a class="el" href="structmbedtls__block__cipher__context__t.html">mbedtls_block_cipher_context_t</a> *ctx, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *key, unsigned key_bitlen)</td></tr>
 <tr class="memdesc:a428f6a1f05a8d6c4854ab77fa5887504"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the key into the context.  <br /></td></tr>
 <tr class="separator:a428f6a1f05a8d6c4854ab77fa5887504"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af49f5a0b9582df94c9532f148ec70ce3" id="r_af49f5a0b9582df94c9532f148ec70ce3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="block__cipher__internal_8h.html#af49f5a0b9582df94c9532f148ec70ce3">mbedtls_block_cipher_encrypt</a> (<a class="el" href="structmbedtls__block__cipher__context__t.html">mbedtls_block_cipher_context_t</a> *ctx, const unsigned char <a class="el" href="virtiokbd_8c.html#ac7ea4a68c5710086113a183d16feaf8d">input</a>[16], unsigned char output[16])</td></tr>
+<tr class="memitem:af49f5a0b9582df94c9532f148ec70ce3" id="r_af49f5a0b9582df94c9532f148ec70ce3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="block__cipher__internal_8h.html#af49f5a0b9582df94c9532f148ec70ce3">mbedtls_block_cipher_encrypt</a> (<a class="el" href="structmbedtls__block__cipher__context__t.html">mbedtls_block_cipher_context_t</a> *ctx, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char <a class="el" href="virtiokbd_8c.html#ac7ea4a68c5710086113a183d16feaf8d">input</a>[16], unsigned char output[16])</td></tr>
 <tr class="memdesc:af49f5a0b9582df94c9532f148ec70ce3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encrypt one block (16 bytes) with the configured key.  <br /></td></tr>
 <tr class="separator:af49f5a0b9582df94c9532f148ec70ce3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad77072871d15e0c158130642939206c5" id="r_ad77072871d15e0c158130642939206c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="block__cipher__internal_8h.html#ad77072871d15e0c158130642939206c5">mbedtls_block_cipher_free</a> (<a class="el" href="structmbedtls__block__cipher__context__t.html">mbedtls_block_cipher_context_t</a> *ctx)</td></tr>
@@ -169,7 +169,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const unsigned char&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char&#160;</td>
           <td class="paramname"><em>input</em>[16], </td>
         </tr>
         <tr>
@@ -252,7 +252,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *&#160;</td>
           <td class="paramname"><em>key</em>, </td>
         </tr>
         <tr>

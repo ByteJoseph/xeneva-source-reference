@@ -181,7 +181,7 @@ Macros</h2></td></tr>
 <tr class="separator:ac6f3c395df0c6ec90c1751be254fd3ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa13dc4d8b6f99f2263f264a58baf5847" id="r_aa13dc4d8b6f99f2263f264a58baf5847"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ftstream_8h.html#aa13dc4d8b6f99f2263f264a58baf5847">FT_FRAME_SKIP_BYTES</a>(count)&#160;&#160;&#160;{ <a class="el" href="ftstream_8h.html#a7a2cb268db41c732fffe692856497527a8c09a7541e37847967d008fc1bf65fe1">ft_frame_skip</a>, count, 0 }</td></tr>
 <tr class="separator:aa13dc4d8b6f99f2263f264a58baf5847"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e719039905b1e37d5da1884da79fb0f" id="r_a9e719039905b1e37d5da1884da79fb0f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ftstream_8h.html#a9e719039905b1e37d5da1884da79fb0f">FT_BYTE_</a>(p,  i)&#160;&#160;&#160;( ((const <a class="el" href="fttypes_8h.html#a51f26183ca0c9f4af958939648caeccd">FT_Byte</a>*)(p))[(i)] )</td></tr>
+<tr class="memitem:a9e719039905b1e37d5da1884da79fb0f" id="r_a9e719039905b1e37d5da1884da79fb0f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ftstream_8h.html#a9e719039905b1e37d5da1884da79fb0f">FT_BYTE_</a>(p,  i)&#160;&#160;&#160;( ((<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="fttypes_8h.html#a51f26183ca0c9f4af958939648caeccd">FT_Byte</a>*)(p))[(i)] )</td></tr>
 <tr class="separator:a9e719039905b1e37d5da1884da79fb0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a832c88bf2e2d0b17a4c686dbd90388" id="r_a4a832c88bf2e2d0b17a4c686dbd90388"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ftstream_8h.html#a4a832c88bf2e2d0b17a4c686dbd90388">FT_INT16</a>(x)&#160;&#160;&#160;( (<a class="el" href="ftconfig_8h.html#a1ac57aab738d5a73f4d02dcc6e72f5e4">FT_Int16</a>)(x)  )</td></tr>
 <tr class="separator:a4a832c88bf2e2d0b17a4c686dbd90388"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -360,13 +360,13 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a80669a3b6fb4d8ad8187866fc3db25aa" id="r_a80669a3b6fb4d8ad8187866fc3db25aa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ftstream_8h.html#a80669a3b6fb4d8ad8187866fc3db25aa">FT_Stream_Open</a> (<a class="el" href="ftsystem_8h.html#a788b32c932932f7411a8dfa7f6c794bf">FT_Stream</a> stream, const char *filepathname)</td></tr>
+<tr class="memitem:a80669a3b6fb4d8ad8187866fc3db25aa" id="r_a80669a3b6fb4d8ad8187866fc3db25aa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ftstream_8h.html#a80669a3b6fb4d8ad8187866fc3db25aa">FT_Stream_Open</a> (<a class="el" href="ftsystem_8h.html#a788b32c932932f7411a8dfa7f6c794bf">FT_Stream</a> stream, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *filepathname)</td></tr>
 <tr class="separator:a80669a3b6fb4d8ad8187866fc3db25aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab33e9c576d1ce3850acacddcdfea8692" id="r_ab33e9c576d1ce3850acacddcdfea8692"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ftstream_8h.html#ab33e9c576d1ce3850acacddcdfea8692">FT_Stream_New</a> (<a class="el" href="freetype_8h.html#a92857f8bf079b7b9ef5d3ce74cf89ef5">FT_Library</a> library, const <a class="el" href="freetype_8h.html#aa1c1d4d731529d220017c71767baaccb">FT_Open_Args</a> *<a class="el" href="seq__buf_8h.html#aa32248a496cdd71e49e619f9c8be5258">args</a>, <a class="el" href="ftsystem_8h.html#a788b32c932932f7411a8dfa7f6c794bf">FT_Stream</a> *astream)</td></tr>
+<tr class="memitem:ab33e9c576d1ce3850acacddcdfea8692" id="r_ab33e9c576d1ce3850acacddcdfea8692"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ftstream_8h.html#ab33e9c576d1ce3850acacddcdfea8692">FT_Stream_New</a> (<a class="el" href="freetype_8h.html#a92857f8bf079b7b9ef5d3ce74cf89ef5">FT_Library</a> library, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="freetype_8h.html#aa1c1d4d731529d220017c71767baaccb">FT_Open_Args</a> *<a class="el" href="seq__buf_8h.html#aa32248a496cdd71e49e619f9c8be5258">args</a>, <a class="el" href="ftsystem_8h.html#a788b32c932932f7411a8dfa7f6c794bf">FT_Stream</a> *astream)</td></tr>
 <tr class="separator:ab33e9c576d1ce3850acacddcdfea8692"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2619fbc2d12358691456bf1bf312710" id="r_ac2619fbc2d12358691456bf1bf312710"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ftstream_8h.html#ac2619fbc2d12358691456bf1bf312710">FT_Stream_Free</a> (<a class="el" href="ftsystem_8h.html#a788b32c932932f7411a8dfa7f6c794bf">FT_Stream</a> stream, <a class="el" href="fttypes_8h.html#af90e5fb0d07e21be9fe6faa33f02484c">FT_Int</a> external)</td></tr>
 <tr class="separator:ac2619fbc2d12358691456bf1bf312710"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adef0df22d5202d491bd9c8a93fb4bffd" id="r_adef0df22d5202d491bd9c8a93fb4bffd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ftstream_8h.html#adef0df22d5202d491bd9c8a93fb4bffd">FT_Stream_OpenMemory</a> (<a class="el" href="ftsystem_8h.html#a788b32c932932f7411a8dfa7f6c794bf">FT_Stream</a> stream, const <a class="el" href="fttypes_8h.html#a51f26183ca0c9f4af958939648caeccd">FT_Byte</a> *<a class="el" href="i915__drm_8h.html#affb2b44d51b78eb04cb5f01829db0281">base</a>, <a class="el" href="fttypes_8h.html#a4fac88bdba78eb76b505efa6e4fbf3f5">FT_ULong</a> <a class="el" href="drm__bridge_8h.html#a854352f53b148adc24983a58a1866d66">size</a>)</td></tr>
+<tr class="memitem:adef0df22d5202d491bd9c8a93fb4bffd" id="r_adef0df22d5202d491bd9c8a93fb4bffd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ftstream_8h.html#adef0df22d5202d491bd9c8a93fb4bffd">FT_Stream_OpenMemory</a> (<a class="el" href="ftsystem_8h.html#a788b32c932932f7411a8dfa7f6c794bf">FT_Stream</a> stream, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="fttypes_8h.html#a51f26183ca0c9f4af958939648caeccd">FT_Byte</a> *<a class="el" href="i915__drm_8h.html#affb2b44d51b78eb04cb5f01829db0281">base</a>, <a class="el" href="fttypes_8h.html#a4fac88bdba78eb76b505efa6e4fbf3f5">FT_ULong</a> <a class="el" href="drm__bridge_8h.html#a854352f53b148adc24983a58a1866d66">size</a>)</td></tr>
 <tr class="separator:adef0df22d5202d491bd9c8a93fb4bffd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a593fa53a196798f63d80b7bfc25a1e7a" id="r_a593fa53a196798f63d80b7bfc25a1e7a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ftstream_8h.html#a593fa53a196798f63d80b7bfc25a1e7a">FT_Stream_Close</a> (<a class="el" href="ftsystem_8h.html#a788b32c932932f7411a8dfa7f6c794bf">FT_Stream</a> stream)</td></tr>
 <tr class="separator:a593fa53a196798f63d80b7bfc25a1e7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -414,7 +414,7 @@ Functions</h2></td></tr>
 <tr class="separator:a0aad0e01cbebfe22b79ebed7f97505a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48d7c100218c4e32fb129963ea0a1f8f" id="r_a48d7c100218c4e32fb129963ea0a1f8f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ftstream_8h.html#a48d7c100218c4e32fb129963ea0a1f8f">FT_Stream_ReadULongLE</a> (<a class="el" href="ftsystem_8h.html#a788b32c932932f7411a8dfa7f6c794bf">FT_Stream</a> stream, <a class="el" href="fttypes_8h.html#a64c8060bdb3d6eec844a1bf670e06bdd">FT_Error</a> *error)</td></tr>
 <tr class="separator:a48d7c100218c4e32fb129963ea0a1f8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0447bc18a9d0964196bc85aa585a758b" id="r_a0447bc18a9d0964196bc85aa585a758b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ftstream_8h.html#a0447bc18a9d0964196bc85aa585a758b">FT_Stream_ReadFields</a> (<a class="el" href="ftsystem_8h.html#a788b32c932932f7411a8dfa7f6c794bf">FT_Stream</a> stream, const <a class="el" href="ftstream_8h.html#ad1e1d3849d28fe3394bf8ffbef420dcd">FT_Frame_Field</a> *fields, void *structure)</td></tr>
+<tr class="memitem:a0447bc18a9d0964196bc85aa585a758b" id="r_a0447bc18a9d0964196bc85aa585a758b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ftstream_8h.html#a0447bc18a9d0964196bc85aa585a758b">FT_Stream_ReadFields</a> (<a class="el" href="ftsystem_8h.html#a788b32c932932f7411a8dfa7f6c794bf">FT_Stream</a> stream, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="ftstream_8h.html#ad1e1d3849d28fe3394bf8ffbef420dcd">FT_Frame_Field</a> *fields, void *structure)</td></tr>
 <tr class="separator:a0447bc18a9d0964196bc85aa585a758b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
@@ -439,7 +439,7 @@ Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;( ((const <a class="el" href="fttypes_8h.html#a51f26183ca0c9f4af958939648caeccd">FT_Byte</a>*)(p))[(i)] )</td>
+          <td></td><td>&#160;&#160;&#160;( ((<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="fttypes_8h.html#a51f26183ca0c9f4af958939648caeccd">FT_Byte</a>*)(p))[(i)] )</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2843,7 +2843,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="freetype_8h.html#aa1c1d4d731529d220017c71767baaccb">FT_Open_Args</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="freetype_8h.html#aa1c1d4d731529d220017c71767baaccb">FT_Open_Args</a> *&#160;</td>
           <td class="paramname"><em>args</em>, </td>
         </tr>
         <tr>
@@ -2877,7 +2877,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
           <td class="paramname"><em>filepathname</em>&#160;</td>
         </tr>
         <tr>
@@ -2905,7 +2905,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="fttypes_8h.html#a51f26183ca0c9f4af958939648caeccd">FT_Byte</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="fttypes_8h.html#a51f26183ca0c9f4af958939648caeccd">FT_Byte</a> *&#160;</td>
           <td class="paramname"><em>base</em>, </td>
         </tr>
         <tr>
@@ -3059,7 +3059,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="ftstream_8h.html#ad1e1d3849d28fe3394bf8ffbef420dcd">FT_Frame_Field</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="ftstream_8h.html#ad1e1d3849d28fe3394bf8ffbef420dcd">FT_Frame_Field</a> *&#160;</td>
           <td class="paramname"><em>fields</em>, </td>
         </tr>
         <tr>

@@ -760,7 +760,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00673" name="l00673"></a><span class="lineno">  673</span>{</div>
 <div class="line"><a id="l00674" name="l00674"></a><span class="lineno">  674</span>    <span class="keyword">static</span> <span class="keyword">const</span> stbir__FP32 almostone = { 0x3f7fffff }; <span class="comment">// 1-eps</span></div>
 <div class="line"><a id="l00675" name="l00675"></a><span class="lineno">  675</span>    <span class="keyword">static</span> <span class="keyword">const</span> stbir__FP32 minval = { (127 - 13) &lt;&lt; 23 };</div>
-<div class="line"><a id="l00676" name="l00676"></a><span class="lineno">  676</span>    <a class="code hl_typedef" href="stb__image__resize_8h.html#abfd2d1a0b44b4b7513710cf96f0358d0">stbir_uint32</a> tab, bias, scale, <a class="code hl_variable" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a>;</div>
+<div class="line"><a id="l00676" name="l00676"></a><span class="lineno">  676</span>    <a class="code hl_typedef" href="stb__image__resize_8h.html#abfd2d1a0b44b4b7513710cf96f0358d0">stbir_uint32</a> tab, bias, scale, t;</div>
 <div class="line"><a id="l00677" name="l00677"></a><span class="lineno">  677</span>    stbir__FP32 <a class="code hl_variable" href="drm__print_8h.html#add955a53b78465a0b2e692b0795c9bd2">f</a>;</div>
 <div class="line"><a id="l00678" name="l00678"></a><span class="lineno">  678</span> </div>
 <div class="line"><a id="l00679" name="l00679"></a><span class="lineno">  679</span>    <span class="comment">// Clamp to [2^(-13), 1-eps]; these two values map to 0 and 1, respectively.</span></div>
@@ -778,8 +778,8 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00691" name="l00691"></a><span class="lineno">  691</span>    scale = tab &amp; 0xffff;</div>
 <div class="line"><a id="l00692" name="l00692"></a><span class="lineno">  692</span> </div>
 <div class="line"><a id="l00693" name="l00693"></a><span class="lineno">  693</span>    <span class="comment">// Grab next-highest mantissa bits and perform linear interpolation</span></div>
-<div class="line"><a id="l00694" name="l00694"></a><span class="lineno">  694</span>    <a class="code hl_variable" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a> = (<a class="code hl_variable" href="drm__print_8h.html#add955a53b78465a0b2e692b0795c9bd2">f</a>.u &gt;&gt; 12) &amp; 0xff;</div>
-<div class="line"><a id="l00695" name="l00695"></a><span class="lineno">  695</span>    <span class="keywordflow">return</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>)((bias + scale * <a class="code hl_variable" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a>) &gt;&gt; 16);</div>
+<div class="line"><a id="l00694" name="l00694"></a><span class="lineno">  694</span>    t = (<a class="code hl_variable" href="drm__print_8h.html#add955a53b78465a0b2e692b0795c9bd2">f</a>.u &gt;&gt; 12) &amp; 0xff;</div>
+<div class="line"><a id="l00695" name="l00695"></a><span class="lineno">  695</span>    <span class="keywordflow">return</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>)((bias + scale * t) &gt;&gt; 16);</div>
 <div class="line"><a id="l00696" name="l00696"></a><span class="lineno">  696</span>}</div>
 <div class="line"><a id="l00697" name="l00697"></a><span class="lineno">  697</span> </div>
 <div class="line"><a id="l00698" name="l00698"></a><span class="lineno">  698</span><span class="preprocessor">#else</span></div>
@@ -843,12 +843,12 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00756" name="l00756"></a><span class="lineno">  756</span><span class="keyword">static</span> <span class="keywordtype">float</span> stbir__filter_trapezoid(<span class="keywordtype">float</span> x, <span class="keywordtype">float</span> scale)</div>
 <div class="line"><a id="l00757" name="l00757"></a><span class="lineno">  757</span>{</div>
 <div class="line"><a id="l00758" name="l00758"></a><span class="lineno">  758</span>    <span class="keywordtype">float</span> halfscale = scale / 2;</div>
-<div class="line"><a id="l00759" name="l00759"></a><span class="lineno">  759</span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a> = 0.5f + halfscale;</div>
+<div class="line"><a id="l00759" name="l00759"></a><span class="lineno">  759</span>    <span class="keywordtype">float</span> t = 0.5f + halfscale;</div>
 <div class="line"><a id="l00760" name="l00760"></a><span class="lineno">  760</span>    STBIR__DEBUG_ASSERT(scale &lt;= 1);</div>
 <div class="line"><a id="l00761" name="l00761"></a><span class="lineno">  761</span> </div>
 <div class="line"><a id="l00762" name="l00762"></a><span class="lineno">  762</span>    <a class="code hl_variable" href="layout_8c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> = (float)<a class="code hl_function" href="Libs_2XEClib_2includes_2math_8h.html#a61268f4fe1b9893f08a93c0ade5d2853">fabs</a>(x);</div>
 <div class="line"><a id="l00763" name="l00763"></a><span class="lineno">  763</span> </div>
-<div class="line"><a id="l00764" name="l00764"></a><span class="lineno">  764</span>    <span class="keywordflow">if</span> (x &gt;= <a class="code hl_variable" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a>)</div>
+<div class="line"><a id="l00764" name="l00764"></a><span class="lineno">  764</span>    <span class="keywordflow">if</span> (x &gt;= t)</div>
 <div class="line"><a id="l00765" name="l00765"></a><span class="lineno">  765</span>        <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a id="l00766" name="l00766"></a><span class="lineno">  766</span>    <span class="keywordflow">else</span></div>
 <div class="line"><a id="l00767" name="l00767"></a><span class="lineno">  767</span>    {</div>
@@ -856,7 +856,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00769" name="l00769"></a><span class="lineno">  769</span>        <span class="keywordflow">if</span> (x &lt;= r)</div>
 <div class="line"><a id="l00770" name="l00770"></a><span class="lineno">  770</span>            <span class="keywordflow">return</span> 1;</div>
 <div class="line"><a id="l00771" name="l00771"></a><span class="lineno">  771</span>        <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00772" name="l00772"></a><span class="lineno">  772</span>            <span class="keywordflow">return</span> (<a class="code hl_variable" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a> - x) / scale;</div>
+<div class="line"><a id="l00772" name="l00772"></a><span class="lineno">  772</span>            <span class="keywordflow">return</span> (t - x) / scale;</div>
 <div class="line"><a id="l00773" name="l00773"></a><span class="lineno">  773</span>    }</div>
 <div class="line"><a id="l00774" name="l00774"></a><span class="lineno">  774</span>}</div>
 <div class="line"><a id="l00775" name="l00775"></a><span class="lineno">  775</span> </div>
@@ -2677,7 +2677,6 @@ $(document).ready(function() { init_codefold(0); });
 <div class="ttc" id="aLibs_2XEClib_2includes_2math_8h_html_a61268f4fe1b9893f08a93c0ade5d2853"><div class="ttname"><a href="Libs_2XEClib_2includes_2math_8h.html#a61268f4fe1b9893f08a93c0ade5d2853">fabs</a></div><div class="ttdeci">XE_LIB double fabs(double)</div><div class="ttdef"><b>Definition</b> math.cpp:126</div></div>
 <div class="ttc" id="aLibs_2XEClib_2includes_2math_8h_html_ad3eb2aa004d423ac64bd6aff217a05c5"><div class="ttname"><a href="Libs_2XEClib_2includes_2math_8h.html#ad3eb2aa004d423ac64bd6aff217a05c5">ceil</a></div><div class="ttdeci">XE_LIB double ceil(double)</div><div class="ttdef"><b>Definition</b> math.cpp:52</div></div>
 <div class="ttc" id="aLibs_2XEClib_2includes_2string_8h_html_a48b8e98743833e6ce735f3d9f2fb240f"><div class="ttname"><a href="Libs_2XEClib_2includes_2string_8h.html#a48b8e98743833e6ce735f3d9f2fb240f">index</a></div><div class="ttdeci">#define index(str, chr)</div><div class="ttdef"><b>Definition</b> string.h:66</div></div>
-<div class="ttc" id="aProcess_2Calender_2main_8cpp_html_a5b9f2c8eed2b49ee91dd608d9a0ec4bd"><div class="ttname"><a href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a></div><div class="ttdeci">XETime t</div><div class="ttdef"><b>Definition</b> main.cpp:53</div></div>
 <div class="ttc" id="aProcess_2NetSurf_2main_8cpp_html_a81e02a278aaeae99b5dbef355ee6dd2f"><div class="ttname"><a href="Process_2NetSurf_2main_8cpp.html#a81e02a278aaeae99b5dbef355ee6dd2f">a</a></div><div class="ttdeci">size_t a</div><div class="ttdef"><b>Definition</b> main.cpp:156</div></div>
 <div class="ttc" id="aProcess_2NetSurf_2main_8cpp_html_a9dc54a811b75d3d05d3deff10980ca7e"><div class="ttname"><a href="Process_2NetSurf_2main_8cpp.html#a9dc54a811b75d3d05d3deff10980ca7e">b</a></div><div class="ttdeci">size_t b</div><div class="ttdef"><b>Definition</b> main.cpp:156</div></div>
 <div class="ttc" id="aacefiex_8h_html_a435d1572bf3f880d55459d9805097f62"><div class="ttname"><a href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></div><div class="ttdeci">unsigned int uint32_t</div><div class="ttdef"><b>Definition</b> acefiex.h:163</div></div>

@@ -95,7 +95,7 @@ $(function() {
 <code>#include &lt;<a class="el" href="minmax_8h_source.html">linux/minmax.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="BaseHdr_2linux_2string_8h_source.html">linux/string.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="sprintf_8h_source.html">linux/sprintf.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="bitmap_8h_source.html">linux/bitmap.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="BaseHdr_2linux_2bitmap_8h_source.html">linux/bitmap.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="BaseHdr_2linux_2list_8h_source.html">linux/list.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="module_8h_source.html">linux/module.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="printk_8h_source.html">linux/printk.h</a>&gt;</code><br />
@@ -138,7 +138,7 @@ Include dependency graph for kernel.h:</div>
 <area shape="poly" title=" " alt="" coords="2097,32,1963,37,1792,49,1602,68,1413,96,1275,129,1162,165,1161,160,1274,124,1412,91,1602,62,1791,43,1962,32,2096,26"/>
 <area shape="rect" href="sprintf_8h.html" title=" " alt="" coords="3117,93,3228,119"/>
 <area shape="poly" title=" " alt="" coords="2281,28,2638,48,2868,66,3104,91,3104,96,2868,72,2638,53,2281,33"/>
-<area shape="rect" href="bitmap_8h.html" title=" " alt="" coords="1757,240,1873,265"/>
+<area shape="rect" href="BaseHdr_2linux_2bitmap_8h.html" title=" " alt="" coords="1757,240,1873,265"/>
 <area shape="poly" title=" " alt="" coords="2097,35,1952,49,1784,75,1705,92,1635,114,1580,139,1559,153,1544,168,1539,179,1544,190,1566,198,1616,210,1744,236,1743,241,1615,215,1564,203,1540,194,1534,179,1540,165,1556,149,1577,134,1634,109,1704,87,1784,70,1951,44,2096,30"/>
 <area shape="rect" href="BaseHdr_2linux_2list_8h.html" title=" " alt="" coords="2629,240,2719,265"/>
 <area shape="poly" title=" " alt="" coords="2281,31,2334,38,2391,50,2449,67,2505,91,2654,229,2650,232,2502,96,2447,72,2390,55,2333,43,2280,36"/>
@@ -532,7 +532,7 @@ Macros</h2></td></tr>
 <tr class="separator:ac8f9961667c7f1dc7558ce2fd21d8ff4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28f547a47067a1e58778501fbec390ad" id="r_a28f547a47067a1e58778501fbec390ad"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linux_2kernel_8h.html#a28f547a47067a1e58778501fbec390ad">__strscpy_3</a>(dst,  src,  <a class="el" href="drm__bridge_8h.html#a854352f53b148adc24983a58a1866d66">size</a>)&#160;&#160;&#160;sized_strscpy(dst, src, <a class="el" href="drm__bridge_8h.html#a854352f53b148adc24983a58a1866d66">size</a>)</td></tr>
 <tr class="separator:a28f547a47067a1e58778501fbec390ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93a7d2f36b0b27dcfeaec2054ec3a4c1" id="r_a93a7d2f36b0b27dcfeaec2054ec3a4c1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linux_2kernel_8h.html#a93a7d2f36b0b27dcfeaec2054ec3a4c1">__strscpy_sel</a>(_1,  N, ...)&#160;&#160;&#160;N</td></tr>
+<tr class="memitem:a93a7d2f36b0b27dcfeaec2054ec3a4c1" id="r_a93a7d2f36b0b27dcfeaec2054ec3a4c1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linux_2kernel_8h.html#a93a7d2f36b0b27dcfeaec2054ec3a4c1">__strscpy_sel</a>(_1,  <a class="el" href="crc32_8c.html#a0240ac851181b84ac374872dc5434ee4">N</a>, ...)&#160;&#160;&#160;<a class="el" href="crc32_8c.html#a0240ac851181b84ac374872dc5434ee4">N</a></td></tr>
 <tr class="separator:a93a7d2f36b0b27dcfeaec2054ec3a4c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b06994a403f1a01aab8f179d6089c5e" id="r_a2b06994a403f1a01aab8f179d6089c5e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linux_2kernel_8h.html#a2b06994a403f1a01aab8f179d6089c5e">__strscpy_args</a>(...)&#160;&#160;&#160;<a class="el" href="linux_2kernel_8h.html#a93a7d2f36b0b27dcfeaec2054ec3a4c1">__strscpy_sel</a>(__VA_OPT__(__VA_ARGS__, <a class="el" href="linux_2kernel_8h.html#a28f547a47067a1e58778501fbec390ad">__strscpy_3</a>) , <a class="el" href="linux_2kernel_8h.html#ac8f9961667c7f1dc7558ce2fd21d8ff4">__strscpy_2</a>)</td></tr>
 <tr class="separator:a2b06994a403f1a01aab8f179d6089c5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -965,7 +965,7 @@ Variables</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">N, </td>
+          <td class="paramname"><a class="el" href="crc32_8c.html#a0240ac851181b84ac374872dc5434ee4">N</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -976,7 +976,7 @@ Variables</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;N</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="crc32_8c.html#a0240ac851181b84ac374872dc5434ee4">N</a></td>
         </tr>
       </table>
 </div><div class="memdoc">

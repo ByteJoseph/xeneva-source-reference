@@ -82,12 +82,18 @@ Collaboration diagram for _socket_:</div>
 <div class="dyncontent">
 <div class="center"><img src="struct__socket____coll__graph.png" border="0" usemap="#a__socket___coll__map" alt="Collaboration graph"/></div>
 <map name="a__socket___coll__map" id="a__socket___coll__map">
-<area shape="rect" title=" " alt="" coords="20,196,99,221"/>
+<area shape="rect" title=" " alt="" coords="79,235,157,260"/>
 <area shape="rect" href="struct__stack__.html" title=" " alt="" coords="24,108,95,133"/>
-<area shape="poly" title=" " alt="" coords="62,147,62,195,57,195,57,147"/>
+<area shape="poly" title=" " alt="" coords="57,147,56,174,63,200,78,219,96,232,93,237,74,222,58,203,51,174,52,147"/>
 <area shape="rect" href="struct__stack__item__.html" title=" " alt="" coords="5,5,113,31"/>
 <area shape="poly" title=" " alt="" coords="62,45,62,108,57,108,57,45"/>
 <area shape="poly" title=" " alt="" coords="128,8,136,11,140,18,132,27,114,30,113,25,129,22,135,18,133,16,126,13"/>
+<area shape="rect" href="struct__au__wait__queue.html" title=" " alt="" coords="193,108,320,133"/>
+<area shape="poly" title=" " alt="" coords="194,141,164,159,148,177,137,198,123,235,118,234,132,196,144,174,160,155,191,136"/>
+<area shape="rect" href="struct__au__waitq__entry__.html" title=" " alt="" coords="214,235,350,260"/>
+<area shape="poly" title=" " alt="" coords="254,147,252,173,255,201,263,218,274,233,270,236,259,221,250,202,246,174,249,147"/>
+<area shape="poly" title=" " alt="" coords="294,222,304,190,305,174,301,159,291,146,278,136,282,132,295,142,306,156,310,173,310,191,299,223"/>
+<area shape="poly" title=" " alt="" coords="365,235,373,240,377,248,369,258,351,262,350,257,366,253,371,247,369,244,362,240"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -119,10 +125,56 @@ Public Attributes</h2></td></tr>
 <tr class="separator:af23ff2a8658477008ded363f3a6d9cd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d36ab11152a13cce36f03f2e96dc79d" id="r_a4d36ab11152a13cce36f03f2e96dc79d"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__socket__.html#a4d36ab11152a13cce36f03f2e96dc79d">accept</a> )(struct <a class="el" href="struct__socket__.html">_socket_</a> *sock, <a class="el" href="BaseHdr_2Net_2socket_8h.html#a8bb60190bcf8fd80045d0198b25c2384">sockaddr</a> *addr, <a class="el" href="BaseHdr_2Net_2socket_8h.html#acf0ed818b0a3c85ff6a9206679d6d91a">socklen_t</a> *addrlen)</td></tr>
 <tr class="separator:a4d36ab11152a13cce36f03f2e96dc79d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae316ab76524c86af07646ce60b62e2cd" id="r_ae316ab76524c86af07646ce60b62e2cd"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__socket__.html#ae316ab76524c86af07646ce60b62e2cd">getsockname</a> )(struct <a class="el" href="struct__socket__.html">_socket_</a> *sock, <a class="el" href="BaseHdr_2Net_2socket_8h.html#a8bb60190bcf8fd80045d0198b25c2384">sockaddr</a> *addr, <a class="el" href="BaseHdr_2Net_2socket_8h.html#acf0ed818b0a3c85ff6a9206679d6d91a">socklen_t</a> *addrlen)</td></tr>
+<tr class="separator:ae316ab76524c86af07646ce60b62e2cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ee0a99f468b6572a28e68ea0e9d0df3" id="r_a1ee0a99f468b6572a28e68ea0e9d0df3"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__socket__.html#a1ee0a99f468b6572a28e68ea0e9d0df3">getpeername</a> )(struct <a class="el" href="struct__socket__.html">_socket_</a> *sock, <a class="el" href="BaseHdr_2Net_2socket_8h.html#a8bb60190bcf8fd80045d0198b25c2384">sockaddr</a> *addr, <a class="el" href="BaseHdr_2Net_2socket_8h.html#acf0ed818b0a3c85ff6a9206679d6d91a">socklen_t</a> *addrlen)</td></tr>
+<tr class="separator:a1ee0a99f468b6572a28e68ea0e9d0df3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac32f504e7edb782aca02304262cd58f6" id="r_ac32f504e7edb782aca02304262cd58f6"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__socket__.html#ac32f504e7edb782aca02304262cd58f6">shutdown</a> )(struct <a class="el" href="struct__socket__.html">_socket_</a> *sock, int how)</td></tr>
+<tr class="separator:ac32f504e7edb782aca02304262cd58f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cbba73c005fe39123d765521a95fef3" id="r_a6cbba73c005fe39123d765521a95fef3"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__socket__.html#a6cbba73c005fe39123d765521a95fef3">poll</a> )(struct <a class="el" href="struct__socket__.html">_socket_</a> *sock, int events)</td></tr>
+<tr class="separator:a6cbba73c005fe39123d765521a95fef3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9bd148bf57c1e83310f5ab463f96ed6" id="r_af9bd148bf57c1e83310f5ab463f96ed6"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__socket__.html#af9bd148bf57c1e83310f5ab463f96ed6">proto</a></td></tr>
 <tr class="separator:af9bd148bf57c1e83310f5ab463f96ed6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae67e4b7ed147960a4d311859fe5c0749" id="r_ae67e4b7ed147960a4d311859fe5c0749"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__socket__.html#ae67e4b7ed147960a4d311859fe5c0749">nonblock</a></td></tr>
 <tr class="separator:ae67e4b7ed147960a4d311859fe5c0749"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca7829f7bac6eb630f63e4c2b8e7d2e0" id="r_aca7829f7bac6eb630f63e4c2b8e7d2e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__socket__.html#aca7829f7bac6eb630f63e4c2b8e7d2e0">cloexec</a></td></tr>
+<tr class="separator:aca7829f7bac6eb630f63e4c2b8e7d2e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a880f19ed90b14bfd44abd78e72664e1f" id="r_a880f19ed90b14bfd44abd78e72664e1f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__socket__.html#a880f19ed90b14bfd44abd78e72664e1f">family</a></td></tr>
+<tr class="separator:a880f19ed90b14bfd44abd78e72664e1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefe9d74a99ec2c6ec1f9fff7122b2de4" id="r_aefe9d74a99ec2c6ec1f9fff7122b2de4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__socket__.html#aefe9d74a99ec2c6ec1f9fff7122b2de4">so_type</a></td></tr>
+<tr class="separator:aefe9d74a99ec2c6ec1f9fff7122b2de4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3e455feb0d6026074ca9eef6fd23053" id="r_ac3e455feb0d6026074ca9eef6fd23053"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__socket__.html#ac3e455feb0d6026074ca9eef6fd23053">listening</a></td></tr>
+<tr class="separator:ac3e455feb0d6026074ca9eef6fd23053"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a584ea8ccfc719554f38ed20f67dc816f" id="r_a584ea8ccfc719554f38ed20f67dc816f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__socket__.html#a584ea8ccfc719554f38ed20f67dc816f">so_error</a></td></tr>
+<tr class="separator:a584ea8ccfc719554f38ed20f67dc816f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0882df99440bfbfba45a72434b6bfc4" id="r_ab0882df99440bfbfba45a72434b6bfc4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__socket__.html#ab0882df99440bfbfba45a72434b6bfc4">rcvbuf</a></td></tr>
+<tr class="separator:ab0882df99440bfbfba45a72434b6bfc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a403550da73418dd00adc250dfbeb342d" id="r_a403550da73418dd00adc250dfbeb342d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__socket__.html#a403550da73418dd00adc250dfbeb342d">sndbuf</a></td></tr>
+<tr class="separator:a403550da73418dd00adc250dfbeb342d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae78475b62ad231c9a1286ba23b203c52" id="r_ae78475b62ad231c9a1286ba23b203c52"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__socket__.html#ae78475b62ad231c9a1286ba23b203c52">keepalive</a></td></tr>
+<tr class="separator:ae78475b62ad231c9a1286ba23b203c52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba1698be26c356f251bd3468bec77088" id="r_aba1698be26c356f251bd3468bec77088"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__socket__.html#aba1698be26c356f251bd3468bec77088">reuseaddr</a></td></tr>
+<tr class="separator:aba1698be26c356f251bd3468bec77088"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70204d54086dc12ce7e39835b1b3549d" id="r_a70204d54086dc12ce7e39835b1b3549d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__socket__.html#a70204d54086dc12ce7e39835b1b3549d">nodelay</a></td></tr>
+<tr class="separator:a70204d54086dc12ce7e39835b1b3549d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3432793ef69f656aa481969bb006e600" id="r_a3432793ef69f656aa481969bb006e600"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__socket__.html#a3432793ef69f656aa481969bb006e600">shut_rd</a></td></tr>
+<tr class="separator:a3432793ef69f656aa481969bb006e600"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cd306caf054bb6a429f6566b95b4733" id="r_a5cd306caf054bb6a429f6566b95b4733"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__socket__.html#a5cd306caf054bb6a429f6566b95b4733">shut_wr</a></td></tr>
+<tr class="separator:a5cd306caf054bb6a429f6566b95b4733"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a712dcab7c2f314a44bf50c15dc2503e5" id="r_a712dcab7c2f314a44bf50c15dc2503e5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__socket__.html#a712dcab7c2f314a44bf50c15dc2503e5">peer_addr</a> [128]</td></tr>
+<tr class="separator:a712dcab7c2f314a44bf50c15dc2503e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa717084d164637e7238615f56c58b6a9" id="r_aa717084d164637e7238615f56c58b6a9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2Net_2socket_8h.html#acf0ed818b0a3c85ff6a9206679d6d91a">socklen_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__socket__.html#aa717084d164637e7238615f56c58b6a9">peer_len</a></td></tr>
+<tr class="separator:aa717084d164637e7238615f56c58b6a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53f9e057bea6394bd356f9d725437945" id="r_a53f9e057bea6394bd356f9d725437945"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__socket__.html#a53f9e057bea6394bd356f9d725437945">local_addr</a> [128]</td></tr>
+<tr class="separator:a53f9e057bea6394bd356f9d725437945"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c125db37162e337ce6769ef000f4d03" id="r_a0c125db37162e337ce6769ef000f4d03"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2Net_2socket_8h.html#acf0ed818b0a3c85ff6a9206679d6d91a">socklen_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__socket__.html#a0c125db37162e337ce6769ef000f4d03">local_len</a></td></tr>
+<tr class="separator:a0c125db37162e337ce6769ef000f4d03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b3096eed1cee9555f3d52462c6197fe" id="r_a5b3096eed1cee9555f3d52462c6197fe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="waitq_8h.html#a46a46b14671a14b2311805078fb4d92b">AuWaitQueue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__socket__.html#a5b3096eed1cee9555f3d52462c6197fe">rx_wait</a></td></tr>
+<tr class="separator:a5b3096eed1cee9555f3d52462c6197fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02cfdb5aec5436592b9a61366477b05a" id="r_a02cfdb5aec5436592b9a61366477b05a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="waitq_8h.html#a46a46b14671a14b2311805078fb4d92b">AuWaitQueue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__socket__.html#a02cfdb5aec5436592b9a61366477b05a">tx_wait</a></td></tr>
+<tr class="separator:a02cfdb5aec5436592b9a61366477b05a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a059c7e11e775abea8698147bed1832" id="r_a4a059c7e11e775abea8698147bed1832"><td class="memItemLeft" align="right" valign="top"><a class="el" href="waitq_8h.html#a46a46b14671a14b2311805078fb4d92b">AuWaitQueue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__socket__.html#a4a059c7e11e775abea8698147bed1832">accept_wait</a></td></tr>
+<tr class="separator:a4a059c7e11e775abea8698147bed1832"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="a4d36ab11152a13cce36f03f2e96dc79d" name="a4d36ab11152a13cce36f03f2e96dc79d"></a>
@@ -133,6 +185,20 @@ Public Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">int(* _socket_::accept) (struct <a class="el" href="struct__socket__.html">_socket_</a> *sock, <a class="el" href="BaseHdr_2Net_2socket_8h.html#a8bb60190bcf8fd80045d0198b25c2384">sockaddr</a> *addr, <a class="el" href="BaseHdr_2Net_2socket_8h.html#acf0ed818b0a3c85ff6a9206679d6d91a">socklen_t</a> *addrlen)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4a059c7e11e775abea8698147bed1832" name="a4a059c7e11e775abea8698147bed1832"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a059c7e11e775abea8698147bed1832">&#9670;&#160;</a></span>accept_wait</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="waitq_8h.html#a46a46b14671a14b2311805078fb4d92b">AuWaitQueue</a> _socket_::accept_wait</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -167,6 +233,20 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="aca7829f7bac6eb630f63e4c2b8e7d2e0" name="aca7829f7bac6eb630f63e4c2b8e7d2e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca7829f7bac6eb630f63e4c2b8e7d2e0">&#9670;&#160;</a></span>cloexec</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> _socket_::cloexec</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a354f0868d6613442cac13c782929d949" name="a354f0868d6613442cac13c782929d949"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a354f0868d6613442cac13c782929d949">&#9670;&#160;</a></span>close</h2>
 
@@ -195,6 +275,48 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a880f19ed90b14bfd44abd78e72664e1f" name="a880f19ed90b14bfd44abd78e72664e1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a880f19ed90b14bfd44abd78e72664e1f">&#9670;&#160;</a></span>family</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> _socket_::family</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1ee0a99f468b6572a28e68ea0e9d0df3" name="a1ee0a99f468b6572a28e68ea0e9d0df3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ee0a99f468b6572a28e68ea0e9d0df3">&#9670;&#160;</a></span>getpeername</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int(* _socket_::getpeername) (struct <a class="el" href="struct__socket__.html">_socket_</a> *sock, <a class="el" href="BaseHdr_2Net_2socket_8h.html#a8bb60190bcf8fd80045d0198b25c2384">sockaddr</a> *addr, <a class="el" href="BaseHdr_2Net_2socket_8h.html#acf0ed818b0a3c85ff6a9206679d6d91a">socklen_t</a> *addrlen)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae316ab76524c86af07646ce60b62e2cd" name="ae316ab76524c86af07646ce60b62e2cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae316ab76524c86af07646ce60b62e2cd">&#9670;&#160;</a></span>getsockname</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int(* _socket_::getsockname) (struct <a class="el" href="struct__socket__.html">_socket_</a> *sock, <a class="el" href="BaseHdr_2Net_2socket_8h.html#a8bb60190bcf8fd80045d0198b25c2384">sockaddr</a> *addr, <a class="el" href="BaseHdr_2Net_2socket_8h.html#acf0ed818b0a3c85ff6a9206679d6d91a">socklen_t</a> *addrlen)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a2899578c01bd3d0a64d35938e1a89cc8" name="a2899578c01bd3d0a64d35938e1a89cc8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2899578c01bd3d0a64d35938e1a89cc8">&#9670;&#160;</a></span>ipv4Iden</h2>
 
@@ -209,6 +331,20 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="ae78475b62ad231c9a1286ba23b203c52" name="ae78475b62ad231c9a1286ba23b203c52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae78475b62ad231c9a1286ba23b203c52">&#9670;&#160;</a></span>keepalive</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> _socket_::keepalive</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="af23ff2a8658477008ded363f3a6d9cd9" name="af23ff2a8658477008ded363f3a6d9cd9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af23ff2a8658477008ded363f3a6d9cd9">&#9670;&#160;</a></span>listen</h2>
 
@@ -217,6 +353,62 @@ Public Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">int(* _socket_::listen) (struct <a class="el" href="struct__socket__.html">_socket_</a> *sock, int backlog)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac3e455feb0d6026074ca9eef6fd23053" name="ac3e455feb0d6026074ca9eef6fd23053"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3e455feb0d6026074ca9eef6fd23053">&#9670;&#160;</a></span>listening</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> _socket_::listening</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a53f9e057bea6394bd356f9d725437945" name="a53f9e057bea6394bd356f9d725437945"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53f9e057bea6394bd356f9d725437945">&#9670;&#160;</a></span>local_addr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> _socket_::local_addr[128]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0c125db37162e337ce6769ef000f4d03" name="a0c125db37162e337ce6769ef000f4d03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c125db37162e337ce6769ef000f4d03">&#9670;&#160;</a></span>local_len</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="BaseHdr_2Net_2socket_8h.html#acf0ed818b0a3c85ff6a9206679d6d91a">socklen_t</a> _socket_::local_len</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a70204d54086dc12ce7e39835b1b3549d" name="a70204d54086dc12ce7e39835b1b3549d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70204d54086dc12ce7e39835b1b3549d">&#9670;&#160;</a></span>nodelay</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> _socket_::nodelay</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -251,6 +443,48 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a712dcab7c2f314a44bf50c15dc2503e5" name="a712dcab7c2f314a44bf50c15dc2503e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a712dcab7c2f314a44bf50c15dc2503e5">&#9670;&#160;</a></span>peer_addr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> _socket_::peer_addr[128]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa717084d164637e7238615f56c58b6a9" name="aa717084d164637e7238615f56c58b6a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa717084d164637e7238615f56c58b6a9">&#9670;&#160;</a></span>peer_len</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="BaseHdr_2Net_2socket_8h.html#acf0ed818b0a3c85ff6a9206679d6d91a">socklen_t</a> _socket_::peer_len</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6cbba73c005fe39123d765521a95fef3" name="a6cbba73c005fe39123d765521a95fef3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6cbba73c005fe39123d765521a95fef3">&#9670;&#160;</a></span>poll</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int(* _socket_::poll) (struct <a class="el" href="struct__socket__.html">_socket_</a> *sock, int events)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="af9bd148bf57c1e83310f5ab463f96ed6" name="af9bd148bf57c1e83310f5ab463f96ed6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af9bd148bf57c1e83310f5ab463f96ed6">&#9670;&#160;</a></span>proto</h2>
 
@@ -265,6 +499,20 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="ab0882df99440bfbfba45a72434b6bfc4" name="ab0882df99440bfbfba45a72434b6bfc4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0882df99440bfbfba45a72434b6bfc4">&#9670;&#160;</a></span>rcvbuf</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int _socket_::rcvbuf</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ade24a0cf32cc6eeb534113237f462510" name="ade24a0cf32cc6eeb534113237f462510"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ade24a0cf32cc6eeb534113237f462510">&#9670;&#160;</a></span>receive</h2>
 
@@ -273,6 +521,34 @@ Public Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">int(* _socket_::receive) (struct <a class="el" href="struct__socket__.html">_socket_</a> *sock, <a class="el" href="BaseHdr_2Net_2socket_8h.html#a9330982c7bab0a2048d0828aa091d903">msghdr</a> *msg, int <a class="el" href="Drivers_2virtio_8h.html#a04a0bd666e371f3fab92b8d0ef5dbdb0">flags</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aba1698be26c356f251bd3468bec77088" name="aba1698be26c356f251bd3468bec77088"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba1698be26c356f251bd3468bec77088">&#9670;&#160;</a></span>reuseaddr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> _socket_::reuseaddr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5b3096eed1cee9555f3d52462c6197fe" name="a5b3096eed1cee9555f3d52462c6197fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b3096eed1cee9555f3d52462c6197fe">&#9670;&#160;</a></span>rx_wait</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="waitq_8h.html#a46a46b14671a14b2311805078fb4d92b">AuWaitQueue</a> _socket_::rx_wait</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -321,6 +597,90 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a3432793ef69f656aa481969bb006e600" name="a3432793ef69f656aa481969bb006e600"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3432793ef69f656aa481969bb006e600">&#9670;&#160;</a></span>shut_rd</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> _socket_::shut_rd</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5cd306caf054bb6a429f6566b95b4733" name="a5cd306caf054bb6a429f6566b95b4733"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cd306caf054bb6a429f6566b95b4733">&#9670;&#160;</a></span>shut_wr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> _socket_::shut_wr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac32f504e7edb782aca02304262cd58f6" name="ac32f504e7edb782aca02304262cd58f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac32f504e7edb782aca02304262cd58f6">&#9670;&#160;</a></span>shutdown</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int(* _socket_::shutdown) (struct <a class="el" href="struct__socket__.html">_socket_</a> *sock, int how)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a403550da73418dd00adc250dfbeb342d" name="a403550da73418dd00adc250dfbeb342d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a403550da73418dd00adc250dfbeb342d">&#9670;&#160;</a></span>sndbuf</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int _socket_::sndbuf</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a584ea8ccfc719554f38ed20f67dc816f" name="a584ea8ccfc719554f38ed20f67dc816f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a584ea8ccfc719554f38ed20f67dc816f">&#9670;&#160;</a></span>so_error</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int _socket_::so_error</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aefe9d74a99ec2c6ec1f9fff7122b2de4" name="aefe9d74a99ec2c6ec1f9fff7122b2de4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefe9d74a99ec2c6ec1f9fff7122b2de4">&#9670;&#160;</a></span>so_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> _socket_::so_type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a714d794b7247fc12dcc165b1bbad5259" name="a714d794b7247fc12dcc165b1bbad5259"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a714d794b7247fc12dcc165b1bbad5259">&#9670;&#160;</a></span>sockState</h2>
 
@@ -329,6 +689,20 @@ Public Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> _socket_::sockState</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a02cfdb5aec5436592b9a61366477b05a" name="a02cfdb5aec5436592b9a61366477b05a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02cfdb5aec5436592b9a61366477b05a">&#9670;&#160;</a></span>tx_wait</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="waitq_8h.html#a46a46b14671a14b2311805078fb4d92b">AuWaitQueue</a> _socket_::tx_wait</td>
         </tr>
       </table>
 </div><div class="memdoc">

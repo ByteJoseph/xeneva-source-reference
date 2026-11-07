@@ -233,13 +233,13 @@ Macros</h2></td></tr>
 <tr class="memitem:a54c26b96188a0ce00aa7506689919629" id="r_a54c26b96188a0ce00aa7506689919629"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pkcs7_8h.html#a54c26b96188a0ce00aa7506689919629">mbedtls_pkcs7_init</a> (<a class="el" href="structmbedtls__pkcs7.html">mbedtls_pkcs7</a> *pkcs7)</td></tr>
 <tr class="memdesc:a54c26b96188a0ce00aa7506689919629"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize <a class="el" href="structmbedtls__pkcs7.html">mbedtls_pkcs7</a> structure.  <br /></td></tr>
 <tr class="separator:a54c26b96188a0ce00aa7506689919629"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1578a5703e6013916440f6580f2a1a90" id="r_a1578a5703e6013916440f6580f2a1a90"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pkcs7_8h.html#a1578a5703e6013916440f6580f2a1a90">mbedtls_pkcs7_parse_der</a> (<a class="el" href="structmbedtls__pkcs7.html">mbedtls_pkcs7</a> *pkcs7, const unsigned char *buf, const <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> buflen)</td></tr>
+<tr class="memitem:a1578a5703e6013916440f6580f2a1a90" id="r_a1578a5703e6013916440f6580f2a1a90"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pkcs7_8h.html#a1578a5703e6013916440f6580f2a1a90">mbedtls_pkcs7_parse_der</a> (<a class="el" href="structmbedtls__pkcs7.html">mbedtls_pkcs7</a> *pkcs7, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *buf, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> buflen)</td></tr>
 <tr class="memdesc:a1578a5703e6013916440f6580f2a1a90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse a single DER formatted PKCS #7 detached signature.  <br /></td></tr>
 <tr class="separator:a1578a5703e6013916440f6580f2a1a90"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a753e183f8690c25b4f9f0bad3e74ce22" id="r_a753e183f8690c25b4f9f0bad3e74ce22"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pkcs7_8h.html#a753e183f8690c25b4f9f0bad3e74ce22">mbedtls_pkcs7_signed_data_verify</a> (<a class="el" href="structmbedtls__pkcs7.html">mbedtls_pkcs7</a> *pkcs7, const <a class="el" href="structmbedtls__x509__crt.html">mbedtls_x509_crt</a> *cert, const unsigned char *<a class="el" href="kthread_8h.html#a735984d41155bc1032e09bece8f8d66d">data</a>, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> datalen)</td></tr>
+<tr class="memitem:a753e183f8690c25b4f9f0bad3e74ce22" id="r_a753e183f8690c25b4f9f0bad3e74ce22"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pkcs7_8h.html#a753e183f8690c25b4f9f0bad3e74ce22">mbedtls_pkcs7_signed_data_verify</a> (<a class="el" href="structmbedtls__pkcs7.html">mbedtls_pkcs7</a> *pkcs7, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="structmbedtls__x509__crt.html">mbedtls_x509_crt</a> *cert, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *<a class="el" href="kthread_8h.html#a735984d41155bc1032e09bece8f8d66d">data</a>, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> datalen)</td></tr>
 <tr class="memdesc:a753e183f8690c25b4f9f0bad3e74ce22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verification of PKCS #7 signature against a caller-supplied certificate.  <br /></td></tr>
 <tr class="separator:a753e183f8690c25b4f9f0bad3e74ce22"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7032d51008865683a32d3dc6b8ab389a" id="r_a7032d51008865683a32d3dc6b8ab389a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pkcs7_8h.html#a7032d51008865683a32d3dc6b8ab389a">mbedtls_pkcs7_signed_hash_verify</a> (<a class="el" href="structmbedtls__pkcs7.html">mbedtls_pkcs7</a> *pkcs7, const <a class="el" href="structmbedtls__x509__crt.html">mbedtls_x509_crt</a> *cert, const unsigned char *hash, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> hashlen)</td></tr>
+<tr class="memitem:a7032d51008865683a32d3dc6b8ab389a" id="r_a7032d51008865683a32d3dc6b8ab389a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pkcs7_8h.html#a7032d51008865683a32d3dc6b8ab389a">mbedtls_pkcs7_signed_hash_verify</a> (<a class="el" href="structmbedtls__pkcs7.html">mbedtls_pkcs7</a> *pkcs7, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="structmbedtls__x509__crt.html">mbedtls_x509_crt</a> *cert, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *hash, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> hashlen)</td></tr>
 <tr class="memdesc:a7032d51008865683a32d3dc6b8ab389a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verification of PKCS #7 signature against a caller-supplied certificate.  <br /></td></tr>
 <tr class="separator:a7032d51008865683a32d3dc6b8ab389a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb2798ee91fa3d0d2611fff0d11b5ec2" id="r_abb2798ee91fa3d0d2611fff0d11b5ec2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pkcs7_8h.html#abb2798ee91fa3d0d2611fff0d11b5ec2">mbedtls_pkcs7_free</a> (<a class="el" href="structmbedtls__pkcs7.html">mbedtls_pkcs7</a> *pkcs7)</td></tr>
@@ -627,13 +627,13 @@ Macros</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *&#160;</td>
           <td class="paramname"><em>buf</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>&#160;</td>
           <td class="paramname"><em>buflen</em>&#160;</td>
         </tr>
         <tr>
@@ -677,13 +677,13 @@ A negative error code on failure. </dd></dl>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structmbedtls__x509__crt.html">mbedtls_x509_crt</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="structmbedtls__x509__crt.html">mbedtls_x509_crt</a> *&#160;</td>
           <td class="paramname"><em>cert</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *&#160;</td>
           <td class="paramname"><em>data</em>, </td>
         </tr>
         <tr>
@@ -732,13 +732,13 @@ A negative error code on failure. </dd></dl>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structmbedtls__x509__crt.html">mbedtls_x509_crt</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="structmbedtls__x509__crt.html">mbedtls_x509_crt</a> *&#160;</td>
           <td class="paramname"><em>cert</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *&#160;</td>
           <td class="paramname"><em>hash</em>, </td>
         </tr>
         <tr>

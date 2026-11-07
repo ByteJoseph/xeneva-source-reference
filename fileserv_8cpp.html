@@ -245,7 +245,7 @@ Functions</h2></td></tr>
 <tr class="memitem:ad221811d07e099ca3d26a921d550d963" id="r_ad221811d07e099ca3d26a921d550d963"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fileserv_8cpp.html#ad221811d07e099ca3d26a921d550d963">CloseFile</a> (int <a class="el" href="structfd.html">fd</a>)</td></tr>
 <tr class="memdesc:ad221811d07e099ca3d26a921d550d963"><td class="mdescLeft">&#160;</td><td class="mdescRight">CloseFile &ndash; closes a general file.  <br /></td></tr>
 <tr class="separator:ad221811d07e099ca3d26a921d550d963"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaca8d138320f915eca0844d398725983" id="r_aaca8d138320f915eca0844d398725983"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fileserv_8cpp.html#aaca8d138320f915eca0844d398725983">FileIoControl</a> (int <a class="el" href="structfd.html">fd</a>, int code, void *<a class="el" href="unionarg.html">arg</a>)</td></tr>
+<tr class="memitem:aaca8d138320f915eca0844d398725983" id="r_aaca8d138320f915eca0844d398725983"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fileserv_8cpp.html#aaca8d138320f915eca0844d398725983">FileIoControl</a> (int <a class="el" href="structfd.html">fd</a>, int <a class="el" href="structcode.html">code</a>, void *<a class="el" href="unionarg.html">arg</a>)</td></tr>
 <tr class="memdesc:aaca8d138320f915eca0844d398725983"><td class="mdescLeft">&#160;</td><td class="mdescRight">FileIoControl &ndash; controls the file through I/O code.  <br /></td></tr>
 <tr class="separator:aaca8d138320f915eca0844d398725983"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27c86065135ac45fb97f589fea3edfd8" id="r_a27c86065135ac45fb97f589fea3edfd8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fileserv_8cpp.html#a27c86065135ac45fb97f589fea3edfd8">FileStat</a> (int <a class="el" href="structfd.html">fd</a>, void *buf)</td></tr>
@@ -257,7 +257,7 @@ Functions</h2></td></tr>
 <tr class="memitem:aff99d119d5568e3b1e632dd30a8b829b" id="r_aff99d119d5568e3b1e632dd30a8b829b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fileserv_8cpp.html#aff99d119d5568e3b1e632dd30a8b829b">ReadDir</a> (int dirfd, void *dirent)</td></tr>
 <tr class="memdesc:aff99d119d5568e3b1e632dd30a8b829b"><td class="mdescLeft">&#160;</td><td class="mdescRight">ReadDir &ndash; reads a directory entry.  <br /></td></tr>
 <tr class="separator:aff99d119d5568e3b1e632dd30a8b829b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34fb7b630a1a53282ee435ce4e7e5afa" id="r_a34fb7b630a1a53282ee435ce4e7e5afa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fileserv_8cpp.html#a34fb7b630a1a53282ee435ce4e7e5afa">ProcessGetFileDesc</a> (const char *filename)</td></tr>
+<tr class="memitem:a34fb7b630a1a53282ee435ce4e7e5afa" id="r_a34fb7b630a1a53282ee435ce4e7e5afa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fileserv_8cpp.html#a34fb7b630a1a53282ee435ce4e7e5afa">ProcessGetFileDesc</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *filename)</td></tr>
 <tr class="memdesc:a34fb7b630a1a53282ee435ce4e7e5afa"><td class="mdescLeft">&#160;</td><td class="mdescRight">ProcessGetFileDesc &ndash; Searches all process file descriptor entries for specific filename fd.  <br /></td></tr>
 <tr class="separator:a34fb7b630a1a53282ee435ce4e7e5afa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -505,7 +505,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">int ProcessGetFileDesc </td>
           <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
           <td class="paramname"><em>filename</em></td><td>)</td>
           <td></td>
         </tr>

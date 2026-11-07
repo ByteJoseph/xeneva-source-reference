@@ -369,9 +369,9 @@ Macros</h2></td></tr>
 <tr class="separator:a76adf3ebac4cb84c41774f4688694815"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51dc0b5bb07bb732551f35ce83e188c6" id="r_a51dc0b5bb07bb732551f35ce83e188c6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="acmacros_8h.html#a51dc0b5bb07bb732551f35ce83e188c6">ACPI_MASK_BITS_BELOW_64</a>(width)</td></tr>
 <tr class="separator:a51dc0b5bb07bb732551f35ce83e188c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad2a9fe09b0fae86b073337a0c2dd0ecb" id="r_ad2a9fe09b0fae86b073337a0c2dd0ecb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="acmacros_8h.html#ad2a9fe09b0fae86b073337a0c2dd0ecb">ACPI_REGISTER_PREPARE_BITS</a>(Val,  Pos,  <a class="el" href="Acpi10_8h.html#a84844482dbc551ed60bbbda0edb7e475">Mask</a>)&#160;&#160;&#160;    ((Val &lt;&lt; Pos) &amp; <a class="el" href="Acpi10_8h.html#a84844482dbc551ed60bbbda0edb7e475">Mask</a>)</td></tr>
+<tr class="memitem:ad2a9fe09b0fae86b073337a0c2dd0ecb" id="r_ad2a9fe09b0fae86b073337a0c2dd0ecb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="acmacros_8h.html#ad2a9fe09b0fae86b073337a0c2dd0ecb">ACPI_REGISTER_PREPARE_BITS</a>(Val,  <a class="el" href="deflate_8h.html#a80a8610ae675eaeead82013bacde10a1">Pos</a>,  <a class="el" href="Acpi10_8h.html#a84844482dbc551ed60bbbda0edb7e475">Mask</a>)&#160;&#160;&#160;    ((Val &lt;&lt; <a class="el" href="deflate_8h.html#a80a8610ae675eaeead82013bacde10a1">Pos</a>) &amp; <a class="el" href="Acpi10_8h.html#a84844482dbc551ed60bbbda0edb7e475">Mask</a>)</td></tr>
 <tr class="separator:ad2a9fe09b0fae86b073337a0c2dd0ecb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd8e34a3746dd8196810a0a45029a67a" id="r_acd8e34a3746dd8196810a0a45029a67a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="acmacros_8h.html#acd8e34a3746dd8196810a0a45029a67a">ACPI_REGISTER_INSERT_VALUE</a>(Reg,  Pos,  <a class="el" href="Acpi10_8h.html#a84844482dbc551ed60bbbda0edb7e475">Mask</a>,  Val)&#160;&#160;&#160;    Reg = (Reg &amp; (~(<a class="el" href="Acpi10_8h.html#a84844482dbc551ed60bbbda0edb7e475">Mask</a>))) | <a class="el" href="acmacros_8h.html#ad2a9fe09b0fae86b073337a0c2dd0ecb">ACPI_REGISTER_PREPARE_BITS</a>(Val, Pos, <a class="el" href="Acpi10_8h.html#a84844482dbc551ed60bbbda0edb7e475">Mask</a>)</td></tr>
+<tr class="memitem:acd8e34a3746dd8196810a0a45029a67a" id="r_acd8e34a3746dd8196810a0a45029a67a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="acmacros_8h.html#acd8e34a3746dd8196810a0a45029a67a">ACPI_REGISTER_INSERT_VALUE</a>(Reg,  <a class="el" href="deflate_8h.html#a80a8610ae675eaeead82013bacde10a1">Pos</a>,  <a class="el" href="Acpi10_8h.html#a84844482dbc551ed60bbbda0edb7e475">Mask</a>,  Val)&#160;&#160;&#160;    Reg = (Reg &amp; (~(<a class="el" href="Acpi10_8h.html#a84844482dbc551ed60bbbda0edb7e475">Mask</a>))) | <a class="el" href="acmacros_8h.html#ad2a9fe09b0fae86b073337a0c2dd0ecb">ACPI_REGISTER_PREPARE_BITS</a>(Val, <a class="el" href="deflate_8h.html#a80a8610ae675eaeead82013bacde10a1">Pos</a>, <a class="el" href="Acpi10_8h.html#a84844482dbc551ed60bbbda0edb7e475">Mask</a>)</td></tr>
 <tr class="separator:acd8e34a3746dd8196810a0a45029a67a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab207c2904d73110c347c5a6c92ad27a6" id="r_ab207c2904d73110c347c5a6c92ad27a6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="acmacros_8h.html#ab207c2904d73110c347c5a6c92ad27a6">ACPI_INSERT_BITS</a>(Target,  <a class="el" href="Acpi10_8h.html#a84844482dbc551ed60bbbda0edb7e475">Mask</a>,  Source)&#160;&#160;&#160;    Target = ((Target &amp; (~(<a class="el" href="Acpi10_8h.html#a84844482dbc551ed60bbbda0edb7e475">Mask</a>))) | (Source &amp; <a class="el" href="Acpi10_8h.html#a84844482dbc551ed60bbbda0edb7e475">Mask</a>))</td></tr>
 <tr class="separator:ab207c2904d73110c347c5a6c92ad27a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -427,7 +427,7 @@ Macros</h2></td></tr>
 <tr class="separator:a5a3a20cfe13def774cc8ef86f5c206a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62eda361af0f5e7ecaebafc1ffa935ba" id="r_a62eda361af0f5e7ecaebafc1ffa935ba"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="acmacros_8h.html#a62eda361af0f5e7ecaebafc1ffa935ba">ACPI_GET_DESCRIPTOR_TYPE</a>(<a class="el" href="libunicode_8c.html#a2530554172d8629149ec56816eeaa947">d</a>)&#160;&#160;&#160;(((<a class="el" href="acobject_8h.html#a8d9c728279799b31f8dc6ebf4225f8dd">ACPI_DESCRIPTOR</a> *)(void *)(<a class="el" href="libunicode_8c.html#a2530554172d8629149ec56816eeaa947">d</a>))-&gt;Common.DescriptorType)</td></tr>
 <tr class="separator:a62eda361af0f5e7ecaebafc1ffa935ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ce5593fd3dc386ef8992e4660baf02e" id="r_a7ce5593fd3dc386ef8992e4660baf02e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="acmacros_8h.html#a7ce5593fd3dc386ef8992e4660baf02e">ACPI_SET_DESCRIPTOR_TYPE</a>(<a class="el" href="libunicode_8c.html#a2530554172d8629149ec56816eeaa947">d</a>,  <a class="el" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a>)&#160;&#160;&#160;(((<a class="el" href="acobject_8h.html#a8d9c728279799b31f8dc6ebf4225f8dd">ACPI_DESCRIPTOR</a> *)(void *)(<a class="el" href="libunicode_8c.html#a2530554172d8629149ec56816eeaa947">d</a>))-&gt;Common.DescriptorType = (<a class="el" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a>))</td></tr>
+<tr class="memitem:a7ce5593fd3dc386ef8992e4660baf02e" id="r_a7ce5593fd3dc386ef8992e4660baf02e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="acmacros_8h.html#a7ce5593fd3dc386ef8992e4660baf02e">ACPI_SET_DESCRIPTOR_TYPE</a>(<a class="el" href="libunicode_8c.html#a2530554172d8629149ec56816eeaa947">d</a>,  t)&#160;&#160;&#160;(((<a class="el" href="acobject_8h.html#a8d9c728279799b31f8dc6ebf4225f8dd">ACPI_DESCRIPTOR</a> *)(void *)(<a class="el" href="libunicode_8c.html#a2530554172d8629149ec56816eeaa947">d</a>))-&gt;Common.DescriptorType = (t))</td></tr>
 <tr class="separator:a7ce5593fd3dc386ef8992e4660baf02e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61977bd0238f7d15101151c15f748b72" id="r_a61977bd0238f7d15101151c15f748b72"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="acmacros_8h.html#a61977bd0238f7d15101151c15f748b72">ACPI_OP</a>(<a class="el" href="acpixf_8h.html#a5e6f9eb1e980275f44f308f43bff476e">Name</a>,  PArgs,  IArgs,  ObjType,  Class,  <a class="el" href="acpixf_8h.html#ab361d6187ad6230bccbce7d8dbe49abc">Type</a>,  <a class="el" href="acdebug_8h.html#a4f38d8eec414bbac21fe17e446586ef4">Flags</a>)&#160;&#160;&#160;    {(<a class="el" href="AArch64_2ProcessorBind_8h.html#ae1e6edbbc26d6fbc71a90190d0266018">UINT32</a>)(PArgs), (<a class="el" href="AArch64_2ProcessorBind_8h.html#ae1e6edbbc26d6fbc71a90190d0266018">UINT32</a>)(IArgs), (<a class="el" href="AArch64_2ProcessorBind_8h.html#ae1e6edbbc26d6fbc71a90190d0266018">UINT32</a>)(<a class="el" href="acdebug_8h.html#a4f38d8eec414bbac21fe17e446586ef4">Flags</a>), ObjType, Class, <a class="el" href="acpixf_8h.html#ab361d6187ad6230bccbce7d8dbe49abc">Type</a>}</td></tr>
 <tr class="separator:a61977bd0238f7d15101151c15f748b72"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2816,7 +2816,7 @@ Macros</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">Pos, </td>
+          <td class="paramname"><a class="el" href="deflate_8h.html#a80a8610ae675eaeead82013bacde10a1">Pos</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -2833,7 +2833,7 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;    Reg = (Reg &amp; (~(<a class="el" href="Acpi10_8h.html#a84844482dbc551ed60bbbda0edb7e475">Mask</a>))) | <a class="el" href="acmacros_8h.html#ad2a9fe09b0fae86b073337a0c2dd0ecb">ACPI_REGISTER_PREPARE_BITS</a>(Val, Pos, <a class="el" href="Acpi10_8h.html#a84844482dbc551ed60bbbda0edb7e475">Mask</a>)</td>
+          <td></td><td>&#160;&#160;&#160;    Reg = (Reg &amp; (~(<a class="el" href="Acpi10_8h.html#a84844482dbc551ed60bbbda0edb7e475">Mask</a>))) | <a class="el" href="acmacros_8h.html#ad2a9fe09b0fae86b073337a0c2dd0ecb">ACPI_REGISTER_PREPARE_BITS</a>(Val, <a class="el" href="deflate_8h.html#a80a8610ae675eaeead82013bacde10a1">Pos</a>, <a class="el" href="Acpi10_8h.html#a84844482dbc551ed60bbbda0edb7e475">Mask</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2856,7 +2856,7 @@ Macros</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">Pos, </td>
+          <td class="paramname"><a class="el" href="deflate_8h.html#a80a8610ae675eaeead82013bacde10a1">Pos</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -2867,7 +2867,7 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;    ((Val &lt;&lt; Pos) &amp; <a class="el" href="Acpi10_8h.html#a84844482dbc551ed60bbbda0edb7e475">Mask</a>)</td>
+          <td></td><td>&#160;&#160;&#160;    ((Val &lt;&lt; <a class="el" href="deflate_8h.html#a80a8610ae675eaeead82013bacde10a1">Pos</a>) &amp; <a class="el" href="Acpi10_8h.html#a84844482dbc551ed60bbbda0edb7e475">Mask</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -3444,12 +3444,12 @@ Macros</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a>&#160;</td>
+          <td class="paramname">t&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;(((<a class="el" href="acobject_8h.html#a8d9c728279799b31f8dc6ebf4225f8dd">ACPI_DESCRIPTOR</a> *)(void *)(<a class="el" href="libunicode_8c.html#a2530554172d8629149ec56816eeaa947">d</a>))-&gt;Common.DescriptorType = (<a class="el" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a>))</td>
+          <td></td><td>&#160;&#160;&#160;(((<a class="el" href="acobject_8h.html#a8d9c728279799b31f8dc6ebf4225f8dd">ACPI_DESCRIPTOR</a> *)(void *)(<a class="el" href="libunicode_8c.html#a2530554172d8629149ec56816eeaa947">d</a>))-&gt;Common.DescriptorType = (t))</td>
         </tr>
       </table>
 </div><div class="memdoc">

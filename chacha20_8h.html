@@ -253,16 +253,16 @@ Functions</h2></td></tr>
 <tr class="memitem:a490d580af4dcc86b407f195d7853e811" id="r_a490d580af4dcc86b407f195d7853e811"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chacha20_8h.html#a490d580af4dcc86b407f195d7853e811">mbedtls_chacha20_free</a> (<a class="el" href="structmbedtls__chacha20__context.html">mbedtls_chacha20_context</a> *ctx)</td></tr>
 <tr class="memdesc:a490d580af4dcc86b407f195d7853e811"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function releases and clears the specified ChaCha20 context.  <br /></td></tr>
 <tr class="separator:a490d580af4dcc86b407f195d7853e811"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6545ad682d3bb5495554a81f839fe5d3" id="r_a6545ad682d3bb5495554a81f839fe5d3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chacha20_8h.html#a6545ad682d3bb5495554a81f839fe5d3">mbedtls_chacha20_setkey</a> (<a class="el" href="structmbedtls__chacha20__context.html">mbedtls_chacha20_context</a> *ctx, const unsigned char key[32])</td></tr>
+<tr class="memitem:a6545ad682d3bb5495554a81f839fe5d3" id="r_a6545ad682d3bb5495554a81f839fe5d3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chacha20_8h.html#a6545ad682d3bb5495554a81f839fe5d3">mbedtls_chacha20_setkey</a> (<a class="el" href="structmbedtls__chacha20__context.html">mbedtls_chacha20_context</a> *ctx, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char key[32])</td></tr>
 <tr class="memdesc:a6545ad682d3bb5495554a81f839fe5d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function sets the encryption/decryption key.  <br /></td></tr>
 <tr class="separator:a6545ad682d3bb5495554a81f839fe5d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae101dbef191baa8c785ac75862e2d094" id="r_ae101dbef191baa8c785ac75862e2d094"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chacha20_8h.html#ae101dbef191baa8c785ac75862e2d094">mbedtls_chacha20_starts</a> (<a class="el" href="structmbedtls__chacha20__context.html">mbedtls_chacha20_context</a> *ctx, const unsigned char nonce[12], <a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> counter)</td></tr>
+<tr class="memitem:ae101dbef191baa8c785ac75862e2d094" id="r_ae101dbef191baa8c785ac75862e2d094"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chacha20_8h.html#ae101dbef191baa8c785ac75862e2d094">mbedtls_chacha20_starts</a> (<a class="el" href="structmbedtls__chacha20__context.html">mbedtls_chacha20_context</a> *ctx, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char nonce[12], <a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> counter)</td></tr>
 <tr class="memdesc:ae101dbef191baa8c785ac75862e2d094"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function sets the nonce and initial counter value.  <br /></td></tr>
 <tr class="separator:ae101dbef191baa8c785ac75862e2d094"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afdc3d51bfaf82786b5d24ea15542b167" id="r_afdc3d51bfaf82786b5d24ea15542b167"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chacha20_8h.html#afdc3d51bfaf82786b5d24ea15542b167">mbedtls_chacha20_update</a> (<a class="el" href="structmbedtls__chacha20__context.html">mbedtls_chacha20_context</a> *ctx, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> <a class="el" href="drm__bridge_8h.html#a854352f53b148adc24983a58a1866d66">size</a>, const unsigned char *<a class="el" href="virtiokbd_8c.html#ac7ea4a68c5710086113a183d16feaf8d">input</a>, unsigned char *output)</td></tr>
+<tr class="memitem:afdc3d51bfaf82786b5d24ea15542b167" id="r_afdc3d51bfaf82786b5d24ea15542b167"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chacha20_8h.html#afdc3d51bfaf82786b5d24ea15542b167">mbedtls_chacha20_update</a> (<a class="el" href="structmbedtls__chacha20__context.html">mbedtls_chacha20_context</a> *ctx, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> <a class="el" href="drm__bridge_8h.html#a854352f53b148adc24983a58a1866d66">size</a>, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *<a class="el" href="virtiokbd_8c.html#ac7ea4a68c5710086113a183d16feaf8d">input</a>, unsigned char *output)</td></tr>
 <tr class="memdesc:afdc3d51bfaf82786b5d24ea15542b167"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function encrypts or decrypts data.  <br /></td></tr>
 <tr class="separator:afdc3d51bfaf82786b5d24ea15542b167"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63dbf3a4bbd5ee265567ead622bc3841" id="r_a63dbf3a4bbd5ee265567ead622bc3841"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chacha20_8h.html#a63dbf3a4bbd5ee265567ead622bc3841">mbedtls_chacha20_crypt</a> (const unsigned char key[32], const unsigned char nonce[12], <a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> counter, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> <a class="el" href="drm__bridge_8h.html#a854352f53b148adc24983a58a1866d66">size</a>, const unsigned char *<a class="el" href="virtiokbd_8c.html#ac7ea4a68c5710086113a183d16feaf8d">input</a>, unsigned char *output)</td></tr>
+<tr class="memitem:a63dbf3a4bbd5ee265567ead622bc3841" id="r_a63dbf3a4bbd5ee265567ead622bc3841"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chacha20_8h.html#a63dbf3a4bbd5ee265567ead622bc3841">mbedtls_chacha20_crypt</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char key[32], <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char nonce[12], <a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> counter, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> <a class="el" href="drm__bridge_8h.html#a854352f53b148adc24983a58a1866d66">size</a>, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *<a class="el" href="virtiokbd_8c.html#ac7ea4a68c5710086113a183d16feaf8d">input</a>, unsigned char *output)</td></tr>
 <tr class="memdesc:a63dbf3a4bbd5ee265567ead622bc3841"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function encrypts or decrypts data with ChaCha20 and the given key and nonce.  <br /></td></tr>
 <tr class="separator:a63dbf3a4bbd5ee265567ead622bc3841"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -315,13 +315,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">int mbedtls_chacha20_crypt </td>
           <td>(</td>
-          <td class="paramtype">const unsigned char&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char&#160;</td>
           <td class="paramname"><em>key</em>[32], </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const unsigned char&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char&#160;</td>
           <td class="paramname"><em>nonce</em>[12], </td>
         </tr>
         <tr>
@@ -339,7 +339,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *&#160;</td>
           <td class="paramname"><em>input</em>, </td>
         </tr>
         <tr>
@@ -452,7 +452,7 @@ A negative error code on failure. </dd></dl>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const unsigned char&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char&#160;</td>
           <td class="paramname"><em>key</em>[32]&#160;</td>
         </tr>
         <tr>
@@ -493,7 +493,7 @@ A negative error code on failure. </dd></dl>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const unsigned char&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char&#160;</td>
           <td class="paramname"><em>nonce</em>[12], </td>
         </tr>
         <tr>
@@ -548,7 +548,7 @@ A negative error code on failure. </dd></dl>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *&#160;</td>
           <td class="paramname"><em>input</em>, </td>
         </tr>
         <tr>

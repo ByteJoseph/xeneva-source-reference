@@ -143,16 +143,16 @@ Functions</h2></td></tr>
 <tr class="memitem:acee2ab8cf388eb50bbde831c4a0f4679" id="r_acee2ab8cf388eb50bbde831c4a0f4679"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nist__kw_8h.html#acee2ab8cf388eb50bbde831c4a0f4679">mbedtls_nist_kw_init</a> (<a class="el" href="structmbedtls__nist__kw__context.html">mbedtls_nist_kw_context</a> *ctx)</td></tr>
 <tr class="memdesc:acee2ab8cf388eb50bbde831c4a0f4679"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function initializes the specified key wrapping context to make references valid and prepare the context for <a class="el" href="nist__kw_8h.html#a04b9bb48ebe89342177461d2b0374ef8" title="This function initializes the key wrapping context set in the ctx parameter and sets the encryption k...">mbedtls_nist_kw_setkey()</a> or <a class="el" href="nist__kw_8h.html#ab938fd8572b507788ebb61bc5f829f81" title="This function releases and clears the specified key wrapping context and underlying cipher sub-contex...">mbedtls_nist_kw_free()</a>.  <br /></td></tr>
 <tr class="separator:acee2ab8cf388eb50bbde831c4a0f4679"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04b9bb48ebe89342177461d2b0374ef8" id="r_a04b9bb48ebe89342177461d2b0374ef8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nist__kw_8h.html#a04b9bb48ebe89342177461d2b0374ef8">mbedtls_nist_kw_setkey</a> (<a class="el" href="structmbedtls__nist__kw__context.html">mbedtls_nist_kw_context</a> *ctx, <a class="el" href="cipher_8h.html#af5b069ffd0b2ad31225e42ee4ee29b1b">mbedtls_cipher_id_t</a> cipher, const unsigned char *key, unsigned int keybits, const int is_wrap)</td></tr>
+<tr class="memitem:a04b9bb48ebe89342177461d2b0374ef8" id="r_a04b9bb48ebe89342177461d2b0374ef8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nist__kw_8h.html#a04b9bb48ebe89342177461d2b0374ef8">mbedtls_nist_kw_setkey</a> (<a class="el" href="structmbedtls__nist__kw__context.html">mbedtls_nist_kw_context</a> *ctx, <a class="el" href="cipher_8h.html#af5b069ffd0b2ad31225e42ee4ee29b1b">mbedtls_cipher_id_t</a> cipher, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *key, unsigned int keybits, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> int is_wrap)</td></tr>
 <tr class="memdesc:a04b9bb48ebe89342177461d2b0374ef8"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function initializes the key wrapping context set in the <code>ctx</code> parameter and sets the encryption key.  <br /></td></tr>
 <tr class="separator:a04b9bb48ebe89342177461d2b0374ef8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab938fd8572b507788ebb61bc5f829f81" id="r_ab938fd8572b507788ebb61bc5f829f81"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nist__kw_8h.html#ab938fd8572b507788ebb61bc5f829f81">mbedtls_nist_kw_free</a> (<a class="el" href="structmbedtls__nist__kw__context.html">mbedtls_nist_kw_context</a> *ctx)</td></tr>
 <tr class="memdesc:ab938fd8572b507788ebb61bc5f829f81"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function releases and clears the specified key wrapping context and underlying cipher sub-context.  <br /></td></tr>
 <tr class="separator:ab938fd8572b507788ebb61bc5f829f81"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15fcca8f10af1a87f0dc8e6b21592d6d" id="r_a15fcca8f10af1a87f0dc8e6b21592d6d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nist__kw_8h.html#a15fcca8f10af1a87f0dc8e6b21592d6d">mbedtls_nist_kw_wrap</a> (<a class="el" href="structmbedtls__nist__kw__context.html">mbedtls_nist_kw_context</a> *ctx, <a class="el" href="nist__kw_8h.html#a84b63905229e3a4350f470b803c4de59">mbedtls_nist_kw_mode_t</a> <a class="el" href="treebuilder_8c.html#a2aa8bc6e431cc1e0cc602ac69a419095">mode</a>, const unsigned char *<a class="el" href="virtiokbd_8c.html#ac7ea4a68c5710086113a183d16feaf8d">input</a>, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> in_len, unsigned char *output, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> *out_len, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> out_size)</td></tr>
+<tr class="memitem:a15fcca8f10af1a87f0dc8e6b21592d6d" id="r_a15fcca8f10af1a87f0dc8e6b21592d6d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nist__kw_8h.html#a15fcca8f10af1a87f0dc8e6b21592d6d">mbedtls_nist_kw_wrap</a> (<a class="el" href="structmbedtls__nist__kw__context.html">mbedtls_nist_kw_context</a> *ctx, <a class="el" href="nist__kw_8h.html#a84b63905229e3a4350f470b803c4de59">mbedtls_nist_kw_mode_t</a> <a class="el" href="treebuilder_8c.html#a2aa8bc6e431cc1e0cc602ac69a419095">mode</a>, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *<a class="el" href="virtiokbd_8c.html#ac7ea4a68c5710086113a183d16feaf8d">input</a>, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> in_len, unsigned char *output, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> *out_len, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> out_size)</td></tr>
 <tr class="memdesc:a15fcca8f10af1a87f0dc8e6b21592d6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function encrypts a buffer using key wrapping.  <br /></td></tr>
 <tr class="separator:a15fcca8f10af1a87f0dc8e6b21592d6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a743a79699ef04c54f019a02470973567" id="r_a743a79699ef04c54f019a02470973567"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nist__kw_8h.html#a743a79699ef04c54f019a02470973567">mbedtls_nist_kw_unwrap</a> (<a class="el" href="structmbedtls__nist__kw__context.html">mbedtls_nist_kw_context</a> *ctx, <a class="el" href="nist__kw_8h.html#a84b63905229e3a4350f470b803c4de59">mbedtls_nist_kw_mode_t</a> <a class="el" href="treebuilder_8c.html#a2aa8bc6e431cc1e0cc602ac69a419095">mode</a>, const unsigned char *<a class="el" href="virtiokbd_8c.html#ac7ea4a68c5710086113a183d16feaf8d">input</a>, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> in_len, unsigned char *output, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> *out_len, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> out_size)</td></tr>
+<tr class="memitem:a743a79699ef04c54f019a02470973567" id="r_a743a79699ef04c54f019a02470973567"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nist__kw_8h.html#a743a79699ef04c54f019a02470973567">mbedtls_nist_kw_unwrap</a> (<a class="el" href="structmbedtls__nist__kw__context.html">mbedtls_nist_kw_context</a> *ctx, <a class="el" href="nist__kw_8h.html#a84b63905229e3a4350f470b803c4de59">mbedtls_nist_kw_mode_t</a> <a class="el" href="treebuilder_8c.html#a2aa8bc6e431cc1e0cc602ac69a419095">mode</a>, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *<a class="el" href="virtiokbd_8c.html#ac7ea4a68c5710086113a183d16feaf8d">input</a>, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> in_len, unsigned char *output, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> *out_len, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> out_size)</td></tr>
 <tr class="memdesc:a743a79699ef04c54f019a02470973567"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function decrypts a buffer using key wrapping.  <br /></td></tr>
 <tr class="separator:a743a79699ef04c54f019a02470973567"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -253,7 +253,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *&#160;</td>
           <td class="paramname"><em>key</em>, </td>
         </tr>
         <tr>
@@ -265,7 +265,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const int&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> int&#160;</td>
           <td class="paramname"><em>is_wrap</em>&#160;</td>
         </tr>
         <tr>
@@ -318,7 +318,7 @@ cipher-specific error code on failure of the underlying cipher. </dd></dl>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *&#160;</td>
           <td class="paramname"><em>input</em>, </td>
         </tr>
         <tr>
@@ -403,7 +403,7 @@ cipher-specific error code on failure of the underlying cipher. </dd></dl>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *&#160;</td>
           <td class="paramname"><em>input</em>, </td>
         </tr>
         <tr>

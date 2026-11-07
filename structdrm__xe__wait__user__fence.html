@@ -272,7 +272,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>@timeout: how long to wait before bailing, value in nanoseconds. Without DRM_XE_UFENCE_WAIT_FLAG_ABSTIME flag set (relative timeout) it contains timeout expressed in nanoseconds to wait (fence will expire at now() + timeout). When DRM_XE_UFENCE_WAIT_FLAG_ABSTIME flag is set (absolute timeout) wait will end at timeout (uses system CLOCK_MONOTONIC). Passing negative timeout leads to never ending wait.</p>
+<p>@timeout: how long to wait before bailing, value in nanoseconds. Without DRM_XE_UFENCE_WAIT_FLAG_ABSTIME flag set (relative timeout) it contains timeout expressed in nanoseconds to wait (fence will expire at <a class="el" href="compose3d_8cpp.html#ae2650a26345ad9acf369a29f854a3a9f">now()</a> + timeout). When DRM_XE_UFENCE_WAIT_FLAG_ABSTIME flag is set (absolute timeout) wait will end at timeout (uses system CLOCK_MONOTONIC). Passing negative timeout leads to never ending wait.</p>
 <p>On relative timeout this value is updated with timeout left (for restarting the call in case of signal delivery). On absolute timeout this value stays intact (restarted call still expire at the same point of time). </p>
 
 </div>

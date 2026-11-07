@@ -434,7 +434,7 @@ Macros</h2></td></tr>
 <tr class="separator:ad7d2c199c11feafd3ae7f91aa1ee2c85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa961cd887ed571eadb6f6148d0d09e48" id="r_aa961cd887ed571eadb6f6148d0d09e48"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#aa961cd887ed571eadb6f6148d0d09e48">calloc_must_clear</a>(p)&#160;&#160;&#160;(!<a class="el" href="dlmalloc_8c.html#a3597aedd2e73f2b6616f82e2838292ec">is_mmapped</a>(p))</td></tr>
 <tr class="separator:aa961cd887ed571eadb6f6148d0d09e48"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a62a561657f44853b51a022b878471921" id="r_a62a561657f44853b51a022b878471921"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#a62a561657f44853b51a022b878471921">leftmost_child</a>(<a class="el" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a>)&#160;&#160;&#160;((<a class="el" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a>)-&gt;child[0] != 0? (<a class="el" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a>)-&gt;child[0] : (<a class="el" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a>)-&gt;child[1])</td></tr>
+<tr class="memitem:a62a561657f44853b51a022b878471921" id="r_a62a561657f44853b51a022b878471921"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#a62a561657f44853b51a022b878471921">leftmost_child</a>(t)&#160;&#160;&#160;((t)-&gt;child[0] != 0? (t)-&gt;child[0] : (t)-&gt;child[1])</td></tr>
 <tr class="separator:a62a561657f44853b51a022b878471921"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a31e5267bf40dcb9992d77209c35427" id="r_a9a31e5267bf40dcb9992d77209c35427"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#a9a31e5267bf40dcb9992d77209c35427">is_mmapped_segment</a>(<a class="el" href="in__foreign__content_8c.html#a8fa17c8cf4c36df48f4108c36da8573e">S</a>)&#160;&#160;&#160;((<a class="el" href="in__foreign__content_8c.html#a8fa17c8cf4c36df48f4108c36da8573e">S</a>)-&gt;sflags &amp; <a class="el" href="dlmalloc_8c.html#a6792a808878980b064a53729e42a1b55">USE_MMAP_BIT</a>)</td></tr>
 <tr class="separator:a9a31e5267bf40dcb9992d77209c35427"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -514,7 +514,7 @@ Macros</h2></td></tr>
 <tr class="separator:a4a10639890e0474f257429c8aec650bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9da830f14086f890cc55fc4172a02eb6" id="r_a9da830f14086f890cc55fc4172a02eb6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#a9da830f14086f890cc55fc4172a02eb6">check_top_chunk</a>(<a class="el" href="Process_2Doomgeneric_2sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>,  <a class="el" href="element-type_8h.html#a1c66260caf993024c96c0db098f18088a82f05f38f6a17b117cdd2b83227912c6">P</a>)&#160;&#160;&#160;do_check_top_chunk(<a class="el" href="Process_2Doomgeneric_2sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>,<a class="el" href="element-type_8h.html#a1c66260caf993024c96c0db098f18088a82f05f38f6a17b117cdd2b83227912c6">P</a>)</td></tr>
 <tr class="separator:a9da830f14086f890cc55fc4172a02eb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae26652400ab077acf28998ca58aa7bf1" id="r_ae26652400ab077acf28998ca58aa7bf1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#ae26652400ab077acf28998ca58aa7bf1">check_malloced_chunk</a>(<a class="el" href="Process_2Doomgeneric_2sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>,  <a class="el" href="element-type_8h.html#a1c66260caf993024c96c0db098f18088a82f05f38f6a17b117cdd2b83227912c6">P</a>,  N)&#160;&#160;&#160;do_check_malloced_chunk(<a class="el" href="Process_2Doomgeneric_2sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>,<a class="el" href="element-type_8h.html#a1c66260caf993024c96c0db098f18088a82f05f38f6a17b117cdd2b83227912c6">P</a>,N)</td></tr>
+<tr class="memitem:ae26652400ab077acf28998ca58aa7bf1" id="r_ae26652400ab077acf28998ca58aa7bf1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#ae26652400ab077acf28998ca58aa7bf1">check_malloced_chunk</a>(<a class="el" href="Process_2Doomgeneric_2sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>,  <a class="el" href="element-type_8h.html#a1c66260caf993024c96c0db098f18088a82f05f38f6a17b117cdd2b83227912c6">P</a>,  <a class="el" href="crc32_8c.html#a0240ac851181b84ac374872dc5434ee4">N</a>)&#160;&#160;&#160;do_check_malloced_chunk(<a class="el" href="Process_2Doomgeneric_2sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>,<a class="el" href="element-type_8h.html#a1c66260caf993024c96c0db098f18088a82f05f38f6a17b117cdd2b83227912c6">P</a>,<a class="el" href="crc32_8c.html#a0240ac851181b84ac374872dc5434ee4">N</a>)</td></tr>
 <tr class="separator:ae26652400ab077acf28998ca58aa7bf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab4a8a939c748e7bf809ebf9cde15f974" id="r_ab4a8a939c748e7bf809ebf9cde15f974"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#ab4a8a939c748e7bf809ebf9cde15f974">check_mmapped_chunk</a>(<a class="el" href="Process_2Doomgeneric_2sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>,  <a class="el" href="element-type_8h.html#a1c66260caf993024c96c0db098f18088a82f05f38f6a17b117cdd2b83227912c6">P</a>)&#160;&#160;&#160;do_check_mmapped_chunk(<a class="el" href="Process_2Doomgeneric_2sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>,<a class="el" href="element-type_8h.html#a1c66260caf993024c96c0db098f18088a82f05f38f6a17b117cdd2b83227912c6">P</a>)</td></tr>
 <tr class="separator:ab4a8a939c748e7bf809ebf9cde15f974"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -648,7 +648,7 @@ Functions</h2></td></tr>
 <tr class="separator:ad7ac989a1249c4d94709a950152862d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1448967c725d4b6fbc9b4481c2c107d" id="r_aa1448967c725d4b6fbc9b4481c2c107d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#aa1448967c725d4b6fbc9b4481c2c107d">xe_free_page</a> (void *ptr, int <a class="el" href="audrv_8c.html#a68500bf3713e530f85d34c2ce24997d8">pages</a>)</td></tr>
 <tr class="separator:aa1448967c725d4b6fbc9b4481c2c107d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6690ec63e5341b0d1a3bb82e42cc88c5" id="r_a6690ec63e5341b0d1a3bb82e42cc88c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#a6690ec63e5341b0d1a3bb82e42cc88c5">_KePrint</a> (const char *text,...)</td></tr>
+<tr class="memitem:a6690ec63e5341b0d1a3bb82e42cc88c5" id="r_a6690ec63e5341b0d1a3bb82e42cc88c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#a6690ec63e5341b0d1a3bb82e42cc88c5">_KePrint</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *text,...)</td></tr>
 <tr class="separator:a6690ec63e5341b0d1a3bb82e42cc88c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26873cdcd8583a61feb458e52f579689" id="r_a26873cdcd8583a61feb458e52f579689"><td class="memItemLeft" align="right" valign="top"><a class="el" href="dlmalloc_8c.html#a58ef5120047a35956d86ee00c2d364dc">DLMALLOC_EXPORT</a> void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#a26873cdcd8583a61feb458e52f579689">dlmalloc</a> (<a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>)</td></tr>
 <tr class="separator:a26873cdcd8583a61feb458e52f579689"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -704,7 +704,7 @@ Functions</h2></td></tr>
 <tr class="separator:a2687b573e99c7a20888c35f0b669284a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61342717d607feba6d6a3b953e55ff93" id="r_a61342717d607feba6d6a3b953e55ff93"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#a61342717d607feba6d6a3b953e55ff93">calloc</a> (unsigned long long n_item, unsigned long long <a class="el" href="drm__bridge_8h.html#a854352f53b148adc24983a58a1866d66">size</a>)</td></tr>
 <tr class="separator:a61342717d607feba6d6a3b953e55ff93"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e1f30a8e0d51e8f87f076525360d4f9" id="r_a6e1f30a8e0d51e8f87f076525360d4f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#a6e1f30a8e0d51e8f87f076525360d4f9">xe_heap_check</a> (const char *tag)</td></tr>
+<tr class="memitem:a6e1f30a8e0d51e8f87f076525360d4f9" id="r_a6e1f30a8e0d51e8f87f076525360d4f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="__heap_8cpp.html#a6e1f30a8e0d51e8f87f076525360d4f9">xe_heap_check</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *tag)</td></tr>
 <tr class="separator:a6e1f30a8e0d51e8f87f076525360d4f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
@@ -1138,12 +1138,12 @@ Variables</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">N&#160;</td>
+          <td class="paramname"><a class="el" href="crc32_8c.html#a0240ac851181b84ac374872dc5434ee4">N</a>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;do_check_malloced_chunk(<a class="el" href="Process_2Doomgeneric_2sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>,<a class="el" href="element-type_8h.html#a1c66260caf993024c96c0db098f18088a82f05f38f6a17b117cdd2b83227912c6">P</a>,N)</td>
+          <td></td><td>&#160;&#160;&#160;do_check_malloced_chunk(<a class="el" href="Process_2Doomgeneric_2sha1_8c.html#a7116c76bbda5a9f38809bd6db21f54e7">M</a>,<a class="el" href="element-type_8h.html#a1c66260caf993024c96c0db098f18088a82f05f38f6a17b117cdd2b83227912c6">P</a>,<a class="el" href="crc32_8c.html#a0240ac851181b84ac374872dc5434ee4">N</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1492,15 +1492,16 @@ Variables</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line">{\</div>
 <div class="line">  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> Y = <a class="code hl_define" href="Process_2Doomgeneric_2sha1_8c.html#add48b1ce38c3ada11068889d7fa0fad0">X</a> - 1;\</div>
 <div class="line">  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> K = Y &gt;&gt; (16-4) &amp; 16;\</div>
-<div class="line">  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> N = K;        Y &gt;&gt;= K;\</div>
-<div class="line">  N += K = Y &gt;&gt; (8-3) &amp;  8;  Y &gt;&gt;= K;\</div>
-<div class="line">  N += K = Y &gt;&gt; (4-2) &amp;  4;  Y &gt;&gt;= K;\</div>
-<div class="line">  N += K = Y &gt;&gt; (2-1) &amp;  2;  Y &gt;&gt;= K;\</div>
-<div class="line">  N += K = Y &gt;&gt; (1-0) &amp;  1;  Y &gt;&gt;= K;\</div>
-<div class="line">  <a class="code hl_enumvalue" href="element-type_8h.html#a1c66260caf993024c96c0db098f18088ad091b8e376f7cf432dc367e1eda65e85">I</a> = (<a class="code hl_typedef" href="__heap_8cpp.html#a4c04048d19db75c080e5f0ab19d45f8f">bindex_t</a>)(N + Y);\</div>
+<div class="line">  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_define" href="crc32_8c.html#a0240ac851181b84ac374872dc5434ee4">N</a> = K;        Y &gt;&gt;= K;\</div>
+<div class="line">  <a class="code hl_define" href="crc32_8c.html#a0240ac851181b84ac374872dc5434ee4">N</a> += K = Y &gt;&gt; (8-3) &amp;  8;  Y &gt;&gt;= K;\</div>
+<div class="line">  <a class="code hl_define" href="crc32_8c.html#a0240ac851181b84ac374872dc5434ee4">N</a> += K = Y &gt;&gt; (4-2) &amp;  4;  Y &gt;&gt;= K;\</div>
+<div class="line">  <a class="code hl_define" href="crc32_8c.html#a0240ac851181b84ac374872dc5434ee4">N</a> += K = Y &gt;&gt; (2-1) &amp;  2;  Y &gt;&gt;= K;\</div>
+<div class="line">  <a class="code hl_define" href="crc32_8c.html#a0240ac851181b84ac374872dc5434ee4">N</a> += K = Y &gt;&gt; (1-0) &amp;  1;  Y &gt;&gt;= K;\</div>
+<div class="line">  <a class="code hl_enumvalue" href="element-type_8h.html#a1c66260caf993024c96c0db098f18088ad091b8e376f7cf432dc367e1eda65e85">I</a> = (<a class="code hl_typedef" href="__heap_8cpp.html#a4c04048d19db75c080e5f0ab19d45f8f">bindex_t</a>)(<a class="code hl_define" href="crc32_8c.html#a0240ac851181b84ac374872dc5434ee4">N</a> + Y);\</div>
 <div class="line">}</div>
 <div class="ttc" id="aProcess_2Doomgeneric_2sha1_8c_html_add48b1ce38c3ada11068889d7fa0fad0"><div class="ttname"><a href="Process_2Doomgeneric_2sha1_8c.html#add48b1ce38c3ada11068889d7fa0fad0">X</a></div><div class="ttdeci">#define X(a)</div></div>
 <div class="ttc" id="a__heap_8cpp_html_a4c04048d19db75c080e5f0ab19d45f8f"><div class="ttname"><a href="__heap_8cpp.html#a4c04048d19db75c080e5f0ab19d45f8f">bindex_t</a></div><div class="ttdeci">unsigned int bindex_t</div><div class="ttdef"><b>Definition</b> _heap.cpp:2323</div></div>
+<div class="ttc" id="acrc32_8c_html_a0240ac851181b84ac374872dc5434ee4"><div class="ttname"><a href="crc32_8c.html#a0240ac851181b84ac374872dc5434ee4">N</a></div><div class="ttdeci">#define N</div><div class="ttdef"><b>Definition</b> crc32.c:57</div></div>
 <div class="ttc" id="aelement-type_8h_html_a1c66260caf993024c96c0db098f18088ad091b8e376f7cf432dc367e1eda65e85"><div class="ttname"><a href="element-type_8h.html#a1c66260caf993024c96c0db098f18088ad091b8e376f7cf432dc367e1eda65e85">I</a></div><div class="ttdeci">@ I</div><div class="ttdef"><b>Definition</b> element-type.h:28</div></div>
 </div><!-- fragment -->
 </div>
@@ -1538,11 +1539,11 @@ Variables</h2></td></tr>
 <div class="line">    <a class="code hl_enumvalue" href="element-type_8h.html#a1c66260caf993024c96c0db098f18088ad091b8e376f7cf432dc367e1eda65e85">I</a> = <a class="code hl_define" href="__heap_8cpp.html#a187fe34f71c63b486f6d79ac51117061">NTREEBINS</a>-1;\</div>
 <div class="line">  <span class="keywordflow">else</span> {\</div>
 <div class="line">    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> Y = (<span class="keywordtype">unsigned</span> int)<a class="code hl_define" href="Process_2Doomgeneric_2sha1_8c.html#add48b1ce38c3ada11068889d7fa0fad0">X</a>;\</div>
-<div class="line">    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> N = ((Y - 0x100) &gt;&gt; 16) &amp; 8;\</div>
-<div class="line">    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> K = (((Y &lt;&lt;= N) - 0x1000) &gt;&gt; 16) &amp; 4;\</div>
-<div class="line">    N += K;\</div>
-<div class="line">    N += K = (((Y &lt;&lt;= K) - 0x4000) &gt;&gt; 16) &amp; 2;\</div>
-<div class="line">    K = 14 - N + ((Y &lt;&lt;= K) &gt;&gt; 15);\</div>
+<div class="line">    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_define" href="crc32_8c.html#a0240ac851181b84ac374872dc5434ee4">N</a> = ((Y - 0x100) &gt;&gt; 16) &amp; 8;\</div>
+<div class="line">    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> K = (((Y &lt;&lt;= <a class="code hl_define" href="crc32_8c.html#a0240ac851181b84ac374872dc5434ee4">N</a>) - 0x1000) &gt;&gt; 16) &amp; 4;\</div>
+<div class="line">    <a class="code hl_define" href="crc32_8c.html#a0240ac851181b84ac374872dc5434ee4">N</a> += K;\</div>
+<div class="line">    <a class="code hl_define" href="crc32_8c.html#a0240ac851181b84ac374872dc5434ee4">N</a> += K = (((Y &lt;&lt;= K) - 0x4000) &gt;&gt; 16) &amp; 2;\</div>
+<div class="line">    K = 14 - <a class="code hl_define" href="crc32_8c.html#a0240ac851181b84ac374872dc5434ee4">N</a> + ((Y &lt;&lt;= K) &gt;&gt; 15);\</div>
 <div class="line">    <a class="code hl_enumvalue" href="element-type_8h.html#a1c66260caf993024c96c0db098f18088ad091b8e376f7cf432dc367e1eda65e85">I</a> = (K &lt;&lt; 1) + ((<a class="code hl_define" href="in__foreign__content_8c.html#a8fa17c8cf4c36df48f4108c36da8573e">S</a> &gt;&gt; (K + (<a class="code hl_define" href="__heap_8cpp.html#a84cfe33e7f07c4b874fe1a82ba327c2e">TREEBIN_SHIFT</a>-1)) &amp; 1));\</div>
 <div class="line">  }\</div>
 <div class="line">}</div>
@@ -2862,8 +2863,8 @@ Variables</h2></td></tr>
           <td class="memname">#define leftmost_child</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a></td><td>)</td>
-          <td>&#160;&#160;&#160;((<a class="el" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a>)-&gt;child[0] != 0? (<a class="el" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a>)-&gt;child[0] : (<a class="el" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a>)-&gt;child[1])</td>
+          <td class="paramname">t</td><td>)</td>
+          <td>&#160;&#160;&#160;((t)-&gt;child[0] != 0? (t)-&gt;child[0] : (t)-&gt;child[1])</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -5393,7 +5394,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void _KePrint </td>
           <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
           <td class="paramname"><em>text</em>, </td>
         </tr>
         <tr>
@@ -6113,7 +6114,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void xe_heap_check </td>
           <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
           <td class="paramname"><em>tag</em></td><td>)</td>
           <td></td>
         </tr>

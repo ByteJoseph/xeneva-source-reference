@@ -82,11 +82,11 @@ $(function() {
 Public Attributes</h2></td></tr>
 <tr class="memitem:a9e8773775cd02368a88c04a894627b5c" id="r_a9e8773775cd02368a88c04a894627b5c"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structconsole.html#a9e8773775cd02368a88c04a894627b5c">name</a> [16]</td></tr>
 <tr class="separator:a9e8773775cd02368a88c04a894627b5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72efd7e41e2270623b4514f793129b0b" id="r_a72efd7e41e2270623b4514f793129b0b"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structconsole.html#a72efd7e41e2270623b4514f793129b0b">write</a> )(struct <a class="el" href="structconsole.html">console</a> *con, const char *s, unsigned int count)</td></tr>
+<tr class="memitem:a72efd7e41e2270623b4514f793129b0b" id="r_a72efd7e41e2270623b4514f793129b0b"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structconsole.html#a72efd7e41e2270623b4514f793129b0b">write</a> )(struct <a class="el" href="structconsole.html">console</a> *con, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *s, unsigned int count)</td></tr>
 <tr class="separator:a72efd7e41e2270623b4514f793129b0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b9e77cb1f193dcb8ee67e8f65707e4e" id="r_a8b9e77cb1f193dcb8ee67e8f65707e4e"><td class="memItemLeft" align="right" valign="top">struct tty_device *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structconsole.html#a8b9e77cb1f193dcb8ee67e8f65707e4e">device</a> )(struct <a class="el" href="structconsole.html">console</a> *con, int *<a class="el" href="structconsole.html#abd48018344c4cbfab03df68bbc6d15f7">index</a>)</td></tr>
 <tr class="separator:a8b9e77cb1f193dcb8ee67e8f65707e4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61ca708438f432cccb5c195060c27574" id="r_a61ca708438f432cccb5c195060c27574"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structconsole.html#a61ca708438f432cccb5c195060c27574">setup</a> )(struct <a class="el" href="structconsole.html">console</a> *con, char *<a class="el" href="m__menu_8c.html#a2e45e0649e864ecd3eacd19b09ec981aa5eb3f84958aa2200df58a6af276027eb">options</a>)</td></tr>
+<tr class="memitem:a61ca708438f432cccb5c195060c27574" id="r_a61ca708438f432cccb5c195060c27574"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structconsole.html#a61ca708438f432cccb5c195060c27574">setup</a> )(struct <a class="el" href="structconsole.html">console</a> *con, char *<a class="el" href="m__menu_8c.html#a0e758c3718bec19c1b4ae9e612324fc8a5eb3f84958aa2200df58a6af276027eb">options</a>)</td></tr>
 <tr class="separator:a61ca708438f432cccb5c195060c27574"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28ec25d4077da3039d4f8fa0992533a2" id="r_a28ec25d4077da3039d4f8fa0992533a2"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structconsole.html#a28ec25d4077da3039d4f8fa0992533a2">exit</a> )(struct <a class="el" href="structconsole.html">console</a> *con)</td></tr>
 <tr class="separator:a28ec25d4077da3039d4f8fa0992533a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -269,7 +269,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int(* console::setup) (struct <a class="el" href="structconsole.html">console</a> *con, char *<a class="el" href="m__menu_8c.html#a2e45e0649e864ecd3eacd19b09ec981aa5eb3f84958aa2200df58a6af276027eb">options</a>)</td>
+          <td class="memname">int(* console::setup) (struct <a class="el" href="structconsole.html">console</a> *con, char *<a class="el" href="m__menu_8c.html#a0e758c3718bec19c1b4ae9e612324fc8a5eb3f84958aa2200df58a6af276027eb">options</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -283,7 +283,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void(* console::write) (struct <a class="el" href="structconsole.html">console</a> *con, const char *s, unsigned int count)</td>
+          <td class="memname">void(* console::write) (struct <a class="el" href="structconsole.html">console</a> *con, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *s, unsigned int count)</td>
         </tr>
       </table>
 </div><div class="memdoc">

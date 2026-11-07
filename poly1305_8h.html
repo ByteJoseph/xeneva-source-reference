@@ -253,16 +253,16 @@ Functions</h2></td></tr>
 <tr class="memitem:afb89cdb66e1ddf8c84bf703285d54e56" id="r_afb89cdb66e1ddf8c84bf703285d54e56"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="poly1305_8h.html#afb89cdb66e1ddf8c84bf703285d54e56">mbedtls_poly1305_free</a> (<a class="el" href="structmbedtls__poly1305__context.html">mbedtls_poly1305_context</a> *ctx)</td></tr>
 <tr class="memdesc:afb89cdb66e1ddf8c84bf703285d54e56"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function releases and clears the specified Poly1305 context.  <br /></td></tr>
 <tr class="separator:afb89cdb66e1ddf8c84bf703285d54e56"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeec95fe26f3ddb9e631d3a916449b6fb" id="r_aeec95fe26f3ddb9e631d3a916449b6fb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="poly1305_8h.html#aeec95fe26f3ddb9e631d3a916449b6fb">mbedtls_poly1305_starts</a> (<a class="el" href="structmbedtls__poly1305__context.html">mbedtls_poly1305_context</a> *ctx, const unsigned char key[32])</td></tr>
+<tr class="memitem:aeec95fe26f3ddb9e631d3a916449b6fb" id="r_aeec95fe26f3ddb9e631d3a916449b6fb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="poly1305_8h.html#aeec95fe26f3ddb9e631d3a916449b6fb">mbedtls_poly1305_starts</a> (<a class="el" href="structmbedtls__poly1305__context.html">mbedtls_poly1305_context</a> *ctx, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char key[32])</td></tr>
 <tr class="memdesc:aeec95fe26f3ddb9e631d3a916449b6fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function sets the one-time authentication key.  <br /></td></tr>
 <tr class="separator:aeec95fe26f3ddb9e631d3a916449b6fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a42b517f2ebf7cfb16b69fb1ad77744c1" id="r_a42b517f2ebf7cfb16b69fb1ad77744c1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="poly1305_8h.html#a42b517f2ebf7cfb16b69fb1ad77744c1">mbedtls_poly1305_update</a> (<a class="el" href="structmbedtls__poly1305__context.html">mbedtls_poly1305_context</a> *ctx, const unsigned char *<a class="el" href="virtiokbd_8c.html#ac7ea4a68c5710086113a183d16feaf8d">input</a>, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> ilen)</td></tr>
+<tr class="memitem:a42b517f2ebf7cfb16b69fb1ad77744c1" id="r_a42b517f2ebf7cfb16b69fb1ad77744c1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="poly1305_8h.html#a42b517f2ebf7cfb16b69fb1ad77744c1">mbedtls_poly1305_update</a> (<a class="el" href="structmbedtls__poly1305__context.html">mbedtls_poly1305_context</a> *ctx, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *<a class="el" href="virtiokbd_8c.html#ac7ea4a68c5710086113a183d16feaf8d">input</a>, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> ilen)</td></tr>
 <tr class="memdesc:a42b517f2ebf7cfb16b69fb1ad77744c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">This functions feeds an input buffer into an ongoing Poly1305 computation.  <br /></td></tr>
 <tr class="separator:a42b517f2ebf7cfb16b69fb1ad77744c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa35e33f2364e0f8bb74c5db91d06d79d" id="r_aa35e33f2364e0f8bb74c5db91d06d79d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="poly1305_8h.html#aa35e33f2364e0f8bb74c5db91d06d79d">mbedtls_poly1305_finish</a> (<a class="el" href="structmbedtls__poly1305__context.html">mbedtls_poly1305_context</a> *ctx, unsigned char <a class="el" href="Process_2NETMngr_2main_8cpp.html#a2f32c75fb4bc7ba39243ef4a9f8eacc1">mac</a>[16])</td></tr>
 <tr class="memdesc:aa35e33f2364e0f8bb74c5db91d06d79d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function generates the Poly1305 Message Authentication Code (MAC).  <br /></td></tr>
 <tr class="separator:aa35e33f2364e0f8bb74c5db91d06d79d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9521945c2e4b08f9c09e03d3e0f8093c" id="r_a9521945c2e4b08f9c09e03d3e0f8093c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="poly1305_8h.html#a9521945c2e4b08f9c09e03d3e0f8093c">mbedtls_poly1305_mac</a> (const unsigned char key[32], const unsigned char *<a class="el" href="virtiokbd_8c.html#ac7ea4a68c5710086113a183d16feaf8d">input</a>, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> ilen, unsigned char <a class="el" href="Process_2NETMngr_2main_8cpp.html#a2f32c75fb4bc7ba39243ef4a9f8eacc1">mac</a>[16])</td></tr>
+<tr class="memitem:a9521945c2e4b08f9c09e03d3e0f8093c" id="r_a9521945c2e4b08f9c09e03d3e0f8093c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="poly1305_8h.html#a9521945c2e4b08f9c09e03d3e0f8093c">mbedtls_poly1305_mac</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char key[32], <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *<a class="el" href="virtiokbd_8c.html#ac7ea4a68c5710086113a183d16feaf8d">input</a>, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> ilen, unsigned char <a class="el" href="Process_2NETMngr_2main_8cpp.html#a2f32c75fb4bc7ba39243ef4a9f8eacc1">mac</a>[16])</td></tr>
 <tr class="memdesc:a9521945c2e4b08f9c09e03d3e0f8093c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function calculates the Poly1305 MAC of the input buffer with the provided key.  <br /></td></tr>
 <tr class="separator:a9521945c2e4b08f9c09e03d3e0f8093c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -415,13 +415,13 @@ A negative error code on failure. </dd></dl>
         <tr>
           <td class="memname">int mbedtls_poly1305_mac </td>
           <td>(</td>
-          <td class="paramtype">const unsigned char&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char&#160;</td>
           <td class="paramname"><em>key</em>[32], </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *&#160;</td>
           <td class="paramname"><em>input</em>, </td>
         </tr>
         <tr>
@@ -476,7 +476,7 @@ A negative error code on failure. </dd></dl>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const unsigned char&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char&#160;</td>
           <td class="paramname"><em>key</em>[32]&#160;</td>
         </tr>
         <tr>
@@ -517,7 +517,7 @@ A negative error code on failure. </dd></dl>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *&#160;</td>
           <td class="paramname"><em>input</em>, </td>
         </tr>
         <tr>

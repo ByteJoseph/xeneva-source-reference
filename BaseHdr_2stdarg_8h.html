@@ -86,7 +86,7 @@ $(function() {
 Macros</h2></td></tr>
 <tr class="memitem:aa5584e136b7f577610769e411b101a75" id="r_aa5584e136b7f577610769e411b101a75"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BaseHdr_2stdarg_8h.html#aa5584e136b7f577610769e411b101a75">STACKITEM</a>&#160;&#160;&#160;<a class="el" href="acefiex_8h.html#a5364f98f8223d7185accc99cf9c8f712">int64_t</a></td></tr>
 <tr class="separator:aa5584e136b7f577610769e411b101a75"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4327ea38f09755c5ad2ebe74a1948a19" id="r_a4327ea38f09755c5ad2ebe74a1948a19"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BaseHdr_2stdarg_8h.html#a4327ea38f09755c5ad2ebe74a1948a19">VA_SIZE</a>(TYPE)</td></tr>
+<tr class="memitem:a4327ea38f09755c5ad2ebe74a1948a19" id="r_a4327ea38f09755c5ad2ebe74a1948a19"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BaseHdr_2stdarg_8h.html#a4327ea38f09755c5ad2ebe74a1948a19">VA_SIZE</a>(<a class="el" href="inflate_8h.html#a164ea0159d5f0b5f12a646f25f99eceaab47ea8bb955afd0adc0ef98517dd6084">TYPE</a>)</td></tr>
 <tr class="separator:a4327ea38f09755c5ad2ebe74a1948a19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
@@ -119,14 +119,15 @@ Typedefs</h2></td></tr>
           <td class="memname">#define VA_SIZE</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">TYPE</td><td>)</td>
+          <td class="paramname"><a class="el" href="inflate_8h.html#a164ea0159d5f0b5f12a646f25f99eceaab47ea8bb955afd0adc0ef98517dd6084">TYPE</a></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">    ((<span class="keyword">sizeof</span>(TYPE)+<span class="keyword">sizeof</span>(<a class="code hl_define" href="BaseHdr_2stdarg_8h.html#aa5584e136b7f577610769e411b101a75">STACKITEM</a>)-1) \</div>
+<b>Value:</b><div class="fragment"><div class="line">    ((<span class="keyword">sizeof</span>(<a class="code hl_enumvalue" href="inflate_8h.html#a164ea0159d5f0b5f12a646f25f99eceaab47ea8bb955afd0adc0ef98517dd6084">TYPE</a>)+<span class="keyword">sizeof</span>(<a class="code hl_define" href="BaseHdr_2stdarg_8h.html#aa5584e136b7f577610769e411b101a75">STACKITEM</a>)-1) \</div>
 <div class="line">    &amp; ~(<span class="keyword">sizeof</span>(<a class="code hl_define" href="BaseHdr_2stdarg_8h.html#aa5584e136b7f577610769e411b101a75">STACKITEM</a>)-1))</div>
 <div class="ttc" id="aBaseHdr_2stdarg_8h_html_aa5584e136b7f577610769e411b101a75"><div class="ttname"><a href="BaseHdr_2stdarg_8h.html#aa5584e136b7f577610769e411b101a75">STACKITEM</a></div><div class="ttdeci">#define STACKITEM</div><div class="ttdef"><b>Definition</b> stdarg.h:66</div></div>
+<div class="ttc" id="ainflate_8h_html_a164ea0159d5f0b5f12a646f25f99eceaab47ea8bb955afd0adc0ef98517dd6084"><div class="ttname"><a href="inflate_8h.html#a164ea0159d5f0b5f12a646f25f99eceaab47ea8bb955afd0adc0ef98517dd6084">TYPE</a></div><div class="ttdeci">@ TYPE</div><div class="ttdef"><b>Definition</b> inflate.h:32</div></div>
 </div><!-- fragment -->
 </div>
 </div>

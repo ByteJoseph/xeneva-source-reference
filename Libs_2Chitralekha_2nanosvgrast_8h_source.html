@@ -1129,7 +1129,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l01046" name="l01046"></a><span class="lineno"> 1046</span>        <span class="comment">// TODO: spread modes.</span></div>
 <div class="line"><a id="l01047" name="l01047"></a><span class="lineno"> 1047</span>        <span class="comment">// TODO: plenty of opportunities to optimize.</span></div>
 <div class="line"><a id="l01048" name="l01048"></a><span class="lineno"> 1048</span>        <span class="keywordtype">float</span> fx, fy, dx, gy;</div>
-<div class="line"><a id="l01049" name="l01049"></a><span class="lineno"> 1049</span>        <span class="keywordtype">float</span>* <a class="code hl_variable" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a> = cache-&gt;xform;</div>
+<div class="line"><a id="l01049" name="l01049"></a><span class="lineno"> 1049</span>        <span class="keywordtype">float</span>* t = cache-&gt;xform;</div>
 <div class="line"><a id="l01050" name="l01050"></a><span class="lineno"> 1050</span>        <span class="keywordtype">int</span> i, cr, cg, cb, ca;</div>
 <div class="line"><a id="l01051" name="l01051"></a><span class="lineno"> 1051</span>        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> c;</div>
 <div class="line"><a id="l01052" name="l01052"></a><span class="lineno"> 1052</span> </div>
@@ -1139,7 +1139,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l01056" name="l01056"></a><span class="lineno"> 1056</span> </div>
 <div class="line"><a id="l01057" name="l01057"></a><span class="lineno"> 1057</span>        <span class="keywordflow">for</span> (i = 0; i &lt; count; i++) {</div>
 <div class="line"><a id="l01058" name="l01058"></a><span class="lineno"> 1058</span>            <span class="keywordtype">int</span> r, g, <a class="code hl_variable" href="Process_2NetSurf_2main_8cpp.html#a9dc54a811b75d3d05d3deff10980ca7e">b</a>, <a class="code hl_variable" href="Process_2NetSurf_2main_8cpp.html#a81e02a278aaeae99b5dbef355ee6dd2f">a</a>, ia;</div>
-<div class="line"><a id="l01059" name="l01059"></a><span class="lineno"> 1059</span>            gy = fx * <a class="code hl_variable" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a>[1] + fy * <a class="code hl_variable" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a>[3] + <a class="code hl_variable" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a>[5];</div>
+<div class="line"><a id="l01059" name="l01059"></a><span class="lineno"> 1059</span>            gy = fx * t[1] + fy * t[3] + t[5];</div>
 <div class="line"><a id="l01060" name="l01060"></a><span class="lineno"> 1060</span>            c = cache-&gt;colors[(int)nsvg__clampf(gy * 255.0f, 0, 255.0f)];</div>
 <div class="line"><a id="l01061" name="l01061"></a><span class="lineno"> 1061</span>            cr = (c) &amp; 0xff;</div>
 <div class="line"><a id="l01062" name="l01062"></a><span class="lineno"> 1062</span>            cg = (c &gt;&gt; 8) &amp; 0xff;</div>
@@ -1175,7 +1175,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l01092" name="l01092"></a><span class="lineno"> 1092</span>        <span class="comment">// TODO: plenty of opportunities to optimize.</span></div>
 <div class="line"><a id="l01093" name="l01093"></a><span class="lineno"> 1093</span>        <span class="comment">// TODO: focus (fx,fy)</span></div>
 <div class="line"><a id="l01094" name="l01094"></a><span class="lineno"> 1094</span>        <span class="keywordtype">float</span> fx, fy, dx, gx, gy, gd;</div>
-<div class="line"><a id="l01095" name="l01095"></a><span class="lineno"> 1095</span>        <span class="keywordtype">float</span>* <a class="code hl_variable" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a> = cache-&gt;xform;</div>
+<div class="line"><a id="l01095" name="l01095"></a><span class="lineno"> 1095</span>        <span class="keywordtype">float</span>* t = cache-&gt;xform;</div>
 <div class="line"><a id="l01096" name="l01096"></a><span class="lineno"> 1096</span>        <span class="keywordtype">int</span> i, cr, cg, cb, ca;</div>
 <div class="line"><a id="l01097" name="l01097"></a><span class="lineno"> 1097</span>        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> c;</div>
 <div class="line"><a id="l01098" name="l01098"></a><span class="lineno"> 1098</span> </div>
@@ -1185,8 +1185,8 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l01102" name="l01102"></a><span class="lineno"> 1102</span> </div>
 <div class="line"><a id="l01103" name="l01103"></a><span class="lineno"> 1103</span>        <span class="keywordflow">for</span> (i = 0; i &lt; count; i++) {</div>
 <div class="line"><a id="l01104" name="l01104"></a><span class="lineno"> 1104</span>            <span class="keywordtype">int</span> r, g, <a class="code hl_variable" href="Process_2NetSurf_2main_8cpp.html#a9dc54a811b75d3d05d3deff10980ca7e">b</a>, <a class="code hl_variable" href="Process_2NetSurf_2main_8cpp.html#a81e02a278aaeae99b5dbef355ee6dd2f">a</a>, ia;</div>
-<div class="line"><a id="l01105" name="l01105"></a><span class="lineno"> 1105</span>            gx = fx * <a class="code hl_variable" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a>[0] + fy * <a class="code hl_variable" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a>[2] + <a class="code hl_variable" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a>[4];</div>
-<div class="line"><a id="l01106" name="l01106"></a><span class="lineno"> 1106</span>            gy = fx * <a class="code hl_variable" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a>[1] + fy * <a class="code hl_variable" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a>[3] + <a class="code hl_variable" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a>[5];</div>
+<div class="line"><a id="l01105" name="l01105"></a><span class="lineno"> 1105</span>            gx = fx * t[0] + fy * t[2] + t[4];</div>
+<div class="line"><a id="l01106" name="l01106"></a><span class="lineno"> 1106</span>            gy = fx * t[1] + fy * t[3] + t[5];</div>
 <div class="line"><a id="l01107" name="l01107"></a><span class="lineno"> 1107</span>            gd = <a class="code hl_function" href="Libs_2XEClib_2includes_2math_8h.html#a9fe8e8b13d961cf1929a10247ef577e7">sqrtf</a>(gx * gx + gy * gy);</div>
 <div class="line"><a id="l01108" name="l01108"></a><span class="lineno"> 1108</span>            c = cache-&gt;colors[(int)nsvg__clampf(gd * 255.0f, 0, 255.0f)];</div>
 <div class="line"><a id="l01109" name="l01109"></a><span class="lineno"> 1109</span>            cr = (c) &amp; 0xff;</div>
@@ -1258,10 +1258,10 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l01175" name="l01175"></a><span class="lineno"> 1175</span>                step = &amp;active;</div>
 <div class="line"><a id="l01176" name="l01176"></a><span class="lineno"> 1176</span>                <span class="keywordflow">while</span> (*step &amp;&amp; (*step)-&gt;next) {</div>
 <div class="line"><a id="l01177" name="l01177"></a><span class="lineno"> 1177</span>                    <span class="keywordflow">if</span> ((*step)-&gt;x &gt; (*step)-&gt;next-&gt;x) {</div>
-<div class="line"><a id="l01178" name="l01178"></a><span class="lineno"> 1178</span>                        NSVGactiveEdge* <a class="code hl_variable" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a> = *step;</div>
-<div class="line"><a id="l01179" name="l01179"></a><span class="lineno"> 1179</span>                        NSVGactiveEdge* q = <a class="code hl_variable" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a>-&gt;next;</div>
-<div class="line"><a id="l01180" name="l01180"></a><span class="lineno"> 1180</span>                        <a class="code hl_variable" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a>-&gt;next = q-&gt;next;</div>
-<div class="line"><a id="l01181" name="l01181"></a><span class="lineno"> 1181</span>                        q-&gt;next = <a class="code hl_variable" href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a>;</div>
+<div class="line"><a id="l01178" name="l01178"></a><span class="lineno"> 1178</span>                        NSVGactiveEdge* t = *step;</div>
+<div class="line"><a id="l01179" name="l01179"></a><span class="lineno"> 1179</span>                        NSVGactiveEdge* q = t-&gt;next;</div>
+<div class="line"><a id="l01180" name="l01180"></a><span class="lineno"> 1180</span>                        t-&gt;next = q-&gt;next;</div>
+<div class="line"><a id="l01181" name="l01181"></a><span class="lineno"> 1181</span>                        q-&gt;next = t;</div>
 <div class="line"><a id="l01182" name="l01182"></a><span class="lineno"> 1182</span>                        *step = q;</div>
 <div class="line"><a id="l01183" name="l01183"></a><span class="lineno"> 1183</span>                        changed = 1;</div>
 <div class="line"><a id="l01184" name="l01184"></a><span class="lineno"> 1184</span>                    }</div>
@@ -1599,7 +1599,6 @@ $(document).ready(function() { init_codefold(0); });
 <div class="ttc" id="aLibs_2XEClib_2includes_2math_8h_html_ae349b1c2ed08858db90a9f99758f4051"><div class="ttname"><a href="Libs_2XEClib_2includes_2math_8h.html#ae349b1c2ed08858db90a9f99758f4051">sinf</a></div><div class="ttdeci">XE_LIB float sinf(float)</div><div class="ttdef"><b>Definition</b> math.cpp:222</div></div>
 <div class="ttc" id="aLibs_2XEClib_2includes_2math_8h_html_aeee6d36cbb33974bfce12a5a2181e889"><div class="ttname"><a href="Libs_2XEClib_2includes_2math_8h.html#aeee6d36cbb33974bfce12a5a2181e889">cosf</a></div><div class="ttdeci">XE_LIB float cosf(float)</div><div class="ttdef"><b>Definition</b> math.cpp:94</div></div>
 <div class="ttc" id="aLibs_2XEClib_2includes_2sys_2socket_8h_html_aee06293d6e1d808ad1a635bee90ba275"><div class="ttname"><a href="Libs_2XEClib_2includes_2sys_2socket_8h.html#aee06293d6e1d808ad1a635bee90ba275">connect</a></div><div class="ttdeci">XE_LIB int connect(int sockfd, sockaddr_ *addr, socklen_t addrlen)</div></div>
-<div class="ttc" id="aProcess_2Calender_2main_8cpp_html_a5b9f2c8eed2b49ee91dd608d9a0ec4bd"><div class="ttname"><a href="Process_2Calender_2main_8cpp.html#a5b9f2c8eed2b49ee91dd608d9a0ec4bd">t</a></div><div class="ttdeci">XETime t</div><div class="ttdef"><b>Definition</b> main.cpp:53</div></div>
 <div class="ttc" id="aProcess_2NetSurf_2main_8cpp_html_a81e02a278aaeae99b5dbef355ee6dd2f"><div class="ttname"><a href="Process_2NetSurf_2main_8cpp.html#a81e02a278aaeae99b5dbef355ee6dd2f">a</a></div><div class="ttdeci">size_t a</div><div class="ttdef"><b>Definition</b> main.cpp:156</div></div>
 <div class="ttc" id="aProcess_2NetSurf_2main_8cpp_html_a9dc54a811b75d3d05d3deff10980ca7e"><div class="ttname"><a href="Process_2NetSurf_2main_8cpp.html#a9dc54a811b75d3d05d3deff10980ca7e">b</a></div><div class="ttdeci">size_t b</div><div class="ttdef"><b>Definition</b> main.cpp:156</div></div>
 <div class="ttc" id="aProcess_2NetSurf_2nanosvg_8h_html"><div class="ttname"><a href="Process_2NetSurf_2nanosvg_8h.html">nanosvg.h</a></div></div>

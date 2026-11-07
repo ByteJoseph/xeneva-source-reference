@@ -305,7 +305,7 @@ Macros</h2></td></tr>
 <tr class="separator:af49573eb63b7940db4b39dd3821da691"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a248cd415d8025774a2ac07845fcfc0ad" id="r_a248cd415d8025774a2ac07845fcfc0ad"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kobject_8h.html#a248cd415d8025774a2ac07845fcfc0ad">UEVENT_BUFFER_SIZE</a>&#160;&#160;&#160;2048	/* buffer for the variables */</td></tr>
 <tr class="separator:a248cd415d8025774a2ac07845fcfc0ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2ff5e944320d1f475b113625109b5ae" id="r_ac2ff5e944320d1f475b113625109b5ae"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kobject_8h.html#ac2ff5e944320d1f475b113625109b5ae">kobject_name</a>(kobj)&#160;&#160;&#160;(((const struct <a class="el" href="structkobject.html">kobject</a> *)(const void *)(kobj))-&gt;<a class="el" href="drm__crtc_8h.html#aed88e009d7772dfc9026cb1f5492b458">name</a>)</td></tr>
+<tr class="memitem:ac2ff5e944320d1f475b113625109b5ae" id="r_ac2ff5e944320d1f475b113625109b5ae"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kobject_8h.html#ac2ff5e944320d1f475b113625109b5ae">kobject_name</a>(kobj)&#160;&#160;&#160;(((<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct <a class="el" href="structkobject.html">kobject</a> *)(<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> void *)(kobj))-&gt;<a class="el" href="drm__crtc_8h.html#aed88e009d7772dfc9026cb1f5492b458">name</a>)</td></tr>
 <tr class="separator:ac2ff5e944320d1f475b113625109b5ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f62ca55da5e12e19c0f2fafd448a073" id="r_a5f62ca55da5e12e19c0f2fafd448a073"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kobject_8h.html#a5f62ca55da5e12e19c0f2fafd448a073">kobject_uevent</a>(kobj,  action)&#160;&#160;&#160;((void)0)</td></tr>
 <tr class="separator:a5f62ca55da5e12e19c0f2fafd448a073"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -332,19 +332,19 @@ Enumerations</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:af9707fc771a01ee3c6d4acfa338afbfb" id="r_af9707fc771a01ee3c6d4acfa338afbfb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kobject_8h.html#af9707fc771a01ee3c6d4acfa338afbfb">__printf</a> (2, 3) int kobject_set_name(struct <a class="el" href="structkobject.html">kobject</a> *kobj</td></tr>
 <tr class="separator:af9707fc771a01ee3c6d4acfa338afbfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a61db7ba31ce54179ae5b9bca010326" id="r_a3a61db7ba31ce54179ae5b9bca010326"><td class="memItemLeft" align="right" valign="top">const char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kobject_8h.html#a3a61db7ba31ce54179ae5b9bca010326">__printf</a> (2, 0) int kobject_set_name_vargs(struct <a class="el" href="structkobject.html">kobject</a> *kobj</td></tr>
+<tr class="memitem:a3a61db7ba31ce54179ae5b9bca010326" id="r_a3a61db7ba31ce54179ae5b9bca010326"><td class="memItemLeft" align="right" valign="top"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kobject_8h.html#a3a61db7ba31ce54179ae5b9bca010326">__printf</a> (2, 0) int kobject_set_name_vargs(struct <a class="el" href="structkobject.html">kobject</a> *kobj</td></tr>
 <tr class="separator:a3a61db7ba31ce54179ae5b9bca010326"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8dff558e2e0cdac27d7cdac12ac9755" id="r_af8dff558e2e0cdac27d7cdac12ac9755"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kobject_8h.html#af8dff558e2e0cdac27d7cdac12ac9755">kobject_init</a> (struct <a class="el" href="structkobject.html">kobject</a> *kobj, const struct <a class="el" href="structkobj__type.html">kobj_type</a> *<a class="el" href="kobject_8h.html#a462d1c0bc9fe20965edc98a094f089ee">ktype</a>)</td></tr>
+<tr class="memitem:af8dff558e2e0cdac27d7cdac12ac9755" id="r_af8dff558e2e0cdac27d7cdac12ac9755"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kobject_8h.html#af8dff558e2e0cdac27d7cdac12ac9755">kobject_init</a> (struct <a class="el" href="structkobject.html">kobject</a> *kobj, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct <a class="el" href="structkobj__type.html">kobj_type</a> *<a class="el" href="kobject_8h.html#a462d1c0bc9fe20965edc98a094f089ee">ktype</a>)</td></tr>
 <tr class="separator:af8dff558e2e0cdac27d7cdac12ac9755"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b09dbb17b60e93a124206ad4d7e1863" id="r_a1b09dbb17b60e93a124206ad4d7e1863"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kobject_8h.html#a1b09dbb17b60e93a124206ad4d7e1863">__printf</a> (3, 4) <a class="el" href="compiler_8h.html#af7045eee1ccd9074250c3eba96f769ac">__must_check</a> int kobject_add(struct <a class="el" href="structkobject.html">kobject</a> *kobj</td></tr>
 <tr class="separator:a1b09dbb17b60e93a124206ad4d7e1863"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac9bc7278b1d56af4b482cf11bfd01cc9" id="r_ac9bc7278b1d56af4b482cf11bfd01cc9"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structkobject.html">kobject</a> const char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kobject_8h.html#ac9bc7278b1d56af4b482cf11bfd01cc9">__printf</a> (4, 5) <a class="el" href="compiler_8h.html#af7045eee1ccd9074250c3eba96f769ac">__must_check</a> int kobject_init_and_add(struct <a class="el" href="structkobject.html">kobject</a> *kobj</td></tr>
+<tr class="memitem:ac9bc7278b1d56af4b482cf11bfd01cc9" id="r_ac9bc7278b1d56af4b482cf11bfd01cc9"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structkobject.html">kobject</a> <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kobject_8h.html#ac9bc7278b1d56af4b482cf11bfd01cc9">__printf</a> (4, 5) <a class="el" href="compiler_8h.html#af7045eee1ccd9074250c3eba96f769ac">__must_check</a> int kobject_init_and_add(struct <a class="el" href="structkobject.html">kobject</a> *kobj</td></tr>
 <tr class="separator:ac9bc7278b1d56af4b482cf11bfd01cc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0f39763f5d3a7fe0d497ebfeb4c66c1" id="r_ac0f39763f5d3a7fe0d497ebfeb4c66c1"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structkobject.html">kobject</a> const char const struct <a class="el" href="structkobj__type.html">kobj_type</a> struct <a class="el" href="structkobject.html">kobject</a> const char void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kobject_8h.html#ac0f39763f5d3a7fe0d497ebfeb4c66c1">kobject_del</a> (struct <a class="el" href="structkobject.html">kobject</a> *kobj)</td></tr>
+<tr class="memitem:ac0f39763f5d3a7fe0d497ebfeb4c66c1" id="r_ac0f39763f5d3a7fe0d497ebfeb4c66c1"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structkobject.html">kobject</a> <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct <a class="el" href="structkobj__type.html">kobj_type</a> struct <a class="el" href="structkobject.html">kobject</a> <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kobject_8h.html#ac0f39763f5d3a7fe0d497ebfeb4c66c1">kobject_del</a> (struct <a class="el" href="structkobject.html">kobject</a> *kobj)</td></tr>
 <tr class="separator:ac0f39763f5d3a7fe0d497ebfeb4c66c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae82277509f0c92419c4872f382661c4c" id="r_ae82277509f0c92419c4872f382661c4c"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structkobject.html">kobject</a> *<a class="el" href="compiler_8h.html#af7045eee1ccd9074250c3eba96f769ac">__must_check</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kobject_8h.html#ae82277509f0c92419c4872f382661c4c">kobject_create_and_add</a> (const char *<a class="el" href="drm__crtc_8h.html#aed88e009d7772dfc9026cb1f5492b458">name</a>, struct <a class="el" href="structkobject.html">kobject</a> *<a class="el" href="kobject_8h.html#a83c9f209dd0ff4c1be5c6d5ead35dbeb">parent</a>)</td></tr>
+<tr class="memitem:ae82277509f0c92419c4872f382661c4c" id="r_ae82277509f0c92419c4872f382661c4c"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structkobject.html">kobject</a> *<a class="el" href="compiler_8h.html#af7045eee1ccd9074250c3eba96f769ac">__must_check</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kobject_8h.html#ae82277509f0c92419c4872f382661c4c">kobject_create_and_add</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *<a class="el" href="drm__crtc_8h.html#aed88e009d7772dfc9026cb1f5492b458">name</a>, struct <a class="el" href="structkobject.html">kobject</a> *<a class="el" href="kobject_8h.html#a83c9f209dd0ff4c1be5c6d5ead35dbeb">parent</a>)</td></tr>
 <tr class="separator:ae82277509f0c92419c4872f382661c4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab9c48716ef4700ccdffcf3dad7fb1ffe" id="r_ab9c48716ef4700ccdffcf3dad7fb1ffe"><td class="memItemLeft" align="right" valign="top">int <a class="el" href="compiler_8h.html#af7045eee1ccd9074250c3eba96f769ac">__must_check</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kobject_8h.html#ab9c48716ef4700ccdffcf3dad7fb1ffe">kobject_rename</a> (struct <a class="el" href="structkobject.html">kobject</a> *, const char *new_name)</td></tr>
+<tr class="memitem:ab9c48716ef4700ccdffcf3dad7fb1ffe" id="r_ab9c48716ef4700ccdffcf3dad7fb1ffe"><td class="memItemLeft" align="right" valign="top">int <a class="el" href="compiler_8h.html#af7045eee1ccd9074250c3eba96f769ac">__must_check</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kobject_8h.html#ab9c48716ef4700ccdffcf3dad7fb1ffe">kobject_rename</a> (struct <a class="el" href="structkobject.html">kobject</a> *, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *new_name)</td></tr>
 <tr class="separator:ab9c48716ef4700ccdffcf3dad7fb1ffe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00af1b777768aa797b80e034d48577a5" id="r_a00af1b777768aa797b80e034d48577a5"><td class="memItemLeft" align="right" valign="top">int <a class="el" href="compiler_8h.html#af7045eee1ccd9074250c3eba96f769ac">__must_check</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kobject_8h.html#a00af1b777768aa797b80e034d48577a5">kobject_move</a> (struct <a class="el" href="structkobject.html">kobject</a> *, struct <a class="el" href="structkobject.html">kobject</a> *)</td></tr>
 <tr class="separator:a00af1b777768aa797b80e034d48577a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -354,11 +354,11 @@ Functions</h2></td></tr>
 <tr class="separator:a01ef89d62de98cf1b32fda16bcb0ea19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d48b64685a954a521fc1ac2d431af58" id="r_a4d48b64685a954a521fc1ac2d431af58"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kobject_8h.html#a4d48b64685a954a521fc1ac2d431af58">kobject_put</a> (struct <a class="el" href="structkobject.html">kobject</a> *kobj)</td></tr>
 <tr class="separator:a4d48b64685a954a521fc1ac2d431af58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b9f4d5bd7df6a357ca367f7b1f7c406" id="r_a5b9f4d5bd7df6a357ca367f7b1f7c406"><td class="memItemLeft" align="right" valign="top">const struct ns_common *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kobject_8h.html#a5b9f4d5bd7df6a357ca367f7b1f7c406">kobject_namespace</a> (const struct <a class="el" href="structkobject.html">kobject</a> *kobj)</td></tr>
+<tr class="memitem:a5b9f4d5bd7df6a357ca367f7b1f7c406" id="r_a5b9f4d5bd7df6a357ca367f7b1f7c406"><td class="memItemLeft" align="right" valign="top"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct ns_common *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kobject_8h.html#a5b9f4d5bd7df6a357ca367f7b1f7c406">kobject_namespace</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct <a class="el" href="structkobject.html">kobject</a> *kobj)</td></tr>
 <tr class="separator:a5b9f4d5bd7df6a357ca367f7b1f7c406"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95ae27694c3309a705b5c6df8a6a1453" id="r_a95ae27694c3309a705b5c6df8a6a1453"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kobject_8h.html#a95ae27694c3309a705b5c6df8a6a1453">kobject_get_ownership</a> (const struct <a class="el" href="structkobject.html">kobject</a> *kobj, <a class="el" href="structkuid__t.html">kuid_t</a> *uid, <a class="el" href="structkgid__t.html">kgid_t</a> *gid)</td></tr>
+<tr class="memitem:a95ae27694c3309a705b5c6df8a6a1453" id="r_a95ae27694c3309a705b5c6df8a6a1453"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kobject_8h.html#a95ae27694c3309a705b5c6df8a6a1453">kobject_get_ownership</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct <a class="el" href="structkobject.html">kobject</a> *kobj, <a class="el" href="structkuid__t.html">kuid_t</a> *uid, <a class="el" href="structkgid__t.html">kgid_t</a> *gid)</td></tr>
 <tr class="separator:a95ae27694c3309a705b5c6df8a6a1453"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a71537874aad7463660f367e5baaef319" id="r_a71537874aad7463660f367e5baaef319"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kobject_8h.html#a71537874aad7463660f367e5baaef319">kobject_get_path</a> (const void *kobj, <a class="el" href="linux_2kernel_8h.html#a99dcacb83509949e516cf6ae0367ff73">gfp_t</a> <a class="el" href="bytecode_8h.html#a7847560c748814fd3070e9149a9578bd">flag</a>)</td></tr>
+<tr class="memitem:a71537874aad7463660f367e5baaef319" id="r_a71537874aad7463660f367e5baaef319"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kobject_8h.html#a71537874aad7463660f367e5baaef319">kobject_get_path</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> void *kobj, <a class="el" href="linux_2kernel_8h.html#a99dcacb83509949e516cf6ae0367ff73">gfp_t</a> <a class="el" href="bytecode_8h.html#a7847560c748814fd3070e9149a9578bd">flag</a>)</td></tr>
 <tr class="separator:a71537874aad7463660f367e5baaef319"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae66e9449fc23d291ec424f6ed7f14d23" id="r_ae66e9449fc23d291ec424f6ed7f14d23"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kobject_8h.html#ae66e9449fc23d291ec424f6ed7f14d23">kset_init</a> (struct <a class="el" href="structkset.html">kset</a> *<a class="el" href="structkset.html">kset</a>)</td></tr>
 <tr class="separator:ae66e9449fc23d291ec424f6ed7f14d23"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -366,28 +366,28 @@ Functions</h2></td></tr>
 <tr class="separator:a8168c9b732fa2c0108e33580a33cdd41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51c731380d3c3687994aff00c1fdbad7" id="r_a51c731380d3c3687994aff00c1fdbad7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kobject_8h.html#a51c731380d3c3687994aff00c1fdbad7">kset_unregister</a> (struct <a class="el" href="structkset.html">kset</a> *<a class="el" href="structkset.html">kset</a>)</td></tr>
 <tr class="separator:a51c731380d3c3687994aff00c1fdbad7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50f4b119badad043d896df5a686b7632" id="r_a50f4b119badad043d896df5a686b7632"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structkset.html">kset</a> *<a class="el" href="compiler_8h.html#af7045eee1ccd9074250c3eba96f769ac">__must_check</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kobject_8h.html#a50f4b119badad043d896df5a686b7632">kset_create_and_add</a> (const char *<a class="el" href="drm__crtc_8h.html#aed88e009d7772dfc9026cb1f5492b458">name</a>, const struct <a class="el" href="structkset__uevent__ops.html">kset_uevent_ops</a> *u, struct <a class="el" href="structkobject.html">kobject</a> *parent_kobj)</td></tr>
+<tr class="memitem:a50f4b119badad043d896df5a686b7632" id="r_a50f4b119badad043d896df5a686b7632"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structkset.html">kset</a> *<a class="el" href="compiler_8h.html#af7045eee1ccd9074250c3eba96f769ac">__must_check</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kobject_8h.html#a50f4b119badad043d896df5a686b7632">kset_create_and_add</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *<a class="el" href="drm__crtc_8h.html#aed88e009d7772dfc9026cb1f5492b458">name</a>, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct <a class="el" href="structkset__uevent__ops.html">kset_uevent_ops</a> *u, struct <a class="el" href="structkobject.html">kobject</a> *parent_kobj)</td></tr>
 <tr class="separator:a50f4b119badad043d896df5a686b7632"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeee83eeaf96eec787f04412312c8aa22" id="r_aeee83eeaf96eec787f04412312c8aa22"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structkobject.html">kobject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kobject_8h.html#aeee83eeaf96eec787f04412312c8aa22">kset_find_obj</a> (struct <a class="el" href="structkset.html">kset</a> *, const char *)</td></tr>
+<tr class="memitem:aeee83eeaf96eec787f04412312c8aa22" id="r_aeee83eeaf96eec787f04412312c8aa22"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structkobject.html">kobject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kobject_8h.html#aeee83eeaf96eec787f04412312c8aa22">kset_find_obj</a> (struct <a class="el" href="structkset.html">kset</a> *, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *)</td></tr>
 <tr class="separator:aeee83eeaf96eec787f04412312c8aa22"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f5e92827a47187eeee5914270c4811f" id="r_a7f5e92827a47187eeee5914270c4811f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kobject_8h.html#a7f5e92827a47187eeee5914270c4811f">kobject_synth_uevent</a> (struct <a class="el" href="structkobject.html">kobject</a> *kobj, const char *buf, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> count)</td></tr>
+<tr class="memitem:a7f5e92827a47187eeee5914270c4811f" id="r_a7f5e92827a47187eeee5914270c4811f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kobject_8h.html#a7f5e92827a47187eeee5914270c4811f">kobject_synth_uevent</a> (struct <a class="el" href="structkobject.html">kobject</a> *kobj, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *buf, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> count)</td></tr>
 <tr class="separator:a7f5e92827a47187eeee5914270c4811f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:ac84ab43dfaf16fcc471dfe161a6dbc8a" id="r_ac84ab43dfaf16fcc471dfe161a6dbc8a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structatomic64__t.html">atomic64_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kobject_8h.html#ac84ab43dfaf16fcc471dfe161a6dbc8a">uevent_seqnum</a></td></tr>
 <tr class="separator:ac84ab43dfaf16fcc471dfe161a6dbc8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f8f80d37794cde9472343e4487ba3eb" id="r_a8f8f80d37794cde9472343e4487ba3eb"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kobject_8h.html#a8f8f80d37794cde9472343e4487ba3eb">name</a></td></tr>
+<tr class="memitem:a8f8f80d37794cde9472343e4487ba3eb" id="r_a8f8f80d37794cde9472343e4487ba3eb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kobject_8h.html#a8f8f80d37794cde9472343e4487ba3eb">name</a></td></tr>
 <tr class="separator:a8f8f80d37794cde9472343e4487ba3eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a77363e79a323392ef76ae55e2d5babe0" id="r_a77363e79a323392ef76ae55e2d5babe0"><td class="memItemLeft" align="right" valign="top">const char const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kobject_8h.html#a77363e79a323392ef76ae55e2d5babe0">fmt</a></td></tr>
+<tr class="memitem:a77363e79a323392ef76ae55e2d5babe0" id="r_a77363e79a323392ef76ae55e2d5babe0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kobject_8h.html#a77363e79a323392ef76ae55e2d5babe0">fmt</a></td></tr>
 <tr class="separator:a77363e79a323392ef76ae55e2d5babe0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af27e072b898e3dadd1f3e73ec6723885" id="r_af27e072b898e3dadd1f3e73ec6723885"><td class="memItemLeft" align="right" valign="top">const char const char <a class="el" href="acmsvcex_8h.html#abaefbc6cabb217bf0138d4f9c94d4775">va_list</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kobject_8h.html#af27e072b898e3dadd1f3e73ec6723885">vargs</a></td></tr>
+<tr class="memitem:af27e072b898e3dadd1f3e73ec6723885" id="r_af27e072b898e3dadd1f3e73ec6723885"><td class="memItemLeft" align="right" valign="top"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char <a class="el" href="acmsvcex_8h.html#abaefbc6cabb217bf0138d4f9c94d4775">va_list</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kobject_8h.html#af27e072b898e3dadd1f3e73ec6723885">vargs</a></td></tr>
 <tr class="separator:af27e072b898e3dadd1f3e73ec6723885"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83c9f209dd0ff4c1be5c6d5ead35dbeb" id="r_a83c9f209dd0ff4c1be5c6d5ead35dbeb"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structkobject.html">kobject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kobject_8h.html#a83c9f209dd0ff4c1be5c6d5ead35dbeb">parent</a></td></tr>
 <tr class="separator:a83c9f209dd0ff4c1be5c6d5ead35dbeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a462d1c0bc9fe20965edc98a094f089ee" id="r_a462d1c0bc9fe20965edc98a094f089ee"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structkobject.html">kobject</a> const char const struct <a class="el" href="structkobj__type.html">kobj_type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kobject_8h.html#a462d1c0bc9fe20965edc98a094f089ee">ktype</a></td></tr>
+<tr class="memitem:a462d1c0bc9fe20965edc98a094f089ee" id="r_a462d1c0bc9fe20965edc98a094f089ee"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structkobject.html">kobject</a> <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct <a class="el" href="structkobj__type.html">kobj_type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kobject_8h.html#a462d1c0bc9fe20965edc98a094f089ee">ktype</a></td></tr>
 <tr class="separator:a462d1c0bc9fe20965edc98a094f089ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a623efdeac1cf8f7fe9b59934f2f6a4b8" id="r_a623efdeac1cf8f7fe9b59934f2f6a4b8"><td class="memItemLeft" align="right" valign="top">const struct sysfs_ops&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kobject_8h.html#a623efdeac1cf8f7fe9b59934f2f6a4b8">kobj_sysfs_ops</a></td></tr>
+<tr class="memitem:a623efdeac1cf8f7fe9b59934f2f6a4b8" id="r_a623efdeac1cf8f7fe9b59934f2f6a4b8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct sysfs_ops&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kobject_8h.html#a623efdeac1cf8f7fe9b59934f2f6a4b8">kobj_sysfs_ops</a></td></tr>
 <tr class="separator:a623efdeac1cf8f7fe9b59934f2f6a4b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a05ffb160a5aaff533bae05a971f7f6e2" id="r_a05ffb160a5aaff533bae05a971f7f6e2"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structkset.html">kset</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kobject_8h.html#a05ffb160a5aaff533bae05a971f7f6e2">__randomize_layout</a></td></tr>
 <tr class="separator:a05ffb160a5aaff533bae05a971f7f6e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -401,7 +401,7 @@ Variables</h2></td></tr>
 <tr class="separator:acdb7245b0ceba1c2095001bbb7685661"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52e966047c27514594f64dbf878f572a" id="r_a52e966047c27514594f64dbf878f572a"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structkobject.html">kobject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kobject_8h.html#a52e966047c27514594f64dbf878f572a">firmware_kobj</a></td></tr>
 <tr class="separator:a52e966047c27514594f64dbf878f572a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6bd2bb5fcc7628a640958994a22f997c" id="r_a6bd2bb5fcc7628a640958994a22f997c"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kobject_8h.html#a6bd2bb5fcc7628a640958994a22f997c">format</a></td></tr>
+<tr class="memitem:a6bd2bb5fcc7628a640958994a22f997c" id="r_a6bd2bb5fcc7628a640958994a22f997c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kobject_8h.html#a6bd2bb5fcc7628a640958994a22f997c">format</a></td></tr>
 <tr class="separator:a6bd2bb5fcc7628a640958994a22f997c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
@@ -416,7 +416,7 @@ Variables</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">kobj</td><td>)</td>
-          <td>&#160;&#160;&#160;(((const struct <a class="el" href="structkobject.html">kobject</a> *)(const void *)(kobj))-&gt;<a class="el" href="drm__crtc_8h.html#aed88e009d7772dfc9026cb1f5492b458">name</a>)</td>
+          <td>&#160;&#160;&#160;(((<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct <a class="el" href="structkobject.html">kobject</a> *)(<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> void *)(kobj))-&gt;<a class="el" href="drm__crtc_8h.html#aed88e009d7772dfc9026cb1f5492b458">name</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -560,7 +560,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const char __printf </td>
+          <td class="memname"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char __printf </td>
           <td>(</td>
           <td class="paramtype">2&#160;</td>
           <td class="paramname">, </td>
@@ -644,7 +644,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct <a class="el" href="structkobject.html">kobject</a> const char __printf </td>
+          <td class="memname">struct <a class="el" href="structkobject.html">kobject</a> <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char __printf </td>
           <td>(</td>
           <td class="paramtype">4&#160;</td>
           <td class="paramname">, </td>
@@ -674,7 +674,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">struct <a class="el" href="structkobject.html">kobject</a> *<a class="el" href="compiler_8h.html#af7045eee1ccd9074250c3eba96f769ac">__must_check</a> kobject_create_and_add </td>
           <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
           <td class="paramname"><em>name</em>, </td>
         </tr>
         <tr>
@@ -700,7 +700,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct <a class="el" href="structkobject.html">kobject</a> const char const struct <a class="el" href="structkobj__type.html">kobj_type</a> struct <a class="el" href="structkobject.html">kobject</a> const char void kobject_del </td>
+          <td class="memname">struct <a class="el" href="structkobject.html">kobject</a> <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct <a class="el" href="structkobj__type.html">kobj_type</a> struct <a class="el" href="structkobject.html">kobject</a> <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char void kobject_del </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structkobject.html">kobject</a> *&#160;</td>
           <td class="paramname"><em>kobj</em></td><td>)</td>
@@ -738,7 +738,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void kobject_get_ownership </td>
           <td>(</td>
-          <td class="paramtype">const struct <a class="el" href="structkobject.html">kobject</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct <a class="el" href="structkobject.html">kobject</a> *&#160;</td>
           <td class="paramname"><em>kobj</em>, </td>
         </tr>
         <tr>
@@ -772,7 +772,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">char * kobject_get_path </td>
           <td>(</td>
-          <td class="paramtype">const void *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> void *&#160;</td>
           <td class="paramname"><em>kobj</em>, </td>
         </tr>
         <tr>
@@ -824,7 +824,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const struct <a class="el" href="structkobj__type.html">kobj_type</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct <a class="el" href="structkobj__type.html">kobj_type</a> *&#160;</td>
           <td class="paramname"><em>ktype</em>&#160;</td>
         </tr>
         <tr>
@@ -872,9 +872,9 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const struct ns_common * kobject_namespace </td>
+          <td class="memname"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct ns_common * kobject_namespace </td>
           <td>(</td>
-          <td class="paramtype">const struct <a class="el" href="structkobject.html">kobject</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct <a class="el" href="structkobject.html">kobject</a> *&#160;</td>
           <td class="paramname"><em>kobj</em></td><td>)</td>
           <td></td>
         </tr>
@@ -916,7 +916,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
           <td class="paramname"><em>new_name</em>&#160;</td>
         </tr>
         <tr>
@@ -944,7 +944,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
           <td class="paramname"><em>buf</em>, </td>
         </tr>
         <tr>
@@ -972,13 +972,13 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">struct <a class="el" href="structkset.html">kset</a> *<a class="el" href="compiler_8h.html#af7045eee1ccd9074250c3eba96f769ac">__must_check</a> kset_create_and_add </td>
           <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
           <td class="paramname"><em>name</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const struct <a class="el" href="structkset__uevent__ops.html">kset_uevent_ops</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct <a class="el" href="structkset__uevent__ops.html">kset_uevent_ops</a> *&#160;</td>
           <td class="paramname"><em>u</em>, </td>
         </tr>
         <tr>
@@ -1012,7 +1012,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
@@ -1123,7 +1123,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct <a class="el" href="structkobject.html">kobject</a> const char const struct <a class="el" href="structkobj__type.html">kobj_type</a> struct <a class="el" href="structkobject.html">kobject</a> const char* fmt</td>
+          <td class="memname">struct <a class="el" href="structkobject.html">kobject</a> <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct <a class="el" href="structkobj__type.html">kobj_type</a> struct <a class="el" href="structkobject.html">kobject</a> <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char* fmt</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1137,7 +1137,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const char* format</td>
+          <td class="memname"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char* format</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1198,7 +1198,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const struct sysfs_ops kobj_sysfs_ops</td>
+          <td class="memname"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct sysfs_ops kobj_sysfs_ops</td>
         </tr>
       </table>
   </td>
@@ -1217,7 +1217,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct <a class="el" href="structkobject.html">kobject</a> const char const struct <a class="el" href="structkobj__type.html">kobj_type</a>* ktype</td>
+          <td class="memname">struct <a class="el" href="structkobject.html">kobject</a> <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct <a class="el" href="structkobj__type.html">kobj_type</a>* ktype</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1253,7 +1253,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const char* name</td>
+          <td class="memname"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char* name</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1267,7 +1267,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct <a class="el" href="structkobject.html">kobject</a> const char const struct <a class="el" href="structkobj__type.html">kobj_type</a> struct <a class="el" href="structkobject.html">kobject</a> * parent</td>
+          <td class="memname">struct <a class="el" href="structkobject.html">kobject</a> <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct <a class="el" href="structkobj__type.html">kobj_type</a> struct <a class="el" href="structkobject.html">kobject</a> * parent</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1325,7 +1325,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const char const char <a class="el" href="acmsvcex_8h.html#abaefbc6cabb217bf0138d4f9c94d4775">va_list</a> vargs</td>
+          <td class="memname"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char <a class="el" href="acmsvcex_8h.html#abaefbc6cabb217bf0138d4f9c94d4775">va_list</a> vargs</td>
         </tr>
       </table>
 </div><div class="memdoc">

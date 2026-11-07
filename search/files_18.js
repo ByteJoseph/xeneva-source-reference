@@ -31,12 +31,14 @@ var searchData=
   ['wifiport_2ec_28',['wifiport.c',['../wifiport_8c.html',1,'']]],
   ['wincertificate_2eh_29',['WinCertificate.h',['../WinCertificate_8h.html',1,'']]],
   ['window_2ecpp_30',['window.cpp',['../Process_2DeodhaiXR_2window_8cpp.html',1,'(Global Namespace)'],['../Process_2Deodhai_2window_8cpp.html',1,'(Global Namespace)'],['../Libs_2Chitralekha_2widgets_2window_8cpp.html',1,'(Global Namespace)']]],
-  ['window_2eh_31',['window.h',['../Libs_2Chitralekha_2widgets_2window_8h.html',1,'(Global Namespace)'],['../Process_2DeodhaiXR_2window_8h.html',1,'(Global Namespace)'],['../Process_2Deodhai_2window_8h.html',1,'(Global Namespace)']]],
+  ['window_2eh_31',['window.h',['../Process_2Deodhai_2window_8h.html',1,'(Global Namespace)'],['../Process_2DeodhaiXR_2window_8h.html',1,'(Global Namespace)'],['../Libs_2Chitralekha_2widgets_2window_8h.html',1,'(Global Namespace)']]],
   ['windowssmmsecuritymitigationtable_2eh_32',['WindowsSmmSecurityMitigationTable.h',['../WindowsSmmSecurityMitigationTable_8h.html',1,'']]],
   ['windowsuxcapsule_2eh_33',['WindowsUxCapsule.h',['../WindowsUxCapsule_8h.html',1,'']]],
-  ['word_5fspacing_2ec_34',['word_spacing.c',['../word__spacing_8c.html',1,'']]],
-  ['wordpart_2eh_35',['wordpart.h',['../wordpart_8h.html',1,'']]],
-  ['workqueue_2eh_36',['workqueue.h',['../workqueue_8h.html',1,'']]],
-  ['writing_5fmode_2ec_37',['writing_mode.c',['../writing__mode_8c.html',1,'']]],
-  ['ww_5fmutex_2eh_38',['ww_mutex.h',['../ww__mutex_8h.html',1,'']]]
+  ['winstyle_2ecpp_34',['winstyle.cpp',['../winstyle_8cpp.html',1,'']]],
+  ['winstyle_2eh_35',['winstyle.h',['../winstyle_8h.html',1,'']]],
+  ['word_5fspacing_2ec_36',['word_spacing.c',['../word__spacing_8c.html',1,'']]],
+  ['wordpart_2eh_37',['wordpart.h',['../wordpart_8h.html',1,'']]],
+  ['workqueue_2eh_38',['workqueue.h',['../workqueue_8h.html',1,'']]],
+  ['writing_5fmode_2ec_39',['writing_mode.c',['../writing__mode_8c.html',1,'']]],
+  ['ww_5fmutex_2eh_40',['ww_mutex.h',['../ww__mutex_8h.html',1,'']]]
 ];

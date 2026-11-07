@@ -168,13 +168,32 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="syscall_8h.html#a8bd171f4a8534a5f05b7cd67e120266f">   85</a></span><span class="preprocessor">#define SYS_THREAD_WAIT_FOR_TERMINATION 81</span></div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="syscall_8h.html#a39edce5f189e3238a528922cd264edae">   86</a></span><span class="preprocessor">#define SYS_KERNEL_UNAME                82</span></div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="syscall_8h.html#ad842555786dbbaf910172d0924ec812e">   87</a></span><span class="preprocessor">#define SYS_FILE_POLL                   83</span></div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="syscall_8h.html#a41c5f358c4eedfef0a0b10a56dec8a68">   89</a></span><span class="preprocessor">#define SYS_MAX_SYSCALL 84</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="syscall_8h.html#a99fc963e109f68bb8cc8a15b4ccc295f">   88</a></span><span class="preprocessor">#define SYS_FILE_CHMOD                  84</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="syscall_8h.html#a32d912913526cece4fd01e9bb184c55d">   89</a></span><span class="preprocessor">#define SYS_FILE_FSYS_OWN               85</span></div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="comment">/* Backward-compat alias */</span></div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="syscall_8h.html#a21142a073ef796166646d29d7e0fcb26">   92</a></span><span class="preprocessor">#define AURORA_MAX_SYSCALL SYS_MAX_SYSCALL</span></div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="preprocessor">#endif </span><span class="comment">/* __SYSCALL_H__ */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="comment">/* Extended native socket ABI. 84..178 stay reserved so older binaries</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="comment"> * keep their numbers stable. */</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="syscall_8h.html#ae5bba1c037cd8ba3a4bf038f7bf7eebf">   93</a></span><span class="preprocessor">#define SYS_SOCKETPAIR     179</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="syscall_8h.html#aee50c4d9c3f96875f78fe0cf3f9725d1">   94</a></span><span class="preprocessor">#define SYS_GETSOCKOPT     180</span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="syscall_8h.html#a618f0811ad1c571297beababdbd75e21">   95</a></span><span class="preprocessor">#define SYS_GETSOCKNAME    181</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="syscall_8h.html#a0bf419ad7c0b6a8fda6adde1b343e27d">   96</a></span><span class="preprocessor">#define SYS_GETPEERNAME    182</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="syscall_8h.html#a570fa554c21b4c6900907ce411d26ba1">   97</a></span><span class="preprocessor">#define SYS_SHUTDOWN       183</span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="syscall_8h.html#a592625d0b28c0415a7b0165aa08364e1">   98</a></span><span class="preprocessor">#define SYS_SENDMMSG       186</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="syscall_8h.html#a1d32175e3d0f6d8233b38b822b01aa4a">   99</a></span><span class="preprocessor">#define SYS_RECVMMSG       187</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="syscall_8h.html#afad588f3ace0b848b7f9dbab47584e37">  100</a></span><span class="preprocessor">#define SYS_ACCEPT4        188</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="syscall_8h.html#a2ccc3ec820eac058263e0d4f52d5df85">  101</a></span><span class="preprocessor">#define SYS_SENDTO         190</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno"><a class="line" href="syscall_8h.html#af0aece5e43f7de593535329d001b02c7">  102</a></span><span class="preprocessor">#define SYS_RECVFROM       191</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="syscall_8h.html#a0fedcf100dbe6a1cc9f4a51ccdda2443">  103</a></span><span class="preprocessor">#define SYS_IF_NAMETOINDEX 192</span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="syscall_8h.html#a131169c2129ff3a527312ddfb082f966">  104</a></span><span class="preprocessor">#define SYS_GETIFADDRS     193</span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno"><a class="line" href="syscall_8h.html#a7f7ad76ac005409f36625e6077a5c68d">  105</a></span><span class="preprocessor">#define SYS_VFS_MOUNT      194</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno"><a class="line" href="syscall_8h.html#ad3ce57e26a1bbb35dcf3371edf97092e">  106</a></span><span class="preprocessor">#define SYS_VFS_UNMOUNT    195</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno"><a class="line" href="syscall_8h.html#a41c5f358c4eedfef0a0b10a56dec8a68">  108</a></span><span class="preprocessor">#define SYS_MAX_SYSCALL 196</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="comment">/* Backward-compat alias */</span></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="syscall_8h.html#a21142a073ef796166646d29d7e0fcb26">  111</a></span><span class="preprocessor">#define AURORA_MAX_SYSCALL SYS_MAX_SYSCALL</span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span><span class="preprocessor">#endif </span><span class="comment">/* __SYSCALL_H__ */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

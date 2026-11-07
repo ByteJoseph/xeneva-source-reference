@@ -102,6 +102,20 @@ Include dependency graph for socket.h:</div>
 <area shape="poly" title=" " alt="" coords="147,192,147,226,142,226,142,192"/>
 </map>
 </div>
+</div><div class="textblock"><div class="dynheader">
+This graph shows which files directly or indirectly include this file:</div>
+<div class="dyncontent">
+<div class="center"><img src="Libs_2XEClib_2includes_2sys_2socket_8h__dep__incl.png" border="0" usemap="#aXenevaOS_2Libs_2XEClib_2includes_2sys_2socket_8hdep" alt=""/></div>
+<map name="aXenevaOS_2Libs_2XEClib_2includes_2sys_2socket_8hdep" id="aXenevaOS_2Libs_2XEClib_2includes_2sys_2socket_8hdep">
+<area shape="rect" title=" " alt="" coords="112,5,277,45"/>
+<area shape="rect" href="ifaddrs_8h.html" title=" " alt="" coords="112,93,277,133"/>
+<area shape="poly" title=" " alt="" coords="197,59,197,93,192,93,192,59"/>
+<area shape="rect" href="if_8cpp.html" title=" " alt="" coords="5,181,171,221"/>
+<area shape="poly" title=" " alt="" coords="162,144,113,183,110,179,159,140"/>
+<area shape="rect" href="Process_2netsystest_2main_8cpp.html" title=" " alt="" coords="195,181,410,221"/>
+<area shape="poly" title=" " alt="" coords="231,140,280,179,277,183,228,144"/>
+</map>
+</div>
 </div>
 <p><a href="Libs_2XEClib_2includes_2sys_2socket_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -116,6 +130,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__iovec__.html">_iovec_</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__msghdr__.html">_msghdr_</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__mmsghdr__.html">_mmsghdr_</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__route__entry__.html">_route_entry_</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -133,6 +149,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__sockaddr__in6__.html">_sockaddr_in6_</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__sockaddr__un__.html">_sockaddr_un_</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
@@ -144,18 +162,30 @@ Macros</h2></td></tr>
 <tr class="separator:a4144cee9e3f3b2efacbc30c3a0169a62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa03706b2738b9a58d4985dfbe99e1bac" id="r_aa03706b2738b9a58d4985dfbe99e1bac"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Libs_2XEClib_2includes_2sys_2socket_8h.html#aa03706b2738b9a58d4985dfbe99e1bac">AF_INET6</a>&#160;&#160;&#160;3</td></tr>
 <tr class="separator:aa03706b2738b9a58d4985dfbe99e1bac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fd8739854bc8b48d65f0b669fed3ffe" id="r_a0fd8739854bc8b48d65f0b669fed3ffe"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Libs_2XEClib_2includes_2sys_2socket_8h.html#a0fd8739854bc8b48d65f0b669fed3ffe">AF_UNIX</a>&#160;&#160;&#160;4</td></tr>
+<tr class="separator:a0fd8739854bc8b48d65f0b669fed3ffe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a249394484f9410a2e3f8eba24657feb9" id="r_a249394484f9410a2e3f8eba24657feb9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Libs_2XEClib_2includes_2sys_2socket_8h.html#a249394484f9410a2e3f8eba24657feb9">SOCK_STREAM</a>&#160;&#160;&#160;1</td></tr>
 <tr class="separator:a249394484f9410a2e3f8eba24657feb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4db8b9a846c67404db0b6f014f9a9fdf" id="r_a4db8b9a846c67404db0b6f014f9a9fdf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Libs_2XEClib_2includes_2sys_2socket_8h.html#a4db8b9a846c67404db0b6f014f9a9fdf">SOCK_DGRAM</a>&#160;&#160;&#160;2</td></tr>
 <tr class="separator:a4db8b9a846c67404db0b6f014f9a9fdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a346f84e37c42f88e91e7304c3d77fde8" id="r_a346f84e37c42f88e91e7304c3d77fde8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Libs_2XEClib_2includes_2sys_2socket_8h.html#a346f84e37c42f88e91e7304c3d77fde8">SOCK_RAW</a>&#160;&#160;&#160;3</td></tr>
 <tr class="separator:a346f84e37c42f88e91e7304c3d77fde8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a844a02180836d947d7ae128032e0be81" id="r_a844a02180836d947d7ae128032e0be81"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Libs_2XEClib_2includes_2sys_2socket_8h.html#a844a02180836d947d7ae128032e0be81">SOCK_TYPE_MASK</a>&#160;&#160;&#160;0x0000000F</td></tr>
+<tr class="separator:a844a02180836d947d7ae128032e0be81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae04efe05cb3dc3314c7710cfb8cd380a" id="r_ae04efe05cb3dc3314c7710cfb8cd380a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Libs_2XEClib_2includes_2sys_2socket_8h.html#ae04efe05cb3dc3314c7710cfb8cd380a">SOCK_NONBLOCK</a>&#160;&#160;&#160;0x00000800</td></tr>
+<tr class="separator:ae04efe05cb3dc3314c7710cfb8cd380a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac337901f5606f0cf6f8e9867ef3fc1c4" id="r_ac337901f5606f0cf6f8e9867ef3fc1c4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Libs_2XEClib_2includes_2sys_2socket_8h.html#ac337901f5606f0cf6f8e9867ef3fc1c4">SOCK_CLOEXEC</a>&#160;&#160;&#160;0x00080000</td></tr>
+<tr class="separator:ac337901f5606f0cf6f8e9867ef3fc1c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14cb882b83133871d324ff6112f6c4a9" id="r_a14cb882b83133871d324ff6112f6c4a9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Libs_2XEClib_2includes_2sys_2socket_8h.html#a14cb882b83133871d324ff6112f6c4a9">IPPROTOCOL_ICMP</a>&#160;&#160;&#160;1</td></tr>
 <tr class="separator:a14cb882b83133871d324ff6112f6c4a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c16344d605c97fdbfa674c04bd6a580" id="r_a0c16344d605c97fdbfa674c04bd6a580"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Libs_2XEClib_2includes_2sys_2socket_8h.html#a0c16344d605c97fdbfa674c04bd6a580">IPPROTOCOL_TCP</a>&#160;&#160;&#160;6</td></tr>
 <tr class="separator:a0c16344d605c97fdbfa674c04bd6a580"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4551d019f4a41aa8a76aaa10ccc84e40" id="r_a4551d019f4a41aa8a76aaa10ccc84e40"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Libs_2XEClib_2includes_2sys_2socket_8h.html#a4551d019f4a41aa8a76aaa10ccc84e40">IPPROTOCOL_UDP</a>&#160;&#160;&#160;17</td></tr>
 <tr class="separator:a4551d019f4a41aa8a76aaa10ccc84e40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94f83c72c1e5e6ef453e47cf59885fb5" id="r_a94f83c72c1e5e6ef453e47cf59885fb5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Libs_2XEClib_2includes_2sys_2socket_8h.html#a94f83c72c1e5e6ef453e47cf59885fb5">IPPROTO_TCP</a>&#160;&#160;&#160;<a class="el" href="BaseHdr_2Net_2socket_8h.html#a0c16344d605c97fdbfa674c04bd6a580">IPPROTOCOL_TCP</a></td></tr>
+<tr class="separator:a94f83c72c1e5e6ef453e47cf59885fb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab332d40b15142f33a88d4fcb1d6a5920" id="r_ab332d40b15142f33a88d4fcb1d6a5920"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Libs_2XEClib_2includes_2sys_2socket_8h.html#ab332d40b15142f33a88d4fcb1d6a5920">IPPROTO_UDP</a>&#160;&#160;&#160;<a class="el" href="BaseHdr_2Net_2socket_8h.html#a4551d019f4a41aa8a76aaa10ccc84e40">IPPROTOCOL_UDP</a></td></tr>
+<tr class="separator:ab332d40b15142f33a88d4fcb1d6a5920"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace2e6d2f1aa61246a2d7ae9b219abe8b" id="r_ace2e6d2f1aa61246a2d7ae9b219abe8b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Libs_2XEClib_2includes_2sys_2socket_8h.html#ace2e6d2f1aa61246a2d7ae9b219abe8b">IPPROTOCOL_ICMPV6</a>&#160;&#160;&#160;58</td></tr>
 <tr class="separator:ace2e6d2f1aa61246a2d7ae9b219abe8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92d045f6ee2f343d6b28830a9fec082e" id="r_a92d045f6ee2f343d6b28830a9fec082e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Libs_2XEClib_2includes_2sys_2socket_8h.html#a92d045f6ee2f343d6b28830a9fec082e">SOL_SOCKET</a>&#160;&#160;&#160;0</td></tr>
@@ -168,6 +198,44 @@ Macros</h2></td></tr>
 <tr class="separator:ae0339480fb8088046e6038ee1baf3a61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2ceb8d4369cba78fd8811283e7d5b48" id="r_ac2ceb8d4369cba78fd8811283e7d5b48"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Libs_2XEClib_2includes_2sys_2socket_8h.html#ac2ceb8d4369cba78fd8811283e7d5b48">SO_NONBLOCK</a>&#160;&#160;&#160;4</td></tr>
 <tr class="separator:ac2ceb8d4369cba78fd8811283e7d5b48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a040d4fd00495232970a03425bc00e77a" id="r_a040d4fd00495232970a03425bc00e77a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Libs_2XEClib_2includes_2sys_2socket_8h.html#a040d4fd00495232970a03425bc00e77a">SO_ERROR</a>&#160;&#160;&#160;5</td></tr>
+<tr class="separator:a040d4fd00495232970a03425bc00e77a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ab1e00e94a92737d3a4b407f7fa90f1" id="r_a8ab1e00e94a92737d3a4b407f7fa90f1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Libs_2XEClib_2includes_2sys_2socket_8h.html#a8ab1e00e94a92737d3a4b407f7fa90f1">SO_TYPE</a>&#160;&#160;&#160;6</td></tr>
+<tr class="separator:a8ab1e00e94a92737d3a4b407f7fa90f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0db12e960ac303030400d9fd95391b52" id="r_a0db12e960ac303030400d9fd95391b52"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Libs_2XEClib_2includes_2sys_2socket_8h.html#a0db12e960ac303030400d9fd95391b52">SO_RCVBUF</a>&#160;&#160;&#160;7</td></tr>
+<tr class="separator:a0db12e960ac303030400d9fd95391b52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af618cbb85161ff3196d3bcdf7565ba64" id="r_af618cbb85161ff3196d3bcdf7565ba64"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Libs_2XEClib_2includes_2sys_2socket_8h.html#af618cbb85161ff3196d3bcdf7565ba64">SO_SNDBUF</a>&#160;&#160;&#160;8</td></tr>
+<tr class="separator:af618cbb85161ff3196d3bcdf7565ba64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a86a7abccf8140410bf8a64c571bd6d" id="r_a4a86a7abccf8140410bf8a64c571bd6d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Libs_2XEClib_2includes_2sys_2socket_8h.html#a4a86a7abccf8140410bf8a64c571bd6d">SO_ACCEPTCONN</a>&#160;&#160;&#160;9</td></tr>
+<tr class="separator:a4a86a7abccf8140410bf8a64c571bd6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f02455d581f55196a37a12377ecfc0e" id="r_a8f02455d581f55196a37a12377ecfc0e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Libs_2XEClib_2includes_2sys_2socket_8h.html#a8f02455d581f55196a37a12377ecfc0e">TCP_NODELAY</a>&#160;&#160;&#160;10</td></tr>
+<tr class="separator:a8f02455d581f55196a37a12377ecfc0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a048a394e60b5bb89b8c3d8f9d2c4be38" id="r_a048a394e60b5bb89b8c3d8f9d2c4be38"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Libs_2XEClib_2includes_2sys_2socket_8h.html#a048a394e60b5bb89b8c3d8f9d2c4be38">SOMAXCONN</a>&#160;&#160;&#160;128</td></tr>
+<tr class="separator:a048a394e60b5bb89b8c3d8f9d2c4be38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1c8cf84ac37451afaef3bde9976b6e1" id="r_af1c8cf84ac37451afaef3bde9976b6e1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Libs_2XEClib_2includes_2sys_2socket_8h.html#af1c8cf84ac37451afaef3bde9976b6e1">SHUT_RD</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:af1c8cf84ac37451afaef3bde9976b6e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addb0a758e6fafdd89f5b7120f84738eb" id="r_addb0a758e6fafdd89f5b7120f84738eb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Libs_2XEClib_2includes_2sys_2socket_8h.html#addb0a758e6fafdd89f5b7120f84738eb">SHUT_WR</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:addb0a758e6fafdd89f5b7120f84738eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80c54d1399557c97a0c81a319d08e9db" id="r_a80c54d1399557c97a0c81a319d08e9db"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Libs_2XEClib_2includes_2sys_2socket_8h.html#a80c54d1399557c97a0c81a319d08e9db">SHUT_RDWR</a>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:a80c54d1399557c97a0c81a319d08e9db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99bc202592bac1adbd525f47b359b722" id="r_a99bc202592bac1adbd525f47b359b722"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Libs_2XEClib_2includes_2sys_2socket_8h.html#a99bc202592bac1adbd525f47b359b722">MSG_OOB</a>&#160;&#160;&#160;0x0001</td></tr>
+<tr class="separator:a99bc202592bac1adbd525f47b359b722"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60c35b1016d0d87fe1066ea817acad98" id="r_a60c35b1016d0d87fe1066ea817acad98"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Libs_2XEClib_2includes_2sys_2socket_8h.html#a60c35b1016d0d87fe1066ea817acad98">MSG_PEEK</a>&#160;&#160;&#160;0x0002</td></tr>
+<tr class="separator:a60c35b1016d0d87fe1066ea817acad98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9643e949e179396230792b56fe7f6f06" id="r_a9643e949e179396230792b56fe7f6f06"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Libs_2XEClib_2includes_2sys_2socket_8h.html#a9643e949e179396230792b56fe7f6f06">MSG_DONTROUTE</a>&#160;&#160;&#160;0x0004</td></tr>
+<tr class="separator:a9643e949e179396230792b56fe7f6f06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a90f17f258e36353f09375263324f41" id="r_a6a90f17f258e36353f09375263324f41"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Libs_2XEClib_2includes_2sys_2socket_8h.html#a6a90f17f258e36353f09375263324f41">MSG_TRUNC</a>&#160;&#160;&#160;0x0020</td></tr>
+<tr class="separator:a6a90f17f258e36353f09375263324f41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab18d3d439e4a9c8d0f73e7166e8eb376" id="r_ab18d3d439e4a9c8d0f73e7166e8eb376"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Libs_2XEClib_2includes_2sys_2socket_8h.html#ab18d3d439e4a9c8d0f73e7166e8eb376">MSG_DONTWAIT</a>&#160;&#160;&#160;0x0040</td></tr>
+<tr class="separator:ab18d3d439e4a9c8d0f73e7166e8eb376"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d5227476f1f0f6c2ca5c70239098bff" id="r_a8d5227476f1f0f6c2ca5c70239098bff"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Libs_2XEClib_2includes_2sys_2socket_8h.html#a8d5227476f1f0f6c2ca5c70239098bff">MSG_EOR</a>&#160;&#160;&#160;0x0080</td></tr>
+<tr class="separator:a8d5227476f1f0f6c2ca5c70239098bff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c0fac4635e91ca9d839e20a09d3989e" id="r_a0c0fac4635e91ca9d839e20a09d3989e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Libs_2XEClib_2includes_2sys_2socket_8h.html#a0c0fac4635e91ca9d839e20a09d3989e">MSG_WAITALL</a>&#160;&#160;&#160;0x0100</td></tr>
+<tr class="separator:a0c0fac4635e91ca9d839e20a09d3989e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f55d0e90dc8cc6b2287312435cdde48" id="r_a9f55d0e90dc8cc6b2287312435cdde48"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Libs_2XEClib_2includes_2sys_2socket_8h.html#a9f55d0e90dc8cc6b2287312435cdde48">MSG_NOSIGNAL</a>&#160;&#160;&#160;0x4000</td></tr>
+<tr class="separator:a9f55d0e90dc8cc6b2287312435cdde48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33263bb4d772ebd1fffdba329d51beaa" id="r_a33263bb4d772ebd1fffdba329d51beaa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Libs_2XEClib_2includes_2sys_2socket_8h.html#a33263bb4d772ebd1fffdba329d51beaa">MSG_WAITFORONE</a>&#160;&#160;&#160;0x10000</td></tr>
+<tr class="separator:a33263bb4d772ebd1fffdba329d51beaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ced94f5c7488264357531ad11479031" id="r_a3ced94f5c7488264357531ad11479031"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Libs_2XEClib_2includes_2sys_2socket_8h.html#a3ced94f5c7488264357531ad11479031">RTF_UP</a>&#160;&#160;&#160;0x01</td></tr>
 <tr class="separator:a3ced94f5c7488264357531ad11479031"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5aa6d150d2de8be21c10336734edd292" id="r_a5aa6d150d2de8be21c10336734edd292"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Libs_2XEClib_2includes_2sys_2socket_8h.html#a5aa6d150d2de8be21c10336734edd292">RTF_HOST</a>&#160;&#160;&#160;0x02</td></tr>
@@ -209,6 +277,8 @@ Typedefs</h2></td></tr>
 <tr class="separator:a4a63bc6b6bebbd0c300aea2298224943"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9330982c7bab0a2048d0828aa091d903" id="r_a9330982c7bab0a2048d0828aa091d903"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct__msghdr__.html">_msghdr_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Libs_2XEClib_2includes_2sys_2socket_8h.html#a9330982c7bab0a2048d0828aa091d903">msghdr</a></td></tr>
 <tr class="separator:a9330982c7bab0a2048d0828aa091d903"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9d654c4e24c743edb2ef51c50607d51" id="r_ad9d654c4e24c743edb2ef51c50607d51"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct__mmsghdr__.html">_mmsghdr_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Libs_2XEClib_2includes_2sys_2socket_8h.html#ad9d654c4e24c743edb2ef51c50607d51">mmsghdr</a></td></tr>
+<tr class="separator:ad9d654c4e24c743edb2ef51c50607d51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09aa21bcafe8ba3e596b2cd2584196fb" id="r_a09aa21bcafe8ba3e596b2cd2584196fb"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct__route__entry__.html">_route_entry_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Libs_2XEClib_2includes_2sys_2socket_8h.html#a09aa21bcafe8ba3e596b2cd2584196fb">XERouteEntry</a></td></tr>
 <tr class="separator:a09aa21bcafe8ba3e596b2cd2584196fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b8d8837e1e9b9f4ba22adafa817a712" id="r_a2b8d8837e1e9b9f4ba22adafa817a712"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct__route__entry__info__.html">_route_entry_info_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Libs_2XEClib_2includes_2sys_2socket_8h.html#a2b8d8837e1e9b9f4ba22adafa817a712">XERouteEntryInfo</a></td></tr>
@@ -225,6 +295,8 @@ Typedefs</h2></td></tr>
 <tr class="separator:a5c83baf86038f88bf20ef22ea2f4dae6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1840739eb61cd13702698ae383870240" id="r_a1840739eb61cd13702698ae383870240"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct__sockaddr__in6__.html">_sockaddr_in6_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Libs_2XEClib_2includes_2sys_2socket_8h.html#a1840739eb61cd13702698ae383870240">sockaddr_in6</a></td></tr>
 <tr class="separator:a1840739eb61cd13702698ae383870240"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6da8f8a63a6b4b7cd144a285129f421d" id="r_a6da8f8a63a6b4b7cd144a285129f421d"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct__sockaddr__un__.html">_sockaddr_un_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Libs_2XEClib_2includes_2sys_2socket_8h.html#a6da8f8a63a6b4b7cd144a285129f421d">sockaddr_un</a></td></tr>
+<tr class="separator:a6da8f8a63a6b4b7cd144a285129f421d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -236,17 +308,39 @@ Functions</h2></td></tr>
 <tr class="separator:add84581d2a314aedfa11f7103a91fa93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc50e25c13ba2f6a3c4866e06f64c870" id="r_abc50e25c13ba2f6a3c4866e06f64c870"><td class="memItemLeft" align="right" valign="top"><a class="el" href="__xeneva_8h.html#a3640283d666d4a8b25a736424ee25866">XE_LIB</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Libs_2XEClib_2includes_2sys_2socket_8h.html#abc50e25c13ba2f6a3c4866e06f64c870">receive</a> (int sockfd, <a class="el" href="BaseHdr_2Net_2socket_8h.html#a9330982c7bab0a2048d0828aa091d903">msghdr</a> *msg, int <a class="el" href="Drivers_2virtio_8h.html#a04a0bd666e371f3fab92b8d0ef5dbdb0">flags</a>)</td></tr>
 <tr class="separator:abc50e25c13ba2f6a3c4866e06f64c870"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1818a70eae09766dccd09349583e7973" id="r_a1818a70eae09766dccd09349583e7973"><td class="memItemLeft" align="right" valign="top"><a class="el" href="__xeneva_8h.html#a3640283d666d4a8b25a736424ee25866">XE_LIB</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Libs_2XEClib_2includes_2sys_2socket_8h.html#a1818a70eae09766dccd09349583e7973">socket_setopt</a> (int sockfd, int <a class="el" href="drm__print_8h.html#a4d8634ba374002ecc7800ee7e88b959f">level</a>, int optname, const void *optval, <a class="el" href="BaseHdr_2Net_2socket_8h.html#acf0ed818b0a3c85ff6a9206679d6d91a">socklen_t</a> optlen)</td></tr>
+<tr class="memitem:a1818a70eae09766dccd09349583e7973" id="r_a1818a70eae09766dccd09349583e7973"><td class="memItemLeft" align="right" valign="top"><a class="el" href="__xeneva_8h.html#a3640283d666d4a8b25a736424ee25866">XE_LIB</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Libs_2XEClib_2includes_2sys_2socket_8h.html#a1818a70eae09766dccd09349583e7973">socket_setopt</a> (int sockfd, int <a class="el" href="drm__print_8h.html#a4d8634ba374002ecc7800ee7e88b959f">level</a>, int optname, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> void *optval, <a class="el" href="BaseHdr_2Net_2socket_8h.html#acf0ed818b0a3c85ff6a9206679d6d91a">socklen_t</a> optlen)</td></tr>
 <tr class="separator:a1818a70eae09766dccd09349583e7973"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb91521c2fb1b33435df7964e2f6d772" id="r_abb91521c2fb1b33435df7964e2f6d772"><td class="memItemLeft" align="right" valign="top"><a class="el" href="__xeneva_8h.html#a3640283d666d4a8b25a736424ee25866">XE_LIB</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Libs_2XEClib_2includes_2sys_2socket_8h.html#abb91521c2fb1b33435df7964e2f6d772">bind</a> (int sockfd, struct <a class="el" href="BaseHdr_2Net_2socket_8h.html#a8bb60190bcf8fd80045d0198b25c2384">sockaddr</a> *addr, <a class="el" href="BaseHdr_2Net_2socket_8h.html#acf0ed818b0a3c85ff6a9206679d6d91a">socklen_t</a> addrlen)</td></tr>
 <tr class="separator:abb91521c2fb1b33435df7964e2f6d772"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60cbf606de817fbeedb0aa20a649b6e5" id="r_a60cbf606de817fbeedb0aa20a649b6e5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="__xeneva_8h.html#a3640283d666d4a8b25a736424ee25866">XE_LIB</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Libs_2XEClib_2includes_2sys_2socket_8h.html#a60cbf606de817fbeedb0aa20a649b6e5">accept</a> (int sockfd, <a class="el" href="BaseHdr_2Net_2socket_8h.html#a8bb60190bcf8fd80045d0198b25c2384">sockaddr</a> *addr, <a class="el" href="BaseHdr_2Net_2socket_8h.html#acf0ed818b0a3c85ff6a9206679d6d91a">socklen_t</a> *addrlen)</td></tr>
 <tr class="separator:a60cbf606de817fbeedb0aa20a649b6e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24ef85ec0a08cb52d83b36264655ec6e" id="r_a24ef85ec0a08cb52d83b36264655ec6e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="__xeneva_8h.html#a3640283d666d4a8b25a736424ee25866">XE_LIB</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Libs_2XEClib_2includes_2sys_2socket_8h.html#a24ef85ec0a08cb52d83b36264655ec6e">accept4</a> (int sockfd, <a class="el" href="BaseHdr_2Net_2socket_8h.html#a8bb60190bcf8fd80045d0198b25c2384">sockaddr</a> *addr, <a class="el" href="BaseHdr_2Net_2socket_8h.html#acf0ed818b0a3c85ff6a9206679d6d91a">socklen_t</a> *addrlen, int <a class="el" href="Drivers_2virtio_8h.html#a04a0bd666e371f3fab92b8d0ef5dbdb0">flags</a>)</td></tr>
+<tr class="separator:a24ef85ec0a08cb52d83b36264655ec6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0214938f90a271a8e8429dd44f0997d7" id="r_a0214938f90a271a8e8429dd44f0997d7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="__xeneva_8h.html#a3640283d666d4a8b25a736424ee25866">XE_LIB</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Libs_2XEClib_2includes_2sys_2socket_8h.html#a0214938f90a271a8e8429dd44f0997d7">listen</a> (int sockfd, int backlog)</td></tr>
 <tr class="separator:a0214938f90a271a8e8429dd44f0997d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8b4e1c35b972daa28e65b15300d9c8d" id="r_ac8b4e1c35b972daa28e65b15300d9c8d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="__xeneva_8h.html#a3640283d666d4a8b25a736424ee25866">XE_LIB</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Libs_2XEClib_2includes_2sys_2socket_8h.html#ac8b4e1c35b972daa28e65b15300d9c8d">getsockopt</a> (int sockfd, int <a class="el" href="drm__print_8h.html#a4d8634ba374002ecc7800ee7e88b959f">level</a>, int optname, void *optval, <a class="el" href="BaseHdr_2Net_2socket_8h.html#acf0ed818b0a3c85ff6a9206679d6d91a">socklen_t</a> *optlen)</td></tr>
+<tr class="separator:ac8b4e1c35b972daa28e65b15300d9c8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b2db92dc8a527557a6a3573d537ea5f" id="r_a5b2db92dc8a527557a6a3573d537ea5f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="__xeneva_8h.html#a3640283d666d4a8b25a736424ee25866">XE_LIB</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Libs_2XEClib_2includes_2sys_2socket_8h.html#a5b2db92dc8a527557a6a3573d537ea5f">getsockname</a> (int sockfd, <a class="el" href="Libs_2XEClib_2includes_2sys_2socket_8h.html#ab774ee817e94dc1ec92480d188db9fb2">sockaddr_</a> *addr, <a class="el" href="BaseHdr_2Net_2socket_8h.html#acf0ed818b0a3c85ff6a9206679d6d91a">socklen_t</a> *addrlen)</td></tr>
+<tr class="separator:a5b2db92dc8a527557a6a3573d537ea5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f9611d9a6361cc43ed91b117cad34d8" id="r_a9f9611d9a6361cc43ed91b117cad34d8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="__xeneva_8h.html#a3640283d666d4a8b25a736424ee25866">XE_LIB</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Libs_2XEClib_2includes_2sys_2socket_8h.html#a9f9611d9a6361cc43ed91b117cad34d8">getpeername</a> (int sockfd, <a class="el" href="Libs_2XEClib_2includes_2sys_2socket_8h.html#ab774ee817e94dc1ec92480d188db9fb2">sockaddr_</a> *addr, <a class="el" href="BaseHdr_2Net_2socket_8h.html#acf0ed818b0a3c85ff6a9206679d6d91a">socklen_t</a> *addrlen)</td></tr>
+<tr class="separator:a9f9611d9a6361cc43ed91b117cad34d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d3fe5b9edb97368ea48cfd2d207ad62" id="r_a5d3fe5b9edb97368ea48cfd2d207ad62"><td class="memItemLeft" align="right" valign="top"><a class="el" href="__xeneva_8h.html#a3640283d666d4a8b25a736424ee25866">XE_LIB</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Libs_2XEClib_2includes_2sys_2socket_8h.html#a5d3fe5b9edb97368ea48cfd2d207ad62">socketpair</a> (int domain, int type, int protocol, int sv[2])</td></tr>
+<tr class="separator:a5d3fe5b9edb97368ea48cfd2d207ad62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3d19630402874789d5d4972e317e859" id="r_aa3d19630402874789d5d4972e317e859"><td class="memItemLeft" align="right" valign="top"><a class="el" href="__xeneva_8h.html#a3640283d666d4a8b25a736424ee25866">XE_LIB</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Libs_2XEClib_2includes_2sys_2socket_8h.html#aa3d19630402874789d5d4972e317e859">shutdown</a> (int sockfd, int how)</td></tr>
+<tr class="separator:aa3d19630402874789d5d4972e317e859"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af74fa729dc434112da43054af11a739c" id="r_af74fa729dc434112da43054af11a739c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="__xeneva_8h.html#a3640283d666d4a8b25a736424ee25866">XE_LIB</a> <a class="el" href="BaseHdr_2stddef_8h.html#aa9e017f700fef59e03bf6d5bc2e59a7e">ssize_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Libs_2XEClib_2includes_2sys_2socket_8h.html#af74fa729dc434112da43054af11a739c">sendmmsg</a> (int sockfd, <a class="el" href="BaseHdr_2Net_2socket_8h.html#ad9d654c4e24c743edb2ef51c50607d51">mmsghdr</a> *msgvec, unsigned int vlen, int <a class="el" href="Drivers_2virtio_8h.html#a04a0bd666e371f3fab92b8d0ef5dbdb0">flags</a>)</td></tr>
+<tr class="separator:af74fa729dc434112da43054af11a739c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb984507b0dacfad63f8dab91316392e" id="r_afb984507b0dacfad63f8dab91316392e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="__xeneva_8h.html#a3640283d666d4a8b25a736424ee25866">XE_LIB</a> <a class="el" href="BaseHdr_2stddef_8h.html#aa9e017f700fef59e03bf6d5bc2e59a7e">ssize_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Libs_2XEClib_2includes_2sys_2socket_8h.html#afb984507b0dacfad63f8dab91316392e">recvmmsg</a> (int sockfd, <a class="el" href="BaseHdr_2Net_2socket_8h.html#ad9d654c4e24c743edb2ef51c50607d51">mmsghdr</a> *msgvec, unsigned int vlen, int <a class="el" href="Drivers_2virtio_8h.html#a04a0bd666e371f3fab92b8d0ef5dbdb0">flags</a>, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct <a class="el" href="structtimespec.html">timespec</a> *timeout)</td></tr>
+<tr class="separator:afb984507b0dacfad63f8dab91316392e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab02981a58c5fcad45944e3a0f1ce743e" id="r_ab02981a58c5fcad45944e3a0f1ce743e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="__xeneva_8h.html#a3640283d666d4a8b25a736424ee25866">XE_LIB</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Libs_2XEClib_2includes_2sys_2socket_8h.html#ab02981a58c5fcad45944e3a0f1ce743e">setsockopt</a> (int sockfd, int <a class="el" href="drm__print_8h.html#a4d8634ba374002ecc7800ee7e88b959f">level</a>, int optname, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> void *optval, <a class="el" href="BaseHdr_2Net_2socket_8h.html#acf0ed818b0a3c85ff6a9206679d6d91a">socklen_t</a> optlen)</td></tr>
+<tr class="separator:ab02981a58c5fcad45944e3a0f1ce743e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe76893a62474b8ec1401e747f9f2989" id="r_abe76893a62474b8ec1401e747f9f2989"><td class="memItemLeft" align="right" valign="top"><a class="el" href="__xeneva_8h.html#a3640283d666d4a8b25a736424ee25866">XE_LIB</a> <a class="el" href="BaseHdr_2stddef_8h.html#aa9e017f700fef59e03bf6d5bc2e59a7e">ssize_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Libs_2XEClib_2includes_2sys_2socket_8h.html#abe76893a62474b8ec1401e747f9f2989">sendmsg</a> (int sockfd, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="BaseHdr_2Net_2socket_8h.html#a9330982c7bab0a2048d0828aa091d903">msghdr</a> *msg, int <a class="el" href="Drivers_2virtio_8h.html#a04a0bd666e371f3fab92b8d0ef5dbdb0">flags</a>)</td></tr>
+<tr class="separator:abe76893a62474b8ec1401e747f9f2989"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9916b1928a09ec9fdf0281196aecb023" id="r_a9916b1928a09ec9fdf0281196aecb023"><td class="memItemLeft" align="right" valign="top"><a class="el" href="__xeneva_8h.html#a3640283d666d4a8b25a736424ee25866">XE_LIB</a> <a class="el" href="BaseHdr_2stddef_8h.html#aa9e017f700fef59e03bf6d5bc2e59a7e">ssize_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Libs_2XEClib_2includes_2sys_2socket_8h.html#a9916b1928a09ec9fdf0281196aecb023">recvmsg</a> (int sockfd, <a class="el" href="BaseHdr_2Net_2socket_8h.html#a9330982c7bab0a2048d0828aa091d903">msghdr</a> *msg, int <a class="el" href="Drivers_2virtio_8h.html#a04a0bd666e371f3fab92b8d0ef5dbdb0">flags</a>)</td></tr>
+<tr class="separator:a9916b1928a09ec9fdf0281196aecb023"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa031d76782f9781aea17463e4c87cf08" id="r_aa031d76782f9781aea17463e4c87cf08"><td class="memItemLeft" align="right" valign="top"><a class="el" href="__xeneva_8h.html#a3640283d666d4a8b25a736424ee25866">XE_LIB</a> <a class="el" href="BaseHdr_2stddef_8h.html#aa9e017f700fef59e03bf6d5bc2e59a7e">ssize_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Libs_2XEClib_2includes_2sys_2socket_8h.html#aa031d76782f9781aea17463e4c87cf08">recvfrom</a> (int sockfd, void *buf, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> <a class="el" href="initial_8c.html#a7360b55975153b822efc5217b7734e6a">len</a>, int <a class="el" href="Drivers_2virtio_8h.html#a04a0bd666e371f3fab92b8d0ef5dbdb0">flags</a>, struct <a class="el" href="BaseHdr_2Net_2socket_8h.html#a8bb60190bcf8fd80045d0198b25c2384">sockaddr</a> *src_addr, <a class="el" href="BaseHdr_2Net_2socket_8h.html#acf0ed818b0a3c85ff6a9206679d6d91a">socklen_t</a> *addrlen)</td></tr>
 <tr class="separator:aa031d76782f9781aea17463e4c87cf08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4bc3581c3124eabdf0cda0d03196b3cf" id="r_a4bc3581c3124eabdf0cda0d03196b3cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="__xeneva_8h.html#a3640283d666d4a8b25a736424ee25866">XE_LIB</a> <a class="el" href="BaseHdr_2stddef_8h.html#aa9e017f700fef59e03bf6d5bc2e59a7e">ssize_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Libs_2XEClib_2includes_2sys_2socket_8h.html#a4bc3581c3124eabdf0cda0d03196b3cf">sendto</a> (int sockfd, const void *buf, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> <a class="el" href="initial_8c.html#a7360b55975153b822efc5217b7734e6a">len</a>, int <a class="el" href="Drivers_2virtio_8h.html#a04a0bd666e371f3fab92b8d0ef5dbdb0">flags</a>, const struct <a class="el" href="BaseHdr_2Net_2socket_8h.html#a8bb60190bcf8fd80045d0198b25c2384">sockaddr</a> *dest_addr, <a class="el" href="BaseHdr_2Net_2socket_8h.html#acf0ed818b0a3c85ff6a9206679d6d91a">socklen_t</a> addrlen)</td></tr>
+<tr class="memitem:a4bc3581c3124eabdf0cda0d03196b3cf" id="r_a4bc3581c3124eabdf0cda0d03196b3cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="__xeneva_8h.html#a3640283d666d4a8b25a736424ee25866">XE_LIB</a> <a class="el" href="BaseHdr_2stddef_8h.html#aa9e017f700fef59e03bf6d5bc2e59a7e">ssize_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Libs_2XEClib_2includes_2sys_2socket_8h.html#a4bc3581c3124eabdf0cda0d03196b3cf">sendto</a> (int sockfd, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> void *buf, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> <a class="el" href="initial_8c.html#a7360b55975153b822efc5217b7734e6a">len</a>, int <a class="el" href="Drivers_2virtio_8h.html#a04a0bd666e371f3fab92b8d0ef5dbdb0">flags</a>, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct <a class="el" href="BaseHdr_2Net_2socket_8h.html#a8bb60190bcf8fd80045d0198b25c2384">sockaddr</a> *dest_addr, <a class="el" href="BaseHdr_2Net_2socket_8h.html#acf0ed818b0a3c85ff6a9206679d6d91a">socklen_t</a> addrlen)</td></tr>
 <tr class="separator:a4bc3581c3124eabdf0cda0d03196b3cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
@@ -292,6 +386,20 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a0fd8739854bc8b48d65f0b669fed3ffe" name="a0fd8739854bc8b48d65f0b669fed3ffe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0fd8739854bc8b48d65f0b669fed3ffe">&#9670;&#160;</a></span>AF_UNIX</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define AF_UNIX&#160;&#160;&#160;4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ae77ae24b14b7b7f294f3e04121173f12" name="ae77ae24b14b7b7f294f3e04121173f12"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae77ae24b14b7b7f294f3e04121173f12">&#9670;&#160;</a></span>AF_UNSPEC</h2>
 
@@ -303,14 +411,34 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>BSD 2-Clause License</p>
-<p>Copyright (c) 2022-2024, Manas Kamal Choudhury All rights reserved.</p>
-<p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
-<ol type="1">
-<li>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</li>
-<li>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</li>
-</ol>
-<p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. </p>
+
+</div>
+</div>
+<a id="a94f83c72c1e5e6ef453e47cf59885fb5" name="a94f83c72c1e5e6ef453e47cf59885fb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94f83c72c1e5e6ef453e47cf59885fb5">&#9670;&#160;</a></span>IPPROTO_TCP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IPPROTO_TCP&#160;&#160;&#160;<a class="el" href="BaseHdr_2Net_2socket_8h.html#a0c16344d605c97fdbfa674c04bd6a580">IPPROTOCOL_TCP</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab332d40b15142f33a88d4fcb1d6a5920" name="ab332d40b15142f33a88d4fcb1d6a5920"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab332d40b15142f33a88d4fcb1d6a5920">&#9670;&#160;</a></span>IPPROTO_UDP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IPPROTO_UDP&#160;&#160;&#160;<a class="el" href="BaseHdr_2Net_2socket_8h.html#a4551d019f4a41aa8a76aaa10ccc84e40">IPPROTOCOL_UDP</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -364,6 +492,132 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define IPPROTOCOL_UDP&#160;&#160;&#160;17</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9643e949e179396230792b56fe7f6f06" name="a9643e949e179396230792b56fe7f6f06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9643e949e179396230792b56fe7f6f06">&#9670;&#160;</a></span>MSG_DONTROUTE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MSG_DONTROUTE&#160;&#160;&#160;0x0004</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab18d3d439e4a9c8d0f73e7166e8eb376" name="ab18d3d439e4a9c8d0f73e7166e8eb376"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab18d3d439e4a9c8d0f73e7166e8eb376">&#9670;&#160;</a></span>MSG_DONTWAIT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MSG_DONTWAIT&#160;&#160;&#160;0x0040</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8d5227476f1f0f6c2ca5c70239098bff" name="a8d5227476f1f0f6c2ca5c70239098bff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d5227476f1f0f6c2ca5c70239098bff">&#9670;&#160;</a></span>MSG_EOR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MSG_EOR&#160;&#160;&#160;0x0080</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9f55d0e90dc8cc6b2287312435cdde48" name="a9f55d0e90dc8cc6b2287312435cdde48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f55d0e90dc8cc6b2287312435cdde48">&#9670;&#160;</a></span>MSG_NOSIGNAL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MSG_NOSIGNAL&#160;&#160;&#160;0x4000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a99bc202592bac1adbd525f47b359b722" name="a99bc202592bac1adbd525f47b359b722"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99bc202592bac1adbd525f47b359b722">&#9670;&#160;</a></span>MSG_OOB</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MSG_OOB&#160;&#160;&#160;0x0001</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a60c35b1016d0d87fe1066ea817acad98" name="a60c35b1016d0d87fe1066ea817acad98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60c35b1016d0d87fe1066ea817acad98">&#9670;&#160;</a></span>MSG_PEEK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MSG_PEEK&#160;&#160;&#160;0x0002</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6a90f17f258e36353f09375263324f41" name="a6a90f17f258e36353f09375263324f41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a90f17f258e36353f09375263324f41">&#9670;&#160;</a></span>MSG_TRUNC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MSG_TRUNC&#160;&#160;&#160;0x0020</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0c0fac4635e91ca9d839e20a09d3989e" name="a0c0fac4635e91ca9d839e20a09d3989e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c0fac4635e91ca9d839e20a09d3989e">&#9670;&#160;</a></span>MSG_WAITALL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MSG_WAITALL&#160;&#160;&#160;0x0100</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a33263bb4d772ebd1fffdba329d51beaa" name="a33263bb4d772ebd1fffdba329d51beaa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33263bb4d772ebd1fffdba329d51beaa">&#9670;&#160;</a></span>MSG_WAITFORONE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MSG_WAITFORONE&#160;&#160;&#160;0x10000</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -552,6 +806,62 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="af1c8cf84ac37451afaef3bde9976b6e1" name="af1c8cf84ac37451afaef3bde9976b6e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1c8cf84ac37451afaef3bde9976b6e1">&#9670;&#160;</a></span>SHUT_RD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SHUT_RD&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a80c54d1399557c97a0c81a319d08e9db" name="a80c54d1399557c97a0c81a319d08e9db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80c54d1399557c97a0c81a319d08e9db">&#9670;&#160;</a></span>SHUT_RDWR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SHUT_RDWR&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="addb0a758e6fafdd89f5b7120f84738eb" name="addb0a758e6fafdd89f5b7120f84738eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addb0a758e6fafdd89f5b7120f84738eb">&#9670;&#160;</a></span>SHUT_WR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SHUT_WR&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4a86a7abccf8140410bf8a64c571bd6d" name="a4a86a7abccf8140410bf8a64c571bd6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a86a7abccf8140410bf8a64c571bd6d">&#9670;&#160;</a></span>SO_ACCEPTCONN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SO_ACCEPTCONN&#160;&#160;&#160;9</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ae0339480fb8088046e6038ee1baf3a61" name="ae0339480fb8088046e6038ee1baf3a61"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae0339480fb8088046e6038ee1baf3a61">&#9670;&#160;</a></span>SO_BINDTODEVICE</h2>
 
@@ -560,6 +870,20 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define SO_BINDTODEVICE&#160;&#160;&#160;3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a040d4fd00495232970a03425bc00e77a" name="a040d4fd00495232970a03425bc00e77a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a040d4fd00495232970a03425bc00e77a">&#9670;&#160;</a></span>SO_ERROR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SO_ERROR&#160;&#160;&#160;5</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -594,6 +918,20 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a0db12e960ac303030400d9fd95391b52" name="a0db12e960ac303030400d9fd95391b52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0db12e960ac303030400d9fd95391b52">&#9670;&#160;</a></span>SO_RCVBUF</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SO_RCVBUF&#160;&#160;&#160;7</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a5589f74fada0d0cd47bd6ea8741a58ee" name="a5589f74fada0d0cd47bd6ea8741a58ee"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5589f74fada0d0cd47bd6ea8741a58ee">&#9670;&#160;</a></span>SO_REUSEADDR</h2>
 
@@ -608,6 +946,48 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="af618cbb85161ff3196d3bcdf7565ba64" name="af618cbb85161ff3196d3bcdf7565ba64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af618cbb85161ff3196d3bcdf7565ba64">&#9670;&#160;</a></span>SO_SNDBUF</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SO_SNDBUF&#160;&#160;&#160;8</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8ab1e00e94a92737d3a4b407f7fa90f1" name="a8ab1e00e94a92737d3a4b407f7fa90f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ab1e00e94a92737d3a4b407f7fa90f1">&#9670;&#160;</a></span>SO_TYPE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SO_TYPE&#160;&#160;&#160;6</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac337901f5606f0cf6f8e9867ef3fc1c4" name="ac337901f5606f0cf6f8e9867ef3fc1c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac337901f5606f0cf6f8e9867ef3fc1c4">&#9670;&#160;</a></span>SOCK_CLOEXEC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SOCK_CLOEXEC&#160;&#160;&#160;0x00080000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a4db8b9a846c67404db0b6f014f9a9fdf" name="a4db8b9a846c67404db0b6f014f9a9fdf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4db8b9a846c67404db0b6f014f9a9fdf">&#9670;&#160;</a></span>SOCK_DGRAM</h2>
 
@@ -616,6 +996,20 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define SOCK_DGRAM&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae04efe05cb3dc3314c7710cfb8cd380a" name="ae04efe05cb3dc3314c7710cfb8cd380a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae04efe05cb3dc3314c7710cfb8cd380a">&#9670;&#160;</a></span>SOCK_NONBLOCK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SOCK_NONBLOCK&#160;&#160;&#160;0x00000800</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -650,6 +1044,20 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a844a02180836d947d7ae128032e0be81" name="a844a02180836d947d7ae128032e0be81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a844a02180836d947d7ae128032e0be81">&#9670;&#160;</a></span>SOCK_TYPE_MASK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SOCK_TYPE_MASK&#160;&#160;&#160;0x0000000F</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a92d045f6ee2f343d6b28830a9fec082e" name="a92d045f6ee2f343d6b28830a9fec082e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a92d045f6ee2f343d6b28830a9fec082e">&#9670;&#160;</a></span>SOL_SOCKET</h2>
 
@@ -658,6 +1066,34 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define SOL_SOCKET&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a048a394e60b5bb89b8c3d8f9d2c4be38" name="a048a394e60b5bb89b8c3d8f9d2c4be38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a048a394e60b5bb89b8c3d8f9d2c4be38">&#9670;&#160;</a></span>SOMAXCONN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SOMAXCONN&#160;&#160;&#160;128</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8f02455d581f55196a37a12377ecfc0e" name="a8f02455d581f55196a37a12377ecfc0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f02455d581f55196a37a12377ecfc0e">&#9670;&#160;</a></span>TCP_NODELAY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TCP_NODELAY&#160;&#160;&#160;10</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -721,6 +1157,20 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ad9d654c4e24c743edb2ef51c50607d51" name="ad9d654c4e24c743edb2ef51c50607d51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9d654c4e24c743edb2ef51c50607d51">&#9670;&#160;</a></span>mmsghdr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct__mmsghdr__.html">_mmsghdr_</a> <a class="el" href="BaseHdr_2Net_2socket_8h.html#ad9d654c4e24c743edb2ef51c50607d51">mmsghdr</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a9330982c7bab0a2048d0828aa091d903" name="a9330982c7bab0a2048d0828aa091d903"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9330982c7bab0a2048d0828aa091d903">&#9670;&#160;</a></span>msghdr</h2>
 
@@ -771,6 +1221,20 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">typedef struct <a class="el" href="struct__sockaddr__in6__.html">_sockaddr_in6_</a> <a class="el" href="BaseHdr_2Net_2socket_8h.html#a1840739eb61cd13702698ae383870240">sockaddr_in6</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6da8f8a63a6b4b7cd144a285129f421d" name="a6da8f8a63a6b4b7cd144a285129f421d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6da8f8a63a6b4b7cd144a285129f421d">&#9670;&#160;</a></span>sockaddr_un</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct__sockaddr__un__.html">_sockaddr_un_</a> <a class="el" href="BaseHdr_2Net_2socket_8h.html#a6da8f8a63a6b4b7cd144a285129f421d">sockaddr_un</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -896,6 +1360,46 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a24ef85ec0a08cb52d83b36264655ec6e" name="a24ef85ec0a08cb52d83b36264655ec6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24ef85ec0a08cb52d83b36264655ec6e">&#9670;&#160;</a></span>accept4()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="__xeneva_8h.html#a3640283d666d4a8b25a736424ee25866">XE_LIB</a> int accept4 </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sockfd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="BaseHdr_2Net_2socket_8h.html#a8bb60190bcf8fd80045d0198b25c2384">sockaddr</a> *&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="BaseHdr_2Net_2socket_8h.html#acf0ed818b0a3c85ff6a9206679d6d91a">socklen_t</a> *&#160;</td>
+          <td class="paramname"><em>addrlen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>flags</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="abb91521c2fb1b33435df7964e2f6d772" name="abb91521c2fb1b33435df7964e2f6d772"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abb91521c2fb1b33435df7964e2f6d772">&#9670;&#160;</a></span>bind()</h2>
 
@@ -953,6 +1457,120 @@ Functions</h2></td></tr>
           <td></td>
           <td class="paramtype"><a class="el" href="BaseHdr_2Net_2socket_8h.html#acf0ed818b0a3c85ff6a9206679d6d91a">socklen_t</a>&#160;</td>
           <td class="paramname"><em>addrlen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9f9611d9a6361cc43ed91b117cad34d8" name="a9f9611d9a6361cc43ed91b117cad34d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f9611d9a6361cc43ed91b117cad34d8">&#9670;&#160;</a></span>getpeername()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="__xeneva_8h.html#a3640283d666d4a8b25a736424ee25866">XE_LIB</a> int getpeername </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sockfd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="Libs_2XEClib_2includes_2sys_2socket_8h.html#ab774ee817e94dc1ec92480d188db9fb2">sockaddr_</a> *&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="BaseHdr_2Net_2socket_8h.html#acf0ed818b0a3c85ff6a9206679d6d91a">socklen_t</a> *&#160;</td>
+          <td class="paramname"><em>addrlen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5b2db92dc8a527557a6a3573d537ea5f" name="a5b2db92dc8a527557a6a3573d537ea5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b2db92dc8a527557a6a3573d537ea5f">&#9670;&#160;</a></span>getsockname()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="__xeneva_8h.html#a3640283d666d4a8b25a736424ee25866">XE_LIB</a> int getsockname </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sockfd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="Libs_2XEClib_2includes_2sys_2socket_8h.html#ab774ee817e94dc1ec92480d188db9fb2">sockaddr_</a> *&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="BaseHdr_2Net_2socket_8h.html#acf0ed818b0a3c85ff6a9206679d6d91a">socklen_t</a> *&#160;</td>
+          <td class="paramname"><em>addrlen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac8b4e1c35b972daa28e65b15300d9c8d" name="ac8b4e1c35b972daa28e65b15300d9c8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8b4e1c35b972daa28e65b15300d9c8d">&#9670;&#160;</a></span>getsockopt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="__xeneva_8h.html#a3640283d666d4a8b25a736424ee25866">XE_LIB</a> int getsockopt </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sockfd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>level</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>optname</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>optval</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="BaseHdr_2Net_2socket_8h.html#acf0ed818b0a3c85ff6a9206679d6d91a">socklen_t</a> *&#160;</td>
+          <td class="paramname"><em>optlen</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1078,6 +1696,86 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="afb984507b0dacfad63f8dab91316392e" name="afb984507b0dacfad63f8dab91316392e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb984507b0dacfad63f8dab91316392e">&#9670;&#160;</a></span>recvmmsg()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="__xeneva_8h.html#a3640283d666d4a8b25a736424ee25866">XE_LIB</a> <a class="el" href="BaseHdr_2stddef_8h.html#aa9e017f700fef59e03bf6d5bc2e59a7e">ssize_t</a> recvmmsg </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sockfd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="BaseHdr_2Net_2socket_8h.html#ad9d654c4e24c743edb2ef51c50607d51">mmsghdr</a> *&#160;</td>
+          <td class="paramname"><em>msgvec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>vlen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>flags</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct <a class="el" href="structtimespec.html">timespec</a> *&#160;</td>
+          <td class="paramname"><em>timeout</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9916b1928a09ec9fdf0281196aecb023" name="a9916b1928a09ec9fdf0281196aecb023"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9916b1928a09ec9fdf0281196aecb023">&#9670;&#160;</a></span>recvmsg()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="__xeneva_8h.html#a3640283d666d4a8b25a736424ee25866">XE_LIB</a> <a class="el" href="BaseHdr_2stddef_8h.html#aa9e017f700fef59e03bf6d5bc2e59a7e">ssize_t</a> recvmsg </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sockfd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="BaseHdr_2Net_2socket_8h.html#a9330982c7bab0a2048d0828aa091d903">msghdr</a> *&#160;</td>
+          <td class="paramname"><em>msg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>flags</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="add84581d2a314aedfa11f7103a91fa93" name="add84581d2a314aedfa11f7103a91fa93"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#add84581d2a314aedfa11f7103a91fa93">&#9670;&#160;</a></span>send()</h2>
 
@@ -1112,6 +1810,80 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="af74fa729dc434112da43054af11a739c" name="af74fa729dc434112da43054af11a739c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af74fa729dc434112da43054af11a739c">&#9670;&#160;</a></span>sendmmsg()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="__xeneva_8h.html#a3640283d666d4a8b25a736424ee25866">XE_LIB</a> <a class="el" href="BaseHdr_2stddef_8h.html#aa9e017f700fef59e03bf6d5bc2e59a7e">ssize_t</a> sendmmsg </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sockfd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="BaseHdr_2Net_2socket_8h.html#ad9d654c4e24c743edb2ef51c50607d51">mmsghdr</a> *&#160;</td>
+          <td class="paramname"><em>msgvec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>vlen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>flags</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abe76893a62474b8ec1401e747f9f2989" name="abe76893a62474b8ec1401e747f9f2989"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe76893a62474b8ec1401e747f9f2989">&#9670;&#160;</a></span>sendmsg()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="__xeneva_8h.html#a3640283d666d4a8b25a736424ee25866">XE_LIB</a> <a class="el" href="BaseHdr_2stddef_8h.html#aa9e017f700fef59e03bf6d5bc2e59a7e">ssize_t</a> sendmsg </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sockfd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="BaseHdr_2Net_2socket_8h.html#a9330982c7bab0a2048d0828aa091d903">msghdr</a> *&#160;</td>
+          <td class="paramname"><em>msg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>flags</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a4bc3581c3124eabdf0cda0d03196b3cf" name="a4bc3581c3124eabdf0cda0d03196b3cf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4bc3581c3124eabdf0cda0d03196b3cf">&#9670;&#160;</a></span>sendto()</h2>
 
@@ -1127,7 +1899,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const void *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> void *&#160;</td>
           <td class="paramname"><em>buf</em>, </td>
         </tr>
         <tr>
@@ -1145,7 +1917,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const struct <a class="el" href="BaseHdr_2Net_2socket_8h.html#a8bb60190bcf8fd80045d0198b25c2384">sockaddr</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct <a class="el" href="BaseHdr_2Net_2socket_8h.html#a8bb60190bcf8fd80045d0198b25c2384">sockaddr</a> *&#160;</td>
           <td class="paramname"><em>dest_addr</em>, </td>
         </tr>
         <tr>
@@ -1153,6 +1925,80 @@ Functions</h2></td></tr>
           <td></td>
           <td class="paramtype"><a class="el" href="BaseHdr_2Net_2socket_8h.html#acf0ed818b0a3c85ff6a9206679d6d91a">socklen_t</a>&#160;</td>
           <td class="paramname"><em>addrlen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab02981a58c5fcad45944e3a0f1ce743e" name="ab02981a58c5fcad45944e3a0f1ce743e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab02981a58c5fcad45944e3a0f1ce743e">&#9670;&#160;</a></span>setsockopt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="__xeneva_8h.html#a3640283d666d4a8b25a736424ee25866">XE_LIB</a> int setsockopt </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sockfd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>level</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>optname</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> void *&#160;</td>
+          <td class="paramname"><em>optval</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="BaseHdr_2Net_2socket_8h.html#acf0ed818b0a3c85ff6a9206679d6d91a">socklen_t</a>&#160;</td>
+          <td class="paramname"><em>optlen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa3d19630402874789d5d4972e317e859" name="aa3d19630402874789d5d4972e317e859"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3d19630402874789d5d4972e317e859">&#9670;&#160;</a></span>shutdown()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="__xeneva_8h.html#a3640283d666d4a8b25a736424ee25866">XE_LIB</a> int shutdown </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sockfd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>how</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1225,7 +2071,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const void *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> void *&#160;</td>
           <td class="paramname"><em>optval</em>, </td>
         </tr>
         <tr>
@@ -1233,6 +2079,46 @@ Functions</h2></td></tr>
           <td></td>
           <td class="paramtype"><a class="el" href="BaseHdr_2Net_2socket_8h.html#acf0ed818b0a3c85ff6a9206679d6d91a">socklen_t</a>&#160;</td>
           <td class="paramname"><em>optlen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5d3fe5b9edb97368ea48cfd2d207ad62" name="a5d3fe5b9edb97368ea48cfd2d207ad62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d3fe5b9edb97368ea48cfd2d207ad62">&#9670;&#160;</a></span>socketpair()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="__xeneva_8h.html#a3640283d666d4a8b25a736424ee25866">XE_LIB</a> int socketpair </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>domain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>protocol</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sv</em>[2]&#160;</td>
         </tr>
         <tr>
           <td></td>

@@ -188,27 +188,27 @@ Macros</h2></td></tr>
 <tr class="separator:a3813cde0989151e77ddb71d2b5a197bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0bec2b1ef802340f92be99c2120c495d" id="r_a0bec2b1ef802340f92be99c2120c495d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a0bec2b1ef802340f92be99c2120c495d">JS_MKPTR</a>(tag,  p)&#160;&#160;&#160;(<a class="el" href="structJSValue.html">JSValue</a>){ (<a class="el" href="unionJSValueUnion.html">JSValueUnion</a>){ .ptr = p }, tag }</td></tr>
 <tr class="separator:a0bec2b1ef802340f92be99c2120c495d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0929a2837eb94c9ad82486013882ab1c" id="r_a0929a2837eb94c9ad82486013882ab1c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a0929a2837eb94c9ad82486013882ab1c">JS_TAG_IS_FLOAT64</a>(tag)&#160;&#160;&#160;((unsigned)(tag) == <a class="el" href="quickjs_8h.html#aa18f9dc1ef66ab97afe44b223f6e58bcac02ab3693d212f74c719df2f1db1d9e1">JS_TAG_FLOAT64</a>)</td></tr>
+<tr class="memitem:a0929a2837eb94c9ad82486013882ab1c" id="r_a0929a2837eb94c9ad82486013882ab1c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a0929a2837eb94c9ad82486013882ab1c">JS_TAG_IS_FLOAT64</a>(tag)&#160;&#160;&#160;((unsigned)(tag) == <a class="el" href="quickjs_8h.html#ad77cecc3bdfb3a651ca977502cb842a1ac02ab3693d212f74c719df2f1db1d9e1">JS_TAG_FLOAT64</a>)</td></tr>
 <tr class="separator:a0929a2837eb94c9ad82486013882ab1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa411a0b125b7528f966803bf95b9175f" id="r_aa411a0b125b7528f966803bf95b9175f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#aa411a0b125b7528f966803bf95b9175f">JS_NAN</a>&#160;&#160;&#160;(<a class="el" href="structJSValue.html">JSValue</a>){ .u.float64 = <a class="el" href="quickjs_8h.html#ae1d92f03cbbb347977253fe9cf45a904">JS_FLOAT64_NAN</a>, <a class="el" href="quickjs_8h.html#aa18f9dc1ef66ab97afe44b223f6e58bcac02ab3693d212f74c719df2f1db1d9e1">JS_TAG_FLOAT64</a> }</td></tr>
+<tr class="memitem:aa411a0b125b7528f966803bf95b9175f" id="r_aa411a0b125b7528f966803bf95b9175f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#aa411a0b125b7528f966803bf95b9175f">JS_NAN</a>&#160;&#160;&#160;(<a class="el" href="structJSValue.html">JSValue</a>){ .u.float64 = <a class="el" href="quickjs_8h.html#ae1d92f03cbbb347977253fe9cf45a904">JS_FLOAT64_NAN</a>, <a class="el" href="quickjs_8h.html#ad77cecc3bdfb3a651ca977502cb842a1ac02ab3693d212f74c719df2f1db1d9e1">JS_TAG_FLOAT64</a> }</td></tr>
 <tr class="separator:aa411a0b125b7528f966803bf95b9175f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad90ff41868bfbfdffd36dbb4743e330c" id="r_ad90ff41868bfbfdffd36dbb4743e330c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#ad90ff41868bfbfdffd36dbb4743e330c">JS_VALUE_IS_BOTH_INT</a>(v1,  v2)&#160;&#160;&#160;((<a class="el" href="quickjs_8h.html#acfa4fd7848997fa4af3ee04a2f63aac7">JS_VALUE_GET_TAG</a>(v1) | <a class="el" href="quickjs_8h.html#acfa4fd7848997fa4af3ee04a2f63aac7">JS_VALUE_GET_TAG</a>(v2)) == 0)</td></tr>
 <tr class="separator:ad90ff41868bfbfdffd36dbb4743e330c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aebc7b124ccc944821b6dc5c80607696e" id="r_aebc7b124ccc944821b6dc5c80607696e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#aebc7b124ccc944821b6dc5c80607696e">JS_VALUE_IS_BOTH_FLOAT</a>(v1,  v2)&#160;&#160;&#160;(<a class="el" href="quickjs_8h.html#a0929a2837eb94c9ad82486013882ab1c">JS_TAG_IS_FLOAT64</a>(<a class="el" href="quickjs_8h.html#acfa4fd7848997fa4af3ee04a2f63aac7">JS_VALUE_GET_TAG</a>(v1)) &amp;&amp; <a class="el" href="quickjs_8h.html#a0929a2837eb94c9ad82486013882ab1c">JS_TAG_IS_FLOAT64</a>(<a class="el" href="quickjs_8h.html#acfa4fd7848997fa4af3ee04a2f63aac7">JS_VALUE_GET_TAG</a>(v2)))</td></tr>
 <tr class="separator:aebc7b124ccc944821b6dc5c80607696e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a09f8f2ecaaa3259d2694b4fd52634eb0" id="r_a09f8f2ecaaa3259d2694b4fd52634eb0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a09f8f2ecaaa3259d2694b4fd52634eb0">JS_VALUE_HAS_REF_COUNT</a>(v)&#160;&#160;&#160;((unsigned)<a class="el" href="quickjs_8h.html#acfa4fd7848997fa4af3ee04a2f63aac7">JS_VALUE_GET_TAG</a>(v) &gt;= (unsigned)<a class="el" href="quickjs_8h.html#aa18f9dc1ef66ab97afe44b223f6e58bcac54c9167023a80a6a4bb921c5b883fc6">JS_TAG_FIRST</a>)</td></tr>
+<tr class="memitem:a09f8f2ecaaa3259d2694b4fd52634eb0" id="r_a09f8f2ecaaa3259d2694b4fd52634eb0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a09f8f2ecaaa3259d2694b4fd52634eb0">JS_VALUE_HAS_REF_COUNT</a>(v)&#160;&#160;&#160;((unsigned)<a class="el" href="quickjs_8h.html#acfa4fd7848997fa4af3ee04a2f63aac7">JS_VALUE_GET_TAG</a>(v) &gt;= (unsigned)<a class="el" href="quickjs_8h.html#ad77cecc3bdfb3a651ca977502cb842a1ac54c9167023a80a6a4bb921c5b883fc6">JS_TAG_FIRST</a>)</td></tr>
 <tr class="separator:a09f8f2ecaaa3259d2694b4fd52634eb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af4a1e7a17bf31de1fcf48b5a70ed8dd8" id="r_af4a1e7a17bf31de1fcf48b5a70ed8dd8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#af4a1e7a17bf31de1fcf48b5a70ed8dd8">JS_NULL</a>&#160;&#160;&#160;<a class="el" href="quickjs_8h.html#a3813cde0989151e77ddb71d2b5a197bc">JS_MKVAL</a>(<a class="el" href="quickjs_8h.html#aa18f9dc1ef66ab97afe44b223f6e58bca7901cd6ab7bafa5f63e382f8849c73a9">JS_TAG_NULL</a>, 0)</td></tr>
+<tr class="memitem:af4a1e7a17bf31de1fcf48b5a70ed8dd8" id="r_af4a1e7a17bf31de1fcf48b5a70ed8dd8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#af4a1e7a17bf31de1fcf48b5a70ed8dd8">JS_NULL</a>&#160;&#160;&#160;<a class="el" href="quickjs_8h.html#a3813cde0989151e77ddb71d2b5a197bc">JS_MKVAL</a>(<a class="el" href="quickjs_8h.html#ad77cecc3bdfb3a651ca977502cb842a1a7901cd6ab7bafa5f63e382f8849c73a9">JS_TAG_NULL</a>, 0)</td></tr>
 <tr class="separator:af4a1e7a17bf31de1fcf48b5a70ed8dd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac363230cf3ec220f5788a1f85976f205" id="r_ac363230cf3ec220f5788a1f85976f205"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#ac363230cf3ec220f5788a1f85976f205">JS_UNDEFINED</a>&#160;&#160;&#160;<a class="el" href="quickjs_8h.html#a3813cde0989151e77ddb71d2b5a197bc">JS_MKVAL</a>(<a class="el" href="quickjs_8h.html#aa18f9dc1ef66ab97afe44b223f6e58bcae30fdd34010dea1f659f79065b11c315">JS_TAG_UNDEFINED</a>, 0)</td></tr>
+<tr class="memitem:ac363230cf3ec220f5788a1f85976f205" id="r_ac363230cf3ec220f5788a1f85976f205"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#ac363230cf3ec220f5788a1f85976f205">JS_UNDEFINED</a>&#160;&#160;&#160;<a class="el" href="quickjs_8h.html#a3813cde0989151e77ddb71d2b5a197bc">JS_MKVAL</a>(<a class="el" href="quickjs_8h.html#ad77cecc3bdfb3a651ca977502cb842a1ae30fdd34010dea1f659f79065b11c315">JS_TAG_UNDEFINED</a>, 0)</td></tr>
 <tr class="separator:ac363230cf3ec220f5788a1f85976f205"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af3956bb0e46eb4372c65df0005319cf1" id="r_af3956bb0e46eb4372c65df0005319cf1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#af3956bb0e46eb4372c65df0005319cf1">JS_FALSE</a>&#160;&#160;&#160;<a class="el" href="quickjs_8h.html#a3813cde0989151e77ddb71d2b5a197bc">JS_MKVAL</a>(<a class="el" href="quickjs_8h.html#aa18f9dc1ef66ab97afe44b223f6e58bca85fb2dfb50ffd05e6bf4146b8fe5c032">JS_TAG_BOOL</a>, 0)</td></tr>
+<tr class="memitem:af3956bb0e46eb4372c65df0005319cf1" id="r_af3956bb0e46eb4372c65df0005319cf1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#af3956bb0e46eb4372c65df0005319cf1">JS_FALSE</a>&#160;&#160;&#160;<a class="el" href="quickjs_8h.html#a3813cde0989151e77ddb71d2b5a197bc">JS_MKVAL</a>(<a class="el" href="quickjs_8h.html#ad77cecc3bdfb3a651ca977502cb842a1a85fb2dfb50ffd05e6bf4146b8fe5c032">JS_TAG_BOOL</a>, 0)</td></tr>
 <tr class="separator:af3956bb0e46eb4372c65df0005319cf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1193150e2a34933a63d4c61e9c08e247" id="r_a1193150e2a34933a63d4c61e9c08e247"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a1193150e2a34933a63d4c61e9c08e247">JS_TRUE</a>&#160;&#160;&#160;<a class="el" href="quickjs_8h.html#a3813cde0989151e77ddb71d2b5a197bc">JS_MKVAL</a>(<a class="el" href="quickjs_8h.html#aa18f9dc1ef66ab97afe44b223f6e58bca85fb2dfb50ffd05e6bf4146b8fe5c032">JS_TAG_BOOL</a>, 1)</td></tr>
+<tr class="memitem:a1193150e2a34933a63d4c61e9c08e247" id="r_a1193150e2a34933a63d4c61e9c08e247"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a1193150e2a34933a63d4c61e9c08e247">JS_TRUE</a>&#160;&#160;&#160;<a class="el" href="quickjs_8h.html#a3813cde0989151e77ddb71d2b5a197bc">JS_MKVAL</a>(<a class="el" href="quickjs_8h.html#ad77cecc3bdfb3a651ca977502cb842a1a85fb2dfb50ffd05e6bf4146b8fe5c032">JS_TAG_BOOL</a>, 1)</td></tr>
 <tr class="separator:a1193150e2a34933a63d4c61e9c08e247"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba884d678110c142e1340ac3f1ab4ada" id="r_aba884d678110c142e1340ac3f1ab4ada"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#aba884d678110c142e1340ac3f1ab4ada">JS_EXCEPTION</a>&#160;&#160;&#160;<a class="el" href="quickjs_8h.html#a3813cde0989151e77ddb71d2b5a197bc">JS_MKVAL</a>(<a class="el" href="quickjs_8h.html#aa18f9dc1ef66ab97afe44b223f6e58bca49c8325bfd7bb7fc5ae2f19685a6dc67">JS_TAG_EXCEPTION</a>, 0)</td></tr>
+<tr class="memitem:aba884d678110c142e1340ac3f1ab4ada" id="r_aba884d678110c142e1340ac3f1ab4ada"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#aba884d678110c142e1340ac3f1ab4ada">JS_EXCEPTION</a>&#160;&#160;&#160;<a class="el" href="quickjs_8h.html#a3813cde0989151e77ddb71d2b5a197bc">JS_MKVAL</a>(<a class="el" href="quickjs_8h.html#ad77cecc3bdfb3a651ca977502cb842a1a49c8325bfd7bb7fc5ae2f19685a6dc67">JS_TAG_EXCEPTION</a>, 0)</td></tr>
 <tr class="separator:aba884d678110c142e1340ac3f1ab4ada"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32a56bbb7178cd36159c70197572f3cd" id="r_a32a56bbb7178cd36159c70197572f3cd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a32a56bbb7178cd36159c70197572f3cd">JS_UNINITIALIZED</a>&#160;&#160;&#160;<a class="el" href="quickjs_8h.html#a3813cde0989151e77ddb71d2b5a197bc">JS_MKVAL</a>(<a class="el" href="quickjs_8h.html#aa18f9dc1ef66ab97afe44b223f6e58bca713fd2a418d8c77f71aafca44eb83984">JS_TAG_UNINITIALIZED</a>, 0)</td></tr>
+<tr class="memitem:a32a56bbb7178cd36159c70197572f3cd" id="r_a32a56bbb7178cd36159c70197572f3cd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a32a56bbb7178cd36159c70197572f3cd">JS_UNINITIALIZED</a>&#160;&#160;&#160;<a class="el" href="quickjs_8h.html#a3813cde0989151e77ddb71d2b5a197bc">JS_MKVAL</a>(<a class="el" href="quickjs_8h.html#ad77cecc3bdfb3a651ca977502cb842a1a713fd2a418d8c77f71aafca44eb83984">JS_TAG_UNINITIALIZED</a>, 0)</td></tr>
 <tr class="separator:a32a56bbb7178cd36159c70197572f3cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6d59bf69724330a254181bca0519dac" id="r_ac6d59bf69724330a254181bca0519dac"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#ac6d59bf69724330a254181bca0519dac">JS_PROP_CONFIGURABLE</a>&#160;&#160;&#160;(1 &lt;&lt; 0)</td></tr>
 <tr class="separator:ac6d59bf69724330a254181bca0519dac"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -220,7 +220,7 @@ Macros</h2></td></tr>
 <tr class="separator:a89ee678ace1d5b51904350352b27b13f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13306adc08475f0a1b978e369074f702" id="r_a13306adc08475f0a1b978e369074f702"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a13306adc08475f0a1b978e369074f702">JS_PROP_LENGTH</a>&#160;&#160;&#160;(1 &lt;&lt; 3) /* used internally in Arrays */</td></tr>
 <tr class="separator:a13306adc08475f0a1b978e369074f702"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b1d30aed085c69f0b424d7e14313299" id="r_a2b1d30aed085c69f0b424d7e14313299"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a2b1d30aed085c69f0b424d7e14313299">JS_PROP_TMASK</a>&#160;&#160;&#160;(3 &lt;&lt; 4) /* mask for <a class="el" href="propstrings_8h.html#ad12132bb9a678532f1ab9d50c99c03b9a50d1448013c6f17125caee18aa418af7">NORMAL</a>, GETSET, VARREF, AUTOINIT */</td></tr>
+<tr class="memitem:a2b1d30aed085c69f0b424d7e14313299" id="r_a2b1d30aed085c69f0b424d7e14313299"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a2b1d30aed085c69f0b424d7e14313299">JS_PROP_TMASK</a>&#160;&#160;&#160;(3 &lt;&lt; 4) /* mask for <a class="el" href="propstrings_8h.html#a643bc910afd198def02640b2fbd4f8c6a50d1448013c6f17125caee18aa418af7">NORMAL</a>, GETSET, VARREF, AUTOINIT */</td></tr>
 <tr class="separator:a2b1d30aed085c69f0b424d7e14313299"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa45621ba01a140dd45f465b4685cece2" id="r_aa45621ba01a140dd45f465b4685cece2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#aa45621ba01a140dd45f465b4685cece2">JS_PROP_NORMAL</a>&#160;&#160;&#160;(0 &lt;&lt; 4)</td></tr>
 <tr class="separator:aa45621ba01a140dd45f465b4685cece2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -252,9 +252,9 @@ Macros</h2></td></tr>
 <tr class="separator:a922b332f1e950517fabfa06d7486774a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d310ca4e5c9e04ef1519b4f648acf58" id="r_a6d310ca4e5c9e04ef1519b4f648acf58"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a6d310ca4e5c9e04ef1519b4f648acf58">JS_DEFAULT_STACK_SIZE</a>&#160;&#160;&#160;(1024 * 1024)</td></tr>
 <tr class="separator:a6d310ca4e5c9e04ef1519b4f648acf58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a42001a41e093dec12b7e3a9d98b60612" id="r_a42001a41e093dec12b7e3a9d98b60612"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a42001a41e093dec12b7e3a9d98b60612">JS_EVAL_TYPE_GLOBAL</a>&#160;&#160;&#160;(0 &lt;&lt; 0) /* global code (default) */</td></tr>
+<tr class="memitem:a42001a41e093dec12b7e3a9d98b60612" id="r_a42001a41e093dec12b7e3a9d98b60612"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a42001a41e093dec12b7e3a9d98b60612">JS_EVAL_TYPE_GLOBAL</a>&#160;&#160;&#160;(0 &lt;&lt; 0) /* global <a class="el" href="structcode.html">code</a> (default) */</td></tr>
 <tr class="separator:a42001a41e093dec12b7e3a9d98b60612"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afbb7b52e5cbbe4334e34bb61c77eddec" id="r_afbb7b52e5cbbe4334e34bb61c77eddec"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#afbb7b52e5cbbe4334e34bb61c77eddec">JS_EVAL_TYPE_MODULE</a>&#160;&#160;&#160;(1 &lt;&lt; 0) /* module code */</td></tr>
+<tr class="memitem:afbb7b52e5cbbe4334e34bb61c77eddec" id="r_afbb7b52e5cbbe4334e34bb61c77eddec"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#afbb7b52e5cbbe4334e34bb61c77eddec">JS_EVAL_TYPE_MODULE</a>&#160;&#160;&#160;(1 &lt;&lt; 0) /* module <a class="el" href="structcode.html">code</a> */</td></tr>
 <tr class="separator:afbb7b52e5cbbe4334e34bb61c77eddec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7b45ab71d7199abe62d95edd9e5d789" id="r_ad7b45ab71d7199abe62d95edd9e5d789"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#ad7b45ab71d7199abe62d95edd9e5d789">JS_EVAL_TYPE_DIRECT</a>&#160;&#160;&#160;(2 &lt;&lt; 0) /* direct call (internal use) */</td></tr>
 <tr class="separator:ad7b45ab71d7199abe62d95edd9e5d789"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -288,9 +288,9 @@ Macros</h2></td></tr>
 <tr class="separator:ac1c22592fd49335f6c36fb4c9dd27dea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7cb2d47a0ad86c87e754fb5e34152f0d" id="r_a7cb2d47a0ad86c87e754fb5e34152f0d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a7cb2d47a0ad86c87e754fb5e34152f0d">JS_PARSE_JSON_EXT</a>&#160;&#160;&#160;(1 &lt;&lt; 0) /* allow extended JSON */</td></tr>
 <tr class="separator:a7cb2d47a0ad86c87e754fb5e34152f0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3de6bd7a8bedf44006a3021c104f0d1" id="r_ae3de6bd7a8bedf44006a3021c104f0d1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#ae3de6bd7a8bedf44006a3021c104f0d1">JS_STRIP_SOURCE</a>&#160;&#160;&#160;(1 &lt;&lt; 0) /* strip source code */</td></tr>
+<tr class="memitem:ae3de6bd7a8bedf44006a3021c104f0d1" id="r_ae3de6bd7a8bedf44006a3021c104f0d1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#ae3de6bd7a8bedf44006a3021c104f0d1">JS_STRIP_SOURCE</a>&#160;&#160;&#160;(1 &lt;&lt; 0) /* strip source <a class="el" href="structcode.html">code</a> */</td></tr>
 <tr class="separator:ae3de6bd7a8bedf44006a3021c104f0d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6abeac1adb9c60bb612b5d4c232c61c0" id="r_a6abeac1adb9c60bb612b5d4c232c61c0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a6abeac1adb9c60bb612b5d4c232c61c0">JS_STRIP_DEBUG</a>&#160;&#160;&#160;(1 &lt;&lt; 1) /* strip all <a class="el" href="sched_8c.html#a398527b3e9e358c345c5047b16871957">debug</a> info including source code */</td></tr>
+<tr class="memitem:a6abeac1adb9c60bb612b5d4c232c61c0" id="r_a6abeac1adb9c60bb612b5d4c232c61c0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a6abeac1adb9c60bb612b5d4c232c61c0">JS_STRIP_DEBUG</a>&#160;&#160;&#160;(1 &lt;&lt; 1) /* strip all <a class="el" href="sched_8c.html#a398527b3e9e358c345c5047b16871957">debug</a> info including source <a class="el" href="structcode.html">code</a> */</td></tr>
 <tr class="separator:a6abeac1adb9c60bb612b5d4c232c61c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f7cc0c965e6cfa4b30f845fc802e568" id="r_a8f7cc0c965e6cfa4b30f845fc802e568"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a8f7cc0c965e6cfa4b30f845fc802e568">JS_WRITE_OBJ_BYTECODE</a>&#160;&#160;&#160;(1 &lt;&lt; 0) /* allow function/module */</td></tr>
 <tr class="separator:a8f7cc0c965e6cfa4b30f845fc802e568"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -425,11 +425,11 @@ Typedefs</h2></td></tr>
 <tr class="separator:a3673f35ec28f0217ef3c1600edd91992"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35fd7eaeea332d5bff2e3bb097cf37ca" id="r_a35fd7eaeea332d5bff2e3bb097cf37ca"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structJSModuleDef.html">JSModuleDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a35fd7eaeea332d5bff2e3bb097cf37ca">JSModuleDef</a></td></tr>
 <tr class="separator:a35fd7eaeea332d5bff2e3bb097cf37ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aacb27b046a442af79d226c326c02bfbe" id="r_aacb27b046a442af79d226c326c02bfbe"><td class="memItemLeft" align="right" valign="top">typedef char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#aacb27b046a442af79d226c326c02bfbe">JSModuleNormalizeFunc</a>(<a class="el" href="structJSContext.html">JSContext</a> *ctx, const char *module_base_name, const char *module_name, void *opaque)</td></tr>
+<tr class="memitem:aacb27b046a442af79d226c326c02bfbe" id="r_aacb27b046a442af79d226c326c02bfbe"><td class="memItemLeft" align="right" valign="top">typedef char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#aacb27b046a442af79d226c326c02bfbe">JSModuleNormalizeFunc</a>(<a class="el" href="structJSContext.html">JSContext</a> *ctx, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *module_base_name, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *module_name, void *opaque)</td></tr>
 <tr class="separator:aacb27b046a442af79d226c326c02bfbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a121f34679e4ff4a4ffbb29377dbcb280" id="r_a121f34679e4ff4a4ffbb29377dbcb280"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structJSModuleDef.html">JSModuleDef</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a121f34679e4ff4a4ffbb29377dbcb280">JSModuleLoaderFunc</a>(<a class="el" href="structJSContext.html">JSContext</a> *ctx, const char *module_name, void *opaque)</td></tr>
+<tr class="memitem:a121f34679e4ff4a4ffbb29377dbcb280" id="r_a121f34679e4ff4a4ffbb29377dbcb280"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structJSModuleDef.html">JSModuleDef</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a121f34679e4ff4a4ffbb29377dbcb280">JSModuleLoaderFunc</a>(<a class="el" href="structJSContext.html">JSContext</a> *ctx, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *module_name, void *opaque)</td></tr>
 <tr class="separator:a121f34679e4ff4a4ffbb29377dbcb280"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad025f547cf4e7feefe78b3cdbf619020" id="r_ad025f547cf4e7feefe78b3cdbf619020"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structJSModuleDef.html">JSModuleDef</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#ad025f547cf4e7feefe78b3cdbf619020">JSModuleLoaderFunc2</a>(<a class="el" href="structJSContext.html">JSContext</a> *ctx, const char *module_name, void *opaque, <a class="el" href="quickjs_8h.html#ab5b643c1ec038a6ce73ff6612efe73c2">JSValueConst</a> attributes)</td></tr>
+<tr class="memitem:ad025f547cf4e7feefe78b3cdbf619020" id="r_ad025f547cf4e7feefe78b3cdbf619020"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structJSModuleDef.html">JSModuleDef</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#ad025f547cf4e7feefe78b3cdbf619020">JSModuleLoaderFunc2</a>(<a class="el" href="structJSContext.html">JSContext</a> *ctx, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *module_name, void *opaque, <a class="el" href="quickjs_8h.html#ab5b643c1ec038a6ce73ff6612efe73c2">JSValueConst</a> attributes)</td></tr>
 <tr class="separator:ad025f547cf4e7feefe78b3cdbf619020"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade7c5d57332e99e5f8b236eade03eff5" id="r_ade7c5d57332e99e5f8b236eade03eff5"><td class="memItemLeft" align="right" valign="top">typedef int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#ade7c5d57332e99e5f8b236eade03eff5">JSModuleCheckSupportedImportAttributes</a>(<a class="el" href="structJSContext.html">JSContext</a> *ctx, void *opaque, <a class="el" href="quickjs_8h.html#ab5b643c1ec038a6ce73ff6612efe73c2">JSValueConst</a> attributes)</td></tr>
 <tr class="separator:ade7c5d57332e99e5f8b236eade03eff5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -443,36 +443,36 @@ Typedefs</h2></td></tr>
 <tr class="separator:ac85fcd064d79efaa25e9808702ed3e75"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa290eea146e9e2bd6f82fd1023d46a23" id="r_aa290eea146e9e2bd6f82fd1023d46a23"><td class="memItemLeft" align="right" valign="top">typedef int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#aa290eea146e9e2bd6f82fd1023d46a23">JSModuleInitFunc</a>(<a class="el" href="structJSContext.html">JSContext</a> *ctx, <a class="el" href="structJSModuleDef.html">JSModuleDef</a> *m)</td></tr>
 <tr class="separator:aa290eea146e9e2bd6f82fd1023d46a23"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a680e2dcacb7ed54213830f1da97e1c13" id="r_a680e2dcacb7ed54213830f1da97e1c13"><td class="memItemLeft" align="right" valign="top">typedef void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a680e2dcacb7ed54213830f1da97e1c13">JSPrintValueWrite</a>(void *opaque, const char *buf, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> <a class="el" href="initial_8c.html#a7360b55975153b822efc5217b7734e6a">len</a>)</td></tr>
+<tr class="memitem:a680e2dcacb7ed54213830f1da97e1c13" id="r_a680e2dcacb7ed54213830f1da97e1c13"><td class="memItemLeft" align="right" valign="top">typedef void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a680e2dcacb7ed54213830f1da97e1c13">JSPrintValueWrite</a>(void *opaque, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *buf, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> <a class="el" href="initial_8c.html#a7360b55975153b822efc5217b7734e6a">len</a>)</td></tr>
 <tr class="separator:a680e2dcacb7ed54213830f1da97e1c13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:aa18f9dc1ef66ab97afe44b223f6e58bc" id="r_aa18f9dc1ef66ab97afe44b223f6e58bc"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<a class="el" href="quickjs_8h.html#aa18f9dc1ef66ab97afe44b223f6e58bcac54c9167023a80a6a4bb921c5b883fc6">JS_TAG_FIRST</a> = -9
-, <a class="el" href="quickjs_8h.html#aa18f9dc1ef66ab97afe44b223f6e58bca1f414379ea0f71b22266c09be64d6459">JS_TAG_BIG_INT</a> = -9
-, <a class="el" href="quickjs_8h.html#aa18f9dc1ef66ab97afe44b223f6e58bcafd90af803b3d37429e0c5410bd6af849">JS_TAG_SYMBOL</a> = -8
-, <a class="el" href="quickjs_8h.html#aa18f9dc1ef66ab97afe44b223f6e58bcae9056b9abb79e83b03543f2ef16ba514">JS_TAG_STRING</a> = -7
+<tr class="memitem:ad77cecc3bdfb3a651ca977502cb842a1" id="r_ad77cecc3bdfb3a651ca977502cb842a1"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="quickjs_8h.html#ad77cecc3bdfb3a651ca977502cb842a1ac54c9167023a80a6a4bb921c5b883fc6">JS_TAG_FIRST</a> = -9
+, <a class="el" href="quickjs_8h.html#ad77cecc3bdfb3a651ca977502cb842a1a1f414379ea0f71b22266c09be64d6459">JS_TAG_BIG_INT</a> = -9
+, <a class="el" href="quickjs_8h.html#ad77cecc3bdfb3a651ca977502cb842a1afd90af803b3d37429e0c5410bd6af849">JS_TAG_SYMBOL</a> = -8
+, <a class="el" href="quickjs_8h.html#ad77cecc3bdfb3a651ca977502cb842a1ae9056b9abb79e83b03543f2ef16ba514">JS_TAG_STRING</a> = -7
 , <br />
-&#160;&#160;<a class="el" href="quickjs_8h.html#aa18f9dc1ef66ab97afe44b223f6e58bcaae45dfd47c57359df6e1e6834f94821c">JS_TAG_STRING_ROPE</a> = -6
-, <a class="el" href="quickjs_8h.html#aa18f9dc1ef66ab97afe44b223f6e58bca6829c83e32fc093a377da9b946083147">JS_TAG_MODULE</a> = -3
-, <a class="el" href="quickjs_8h.html#aa18f9dc1ef66ab97afe44b223f6e58bca1551fb7a361f23f02622c37f281a5893">JS_TAG_FUNCTION_BYTECODE</a> = -2
-, <a class="el" href="quickjs_8h.html#aa18f9dc1ef66ab97afe44b223f6e58bcae26c3008bd840938b168408d0f9a497a">JS_TAG_OBJECT</a> = -1
+&#160;&#160;<a class="el" href="quickjs_8h.html#ad77cecc3bdfb3a651ca977502cb842a1aae45dfd47c57359df6e1e6834f94821c">JS_TAG_STRING_ROPE</a> = -6
+, <a class="el" href="quickjs_8h.html#ad77cecc3bdfb3a651ca977502cb842a1a6829c83e32fc093a377da9b946083147">JS_TAG_MODULE</a> = -3
+, <a class="el" href="quickjs_8h.html#ad77cecc3bdfb3a651ca977502cb842a1a1551fb7a361f23f02622c37f281a5893">JS_TAG_FUNCTION_BYTECODE</a> = -2
+, <a class="el" href="quickjs_8h.html#ad77cecc3bdfb3a651ca977502cb842a1ae26c3008bd840938b168408d0f9a497a">JS_TAG_OBJECT</a> = -1
 , <br />
-&#160;&#160;<a class="el" href="quickjs_8h.html#aa18f9dc1ef66ab97afe44b223f6e58bca6a64928b656d068fe0f263c8b10f685f">JS_TAG_INT</a> = 0
-, <a class="el" href="quickjs_8h.html#aa18f9dc1ef66ab97afe44b223f6e58bca85fb2dfb50ffd05e6bf4146b8fe5c032">JS_TAG_BOOL</a> = 1
-, <a class="el" href="quickjs_8h.html#aa18f9dc1ef66ab97afe44b223f6e58bca7901cd6ab7bafa5f63e382f8849c73a9">JS_TAG_NULL</a> = 2
-, <a class="el" href="quickjs_8h.html#aa18f9dc1ef66ab97afe44b223f6e58bcae30fdd34010dea1f659f79065b11c315">JS_TAG_UNDEFINED</a> = 3
+&#160;&#160;<a class="el" href="quickjs_8h.html#ad77cecc3bdfb3a651ca977502cb842a1a6a64928b656d068fe0f263c8b10f685f">JS_TAG_INT</a> = 0
+, <a class="el" href="quickjs_8h.html#ad77cecc3bdfb3a651ca977502cb842a1a85fb2dfb50ffd05e6bf4146b8fe5c032">JS_TAG_BOOL</a> = 1
+, <a class="el" href="quickjs_8h.html#ad77cecc3bdfb3a651ca977502cb842a1a7901cd6ab7bafa5f63e382f8849c73a9">JS_TAG_NULL</a> = 2
+, <a class="el" href="quickjs_8h.html#ad77cecc3bdfb3a651ca977502cb842a1ae30fdd34010dea1f659f79065b11c315">JS_TAG_UNDEFINED</a> = 3
 , <br />
-&#160;&#160;<a class="el" href="quickjs_8h.html#aa18f9dc1ef66ab97afe44b223f6e58bca713fd2a418d8c77f71aafca44eb83984">JS_TAG_UNINITIALIZED</a> = 4
-, <a class="el" href="quickjs_8h.html#aa18f9dc1ef66ab97afe44b223f6e58bca726f7639e9a24329e552266c4560eff1">JS_TAG_CATCH_OFFSET</a> = 5
-, <a class="el" href="quickjs_8h.html#aa18f9dc1ef66ab97afe44b223f6e58bca49c8325bfd7bb7fc5ae2f19685a6dc67">JS_TAG_EXCEPTION</a> = 6
-, <a class="el" href="quickjs_8h.html#aa18f9dc1ef66ab97afe44b223f6e58bca16535e9be348444f9774bfb28cef8979">JS_TAG_SHORT_BIG_INT</a> = 7
+&#160;&#160;<a class="el" href="quickjs_8h.html#ad77cecc3bdfb3a651ca977502cb842a1a713fd2a418d8c77f71aafca44eb83984">JS_TAG_UNINITIALIZED</a> = 4
+, <a class="el" href="quickjs_8h.html#ad77cecc3bdfb3a651ca977502cb842a1a726f7639e9a24329e552266c4560eff1">JS_TAG_CATCH_OFFSET</a> = 5
+, <a class="el" href="quickjs_8h.html#ad77cecc3bdfb3a651ca977502cb842a1a49c8325bfd7bb7fc5ae2f19685a6dc67">JS_TAG_EXCEPTION</a> = 6
+, <a class="el" href="quickjs_8h.html#ad77cecc3bdfb3a651ca977502cb842a1a16535e9be348444f9774bfb28cef8979">JS_TAG_SHORT_BIG_INT</a> = 7
 , <br />
-&#160;&#160;<a class="el" href="quickjs_8h.html#aa18f9dc1ef66ab97afe44b223f6e58bcac02ab3693d212f74c719df2f1db1d9e1">JS_TAG_FLOAT64</a> = 8
+&#160;&#160;<a class="el" href="quickjs_8h.html#ad77cecc3bdfb3a651ca977502cb842a1ac02ab3693d212f74c719df2f1db1d9e1">JS_TAG_FLOAT64</a> = 8
 <br />
  }</td></tr>
-<tr class="separator:aa18f9dc1ef66ab97afe44b223f6e58bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:ad77cecc3bdfb3a651ca977502cb842a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a903f944e5d09a18d2dea978558141470" id="r_a903f944e5d09a18d2dea978558141470"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a903f944e5d09a18d2dea978558141470">JSTypedArrayEnum</a> { <br />
 &#160;&#160;<a class="el" href="quickjs_8h.html#a903f944e5d09a18d2dea978558141470a22aa601d3f314010e7fcc25699cff78f">JS_TYPED_ARRAY_UINT8C</a> = 0
 , <a class="el" href="quickjs_8h.html#a903f944e5d09a18d2dea978558141470a8f4dccc192fdb65dc6c8f7dbdde3a437">JS_TYPED_ARRAY_INT8</a>
@@ -521,7 +521,7 @@ Enumerations</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a7ce85e1df166f514c4b8711436b57399" id="r_a7ce85e1df166f514c4b8711436b57399"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structJSRuntime.html">JSRuntime</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a7ce85e1df166f514c4b8711436b57399">JS_NewRuntime</a> (void)</td></tr>
 <tr class="separator:a7ce85e1df166f514c4b8711436b57399"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac1cf7150731d70afe2f6bb41179c015e" id="r_ac1cf7150731d70afe2f6bb41179c015e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#ac1cf7150731d70afe2f6bb41179c015e">JS_SetRuntimeInfo</a> (<a class="el" href="structJSRuntime.html">JSRuntime</a> *rt, const char *info)</td></tr>
+<tr class="memitem:ac1cf7150731d70afe2f6bb41179c015e" id="r_ac1cf7150731d70afe2f6bb41179c015e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#ac1cf7150731d70afe2f6bb41179c015e">JS_SetRuntimeInfo</a> (<a class="el" href="structJSRuntime.html">JSRuntime</a> *rt, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *info)</td></tr>
 <tr class="separator:ac1cf7150731d70afe2f6bb41179c015e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf098d84d63e777cce0fe8eec718645b" id="r_abf098d84d63e777cce0fe8eec718645b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#abf098d84d63e777cce0fe8eec718645b">JS_SetMemoryLimit</a> (<a class="el" href="structJSRuntime.html">JSRuntime</a> *rt, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> limit)</td></tr>
 <tr class="separator:abf098d84d63e777cce0fe8eec718645b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -531,7 +531,7 @@ Functions</h2></td></tr>
 <tr class="separator:a881fbf0e59f7abcabc4f6e6e6a3d2ca1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc46b60ebaafcded5d2021783ecc34e3" id="r_acc46b60ebaafcded5d2021783ecc34e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#acc46b60ebaafcded5d2021783ecc34e3">JS_UpdateStackTop</a> (<a class="el" href="structJSRuntime.html">JSRuntime</a> *rt)</td></tr>
 <tr class="separator:acc46b60ebaafcded5d2021783ecc34e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a371ef4b0805fd2646c9628b4a20c6443" id="r_a371ef4b0805fd2646c9628b4a20c6443"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structJSRuntime.html">JSRuntime</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a371ef4b0805fd2646c9628b4a20c6443">JS_NewRuntime2</a> (const <a class="el" href="structJSMallocFunctions.html">JSMallocFunctions</a> *mf, void *opaque)</td></tr>
+<tr class="memitem:a371ef4b0805fd2646c9628b4a20c6443" id="r_a371ef4b0805fd2646c9628b4a20c6443"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structJSRuntime.html">JSRuntime</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a371ef4b0805fd2646c9628b4a20c6443">JS_NewRuntime2</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="structJSMallocFunctions.html">JSMallocFunctions</a> *mf, void *opaque)</td></tr>
 <tr class="separator:a371ef4b0805fd2646c9628b4a20c6443"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad80a65b72c3a346d8a0047858a5f0b13" id="r_ad80a65b72c3a346d8a0047858a5f0b13"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#ad80a65b72c3a346d8a0047858a5f0b13">JS_FreeRuntime</a> (<a class="el" href="structJSRuntime.html">JSRuntime</a> *rt)</td></tr>
 <tr class="separator:ad80a65b72c3a346d8a0047858a5f0b13"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -595,7 +595,7 @@ Functions</h2></td></tr>
 <tr class="separator:a69e19dda8a93d613203e0baa06f0ed8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d3e0dcec9104d37c27d7187683ae138" id="r_a4d3e0dcec9104d37c27d7187683ae138"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a4d3e0dcec9104d37c27d7187683ae138">js_realloc_rt</a> (<a class="el" href="structJSRuntime.html">JSRuntime</a> *rt, void *ptr, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> <a class="el" href="drm__bridge_8h.html#a854352f53b148adc24983a58a1866d66">size</a>)</td></tr>
 <tr class="separator:a4d3e0dcec9104d37c27d7187683ae138"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a3248be6328b083907b3655ec93777b" id="r_a9a3248be6328b083907b3655ec93777b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a9a3248be6328b083907b3655ec93777b">js_malloc_usable_size_rt</a> (<a class="el" href="structJSRuntime.html">JSRuntime</a> *rt, const void *ptr)</td></tr>
+<tr class="memitem:a9a3248be6328b083907b3655ec93777b" id="r_a9a3248be6328b083907b3655ec93777b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a9a3248be6328b083907b3655ec93777b">js_malloc_usable_size_rt</a> (<a class="el" href="structJSRuntime.html">JSRuntime</a> *rt, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> void *ptr)</td></tr>
 <tr class="separator:a9a3248be6328b083907b3655ec93777b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9b20117c100b0e027a3dae732a2929f" id="r_ad9b20117c100b0e027a3dae732a2929f"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#ad9b20117c100b0e027a3dae732a2929f">js_mallocz_rt</a> (<a class="el" href="structJSRuntime.html">JSRuntime</a> *rt, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> <a class="el" href="drm__bridge_8h.html#a854352f53b148adc24983a58a1866d66">size</a>)</td></tr>
 <tr class="separator:ad9b20117c100b0e027a3dae732a2929f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -605,23 +605,23 @@ Functions</h2></td></tr>
 <tr class="separator:a80e54dcf9ac687d4ccc2f90273565f30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3faf3a99422acb16a9f2b125ea1a43d0" id="r_a3faf3a99422acb16a9f2b125ea1a43d0"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a3faf3a99422acb16a9f2b125ea1a43d0">js_realloc</a> (<a class="el" href="structJSContext.html">JSContext</a> *ctx, void *ptr, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> <a class="el" href="drm__bridge_8h.html#a854352f53b148adc24983a58a1866d66">size</a>)</td></tr>
 <tr class="separator:a3faf3a99422acb16a9f2b125ea1a43d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade5954b108a45072dff068d11f1c6d10" id="r_ade5954b108a45072dff068d11f1c6d10"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#ade5954b108a45072dff068d11f1c6d10">js_malloc_usable_size</a> (<a class="el" href="structJSContext.html">JSContext</a> *ctx, const void *ptr)</td></tr>
+<tr class="memitem:ade5954b108a45072dff068d11f1c6d10" id="r_ade5954b108a45072dff068d11f1c6d10"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#ade5954b108a45072dff068d11f1c6d10">js_malloc_usable_size</a> (<a class="el" href="structJSContext.html">JSContext</a> *ctx, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> void *ptr)</td></tr>
 <tr class="separator:ade5954b108a45072dff068d11f1c6d10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a12933e450de3429899e45ffcc737aa9e" id="r_a12933e450de3429899e45ffcc737aa9e"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a12933e450de3429899e45ffcc737aa9e">js_realloc2</a> (<a class="el" href="structJSContext.html">JSContext</a> *ctx, void *ptr, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> <a class="el" href="drm__bridge_8h.html#a854352f53b148adc24983a58a1866d66">size</a>, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> *pslack)</td></tr>
 <tr class="separator:a12933e450de3429899e45ffcc737aa9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35e1330b7555452b6ecf44e79a64f16e" id="r_a35e1330b7555452b6ecf44e79a64f16e"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a35e1330b7555452b6ecf44e79a64f16e">js_mallocz</a> (<a class="el" href="structJSContext.html">JSContext</a> *ctx, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> <a class="el" href="drm__bridge_8h.html#a854352f53b148adc24983a58a1866d66">size</a>)</td></tr>
 <tr class="separator:a35e1330b7555452b6ecf44e79a64f16e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aedf151b9eefe5fc5c8315a4d2e67d352" id="r_aedf151b9eefe5fc5c8315a4d2e67d352"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#aedf151b9eefe5fc5c8315a4d2e67d352">js_strdup</a> (<a class="el" href="structJSContext.html">JSContext</a> *ctx, const char *str)</td></tr>
+<tr class="memitem:aedf151b9eefe5fc5c8315a4d2e67d352" id="r_aedf151b9eefe5fc5c8315a4d2e67d352"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#aedf151b9eefe5fc5c8315a4d2e67d352">js_strdup</a> (<a class="el" href="structJSContext.html">JSContext</a> *ctx, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *str)</td></tr>
 <tr class="separator:aedf151b9eefe5fc5c8315a4d2e67d352"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0722cc8768472e3f48c8f2653924326d" id="r_a0722cc8768472e3f48c8f2653924326d"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a0722cc8768472e3f48c8f2653924326d">js_strndup</a> (<a class="el" href="structJSContext.html">JSContext</a> *ctx, const char *s, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> n)</td></tr>
+<tr class="memitem:a0722cc8768472e3f48c8f2653924326d" id="r_a0722cc8768472e3f48c8f2653924326d"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a0722cc8768472e3f48c8f2653924326d">js_strndup</a> (<a class="el" href="structJSContext.html">JSContext</a> *ctx, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *s, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> n)</td></tr>
 <tr class="separator:a0722cc8768472e3f48c8f2653924326d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a58d5c786f2a45040f0c81149e92c2378" id="r_a58d5c786f2a45040f0c81149e92c2378"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a58d5c786f2a45040f0c81149e92c2378">JS_ComputeMemoryUsage</a> (<a class="el" href="structJSRuntime.html">JSRuntime</a> *rt, <a class="el" href="structJSMemoryUsage.html">JSMemoryUsage</a> *s)</td></tr>
 <tr class="separator:a58d5c786f2a45040f0c81149e92c2378"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2424196308d86d1a8c2bb410ca279be4" id="r_a2424196308d86d1a8c2bb410ca279be4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a2424196308d86d1a8c2bb410ca279be4">JS_DumpMemoryUsage</a> (<a class="el" href="Libs_2XEClib_2includes_2stdio_8h.html#a020dcbbc689e2f349340440bd0fce7b4">FILE</a> *fp, const <a class="el" href="structJSMemoryUsage.html">JSMemoryUsage</a> *s, <a class="el" href="structJSRuntime.html">JSRuntime</a> *rt)</td></tr>
+<tr class="memitem:a2424196308d86d1a8c2bb410ca279be4" id="r_a2424196308d86d1a8c2bb410ca279be4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a2424196308d86d1a8c2bb410ca279be4">JS_DumpMemoryUsage</a> (<a class="el" href="Libs_2XEClib_2includes_2stdio_8h.html#a020dcbbc689e2f349340440bd0fce7b4">FILE</a> *fp, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="structJSMemoryUsage.html">JSMemoryUsage</a> *s, <a class="el" href="structJSRuntime.html">JSRuntime</a> *rt)</td></tr>
 <tr class="separator:a2424196308d86d1a8c2bb410ca279be4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a522741f41afb1d0da0aa55968cd8579e" id="r_a522741f41afb1d0da0aa55968cd8579e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="quickjs_8h.html#a33f123cee4ffe71e0ceb3a14d424c9ff">JSAtom</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a522741f41afb1d0da0aa55968cd8579e">JS_NewAtomLen</a> (<a class="el" href="structJSContext.html">JSContext</a> *ctx, const char *str, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> <a class="el" href="initial_8c.html#a7360b55975153b822efc5217b7734e6a">len</a>)</td></tr>
+<tr class="memitem:a522741f41afb1d0da0aa55968cd8579e" id="r_a522741f41afb1d0da0aa55968cd8579e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="quickjs_8h.html#a33f123cee4ffe71e0ceb3a14d424c9ff">JSAtom</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a522741f41afb1d0da0aa55968cd8579e">JS_NewAtomLen</a> (<a class="el" href="structJSContext.html">JSContext</a> *ctx, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *str, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> <a class="el" href="initial_8c.html#a7360b55975153b822efc5217b7734e6a">len</a>)</td></tr>
 <tr class="separator:a522741f41afb1d0da0aa55968cd8579e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa2ef5af1544a3012f91a80c98c326b8f" id="r_aa2ef5af1544a3012f91a80c98c326b8f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="quickjs_8h.html#a33f123cee4ffe71e0ceb3a14d424c9ff">JSAtom</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#aa2ef5af1544a3012f91a80c98c326b8f">JS_NewAtom</a> (<a class="el" href="structJSContext.html">JSContext</a> *ctx, const char *str)</td></tr>
+<tr class="memitem:aa2ef5af1544a3012f91a80c98c326b8f" id="r_aa2ef5af1544a3012f91a80c98c326b8f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="quickjs_8h.html#a33f123cee4ffe71e0ceb3a14d424c9ff">JSAtom</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#aa2ef5af1544a3012f91a80c98c326b8f">JS_NewAtom</a> (<a class="el" href="structJSContext.html">JSContext</a> *ctx, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *str)</td></tr>
 <tr class="separator:aa2ef5af1544a3012f91a80c98c326b8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7445082229205ad47aec019d74536f8e" id="r_a7445082229205ad47aec019d74536f8e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="quickjs_8h.html#a33f123cee4ffe71e0ceb3a14d424c9ff">JSAtom</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a7445082229205ad47aec019d74536f8e">JS_NewAtomUInt32</a> (<a class="el" href="structJSContext.html">JSContext</a> *ctx, <a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> n)</td></tr>
 <tr class="separator:a7445082229205ad47aec019d74536f8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -635,7 +635,7 @@ Functions</h2></td></tr>
 <tr class="separator:afa67965c1017685fc6783776d6d0d4d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a260bfa297ff6cb5bd18e229afaa54663" id="r_a260bfa297ff6cb5bd18e229afaa54663"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structJSValue.html">JSValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a260bfa297ff6cb5bd18e229afaa54663">JS_AtomToString</a> (<a class="el" href="structJSContext.html">JSContext</a> *ctx, <a class="el" href="quickjs_8h.html#a33f123cee4ffe71e0ceb3a14d424c9ff">JSAtom</a> atom)</td></tr>
 <tr class="separator:a260bfa297ff6cb5bd18e229afaa54663"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1792870bd57cee664f19414fcbd650b0" id="r_a1792870bd57cee664f19414fcbd650b0"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a1792870bd57cee664f19414fcbd650b0">JS_AtomToCStringLen</a> (<a class="el" href="structJSContext.html">JSContext</a> *ctx, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> *plen, <a class="el" href="quickjs_8h.html#a33f123cee4ffe71e0ceb3a14d424c9ff">JSAtom</a> atom)</td></tr>
+<tr class="memitem:a1792870bd57cee664f19414fcbd650b0" id="r_a1792870bd57cee664f19414fcbd650b0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a1792870bd57cee664f19414fcbd650b0">JS_AtomToCStringLen</a> (<a class="el" href="structJSContext.html">JSContext</a> *ctx, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> *plen, <a class="el" href="quickjs_8h.html#a33f123cee4ffe71e0ceb3a14d424c9ff">JSAtom</a> atom)</td></tr>
 <tr class="separator:a1792870bd57cee664f19414fcbd650b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a859d5c989a2aaecef1653b3ac279e108" id="r_a859d5c989a2aaecef1653b3ac279e108"><td class="memItemLeft" align="right" valign="top"><a class="el" href="quickjs_8h.html#a33f123cee4ffe71e0ceb3a14d424c9ff">JSAtom</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a859d5c989a2aaecef1653b3ac279e108">JS_ValueToAtom</a> (<a class="el" href="structJSContext.html">JSContext</a> *ctx, <a class="el" href="quickjs_8h.html#ab5b643c1ec038a6ce73ff6612efe73c2">JSValueConst</a> val)</td></tr>
 <tr class="separator:a859d5c989a2aaecef1653b3ac279e108"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -643,7 +643,7 @@ Functions</h2></td></tr>
 <tr class="separator:a4f56d0a794368a8861c89819fc79cdb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ed7afcec91f58b473ea9e0dc4d0ae04" id="r_a2ed7afcec91f58b473ea9e0dc4d0ae04"><td class="memItemLeft" align="right" valign="top"><a class="el" href="quickjs_8h.html#a451d6a9cf9c7412aa33211fd887c7368">JSClassID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a2ed7afcec91f58b473ea9e0dc4d0ae04">JS_GetClassID</a> (<a class="el" href="structJSValue.html">JSValue</a> v)</td></tr>
 <tr class="separator:a2ed7afcec91f58b473ea9e0dc4d0ae04"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f0339d81c06451de278073572cc194e" id="r_a9f0339d81c06451de278073572cc194e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a9f0339d81c06451de278073572cc194e">JS_NewClass</a> (<a class="el" href="structJSRuntime.html">JSRuntime</a> *rt, <a class="el" href="quickjs_8h.html#a451d6a9cf9c7412aa33211fd887c7368">JSClassID</a> class_id, const <a class="el" href="structJSClassDef.html">JSClassDef</a> *class_def)</td></tr>
+<tr class="memitem:a9f0339d81c06451de278073572cc194e" id="r_a9f0339d81c06451de278073572cc194e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a9f0339d81c06451de278073572cc194e">JS_NewClass</a> (<a class="el" href="structJSRuntime.html">JSRuntime</a> *rt, <a class="el" href="quickjs_8h.html#a451d6a9cf9c7412aa33211fd887c7368">JSClassID</a> class_id, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="structJSClassDef.html">JSClassDef</a> *class_def)</td></tr>
 <tr class="separator:a9f0339d81c06451de278073572cc194e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae7510ad2699f88261be37c872fbb22d" id="r_aae7510ad2699f88261be37c872fbb22d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#aae7510ad2699f88261be37c872fbb22d">JS_IsRegisteredClass</a> (<a class="el" href="structJSRuntime.html">JSRuntime</a> *rt, <a class="el" href="quickjs_8h.html#a451d6a9cf9c7412aa33211fd887c7368">JSClassID</a> class_id)</td></tr>
 <tr class="separator:aae7510ad2699f88261be37c872fbb22d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -665,7 +665,7 @@ Functions</h2></td></tr>
 <tr class="separator:a06af1db79158e3c5a51f04bb6749411c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7885a9ace9efe8fc13d82be5e91bebf8" id="r_a7885a9ace9efe8fc13d82be5e91bebf8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structJSValue.html">JSValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a7885a9ace9efe8fc13d82be5e91bebf8">__js_printf_like</a> (2, 3) JS_ThrowSyntaxError(<a class="el" href="structJSContext.html">JSContext</a> *ctx</td></tr>
 <tr class="separator:a7885a9ace9efe8fc13d82be5e91bebf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a344d6c0e45d9bf3861fd9269724045a2" id="r_a344d6c0e45d9bf3861fd9269724045a2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structJSValue.html">JSValue</a> const char <a class="el" href="structJSValue.html">JSValue</a> const char <a class="el" href="structJSValue.html">JSValue</a> const char <a class="el" href="structJSValue.html">JSValue</a> const char <a class="el" href="structJSValue.html">JSValue</a> const char <a class="el" href="structJSValue.html">JSValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a344d6c0e45d9bf3861fd9269724045a2">JS_ThrowOutOfMemory</a> (<a class="el" href="structJSContext.html">JSContext</a> *ctx)</td></tr>
+<tr class="memitem:a344d6c0e45d9bf3861fd9269724045a2" id="r_a344d6c0e45d9bf3861fd9269724045a2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structJSValue.html">JSValue</a> <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char <a class="el" href="structJSValue.html">JSValue</a> <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char <a class="el" href="structJSValue.html">JSValue</a> <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char <a class="el" href="structJSValue.html">JSValue</a> <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char <a class="el" href="structJSValue.html">JSValue</a> <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char <a class="el" href="structJSValue.html">JSValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a344d6c0e45d9bf3861fd9269724045a2">JS_ThrowOutOfMemory</a> (<a class="el" href="structJSContext.html">JSContext</a> *ctx)</td></tr>
 <tr class="separator:a344d6c0e45d9bf3861fd9269724045a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa059f309c30fd5166d16c82a97973146" id="r_aa059f309c30fd5166d16c82a97973146"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#aa059f309c30fd5166d16c82a97973146">__JS_FreeValue</a> (<a class="el" href="structJSContext.html">JSContext</a> *ctx, <a class="el" href="structJSValue.html">JSValue</a> v)</td></tr>
 <tr class="separator:aa059f309c30fd5166d16c82a97973146"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -691,17 +691,17 @@ Functions</h2></td></tr>
 <tr class="separator:a8c831ae1e9cb560b22da6bcd33c8e213"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acbddbd012155853a1d93ae7bb4055f0d" id="r_acbddbd012155853a1d93ae7bb4055f0d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#acbddbd012155853a1d93ae7bb4055f0d">JS_ToInt64Ext</a> (<a class="el" href="structJSContext.html">JSContext</a> *ctx, <a class="el" href="acefiex_8h.html#a5364f98f8223d7185accc99cf9c8f712">int64_t</a> *pres, <a class="el" href="quickjs_8h.html#ab5b643c1ec038a6ce73ff6612efe73c2">JSValueConst</a> val)</td></tr>
 <tr class="separator:acbddbd012155853a1d93ae7bb4055f0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a71f0aae471c9811e816c974e0f6d2607" id="r_a71f0aae471c9811e816c974e0f6d2607"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structJSValue.html">JSValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a71f0aae471c9811e816c974e0f6d2607">JS_NewStringLen</a> (<a class="el" href="structJSContext.html">JSContext</a> *ctx, const char *str1, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> len1)</td></tr>
+<tr class="memitem:a71f0aae471c9811e816c974e0f6d2607" id="r_a71f0aae471c9811e816c974e0f6d2607"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structJSValue.html">JSValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a71f0aae471c9811e816c974e0f6d2607">JS_NewStringLen</a> (<a class="el" href="structJSContext.html">JSContext</a> *ctx, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *str1, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> len1)</td></tr>
 <tr class="separator:a71f0aae471c9811e816c974e0f6d2607"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27c3a725d4014a35b5bedcdf6e70dec7" id="r_a27c3a725d4014a35b5bedcdf6e70dec7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structJSValue.html">JSValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a27c3a725d4014a35b5bedcdf6e70dec7">JS_NewAtomString</a> (<a class="el" href="structJSContext.html">JSContext</a> *ctx, const char *str)</td></tr>
+<tr class="memitem:a27c3a725d4014a35b5bedcdf6e70dec7" id="r_a27c3a725d4014a35b5bedcdf6e70dec7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structJSValue.html">JSValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a27c3a725d4014a35b5bedcdf6e70dec7">JS_NewAtomString</a> (<a class="el" href="structJSContext.html">JSContext</a> *ctx, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *str)</td></tr>
 <tr class="separator:a27c3a725d4014a35b5bedcdf6e70dec7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7bcb8e1a20cbc8374a5f9ba4a2088cec" id="r_a7bcb8e1a20cbc8374a5f9ba4a2088cec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structJSValue.html">JSValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a7bcb8e1a20cbc8374a5f9ba4a2088cec">JS_ToString</a> (<a class="el" href="structJSContext.html">JSContext</a> *ctx, <a class="el" href="quickjs_8h.html#ab5b643c1ec038a6ce73ff6612efe73c2">JSValueConst</a> val)</td></tr>
 <tr class="separator:a7bcb8e1a20cbc8374a5f9ba4a2088cec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35fd5681625c6d902357336edb6801e5" id="r_a35fd5681625c6d902357336edb6801e5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structJSValue.html">JSValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a35fd5681625c6d902357336edb6801e5">JS_ToPropertyKey</a> (<a class="el" href="structJSContext.html">JSContext</a> *ctx, <a class="el" href="quickjs_8h.html#ab5b643c1ec038a6ce73ff6612efe73c2">JSValueConst</a> val)</td></tr>
 <tr class="separator:a35fd5681625c6d902357336edb6801e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04634f56657ced7fcd9898a6f0627824" id="r_a04634f56657ced7fcd9898a6f0627824"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a04634f56657ced7fcd9898a6f0627824">JS_ToCStringLen2</a> (<a class="el" href="structJSContext.html">JSContext</a> *ctx, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> *plen, <a class="el" href="quickjs_8h.html#ab5b643c1ec038a6ce73ff6612efe73c2">JSValueConst</a> val1, <a class="el" href="quickjs_8h.html#a6d73b897d1f464c9bc34d7031142203c">JS_BOOL</a> cesu8)</td></tr>
+<tr class="memitem:a04634f56657ced7fcd9898a6f0627824" id="r_a04634f56657ced7fcd9898a6f0627824"><td class="memItemLeft" align="right" valign="top"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a04634f56657ced7fcd9898a6f0627824">JS_ToCStringLen2</a> (<a class="el" href="structJSContext.html">JSContext</a> *ctx, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> *plen, <a class="el" href="quickjs_8h.html#ab5b643c1ec038a6ce73ff6612efe73c2">JSValueConst</a> val1, <a class="el" href="quickjs_8h.html#a6d73b897d1f464c9bc34d7031142203c">JS_BOOL</a> cesu8)</td></tr>
 <tr class="separator:a04634f56657ced7fcd9898a6f0627824"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0bc4f65da64810facb2cb9e476eda2e" id="r_ae0bc4f65da64810facb2cb9e476eda2e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#ae0bc4f65da64810facb2cb9e476eda2e">JS_FreeCString</a> (<a class="el" href="structJSContext.html">JSContext</a> *ctx, const char *ptr)</td></tr>
+<tr class="memitem:ae0bc4f65da64810facb2cb9e476eda2e" id="r_ae0bc4f65da64810facb2cb9e476eda2e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#ae0bc4f65da64810facb2cb9e476eda2e">JS_FreeCString</a> (<a class="el" href="structJSContext.html">JSContext</a> *ctx, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *ptr)</td></tr>
 <tr class="separator:ae0bc4f65da64810facb2cb9e476eda2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae95995bc48147775293ab9778caa8063" id="r_ae95995bc48147775293ab9778caa8063"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structJSValue.html">JSValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#ae95995bc48147775293ab9778caa8063">JS_NewObjectProtoClass</a> (<a class="el" href="structJSContext.html">JSContext</a> *ctx, <a class="el" href="quickjs_8h.html#ab5b643c1ec038a6ce73ff6612efe73c2">JSValueConst</a> proto, <a class="el" href="quickjs_8h.html#a451d6a9cf9c7412aa33211fd887c7368">JSClassID</a> class_id)</td></tr>
 <tr class="separator:ae95995bc48147775293ab9778caa8063"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -725,7 +725,7 @@ Functions</h2></td></tr>
 <tr class="separator:adb97243e3405820ce78cd05087f71604"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e5b094882e8db1cc2dc123ddb911700" id="r_a3e5b094882e8db1cc2dc123ddb911700"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structJSValue.html">JSValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a3e5b094882e8db1cc2dc123ddb911700">JS_GetPropertyInternal</a> (<a class="el" href="structJSContext.html">JSContext</a> *ctx, <a class="el" href="quickjs_8h.html#ab5b643c1ec038a6ce73ff6612efe73c2">JSValueConst</a> obj, <a class="el" href="quickjs_8h.html#a33f123cee4ffe71e0ceb3a14d424c9ff">JSAtom</a> prop, <a class="el" href="quickjs_8h.html#ab5b643c1ec038a6ce73ff6612efe73c2">JSValueConst</a> receiver, <a class="el" href="quickjs_8h.html#a6d73b897d1f464c9bc34d7031142203c">JS_BOOL</a> throw_ref_error)</td></tr>
 <tr class="separator:a3e5b094882e8db1cc2dc123ddb911700"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04f589361a4fbc30d997402e92a50de2" id="r_a04f589361a4fbc30d997402e92a50de2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structJSValue.html">JSValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a04f589361a4fbc30d997402e92a50de2">JS_GetPropertyStr</a> (<a class="el" href="structJSContext.html">JSContext</a> *ctx, <a class="el" href="quickjs_8h.html#ab5b643c1ec038a6ce73ff6612efe73c2">JSValueConst</a> this_obj, const char *prop)</td></tr>
+<tr class="memitem:a04f589361a4fbc30d997402e92a50de2" id="r_a04f589361a4fbc30d997402e92a50de2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structJSValue.html">JSValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a04f589361a4fbc30d997402e92a50de2">JS_GetPropertyStr</a> (<a class="el" href="structJSContext.html">JSContext</a> *ctx, <a class="el" href="quickjs_8h.html#ab5b643c1ec038a6ce73ff6612efe73c2">JSValueConst</a> this_obj, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *prop)</td></tr>
 <tr class="separator:a04f589361a4fbc30d997402e92a50de2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb97957655d979e9fe56c955da2b2d4b" id="r_aeb97957655d979e9fe56c955da2b2d4b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structJSValue.html">JSValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#aeb97957655d979e9fe56c955da2b2d4b">JS_GetPropertyUint32</a> (<a class="el" href="structJSContext.html">JSContext</a> *ctx, <a class="el" href="quickjs_8h.html#ab5b643c1ec038a6ce73ff6612efe73c2">JSValueConst</a> this_obj, <a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> idx)</td></tr>
 <tr class="separator:aeb97957655d979e9fe56c955da2b2d4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -735,7 +735,7 @@ Functions</h2></td></tr>
 <tr class="separator:aae909eaec829081b270012adfcd717a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51b06daa618640e531fe808770553b96" id="r_a51b06daa618640e531fe808770553b96"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a51b06daa618640e531fe808770553b96">JS_SetPropertyInt64</a> (<a class="el" href="structJSContext.html">JSContext</a> *ctx, <a class="el" href="quickjs_8h.html#ab5b643c1ec038a6ce73ff6612efe73c2">JSValueConst</a> this_obj, <a class="el" href="acefiex_8h.html#a5364f98f8223d7185accc99cf9c8f712">int64_t</a> idx, <a class="el" href="structJSValue.html">JSValue</a> val)</td></tr>
 <tr class="separator:a51b06daa618640e531fe808770553b96"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a62617fe11025d2e5a545db069fc28e64" id="r_a62617fe11025d2e5a545db069fc28e64"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a62617fe11025d2e5a545db069fc28e64">JS_SetPropertyStr</a> (<a class="el" href="structJSContext.html">JSContext</a> *ctx, <a class="el" href="quickjs_8h.html#ab5b643c1ec038a6ce73ff6612efe73c2">JSValueConst</a> this_obj, const char *prop, <a class="el" href="structJSValue.html">JSValue</a> val)</td></tr>
+<tr class="memitem:a62617fe11025d2e5a545db069fc28e64" id="r_a62617fe11025d2e5a545db069fc28e64"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a62617fe11025d2e5a545db069fc28e64">JS_SetPropertyStr</a> (<a class="el" href="structJSContext.html">JSContext</a> *ctx, <a class="el" href="quickjs_8h.html#ab5b643c1ec038a6ce73ff6612efe73c2">JSValueConst</a> this_obj, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *prop, <a class="el" href="structJSValue.html">JSValue</a> val)</td></tr>
 <tr class="separator:a62617fe11025d2e5a545db069fc28e64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a665c8e793d5b2a2fe7282fa566f8a63b" id="r_a665c8e793d5b2a2fe7282fa566f8a63b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a665c8e793d5b2a2fe7282fa566f8a63b">JS_HasProperty</a> (<a class="el" href="structJSContext.html">JSContext</a> *ctx, <a class="el" href="quickjs_8h.html#ab5b643c1ec038a6ce73ff6612efe73c2">JSValueConst</a> this_obj, <a class="el" href="quickjs_8h.html#a33f123cee4ffe71e0ceb3a14d424c9ff">JSAtom</a> prop)</td></tr>
 <tr class="separator:a665c8e793d5b2a2fe7282fa566f8a63b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -763,11 +763,11 @@ Functions</h2></td></tr>
 <tr class="separator:a28704096ee67c5b0ab1bd60ce050e36a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03d5edf3e8bb18809d6675e5c08bac26" id="r_a03d5edf3e8bb18809d6675e5c08bac26"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structJSValue.html">JSValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a03d5edf3e8bb18809d6675e5c08bac26">JS_CallConstructor2</a> (<a class="el" href="structJSContext.html">JSContext</a> *ctx, <a class="el" href="quickjs_8h.html#ab5b643c1ec038a6ce73ff6612efe73c2">JSValueConst</a> func_obj, <a class="el" href="quickjs_8h.html#ab5b643c1ec038a6ce73ff6612efe73c2">JSValueConst</a> new_target, int argc, <a class="el" href="quickjs_8h.html#ab5b643c1ec038a6ce73ff6612efe73c2">JSValueConst</a> *argv)</td></tr>
 <tr class="separator:a03d5edf3e8bb18809d6675e5c08bac26"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0b47b0e190a74578e6e2d4242dbbe30" id="r_ac0b47b0e190a74578e6e2d4242dbbe30"><td class="memItemLeft" align="right" valign="top"><a class="el" href="quickjs_8h.html#a6d73b897d1f464c9bc34d7031142203c">JS_BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#ac0b47b0e190a74578e6e2d4242dbbe30">JS_DetectModule</a> (const char *<a class="el" href="virtiokbd_8c.html#ac7ea4a68c5710086113a183d16feaf8d">input</a>, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> input_len)</td></tr>
+<tr class="memitem:ac0b47b0e190a74578e6e2d4242dbbe30" id="r_ac0b47b0e190a74578e6e2d4242dbbe30"><td class="memItemLeft" align="right" valign="top"><a class="el" href="quickjs_8h.html#a6d73b897d1f464c9bc34d7031142203c">JS_BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#ac0b47b0e190a74578e6e2d4242dbbe30">JS_DetectModule</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *<a class="el" href="virtiokbd_8c.html#ac7ea4a68c5710086113a183d16feaf8d">input</a>, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> input_len)</td></tr>
 <tr class="separator:ac0b47b0e190a74578e6e2d4242dbbe30"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f9200abd5af97fd0411fe053cb021e0" id="r_a8f9200abd5af97fd0411fe053cb021e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structJSValue.html">JSValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a8f9200abd5af97fd0411fe053cb021e0">JS_Eval</a> (<a class="el" href="structJSContext.html">JSContext</a> *ctx, const char *<a class="el" href="virtiokbd_8c.html#ac7ea4a68c5710086113a183d16feaf8d">input</a>, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> input_len, const char *filename, int eval_flags)</td></tr>
+<tr class="memitem:a8f9200abd5af97fd0411fe053cb021e0" id="r_a8f9200abd5af97fd0411fe053cb021e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structJSValue.html">JSValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a8f9200abd5af97fd0411fe053cb021e0">JS_Eval</a> (<a class="el" href="structJSContext.html">JSContext</a> *ctx, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *<a class="el" href="virtiokbd_8c.html#ac7ea4a68c5710086113a183d16feaf8d">input</a>, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> input_len, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *filename, int eval_flags)</td></tr>
 <tr class="separator:a8f9200abd5af97fd0411fe053cb021e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a99d6f8b4fcb9989546e5fb13d65aaf55" id="r_a99d6f8b4fcb9989546e5fb13d65aaf55"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structJSValue.html">JSValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a99d6f8b4fcb9989546e5fb13d65aaf55">JS_EvalThis</a> (<a class="el" href="structJSContext.html">JSContext</a> *ctx, <a class="el" href="quickjs_8h.html#ab5b643c1ec038a6ce73ff6612efe73c2">JSValueConst</a> this_obj, const char *<a class="el" href="virtiokbd_8c.html#ac7ea4a68c5710086113a183d16feaf8d">input</a>, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> input_len, const char *filename, int eval_flags)</td></tr>
+<tr class="memitem:a99d6f8b4fcb9989546e5fb13d65aaf55" id="r_a99d6f8b4fcb9989546e5fb13d65aaf55"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structJSValue.html">JSValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a99d6f8b4fcb9989546e5fb13d65aaf55">JS_EvalThis</a> (<a class="el" href="structJSContext.html">JSContext</a> *ctx, <a class="el" href="quickjs_8h.html#ab5b643c1ec038a6ce73ff6612efe73c2">JSValueConst</a> this_obj, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *<a class="el" href="virtiokbd_8c.html#ac7ea4a68c5710086113a183d16feaf8d">input</a>, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> input_len, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *filename, int eval_flags)</td></tr>
 <tr class="separator:a99d6f8b4fcb9989546e5fb13d65aaf55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2256fd11b2bdbdd19ddf38f681814bd" id="r_ad2256fd11b2bdbdd19ddf38f681814bd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structJSValue.html">JSValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#ad2256fd11b2bdbdd19ddf38f681814bd">JS_GetGlobalObject</a> (<a class="el" href="structJSContext.html">JSContext</a> *ctx)</td></tr>
 <tr class="separator:ad2256fd11b2bdbdd19ddf38f681814bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -779,7 +779,7 @@ Functions</h2></td></tr>
 <tr class="separator:a0a8765bd4012467d9139bc24aabcb3ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a12aed667595f49667e0095f0a028e0d4" id="r_a12aed667595f49667e0095f0a028e0d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a12aed667595f49667e0095f0a028e0d4">JS_DefinePropertyValueUint32</a> (<a class="el" href="structJSContext.html">JSContext</a> *ctx, <a class="el" href="quickjs_8h.html#ab5b643c1ec038a6ce73ff6612efe73c2">JSValueConst</a> this_obj, <a class="el" href="acefiex_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> idx, <a class="el" href="structJSValue.html">JSValue</a> val, int <a class="el" href="Drivers_2virtio_8h.html#a04a0bd666e371f3fab92b8d0ef5dbdb0">flags</a>)</td></tr>
 <tr class="separator:a12aed667595f49667e0095f0a028e0d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a841f4cb887e4d9e03e94a0697255e578" id="r_a841f4cb887e4d9e03e94a0697255e578"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a841f4cb887e4d9e03e94a0697255e578">JS_DefinePropertyValueStr</a> (<a class="el" href="structJSContext.html">JSContext</a> *ctx, <a class="el" href="quickjs_8h.html#ab5b643c1ec038a6ce73ff6612efe73c2">JSValueConst</a> this_obj, const char *prop, <a class="el" href="structJSValue.html">JSValue</a> val, int <a class="el" href="Drivers_2virtio_8h.html#a04a0bd666e371f3fab92b8d0ef5dbdb0">flags</a>)</td></tr>
+<tr class="memitem:a841f4cb887e4d9e03e94a0697255e578" id="r_a841f4cb887e4d9e03e94a0697255e578"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a841f4cb887e4d9e03e94a0697255e578">JS_DefinePropertyValueStr</a> (<a class="el" href="structJSContext.html">JSContext</a> *ctx, <a class="el" href="quickjs_8h.html#ab5b643c1ec038a6ce73ff6612efe73c2">JSValueConst</a> this_obj, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *prop, <a class="el" href="structJSValue.html">JSValue</a> val, int <a class="el" href="Drivers_2virtio_8h.html#a04a0bd666e371f3fab92b8d0ef5dbdb0">flags</a>)</td></tr>
 <tr class="separator:a841f4cb887e4d9e03e94a0697255e578"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abfb24c507e9a341c0a98e61d86fd8663" id="r_abfb24c507e9a341c0a98e61d86fd8663"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#abfb24c507e9a341c0a98e61d86fd8663">JS_DefinePropertyGetSet</a> (<a class="el" href="structJSContext.html">JSContext</a> *ctx, <a class="el" href="quickjs_8h.html#ab5b643c1ec038a6ce73ff6612efe73c2">JSValueConst</a> this_obj, <a class="el" href="quickjs_8h.html#a33f123cee4ffe71e0ceb3a14d424c9ff">JSAtom</a> prop, <a class="el" href="structJSValue.html">JSValue</a> getter, <a class="el" href="structJSValue.html">JSValue</a> setter, int <a class="el" href="Drivers_2virtio_8h.html#a04a0bd666e371f3fab92b8d0ef5dbdb0">flags</a>)</td></tr>
 <tr class="separator:abfb24c507e9a341c0a98e61d86fd8663"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -791,15 +791,15 @@ Functions</h2></td></tr>
 <tr class="separator:a85a2326a36a7ec28b2c7c8a4d06fd032"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5f91a2b8b23babc192f2781f47fba4c" id="r_ad5f91a2b8b23babc192f2781f47fba4c"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#ad5f91a2b8b23babc192f2781f47fba4c">JS_GetAnyOpaque</a> (<a class="el" href="quickjs_8h.html#ab5b643c1ec038a6ce73ff6612efe73c2">JSValueConst</a> obj, <a class="el" href="quickjs_8h.html#a451d6a9cf9c7412aa33211fd887c7368">JSClassID</a> *class_id)</td></tr>
 <tr class="separator:ad5f91a2b8b23babc192f2781f47fba4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85a2abf65c29c82c085c9b7430538096" id="r_a85a2abf65c29c82c085c9b7430538096"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structJSValue.html">JSValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a85a2abf65c29c82c085c9b7430538096">JS_ParseJSON</a> (<a class="el" href="structJSContext.html">JSContext</a> *ctx, const char *buf, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> buf_len, const char *filename)</td></tr>
+<tr class="memitem:a85a2abf65c29c82c085c9b7430538096" id="r_a85a2abf65c29c82c085c9b7430538096"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structJSValue.html">JSValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a85a2abf65c29c82c085c9b7430538096">JS_ParseJSON</a> (<a class="el" href="structJSContext.html">JSContext</a> *ctx, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *buf, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> buf_len, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *filename)</td></tr>
 <tr class="separator:a85a2abf65c29c82c085c9b7430538096"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ce39fc64f8e4a7a0e19bf5527df730f" id="r_a2ce39fc64f8e4a7a0e19bf5527df730f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structJSValue.html">JSValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a2ce39fc64f8e4a7a0e19bf5527df730f">JS_ParseJSON2</a> (<a class="el" href="structJSContext.html">JSContext</a> *ctx, const char *buf, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> buf_len, const char *filename, int <a class="el" href="Drivers_2virtio_8h.html#a04a0bd666e371f3fab92b8d0ef5dbdb0">flags</a>)</td></tr>
+<tr class="memitem:a2ce39fc64f8e4a7a0e19bf5527df730f" id="r_a2ce39fc64f8e4a7a0e19bf5527df730f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structJSValue.html">JSValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a2ce39fc64f8e4a7a0e19bf5527df730f">JS_ParseJSON2</a> (<a class="el" href="structJSContext.html">JSContext</a> *ctx, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *buf, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> buf_len, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *filename, int <a class="el" href="Drivers_2virtio_8h.html#a04a0bd666e371f3fab92b8d0ef5dbdb0">flags</a>)</td></tr>
 <tr class="separator:a2ce39fc64f8e4a7a0e19bf5527df730f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a343a343b16bc3c9875050e99ee0d2884" id="r_a343a343b16bc3c9875050e99ee0d2884"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structJSValue.html">JSValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a343a343b16bc3c9875050e99ee0d2884">JS_JSONStringify</a> (<a class="el" href="structJSContext.html">JSContext</a> *ctx, <a class="el" href="quickjs_8h.html#ab5b643c1ec038a6ce73ff6612efe73c2">JSValueConst</a> obj, <a class="el" href="quickjs_8h.html#ab5b643c1ec038a6ce73ff6612efe73c2">JSValueConst</a> replacer, <a class="el" href="quickjs_8h.html#ab5b643c1ec038a6ce73ff6612efe73c2">JSValueConst</a> space0)</td></tr>
 <tr class="separator:a343a343b16bc3c9875050e99ee0d2884"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70b5f6ae4c7875cd514efb813d2081a9" id="r_a70b5f6ae4c7875cd514efb813d2081a9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structJSValue.html">JSValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a70b5f6ae4c7875cd514efb813d2081a9">JS_NewArrayBuffer</a> (<a class="el" href="structJSContext.html">JSContext</a> *ctx, <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> <a class="el" href="initial_8c.html#a7360b55975153b822efc5217b7734e6a">len</a>, <a class="el" href="quickjs_8h.html#adc21083dd5fced350585097b4529670e">JSFreeArrayBufferDataFunc</a> *<a class="el" href="miniz_8h.html#ac18e786dc1c81785889a0f4edc113102">free_func</a>, void *opaque, <a class="el" href="quickjs_8h.html#a6d73b897d1f464c9bc34d7031142203c">JS_BOOL</a> is_shared)</td></tr>
 <tr class="separator:a70b5f6ae4c7875cd514efb813d2081a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd4c101057712f68796803cf81501264" id="r_afd4c101057712f68796803cf81501264"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structJSValue.html">JSValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#afd4c101057712f68796803cf81501264">JS_NewArrayBufferCopy</a> (<a class="el" href="structJSContext.html">JSContext</a> *ctx, const <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> <a class="el" href="initial_8c.html#a7360b55975153b822efc5217b7734e6a">len</a>)</td></tr>
+<tr class="memitem:afd4c101057712f68796803cf81501264" id="r_afd4c101057712f68796803cf81501264"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structJSValue.html">JSValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#afd4c101057712f68796803cf81501264">JS_NewArrayBufferCopy</a> (<a class="el" href="structJSContext.html">JSContext</a> *ctx, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> <a class="el" href="initial_8c.html#a7360b55975153b822efc5217b7734e6a">len</a>)</td></tr>
 <tr class="separator:afd4c101057712f68796803cf81501264"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c8cdac75bac86e29ac193f21b013492" id="r_a5c8cdac75bac86e29ac193f21b013492"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a5c8cdac75bac86e29ac193f21b013492">JS_DetachArrayBuffer</a> (<a class="el" href="structJSContext.html">JSContext</a> *ctx, <a class="el" href="quickjs_8h.html#ab5b643c1ec038a6ce73ff6612efe73c2">JSValueConst</a> obj)</td></tr>
 <tr class="separator:a5c8cdac75bac86e29ac193f21b013492"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -809,7 +809,7 @@ Functions</h2></td></tr>
 <tr class="separator:a0ea76177d81e44234385267498234a58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a623376b2e5c5459f22b16e18ce134b62" id="r_a623376b2e5c5459f22b16e18ce134b62"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structJSValue.html">JSValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a623376b2e5c5459f22b16e18ce134b62">JS_GetTypedArrayBuffer</a> (<a class="el" href="structJSContext.html">JSContext</a> *ctx, <a class="el" href="quickjs_8h.html#ab5b643c1ec038a6ce73ff6612efe73c2">JSValueConst</a> obj, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> *pbyte_offset, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> *pbyte_length, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> *pbytes_per_element)</td></tr>
 <tr class="separator:a623376b2e5c5459f22b16e18ce134b62"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76f577dc0f321dc81ffc62e45bc9f1e7" id="r_a76f577dc0f321dc81ffc62e45bc9f1e7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a76f577dc0f321dc81ffc62e45bc9f1e7">JS_SetSharedArrayBufferFunctions</a> (<a class="el" href="structJSRuntime.html">JSRuntime</a> *rt, const <a class="el" href="structJSSharedArrayBufferFunctions.html">JSSharedArrayBufferFunctions</a> *sf)</td></tr>
+<tr class="memitem:a76f577dc0f321dc81ffc62e45bc9f1e7" id="r_a76f577dc0f321dc81ffc62e45bc9f1e7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a76f577dc0f321dc81ffc62e45bc9f1e7">JS_SetSharedArrayBufferFunctions</a> (<a class="el" href="structJSRuntime.html">JSRuntime</a> *rt, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="structJSSharedArrayBufferFunctions.html">JSSharedArrayBufferFunctions</a> *sf)</td></tr>
 <tr class="separator:a76f577dc0f321dc81ffc62e45bc9f1e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2287eaf81466a0d408341cdae08ed673" id="r_a2287eaf81466a0d408341cdae08ed673"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structJSValue.html">JSValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a2287eaf81466a0d408341cdae08ed673">JS_NewPromiseCapability</a> (<a class="el" href="structJSContext.html">JSContext</a> *ctx, <a class="el" href="structJSValue.html">JSValue</a> *resolving_funcs)</td></tr>
 <tr class="separator:a2287eaf81466a0d408341cdae08ed673"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -849,7 +849,7 @@ Functions</h2></td></tr>
 <tr class="separator:a64983d09664acc2e67fa54799a081b1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32d9da35d5fc53516291ab1d58df843f" id="r_a32d9da35d5fc53516291ab1d58df843f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a32d9da35d5fc53516291ab1d58df843f">JS_WriteObject2</a> (<a class="el" href="structJSContext.html">JSContext</a> *ctx, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> *psize, <a class="el" href="quickjs_8h.html#ab5b643c1ec038a6ce73ff6612efe73c2">JSValueConst</a> obj, int <a class="el" href="Drivers_2virtio_8h.html#a04a0bd666e371f3fab92b8d0ef5dbdb0">flags</a>, <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> ***psab_tab, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> *psab_tab_len)</td></tr>
 <tr class="separator:a32d9da35d5fc53516291ab1d58df843f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12be2ea9c010752715072489497594e9" id="r_a12be2ea9c010752715072489497594e9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structJSValue.html">JSValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a12be2ea9c010752715072489497594e9">JS_ReadObject</a> (<a class="el" href="structJSContext.html">JSContext</a> *ctx, const <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> buf_len, int <a class="el" href="Drivers_2virtio_8h.html#a04a0bd666e371f3fab92b8d0ef5dbdb0">flags</a>)</td></tr>
+<tr class="memitem:a12be2ea9c010752715072489497594e9" id="r_a12be2ea9c010752715072489497594e9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structJSValue.html">JSValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a12be2ea9c010752715072489497594e9">JS_ReadObject</a> (<a class="el" href="structJSContext.html">JSContext</a> *ctx, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> buf_len, int <a class="el" href="Drivers_2virtio_8h.html#a04a0bd666e371f3fab92b8d0ef5dbdb0">flags</a>)</td></tr>
 <tr class="separator:a12be2ea9c010752715072489497594e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af38ab3d672d41db0fa7a75b5c24149e4" id="r_af38ab3d672d41db0fa7a75b5c24149e4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structJSValue.html">JSValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#af38ab3d672d41db0fa7a75b5c24149e4">JS_EvalFunction</a> (<a class="el" href="structJSContext.html">JSContext</a> *ctx, <a class="el" href="structJSValue.html">JSValue</a> fun_obj)</td></tr>
 <tr class="separator:af38ab3d672d41db0fa7a75b5c24149e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -857,40 +857,40 @@ Functions</h2></td></tr>
 <tr class="separator:a3178c361614999c86711f292c035a706"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d9d43172bb33e53a4843dd3a770e889" id="r_a3d9d43172bb33e53a4843dd3a770e889"><td class="memItemLeft" align="right" valign="top"><a class="el" href="quickjs_8h.html#a33f123cee4ffe71e0ceb3a14d424c9ff">JSAtom</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a3d9d43172bb33e53a4843dd3a770e889">JS_GetScriptOrModuleName</a> (<a class="el" href="structJSContext.html">JSContext</a> *ctx, int n_stack_levels)</td></tr>
 <tr class="separator:a3d9d43172bb33e53a4843dd3a770e889"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef284be5afb2909b85a88b98cabb5dc1" id="r_aef284be5afb2909b85a88b98cabb5dc1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structJSValue.html">JSValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#aef284be5afb2909b85a88b98cabb5dc1">JS_LoadModule</a> (<a class="el" href="structJSContext.html">JSContext</a> *ctx, const char *basename, const char *filename)</td></tr>
+<tr class="memitem:aef284be5afb2909b85a88b98cabb5dc1" id="r_aef284be5afb2909b85a88b98cabb5dc1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structJSValue.html">JSValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#aef284be5afb2909b85a88b98cabb5dc1">JS_LoadModule</a> (<a class="el" href="structJSContext.html">JSContext</a> *ctx, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *basename, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *filename)</td></tr>
 <tr class="separator:aef284be5afb2909b85a88b98cabb5dc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76d4772691a319f48dc636a0e7f6c1ed" id="r_a76d4772691a319f48dc636a0e7f6c1ed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structJSValue.html">JSValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a76d4772691a319f48dc636a0e7f6c1ed">JS_NewCFunction2</a> (<a class="el" href="structJSContext.html">JSContext</a> *ctx, <a class="el" href="quickjs_8h.html#a3976cd6ecfcc8b91f1fd854705f5a387">JSCFunction</a> *func, const char *<a class="el" href="drm__crtc_8h.html#aed88e009d7772dfc9026cb1f5492b458">name</a>, int length, <a class="el" href="quickjs_8h.html#a191efd2d7aab4362bf3c9e2049402e72">JSCFunctionEnum</a> cproto, int magic)</td></tr>
+<tr class="memitem:a76d4772691a319f48dc636a0e7f6c1ed" id="r_a76d4772691a319f48dc636a0e7f6c1ed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structJSValue.html">JSValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a76d4772691a319f48dc636a0e7f6c1ed">JS_NewCFunction2</a> (<a class="el" href="structJSContext.html">JSContext</a> *ctx, <a class="el" href="quickjs_8h.html#a3976cd6ecfcc8b91f1fd854705f5a387">JSCFunction</a> *func, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *<a class="el" href="drm__crtc_8h.html#aed88e009d7772dfc9026cb1f5492b458">name</a>, int length, <a class="el" href="quickjs_8h.html#a191efd2d7aab4362bf3c9e2049402e72">JSCFunctionEnum</a> cproto, int magic)</td></tr>
 <tr class="separator:a76d4772691a319f48dc636a0e7f6c1ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac048b0ff95f3f0cb7c189e87f74df753" id="r_ac048b0ff95f3f0cb7c189e87f74df753"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structJSValue.html">JSValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#ac048b0ff95f3f0cb7c189e87f74df753">JS_NewCFunctionData</a> (<a class="el" href="structJSContext.html">JSContext</a> *ctx, <a class="el" href="quickjs_8h.html#a37f177c356e86d03229470f6077b5bee">JSCFunctionData</a> *func, int length, int magic, int data_len, <a class="el" href="quickjs_8h.html#ab5b643c1ec038a6ce73ff6612efe73c2">JSValueConst</a> *<a class="el" href="kthread_8h.html#a735984d41155bc1032e09bece8f8d66d">data</a>)</td></tr>
 <tr class="separator:ac048b0ff95f3f0cb7c189e87f74df753"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d4288957725f0b37c6d1201e83d8ca9" id="r_a9d4288957725f0b37c6d1201e83d8ca9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a9d4288957725f0b37c6d1201e83d8ca9">JS_SetConstructor</a> (<a class="el" href="structJSContext.html">JSContext</a> *ctx, <a class="el" href="quickjs_8h.html#ab5b643c1ec038a6ce73ff6612efe73c2">JSValueConst</a> func_obj, <a class="el" href="quickjs_8h.html#ab5b643c1ec038a6ce73ff6612efe73c2">JSValueConst</a> proto)</td></tr>
 <tr class="separator:a9d4288957725f0b37c6d1201e83d8ca9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd4b2cbb3ddd24d23a3ec32371fac563" id="r_abd4b2cbb3ddd24d23a3ec32371fac563"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#abd4b2cbb3ddd24d23a3ec32371fac563">JS_SetPropertyFunctionList</a> (<a class="el" href="structJSContext.html">JSContext</a> *ctx, <a class="el" href="quickjs_8h.html#ab5b643c1ec038a6ce73ff6612efe73c2">JSValueConst</a> obj, const <a class="el" href="structJSCFunctionListEntry.html">JSCFunctionListEntry</a> *tab, int <a class="el" href="initial_8c.html#a7360b55975153b822efc5217b7734e6a">len</a>)</td></tr>
+<tr class="memitem:abd4b2cbb3ddd24d23a3ec32371fac563" id="r_abd4b2cbb3ddd24d23a3ec32371fac563"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#abd4b2cbb3ddd24d23a3ec32371fac563">JS_SetPropertyFunctionList</a> (<a class="el" href="structJSContext.html">JSContext</a> *ctx, <a class="el" href="quickjs_8h.html#ab5b643c1ec038a6ce73ff6612efe73c2">JSValueConst</a> obj, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="structJSCFunctionListEntry.html">JSCFunctionListEntry</a> *tab, int <a class="el" href="initial_8c.html#a7360b55975153b822efc5217b7734e6a">len</a>)</td></tr>
 <tr class="separator:abd4b2cbb3ddd24d23a3ec32371fac563"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c7b3ce5cdef40a56167c385ea319867" id="r_a6c7b3ce5cdef40a56167c385ea319867"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structJSModuleDef.html">JSModuleDef</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a6c7b3ce5cdef40a56167c385ea319867">JS_NewCModule</a> (<a class="el" href="structJSContext.html">JSContext</a> *ctx, const char *name_str, <a class="el" href="quickjs_8h.html#aa290eea146e9e2bd6f82fd1023d46a23">JSModuleInitFunc</a> *func)</td></tr>
+<tr class="memitem:a6c7b3ce5cdef40a56167c385ea319867" id="r_a6c7b3ce5cdef40a56167c385ea319867"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structJSModuleDef.html">JSModuleDef</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a6c7b3ce5cdef40a56167c385ea319867">JS_NewCModule</a> (<a class="el" href="structJSContext.html">JSContext</a> *ctx, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *name_str, <a class="el" href="quickjs_8h.html#aa290eea146e9e2bd6f82fd1023d46a23">JSModuleInitFunc</a> *func)</td></tr>
 <tr class="separator:a6c7b3ce5cdef40a56167c385ea319867"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6dd97ad7099b39030ed4322e4d9ac5ce" id="r_a6dd97ad7099b39030ed4322e4d9ac5ce"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a6dd97ad7099b39030ed4322e4d9ac5ce">JS_AddModuleExport</a> (<a class="el" href="structJSContext.html">JSContext</a> *ctx, <a class="el" href="structJSModuleDef.html">JSModuleDef</a> *m, const char *name_str)</td></tr>
+<tr class="memitem:a6dd97ad7099b39030ed4322e4d9ac5ce" id="r_a6dd97ad7099b39030ed4322e4d9ac5ce"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a6dd97ad7099b39030ed4322e4d9ac5ce">JS_AddModuleExport</a> (<a class="el" href="structJSContext.html">JSContext</a> *ctx, <a class="el" href="structJSModuleDef.html">JSModuleDef</a> *m, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *name_str)</td></tr>
 <tr class="separator:a6dd97ad7099b39030ed4322e4d9ac5ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7a9b88dd7ca1a70cd0ecd9a28905e25" id="r_ac7a9b88dd7ca1a70cd0ecd9a28905e25"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#ac7a9b88dd7ca1a70cd0ecd9a28905e25">JS_AddModuleExportList</a> (<a class="el" href="structJSContext.html">JSContext</a> *ctx, <a class="el" href="structJSModuleDef.html">JSModuleDef</a> *m, const <a class="el" href="structJSCFunctionListEntry.html">JSCFunctionListEntry</a> *tab, int <a class="el" href="initial_8c.html#a7360b55975153b822efc5217b7734e6a">len</a>)</td></tr>
+<tr class="memitem:ac7a9b88dd7ca1a70cd0ecd9a28905e25" id="r_ac7a9b88dd7ca1a70cd0ecd9a28905e25"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#ac7a9b88dd7ca1a70cd0ecd9a28905e25">JS_AddModuleExportList</a> (<a class="el" href="structJSContext.html">JSContext</a> *ctx, <a class="el" href="structJSModuleDef.html">JSModuleDef</a> *m, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="structJSCFunctionListEntry.html">JSCFunctionListEntry</a> *tab, int <a class="el" href="initial_8c.html#a7360b55975153b822efc5217b7734e6a">len</a>)</td></tr>
 <tr class="separator:ac7a9b88dd7ca1a70cd0ecd9a28905e25"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc3990661d2851b858601061a62cc7d6" id="r_acc3990661d2851b858601061a62cc7d6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#acc3990661d2851b858601061a62cc7d6">JS_SetModuleExport</a> (<a class="el" href="structJSContext.html">JSContext</a> *ctx, <a class="el" href="structJSModuleDef.html">JSModuleDef</a> *m, const char *export_name, <a class="el" href="structJSValue.html">JSValue</a> val)</td></tr>
+<tr class="memitem:acc3990661d2851b858601061a62cc7d6" id="r_acc3990661d2851b858601061a62cc7d6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#acc3990661d2851b858601061a62cc7d6">JS_SetModuleExport</a> (<a class="el" href="structJSContext.html">JSContext</a> *ctx, <a class="el" href="structJSModuleDef.html">JSModuleDef</a> *m, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *export_name, <a class="el" href="structJSValue.html">JSValue</a> val)</td></tr>
 <tr class="separator:acc3990661d2851b858601061a62cc7d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04f1ec3f8d1f5c012280eb23e64a7b58" id="r_a04f1ec3f8d1f5c012280eb23e64a7b58"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a04f1ec3f8d1f5c012280eb23e64a7b58">JS_SetModuleExportList</a> (<a class="el" href="structJSContext.html">JSContext</a> *ctx, <a class="el" href="structJSModuleDef.html">JSModuleDef</a> *m, const <a class="el" href="structJSCFunctionListEntry.html">JSCFunctionListEntry</a> *tab, int <a class="el" href="initial_8c.html#a7360b55975153b822efc5217b7734e6a">len</a>)</td></tr>
+<tr class="memitem:a04f1ec3f8d1f5c012280eb23e64a7b58" id="r_a04f1ec3f8d1f5c012280eb23e64a7b58"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a04f1ec3f8d1f5c012280eb23e64a7b58">JS_SetModuleExportList</a> (<a class="el" href="structJSContext.html">JSContext</a> *ctx, <a class="el" href="structJSModuleDef.html">JSModuleDef</a> *m, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="structJSCFunctionListEntry.html">JSCFunctionListEntry</a> *tab, int <a class="el" href="initial_8c.html#a7360b55975153b822efc5217b7734e6a">len</a>)</td></tr>
 <tr class="separator:a04f1ec3f8d1f5c012280eb23e64a7b58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa258355cbe8ed325fe20678ceec05593" id="r_aa258355cbe8ed325fe20678ceec05593"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#aa258355cbe8ed325fe20678ceec05593">JS_SetModulePrivateValue</a> (<a class="el" href="structJSContext.html">JSContext</a> *ctx, <a class="el" href="structJSModuleDef.html">JSModuleDef</a> *m, <a class="el" href="structJSValue.html">JSValue</a> val)</td></tr>
 <tr class="separator:aa258355cbe8ed325fe20678ceec05593"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa9e179b0c51a972a0069cd472b98b86" id="r_afa9e179b0c51a972a0069cd472b98b86"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structJSValue.html">JSValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#afa9e179b0c51a972a0069cd472b98b86">JS_GetModulePrivateValue</a> (<a class="el" href="structJSContext.html">JSContext</a> *ctx, <a class="el" href="structJSModuleDef.html">JSModuleDef</a> *m)</td></tr>
 <tr class="separator:afa9e179b0c51a972a0069cd472b98b86"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abba3c3dbe86bf20071cb1e04a52535f7" id="r_abba3c3dbe86bf20071cb1e04a52535f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#abba3c3dbe86bf20071cb1e04a52535f7">JS_PrintValueSetDefaultOptions</a> (<a class="el" href="structJSPrintValueOptions.html">JSPrintValueOptions</a> *<a class="el" href="m__menu_8c.html#a2e45e0649e864ecd3eacd19b09ec981aa5eb3f84958aa2200df58a6af276027eb">options</a>)</td></tr>
+<tr class="memitem:abba3c3dbe86bf20071cb1e04a52535f7" id="r_abba3c3dbe86bf20071cb1e04a52535f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#abba3c3dbe86bf20071cb1e04a52535f7">JS_PrintValueSetDefaultOptions</a> (<a class="el" href="structJSPrintValueOptions.html">JSPrintValueOptions</a> *<a class="el" href="m__menu_8c.html#a0e758c3718bec19c1b4ae9e612324fc8a5eb3f84958aa2200df58a6af276027eb">options</a>)</td></tr>
 <tr class="separator:abba3c3dbe86bf20071cb1e04a52535f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a914f1d3ecc423c540d58f92dd4d48c7a" id="r_a914f1d3ecc423c540d58f92dd4d48c7a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a914f1d3ecc423c540d58f92dd4d48c7a">JS_PrintValueRT</a> (<a class="el" href="structJSRuntime.html">JSRuntime</a> *rt, <a class="el" href="quickjs_8h.html#a680e2dcacb7ed54213830f1da97e1c13">JSPrintValueWrite</a> *write_func, void *write_opaque, <a class="el" href="quickjs_8h.html#ab5b643c1ec038a6ce73ff6612efe73c2">JSValueConst</a> val, const <a class="el" href="structJSPrintValueOptions.html">JSPrintValueOptions</a> *<a class="el" href="m__menu_8c.html#a2e45e0649e864ecd3eacd19b09ec981aa5eb3f84958aa2200df58a6af276027eb">options</a>)</td></tr>
+<tr class="memitem:a914f1d3ecc423c540d58f92dd4d48c7a" id="r_a914f1d3ecc423c540d58f92dd4d48c7a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#a914f1d3ecc423c540d58f92dd4d48c7a">JS_PrintValueRT</a> (<a class="el" href="structJSRuntime.html">JSRuntime</a> *rt, <a class="el" href="quickjs_8h.html#a680e2dcacb7ed54213830f1da97e1c13">JSPrintValueWrite</a> *write_func, void *write_opaque, <a class="el" href="quickjs_8h.html#ab5b643c1ec038a6ce73ff6612efe73c2">JSValueConst</a> val, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="structJSPrintValueOptions.html">JSPrintValueOptions</a> *<a class="el" href="m__menu_8c.html#a0e758c3718bec19c1b4ae9e612324fc8a5eb3f84958aa2200df58a6af276027eb">options</a>)</td></tr>
 <tr class="separator:a914f1d3ecc423c540d58f92dd4d48c7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab55e49119c2d48d71f9ed83a0336a24f" id="r_ab55e49119c2d48d71f9ed83a0336a24f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#ab55e49119c2d48d71f9ed83a0336a24f">JS_PrintValue</a> (<a class="el" href="structJSContext.html">JSContext</a> *ctx, <a class="el" href="quickjs_8h.html#a680e2dcacb7ed54213830f1da97e1c13">JSPrintValueWrite</a> *write_func, void *write_opaque, <a class="el" href="quickjs_8h.html#ab5b643c1ec038a6ce73ff6612efe73c2">JSValueConst</a> val, const <a class="el" href="structJSPrintValueOptions.html">JSPrintValueOptions</a> *<a class="el" href="m__menu_8c.html#a2e45e0649e864ecd3eacd19b09ec981aa5eb3f84958aa2200df58a6af276027eb">options</a>)</td></tr>
+<tr class="memitem:ab55e49119c2d48d71f9ed83a0336a24f" id="r_ab55e49119c2d48d71f9ed83a0336a24f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#ab55e49119c2d48d71f9ed83a0336a24f">JS_PrintValue</a> (<a class="el" href="structJSContext.html">JSContext</a> *ctx, <a class="el" href="quickjs_8h.html#a680e2dcacb7ed54213830f1da97e1c13">JSPrintValueWrite</a> *write_func, void *write_opaque, <a class="el" href="quickjs_8h.html#ab5b643c1ec038a6ce73ff6612efe73c2">JSValueConst</a> val, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="structJSPrintValueOptions.html">JSPrintValueOptions</a> *<a class="el" href="m__menu_8c.html#a0e758c3718bec19c1b4ae9e612324fc8a5eb3f84958aa2200df58a6af276027eb">options</a>)</td></tr>
 <tr class="separator:ab55e49119c2d48d71f9ed83a0336a24f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:afdd69b0ef7a668ecdec4f15752c4939e" id="r_afdd69b0ef7a668ecdec4f15752c4939e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structJSValue.html">JSValue</a> const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#afdd69b0ef7a668ecdec4f15752c4939e">fmt</a></td></tr>
+<tr class="memitem:afdd69b0ef7a668ecdec4f15752c4939e" id="r_afdd69b0ef7a668ecdec4f15752c4939e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structJSValue.html">JSValue</a> <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quickjs_8h.html#afdd69b0ef7a668ecdec4f15752c4939e">fmt</a></td></tr>
 <tr class="separator:afdd69b0ef7a668ecdec4f15752c4939e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
@@ -1473,7 +1473,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define JS_EVAL_TYPE_GLOBAL&#160;&#160;&#160;(0 &lt;&lt; 0) /* global code (default) */</td>
+          <td class="memname">#define JS_EVAL_TYPE_GLOBAL&#160;&#160;&#160;(0 &lt;&lt; 0) /* global <a class="el" href="structcode.html">code</a> (default) */</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1515,7 +1515,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define JS_EVAL_TYPE_MODULE&#160;&#160;&#160;(1 &lt;&lt; 0) /* module code */</td>
+          <td class="memname">#define JS_EVAL_TYPE_MODULE&#160;&#160;&#160;(1 &lt;&lt; 0) /* module <a class="el" href="structcode.html">code</a> */</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1529,7 +1529,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define JS_EXCEPTION&#160;&#160;&#160;<a class="el" href="quickjs_8h.html#a3813cde0989151e77ddb71d2b5a197bc">JS_MKVAL</a>(<a class="el" href="quickjs_8h.html#aa18f9dc1ef66ab97afe44b223f6e58bca49c8325bfd7bb7fc5ae2f19685a6dc67">JS_TAG_EXCEPTION</a>, 0)</td>
+          <td class="memname">#define JS_EXCEPTION&#160;&#160;&#160;<a class="el" href="quickjs_8h.html#a3813cde0989151e77ddb71d2b5a197bc">JS_MKVAL</a>(<a class="el" href="quickjs_8h.html#ad77cecc3bdfb3a651ca977502cb842a1a49c8325bfd7bb7fc5ae2f19685a6dc67">JS_TAG_EXCEPTION</a>, 0)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1543,7 +1543,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define JS_FALSE&#160;&#160;&#160;<a class="el" href="quickjs_8h.html#a3813cde0989151e77ddb71d2b5a197bc">JS_MKVAL</a>(<a class="el" href="quickjs_8h.html#aa18f9dc1ef66ab97afe44b223f6e58bca85fb2dfb50ffd05e6bf4146b8fe5c032">JS_TAG_BOOL</a>, 0)</td>
+          <td class="memname">#define JS_FALSE&#160;&#160;&#160;<a class="el" href="quickjs_8h.html#a3813cde0989151e77ddb71d2b5a197bc">JS_MKVAL</a>(<a class="el" href="quickjs_8h.html#ad77cecc3bdfb3a651ca977502cb842a1a85fb2dfb50ffd05e6bf4146b8fe5c032">JS_TAG_BOOL</a>, 0)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1797,7 +1797,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define JS_NAN&#160;&#160;&#160;(<a class="el" href="structJSValue.html">JSValue</a>){ .u.float64 = <a class="el" href="quickjs_8h.html#ae1d92f03cbbb347977253fe9cf45a904">JS_FLOAT64_NAN</a>, <a class="el" href="quickjs_8h.html#aa18f9dc1ef66ab97afe44b223f6e58bcac02ab3693d212f74c719df2f1db1d9e1">JS_TAG_FLOAT64</a> }</td>
+          <td class="memname">#define JS_NAN&#160;&#160;&#160;(<a class="el" href="structJSValue.html">JSValue</a>){ .u.float64 = <a class="el" href="quickjs_8h.html#ae1d92f03cbbb347977253fe9cf45a904">JS_FLOAT64_NAN</a>, <a class="el" href="quickjs_8h.html#ad77cecc3bdfb3a651ca977502cb842a1ac02ab3693d212f74c719df2f1db1d9e1">JS_TAG_FLOAT64</a> }</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1811,7 +1811,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define JS_NULL&#160;&#160;&#160;<a class="el" href="quickjs_8h.html#a3813cde0989151e77ddb71d2b5a197bc">JS_MKVAL</a>(<a class="el" href="quickjs_8h.html#aa18f9dc1ef66ab97afe44b223f6e58bca7901cd6ab7bafa5f63e382f8849c73a9">JS_TAG_NULL</a>, 0)</td>
+          <td class="memname">#define JS_NULL&#160;&#160;&#160;<a class="el" href="quickjs_8h.html#a3813cde0989151e77ddb71d2b5a197bc">JS_MKVAL</a>(<a class="el" href="quickjs_8h.html#ad77cecc3bdfb3a651ca977502cb842a1a7901cd6ab7bafa5f63e382f8849c73a9">JS_TAG_NULL</a>, 0)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2321,7 +2321,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define JS_PROP_TMASK&#160;&#160;&#160;(3 &lt;&lt; 4) /* mask for <a class="el" href="propstrings_8h.html#ad12132bb9a678532f1ab9d50c99c03b9a50d1448013c6f17125caee18aa418af7">NORMAL</a>, GETSET, VARREF, AUTOINIT */</td>
+          <td class="memname">#define JS_PROP_TMASK&#160;&#160;&#160;(3 &lt;&lt; 4) /* mask for <a class="el" href="propstrings_8h.html#a643bc910afd198def02640b2fbd4f8c6a50d1448013c6f17125caee18aa418af7">NORMAL</a>, GETSET, VARREF, AUTOINIT */</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2493,7 +2493,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define JS_STRIP_DEBUG&#160;&#160;&#160;(1 &lt;&lt; 1) /* strip all <a class="el" href="sched_8c.html#a398527b3e9e358c345c5047b16871957">debug</a> info including source code */</td>
+          <td class="memname">#define JS_STRIP_DEBUG&#160;&#160;&#160;(1 &lt;&lt; 1) /* strip all <a class="el" href="sched_8c.html#a398527b3e9e358c345c5047b16871957">debug</a> info including source <a class="el" href="structcode.html">code</a> */</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2507,7 +2507,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define JS_STRIP_SOURCE&#160;&#160;&#160;(1 &lt;&lt; 0) /* strip source code */</td>
+          <td class="memname">#define JS_STRIP_SOURCE&#160;&#160;&#160;(1 &lt;&lt; 0) /* strip source <a class="el" href="structcode.html">code</a> */</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2525,7 +2525,7 @@ Variables</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">tag</td><td>)</td>
-          <td>&#160;&#160;&#160;((unsigned)(tag) == <a class="el" href="quickjs_8h.html#aa18f9dc1ef66ab97afe44b223f6e58bcac02ab3693d212f74c719df2f1db1d9e1">JS_TAG_FLOAT64</a>)</td>
+          <td>&#160;&#160;&#160;((unsigned)(tag) == <a class="el" href="quickjs_8h.html#ad77cecc3bdfb3a651ca977502cb842a1ac02ab3693d212f74c719df2f1db1d9e1">JS_TAG_FLOAT64</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2539,7 +2539,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define JS_TRUE&#160;&#160;&#160;<a class="el" href="quickjs_8h.html#a3813cde0989151e77ddb71d2b5a197bc">JS_MKVAL</a>(<a class="el" href="quickjs_8h.html#aa18f9dc1ef66ab97afe44b223f6e58bca85fb2dfb50ffd05e6bf4146b8fe5c032">JS_TAG_BOOL</a>, 1)</td>
+          <td class="memname">#define JS_TRUE&#160;&#160;&#160;<a class="el" href="quickjs_8h.html#a3813cde0989151e77ddb71d2b5a197bc">JS_MKVAL</a>(<a class="el" href="quickjs_8h.html#ad77cecc3bdfb3a651ca977502cb842a1a85fb2dfb50ffd05e6bf4146b8fe5c032">JS_TAG_BOOL</a>, 1)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2553,7 +2553,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define JS_UNDEFINED&#160;&#160;&#160;<a class="el" href="quickjs_8h.html#a3813cde0989151e77ddb71d2b5a197bc">JS_MKVAL</a>(<a class="el" href="quickjs_8h.html#aa18f9dc1ef66ab97afe44b223f6e58bcae30fdd34010dea1f659f79065b11c315">JS_TAG_UNDEFINED</a>, 0)</td>
+          <td class="memname">#define JS_UNDEFINED&#160;&#160;&#160;<a class="el" href="quickjs_8h.html#a3813cde0989151e77ddb71d2b5a197bc">JS_MKVAL</a>(<a class="el" href="quickjs_8h.html#ad77cecc3bdfb3a651ca977502cb842a1ae30fdd34010dea1f659f79065b11c315">JS_TAG_UNDEFINED</a>, 0)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2567,7 +2567,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define JS_UNINITIALIZED&#160;&#160;&#160;<a class="el" href="quickjs_8h.html#a3813cde0989151e77ddb71d2b5a197bc">JS_MKVAL</a>(<a class="el" href="quickjs_8h.html#aa18f9dc1ef66ab97afe44b223f6e58bca713fd2a418d8c77f71aafca44eb83984">JS_TAG_UNINITIALIZED</a>, 0)</td>
+          <td class="memname">#define JS_UNINITIALIZED&#160;&#160;&#160;<a class="el" href="quickjs_8h.html#a3813cde0989151e77ddb71d2b5a197bc">JS_MKVAL</a>(<a class="el" href="quickjs_8h.html#ad77cecc3bdfb3a651ca977502cb842a1a713fd2a418d8c77f71aafca44eb83984">JS_TAG_UNINITIALIZED</a>, 0)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2729,7 +2729,7 @@ Variables</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">v</td><td>)</td>
-          <td>&#160;&#160;&#160;((unsigned)<a class="el" href="quickjs_8h.html#acfa4fd7848997fa4af3ee04a2f63aac7">JS_VALUE_GET_TAG</a>(v) &gt;= (unsigned)<a class="el" href="quickjs_8h.html#aa18f9dc1ef66ab97afe44b223f6e58bcac54c9167023a80a6a4bb921c5b883fc6">JS_TAG_FIRST</a>)</td>
+          <td>&#160;&#160;&#160;((unsigned)<a class="el" href="quickjs_8h.html#acfa4fd7848997fa4af3ee04a2f63aac7">JS_VALUE_GET_TAG</a>(v) &gt;= (unsigned)<a class="el" href="quickjs_8h.html#ad77cecc3bdfb3a651ca977502cb842a1ac54c9167023a80a6a4bb921c5b883fc6">JS_TAG_FIRST</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -3251,7 +3251,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="structJSModuleDef.html">JSModuleDef</a> * JSModuleLoaderFunc(<a class="el" href="structJSContext.html">JSContext</a> *ctx, const char *module_name, void *opaque)</td>
+          <td class="memname">typedef <a class="el" href="structJSModuleDef.html">JSModuleDef</a> * JSModuleLoaderFunc(<a class="el" href="structJSContext.html">JSContext</a> *ctx, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *module_name, void *opaque)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -3265,7 +3265,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="structJSModuleDef.html">JSModuleDef</a> * JSModuleLoaderFunc2(<a class="el" href="structJSContext.html">JSContext</a> *ctx, const char *module_name, void *opaque, <a class="el" href="quickjs_8h.html#ab5b643c1ec038a6ce73ff6612efe73c2">JSValueConst</a> attributes)</td>
+          <td class="memname">typedef <a class="el" href="structJSModuleDef.html">JSModuleDef</a> * JSModuleLoaderFunc2(<a class="el" href="structJSContext.html">JSContext</a> *ctx, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *module_name, void *opaque, <a class="el" href="quickjs_8h.html#ab5b643c1ec038a6ce73ff6612efe73c2">JSValueConst</a> attributes)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -3279,7 +3279,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef char * JSModuleNormalizeFunc(<a class="el" href="structJSContext.html">JSContext</a> *ctx, const char *module_base_name, const char *module_name, void *opaque)</td>
+          <td class="memname">typedef char * JSModuleNormalizeFunc(<a class="el" href="structJSContext.html">JSContext</a> *ctx, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *module_base_name, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *module_name, void *opaque)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -3293,7 +3293,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void JSPrintValueWrite(void *opaque, const char *buf, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> <a class="el" href="initial_8c.html#a7360b55975153b822efc5217b7734e6a">len</a>)</td>
+          <td class="memname">typedef void JSPrintValueWrite(void *opaque, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *buf, <a class="el" href="BaseHdr_2stdint_8h.html#a186ea1339bffb378854987065835afe3">size_t</a> <a class="el" href="initial_8c.html#a7360b55975153b822efc5217b7734e6a">len</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -3413,8 +3413,8 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
-<a id="aa18f9dc1ef66ab97afe44b223f6e58bc" name="aa18f9dc1ef66ab97afe44b223f6e58bc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa18f9dc1ef66ab97afe44b223f6e58bc">&#9670;&#160;</a></span>anonymous enum</h2>
+<a id="ad77cecc3bdfb3a651ca977502cb842a1" name="ad77cecc3bdfb3a651ca977502cb842a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad77cecc3bdfb3a651ca977502cb842a1">&#9670;&#160;</a></span>anonymous enum</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3425,23 +3425,23 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aa18f9dc1ef66ab97afe44b223f6e58bcac54c9167023a80a6a4bb921c5b883fc6" name="aa18f9dc1ef66ab97afe44b223f6e58bcac54c9167023a80a6a4bb921c5b883fc6"></a>JS_TAG_FIRST&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="aa18f9dc1ef66ab97afe44b223f6e58bca1f414379ea0f71b22266c09be64d6459" name="aa18f9dc1ef66ab97afe44b223f6e58bca1f414379ea0f71b22266c09be64d6459"></a>JS_TAG_BIG_INT&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="aa18f9dc1ef66ab97afe44b223f6e58bcafd90af803b3d37429e0c5410bd6af849" name="aa18f9dc1ef66ab97afe44b223f6e58bcafd90af803b3d37429e0c5410bd6af849"></a>JS_TAG_SYMBOL&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="aa18f9dc1ef66ab97afe44b223f6e58bcae9056b9abb79e83b03543f2ef16ba514" name="aa18f9dc1ef66ab97afe44b223f6e58bcae9056b9abb79e83b03543f2ef16ba514"></a>JS_TAG_STRING&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="aa18f9dc1ef66ab97afe44b223f6e58bcaae45dfd47c57359df6e1e6834f94821c" name="aa18f9dc1ef66ab97afe44b223f6e58bcaae45dfd47c57359df6e1e6834f94821c"></a>JS_TAG_STRING_ROPE&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="aa18f9dc1ef66ab97afe44b223f6e58bca6829c83e32fc093a377da9b946083147" name="aa18f9dc1ef66ab97afe44b223f6e58bca6829c83e32fc093a377da9b946083147"></a>JS_TAG_MODULE&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="aa18f9dc1ef66ab97afe44b223f6e58bca1551fb7a361f23f02622c37f281a5893" name="aa18f9dc1ef66ab97afe44b223f6e58bca1551fb7a361f23f02622c37f281a5893"></a>JS_TAG_FUNCTION_BYTECODE&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="aa18f9dc1ef66ab97afe44b223f6e58bcae26c3008bd840938b168408d0f9a497a" name="aa18f9dc1ef66ab97afe44b223f6e58bcae26c3008bd840938b168408d0f9a497a"></a>JS_TAG_OBJECT&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="aa18f9dc1ef66ab97afe44b223f6e58bca6a64928b656d068fe0f263c8b10f685f" name="aa18f9dc1ef66ab97afe44b223f6e58bca6a64928b656d068fe0f263c8b10f685f"></a>JS_TAG_INT&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="aa18f9dc1ef66ab97afe44b223f6e58bca85fb2dfb50ffd05e6bf4146b8fe5c032" name="aa18f9dc1ef66ab97afe44b223f6e58bca85fb2dfb50ffd05e6bf4146b8fe5c032"></a>JS_TAG_BOOL&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="aa18f9dc1ef66ab97afe44b223f6e58bca7901cd6ab7bafa5f63e382f8849c73a9" name="aa18f9dc1ef66ab97afe44b223f6e58bca7901cd6ab7bafa5f63e382f8849c73a9"></a>JS_TAG_NULL&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="aa18f9dc1ef66ab97afe44b223f6e58bcae30fdd34010dea1f659f79065b11c315" name="aa18f9dc1ef66ab97afe44b223f6e58bcae30fdd34010dea1f659f79065b11c315"></a>JS_TAG_UNDEFINED&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="aa18f9dc1ef66ab97afe44b223f6e58bca713fd2a418d8c77f71aafca44eb83984" name="aa18f9dc1ef66ab97afe44b223f6e58bca713fd2a418d8c77f71aafca44eb83984"></a>JS_TAG_UNINITIALIZED&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="aa18f9dc1ef66ab97afe44b223f6e58bca726f7639e9a24329e552266c4560eff1" name="aa18f9dc1ef66ab97afe44b223f6e58bca726f7639e9a24329e552266c4560eff1"></a>JS_TAG_CATCH_OFFSET&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="aa18f9dc1ef66ab97afe44b223f6e58bca49c8325bfd7bb7fc5ae2f19685a6dc67" name="aa18f9dc1ef66ab97afe44b223f6e58bca49c8325bfd7bb7fc5ae2f19685a6dc67"></a>JS_TAG_EXCEPTION&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="aa18f9dc1ef66ab97afe44b223f6e58bca16535e9be348444f9774bfb28cef8979" name="aa18f9dc1ef66ab97afe44b223f6e58bca16535e9be348444f9774bfb28cef8979"></a>JS_TAG_SHORT_BIG_INT&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="aa18f9dc1ef66ab97afe44b223f6e58bcac02ab3693d212f74c719df2f1db1d9e1" name="aa18f9dc1ef66ab97afe44b223f6e58bcac02ab3693d212f74c719df2f1db1d9e1"></a>JS_TAG_FLOAT64&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ad77cecc3bdfb3a651ca977502cb842a1ac54c9167023a80a6a4bb921c5b883fc6" name="ad77cecc3bdfb3a651ca977502cb842a1ac54c9167023a80a6a4bb921c5b883fc6"></a>JS_TAG_FIRST&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad77cecc3bdfb3a651ca977502cb842a1a1f414379ea0f71b22266c09be64d6459" name="ad77cecc3bdfb3a651ca977502cb842a1a1f414379ea0f71b22266c09be64d6459"></a>JS_TAG_BIG_INT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad77cecc3bdfb3a651ca977502cb842a1afd90af803b3d37429e0c5410bd6af849" name="ad77cecc3bdfb3a651ca977502cb842a1afd90af803b3d37429e0c5410bd6af849"></a>JS_TAG_SYMBOL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad77cecc3bdfb3a651ca977502cb842a1ae9056b9abb79e83b03543f2ef16ba514" name="ad77cecc3bdfb3a651ca977502cb842a1ae9056b9abb79e83b03543f2ef16ba514"></a>JS_TAG_STRING&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad77cecc3bdfb3a651ca977502cb842a1aae45dfd47c57359df6e1e6834f94821c" name="ad77cecc3bdfb3a651ca977502cb842a1aae45dfd47c57359df6e1e6834f94821c"></a>JS_TAG_STRING_ROPE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad77cecc3bdfb3a651ca977502cb842a1a6829c83e32fc093a377da9b946083147" name="ad77cecc3bdfb3a651ca977502cb842a1a6829c83e32fc093a377da9b946083147"></a>JS_TAG_MODULE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad77cecc3bdfb3a651ca977502cb842a1a1551fb7a361f23f02622c37f281a5893" name="ad77cecc3bdfb3a651ca977502cb842a1a1551fb7a361f23f02622c37f281a5893"></a>JS_TAG_FUNCTION_BYTECODE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad77cecc3bdfb3a651ca977502cb842a1ae26c3008bd840938b168408d0f9a497a" name="ad77cecc3bdfb3a651ca977502cb842a1ae26c3008bd840938b168408d0f9a497a"></a>JS_TAG_OBJECT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad77cecc3bdfb3a651ca977502cb842a1a6a64928b656d068fe0f263c8b10f685f" name="ad77cecc3bdfb3a651ca977502cb842a1a6a64928b656d068fe0f263c8b10f685f"></a>JS_TAG_INT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad77cecc3bdfb3a651ca977502cb842a1a85fb2dfb50ffd05e6bf4146b8fe5c032" name="ad77cecc3bdfb3a651ca977502cb842a1a85fb2dfb50ffd05e6bf4146b8fe5c032"></a>JS_TAG_BOOL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad77cecc3bdfb3a651ca977502cb842a1a7901cd6ab7bafa5f63e382f8849c73a9" name="ad77cecc3bdfb3a651ca977502cb842a1a7901cd6ab7bafa5f63e382f8849c73a9"></a>JS_TAG_NULL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad77cecc3bdfb3a651ca977502cb842a1ae30fdd34010dea1f659f79065b11c315" name="ad77cecc3bdfb3a651ca977502cb842a1ae30fdd34010dea1f659f79065b11c315"></a>JS_TAG_UNDEFINED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad77cecc3bdfb3a651ca977502cb842a1a713fd2a418d8c77f71aafca44eb83984" name="ad77cecc3bdfb3a651ca977502cb842a1a713fd2a418d8c77f71aafca44eb83984"></a>JS_TAG_UNINITIALIZED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad77cecc3bdfb3a651ca977502cb842a1a726f7639e9a24329e552266c4560eff1" name="ad77cecc3bdfb3a651ca977502cb842a1a726f7639e9a24329e552266c4560eff1"></a>JS_TAG_CATCH_OFFSET&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad77cecc3bdfb3a651ca977502cb842a1a49c8325bfd7bb7fc5ae2f19685a6dc67" name="ad77cecc3bdfb3a651ca977502cb842a1a49c8325bfd7bb7fc5ae2f19685a6dc67"></a>JS_TAG_EXCEPTION&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad77cecc3bdfb3a651ca977502cb842a1a16535e9be348444f9774bfb28cef8979" name="ad77cecc3bdfb3a651ca977502cb842a1a16535e9be348444f9774bfb28cef8979"></a>JS_TAG_SHORT_BIG_INT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad77cecc3bdfb3a651ca977502cb842a1ac02ab3693d212f74c719df2f1db1d9e1" name="ad77cecc3bdfb3a651ca977502cb842a1ac02ab3693d212f74c719df2f1db1d9e1"></a>JS_TAG_FLOAT64&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -3586,7 +3586,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structJSValue.html">JSValue</a> const char <a class="el" href="structJSValue.html">JSValue</a> const char <a class="el" href="structJSValue.html">JSValue</a> const char <a class="el" href="structJSValue.html">JSValue</a> const char <a class="el" href="structJSValue.html">JSValue</a> __js_printf_like </td>
+          <td class="memname"><a class="el" href="structJSValue.html">JSValue</a> <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char <a class="el" href="structJSValue.html">JSValue</a> <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char <a class="el" href="structJSValue.html">JSValue</a> <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char <a class="el" href="structJSValue.html">JSValue</a> <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char <a class="el" href="structJSValue.html">JSValue</a> __js_printf_like </td>
           <td>(</td>
           <td class="paramtype">2&#160;</td>
           <td class="paramname">, </td>
@@ -3844,7 +3844,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
           <td class="paramname"><em>name_str</em>&#160;</td>
         </tr>
         <tr>
@@ -3878,7 +3878,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structJSCFunctionListEntry.html">JSCFunctionListEntry</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="structJSCFunctionListEntry.html">JSCFunctionListEntry</a> *&#160;</td>
           <td class="paramname"><em>tab</em>, </td>
         </tr>
         <tr>
@@ -3904,7 +3904,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const char * JS_AtomToCStringLen </td>
+          <td class="memname"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char * JS_AtomToCStringLen </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structJSContext.html">JSContext</a> *&#160;</td>
           <td class="paramname"><em>ctx</em>, </td>
@@ -4324,7 +4324,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
           <td class="paramname"><em>prop</em>, </td>
         </tr>
         <tr>
@@ -4472,7 +4472,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="quickjs_8h.html#a6d73b897d1f464c9bc34d7031142203c">JS_BOOL</a> JS_DetectModule </td>
           <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
           <td class="paramname"><em>input</em>, </td>
         </tr>
         <tr>
@@ -4506,7 +4506,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structJSMemoryUsage.html">JSMemoryUsage</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="structJSMemoryUsage.html">JSMemoryUsage</a> *&#160;</td>
           <td class="paramname"><em>s</em>, </td>
         </tr>
         <tr>
@@ -4626,7 +4626,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
           <td class="paramname"><em>input</em>, </td>
         </tr>
         <tr>
@@ -4638,7 +4638,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
           <td class="paramname"><em>filename</em>, </td>
         </tr>
         <tr>
@@ -4706,7 +4706,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
           <td class="paramname"><em>input</em>, </td>
         </tr>
         <tr>
@@ -4718,7 +4718,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
           <td class="paramname"><em>filename</em>, </td>
         </tr>
         <tr>
@@ -4910,7 +4910,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
           <td class="paramname"><em>ptr</em>&#160;</td>
         </tr>
         <tr>
@@ -5464,7 +5464,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
           <td class="paramname"><em>prop</em>&#160;</td>
         </tr>
         <tr>
@@ -6068,13 +6068,13 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
           <td class="paramname"><em>basename</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
           <td class="paramname"><em>filename</em>&#160;</td>
         </tr>
         <tr>
@@ -6158,7 +6158,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const void *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> void *&#160;</td>
           <td class="paramname"><em>ptr</em>&#160;</td>
         </tr>
         <tr>
@@ -6186,7 +6186,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const void *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> void *&#160;</td>
           <td class="paramname"><em>ptr</em>&#160;</td>
         </tr>
         <tr>
@@ -6374,7 +6374,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
           <td class="paramname"><em>buf</em>, </td>
         </tr>
         <tr>
@@ -6408,7 +6408,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
           <td class="paramname"><em>str</em>&#160;</td>
         </tr>
         <tr>
@@ -6436,7 +6436,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
           <td class="paramname"><em>str</em>, </td>
         </tr>
         <tr>
@@ -6470,7 +6470,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
           <td class="paramname"><em>str</em>&#160;</td>
         </tr>
         <tr>
@@ -6588,7 +6588,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
           <td class="paramname"><em>name</em>, </td>
         </tr>
         <tr>
@@ -6692,7 +6692,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structJSClassDef.html">JSClassDef</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="structJSClassDef.html">JSClassDef</a> *&#160;</td>
           <td class="paramname"><em>class_def</em>&#160;</td>
         </tr>
         <tr>
@@ -6738,7 +6738,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
           <td class="paramname"><em>name_str</em>, </td>
         </tr>
         <tr>
@@ -7002,7 +7002,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="structJSRuntime.html">JSRuntime</a> * JS_NewRuntime2 </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structJSMallocFunctions.html">JSMallocFunctions</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="structJSMallocFunctions.html">JSMallocFunctions</a> *&#160;</td>
           <td class="paramname"><em>mf</em>, </td>
         </tr>
         <tr>
@@ -7036,7 +7036,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
           <td class="paramname"><em>str1</em>, </td>
         </tr>
         <tr>
@@ -7110,7 +7110,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
           <td class="paramname"><em>buf</em>, </td>
         </tr>
         <tr>
@@ -7122,7 +7122,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
           <td class="paramname"><em>filename</em>&#160;</td>
         </tr>
         <tr>
@@ -7150,7 +7150,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
           <td class="paramname"><em>buf</em>, </td>
         </tr>
         <tr>
@@ -7162,7 +7162,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
           <td class="paramname"><em>filename</em>, </td>
         </tr>
         <tr>
@@ -7242,7 +7242,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structJSPrintValueOptions.html">JSPrintValueOptions</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="structJSPrintValueOptions.html">JSPrintValueOptions</a> *&#160;</td>
           <td class="paramname"><em>options</em>&#160;</td>
         </tr>
         <tr>
@@ -7288,7 +7288,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structJSPrintValueOptions.html">JSPrintValueOptions</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="structJSPrintValueOptions.html">JSPrintValueOptions</a> *&#160;</td>
           <td class="paramname"><em>options</em>&#160;</td>
         </tr>
         <tr>
@@ -7390,7 +7390,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="acefiex_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
           <td class="paramname"><em>buf</em>, </td>
         </tr>
         <tr>
@@ -7996,7 +7996,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
           <td class="paramname"><em>export_name</em>, </td>
         </tr>
         <tr>
@@ -8036,7 +8036,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structJSCFunctionListEntry.html">JSCFunctionListEntry</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="structJSCFunctionListEntry.html">JSCFunctionListEntry</a> *&#160;</td>
           <td class="paramname"><em>tab</em>, </td>
         </tr>
         <tr>
@@ -8224,7 +8224,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structJSCFunctionListEntry.html">JSCFunctionListEntry</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="structJSCFunctionListEntry.html">JSCFunctionListEntry</a> *&#160;</td>
           <td class="paramname"><em>tab</em>, </td>
         </tr>
         <tr>
@@ -8356,7 +8356,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
           <td class="paramname"><em>prop</em>, </td>
         </tr>
         <tr>
@@ -8464,7 +8464,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
           <td class="paramname"><em>info</em>&#160;</td>
         </tr>
         <tr>
@@ -8520,7 +8520,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structJSSharedArrayBufferFunctions.html">JSSharedArrayBufferFunctions</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="structJSSharedArrayBufferFunctions.html">JSSharedArrayBufferFunctions</a> *&#160;</td>
           <td class="paramname"><em>sf</em>&#160;</td>
         </tr>
         <tr>
@@ -8604,7 +8604,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
           <td class="paramname"><em>str</em>&#160;</td>
         </tr>
         <tr>
@@ -8706,7 +8706,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
           <td class="paramname"><em>s</em>, </td>
         </tr>
         <tr>
@@ -8840,7 +8840,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const char * JS_ToCStringLen2 </td>
+          <td class="memname"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char * JS_ToCStringLen2 </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structJSContext.html">JSContext</a> *&#160;</td>
           <td class="paramname"><em>ctx</em>, </td>
@@ -9245,7 +9245,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structJSValue.html">JSValue</a> const char <a class="el" href="structJSValue.html">JSValue</a> const char <a class="el" href="structJSValue.html">JSValue</a> const char <a class="el" href="structJSValue.html">JSValue</a> const char <a class="el" href="structJSValue.html">JSValue</a> const char* fmt</td>
+          <td class="memname"><a class="el" href="structJSValue.html">JSValue</a> <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char <a class="el" href="structJSValue.html">JSValue</a> <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char <a class="el" href="structJSValue.html">JSValue</a> <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char <a class="el" href="structJSValue.html">JSValue</a> <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char <a class="el" href="structJSValue.html">JSValue</a> <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char* fmt</td>
         </tr>
       </table>
 </div><div class="memdoc">

@@ -103,7 +103,7 @@ Macros</h2></td></tr>
 <tr><td colspan="2"><div class="groupHeader">SECTION: MPS general error codes</div></td></tr>
 <tr class="memitem:a62751e5b76bf7089dcc0cf3ac24e19ab" id="r_a62751e5b76bf7089dcc0cf3ac24e19ab"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mps__error_8h.html#a62751e5b76bf7089dcc0cf3ac24e19ab">MBEDTLS_MPS_ERR_BASE</a>&#160;&#160;&#160;(0)</td></tr>
 <tr class="separator:a62751e5b76bf7089dcc0cf3ac24e19ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a933a704ecc177ef0fc5a9515aa525775" id="r_a933a704ecc177ef0fc5a9515aa525775"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mps__error_8h.html#a933a704ecc177ef0fc5a9515aa525775">MBEDTLS_MPS_MAKE_ERROR</a>(code)&#160;&#160;&#160;    (-(<a class="el" href="mps__error_8h.html#a62751e5b76bf7089dcc0cf3ac24e19ab">MBEDTLS_MPS_ERR_BASE</a> | (code)))</td></tr>
+<tr class="memitem:a933a704ecc177ef0fc5a9515aa525775" id="r_a933a704ecc177ef0fc5a9515aa525775"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mps__error_8h.html#a933a704ecc177ef0fc5a9515aa525775">MBEDTLS_MPS_MAKE_ERROR</a>(<a class="el" href="structcode.html">code</a>)&#160;&#160;&#160;    (-(<a class="el" href="mps__error_8h.html#a62751e5b76bf7089dcc0cf3ac24e19ab">MBEDTLS_MPS_ERR_BASE</a> | (<a class="el" href="structcode.html">code</a>)))</td></tr>
 <tr class="separator:a933a704ecc177ef0fc5a9515aa525775"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae02ab38df9d0c55e7f598bbf27ff4d86" id="r_ae02ab38df9d0c55e7f598bbf27ff4d86"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mps__error_8h.html#ae02ab38df9d0c55e7f598bbf27ff4d86">MBEDTLS_ERR_MPS_OPERATION_UNEXPECTED</a>&#160;&#160;&#160;<a class="el" href="mps__error_8h.html#a933a704ecc177ef0fc5a9515aa525775">MBEDTLS_MPS_MAKE_ERROR</a>(0x1)</td></tr>
 <tr class="separator:ae02ab38df9d0c55e7f598bbf27ff4d86"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -112,7 +112,7 @@ Macros</h2></td></tr>
 <tr><td colspan="2"><div class="groupHeader">SECTION: MPS Reader error codes</div></td></tr>
 <tr class="memitem:a06a1ce187709799138ba529686ef2ed1" id="r_a06a1ce187709799138ba529686ef2ed1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mps__error_8h.html#a06a1ce187709799138ba529686ef2ed1">MBEDTLS_MPS_READER_ERR_BASE</a>&#160;&#160;&#160;(1 &lt;&lt; 8)</td></tr>
 <tr class="separator:a06a1ce187709799138ba529686ef2ed1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae20f1bcc26e3c048c1d1fa7baba6c93b" id="r_ae20f1bcc26e3c048c1d1fa7baba6c93b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mps__error_8h.html#ae20f1bcc26e3c048c1d1fa7baba6c93b">MBEDTLS_MPS_READER_MAKE_ERROR</a>(code)&#160;&#160;&#160;    (-(<a class="el" href="mps__error_8h.html#a06a1ce187709799138ba529686ef2ed1">MBEDTLS_MPS_READER_ERR_BASE</a> | (code)))</td></tr>
+<tr class="memitem:ae20f1bcc26e3c048c1d1fa7baba6c93b" id="r_ae20f1bcc26e3c048c1d1fa7baba6c93b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mps__error_8h.html#ae20f1bcc26e3c048c1d1fa7baba6c93b">MBEDTLS_MPS_READER_MAKE_ERROR</a>(<a class="el" href="structcode.html">code</a>)&#160;&#160;&#160;    (-(<a class="el" href="mps__error_8h.html#a06a1ce187709799138ba529686ef2ed1">MBEDTLS_MPS_READER_ERR_BASE</a> | (<a class="el" href="structcode.html">code</a>)))</td></tr>
 <tr class="separator:ae20f1bcc26e3c048c1d1fa7baba6c93b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a356e93bfa525acb85bfb9b31fe0772dc" id="r_a356e93bfa525acb85bfb9b31fe0772dc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mps__error_8h.html#a356e93bfa525acb85bfb9b31fe0772dc">MBEDTLS_ERR_MPS_READER_DATA_LEFT</a>&#160;&#160;&#160;<a class="el" href="mps__error_8h.html#ae20f1bcc26e3c048c1d1fa7baba6c93b">MBEDTLS_MPS_READER_MAKE_ERROR</a>(0x1)</td></tr>
 <tr class="separator:a356e93bfa525acb85bfb9b31fe0772dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -288,8 +288,8 @@ Macros</h2></td></tr>
           <td class="memname">#define MBEDTLS_MPS_MAKE_ERROR</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">code</td><td>)</td>
-          <td>&#160;&#160;&#160;    (-(<a class="el" href="mps__error_8h.html#a62751e5b76bf7089dcc0cf3ac24e19ab">MBEDTLS_MPS_ERR_BASE</a> | (code)))</td>
+          <td class="paramname"><a class="el" href="structcode.html">code</a></td><td>)</td>
+          <td>&#160;&#160;&#160;    (-(<a class="el" href="mps__error_8h.html#a62751e5b76bf7089dcc0cf3ac24e19ab">MBEDTLS_MPS_ERR_BASE</a> | (<a class="el" href="structcode.html">code</a>)))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -320,8 +320,8 @@ Macros</h2></td></tr>
           <td class="memname">#define MBEDTLS_MPS_READER_MAKE_ERROR</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">code</td><td>)</td>
-          <td>&#160;&#160;&#160;    (-(<a class="el" href="mps__error_8h.html#a06a1ce187709799138ba529686ef2ed1">MBEDTLS_MPS_READER_ERR_BASE</a> | (code)))</td>
+          <td class="paramname"><a class="el" href="structcode.html">code</a></td><td>)</td>
+          <td>&#160;&#160;&#160;    (-(<a class="el" href="mps__error_8h.html#a06a1ce187709799138ba529686ef2ed1">MBEDTLS_MPS_READER_ERR_BASE</a> | (<a class="el" href="structcode.html">code</a>)))</td>
         </tr>
       </table>
 </div><div class="memdoc">

@@ -196,13 +196,13 @@ Macros</h2></td></tr>
 <tr class="separator:a3e7d47dbc034a9833d69e007b05603ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5584e136b7f577610769e411b101a75" id="r_aa5584e136b7f577610769e411b101a75"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="va__list_8h.html#aa5584e136b7f577610769e411b101a75">STACKITEM</a>&#160;&#160;&#160;int</td></tr>
 <tr class="separator:aa5584e136b7f577610769e411b101a75"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4327ea38f09755c5ad2ebe74a1948a19" id="r_a4327ea38f09755c5ad2ebe74a1948a19"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="va__list_8h.html#a4327ea38f09755c5ad2ebe74a1948a19">VA_SIZE</a>(TYPE)</td></tr>
+<tr class="memitem:a4327ea38f09755c5ad2ebe74a1948a19" id="r_a4327ea38f09755c5ad2ebe74a1948a19"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="va__list_8h.html#a4327ea38f09755c5ad2ebe74a1948a19">VA_SIZE</a>(<a class="el" href="inflate_8h.html#a164ea0159d5f0b5f12a646f25f99eceaab47ea8bb955afd0adc0ef98517dd6084">TYPE</a>)</td></tr>
 <tr class="separator:a4327ea38f09755c5ad2ebe74a1948a19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a41ae753ad859126fe15c0e4655f400" id="r_a4a41ae753ad859126fe15c0e4655f400"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="va__list_8h.html#a4a41ae753ad859126fe15c0e4655f400">va_start</a>(AP,  LASTARG)&#160;&#160;&#160;	(AP = ((<a class="el" href="va__list_8h.html#a5048e9418b0c08e777dc33f387c7e3cf">_va_list_</a>)&amp;(LASTARG)+<a class="el" href="BaseHdr_2stdarg_8h.html#a4327ea38f09755c5ad2ebe74a1948a19">VA_SIZE</a>(LASTARG)))</td></tr>
 <tr class="separator:a4a41ae753ad859126fe15c0e4655f400"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89e547abd2927b21e5398404e68e7f94" id="r_a89e547abd2927b21e5398404e68e7f94"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="va__list_8h.html#a89e547abd2927b21e5398404e68e7f94">va_end</a>(AP)</td></tr>
 <tr class="separator:a89e547abd2927b21e5398404e68e7f94"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73bff2bd79d774417fcd63f973202dd3" id="r_a73bff2bd79d774417fcd63f973202dd3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="va__list_8h.html#a73bff2bd79d774417fcd63f973202dd3">va_arg</a>(AP,  TYPE)&#160;&#160;&#160;	(AP += <a class="el" href="BaseHdr_2stdarg_8h.html#a4327ea38f09755c5ad2ebe74a1948a19">VA_SIZE</a>(TYPE), *((TYPE *)(AP - <a class="el" href="BaseHdr_2stdarg_8h.html#a4327ea38f09755c5ad2ebe74a1948a19">VA_SIZE</a>(TYPE))))</td></tr>
+<tr class="memitem:a73bff2bd79d774417fcd63f973202dd3" id="r_a73bff2bd79d774417fcd63f973202dd3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="va__list_8h.html#a73bff2bd79d774417fcd63f973202dd3">va_arg</a>(AP,  <a class="el" href="inflate_8h.html#a164ea0159d5f0b5f12a646f25f99eceaab47ea8bb955afd0adc0ef98517dd6084">TYPE</a>)&#160;&#160;&#160;	(AP += <a class="el" href="BaseHdr_2stdarg_8h.html#a4327ea38f09755c5ad2ebe74a1948a19">VA_SIZE</a>(<a class="el" href="inflate_8h.html#a164ea0159d5f0b5f12a646f25f99eceaab47ea8bb955afd0adc0ef98517dd6084">TYPE</a>), *((<a class="el" href="inflate_8h.html#a164ea0159d5f0b5f12a646f25f99eceaab47ea8bb955afd0adc0ef98517dd6084">TYPE</a> *)(AP - <a class="el" href="BaseHdr_2stdarg_8h.html#a4327ea38f09755c5ad2ebe74a1948a19">VA_SIZE</a>(<a class="el" href="inflate_8h.html#a164ea0159d5f0b5f12a646f25f99eceaab47ea8bb955afd0adc0ef98517dd6084">TYPE</a>))))</td></tr>
 <tr class="separator:a73bff2bd79d774417fcd63f973202dd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
@@ -265,12 +265,12 @@ Typedefs</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">TYPE&#160;</td>
+          <td class="paramname"><a class="el" href="inflate_8h.html#a164ea0159d5f0b5f12a646f25f99eceaab47ea8bb955afd0adc0ef98517dd6084">TYPE</a>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;	(AP += <a class="el" href="BaseHdr_2stdarg_8h.html#a4327ea38f09755c5ad2ebe74a1948a19">VA_SIZE</a>(TYPE), *((TYPE *)(AP - <a class="el" href="BaseHdr_2stdarg_8h.html#a4327ea38f09755c5ad2ebe74a1948a19">VA_SIZE</a>(TYPE))))</td>
+          <td></td><td>&#160;&#160;&#160;	(AP += <a class="el" href="BaseHdr_2stdarg_8h.html#a4327ea38f09755c5ad2ebe74a1948a19">VA_SIZE</a>(<a class="el" href="inflate_8h.html#a164ea0159d5f0b5f12a646f25f99eceaab47ea8bb955afd0adc0ef98517dd6084">TYPE</a>), *((<a class="el" href="inflate_8h.html#a164ea0159d5f0b5f12a646f25f99eceaab47ea8bb955afd0adc0ef98517dd6084">TYPE</a> *)(AP - <a class="el" href="BaseHdr_2stdarg_8h.html#a4327ea38f09755c5ad2ebe74a1948a19">VA_SIZE</a>(<a class="el" href="inflate_8h.html#a164ea0159d5f0b5f12a646f25f99eceaab47ea8bb955afd0adc0ef98517dd6084">TYPE</a>))))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -305,13 +305,14 @@ Typedefs</h2></td></tr>
           <td class="memname">#define VA_SIZE</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">TYPE</td><td>)</td>
+          <td class="paramname"><a class="el" href="inflate_8h.html#a164ea0159d5f0b5f12a646f25f99eceaab47ea8bb955afd0adc0ef98517dd6084">TYPE</a></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">    ((<span class="keyword">sizeof</span>(TYPE)+<span class="keyword">sizeof</span>(<a class="code hl_define" href="va__list_8h.html#aa5584e136b7f577610769e411b101a75">STACKITEM</a>)-1) \</div>
+<b>Value:</b><div class="fragment"><div class="line">    ((<span class="keyword">sizeof</span>(<a class="code hl_enumvalue" href="inflate_8h.html#a164ea0159d5f0b5f12a646f25f99eceaab47ea8bb955afd0adc0ef98517dd6084">TYPE</a>)+<span class="keyword">sizeof</span>(<a class="code hl_define" href="va__list_8h.html#aa5584e136b7f577610769e411b101a75">STACKITEM</a>)-1) \</div>
 <div class="line">    &amp; ~(<span class="keyword">sizeof</span>(<a class="code hl_define" href="va__list_8h.html#aa5584e136b7f577610769e411b101a75">STACKITEM</a>)-1))</div>
+<div class="ttc" id="ainflate_8h_html_a164ea0159d5f0b5f12a646f25f99eceaab47ea8bb955afd0adc0ef98517dd6084"><div class="ttname"><a href="inflate_8h.html#a164ea0159d5f0b5f12a646f25f99eceaab47ea8bb955afd0adc0ef98517dd6084">TYPE</a></div><div class="ttdeci">@ TYPE</div><div class="ttdef"><b>Definition</b> inflate.h:32</div></div>
 <div class="ttc" id="ava__list_8h_html_aa5584e136b7f577610769e411b101a75"><div class="ttname"><a href="va__list_8h.html#aa5584e136b7f577610769e411b101a75">STACKITEM</a></div><div class="ttdeci">#define STACKITEM</div><div class="ttdef"><b>Definition</b> va_list.h:54</div></div>
 </div><!-- fragment -->
 </div>

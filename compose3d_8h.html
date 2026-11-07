@@ -138,7 +138,7 @@ Functions</h2></td></tr>
 <tr class="memitem:ad0f41189994105945e806d4c5cec6eed" id="r_ad0f41189994105945e806d4c5cec6eed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compose3d_8h.html#ad0f41189994105945e806d4c5cec6eed">Deodhai3DInitialise</a> (<a class="el" href="chitralekha_8h.html#a2ab1b11981de5401546c85b8ba90a595">ChCanvas</a> *<a class="el" href="deomain_8cpp.html#a4c8d0bbb93dc6fd886c9b998a249a64a">canvas</a>)</td></tr>
 <tr class="memdesc:ad0f41189994105945e806d4c5cec6eed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deodhai3DInitialise &ndash; set up the 3D compositor. <a class="el" href="structCall.html">Call</a> once after the wallpaper is in the back surface and the screen blur is baked. Snapshots the flat wallpaper (used as the fallback panorama and to restore 2D mode). 3D mode starts disabled.  <br /></td></tr>
 <tr class="separator:ad0f41189994105945e806d4c5cec6eed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab36705d3925b464986386e101dcc8c7f" id="r_ab36705d3925b464986386e101dcc8c7f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compose3d_8h.html#ab36705d3925b464986386e101dcc8c7f">Deodhai3DLoadPanorama</a> (const char *<a class="el" href="structpath.html">path</a>)</td></tr>
+<tr class="memitem:ab36705d3925b464986386e101dcc8c7f" id="r_ab36705d3925b464986386e101dcc8c7f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compose3d_8h.html#ab36705d3925b464986386e101dcc8c7f">Deodhai3DLoadPanorama</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *<a class="el" href="structpath.html">path</a>)</td></tr>
 <tr class="memdesc:ab36705d3925b464986386e101dcc8c7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deodhai3DLoadPanorama &ndash; load a 360 degree cylindrical panorama (JPEG). Without one, the flat wallpaper is wrapped with mirror repeat.  <br /></td></tr>
 <tr class="separator:ab36705d3925b464986386e101dcc8c7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ed1f8e373169b0abf512f68cd38b21c" id="r_a7ed1f8e373169b0abf512f68cd38b21c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compose3d_8h.html#a7ed1f8e373169b0abf512f68cd38b21c">Deodhai3DSetEnabled</a> (<a class="el" href="BaseHdr_2stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> enable)</td></tr>
@@ -177,6 +177,18 @@ Functions</h2></td></tr>
 <tr class="memitem:a58dd26b4df11bfc73c96284edfd55483" id="r_a58dd26b4df11bfc73c96284edfd55483"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compose3d_8h.html#a58dd26b4df11bfc73c96284edfd55483">Deodhai3DWindowBringToFront</a> (<a class="el" href="Process_2Deodhai_2window_8h.html#a8992679d9f1b8c5d1cd6a3f8979e0573">Window</a> *<a class="el" href="namdapha_8cpp.html#a60284ea0d2e293995badb97f5cf80c2d">win</a>)</td></tr>
 <tr class="memdesc:a58dd26b4df11bfc73c96284edfd55483"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deodhai3DWindowBringToFront &ndash; eases a window in front of every other window.  <br /></td></tr>
 <tr class="separator:a58dd26b4df11bfc73c96284edfd55483"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbd3973a5c0a49dc6dce3a14da8c1d67" id="r_adbd3973a5c0a49dc6dce3a14da8c1d67"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compose3d_8h.html#adbd3973a5c0a49dc6dce3a14da8c1d67">Deodhai3DWindowTear</a> (<a class="el" href="Process_2Deodhai_2window_8h.html#a8992679d9f1b8c5d1cd6a3f8979e0573">Window</a> *<a class="el" href="namdapha_8cpp.html#a60284ea0d2e293995badb97f5cf80c2d">win</a>, float ax, float ay, float tx, float ty)</td></tr>
+<tr class="memdesc:adbd3973a5c0a49dc6dce3a14da8c1d67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deodhai3DWindowTear &ndash; tear a window open programmatically from (ax, ay) to (tx, ty), window texels.  <br /></td></tr>
+<tr class="separator:adbd3973a5c0a49dc6dce3a14da8c1d67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada9dc3c80254f3d98e6c7431abf345ef" id="r_ada9dc3c80254f3d98e6c7431abf345ef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compose3d_8h.html#ada9dc3c80254f3d98e6c7431abf345ef">Deodhai3DWindowMend</a> (<a class="el" href="Process_2Deodhai_2window_8h.html#a8992679d9f1b8c5d1cd6a3f8979e0573">Window</a> *<a class="el" href="namdapha_8cpp.html#a60284ea0d2e293995badb97f5cf80c2d">win</a>)</td></tr>
+<tr class="memdesc:ada9dc3c80254f3d98e6c7431abf345ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deodhai3DWindowMend &ndash; heal a window's tear (animated); input returns once it has closed.  <br /></td></tr>
+<tr class="separator:ada9dc3c80254f3d98e6c7431abf345ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71fefe747158b36b72ed42bdf4191165" id="r_a71fefe747158b36b72ed42bdf4191165"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compose3d_8h.html#a71fefe747158b36b72ed42bdf4191165">Deodhai3DWindowInputBlocked</a> (<a class="el" href="Process_2Deodhai_2window_8h.html#a8992679d9f1b8c5d1cd6a3f8979e0573">Window</a> *<a class="el" href="namdapha_8cpp.html#a60284ea0d2e293995badb97f5cf80c2d">win</a>)</td></tr>
+<tr class="memdesc:a71fefe747158b36b72ed42bdf4191165"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deodhai3DWindowInputBlocked &ndash; true while a window (or the window a popup rides on) is torn. DeodhaiBroadcastKey consults this.  <br /></td></tr>
+<tr class="separator:a71fefe747158b36b72ed42bdf4191165"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a372d1b96377e1b8a4783266e570c8359" id="r_a372d1b96377e1b8a4783266e570c8359"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compose3d_8h.html#a372d1b96377e1b8a4783266e570c8359">Deodhai3DWindowTearBounds</a> (<a class="el" href="Process_2Deodhai_2window_8h.html#a8992679d9f1b8c5d1cd6a3f8979e0573">Window</a> *<a class="el" href="namdapha_8cpp.html#a60284ea0d2e293995badb97f5cf80c2d">win</a>, <a class="el" href="deodhai_8h.html#a7dc0eb31ede21fdfec7eeb78fbc2fcf1">Rect</a> *bounds)</td></tr>
+<tr class="memdesc:a372d1b96377e1b8a4783266e570c8359"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deodhai3DWindowTearBounds &ndash; screen bounds of a window's tear as of the last composed frame.  <br /></td></tr>
+<tr class="separator:a372d1b96377e1b8a4783266e570c8359"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7aa1c05c1d7f84584d0ad401910dc29c" id="r_a7aa1c05c1d7f84584d0ad401910dc29c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="BaseHdr_2stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compose3d_8h.html#a7aa1c05c1d7f84584d0ad401910dc29c">Deodhai3DHandleKey</a> (int key, <a class="el" href="BaseHdr_2stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> ctrl)</td></tr>
 <tr class="memdesc:a7aa1c05c1d7f84584d0ad401910dc29c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deodhai3DHandleKey &ndash; 3D keyboard shortcuts, all with Ctrl held: Ctrl+3 toggle 3D compositing Ctrl+- push the focused window back Ctrl+= pull it closer Ctrl+[ send it behind every window Ctrl+] bring it to the front.  <br /></td></tr>
 <tr class="separator:a7aa1c05c1d7f84584d0ad401910dc29c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -460,7 +472,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="BaseHdr_2stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> Deodhai3DLoadPanorama </td>
           <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
           <td class="paramname"><em>path</em></td><td>)</td>
           <td></td>
         </tr>
@@ -722,6 +734,64 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a71fefe747158b36b72ed42bdf4191165" name="a71fefe747158b36b72ed42bdf4191165"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71fefe747158b36b72ed42bdf4191165">&#9670;&#160;</a></span>Deodhai3DWindowInputBlocked()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="BaseHdr_2stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> Deodhai3DWindowInputBlocked </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="Process_2Deodhai_2window_8h.html#a8992679d9f1b8c5d1cd6a3f8979e0573">Window</a> *&#160;</td>
+          <td class="paramname"><em>win</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Deodhai3DWindowInputBlocked &ndash; true while a window (or the window a popup rides on) is torn. DeodhaiBroadcastKey consults this. </p>
+<p>Deodhai3DWindowInputBlocked &ndash; true while a window (or the window a popup rides on) is torn. DeodhaiBroadcastKey consults this. </p>
+
+</div>
+</div>
+<a id="ada9dc3c80254f3d98e6c7431abf345ef" name="ada9dc3c80254f3d98e6c7431abf345ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada9dc3c80254f3d98e6c7431abf345ef">&#9670;&#160;</a></span>Deodhai3DWindowMend()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="BaseHdr_2stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> Deodhai3DWindowMend </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="Process_2Deodhai_2window_8h.html#a8992679d9f1b8c5d1cd6a3f8979e0573">Window</a> *&#160;</td>
+          <td class="paramname"><em>win</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Deodhai3DWindowMend &ndash; heal a window's tear (animated); input returns once it has closed. </p>
+<p>Deodhai3DWindowMend &ndash; heal a window's tear (animated); input returns once it has closed. </p>
+
+</div>
+</div>
 <a id="a82cc55a3c75b3515e8aac9eea364c7c1" name="a82cc55a3c75b3515e8aac9eea364c7c1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a82cc55a3c75b3515e8aac9eea364c7c1">&#9670;&#160;</a></span>Deodhai3DWindowPushDepth()</h2>
 
@@ -853,6 +923,102 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>false if the window is unknown or the slot table is full</dd></dl>
 <p>Deodhai3DWindowSetPosition &ndash; translate a window in 3D space. The window turns to face the camera. </p>
+
+</div>
+</div>
+<a id="adbd3973a5c0a49dc6dce3a14da8c1d67" name="adbd3973a5c0a49dc6dce3a14da8c1d67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbd3973a5c0a49dc6dce3a14da8c1d67">&#9670;&#160;</a></span>Deodhai3DWindowTear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="BaseHdr_2stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> Deodhai3DWindowTear </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="Process_2Deodhai_2window_8h.html#a8992679d9f1b8c5d1cd6a3f8979e0573">Window</a> *&#160;</td>
+          <td class="paramname"><em>win</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>ax</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>ay</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>tx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>ty</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Deodhai3DWindowTear &ndash; tear a window open programmatically from (ax, ay) to (tx, ty), window texels. </p>
+<p>Tearing. Shake the cursor over a window (4 quick back-and-forth moves, button up): a small slit appears there. Press near it within 1.5 s and pull: the window tears open from that point to the cursor, following it in 3D on the window's plane. The opening shows whatever is behind (wallpaper or other windows), edges are ragged with a paper-fibre rim and a soft shadow, and the window's own pixels beside the crack are pushed apart. While torn the application receives no mouse or keyboard input (the page can still be moved by its titlebar). Shake over it again to mend it. Purely compositor side: the client buffer is never touched.</p>
+<p>Deodhai3DWindowTear &ndash; tear a window open programmatically from (ax, ay) to (tx, ty), window texels. </p>
+
+</div>
+</div>
+<a id="a372d1b96377e1b8a4783266e570c8359" name="a372d1b96377e1b8a4783266e570c8359"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a372d1b96377e1b8a4783266e570c8359">&#9670;&#160;</a></span>Deodhai3DWindowTearBounds()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="BaseHdr_2stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> Deodhai3DWindowTearBounds </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="Process_2Deodhai_2window_8h.html#a8992679d9f1b8c5d1cd6a3f8979e0573">Window</a> *&#160;</td>
+          <td class="paramname"><em>win</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="deodhai_8h.html#a7dc0eb31ede21fdfec7eeb78fbc2fcf1">Rect</a> *&#160;</td>
+          <td class="paramname"><em>bounds</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Deodhai3DWindowTearBounds &ndash; screen bounds of a window's tear as of the last composed frame. </p>
 
 </div>
 </div>
