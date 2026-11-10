@@ -1,0 +1,5 @@
+var struct__EFI__DRIVER__SUPPORTED__EFI__VERSION__PROTOCOL =
+[
+    [ "FirmwareVersion", "struct__EFI__DRIVER__SUPPORTED__EFI__VERSION__PROTOCOL.html#ad2f565ee13965053f890646308dc2250", null ],
+    [ "Length", "struct__EFI__DRIVER__SUPPORTED__EFI__VERSION__PROTOCOL.html#ac03e76f0897c900ee084d347030a5885", null ]
+];

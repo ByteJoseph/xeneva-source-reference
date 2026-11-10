@@ -1,0 +1,25 @@
+var structPTP__CRB__REGISTERS =
+[
+    [ "CrbControlCancel", "structPTP__CRB__REGISTERS.html#aaff4e1f397fbee8a236bc96780310e48", null ],
+    [ "CrbControlCommandAddressHigh", "structPTP__CRB__REGISTERS.html#a5a9416d5b7a3fc44b5433eec13e683a1", null ],
+    [ "CrbControlCommandAddressLow", "structPTP__CRB__REGISTERS.html#a2f2baf0210648aff64a2b52a3308626d", null ],
+    [ "CrbControlCommandSize", "structPTP__CRB__REGISTERS.html#a9b2260d9346ce4a5052a432e4ea02471", null ],
+    [ "CrbControlExtension", "structPTP__CRB__REGISTERS.html#a450ff9a78a7dca28c7f71e5a5ef82bb4", null ],
+    [ "CrbControlRequest", "structPTP__CRB__REGISTERS.html#a56d11ba45ee00941af0872ce0d44553b", null ],
+    [ "CrbControlResponseAddrss", "structPTP__CRB__REGISTERS.html#a38be74e3f3cc9ca64279ba59192f38b1", null ],
+    [ "CrbControlResponseSize", "structPTP__CRB__REGISTERS.html#af734086547f5106d1105cdc1ac079c61", null ],
+    [ "CrbControlStart", "structPTP__CRB__REGISTERS.html#a2a12a61e000453c13f831ae79e5396fc", null ],
+    [ "CrbControlStatus", "structPTP__CRB__REGISTERS.html#a413abf0e2c080fa910b015e02f210035", null ],
+    [ "CrbDataBuffer", "structPTP__CRB__REGISTERS.html#a11c993ea071e7582b3641317753c2acb", null ],
+    [ "CrbInterruptEnable", "structPTP__CRB__REGISTERS.html#aec5c501bc3e06840e1e2bff3d31467dc", null ],
+    [ "CrbInterruptStatus", "structPTP__CRB__REGISTERS.html#aa9f3431cc83867dd8db4251acda2b83e", null ],
+    [ "Did", "structPTP__CRB__REGISTERS.html#a5872118e736e360d743403a7c73f6c7e", null ],
+    [ "InterfaceId", "structPTP__CRB__REGISTERS.html#a8ec3d9346ebb882671609f8e7a3a247b", null ],
+    [ "LocalityControl", "structPTP__CRB__REGISTERS.html#af772a572997043a95e9b375d1cd39ae4", null ],
+    [ "LocalityState", "structPTP__CRB__REGISTERS.html#ab70031d0a5dab3edeed4ef1d66ed0865", null ],
+    [ "LocalityStatus", "structPTP__CRB__REGISTERS.html#a6f251806b56c9e341e9ef4dbedab331d", null ],
+    [ "Reserved1", "structPTP__CRB__REGISTERS.html#a76164a44f2bc3fbf035fc0c1c7d93242", null ],
+    [ "Reserved2", "structPTP__CRB__REGISTERS.html#ade41d0e0e4727c85ec138537c4c25a6d", null ],
+    [ "Reserved4", "structPTP__CRB__REGISTERS.html#ae4029643525309d0fc688bfdea566cb2", null ],
+    [ "Vid", "structPTP__CRB__REGISTERS.html#a6cea464c3361011506039b9a32ed190f", null ]
+];

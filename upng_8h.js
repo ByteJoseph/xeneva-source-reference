@@ -1,0 +1,45 @@
+var upng_8h =
+[
+    [ "upng_error", "upng_8h.html#aa2b3dadd4525f4353e4f6470b75c302d", null ],
+    [ "upng_format", "upng_8h.html#a98cd6415e003e39da3bb93daba0ba703", null ],
+    [ "upng_t", "upng_8h.html#a7d5947db66fb2d8d21013dad3602bc64", null ],
+    [ "upng_error", "upng_8h.html#aa6d9a5c5f9373377449a4403e4176ac1", [
+      [ "UPNG_EOK", "upng_8h.html#aa6d9a5c5f9373377449a4403e4176ac1a8b512ea966f53d904dc389ad7975a989", null ],
+      [ "UPNG_ENOMEM", "upng_8h.html#aa6d9a5c5f9373377449a4403e4176ac1a982f3f16ee850307695c85562abc8b57", null ],
+      [ "UPNG_ENOTFOUND", "upng_8h.html#aa6d9a5c5f9373377449a4403e4176ac1adfabfe96f0401a8bd0d5f409772aba72", null ],
+      [ "UPNG_ENOTPNG", "upng_8h.html#aa6d9a5c5f9373377449a4403e4176ac1a4d54219a34dacac1f1f076c48ffbb11e", null ],
+      [ "UPNG_EMALFORMED", "upng_8h.html#aa6d9a5c5f9373377449a4403e4176ac1aec5945758bb2f083d96033282c42018f", null ],
+      [ "UPNG_EUNSUPPORTED", "upng_8h.html#aa6d9a5c5f9373377449a4403e4176ac1a3552d1f8fe627212d7f8b6cb92158625", null ],
+      [ "UPNG_EUNINTERLACED", "upng_8h.html#aa6d9a5c5f9373377449a4403e4176ac1ac76f45a24e9cb3adf27f3c3f10da691e", null ],
+      [ "UPNG_EUNFORMAT", "upng_8h.html#aa6d9a5c5f9373377449a4403e4176ac1a3cd422fb30f7435f50788b98d27baef4", null ],
+      [ "UPNG_EPARAM", "upng_8h.html#aa6d9a5c5f9373377449a4403e4176ac1a28b7dfe74f35e1c7ddd1289416cb82be", null ]
+    ] ],
+    [ "upng_format", "upng_8h.html#ad40c6411bd7fd8c5be8b867222690d13", [
+      [ "UPNG_BADFORMAT", "upng_8h.html#ad40c6411bd7fd8c5be8b867222690d13acc764999f1c570ee9b19fbf9f6704fb7", null ],
+      [ "UPNG_RGB8", "upng_8h.html#ad40c6411bd7fd8c5be8b867222690d13ad1ed557b6684cf8988201044e523e283", null ],
+      [ "UPNG_RGBA8", "upng_8h.html#ad40c6411bd7fd8c5be8b867222690d13a9003ab629bb39473eb198eb9209b4eb4", null ],
+      [ "UPNG_LUMINANCE1", "upng_8h.html#ad40c6411bd7fd8c5be8b867222690d13a2375a10dedb1383578301dfbb3d4bae4", null ],
+      [ "UPNG_LUMINANCE2", "upng_8h.html#ad40c6411bd7fd8c5be8b867222690d13aa7e6bf1eb8229007ea556bf62a5af499", null ],
+      [ "UPNG_LUMINANCE4", "upng_8h.html#ad40c6411bd7fd8c5be8b867222690d13a8cc6299b4ce864821670f0a5f008f6c5", null ],
+      [ "UPNG_LUMINANCE8", "upng_8h.html#ad40c6411bd7fd8c5be8b867222690d13a65dbc7b3ca03a55a6060e20805a93214", null ],
+      [ "UPNG_LUMINANCE_ALPHA1", "upng_8h.html#ad40c6411bd7fd8c5be8b867222690d13a9f276a6cc85a453c6d32612359420b1d", null ],
+      [ "UPNG_LUMINANCE_ALPHA2", "upng_8h.html#ad40c6411bd7fd8c5be8b867222690d13a82bbfbf4e31d04c671a5b07eab3bb462", null ],
+      [ "UPNG_LUMINANCE_ALPHA4", "upng_8h.html#ad40c6411bd7fd8c5be8b867222690d13a4a73b88a3656d21e4f5d2bb7a53d3ae4", null ],
+      [ "UPNG_LUMINANCE_ALPHA8", "upng_8h.html#ad40c6411bd7fd8c5be8b867222690d13a9f48a16f2e2786a8b178629948fa2742", null ]
+    ] ],
+    [ "upng_decode", "upng_8h.html#a9e1fabd99092960231ba185842dd0e79", null ],
+    [ "upng_free", "upng_8h.html#a25ff72f9e4b80d6f7a2f45f242183efc", null ],
+    [ "upng_get_bitdepth", "upng_8h.html#a4292888454f2a505bea07ddda1b562fa", null ],
+    [ "upng_get_bpp", "upng_8h.html#afb68d887b2eaa1e0c8445a0d0f891753", null ],
+    [ "upng_get_buffer", "upng_8h.html#aa3aea77f0ddb60f009ea83573ffd17d0", null ],
+    [ "upng_get_components", "upng_8h.html#a8350014aaa9f48a670aaf48db354f5e4", null ],
+    [ "upng_get_error", "upng_8h.html#a11d5bb2baec2eceea69349d760efe296", null ],
+    [ "upng_get_error_line", "upng_8h.html#ac066be2594e3a6167c571572386889eb", null ],
+    [ "upng_get_format", "upng_8h.html#a275e9c36da36fd0ea64be2a654d9eac1", null ],
+    [ "upng_get_height", "upng_8h.html#a267466773f8fac3934854917912ded9c", null ],
+    [ "upng_get_pixelsize", "upng_8h.html#a7cac8204214058d2e8cf415cb3960e2d", null ],
+    [ "upng_get_size", "upng_8h.html#a55e3c51fa80b60477163540424a9e12f", null ],
+    [ "upng_get_width", "upng_8h.html#ad502095f41c6eb31818281abb8177d1f", null ],
+    [ "upng_header", "upng_8h.html#acd82f163cbd977ce05dee38167970c3a", null ],
+    [ "upng_new_from_bytes", "upng_8h.html#a89e77ee791e3024e09d7ba710d3987e2", null ]
+];

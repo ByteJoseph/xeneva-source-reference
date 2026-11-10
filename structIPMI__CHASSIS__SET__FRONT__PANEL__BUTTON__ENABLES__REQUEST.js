@@ -1,0 +1,4 @@
+var structIPMI__CHASSIS__SET__FRONT__PANEL__BUTTON__ENABLES__REQUEST =
+[
+    [ "FrontPanelButtonEnables", "structIPMI__CHASSIS__SET__FRONT__PANEL__BUTTON__ENABLES__REQUEST.html#a51ea96a80528c0799ac9c7c74868ca1c", null ]
+];

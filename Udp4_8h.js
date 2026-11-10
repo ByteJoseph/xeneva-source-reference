@@ -1,0 +1,25 @@
+var Udp4_8h =
+[
+    [ "EFI_UDP4_SERVICE_POINT", "structEFI__UDP4__SERVICE__POINT.html", "structEFI__UDP4__SERVICE__POINT" ],
+    [ "EFI_UDP4_VARIABLE_DATA", "structEFI__UDP4__VARIABLE__DATA.html", "structEFI__UDP4__VARIABLE__DATA" ],
+    [ "EFI_UDP4_FRAGMENT_DATA", "structEFI__UDP4__FRAGMENT__DATA.html", "structEFI__UDP4__FRAGMENT__DATA" ],
+    [ "EFI_UDP4_SESSION_DATA", "structEFI__UDP4__SESSION__DATA.html", "structEFI__UDP4__SESSION__DATA" ],
+    [ "EFI_UDP4_CONFIG_DATA", "structEFI__UDP4__CONFIG__DATA.html", "structEFI__UDP4__CONFIG__DATA" ],
+    [ "EFI_UDP4_TRANSMIT_DATA", "structEFI__UDP4__TRANSMIT__DATA.html", "structEFI__UDP4__TRANSMIT__DATA" ],
+    [ "EFI_UDP4_RECEIVE_DATA", "structEFI__UDP4__RECEIVE__DATA.html", "structEFI__UDP4__RECEIVE__DATA" ],
+    [ "EFI_UDP4_COMPLETION_TOKEN", "structEFI__UDP4__COMPLETION__TOKEN.html", "structEFI__UDP4__COMPLETION__TOKEN" ],
+    [ "_EFI_UDP4_PROTOCOL", "struct__EFI__UDP4__PROTOCOL.html", "struct__EFI__UDP4__PROTOCOL" ],
+    [ "EFI_UDP4_PROTOCOL_GUID", "Udp4_8h.html#ae87fccce95102fb2633f35ad8e4ed7e0", null ],
+    [ "EFI_UDP4_SERVICE_BINDING_PROTOCOL_GUID", "Udp4_8h.html#aa7d33ce5018503d082b6dc189f5993e2", null ],
+    [ "EFI_UDP4_CANCEL", "Udp4_8h.html#a01227d8f6d94053683483f49c0468c91", null ],
+    [ "EFI_UDP4_CONFIGURE", "Udp4_8h.html#a684ed481457c19fd88dd216da1caadb9", null ],
+    [ "EFI_UDP4_GET_MODE_DATA", "Udp4_8h.html#ace5a924a981dbb01626b3769165f4773", null ],
+    [ "EFI_UDP4_GROUPS", "Udp4_8h.html#af34d2c89db17da3b28b4f669dec6c9af", null ],
+    [ "EFI_UDP4_POLL", "Udp4_8h.html#a1bf715ad390a0d212b7e84f363305c1d", null ],
+    [ "EFI_UDP4_PROTOCOL", "Udp4_8h.html#a52df569577fe405526dcf8e44c188545", null ],
+    [ "EFI_UDP4_RECEIVE", "Udp4_8h.html#af4b1f5810db9736b77252d402e58defe", null ],
+    [ "EFI_UDP4_ROUTES", "Udp4_8h.html#aaa40698f82d121360f58df3318d2ef75", null ],
+    [ "EFI_UDP4_TRANSMIT", "Udp4_8h.html#a684e5616bcdf2c371d13265ac8564fbf", null ],
+    [ "gEfiUdp4ProtocolGuid", "Udp4_8h.html#a56d81ec7ff52e81871df768c0befbd04", null ],
+    [ "gEfiUdp4ServiceBindingProtocolGuid", "Udp4_8h.html#a53d41251590be79808d9ff1142fbbded", null ]
+];

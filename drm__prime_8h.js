@@ -1,0 +1,26 @@
+var drm__prime_8h =
+[
+    [ "drm_prime_file_private", "structdrm__prime__file__private.html", "structdrm__prime__file__private" ],
+    [ "drm_gem_dmabuf_export", "drm__prime_8h.html#a4cd5e62260b3f182e9e42b6d65d05ba6", null ],
+    [ "drm_gem_dmabuf_mmap", "drm__prime_8h.html#a5514475871a62aa5dfb7ccaac8b728e6", null ],
+    [ "drm_gem_dmabuf_release", "drm__prime_8h.html#aab9a85464311149f3876890fb4c55794", null ],
+    [ "drm_gem_dmabuf_vmap", "drm__prime_8h.html#af2f93d265924b40706a3b41afb4a109f", null ],
+    [ "drm_gem_dmabuf_vunmap", "drm__prime_8h.html#a4534319892888a357c26ae4dc8f265de", null ],
+    [ "drm_gem_is_prime_exported_dma_buf", "drm__prime_8h.html#a5b9fc3f4f1c7714b35426fc2da015d59", null ],
+    [ "drm_gem_map_attach", "drm__prime_8h.html#ac19355a5299c128a0fd12c25c7fc529a", null ],
+    [ "drm_gem_map_detach", "drm__prime_8h.html#a42ea54917ced5fd91cba9500bbf3edde", null ],
+    [ "drm_gem_map_dma_buf", "drm__prime_8h.html#aeddab5d5626181b9c89b99f6c977ae57", null ],
+    [ "drm_gem_prime_export", "drm__prime_8h.html#ab2cf86d713f98369dbc9611eaff2fdc3", null ],
+    [ "drm_gem_prime_fd_to_handle", "drm__prime_8h.html#ae1b298faa0aaabb6aafcd874f1c9a50a", null ],
+    [ "drm_gem_prime_handle_to_dmabuf", "drm__prime_8h.html#a73a60bd2a4a6b16574d81ca1765ba6d3", null ],
+    [ "drm_gem_prime_handle_to_fd", "drm__prime_8h.html#a145d96e73fe5f7f1a5d6efdeb0ff3c12", null ],
+    [ "drm_gem_prime_import", "drm__prime_8h.html#ad0fcd6363338c903ea2388f497117d3e", null ],
+    [ "drm_gem_prime_import_dev", "drm__prime_8h.html#a202212dc80ec801471ebf1b7e7db6fa0", null ],
+    [ "drm_gem_prime_mmap", "drm__prime_8h.html#a104057675da8a476b308d6285d213971", null ],
+    [ "drm_gem_unmap_dma_buf", "drm__prime_8h.html#a418e2ee56d2b95561be49a8022016c4c", null ],
+    [ "drm_prime_gem_destroy", "drm__prime_8h.html#a1f3b0e549ef1a80b96336bfa692b44a5", null ],
+    [ "drm_prime_get_contiguous_size", "drm__prime_8h.html#ae155e810688296ff37ffaf5555202362", null ],
+    [ "drm_prime_pages_to_sg", "drm__prime_8h.html#a8735927505ca726b352b3d0b3c115756", null ],
+    [ "drm_prime_sg_to_dma_addr_array", "drm__prime_8h.html#aa6217906ca4da83a95199c7a5e6adce9", null ],
+    [ "drm_prime_sg_to_page_array", "drm__prime_8h.html#a3fc9a38214b97c368d4267fd58b543b9", null ]
+];

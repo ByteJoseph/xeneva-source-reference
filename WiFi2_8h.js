@@ -1,0 +1,37 @@
+var WiFi2_8h =
+[
+    [ "EFI_80211_MAC_ADDRESS", "structEFI__80211__MAC__ADDRESS.html", "structEFI__80211__MAC__ADDRESS" ],
+    [ "EFI_80211_SSID", "structEFI__80211__SSID.html", "structEFI__80211__SSID" ],
+    [ "EFI_80211_GET_NETWORKS_DATA", "structEFI__80211__GET__NETWORKS__DATA.html", "structEFI__80211__GET__NETWORKS__DATA" ],
+    [ "EFI_80211_SUITE_SELECTOR", "structEFI__80211__SUITE__SELECTOR.html", "structEFI__80211__SUITE__SELECTOR" ],
+    [ "EFI_80211_AKM_SUITE_SELECTOR", "structEFI__80211__AKM__SUITE__SELECTOR.html", "structEFI__80211__AKM__SUITE__SELECTOR" ],
+    [ "EFI_80211_CIPHER_SUITE_SELECTOR", "structEFI__80211__CIPHER__SUITE__SELECTOR.html", "structEFI__80211__CIPHER__SUITE__SELECTOR" ],
+    [ "EFI_80211_NETWORK", "structEFI__80211__NETWORK.html", "structEFI__80211__NETWORK" ],
+    [ "EFI_80211_NETWORK_DESCRIPTION", "structEFI__80211__NETWORK__DESCRIPTION.html", "structEFI__80211__NETWORK__DESCRIPTION" ],
+    [ "EFI_80211_GET_NETWORKS_RESULT", "structEFI__80211__GET__NETWORKS__RESULT.html", "structEFI__80211__GET__NETWORKS__RESULT" ],
+    [ "EFI_80211_GET_NETWORKS_TOKEN", "structEFI__80211__GET__NETWORKS__TOKEN.html", "structEFI__80211__GET__NETWORKS__TOKEN" ],
+    [ "EFI_80211_CONNECT_NETWORK_DATA", "structEFI__80211__CONNECT__NETWORK__DATA.html", "structEFI__80211__CONNECT__NETWORK__DATA" ],
+    [ "EFI_80211_CONNECT_NETWORK_TOKEN", "structEFI__80211__CONNECT__NETWORK__TOKEN.html", "structEFI__80211__CONNECT__NETWORK__TOKEN" ],
+    [ "EFI_80211_DISCONNECT_NETWORK_TOKEN", "structEFI__80211__DISCONNECT__NETWORK__TOKEN.html", "structEFI__80211__DISCONNECT__NETWORK__TOKEN" ],
+    [ "_EFI_WIRELESS_MAC_CONNECTION_II_PROTOCOL", "struct__EFI__WIRELESS__MAC__CONNECTION__II__PROTOCOL.html", "struct__EFI__WIRELESS__MAC__CONNECTION__II__PROTOCOL" ],
+    [ "EFI_MAX_SSID_LEN", "WiFi2_8h.html#abe4ba6539191175374506f1bfcdc9655", null ],
+    [ "EFI_WIRELESS_MAC_CONNECTION_II_PROTOCOL_GUID", "WiFi2_8h.html#a7d2a73b5ea87beccdd5fd835f3653439", null ],
+    [ "EFI_WIRELESS_MAC_CONNECTION_II_CONNECT_NETWORK", "WiFi2_8h.html#a7ecb10c71d91db43786c733566d4bbcd", null ],
+    [ "EFI_WIRELESS_MAC_CONNECTION_II_DISCONNECT_NETWORK", "WiFi2_8h.html#a6351884e660e937d9a4020c510f026d6", null ],
+    [ "EFI_WIRELESS_MAC_CONNECTION_II_GET_NETWORKS", "WiFi2_8h.html#ad849cf4c5f437af43b38bb20f67b4b7c", null ],
+    [ "EFI_WIRELESS_MAC_CONNECTION_II_PROTOCOL", "WiFi2_8h.html#aa47f840c13be15e6fe4c959da4bed3d7", null ],
+    [ "EFI_80211_BSS_TYPE", "WiFi2_8h.html#ab883b1c1755e3a1d05fa16c079e951d7", [
+      [ "IeeeInfrastructureBSS", "WiFi2_8h.html#ab883b1c1755e3a1d05fa16c079e951d7ae790d64b68fac98eddc2f9b109defd75", null ],
+      [ "IeeeIndependentBSS", "WiFi2_8h.html#ab883b1c1755e3a1d05fa16c079e951d7a3b5ab35e6ac99665b4865ac925a80894", null ],
+      [ "IeeeMeshBSS", "WiFi2_8h.html#ab883b1c1755e3a1d05fa16c079e951d7a21dd6d4eb30a10454a3ebfcaa3f37ac1", null ],
+      [ "IeeeAnyBss", "WiFi2_8h.html#ab883b1c1755e3a1d05fa16c079e951d7aa19398b2438dbbfd462754c95c07f5ec", null ]
+    ] ],
+    [ "EFI_80211_CONNECT_NETWORK_RESULT_CODE", "WiFi2_8h.html#ae09a729e1cc0c55ab59037054f929531", [
+      [ "ConnectSuccess", "WiFi2_8h.html#ae09a729e1cc0c55ab59037054f929531a84c8f855cb7dc2bac270913e01c71a06", null ],
+      [ "ConnectRefused", "WiFi2_8h.html#ae09a729e1cc0c55ab59037054f929531a730036e4865a9599a0b22e1fc9b10c51", null ],
+      [ "ConnectFailed", "WiFi2_8h.html#ae09a729e1cc0c55ab59037054f929531a21bdfb4a7dfb3d3c26bdabf983777eb0", null ],
+      [ "ConnectFailureTimeout", "WiFi2_8h.html#ae09a729e1cc0c55ab59037054f929531a10ced4a3bb1ac90bfb9980e870567b60", null ],
+      [ "ConnectFailedReasonUnspecified", "WiFi2_8h.html#ae09a729e1cc0c55ab59037054f929531a2f9f191a0c92d05aef811e1c5d33db79", null ]
+    ] ],
+    [ "gEfiWiFi2ProtocolGuid", "WiFi2_8h.html#ac898cd22adb16b63b8be790f449f5456", null ]
+];

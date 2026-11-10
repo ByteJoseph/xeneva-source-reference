@@ -1,0 +1,28 @@
+var structNVME__SMART__HEALTH__INFO__LOG =
+[
+    [ "AvailableSpare", "structNVME__SMART__HEALTH__INFO__LOG.html#a2782b83d3d4f625e47fdddc4b148f89e", null ],
+    [ "AvailableSpareThreshold", "structNVME__SMART__HEALTH__INFO__LOG.html#a2c203ef67af705f1f3113358f701076c", null ],
+    [ "CompositeTemp", "structNVME__SMART__HEALTH__INFO__LOG.html#afc62fbdd6f7510b3947f3914a7a0da03", null ],
+    [ "ControllerBusyTime", "structNVME__SMART__HEALTH__INFO__LOG.html#ac20e6406a7122723a653997077b2938d", null ],
+    [ "CriticalCompositeTemperatureTime", "structNVME__SMART__HEALTH__INFO__LOG.html#a2af42fca91c31700ffd0cc07a54f495d", null ],
+    [ "CriticalWarningAvailableSpare", "structNVME__SMART__HEALTH__INFO__LOG.html#a586ef144a133b831e6eae555dbc9a1d6", null ],
+    [ "CriticalWarningMediaReadOnly", "structNVME__SMART__HEALTH__INFO__LOG.html#a1c53579ca77085b82ad37434bf79ada6", null ],
+    [ "CriticalWarningReliability", "structNVME__SMART__HEALTH__INFO__LOG.html#afe30822489a97e93b3014243e1eb45d8", null ],
+    [ "CriticalWarningReserved", "structNVME__SMART__HEALTH__INFO__LOG.html#aa6565d38a2d0c3975a24d2357808e208", null ],
+    [ "CriticalWarningTemperature", "structNVME__SMART__HEALTH__INFO__LOG.html#a5deda9b50d90c68714f7c755b776e5af", null ],
+    [ "CriticalWarningVolatileBackup", "structNVME__SMART__HEALTH__INFO__LOG.html#a9283131980c91c2248a56ad7e2239d7b", null ],
+    [ "DataUnitsRead", "structNVME__SMART__HEALTH__INFO__LOG.html#aaf290a55a5551b19a197fa1da53183a1", null ],
+    [ "DataUnitsWritten", "structNVME__SMART__HEALTH__INFO__LOG.html#a3c029bddd2be13f24825587914843a00", null ],
+    [ "HostReadCommands", "structNVME__SMART__HEALTH__INFO__LOG.html#af50af6c5a50614d29a68d4c5223cdc8d", null ],
+    [ "HostWriteCommands", "structNVME__SMART__HEALTH__INFO__LOG.html#acdbfc32150c39860b8899389b3df108d", null ],
+    [ "MediaAndDataIntegrityErrors", "structNVME__SMART__HEALTH__INFO__LOG.html#a4cdd3dbe2b4e0c0c3878ff1e2bd61ca3", null ],
+    [ "NumberErrorInformationLogEntries", "structNVME__SMART__HEALTH__INFO__LOG.html#a6b6033c4326fb29022ee71384a8efabb", null ],
+    [ "PercentageUsed", "structNVME__SMART__HEALTH__INFO__LOG.html#aa4f9c3fbee13262a76a80d3744dc37b9", null ],
+    [ "PowerCycles", "structNVME__SMART__HEALTH__INFO__LOG.html#a11ee20d0c824c17ea93cf99494c008d4", null ],
+    [ "PowerOnHours", "structNVME__SMART__HEALTH__INFO__LOG.html#a1280ae1f949aa1a94481f20305b6ab0b", null ],
+    [ "Reserved1", "structNVME__SMART__HEALTH__INFO__LOG.html#a67afc992b52107df2b08064944535016", null ],
+    [ "Reserved2", "structNVME__SMART__HEALTH__INFO__LOG.html#a05e90631833d1331ccda5c2eafd095ac", null ],
+    [ "TemperatureSensor", "structNVME__SMART__HEALTH__INFO__LOG.html#a6963fd4be7ec0fae69c6f602687bb7cf", null ],
+    [ "UnsafeShutdowns", "structNVME__SMART__HEALTH__INFO__LOG.html#affbd96642701c545434bf4251d4320fb", null ],
+    [ "WarningCompositeTemperatureTime", "structNVME__SMART__HEALTH__INFO__LOG.html#ab19aa01b063ebe332ecdc85ceec7bfc2", null ]
+];

@@ -1,0 +1,25 @@
+var structEFI__PLATFORM__MEMORY2__ERROR__DATA =
+[
+    [ "Bank", "structEFI__PLATFORM__MEMORY2__ERROR__DATA.html#a36f19c6706ea85e71635eae476b872f7", null ],
+    [ "BitPosition", "structEFI__PLATFORM__MEMORY2__ERROR__DATA.html#a5ffddb9fa0316629e07bfae6fb9c0328", null ],
+    [ "Card", "structEFI__PLATFORM__MEMORY2__ERROR__DATA.html#a74cc77193c0001bfeb9a6ebcf68e5676", null ],
+    [ "CardHandle", "structEFI__PLATFORM__MEMORY2__ERROR__DATA.html#a5e434da9b53007df113205ebf81299b1", null ],
+    [ "ChipId", "structEFI__PLATFORM__MEMORY2__ERROR__DATA.html#ad6fd090997b2e9996abbcf5e550d1873", null ],
+    [ "Column", "structEFI__PLATFORM__MEMORY2__ERROR__DATA.html#a66fc5fd944d5706d25d08c72ec43de80", null ],
+    [ "Device", "structEFI__PLATFORM__MEMORY2__ERROR__DATA.html#a03c882b087ba525f889bba2dc8ddf95a", null ],
+    [ "ErrorStatus", "structEFI__PLATFORM__MEMORY2__ERROR__DATA.html#a28a4c2e949f92be9a05bdccb50d8222d", null ],
+    [ "MemErrorType", "structEFI__PLATFORM__MEMORY2__ERROR__DATA.html#a0f16ffa682979c680361145b55b8cfd7", null ],
+    [ "Module", "structEFI__PLATFORM__MEMORY2__ERROR__DATA.html#abe09e1858fd4ba89afebb7db1e806100", null ],
+    [ "ModuleHandle", "structEFI__PLATFORM__MEMORY2__ERROR__DATA.html#a8f769a5d868ee229311ca8a6f28e590a", null ],
+    [ "Node", "structEFI__PLATFORM__MEMORY2__ERROR__DATA.html#acbd96ac8dcdaed23388b560847e87127", null ],
+    [ "PhysicalAddress", "structEFI__PLATFORM__MEMORY2__ERROR__DATA.html#a72e03b0d8c4a4f15e077ec1f5dde83d1", null ],
+    [ "PhysicalAddressMask", "structEFI__PLATFORM__MEMORY2__ERROR__DATA.html#a81b58ea6658414ad9676e59e20698f43", null ],
+    [ "Rank", "structEFI__PLATFORM__MEMORY2__ERROR__DATA.html#a977d46419b8add117d3099a9e3c2321f", null ],
+    [ "RequestorId", "structEFI__PLATFORM__MEMORY2__ERROR__DATA.html#a407dca17d503ae85653bfda8f1f68218", null ],
+    [ "Reserved", "structEFI__PLATFORM__MEMORY2__ERROR__DATA.html#a110315fc16345f45d8c050e03840f232", null ],
+    [ "ResponderId", "structEFI__PLATFORM__MEMORY2__ERROR__DATA.html#ab40c3af2d161711421d39fe322f2df1c", null ],
+    [ "Row", "structEFI__PLATFORM__MEMORY2__ERROR__DATA.html#aa982dd2187aa8cdce103abcb165c1ad4", null ],
+    [ "Status", "structEFI__PLATFORM__MEMORY2__ERROR__DATA.html#a97ca7ed5db47eccffb241f6cb5a4fcb5", null ],
+    [ "TargetId", "structEFI__PLATFORM__MEMORY2__ERROR__DATA.html#a0bc4858a2f8efa096663977a432d21c3", null ],
+    [ "ValidFields", "structEFI__PLATFORM__MEMORY2__ERROR__DATA.html#abf2c8703b58f83023ced70f076155f14", null ]
+];

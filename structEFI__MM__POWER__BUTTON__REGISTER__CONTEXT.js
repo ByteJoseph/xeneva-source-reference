@@ -1,0 +1,4 @@
+var structEFI__MM__POWER__BUTTON__REGISTER__CONTEXT =
+[
+    [ "Phase", "structEFI__MM__POWER__BUTTON__REGISTER__CONTEXT.html#aa80fa1fc6f92936222427467399e96fe", null ]
+];

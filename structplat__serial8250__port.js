@@ -1,0 +1,28 @@
+var structplat__serial8250__port =
+[
+    [ "bugs", "structplat__serial8250__port.html#a2bfa17fab669d0a1a74f9cd897e62a4d", null ],
+    [ "dl_read", "structplat__serial8250__port.html#aaf6a4383b8f6576d21ebd47d71beda11", null ],
+    [ "dl_write", "structplat__serial8250__port.html#a90ca36bdacef0a7834e75d79c3ca37f8", null ],
+    [ "flags", "structplat__serial8250__port.html#afef129a6b0d4a1b4de9ed3f3e658f3dd", null ],
+    [ "get_mctrl", "structplat__serial8250__port.html#a08f309de0f7daac3a8462484309ce01b", null ],
+    [ "handle_break", "structplat__serial8250__port.html#a4ba8551fc2f96288769e2e1c1b84aaee", null ],
+    [ "handle_irq", "structplat__serial8250__port.html#a9128559dfa0ee75abf1e66066e425a74", null ],
+    [ "has_sysrq", "structplat__serial8250__port.html#aecab466784f097bfe6b63ca816a02c83", null ],
+    [ "hub6", "structplat__serial8250__port.html#ae202bb26be81169f571b5a47af339b8a", null ],
+    [ "iobase", "structplat__serial8250__port.html#a7e366d4d75868847f26b554f004074f5", null ],
+    [ "iotype", "structplat__serial8250__port.html#a696444f1f6d938fb1953da162beadb09", null ],
+    [ "irq", "structplat__serial8250__port.html#af081305ce7a5cf7007dd0820344b3d83", null ],
+    [ "irqflags", "structplat__serial8250__port.html#a966f8e9a207a50b56a8a313d184681ca", null ],
+    [ "mapbase", "structplat__serial8250__port.html#a7b2991796b7d181da66d11db5fc2a57f", null ],
+    [ "mapsize", "structplat__serial8250__port.html#abda4c4c3c6ea7be7e13ea3968fa41e27", null ],
+    [ "membase", "structplat__serial8250__port.html#a6f58a53d755f696802c76485e9ebcaf9", null ],
+    [ "pm", "structplat__serial8250__port.html#a8318db6f577fa1826eeb2affa3a27eda", null ],
+    [ "private_data", "structplat__serial8250__port.html#a4805c8f097d0f70fc0b011a3addd99de", null ],
+    [ "regshift", "structplat__serial8250__port.html#ad315b526a378c6aeb5eab9b0d5046969", null ],
+    [ "serial_in", "structplat__serial8250__port.html#a4d9944c6ea928ba0f07331b63463b345", null ],
+    [ "serial_out", "structplat__serial8250__port.html#a6d5aa057db7e24f11fe7ff2cc6e6e086", null ],
+    [ "set_ldisc", "structplat__serial8250__port.html#aa419ac3c5acd487634f2f51a57799c0f", null ],
+    [ "set_termios", "structplat__serial8250__port.html#a39cac0021dedc0ee5e28fd339acbc89a", null ],
+    [ "type", "structplat__serial8250__port.html#af150053913c8f85ebeb1c316fc069511", null ],
+    [ "uartclk", "structplat__serial8250__port.html#a1d936faf59c07e2e9aefe3b9c628c3b7", null ]
+];

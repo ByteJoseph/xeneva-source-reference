@@ -1,0 +1,8 @@
+var structEFI__ACPI__6__2__HMAT__STRUCTURE__MEMORY__SIDE__CACHE__INFO__CACHE__ATTRIBUTES =
+[
+    [ "CacheAssociativity", "structEFI__ACPI__6__2__HMAT__STRUCTURE__MEMORY__SIDE__CACHE__INFO__CACHE__ATTRIBUTES.html#a8df84499526e75fac7a7f9e9f38db48f", null ],
+    [ "CacheLevel", "structEFI__ACPI__6__2__HMAT__STRUCTURE__MEMORY__SIDE__CACHE__INFO__CACHE__ATTRIBUTES.html#a783ba1880776e5030c86e2896dfe9733", null ],
+    [ "CacheLineSize", "structEFI__ACPI__6__2__HMAT__STRUCTURE__MEMORY__SIDE__CACHE__INFO__CACHE__ATTRIBUTES.html#a873a9d5bad6fcb9f28a3e7e7b026a371", null ],
+    [ "TotalCacheLevels", "structEFI__ACPI__6__2__HMAT__STRUCTURE__MEMORY__SIDE__CACHE__INFO__CACHE__ATTRIBUTES.html#a2d750e5458b24f4b98f1d3155c704470", null ],
+    [ "WritePolicy", "structEFI__ACPI__6__2__HMAT__STRUCTURE__MEMORY__SIDE__CACHE__INFO__CACHE__ATTRIBUTES.html#a4d3d1fbbd49f7c356db7dfb89ef6411b", null ]
+];

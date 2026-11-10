@@ -1,0 +1,6 @@
+var structIPMI__SET__LAN__CONFIGURATION__PARAMETERS__COMMAND__REQUEST =
+[
+    [ "ChannelNumber", "structIPMI__SET__LAN__CONFIGURATION__PARAMETERS__COMMAND__REQUEST.html#ac0e55a4b16928161e7a51b02cdf4aea3", null ],
+    [ "ParameterData", "structIPMI__SET__LAN__CONFIGURATION__PARAMETERS__COMMAND__REQUEST.html#a8584938fc15b08a489d61d563a27edc0", null ],
+    [ "ParameterSelector", "structIPMI__SET__LAN__CONFIGURATION__PARAMETERS__COMMAND__REQUEST.html#af68dbfd0f1593f5ab58e99b664dccbaa", null ]
+];

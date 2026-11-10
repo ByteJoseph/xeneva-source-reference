@@ -1,0 +1,9 @@
+var structPCI__EXPRESS__EXTENDED__CAPABILITIES__RCRB__HEADER =
+[
+    [ "DeviceId", "structPCI__EXPRESS__EXTENDED__CAPABILITIES__RCRB__HEADER.html#a0b3c99b125f3749a7429617fd8e67427", null ],
+    [ "Header", "structPCI__EXPRESS__EXTENDED__CAPABILITIES__RCRB__HEADER.html#a1587dcdffc11baa1bd6c9a71d275e3f7", null ],
+    [ "RcrbCapabilities", "structPCI__EXPRESS__EXTENDED__CAPABILITIES__RCRB__HEADER.html#a37018b2a721dd3558d73291952e9976e", null ],
+    [ "RcrbControl", "structPCI__EXPRESS__EXTENDED__CAPABILITIES__RCRB__HEADER.html#af08f362874f764beedf52545ddaf9268", null ],
+    [ "Reserved", "structPCI__EXPRESS__EXTENDED__CAPABILITIES__RCRB__HEADER.html#a8a7898968b9b0419b176a55a45240cef", null ],
+    [ "VendorId", "structPCI__EXPRESS__EXTENDED__CAPABILITIES__RCRB__HEADER.html#aca5d11ebe36da28649b473cd585ef06b", null ]
+];

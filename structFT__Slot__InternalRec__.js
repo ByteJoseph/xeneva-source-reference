@@ -1,0 +1,10 @@
+var structFT__Slot__InternalRec__ =
+[
+    [ "flags", "structFT__Slot__InternalRec__.html#a9a2a287ba2b363197b36fe24d2f48746", null ],
+    [ "glyph_delta", "structFT__Slot__InternalRec__.html#a2a94b955dd1e260aaf8699238d44769d", null ],
+    [ "glyph_hints", "structFT__Slot__InternalRec__.html#a16337853823cdccfb0c636673c4eb3ae", null ],
+    [ "glyph_matrix", "structFT__Slot__InternalRec__.html#a95af217daf1c2080692b5a69e345aa3b", null ],
+    [ "glyph_transformed", "structFT__Slot__InternalRec__.html#ac2bba891ac70016b74c085a05c1f182c", null ],
+    [ "load_flags", "structFT__Slot__InternalRec__.html#ad8a8c5995b98e1101e5f73256bcc5aa7", null ],
+    [ "loader", "structFT__Slot__InternalRec__.html#ac57f8c939f667938ab9f986088c15d8f", null ]
+];

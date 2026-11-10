@@ -1,0 +1,14 @@
+var structEFI__ACPI__6__2__IA32__ARCHITECTURE__MACHINE__CHECK__EXCEPTION__STRUCTURE =
+[
+    [ "Enabled", "structEFI__ACPI__6__2__IA32__ARCHITECTURE__MACHINE__CHECK__EXCEPTION__STRUCTURE.html#ab33eedc042320331905d4cd7a07b2cdf", null ],
+    [ "Flags", "structEFI__ACPI__6__2__IA32__ARCHITECTURE__MACHINE__CHECK__EXCEPTION__STRUCTURE.html#af7aeaa09a9f63b36ff8c492cebc4048d", null ],
+    [ "GlobalCapabilityInitData", "structEFI__ACPI__6__2__IA32__ARCHITECTURE__MACHINE__CHECK__EXCEPTION__STRUCTURE.html#a3b2cf959ec0579dbb2885efd19514bc9", null ],
+    [ "GlobalControlInitData", "structEFI__ACPI__6__2__IA32__ARCHITECTURE__MACHINE__CHECK__EXCEPTION__STRUCTURE.html#ae4bfd54ea965a226cc1a4b011ff80f5f", null ],
+    [ "MaxSectionsPerRecord", "structEFI__ACPI__6__2__IA32__ARCHITECTURE__MACHINE__CHECK__EXCEPTION__STRUCTURE.html#a432384a871abde4c6d0aa54148971968", null ],
+    [ "NumberOfHardwareBanks", "structEFI__ACPI__6__2__IA32__ARCHITECTURE__MACHINE__CHECK__EXCEPTION__STRUCTURE.html#afc101f09412cccee097cc2f1ac8436a9", null ],
+    [ "NumberOfRecordsToPreAllocate", "structEFI__ACPI__6__2__IA32__ARCHITECTURE__MACHINE__CHECK__EXCEPTION__STRUCTURE.html#ac750a4d670a4be2642756bcf8175633f", null ],
+    [ "Reserved0", "structEFI__ACPI__6__2__IA32__ARCHITECTURE__MACHINE__CHECK__EXCEPTION__STRUCTURE.html#a668348fa1ed4a0e60199edf0c4fb1f88", null ],
+    [ "Reserved1", "structEFI__ACPI__6__2__IA32__ARCHITECTURE__MACHINE__CHECK__EXCEPTION__STRUCTURE.html#a77ca7945ffef5f562815ab4921ca59d8", null ],
+    [ "SourceId", "structEFI__ACPI__6__2__IA32__ARCHITECTURE__MACHINE__CHECK__EXCEPTION__STRUCTURE.html#a127f8cb758cc5eca9a5c4cc296c4ee6c", null ],
+    [ "Type", "structEFI__ACPI__6__2__IA32__ARCHITECTURE__MACHINE__CHECK__EXCEPTION__STRUCTURE.html#ae52df12345dfbeb02e7e19dc515f81da", null ]
+];

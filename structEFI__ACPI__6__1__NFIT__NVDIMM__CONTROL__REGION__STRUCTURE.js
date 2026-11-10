@@ -1,0 +1,26 @@
+var structEFI__ACPI__6__1__NFIT__NVDIMM__CONTROL__REGION__STRUCTURE =
+[
+    [ "CommandRegisterOffsetInBlockControlWindow", "structEFI__ACPI__6__1__NFIT__NVDIMM__CONTROL__REGION__STRUCTURE.html#a7f1530b2d33a504535ef52f967f51216", null ],
+    [ "DeviceID", "structEFI__ACPI__6__1__NFIT__NVDIMM__CONTROL__REGION__STRUCTURE.html#a4f58e65c20c34d2d822c36c4eae305fd", null ],
+    [ "Length", "structEFI__ACPI__6__1__NFIT__NVDIMM__CONTROL__REGION__STRUCTURE.html#a99ab3126d56ad53eb53e40909eb68037", null ],
+    [ "ManufacturingDate", "structEFI__ACPI__6__1__NFIT__NVDIMM__CONTROL__REGION__STRUCTURE.html#a411d917d7cfd752a5e1c90099c895a42", null ],
+    [ "ManufacturingLocation", "structEFI__ACPI__6__1__NFIT__NVDIMM__CONTROL__REGION__STRUCTURE.html#a8472acf61c76225ef141fadb33981223", null ],
+    [ "NumberOfBlockControlWindows", "structEFI__ACPI__6__1__NFIT__NVDIMM__CONTROL__REGION__STRUCTURE.html#a731ec052e4fa05bc2891e27fbadb4a07", null ],
+    [ "NVDIMMControlRegionFlag", "structEFI__ACPI__6__1__NFIT__NVDIMM__CONTROL__REGION__STRUCTURE.html#ae1c6b5ea6ce9d72e098deca09df428d7", null ],
+    [ "NVDIMMControlRegionStructureIndex", "structEFI__ACPI__6__1__NFIT__NVDIMM__CONTROL__REGION__STRUCTURE.html#a49b570aa975b14f98f28be5799869130", null ],
+    [ "RegionFormatInterfaceCode", "structEFI__ACPI__6__1__NFIT__NVDIMM__CONTROL__REGION__STRUCTURE.html#a40a8f20a9437b8bfcc144f98324ed264", null ],
+    [ "Reserved_22", "structEFI__ACPI__6__1__NFIT__NVDIMM__CONTROL__REGION__STRUCTURE.html#a4c3e8de3fe7aa54059d8952efeb9bd07", null ],
+    [ "Reserved_74", "structEFI__ACPI__6__1__NFIT__NVDIMM__CONTROL__REGION__STRUCTURE.html#a86180ceb995067c3c99f359b2c198cff", null ],
+    [ "RevisionID", "structEFI__ACPI__6__1__NFIT__NVDIMM__CONTROL__REGION__STRUCTURE.html#af2b5291d2475a1de5bd369cccbbe58b6", null ],
+    [ "SerialNumber", "structEFI__ACPI__6__1__NFIT__NVDIMM__CONTROL__REGION__STRUCTURE.html#a1841d1f9d8da5d04852ee19046590acf", null ],
+    [ "SizeOfBlockControlWindow", "structEFI__ACPI__6__1__NFIT__NVDIMM__CONTROL__REGION__STRUCTURE.html#a374a8459fe5c65731971b9b8cc612798", null ],
+    [ "SizeOfCommandRegisterInBlockControlWindows", "structEFI__ACPI__6__1__NFIT__NVDIMM__CONTROL__REGION__STRUCTURE.html#a67756ff4b908861cb220f5089fc9a739", null ],
+    [ "SizeOfStatusRegisterInBlockControlWindows", "structEFI__ACPI__6__1__NFIT__NVDIMM__CONTROL__REGION__STRUCTURE.html#a1264c424da3d3a6bd4ba6af1bfcff8c3", null ],
+    [ "StatusRegisterOffsetInBlockControlWindow", "structEFI__ACPI__6__1__NFIT__NVDIMM__CONTROL__REGION__STRUCTURE.html#a19663afee1c689bc0de6bd513285da3b", null ],
+    [ "SubsystemDeviceID", "structEFI__ACPI__6__1__NFIT__NVDIMM__CONTROL__REGION__STRUCTURE.html#aae0e19c38f2e49094ddf4e9cd04954a2", null ],
+    [ "SubsystemRevisionID", "structEFI__ACPI__6__1__NFIT__NVDIMM__CONTROL__REGION__STRUCTURE.html#ab27b1a1a124d6444166be2d215cb2583", null ],
+    [ "SubsystemVendorID", "structEFI__ACPI__6__1__NFIT__NVDIMM__CONTROL__REGION__STRUCTURE.html#aef907c512d77446121852aa0d8031fe1", null ],
+    [ "Type", "structEFI__ACPI__6__1__NFIT__NVDIMM__CONTROL__REGION__STRUCTURE.html#a121dcefef4ff4296e318e78754f3850e", null ],
+    [ "ValidFields", "structEFI__ACPI__6__1__NFIT__NVDIMM__CONTROL__REGION__STRUCTURE.html#a562704beb67de0b90784f2b1aabd41e9", null ],
+    [ "VendorID", "structEFI__ACPI__6__1__NFIT__NVDIMM__CONTROL__REGION__STRUCTURE.html#a945395d21bc05eefa5f0acff49a92a90", null ]
+];

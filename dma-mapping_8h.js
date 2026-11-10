@@ -1,0 +1,26 @@
+var dma_mapping_8h =
+[
+    [ "____dma_from_device_aligned", "dma-mapping_8h.html#ad3665cbaf1f7b8692c1bdf08b84b91d0", null ],
+    [ "__dma_from_device_group_begin", "dma-mapping_8h.html#ad4e591f5727b4a509533f1173a81f9cd", null ],
+    [ "__dma_from_device_group_end", "dma-mapping_8h.html#a657acd903f1d9c4cd8d119f5ce26adb2", null ],
+    [ "DMA_ATTR_ALLOC_PAGES", "dma-mapping_8h.html#a5088a85bcbb134ffec19a98987bd15f3", null ],
+    [ "DMA_ATTR_ALLOC_SINGLE_PAGES", "dma-mapping_8h.html#a26d926e86acb0a281d7421e4f8176f55", null ],
+    [ "DMA_ATTR_CPU_MAPPABLE", "dma-mapping_8h.html#ab3cd28d57beade88b587cfed0ffa6e75", null ],
+    [ "DMA_ATTR_FORCE_CONTIGUOUS", "dma-mapping_8h.html#a356e38f89a2586f301efb9d81c7ffc48", null ],
+    [ "DMA_ATTR_FORCE_DMA32", "dma-mapping_8h.html#a8c4380737009cba496fe6c8fc1f4d389", null ],
+    [ "DMA_ATTR_MERGEABLE", "dma-mapping_8h.html#af45ac96d1857bb9189d719fea1bdc2d0", null ],
+    [ "DMA_ATTR_NO_KERNEL_MAPPING", "dma-mapping_8h.html#acb3eea34e44bbdbdea1e3387b366201c", null ],
+    [ "DMA_ATTR_NO_WARN", "dma-mapping_8h.html#a2a3782de32a44c6ac976bdf07bfce115", null ],
+    [ "DMA_ATTR_NON_CONSISTENT", "dma-mapping_8h.html#ac3322bb7c2486fc382f364596e6b49f0", null ],
+    [ "DMA_ATTR_SKIP_CPU_SYNC", "dma-mapping_8h.html#a943846d943b9fa09a30674b439d8bf17", null ],
+    [ "DMA_ATTR_WEAK_ORDERING", "dma-mapping_8h.html#a7262b530afc4975c7b5ac08f27b3e4f3", null ],
+    [ "DMA_ATTR_WRITE_BARRIER", "dma-mapping_8h.html#a22227ebc63a4c4f7c5ea1823e1d5050b", null ],
+    [ "DMA_ATTR_WRITE_COMBINE", "dma-mapping_8h.html#a2fcd75bb8de88543af9ba8094c1bee51", null ],
+    [ "DMA_BIT_MASK", "dma-mapping_8h.html#a046880fe7f8350a75d9fde1a430722bc", null ],
+    [ "dma_alloc_coherent", "dma-mapping_8h.html#a41db190bf3abf527256b70a311351fd9", null ],
+    [ "dma_coerce_mask_and_coherent", "dma-mapping_8h.html#a13254a9f82f32ba33d9960655f02e803", null ],
+    [ "dma_free_coherent", "dma-mapping_8h.html#a6ae43b8eba4f7e8879160ff351cefe68", null ],
+    [ "dma_map_sg", "dma-mapping_8h.html#a53e7a5522d300b6ee413c3277313c004", null ],
+    [ "dma_max_mapping_size", "dma-mapping_8h.html#ab00642b39cf0dd2bdb0771740cb86851", null ],
+    [ "dma_unmap_sg", "dma-mapping_8h.html#ab726a8e583c3d423197de62f9e3e2762", null ]
+];

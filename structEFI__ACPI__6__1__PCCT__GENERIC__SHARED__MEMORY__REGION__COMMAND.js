@@ -1,0 +1,6 @@
+var structEFI__ACPI__6__1__PCCT__GENERIC__SHARED__MEMORY__REGION__COMMAND =
+[
+    [ "Command", "structEFI__ACPI__6__1__PCCT__GENERIC__SHARED__MEMORY__REGION__COMMAND.html#ac217e122381b8c212b5f86b7a299c5eb", null ],
+    [ "GenerateSci", "structEFI__ACPI__6__1__PCCT__GENERIC__SHARED__MEMORY__REGION__COMMAND.html#a9567600dbec5c58b2c5e8921550968a2", null ],
+    [ "Reserved", "structEFI__ACPI__6__1__PCCT__GENERIC__SHARED__MEMORY__REGION__COMMAND.html#a96f84cd28260e2ad019764458b40d890", null ]
+];

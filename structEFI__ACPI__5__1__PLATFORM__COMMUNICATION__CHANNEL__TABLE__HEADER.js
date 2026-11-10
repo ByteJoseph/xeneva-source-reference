@@ -1,0 +1,6 @@
+var structEFI__ACPI__5__1__PLATFORM__COMMUNICATION__CHANNEL__TABLE__HEADER =
+[
+    [ "Flags", "structEFI__ACPI__5__1__PLATFORM__COMMUNICATION__CHANNEL__TABLE__HEADER.html#a157112fcff94d2f7729daf183b9539a0", null ],
+    [ "Header", "structEFI__ACPI__5__1__PLATFORM__COMMUNICATION__CHANNEL__TABLE__HEADER.html#a1c42b8a36aaba4bd612486936c412d6b", null ],
+    [ "Reserved", "structEFI__ACPI__5__1__PLATFORM__COMMUNICATION__CHANNEL__TABLE__HEADER.html#ad4df3a544f318be0cf3bdeca28329aed", null ]
+];

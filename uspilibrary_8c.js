@@ -1,0 +1,27 @@
+var uspilibrary_8c =
+[
+    [ "USPiDeviceGetInformation", "uspilibrary_8c.html#a23b734cf0834c765cebc118b586ee82b", null ],
+    [ "USPiEthernetAvailable", "uspilibrary_8c.html#a88ad3cd30909f2b1db82003bb5379020", null ],
+    [ "USPiEthernetIsLinkUp", "uspilibrary_8c.html#a58b29e424f4755d23755b3798341c8c7", null ],
+    [ "USPiGamePadAvailable", "uspilibrary_8c.html#ae28a1e200faf3faace08a2272d85403a", null ],
+    [ "USPiGamePadGetStatus", "uspilibrary_8c.html#a613055cca9dba4385684237a848560d4", null ],
+    [ "USPiGamePadRegisterStatusHandler", "uspilibrary_8c.html#afdc4ba796b644d074c65ecf32f85c6e4", null ],
+    [ "USPiGetMACAddress", "uspilibrary_8c.html#a9fff0a1b070be3825df1267b32e4063b", null ],
+    [ "USPiInitialize", "uspilibrary_8c.html#ad1f7b105342176ec62f2a4e400ff4d3f", null ],
+    [ "USPiKeyboardAvailable", "uspilibrary_8c.html#ad164ebc72b4c94f9408df94b396ae21c", null ],
+    [ "USPiKeyboardRegisterKeyPressedHandler", "uspilibrary_8c.html#a0f9ed9ceeea29962b17f52e10c7eedff", null ],
+    [ "USPiKeyboardRegisterKeyStatusHandlerRaw", "uspilibrary_8c.html#ae3abf1662475c29caa5ae1ff272cec79", null ],
+    [ "USPiKeyboardRegisterShutdownHandler", "uspilibrary_8c.html#a8d624fb9b9ffecb094b0110584b74427", null ],
+    [ "USPiKeyboardSetLEDs", "uspilibrary_8c.html#ae023d4eb9b5983360474e7849d0793a1", null ],
+    [ "USPiKeyboardUpdateLEDs", "uspilibrary_8c.html#a6947737b03168e41ead467b4de3964b0", null ],
+    [ "USPiMassStorageDeviceAvailable", "uspilibrary_8c.html#a0dd4625b534bd973e33ee62382d20ca3", null ],
+    [ "USPiMassStorageDeviceGetCapacity", "uspilibrary_8c.html#aa2224644470228c34f6f9ea6ed2a3848", null ],
+    [ "USPiMassStorageDeviceRead", "uspilibrary_8c.html#a8a4fea3b5e50d121fb16708e8f956773", null ],
+    [ "USPiMassStorageDeviceWrite", "uspilibrary_8c.html#a83263958a35da530827d1c0df8cf0c7b", null ],
+    [ "USPiMIDIAvailable", "uspilibrary_8c.html#a48548d8166477eef2dd6ed8a57a7aa0c", null ],
+    [ "USPiMIDIRegisterPacketHandler", "uspilibrary_8c.html#a38e1c452d18b1f84352a4e41730f231a", null ],
+    [ "USPiMouseAvailable", "uspilibrary_8c.html#a6df65e4d055e9458863c72250743d7c4", null ],
+    [ "USPiMouseRegisterStatusHandler", "uspilibrary_8c.html#ad71431ebd7dd1cab69340cc34e11b2d8", null ],
+    [ "USPiReceiveFrame", "uspilibrary_8c.html#a6c1ffb8244401159e2938860ee1b26ad", null ],
+    [ "USPiSendFrame", "uspilibrary_8c.html#ac0a979ff6c6b0669b2985799e6408b07", null ]
+];

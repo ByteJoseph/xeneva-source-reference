@@ -1,0 +1,25 @@
+var structtty__driver =
+[
+    [ "cdevs", "structtty__driver.html#aac1410be5d49df0f7c2812c5aba4fb6c", null ],
+    [ "driver_name", "structtty__driver.html#af64355a809b71eb390dbf03b7c1d7c70", null ],
+    [ "driver_state", "structtty__driver.html#a6410a9605959eb3d5d1b915f5674bd1c", null ],
+    [ "flags", "structtty__driver.html#a3ae34a0e62b87d7ed58f4eef2ff63b46", null ],
+    [ "flip_wq", "structtty__driver.html#a5a6f164b483275a9c0e801003c2795fd", null ],
+    [ "init_termios", "structtty__driver.html#a04292ac39411278bc4811a93606a598a", null ],
+    [ "kref", "structtty__driver.html#a9a23e1f9b0319c5cd2b94ac2ffa96c23", null ],
+    [ "major", "structtty__driver.html#acf950727d414aa1ab689222d45f0deb9", null ],
+    [ "minor_start", "structtty__driver.html#abb3d013aee495a91001c8f3226c32454", null ],
+    [ "name", "structtty__driver.html#af52669cf872d5d8dc3ba89c846d1c985", null ],
+    [ "name_base", "structtty__driver.html#a93b04931d3c423b355704ca9601c8301", null ],
+    [ "num", "structtty__driver.html#ad1a85e907647c63a26b17fc240c0a746", null ],
+    [ "ops", "structtty__driver.html#a2a2c436a34763a883175b5e0b8710016", null ],
+    [ "other", "structtty__driver.html#aaea04c1b50e02df4209ab763f921fb17", null ],
+    [ "owner", "structtty__driver.html#a52ee6634f9a58b38a83918632d2a54ec", null ],
+    [ "ports", "structtty__driver.html#a4e16d26b0170a3108db1aae780f079e3", null ],
+    [ "proc_entry", "structtty__driver.html#a77c26c76f747f2b866f1a928283fa7b8", null ],
+    [ "subtype", "structtty__driver.html#a77c17686f0ede94394f400cf3dc96446", null ],
+    [ "termios", "structtty__driver.html#ae914989e1e00b3d26cc0681da0c1071d", null ],
+    [ "tty_drivers", "structtty__driver.html#a8ca0779b9dea038516fa3a5fdf596409", null ],
+    [ "ttys", "structtty__driver.html#ac0f4a96f286af014bfe1cdbe8d61eff1", null ],
+    [ "type", "structtty__driver.html#ad72aad089b10acba9bf0c497a712e1e7", null ]
+];

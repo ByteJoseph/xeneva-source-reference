@@ -1,0 +1,6 @@
+var structEFI__BLOCK__IO__CRYPTO__IV__INPUT__AES__CBC__MICROSOFT__BITLOCKER =
+[
+    [ "CryptoBlockByteOffset", "structEFI__BLOCK__IO__CRYPTO__IV__INPUT__AES__CBC__MICROSOFT__BITLOCKER.html#a4b1d2f55b2ac767b115292e4c4fb7f01", null ],
+    [ "CryptoBlockByteSize", "structEFI__BLOCK__IO__CRYPTO__IV__INPUT__AES__CBC__MICROSOFT__BITLOCKER.html#ab682511fc9965a05a99e015b72714803", null ],
+    [ "Header", "structEFI__BLOCK__IO__CRYPTO__IV__INPUT__AES__CBC__MICROSOFT__BITLOCKER.html#a77cfe28f384380f98347821e5f3e1c8d", null ]
+];

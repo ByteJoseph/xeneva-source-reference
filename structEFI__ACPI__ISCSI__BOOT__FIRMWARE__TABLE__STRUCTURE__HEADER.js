@@ -1,0 +1,8 @@
+var structEFI__ACPI__ISCSI__BOOT__FIRMWARE__TABLE__STRUCTURE__HEADER =
+[
+    [ "Flags", "structEFI__ACPI__ISCSI__BOOT__FIRMWARE__TABLE__STRUCTURE__HEADER.html#ab11c91122e3dc37accfdfbcb1a61db15", null ],
+    [ "Index", "structEFI__ACPI__ISCSI__BOOT__FIRMWARE__TABLE__STRUCTURE__HEADER.html#a15aea0c4efec51e444d36beaa38b6edb", null ],
+    [ "Length", "structEFI__ACPI__ISCSI__BOOT__FIRMWARE__TABLE__STRUCTURE__HEADER.html#a17474db939f67e719876f7e8d2d371b4", null ],
+    [ "StructureId", "structEFI__ACPI__ISCSI__BOOT__FIRMWARE__TABLE__STRUCTURE__HEADER.html#a5331d0e0754c89343fc0e0149d834b9e", null ],
+    [ "Version", "structEFI__ACPI__ISCSI__BOOT__FIRMWARE__TABLE__STRUCTURE__HEADER.html#a329595504623af66069036a713d4a902", null ]
+];

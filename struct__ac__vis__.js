@@ -1,0 +1,26 @@
+var struct__ac__vis__ =
+[
+    [ "anyUp", "struct__ac__vis__.html#a642b6d4cc10f7d5462cd9f56682b7ee3", null ],
+    [ "bars", "struct__ac__vis__.html#a2aaa2ef104708a5db05ace933856326b", null ],
+    [ "bw", "struct__ac__vis__.html#a012de30d45592a5890ebc78afc9d9f1c", null ],
+    [ "bx0", "struct__ac__vis__.html#a9ca39adad1bc930c62936455dbe9d5b8", null ],
+    [ "cosT", "struct__ac__vis__.html#aad2150e8fbcd99b57f21330f208f3065", null ],
+    [ "drawnCap", "struct__ac__vis__.html#aee992a1f7b6710ffd06612dde14eb8da", null ],
+    [ "drawnH", "struct__ac__vis__.html#a20c582542048526d1e07173b6ad567fb", null ],
+    [ "drawnValid", "struct__ac__vis__.html#a1182bc1824593172a699f7483ae93c61", null ],
+    [ "gap", "struct__ac__vis__.html#a9cd1e3c9582c14778163a764e67311d2", null ],
+    [ "hi", "struct__ac__vis__.html#a27c0141750d964ab5a26ae32a24c2f11", null ],
+    [ "hold", "struct__ac__vis__.html#aa8e6c7f7ebeabf27b74a1a5f72ffb492", null ],
+    [ "im", "struct__ac__vis__.html#ab635c742f8119d52e00d22fa4d212241", null ],
+    [ "lastFrame", "struct__ac__vis__.html#a75602d924ce483608d8dd73191095ce1", null ],
+    [ "lastFresh", "struct__ac__vis__.html#a6f79616fad187a4660feb89b31b0b23c", null ],
+    [ "lastWrite", "struct__ac__vis__.html#a87ba6635a816a998a77d0630188ac030", null ],
+    [ "level", "struct__ac__vis__.html#aa29ce18ab428db7100de6c05e7df2699", null ],
+    [ "lo", "struct__ac__vis__.html#afd40ef4c8b9468c245750e9462ebca33", null ],
+    [ "peak", "struct__ac__vis__.html#a560ec46660e09651ea5010d1ab3be0d4", null ],
+    [ "re", "struct__ac__vis__.html#abd5caf9e484619cf24911b11bda07b47", null ],
+    [ "rev", "struct__ac__vis__.html#a98a6809dcb150c62c510216e1061bad8", null ],
+    [ "sinT", "struct__ac__vis__.html#a0b0eb519d84bc52a671212916b6ecf1b", null ],
+    [ "tilt", "struct__ac__vis__.html#a9894907edf5e81cd770522bf2446463f", null ],
+    [ "window", "struct__ac__vis__.html#a8255db4759a8637453bc4981b4a3fbf3", null ]
+];

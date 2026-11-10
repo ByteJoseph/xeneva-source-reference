@@ -1,0 +1,5 @@
+var structEFI__LEGACY__MP__TABLE__ENTRY__EXT__COMPAT__BUS__ADDR__SPACE__MODIFIER__ADDR__MODE =
+[
+    [ "RangeMode", "structEFI__LEGACY__MP__TABLE__ENTRY__EXT__COMPAT__BUS__ADDR__SPACE__MODIFIER__ADDR__MODE.html#abfa0bce3d66b232f992e66fe8a516edb", null ],
+    [ "Reserved", "structEFI__LEGACY__MP__TABLE__ENTRY__EXT__COMPAT__BUS__ADDR__SPACE__MODIFIER__ADDR__MODE.html#ac66921f179eef922b0aca0cbdbed8347", null ]
+];

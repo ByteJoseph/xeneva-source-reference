@@ -1,0 +1,28 @@
+var aa64cpu_8c =
+[
+    [ "CACHE_LINE_SIZE", "aa64cpu_8c.html#af89f60b07247176687889ade776c8e10", null ],
+    [ "SUBSECONDS_PER_SECOND", "aa64cpu_8c.html#ad9831d5f876c11077628b1ef1de8d4da", null ],
+    [ "aa64_calculate_ticks", "aa64cpu_8c.html#af0aed48caf5addfb44dca8627c7375fe", null ],
+    [ "aa64_data_cache_clean_range", "aa64cpu_8c.html#a63f360449b03599d5f865ad6bc63cb5e", null ],
+    [ "aa64_dc_cvac_range", "aa64cpu_8c.html#a030197f92dfe084e0d0d9022ee863fa1", null ],
+    [ "aa64_dc_ivac_range", "aa64cpu_8c.html#ad0f3fd1fb4a6dad989c9af7c3079af10", null ],
+    [ "aa64_gettimeofday", "aa64cpu_8c.html#ae7f4d197d8e89ec9bfb40dca3f81ff80", null ],
+    [ "aa64_now", "aa64cpu_8c.html#a856cb9c66f4eb5b7536db4abffbc8e29", null ],
+    [ "aa64_settimeofday", "aa64cpu_8c.html#a76e35f6f852c26578e2f679c7d3e870b", null ],
+    [ "AA64ClockInitialize", "aa64cpu_8c.html#a1af48be1e292b972d4c776a2b59b031a", null ],
+    [ "AA64CPUGetFreqencyHz", "aa64cpu_8c.html#a676bd2f1fa963c790349720c9ea536fa", null ],
+    [ "AA64CPUImplementer", "aa64cpu_8c.html#aa0d7b25abecdf969f5bcf60a036ce19c", null ],
+    [ "AA64CpuInitialize", "aa64cpu_8c.html#a43b834950456cbe0e68b43f8bdba7a76", null ],
+    [ "AA64CPUPostInitialize", "aa64cpu_8c.html#ae8d2fb22f669e5f3e67fe7b65a871019", null ],
+    [ "AA64FPUNeonEnable", "aa64cpu_8c.html#a15a833de5b6f80e5ef4d7d5a8afbda6c", null ],
+    [ "AA64GetPhysicalTimerCount", "aa64cpu_8c.html#af72977f28228d69518a6c75382485de7", null ],
+    [ "AA64SleepMS", "aa64cpu_8c.html#a44c682a80b811cc6d83839b98560c04a", null ],
+    [ "AA64SleepUS", "aa64cpu_8c.html#a29514d1bbb75eecac798e82205707f14", null ],
+    [ "AA64TimerSetup", "aa64cpu_8c.html#a9e569b6fca555c02c1455a9c0ac3e7ef", null ],
+    [ "enableAlignCheck", "aa64cpu_8c.html#a5c198b181218f762dd9b838c653ef49f", null ],
+    [ "get_cache_line_sz", "aa64cpu_8c.html#a61e8582b93672c41a30bc9573ccd2b2d", null ],
+    [ "updateTicks", "aa64cpu_8c.html#a9822b0f079271a8d56a50a6a4e16927f", null ],
+    [ "basisTime", "aa64cpu_8c.html#a312be5bd94e2b09855a6c247723b37f2", null ],
+    [ "bootTime", "aa64cpu_8c.html#a9c08e1edfe230d0c902f0765bddd3265", null ],
+    [ "cpuFrequency", "aa64cpu_8c.html#ac5f47d5d88de3381850f738356c223d7", null ]
+];

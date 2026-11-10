@@ -1,0 +1,28 @@
+var DevicePathLib_8h =
+[
+    [ "END_DEVICE_PATH_LENGTH", "DevicePathLib_8h.html#a64f12637d659726379013c09a682c4ba", null ],
+    [ "AppendDevicePath", "DevicePathLib_8h.html#a692e3be66c628cfd172c8b0535872e55", null ],
+    [ "AppendDevicePathInstance", "DevicePathLib_8h.html#a0ebd50e412cf6915dc49c5b6a584967e", null ],
+    [ "AppendDevicePathNode", "DevicePathLib_8h.html#aa5a5bb18e656a16d853f0184a044c8b8", null ],
+    [ "ConvertDeviceNodeToText", "DevicePathLib_8h.html#a59398fa25a934833e4201fb38c16ffd1", null ],
+    [ "ConvertDevicePathToText", "DevicePathLib_8h.html#aa02f9f89e71ba899b2c79bc919952097", null ],
+    [ "ConvertTextToDeviceNode", "DevicePathLib_8h.html#af2e965f2c767f17ee9c7a7a3c9c5cdf4", null ],
+    [ "ConvertTextToDevicePath", "DevicePathLib_8h.html#ab835925819380be509cde1cb09f16034", null ],
+    [ "CreateDeviceNode", "DevicePathLib_8h.html#a89827bcf0d55f6510f1e7a4589284093", null ],
+    [ "DevicePathFromHandle", "DevicePathLib_8h.html#a8344ad6ae978e08a7383e0946f122122", null ],
+    [ "DevicePathNodeLength", "DevicePathLib_8h.html#a15c2e103fed9ecc7c1bd441940f79c52", null ],
+    [ "DevicePathSubType", "DevicePathLib_8h.html#a189e5d326e45d26b5701d2f58a4d637e", null ],
+    [ "DevicePathType", "DevicePathLib_8h.html#a02fcfb3afbbfa88f64437fcf48af7f25", null ],
+    [ "DuplicateDevicePath", "DevicePathLib_8h.html#ab57090464bbb16fd6887b542f03fcb5a", null ],
+    [ "FileDevicePath", "DevicePathLib_8h.html#a35e9fb99d351524ebd918270f95b8a75", null ],
+    [ "GetDevicePathSize", "DevicePathLib_8h.html#ab201245ef6172a6b801024e569c1b35a", null ],
+    [ "GetNextDevicePathInstance", "DevicePathLib_8h.html#a978d6eba27bfc10d6e8fec8e54628c95", null ],
+    [ "IsDevicePathEnd", "DevicePathLib_8h.html#a5f81953afa38929d76b492525e21b94b", null ],
+    [ "IsDevicePathEndInstance", "DevicePathLib_8h.html#ad6bb65e1dc34836eec5518a135a8b24c", null ],
+    [ "IsDevicePathEndType", "DevicePathLib_8h.html#abcae5d519a5cf2bcee3e446c2c0bc196", null ],
+    [ "IsDevicePathMultiInstance", "DevicePathLib_8h.html#ad0d352baa2b090bd1d7f3a0dab378f48", null ],
+    [ "IsDevicePathValid", "DevicePathLib_8h.html#a82134a7f284694580aba9856476fa8c9", null ],
+    [ "NextDevicePathNode", "DevicePathLib_8h.html#a776bd59ff061bcebdc415bf518c03265", null ],
+    [ "SetDevicePathEndNode", "DevicePathLib_8h.html#ad63f1b5eea4be48e78bcce3da77da2b4", null ],
+    [ "SetDevicePathNodeLength", "DevicePathLib_8h.html#a05e188a97ced0c5ec2b39caf5424faf8", null ]
+];

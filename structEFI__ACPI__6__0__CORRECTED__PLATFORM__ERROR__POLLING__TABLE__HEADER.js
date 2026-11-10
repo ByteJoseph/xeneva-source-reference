@@ -1,0 +1,5 @@
+var structEFI__ACPI__6__0__CORRECTED__PLATFORM__ERROR__POLLING__TABLE__HEADER =
+[
+    [ "Header", "structEFI__ACPI__6__0__CORRECTED__PLATFORM__ERROR__POLLING__TABLE__HEADER.html#a9c91b34f2c227fcc0ea952a539ae742c", null ],
+    [ "Reserved", "structEFI__ACPI__6__0__CORRECTED__PLATFORM__ERROR__POLLING__TABLE__HEADER.html#a9b487caed4cde9c2d2738076283a1131", null ]
+];

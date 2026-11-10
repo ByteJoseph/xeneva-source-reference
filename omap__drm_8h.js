@@ -1,0 +1,36 @@
+var omap__drm_8h =
+[
+    [ "drm_omap_param", "structdrm__omap__param.html", "structdrm__omap__param" ],
+    [ "omap_gem_size", "unionomap__gem__size.html", "unionomap__gem__size" ],
+    [ "drm_omap_gem_new", "structdrm__omap__gem__new.html", "structdrm__omap__gem__new" ],
+    [ "drm_omap_gem_cpu_prep", "structdrm__omap__gem__cpu__prep.html", "structdrm__omap__gem__cpu__prep" ],
+    [ "drm_omap_gem_cpu_fini", "structdrm__omap__gem__cpu__fini.html", "structdrm__omap__gem__cpu__fini" ],
+    [ "drm_omap_gem_info", "structdrm__omap__gem__info.html", "structdrm__omap__gem__info" ],
+    [ "DRM_IOCTL_OMAP_GEM_CPU_FINI", "omap__drm_8h.html#a374d1639a139d4459e728f7508b31355", null ],
+    [ "DRM_IOCTL_OMAP_GEM_CPU_PREP", "omap__drm_8h.html#a63f2b37da2931e77b4345edb12a20994", null ],
+    [ "DRM_IOCTL_OMAP_GEM_INFO", "omap__drm_8h.html#ae3553d1df95ce0432adf211584b8a844", null ],
+    [ "DRM_IOCTL_OMAP_GEM_NEW", "omap__drm_8h.html#a98a9b04114957d06c18aaef8cf439e6e", null ],
+    [ "DRM_IOCTL_OMAP_GET_PARAM", "omap__drm_8h.html#a28c4998ba04eaf4edbdcf2c32e58e714", null ],
+    [ "DRM_IOCTL_OMAP_SET_PARAM", "omap__drm_8h.html#a8dd2692c04606acec01877adfb5c338b", null ],
+    [ "DRM_OMAP_GEM_CPU_FINI", "omap__drm_8h.html#a451786ab5b1130c1aafc462c70d4fcc9", null ],
+    [ "DRM_OMAP_GEM_CPU_PREP", "omap__drm_8h.html#ad5abdf70f8e7f3c1606efcde551feadf", null ],
+    [ "DRM_OMAP_GEM_INFO", "omap__drm_8h.html#acb5d8317c60e02f70de805ad9e339a96", null ],
+    [ "DRM_OMAP_GEM_NEW", "omap__drm_8h.html#ae56ab2465e4a4cd1a03443a8dbfe7faa", null ],
+    [ "DRM_OMAP_GET_PARAM", "omap__drm_8h.html#a766a29128741f62720dac98b1d918f91", null ],
+    [ "DRM_OMAP_NUM_IOCTLS", "omap__drm_8h.html#a413497c7001200a232ff65e79e409565", null ],
+    [ "DRM_OMAP_SET_PARAM", "omap__drm_8h.html#ad9b6b52be7cc8534851b2cf53e72fdc2", null ],
+    [ "OMAP_BO_CACHE_MASK", "omap__drm_8h.html#a5f1eec72815b6241fcf7d97c3efef013", null ],
+    [ "OMAP_BO_CACHED", "omap__drm_8h.html#a54eb226d80fd344f316c589bd0827482", null ],
+    [ "OMAP_BO_SCANOUT", "omap__drm_8h.html#afa7f83cf3404348191e51bb5bcf82da3", null ],
+    [ "OMAP_BO_TILED_16", "omap__drm_8h.html#a2361c58261a41e0c3f43082959c669cb", null ],
+    [ "OMAP_BO_TILED_32", "omap__drm_8h.html#a0b4bc15d2a3a0b4b55e252711103e359", null ],
+    [ "OMAP_BO_TILED_8", "omap__drm_8h.html#a6f67cdb449e717ecabbf8185a79bb9ae", null ],
+    [ "OMAP_BO_TILED_MASK", "omap__drm_8h.html#a5463e417a268df45333d22c924759f74", null ],
+    [ "OMAP_BO_UNCACHED", "omap__drm_8h.html#a5ccd34094434a21f7c9d4cc45b7684df", null ],
+    [ "OMAP_BO_WC", "omap__drm_8h.html#ab4585ac1d1422ace5b24898a895cd9d3", null ],
+    [ "OMAP_PARAM_CHIPSET_ID", "omap__drm_8h.html#a96bc13d29d81dd6ae4b8cf7d852d289d", null ],
+    [ "omap_gem_op", "omap__drm_8h.html#a5bd4fa56f79a52d1b2f529923bd0d83f", [
+      [ "OMAP_GEM_READ", "omap__drm_8h.html#a5bd4fa56f79a52d1b2f529923bd0d83faecd21ab8bb831108bf4dc289ab27ac60", null ],
+      [ "OMAP_GEM_WRITE", "omap__drm_8h.html#a5bd4fa56f79a52d1b2f529923bd0d83fa67dc24dddd6c961ed3778bf9cb1fb6e8", null ]
+    ] ]
+];

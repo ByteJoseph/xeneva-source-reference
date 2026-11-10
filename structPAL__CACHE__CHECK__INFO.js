@@ -1,0 +1,28 @@
+var structPAL__CACHE__CHECK__INFO =
+[
+    [ "FailedCacheLevel", "structPAL__CACHE__CHECK__INFO.html#a0b1a88f88bdd4d2b36b409d33e0081f9", null ],
+    [ "FailedInDataCache", "structPAL__CACHE__CHECK__INFO.html#aebe94b17d9b91849258910cbc06cff2f", null ],
+    [ "FailedInDataPart", "structPAL__CACHE__CHECK__INFO.html#a048e8091b3cef1b7e1ce83fce0fd69c5", null ],
+    [ "FailedInInsCache", "structPAL__CACHE__CHECK__INFO.html#a2b04d5096fcfce1692711d392ecbe5d1", null ],
+    [ "FailedInTagPart", "structPAL__CACHE__CHECK__INFO.html#ac56f87c94f7dae721e6635ea94157297", null ],
+    [ "FailedWay", "structPAL__CACHE__CHECK__INFO.html#a17eb09807723054ba4137eb7b2d39e2f", null ],
+    [ "IndexOfCacheLineError", "structPAL__CACHE__CHECK__INFO.html#aa7453993b005f0d28ad965a5a76ec8e3", null ],
+    [ "InstructionSet", "structPAL__CACHE__CHECK__INFO.html#a6b9ca832c277a06a0c541bec4885fa8c", null ],
+    [ "InstructionSetIsValid", "structPAL__CACHE__CHECK__INFO.html#adc28eed97debfc126f98a4f4399bb688", null ],
+    [ "McCorrected", "structPAL__CACHE__CHECK__INFO.html#ad92509aa9b43bd388fa71ce888a2b24e", null ],
+    [ "Mesi", "structPAL__CACHE__CHECK__INFO.html#af6a79847980fadd68d9bce0d73c9d11e", null ],
+    [ "MesiIsValid", "structPAL__CACHE__CHECK__INFO.html#afea2aa50dfef4e4b1743f1eb15f088fc", null ],
+    [ "MultipleBitsError", "structPAL__CACHE__CHECK__INFO.html#a03ea379310a73e019af118de40c5e8a7", null ],
+    [ "Operation", "structPAL__CACHE__CHECK__INFO.html#a1766701280508acab5d0686f62ea81e9", null ],
+    [ "PreciseInsPointer", "structPAL__CACHE__CHECK__INFO.html#ad97f90dc5c8c41d276d4f1334dab5ed0", null ],
+    [ "PrivilegeLevel", "structPAL__CACHE__CHECK__INFO.html#a3c2196023cfd3b80743e2639de0babc1", null ],
+    [ "PrivilegeLevelIsValide", "structPAL__CACHE__CHECK__INFO.html#acda004e1b64fe9266536baba2c3a75ff", null ],
+    [ "RequesterIdentifier", "structPAL__CACHE__CHECK__INFO.html#a109c675a6c96c7808cce8047db49573f", null ],
+    [ "Reserved1", "structPAL__CACHE__CHECK__INFO.html#ab898a2b07d23f42a35fc1dfdad3c2464", null ],
+    [ "Reserved2", "structPAL__CACHE__CHECK__INFO.html#a916dbdce1a02a668ba1af15133e82780", null ],
+    [ "Reserved3", "structPAL__CACHE__CHECK__INFO.html#ae8462bc64f9f9d1455d6fd34517e8b51", null ],
+    [ "Reserved4", "structPAL__CACHE__CHECK__INFO.html#a6c1a14c0a31f800e11b6cdf136bbca5b", null ],
+    [ "ResponserIdentifier", "structPAL__CACHE__CHECK__INFO.html#a6785562bd06cc91a8ad84642807e6988", null ],
+    [ "TargetAddressIsValid", "structPAL__CACHE__CHECK__INFO.html#aaf5d81aeb872bb596ec21a6e7716102f", null ],
+    [ "WayIndexIsValid", "structPAL__CACHE__CHECK__INFO.html#ab8d3e5398a80d97772d21454c7d1a159", null ]
+];

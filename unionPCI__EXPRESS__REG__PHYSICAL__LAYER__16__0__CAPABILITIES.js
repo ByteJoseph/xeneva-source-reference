@@ -1,0 +1,6 @@
+var unionPCI__EXPRESS__REG__PHYSICAL__LAYER__16__0__CAPABILITIES =
+[
+    [ "Bits", "unionPCI__EXPRESS__REG__PHYSICAL__LAYER__16__0__CAPABILITIES.html#a2e23bcf6bdd117b4dc1f47b34861a73c", null ],
+    [ "Reserved", "unionPCI__EXPRESS__REG__PHYSICAL__LAYER__16__0__CAPABILITIES.html#a1501477426c60351f3bdab5f6ccd9ef3", null ],
+    [ "Uint32", "unionPCI__EXPRESS__REG__PHYSICAL__LAYER__16__0__CAPABILITIES.html#aba86d898aa6d3c6613c23889dc78b780", null ]
+];

@@ -1,0 +1,58 @@
+var nsgif_8h =
+[
+    [ "nsgif_rect", "structnsgif__rect.html", "structnsgif__rect" ],
+    [ "nsgif_bitmap_cb_vt", "structnsgif__bitmap__cb__vt.html", "structnsgif__bitmap__cb__vt" ],
+    [ "nsgif_info", "structnsgif__info.html", "structnsgif__info" ],
+    [ "nsgif_frame_info", "structnsgif__frame__info.html", "structnsgif__frame__info" ],
+    [ "NSGIF_INFINITE", "nsgif_8h.html#a06d0fa42748c99ae26ca68e2e63ba5f5", null ],
+    [ "NSGIF_MAX_COLOURS", "nsgif_8h.html#a6d42192f3773826b30c42d7f581c9857", null ],
+    [ "nsgif_bitmap_cb_vt", "nsgif_8h.html#a2e188e4d61925da629b53a39abccf59b", null ],
+    [ "nsgif_bitmap_fmt_t", "nsgif_8h.html#a55fe6a21dc8dc1085a30dedf15eb4ea7", null ],
+    [ "nsgif_bitmap_t", "nsgif_8h.html#a50d724e0fd200603e98019764815ca77", null ],
+    [ "nsgif_frame_info_t", "nsgif_8h.html#a7478e42dd09f7b209673cd9c12584c8a", null ],
+    [ "nsgif_info_t", "nsgif_8h.html#ad39185332deb175af4b2cb506364e936", null ],
+    [ "nsgif_rect_t", "nsgif_8h.html#aef15a4d05845102f48cfac43c575b37e", null ],
+    [ "nsgif_t", "nsgif_8h.html#a0506712f227d8c739c225aab02987723", null ],
+    [ "nsgif_bitmap_fmt", "nsgif_8h.html#ad86b0ee840e25265dfcc74dcb5d534f0", [
+      [ "NSGIF_BITMAP_FMT_R8G8B8A8", "nsgif_8h.html#ad86b0ee840e25265dfcc74dcb5d534f0abd19fbe0dd604dc1bdffd454476824e6", null ],
+      [ "NSGIF_BITMAP_FMT_B8G8R8A8", "nsgif_8h.html#ad86b0ee840e25265dfcc74dcb5d534f0a3e0beb8f8ad687a6e5eb30d5233c97ed", null ],
+      [ "NSGIF_BITMAP_FMT_A8R8G8B8", "nsgif_8h.html#ad86b0ee840e25265dfcc74dcb5d534f0a75ecf49b2da9184c9b9515b150793ece", null ],
+      [ "NSGIF_BITMAP_FMT_A8B8G8R8", "nsgif_8h.html#ad86b0ee840e25265dfcc74dcb5d534f0a2b3d4ebc864c0a3d1ce87b2add11e3b9", null ],
+      [ "NSGIF_BITMAP_FMT_RGBA8888", "nsgif_8h.html#ad86b0ee840e25265dfcc74dcb5d534f0afe0329bca808fbd0833e2b06caa20e81", null ],
+      [ "NSGIF_BITMAP_FMT_BGRA8888", "nsgif_8h.html#ad86b0ee840e25265dfcc74dcb5d534f0ab41e61810ad42ffd3fcf550d364d415e", null ],
+      [ "NSGIF_BITMAP_FMT_ARGB8888", "nsgif_8h.html#ad86b0ee840e25265dfcc74dcb5d534f0aea25342369f1efc80e16cd45bd5f0733", null ],
+      [ "NSGIF_BITMAP_FMT_ABGR8888", "nsgif_8h.html#ad86b0ee840e25265dfcc74dcb5d534f0a5b4efab1289f60df15514a965e64996e", null ]
+    ] ],
+    [ "nsgif_disposal", "nsgif_8h.html#a975ef4c2346ff086e3143348bf4a6ade", [
+      [ "NSGIF_DISPOSAL_UNSPECIFIED", "nsgif_8h.html#a975ef4c2346ff086e3143348bf4a6adea633642b0119eee9a4b2962e58ec56006", null ],
+      [ "NSGIF_DISPOSAL_NONE", "nsgif_8h.html#a975ef4c2346ff086e3143348bf4a6adea22fa457179ece89b8063b45141e44283", null ],
+      [ "NSGIF_DISPOSAL_RESTORE_BG", "nsgif_8h.html#a975ef4c2346ff086e3143348bf4a6adea6c25ecb0038e571f128a28fab6803366", null ],
+      [ "NSGIF_DISPOSAL_RESTORE_PREV", "nsgif_8h.html#a975ef4c2346ff086e3143348bf4a6adeac27295b4a18e9d6a9de4f49d8811e3e3", null ],
+      [ "NSGIF_DISPOSAL_RESTORE_QUIRK", "nsgif_8h.html#a975ef4c2346ff086e3143348bf4a6adead5dae0fe7927377a273d5e5a986d9713", null ]
+    ] ],
+    [ "nsgif_error", "nsgif_8h.html#a2fd67d9626a9614e0bac56e5d8a0fc15", [
+      [ "NSGIF_OK", "nsgif_8h.html#a2fd67d9626a9614e0bac56e5d8a0fc15a545b3a2411f3550244fc7bf9db33c023", null ],
+      [ "NSGIF_ERR_OOM", "nsgif_8h.html#a2fd67d9626a9614e0bac56e5d8a0fc15a6a940c3d543ff755bf7c74cb08558788", null ],
+      [ "NSGIF_ERR_DATA", "nsgif_8h.html#a2fd67d9626a9614e0bac56e5d8a0fc15ae2972162da70b0117050d7e565053f64", null ],
+      [ "NSGIF_ERR_BAD_FRAME", "nsgif_8h.html#a2fd67d9626a9614e0bac56e5d8a0fc15a15a09b94bca99ac6782b8fa8d32d60f6", null ],
+      [ "NSGIF_ERR_DATA_FRAME", "nsgif_8h.html#a2fd67d9626a9614e0bac56e5d8a0fc15aeaa42e1577d756d6659e19496d14dd1f", null ],
+      [ "NSGIF_ERR_END_OF_DATA", "nsgif_8h.html#a2fd67d9626a9614e0bac56e5d8a0fc15ac05776133e4999be30f9b125ed23afee", null ],
+      [ "NSGIF_ERR_DATA_COMPLETE", "nsgif_8h.html#a2fd67d9626a9614e0bac56e5d8a0fc15a977633915b0782efded44741df6edba9", null ],
+      [ "NSGIF_ERR_FRAME_DISPLAY", "nsgif_8h.html#a2fd67d9626a9614e0bac56e5d8a0fc15a536b178fa9ebbd01fe2355552100de66", null ],
+      [ "NSGIF_ERR_ANIMATION_END", "nsgif_8h.html#a2fd67d9626a9614e0bac56e5d8a0fc15ad10d7ccacba833049656ef4120594a66", null ]
+    ] ],
+    [ "nsgif_create", "nsgif_8h.html#a46bd60c3ead9cc35ae951e18236af4de", null ],
+    [ "nsgif_data_complete", "nsgif_8h.html#afd6ab0f63c943db14e62bfa00ed45a3a", null ],
+    [ "nsgif_data_scan", "nsgif_8h.html#a01381921ca5ab91682bd3e6da4f298fe", null ],
+    [ "nsgif_destroy", "nsgif_8h.html#aa29171e4e0278287426155ff9131d3c5", null ],
+    [ "nsgif_frame_decode", "nsgif_8h.html#a8f7f44318d124d9871fcb8c3a2f453a4", null ],
+    [ "nsgif_frame_prepare", "nsgif_8h.html#a82f448d511b68f66c10602a458686810", null ],
+    [ "nsgif_get_frame_info", "nsgif_8h.html#a759910e91b33e9a907f64e09bde60438", null ],
+    [ "nsgif_get_info", "nsgif_8h.html#a6bf0c16c4761bf2170e963b941da22b9", null ],
+    [ "nsgif_global_palette", "nsgif_8h.html#a64492dcaadb11722dece2eaa80e5120c", null ],
+    [ "nsgif_local_palette", "nsgif_8h.html#af745cc9b7a166df4f752675f5a70d327", null ],
+    [ "nsgif_reset", "nsgif_8h.html#aa27679a2f3d1c8b6b984ab3e6ea50fe5", null ],
+    [ "nsgif_set_frame_delay_behaviour", "nsgif_8h.html#acec36276b98d27f6fe600b657b4cd1b7", null ],
+    [ "nsgif_str_disposal", "nsgif_8h.html#af48cb66798faff2bee61e3e7d29a96a5", null ],
+    [ "nsgif_strerror", "nsgif_8h.html#a8c695f95ee49f337e7baf83ec7612492", null ]
+];

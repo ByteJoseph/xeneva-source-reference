@@ -1,0 +1,8 @@
+var structEFI__ACPI__4__0__EMBEDDED__CONTROLLER__BOOT__RESOURCES__TABLE =
+[
+    [ "EcControl", "structEFI__ACPI__4__0__EMBEDDED__CONTROLLER__BOOT__RESOURCES__TABLE.html#af64e591f8f024b68f6fc8c815cb06798", null ],
+    [ "EcData", "structEFI__ACPI__4__0__EMBEDDED__CONTROLLER__BOOT__RESOURCES__TABLE.html#a492e790732f42998b133710931615bcd", null ],
+    [ "GpeBit", "structEFI__ACPI__4__0__EMBEDDED__CONTROLLER__BOOT__RESOURCES__TABLE.html#ae906d90bc6093a0a751f6b6b234fc7ef", null ],
+    [ "Header", "structEFI__ACPI__4__0__EMBEDDED__CONTROLLER__BOOT__RESOURCES__TABLE.html#a8adf5a1caf7d8efbec27183d5d2949dd", null ],
+    [ "Uid", "structEFI__ACPI__4__0__EMBEDDED__CONTROLLER__BOOT__RESOURCES__TABLE.html#a0fa0ee065f052cfd2ffaf31bb739c643", null ]
+];

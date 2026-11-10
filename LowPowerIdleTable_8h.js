@@ -1,0 +1,6 @@
+var LowPowerIdleTable_8h =
+[
+    [ "ACPI_LPI_STATE_FLAGS", "unionACPI__LPI__STATE__FLAGS.html", "unionACPI__LPI__STATE__FLAGS" ],
+    [ "ACPI_LPI_NATIVE_CSTATE_DESCRIPTOR", "structACPI__LPI__NATIVE__CSTATE__DESCRIPTOR.html", "structACPI__LPI__NATIVE__CSTATE__DESCRIPTOR" ],
+    [ "ACPI_LPI_STRUCTURE_TYPE_NATIVE_CSTATE", "LowPowerIdleTable_8h.html#a121add44cb71517e2257286dfec1883c", null ]
+];

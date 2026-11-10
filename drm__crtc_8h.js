@@ -1,0 +1,26 @@
+var drm__crtc_8h =
+[
+    [ "drm_crtc_state", "structdrm__crtc__state.html", "structdrm__crtc__state" ],
+    [ "drm_crtc_funcs", "structdrm__crtc__funcs.html", "structdrm__crtc__funcs" ],
+    [ "drm_crtc", "structdrm__crtc.html", "structdrm__crtc" ],
+    [ "drm_mode_set", "structdrm__mode__set.html", "structdrm__mode__set" ],
+    [ "drm_for_each_crtc", "drm__crtc_8h.html#a59350151c4c700199f61a55c453399a7", null ],
+    [ "drm_for_each_crtc_reverse", "drm__crtc_8h.html#a2adf6face3526f77ea1d8e8eef374ef4", null ],
+    [ "drmm_crtc_alloc_with_planes", "drm__crtc_8h.html#a6916c00d0985ef6ca1f1f715943bbb64", null ],
+    [ "obj_to_crtc", "drm__crtc_8h.html#af084d50c3f55b7b1fd31612199454641", null ],
+    [ "__printf", "drm__crtc_8h.html#ae39d7fbd316bcf1cbd8cb435e337a79b", null ],
+    [ "__printf", "drm__crtc_8h.html#ae375b61a70759efbbd05aec300f55172", null ],
+    [ "drm_crtc_cleanup", "drm__crtc_8h.html#a92e3a3fdcd08fd68f245efd6ba5773c2", null ],
+    [ "drm_crtc_create_scaling_filter_property", "drm__crtc_8h.html#a6dce257e11738dfa575cbbbce0610e2b", null ],
+    [ "drm_crtc_create_sharpness_strength_property", "drm__crtc_8h.html#a205c3b9c2c8f86946e28bd6971350a89", null ],
+    [ "drm_crtc_from_index", "drm__crtc_8h.html#a6fdf2abc7ef93528ccbfa95ca91fc6b4", null ],
+    [ "drm_crtc_in_clone_mode", "drm__crtc_8h.html#aecc15e4a0964834627daf266e08be4b2", null ],
+    [ "drm_mode_set_config_internal", "drm__crtc_8h.html#a1bbf4eb0936085b629460653f6f47b9c", null ],
+    [ "crtc", "drm__crtc_8h.html#aff44501119ae2a8762c287a69c4f5e43", null ],
+    [ "cursor", "drm__crtc_8h.html#a41a38162b2e01d69f1165bde36ebe090", null ],
+    [ "funcs", "drm__crtc_8h.html#ac6c81ed6e1832f6c4b60354750566614", null ],
+    [ "name", "drm__crtc_8h.html#aed88e009d7772dfc9026cb1f5492b458", null ],
+    [ "offset", "drm__crtc_8h.html#ad5b30797981ed10bc3571a689a73eeac", null ],
+    [ "primary", "drm__crtc_8h.html#a21cc04bba87527a6a50857c9e66bb9e9", null ],
+    [ "size", "drm__crtc_8h.html#a854352f53b148adc24983a58a1866d66", null ]
+];

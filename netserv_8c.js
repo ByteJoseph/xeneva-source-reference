@@ -1,0 +1,26 @@
+var netserv_8c =
+[
+    [ "_au_net_timespec_", "struct__au__net__timespec__.html", "struct__au__net__timespec__" ],
+    [ "NET_ADDR_MAX", "netserv_8c.html#af17e204d297e60f761b928f2ae1f2c87", null ],
+    [ "NET_IOV_MAX", "netserv_8c.html#a482f073bae85facc2d04afd82f7707c6", null ],
+    [ "AuNetTimespec", "netserv_8c.html#a436b940385480f924a90dc149ebeb3c2", null ],
+    [ "NetAccept", "netserv_8c.html#a73eb4d9f0e0c1ad59e44701143f77606", null ],
+    [ "NetAccept4", "netserv_8c.html#a4f2f92aed6702743452bb30dc07ccce9", null ],
+    [ "NetBind", "netserv_8c.html#ae4229232b9f2b1c84f04538f5debb8dc", null ],
+    [ "NetConnect", "netserv_8c.html#a35d9aaed5736aef258115fbe2bbc62c8", null ],
+    [ "NetGetIfAddrs", "netserv_8c.html#a4a29708b25088ed275563f8f0148e39d", null ],
+    [ "NetGetPeerName", "netserv_8c.html#a9dc1b3c1ee1ae05b618ee01096525f06", null ],
+    [ "NetGetSockName", "netserv_8c.html#a339053caa9040d4d032686b7b7798e6c", null ],
+    [ "NetGetSockOpt", "netserv_8c.html#ac3cad0c230c66b18b51a5214ddaa6beb", null ],
+    [ "NetIfNameToIndex", "netserv_8c.html#a91294492e5fb82b2ea8917cc32089ac1", null ],
+    [ "NetListen", "netserv_8c.html#a916c3dd7cb8425111047b924b213d05e", null ],
+    [ "NetReceive", "netserv_8c.html#a80658fce836d9b9c17eb1c01b689da58", null ],
+    [ "NetRecvFrom", "netserv_8c.html#a1a0c4719ba78442b0ff3faa7ea1fbc3d", null ],
+    [ "NetRecvMmsg", "netserv_8c.html#a09b64e6f105777866d19199be430f4a3", null ],
+    [ "NetSend", "netserv_8c.html#af5e200618f75d080924d1a9d30f0bd5c", null ],
+    [ "NetSendMmsg", "netserv_8c.html#a0a8db08939adf719a2679ad5f71d1d17", null ],
+    [ "NetSendTo", "netserv_8c.html#a623ef28263629ced148d12d78d3f4ed2", null ],
+    [ "NetShutdown", "netserv_8c.html#a64e4274581f9ea3968cb866d2af68e53", null ],
+    [ "NetSocketPair", "netserv_8c.html#a4ee53be0f402ecf5dadd78062f6343f9", null ],
+    [ "NetSocketSetOpt", "netserv_8c.html#ada2f5f82c9f7ed28c94b45dd2a803330", null ]
+];

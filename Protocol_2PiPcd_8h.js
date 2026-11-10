@@ -1,0 +1,27 @@
+var Protocol_2PiPcd_8h =
+[
+    [ "_EFI_PCD_PROTOCOL", "struct__EFI__PCD__PROTOCOL.html", "struct__EFI__PCD__PROTOCOL" ],
+    [ "EFI_PCD_INVALID_TOKEN_NUMBER", "Protocol_2PiPcd_8h.html#a00a00911c3e6a96cb2b6c69e0249b908", null ],
+    [ "EFI_PCD_PROTOCOL_GUID", "Protocol_2PiPcd_8h.html#a30236be7a71262f37965888a1346904d", null ],
+    [ "EFI_PCD_PROTOCOL", "Protocol_2PiPcd_8h.html#ac33d7d1e04d146eccc81ff0a72ad272a", null ],
+    [ "EFI_PCD_PROTOCOL_CALLBACK", "Protocol_2PiPcd_8h.html#a7cf2134aa63a15eb500c2a8ef644ea9c", null ],
+    [ "EFI_PCD_PROTOCOL_CALLBACK_ON_SET", "Protocol_2PiPcd_8h.html#affd70afc496fc58429085f75d78115cb", null ],
+    [ "EFI_PCD_PROTOCOL_CANCEL_CALLBACK", "Protocol_2PiPcd_8h.html#a65ac5cac2a6457ba861299ec2af97933", null ],
+    [ "EFI_PCD_PROTOCOL_GET_16", "Protocol_2PiPcd_8h.html#a0ac5e6f70f4322f648fac7dbbd40e739", null ],
+    [ "EFI_PCD_PROTOCOL_GET_32", "Protocol_2PiPcd_8h.html#ac318a8497faf98ae35ac6f544ab12815", null ],
+    [ "EFI_PCD_PROTOCOL_GET_64", "Protocol_2PiPcd_8h.html#abeeec03f2095f9c2c985f00aa116ffc7", null ],
+    [ "EFI_PCD_PROTOCOL_GET_8", "Protocol_2PiPcd_8h.html#afd08b55911c5b7753e4da83614bd4d02", null ],
+    [ "EFI_PCD_PROTOCOL_GET_BOOLEAN", "Protocol_2PiPcd_8h.html#a66eb05955a86437d2c9917cb598c0a33", null ],
+    [ "EFI_PCD_PROTOCOL_GET_NEXT_TOKEN", "Protocol_2PiPcd_8h.html#a80bb73b044d11e0924888fe0731a409f", null ],
+    [ "EFI_PCD_PROTOCOL_GET_NEXT_TOKEN_SPACE", "Protocol_2PiPcd_8h.html#a000edb223173ad112dafa8dff6986b65", null ],
+    [ "EFI_PCD_PROTOCOL_GET_POINTER", "Protocol_2PiPcd_8h.html#a052c475451539a37cee8dcac494f1258", null ],
+    [ "EFI_PCD_PROTOCOL_GET_SIZE", "Protocol_2PiPcd_8h.html#a0cf3f4fea7505107fab60c1361594554", null ],
+    [ "EFI_PCD_PROTOCOL_SET_16", "Protocol_2PiPcd_8h.html#a9eb37e5cb1f1999c545dc760196281c1", null ],
+    [ "EFI_PCD_PROTOCOL_SET_32", "Protocol_2PiPcd_8h.html#a09d3c56c59c801a4cd645701a9f9f579", null ],
+    [ "EFI_PCD_PROTOCOL_SET_64", "Protocol_2PiPcd_8h.html#aec8ee3221e3bf97f2884ef7f7e79e64e", null ],
+    [ "EFI_PCD_PROTOCOL_SET_8", "Protocol_2PiPcd_8h.html#a29b384209465ccb9cc63134fb99f136c", null ],
+    [ "EFI_PCD_PROTOCOL_SET_BOOLEAN", "Protocol_2PiPcd_8h.html#ad895c87055fcf461f99cb5336460df59", null ],
+    [ "EFI_PCD_PROTOCOL_SET_POINTER", "Protocol_2PiPcd_8h.html#ab66eb9f4cd3603ea7f02377896c2422f", null ],
+    [ "EFI_PCD_PROTOCOL_SET_SKU", "Protocol_2PiPcd_8h.html#a70f338595d725f5176dcc4571c5f796e", null ],
+    [ "gEfiPcdProtocolGuid", "Protocol_2PiPcd_8h.html#a5b1136c9656e084f6874e88a79575834", null ]
+];

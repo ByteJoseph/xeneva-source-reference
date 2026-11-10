@@ -1,0 +1,25 @@
+var Dns6_8h =
+[
+    [ "EFI_DNS6_CONFIG_DATA", "structEFI__DNS6__CONFIG__DATA.html", "structEFI__DNS6__CONFIG__DATA" ],
+    [ "EFI_DNS6_CACHE_ENTRY", "structEFI__DNS6__CACHE__ENTRY.html", "structEFI__DNS6__CACHE__ENTRY" ],
+    [ "EFI_DNS6_MODE_DATA", "structEFI__DNS6__MODE__DATA.html", "structEFI__DNS6__MODE__DATA" ],
+    [ "DNS6_HOST_TO_ADDR_DATA", "structDNS6__HOST__TO__ADDR__DATA.html", "structDNS6__HOST__TO__ADDR__DATA" ],
+    [ "DNS6_ADDR_TO_HOST_DATA", "structDNS6__ADDR__TO__HOST__DATA.html", "structDNS6__ADDR__TO__HOST__DATA" ],
+    [ "DNS6_RESOURCE_RECORD", "structDNS6__RESOURCE__RECORD.html", "structDNS6__RESOURCE__RECORD" ],
+    [ "DNS6_GENERAL_LOOKUP_DATA", "structDNS6__GENERAL__LOOKUP__DATA.html", "structDNS6__GENERAL__LOOKUP__DATA" ],
+    [ "EFI_DNS6_COMPLETION_TOKEN", "structEFI__DNS6__COMPLETION__TOKEN.html", "structEFI__DNS6__COMPLETION__TOKEN" ],
+    [ "_EFI_DNS6_PROTOCOL", "struct__EFI__DNS6__PROTOCOL.html", "struct__EFI__DNS6__PROTOCOL" ],
+    [ "EFI_DNS6_PROTOCOL_GUID", "Dns6_8h.html#a3dbb042e19e2b99aa159adcb625d18bd", null ],
+    [ "EFI_DNS6_SERVICE_BINDING_PROTOCOL_GUID", "Dns6_8h.html#af5f821fcc205ca7f5943a491bfa8797e", null ],
+    [ "EFI_DNS6_CANCEL", "Dns6_8h.html#a5d422ce65de48897f678270a7c344038", null ],
+    [ "EFI_DNS6_CONFIGURE", "Dns6_8h.html#a242eca9648b5676e6b56e044b3b66340", null ],
+    [ "EFI_DNS6_GENERAL_LOOKUP", "Dns6_8h.html#a2f698fe8be3e8f3624df2b01f49e4fcd", null ],
+    [ "EFI_DNS6_GET_MODE_DATA", "Dns6_8h.html#a124959a31b5b15f93e4e18c34daeeb4c", null ],
+    [ "EFI_DNS6_HOST_NAME_TO_IP", "Dns6_8h.html#a02446d5865132378ddf375359c2f4108", null ],
+    [ "EFI_DNS6_IP_TO_HOST_NAME", "Dns6_8h.html#a31a47a9d61a0f16ac0d89233ff970fee", null ],
+    [ "EFI_DNS6_POLL", "Dns6_8h.html#a1c21ca50585e971c0a78175a006424e8", null ],
+    [ "EFI_DNS6_PROTOCOL", "Dns6_8h.html#ad253cc60044bdff3359b5982db8d69d2", null ],
+    [ "EFI_DNS6_UPDATE_DNS_CACHE", "Dns6_8h.html#ac80a0740e3ae41785e1f2bf57c26db42", null ],
+    [ "gEfiDns6ProtocolGuid", "Dns6_8h.html#a36a8bba8a0ce85515bebdff5bb341c0d", null ],
+    [ "gEfiDns6ServiceBindingProtocolGuid", "Dns6_8h.html#aca446df9a498ccf4df486ec789d6296e", null ]
+];

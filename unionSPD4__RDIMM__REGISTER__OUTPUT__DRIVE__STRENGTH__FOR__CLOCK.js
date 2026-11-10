@@ -1,0 +1,10 @@
+var unionSPD4__RDIMM__REGISTER__OUTPUT__DRIVE__STRENGTH__FOR__CLOCK =
+[
+    [ "Bits", "unionSPD4__RDIMM__REGISTER__OUTPUT__DRIVE__STRENGTH__FOR__CLOCK.html#a413154865a965ac534e0ad840284cbe0", null ],
+    [ "Data", "unionSPD4__RDIMM__REGISTER__OUTPUT__DRIVE__STRENGTH__FOR__CLOCK.html#a813bac9c1fea82f3c1222717b826cab1", null ],
+    [ "RcdOutputSlewRateControl", "unionSPD4__RDIMM__REGISTER__OUTPUT__DRIVE__STRENGTH__FOR__CLOCK.html#a19b99e30dd18e7771db58e47f2d674a0", null ],
+    [ "Reserved0", "unionSPD4__RDIMM__REGISTER__OUTPUT__DRIVE__STRENGTH__FOR__CLOCK.html#ace769735e48ab94cfd655bca3c259de1", null ],
+    [ "Reserved1", "unionSPD4__RDIMM__REGISTER__OUTPUT__DRIVE__STRENGTH__FOR__CLOCK.html#ae96ef345f678db61bfdcb5bd946ed8e4", null ],
+    [ "Y0Y2", "unionSPD4__RDIMM__REGISTER__OUTPUT__DRIVE__STRENGTH__FOR__CLOCK.html#a6a36c4cbb6a25f3c06e33d9fbb40c578", null ],
+    [ "Y1Y3", "unionSPD4__RDIMM__REGISTER__OUTPUT__DRIVE__STRENGTH__FOR__CLOCK.html#a19141e64ee12ab87774d55edf6f3e148", null ]
+];

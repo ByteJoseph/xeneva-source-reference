@@ -1,0 +1,25 @@
+var structPCI__BRIDGE__CONTROL__REGISTER =
+[
+    [ "Bar", "structPCI__BRIDGE__CONTROL__REGISTER.html#a3299bd20f7c0739aac21766d84af45b2", null ],
+    [ "BridgeControl", "structPCI__BRIDGE__CONTROL__REGISTER.html#a6fbc770cd4841661defb95f3a9a07969", null ],
+    [ "CapabilityPtr", "structPCI__BRIDGE__CONTROL__REGISTER.html#a80e15b8fce06046cbbcf3d6139f6df70", null ],
+    [ "ExpansionRomBAR", "structPCI__BRIDGE__CONTROL__REGISTER.html#a5bb906fd8bfa94c55ed8fae3cb2e3a7d", null ],
+    [ "InterruptLine", "structPCI__BRIDGE__CONTROL__REGISTER.html#ac62d925112c26c636b1e7901a0d4308d", null ],
+    [ "InterruptPin", "structPCI__BRIDGE__CONTROL__REGISTER.html#a1262011a829467f05044293fab23a4fd", null ],
+    [ "IoBase", "structPCI__BRIDGE__CONTROL__REGISTER.html#a0c1334bd56025ce109f1182a05f0feac", null ],
+    [ "IoBaseUpper16", "structPCI__BRIDGE__CONTROL__REGISTER.html#a3a78daa717e8d8fd4a1b5a62d92945cd", null ],
+    [ "IoLimit", "structPCI__BRIDGE__CONTROL__REGISTER.html#acf730a4f86e8be1e46ebd5e8e5df5168", null ],
+    [ "IoLimitUpper16", "structPCI__BRIDGE__CONTROL__REGISTER.html#ad564fde365b3b006f75dbfc22940255e", null ],
+    [ "MemoryBase", "structPCI__BRIDGE__CONTROL__REGISTER.html#af1bdbe9d3d8089a0f6e8bbcadab37f79", null ],
+    [ "MemoryLimit", "structPCI__BRIDGE__CONTROL__REGISTER.html#a878e06089ffe078d2d208885b1009823", null ],
+    [ "PrefetchableBaseUpper32", "structPCI__BRIDGE__CONTROL__REGISTER.html#abda005cb0530c9281be4663f91a47a49", null ],
+    [ "PrefetchableLimitUpper32", "structPCI__BRIDGE__CONTROL__REGISTER.html#a8554f3ab892af8edb7a9d513cf2a6c36", null ],
+    [ "PrefetchableMemoryBase", "structPCI__BRIDGE__CONTROL__REGISTER.html#ac8628e9293630c535c99bdd122639db6", null ],
+    [ "PrefetchableMemoryLimit", "structPCI__BRIDGE__CONTROL__REGISTER.html#a2487a8a75da137da4d434632431dcbb1", null ],
+    [ "PrimaryBus", "structPCI__BRIDGE__CONTROL__REGISTER.html#a270e21616681443f52d49410259b1525", null ],
+    [ "Reserved", "structPCI__BRIDGE__CONTROL__REGISTER.html#aed1a9aaaab4db5cf084ba5ccdb9ab7aa", null ],
+    [ "SecondaryBus", "structPCI__BRIDGE__CONTROL__REGISTER.html#a95ddad807af1f6424106740011012f14", null ],
+    [ "SecondaryLatencyTimer", "structPCI__BRIDGE__CONTROL__REGISTER.html#a82e198b82adf2bf7b21f231561f346e6", null ],
+    [ "SecondaryStatus", "structPCI__BRIDGE__CONTROL__REGISTER.html#ae325b62078cc672a89e0e807975908bc", null ],
+    [ "SubordinateBus", "structPCI__BRIDGE__CONTROL__REGISTER.html#a6bfb37ecc6711546b8754100ff8998e2", null ]
+];

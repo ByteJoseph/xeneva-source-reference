@@ -1,0 +1,6 @@
+var structEFI__ACPI__5__0__PCCT__GENERIC__SHARED__MEMORY__REGION__HEADER =
+[
+    [ "Command", "structEFI__ACPI__5__0__PCCT__GENERIC__SHARED__MEMORY__REGION__HEADER.html#a28855e319ceeb5331eaaf4c92c04e466", null ],
+    [ "Signature", "structEFI__ACPI__5__0__PCCT__GENERIC__SHARED__MEMORY__REGION__HEADER.html#a68366cbe85749cbe8d21f1c78216fe3a", null ],
+    [ "Status", "structEFI__ACPI__5__0__PCCT__GENERIC__SHARED__MEMORY__REGION__HEADER.html#a8d65901522729f6b53e0e95022087937", null ]
+];

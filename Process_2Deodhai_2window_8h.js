@@ -1,0 +1,26 @@
+var Process_2Deodhai_2window_8h =
+[
+    [ "_win_info_", "struct__win__info__.html", "struct__win__info__" ],
+    [ "_win_", "struct__win__.html", "struct__win__" ],
+    [ "SHADOW_COLOR", "Process_2Deodhai_2window_8h.html#a19736b4c86eeb93bb035d5a8623f4e47", null ],
+    [ "SHADOW_SIZE", "Process_2Deodhai_2window_8h.html#a87afbe021d9b88d1ec3d6b3ee797f76e", null ],
+    [ "WINDOW_FLAG_ALWAYS_ON_TOP", "Process_2Deodhai_2window_8h.html#a8e5e8111f9a0f5877791898cb3161e97", null ],
+    [ "WINDOW_FLAG_ANIMATED", "Process_2Deodhai_2window_8h.html#ad06fd046f58353d27c0380a6b981aff7", null ],
+    [ "WINDOW_FLAG_ANIMATION_FADE_IN", "Process_2Deodhai_2window_8h.html#ad8d0150fca02fc94b5de69474529b744", null ],
+    [ "WINDOW_FLAG_ANIMATION_FADE_OUT", "Process_2Deodhai_2window_8h.html#a91e4688067bec52baedec7788715b2e0", null ],
+    [ "WINDOW_FLAG_BLOCKED", "Process_2Deodhai_2window_8h.html#aa79dab9e4badb73831dc346b2e560284", null ],
+    [ "WINDOW_FLAG_BROADCAST_LISTENER", "Process_2Deodhai_2window_8h.html#acc0c6453aca96f97dd4776d8709b5187", null ],
+    [ "WINDOW_FLAG_DIALOGBOX", "Process_2Deodhai_2window_8h.html#a22c5542bc2549585835afab91bfb2e24", null ],
+    [ "WINDOW_FLAG_MESSAGEBOX", "Process_2Deodhai_2window_8h.html#ac40447e284ed4cfac5fe1f76d8870e97", null ],
+    [ "WINDOW_FLAG_MOVABLE", "Process_2Deodhai_2window_8h.html#a353710822fbc160f9c431a532c8cc904", null ],
+    [ "WINDOW_FLAG_NON_RESIZABLE", "Process_2Deodhai_2window_8h.html#adff33f1856a638d93b7e0c6bd3547c76", null ],
+    [ "WINDOW_FLAG_POPUP", "Process_2Deodhai_2window_8h.html#a3023a5b689ad1a3871fdaf82e4717b63", null ],
+    [ "WINDOW_FLAG_STATIC", "Process_2Deodhai_2window_8h.html#a83b99042229ba1fdfbd1271f2aa03205", null ],
+    [ "WINDOW_STYLE_KNOT_ID", "Process_2Deodhai_2window_8h.html#a70c03acbf153bda0c8ddc29b53a93467", null ],
+    [ "WINDOW_STYLE_OF_FLAGS", "Process_2Deodhai_2window_8h.html#af7374936b9f42160115ce491a3f910b6", null ],
+    [ "Window", "Process_2Deodhai_2window_8h.html#a8992679d9f1b8c5d1cd6a3f8979e0573", null ],
+    [ "WinSharedInfo", "Process_2Deodhai_2window_8h.html#a53bc978102cea75fdf6b7b9adbf36d2c", null ],
+    [ "CreateNewBackBuffer", "Process_2Deodhai_2window_8h.html#a5d9022d2aa917ae389a3a0b36dff9daf", null ],
+    [ "CreateSharedWinSpace", "Process_2Deodhai_2window_8h.html#a275606f0d1bdcd3d60084ba2edcd87fd", null ],
+    [ "CreateWindow", "Process_2Deodhai_2window_8h.html#af5e2339042931390c786993c80573115", null ]
+];

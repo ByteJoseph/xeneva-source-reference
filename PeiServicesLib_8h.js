@@ -1,0 +1,28 @@
+var PeiServicesLib_8h =
+[
+    [ "PeiServicesAllocatePages", "PeiServicesLib_8h.html#aa340a54439edd773478ac42659d84411", null ],
+    [ "PeiServicesAllocatePool", "PeiServicesLib_8h.html#a2ceb5d99b20d531dc334f6b333b84296", null ],
+    [ "PeiServicesCreateHob", "PeiServicesLib_8h.html#a3599d0a12eddfe44e4356369baf2c02f", null ],
+    [ "PeiServicesFfsFindFileByName", "PeiServicesLib_8h.html#a7ed50a2079619d0daaa485a82561bae9", null ],
+    [ "PeiServicesFfsFindNextFile", "PeiServicesLib_8h.html#a4efda59e48032c6f66fc34d6895c2df4", null ],
+    [ "PeiServicesFfsFindNextVolume", "PeiServicesLib_8h.html#a18322a984b4de8e088e912fc2046d427", null ],
+    [ "PeiServicesFfsFindSectionData", "PeiServicesLib_8h.html#a14a5b5f5aea9eb830792b6035e1c5b54", null ],
+    [ "PeiServicesFfsFindSectionData3", "PeiServicesLib_8h.html#af5a7481c9852e61b02c5642b339befb1", null ],
+    [ "PeiServicesFfsGetFileInfo", "PeiServicesLib_8h.html#a05e6c32644be95cecd764b520f7d4ee2", null ],
+    [ "PeiServicesFfsGetFileInfo2", "PeiServicesLib_8h.html#a37edd5de0b495a63536ee08c490129b4", null ],
+    [ "PeiServicesFfsGetVolumeInfo", "PeiServicesLib_8h.html#afc87bfddc35a5723e0b0a58551265005", null ],
+    [ "PeiServicesFreePages", "PeiServicesLib_8h.html#a778f5ed6b93b74e9a11cf9aa4ab77db9", null ],
+    [ "PeiServicesGetBootMode", "PeiServicesLib_8h.html#a18351fd6a39e907d7b1fe6141c28293e", null ],
+    [ "PeiServicesGetHobList", "PeiServicesLib_8h.html#a18c78f228b47469f2ad6b9a68fda8578", null ],
+    [ "PeiServicesInstallFvInfo2Ppi", "PeiServicesLib_8h.html#a93ee746d3f2b3fb47cf1f7008c71c746", null ],
+    [ "PeiServicesInstallFvInfoPpi", "PeiServicesLib_8h.html#ab65d3e524335fd89ddae9653a3088dcc", null ],
+    [ "PeiServicesInstallPeiMemory", "PeiServicesLib_8h.html#a8d332c14602d2edce51e681c8f8c87ce", null ],
+    [ "PeiServicesInstallPpi", "PeiServicesLib_8h.html#aaee4897374edfcb91b144f682f952e5d", null ],
+    [ "PeiServicesLocatePpi", "PeiServicesLib_8h.html#ae4f8bea939ca54c9438e1e4760eea61a", null ],
+    [ "PeiServicesNotifyPpi", "PeiServicesLib_8h.html#a8e525d6f46bb4325e64d6da0dc4c97de", null ],
+    [ "PeiServicesRegisterForShadow", "PeiServicesLib_8h.html#ae9c8888a7323893b1aaef85d6ed5ebaa", null ],
+    [ "PeiServicesReInstallPpi", "PeiServicesLib_8h.html#adcf9f9ea280950ddc74b940407f96f05", null ],
+    [ "PeiServicesResetSystem", "PeiServicesLib_8h.html#a89b4cfe23ba5e92e2542ba5c9decd3d6", null ],
+    [ "PeiServicesResetSystem2", "PeiServicesLib_8h.html#ac45de020b7553d0b4a76fa02c539aa5b", null ],
+    [ "PeiServicesSetBootMode", "PeiServicesLib_8h.html#ae3af34734073d018f3c82865faf4b006", null ]
+];

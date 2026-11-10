@@ -1,0 +1,27 @@
+var virtiotablet_8c =
+[
+    [ "MOUSE_LEFT_CLICK", "virtiotablet_8c.html#a9d4c2ee91249220332657fb4d1d9f5a0", null ],
+    [ "MOUSE_MIDDLE_CLICK", "virtiotablet_8c.html#ad1813c446f968c2d29325a86b02a6723", null ],
+    [ "MOUSE_MOUSE_SCROLL_DOWN", "virtiotablet_8c.html#a0cf2c56d6b034c280bfdcfefe92bfb45", null ],
+    [ "MOUSE_MOUSE_SCROLL_UP", "virtiotablet_8c.html#a239c9f412dc7c007710978a5ed3ebf77", null ],
+    [ "MOUSE_RIGHT_CLICK", "virtiotablet_8c.html#a6cf9cf6928d04a0063e7b8e8b28d49b2", null ],
+    [ "AuGICDeallocateSPI", "virtiotablet_8c.html#a29446d057d3194c34988fde9ed2e6d8e", null ],
+    [ "AuVirtioTabletDown", "virtiotablet_8c.html#ade28ed3a407e5d96ddecedb291a02a67", null ],
+    [ "AuVirtioTabletHandler", "virtiotablet_8c.html#aea9f081429af579365c19999c442c7d3", null ],
+    [ "AuVirtioTabletInitialize", "virtiotablet_8c.html#a43472f53784875ae08a321b410bd1fc8", null ],
+    [ "buttonLeft", "virtiotablet_8c.html#a493bf49a2798088b0b3e87f86a831172", null ],
+    [ "buttonMiddle", "virtiotablet_8c.html#affe7e5adeff7a4deb4287c198dfa4dd2", null ],
+    [ "buttonRight", "virtiotablet_8c.html#a73b242b3ae3f6be18f3d877085cebc9e", null ],
+    [ "buttonScrollDown", "virtiotablet_8c.html#a22235d8cdc45d50f4cd59d70acbb6d41", null ],
+    [ "buttonScrollUp", "virtiotablet_8c.html#a3071269c40f28b2f7809e3e49af38086", null ],
+    [ "maxX", "virtiotablet_8c.html#af601b4da58f07b53cf6cf36ad5b8cd50", null ],
+    [ "maxY", "virtiotablet_8c.html#ae853146681224745b378959c65ee98ce", null ],
+    [ "mouseX", "virtiotablet_8c.html#a85ea1b63086b31a15d3ed2579c5715a6", null ],
+    [ "mouseY", "virtiotablet_8c.html#a3637abebcaa9d04aa18b1610d0921e16", null ],
+    [ "resX", "virtiotablet_8c.html#a1027155f20d538008ee7454c42566ac9", null ],
+    [ "resY", "virtiotablet_8c.html#a7758cb61ac79d358e1eb99dd685c1a56", null ],
+    [ "tabletIndex", "virtiotablet_8c.html#a5a0aa631e49c4c0305b9d77ab1b79fca", null ],
+    [ "TabletInput", "virtiotablet_8c.html#a342ea2f447bbab2fc043229556f4e7ef", null ],
+    [ "TabletQueue", "virtiotablet_8c.html#a188693acb958390057aed51daae03522", null ],
+    [ "tabletQueueSz", "virtiotablet_8c.html#a17c4779bbe9a3a92d2ed6e2661e8fc6d", null ]
+];

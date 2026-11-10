@@ -1,0 +1,25 @@
+var drm__property_8h =
+[
+    [ "drm_property_enum", "structdrm__property__enum.html", "structdrm__property__enum" ],
+    [ "drm_property", "structdrm__property.html", "structdrm__property" ],
+    [ "drm_property_blob", "structdrm__property__blob.html", "structdrm__property__blob" ],
+    [ "drm_prop_enum_list", "structdrm__prop__enum__list.html", "structdrm__prop__enum__list" ],
+    [ "obj_to_blob", "drm__property_8h.html#a705c2607a294c8c3c0091a848be57cf5", null ],
+    [ "obj_to_property", "drm__property_8h.html#ac862116784574df38d682e1c72d8a714", null ],
+    [ "drm_property_add_enum", "drm__property_8h.html#aea40b02fc9839b31b91d749ca7bec620", null ],
+    [ "drm_property_blob_get", "drm__property_8h.html#abea0337ff464b8fd430ecb8e5fb5ac0e", null ],
+    [ "drm_property_blob_put", "drm__property_8h.html#a9ddf0c83f0f6781debfe3b11036040ca", null ],
+    [ "drm_property_create", "drm__property_8h.html#a1de7b0b67fc70aba48c6f280c27c88f1", null ],
+    [ "drm_property_create_bitmask", "drm__property_8h.html#a1a91fa052598af504f9d65afd16b21e3", null ],
+    [ "drm_property_create_blob", "drm__property_8h.html#ae6cfab477effe7e992b52d0973ef99db", null ],
+    [ "drm_property_create_bool", "drm__property_8h.html#a2dbcb9b7d54a3f3e56ca5b599785825b", null ],
+    [ "drm_property_create_enum", "drm__property_8h.html#a8f4a80b04e6b24e6d59a3ca4f0734f33", null ],
+    [ "drm_property_create_object", "drm__property_8h.html#adf5abe4f477db354ee34d773e4d88d8a", null ],
+    [ "drm_property_create_range", "drm__property_8h.html#a239bf5330f2afe8605f7b4690805b0aa", null ],
+    [ "drm_property_create_signed_range", "drm__property_8h.html#a3a7d9d1f0e0b8bd873dff825b816dddc", null ],
+    [ "drm_property_destroy", "drm__property_8h.html#a362574365a296fdca51aca495a05212b", null ],
+    [ "drm_property_lookup_blob", "drm__property_8h.html#a04151b10e8ef6d80c0043de046bf8f6f", null ],
+    [ "drm_property_replace_blob", "drm__property_8h.html#a8861dbe72a278371ff4d62e43fb8f9cb", null ],
+    [ "drm_property_replace_blob_from_id", "drm__property_8h.html#a4a4d919c5c3c02201d0a08adf6f90a3c", null ],
+    [ "drm_property_replace_global_blob", "drm__property_8h.html#a638ddf07b7be6a464ec0abe3e0d9a0b6", null ]
+];

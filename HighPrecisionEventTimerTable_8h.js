@@ -1,0 +1,9 @@
+var HighPrecisionEventTimerTable_8h =
+[
+    [ "EFI_ACPI_HIGH_PRECISION_EVENT_TIMER_BLOCK_ID", "unionEFI__ACPI__HIGH__PRECISION__EVENT__TIMER__BLOCK__ID.html", "unionEFI__ACPI__HIGH__PRECISION__EVENT__TIMER__BLOCK__ID" ],
+    [ "EFI_ACPI_HIGH_PRECISION_EVENT_TIMER_TABLE_HEADER", "structEFI__ACPI__HIGH__PRECISION__EVENT__TIMER__TABLE__HEADER.html", "structEFI__ACPI__HIGH__PRECISION__EVENT__TIMER__TABLE__HEADER" ],
+    [ "EFI_ACPI_4KB_PAGE_PROTECTION", "HighPrecisionEventTimerTable_8h.html#ac964bab344ca7902a8f5409dfa9fd664", null ],
+    [ "EFI_ACPI_64KB_PAGE_PROTECTION", "HighPrecisionEventTimerTable_8h.html#ad506bb45315ec2672c9c84c13c1cbd37", null ],
+    [ "EFI_ACPI_HIGH_PRECISION_EVENT_TIMER_TABLE_REVISION", "HighPrecisionEventTimerTable_8h.html#a20811860919389df20815da7cb180f5a", null ],
+    [ "EFI_ACPI_NO_PAGE_PROTECTION", "HighPrecisionEventTimerTable_8h.html#aaf823e3006a255f93aad0e89ef5fa2d8", null ]
+];

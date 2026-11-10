@@ -1,0 +1,27 @@
+var structdrm__crtc__funcs =
+[
+    [ "atomic_destroy_state", "structdrm__crtc__funcs.html#a262819bd4f200bb24f99afacfda91521", null ],
+    [ "atomic_duplicate_state", "structdrm__crtc__funcs.html#aedf2cfe8b9d4bc6a99c76e72a7b5e9fc", null ],
+    [ "atomic_get_property", "structdrm__crtc__funcs.html#a54884e8bb48da39621fb2bfe02e9dfee", null ],
+    [ "atomic_print_state", "structdrm__crtc__funcs.html#afeb2501b0d307aff21ea994945548914", null ],
+    [ "atomic_set_property", "structdrm__crtc__funcs.html#a7de4566adfa40e275deac96eebf339ff", null ],
+    [ "cursor_move", "structdrm__crtc__funcs.html#a01e42434b63d15ae6823c72b982a8bdc", null ],
+    [ "cursor_set", "structdrm__crtc__funcs.html#a4637d4da4074436006066c03d60af426", null ],
+    [ "cursor_set2", "structdrm__crtc__funcs.html#a23fadfbf4048549502291a26423d71c5", null ],
+    [ "destroy", "structdrm__crtc__funcs.html#a00647d466cff9f385ae0fb3cf0c174e1", null ],
+    [ "disable_vblank", "structdrm__crtc__funcs.html#a98340387455b1171f4af7ec4b7f37ffc", null ],
+    [ "early_unregister", "structdrm__crtc__funcs.html#ac0271efcadd311296fc15bf7ff631913", null ],
+    [ "enable_vblank", "structdrm__crtc__funcs.html#aaa64b405cd8642501d5fecf2a8644d04", null ],
+    [ "gamma_set", "structdrm__crtc__funcs.html#a826de2b3b1d8e8c5775b8dd8778ca11f", null ],
+    [ "get_crc_sources", "structdrm__crtc__funcs.html#a42fa4306b25d1959ee9b647f82fdf4df", null ],
+    [ "get_vblank_counter", "structdrm__crtc__funcs.html#a0ef3209135432319e522e242bd51c145", null ],
+    [ "get_vblank_timestamp", "structdrm__crtc__funcs.html#aa2275440e5878035d20adc6f53e3f263", null ],
+    [ "late_register", "structdrm__crtc__funcs.html#a25bed1d16d5c8d49a8195b3b720ac7d6", null ],
+    [ "page_flip", "structdrm__crtc__funcs.html#a737e4ae2a593e2ca43e17d84cb6dc70c", null ],
+    [ "page_flip_target", "structdrm__crtc__funcs.html#a735e2e36129ba5c73c34e38f5562823a", null ],
+    [ "reset", "structdrm__crtc__funcs.html#a1031dc0ed63eac76879db75503a99fdd", null ],
+    [ "set_config", "structdrm__crtc__funcs.html#a283068ab8eafb248ec00c00857e8b811", null ],
+    [ "set_crc_source", "structdrm__crtc__funcs.html#a9ba28f2b4af932f671f90f3e93b2d55b", null ],
+    [ "set_property", "structdrm__crtc__funcs.html#a8f994c1ba34e51760229def03d88b53a", null ],
+    [ "verify_crc_source", "structdrm__crtc__funcs.html#a05971b80b03fb14aa3c9cd89c52694cd", null ]
+];

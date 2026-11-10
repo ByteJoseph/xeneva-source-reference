@@ -1,0 +1,27 @@
+var notes__ui_8cpp =
+[
+    [ "_sidebar_header_", "struct__sidebar__header__.html", "struct__sidebar__header__" ],
+    [ "ChSidebarHeader", "notes__ui_8cpp.html#aff00523067d2aa80c7b0386d87c1b6be", null ],
+    [ "NotesCreateNew", "notes__ui_8cpp.html#adcd6851b65c5e07bf7479f73023b70dd", null ],
+    [ "NotesInitializeUI", "notes__ui_8cpp.html#a6283d5315cd9068bc28350274d0bca42", null ],
+    [ "NotesTitleBarHandleKey", "notes__ui_8cpp.html#a740988fe7be30962969a43756baa72ab", null ],
+    [ "OnBoldClicked", "notes__ui_8cpp.html#a396299a448452ebdefd8919d38a41d04", null ],
+    [ "OnColorBlackClicked", "notes__ui_8cpp.html#a676ebfb3b3d71a1f2c81f1a85587022c", null ],
+    [ "OnColorBlueClicked", "notes__ui_8cpp.html#acf6cccd447aeb86ca901508f755d0296", null ],
+    [ "OnColorGreenClicked", "notes__ui_8cpp.html#af7a89bcb05b89f32b2d6a2303f70986f", null ],
+    [ "OnColorRedClicked", "notes__ui_8cpp.html#a4f305bf43d07f6080ce190668c03b833", null ],
+    [ "OnDeleteNoteClicked", "notes__ui_8cpp.html#a4973bd040c7a51836bea1f91515c70af", null ],
+    [ "OnItalicClicked", "notes__ui_8cpp.html#ae1cc5e58aada1a16e6abd1188ea5d3cd", null ],
+    [ "OnListClicked", "notes__ui_8cpp.html#ae8697dc999b6feaa2ce02a07484fce50", null ],
+    [ "OnNewNoteClicked", "notes__ui_8cpp.html#a26ec6743dfaf7c3435b1a597f852d698", null ],
+    [ "OnNoteSelected", "notes__ui_8cpp.html#a9b6858d57c8f2178bcdcc8eddde544e0", null ],
+    [ "OnRenameNoteClicked", "notes__ui_8cpp.html#ae13ed2122cfc64dd0316ac5a2066067b", null ],
+    [ "OnSaveNoteClicked", "notes__ui_8cpp.html#a2bc0e404a8ae13a3a5ff7b43a937babf", null ],
+    [ "OnSizeDownClicked", "notes__ui_8cpp.html#aef7c73c6fa571faf33e9b4b39e36bdfb", null ],
+    [ "OnSizeUpClicked", "notes__ui_8cpp.html#a72d432ff4082ae89deaf1a870a5fdf26", null ],
+    [ "currentNoteIdx", "notes__ui_8cpp.html#a6d3b3cb499e53d203036410cceb7bb91", null ],
+    [ "currentNoteSection", "notes__ui_8cpp.html#ac23922d5013101b432d17175bcf8a738", null ],
+    [ "notesEditor", "notes__ui_8cpp.html#a9ce2c4d1add47b54962b73ec06d40084", null ],
+    [ "notesSidebar", "notes__ui_8cpp.html#ac58b6c62549bcb6da98d3feb2a323fdd", null ],
+    [ "notesTitleBar", "notes__ui_8cpp.html#a2c742b0b7d72c41cb1f239f10c6ffdfc", null ]
+];

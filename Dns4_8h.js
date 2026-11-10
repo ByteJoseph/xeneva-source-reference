@@ -1,0 +1,25 @@
+var Dns4_8h =
+[
+    [ "EFI_DNS4_CONFIG_DATA", "structEFI__DNS4__CONFIG__DATA.html", "structEFI__DNS4__CONFIG__DATA" ],
+    [ "EFI_DNS4_CACHE_ENTRY", "structEFI__DNS4__CACHE__ENTRY.html", "structEFI__DNS4__CACHE__ENTRY" ],
+    [ "EFI_DNS4_MODE_DATA", "structEFI__DNS4__MODE__DATA.html", "structEFI__DNS4__MODE__DATA" ],
+    [ "DNS_HOST_TO_ADDR_DATA", "structDNS__HOST__TO__ADDR__DATA.html", "structDNS__HOST__TO__ADDR__DATA" ],
+    [ "DNS_ADDR_TO_HOST_DATA", "structDNS__ADDR__TO__HOST__DATA.html", "structDNS__ADDR__TO__HOST__DATA" ],
+    [ "DNS_RESOURCE_RECORD", "structDNS__RESOURCE__RECORD.html", "structDNS__RESOURCE__RECORD" ],
+    [ "DNS_GENERAL_LOOKUP_DATA", "structDNS__GENERAL__LOOKUP__DATA.html", "structDNS__GENERAL__LOOKUP__DATA" ],
+    [ "EFI_DNS4_COMPLETION_TOKEN", "structEFI__DNS4__COMPLETION__TOKEN.html", "structEFI__DNS4__COMPLETION__TOKEN" ],
+    [ "_EFI_DNS4_PROTOCOL", "struct__EFI__DNS4__PROTOCOL.html", "struct__EFI__DNS4__PROTOCOL" ],
+    [ "EFI_DNS4_PROTOCOL_GUID", "Dns4_8h.html#a519df77bf649bebd0af487173629308f", null ],
+    [ "EFI_DNS4_SERVICE_BINDING_PROTOCOL_GUID", "Dns4_8h.html#aca139f746e6969f2cb1bf3d21e349010", null ],
+    [ "EFI_DNS4_CANCEL", "Dns4_8h.html#a801bcd3556164e51e37f42d3f33b2145", null ],
+    [ "EFI_DNS4_CONFIGURE", "Dns4_8h.html#a4d58f1816844e9558a62160125f82461", null ],
+    [ "EFI_DNS4_GENERAL_LOOKUP", "Dns4_8h.html#a52fbee6b8ff45f96c8ed292469627a7e", null ],
+    [ "EFI_DNS4_GET_MODE_DATA", "Dns4_8h.html#aada536384c67d840d9d0ca91b597d200", null ],
+    [ "EFI_DNS4_HOST_NAME_TO_IP", "Dns4_8h.html#a8dae8d2cc9cee20c4ab160d7a009beed", null ],
+    [ "EFI_DNS4_IP_TO_HOST_NAME", "Dns4_8h.html#ade0541a0efb51ef04369c46b5a7f1492", null ],
+    [ "EFI_DNS4_POLL", "Dns4_8h.html#a3c9d704371289c4a82463910ba31b88d", null ],
+    [ "EFI_DNS4_PROTOCOL", "Dns4_8h.html#ae9240bf8ed56961cfa7d4b105701c43a", null ],
+    [ "EFI_DNS4_UPDATE_DNS_CACHE", "Dns4_8h.html#a08f33ceca9b35b5f5211f0738fe313b2", null ],
+    [ "gEfiDns4ProtocolGuid", "Dns4_8h.html#ac437bdc55c8a6359d1e474401a6085a2", null ],
+    [ "gEfiDns4ServiceBindingProtocolGuid", "Dns4_8h.html#a60b79539312a4205ff290cc909b7b083", null ]
+];

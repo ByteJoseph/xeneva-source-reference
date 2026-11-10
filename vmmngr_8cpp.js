@@ -1,0 +1,25 @@
+var vmmngr_8cpp =
+[
+    [ "CANONICAL_MASK", "vmmngr_8cpp.html#a83d312dd0d47741a4b99c4f2505fb3a4", null ],
+    [ "Au_x86_64_Paging_Init", "vmmngr_8cpp.html#af8fd0069653c8fd7c5946f8920ddf2da", null ],
+    [ "AuCreateVirtualAddressSpace", "vmmngr_8cpp.html#a5ed630229c2dfb530c98560516c948fe", null ],
+    [ "AuFreePages", "vmmngr_8cpp.html#afee913df92f37b35f3bf5131c6c0ee97", null ],
+    [ "AuGetFreePage", "vmmngr_8cpp.html#add65d569cfe06950c6cc359749e5a95d", null ],
+    [ "AuGetPhysicalAddress", "vmmngr_8cpp.html#aa13da200183a56024cf490f946efaa60", null ],
+    [ "AuGetPhysicalAddressEx", "vmmngr_8cpp.html#a2257bee1340ff8e232cc58391b90addf", null ],
+    [ "AuGetRootPageTable", "vmmngr_8cpp.html#a6810967631742244b813c3acf52b94e7", null ],
+    [ "AuMapMMIO", "vmmngr_8cpp.html#a0e5999f7a870828e0943cfb4d22fc7c3", null ],
+    [ "AuMapPage", "vmmngr_8cpp.html#a8587f5ce9e59246ed26090b7c25162de", null ],
+    [ "AuMapPageEx", "vmmngr_8cpp.html#aeacdfb6679ae320c790482c0f80a2ec0", null ],
+    [ "AuVmmngrBootFree", "vmmngr_8cpp.html#a3d90d2a075e51c9ac94125be430514bd", null ],
+    [ "AuVmmngrCloneAddressSpace", "vmmngr_8cpp.html#aef0ac93079066090068cdc18d04acf30", null ],
+    [ "AuVmmngrGetPage", "vmmngr_8cpp.html#afd05def69f22635b85928f448e56a836", null ],
+    [ "AuVmmngrInitialize", "vmmngr_8cpp.html#a376137ed2daef150fde7ca6946007709", null ],
+    [ "x86_64_p_index", "vmmngr_8cpp.html#a15f151bd70dbd3dd2c9643896898ebc4", null ],
+    [ "x86_64_pd_index", "vmmngr_8cpp.html#a732da1db040f05ce147b2e8a45235b7f", null ],
+    [ "x86_64_pdp_index", "vmmngr_8cpp.html#a207fb56eeb4fdebf8014be4d18d48a11", null ],
+    [ "x86_64_pml4_index", "vmmngr_8cpp.html#a04ad3b38addc704d3918772efa89aab1", null ],
+    [ "x86_64_pt_index", "vmmngr_8cpp.html#afd7770f015d1231dda930012623b8fac", null ],
+    [ "_MmioBase", "vmmngr_8cpp.html#a9ff05b7a827c8008c9ef4c9137bca477", null ],
+    [ "_RootPaging", "vmmngr_8cpp.html#a3e66445f4cb342e520f433d082b283dd", null ]
+];

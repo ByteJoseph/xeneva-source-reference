@@ -1,0 +1,28 @@
+var KernelAA64_2dtb_8c =
+[
+    [ "FDT_BEGIN_NODE", "KernelAA64_2dtb_8c.html#a84974b092f97d4f2588c8efb4f6fdd67", null ],
+    [ "FDT_END", "KernelAA64_2dtb_8c.html#a53275b16340fb458df4782462f283d8c", null ],
+    [ "FDT_END_NODE", "KernelAA64_2dtb_8c.html#a97c9b3b1971681a8183442ddd0a8009c", null ],
+    [ "FDT_MAGIC", "KernelAA64_2dtb_8c.html#a5d5b14eccb44e809abddd8a946ddc8a3", null ],
+    [ "FDT_NOP", "KernelAA64_2dtb_8c.html#a95f6ec2ae047c13339f80ca6adeafc21", null ],
+    [ "FDT_PROP", "KernelAA64_2dtb_8c.html#a3304a9313cbf7ecced77f89ff5f25dde", null ],
+    [ "AuDeviceTreeDumpAll", "KernelAA64_2dtb_8c.html#a7073370d618d4cdf90e6127439eb5fa1", null ],
+    [ "AuDeviceTreeDumpAllProps", "KernelAA64_2dtb_8c.html#a11b5133652de3e145d57feacc98b79e6", null ],
+    [ "AuDeviceTreeFindProperty", "KernelAA64_2dtb_8c.html#a64656428803ea82378f1923f013523d9", null ],
+    [ "AuDeviceTreeFindPropertyInternal", "KernelAA64_2dtb_8c.html#a8694b129a7b281840c7e66c5ba7b73b6", null ],
+    [ "AuDeviceTreeGetAddressCells", "KernelAA64_2dtb_8c.html#ac4ee04da6695b97ec3218f67ebcb6e7a", null ],
+    [ "AuDeviceTreeGetNode", "KernelAA64_2dtb_8c.html#adcada0c28cea57c0fc4e7d881d2ef08a", null ],
+    [ "AuDeviceTreeGetPropCells", "KernelAA64_2dtb_8c.html#a627d528998ab9fcf40e881685459bcdd", null ],
+    [ "AuDeviceTreeGetRegAddress", "KernelAA64_2dtb_8c.html#a7a4c5bbdc2378870312fdf3f394c8fa2", null ],
+    [ "AuDeviceTreeGetRegSize", "KernelAA64_2dtb_8c.html#a9647d05e1c4a7f69ebb661ad7550f2f7", null ],
+    [ "AuDeviceTreeGetSizeCells", "KernelAA64_2dtb_8c.html#a7d6c41548604dbdc666cd835d89860bd", null ],
+    [ "AuDeviceTreeGetSubNode", "KernelAA64_2dtb_8c.html#aefe09d6fa31392a06dcd3dfe10949208", null ],
+    [ "AuDeviceTreeGetU32Property", "KernelAA64_2dtb_8c.html#a349a2891cb22f96fe7af4247dee22693", null ],
+    [ "AuDeviceTreeInitialize", "KernelAA64_2dtb_8c.html#a0aff00b54a29ff95e274c807be3d0472", null ],
+    [ "AuDeviceTreeMapMMIO", "KernelAA64_2dtb_8c.html#ad5c0e45b302fa737db1ced56c6b88ae5", null ],
+    [ "AuDTBSwap16", "KernelAA64_2dtb_8c.html#ad87bdb238e991738e19a75b72bd49d00", null ],
+    [ "AuDTBSwap32", "KernelAA64_2dtb_8c.html#a4bdd5fcb89e05f193c6628b5c48b9c07", null ],
+    [ "AuDTBSwap64", "KernelAA64_2dtb_8c.html#aea034da5368834da776db291dda4e612", null ],
+    [ "dump_recursive_", "KernelAA64_2dtb_8c.html#a4723cdec35b9bbf3cdb39197bdb4d73e", null ],
+    [ "dtbAddress", "KernelAA64_2dtb_8c.html#a972b52fe96d430adda4e929be45c7ca7", null ]
+];

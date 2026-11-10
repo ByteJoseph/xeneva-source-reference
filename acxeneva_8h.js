@@ -1,0 +1,25 @@
+var acxeneva_8h =
+[
+    [ "_KERNEL_MODE", "acxeneva_8h.html#aef4b751b6cff00249a99e22bad6c7dad", null ],
+    [ "ACPI_ACQUIRE_GLOBAL_LOCK", "acxeneva_8h.html#a9ab72445fad008be0a00bda12caeb53f", null ],
+    [ "ACPI_API_FUNCTION", "acxeneva_8h.html#a0e0edb5d6486920bf082a54b9286be97", null ],
+    [ "ACPI_CPU_FLAGS", "acxeneva_8h.html#a54499436339ba1d430c3adf4929c55e6", null ],
+    [ "ACPI_DEBUG_OUTPUT", "acxeneva_8h.html#ad348057acd81e3fb3bf0ceb249c76bf0", null ],
+    [ "ACPI_FLUSH_CPU_CACHE", "acxeneva_8h.html#a5ef1e322b00b6957f6d4c477193f45f3", null ],
+    [ "ACPI_MACHINE_WIDTH", "acxeneva_8h.html#accde479c29edf46b4bec41d356663e34", null ],
+    [ "ACPI_MUTEX", "acxeneva_8h.html#a3705e4a711b8b995c1ef165a9b4d37d8", null ],
+    [ "ACPI_MUTEX_TYPE", "acxeneva_8h.html#a2b7992ae904e4049efc724f298740be4", null ],
+    [ "ACPI_REDUCED_HARDWARE", "acxeneva_8h.html#aae7ea67ce25a5e0d7ee84d71071e1836", null ],
+    [ "ACPI_RELEASE_GLOBAL_LOCK", "acxeneva_8h.html#afd8cccf1881b3c41c39594b68174e046", null ],
+    [ "ACPI_SEMAPHORE", "acxeneva_8h.html#a432412f7016d0ac0f98977fd97dd6d83", null ],
+    [ "ACPI_SPINLOCK", "acxeneva_8h.html#aa444f28724a989f4d8304d85fc784e13", null ],
+    [ "ACPI_USE_LOCAL_CACHE", "acxeneva_8h.html#ad6919ad47da97f61e4a0a1bb100a33a9", null ],
+    [ "ACPI_USE_NATIVE_DIVIDE", "acxeneva_8h.html#a99e9ccd7f724adaef8a14c80dc9b4237", null ],
+    [ "ACPI_USE_NATIVE_MATH64", "acxeneva_8h.html#ae7b056d1a4b57908528f900f7893f996", null ],
+    [ "ACPI_USE_SYSTEM_CLIBRARY", "acxeneva_8h.html#a59865030b529796c0d7c30d3478f5950", null ],
+    [ "ACPICA_FUNC", "acxeneva_8h.html#a73016e1623e7f1430e53385e549504cb", null ],
+    [ "OS_DLL_FUNC", "acxeneva_8h.html#a2efc793813cc814626416d26eb076cd5", null ],
+    [ "AcpiOsAcquireGlobalLock", "acxeneva_8h.html#ae3dfe714cd6ce4b26f0f0135c27776e6", null ],
+    [ "AcpiOsReleaseGlobalLock", "acxeneva_8h.html#ab53264926c99048a54112d5fcbb5a5cd", null ],
+    [ "AuHalFlushCache", "acxeneva_8h.html#a9392d1fd6b23a2a62f295dbb7f1c4d86", null ]
+];

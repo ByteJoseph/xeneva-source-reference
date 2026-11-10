@@ -1,0 +1,5 @@
+var structEFI__LEGACY__MP__TABLE__ENTRY__EXT__BUS__HIERARCHY__BUSINFO =
+[
+    [ "Reserved", "structEFI__LEGACY__MP__TABLE__ENTRY__EXT__BUS__HIERARCHY__BUSINFO.html#a9b508b626083b98fc6262c087d09e0cc", null ],
+    [ "SubtractiveDecode", "structEFI__LEGACY__MP__TABLE__ENTRY__EXT__BUS__HIERARCHY__BUSINFO.html#a388368b00f6d5570359269065142db8e", null ]
+];

@@ -1,0 +1,25 @@
+var structtty__port =
+[
+    [ "DECLARE_KFIFO_PTR", "structtty__port.html#af6b0369e30b1c865ff6bc8e7f8c62738", null ],
+    [ "blocked_open", "structtty__port.html#a65a115bfd26a32b13d898902f2ae5d3c", null ],
+    [ "buf", "structtty__port.html#a28d1d9cc2b5aeb5362a7ef9bcb9b7743", null ],
+    [ "buf_mutex", "structtty__port.html#a677973880db19e1be723e2ffebf325c5", null ],
+    [ "client_data", "structtty__port.html#ac18b8594f4cf0f09dd4a27b66698a6ee", null ],
+    [ "client_ops", "structtty__port.html#a5b8d7037e73368cc2a6bd954267be1c3", null ],
+    [ "close_delay", "structtty__port.html#a328bd0e5652d1f0c914ac1cacca506e8", null ],
+    [ "closing_wait", "structtty__port.html#a505496e68ce283ddca0acff57e2397ea", null ],
+    [ "console", "structtty__port.html#af61fe5133d835da5ea4be9ed7d7dec33", null ],
+    [ "count", "structtty__port.html#aff2adaff2d9a4caf664b916eb84411ac", null ],
+    [ "delta_msr_wait", "structtty__port.html#ad1f706a6b8169c360cd87bc0fdd0e17c", null ],
+    [ "drain_delay", "structtty__port.html#a461f2546318481364bfcf0f63020018d", null ],
+    [ "flags", "structtty__port.html#a26b2f78f4d04e6e659873411e47ed991", null ],
+    [ "iflags", "structtty__port.html#ab5742fb36bc92b7cb9f33adb2afbe39d", null ],
+    [ "itty", "structtty__port.html#a00a6a8c6c365c0a2c0fc28527154bc4b", null ],
+    [ "kref", "structtty__port.html#a3bf54afeefd7fb1286547348bc07aa7c", null ],
+    [ "lock", "structtty__port.html#a3e107e6e89816022e18cb4ee512d8d65", null ],
+    [ "mutex", "structtty__port.html#a60c3a966fe23b1ead3cabc3834bf3030", null ],
+    [ "open_wait", "structtty__port.html#a75cf6bed9d66b42d20f2808e7191da80", null ],
+    [ "ops", "structtty__port.html#ad73e530032ed03f091393a53746d0f50", null ],
+    [ "tty", "structtty__port.html#a26f191a4d0bbb305d239d75e625c484c", null ],
+    [ "xmit_buf", "structtty__port.html#a9fc7e41c6f565578d4e63614a70928ac", null ]
+];

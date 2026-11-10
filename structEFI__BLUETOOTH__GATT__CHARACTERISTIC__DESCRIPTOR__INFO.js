@@ -1,0 +1,5 @@
+var structEFI__BLUETOOTH__GATT__CHARACTERISTIC__DESCRIPTOR__INFO =
+[
+    [ "CharacteristicDescriptorUuid", "structEFI__BLUETOOTH__GATT__CHARACTERISTIC__DESCRIPTOR__INFO.html#a7a0e747357b6efd739d71ebf4b80585a", null ],
+    [ "Header", "structEFI__BLUETOOTH__GATT__CHARACTERISTIC__DESCRIPTOR__INFO.html#ab53f952bc0b71836617aad799a426aa0", null ]
+];

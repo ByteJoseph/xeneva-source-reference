@@ -1,0 +1,6 @@
+var structIPMI__GET__LAN__CONFIGURATION__PARAMETERS__RESPONSE =
+[
+    [ "CompletionCode", "structIPMI__GET__LAN__CONFIGURATION__PARAMETERS__RESPONSE.html#ae5f3774fe76d388a4511bb4214770ed7", null ],
+    [ "ParameterData", "structIPMI__GET__LAN__CONFIGURATION__PARAMETERS__RESPONSE.html#a4730852a9a27ac9251f5a7b70c9d7efc", null ],
+    [ "ParameterRevision", "structIPMI__GET__LAN__CONFIGURATION__PARAMETERS__RESPONSE.html#a4dd605437c93a3c57036d8ea74e90893", null ]
+];

@@ -1,0 +1,8 @@
+var structEFI__ACPI__6__1__PMMT__COMMON__MEMORY__AGGREGATOR__DEVICE__STRUCTURE =
+[
+    [ "Flags", "structEFI__ACPI__6__1__PMMT__COMMON__MEMORY__AGGREGATOR__DEVICE__STRUCTURE.html#ad6f51c5ee77d466bc34379f5ab48f683", null ],
+    [ "Length", "structEFI__ACPI__6__1__PMMT__COMMON__MEMORY__AGGREGATOR__DEVICE__STRUCTURE.html#a2033e13fe3d05baef57e91e7271c8c40", null ],
+    [ "Reserved", "structEFI__ACPI__6__1__PMMT__COMMON__MEMORY__AGGREGATOR__DEVICE__STRUCTURE.html#ac4090017f5c093de506d24b1c50231be", null ],
+    [ "Reserved1", "structEFI__ACPI__6__1__PMMT__COMMON__MEMORY__AGGREGATOR__DEVICE__STRUCTURE.html#aa45cafe28cf7ffaffdc4d1ef56b7337c", null ],
+    [ "Type", "structEFI__ACPI__6__1__PMMT__COMMON__MEMORY__AGGREGATOR__DEVICE__STRUCTURE.html#ad6a9524cab17728b8f0942db4a9e820c", null ]
+];

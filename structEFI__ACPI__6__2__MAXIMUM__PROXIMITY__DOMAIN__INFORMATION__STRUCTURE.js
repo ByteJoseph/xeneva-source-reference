@@ -1,0 +1,9 @@
+var structEFI__ACPI__6__2__MAXIMUM__PROXIMITY__DOMAIN__INFORMATION__STRUCTURE =
+[
+    [ "Length", "structEFI__ACPI__6__2__MAXIMUM__PROXIMITY__DOMAIN__INFORMATION__STRUCTURE.html#a380db544963698ccbb751f2df13ef11d", null ],
+    [ "MaximumMemoryCapacity", "structEFI__ACPI__6__2__MAXIMUM__PROXIMITY__DOMAIN__INFORMATION__STRUCTURE.html#a3d3a22548e0854c917c1941cc49ed821", null ],
+    [ "MaximumProcessorCapacity", "structEFI__ACPI__6__2__MAXIMUM__PROXIMITY__DOMAIN__INFORMATION__STRUCTURE.html#a57a0bbacc89634152e2dc4d80794a959", null ],
+    [ "ProximityDomainRangeHigh", "structEFI__ACPI__6__2__MAXIMUM__PROXIMITY__DOMAIN__INFORMATION__STRUCTURE.html#adb8356c486e7bfc6f374123e53794bd8", null ],
+    [ "ProximityDomainRangeLow", "structEFI__ACPI__6__2__MAXIMUM__PROXIMITY__DOMAIN__INFORMATION__STRUCTURE.html#a941dac099e9108d01efdc0080eb0a1c1", null ],
+    [ "Revision", "structEFI__ACPI__6__2__MAXIMUM__PROXIMITY__DOMAIN__INFORMATION__STRUCTURE.html#a72b2ed62362123285500d50d5242ce12", null ]
+];

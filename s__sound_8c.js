@@ -1,0 +1,28 @@
+var s__sound_8c =
+[
+    [ "channel_t", "structchannel__t.html", "structchannel__t" ],
+    [ "NORM_PITCH", "s__sound_8c.html#a37059d54c44e891d60742bb6cc47ef70", null ],
+    [ "NORM_PRIORITY", "s__sound_8c.html#a431c03cfd23caac09f609b476791cbfd", null ],
+    [ "NORM_SEP", "s__sound_8c.html#a83306d81b5297ea3e22182a0138dd916", null ],
+    [ "S_ATTENUATOR", "s__sound_8c.html#abf79625f4d9f51ee5d110665addf9d40", null ],
+    [ "S_CLIPPING_DIST", "s__sound_8c.html#a4a9287be84fe22d8ae5f9891f45c6766", null ],
+    [ "S_CLOSE_DIST", "s__sound_8c.html#aff18df5043c8550fedc2fe0dc1475eef", null ],
+    [ "S_STEREO_SWING", "s__sound_8c.html#afc1894cbdd14067ee59bac955ae1210a", null ],
+    [ "S_ChangeMusic", "s__sound_8c.html#a94eb5d3a8e5a8bc2a621598b49919dce", null ],
+    [ "S_Init", "s__sound_8c.html#a26ef17595152748fcbe950dfbcf05934", null ],
+    [ "S_MusicPlaying", "s__sound_8c.html#aec866949c38270286076330d217f9fb0", null ],
+    [ "S_PauseSound", "s__sound_8c.html#aaa3c8425b48fc0146309dc1500dbf21d", null ],
+    [ "S_ResumeSound", "s__sound_8c.html#aac68c346c29860350cf7e25dfd0476d9", null ],
+    [ "S_SetMusicVolume", "s__sound_8c.html#aab6fc66c791a024a9a49d9b4fc5dd450", null ],
+    [ "S_SetSfxVolume", "s__sound_8c.html#ad2bc54c0b80af0c830a709e13b3fea0b", null ],
+    [ "S_Shutdown", "s__sound_8c.html#aac090f65aaf5c223e863d37f43180d6f", null ],
+    [ "S_Start", "s__sound_8c.html#a5af40552b96ea46cbce786f047a01602", null ],
+    [ "S_StartMusic", "s__sound_8c.html#acc0456a381c1efb1276a6c93b5599234", null ],
+    [ "S_StartSound", "s__sound_8c.html#af2778de16df436d00e88932f9ba588d6", null ],
+    [ "S_StopMusic", "s__sound_8c.html#ae34a095f2c17ef70016c50827e1a5b54", null ],
+    [ "S_StopSound", "s__sound_8c.html#a496daa97f9f1cadc5216f8b97a2f670c", null ],
+    [ "S_UpdateSounds", "s__sound_8c.html#adaccf3b2f548bfc04cfc3646199079bc", null ],
+    [ "musicVolume", "s__sound_8c.html#a93072262778c750b1245b6a70298ceeb", null ],
+    [ "sfxVolume", "s__sound_8c.html#a906c3a853657817e5aac50f211afe35c", null ],
+    [ "snd_channels", "s__sound_8c.html#adb33ed3eb75bc48a2d88105199dc908a", null ]
+];

@@ -1,0 +1,9 @@
+var structEFI__ACPI__5__1__MPST__MEMORY__POWER__STATE__CHARACTERISTICS__STRUCTURE =
+[
+    [ "AveragePowerConsumedInMPS0", "structEFI__ACPI__5__1__MPST__MEMORY__POWER__STATE__CHARACTERISTICS__STRUCTURE.html#ab19dde696b5f50f6b8752c09a982c47a", null ],
+    [ "ExitLatencyToMPS0", "structEFI__ACPI__5__1__MPST__MEMORY__POWER__STATE__CHARACTERISTICS__STRUCTURE.html#a917e552b131bfaba532d0dc49e79b78c", null ],
+    [ "Flag", "structEFI__ACPI__5__1__MPST__MEMORY__POWER__STATE__CHARACTERISTICS__STRUCTURE.html#a180bd87608fdafe4a826a73c306ea815", null ],
+    [ "PowerStateStructureID", "structEFI__ACPI__5__1__MPST__MEMORY__POWER__STATE__CHARACTERISTICS__STRUCTURE.html#a6747ff99aaaa131adb50d4b7d28ecdaf", null ],
+    [ "RelativePowerSavingToMPS0", "structEFI__ACPI__5__1__MPST__MEMORY__POWER__STATE__CHARACTERISTICS__STRUCTURE.html#ac82d21378b1cc116e712c2cfa62e0bec", null ],
+    [ "Reserved", "structEFI__ACPI__5__1__MPST__MEMORY__POWER__STATE__CHARACTERISTICS__STRUCTURE.html#a5ea3839379fe90760826d7fdb8816dd9", null ]
+];

@@ -1,0 +1,38 @@
+var group_8h =
+[
+    [ "AURORA_GID_GENERAL_FILE", "group_8h.html#a0a9aef4d3dd585c6c3efec661abc2233", null ],
+    [ "AURORA_MAX_GROUPS", "group_8h.html#ace262483fc649d0ade2cf25728bc6a85", null ],
+    [ "GID_GLOBAL_IPC", "group_8h.html#ac4b374e982d141407f6a5ef61cefc94e", null ],
+    [ "GID_GLOBAL_IPC_COUNT", "group_8h.html#a1cb9c6a44200157672c24eddf7e564c3", null ],
+    [ "GID_GLOBAL_MISC", "group_8h.html#a091a71c8f1d5d101afc59ff2bc8d8ab5", null ],
+    [ "GID_GLOBAL_MISC_COUNT", "group_8h.html#aaca4e338ca0c57a7eb23f79b9bf0d6e5", null ],
+    [ "GID_GLOBAL_NET", "group_8h.html#ad5b35f4173397b5d49e8e965c8771652", null ],
+    [ "GID_GLOBAL_NET_COUNT", "group_8h.html#a1a29cd18ca006473686076bac6954751", null ],
+    [ "GID_NUM", "group_8h.html#a487dd0aecde7b311f15a556b1c2a3733", null ],
+    [ "GROUP_ID_ROOT", "group_8h.html#a4d39c1e1eac76e01348aa1df27c73352", null ],
+    [ "GROUP_NAME_AUDIO", "group_8h.html#ae38d6f9fd086cc98c48ddcd8908f34fc", null ],
+    [ "GROUP_NAME_GRAPHICS", "group_8h.html#aa874d79068d28aa5fbd0ea94c3601511", null ],
+    [ "GROUP_NAME_IPC_POSTBOX", "group_8h.html#a8c566075caaecc7bf09946ecef91f62c", null ],
+    [ "GROUP_NAME_NETWORK", "group_8h.html#ad0a5e4daef3df4667468e0348f46c696", null ],
+    [ "GROUP_NAME_STORAGE", "group_8h.html#aae2381de397efecac8fd42381c7f6716", null ],
+    [ "GROUP_NAME_TTY", "group_8h.html#a57b4ad0200327315a6994088ecd930b6", null ],
+    [ "GID_ENTRIES", "group_8h.html#a8123fcae721c37f2f515020bdf3655b0", null ],
+    [ "_gid_entries_", "group_8h.html#a7faf502306dbe3d6052eba1a43cb57fa", [
+      [ "AURORA_GID_NET_SOCKET", "group_8h.html#a7faf502306dbe3d6052eba1a43cb57faaa8622f21c6d605b84128dfa5596dff55", null ],
+      [ "AURORA_GID_NET_RAW", "group_8h.html#a7faf502306dbe3d6052eba1a43cb57faae9c0aef5242065815a6772b245b7e0d7", null ],
+      [ "AURORA_GID_NET_ADMIN", "group_8h.html#a7faf502306dbe3d6052eba1a43cb57faa22d391f7c2af7663937ec920afee316a", null ],
+      [ "AURORA_GID_NET_MONITOR", "group_8h.html#a7faf502306dbe3d6052eba1a43cb57faa0cefb6f2ac24e09770abddc41a867829", null ],
+      [ "AURORA_GID_IPC_POSTBOX", "group_8h.html#a7faf502306dbe3d6052eba1a43cb57faa77a4c24a009b79b1a402686db1b1d8d8", null ],
+      [ "AURORA_GID_IPC_SHARED", "group_8h.html#a7faf502306dbe3d6052eba1a43cb57faaf81e47eda1ec444e1e122c55567b27d1", null ],
+      [ "AURORA_GID_IPC_SIGNAL", "group_8h.html#a7faf502306dbe3d6052eba1a43cb57faab9e918b9d4d920f51ccdb0856e5da4e3", null ],
+      [ "AURORA_GID_IPC_PIPE", "group_8h.html#a7faf502306dbe3d6052eba1a43cb57faa87c9e2141a2992f97088bef19bd380dc", null ],
+      [ "AURORA_GID_MISC_WORLD", "group_8h.html#a7faf502306dbe3d6052eba1a43cb57faa5666eb73f4da52ea8fab3fecf8305f61", null ],
+      [ "AURORA_GID_MISC_USERS", "group_8h.html#a7faf502306dbe3d6052eba1a43cb57faa0c16aa85d085a47ee5ed2897fd083cfd", null ],
+      [ "AURORA_GID_MISC_ADMIN", "group_8h.html#a7faf502306dbe3d6052eba1a43cb57faa45a84c33bbf3e44f105342de07457a15", null ],
+      [ "AURORA_GID_MISC_DAEMONS", "group_8h.html#a7faf502306dbe3d6052eba1a43cb57faaa8d3341bb47da3c7970670f4195a4843", null ]
+    ] ],
+    [ "AuCredGetGroupCategory", "group_8h.html#a492d3477bbd53d158ba780d07254846e", null ],
+    [ "AuCredGetGroupID", "group_8h.html#a334bfffda71c76d4d094831a095b0874", null ],
+    [ "AuCredGroupAdd", "group_8h.html#a61a6ed6dacdcfa2e54d77ff71c13823b", null ],
+    [ "AuCredGroupInitialize", "group_8h.html#a2e22fd005386f0e92fb1933e40d0dc8f", null ]
+];

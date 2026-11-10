@@ -1,0 +1,26 @@
+var brotli_2c_2dec_2decode_8c =
+[
+    [ "BROTLI_ERROR_CODE_CASE_", "brotli_2c_2dec_2decode_8c.html#a6379856637270b10697bd37d08295da8", null ],
+    [ "BROTLI_FAILURE", "brotli_2c_2dec_2decode_8c.html#a3213eeb462e913f2f9a3a0116268a830", null ],
+    [ "BROTLI_LOG_ARRAY_INDEX", "brotli_2c_2dec_2decode_8c.html#a1c9274076575183edbf76fd376f2bcb6", null ],
+    [ "BROTLI_LOG_UINT", "brotli_2c_2dec_2decode_8c.html#a9c4a38277fb6e837b08c66875889bc19", null ],
+    [ "BROTLI_NOTHING_", "brotli_2c_2dec_2decode_8c.html#a4f16ea5c805f890b9386aab2fab80882", null ],
+    [ "BROTLI_SAFE", "brotli_2c_2dec_2decode_8c.html#aaa7cdaf0dac2d835d3c6c1bde411826b", null ],
+    [ "BROTLI_SAVE_ERROR_CODE", "brotli_2c_2dec_2decode_8c.html#a7cf9da8d1d49f96240a73f9fcfcb8aaf", null ],
+    [ "HUFFMAN_TABLE_BITS", "brotli_2c_2dec_2decode_8c.html#a3c185233c1087ab07bf8f604805a2412", null ],
+    [ "HUFFMAN_TABLE_MASK", "brotli_2c_2dec_2decode_8c.html#a144ce64dfd46dc8467efe6a3116bb47e", null ],
+    [ "BrotliDecoderAttachDictionary", "brotli_2c_2dec_2decode_8c.html#ac6105623a865c8fa805a0641cf4d6d6e", null ],
+    [ "BrotliDecoderCreateInstance", "brotli_2c_2dec_2decode_8c.html#ae2d5e9b20f778540a267d2d7c0311c67", null ],
+    [ "BrotliDecoderDecompress", "brotli_2c_2dec_2decode_8c.html#a3a1e03e3f00e173d7c3d806ffa2ba393", null ],
+    [ "BrotliDecoderDecompressStream", "brotli_2c_2dec_2decode_8c.html#ae92c6f06b222445ba3d747ca2aa6e95f", null ],
+    [ "BrotliDecoderDestroyInstance", "brotli_2c_2dec_2decode_8c.html#a4c9e6c7a0a109eac9f415bc69ee78160", null ],
+    [ "BrotliDecoderErrorString", "brotli_2c_2dec_2decode_8c.html#af251e7952d2ed5c86935c09dd28d9d25", null ],
+    [ "BrotliDecoderGetErrorCode", "brotli_2c_2dec_2decode_8c.html#a22841b2f3872137b9df02c8307bbb8cf", null ],
+    [ "BrotliDecoderHasMoreOutput", "brotli_2c_2dec_2decode_8c.html#acb36d763365650eb7517fff94c14428d", null ],
+    [ "BrotliDecoderIsFinished", "brotli_2c_2dec_2decode_8c.html#a51d428a370d556365bac5c3aec05163f", null ],
+    [ "BrotliDecoderIsUsed", "brotli_2c_2dec_2decode_8c.html#a88c694d00408cd0c20302d096f7b7836", null ],
+    [ "BrotliDecoderSetMetadataCallbacks", "brotli_2c_2dec_2decode_8c.html#a2fdcf1444ddfa52dc5344fa33bbd70cf", null ],
+    [ "BrotliDecoderSetParameter", "brotli_2c_2dec_2decode_8c.html#aca9466a1a99d40d1d37abda31920cbd3", null ],
+    [ "BrotliDecoderTakeOutput", "brotli_2c_2dec_2decode_8c.html#aee7db67a841bcd5e0ff181ba84106319", null ],
+    [ "BrotliDecoderVersion", "brotli_2c_2dec_2decode_8c.html#a302da0a502060b0a6b20b29eeaaa83e7", null ]
+];

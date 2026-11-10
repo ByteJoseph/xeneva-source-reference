@@ -1,0 +1,5 @@
+var structPCI__EXPRESS__EXTENDED__CAPABILITIES__SERIAL__NUMBER =
+[
+    [ "Header", "structPCI__EXPRESS__EXTENDED__CAPABILITIES__SERIAL__NUMBER.html#a5569c0a258e1facec3960e69a46dedff", null ],
+    [ "SerialNumber", "structPCI__EXPRESS__EXTENDED__CAPABILITIES__SERIAL__NUMBER.html#a3dd399d3d67f85bd77b850c065ebfb60", null ]
+];

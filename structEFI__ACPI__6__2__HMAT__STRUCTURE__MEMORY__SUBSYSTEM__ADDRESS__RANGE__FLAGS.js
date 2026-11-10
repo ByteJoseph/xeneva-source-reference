@@ -1,0 +1,7 @@
+var structEFI__ACPI__6__2__HMAT__STRUCTURE__MEMORY__SUBSYSTEM__ADDRESS__RANGE__FLAGS =
+[
+    [ "MemoryProximityDomainValid", "structEFI__ACPI__6__2__HMAT__STRUCTURE__MEMORY__SUBSYSTEM__ADDRESS__RANGE__FLAGS.html#ae233001fd0bf287bf26efbd80fd726b6", null ],
+    [ "ProcessorProximityDomainValid", "structEFI__ACPI__6__2__HMAT__STRUCTURE__MEMORY__SUBSYSTEM__ADDRESS__RANGE__FLAGS.html#af9754d548f1142a40d64d06b56de9a97", null ],
+    [ "ReservationHint", "structEFI__ACPI__6__2__HMAT__STRUCTURE__MEMORY__SUBSYSTEM__ADDRESS__RANGE__FLAGS.html#af2328ae6d40590c2e44275740d2c1573", null ],
+    [ "Reserved", "structEFI__ACPI__6__2__HMAT__STRUCTURE__MEMORY__SUBSYSTEM__ADDRESS__RANGE__FLAGS.html#adfd3d99533c07f770445284d10f1ec99", null ]
+];

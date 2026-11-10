@@ -1,0 +1,26 @@
+var usbdevice_8c =
+[
+    [ "TConfigurationHeader", "structTConfigurationHeader.html", "structTConfigurationHeader" ],
+    [ "MAX_CONFIG_DESC_SIZE", "usbdevice_8c.html#a5d2f1a0e7dccd771f76b1a5addd4d87a", null ],
+    [ "TConfigurationHeader", "usbdevice_8c.html#a8b1774f40ef6b53c43c923b74319bc00", null ],
+    [ "_store_stack_param", "usbdevice_8c.html#a0263311c16d51729e3ec03fec61913a2", null ],
+    [ "_USBDevice", "usbdevice_8c.html#aa36ef91099667f661c99dde9b50c66e5", null ],
+    [ "USBDevice", "usbdevice_8c.html#a649594664b842b6d18c40e8bc1021044", null ],
+    [ "USBDeviceConfigurationError", "usbdevice_8c.html#a3927c2c2e14e47c30c0e657276613f43", null ],
+    [ "USBDeviceConfigure", "usbdevice_8c.html#a39928bbb80c366aa749dfc2df823249c", null ],
+    [ "USBDeviceGetAddress", "usbdevice_8c.html#accd5f5d02acea3e21c0e7b8d25792c9b", null ],
+    [ "USBDeviceGetConfigurationDescriptor", "usbdevice_8c.html#a7eb7146f22274549bcc3a5b7ecc502dc", null ],
+    [ "USBDeviceGetDescriptor", "usbdevice_8c.html#a877a6fef101ca99ead7cf801652985be", null ],
+    [ "USBDeviceGetDeviceDescriptor", "usbdevice_8c.html#a4af501ce299e13944194bab2e7338674", null ],
+    [ "USBDeviceGetEndpoint0", "usbdevice_8c.html#a0495477de284ab437ab6d4597ee92e66", null ],
+    [ "USBDeviceGetHost", "usbdevice_8c.html#a0145cb254ad3897ad142d38d836f3af6", null ],
+    [ "USBDeviceGetHubAddress", "usbdevice_8c.html#a5397fd820e6834f7f92c731db0592530", null ],
+    [ "USBDeviceGetHubPortNumber", "usbdevice_8c.html#a15b7f9d4624f41eb659cef0370c6e344", null ],
+    [ "USBDeviceGetName", "usbdevice_8c.html#a419f1d0e96496492ddfb796fceb28e67", null ],
+    [ "USBDeviceGetNames", "usbdevice_8c.html#a8598edcf6a588e6a274526712b39f0d9", null ],
+    [ "USBDeviceGetSpeed", "usbdevice_8c.html#afe1fd6fe23d20864c2f9c3e897072802", null ],
+    [ "USBDeviceInitialize", "usbdevice_8c.html#a63e45203fc70f3e1cc1e82338a48197e", null ],
+    [ "USBDeviceIsSplit", "usbdevice_8c.html#a6915d0a0c45d28104507b0710172ca30", null ],
+    [ "USBDeviceLogWrite", "usbdevice_8c.html#a470c0fbd1ca8d154e38f2e765f6e9891", null ],
+    [ "USBDeviceSetAddress", "usbdevice_8c.html#a6bb2dc1bebf44f95d7d06498ca48afd7", null ]
+];

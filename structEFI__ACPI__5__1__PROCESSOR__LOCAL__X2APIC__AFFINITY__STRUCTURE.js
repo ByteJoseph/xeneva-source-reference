@@ -1,0 +1,11 @@
+var structEFI__ACPI__5__1__PROCESSOR__LOCAL__X2APIC__AFFINITY__STRUCTURE =
+[
+    [ "ClockDomain", "structEFI__ACPI__5__1__PROCESSOR__LOCAL__X2APIC__AFFINITY__STRUCTURE.html#ad1c77fec477c32247c602646c4a0138e", null ],
+    [ "Flags", "structEFI__ACPI__5__1__PROCESSOR__LOCAL__X2APIC__AFFINITY__STRUCTURE.html#af315331882101de2fa0603f675d71107", null ],
+    [ "Length", "structEFI__ACPI__5__1__PROCESSOR__LOCAL__X2APIC__AFFINITY__STRUCTURE.html#a98756bab52fdb2b8116828cbdfc14038", null ],
+    [ "ProximityDomain", "structEFI__ACPI__5__1__PROCESSOR__LOCAL__X2APIC__AFFINITY__STRUCTURE.html#a20166af309d14e1fb001ea55544e01ef", null ],
+    [ "Reserved1", "structEFI__ACPI__5__1__PROCESSOR__LOCAL__X2APIC__AFFINITY__STRUCTURE.html#a20babbec0ea461235a394a3ca00ff45a", null ],
+    [ "Reserved2", "structEFI__ACPI__5__1__PROCESSOR__LOCAL__X2APIC__AFFINITY__STRUCTURE.html#afe6c70fdd649bea150068685def3ff79", null ],
+    [ "Type", "structEFI__ACPI__5__1__PROCESSOR__LOCAL__X2APIC__AFFINITY__STRUCTURE.html#a4d26f81ad3c07070e61a26b8b7bb446c", null ],
+    [ "X2ApicId", "structEFI__ACPI__5__1__PROCESSOR__LOCAL__X2APIC__AFFINITY__STRUCTURE.html#abf2f46b02465c370704d297ea37f8404", null ]
+];

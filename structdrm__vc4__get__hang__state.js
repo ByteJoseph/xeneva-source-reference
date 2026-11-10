@@ -1,0 +1,27 @@
+var structdrm__vc4__get__hang__state =
+[
+    [ "bo", "structdrm__vc4__get__hang__state.html#a14d08bc7f6c844424eb67592fb648e86", null ],
+    [ "bo_count", "structdrm__vc4__get__hang__state.html#a1823ebb9ed059adf50c7788905a56495", null ],
+    [ "bpca", "structdrm__vc4__get__hang__state.html#a1a49d860ff728ad5bb7ab30dc548ba4a", null ],
+    [ "bpcs", "structdrm__vc4__get__hang__state.html#a6a8cac6b9eac0576627c7fae44d084b4", null ],
+    [ "bpoa", "structdrm__vc4__get__hang__state.html#a0f574c90bc8d87a228267dc4768b720e", null ],
+    [ "bpos", "structdrm__vc4__get__hang__state.html#a7f6b10f3bdddad120cb0a8aeacb5af39", null ],
+    [ "ct0ca", "structdrm__vc4__get__hang__state.html#ac6ecf18afd4f481c837ba0886366f052", null ],
+    [ "ct0cs", "structdrm__vc4__get__hang__state.html#a3e3d45a60d6fcf2eccbe94ab85203166", null ],
+    [ "ct0ea", "structdrm__vc4__get__hang__state.html#ad797a54fdee5e56c56c620ddcee93942", null ],
+    [ "ct0ra0", "structdrm__vc4__get__hang__state.html#a840679a4405fe2aa639d42742819e66e", null ],
+    [ "ct1ca", "structdrm__vc4__get__hang__state.html#a52f33e790d37b5984c71e554f4345c1b", null ],
+    [ "ct1cs", "structdrm__vc4__get__hang__state.html#a05873035fe73b4d7a35efc72e3fce74c", null ],
+    [ "ct1ea", "structdrm__vc4__get__hang__state.html#ad643067c358c0169a010fc049fb38496", null ],
+    [ "ct1ra0", "structdrm__vc4__get__hang__state.html#a2ee8e58993ef38cf8e6cb1304a7f4514", null ],
+    [ "dbge", "structdrm__vc4__get__hang__state.html#a7afffe760fb83480e0725ee56805b07f", null ],
+    [ "errstat", "structdrm__vc4__get__hang__state.html#a2a53ed0f2bb1a407aaa6c547d149fb79", null ],
+    [ "fdbgb", "structdrm__vc4__get__hang__state.html#af3cc2f122fd8c0bbf93e2aa9df7e0cc7", null ],
+    [ "fdbgo", "structdrm__vc4__get__hang__state.html#aa6f59c70433a19f975feeed881467008", null ],
+    [ "fdbgr", "structdrm__vc4__get__hang__state.html#aeae5560a5ec5163efd90839ed38fde9a", null ],
+    [ "fdbgs", "structdrm__vc4__get__hang__state.html#aaa3b3f66348c36009c7e0f8a1fc2b8cd", null ],
+    [ "pad", "structdrm__vc4__get__hang__state.html#afe0f0d98a9b19781be081cb3a670c2e8", null ],
+    [ "start_bin", "structdrm__vc4__get__hang__state.html#abeda46bd5145626b5ce935208cb25f0d", null ],
+    [ "start_render", "structdrm__vc4__get__hang__state.html#a905cf7c00bc5aa2c222592d381001bf9", null ],
+    [ "vpmbase", "structdrm__vc4__get__hang__state.html#a5dd9438cba9bf1d9effb7b296eb25502", null ]
+];

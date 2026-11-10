@@ -1,0 +1,26 @@
+var structvirtioblk__dev__config =
+[
+    [ "virtio_blk_geometry", "structvirtioblk__dev__config_1_1virtio__blk__geometry.html", "structvirtioblk__dev__config_1_1virtio__blk__geometry" ],
+    [ "virtio_blk_topology", "structvirtioblk__dev__config_1_1virtio__blk__topology.html", "structvirtioblk__dev__config_1_1virtio__blk__topology" ],
+    [ "virtio_blk_zoned_characteristics", "structvirtioblk__dev__config_1_1virtio__blk__zoned__characteristics.html", "structvirtioblk__dev__config_1_1virtio__blk__zoned__characteristics" ],
+    [ "blk_sz", "structvirtioblk__dev__config.html#a4426226ebcbae3ddd25b7eb097e051d2", null ],
+    [ "capacity", "structvirtioblk__dev__config.html#a4a84c0ded323f40a482974a881c067a2", null ],
+    [ "discard_sector_alignment", "structvirtioblk__dev__config.html#a3f4e2eb8fb3b41e3ced97ad9a6eae122", null ],
+    [ "geometry", "structvirtioblk__dev__config.html#ac5c44ea1fb4ecac893fca25e0607b4f6", null ],
+    [ "max_discard_sectors", "structvirtioblk__dev__config.html#ae859fc65944622aa248c9924007c1ccb", null ],
+    [ "max_discard_seg", "structvirtioblk__dev__config.html#a46cc8e0aab1deab744cd2c18b32300ec", null ],
+    [ "max_secure_erase_sectors", "structvirtioblk__dev__config.html#ae92e104f0af464d9f500a01048957a46", null ],
+    [ "max_secure_erase_seg", "structvirtioblk__dev__config.html#a9e0ba4373805b169e0c8bcf10337455f", null ],
+    [ "max_write_zeroes_sectors", "structvirtioblk__dev__config.html#abbaddc6f2f64fa540c1f35f58393ac35", null ],
+    [ "max_write_zeroes_seg", "structvirtioblk__dev__config.html#aaddb97d7ff7a26b29184f93df67eaf29", null ],
+    [ "num_queues", "structvirtioblk__dev__config.html#a9aaf50e93def328d5d13a08d850e5585", null ],
+    [ "secure_erase_sector_alignment", "structvirtioblk__dev__config.html#a52cac9e0beee2c0b5fd4885def01fd08", null ],
+    [ "seg_max", "structvirtioblk__dev__config.html#a221c22a359a6307ee257806c846f7e5c", null ],
+    [ "size_max", "structvirtioblk__dev__config.html#a86f11b646aef5dc85bd2a3cb6f31e0fa", null ],
+    [ "topology", "structvirtioblk__dev__config.html#a69588a29d71b8757f273e65cc899aa9c", null ],
+    [ "unused", "structvirtioblk__dev__config.html#af371f56a4d57fb80b3c7099b3996cabf", null ],
+    [ "unused0", "structvirtioblk__dev__config.html#a76eb10673ade8ac32eb3a1a6a77f2f2e", null ],
+    [ "write_zeroes_may_unmap", "structvirtioblk__dev__config.html#aff05badcb771e2496015dacf71954512", null ],
+    [ "writeback", "structvirtioblk__dev__config.html#a4d11751c827bec612555a94bf6f130e1", null ],
+    [ "zoned", "structvirtioblk__dev__config.html#a88da21241d1755171e95620cb3457a4f", null ]
+];

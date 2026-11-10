@@ -1,0 +1,25 @@
+var timer_8h =
+[
+    [ "_kernel_timer_", "struct__kernel__timer__.html", "struct__kernel__timer__" ],
+    [ "_itimerval_", "struct__itimerval__.html", "struct__itimerval__" ],
+    [ "_timeval_t_", "struct__timeval__t__.html", "struct__timeval__t__" ],
+    [ "AURORA_MAX_TIMER", "timer_8h.html#a888031716a41912b5fcbf495ea45d768", null ],
+    [ "AuKernelTimer", "timer_8h.html#aba25900e88141babc7b947b755c3c8cd", null ],
+    [ "AuroraTimerCallback", "timer_8h.html#a6a13d244b0a4ed9275b912292dbad522", null ],
+    [ "itimerval_t", "timer_8h.html#aad546fe66cc4bea5d5432cf48bbe7115", null ],
+    [ "timeval_t", "timer_8h.html#aefe59581fe30ed0bf9f495ac219a24bd", null ],
+    [ "AuGetCurrentMS", "timer_8h.html#a94c5521d3aa5ea3e90efced526f201f9", null ],
+    [ "AuGetCurrentUS", "timer_8h.html#a770b9ddb80ccd941e7989033f68a5099", null ],
+    [ "AuGetTimerByThread", "timer_8h.html#a876d2198dcded30568a30e1e395243c8", null ],
+    [ "AuGetWalltime", "timer_8h.html#a9fff9aa5eeeb2b78c02e87bc9eec6fed", null ],
+    [ "AuroraTimerCancel", "timer_8h.html#a72d7c4bcac1b2aa323e3d804065a4c92", null ],
+    [ "AuroraTimerInitialize", "timer_8h.html#a301796ffe1bb2bafdf21ddb177898455", null ],
+    [ "AuroraTimerIsActive", "timer_8h.html#ad52650c6ed3ba21521160eced510c8bf", null ],
+    [ "AuroraTimerStart", "timer_8h.html#a202fa1db1ae981dfff73d05d4b34cc78", null ],
+    [ "AuroraTimerStartPeriodic", "timer_8h.html#a6fb1658887e8bbcdca2ca536899b9351", null ],
+    [ "AuroraTimerTick", "timer_8h.html#a1ec22b0cfccdfc5017c9f23c84c64fb5", null ],
+    [ "AuSetWalltime", "timer_8h.html#ae63730d50f8aab1f9b59edfeb914a50b", null ],
+    [ "AuTimerCalculateAlarm", "timer_8h.html#a9b261e5d0c6f39c6aa0f620ae4abd862", null ],
+    [ "AuTimerGetITimer", "timer_8h.html#a4b5ced1faf5bdbe8f756f7d1e780881f", null ],
+    [ "AuTimerSetITimer", "timer_8h.html#abcbbe0975e16fa890df6ee6e463e6155", null ]
+];

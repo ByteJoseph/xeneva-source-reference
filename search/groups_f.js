@@ -9,5 +9,6 @@ var searchData=
   ['secure_20element_20message_20authentication_20codes_6',['Secure Element Message Authentication Codes',['../group__se__mac.html',1,'']]],
   ['secure_20element_20symmetric_20ciphers_7',['Secure Element Symmetric Ciphers',['../group__se__cipher.html',1,'']]],
   ['sign_20verify_20hash_8',['Interruptible sign/verify hash',['../group__interruptible__hash.html',1,'']]],
-  ['symmetric_20ciphers_9',['symmetric ciphers',['../group__se__cipher.html',1,'Secure Element Symmetric Ciphers'],['../group__cipher.html',1,'Symmetric ciphers']]]
+  ['symmetric_20ciphers_9',['Secure Element Symmetric Ciphers',['../group__se__cipher.html',1,'']]],
+  ['symmetric_20ciphers_10',['Symmetric ciphers',['../group__cipher.html',1,'']]]
 ];

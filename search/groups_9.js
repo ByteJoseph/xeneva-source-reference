@@ -8,7 +8,8 @@ var searchData=
   ['key_20exchange_20pake_5',['Password-authenticated key exchange (PAKE)',['../group__pake.html',1,'']]],
   ['key_20import_20and_20export_6',['Key import and export',['../group__import__export.html',1,'']]],
   ['key_20lifetimes_7',['Key lifetimes',['../group__key__lifetimes.html',1,'']]],
-  ['key_20management_8',['key management',['../group__key__management.html',1,'Key management'],['../group__se__key__management.html',1,'Secure Element Key Management']]],
-  ['key_20policies_9',['Key policies',['../group__policy.html',1,'']]],
-  ['keys_10',['Built-in keys',['../group__psa__builtin__keys.html',1,'']]]
+  ['key_20management_8',['Secure Element Key Management',['../group__se__key__management.html',1,'']]],
+  ['key_20management_9',['Key management',['../group__key__management.html',1,'']]],
+  ['key_20policies_10',['Key policies',['../group__policy.html',1,'']]],
+  ['keys_11',['Built-in keys',['../group__psa__builtin__keys.html',1,'']]]
 ];

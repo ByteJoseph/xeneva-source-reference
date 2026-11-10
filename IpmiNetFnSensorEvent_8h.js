@@ -1,0 +1,6 @@
+var IpmiNetFnSensorEvent_8h =
+[
+    [ "IPMI_PLATFORM_EVENT_MESSAGE_DATA_REQUEST", "structIPMI__PLATFORM__EVENT__MESSAGE__DATA__REQUEST.html", "structIPMI__PLATFORM__EVENT__MESSAGE__DATA__REQUEST" ],
+    [ "IPMI_NETFN_SENSOR_EVENT", "IpmiNetFnSensorEvent_8h.html#a86e97c95eee7f310e5b8192367018acf", null ],
+    [ "IPMI_SENSOR_PLATFORM_EVENT_MESSAGE", "IpmiNetFnSensorEvent_8h.html#af618e355a8f3ac67dd1333d2c83169fc", null ]
+];

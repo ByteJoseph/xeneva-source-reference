@@ -1,0 +1,26 @@
+var rtcmmio_8c =
+[
+    [ "PL031_RTC_CR", "rtcmmio_8c.html#afea19cb8e15ac8e3efbcd1867614a481", null ],
+    [ "PL031_RTC_CR_EN_BIT", "rtcmmio_8c.html#a55bafd8cf7e51907332eba7d063dd32c", null ],
+    [ "PL031_RTC_CR_IE_BIT", "rtcmmio_8c.html#a80be9f25b910d77495c15236c0b3c5cf", null ],
+    [ "PL031_RTC_LR", "rtcmmio_8c.html#a1fbc4a85f32bf0515f3bfe8eced27a34", null ],
+    [ "PL031_RTC_MR", "rtcmmio_8c.html#a8c99ce0ea2ff0f18905dcc7ca1e808ac", null ],
+    [ "QEMU_VIRT_RTCIRQ", "rtcmmio_8c.html#a8817a211fca1e9bee43290a773db314a", null ],
+    [ "rtc_read32", "rtcmmio_8c.html#acc275598b82d5bbff3a29dc8a39f88ce", null ],
+    [ "rtc_write32", "rtcmmio_8c.html#a908c2bb842c70fd17eab93824303822e", null ],
+    [ "AuPL031RTCInit", "rtcmmio_8c.html#ac3ca70129e22e704479af5b5675af33a", null ],
+    [ "AuPL031RTCIRQHandle", "rtcmmio_8c.html#af8da5db26b0f1be3a55dc42c570c22ec", null ],
+    [ "AuRTCClearInterrupt", "rtcmmio_8c.html#a976f22db3fcdd163629148ba3f9e125e", null ],
+    [ "AuRTCEnableInterrupt", "rtcmmio_8c.html#adbbce32627066dd5e089e75bcbae4299", null ],
+    [ "AuRTCGetCentury", "rtcmmio_8c.html#a6186ba5c009b2a20cdf1a858858e2b10", null ],
+    [ "AuRTCGetCurrentTime", "rtcmmio_8c.html#a907c7f6fe3cceba0d57df29239d78408", null ],
+    [ "AuRTCGetDay", "rtcmmio_8c.html#addc0d6ee1b00a6e6f5ef5ccf7d40763f", null ],
+    [ "AuRTCGetHour", "rtcmmio_8c.html#ad1fc44366f455b3cf79d3023ed8b17f7", null ],
+    [ "AuRTCGetMinutes", "rtcmmio_8c.html#a285bd2ce042fcc85b346f6cd610301cd", null ],
+    [ "AuRTCGetMonth", "rtcmmio_8c.html#a465b0bd81276b65b1d312ff4a2b7d9bf", null ],
+    [ "AuRTCGetSecond", "rtcmmio_8c.html#a7a3cc24406b2465894d81a346a3f3fb2", null ],
+    [ "AuRTCGetYear", "rtcmmio_8c.html#a7169a7874147243b7382a8a4a7d8a06f", null ],
+    [ "epoch_to_tm", "rtcmmio_8c.html#aee6097ba89f64d5082668047015a394f", null ],
+    [ "is_leap", "rtcmmio_8c.html#a8bac65e340787f5d07b73850547a2155", null ],
+    [ "__rtc", "rtcmmio_8c.html#ae3e07badd897bacf9ab912b518dbb1fe", null ]
+];

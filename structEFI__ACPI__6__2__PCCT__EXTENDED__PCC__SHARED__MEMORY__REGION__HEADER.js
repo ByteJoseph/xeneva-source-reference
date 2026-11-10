@@ -1,0 +1,7 @@
+var structEFI__ACPI__6__2__PCCT__EXTENDED__PCC__SHARED__MEMORY__REGION__HEADER =
+[
+    [ "Command", "structEFI__ACPI__6__2__PCCT__EXTENDED__PCC__SHARED__MEMORY__REGION__HEADER.html#a544e9b7cc3840c850fc4012ffcd91e1f", null ],
+    [ "Flags", "structEFI__ACPI__6__2__PCCT__EXTENDED__PCC__SHARED__MEMORY__REGION__HEADER.html#a56b92a98a109e0ba16cdc5cc814c144e", null ],
+    [ "Length", "structEFI__ACPI__6__2__PCCT__EXTENDED__PCC__SHARED__MEMORY__REGION__HEADER.html#a05b817475b574172d06b9b9c489563d8", null ],
+    [ "Signature", "structEFI__ACPI__6__2__PCCT__EXTENDED__PCC__SHARED__MEMORY__REGION__HEADER.html#aa97dbc6b390682d38098762a64ec622f", null ]
+];

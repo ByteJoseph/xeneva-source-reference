@@ -1,0 +1,5 @@
+var structEFI__ACPI__6__2__HETEROGENEOUS__MEMORY__ATTRIBUTE__TABLE__HEADER =
+[
+    [ "Header", "structEFI__ACPI__6__2__HETEROGENEOUS__MEMORY__ATTRIBUTE__TABLE__HEADER.html#ac858b6604d27739ecdd757d15deff724", null ],
+    [ "Reserved", "structEFI__ACPI__6__2__HETEROGENEOUS__MEMORY__ATTRIBUTE__TABLE__HEADER.html#aac545b8705e15d7a4c05f03c1c17eda8", null ]
+];

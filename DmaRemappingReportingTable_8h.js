@@ -1,0 +1,28 @@
+var DmaRemappingReportingTable_8h =
+[
+    [ "EFI_ACPI_DMAR_STRUCTURE_HEADER", "structEFI__ACPI__DMAR__STRUCTURE__HEADER.html", "structEFI__ACPI__DMAR__STRUCTURE__HEADER" ],
+    [ "EFI_ACPI_DMAR_PCI_PATH", "structEFI__ACPI__DMAR__PCI__PATH.html", "structEFI__ACPI__DMAR__PCI__PATH" ],
+    [ "EFI_ACPI_DMAR_DEVICE_SCOPE_STRUCTURE_HEADER", "structEFI__ACPI__DMAR__DEVICE__SCOPE__STRUCTURE__HEADER.html", "structEFI__ACPI__DMAR__DEVICE__SCOPE__STRUCTURE__HEADER" ],
+    [ "EFI_ACPI_DMAR_DRHD_HEADER", "structEFI__ACPI__DMAR__DRHD__HEADER.html", "structEFI__ACPI__DMAR__DRHD__HEADER" ],
+    [ "EFI_ACPI_DMAR_RMRR_HEADER", "structEFI__ACPI__DMAR__RMRR__HEADER.html", "structEFI__ACPI__DMAR__RMRR__HEADER" ],
+    [ "EFI_ACPI_DMAR_ATSR_HEADER", "structEFI__ACPI__DMAR__ATSR__HEADER.html", "structEFI__ACPI__DMAR__ATSR__HEADER" ],
+    [ "EFI_ACPI_DMAR_RHSA_HEADER", "structEFI__ACPI__DMAR__RHSA__HEADER.html", "structEFI__ACPI__DMAR__RHSA__HEADER" ],
+    [ "EFI_ACPI_DMAR_ANDD_HEADER", "structEFI__ACPI__DMAR__ANDD__HEADER.html", "structEFI__ACPI__DMAR__ANDD__HEADER" ],
+    [ "EFI_ACPI_DMAR_HEADER", "structEFI__ACPI__DMAR__HEADER.html", "structEFI__ACPI__DMAR__HEADER" ],
+    [ "EFI_ACPI_DEVICE_SCOPE_ENTRY_TYPE_ACPI_NAMESPACE_DEVICE", "DmaRemappingReportingTable_8h.html#a0ab5893a160c4ec4489c900c03493d1f", null ],
+    [ "EFI_ACPI_DEVICE_SCOPE_ENTRY_TYPE_IOAPIC", "DmaRemappingReportingTable_8h.html#aa9d91d804501f5933fd488ac7c1480c9", null ],
+    [ "EFI_ACPI_DEVICE_SCOPE_ENTRY_TYPE_MSI_CAPABLE_HPET", "DmaRemappingReportingTable_8h.html#a24639503909b45bb683562c1c7861d97", null ],
+    [ "EFI_ACPI_DEVICE_SCOPE_ENTRY_TYPE_PCI_BRIDGE", "DmaRemappingReportingTable_8h.html#afb9a05f30803e2e83e28b35e9f50ad23", null ],
+    [ "EFI_ACPI_DEVICE_SCOPE_ENTRY_TYPE_PCI_ENDPOINT", "DmaRemappingReportingTable_8h.html#aff857982e8fa20cf56cec58518776048", null ],
+    [ "EFI_ACPI_DMAR_ATSR_FLAGS_ALL_PORTS", "DmaRemappingReportingTable_8h.html#a4a33c92e5423b35418526f2562c14e6e", null ],
+    [ "EFI_ACPI_DMAR_DRHD_FLAGS_INCLUDE_PCI_ALL", "DmaRemappingReportingTable_8h.html#ab18f27c404848c9a3bbfc073883e5da2", null ],
+    [ "EFI_ACPI_DMAR_FLAGS_DMA_CTRL_PLATFORM_OPT_IN_FLAG", "DmaRemappingReportingTable_8h.html#a7abfafcdbcae46e02f3e51bb30650573", null ],
+    [ "EFI_ACPI_DMAR_FLAGS_INTR_REMAP", "DmaRemappingReportingTable_8h.html#a8a667bd8a70885f41635c415c6132dcf", null ],
+    [ "EFI_ACPI_DMAR_FLAGS_X2APIC_OPT_OUT", "DmaRemappingReportingTable_8h.html#a44724e23a4cc3c78afe26afddce59b3d", null ],
+    [ "EFI_ACPI_DMAR_REVISION", "DmaRemappingReportingTable_8h.html#a0a6fa36e9647d8bd41d32edcd4737d29", null ],
+    [ "EFI_ACPI_DMAR_TYPE_ANDD", "DmaRemappingReportingTable_8h.html#a119cebf3677638ed503adf2e47d7d722", null ],
+    [ "EFI_ACPI_DMAR_TYPE_ATSR", "DmaRemappingReportingTable_8h.html#ab081b8c8a02b3b944144d45e8635c82a", null ],
+    [ "EFI_ACPI_DMAR_TYPE_DRHD", "DmaRemappingReportingTable_8h.html#ad341c0f5dfa3702c989c8ab219d71adf", null ],
+    [ "EFI_ACPI_DMAR_TYPE_RHSA", "DmaRemappingReportingTable_8h.html#a3a5fdbb763c9f14b53d89646d4e020d4", null ],
+    [ "EFI_ACPI_DMAR_TYPE_RMRR", "DmaRemappingReportingTable_8h.html#a06c0ecf02dc2c8ea86d237bb91cdfff7", null ]
+];

@@ -1,0 +1,7 @@
+var structEFI__ACPI__3__0__NON__MASKABLE__INTERRUPT__SOURCE__STRUCTURE =
+[
+    [ "Flags", "structEFI__ACPI__3__0__NON__MASKABLE__INTERRUPT__SOURCE__STRUCTURE.html#a5a9916873441d3ae7621dde4433417c3", null ],
+    [ "GlobalSystemInterrupt", "structEFI__ACPI__3__0__NON__MASKABLE__INTERRUPT__SOURCE__STRUCTURE.html#a5c01c056f0a82579a22fea1714859e9c", null ],
+    [ "Length", "structEFI__ACPI__3__0__NON__MASKABLE__INTERRUPT__SOURCE__STRUCTURE.html#a89cd9d184014edcee8b3d587792bfb13", null ],
+    [ "Type", "structEFI__ACPI__3__0__NON__MASKABLE__INTERRUPT__SOURCE__STRUCTURE.html#a9c3d6f85fb441280f08f5f0cc9211df1", null ]
+];

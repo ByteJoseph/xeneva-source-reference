@@ -1,0 +1,36 @@
+var drm__colorop_8h =
+[
+    [ "drm_colorop_state", "structdrm__colorop__state.html", "structdrm__colorop__state" ],
+    [ "drm_colorop_funcs", "structdrm__colorop__funcs.html", "structdrm__colorop__funcs" ],
+    [ "drm_colorop", "structdrm__colorop.html", "structdrm__colorop" ],
+    [ "DRM_COLOROP_FLAG_ALLOW_BYPASS", "drm__colorop_8h.html#a478b710fda25361f8c91fa4d4ae51629", null ],
+    [ "drm_for_each_colorop", "drm__colorop_8h.html#a4922d0eaf833ab099811c5e4b564c935", null ],
+    [ "obj_to_colorop", "drm__colorop_8h.html#a54c55bb15536091fd87ba415268c449c", null ],
+    [ "drm_colorop_curve_1d_type", "drm__colorop_8h.html#a4cc446752eab81dccff25420e434519c", [
+      [ "DRM_COLOROP_1D_CURVE_SRGB_EOTF", "drm__colorop_8h.html#a4cc446752eab81dccff25420e434519ca4898da8c0b2fae8de4e3568705bc9a84", null ],
+      [ "DRM_COLOROP_1D_CURVE_SRGB_INV_EOTF", "drm__colorop_8h.html#a4cc446752eab81dccff25420e434519ca82f4f400c6d6d3988a48e35cec90026f", null ],
+      [ "DRM_COLOROP_1D_CURVE_PQ_125_EOTF", "drm__colorop_8h.html#a4cc446752eab81dccff25420e434519ca2bd5b2c1a2c71f2ebb0856b20fba0aa6", null ],
+      [ "DRM_COLOROP_1D_CURVE_PQ_125_INV_EOTF", "drm__colorop_8h.html#a4cc446752eab81dccff25420e434519ca55f53d2d75dbfa05ac0159ce0cf7cb47", null ],
+      [ "DRM_COLOROP_1D_CURVE_BT2020_INV_OETF", "drm__colorop_8h.html#a4cc446752eab81dccff25420e434519ca3b6c03113eb8d466e42e6402273e22c4", null ],
+      [ "DRM_COLOROP_1D_CURVE_BT2020_OETF", "drm__colorop_8h.html#a4cc446752eab81dccff25420e434519cae1968dff85d260e0e22cbf6e9a857b08", null ],
+      [ "DRM_COLOROP_1D_CURVE_GAMMA22", "drm__colorop_8h.html#a4cc446752eab81dccff25420e434519ca2ebfcad9cfd0192f3e32bcee0ef7fd05", null ],
+      [ "DRM_COLOROP_1D_CURVE_GAMMA22_INV", "drm__colorop_8h.html#a4cc446752eab81dccff25420e434519ca4ccdc6779e664377a1e2559ddb58bce6", null ],
+      [ "DRM_COLOROP_1D_CURVE_COUNT", "drm__colorop_8h.html#a4cc446752eab81dccff25420e434519ca43fcf05407fdfc5ff99841ad7b379533", null ]
+    ] ],
+    [ "drm_atomic_helper_colorop_duplicate_state", "drm__colorop_8h.html#acc50e31b5f00d1d9b2386da44b0006f1", null ],
+    [ "drm_colorop_atomic_destroy_state", "drm__colorop_8h.html#aae18f7a865fdc3f5b84440b3edcff455", null ],
+    [ "drm_colorop_cleanup", "drm__colorop_8h.html#a9d4e22e224a3ca69187df9a98bc5823c", null ],
+    [ "drm_colorop_destroy", "drm__colorop_8h.html#a8fdf4d17247d68cf56e7412f6fb05ac6", null ],
+    [ "drm_colorop_pipeline_destroy", "drm__colorop_8h.html#ad03a00608f9dca49135f81d266470fd9", null ],
+    [ "drm_colorop_reset", "drm__colorop_8h.html#a1e257651c6cc614b40b2543001bd7794", null ],
+    [ "drm_colorop_set_next_property", "drm__colorop_8h.html#adee1706fd6a5adbc28af075ff0a3cb7e", null ],
+    [ "drm_get_colorop_curve_1d_type_name", "drm__colorop_8h.html#aee602f9c0a6eac671a78d05631fbec56", null ],
+    [ "drm_get_colorop_lut1d_interpolation_name", "drm__colorop_8h.html#a7d858bdda89fdd8a63f589420db26bb1", null ],
+    [ "drm_get_colorop_lut3d_interpolation_name", "drm__colorop_8h.html#a737eaec5e2903c5d3d7f1b5885eab3fa", null ],
+    [ "drm_get_colorop_type_name", "drm__colorop_8h.html#a29b7161f67bb5fabea47fcf513a51b82", null ],
+    [ "drm_plane_colorop_3dlut_init", "drm__colorop_8h.html#ade3ee04189712b5f3e1dbf863ea3cedf", null ],
+    [ "drm_plane_colorop_ctm_3x4_init", "drm__colorop_8h.html#a790d9cd6cdfeab9fc4eaafbc6316263e", null ],
+    [ "drm_plane_colorop_curve_1d_init", "drm__colorop_8h.html#aa12d70d45b4eabd0d5857286be6c963c", null ],
+    [ "drm_plane_colorop_curve_1d_lut_init", "drm__colorop_8h.html#ae19772c83cf94f65f08e3699f0f15e53", null ],
+    [ "drm_plane_colorop_mult_init", "drm__colorop_8h.html#a69d69447c157a1f5307e99d045ca8171", null ]
+];

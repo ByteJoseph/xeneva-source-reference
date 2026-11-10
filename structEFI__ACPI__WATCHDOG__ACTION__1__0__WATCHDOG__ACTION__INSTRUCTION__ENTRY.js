@@ -1,0 +1,9 @@
+var structEFI__ACPI__WATCHDOG__ACTION__1__0__WATCHDOG__ACTION__INSTRUCTION__ENTRY =
+[
+    [ "InstructionFlags", "structEFI__ACPI__WATCHDOG__ACTION__1__0__WATCHDOG__ACTION__INSTRUCTION__ENTRY.html#a04384fb4d1987717658643ac8239aa36", null ],
+    [ "Mask", "structEFI__ACPI__WATCHDOG__ACTION__1__0__WATCHDOG__ACTION__INSTRUCTION__ENTRY.html#a5c3cc4970a752f95fb7fce0e6fdc800d", null ],
+    [ "RegisterRegion", "structEFI__ACPI__WATCHDOG__ACTION__1__0__WATCHDOG__ACTION__INSTRUCTION__ENTRY.html#a16e2a7d3f37b2ab6c54b369e9cb713af", null ],
+    [ "Reserved_2", "structEFI__ACPI__WATCHDOG__ACTION__1__0__WATCHDOG__ACTION__INSTRUCTION__ENTRY.html#a3db8c03c578888d2745ce1e515fb8603", null ],
+    [ "Value", "structEFI__ACPI__WATCHDOG__ACTION__1__0__WATCHDOG__ACTION__INSTRUCTION__ENTRY.html#a107daf5dee01aa41ea9c8d3ecac4e1c4", null ],
+    [ "WatchdogAction", "structEFI__ACPI__WATCHDOG__ACTION__1__0__WATCHDOG__ACTION__INSTRUCTION__ENTRY.html#aa189c36541e7e6f5cb320c6445cf7c2f", null ]
+];

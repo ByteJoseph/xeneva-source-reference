@@ -1,0 +1,5 @@
+var struct__EFI__CONFIG__KEYWORD__HANDLER__PROTOCOL =
+[
+    [ "GetData", "struct__EFI__CONFIG__KEYWORD__HANDLER__PROTOCOL.html#a86d797c82536510c91a00979550b7e32", null ],
+    [ "SetData", "struct__EFI__CONFIG__KEYWORD__HANDLER__PROTOCOL.html#a56d805a11e657f4bdee222f3bb708025", null ]
+];

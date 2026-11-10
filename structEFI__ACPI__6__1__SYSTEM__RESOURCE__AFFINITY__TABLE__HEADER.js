@@ -1,0 +1,6 @@
+var structEFI__ACPI__6__1__SYSTEM__RESOURCE__AFFINITY__TABLE__HEADER =
+[
+    [ "Header", "structEFI__ACPI__6__1__SYSTEM__RESOURCE__AFFINITY__TABLE__HEADER.html#a065c88d5d8bd8428203131d022c392ad", null ],
+    [ "Reserved1", "structEFI__ACPI__6__1__SYSTEM__RESOURCE__AFFINITY__TABLE__HEADER.html#aafb63983a2388717cba8ca8a44b63992", null ],
+    [ "Reserved2", "structEFI__ACPI__6__1__SYSTEM__RESOURCE__AFFINITY__TABLE__HEADER.html#a51a89ed413da4464e480fce8433414f2", null ]
+];

@@ -1,0 +1,35 @@
+var drm__drv_8h =
+[
+    [ "drm_driver", "structdrm__driver.html", "structdrm__driver" ],
+    [ "devm_drm_dev_alloc", "drm__drv_8h.html#a8c073de8d026b089704824451918d33f", null ],
+    [ "drm_driver_feature", "drm__drv_8h.html#ac0334f8819b3348a7e55e4a9ad9bd248", [
+      [ "DRIVER_GEM", "drm__drv_8h.html#ac0334f8819b3348a7e55e4a9ad9bd248a5687daca13aa7fdc49debc3c677b7564", null ],
+      [ "DRIVER_MODESET", "drm__drv_8h.html#ac0334f8819b3348a7e55e4a9ad9bd248a17f4a3398e6710cdd0ef7af914a0b8e7", null ],
+      [ "DRIVER_RENDER", "drm__drv_8h.html#ac0334f8819b3348a7e55e4a9ad9bd248a16d42712b2128354c1b51d949bed7095", null ],
+      [ "DRIVER_ATOMIC", "drm__drv_8h.html#ac0334f8819b3348a7e55e4a9ad9bd248a76df9c5f88414f534712bf40155bbd2d", null ],
+      [ "DRIVER_SYNCOBJ", "drm__drv_8h.html#ac0334f8819b3348a7e55e4a9ad9bd248a581a3daa9762a07e044d2a1d07f26af4", null ],
+      [ "DRIVER_SYNCOBJ_TIMELINE", "drm__drv_8h.html#ac0334f8819b3348a7e55e4a9ad9bd248a24b24aece51e6ae728b992fe2fcace58", null ],
+      [ "DRIVER_COMPUTE_ACCEL", "drm__drv_8h.html#ac0334f8819b3348a7e55e4a9ad9bd248ae914360c8fe1a817054c462969b4d094", null ],
+      [ "DRIVER_GEM_GPUVA", "drm__drv_8h.html#ac0334f8819b3348a7e55e4a9ad9bd248aab8a092619ac204d57e5c14236cdd43b", null ],
+      [ "DRIVER_CURSOR_HOTSPOT", "drm__drv_8h.html#ac0334f8819b3348a7e55e4a9ad9bd248a9e45d6d472f387b5d941d862eef95638", null ],
+      [ "DRIVER_USE_AGP", "drm__drv_8h.html#ac0334f8819b3348a7e55e4a9ad9bd248a916232408e722c180793b2279bde4a00", null ],
+      [ "DRIVER_LEGACY", "drm__drv_8h.html#ac0334f8819b3348a7e55e4a9ad9bd248a9a1258c209604537f202513d21d9bb99", null ],
+      [ "DRIVER_PCI_DMA", "drm__drv_8h.html#ac0334f8819b3348a7e55e4a9ad9bd248a6fe2213c5a65a4e01fb80b94caa0ee32", null ],
+      [ "DRIVER_SG", "drm__drv_8h.html#ac0334f8819b3348a7e55e4a9ad9bd248a6afbb50b3697798092608f3749a2a28f", null ],
+      [ "DRIVER_HAVE_DMA", "drm__drv_8h.html#ac0334f8819b3348a7e55e4a9ad9bd248acc4d901315eb1ccf395ed48b67d02865", null ],
+      [ "DRIVER_HAVE_IRQ", "drm__drv_8h.html#ac0334f8819b3348a7e55e4a9ad9bd248a5f0b75277beab224d0535574580a7a1e", null ]
+    ] ],
+    [ "__devm_drm_dev_alloc", "drm__drv_8h.html#a7550ea54a23d93d0dcee780999162e3a", null ],
+    [ "__drm_dev_alloc", "drm__drv_8h.html#a843d2423f3306116c250c5c699699930", null ],
+    [ "drm_dev_alloc", "drm__drv_8h.html#a4e594f983fc2c679f6da6055d176d4ee", null ],
+    [ "drm_dev_enter", "drm__drv_8h.html#a4630700274e82ff3b0057f4bda1212e8", null ],
+    [ "drm_dev_exit", "drm__drv_8h.html#a2c39f76554fea51939831fcbba16c46e", null ],
+    [ "drm_dev_get", "drm__drv_8h.html#a418367d57acc44a5ada58e66043d5c23", null ],
+    [ "drm_dev_put", "drm__drv_8h.html#a5b0c8887bb312b86a1a98a450af7d507", null ],
+    [ "drm_dev_register", "drm__drv_8h.html#aa400aa845e16d611d6db9ee0e7e6726e", null ],
+    [ "drm_dev_unplug", "drm__drv_8h.html#a67ccdec86e5867ef5c1d2f1455923c10", null ],
+    [ "drm_dev_unregister", "drm__drv_8h.html#a76d71d9781c22fe668ccc867b96e91e9", null ],
+    [ "drm_dev_wedged_event", "drm__drv_8h.html#a248b9896e4e436aa42f3ead316a8dcd5", null ],
+    [ "drm_put_dev", "drm__drv_8h.html#acd8f26e3823c424c60c428e2ee90c880", null ],
+    [ "drmm_cgroup_register_region", "drm__drv_8h.html#a93df0df23a16c089ccb471b6afd5fbec", null ]
+];

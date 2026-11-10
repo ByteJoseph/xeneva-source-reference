@@ -1,0 +1,15 @@
+var structEFI__ACPI__SERVICE__PROCESSOR__MANAGEMENT__INTERFACE__TABLE =
+[
+    [ "BaseAddress", "structEFI__ACPI__SERVICE__PROCESSOR__MANAGEMENT__INTERFACE__TABLE.html#a32eed88846c156e8d9228f015b371efb", null ],
+    [ "DeviceId", "structEFI__ACPI__SERVICE__PROCESSOR__MANAGEMENT__INTERFACE__TABLE.html#ae63bd26cdf41fc64c2795be6fcbfed8c", null ],
+    [ "GlobalSystemInterrupt", "structEFI__ACPI__SERVICE__PROCESSOR__MANAGEMENT__INTERFACE__TABLE.html#a6fb192f6ccdab117d2eca1314d0bb9c4", null ],
+    [ "Gpe", "structEFI__ACPI__SERVICE__PROCESSOR__MANAGEMENT__INTERFACE__TABLE.html#a17fac7a40707e35c6ec892a58bb8af6d", null ],
+    [ "Header", "structEFI__ACPI__SERVICE__PROCESSOR__MANAGEMENT__INTERFACE__TABLE.html#adeb5e85fa19c2103f8fc51a773e8b6ee", null ],
+    [ "InterfaceType", "structEFI__ACPI__SERVICE__PROCESSOR__MANAGEMENT__INTERFACE__TABLE.html#a38b3f585af2f0cac7d32249ec9217d05", null ],
+    [ "InterruptType", "structEFI__ACPI__SERVICE__PROCESSOR__MANAGEMENT__INTERFACE__TABLE.html#aae07de1d3a71115d23f652de2bb6fc63", null ],
+    [ "PciDeviceFlag", "structEFI__ACPI__SERVICE__PROCESSOR__MANAGEMENT__INTERFACE__TABLE.html#a3573c45f97f2c6957717122897616558", null ],
+    [ "Reserved1", "structEFI__ACPI__SERVICE__PROCESSOR__MANAGEMENT__INTERFACE__TABLE.html#a1a34f0c1fcfc5411f519ebb9f65940a3", null ],
+    [ "Reserved2", "structEFI__ACPI__SERVICE__PROCESSOR__MANAGEMENT__INTERFACE__TABLE.html#a453b6c8551cfbf8d438497b58c46776a", null ],
+    [ "Reserved3", "structEFI__ACPI__SERVICE__PROCESSOR__MANAGEMENT__INTERFACE__TABLE.html#a9711fe8c188437a223a31b00d3a4e098", null ],
+    [ "SpecificationRevision", "structEFI__ACPI__SERVICE__PROCESSOR__MANAGEMENT__INTERFACE__TABLE.html#a69303cae9b8d6eb5793221d2aadb596e", null ]
+];

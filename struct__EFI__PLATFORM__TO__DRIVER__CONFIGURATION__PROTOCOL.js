@@ -1,0 +1,5 @@
+var struct__EFI__PLATFORM__TO__DRIVER__CONFIGURATION__PROTOCOL =
+[
+    [ "Query", "struct__EFI__PLATFORM__TO__DRIVER__CONFIGURATION__PROTOCOL.html#abdcf9b9d9e2f825200406bd5a761f84b", null ],
+    [ "Response", "struct__EFI__PLATFORM__TO__DRIVER__CONFIGURATION__PROTOCOL.html#a24242225de299cd0f8e631e549e8d4d9", null ]
+];

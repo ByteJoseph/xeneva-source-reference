@@ -1,0 +1,5 @@
+var structEFI__ACPI__6__2__SYSTEM__LOCALITY__DISTANCE__INFORMATION__TABLE__HEADER =
+[
+    [ "Header", "structEFI__ACPI__6__2__SYSTEM__LOCALITY__DISTANCE__INFORMATION__TABLE__HEADER.html#af3ffd0b9b04f9ed626a8e90606a57078", null ],
+    [ "NumberOfSystemLocalities", "structEFI__ACPI__6__2__SYSTEM__LOCALITY__DISTANCE__INFORMATION__TABLE__HEADER.html#a05b07287cdcfabec7a5c8dc573174989", null ]
+];

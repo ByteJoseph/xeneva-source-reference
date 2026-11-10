@@ -1,0 +1,4 @@
+var structEFI__PCI__CAPABILITY__HOTPLUG =
+[
+    [ "Hdr", "structEFI__PCI__CAPABILITY__HOTPLUG.html#a8493187051777d5b37b305c210d1979a", null ]
+];

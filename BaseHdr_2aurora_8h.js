@@ -1,0 +1,25 @@
+var BaseHdr_2aurora_8h =
+[
+    [ "_lbprotocol_", "struct__lbprotocol__.html", "struct__lbprotocol__" ],
+    [ "_KERNEL_BOOT_INFO_", "struct__KERNEL__BOOT__INFO__.html", "struct__KERNEL__BOOT__INFO__" ],
+    [ "ALIGNED", "BaseHdr_2aurora_8h.html#a8e7a3bf6003d72a62606f343c2db6245", null ],
+    [ "AU_ALIGN", "BaseHdr_2aurora_8h.html#a0fe486a3ff3c57b134906cb852a447ba", null ],
+    [ "AU_EXPORT", "BaseHdr_2aurora_8h.html#acfdff3168eaddc756d25f28912d94e28", null ],
+    [ "AU_EXTERN", "BaseHdr_2aurora_8h.html#a3607dee4064d4867f4eb5504d6eca568", null ],
+    [ "AU_FUNC", "BaseHdr_2aurora_8h.html#aef87be9865bc678cfd3f8c66af0aa29a", null ],
+    [ "AU_IMPORT", "BaseHdr_2aurora_8h.html#af0c122148e7313c84bacbeaf049abe9e", null ],
+    [ "BOOT_LITTLEBOOT_ARM64", "BaseHdr_2aurora_8h.html#aa44e24dfc106b48077543e77c269b8cb", null ],
+    [ "BOOT_UEFI_ARM64", "BaseHdr_2aurora_8h.html#ab1fa98a96006a80a0709d5148c96c103", null ],
+    [ "BOOT_UEFI_x64", "BaseHdr_2aurora_8h.html#a1d3af5c396abb99ca853c1611ce77348", null ],
+    [ "KERNEL_STACK_SIZE", "BaseHdr_2aurora_8h.html#a77383d4c5311d4c7fe49364766887650", null ],
+    [ "XENEVA_KERNEL_NAME", "BaseHdr_2aurora_8h.html#a82de6da276f2a9fabc0340fe125790c5", null ],
+    [ "XENEVA_KERNEL_PREEMPT", "BaseHdr_2aurora_8h.html#a408ca3cb624de6b50afaf8195cce7e2c", null ],
+    [ "XENEVA_KERNEL_SMP", "BaseHdr_2aurora_8h.html#aec2a9882439e1cba4a16bb63c595ffcd", null ],
+    [ "XENEVA_OS_NAME", "BaseHdr_2aurora_8h.html#a82544100b56fc48ea8220ed2db4d2e24", null ],
+    [ "XENEVA_OS_NODENAME", "BaseHdr_2aurora_8h.html#addb703d2238de5700e847fe8a3ae36d8", null ],
+    [ "AuLittleBootProtocol", "BaseHdr_2aurora_8h.html#a7f6b8563a974774699338eb2caba4bf8", null ],
+    [ "CapRights", "BaseHdr_2aurora_8h.html#add0344b7fed4a4c4d9ff442571c0adb7", null ],
+    [ "KERNEL_BOOT_INFO", "BaseHdr_2aurora_8h.html#a886498d078ece21b18b0bf2dad40fccd", null ],
+    [ "PKERNEL_BOOT_INFO", "BaseHdr_2aurora_8h.html#a32e3a1cc3a4fdb59d8cdf38b301555a0", null ],
+    [ "AuGetBootInfoStruc", "BaseHdr_2aurora_8h.html#ab676945e1697fb717af289a3cc86d817", null ]
+];

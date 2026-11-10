@@ -1,0 +1,26 @@
+var structdom__element__vtable =
+[
+    [ "base", "structdom__element__vtable.html#a09550ee09e2ac6eec7f470d68680b947", null ],
+    [ "dom_element_get_attribute", "structdom__element__vtable.html#a2f519cbea86746eec092aaeaf11a697e", null ],
+    [ "dom_element_get_attribute_node", "structdom__element__vtable.html#a53adabb550863bacc106507be1451815", null ],
+    [ "dom_element_get_attribute_node_ns", "structdom__element__vtable.html#a3a637e34979105f7a8ef9d294383dac6", null ],
+    [ "dom_element_get_attribute_ns", "structdom__element__vtable.html#a1f3ba326c4af2a5e167e035e07502c68", null ],
+    [ "dom_element_get_classes", "structdom__element__vtable.html#a2498b30b5f97800083bff69532f2f01c", null ],
+    [ "dom_element_get_elements_by_tag_name", "structdom__element__vtable.html#af6a60209d4d1cd7843612136bacc03fa", null ],
+    [ "dom_element_get_elements_by_tag_name_ns", "structdom__element__vtable.html#a35b203ad438e498b018e14adbf062bbc", null ],
+    [ "dom_element_get_schema_type_info", "structdom__element__vtable.html#a43dbb000d47503dc2f5ebde0ea60e5d4", null ],
+    [ "dom_element_get_tag_name", "structdom__element__vtable.html#a917d4ffd1732e7c965239afc20f23c6d", null ],
+    [ "dom_element_has_attribute", "structdom__element__vtable.html#a84b945d00a8b6f82e3b9c5c50f9d3ffa", null ],
+    [ "dom_element_has_attribute_ns", "structdom__element__vtable.html#af240db245f51ed5f1b21eecaf1e35ee2", null ],
+    [ "dom_element_has_class", "structdom__element__vtable.html#a47001468388485e3df0c49405473b953", null ],
+    [ "dom_element_remove_attribute", "structdom__element__vtable.html#a839ba8fa73be98de18dd40e79b67f7fc", null ],
+    [ "dom_element_remove_attribute_node", "structdom__element__vtable.html#a348986285aaaa3adbe0334bc41468fd3", null ],
+    [ "dom_element_remove_attribute_ns", "structdom__element__vtable.html#a550be2f13fd86a549cbef6d26dcedb61", null ],
+    [ "dom_element_set_attribute", "structdom__element__vtable.html#a44e3f73c8f1d481671134c11c7d62e29", null ],
+    [ "dom_element_set_attribute_node", "structdom__element__vtable.html#a5717fbef8788a7f962e2f56d3f3d3220", null ],
+    [ "dom_element_set_attribute_node_ns", "structdom__element__vtable.html#a2f961d0501deda04770009d9967c9f58", null ],
+    [ "dom_element_set_attribute_ns", "structdom__element__vtable.html#a8d5bafdf3dc8abdf56fe0be9aad04686", null ],
+    [ "dom_element_set_id_attribute", "structdom__element__vtable.html#ae810984cb6f2d6fa217d650fad2cbbab", null ],
+    [ "dom_element_set_id_attribute_node", "structdom__element__vtable.html#a3e96ddaa80c6290b767cced1f8d48a40", null ],
+    [ "dom_element_set_id_attribute_ns", "structdom__element__vtable.html#a9c431604ff915e70a713023f7a8bc80f", null ]
+];

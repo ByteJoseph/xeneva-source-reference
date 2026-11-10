@@ -1,0 +1,26 @@
+var Ppi_2PiPcd_8h =
+[
+    [ "EFI_PEI_PCD_PPI", "structEFI__PEI__PCD__PPI.html", "structEFI__PEI__PCD__PPI" ],
+    [ "EFI_PCD_INVALID_TOKEN_NUMBER", "Ppi_2PiPcd_8h.html#a00a00911c3e6a96cb2b6c69e0249b908", null ],
+    [ "EFI_PEI_PCD_PPI_GUID", "Ppi_2PiPcd_8h.html#a47deb19acee3f2390895922d7a3982d4", null ],
+    [ "EFI_PEI_PCD_PPI_CALLBACK", "Ppi_2PiPcd_8h.html#a39b8af0e1ba30431180e0c7a5e4c56c6", null ],
+    [ "EFI_PEI_PCD_PPI_CALLBACK_ON_SET", "Ppi_2PiPcd_8h.html#ac1f78909a78d8524de4b1ee0350f81ef", null ],
+    [ "EFI_PEI_PCD_PPI_CANCEL_CALLBACK", "Ppi_2PiPcd_8h.html#a2a860a7ca7adf918119016eb7c8499ed", null ],
+    [ "EFI_PEI_PCD_PPI_GET_16", "Ppi_2PiPcd_8h.html#a43edc95df42d56f93e0fc94fd8ba63af", null ],
+    [ "EFI_PEI_PCD_PPI_GET_32", "Ppi_2PiPcd_8h.html#a12e02c0ac654da780a1e762e029016a7", null ],
+    [ "EFI_PEI_PCD_PPI_GET_64", "Ppi_2PiPcd_8h.html#ad6174abdb4c8c125940839db4c7a3d5a", null ],
+    [ "EFI_PEI_PCD_PPI_GET_8", "Ppi_2PiPcd_8h.html#a811ff25ea6110aa0f95b9a207a64b5e7", null ],
+    [ "EFI_PEI_PCD_PPI_GET_BOOLEAN", "Ppi_2PiPcd_8h.html#a16e82b0edd8d3de2ebe8d32cd3a25b35", null ],
+    [ "EFI_PEI_PCD_PPI_GET_NEXT_TOKEN", "Ppi_2PiPcd_8h.html#a6b09c549fccb7b3b3bc407eb71409655", null ],
+    [ "EFI_PEI_PCD_PPI_GET_NEXT_TOKEN_SPACE", "Ppi_2PiPcd_8h.html#a539b105bb03a63eb0acc57e1c838aded", null ],
+    [ "EFI_PEI_PCD_PPI_GET_POINTER", "Ppi_2PiPcd_8h.html#aefab0cbc212b23d950e8fa347a87d463", null ],
+    [ "EFI_PEI_PCD_PPI_GET_SIZE", "Ppi_2PiPcd_8h.html#abd2e64f27677e5272bd303e9a9290309", null ],
+    [ "EFI_PEI_PCD_PPI_SET_16", "Ppi_2PiPcd_8h.html#a09f844d711a96a51f9456294c21eaddb", null ],
+    [ "EFI_PEI_PCD_PPI_SET_32", "Ppi_2PiPcd_8h.html#acafac12512a9acd3f43ec946f1bff681", null ],
+    [ "EFI_PEI_PCD_PPI_SET_64", "Ppi_2PiPcd_8h.html#a0e0678b15f0338615df014debc391c97", null ],
+    [ "EFI_PEI_PCD_PPI_SET_8", "Ppi_2PiPcd_8h.html#a8102a1cbb8cc3bcd587a73172ff0747a", null ],
+    [ "EFI_PEI_PCD_PPI_SET_BOOLEAN", "Ppi_2PiPcd_8h.html#a4fb108892fe93e2890413c56271a34d1", null ],
+    [ "EFI_PEI_PCD_PPI_SET_POINTER", "Ppi_2PiPcd_8h.html#adc760386098d8dcd9d2f37961a0bdf24", null ],
+    [ "EFI_PEI_PCD_PPI_SET_SKU", "Ppi_2PiPcd_8h.html#a972877f141439928e09e4d3181ce17de", null ],
+    [ "gEfiPeiPcdPpiGuid", "Ppi_2PiPcd_8h.html#a731e7ade1f0cc04b129a84ffa4600c68", null ]
+];

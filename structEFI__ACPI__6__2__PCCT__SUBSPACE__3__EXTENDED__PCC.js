@@ -1,0 +1,27 @@
+var structEFI__ACPI__6__2__PCCT__SUBSPACE__3__EXTENDED__PCC =
+[
+    [ "AddressLength", "structEFI__ACPI__6__2__PCCT__SUBSPACE__3__EXTENDED__PCC.html#ae5bed583dbf78c768814d3010b392d55", null ],
+    [ "BaseAddress", "structEFI__ACPI__6__2__PCCT__SUBSPACE__3__EXTENDED__PCC.html#abaeb140c03040dcfd1491ff4440bed30", null ],
+    [ "CommandCompleteCheckMask", "structEFI__ACPI__6__2__PCCT__SUBSPACE__3__EXTENDED__PCC.html#a7edb533468964276d836d6ae90b75ef1", null ],
+    [ "CommandCompleteCheckRegister", "structEFI__ACPI__6__2__PCCT__SUBSPACE__3__EXTENDED__PCC.html#aba8fdf0b9174726e8bb2300d2795429f", null ],
+    [ "CommandCompleteUpdatePreserve", "structEFI__ACPI__6__2__PCCT__SUBSPACE__3__EXTENDED__PCC.html#a58d47566570b6db04a15248a288077ea", null ],
+    [ "CommandCompleteUpdateRegister", "structEFI__ACPI__6__2__PCCT__SUBSPACE__3__EXTENDED__PCC.html#adc5dcde5c166bf330bc37574473f1b38", null ],
+    [ "CommandCompleteUpdateSet", "structEFI__ACPI__6__2__PCCT__SUBSPACE__3__EXTENDED__PCC.html#a65af42b461eae9b6a9a1fe5a27ed5887", null ],
+    [ "DoorbellPreserve", "structEFI__ACPI__6__2__PCCT__SUBSPACE__3__EXTENDED__PCC.html#a308acdfa5471b933d6a29e4c08e7e729", null ],
+    [ "DoorbellRegister", "structEFI__ACPI__6__2__PCCT__SUBSPACE__3__EXTENDED__PCC.html#a74cbf541f1d5fc8d6b5377ca59698799", null ],
+    [ "DoorbellWrite", "structEFI__ACPI__6__2__PCCT__SUBSPACE__3__EXTENDED__PCC.html#afd9cb9e528cc4ca984eef9af2f6debc8", null ],
+    [ "ErrorStatusMask", "structEFI__ACPI__6__2__PCCT__SUBSPACE__3__EXTENDED__PCC.html#aa164d0b12ff3ac0296a6c71fec3ec1ce", null ],
+    [ "ErrorStatusRegister", "structEFI__ACPI__6__2__PCCT__SUBSPACE__3__EXTENDED__PCC.html#a1de4f2a018bf044d9fc4f77aae5a2d0a", null ],
+    [ "Length", "structEFI__ACPI__6__2__PCCT__SUBSPACE__3__EXTENDED__PCC.html#a50a073e64ac6e44189cc5c7243d8c48f", null ],
+    [ "MaximumPeriodicAccessRate", "structEFI__ACPI__6__2__PCCT__SUBSPACE__3__EXTENDED__PCC.html#a2abf9f04b1dccd3c23289b5cfda55ee1", null ],
+    [ "MinimumRequestTurnaroundTime", "structEFI__ACPI__6__2__PCCT__SUBSPACE__3__EXTENDED__PCC.html#a280b9664633087aaccbe74233a4a8716", null ],
+    [ "NominalLatency", "structEFI__ACPI__6__2__PCCT__SUBSPACE__3__EXTENDED__PCC.html#af9411be56f5a2e96459d6c830389cdde", null ],
+    [ "PlatformInterrupt", "structEFI__ACPI__6__2__PCCT__SUBSPACE__3__EXTENDED__PCC.html#afa83cb08a21b360d312155e7bbc049c0", null ],
+    [ "PlatformInterruptAckPreserve", "structEFI__ACPI__6__2__PCCT__SUBSPACE__3__EXTENDED__PCC.html#a19771f77db049a249357ec18d1b18ea6", null ],
+    [ "PlatformInterruptAckRegister", "structEFI__ACPI__6__2__PCCT__SUBSPACE__3__EXTENDED__PCC.html#ac4aeb9a17fccef4e9bf231a3c7c0e693", null ],
+    [ "PlatformInterruptAckSet", "structEFI__ACPI__6__2__PCCT__SUBSPACE__3__EXTENDED__PCC.html#a76025f36212f3a02c02988261601255e", null ],
+    [ "PlatformInterruptFlags", "structEFI__ACPI__6__2__PCCT__SUBSPACE__3__EXTENDED__PCC.html#afb730f9f91c053ce4f97eef80075b940", null ],
+    [ "Reserved", "structEFI__ACPI__6__2__PCCT__SUBSPACE__3__EXTENDED__PCC.html#a30dfc46c4ef388f0cffac8a8d121691d", null ],
+    [ "Reserved1", "structEFI__ACPI__6__2__PCCT__SUBSPACE__3__EXTENDED__PCC.html#a2626fa3ee72911ef834950240cfa8acf", null ],
+    [ "Type", "structEFI__ACPI__6__2__PCCT__SUBSPACE__3__EXTENDED__PCC.html#a7b41fa8d611fff6fd1037696a80696aa", null ]
+];

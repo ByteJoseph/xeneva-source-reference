@@ -1,0 +1,27 @@
+var struct__FatFS__ =
+[
+    [ "__BytesPerSector", "struct__FatFS__.html#a904d6029b75963774c09d38d8bda5c2b", null ],
+    [ "__ClusterBeginLBA", "struct__FatFS__.html#a300125011fd5f5dfd1d319ed990ec4e0", null ],
+    [ "__DirCache", "struct__FatFS__.html#a68fad0be9baa1d854473ddc1153266ed", null ],
+    [ "__DirCacheLBA", "struct__FatFS__.html#a4df0923231be47d2809f62f4f7a132a7", null ],
+    [ "__DirCacheValid", "struct__FatFS__.html#af45dbf91e18a698b231afe59860b0afe", null ],
+    [ "__FatBeginLBA", "struct__FatFS__.html#a13900e0963a118e65708a03c7ea99d4d", null ],
+    [ "__FatCache", "struct__FatFS__.html#aa9ca9d9fef9db391f56272ce017aac41", null ],
+    [ "__FatCacheLBA", "struct__FatFS__.html#abaaa36573dc65dd0e442ce305d47d38f", null ],
+    [ "__FatCacheValid", "struct__FatFS__.html#a0309f3e813d115b76be6077eaa071ae6", null ],
+    [ "__LastIndexInFat", "struct__FatFS__.html#aa3f18a23d8401c6b35ce8dc0a7e3ba7e", null ],
+    [ "__LastIndexSector", "struct__FatFS__.html#a2bc6e2531016fdcc737e0c89a8b3652f", null ],
+    [ "__NumFats", "struct__FatFS__.html#ac3a0c95af72e2fe39795e23afeed9166", null ],
+    [ "__RootDirCache", "struct__FatFS__.html#a180a0e47df3b0a1f947bd0ab53b8c90e", null ],
+    [ "__RootDirFirstCluster", "struct__FatFS__.html#ad749302f3a95d7bb4b0216291cc3c3c6", null ],
+    [ "__RootSector", "struct__FatFS__.html#a6268bef6c3eba7e864dbfed3a73ebec8", null ],
+    [ "__SectorPerCluster", "struct__FatFS__.html#a670701fc695b40831be3b35903e0e02b", null ],
+    [ "__SectorPerFAT32", "struct__FatFS__.html#ab1fa52e1b25e1aa7d58a61903f30624c", null ],
+    [ "__TotalClusters", "struct__FatFS__.html#acf7a36268d443746fc41885cfe411edb", null ],
+    [ "_scratchBuffer", "struct__FatFS__.html#adb0e531f7664341aa4da8e902d9e9b0d", null ],
+    [ "bpb", "struct__FatFS__.html#aacc013c7c6388e7a26791bd3e3f4f59d", null ],
+    [ "cluster_sz_in_bytes", "struct__FatFS__.html#a84cf6c6596aec9377794c0e701af89f8", null ],
+    [ "fatType", "struct__FatFS__.html#a7a48177693e4f6c3a07c59528aa0ec2a", null ],
+    [ "oemid", "struct__FatFS__.html#ad8fe379eedd6f18bb8fa44add0231e5b", null ],
+    [ "vdisk", "struct__FatFS__.html#aa60762585ae042f6ebecfb81d57a80ac", null ]
+];

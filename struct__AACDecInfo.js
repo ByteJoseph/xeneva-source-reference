@@ -1,0 +1,25 @@
+var struct__AACDecInfo =
+[
+    [ "adtsBlocksLeft", "struct__AACDecInfo.html#ac056d1ff102e35d7ba9c3356ac36f8e6", null ],
+    [ "bitRate", "struct__AACDecInfo.html#aeba0de9c8575e46e9ce71c800b72fbd7", null ],
+    [ "currBlockID", "struct__AACDecInfo.html#a478d8ab96b58b400fa5b2ce001fe9b43", null ],
+    [ "currInstTag", "struct__AACDecInfo.html#af758b1521773f75b02362705594e4497", null ],
+    [ "fillBuf", "struct__AACDecInfo.html#a21148361ea51d85bf9bcc3b8d3ec9205", null ],
+    [ "fillCount", "struct__AACDecInfo.html#acaa0d71612a4df3797c91b146dedfc9e", null ],
+    [ "fillExtType", "struct__AACDecInfo.html#aae7abe005c88de959f2c084655a7999e", null ],
+    [ "format", "struct__AACDecInfo.html#a71105042fec827c50ec12b3902ab78ef", null ],
+    [ "frameCount", "struct__AACDecInfo.html#ad86f06e96c441c76df9102ac6977f58f", null ],
+    [ "nChans", "struct__AACDecInfo.html#a7780e829257964c7bb3b1e7990b2206d", null ],
+    [ "pnsUsed", "struct__AACDecInfo.html#ad08ed74d793e2a2a4f1cbbbedc3de5a5", null ],
+    [ "prevBlockID", "struct__AACDecInfo.html#a231cc541b681c661d61ccc952ce1a350", null ],
+    [ "profile", "struct__AACDecInfo.html#a75a49edb6c9987d7e707124494781d63", null ],
+    [ "psInfoBase", "struct__AACDecInfo.html#a6ffc748c332453298be3872a9446cab7", null ],
+    [ "psInfoSBR", "struct__AACDecInfo.html#a62aa2afb847229a49694b2c5c0b414d6", null ],
+    [ "rawSampleBuf", "struct__AACDecInfo.html#abeac706d73febe6308f2d1612f0e8bd3", null ],
+    [ "rawSampleBytes", "struct__AACDecInfo.html#a08d865856b76aa56b7ef77a481241b94", null ],
+    [ "rawSampleFBits", "struct__AACDecInfo.html#adff23160acc805aa5ea387efc4e59a19", null ],
+    [ "sampRate", "struct__AACDecInfo.html#a5abd2d5abcbd5d981ae4233498aacb4a", null ],
+    [ "sbDeinterleaveReqd", "struct__AACDecInfo.html#aa6ae037e08f6134b1cb617bdc7ef57a3", null ],
+    [ "sbrEnabled", "struct__AACDecInfo.html#a1291829ce7464b9f46ff1353a62b6b17", null ],
+    [ "tnsUsed", "struct__AACDecInfo.html#ad54e8c6af8b3df8fd4d9af5064fb8381", null ]
+];

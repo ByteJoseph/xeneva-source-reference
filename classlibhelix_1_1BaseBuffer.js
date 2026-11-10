@@ -1,0 +1,25 @@
+var classlibhelix_1_1BaseBuffer =
+[
+    [ "BaseBuffer", "classlibhelix_1_1BaseBuffer.html#a3f177ed49146642d9cff21b793a8bb8c", null ],
+    [ "~BaseBuffer", "classlibhelix_1_1BaseBuffer.html#a21191c68775b074b1b50dbc52a88f5fe", null ],
+    [ "BaseBuffer", "classlibhelix_1_1BaseBuffer.html#add485c7933f79767f7d4c89dc7e4ccfd", null ],
+    [ "address", "classlibhelix_1_1BaseBuffer.html#a31f3d3c26ceac350366d537263a5f2c3", null ],
+    [ "available", "classlibhelix_1_1BaseBuffer.html#a28cac20c0fea3d2adb9d859c78cec9e9", null ],
+    [ "availableForWrite", "classlibhelix_1_1BaseBuffer.html#a542cb5a2b3a3864381fa5467c9a58ea4", null ],
+    [ "clear", "classlibhelix_1_1BaseBuffer.html#a2b372d0125df4705d3ee334ffb8c76bb", null ],
+    [ "clearArray", "classlibhelix_1_1BaseBuffer.html#a65302eafd0709fa0d6877646da8eceeb", null ],
+    [ "isEmpty", "classlibhelix_1_1BaseBuffer.html#a6a751588fa0584c73bb802b0900debd1", null ],
+    [ "isFull", "classlibhelix_1_1BaseBuffer.html#a5b0977d26dda98fbf9ac3b2020c6b14c", null ],
+    [ "operator=", "classlibhelix_1_1BaseBuffer.html#a8cfb8455c22e79a24e65ec1141c17a75", null ],
+    [ "peek", "classlibhelix_1_1BaseBuffer.html#a492b88f9181e3861c86727954a33879d", null ],
+    [ "read", "classlibhelix_1_1BaseBuffer.html#af5302b8c44e353b8e462be3954b50fa5", null ],
+    [ "readArray", "classlibhelix_1_1BaseBuffer.html#a061d6eb7eab4f600272894d7e6565466", null ],
+    [ "readFrames", "classlibhelix_1_1BaseBuffer.html#a02205ee29503e1436bb35f99e4a5bdef", null ],
+    [ "readFrames", "classlibhelix_1_1BaseBuffer.html#a69838b66df1156f50530519d2e4d7e06", null ],
+    [ "reset", "classlibhelix_1_1BaseBuffer.html#a048b3cdb126eeba5420940200fb3c8a8", null ],
+    [ "setWritePos", "classlibhelix_1_1BaseBuffer.html#a367663a16969d331baace5e9b2ca1433", null ],
+    [ "size", "classlibhelix_1_1BaseBuffer.html#a36ab7b3b7898a8bac612204ad9399952", null ],
+    [ "write", "classlibhelix_1_1BaseBuffer.html#adf99b90fb93300f8fe447b6da115d183", null ],
+    [ "writeArray", "classlibhelix_1_1BaseBuffer.html#aa570e9eb3b90d54c2263bd65d52ae142", null ],
+    [ "writeArrayOverwrite", "classlibhelix_1_1BaseBuffer.html#ab07b2919afeb695ae3a8c9edbc1a9b5b", null ]
+];

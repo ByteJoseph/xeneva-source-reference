@@ -1,0 +1,25 @@
+var gic_8h =
+[
+    [ "_gic_", "struct__gic__.html", "struct__gic__" ],
+    [ "GIC", "gic_8h.html#ad4204dde6a89790a302044acedefb5d6", null ],
+    [ "AuGetSystemGIC", "gic_8h.html#a7caf2d14e9e10ef47a0edd7c49bb551e", null ],
+    [ "AuGICAllocateSPI", "gic_8h.html#aafc4427da5241edf1d05003e0da3dfb7", null ],
+    [ "AuGICDeallocateSPI", "gic_8h.html#a82fdff69482e8c480bd814db9583a139", null ],
+    [ "AuGICGetMSIAddress", "gic_8h.html#acf8c762adb7974f8ba27125ef916160f", null ],
+    [ "AuGICGetMSIData", "gic_8h.html#a056a6d4c2b86062f7324e3f64a29a4cf", null ],
+    [ "GICCallSPIHandler", "gic_8h.html#ad3830de2f6541ad4de4848becf8e5052", null ],
+    [ "GICCheckPending", "gic_8h.html#a1c2f5b8a229705a40cd31ecc6a0f0074", null ],
+    [ "GICClearPendingIRQ", "gic_8h.html#a6af6214bb6ee2f2823df1295c1a7f367", null ],
+    [ "GICClearSPIHandler", "gic_8h.html#a89cb73d397a962fe046649fa414bd63a", null ],
+    [ "GICDisable", "gic_8h.html#afa787c44c31ae7816b75cebcd097af05", null ],
+    [ "GICDumpSPI", "gic_8h.html#a640ecbce58226a6372a6706e18e4116a", null ],
+    [ "GICEnableIRQ", "gic_8h.html#a5718cd0aa80985700383ecc1fb71e61c", null ],
+    [ "GICEnableSPIIRQ", "gic_8h.html#acec00e53a0a4e1e086fad5a997b188b2", null ],
+    [ "GICGetSPIHandler", "gic_8h.html#a6489678d9ed2cfe2aae5bf2a4fe89fe0", null ],
+    [ "GICInitialize", "gic_8h.html#a4867b04a66cfb1b2ef42b1eb02a6bc6b", null ],
+    [ "GICReadIAR", "gic_8h.html#ad457f9df47d985c45316eed5e0cefe8f", null ],
+    [ "GICRegisterSPIHandler", "gic_8h.html#add1f5668a99e1b24ed02480686956957", null ],
+    [ "GICSendEOI", "gic_8h.html#a2b30efedc02508d60f5b0cb37512c59c", null ],
+    [ "GICSetTargetCPU", "gic_8h.html#a80215081527b3bc79823b6ac3f1a996b", null ],
+    [ "GICSetupTimer", "gic_8h.html#a448d2d578b64f2b3682001f675f13c37", null ]
+];

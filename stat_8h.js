@@ -1,0 +1,25 @@
+var stat_8h =
+[
+    [ "stat", "structstat.html", "structstat" ],
+    [ "S_IFBLK", "stat_8h.html#a5c5b74a1cb1a1ae83572500b94e1938f", null ],
+    [ "S_IFCHR", "stat_8h.html#aef3a1d1ba22c83e30b5c834dd343b2a8", null ],
+    [ "S_IFDIR", "stat_8h.html#a11fb0652b963a735f3377eb1c9239f2d", null ],
+    [ "S_IFIFO", "stat_8h.html#a4966f25d9f03a7a06bc47ac729fd86cf", null ],
+    [ "S_IFLNK", "stat_8h.html#afef163ce62372757e84bd9fc88c07aad", null ],
+    [ "S_IFMT", "stat_8h.html#ab5bee51e9ee68b83ab11d4b340f7200b", null ],
+    [ "S_IFREG", "stat_8h.html#a1aaa48b192a5dd3b6d7ee91fc98cd17d", null ],
+    [ "S_IFSOCK", "stat_8h.html#a28e80cd43106882904be148b2a397d42", null ],
+    [ "S_ISBLK", "stat_8h.html#a722eba7370eb3b0aafb3272182e08520", null ],
+    [ "S_ISCHR", "stat_8h.html#a767b5d0691f435f8a9b7f5e0fa97a645", null ],
+    [ "S_ISDIR", "stat_8h.html#a70b64ed67c0ab484b4ba09487da34e91", null ],
+    [ "S_ISFIFO", "stat_8h.html#a777b706bbe9e7920c091aaa2b547b093", null ],
+    [ "S_ISGID", "stat_8h.html#a9c9e4cc0a8acc43c99ae6c3d972ae2d8", null ],
+    [ "S_ISLNK", "stat_8h.html#a835359614ec43fbd96f53993cde84ef2", null ],
+    [ "S_ISREG", "stat_8h.html#abf68371159fa46b5cc47d0f3ac9ab723", null ],
+    [ "S_ISSOCK", "stat_8h.html#a765304585be8c05f7fa72495e6d5881f", null ],
+    [ "S_ISUID", "stat_8h.html#a30384a8cd2feb1615efd5eadc243684b", null ],
+    [ "S_ISVTX", "stat_8h.html#a97b5e445a72c99b37dc5b8d620fbd14e", null ],
+    [ "chmod", "stat_8h.html#a0789e9f63e7dac811c12a1984514e473", null ],
+    [ "mkdir", "stat_8h.html#af731836df379dd17a34070b84c0f7a61", null ],
+    [ "stat", "stat_8h.html#a80ee0c7e979c4b8df7aced464aac9d18", null ]
+];

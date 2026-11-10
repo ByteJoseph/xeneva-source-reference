@@ -1,0 +1,27 @@
+var BootAA64_2video_8cpp =
+[
+    [ "high_set_bit", "BootAA64_2video_8cpp.html#a74324a402c36b9505ec578c918b032df", null ],
+    [ "low_set_bit", "BootAA64_2video_8cpp.html#a63554fed8902e05df626767c912c23a9", null ],
+    [ "XEGetBlueMask", "BootAA64_2video_8cpp.html#a5b2fdf23648203ab9c58057714244db8", null ],
+    [ "XEGetFramebuffer", "BootAA64_2video_8cpp.html#af6c4f11364de3e7b8e5f1356cfb44038", null ],
+    [ "XEGetFramebufferSz", "BootAA64_2video_8cpp.html#a44fcc283d9c8e3f945e1ac9ef46caee7", null ],
+    [ "XEGetGreenMask", "BootAA64_2video_8cpp.html#a0502d5437f7579258cfd68fb27a88d18", null ],
+    [ "XEGetPixelsPerLine", "BootAA64_2video_8cpp.html#ae2e0a37100ddbc17c193f419a1b55543", null ],
+    [ "XEGetRedMask", "BootAA64_2video_8cpp.html#a37e80e13ab46e3885b068caf0fb34c51", null ],
+    [ "XEGetResvMask", "BootAA64_2video_8cpp.html#a73188163c5263af5e855818e196c6252", null ],
+    [ "XEGetScreenHeight", "BootAA64_2video_8cpp.html#a10cb2de500f4f6b1761da44a2bdd14ac", null ],
+    [ "XEGetScreenWidth", "BootAA64_2video_8cpp.html#a23f1f88762de0213a361abcb681f99af", null ],
+    [ "XEGraphicsClearScreen", "BootAA64_2video_8cpp.html#a5d54b44100b841e63e48a30c25763506", null ],
+    [ "XEGraphicsPutC", "BootAA64_2video_8cpp.html#ab1532ab735018dd232bac4cb4377c8da", null ],
+    [ "XEGraphicsPuts", "BootAA64_2video_8cpp.html#a1696dcec9ac909eb2c26c80c03860ff3", null ],
+    [ "XEInitialiseGraphics", "BootAA64_2video_8cpp.html#a0d1c2385f3e4014127e00656c892e7e0", null ],
+    [ "XEPutPixel", "BootAA64_2video_8cpp.html#a581d587816fcbdb695f30a1f88bf32a1", null ],
+    [ "background", "BootAA64_2video_8cpp.html#a936176d8851b704dbdd0bb8d1e6bb43b", null ],
+    [ "bpp", "BootAA64_2video_8cpp.html#a1b190a6d9d3ec163d1a9547740e5d6eb", null ],
+    [ "fbinfo", "BootAA64_2video_8cpp.html#a8c421aea889f83d786c6756fb09b97b1", null ],
+    [ "foreground", "BootAA64_2video_8cpp.html#a3312c532e19dc8d306df9fbc67900189", null ],
+    [ "h_res", "BootAA64_2video_8cpp.html#a3f858e6736414b5f3b5522cde02d35e7", null ],
+    [ "v_res", "BootAA64_2video_8cpp.html#abf4cbdf4fc0ebaa0527feca088062baf", null ],
+    [ "xpos", "BootAA64_2video_8cpp.html#a621342e0ba9c6a93588b7c4d883bf8d2", null ],
+    [ "ypos", "BootAA64_2video_8cpp.html#af4c6d87baab5b8aaf21862743ec93491", null ]
+];

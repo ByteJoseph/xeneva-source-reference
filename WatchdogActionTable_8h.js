@@ -1,0 +1,27 @@
+var WatchdogActionTable_8h =
+[
+    [ "EFI_ACPI_WATCHDOG_ACTION_1_0_TABLE", "structEFI__ACPI__WATCHDOG__ACTION__1__0__TABLE.html", "structEFI__ACPI__WATCHDOG__ACTION__1__0__TABLE" ],
+    [ "EFI_ACPI_WATCHDOG_ACTION_1_0_WATCHDOG_ACTION_INSTRUCTION_ENTRY", "structEFI__ACPI__WATCHDOG__ACTION__1__0__WATCHDOG__ACTION__INSTRUCTION__ENTRY.html", "structEFI__ACPI__WATCHDOG__ACTION__1__0__WATCHDOG__ACTION__INSTRUCTION__ENTRY" ],
+    [ "EFI_ACPI_WATCHDOG_ACTION_1_0_TABLE_REVISION", "WatchdogActionTable_8h.html#a2692d72d780568b569c47811acfcd38b", null ],
+    [ "EFI_ACPI_WDAT_1_0_WATCHDOG_ACTION_QUERY_COUNTDOWN_PERIOD", "WatchdogActionTable_8h.html#abc6ba7a6ea0f3ac7fa64ef91c2e92c7f", null ],
+    [ "EFI_ACPI_WDAT_1_0_WATCHDOG_ACTION_QUERY_CURRENT_COUNTDOWN_PERIOD", "WatchdogActionTable_8h.html#a1e024d7cc65fbe722699b4f223dc376a", null ],
+    [ "EFI_ACPI_WDAT_1_0_WATCHDOG_ACTION_QUERY_REBOOT", "WatchdogActionTable_8h.html#a626b719c68f4e0bf7115b46d4ba96797", null ],
+    [ "EFI_ACPI_WDAT_1_0_WATCHDOG_ACTION_QUERY_RUNNING_STATE", "WatchdogActionTable_8h.html#aaf9953db369a9c66b57dcd971b1d6599", null ],
+    [ "EFI_ACPI_WDAT_1_0_WATCHDOG_ACTION_QUERY_SHUTDOWN", "WatchdogActionTable_8h.html#a8510f80dab55534f04d54799fb06f93b", null ],
+    [ "EFI_ACPI_WDAT_1_0_WATCHDOG_ACTION_QUERY_STOPPED_STATE", "WatchdogActionTable_8h.html#aba20131daa9fbc99320adc04d3acb070", null ],
+    [ "EFI_ACPI_WDAT_1_0_WATCHDOG_ACTION_QUERY_WATCHDOG_STATUS", "WatchdogActionTable_8h.html#a97fd5fc51b14a8ad5b487ec8bfaccfb8", null ],
+    [ "EFI_ACPI_WDAT_1_0_WATCHDOG_ACTION_RESET", "WatchdogActionTable_8h.html#a0c03fe29025fc52ec19720eaa482585d", null ],
+    [ "EFI_ACPI_WDAT_1_0_WATCHDOG_ACTION_SET_COUNTDOWN_PERIOD", "WatchdogActionTable_8h.html#af92b7d24ebfeb5fd6a1e6ed3b2774f02", null ],
+    [ "EFI_ACPI_WDAT_1_0_WATCHDOG_ACTION_SET_REBOOT", "WatchdogActionTable_8h.html#a695b96277b00c5b46c52a6d35cf9de90", null ],
+    [ "EFI_ACPI_WDAT_1_0_WATCHDOG_ACTION_SET_RUNNING_STATE", "WatchdogActionTable_8h.html#a2c76b305a406233489a42d902fd2d6c2", null ],
+    [ "EFI_ACPI_WDAT_1_0_WATCHDOG_ACTION_SET_SHUTDOWN", "WatchdogActionTable_8h.html#abe483a11572d9c5e71b6b665166a9ed1", null ],
+    [ "EFI_ACPI_WDAT_1_0_WATCHDOG_ACTION_SET_STOPPED_STATE", "WatchdogActionTable_8h.html#aa5fa1eaeb7fc48355f1af19de9b81aae", null ],
+    [ "EFI_ACPI_WDAT_1_0_WATCHDOG_ACTION_SET_WATCHDOG_STATUS", "WatchdogActionTable_8h.html#ab622ba47b379ffffdd2049ff2630ead7", null ],
+    [ "EFI_ACPI_WDAT_1_0_WATCHDOG_ENABLED", "WatchdogActionTable_8h.html#a0478f58acaba330e78ea1c7a5eb4a231", null ],
+    [ "EFI_ACPI_WDAT_1_0_WATCHDOG_INSTRUCTION_PRESERVE_REGISTER", "WatchdogActionTable_8h.html#a870135a4191c7463a0c52feb0740224c", null ],
+    [ "EFI_ACPI_WDAT_1_0_WATCHDOG_INSTRUCTION_READ_COUNTDOWN", "WatchdogActionTable_8h.html#a7b2bb43bc04f7bf7c31f3ea5dffcfa27", null ],
+    [ "EFI_ACPI_WDAT_1_0_WATCHDOG_INSTRUCTION_READ_VALUE", "WatchdogActionTable_8h.html#a17361fe4eb70b60130b40f8d6a857f1d", null ],
+    [ "EFI_ACPI_WDAT_1_0_WATCHDOG_INSTRUCTION_WRITE_COUNTDOWN", "WatchdogActionTable_8h.html#a22d497a58a9d102090503d96e139ebfd", null ],
+    [ "EFI_ACPI_WDAT_1_0_WATCHDOG_INSTRUCTION_WRITE_VALUE", "WatchdogActionTable_8h.html#a50565299513912af213a73e7ecf7dbf3", null ],
+    [ "EFI_ACPI_WDAT_1_0_WATCHDOG_STOPPED_IN_SLEEP_STATE", "WatchdogActionTable_8h.html#aca685ac41e6ab723d12229fe1a2a0879", null ]
+];

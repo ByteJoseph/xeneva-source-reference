@@ -1,0 +1,7 @@
+var structEFI__ACPI__6__1__ERROR__RECORD__SERIALIZATION__TABLE__HEADER =
+[
+    [ "Header", "structEFI__ACPI__6__1__ERROR__RECORD__SERIALIZATION__TABLE__HEADER.html#a8040b5d5021635537956f4ba40deccf5", null ],
+    [ "InstructionEntryCount", "structEFI__ACPI__6__1__ERROR__RECORD__SERIALIZATION__TABLE__HEADER.html#a00f8ebd7995247225488e6a856e2f723", null ],
+    [ "Reserved0", "structEFI__ACPI__6__1__ERROR__RECORD__SERIALIZATION__TABLE__HEADER.html#a6d963449d444550d71336ad34cacc341", null ],
+    [ "SerializationHeaderSize", "structEFI__ACPI__6__1__ERROR__RECORD__SERIALIZATION__TABLE__HEADER.html#ae4d0572953dc0316aa6280d973423f33", null ]
+];

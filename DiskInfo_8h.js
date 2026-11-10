@@ -1,0 +1,25 @@
+var DiskInfo_8h =
+[
+    [ "_EFI_DISK_INFO_PROTOCOL", "struct__EFI__DISK__INFO__PROTOCOL.html", "struct__EFI__DISK__INFO__PROTOCOL" ],
+    [ "EFI_DISK_INFO_AHCI_INTERFACE_GUID", "DiskInfo_8h.html#a47f39400d86fdc0f9f1f05aba25d377d", null ],
+    [ "EFI_DISK_INFO_IDE_INTERFACE_GUID", "DiskInfo_8h.html#adc6cb1d84232db0ed9ac19c91bff0c5d", null ],
+    [ "EFI_DISK_INFO_NVME_INTERFACE_GUID", "DiskInfo_8h.html#a7fea88e5683fa0dc3c78541cd4791460", null ],
+    [ "EFI_DISK_INFO_PROTOCOL_GUID", "DiskInfo_8h.html#a53c709888973de7f945cfe0d03dc93d4", null ],
+    [ "EFI_DISK_INFO_SCSI_INTERFACE_GUID", "DiskInfo_8h.html#ae357728bfae499818e21621e82de9080", null ],
+    [ "EFI_DISK_INFO_SD_MMC_INTERFACE_GUID", "DiskInfo_8h.html#abac01f5476ef4d8db239ece19f37e212", null ],
+    [ "EFI_DISK_INFO_UFS_INTERFACE_GUID", "DiskInfo_8h.html#a964ab9b8732ad92f7904bb218df1c747", null ],
+    [ "EFI_DISK_INFO_USB_INTERFACE_GUID", "DiskInfo_8h.html#ab0705b252444d0d0ea908bcca11faf84", null ],
+    [ "EFI_DISK_INFO_IDENTIFY", "DiskInfo_8h.html#acf92875d4265dc462fe16c38a0a7fdca", null ],
+    [ "EFI_DISK_INFO_INQUIRY", "DiskInfo_8h.html#ab8573c78e7ab08660ca1bfc5d7c386b7", null ],
+    [ "EFI_DISK_INFO_PROTOCOL", "DiskInfo_8h.html#ae6bdcb74e96fb72116c0c69cf0854770", null ],
+    [ "EFI_DISK_INFO_SENSE_DATA", "DiskInfo_8h.html#a73a5807a63c01330a7d3981e8f0b8251", null ],
+    [ "EFI_DISK_INFO_WHICH_IDE", "DiskInfo_8h.html#ac08ddc3bdda0ecadea714e3cee270488", null ],
+    [ "gEfiDiskInfoAhciInterfaceGuid", "DiskInfo_8h.html#aa8dee95074aacf507eb8986f28e977c6", null ],
+    [ "gEfiDiskInfoIdeInterfaceGuid", "DiskInfo_8h.html#a2922216d354203753c084e9c4d937a45", null ],
+    [ "gEfiDiskInfoNvmeInterfaceGuid", "DiskInfo_8h.html#a80962043c651e7462568e628a382e7ff", null ],
+    [ "gEfiDiskInfoProtocolGuid", "DiskInfo_8h.html#acac9073285ee87d92ed6e48c649e21e8", null ],
+    [ "gEfiDiskInfoScsiInterfaceGuid", "DiskInfo_8h.html#a83d6f576a03a69573832db62a40816a0", null ],
+    [ "gEfiDiskInfoSdMmcInterfaceGuid", "DiskInfo_8h.html#aeb9c677b7346d8e3cdf54aacba0e411d", null ],
+    [ "gEfiDiskInfoUfsInterfaceGuid", "DiskInfo_8h.html#a55e67ac0574af00b7658becd73dcd832", null ],
+    [ "gEfiDiskInfoUsbInterfaceGuid", "DiskInfo_8h.html#a79882475cc6cf5c3998664654b6a15e2", null ]
+];

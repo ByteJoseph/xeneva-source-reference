@@ -1,0 +1,4 @@
+var structEFI__ACPI__6__0__FPDT__FIRMWARE__BASIC__BOOT__TABLE =
+[
+    [ "Header", "structEFI__ACPI__6__0__FPDT__FIRMWARE__BASIC__BOOT__TABLE.html#a94ee118e075732054b424537b021b37e", null ]
+];

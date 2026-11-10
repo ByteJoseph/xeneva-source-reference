@@ -1,0 +1,28 @@
+var KernelAA64_2Mm_2vmmngr_8c =
+[
+    [ "PTE_AP_RO", "KernelAA64_2Mm_2vmmngr_8c.html#a967e8c8aedbc98a2dede3c08872637ef", null ],
+    [ "PTE_AP_USER", "KernelAA64_2Mm_2vmmngr_8c.html#aa298e5b8620efb26f83a9123b01cf39b", null ],
+    [ "PTE_APT_NOUSER", "KernelAA64_2Mm_2vmmngr_8c.html#a6c4c1b676bbb52e26289ab5acf9ae17c", null ],
+    [ "PTE_APT_RO", "KernelAA64_2Mm_2vmmngr_8c.html#a00c6b8de095261c8be921f7f571abe55", null ],
+    [ "VMM_PHYS_MASK", "KernelAA64_2Mm_2vmmngr_8c.html#ad8d302ef0271f8bb5e6da98deb51f44b", null ],
+    [ "AuCreateVirtualAddressSpace", "KernelAA64_2Mm_2vmmngr_8c.html#a5ed630229c2dfb530c98560516c948fe", null ],
+    [ "AuDestroyVirtualAddressSpace", "KernelAA64_2Mm_2vmmngr_8c.html#af372fb9751556e802517c56839e3133c", null ],
+    [ "AuFreePages", "KernelAA64_2Mm_2vmmngr_8c.html#afee913df92f37b35f3bf5131c6c0ee97", null ],
+    [ "AuFreePagesEx", "KernelAA64_2Mm_2vmmngr_8c.html#a765fdf1fa9ab4cb5b23ceb0f8b78e8ed", null ],
+    [ "AuGetFreePage", "KernelAA64_2Mm_2vmmngr_8c.html#add65d569cfe06950c6cc359749e5a95d", null ],
+    [ "AuGetPhysicalAddress", "KernelAA64_2Mm_2vmmngr_8c.html#aa13da200183a56024cf490f946efaa60", null ],
+    [ "AuGetPhysicalAddressEx", "KernelAA64_2Mm_2vmmngr_8c.html#a3a08c447af7d95734b9bd95db6f1b0b4", null ],
+    [ "AuGetRootPageTable", "KernelAA64_2Mm_2vmmngr_8c.html#a6810967631742244b813c3acf52b94e7", null ],
+    [ "AuIsVirtualAddressSpaceActive", "KernelAA64_2Mm_2vmmngr_8c.html#a06cdd1f677170ace3f8935c4e439b0d7", null ],
+    [ "AuMapMMIO", "KernelAA64_2Mm_2vmmngr_8c.html#a0e5999f7a870828e0943cfb4d22fc7c3", null ],
+    [ "AuMapPage", "KernelAA64_2Mm_2vmmngr_8c.html#a8587f5ce9e59246ed26090b7c25162de", null ],
+    [ "AuMapPageEx", "KernelAA64_2Mm_2vmmngr_8c.html#aeacdfb6679ae320c790482c0f80a2ec0", null ],
+    [ "AuUpdatePageFlags", "KernelAA64_2Mm_2vmmngr_8c.html#a91d46587afaac853fd2fc435ab96c34a", null ],
+    [ "AuVmmngrBootFree", "KernelAA64_2Mm_2vmmngr_8c.html#a3d90d2a075e51c9ac94125be430514bd", null ],
+    [ "AuVmmngrGetPage", "KernelAA64_2Mm_2vmmngr_8c.html#afd05def69f22635b85928f448e56a836", null ],
+    [ "AuVmmngrInitialize", "KernelAA64_2Mm_2vmmngr_8c.html#a376137ed2daef150fde7ca6946007709", null ],
+    [ "AuVmmngrUserWalk", "KernelAA64_2Mm_2vmmngr_8c.html#a7a569aba7b3b2cef6f85d5921d68f302", null ],
+    [ "_MMIOBase", "KernelAA64_2Mm_2vmmngr_8c.html#a5e4fb6199fc5f91ffbf2f63542f54bf4", null ],
+    [ "_RootPaging", "KernelAA64_2Mm_2vmmngr_8c.html#a3e66445f4cb342e520f433d082b283dd", null ],
+    [ "_RootPagingKe", "KernelAA64_2Mm_2vmmngr_8c.html#a8ada99f4b6f679ff3c6ed99ba22b8122", null ]
+];

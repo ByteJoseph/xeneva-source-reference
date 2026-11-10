@@ -1,7 +1,7 @@
 var searchData=
 [
   ['haacdecoder_0',['HAACDecoder',['../aacdec_8h.html#afeb424b35480f44c79a426d93acc5549',1,'aacdec.h']]],
-  ['handle_1',['handle',['../dlmalloc_8c.html#aa8c0374618b33785ccb02f74bcfebc46',1,'HANDLE:&#160;dlmalloc.c'],['../__heap_8cpp.html#aa8c0374618b33785ccb02f74bcfebc46',1,'HANDLE:&#160;_heap.cpp']]],
+  ['handle_1',['HANDLE',['../dlmalloc_8c.html#aa8c0374618b33785ccb02f74bcfebc46',1,'HANDLE:&#160;dlmalloc.c'],['../__heap_8cpp.html#aa8c0374618b33785ccb02f74bcfebc46',1,'HANDLE:&#160;_heap.cpp']]],
   ['handle_5fevent_2',['handle_event',['../include_2dom_2events_2event__listener_8h.html#afb233de47e8c7e8f5239b8d61529dc1e',1,'event_listener.h']]],
   ['hash_5fentry_3',['hash_entry',['../hash_8c.html#afd0df5ae3e092ceadd2bf67d6d043be5',1,'hash.c']]],
   ['hash_5ft_4',['hash_t',['../hash_8c.html#a80d2a17c7b13368ac8ad41a02908e63d',1,'hash.c']]],
@@ -23,8 +23,8 @@ var searchData=
   ['hdawidget_20',['HDAWidget',['../widget_8h.html#a884c05699981b2c34d42477f5eb9c231',1,'widget.h']]],
   ['head_21',['head',['../list__sort_8h.html#ad05937a2e036331cdbc2eb49fed582bf',1,'list_sort.h']]],
   ['hhdr_22',['HHdr',['../xe__script_8cpp.html#acb45f706ed04ea89390487dd5df2417e',1,'xe_script.cpp']]],
-  ['hiddescriptor_23',['hiddescriptor',['../BaseHdr_2Drivers_2hid_8h.html#a08b09bc2cc7759f0a411a9ed3be0c543',1,'HIDDescriptor:&#160;hid.h'],['../Drivers_2USB_2hid_2hid_8h.html#a08b09bc2cc7759f0a411a9ed3be0c543',1,'HIDDescriptor:&#160;hid.h'],['../Drivers_2Usb3_2classes_2hid_8h.html#a08b09bc2cc7759f0a411a9ed3be0c543',1,'HIDDescriptor:&#160;hid.h']]],
-  ['hiddescriptorlink_24',['hiddescriptorlink',['../BaseHdr_2Drivers_2hid_8h.html#a925bf5391f35eb08c02d21e94e1e3d8c',1,'HIDDescriptorLink:&#160;hid.h'],['../Drivers_2USB_2hid_2hid_8h.html#a925bf5391f35eb08c02d21e94e1e3d8c',1,'HIDDescriptorLink:&#160;hid.h'],['../Drivers_2Usb3_2classes_2hid_8h.html#a925bf5391f35eb08c02d21e94e1e3d8c',1,'HIDDescriptorLink:&#160;hid.h']]],
+  ['hiddescriptor_23',['HIDDescriptor',['../BaseHdr_2Drivers_2hid_8h.html#a08b09bc2cc7759f0a411a9ed3be0c543',1,'hid.h']]],
+  ['hiddescriptorlink_24',['HIDDescriptorLink',['../BaseHdr_2Drivers_2hid_8h.html#a925bf5391f35eb08c02d21e94e1e3d8c',1,'hid.h']]],
   ['hubbub_5fattribute_25',['hubbub_attribute',['../Ports_2CssLibs_2libhubbub_2include_2hubbub_2types_8h.html#ad48d640d65c7fdf977bcff3a4c7a4885',1,'types.h']]],
   ['hubbub_5fcharset_5fsource_26',['hubbub_charset_source',['../Ports_2CssLibs_2libhubbub_2include_2hubbub_2types_8h.html#af8d10c1ec4ff460598f5212a34db1906',1,'types.h']]],
   ['hubbub_5fcontent_5fmodel_27',['hubbub_content_model',['../Ports_2CssLibs_2libhubbub_2include_2hubbub_2types_8h.html#a7b2db79c63c73a38be2516869bf7cfd6',1,'types.h']]],
@@ -70,7 +70,7 @@ var searchData=
   ['hubbub_5ftreebuilder_5fcontext_67',['hubbub_treebuilder_context',['../CssLibs_2libhubbub_2src_2treebuilder_2internal_8h.html#a1dfd197b7e7410475361225be13d6208',1,'internal.h']]],
   ['hubbub_5ftreebuilder_5foptparams_68',['hubbub_treebuilder_optparams',['../treebuilder_8h.html#a7d15a104f518d28c75f08e86aca95adf',1,'treebuilder.h']]],
   ['hubbub_5ftreebuilder_5fopttype_69',['hubbub_treebuilder_opttype',['../treebuilder_8h.html#adf3142cf19653d5a825e1f91e106d14a',1,'treebuilder.h']]],
-  ['huffinfo_70',['huffinfo',['../coder_8h.html#adb9b41df1e1f9e21aad966cb745d5b1a',1,'HuffInfo:&#160;coder.h'],['../sbr_8h.html#adb9b41df1e1f9e21aad966cb745d5b1a',1,'HuffInfo:&#160;sbr.h']]],
+  ['huffinfo_70',['HuffInfo',['../coder_8h.html#adb9b41df1e1f9e21aad966cb745d5b1a',1,'HuffInfo:&#160;coder.h'],['../sbr_8h.html#adb9b41df1e1f9e21aad966cb745d5b1a',1,'HuffInfo:&#160;sbr.h']]],
   ['huffman_5ftree_71',['huffman_tree',['../upng_8cpp.html#a3911fdf474d86651d441b174792c5823',1,'upng.cpp']]],
   ['hwbar_72',['HwBar',['../devhw_8c.html#a118a557148b13ac8dd731b104d0e81ee',1,'devhw.c']]],
   ['hwdma_73',['HwDma',['../devhw_8c.html#a08ba2c62ca2066da338ebc93acfc59f1',1,'devhw.c']]],

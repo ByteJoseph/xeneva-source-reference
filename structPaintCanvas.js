@@ -1,0 +1,25 @@
+var structPaintCanvas =
+[
+    [ "base", "structPaintCanvas.html#a0d51df0d152c09a75be038b353fd0c4e", null ],
+    [ "buffer", "structPaintCanvas.html#aa488d674fa7bb361f188737afb3e96ce", null ],
+    [ "currentTool", "structPaintCanvas.html#a468a2e11690534d667e83cec4af52dda", null ],
+    [ "currentX", "structPaintCanvas.html#aa5f823307cabc1f18c860b314c38f94b", null ],
+    [ "currentY", "structPaintCanvas.html#ad742b7add40471e2e26b2ab674f79a20", null ],
+    [ "isDrawing", "structPaintCanvas.html#a9a6e94916b8047c28683fa0202714a60", null ],
+    [ "lastX", "structPaintCanvas.html#afd61d3b57320fcae3ecb6b0ef40cc974", null ],
+    [ "lastY", "structPaintCanvas.html#ab0b75c2ff46d30ac36e6d6a1824fdb00", null ],
+    [ "mouseButton", "structPaintCanvas.html#a66c05c0ccebf0b20b534d64ac0725b96", null ],
+    [ "previewBuffer", "structPaintCanvas.html#a0efa81a6481c45e73afb2e5b4fa316c5", null ],
+    [ "previousTool", "structPaintCanvas.html#aa86ef4d62e0a752be6feecd174ae37f7", null ],
+    [ "prevShapeRect", "structPaintCanvas.html#a90237d0be7a4bd0ff14bfd9e29faca92", null ],
+    [ "primaryColor", "structPaintCanvas.html#a03e2a26ef67d6629ff354d73f0732f28", null ],
+    [ "redoBuffers", "structPaintCanvas.html#a8f8956b7de201bdf5b1631b0f4d68182", null ],
+    [ "redoCount", "structPaintCanvas.html#a56130d66a15ff14aa7c421bea6a1e6ec", null ],
+    [ "secondaryColor", "structPaintCanvas.html#afc020e2eccde219c052773e6207d60dd", null ],
+    [ "shiftPressed", "structPaintCanvas.html#aa8ced95fad4725af6276651315d67de4", null ],
+    [ "startX", "structPaintCanvas.html#a132a0fd56ec49ddfb4e353b9836e4fc9", null ],
+    [ "startY", "structPaintCanvas.html#a63a440ed6d0837550a7baa33de27f857", null ],
+    [ "strokeWidth", "structPaintCanvas.html#a9bebff72d752225f10c84c4a962375a4", null ],
+    [ "undoBuffers", "structPaintCanvas.html#a3f912779fb2ea68365eb6e2f25621339", null ],
+    [ "undoCount", "structPaintCanvas.html#a70d03af1cd490e6d3c14beba15585abd", null ]
+];

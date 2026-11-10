@@ -1,0 +1,27 @@
+var uspios_8h =
+[
+    [ "GPU_L2_CACHE_ENABLED", "uspios_8h.html#a14f6d2d25821b5071e6223a2acd8ff9a", null ],
+    [ "HZ", "uspios_8h.html#a8489802eaedf42fdb5f2ce1708eaffa2", null ],
+    [ "LOG_DEBUG", "uspios_8h.html#a6ff63e8955665c4a58b1598f2b07c51a", null ],
+    [ "LOG_ERROR", "uspios_8h.html#aced66975c154ea0e2a8ec3bc818b4e08", null ],
+    [ "LOG_NOTICE", "uspios_8h.html#ad89ee324d180cdcd7defcc709ff9ca42", null ],
+    [ "LOG_WARNING", "uspios_8h.html#adf4476a6a4ea6c74231c826e899d7189", null ],
+    [ "USPI_DEFAULT_KEYMAP_UK", "uspios_8h.html#a3576e9791501c38af869e318321ff855", null ],
+    [ "USPI_PROVIDE_MEM_FUNCTIONS", "uspios_8h.html#a392a1bb11bc097723c4d6e16489686d7", null ],
+    [ "USPI_PROVIDE_STR_FUNCTIONS", "uspios_8h.html#aa45dd7699fd089cba097d2ce28607ceb", null ],
+    [ "TInterruptHandler", "uspios_8h.html#a79892552f0456b035a788fcff008d611", null ],
+    [ "TKernelTimerHandle", "uspios_8h.html#abd99ce148c1c81a7d82dfc0985c5ad4d", null ],
+    [ "TKernelTimerHandler", "uspios_8h.html#a8ed989f9ceea22c75921c8b8af774caa", null ],
+    [ "CancelKernelTimer", "uspios_8h.html#a760dc4c43dbcca8a45345304dc7fc949", null ],
+    [ "ConnectInterrupt", "uspios_8h.html#a3dec73653eb565c2854ff139df100405", null ],
+    [ "DebugHexdump", "uspios_8h.html#ad1551b8d2438e4e4822f6e2daf59d468", null ],
+    [ "free", "uspios_8h.html#a4f98ff4502b9d7ebedf752c1a7721441", null ],
+    [ "GetMACAddress", "uspios_8h.html#a5ea6665b0be58d69463ef8303bc602c9", null ],
+    [ "LogWrite", "uspios_8h.html#a9b27b4f472de8952e32aca10cd7f831c", null ],
+    [ "malloc", "uspios_8h.html#a22da0d108a87441f43cfeea0229f6963", null ],
+    [ "MsDelay", "uspios_8h.html#a9cccb5aa736137c6209023b5e2c846c3", null ],
+    [ "SetPowerStateOn", "uspios_8h.html#ac755abb9b084b12d18cc3c03d62881d0", null ],
+    [ "StartKernelTimer", "uspios_8h.html#a4822091322e4d6d6d522386ceca54820", null ],
+    [ "usDelay", "uspios_8h.html#abb62344d09140d1de56dacf8f2d2a4ae", null ],
+    [ "uspi_assertion_failed", "uspios_8h.html#a06ba32a5d6de30c4ff5249e46b08ec20", null ]
+];

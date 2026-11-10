@@ -1,0 +1,4 @@
+var struct__EFI__INCOMPATIBLE__PCI__DEVICE__SUPPORT__PROTOCOL =
+[
+    [ "CheckDevice", "struct__EFI__INCOMPATIBLE__PCI__DEVICE__SUPPORT__PROTOCOL.html#aa89236756e2b2ffff3b540ef4b820a35", null ]
+];

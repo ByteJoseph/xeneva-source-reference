@@ -1,0 +1,27 @@
+var classlibhelix_1_1SingleBuffer =
+[
+    [ "SingleBuffer", "classlibhelix_1_1SingleBuffer.html#a24d5806b9a07eb9f07232efb16c4312e", null ],
+    [ "SingleBuffer", "classlibhelix_1_1SingleBuffer.html#a9984038039f269183821ad72687fd105", null ],
+    [ "address", "classlibhelix_1_1SingleBuffer.html#a72d51c49be6a1131b55db5619e6344da", null ],
+    [ "available", "classlibhelix_1_1SingleBuffer.html#a327f30045ef065cef7d9028a744647b8", null ],
+    [ "availableForWrite", "classlibhelix_1_1SingleBuffer.html#ab6b80b845a69f8ea7519526fa3479745", null ],
+    [ "clearArray", "classlibhelix_1_1SingleBuffer.html#afb222a1bae0a2ac1a3c0e2c41c0ce2b9", null ],
+    [ "data", "classlibhelix_1_1SingleBuffer.html#ab6b7ccf67abc49e81ac32ab4bbfb16b7", null ],
+    [ "isFull", "classlibhelix_1_1SingleBuffer.html#aa8913946d48db035e2ae074d1d4bd3a2", null ],
+    [ "onExternalBufferRefilled", "classlibhelix_1_1SingleBuffer.html#a0c0ef917d72deb9922f0d43601ad8a95", null ],
+    [ "peek", "classlibhelix_1_1SingleBuffer.html#a42ffa81a614d2ffa80d72755c3e75f3e", null ],
+    [ "read", "classlibhelix_1_1SingleBuffer.html#adcb8a828283f79cb4e97947c28d30c75", null ],
+    [ "reset", "classlibhelix_1_1SingleBuffer.html#acb9758495c04dafee9e4815cd56ca668", null ],
+    [ "resize", "classlibhelix_1_1SingleBuffer.html#add7c530573ad7e383cc637ce91a82b4d", null ],
+    [ "setAvailable", "classlibhelix_1_1SingleBuffer.html#af0fe95ae49b01461386b5477317d2a69", null ],
+    [ "setClearWithZero", "classlibhelix_1_1SingleBuffer.html#a7d2b9d998a4ddee9677db83b25035587", null ],
+    [ "setWritePos", "classlibhelix_1_1SingleBuffer.html#a927c0a36e85b79b14730663a546edaa3", null ],
+    [ "size", "classlibhelix_1_1SingleBuffer.html#af1c242c2fe0f44b3ac58167caee144f7", null ],
+    [ "write", "classlibhelix_1_1SingleBuffer.html#aef9b669a9256c67913b059489d1dd3e3", null ],
+    [ "buffer", "classlibhelix_1_1SingleBuffer.html#adb3476b237123cee781e1f98cd485907", null ],
+    [ "current_read_pos", "classlibhelix_1_1SingleBuffer.html#addc90477fed01f48d8f1dda6043a614f", null ],
+    [ "current_write_pos", "classlibhelix_1_1SingleBuffer.html#a1fc21fd13d4a06254e28aab0caa7a110", null ],
+    [ "is_clear_with_zero", "classlibhelix_1_1SingleBuffer.html#a808ee2840a2054dcddb681a34ec7f8bb", null ],
+    [ "max_size", "classlibhelix_1_1SingleBuffer.html#a4813af6c83229f96b2003685617ffafc", null ],
+    [ "owns_buffer", "classlibhelix_1_1SingleBuffer.html#ad84f011ccd6bfa6384c0c3dcd862d480", null ]
+];

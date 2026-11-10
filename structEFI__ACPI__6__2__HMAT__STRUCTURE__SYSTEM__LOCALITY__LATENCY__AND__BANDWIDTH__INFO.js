@@ -1,0 +1,13 @@
+var structEFI__ACPI__6__2__HMAT__STRUCTURE__SYSTEM__LOCALITY__LATENCY__AND__BANDWIDTH__INFO =
+[
+    [ "DataType", "structEFI__ACPI__6__2__HMAT__STRUCTURE__SYSTEM__LOCALITY__LATENCY__AND__BANDWIDTH__INFO.html#a5cf80048fd723ed30873d19336ce3a6a", null ],
+    [ "EntryBaseUnit", "structEFI__ACPI__6__2__HMAT__STRUCTURE__SYSTEM__LOCALITY__LATENCY__AND__BANDWIDTH__INFO.html#aabff93f7c6f80a7cb03b25f1acb6b438", null ],
+    [ "Flags", "structEFI__ACPI__6__2__HMAT__STRUCTURE__SYSTEM__LOCALITY__LATENCY__AND__BANDWIDTH__INFO.html#afb8bd2d1401a4362d09bb0a6cf90aa99", null ],
+    [ "Length", "structEFI__ACPI__6__2__HMAT__STRUCTURE__SYSTEM__LOCALITY__LATENCY__AND__BANDWIDTH__INFO.html#afafa373f36f8cd3f55f6fd875d6f0b23", null ],
+    [ "NumberOfInitiatorProximityDomains", "structEFI__ACPI__6__2__HMAT__STRUCTURE__SYSTEM__LOCALITY__LATENCY__AND__BANDWIDTH__INFO.html#aceb304fbf54e52cc42a8df749fadcd89", null ],
+    [ "NumberOfTargetProximityDomains", "structEFI__ACPI__6__2__HMAT__STRUCTURE__SYSTEM__LOCALITY__LATENCY__AND__BANDWIDTH__INFO.html#a09ab2c50b15dfab9553d472fae181653", null ],
+    [ "Reserved", "structEFI__ACPI__6__2__HMAT__STRUCTURE__SYSTEM__LOCALITY__LATENCY__AND__BANDWIDTH__INFO.html#a1d0f9b4c7254726e4b411b00bb8252db", null ],
+    [ "Reserved1", "structEFI__ACPI__6__2__HMAT__STRUCTURE__SYSTEM__LOCALITY__LATENCY__AND__BANDWIDTH__INFO.html#afc69ebedab87820b9cfd7166dcdf77ba", null ],
+    [ "Reserved2", "structEFI__ACPI__6__2__HMAT__STRUCTURE__SYSTEM__LOCALITY__LATENCY__AND__BANDWIDTH__INFO.html#a62c2e359b5833074bf16b0f3f8636100", null ],
+    [ "Type", "structEFI__ACPI__6__2__HMAT__STRUCTURE__SYSTEM__LOCALITY__LATENCY__AND__BANDWIDTH__INFO.html#a566d441de970c839c20561d6824f3af7", null ]
+];

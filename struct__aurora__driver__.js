@@ -1,0 +1,26 @@
+var struct__aurora__driver__ =
+[
+    [ "base", "struct__aurora__driver__.html#a010d5b1a3b88cd05c8d1861185e39f59", null ],
+    [ "bus", "struct__aurora__driver__.html#a47b93f6d2049224ab7c8282e37dc6447", null ],
+    [ "classCode", "struct__aurora__driver__.html#a39560c8e05f3e9a139b1a4c5b3c1a16b", null ],
+    [ "dev", "struct__aurora__driver__.html#a05880cc8dba1c9bd9726d947ee25f5da", null ],
+    [ "device", "struct__aurora__driver__.html#a74049654ebcadad45e5a99224235a5f6", null ],
+    [ "deviceID", "struct__aurora__driver__.html#ab9d7dd4f3f4670def454b2238ad997b9", null ],
+    [ "drv_type", "struct__aurora__driver__.html#a179b7c73cf519ced93ea6ed048e2acfa", null ],
+    [ "end", "struct__aurora__driver__.html#a7cd857fe0fa87ca6934213fc9ed5ecc9", null ],
+    [ "entry", "struct__aurora__driver__.html#a9ac914044e8487b694252a90fe22417f", null ],
+    [ "flags", "struct__aurora__driver__.html#a83123d9f04209b67566cbf545f35a624", null ],
+    [ "func", "struct__aurora__driver__.html#ab2507f557761019d196107efa7d07ec0", null ],
+    [ "id", "struct__aurora__driver__.html#ae2fab703d406b9d571f3116187c393ed", null ],
+    [ "image_sz", "struct__aurora__driver__.html#a42ef93cf3a14d808b8efe0ad47895064", null ],
+    [ "name", "struct__aurora__driver__.html#ab61034c2fc69c763aa435857087dde43", null ],
+    [ "new_load_base", "struct__aurora__driver__.html#a47a464277b54b0f34348cc72a4f02a32", null ],
+    [ "original_load_base", "struct__aurora__driver__.html#aeee77dbc37ad6474ef8e4f2a2199a553", null ],
+    [ "present", "struct__aurora__driver__.html#a46bd42be14da1ebac036d861f3329d2c", null ],
+    [ "refcount", "struct__aurora__driver__.html#ad16be6ea4751036ce4c99b58009e488e", null ],
+    [ "region_pages", "struct__aurora__driver__.html#aa7affe68fc5eba15c29cf2066bb6653a", null ],
+    [ "resources", "struct__aurora__driver__.html#a8275a9cebb93e629b66006e556786f69", null ],
+    [ "subClassCode", "struct__aurora__driver__.html#ac36a4caf32e292970abe22467cd74099", null ],
+    [ "unload", "struct__aurora__driver__.html#a594bfb2ca7da4013f51c3701ba9f83e3", null ],
+    [ "vendorID", "struct__aurora__driver__.html#a0a52ec0e728b479143fd4d701b193c8e", null ]
+];

@@ -1,0 +1,26 @@
+var structdev__pm__ops =
+[
+    [ "complete", "structdev__pm__ops.html#a7c3ba4cc75b27ec271df6d41eac6643a", null ],
+    [ "freeze", "structdev__pm__ops.html#a6e606c1af5d88eda5b72d0b4f29afd44", null ],
+    [ "freeze_late", "structdev__pm__ops.html#abd252140499f7d079c1a2e509c15de0a", null ],
+    [ "freeze_noirq", "structdev__pm__ops.html#a310a90ce8b44070d43c530f8b986610d", null ],
+    [ "poweroff", "structdev__pm__ops.html#a1ba88769633befc5cd04214be75fbf8f", null ],
+    [ "poweroff_late", "structdev__pm__ops.html#aaa68ded7f4c0fad1893c3c1de3f71c4e", null ],
+    [ "poweroff_noirq", "structdev__pm__ops.html#ae8d28f043827f32da50fb7102d036fdc", null ],
+    [ "prepare", "structdev__pm__ops.html#aff05a7308bd1a49ece6a80d01b939a93", null ],
+    [ "restore", "structdev__pm__ops.html#abafd4ec449fb83cfaf6162a88481d90d", null ],
+    [ "restore_early", "structdev__pm__ops.html#a24a97ada288b9c8e484aba1a782ba5dc", null ],
+    [ "restore_noirq", "structdev__pm__ops.html#a5c670d0753ce71661c64830e42feb7fa", null ],
+    [ "resume", "structdev__pm__ops.html#a2da853588778353447d44555c840b610", null ],
+    [ "resume_early", "structdev__pm__ops.html#a0e97a71f11ea9829cdca5d0d344720d6", null ],
+    [ "resume_noirq", "structdev__pm__ops.html#a39f045467cf7270484f1a846d85ccccf", null ],
+    [ "runtime_idle", "structdev__pm__ops.html#a7c10dac8ef7b99720e6b0830879d8243", null ],
+    [ "runtime_resume", "structdev__pm__ops.html#a5a709b153f47f4542501f680bfc0d849", null ],
+    [ "runtime_suspend", "structdev__pm__ops.html#a3c3f36e9fa706bdf0353af657a25072f", null ],
+    [ "suspend", "structdev__pm__ops.html#ad0aca836a0cf218c6d9c31b2f332221d", null ],
+    [ "suspend_late", "structdev__pm__ops.html#a58d1f1183c8b58a11eff39a999bf91f5", null ],
+    [ "suspend_noirq", "structdev__pm__ops.html#a3cdbdf625bd72079a95141636a6aa759", null ],
+    [ "thaw", "structdev__pm__ops.html#a642adb8f11897326408fac4e0f2da589", null ],
+    [ "thaw_early", "structdev__pm__ops.html#ad8ce876da6e4671600a6346d57326b97", null ],
+    [ "thaw_noirq", "structdev__pm__ops.html#afb3c18c12a42e09abcb8627060ce2378", null ]
+];

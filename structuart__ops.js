@@ -1,0 +1,27 @@
+var structuart__ops =
+[
+    [ "break_ctl", "structuart__ops.html#af560dcd9dd8fefa2c90475af0a8d6775", null ],
+    [ "config_port", "structuart__ops.html#a628a8625f318dd209709afc3cd1018f2", null ],
+    [ "enable_ms", "structuart__ops.html#ad9468e4ed5d56bf3d095fd0fc50315f2", null ],
+    [ "flush_buffer", "structuart__ops.html#a9c5328710696a443950b9a9bd937d9dd", null ],
+    [ "get_mctrl", "structuart__ops.html#a11cc749c3a1b4571bec573279c3e5362", null ],
+    [ "ioctl", "structuart__ops.html#ab3428e80f7b584cbb7e0511d55bc12b5", null ],
+    [ "pm", "structuart__ops.html#a77719620fc8037b9e987d8617cadb28e", null ],
+    [ "release_port", "structuart__ops.html#ab3886404bd4b5b28afb30a2a4b4a3ea4", null ],
+    [ "request_port", "structuart__ops.html#a0c9e9211f0b53b51a273e3071683854a", null ],
+    [ "send_xchar", "structuart__ops.html#a79fbd33392fc22711852cbd3f3e26b16", null ],
+    [ "set_ldisc", "structuart__ops.html#a58cad1911821d72223f89fec05c6bb9e", null ],
+    [ "set_mctrl", "structuart__ops.html#ad3ee5f4cc6aa267d37b9151ec8c2f883", null ],
+    [ "set_termios", "structuart__ops.html#aa729ceb105a33e049b22a7c8a3feb3b3", null ],
+    [ "shutdown", "structuart__ops.html#a4bae1f16d4561f51948228d5cb2f50de", null ],
+    [ "start_rx", "structuart__ops.html#a12dc15bb32e8e4d425d05b2f3749b29e", null ],
+    [ "start_tx", "structuart__ops.html#ad26a77eb020cb852cb94df32a8722798", null ],
+    [ "startup", "structuart__ops.html#abc7d56f593c30850a285020c1b464ab2", null ],
+    [ "stop_rx", "structuart__ops.html#a7ceba1f678f8e50445d7a772df50a65b", null ],
+    [ "stop_tx", "structuart__ops.html#a6095d394cd8e6279a97d0506ed8bafdc", null ],
+    [ "throttle", "structuart__ops.html#a4467bcdde58ceef5768fcd544882b9c5", null ],
+    [ "tx_empty", "structuart__ops.html#ad2bad4258688e66a8517152519f416e5", null ],
+    [ "type", "structuart__ops.html#a809dec27628d9af34e8db3aa5354b128", null ],
+    [ "unthrottle", "structuart__ops.html#afc2ca61d76c00e26bc6825949b6b82d7", null ],
+    [ "verify_port", "structuart__ops.html#a778d3e58aad3e5a0b8db2c11785e4f7f", null ]
+];

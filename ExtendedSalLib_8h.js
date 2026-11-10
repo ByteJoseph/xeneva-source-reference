@@ -1,0 +1,25 @@
+var ExtendedSalLib_8h =
+[
+    [ "EsalAddCpuData", "ExtendedSalLib_8h.html#a178a1a78ad91329b075a804a512cf3b3", null ],
+    [ "EsalCall", "ExtendedSalLib_8h.html#aaafe684d94530b5e3dd69cf42bf7ef61", null ],
+    [ "EsalGetCpuDataById", "ExtendedSalLib_8h.html#ad92a5cedbfea03211cf6cce769edc279", null ],
+    [ "EsalGetCpuDataByIndex", "ExtendedSalLib_8h.html#ad4fada82e100975bba70fc4544441700", null ],
+    [ "EsalGetMcCheckinFlags", "ExtendedSalLib_8h.html#ab31f0d71d8de0ee9dfa5a4ab80c799d3", null ],
+    [ "EsalGetMinState", "ExtendedSalLib_8h.html#afe2fbcef8cf32f49c34dd2b1326bb98f", null ],
+    [ "EsalGetNewPalEntry", "ExtendedSalLib_8h.html#a57e5c24fe3abb3bce839fb3d34721d4c", null ],
+    [ "EsalGetStateBuffer", "ExtendedSalLib_8h.html#ad2aa8be694e92166555c8fc2319af6c2", null ],
+    [ "EsalGetVectors", "ExtendedSalLib_8h.html#ae882237908044bd55ea1ca2506fdd184", null ],
+    [ "EsalMcaGetStateInfo", "ExtendedSalLib_8h.html#a33af064fc97c60ff4ff65a5dd9758fbb", null ],
+    [ "EsalMcaRegisterCpu", "ExtendedSalLib_8h.html#aab6d74a20aec7dadaadd7b494d5cded8", null ],
+    [ "EsalMcGetMcParams", "ExtendedSalLib_8h.html#ad82c8b1993e392fe624da078467da5f6", null ],
+    [ "EsalMcGetParams", "ExtendedSalLib_8h.html#a981ff06ae74a95250b415572aff2461e", null ],
+    [ "EsalModifyCpuData", "ExtendedSalLib_8h.html#a5a544e08bcb919f8d4a49fd2a3c0565b", null ],
+    [ "EsalNumProcessors", "ExtendedSalLib_8h.html#a5f703e639cc27962eb2198f4152d4052", null ],
+    [ "EsalRemoveCpuData", "ExtendedSalLib_8h.html#afb1180ce08d5f81fe5272995ca6c4f5a", null ],
+    [ "EsalSaveStateBuffer", "ExtendedSalLib_8h.html#af9948ee44822865e03841aa863d26d68", null ],
+    [ "EsalSetMinState", "ExtendedSalLib_8h.html#a6fa8bed04b449cd305de20a4c592caf8", null ],
+    [ "EsalSetNewPalEntry", "ExtendedSalLib_8h.html#aacb5134aafb41c2e690715e3b2e72f0b", null ],
+    [ "EsalStall", "ExtendedSalLib_8h.html#a2cf6be2618e48f05dbbea949fa0fcc5a", null ],
+    [ "EsalWhoAmI", "ExtendedSalLib_8h.html#a3fb4917014bd3991bfd684e4d1fb3b56", null ],
+    [ "RegisterEsalClass", "ExtendedSalLib_8h.html#ae96a9117ee04df7a0586deb1781efd65", null ]
+];

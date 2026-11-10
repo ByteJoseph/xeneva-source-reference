@@ -1,0 +1,26 @@
+var structmobjinfo__t =
+[
+    [ "activesound", "structmobjinfo__t.html#a2c3edfb8718b4ed89d40f4e0979e8256", null ],
+    [ "attacksound", "structmobjinfo__t.html#adc01648fda89d0d751a8ef8de146c8d8", null ],
+    [ "damage", "structmobjinfo__t.html#a315960dc8b206d4e9ba9cc00fc7d5634", null ],
+    [ "deathsound", "structmobjinfo__t.html#a87fd8f531642c0fb5ca9f23fc9948731", null ],
+    [ "deathstate", "structmobjinfo__t.html#aac6587dd4872b45f7c5dfea10a485286", null ],
+    [ "doomednum", "structmobjinfo__t.html#a2448cd792f8574c009c10032d073cee2", null ],
+    [ "flags", "structmobjinfo__t.html#ae33cc3b2585136b5297b0e625be03d9a", null ],
+    [ "height", "structmobjinfo__t.html#a05aaeb8f511c2dbdae2bb94ef117185a", null ],
+    [ "mass", "structmobjinfo__t.html#aff70cbda544959bde82571ce63c33efb", null ],
+    [ "meleestate", "structmobjinfo__t.html#a002a8efe9f6737bbaf81e52d20945f52", null ],
+    [ "missilestate", "structmobjinfo__t.html#a60655fb568e583a980f7d6e589bc2684", null ],
+    [ "painchance", "structmobjinfo__t.html#a581a7aaa550ef9dee11149d6d20dd85f", null ],
+    [ "painsound", "structmobjinfo__t.html#a8c88f6a454492e0d72beb2da556cbc0d", null ],
+    [ "painstate", "structmobjinfo__t.html#aa4ec71db18a096bd04404d6df2cc6ef0", null ],
+    [ "radius", "structmobjinfo__t.html#a42d2f85d189037b0ed6458aa52746cb8", null ],
+    [ "raisestate", "structmobjinfo__t.html#a8c6d4ff7debc24231454601404e51306", null ],
+    [ "reactiontime", "structmobjinfo__t.html#a2986ff4d6632fb9c19b71252cb92b12f", null ],
+    [ "seesound", "structmobjinfo__t.html#a4cae234822f9ca74ace73d445affe478", null ],
+    [ "seestate", "structmobjinfo__t.html#acbfa0437341d1d4ed2beb07f111dcea6", null ],
+    [ "spawnhealth", "structmobjinfo__t.html#a8e5cea1199b30af380df52e5ef6eedd7", null ],
+    [ "spawnstate", "structmobjinfo__t.html#acfdc19a3f75a2fdac9ab516de5d582c9", null ],
+    [ "speed", "structmobjinfo__t.html#a6225775325a042121dd8ad1caafeaf1b", null ],
+    [ "xdeathstate", "structmobjinfo__t.html#a08fccee064f067391e96ee79f2854fc5", null ]
+];

@@ -1,0 +1,25 @@
+var struct__chwin__ =
+[
+    [ "app", "struct__chwin__.html#a6939be7fa3f594fd2c3f77540a6c496c", null ],
+    [ "buffer", "struct__chwin__.html#ae5a3c6b25de9f98b348406aab0c696ec", null ],
+    [ "canv", "struct__chwin__.html#aae7225728321b4af56f09ada3af20aba", null ],
+    [ "ChCloseWin", "struct__chwin__.html#abe87161dc84067c2cbc39ede519210bf", null ],
+    [ "ChWinPaint", "struct__chwin__.html#a623048d1e28430b03d344c603aeff439", null ],
+    [ "color", "struct__chwin__.html#a207c238aaa7eab29eb53c46aad37bac6", null ],
+    [ "currentPopupMenu", "struct__chwin__.html#ad5d7eeb0d47e6427b8f8894675fb9311", null ],
+    [ "flags", "struct__chwin__.html#ad7311b0159254ea0e172bbdf28c528ec", null ],
+    [ "focused", "struct__chwin__.html#a76429ba832f3c2ee700c9fa0632c2ccc", null ],
+    [ "focusedWidget", "struct__chwin__.html#a81b5deed4222c3c84cbc8499e1bb310d", null ],
+    [ "GlobalControls", "struct__chwin__.html#a5c444e2a0111879ca42d01bd11ee4e8d", null ],
+    [ "handle", "struct__chwin__.html#af1997704eafa68b81b1b9b7af21ef1d0", null ],
+    [ "info", "struct__chwin__.html#a3eab7803cfe556e23b737cff8868eb77", null ],
+    [ "jump", "struct__chwin__.html#a74b6a5c96107f0e11379e2ada5e93c5c", null ],
+    [ "parent", "struct__chwin__.html#a71e195d34e6c6dcd611ee9bf82a743c5", null ],
+    [ "popup", "struct__chwin__.html#a44b92c88f5e3bf77d3b615b3375c986f", null ],
+    [ "selectedMenuItem", "struct__chwin__.html#a0de0741354ec15a3fea862022d6578d3", null ],
+    [ "sharedwin", "struct__chwin__.html#a1ea6c99bf1b809b4266575c9adcff9b5", null ],
+    [ "styleState", "struct__chwin__.html#ab08c0a59fbe3939bccf873b578a79ef1", null ],
+    [ "subwindow", "struct__chwin__.html#a64c47bc3fcb75b566356db5b203946f3", null ],
+    [ "title", "struct__chwin__.html#a8c047a898da1ca8e8910bf1d278efc96", null ],
+    [ "widgets", "struct__chwin__.html#a4563be3836838506dc36f181d02efad8", null ]
+];

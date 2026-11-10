@@ -1,0 +1,7 @@
+var unionSPD4__LRDIMM__ADDRESS__MAPPING__FROM__REGISTER__TO__DRAM =
+[
+    [ "Bits", "unionSPD4__LRDIMM__ADDRESS__MAPPING__FROM__REGISTER__TO__DRAM.html#a76f22b14a9a1c2cf7f438165ac62d72c", null ],
+    [ "Data", "unionSPD4__LRDIMM__ADDRESS__MAPPING__FROM__REGISTER__TO__DRAM.html#adffc0a4db76158b7c6b77f7f5f28c629", null ],
+    [ "Rank1Mapping", "unionSPD4__LRDIMM__ADDRESS__MAPPING__FROM__REGISTER__TO__DRAM.html#a435a91a26bf8325c4c8ee1c73464243b", null ],
+    [ "Reserved", "unionSPD4__LRDIMM__ADDRESS__MAPPING__FROM__REGISTER__TO__DRAM.html#a26ce088449081e5dcb70ddfbaeb19872", null ]
+];

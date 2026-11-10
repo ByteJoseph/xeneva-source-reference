@@ -1,0 +1,38 @@
+var EapManagement_8h =
+[
+    [ "_EFI_EAPOL_PORT_INFO", "struct__EFI__EAPOL__PORT__INFO.html", "struct__EFI__EAPOL__PORT__INFO" ],
+    [ "_EFI_EAPOL_SUPPLICANT_PAE_CONFIGURATION", "struct__EFI__EAPOL__SUPPLICANT__PAE__CONFIGURATION.html", "struct__EFI__EAPOL__SUPPLICANT__PAE__CONFIGURATION" ],
+    [ "_EFI_EAPOL_SUPPLICANT_PAE_STATISTICS", "struct__EFI__EAPOL__SUPPLICANT__PAE__STATISTICS.html", "struct__EFI__EAPOL__SUPPLICANT__PAE__STATISTICS" ],
+    [ "_EFI_EAP_MANAGEMENT_PROTOCOL", "struct__EFI__EAP__MANAGEMENT__PROTOCOL.html", "struct__EFI__EAP__MANAGEMENT__PROTOCOL" ],
+    [ "AUTH_PERIOD_FIELD_VALID", "EapManagement_8h.html#a02091ebc5dc28ea54ae19f91d3721cc3", null ],
+    [ "EFI_EAP_MANAGEMENT_PROTOCOL_GUID", "EapManagement_8h.html#a374cdd81dc73fd62e78cabec3455e81c", null ],
+    [ "HELD_PERIOD_FIELD_VALID", "EapManagement_8h.html#a6067fc1b04f4a57a67cb339b2ca0778d", null ],
+    [ "MAX_START_FIELD_VALID", "EapManagement_8h.html#aa4126f0f84ea948510f6476933af324b", null ],
+    [ "PAE_SUPPORT_AUTHENTICATOR", "EapManagement_8h.html#af2a249f3c240364f7c775a4c7bdb28b2", null ],
+    [ "PAE_SUPPORT_SUPPLICANT", "EapManagement_8h.html#aef56e15af25c9ecf0ded2bc1445eece2", null ],
+    [ "START_PERIOD_FIELD_VALID", "EapManagement_8h.html#a328cce0482a7312a4e23e97b79e6fbf8", null ],
+    [ "EFI_EAP_GET_SUPPLICANT_STATISTICS", "EapManagement_8h.html#a20ad8ccc9bb27065e5a74f08f1075f2d", null ],
+    [ "EFI_EAP_GET_SUPPLICANT_STATUS", "EapManagement_8h.html#a1764adea5281c7e453a3f4868b5610a3", null ],
+    [ "EFI_EAP_GET_SYSTEM_CONFIGURATION", "EapManagement_8h.html#a8d1dc8282cd52299d3e2b1f6d5af6d2d", null ],
+    [ "EFI_EAP_INITIALIZE_PORT", "EapManagement_8h.html#a36b8a8c1e2c5de392022c59bf8bdc70c", null ],
+    [ "EFI_EAP_MANAGEMENT_PROTOCOL", "EapManagement_8h.html#ac9861e3d45068cceb8d0f00c06b34adf", null ],
+    [ "EFI_EAP_SET_SUPPLICANT_CONFIGURATION", "EapManagement_8h.html#addfdc3d110b220eb0e1a76f25758401b", null ],
+    [ "EFI_EAP_SET_SYSTEM_CONFIGURATION", "EapManagement_8h.html#ada31c4836be99877bff026cc191146ea", null ],
+    [ "EFI_EAP_USER_LOGOFF", "EapManagement_8h.html#afc53b0c94d2697e20f0096e60d3eaf23", null ],
+    [ "EFI_EAP_USER_LOGON", "EapManagement_8h.html#a135d07ec77149925305eeca7407bc3b5", null ],
+    [ "EFI_EAPOL_PORT_INFO", "EapManagement_8h.html#aefe506752977ce7413d1e151c7ff7e6f", null ],
+    [ "EFI_EAPOL_SUPPLICANT_PAE_CONFIGURATION", "EapManagement_8h.html#a5a963c8a8db0ba5d40ac4421eedf498e", null ],
+    [ "EFI_EAPOL_SUPPLICANT_PAE_STATE", "EapManagement_8h.html#ae34a8d1817f559528273b93eea34cb28", null ],
+    [ "EFI_EAPOL_SUPPLICANT_PAE_STATISTICS", "EapManagement_8h.html#a408b1f9e7e868370c06e6a2f96d33893", null ],
+    [ "_EFI_EAPOL_SUPPLICANT_PAE_STATE", "EapManagement_8h.html#a3ebc9ca175a515aa56591810bd6b64b3", [
+      [ "Logoff", "EapManagement_8h.html#a3ebc9ca175a515aa56591810bd6b64b3a655f30a6004f032f1bb52abd891ea02a", null ],
+      [ "Disconnected", "EapManagement_8h.html#a3ebc9ca175a515aa56591810bd6b64b3a84ab0fbbb76a8c897feb1cd806d56443", null ],
+      [ "Connecting", "EapManagement_8h.html#a3ebc9ca175a515aa56591810bd6b64b3a6ea90df6fe966852496b4846da497fb0", null ],
+      [ "Acquired", "EapManagement_8h.html#a3ebc9ca175a515aa56591810bd6b64b3a8b7f1ccd49c48a69ea787b1ca07bd48d", null ],
+      [ "Authenticating", "EapManagement_8h.html#a3ebc9ca175a515aa56591810bd6b64b3a3a447e013ee9159e6f006a730d8180cb", null ],
+      [ "Held", "EapManagement_8h.html#a3ebc9ca175a515aa56591810bd6b64b3a4df057cd48b807cab4733ddf473cec5b", null ],
+      [ "Authenticated", "EapManagement_8h.html#a3ebc9ca175a515aa56591810bd6b64b3a9d89ca0e6d86711fcc35fb1c6d947008", null ],
+      [ "MaxSupplicantPaeState", "EapManagement_8h.html#a3ebc9ca175a515aa56591810bd6b64b3a145405bf4c591d6069da4a26d7a21d72", null ]
+    ] ],
+    [ "gEfiEapManagementProtocolGuid", "EapManagement_8h.html#af63346840cb713cf4709822be7c7e3c0", null ]
+];

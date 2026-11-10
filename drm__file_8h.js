@@ -1,0 +1,36 @@
+var drm__file_8h =
+[
+    [ "drm_minor", "structdrm__minor.html", "structdrm__minor" ],
+    [ "drm_pending_event", "structdrm__pending__event.html", "structdrm__pending__event" ],
+    [ "drm_file", "structdrm__file.html", "structdrm__file" ],
+    [ "drm_minor_type", "drm__file_8h.html#aa42dbb312d982610367433ac43b3270d", [
+      [ "DRM_MINOR_PRIMARY", "drm__file_8h.html#aa42dbb312d982610367433ac43b3270da286cada3129a8cf65248011df25d80a0", null ],
+      [ "DRM_MINOR_CONTROL", "drm__file_8h.html#aa42dbb312d982610367433ac43b3270da0b78f979db2722620b5007824a6fc47c", null ],
+      [ "DRM_MINOR_RENDER", "drm__file_8h.html#aa42dbb312d982610367433ac43b3270da3abe9072ad97a59760e29c58b19547cf", null ],
+      [ "DRM_MINOR_ACCEL", "drm__file_8h.html#aa42dbb312d982610367433ac43b3270da30e6d4642528ead3e5228585dca956bc", null ]
+    ] ],
+    [ "__printf", "drm__file_8h.html#ac1177196742dfb1ea22ede71953d9461", null ],
+    [ "drm_event_cancel_free", "drm__file_8h.html#a54727477a16b5f46418ebc76e1c5d86b", null ],
+    [ "drm_event_reserve_init", "drm__file_8h.html#acd7c563d64363eff80469ec9378325f0", null ],
+    [ "drm_event_reserve_init_locked", "drm__file_8h.html#a7814d7ce83fd7213303261fc83da43d4", null ],
+    [ "drm_fdinfo_print_size", "drm__file_8h.html#a4ce2e76e15336b23ac0943c1fefef56e", null ],
+    [ "drm_file_update_pid", "drm__file_8h.html#ae0cac9062ec37dcacf61e9c29da6eb1d", null ],
+    [ "drm_memory_stats_is_zero", "drm__file_8h.html#ae735034c239be2109df12f3b4d9e1f00", null ],
+    [ "drm_minor_acquire", "drm__file_8h.html#a7268a1be2a33048a8314ba87728e90a3", null ],
+    [ "drm_minor_release", "drm__file_8h.html#a79cba4a81b4699def58f2cc3cc7acc65", null ],
+    [ "drm_open", "drm__file_8h.html#a7e92bfba351039ad336bdc8a48e31dae", null ],
+    [ "drm_open_helper", "drm__file_8h.html#a8ea727cd7556ba306089236068ce9d1f", null ],
+    [ "drm_poll", "drm__file_8h.html#a97b99c408a8d479f6caf095db9d3d3ec", null ],
+    [ "drm_print_memory_stats", "drm__file_8h.html#a4f0af5d15bed98d459eb7bc14ac5dff8", null ],
+    [ "drm_read", "drm__file_8h.html#a1b44f86198d3674115a658278501bf62", null ],
+    [ "drm_release", "drm__file_8h.html#ad535130274076b3a6de5835a357a6b33", null ],
+    [ "drm_release_noglobal", "drm__file_8h.html#a213deaa1e4bb14cfd6a27b7747d68cee", null ],
+    [ "drm_send_event", "drm__file_8h.html#ae6b12d40a03e4845f43bc752412de5f9", null ],
+    [ "drm_send_event_locked", "drm__file_8h.html#a1bdeef6ee3c4325c36065e76a26eb1cb", null ],
+    [ "drm_send_event_timestamp_locked", "drm__file_8h.html#a5877b77d0ddaedf0c8b6c974e955bbaa", null ],
+    [ "drm_show_fdinfo", "drm__file_8h.html#ae906a0ae71cee84880f899bdc2844647", null ],
+    [ "drm_show_memory_stats", "drm__file_8h.html#a4134b8b72f44a48a4b0d9339feae99d2", null ],
+    [ "mock_drm_getfile", "drm__file_8h.html#aeb93ad3bce9d0594687cd9d798cc93dd", null ],
+    [ "drm_minors_xa", "drm__file_8h.html#ad06e5b515d0879268715e6c5471152b4", null ],
+    [ "fmt", "drm__file_8h.html#a6c7e3fabe8f433618918504e845c8e99", null ]
+];

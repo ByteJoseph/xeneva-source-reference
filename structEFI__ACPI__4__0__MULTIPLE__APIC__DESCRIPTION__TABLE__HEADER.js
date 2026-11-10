@@ -1,0 +1,6 @@
+var structEFI__ACPI__4__0__MULTIPLE__APIC__DESCRIPTION__TABLE__HEADER =
+[
+    [ "Flags", "structEFI__ACPI__4__0__MULTIPLE__APIC__DESCRIPTION__TABLE__HEADER.html#a74160d952e47985e4256805dfd3193d2", null ],
+    [ "Header", "structEFI__ACPI__4__0__MULTIPLE__APIC__DESCRIPTION__TABLE__HEADER.html#a970898f080f0c74bae5b53017ee707ab", null ],
+    [ "LocalApicAddress", "structEFI__ACPI__4__0__MULTIPLE__APIC__DESCRIPTION__TABLE__HEADER.html#a858b2e2ae0196cfa9f9c980eec0400c0", null ]
+];

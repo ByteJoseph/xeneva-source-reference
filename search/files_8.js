@@ -24,7 +24,7 @@ var searchData=
   ['gmstyle_2ecpp_21',['gmstyle.cpp',['../gmstyle_8cpp.html',1,'']]],
   ['gmstyle_2eh_22',['gmstyle.h',['../gmstyle_8h.html',1,'']]],
   ['gomenu_2ecpp_23',['gomenu.cpp',['../gomenu_8cpp.html',1,'']]],
-  ['gpio_2eh_24',['gpio.h',['../LittleBoot_2gpio_8h.html',1,'(Global Namespace)'],['../BootAA64_2gpio_8h.html',1,'(Global Namespace)']]],
+  ['gpio_2eh_24',['gpio.h',['../BootAA64_2gpio_8h.html',1,'(Global Namespace)'],['../LittleBoot_2gpio_8h.html',1,'(Global Namespace)']]],
   ['gpt_2eh_25',['Gpt.h',['../Gpt_8h.html',1,'']]],
   ['gpu_5fscheduler_2eh_26',['gpu_scheduler.h',['../gpu__scheduler_8h.html',1,'']]],
   ['gpudamage_2eh_27',['gpudamage.h',['../gpudamage_8h.html',1,'']]],
@@ -37,7 +37,7 @@ var searchData=
   ['group_2eh_34',['group.h',['../group_8h.html',1,'']]],
   ['gud_2eh_35',['gud.h',['../gud_8h.html',1,'']]],
   ['guid_2ecpp_36',['guid.cpp',['../guid_8cpp.html',1,'']]],
-  ['guidedsectionextraction_2eh_37',['guidedsectionextraction.h',['../Ppi_2GuidedSectionExtraction_8h.html',1,'(Global Namespace)'],['../Protocol_2GuidedSectionExtraction_8h.html',1,'(Global Namespace)']]],
+  ['guidedsectionextraction_2eh_37',['GuidedSectionExtraction.h',['../Ppi_2GuidedSectionExtraction_8h.html',1,'(Global Namespace)'],['../Protocol_2GuidedSectionExtraction_8h.html',1,'(Global Namespace)']]],
   ['gusconf_2ec_38',['gusconf.c',['../gusconf_8c.html',1,'']]],
   ['gusconf_2eh_39',['gusconf.h',['../gusconf_8h.html',1,'']]]
 ];

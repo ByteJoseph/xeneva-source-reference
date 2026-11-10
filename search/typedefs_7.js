@@ -35,7 +35,7 @@ var searchData=
   ['gptheader_32',['GPTHeader',['../__gpt_8h.html#a2dfdfbbee92cea82fbd3d8066a766ef8',1,'_gpt.h']]],
   ['gptpartition_33',['GPTPartition',['../__gpt_8h.html#a18c21e4bb7206dbc250c3cef105fd032',1,'_gpt.h']]],
   ['grabmouse_5fcallback_5ft_34',['grabmouse_callback_t',['../i__video_8h.html#ae40fcef6ce590689c20c234ad2a0e70e',1,'i_video.h']]],
-  ['guid_35',['guid',['../__FsGUIDs_8h.html#adeeeca59e0f70c6ead2556f5956fad15',1,'GUID:&#160;_FsGUIDs.h'],['../__kefile_8h.html#adeeeca59e0f70c6ead2556f5956fad15',1,'GUID:&#160;_kefile.h']]],
+  ['guid_35',['GUID',['../__FsGUIDs_8h.html#adeeeca59e0f70c6ead2556f5956fad15',1,'GUID:&#160;_FsGUIDs.h'],['../__kefile_8h.html#adeeeca59e0f70c6ead2556f5956fad15',1,'GUID:&#160;_kefile.h']]],
   ['gxv_5fvalidate_5ffunc_36',['gxv_validate_func',['../svgxval_8h.html#a10afe886e8e30f09039c377c8ed18620',1,'svgxval.h']]],
   ['gz_5fheader_37',['gz_header',['../zlib_8h.html#aae85b4a4f7931ee1f67f54c459007421',1,'zlib.h']]],
   ['gz_5fheaderp_38',['gz_headerp',['../zlib_8h.html#a40e9dcc294796d99b25e98fb06477fc8',1,'zlib.h']]],

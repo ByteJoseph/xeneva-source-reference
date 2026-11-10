@@ -1,0 +1,5 @@
+var structEFI__FIRMWARE__VOLUME__EXT__ENTRY__USED__SIZE__TYPE =
+[
+    [ "Hdr", "structEFI__FIRMWARE__VOLUME__EXT__ENTRY__USED__SIZE__TYPE.html#ab9333c123401a63af94692e66704ea32", null ],
+    [ "UsedSize", "structEFI__FIRMWARE__VOLUME__EXT__ENTRY__USED__SIZE__TYPE.html#ad794a5da216b979d28232e5790de6503", null ]
+];

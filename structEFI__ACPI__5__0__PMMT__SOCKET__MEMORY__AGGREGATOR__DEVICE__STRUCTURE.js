@@ -1,0 +1,6 @@
+var structEFI__ACPI__5__0__PMMT__SOCKET__MEMORY__AGGREGATOR__DEVICE__STRUCTURE =
+[
+    [ "Header", "structEFI__ACPI__5__0__PMMT__SOCKET__MEMORY__AGGREGATOR__DEVICE__STRUCTURE.html#a6783e9000f3ddf1761182fa6120e33c0", null ],
+    [ "Reserved", "structEFI__ACPI__5__0__PMMT__SOCKET__MEMORY__AGGREGATOR__DEVICE__STRUCTURE.html#af97a2f233523e68b72a52ea63dfd0215", null ],
+    [ "SocketIdentifier", "structEFI__ACPI__5__0__PMMT__SOCKET__MEMORY__AGGREGATOR__DEVICE__STRUCTURE.html#ac8eb887488da09d447fce224b6d8cf00", null ]
+];

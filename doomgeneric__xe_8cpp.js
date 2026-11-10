@@ -1,0 +1,27 @@
+var doomgeneric__xe_8cpp =
+[
+    [ "DOOM_CHROME_BTN_Y0", "doomgeneric__xe_8cpp.html#a6b6a90d4fe018cd78c0651f855482edd", null ],
+    [ "DOOM_CHROME_BTN_Y1", "doomgeneric__xe_8cpp.html#a770bf53f617db2678a46375c20a6b6c2", null ],
+    [ "DOOM_CHROME_H", "doomgeneric__xe_8cpp.html#aed5fc79d7dde64dcbc186504e855187c", null ],
+    [ "DOOM_KEY_DOWNARROW", "doomgeneric__xe_8cpp.html#a64d66f3593a4a0023ff52c67f60658ba", null ],
+    [ "DOOM_KEY_ENTER", "doomgeneric__xe_8cpp.html#a0cbc9e5d41446c800b1bb8d49d533b5c", null ],
+    [ "DOOM_KEY_ESCAPE", "doomgeneric__xe_8cpp.html#af2e64f5845f75d434101d559940fd871", null ],
+    [ "DOOM_KEY_FIRE", "doomgeneric__xe_8cpp.html#a92796abdba2183162fdd66edfe9d9ab5", null ],
+    [ "DOOM_KEY_LEFTARROW", "doomgeneric__xe_8cpp.html#a5a0d6156af37ca08a0f4a9e503237480", null ],
+    [ "DOOM_KEY_RIGHTARROW", "doomgeneric__xe_8cpp.html#a631a5663298df9275b7c474e48b3833e", null ],
+    [ "DOOM_KEY_RSHIFT", "doomgeneric__xe_8cpp.html#adb3f4755173f492b0410c4c1e40325c9", null ],
+    [ "DOOM_KEY_UPARROW", "doomgeneric__xe_8cpp.html#a0a0e7d44e49dd9b48324270b6e9b8e98", null ],
+    [ "DOOM_KEY_USE", "doomgeneric__xe_8cpp.html#af097d54fe6f9ae069d841ade714defa8", null ],
+    [ "ChWindowPaintTitlebar", "doomgeneric__xe_8cpp.html#a0e75e0fae3746888a77c4235326dffe6", null ],
+    [ "DG_CloseWindow", "doomgeneric__xe_8cpp.html#a6bf6f811e07993b483e17c2dcad403ab", null ],
+    [ "DG_DrawFrame", "doomgeneric__xe_8cpp.html#a44cba975f0897830bf64eabb78c20897", null ],
+    [ "DG_GetKey", "doomgeneric__xe_8cpp.html#aa42587133097fa8743603e36cb61de6d", null ],
+    [ "DG_GetTicksMs", "doomgeneric__xe_8cpp.html#ad76b11c281aa2679b3edfe75a7ba1f6a", null ],
+    [ "DG_Init", "doomgeneric__xe_8cpp.html#a42199e65ce1c5231cf827a5fba29e68f", null ],
+    [ "DG_SetWindowTitle", "doomgeneric__xe_8cpp.html#a7020b321fe614f1964e58714308baab1", null ],
+    [ "DG_SleepMs", "doomgeneric__xe_8cpp.html#a248482a56152c695c7838012b3da3e19", null ],
+    [ "DG_StatBegin", "doomgeneric__xe_8cpp.html#ab477742d7a3bbf406b2e6a08eb3ef224", null ],
+    [ "DG_StatEnd", "doomgeneric__xe_8cpp.html#ad9a599d2ec2e705cb18812f08cf1bd71", null ],
+    [ "DG_StatReport", "doomgeneric__xe_8cpp.html#aaa734e95965e979e56665100576fbfde", null ],
+    [ "I_Quit", "doomgeneric__xe_8cpp.html#adfe1542b246b6d8c91ea8b9ec1eddd49", null ]
+];

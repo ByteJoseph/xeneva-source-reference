@@ -1,0 +1,58 @@
+var BluetoothConfig_8h =
+[
+    [ "EFI_BLUETOOTH_SCAN_CALLBACK_INFORMATION", "structEFI__BLUETOOTH__SCAN__CALLBACK__INFORMATION.html", "structEFI__BLUETOOTH__SCAN__CALLBACK__INFORMATION" ],
+    [ "_EFI_BLUETOOTH_CONFIG_PROTOCOL", "struct__EFI__BLUETOOTH__CONFIG__PROTOCOL.html", "struct__EFI__BLUETOOTH__CONFIG__PROTOCOL" ],
+    [ "EFI_BLUETOOTH_CONFIG_PROTOCOL_GUID", "BluetoothConfig_8h.html#ab5a8be7f1a62868facb22d55a24e852b", null ],
+    [ "EFI_BLUETOOTH_CONFIG_REMOTE_DEVICE_STATE_CONNECTED", "BluetoothConfig_8h.html#a018dea10e3a4afd7accac89c01e06836", null ],
+    [ "EFI_BLUETOOTH_CONFIG_REMOTE_DEVICE_STATE_PAIRED", "BluetoothConfig_8h.html#a23d919f9435fc6dd7c21c6f3cb796fb9", null ],
+    [ "EFI_BLUETOOTH_CONFIG_CONNECT", "BluetoothConfig_8h.html#accc6f6b000bb2cdfb45b20fe4ae21c64", null ],
+    [ "EFI_BLUETOOTH_CONFIG_DISCONNECT", "BluetoothConfig_8h.html#a3a83b6fa6b6a48f6581e6537703c856a", null ],
+    [ "EFI_BLUETOOTH_CONFIG_GET_DATA", "BluetoothConfig_8h.html#a6e2df707370a16c7403c81d39f4a4857", null ],
+    [ "EFI_BLUETOOTH_CONFIG_GET_REMOTE_DATA", "BluetoothConfig_8h.html#a8e6cf67b6d12aa97a9be1cf2b318de83", null ],
+    [ "EFI_BLUETOOTH_CONFIG_INIT", "BluetoothConfig_8h.html#a55977bf5d8ca3076d2783bc732ddedb2", null ],
+    [ "EFI_BLUETOOTH_CONFIG_PROTOCOL", "BluetoothConfig_8h.html#a4c1ada95a9c2c6be8529dda3cdf52690", null ],
+    [ "EFI_BLUETOOTH_CONFIG_REGISTER_CONNECT_COMPLETE_CALLBACK", "BluetoothConfig_8h.html#ac84687f241098790de224a29dee65d47", null ],
+    [ "EFI_BLUETOOTH_CONFIG_REGISTER_CONNECT_COMPLETE_CALLBACK_FUNCTION", "BluetoothConfig_8h.html#a75940db586f7ab913ca0bc74682f755b", null ],
+    [ "EFI_BLUETOOTH_CONFIG_REGISTER_GET_LINK_KEY_CALLBACK", "BluetoothConfig_8h.html#abc80ec74f601915117d5db0be82b71ce", null ],
+    [ "EFI_BLUETOOTH_CONFIG_REGISTER_GET_LINK_KEY_CALLBACK_FUNCTION", "BluetoothConfig_8h.html#a29f2351942341f5aa867f1a3059cfca7", null ],
+    [ "EFI_BLUETOOTH_CONFIG_REGISTER_PIN_CALLBACK", "BluetoothConfig_8h.html#a3dab46ecdfe53a3c1ff7c458d8ced385", null ],
+    [ "EFI_BLUETOOTH_CONFIG_REGISTER_PIN_CALLBACK_FUNCTION", "BluetoothConfig_8h.html#a328053a0f0f004b0a176f2b9b2d16c2e", null ],
+    [ "EFI_BLUETOOTH_CONFIG_REGISTER_SET_LINK_KEY_CALLBACK", "BluetoothConfig_8h.html#ab8af8656aa4d832eb24b136f31394768", null ],
+    [ "EFI_BLUETOOTH_CONFIG_REGISTER_SET_LINK_KEY_CALLBACK_FUNCTION", "BluetoothConfig_8h.html#acd7e3b514cfd732a9c48cd14ac8053e2", null ],
+    [ "EFI_BLUETOOTH_CONFIG_REMOTE_DEVICE_STATE_TYPE", "BluetoothConfig_8h.html#a84dec5e130c9a78fdda9013ad32bd6ad", null ],
+    [ "EFI_BLUETOOTH_CONFIG_SCAN", "BluetoothConfig_8h.html#ab149656a865fce11c9bdc4316985f92d", null ],
+    [ "EFI_BLUETOOTH_CONFIG_SCAN_CALLBACK_FUNCTION", "BluetoothConfig_8h.html#af79c4e1f0e2b63dec52bffe31702bafc", null ],
+    [ "EFI_BLUETOOTH_CONFIG_SET_DATA", "BluetoothConfig_8h.html#a40b5ad7edd62a72c832d7e900d5503e1", null ],
+    [ "EFI_BLUETOOTH_CONFIG_DATA_TYPE", "BluetoothConfig_8h.html#a15b16373acd6bd7a564799c62f55b12b", [
+      [ "EfiBluetoothConfigDataTypeDeviceName", "BluetoothConfig_8h.html#a15b16373acd6bd7a564799c62f55b12ba44d250adc6173dd40b6157c0ffc6df26", null ],
+      [ "EfiBluetoothConfigDataTypeClassOfDevice", "BluetoothConfig_8h.html#a15b16373acd6bd7a564799c62f55b12ba3fab5b37001dfb7425e090ef96675cea", null ],
+      [ "EfiBluetoothConfigDataTypeRemoteDeviceState", "BluetoothConfig_8h.html#a15b16373acd6bd7a564799c62f55b12ba5308761d3f90d483a383607542c4a88e", null ],
+      [ "EfiBluetoothConfigDataTypeSdpInfo", "BluetoothConfig_8h.html#a15b16373acd6bd7a564799c62f55b12ba7592a8fcb3a818d1f64551791be7b329", null ],
+      [ "EfiBluetoothConfigDataTypeBDADDR", "BluetoothConfig_8h.html#a15b16373acd6bd7a564799c62f55b12ba6cd17fb8e4c812f7208124b7df89b5e4", null ],
+      [ "EfiBluetoothConfigDataTypeDiscoverable", "BluetoothConfig_8h.html#a15b16373acd6bd7a564799c62f55b12ba745b80f01443c0ef8f82c39b32516536", null ],
+      [ "EfiBluetoothConfigDataTypeControllerStoredPairedDeviceList", "BluetoothConfig_8h.html#a15b16373acd6bd7a564799c62f55b12ba5b1fd583cd15771eae637ecd88076cbb", null ],
+      [ "EfiBluetoothConfigDataTypeAvailableDeviceList", "BluetoothConfig_8h.html#a15b16373acd6bd7a564799c62f55b12bafef4043d9185c9fe554f0fdcd1f0229d", null ],
+      [ "EfiBluetoothConfigDataTypeRandomAddress", "BluetoothConfig_8h.html#a15b16373acd6bd7a564799c62f55b12ba29dcefe5b5b172c1ab5d89e512b423a0", null ],
+      [ "EfiBluetoothConfigDataTypeRSSI", "BluetoothConfig_8h.html#a15b16373acd6bd7a564799c62f55b12baf3f1ce937533f2f2af687121f7c9b6da", null ],
+      [ "EfiBluetoothConfigDataTypeAdvertisementData", "BluetoothConfig_8h.html#a15b16373acd6bd7a564799c62f55b12bab3677a49e07e7424a54faf6d2273fade", null ],
+      [ "EfiBluetoothConfigDataTypeIoCapability", "BluetoothConfig_8h.html#a15b16373acd6bd7a564799c62f55b12ba86d62d8d0b45991e63d46a0ce101b004", null ],
+      [ "EfiBluetoothConfigDataTypeOOBDataFlag", "BluetoothConfig_8h.html#a15b16373acd6bd7a564799c62f55b12badd37f0750664219a1767e5598f810983", null ],
+      [ "EfiBluetoothConfigDataTypeKeyType", "BluetoothConfig_8h.html#a15b16373acd6bd7a564799c62f55b12ba1682a0977341a05c487d78813e70d0b2", null ],
+      [ "EfiBluetoothConfigDataTypeEncKeySize", "BluetoothConfig_8h.html#a15b16373acd6bd7a564799c62f55b12ba05e94ba471d2215ca1030cc409869185", null ],
+      [ "EfiBluetoothConfigDataTypeMax", "BluetoothConfig_8h.html#a15b16373acd6bd7a564799c62f55b12ba23daa2c46ee4b215b0e0ba55762c0b49", null ]
+    ] ],
+    [ "EFI_BLUETOOTH_CONNECT_COMPLETE_CALLBACK_TYPE", "BluetoothConfig_8h.html#a94cdb5d95e979164cc94715b5b613638", [
+      [ "EfiBluetoothConnCallbackTypeDisconnected", "BluetoothConfig_8h.html#a94cdb5d95e979164cc94715b5b613638a01e8d71ea7994a0971a1300e89c187cb", null ],
+      [ "EfiBluetoothConnCallbackTypeConnected", "BluetoothConfig_8h.html#a94cdb5d95e979164cc94715b5b613638a4ad68a7488c09e224db35cf88715ea02", null ],
+      [ "EfiBluetoothConnCallbackTypeAuthenticated", "BluetoothConfig_8h.html#a94cdb5d95e979164cc94715b5b613638aa44960a950a547fdc97053c75efaa0a2", null ],
+      [ "EfiBluetoothConnCallbackTypeEncrypted", "BluetoothConfig_8h.html#a94cdb5d95e979164cc94715b5b613638a9e451a9b084f87e5b6da947d64dd1d6e", null ]
+    ] ],
+    [ "EFI_BLUETOOTH_PIN_CALLBACK_TYPE", "BluetoothConfig_8h.html#a820801cec155320bfb609d326978aa70", [
+      [ "EfiBluetoothCallbackTypeUserPasskeyNotification", "BluetoothConfig_8h.html#a820801cec155320bfb609d326978aa70aa16e862e7de5134743322488293da4d8", null ],
+      [ "EfiBluetoothCallbackTypeUserConfirmationRequest", "BluetoothConfig_8h.html#a820801cec155320bfb609d326978aa70a9177d82052d9150c9cafc576994d3c08", null ],
+      [ "EfiBluetoothCallbackTypeOOBDataRequest", "BluetoothConfig_8h.html#a820801cec155320bfb609d326978aa70a0961fe04c906b81ca37c12a2959ba824", null ],
+      [ "EfiBluetoothCallbackTypePinCodeRequest", "BluetoothConfig_8h.html#a820801cec155320bfb609d326978aa70a2dc1bc516062923e80ecfd201db83499", null ],
+      [ "EfiBluetoothCallbackTypeMax", "BluetoothConfig_8h.html#a820801cec155320bfb609d326978aa70a64b85cb42114f08e1c6fc29ea867c64d", null ]
+    ] ],
+    [ "gEfiBluetoothConfigProtocolGuid", "BluetoothConfig_8h.html#a30870fd20e59590d5daced70a855dc94", null ]
+];

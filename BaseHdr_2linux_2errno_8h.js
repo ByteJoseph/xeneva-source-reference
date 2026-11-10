@@ -1,0 +1,25 @@
+var BaseHdr_2linux_2errno_8h =
+[
+    [ "EACCES", "BaseHdr_2linux_2errno_8h.html#ac2a2e9fa555401f94478f74e01868032", null ],
+    [ "EALREADY", "BaseHdr_2linux_2errno_8h.html#aa4ccb54aa806de3e41a8515f06db85d4", null ],
+    [ "EBADF", "BaseHdr_2linux_2errno_8h.html#ac54507d66b43ad12f9356257323c0018", null ],
+    [ "ECHILD", "BaseHdr_2linux_2errno_8h.html#a47b42c351e0e011a048058d224205c0f", null ],
+    [ "EEXIST", "BaseHdr_2linux_2errno_8h.html#a0a3bef9e5c47e42917692b5dae3b5498", null ],
+    [ "EFAULT", "BaseHdr_2linux_2errno_8h.html#a3f317946e043623f9d6b93dbf60e6316", null ],
+    [ "EINPROGRESS", "BaseHdr_2linux_2errno_8h.html#a6c045d5be06e715cc335784a7320714e", null ],
+    [ "EINTR", "BaseHdr_2linux_2errno_8h.html#a46b83d9f6c23b1b65a8cecfd775ddaed", null ],
+    [ "EMLINK", "BaseHdr_2linux_2errno_8h.html#a97f59fa1a5a2f61b792c1b9dfc218072", null ],
+    [ "ENOIOCTLCMD", "BaseHdr_2linux_2errno_8h.html#a67d480d84c5e51bee1533aff71a095d5", null ],
+    [ "ENOTBLK", "BaseHdr_2linux_2errno_8h.html#aa0a4b0e307e83f52be51099f01156936", null ],
+    [ "ENOTCONN", "BaseHdr_2linux_2errno_8h.html#af23e48762a0676f49d480db91cfd5e4b", null ],
+    [ "ENOTTY", "BaseHdr_2linux_2errno_8h.html#ac3daf409082bb528032f4452a81e1034", null ],
+    [ "EOPNOTSUPP", "BaseHdr_2linux_2errno_8h.html#a4b807895c74cea4d0302bf27725d4b9d", null ],
+    [ "EPIPE", "BaseHdr_2linux_2errno_8h.html#a5f8d33deb08fa27c04897b278ac7f965", null ],
+    [ "ERANGE", "BaseHdr_2linux_2errno_8h.html#aa1591a4f3a86360108de5b9ba34980ca", null ],
+    [ "EROFS", "BaseHdr_2linux_2errno_8h.html#acb02bb67dddd7ca8cf82634a0781d58d", null ],
+    [ "ESPIPE", "BaseHdr_2linux_2errno_8h.html#a0e42d4f9fecdcf5fcca2b333252173c3", null ],
+    [ "ESRCH", "BaseHdr_2linux_2errno_8h.html#a462e47a8af6288232a5df548221ada4c", null ],
+    [ "ETIMEDOUT", "BaseHdr_2linux_2errno_8h.html#a597718e59a8fc9c4d4ab63f5a34e28b1", null ],
+    [ "EWOULDBLOCK", "BaseHdr_2linux_2errno_8h.html#a4a3a0b3605fd3b2336455062ee8e25f0", null ],
+    [ "EXDEV", "BaseHdr_2linux_2errno_8h.html#a3396cf9fb0ff5af3a18dd2a2bbdb21e1", null ]
+];

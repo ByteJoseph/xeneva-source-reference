@@ -1,0 +1,4 @@
+var struct__EFI__DRIVER__FAMILY__OVERRIDE__PROTOCOL =
+[
+    [ "GetVersion", "struct__EFI__DRIVER__FAMILY__OVERRIDE__PROTOCOL.html#aa39502603483b196d498b8100f173085", null ]
+];

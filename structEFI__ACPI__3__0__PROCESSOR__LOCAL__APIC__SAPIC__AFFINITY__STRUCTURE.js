@@ -1,0 +1,11 @@
+var structEFI__ACPI__3__0__PROCESSOR__LOCAL__APIC__SAPIC__AFFINITY__STRUCTURE =
+[
+    [ "ApicId", "structEFI__ACPI__3__0__PROCESSOR__LOCAL__APIC__SAPIC__AFFINITY__STRUCTURE.html#ac78e2af2ae7e382240c22794701783a9", null ],
+    [ "Flags", "structEFI__ACPI__3__0__PROCESSOR__LOCAL__APIC__SAPIC__AFFINITY__STRUCTURE.html#a00aa7de8b2c076bb35cec19b2401c38f", null ],
+    [ "Length", "structEFI__ACPI__3__0__PROCESSOR__LOCAL__APIC__SAPIC__AFFINITY__STRUCTURE.html#a8aba3ef3268ecbb848cc2831a13d50c5", null ],
+    [ "LocalSapicEid", "structEFI__ACPI__3__0__PROCESSOR__LOCAL__APIC__SAPIC__AFFINITY__STRUCTURE.html#ad79c19366cd5d37edfce29264b87b03f", null ],
+    [ "ProximityDomain31To8", "structEFI__ACPI__3__0__PROCESSOR__LOCAL__APIC__SAPIC__AFFINITY__STRUCTURE.html#af91b89dd215585b63e28cfe47aaa2c73", null ],
+    [ "ProximityDomain7To0", "structEFI__ACPI__3__0__PROCESSOR__LOCAL__APIC__SAPIC__AFFINITY__STRUCTURE.html#a5b10678f753eb27d188b1a55081ea6c0", null ],
+    [ "Reserved", "structEFI__ACPI__3__0__PROCESSOR__LOCAL__APIC__SAPIC__AFFINITY__STRUCTURE.html#a5b72651f2c15d829597193f5c7e75d34", null ],
+    [ "Type", "structEFI__ACPI__3__0__PROCESSOR__LOCAL__APIC__SAPIC__AFFINITY__STRUCTURE.html#a421e9d7bbf571d971451bfd43d1aa139", null ]
+];

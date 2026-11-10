@@ -1,0 +1,28 @@
+var drm__client_8h =
+[
+    [ "drm_client_funcs", "structdrm__client__funcs.html", "structdrm__client__funcs" ],
+    [ "drm_client_dev", "structdrm__client__dev.html", "structdrm__client__dev" ],
+    [ "drm_client_buffer", "structdrm__client__buffer.html", "structdrm__client__buffer" ],
+    [ "drm_client_for_each_connector_iter", "drm__client_8h.html#a7c6adb79a54e8aa1b8f0cdd84336dcda", null ],
+    [ "drm_client_for_each_modeset", "drm__client_8h.html#a4b155c92f3ed3aa43374159ae84b8070", null ],
+    [ "drm_client_buffer_create", "drm__client_8h.html#a6beff18c8c5e6b2aa2b6a46561f9dfdc", null ],
+    [ "drm_client_buffer_create_dumb", "drm__client_8h.html#a9d78991d1388358b062ae673ef0c6f9f", null ],
+    [ "drm_client_buffer_delete", "drm__client_8h.html#a22270af7e9ac9ed4c5717d1c122d3d74", null ],
+    [ "drm_client_buffer_flush", "drm__client_8h.html#a8f395ef612b884961181f7029d7240fa", null ],
+    [ "drm_client_buffer_vmap", "drm__client_8h.html#a8e9643ce94870bb90d8808648fc81960", null ],
+    [ "drm_client_buffer_vmap_local", "drm__client_8h.html#a1969b20c16629786db60f0084e0ebef8", null ],
+    [ "drm_client_buffer_vunmap", "drm__client_8h.html#a22ea841411ede5930cd72675fdda31e4", null ],
+    [ "drm_client_buffer_vunmap_local", "drm__client_8h.html#a7b2bb2a20fe1d51bd2050bb05e1b6850", null ],
+    [ "drm_client_init", "drm__client_8h.html#a28e967ca54cd5ed7e717e6a87ffce358", null ],
+    [ "drm_client_modeset_check", "drm__client_8h.html#a5a44d7465574b8b09c7ace9abaa4f79e", null ],
+    [ "drm_client_modeset_commit", "drm__client_8h.html#a697d29c0f746a86f638ea701669f968c", null ],
+    [ "drm_client_modeset_commit_locked", "drm__client_8h.html#a6d759ce9b70c7f0b500f4d56628ccb1b", null ],
+    [ "drm_client_modeset_create", "drm__client_8h.html#a88a8f1ec07f1dbf5eb2bdc70c715b69a", null ],
+    [ "drm_client_modeset_dpms", "drm__client_8h.html#abcc148ed6f7083e78fd3e50d26431159", null ],
+    [ "drm_client_modeset_free", "drm__client_8h.html#a460d9ce4d55b36ab690954823d7ac13f", null ],
+    [ "drm_client_modeset_probe", "drm__client_8h.html#ac50b830926b0809cbed40b2dc14a087c", null ],
+    [ "drm_client_modeset_wait_for_vblank", "drm__client_8h.html#a6f0637871686664535b927aa7b2f3c9d", null ],
+    [ "drm_client_register", "drm__client_8h.html#ade6baffff711a39b0d56e776676f65c9", null ],
+    [ "drm_client_release", "drm__client_8h.html#a8f5e5323b12e29ca74fa91bf6250e0c4", null ],
+    [ "drm_client_rotation", "drm__client_8h.html#a4f41b92eeea39c73bd332413ccbf444a", null ]
+];

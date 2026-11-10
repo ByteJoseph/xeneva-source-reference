@@ -1,0 +1,28 @@
+var drm__gem__shmem__helper_8h =
+[
+    [ "drm_gem_shmem_object", "structdrm__gem__shmem__object.html", "structdrm__gem__shmem__object" ],
+    [ "DRM_GEM_SHMEM_DRIVER_OPS", "drm__gem__shmem__helper_8h.html#a672d2136ed9046bf8f2aa22494fcc053", null ],
+    [ "to_drm_gem_shmem_obj", "drm__gem__shmem__helper_8h.html#a6dc8fff877b74f97435fa19a711615ec", null ],
+    [ "__drm_gem_shmem_free_sgt_locked", "drm__gem__shmem__helper_8h.html#a6ca718c9432680e4249d54ba5970b147", null ],
+    [ "drm_gem_shmem_create", "drm__gem__shmem__helper_8h.html#a19efcaf3c4d4bd3e4d57bf41e11afe99", null ],
+    [ "drm_gem_shmem_dumb_create", "drm__gem__shmem__helper_8h.html#a1845b3abf9a38db69c98786c593a14bc", null ],
+    [ "drm_gem_shmem_free", "drm__gem__shmem__helper_8h.html#a992aa6b2a575c0ddca74c802f4fd003c", null ],
+    [ "drm_gem_shmem_get_pages_sgt", "drm__gem__shmem__helper_8h.html#ab48dfadf2c0cbab62f52d2955d106456", null ],
+    [ "drm_gem_shmem_get_sg_table", "drm__gem__shmem__helper_8h.html#a2e14a1f65438f90e7893442cb302d80b", null ],
+    [ "drm_gem_shmem_init", "drm__gem__shmem__helper_8h.html#a2c58208d3e29dfd5401d02625a9f9d8d", null ],
+    [ "drm_gem_shmem_madvise_locked", "drm__gem__shmem__helper_8h.html#a1baa94f835387c3a50eb58c2eb1d51af", null ],
+    [ "drm_gem_shmem_mmap", "drm__gem__shmem__helper_8h.html#a2e3a7b20d650e94d974a40302c625675", null ],
+    [ "drm_gem_shmem_pin", "drm__gem__shmem__helper_8h.html#a92d97b32a738a6f57bc8b7f620e3105a", null ],
+    [ "drm_gem_shmem_pin_locked", "drm__gem__shmem__helper_8h.html#a3ed7129ad7d396a243af89f5ded5a8a7", null ],
+    [ "drm_gem_shmem_prime_import_no_map", "drm__gem__shmem__helper_8h.html#aa7f605d6c927c83e64da9f7630a9df58", null ],
+    [ "drm_gem_shmem_prime_import_sg_table", "drm__gem__shmem__helper_8h.html#ad938bb856bfee0bc68df17876ae9cffa", null ],
+    [ "drm_gem_shmem_print_info", "drm__gem__shmem__helper_8h.html#af20d7ba8bbfce2fd032f27416ac63530", null ],
+    [ "drm_gem_shmem_purge_locked", "drm__gem__shmem__helper_8h.html#aa83e5fdd8e3ddb6c3d17068ed20105f4", null ],
+    [ "drm_gem_shmem_put_pages_locked", "drm__gem__shmem__helper_8h.html#aa7219cb89c79dfe9589810d1973d9835", null ],
+    [ "drm_gem_shmem_release", "drm__gem__shmem__helper_8h.html#a619718f4a6f810f82f5dc1cdd40db1cb", null ],
+    [ "drm_gem_shmem_unpin", "drm__gem__shmem__helper_8h.html#a391ef3020aa88a45e90283487ba6a170", null ],
+    [ "drm_gem_shmem_unpin_locked", "drm__gem__shmem__helper_8h.html#a050dc724e7f89b688a4ba5aabd92aa07", null ],
+    [ "drm_gem_shmem_vmap_locked", "drm__gem__shmem__helper_8h.html#aa483a506b89182043ab61aaa0151fce7", null ],
+    [ "drm_gem_shmem_vunmap_locked", "drm__gem__shmem__helper_8h.html#a8dff75bfd620fa00de9a47ceaa438433", null ],
+    [ "drm_gem_shmem_vm_ops", "drm__gem__shmem__helper_8h.html#aed82c9f8f6e9d4a615c74a01e353aac1", null ]
+];

@@ -1,0 +1,11 @@
+var structEFI__ACPI__6__1__PROCESSOR__LOCAL__APIC__SAPIC__AFFINITY__STRUCTURE =
+[
+    [ "ApicId", "structEFI__ACPI__6__1__PROCESSOR__LOCAL__APIC__SAPIC__AFFINITY__STRUCTURE.html#a17da0edc39fa42a03f265251e7763b83", null ],
+    [ "ClockDomain", "structEFI__ACPI__6__1__PROCESSOR__LOCAL__APIC__SAPIC__AFFINITY__STRUCTURE.html#ac4bd0978a73f51c743172688be0bda2d", null ],
+    [ "Flags", "structEFI__ACPI__6__1__PROCESSOR__LOCAL__APIC__SAPIC__AFFINITY__STRUCTURE.html#a13b1f61809435ac1bb2317410de5d2cf", null ],
+    [ "Length", "structEFI__ACPI__6__1__PROCESSOR__LOCAL__APIC__SAPIC__AFFINITY__STRUCTURE.html#a5f077477db7f274f003c8bedf8d70247", null ],
+    [ "LocalSapicEid", "structEFI__ACPI__6__1__PROCESSOR__LOCAL__APIC__SAPIC__AFFINITY__STRUCTURE.html#a8378ea92a64ab6e061e515f7a86a8ba2", null ],
+    [ "ProximityDomain31To8", "structEFI__ACPI__6__1__PROCESSOR__LOCAL__APIC__SAPIC__AFFINITY__STRUCTURE.html#a2558ded917826b55246ffe0c73fab0da", null ],
+    [ "ProximityDomain7To0", "structEFI__ACPI__6__1__PROCESSOR__LOCAL__APIC__SAPIC__AFFINITY__STRUCTURE.html#aea468ba8c67d1afefaa31bd97a5a25ac", null ],
+    [ "Type", "structEFI__ACPI__6__1__PROCESSOR__LOCAL__APIC__SAPIC__AFFINITY__STRUCTURE.html#a26df763bf10794a24744f6bd0674030f", null ]
+];

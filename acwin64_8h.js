@@ -1,0 +1,26 @@
+var acwin64_8h =
+[
+    [ "ACPI_ACQUIRE_GLOBAL_LOCK", "acwin64_8h.html#a9ab72445fad008be0a00bda12caeb53f", null ],
+    [ "ACPI_FLUSH_CPU_CACHE", "acwin64_8h.html#a5ef1e322b00b6957f6d4c477193f45f3", null ],
+    [ "ACPI_MACHINE_WIDTH", "acwin64_8h.html#accde479c29edf46b4bec41d356663e34", null ],
+    [ "ACPI_RELEASE_GLOBAL_LOCK", "acwin64_8h.html#a281eb474d6136367486b197d4887b578", null ],
+    [ "ACPI_USE_STANDARD_HEADERS", "acwin64_8h.html#a749358b5f6dfd9ffbaf954a63de558b3", null ],
+    [ "ACPI_USE_SYSTEM_CLIBRARY", "acwin64_8h.html#a59865030b529796c0d7c30d3478f5950", null ],
+    [ "close", "acwin64_8h.html#a9c7f6d5331abb2692a876d5ee67474b7", null ],
+    [ "fstat", "acwin64_8h.html#aa84a9ac582a3b7d9a0dea52e851855ea", null ],
+    [ "mkdir", "acwin64_8h.html#a2c7f3c043ce1aab0a062114f99b792cf", null ],
+    [ "O_BINARY", "acwin64_8h.html#a36fa9b2e726512bc17a7a6d3e39002be", null ],
+    [ "O_CREAT", "acwin64_8h.html#a1cf6b1de1fffedaa1d26b189e9a8d2cc", null ],
+    [ "O_RDONLY", "acwin64_8h.html#a7a68c9ffaac7dbcd652225dd7c06a54b", null ],
+    [ "O_TRUNC", "acwin64_8h.html#ad1d67e453fb3031f40f8cd3403773813", null ],
+    [ "O_WRONLY", "acwin64_8h.html#a11b644a8526139c4cc1850dac1271ced", null ],
+    [ "open", "acwin64_8h.html#a8854c2a82db965759bd6095a666ffb76", null ],
+    [ "read", "acwin64_8h.html#a68dc4fd7189d34e2052e25ada13f89e0", null ],
+    [ "S_IFDIR", "acwin64_8h.html#a11fb0652b963a735f3377eb1c9239f2d", null ],
+    [ "S_IREAD", "acwin64_8h.html#a96c6486aa02a821aa4199525f5e79f60", null ],
+    [ "S_IWRITE", "acwin64_8h.html#a40eb4ad4bcc675d265615042657c37b7", null ],
+    [ "snprintf", "acwin64_8h.html#aa367b75c5aed883fef5befbdf04835a4", null ],
+    [ "stat", "acwin64_8h.html#a149da0702b060478da4d59ffe807adac", null ],
+    [ "vsnprintf", "acwin64_8h.html#a00ba2ca988495904efc418acbf0627d7", null ],
+    [ "write", "acwin64_8h.html#ac40a1eaac5f8dbc1eef9b944d494770c", null ]
+];
